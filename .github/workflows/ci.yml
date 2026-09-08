@@ -15,3 +15,50 @@ jobs:
           node-version: 22
       - name: JavaScript syntax checks
         run: make test
+
+  mobile-ui:
+    needs: syntax
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tests/requirements-ui.txt
+      - name: Install Selenium and OCR dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r tests/requirements-ui.txt
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+      - name: Show browser and OCR versions
+        run: |
+          (google-chrome --version || google-chrome-stable --version || chromium --version || chromium-browser --version)
+          tesseract --version | head -n 1
+      - name: Start static app server
+        run: |
+          mkdir -p artifacts/mobile-ui
+          python3 -m http.server 8080 --directory . > artifacts/mobile-ui/server.log 2>&1 &
+          echo $! > /tmp/paper-map-http.pid
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8080/www/ >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat artifacts/mobile-ui/server.log
+          exit 1
+      - name: Mobile Selenium interaction and OCR test
+        env:
+          TEST_URL: http://127.0.0.1:8080/www/
+          MOBILE_TEST_ARTIFACT_DIR: artifacts/mobile-ui
+        run: python3 tests/mobile_selenium_test.py
+      - name: Upload mobile UI screenshots and OCR output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mobile-ui-artifacts
+          path: artifacts/mobile-ui
+          if-no-files-found: warn

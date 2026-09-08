@@ -1,6 +1,7 @@
 PORT ?= 8080
+TEST_URL ?= http://127.0.0.1:8080/www/
 
-.PHONY: run test
+.PHONY: run test test-ui-mobile
 
 run:
 	python3 -m http.server $(PORT)
@@ -15,3 +16,7 @@ test:
 	node --check www/pdf-ai.js
 	node --check www/pdf-ai-import.js
 	node --test tests/*.test.mjs
+	python3 -m py_compile tests/mobile_selenium_test.py
+
+test-ui-mobile:
+	TEST_URL="$(TEST_URL)" python3 tests/mobile_selenium_test.py

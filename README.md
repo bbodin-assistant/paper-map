@@ -37,6 +37,8 @@ www/
   demo-data.js            Bundled demo library
 tests/
   pdf-ai.test.mjs         PDF metadata normalization tests
+  mobile_selenium_test.py Mobile interaction, layout, screenshot and OCR test
+  requirements-ui.txt     Selenium dependency for the mobile test
 ROADMAP.md                 Product and implementation roadmap
 AGENTS.md                  Project-specific implementation guide
 ```
@@ -54,6 +56,24 @@ python3 -m http.server 8080
 ```
 
 Then open `http://localhost:8080/www/`.
+
+## Tests
+
+Fast syntax/unit checks:
+
+```bash
+make test
+```
+
+The mobile browser test uses Selenium with Chrome mobile emulation at a 390 × 844 CSS-pixel viewport. It clicks the About, Library, Filters, map-mode, bibliography, paper-detail, and PDF-import widgets; checks visible text/control geometry for clipping or horizontal overflow; captures screenshots; and runs Tesseract OCR against the Library widget screenshot.
+
+Install `selenium` from `tests/requirements-ui.txt` and Tesseract, start the static server, then run:
+
+```bash
+make test-ui-mobile TEST_URL=http://127.0.0.1:8080/www/
+```
+
+CI runs the same test after the fast checks and uploads screenshots, OCR output, and the server log as the `mobile-ui-artifacts` workflow artifact even when the UI test fails.
 
 ## Local data
 
