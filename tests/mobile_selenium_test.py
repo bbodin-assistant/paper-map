@@ -298,7 +298,7 @@ def main():
         file_input.send_keys(str(fixture))
         dialog = wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog") if d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is not None else False)
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI import widget")
-        assert_true("PDF metadata & topics" in dialog.text, "PDF AI dialog heading should be visible")
+        assert_true("PDF metadata, citations & topics" in dialog.text, "PDF import dialog heading should be visible")
         assert_true("Analyze PDF" in dialog.text, "PDF AI analyze action should be visible")
         save_screenshot(driver, "07-pdf-ai-dialog.png")
         wait_click(driver, "#pdf-ai-close")
