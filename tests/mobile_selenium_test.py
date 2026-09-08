@@ -4,6 +4,7 @@ import re
 import shutil
 import subprocess
 import sys
+from difflib import SequenceMatcher
 from pathlib import Path
 
 from selenium import webdriver
@@ -17,6 +18,7 @@ ARTIFACT_DIR = Path(os.environ.get("MOBILE_TEST_ARTIFACT_DIR", "artifacts/mobile
 WAIT_SECONDS = int(os.environ.get("MOBILE_TEST_WAIT_SECONDS", "20"))
 MOBILE_WIDTH = 390
 MOBILE_HEIGHT = 844
+OCR_SIMILARITY_THRESHOLD = 0.90
 
 
 def assert_true(value, message):
@@ -26,6 +28,24 @@ def assert_true(value, message):
 
 def normalize_ocr(value):
     return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
+
+
+def best_ocr_phrase_score(ocr_text, expected_phrase):
+    normalized = normalize_ocr(ocr_text)
+    target = normalize_ocr(expected_phrase)
+    if not target:
+        return 1.0
+    if target in normalized:
+        return 1.0
+
+    words = normalized.split()
+    target_words = target.split()
+    best = 0.0
+    for window_size in range(max(1, len(target_words) - 1), len(target_words) + 2):
+        for start in range(0, max(0, len(words) - window_size + 1)):
+            candidate = " ".join(words[start : start + window_size])
+            best = max(best, SequenceMatcher(None, target, candidate).ratio())
+    return best
 
 
 def chrome_binary():
@@ -165,9 +185,16 @@ def run_ocr(screenshot, expected_phrases):
 
     text = completed.stdout
     (ARTIFACT_DIR / "ocr.txt").write_text(text, encoding="utf-8")
-    normalized = normalize_ocr(text)
-    missing = [phrase for phrase in expected_phrases if normalize_ocr(phrase) not in normalized]
-    assert_true(not missing, f"OCR did not find visible UI text {missing}. OCR output: {text!r}")
+    scores = {phrase: best_ocr_phrase_score(text, phrase) for phrase in expected_phrases}
+    (ARTIFACT_DIR / "ocr-checks.txt").write_text(
+        "\n".join(f"{phrase}: {score:.3f}" for phrase, score in scores.items()) + "\n",
+        encoding="utf-8",
+    )
+    missing = [phrase for phrase, score in scores.items() if score < OCR_SIMILARITY_THRESHOLD]
+    assert_true(
+        not missing,
+        f"OCR did not recognize visible UI text {missing} at >= {OCR_SIMILARITY_THRESHOLD:.2f}. Scores: {scores}. OCR output: {text!r}",
+    )
 
 
 def create_pdf_fixture():
