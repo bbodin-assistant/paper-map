@@ -6,13 +6,14 @@
     <meta name="color-scheme" content="light" />
     <title>Paper Map</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./pdf-ai-import.css" />
   </head>
   <body>
     <header class="app-header">
       <div class="brand" aria-label="Paper Map">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
         <span>
-          <strong>Paper Map <span class="app-version">v0.1</span></strong>
+          <strong>Paper Map <span class="app-version">v0.2</span></strong>
           <small>local research atlas</small>
         </span>
       </div>
@@ -34,7 +35,7 @@
     <div id="about-panel" class="about-panel" hidden role="dialog" aria-label="About Paper Map">
       <strong>Paper Map</strong>
       <p>A browser-local bibliography, citation graph and thematic research atlas. Your working library stays in IndexedDB on this browser unless you explicitly export it.</p>
-      <p>Citation expansion is performed on demand through scholarly-data providers. The bundled demo can be used entirely offline after the page is loaded.</p>
+      <p>Citation expansion is performed on demand through scholarly-data providers. PDF import can use a user-provided OpenAI API key to propose metadata and topics for review before they are saved locally.</p>
       <a href="https://github.com/bbodin-assistant/paper-map" target="_blank" rel="noreferrer">GitHub repository ↗</a>
     </div>
 
@@ -208,5 +209,6 @@
     </aside>
 
     <script type="module" src="./app.js"></script>
+    <script type="module" src="./pdf-ai-import.js"></script>
   </body>
 </html>
