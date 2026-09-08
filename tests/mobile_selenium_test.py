@@ -4,7 +4,6 @@ import re
 import shutil
 import subprocess
 import sys
-import time
 from pathlib import Path
 
 from selenium import webdriver
@@ -47,7 +46,6 @@ def create_driver():
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
     options.add_argument("--hide-scrollbars")
-    options.add_argument("--force-device-scale-factor=1")
     binary = chrome_binary()
     if binary:
         options.binary_location = binary
