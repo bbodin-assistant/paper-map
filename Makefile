@@ -1,9 +1,20 @@
 PORT ?= 8080
 TEST_URL ?= http://127.0.0.1:8080/www/
+WASM_OUT_DIR ?= www/pkg
 
-.PHONY: run test test-ui-mobile
+.PHONY: install-wasm build-wasm run test test-rust test-ui-mobile clean
 
-run:
+install-wasm:
+	@command -v wasm-pack >/dev/null || { echo "Install wasm-pack first: https://rustwasm.github.io/wasm-pack/"; exit 1; }
+
+build-wasm: install-wasm
+	wasm-pack build --target web --out-dir "$(WASM_OUT_DIR)"
+
+test-rust:
+	cargo test
+	cargo check --target wasm32-unknown-unknown
+
+run: build-wasm
 	python3 -m http.server $(PORT)
 
 test:
@@ -14,10 +25,15 @@ test:
 	node --check www/import-export.js
 	node --check www/semantic-scholar.js
 	node --check www/pdf-ai.js
+	node --check www/pdf-local.js
 	node --check www/pdf-ai-import.js
 	node --test tests/*.test.mjs
 	python3 -m py_compile tests/mobile_selenium_test.py tests/pdf_review_selenium_test.py
+	cargo test
 
 test-ui-mobile:
 	TEST_URL="$(TEST_URL)" python3 tests/mobile_selenium_test.py
 	TEST_URL="$(TEST_URL)" python3 tests/pdf_review_selenium_test.py
+
+clean:
+	rm -rf target "$(WASM_OUT_DIR)"
