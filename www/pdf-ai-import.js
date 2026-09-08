@@ -11,6 +11,7 @@ import {
   MAX_INLINE_PDF_BYTES,
   slugTopic,
 } from "./pdf-ai.js";
+import { extractPdfCitationsLocally } from "./pdf-local.js";
 
 const SESSION_KEY = "paper-map-openai-key-tab";
 const MODEL_KEY = "paper-map-pdf-ai-model-v1";
@@ -76,7 +77,7 @@ function createUi() {
   const button = document.createElement("button");
   button.type = "button";
   button.id = "import-pdf-ai";
-  button.textContent = "Import PDF with AI";
+  button.textContent = "Import PDF with AI / local";
 
   const input = document.createElement("input");
   input.id = "pdf-ai-file";
@@ -96,7 +97,7 @@ function createUi() {
       <header class="pdf-ai-header">
         <div>
           <span class="drawer-kicker">Reviewed import</span>
-          <h2>PDF metadata & topics</h2>
+          <h2>PDF metadata, citations & topics</h2>
         </div>
         <button type="button" class="icon-button" id="pdf-ai-close" aria-label="Close PDF import">×</button>
       </header>
@@ -107,31 +108,35 @@ function createUi() {
           <span id="pdf-ai-file-size"></span>
         </div>
 
-        <p class="pdf-ai-explainer">The PDF is sent directly from this browser to OpenAI for analysis. No paper metadata is written to IndexedDB until you review it and press <strong>Save reviewed paper</strong>.</p>
+        <p class="pdf-ai-explainer"><strong>Local extraction</strong> runs Rust/WebAssembly entirely in this browser and systematically detects the bibliography, reference entries, DOI and arXiv identifiers. <strong>AI analysis</strong> remains optional for metadata and topic suggestions. Nothing is saved until you review it and press <strong>Save reviewed paper</strong>.</p>
 
-        <div class="pdf-ai-settings-grid">
-          <label>OpenAI API key
-            <input id="pdf-ai-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…" />
-          </label>
-          <label>Model
-            <input id="pdf-ai-model" type="text" spellcheck="false" value="${escapeHtml(storedModel())}" />
-          </label>
-          <label class="checkbox-row pdf-ai-remember-key">
-            <input id="pdf-ai-remember-key" type="checkbox" /> Keep API key for this browser tab
-          </label>
-        </div>
-
-        <div class="pdf-ai-analysis-actions">
-          <button type="button" id="pdf-ai-analyze">Analyze PDF</button>
+        <div class="pdf-ai-analysis-actions pdf-extraction-actions">
+          <button type="button" id="pdf-local-extract">Extract citations locally</button>
+          <button type="button" id="pdf-ai-analyze" class="quiet-button">Analyze PDF with AI</button>
           <button type="button" id="pdf-ai-cancel-analysis" class="quiet-button" hidden>Cancel</button>
           <span id="pdf-ai-analysis-status" class="muted" role="status" aria-live="polite"></span>
         </div>
+
+        <details class="pdf-ai-provider-settings">
+          <summary>AI settings</summary>
+          <div class="pdf-ai-settings-grid">
+            <label>OpenAI API key
+              <input id="pdf-ai-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…" />
+            </label>
+            <label>Model
+              <input id="pdf-ai-model" type="text" spellcheck="false" value="${escapeHtml(storedModel())}" />
+            </label>
+            <label class="checkbox-row pdf-ai-remember-key">
+              <input id="pdf-ai-remember-key" type="checkbox" /> Keep API key for this browser tab
+            </label>
+          </div>
+        </details>
       </section>
 
       <section class="pdf-ai-review" id="pdf-ai-review" hidden>
         <div class="section-heading">
           <div>
-            <span class="drawer-kicker">AI proposal</span>
+            <span class="drawer-kicker" id="pdf-review-source-kicker">Extraction proposal</span>
             <h3>Review before saving</h3>
           </div>
           <span id="pdf-ai-duplicate" class="pdf-ai-duplicate" hidden></span>
@@ -174,11 +179,26 @@ function createUi() {
           <div class="section-heading">
             <div>
               <h3>Proposed topics</h3>
-              <span class="muted">Uncheck, rename, or edit any topic before saving.</span>
+              <span class="muted">AI suggestions can be accepted, rejected or edited. Local citation extraction does not invent topics.</span>
             </div>
             <button type="button" id="pdf-ai-add-topic" class="quiet-button">+ Topic</button>
           </div>
           <div id="pdf-ai-topics" class="pdf-ai-topics"></div>
+        </section>
+
+        <section class="pdf-reference-section" id="pdf-reference-section" hidden>
+          <div class="section-heading">
+            <div>
+              <h3>Extracted references</h3>
+              <span id="pdf-reference-summary" class="muted"></span>
+            </div>
+            <div class="pdf-reference-bulk-actions">
+              <button type="button" id="pdf-reference-accept-all" class="quiet-button">Accept all</button>
+              <button type="button" id="pdf-reference-reject-all" class="quiet-button">Reject all</button>
+            </div>
+          </div>
+          <p class="muted pdf-reference-note">Accepted entries are stored as reviewed extraction provenance on the paper. Citation graph edges are created only after a later resolver maps a reference to a canonical paper.</p>
+          <div id="pdf-reference-list" class="pdf-reference-list"></div>
         </section>
 
         <section id="pdf-ai-warnings-section" class="pdf-ai-warnings" hidden>
@@ -188,7 +208,7 @@ function createUi() {
 
         <div class="pdf-ai-review-actions">
           <button type="button" id="pdf-ai-save">Save reviewed paper</button>
-          <button type="button" id="pdf-ai-reanalyze" class="quiet-button">Analyze again</button>
+          <button type="button" id="pdf-ai-reanalyze" class="quiet-button">Run extraction again</button>
           <button type="button" id="pdf-ai-discard" class="quiet-button">Discard</button>
         </div>
       </section>
@@ -220,6 +240,35 @@ function topicRow(topic = {}) {
   return row;
 }
 
+function referenceRow(reference = {}) {
+  const row = document.createElement("article");
+  row.className = "pdf-reference-row";
+  row.__paperMapReference = structuredClone(reference);
+  const identifiers = [];
+  if (reference.doi) identifiers.push(`<span class="reference-id">DOI ${escapeHtml(reference.doi)}</span>`);
+  if (reference.arxivId) identifiers.push(`<span class="reference-id">arXiv ${escapeHtml(reference.arxivId)}</span>`);
+  if (reference.year) identifiers.push(`<span class="reference-id">${escapeHtml(reference.year)}</span>`);
+  const pages = reference.pageStart === reference.pageEnd
+    ? `p. ${reference.pageStart}`
+    : `pp. ${reference.pageStart}–${reference.pageEnd}`;
+  row.innerHTML = `
+    <label class="pdf-reference-use" title="Include this extracted reference">
+      <input type="checkbox" data-reference-use checked />
+      <span class="visually-hidden">Include reference</span>
+    </label>
+    <div class="pdf-reference-body">
+      <div class="pdf-reference-meta">
+        <strong>${escapeHtml(reference.label ? `[${reference.label}]` : `#${reference.index || "?"}`)}</strong>
+        <span>${escapeHtml(pages)}</span>
+        <span>${Math.round((Number(reference.confidence) || 0) * 100)}% confidence</span>
+        ${identifiers.join("")}
+      </div>
+      <p>${escapeHtml(reference.rawText || "")}</p>
+    </div>
+  `;
+  return row;
+}
+
 function authorsFromTextarea(value) {
   return String(value || "")
     .split(/\n+/)
@@ -231,11 +280,21 @@ function commaList(value) {
   return Array.from(new Set(String(value || "").split(/[,;]+/).map((item) => item.trim()).filter(Boolean)));
 }
 
-function paperFromReview(ui, file, model) {
+function reviewedReferences(ui) {
+  return Array.from(ui.dialog.querySelectorAll(".pdf-reference-row"))
+    .filter((row) => $("[data-reference-use]", row)?.checked)
+    .map((row) => ({
+      ...structuredClone(row.__paperMapReference || {}),
+      reviewed: true,
+    }));
+}
+
+function paperFromReview(ui, file, context) {
   const yearValue = Number($("#pdf-review-year", ui.dialog).value);
   const doi = normalizeDoi($("#pdf-review-doi", ui.dialog).value);
   const arxivId = clean($("#pdf-review-arxiv", ui.dialog).value).replace(/^arxiv:\s*/i, "");
-  return {
+  const local = context.mode === "local";
+  const paper = {
     id: doi ? `doi:${doi}` : arxivId ? `arxiv:${arxivId.toLowerCase()}` : `local:${crypto.randomUUID()}`,
     title: clean($("#pdf-review-title", ui.dialog).value),
     authors: authorsFromTextarea($("#pdf-review-authors", ui.dialog).value),
@@ -255,15 +314,25 @@ function paperFromReview(ui, file, model) {
     relevance: 3,
     starred: false,
     citationCount: null,
-    source: "ai-pdf",
+    source: local ? "local-pdf" : "ai-pdf",
     sourceFileName: file?.name || "",
-    aiExtraction: {
-      provider: "openai",
-      model,
+    extractedReferences: reviewedReferences(ui),
+    pdfExtraction: {
+      provider: local ? "rust-wasm" : "openai",
+      engine: local ? context.details?.engine || "paper-map-rust-pdf" : context.model,
+      layout: local ? context.details?.layout || null : null,
       reviewedAt: new Date().toISOString(),
     },
     importedAt: new Date().toISOString(),
   };
+  if (!local) {
+    paper.aiExtraction = {
+      provider: "openai",
+      model: context.model,
+      reviewedAt: paper.pdfExtraction.reviewedAt,
+    };
+  }
+  return paper;
 }
 
 function matchingPaper(library, incoming) {
@@ -306,7 +375,8 @@ function reviewedTopics(ui, library) {
   return { topics, ids: Array.from(new Set(ids)) };
 }
 
-function fillReview(ui, metadata) {
+function fillReview(ui, metadata, mode) {
+  $("#pdf-review-source-kicker", ui.dialog).textContent = mode === "local" ? "Local Rust/WASM proposal" : "AI proposal";
   $("#pdf-review-title", ui.dialog).value = metadata.title || "";
   $("#pdf-review-authors", ui.dialog).value = (metadata.authors || []).join("\n");
   $("#pdf-review-year", ui.dialog).value = metadata.year || "";
@@ -322,6 +392,13 @@ function fillReview(ui, metadata) {
   topicContainer.replaceChildren(...(metadata.topics || []).map(topicRow));
   if (!topicContainer.children.length) topicContainer.append(topicRow({ confidence: 0 }));
 
+  const references = metadata.references || [];
+  const referenceSection = $("#pdf-reference-section", ui.dialog);
+  const referenceList = $("#pdf-reference-list", ui.dialog);
+  referenceList.replaceChildren(...references.map(referenceRow));
+  referenceSection.hidden = references.length === 0;
+  $("#pdf-reference-summary", ui.dialog).textContent = metadata.localExtraction?.summary || `${references.length} references`;
+
   const warnings = $("#pdf-ai-warnings", ui.dialog);
   const warningSection = $("#pdf-ai-warnings-section", ui.dialog);
   warnings.replaceChildren(...(metadata.warnings || []).map((warning) => {
@@ -332,9 +409,9 @@ function fillReview(ui, metadata) {
   warningSection.hidden = warnings.children.length === 0;
 }
 
-async function updateDuplicateHint(ui, file, model) {
+async function updateDuplicateHint(ui, file, context) {
   const library = await loadLibrary();
-  const incoming = paperFromReview(ui, file, model);
+  const incoming = paperFromReview(ui, file, context);
   const existing = incoming.title ? matchingPaper(library, incoming) : null;
   const hint = $("#pdf-ai-duplicate", ui.dialog);
   hint.hidden = !existing;
@@ -348,12 +425,18 @@ function init() {
 
   let selectedFile = null;
   let controller = null;
+  let extractionContext = {
+    mode: "ai",
+    model: storedModel(),
+    details: null,
+  };
 
   const keyInput = $("#pdf-ai-key", ui.dialog);
   const modelInput = $("#pdf-ai-model", ui.dialog);
   const rememberInput = $("#pdf-ai-remember-key", ui.dialog);
   const analysisStatus = $("#pdf-ai-analysis-status", ui.dialog);
   const analyzeButton = $("#pdf-ai-analyze", ui.dialog);
+  const localButton = $("#pdf-local-extract", ui.dialog);
   const cancelButton = $("#pdf-ai-cancel-analysis", ui.dialog);
   const review = $("#pdf-ai-review", ui.dialog);
 
@@ -371,11 +454,17 @@ function init() {
 
   function showFile(file) {
     selectedFile = file;
+    extractionContext = { mode: "ai", model: clean(modelInput.value) || DEFAULT_PDF_AI_MODEL, details: null };
     $("#pdf-ai-file-name", ui.dialog).textContent = file.name;
     $("#pdf-ai-file-size", ui.dialog).textContent = `${(file.size / 1024 / 1024).toFixed(1)} MB`;
     review.hidden = true;
-    analysisStatus.textContent = file.size > MAX_INLINE_PDF_BYTES ? "This PDF exceeds the 25 MB inline-analysis limit." : "Ready for analysis.";
+    $("#pdf-reference-list", ui.dialog).replaceChildren();
+    $("#pdf-reference-section", ui.dialog).hidden = true;
+    analysisStatus.textContent = file.size > MAX_INLINE_PDF_BYTES
+      ? "Ready for local extraction. This PDF exceeds the 25 MB AI inline-analysis limit."
+      : "Ready for local extraction or AI analysis.";
     analyzeButton.disabled = file.size > MAX_INLINE_PDF_BYTES;
+    localButton.disabled = false;
     if (!ui.dialog.open) ui.dialog.showModal();
   }
 
@@ -400,6 +489,40 @@ function init() {
   modelInput.addEventListener("change", () => saveModel(clean(modelInput.value) || DEFAULT_PDF_AI_MODEL));
 
   $("#pdf-ai-add-topic", ui.dialog).addEventListener("click", () => $("#pdf-ai-topics", ui.dialog).append(topicRow({ confidence: 1 })));
+  $("#pdf-reference-accept-all", ui.dialog).addEventListener("click", () => {
+    for (const checkbox of ui.dialog.querySelectorAll("[data-reference-use]")) checkbox.checked = true;
+  });
+  $("#pdf-reference-reject-all", ui.dialog).addEventListener("click", () => {
+    for (const checkbox of ui.dialog.querySelectorAll("[data-reference-use]")) checkbox.checked = false;
+  });
+
+  async function extractLocal() {
+    if (!selectedFile || controller) return;
+    localButton.disabled = true;
+    analyzeButton.disabled = true;
+    analysisStatus.textContent = "Parsing PDF layout and detecting bibliography locally…";
+    setGlobalStatus(`Extracting citations from ${selectedFile.name} locally…`, "loading");
+    try {
+      const metadata = await extractPdfCitationsLocally(selectedFile);
+      extractionContext = {
+        mode: "local",
+        model: clean(modelInput.value) || DEFAULT_PDF_AI_MODEL,
+        details: metadata.localExtraction,
+      };
+      fillReview(ui, metadata, "local");
+      review.hidden = false;
+      await updateDuplicateHint(ui, selectedFile, extractionContext);
+      analysisStatus.textContent = `Local extraction complete: ${metadata.localExtraction?.summary || "review the detected references"}.`;
+      setGlobalStatus("Local PDF citation extraction complete; awaiting your review.", "ready");
+      $("#pdf-review-title", ui.dialog).focus();
+    } catch (error) {
+      analysisStatus.textContent = error.message || String(error);
+      setGlobalStatus(error.message || String(error), "error");
+    } finally {
+      localButton.disabled = false;
+      analyzeButton.disabled = selectedFile?.size > MAX_INLINE_PDF_BYTES;
+    }
+  }
 
   async function analyze() {
     if (!selectedFile || controller) return;
@@ -409,17 +532,19 @@ function init() {
     rememberApiKey(apiKey, rememberInput.checked);
     controller = new AbortController();
     analyzeButton.disabled = true;
+    localButton.disabled = true;
     cancelButton.hidden = false;
-    analysisStatus.textContent = "Analyzing PDF and extracting topics…";
-    setGlobalStatus(`Analyzing ${selectedFile.name}…`, "loading");
+    analysisStatus.textContent = "Analyzing PDF and extracting metadata/topics with AI…";
+    setGlobalStatus(`Analyzing ${selectedFile.name} with AI…`, "loading");
 
     try {
       const metadata = await analyzePdfWithOpenAI({ file: selectedFile, apiKey, model, signal: controller.signal });
-      fillReview(ui, metadata);
+      extractionContext = { mode: "ai", model, details: null };
+      fillReview(ui, metadata, "ai");
       review.hidden = false;
-      await updateDuplicateHint(ui, selectedFile, model);
-      analysisStatus.textContent = "Analysis complete. Review all fields before saving.";
-      setGlobalStatus("PDF analysis complete; awaiting your review.", "ready");
+      await updateDuplicateHint(ui, selectedFile, extractionContext);
+      analysisStatus.textContent = "AI analysis complete. Review all fields before saving.";
+      setGlobalStatus("PDF AI analysis complete; awaiting your review.", "ready");
       $("#pdf-review-title", ui.dialog).focus();
     } catch (error) {
       if (error?.name === "AbortError") {
@@ -432,16 +557,21 @@ function init() {
     } finally {
       controller = null;
       analyzeButton.disabled = selectedFile?.size > MAX_INLINE_PDF_BYTES;
+      localButton.disabled = false;
       cancelButton.hidden = true;
     }
   }
 
+  localButton.addEventListener("click", extractLocal);
   analyzeButton.addEventListener("click", analyze);
-  $("#pdf-ai-reanalyze", ui.dialog).addEventListener("click", analyze);
+  $("#pdf-ai-reanalyze", ui.dialog).addEventListener("click", () => {
+    if (extractionContext.mode === "local") extractLocal();
+    else analyze();
+  });
   cancelButton.addEventListener("click", () => controller?.abort());
 
   for (const selector of ["#pdf-review-title", "#pdf-review-year", "#pdf-review-doi", "#pdf-review-arxiv"]) {
-    $(selector, ui.dialog).addEventListener("change", () => updateDuplicateHint(ui, selectedFile, clean(modelInput.value) || DEFAULT_PDF_AI_MODEL));
+    $(selector, ui.dialog).addEventListener("change", () => updateDuplicateHint(ui, selectedFile, extractionContext));
   }
 
   $("#pdf-ai-save", ui.dialog).addEventListener("click", async () => {
@@ -449,8 +579,7 @@ function init() {
     const saveButton = $("#pdf-ai-save", ui.dialog);
     saveButton.disabled = true;
     try {
-      const model = clean(modelInput.value) || DEFAULT_PDF_AI_MODEL;
-      const { library, existing, incoming } = await updateDuplicateHint(ui, selectedFile, model);
+      const { library, existing, incoming } = await updateDuplicateHint(ui, selectedFile, extractionContext);
       if (!incoming.title) throw new Error("Title is required before saving.");
 
       const topicResult = reviewedTopics(ui, library);
@@ -463,7 +592,7 @@ function init() {
         putTopics(topicResult.topics),
       ]);
 
-      setGlobalStatus(existing ? "Reviewed PDF metadata merged into the existing paper." : "Reviewed PDF paper saved locally.", "ready");
+      setGlobalStatus(existing ? "Reviewed PDF data merged into the existing paper." : "Reviewed PDF paper saved locally.", "ready");
       ui.dialog.close();
       window.location.reload();
     } catch (error) {
