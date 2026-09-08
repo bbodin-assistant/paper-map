@@ -207,6 +207,7 @@ def main():
         )
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI analysis widget")
 
+        wait_click(driver, ".pdf-ai-provider-settings > summary")
         key_input = wait_displayed(driver, "#pdf-ai-key")
         key_input.send_keys("selenium-test-api-key")
         wait_click(driver, "#pdf-ai-analyze")
