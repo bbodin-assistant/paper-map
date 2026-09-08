@@ -82,10 +82,18 @@ def install_openai_fetch_mock(driver):
     )
 
 
+def center_element(driver, element):
+    driver.execute_script(
+        "arguments[0].scrollIntoView({block: 'center', inline: 'nearest', behavior: 'instant'});",
+        element,
+    )
+
+
 def replace_field(driver, selector, value):
     field = wait_displayed(driver, selector)
     assert_true(field.is_enabled(), f"Review field {selector} should be editable")
     assert_true(field.get_attribute("readonly") is None, f"Review field {selector} should not be readonly")
+    center_element(driver, field)
     field.click()
     field.send_keys(Keys.CONTROL, "a")
     field.send_keys(value)
@@ -218,15 +226,18 @@ def main():
         accepted_checkbox = topic_rows[1].find_element(By.CSS_SELECTOR, "[data-topic-use]")
         assert_true(rejected_checkbox.is_selected(), "Proposed topic should be accepted by default")
         assert_true(accepted_checkbox.is_selected(), "Proposed topic should be accepted by default")
+        center_element(driver, rejected_checkbox)
         rejected_checkbox.click()
         assert_true(not rejected_checkbox.is_selected(), "Topic reject control should uncheck the rejected topic")
         assert_true(accepted_checkbox.is_selected(), "Accepted topic should remain selected")
 
         accepted_name = topic_rows[1].find_element(By.CSS_SELECTOR, "[data-topic-name]")
+        center_element(driver, accepted_name)
         accepted_name.click()
         accepted_name.send_keys(Keys.CONTROL, "a")
         accepted_name.send_keys("Accepted Topic Edited")
         accepted_description = topic_rows[1].find_element(By.CSS_SELECTOR, "[data-topic-description]")
+        center_element(driver, accepted_description)
         accepted_description.click()
         accepted_description.send_keys(Keys.CONTROL, "a")
         accepted_description.send_keys("Accepted and edited by Selenium before save.")
@@ -239,6 +250,7 @@ def main():
         save_screenshot(driver, "08-pdf-review-edited.png", dialog)
         save_button = wait_displayed(driver, "#pdf-ai-save")
         assert_true(save_button.is_enabled(), "Final save action should be enabled after review")
+        center_element(driver, save_button)
         save_button.click()
         wait.until(EC.staleness_of(save_button))
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
