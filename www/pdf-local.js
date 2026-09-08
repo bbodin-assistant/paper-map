@@ -1,4 +1,4 @@
-const WASM_MODULE_URL = "../pkg/paper_map_wasm.js";
+const WASM_MODULE_URL = "./pkg/paper_map_wasm.js";
 let wasmPromise = null;
 
 if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-local-pdf]')) {
