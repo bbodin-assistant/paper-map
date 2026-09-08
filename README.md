@@ -9,6 +9,7 @@ The application is designed for static hosting. There is no application backend 
 - Store papers, citation edges, annotations, tags, topics, and UI state locally in IndexedDB.
 - Import and export a portable Paper Map JSON database.
 - Import BibTeX and enrich papers from Semantic Scholar when identifiers are available.
+- Import a research PDF with AI-assisted metadata and topic extraction, with an explicit review step before saving.
 - Load a small bundled demo dataset without mixing it into a user's saved library unless requested.
 - Explore two map modes:
   - **Citation map** — paper nodes linked by citation/reference relationships.
@@ -30,7 +31,12 @@ www/
   graph.js                Citation and topic SVG rendering
   import-export.js        JSON / BibTeX import and export
   semantic-scholar.js     Scholarly-data provider adapter
+  pdf-ai.js               OpenAI PDF metadata/topic extraction adapter
+  pdf-ai-import.js        Reviewed PDF import workflow
+  pdf-ai-import.css       PDF review UI styles
   demo-data.js            Bundled demo library
+tests/
+  pdf-ai.test.mjs         PDF metadata normalization tests
 ROADMAP.md                 Product and implementation roadmap
 AGENTS.md                  Project-specific implementation guide
 ```
@@ -59,8 +65,19 @@ The repository's demo records are source-controlled only to make the application
 
 V1 uses the Semantic Scholar Academic Graph API through an isolated provider module. Expansion is initiated by the user from a selected paper. Provider identifiers are retained so subsequent expansion can reuse the same scholarly record.
 
-The provider layer is intentionally replaceable: OpenAlex, Crossref, Zotero, local AI-assisted PDF extraction, or another source can be added without changing the core database schema or map renderer.
+PDF import uses a separate OpenAI Responses API adapter. The selected PDF is sent directly from the browser as an inline file input with `store: false`. The user supplies the API key; it is not committed or saved in IndexedDB. By default it is kept only in the password field, with an explicit option to retain it in `sessionStorage` for the current browser tab.
 
-## Planned import paths
+The AI result is treated as a proposal. Title, authors, year, venue, type, DOI, arXiv ID, URL, abstract, keywords, proposed topics, confidence values, and warnings are shown in a review dialog. The paper and accepted topics are written to IndexedDB only after **Save reviewed paper** is pressed. Existing papers are merged using the same conservative identifier/title-year rules as other imports.
 
-V1 supports Paper Map JSON and BibTeX. The data model is already structured for later PDF/AI ingestion, where a local or user-configured AI adapter can extract bibliographic metadata and propose tags/topics before the user accepts them.
+The provider layer remains replaceable: OpenAlex, Crossref, Zotero, another AI provider, or local PDF extraction can be added without changing the core database schema or map renderer.
+
+## Import paths
+
+Current import paths are:
+
+- Paper Map JSON backup / restore
+- BibTeX
+- DOI, arXiv ID, Semantic Scholar ID, or title through Semantic Scholar
+- PDF through reviewed AI-assisted extraction
+
+The PDF workflow currently supports inline PDFs up to 25 MB. The PDF itself is not stored in IndexedDB; only reviewed bibliographic metadata and topic records are saved locally.
