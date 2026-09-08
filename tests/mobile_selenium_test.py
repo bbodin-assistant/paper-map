@@ -218,7 +218,7 @@ def main():
         driver.get(TEST_URL)
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
         wait.until(lambda d: "Paper Map" in d.find_element(By.CSS_SELECTOR, ".brand strong").text)
-        wait.until(lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").text)
+        wait.until(lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
 
         assert_no_page_horizontal_overflow(driver)
         assert_widget_text_visible(driver, ".app-header", "mobile app header")
@@ -244,7 +244,7 @@ def main():
         run_ocr(ocr_shot, ["Library", "Load demo", "Import PDF with AI"])
 
         wait_click(driver, "#load-demo")
-        wait.until(lambda d: int(d.find_element(By.ID, "visible-paper-count").text or "0") > 0)
+        wait.until(lambda d: int(d.find_element(By.ID, "visible-paper-count").get_attribute("textContent") or "0") > 0)
         close_details_if_open(driver, "#library-menu")
         assert_no_page_horizontal_overflow(driver)
 
