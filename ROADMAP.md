@@ -6,9 +6,9 @@ Paper Map is a private, local-first research atlas for one researcher. The map i
 
 The application has three related layers:
 
-1. **Paper library** — canonical metadata, personal annotations, tags, status, relevance, links, and provider identifiers.
+1. **Paper library** — canonical metadata, personal annotations, tags, status, relevance, links, provider identifiers, and reviewed extraction provenance.
 2. **Citation graph** — directed paper-to-paper relationships, with on-demand expansion in either direction.
-3. **Thematic graph** — topic blocks connected when papers/citations bridge themes. Themes may come from provider metadata, predefined taxonomies, manual curation, or later AI suggestions.
+3. **Thematic graph** — topic blocks connected when papers/citations bridge themes. Themes may come from provider metadata, predefined taxonomies, manual curation, or optional AI suggestions.
 
 ## V1 information model
 
@@ -34,10 +34,13 @@ Each paper can contain:
 - relevance score
 - starred flag
 - import provenance and last-enriched timestamp
+- reviewed local-PDF extraction provenance, including accepted raw references and layout/bibliography evidence
 
 ### Citation edge
 
 A directed edge stores `citingPaperId -> citedPaperId`, provenance, and whether the edge is confirmed by an external provider or manually entered.
+
+A raw bibliography entry is not yet a citation edge. It becomes eligible for an edge only after identifier/provider resolution identifies a canonical target paper.
 
 ### Topic
 
@@ -72,7 +75,7 @@ Topic connections are derived initially from cross-topic citation edges. Later v
 - Block size reflects number of papers in the filtered library.
 - Connections reflect cross-topic citation traffic.
 - Clicking a block filters/highlights its papers.
-- Topic blocks expose source/provenance so manual, provider, taxonomy and future AI themes can coexist.
+- Topic blocks expose source/provenance so manual, provider, taxonomy and AI themes can coexist.
 
 ### Paper drawer
 
@@ -92,35 +95,50 @@ Actions:
 
 ## Import and enrichment
 
-### V1
+### Implemented V1/V1.1 paths
 
 1. Paper Map JSON backup/restore.
 2. BibTeX import.
 3. DOI/title enrichment through a provider adapter.
 4. Semantic Scholar on-demand references/citations.
 5. Bundled demo dataset.
+6. Reviewed AI-assisted PDF metadata/topic extraction.
+7. Deterministic local Rust/WASM PDF citation extraction:
+   - parse PDF text/layout from in-memory bytes
+   - detect explicit bibliography headings
+   - conservative late-document fallback when no heading is found
+   - segment numbered and author/year references
+   - extract DOI, modern/legacy arXiv IDs, year, confidence and page provenance
+   - accept/reject each extracted reference before persistence
 
-### V1.1
+### Next citation-import milestone
 
-- arXiv identifier/URL import.
-- drag/drop DOI and bibliographic text.
-- better duplicate resolution across DOI, provider ID, title/year.
-- batch enrichment queue with explicit rate limiting.
+- Resolve accepted extracted references to canonical papers:
+  1. DOI direct lookup.
+  2. arXiv direct lookup.
+  3. provider title/author/year matching for identifier-less entries.
+- Show ambiguous matches in a resolver review queue.
+- Create `source paper -> resolved reference` citation edges only after resolution.
+- Record resolver provenance and match confidence.
+- Batch resolution with explicit rate limiting and cancellation.
 
-### V1.2 — PDF and AI-assisted ingestion
+### Later PDF ingestion
 
-- local PDF text/metadata extraction.
-- detect title/authors/DOI/arXiv from first pages and embedded metadata.
-- optional user-configured AI adapter for metadata cleanup, abstract summarisation, taxonomy suggestions, tags and thematic links.
-- all AI suggestions enter a review queue before becoming canonical local data.
+- first-page/embedded metadata extraction for source-paper title/authors/DOI/arXiv
+- better two-column and hanging-indent bibliography segmentation using word coordinates
+- in-text citation markers mapped to bibliography entries
+- OCR path for scanned/image-only PDFs
+- optional user-configured AI adapter for metadata cleanup, abstract summarisation, taxonomy suggestions, tags and thematic links
+- all AI suggestions remain reviewed before becoming canonical local data
 
 ## Data ownership and portability
 
 - IndexedDB is the canonical live database.
-- No personal bibliography is committed to GitHub.
+- No personal bibliography, PDFs, extracted references, notes, or API keys are committed to GitHub.
 - One-click full JSON backup contains papers, citations, topics, annotations and settings needed to reconstruct the atlas.
 - Import uses schema versioning and migrations.
 - A demo dataset lives in source control and is loaded explicitly.
+- Generated WASM output is a build artifact, not source-controlled data.
 
 ## Provider strategy
 
@@ -139,19 +157,22 @@ Future adapters: OpenAlex, Crossref, arXiv, Zotero, local files and optional AI 
 
 Provider results are normalized before entering IndexedDB. This prevents external API schemas from leaking into the UI and makes provenance explicit.
 
+The Rust/WASM PDF extractor is not a provider: it performs no network access and returns local evidence that may later be passed to a resolver provider.
+
 ## Performance strategy
 
-### V1
+### Current
 
 - Plain browser ES modules.
 - IndexedDB for persistent structured data.
 - SVG for graph rendering.
 - Lightweight force simulation written in JavaScript for the initial graph sizes.
 - Bounded expansion requests.
+- Rust/WebAssembly for deterministic PDF parsing, an isolated CPU-heavy local task with a stable byte-input / structured-output boundary.
 
 ### Scale trigger
 
-Move graph indexing/layout work into a Web Worker when the local graph grows large enough to affect interaction. Introduce Rust/WebAssembly only after profiling shows a concrete bottleneck; keep the UI/provider/storage contracts unchanged.
+Move graph indexing/layout work into a Web Worker when the local graph grows large enough to affect interaction. Keep Rust/WASM focused on measured computation-heavy boundaries; do not migrate ordinary UI/provider/storage code for architectural symmetry.
 
 ## Delivery phases
 
@@ -182,14 +203,16 @@ Move graph indexing/layout work into a Web Worker when the local graph grows lar
 - richer taxonomy editor
 - batch enrichment
 
-### Phase 4 — assisted ingestion
+### Phase 4 — assisted/systematic ingestion
 
-- PDF parser
-- AI adapter contract
-- metadata/tag/topic suggestion review queue
-- thematic-link suggestions
+- reviewed AI adapter
+- deterministic Rust/WASM bibliography/citation extractor
+- extracted-reference review and persistence
+- canonical reference resolver and citation-edge creation
+- source-paper metadata extraction
+- optional OCR and in-text citation mapping
 
-## V1 acceptance criteria
+## Acceptance criteria
 
 - Reloading the page restores the same local library and annotations.
 - Exporting then importing a database reconstructs papers, citations and topics.
@@ -198,4 +221,8 @@ Move graph indexing/layout work into a Web Worker when the local graph grows lar
 - Search plus year/author/venue/type/topic/star filters alter the visible map.
 - Citation expansion never happens recursively without an explicit user action.
 - A provider failure leaves the existing local library intact and reports the error.
+- Local systematic PDF extraction performs no network request.
+- A readable PDF bibliography can be reviewed before accepted references are persisted.
+- DOI/arXiv identifiers are never invented for unresolved entries.
+- Scanned PDFs fail clearly as OCR-required rather than yielding fabricated citations.
 - No private research data is required at build or deployment time.
