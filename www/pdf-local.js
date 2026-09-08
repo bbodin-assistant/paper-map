@@ -1,6 +1,14 @@
 const WASM_MODULE_URL = "../pkg/paper_map_wasm.js";
 let wasmPromise = null;
 
+if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-local-pdf]')) {
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = "./pdf-local.css";
+  link.dataset.paperMapLocalPdf = "true";
+  document.head.append(link);
+}
+
 function fileStem(name) {
   return String(name || "paper")
     .replace(/\.pdf$/i, "")
