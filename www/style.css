@@ -225,6 +225,7 @@ main { height: calc(100vh - var(--header-height)); padding: 0 14px 14px; }
 .library-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-top: 14px; }
 
 .active-topic-filter { display: flex; align-items: center; gap: 7px; min-height: 32px; padding: 5px 11px; border-top: 1px solid #e2e5e2; color: #64707a; font-size: 11px; }
+.active-topic-filter[hidden] { display: none; }
 .active-topic-filter strong { color: #26323d; }
 .active-topic-filter button { margin-left: auto; border: 0; padding: 2px 7px; background: transparent; font-size: 18px; }
 
