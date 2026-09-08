@@ -16,7 +16,8 @@ test:
 	node --check www/pdf-ai.js
 	node --check www/pdf-ai-import.js
 	node --test tests/*.test.mjs
-	python3 -m py_compile tests/mobile_selenium_test.py
+	python3 -m py_compile tests/mobile_selenium_test.py tests/pdf_review_selenium_test.py
 
 test-ui-mobile:
 	TEST_URL="$(TEST_URL)" python3 tests/mobile_selenium_test.py
+	TEST_URL="$(TEST_URL)" python3 tests/pdf_review_selenium_test.py
