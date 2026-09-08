@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Paper Map</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand" aria-label="Paper Map">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>
+          <strong>Paper Map <span class="app-version">v0.1</span></strong>
+          <small>local research atlas</small>
+        </span>
+      </div>
+
+      <div class="header-search">
+        <label class="visually-hidden" for="global-search">Search papers</label>
+        <input id="global-search" type="search" placeholder="Search title, author, abstract, venue, tag…" autocomplete="off" />
+      </div>
+
+      <div class="header-tools">
+        <div id="library-status" class="status idle" aria-live="polite">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="library-status-text">Opening local library…</span>
+        </div>
+        <button type="button" class="quiet-button" id="about-button" aria-expanded="false" aria-controls="about-panel">About</button>
+      </div>
+    </header>
+
+    <div id="about-panel" class="about-panel" hidden role="dialog" aria-label="About Paper Map">
+      <strong>Paper Map</strong>
+      <p>A browser-local bibliography, citation graph and thematic research atlas. Your working library stays in IndexedDB on this browser unless you explicitly export it.</p>
+      <p>Citation expansion is performed on demand through scholarly-data providers. The bundled demo can be used entirely offline after the page is loaded.</p>
+      <a href="https://github.com/bbodin-assistant/paper-map" target="_blank" rel="noreferrer">GitHub repository ↗</a>
+    </div>
+
+    <main>
+      <section class="atlas-shell" aria-label="Research atlas">
+        <header class="atlas-toolbar">
+          <div class="toolbar-primary">
+            <div id="map-mode" class="segmented" aria-label="Map mode">
+              <button type="button" data-mode="citations" class="selected" aria-pressed="true">Citation map</button>
+              <button type="button" data-mode="topics" aria-pressed="false">Topic map</button>
+            </div>
+
+            <div class="map-summary" aria-live="polite">
+              <strong id="visible-paper-count">0</strong>
+              <span>papers</span>
+              <span class="summary-divider">·</span>
+              <strong id="visible-edge-count">0</strong>
+              <span>citations</span>
+            </div>
+
+            <div class="toolbar-actions">
+              <button type="button" id="paper-list-button" aria-expanded="false" aria-controls="paper-list-panel">Papers</button>
+
+              <details class="toolbar-menu" id="filter-menu">
+                <summary>Filters <span id="filter-count" class="count-badge" hidden>0</span></summary>
+                <div class="drawer-panel filter-panel">
+                  <div class="drawer-heading">
+                    <div>
+                      <span class="drawer-kicker">Visible graph</span>
+                      <h2>Filters</h2>
+                    </div>
+                    <button type="button" id="clear-filters" class="quiet-button">Clear</button>
+                  </div>
+
+                  <div class="filter-grid">
+                    <label>From year <input id="filter-year-min" type="number" min="0" step="1" placeholder="Any" /></label>
+                    <label>To year <input id="filter-year-max" type="number" min="0" step="1" placeholder="Any" /></label>
+                    <label>Author <input id="filter-author" type="search" placeholder="Any author" /></label>
+                    <label>Venue <input id="filter-venue" type="search" placeholder="Any venue" /></label>
+                    <label>Type <select id="filter-type"><option value="">Any type</option></select></label>
+                    <label>Topic / tag <select id="filter-topic"><option value="">Any topic or tag</option></select></label>
+                    <label class="checkbox-row"><input id="filter-starred" type="checkbox" /> Starred papers only</label>
+                  </div>
+                </div>
+              </details>
+
+              <details class="toolbar-menu" id="library-menu">
+                <summary>Library</summary>
+                <div class="drawer-panel library-panel">
+                  <div class="drawer-heading">
+                    <div>
+                      <span class="drawer-kicker">Local database</span>
+                      <h2>Library</h2>
+                    </div>
+                  </div>
+
+                  <form id="add-paper-form" class="add-paper-form">
+                    <label for="add-paper-query">Add or resolve a paper</label>
+                    <div class="inline-control">
+                      <input id="add-paper-query" type="search" placeholder="DOI, arXiv ID, S2 ID, or title" />
+                      <button type="submit">Add</button>
+                    </div>
+                    <small>Uses Semantic Scholar on demand. Existing papers are merged conservatively.</small>
+                  </form>
+
+                  <div class="library-actions">
+                    <button type="button" id="load-demo">Load demo</button>
+                    <button type="button" id="import-button">Import .json / .bib</button>
+                    <input id="import-file" type="file" accept=".json,.bib,application/json,text/plain" hidden />
+                    <button type="button" id="export-json">Download backup</button>
+                    <button type="button" id="export-bibtex">Export visible BibTeX</button>
+                    <button type="button" id="clear-library" class="danger-button">Clear local library</button>
+                  </div>
+                </div>
+              </details>
+
+              <button type="button" id="reset-view" class="quiet-button" title="Reset map pan and zoom">Reset view</button>
+            </div>
+          </div>
+
+          <div id="active-topic-filter" class="active-topic-filter" hidden>
+            <span>Topic focus:</span>
+            <strong id="active-topic-filter-name"></strong>
+            <button type="button" id="clear-topic-focus" aria-label="Clear topic focus">×</button>
+          </div>
+        </header>
+
+        <section class="map-stage" aria-label="Paper map">
+          <svg id="paper-map" role="img" aria-label="Interactive research map"></svg>
+          <div class="map-help">Drag to pan · wheel to zoom · select a node for details</div>
+        </section>
+
+        <aside id="paper-list-panel" class="paper-list-panel" hidden aria-label="Bibliography">
+          <header>
+            <div>
+              <span class="drawer-kicker">Current view</span>
+              <h2>Bibliography</h2>
+            </div>
+            <button type="button" id="close-paper-list" class="icon-button" aria-label="Close bibliography">×</button>
+          </header>
+          <div id="paper-list" class="paper-list"></div>
+        </aside>
+      </section>
+    </main>
+
+    <div id="detail-dismiss-layer" hidden></div>
+    <aside id="paper-detail" class="paper-detail" hidden aria-label="Paper details">
+      <header class="paper-detail-header">
+        <div>
+          <span id="detail-kicker" class="drawer-kicker">Paper</span>
+          <h2 id="detail-title">Paper details</h2>
+        </div>
+        <button type="button" id="close-detail" class="icon-button" aria-label="Close paper details">×</button>
+      </header>
+
+      <div id="paper-detail-body" class="paper-detail-body">
+        <div class="paper-meta" id="detail-meta"></div>
+        <div class="paper-actions">
+          <button type="button" id="detail-star">☆ Star</button>
+          <button type="button" id="detail-copy-citation">Copy citation</button>
+          <button type="button" id="detail-copy-bibtex">Copy BibTeX</button>
+        </div>
+
+        <div class="link-actions" id="detail-links"></div>
+
+        <section class="detail-section">
+          <h3>Abstract</h3>
+          <p id="detail-abstract" class="abstract-text"></p>
+        </section>
+
+        <section class="detail-section annotation-grid">
+          <label>Reading state
+            <select id="detail-status">
+              <option value="unread">Unread</option>
+              <option value="reading">Reading</option>
+              <option value="read">Read</option>
+              <option value="key">Key paper</option>
+            </select>
+          </label>
+          <label>Relevance
+            <input id="detail-relevance" type="range" min="1" max="5" step="1" />
+            <span id="detail-relevance-value" class="range-value">3 / 5</span>
+          </label>
+          <label class="full-width">Tags
+            <input id="detail-tags" type="text" placeholder="comma-separated personal tags" />
+          </label>
+          <label class="full-width">Primary topic
+            <select id="detail-topic"></select>
+          </label>
+          <label class="full-width">Notes
+            <textarea id="detail-notes" rows="6" placeholder="Your notes about this paper"></textarea>
+          </label>
+        </section>
+
+        <section class="detail-section">
+          <div class="section-heading">
+            <h3>Citation graph</h3>
+            <span id="detail-citation-count" class="muted"></span>
+          </div>
+          <div class="citation-actions">
+            <button type="button" id="expand-references">Expand references</button>
+            <button type="button" id="expand-citations">Expand citing papers</button>
+          </div>
+          <small>Each action adds up to 50 papers. Repeat it to explore farther; Paper Map never recursively crawls without another action.</small>
+        </section>
+
+        <section class="detail-section danger-zone">
+          <button type="button" id="remove-paper" class="danger-button">Remove from local library</button>
+        </section>
+      </div>
+    </aside>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
