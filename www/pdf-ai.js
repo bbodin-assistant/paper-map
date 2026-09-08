@@ -92,7 +92,7 @@ export function normalizeAiMetadata(value = {}) {
     authors: uniqueStrings(value.authors, 50),
     year: Number.isInteger(year) && year > 0 ? year : null,
     venue: cleanString(value.venue),
-    type: cleanString(value.publication_type) || "article",
+    type: cleanString(value.publication_type),
     doi: cleanString(value.doi).replace(/^https?:\/\/(dx\.)?doi\.org\//i, "").replace(/^doi:\s*/i, "").toLowerCase(),
     arxivId: cleanString(value.arxiv_id).replace(/^arxiv:\s*/i, ""),
     url: cleanString(value.url),
@@ -120,7 +120,11 @@ export async function fileToDataUrl(file) {
   }
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
-    reader.onload = () => resolve(String(reader.result || ""));
+    reader.onload = () => {
+      const result = String(reader.result || "");
+      const comma = result.indexOf(",");
+      resolve(comma >= 0 ? `data:application/pdf;base64,${result.slice(comma + 1)}` : result);
+    };
     reader.onerror = () => reject(reader.error || new Error("Could not read PDF."));
     reader.readAsDataURL(file);
   });
