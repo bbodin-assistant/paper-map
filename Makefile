@@ -12,3 +12,6 @@ test:
 	node --check www/graph.js
 	node --check www/import-export.js
 	node --check www/semantic-scholar.js
+	node --check www/pdf-ai.js
+	node --check www/pdf-ai-import.js
+	node --test tests/*.test.mjs
