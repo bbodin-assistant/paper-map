@@ -65,6 +65,11 @@ function uniqueStrings(values, limit = Infinity) {
   return result;
 }
 
+export function isPdfFile(file) {
+  if (!file) return false;
+  return file.type === "application/pdf" || String(file.name || "").toLowerCase().endsWith(".pdf");
+}
+
 export function normalizeAiMetadata(value = {}) {
   const year = Number(value.year);
   const topics = [];
@@ -134,7 +139,7 @@ function responseText(response) {
 export async function analyzePdfWithOpenAI({ file, apiKey, model = DEFAULT_PDF_AI_MODEL, signal } = {}) {
   const key = cleanString(apiKey);
   if (!key) throw new Error("Enter an OpenAI API key for PDF analysis.");
-  if (!file || file.type !== "application/pdf") throw new Error("Select a PDF file.");
+  if (!isPdfFile(file)) throw new Error("Select a PDF file.");
 
   const fileData = await fileToDataUrl(file);
   const payload = {
