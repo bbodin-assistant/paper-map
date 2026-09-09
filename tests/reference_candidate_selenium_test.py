@@ -78,7 +78,7 @@ def install_reference_provider_fetch_mock(driver):
             && (pathname.includes('/paper/search') || parsed?.searchParams?.has('query'))
           ) {
             window.__paperMapCandidateSearchUrls.push(text);
-            return new Response(JSON.stringify({
+            const payload = {
               data: [
                 {
                   paperId: '1111111111111111111111111111111111111111',
@@ -105,7 +105,13 @@ def install_reference_provider_fetch_mock(driver):
                   fieldsOfStudy: ['Computer Science'],
                 },
               ],
-            }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+            };
+            return {
+              ok: true,
+              status: 200,
+              json: async () => payload,
+              text: async () => JSON.stringify(payload),
+            };
           }
 
           return originalFetch(url, options);
