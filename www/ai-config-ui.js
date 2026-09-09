@@ -1,5 +1,4 @@
 import {
-  AI_PROVIDER_PRESETS,
   loadAiConfig,
   loadSessionApiKey,
   normalizeAiConfig,
@@ -10,8 +9,17 @@ import {
   saveSessionApiKey,
 } from "./ai-config.js";
 
+if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-ai-config]')) {
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = "./ai-config.css";
+  link.dataset.paperMapAiConfig = "true";
+  document.head.append(link);
+}
+
 const $ = (selector, root = document) => root.querySelector(selector);
 let ui = null;
+let volatileApiKey = typeof sessionStorage !== "undefined" ? loadSessionApiKey() : "";
 
 function providerNote(config) {
   if (config.provider === "openai") {
@@ -20,7 +28,7 @@ function providerNote(config) {
   if (config.provider === "ollama") {
     return "Paper Map extracts PDF text locally with Rust/WASM, then calls Ollama's OpenAI-compatible chat endpoint. Ollama ignores API keys. Browser access may require OLLAMA_ORIGINS to allow this site's origin.";
   }
-  return "Paper Map extracts PDF text locally with Rust/WASM, then calls {base URL}/chat/completions with OpenAI-compatible structured output. The server must allow browser CORS requests.";
+  return `Paper Map extracts PDF text locally with Rust/WASM, then calls ${config.baseUrl}/chat/completions with OpenAI-compatible structured output. The server must allow browser CORS requests.`;
 }
 
 function createUi() {
@@ -100,7 +108,7 @@ function createUi() {
     ui.provider.value = normalized.provider;
     ui.baseUrl.value = normalized.baseUrl;
     ui.model.value = normalized.model;
-    if (!preserveKey) ui.key.value = loadSessionApiKey();
+    if (!preserveKey) ui.key.value = volatileApiKey || loadSessionApiKey();
     ui.remember.checked = Boolean(loadSessionApiKey());
     ui.keyHint.textContent = providerNeedsApiKey(normalized) ? "required" : "optional";
     ui.key.placeholder = normalized.provider === "ollama" ? "not required" : "Bearer token";
@@ -125,8 +133,6 @@ function createUi() {
 
   ui.provider.addEventListener("change", () => {
     const preset = providerPreset(ui.provider.value);
-    ui.baseUrl.value = preset.baseUrl;
-    ui.model.value = preset.model;
     render({ provider: preset.id, baseUrl: preset.baseUrl, model: preset.model });
   });
 
@@ -136,7 +142,8 @@ function createUi() {
       baseUrl: ui.baseUrl.value,
       model: ui.model.value,
     });
-    saveSessionApiKey(ui.key.value, ui.remember.checked);
+    volatileApiKey = String(ui.key.value || "").trim();
+    saveSessionApiKey(volatileApiKey, ui.remember.checked);
     render(config);
     ui.status.textContent = `${providerLabel(config.provider)} selected.`;
     document.dispatchEvent(new CustomEvent("paper-map-ai-config-changed", { detail: config }));
@@ -165,7 +172,7 @@ export function openAiConfig() {
 export function aiConfigSnapshot() {
   return {
     config: loadAiConfig(),
-    apiKey: loadSessionApiKey(),
+    apiKey: volatileApiKey || loadSessionApiKey(),
   };
 }
 
