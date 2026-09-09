@@ -13,7 +13,6 @@ from mobile_selenium_test import (
     assert_true,
     assert_widget_text_visible,
     create_driver,
-    create_pdf_fixture,
     save_screenshot,
     wait_click,
     wait_displayed,
@@ -63,6 +62,55 @@ EDITED_FIELDS = {
     "#pdf-review-abstract": "Edited abstract saved by the mobile Selenium PDF review test.",
     "#pdf-review-keywords": "selenium, reviewed, editable metadata",
 }
+
+
+def pdf_escape(value):
+    return value.replace("\\", "\\\\").replace("(", "\\(").replace(")", "\\)")
+
+
+def create_ai_text_pdf_fixture():
+    ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
+    path = (ARTIFACT_DIR / "mobile-test-paper.pdf").resolve()
+    lines = [
+        "Deterministic AI Proxy Fixture",
+        "This research paper fixture contains embedded PDF text.",
+        "Paper Map must extract this text locally before calling a compatible AI server.",
+        "The external AI response itself is mocked by Selenium.",
+    ]
+    commands = ["BT", "/F1 11 Tf", "72 730 Td"]
+    for index, line in enumerate(lines):
+        if index:
+            commands.append("0 -18 Td")
+        commands.append(f"({pdf_escape(line)}) Tj")
+    commands.append("ET")
+    stream = "\n".join(commands).encode("latin-1")
+
+    objects = [
+        b"<< /Type /Catalog /Pages 2 0 R >>",
+        b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+        b"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>",
+        b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>",
+        b"<< /Length " + str(len(stream)).encode("ascii") + b" >>\nstream\n" + stream + b"\nendstream",
+    ]
+
+    output = bytearray(b"%PDF-1.4\n%\xe2\xe3\xcf\xd3\n")
+    offsets = [0]
+    for number, body in enumerate(objects, start=1):
+        offsets.append(len(output))
+        output.extend(f"{number} 0 obj\n".encode("ascii"))
+        output.extend(body)
+        output.extend(b"\nendobj\n")
+
+    xref_offset = len(output)
+    output.extend(f"xref\n0 {len(objects) + 1}\n".encode("ascii"))
+    output.extend(b"0000000000 65535 f \n")
+    for offset in offsets[1:]:
+        output.extend(f"{offset:010d} 00000 n \n".encode("ascii"))
+    output.extend(
+        f"trailer\n<< /Size {len(objects) + 1} /Root 1 0 R >>\nstartxref\n{xref_offset}\n%%EOF\n".encode("ascii")
+    )
+    path.write_bytes(output)
+    return path
 
 
 def install_compatible_fetch_mock(driver):
@@ -124,7 +172,7 @@ def configure_compatible_ai(driver):
         remember.click()
     wait_click(driver, "#ai-config-save")
     WebDriverWait(driver, WAIT_SECONDS).until(
-        lambda d: "OpenAI-compatible" in d.find_element(By.ID, "ai-config-button").get_attribute("textContent")
+        lambda d: "OpenAI-compatible" in d.find_element(By.ID, "ai-config-button").get_attribute("aria-label")
     )
     wait_click(driver, "#ai-config-close")
 
@@ -249,7 +297,7 @@ def main():
         wait_click(driver, "#library-menu > summary")
         wait_displayed(driver, "#library-menu .library-panel")
 
-        fixture = create_pdf_fixture()
+        fixture = create_ai_text_pdf_fixture()
         file_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
         file_input.send_keys(str(fixture))
         dialog = wait.until(
@@ -274,6 +322,7 @@ def main():
         assert_true(request["payload"]["response_format"]["type"] == "json_schema", "Proxy should request structured output")
         user_prompt = request["payload"]["messages"][1]["content"]
         assert_true("BEGIN PDF TEXT" in user_prompt, "Compatible providers should receive locally extracted PDF text")
+        assert_true("Deterministic AI Proxy Fixture" in user_prompt, "Proxy prompt should include text extracted from the real PDF fixture")
 
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI review widget")
         assert_true("Review before saving" in review.text, "Review heading should be visible after analysis")
