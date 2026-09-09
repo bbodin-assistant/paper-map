@@ -43,7 +43,7 @@ Abstract
     "Niki Parmar",
     "Jakob Uszkoreit",
     "Llion Jones",
-    "Aidan NGomez",
+    "Aidan N Gomez",
     "Lukasz Kaiser",
     "Illia Polosukhin",
   ]);
