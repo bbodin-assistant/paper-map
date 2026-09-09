@@ -30,8 +30,10 @@ def install_reference_provider_fetch_mock(driver):
         """
         const originalFetch = window.fetch.bind(window);
         window.__paperMapCandidateSearchUrls = [];
+        window.__paperMapProviderUrls = [];
         window.fetch = async (url, options = {}) => {
           const text = String(url);
+          window.__paperMapProviderUrls.push(text);
           let parsed = null;
           try { parsed = new URL(text, window.location.href); } catch {}
           const hostname = parsed?.hostname || '';
@@ -71,7 +73,10 @@ def install_reference_provider_fetch_mock(driver):
             }), { status: 200, headers: { 'Content-Type': 'application/json' } });
           }
 
-          if (hostname === 'api.semanticscholar.org' && pathname.endsWith('/paper/search')) {
+          if (
+            hostname === 'api.semanticscholar.org'
+            && (pathname.includes('/paper/search') || parsed?.searchParams?.has('query'))
+          ) {
             window.__paperMapCandidateSearchUrls.push(text);
             return new Response(JSON.stringify({
               data: [
@@ -161,9 +166,19 @@ def main():
         metadata_search = rows[2].find_element(By.CSS_SELECTOR, "[data-reference-search]")
         center_element(driver, metadata_search)
         metadata_search.click()
-        terminal_status = wait.until(
-            lambda d: row_status(d) if row_status(d) in {"candidates", "matched", "unresolved"} else False
-        )
+        assert_true(row_status(driver) == "resolving", "Candidate search click should enter resolving state immediately")
+        try:
+            terminal_status = wait.until(
+                lambda d: row_status(d) if row_status(d) in {"candidates", "matched", "unresolved"} else False
+            )
+        except TimeoutException:
+            rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
+            provider_urls = driver.execute_script("return window.__paperMapProviderUrls.slice();")
+            search_urls = driver.execute_script("return window.__paperMapCandidateSearchUrls.slice();")
+            raise AssertionError(
+                f"Candidate resolver did not leave resolving state; status={row_status(driver)!r}; "
+                f"row={rows[2].text!r}; provider_urls={provider_urls!r}; searches={search_urls!r}"
+            )
         rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
         search_urls = driver.execute_script("return window.__paperMapCandidateSearchUrls.slice();")
         assert_true(
