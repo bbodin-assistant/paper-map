@@ -35,12 +35,13 @@ Each paper can contain:
 - starred flag
 - import provenance and last-enriched timestamp
 - reviewed local-PDF extraction provenance, including accepted raw references and layout/bibliography evidence
+- optional canonical resolution for each reviewed reference, including provider, identifier match type, confidence, canonical metadata and provider-attempt provenance
 
 ### Citation edge
 
 A directed edge stores `citingPaperId -> citedPaperId`, provenance, and whether the edge is confirmed by an external provider or manually entered.
 
-A raw bibliography entry is not yet a citation edge. It becomes eligible for an edge only after identifier/provider resolution identifies a canonical target paper.
+A raw bibliography entry is not yet a citation edge. It becomes eligible for an edge only after identifier/provider resolution identifies a canonical target paper and that canonical paper is explicitly imported into the local library.
 
 ### Topic
 
@@ -110,17 +111,22 @@ Actions:
    - segment numbered and author/year references
    - extract DOI, modern/legacy arXiv IDs, year, confidence and page provenance
    - accept/reject each extracted reference before persistence
+8. Reviewed exact-identifier reference resolution:
+   - exact DOI lookup through Crossref
+   - exact Semantic Scholar DOI fallback when Crossref has no record
+   - exact arXiv lookup through Semantic Scholar using a canonical version-free identifier
+   - canonical title/authors/year/venue/type/URL/provider IDs normalized into a stable reference-resolution object
+   - provider, attempts and match-confidence shown in the existing review UI
+   - resolution persists only for references that remain accepted when the paper is saved
 
 ### Next citation-import milestone
 
-- Resolve accepted extracted references to canonical papers:
-  1. DOI direct lookup.
-  2. arXiv direct lookup.
-  3. provider title/author/year matching for identifier-less entries.
-- Show ambiguous matches in a resolver review queue.
-- Create `source paper -> resolved reference` citation edges only after resolution.
-- Record resolver provenance and match confidence.
-- Batch resolution with explicit rate limiting and cancellation.
+- Resolve identifier-less references by conservative provider matching on parsed title/author/year.
+- Show multiple/ambiguous candidates in a dedicated resolver review queue rather than selecting silently.
+- Add an explicit action to import accepted canonical reference records into the local paper library.
+- Create `source paper -> resolved reference` citation edges only when the canonical target paper exists locally and the user confirms the operation.
+- Batch resolution with explicit rate limiting, cancellation and retry state.
+- Preserve the exact raw bibliography text and resolver evidence when a canonical paper is imported.
 
 ### Later PDF ingestion
 
@@ -139,21 +145,25 @@ Actions:
 - Import uses schema versioning and migrations.
 - A demo dataset lives in source control and is loaded explicitly.
 - Generated WASM output is a build artifact, not source-controlled data.
+- Rust/WASM extraction is network-free; DOI/arXiv resolution is a separate explicit browser network action.
 
 ## Provider strategy
 
-The core application depends only on a small provider interface:
+The core application depends only on small provider/resolver boundaries:
 
 ```text
 resolvePaper(query)
 enrichPaper(paper)
 fetchReferences(paper, cursor, limit)
 fetchCitations(paper, cursor, limit)
+resolveExtractedReference(reference)
 ```
 
-Initial adapter: Semantic Scholar Academic Graph.
+Initial paper adapter: Semantic Scholar Academic Graph.
 
-Future adapters: OpenAlex, Crossref, arXiv, Zotero, local files and optional AI services.
+Exact-reference resolver: Crossref for DOI first, Semantic Scholar for arXiv and DOI fallback.
+
+Future adapters: OpenAlex, DataCite, Zotero, local files and optional AI services.
 
 Provider results are normalized before entering IndexedDB. This prevents external API schemas from leaking into the UI and makes provenance explicit.
 
@@ -169,6 +179,7 @@ The Rust/WASM PDF extractor is not a provider: it performs no network access and
 - Lightweight force simulation written in JavaScript for the initial graph sizes.
 - Bounded expansion requests.
 - Rust/WebAssembly for deterministic PDF parsing, an isolated CPU-heavy local task with a stable byte-input / structured-output boundary.
+- Identifier resolution runs sequentially in the review UI to avoid accidental request bursts against public scholarly APIs.
 
 ### Scale trigger
 
@@ -208,7 +219,9 @@ Move graph indexing/layout work into a Web Worker when the local graph grows lar
 - reviewed AI adapter
 - deterministic Rust/WASM bibliography/citation extractor
 - extracted-reference review and persistence
-- canonical reference resolver and citation-edge creation
+- exact DOI/arXiv canonical reference resolver with match confidence
+- canonical reference import and citation-edge creation
+- identifier-less reference matching
 - source-paper metadata extraction
 - optional OCR and in-text citation mapping
 
@@ -218,11 +231,5 @@ Move graph indexing/layout work into a Web Worker when the local graph grows lar
 - Exporting then importing a database reconstructs papers, citations and topics.
 - Demo mode produces a usable citation and topic map without network access.
 - Selecting any paper opens a detail drawer and permits local annotation edits.
-- Search plus year/author/venue/type/topic/star filters alter the visible map.
-- Citation expansion never happens recursively without an explicit user action.
-- A provider failure leaves the existing local library intact and reports the error.
-- Local systematic PDF extraction performs no network request.
-- A readable PDF bibliography can be reviewed before accepted references are persisted.
-- DOI/arXiv identifiers are never invented for unresolved entries.
-- Scanned PDFs fail clearly as OCR-required rather than yielding fabricated citations.
-- No private research data is required at build or deployment time.
+- Local PDF extraction can complete without network access.
+- Exact DOI/arXiv resolver results display provider and confidence before persistence, and unresolved references remain raw rather than becoming fabricated canonical papers.
