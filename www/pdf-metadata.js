@@ -105,8 +105,9 @@ function titleWithTrailingAuthor(pageText) {
       }
     }
 
-    const nextLine = clean(lines[index + 1] || "");
-    const followingLine = clean(lines[index + 2] || "");
+    const following = lines.slice(index + 1).map(clean).filter(Boolean);
+    const nextLine = following[0] || "";
+    const followingLine = following[1] || "";
     if (!looksLikeAuthorBlockLine(nextLine, followingLine)) continue;
     const words = normalized.split(/\s+/);
     if (words.length < 6) continue;
