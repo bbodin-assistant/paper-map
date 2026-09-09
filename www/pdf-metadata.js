@@ -13,7 +13,9 @@ function clean(value) {
 }
 
 function deglueCamelCase(value) {
-  return String(value ?? "").replace(/([\p{Ll}])([\p{Lu}])/gu, "$1 $2");
+  return String(value ?? "")
+    .replace(/([\p{Ll}])([\p{Lu}])/gu, "$1 $2")
+    .replace(/([\p{Lu}])([\p{Lu}][\p{Ll}])/gu, "$1 $2");
 }
 
 function trimIdentifierPunctuation(value) {
@@ -101,11 +103,16 @@ function splitAuthors(line) {
 
 function markedAuthors(pageText) {
   const source = deglueCamelCase(pageText);
-  const pattern = /([\p{Lu}][\p{L}'’\-]*(?:\s+(?:[\p{Lu}][\p{L}'’\-]*|da|de|del|der|di|du|la|le|van|von)){1,4})\s*[∗*†‡]+/gu;
+  const pattern = /([\p{Lu}][\p{L}'’\-]*(?:[ \t]+(?:[\p{Lu}][\p{L}'’\-]*|da|de|del|der|di|du|la|le|van|von)){1,4})[ \t]*[∗*†‡]+/gu;
   const authors = [];
   let firstIndex = -1;
   for (const match of source.matchAll(pattern)) {
-    const author = stripAuthorMarkers(match[1]);
+    let author = stripAuthorMarkers(match[1]);
+    const tokens = nameTokens(author);
+    if (tokens.length > 2 && tokens[0].length <= 3) {
+      const suffix = tokens.slice(1).join(" ");
+      if (looksLikeSingleName(suffix)) author = suffix;
+    }
     if (!looksLikeSingleName(author)) continue;
     if (firstIndex < 0) firstIndex = match.index ?? -1;
     if (!authors.some((value) => value.toLowerCase() === author.toLowerCase())) authors.push(author);
@@ -114,17 +121,19 @@ function markedAuthors(pageText) {
 }
 
 function cleanTitlePrefix(prefix) {
-  let value = String(prefix || "").trim();
+  let value = deglueCamelCase(prefix).trim();
   const reversedArxivDate = value.search(/\b\d{4}\s+(?:naJ|beF|raM|rpA|yaM|nuJ|luJ|guA|peS|tcO|voN|ceD)\b/i);
   if (reversedArxivDate >= 0) value = value.slice(0, reversedArxivDate);
-  const lines = value.split(/\r?\n/).map(clean).filter(Boolean)
-    .filter((line) => !HEADER_RE.test(line) && !DOI_RE.test(line) && !/^arxiv\s*:/i.test(line));
-  if (!lines.length) return "";
-  value = clean(lines.join(" "));
-  if (/:viXra/i.test(value)) value = value.replace(/\S*:viXra.*$/i, "");
-  const sentenceParts = value.split(/\.\s+/).map(clean).filter(Boolean);
-  if (sentenceParts.length > 1) value = sentenceParts.at(-1);
-  return clean(value);
+  value = value.replace(/\S*:vi\s*Xra.*$/i, "").trim();
+
+  const rawLines = value.split(/\r?\n/).map(clean).filter(Boolean);
+  if (rawLines.length === 1) {
+    const sentenceParts = rawLines[0].split(/\.\s+/).map(clean).filter(Boolean);
+    return clean(sentenceParts.at(-1) || "");
+  }
+
+  const lines = rawLines.filter((line) => !HEADER_RE.test(line) && !DOI_RE.test(line) && !/^arxiv\s*:/i.test(line));
+  return clean(lines.join(" "));
 }
 
 function sourceIdentifiers(lines) {
