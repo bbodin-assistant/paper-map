@@ -120,7 +120,7 @@ fn is_post_bibliography_heading(line: &str) -> bool {
 }
 
 fn numbered_reference_regex() -> Regex {
-    Regex::new(r"^\s*(?:\[(\d{1,4})\]|(\d{1,4})[.)])\s*(.*)$").expect("valid numbered reference regex")
+    Regex::new(r"^\s*(?:\[(\d{1,4})\]|(\d{1,3})[.)])\s*(.*)$").expect("valid numbered reference regex")
 }
 
 fn year_regex() -> Regex {
@@ -185,6 +185,39 @@ fn extract_year(text: &str) -> Option<u16> {
 
 fn looks_like_author_year_start(line: &str) -> bool {
     author_year_start_regex().is_match(line)
+}
+
+fn looks_like_person_name(fragment: &str) -> bool {
+    let words = fragment.split_whitespace().collect::<Vec<_>>();
+    if !(2..=4).contains(&words.len()) {
+        return false;
+    }
+    words.iter().all(|word| {
+        let token = word.trim_matches(|c: char| !c.is_alphabetic());
+        !token.is_empty() && token.chars().next().is_some_and(char::is_uppercase)
+    })
+}
+
+fn looks_like_author_list_start(line: &str) -> bool {
+    let text = line.trim();
+    if text.is_empty() || text.len() > 220 || extract_year(text).is_some() {
+        return false;
+    }
+    let comma = text.find(',');
+    let and = text.find(" and ");
+    let boundary = match (comma, and) {
+        (Some(left), Some(right)) => left.min(right),
+        (Some(index), None) | (None, Some(index)) => index,
+        (None, None) => return false,
+    };
+    looks_like_person_name(&text[..boundary])
+}
+
+fn draft_has_year(reference: &ReferenceDraft) -> bool {
+    reference
+        .lines
+        .iter()
+        .any(|line| extract_year(&line.text).is_some())
 }
 
 fn reference_signal_count(text: &str) -> usize {
@@ -315,8 +348,11 @@ fn segment_author_year(lines: &[Option<SourceLine>]) -> Vec<ReferenceDraft> {
         match item {
             None => flush_reference(&mut current, &mut output),
             Some(source) => {
-                let starts_new = looks_like_author_year_start(&source.text);
-                if starts_new && current.is_some() {
+                let current_has_year = current.as_ref().is_some_and(draft_has_year);
+                let starts_new = current_has_year
+                    && (looks_like_author_year_start(&source.text)
+                        || looks_like_author_list_start(&source.text));
+                if starts_new {
                     flush_reference(&mut current, &mut output);
                 }
                 if current.is_none() {
@@ -541,6 +577,19 @@ mod tests {
         )]);
         assert_eq!(extraction.references.len(), 3);
         assert_eq!(extraction.references[1].doi.as_deref(), Some("10.9999/example.2"));
+    }
+
+    #[test]
+    fn segments_wrapped_author_year_references_without_blank_lines() {
+        let extraction = extract_from_pages(vec![page(
+            1,
+            "References\nAlan Akbik, Duncan Blythe, and Roland Vollgraf.\n2018. Contextual string embeddings for sequence labeling.\nRami Al-Rfou, Dokook Choe, Noah Constant, Mandy\nGuo, and Llion Jones. 2018. Character-level language modeling.\nJacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.\n2019. Deep bidirectional transformers for language understanding.\nRie Kubota Ando and Tong Zhang. 2005. A framework for learning predictive structures.",
+        )]);
+        assert_eq!(extraction.references.len(), 4);
+        assert!(extraction.references[0].raw_text.starts_with("Alan Akbik"));
+        assert!(extraction.references[1].raw_text.contains("Mandy Guo, and Llion Jones. 2018"));
+        assert!(extraction.references[2].raw_text.starts_with("Jacob Devlin"));
+        assert_eq!(extraction.references[3].year, Some(2005));
     }
 
     #[test]
