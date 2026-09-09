@@ -11,12 +11,13 @@ Matthias Becker∗, Dakshina Dasari†, Saad Mubeen∗‡, Moris Behnam∗, Thom
 †Robert Bosch GmbH, Corporate Research, Renningen, Germany
 ‡Arcticus Systems AB, Järfälla, Sweden
 {matthias.becker, saad.mubeen, moris.behnam, thomas.nolte}@mdh.se
+Most of these automotive applications typically have strict timing constraints.
 Abstract—Timing analysis of cause-effect chains in automotive embedded systems.
 
 --- Page 2 ---
 Body text.`;
 
-test("extracts title and authors conservatively from the real ScienceDirect-paper front matter", () => {
+test("extracts exactly the real ScienceDirect-paper title and authors without prose", () => {
   const metadata = extractLocalPaperMetadata(SCIENCEDIRECT_PUBLIC_COPY_FRONT_MATTER, { fallbackTitle: "4877" });
   assert.equal(metadata.title, "End-to-End Timing Analysis of Cause-Effect Chains in Automotive Embedded Systems");
   assert.deepEqual(metadata.authors, [
@@ -28,6 +29,24 @@ test("extracts title and authors conservatively from the real ScienceDirect-pape
   ]);
   assert.equal(metadata.doi, "", "The public PDF copy does not expose the source-paper DOI in front matter, so local extraction must not invent it");
   assert.equal(metadata.evidence.authorCount, 5);
+});
+
+test("recovers marked authors and title from deglued arXiv front matter", () => {
+  const metadata = extractLocalPaperMetadata(`--- Page 1 ---
+Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works. Attention Is All You Need 3202 guA 2 ]LC.sc[ 7v26730.6071:viXra AshishVaswani∗ GoogleBrain avaswani@google.com NoamShazeer∗ GoogleBrain noam@google.com NikiParmar∗ GoogleResearch nikip@google.com JakobUszkoreit∗ GoogleResearch usz@google.com LlionJones∗ GoogleResearch llion@google.com AidanNGomez∗ University of Toronto aidan@cs.toronto.edu LukaszKaiser∗ GoogleBrain lukaszkaiser@google.com IlliaPolosukhin∗ illia.polosukhin@gmail.com
+Abstract
+`, { fallbackTitle: "attention-is-all-you-need" });
+  assert.equal(metadata.title, "Attention Is All You Need");
+  assert.deepEqual(metadata.authors, [
+    "Ashish Vaswani",
+    "Noam Shazeer",
+    "Niki Parmar",
+    "Jakob Uszkoreit",
+    "Llion Jones",
+    "Aidan NGomez",
+    "Lukasz Kaiser",
+    "Illia Polosukhin",
+  ]);
 });
 
 test("extracts a source DOI only when it is present in front matter", () => {
