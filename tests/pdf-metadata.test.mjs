@@ -49,6 +49,20 @@ Abstract
   ]);
 });
 
+test("separates an inline first author from a layout-preserved title", () => {
+  const metadata = extractLocalPaperMetadata(`--- Page 1 ---
+Deep Residual Learning for Image Recognition                              Kaiming He
+Xiangyu Zhang      Shaoqing Ren      Jian Sun
+Microsoft Research
+{kahe, v-xiangz, v-shren, jiansun}@microsoft.com
+arXiv:1512.03385v1 [cs.CV] 10 Dec 2015
+Abstract
+`, { fallbackTitle: "resnet" });
+  assert.equal(metadata.title, "Deep Residual Learning for Image Recognition");
+  assert.deepEqual(metadata.authors, ["Kaiming He", "Xiangyu Zhang", "Shaoqing Ren", "Jian Sun"]);
+  assert.equal(metadata.arxivId, "1512.03385v1");
+});
+
 test("extracts a source DOI only when it is present in front matter", () => {
   const metadata = extractLocalPaperMetadata(`--- Page 1 ---
 A Deterministic Systems Paper
