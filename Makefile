@@ -26,6 +26,8 @@ test:
 	node --check www/semantic-scholar.js
 	node --check www/pdf-ai.js
 	node --check www/pdf-local.js
+	node --check www/reference-resolver.js
+	node --check www/reference-resolution-ui.js
 	node --check www/pdf-ai-import.js
 	node --test tests/*.test.mjs
 	python3 -m py_compile tests/mobile_selenium_test.py tests/pdf_review_selenium_test.py tests/pdf_local_citation_selenium_test.py
