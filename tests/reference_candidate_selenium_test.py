@@ -106,12 +106,10 @@ def install_reference_provider_fetch_mock(driver):
                 },
               ],
             };
-            return {
-              ok: true,
+            return new Response(JSON.stringify(payload), {
               status: 200,
-              json: async () => payload,
-              text: async () => JSON.stringify(payload),
-            };
+              headers: { 'Content-Type': 'application/json' },
+            });
           }
 
           return originalFetch(url, options);
