@@ -8,6 +8,7 @@ import {
   saveAiConfig,
   saveSessionApiKey,
 } from "./ai-config.js";
+import { discoverAiModels } from "./ai-models.js";
 
 if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-ai-config]')) {
   const link = document.createElement("link");
@@ -20,6 +21,7 @@ if (typeof document !== "undefined" && !document.querySelector('link[data-paper-
 const $ = (selector, root = document) => root.querySelector(selector);
 let ui = null;
 let volatileApiKey = typeof sessionStorage !== "undefined" ? loadSessionApiKey() : "";
+const modelDiscoveryControllers = new WeakMap();
 
 function providerNote(config) {
   if (config.provider === "openai") {
@@ -60,8 +62,57 @@ function writeControls(controls, config = loadAiConfig(), { preserveKey = true }
   return normalized;
 }
 
+function clearModelOptions(controls) {
+  controls.modelList?.replaceChildren();
+  if (controls.modelStatus) controls.modelStatus.textContent = "";
+}
+
+function writeModelOptions(controls, models) {
+  if (!controls.modelList) return;
+  controls.modelList.replaceChildren(...models.map((model) => {
+    const option = document.createElement("option");
+    option.value = model;
+    return option;
+  }));
+}
+
+async function refreshModelOptions(controls) {
+  const config = normalizeAiConfig(controlsSnapshot(controls));
+  const key = String(controls.key.value || "").trim();
+  if (providerNeedsApiKey(config) && !key) {
+    clearModelOptions(controls);
+    if (controls.modelStatus) controls.modelStatus.textContent = "Enter an API key to load models.";
+    return [];
+  }
+
+  modelDiscoveryControllers.get(controls)?.abort();
+  const controller = new AbortController();
+  modelDiscoveryControllers.set(controls, controller);
+  if (controls.modelRefresh) controls.modelRefresh.disabled = true;
+  if (controls.modelStatus) controls.modelStatus.textContent = "Loading models…";
+
+  try {
+    const models = await discoverAiModels({ config, apiKey: key, signal: controller.signal });
+    if (modelDiscoveryControllers.get(controls) !== controller) return [];
+    writeModelOptions(controls, models);
+    if (controls.modelStatus) controls.modelStatus.textContent = `${models.length} model${models.length === 1 ? "" : "s"} available.`;
+    return models;
+  } catch (error) {
+    if (error?.name === "AbortError") return [];
+    clearModelOptions(controls);
+    if (controls.modelStatus) controls.modelStatus.textContent = error.message || String(error);
+    return [];
+  } finally {
+    if (modelDiscoveryControllers.get(controls) === controller) {
+      modelDiscoveryControllers.delete(controls);
+      if (controls.modelRefresh) controls.modelRefresh.disabled = false;
+    }
+  }
+}
+
 function applyProviderPreset(controls) {
   const preset = providerPreset(controls.provider.value);
+  clearModelOptions(controls);
   writeControls(controls, { provider: preset.id, baseUrl: preset.baseUrl, model: preset.model });
 }
 
@@ -72,6 +123,12 @@ function persistControls(controls) {
   writeControls(controls, config);
   document.dispatchEvent(new CustomEvent("paper-map-ai-config-changed", { detail: config }));
   return config;
+}
+
+function bindModelDiscovery(controls) {
+  controls.modelRefresh?.addEventListener("click", () => refreshModelOptions(controls));
+  controls.baseUrl.addEventListener("change", () => refreshModelOptions(controls));
+  controls.key.addEventListener("change", () => refreshModelOptions(controls));
 }
 
 function createUi() {
@@ -112,7 +169,12 @@ function createUi() {
         <input id="ai-config-base-url" type="url" spellcheck="false" autocomplete="off" />
       </label>
       <label>Model
-        <input id="ai-config-model" type="text" spellcheck="false" autocomplete="off" />
+        <span class="ai-model-input-row">
+          <input id="ai-config-model" type="text" list="ai-config-model-options" spellcheck="false" autocomplete="off" />
+          <button type="button" id="ai-config-load-models" class="quiet-button">Load models</button>
+        </span>
+        <datalist id="ai-config-model-options"></datalist>
+        <span id="ai-config-model-status" class="field-hint ai-model-status" role="status" aria-live="polite"></span>
       </label>
       <label>API key <span id="ai-config-key-hint" class="field-hint"></span>
         <input id="ai-config-key" type="password" autocomplete="off" spellcheck="false" />
@@ -133,6 +195,9 @@ function createUi() {
     provider: $("#ai-config-provider", panel),
     baseUrl: $("#ai-config-base-url", panel),
     model: $("#ai-config-model", panel),
+    modelList: $("#ai-config-model-options", panel),
+    modelRefresh: $("#ai-config-load-models", panel),
+    modelStatus: $("#ai-config-model-status", panel),
     key: $("#ai-config-key", panel),
     remember: $("#ai-config-remember-key", panel),
     keyHint: $("#ai-config-key-hint", panel),
@@ -164,11 +229,16 @@ function createUi() {
     render(loadAiConfig(), { preserveKey: false });
     panel.hidden = false;
     button.setAttribute("aria-expanded", "true");
+    refreshModelOptions(controls);
   }
 
   button.addEventListener("click", () => panel.hidden ? open() : close());
   $("#ai-config-close", panel).addEventListener("click", close);
-  controls.provider.addEventListener("change", () => applyProviderPreset(controls));
+  controls.provider.addEventListener("change", () => {
+    applyProviderPreset(controls);
+    refreshModelOptions(controls);
+  });
+  bindModelDiscovery(controls);
 
   $("#ai-config-save", panel).addEventListener("click", () => {
     const config = persistControls(controls);
@@ -224,7 +294,12 @@ export function bindPdfAiConfigSummary(root) {
           <input data-pdf-ai-base-url type="url" spellcheck="false" autocomplete="off" />
         </label>
         <label>Model
-          <input data-pdf-ai-model type="text" spellcheck="false" autocomplete="off" />
+          <span class="ai-model-input-row">
+            <input data-pdf-ai-model type="text" list="pdf-ai-model-options" spellcheck="false" autocomplete="off" />
+            <button type="button" data-pdf-ai-load-models class="quiet-button">Load models</button>
+          </span>
+          <datalist id="pdf-ai-model-options"></datalist>
+          <span data-pdf-ai-model-status class="field-hint ai-model-status" role="status" aria-live="polite"></span>
         </label>
         <label>API key <span data-pdf-ai-key-hint class="field-hint"></span>
           <input data-pdf-ai-key type="password" autocomplete="off" spellcheck="false" />
@@ -245,6 +320,9 @@ export function bindPdfAiConfigSummary(root) {
     provider: $("[data-pdf-ai-provider]", details),
     baseUrl: $("[data-pdf-ai-base-url]", details),
     model: $("[data-pdf-ai-model]", details),
+    modelList: $("#pdf-ai-model-options", details),
+    modelRefresh: $("[data-pdf-ai-load-models]", details),
+    modelStatus: $("[data-pdf-ai-model-status]", details),
     key: $("[data-pdf-ai-key]", details),
     remember: $("[data-pdf-ai-remember-key]", details),
     keyHint: $("[data-pdf-ai-key-hint]", details),
@@ -260,11 +338,16 @@ export function bindPdfAiConfigSummary(root) {
   controls.provider.addEventListener("change", () => {
     applyProviderPreset(controls);
     refresh(controlsSnapshot(controls));
+    refreshModelOptions(controls);
   });
+  bindModelDiscovery(controls);
   $("[data-save-pdf-ai-config]", details).addEventListener("click", () => {
     const config = persistControls(controls);
     refresh(config);
     $("[data-pdf-ai-config-status]", details).textContent = `${providerLabel(config.provider)} selected.`;
+  });
+  details.addEventListener("toggle", () => {
+    if (details.open) refreshModelOptions(controls);
   });
   document.addEventListener("paper-map-ai-config-changed", (event) => refresh(event.detail || loadAiConfig()));
   refresh(loadAiConfig(), false);
