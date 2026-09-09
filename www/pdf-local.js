@@ -1,4 +1,5 @@
 import { extractLocalPaperMetadata } from "./pdf-metadata.js";
+import { recoverTwoColumnReferences } from "./pdf-reference-recovery.js";
 
 const WASM_MODULE_URL = "./pkg/paper_map_wasm.js";
 let wasmPromise = null;
@@ -47,7 +48,12 @@ export async function extractPdfTextLocally(file) {
 
 export async function extractPdfCitationsLocally(file) {
   const extraction = await extractPdfLocally(file);
-  const references = Array.isArray(extraction?.references) ? extraction.references : [];
+  const rustReferences = Array.isArray(extraction?.references) ? extraction.references : [];
+  const recoveredReferences = rustReferences.length < 20
+    ? recoverTwoColumnReferences(extraction?.documentText || "")
+    : [];
+  const usedTwoColumnRecovery = recoveredReferences.length > rustReferences.length;
+  const references = usedTwoColumnRecovery ? recoveredReferences : rustReferences;
   const doiCount = references.filter((reference) => reference.doi).length;
   const arxivCount = references.filter((reference) => reference.arxivId).length;
   const layout = extraction?.layout || {};
@@ -55,6 +61,11 @@ export async function extractPdfCitationsLocally(file) {
   const summary = `${references.length} references · ${doiCount} DOI · ${arxivCount} arXiv`;
   const frontMatter = extractLocalPaperMetadata(extraction?.documentText || "", { fallbackTitle: fileStem(file.name) });
   const warnings = [...(frontMatter.warnings || []), ...(extraction?.warnings || [])];
+  if (usedTwoColumnRecovery) {
+    warnings.unshift(
+      `Local two-column bibliography recovery improved segmentation from ${rustReferences.length} to ${references.length} references.`,
+    );
+  }
   if (references.length) {
     warnings.unshift(
       `Local Rust/WASM extraction found ${summary} from ${heading}${layout.bibliographyStartPage ? ` starting on page ${layout.bibliographyStartPage}` : ""}.`,
@@ -85,6 +96,13 @@ export async function extractPdfCitationsLocally(file) {
       layout,
       summary,
       frontMatter: frontMatter.evidence || null,
+      referenceRecovery: usedTwoColumnRecovery
+        ? {
+            method: "two-column-reading-order",
+            rustReferenceCount: rustReferences.length,
+            recoveredReferenceCount: references.length,
+          }
+        : null,
     },
   };
 }
