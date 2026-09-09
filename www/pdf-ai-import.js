@@ -6,15 +6,22 @@ import {
   paperIdentityKey,
 } from "./import-export.js";
 import {
-  analyzePdfWithOpenAI,
-  DEFAULT_PDF_AI_MODEL,
   MAX_INLINE_PDF_BYTES,
   slugTopic,
 } from "./pdf-ai.js";
+import { analyzePdfWithAi } from "./ai-provider.js";
+import {
+  loadAiConfig,
+  providerLabel,
+  providerNeedsApiKey,
+  providerUsesDirectPdf,
+} from "./ai-config.js";
+import {
+  aiConfigSnapshot,
+  bindPdfAiConfigSummary,
+} from "./ai-config-ui.js";
 import { extractPdfCitationsLocally } from "./pdf-local.js";
 
-const SESSION_KEY = "paper-map-openai-key-tab";
-const MODEL_KEY = "paper-map-pdf-ai-model-v1";
 const $ = (selector, root = document) => root.querySelector(selector);
 
 function escapeHtml(value) {
@@ -35,39 +42,6 @@ function setGlobalStatus(message, tone = "ready") {
   const text = $("#library-status-text");
   if (status) status.className = `status ${tone}`;
   if (text) text.textContent = message;
-}
-
-function storedModel() {
-  try {
-    return localStorage.getItem(MODEL_KEY) || DEFAULT_PDF_AI_MODEL;
-  } catch {
-    return DEFAULT_PDF_AI_MODEL;
-  }
-}
-
-function saveModel(value) {
-  try {
-    localStorage.setItem(MODEL_KEY, value);
-  } catch {
-    // Model choice is a non-critical UI preference.
-  }
-}
-
-function tabApiKey() {
-  try {
-    return sessionStorage.getItem(SESSION_KEY) || "";
-  } catch {
-    return "";
-  }
-}
-
-function rememberApiKey(value, enabled) {
-  try {
-    if (enabled) sessionStorage.setItem(SESSION_KEY, value);
-    else sessionStorage.removeItem(SESSION_KEY);
-  } catch {
-    // The import still works without session persistence.
-  }
 }
 
 function createUi() {
@@ -108,7 +82,7 @@ function createUi() {
           <span id="pdf-ai-file-size"></span>
         </div>
 
-        <p class="pdf-ai-explainer"><strong>Local extraction</strong> runs Rust/WebAssembly entirely in this browser and systematically detects the bibliography, reference entries, DOI and arXiv identifiers. <strong>AI analysis</strong> remains optional for metadata and topic suggestions. Nothing is saved until you review it and press <strong>Save reviewed paper</strong>.</p>
+        <p class="pdf-ai-explainer"><strong>Local extraction</strong> runs Rust/WebAssembly entirely in this browser and systematically detects the bibliography, reference entries, DOI and arXiv identifiers. <strong>AI analysis</strong> is optional and uses the AI server selected in the global configuration. Nothing is saved until you review it and press <strong>Save reviewed paper</strong>.</p>
 
         <div class="pdf-ai-analysis-actions pdf-extraction-actions">
           <button type="button" id="pdf-local-extract">Extract citations locally</button>
@@ -118,18 +92,7 @@ function createUi() {
         </div>
 
         <details class="pdf-ai-provider-settings">
-          <summary>AI settings</summary>
-          <div class="pdf-ai-settings-grid">
-            <label>OpenAI API key
-              <input id="pdf-ai-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…" />
-            </label>
-            <label>Model
-              <input id="pdf-ai-model" type="text" spellcheck="false" value="${escapeHtml(storedModel())}" />
-            </label>
-            <label class="checkbox-row pdf-ai-remember-key">
-              <input id="pdf-ai-remember-key" type="checkbox" /> Keep API key for this browser tab
-            </label>
-          </div>
+          <summary>AI server settings</summary>
         </details>
       </section>
 
@@ -215,6 +178,7 @@ function createUi() {
     </form>
   `;
   document.body.append(dialog);
+  bindPdfAiConfigSummary(dialog);
   return { button, input, dialog };
 }
 
@@ -294,6 +258,7 @@ function paperFromReview(ui, file, context) {
   const doi = normalizeDoi($("#pdf-review-doi", ui.dialog).value);
   const arxivId = clean($("#pdf-review-arxiv", ui.dialog).value).replace(/^arxiv:\s*/i, "");
   const local = context.mode === "local";
+  const reviewedAt = new Date().toISOString();
   const paper = {
     id: doi ? `doi:${doi}` : arxivId ? `arxiv:${arxivId.toLowerCase()}` : `local:${crypto.randomUUID()}`,
     title: clean($("#pdf-review-title", ui.dialog).value),
@@ -318,18 +283,20 @@ function paperFromReview(ui, file, context) {
     sourceFileName: file?.name || "",
     extractedReferences: reviewedReferences(ui),
     pdfExtraction: {
-      provider: local ? "rust-wasm" : "openai",
+      provider: local ? "rust-wasm" : context.provider,
       engine: local ? context.details?.engine || "paper-map-rust-pdf" : context.model,
       layout: local ? context.details?.layout || null : null,
-      reviewedAt: new Date().toISOString(),
+      reviewedAt,
     },
-    importedAt: new Date().toISOString(),
+    importedAt: reviewedAt,
   };
   if (!local) {
     paper.aiExtraction = {
-      provider: "openai",
+      provider: context.provider,
       model: context.model,
-      reviewedAt: paper.pdfExtraction.reviewedAt,
+      baseUrl: context.baseUrl,
+      transport: context.details?.transport || null,
+      reviewedAt,
     };
   }
   return paper;
@@ -425,25 +392,36 @@ function init() {
 
   let selectedFile = null;
   let controller = null;
+  const initialAi = loadAiConfig();
   let extractionContext = {
     mode: "ai",
-    model: storedModel(),
+    provider: initialAi.provider,
+    model: initialAi.model,
+    baseUrl: initialAi.baseUrl,
     details: null,
   };
 
-  const keyInput = $("#pdf-ai-key", ui.dialog);
-  const modelInput = $("#pdf-ai-model", ui.dialog);
-  const rememberInput = $("#pdf-ai-remember-key", ui.dialog);
   const analysisStatus = $("#pdf-ai-analysis-status", ui.dialog);
   const analyzeButton = $("#pdf-ai-analyze", ui.dialog);
   const localButton = $("#pdf-local-extract", ui.dialog);
   const cancelButton = $("#pdf-ai-cancel-analysis", ui.dialog);
   const review = $("#pdf-ai-review", ui.dialog);
 
-  const remembered = tabApiKey();
-  if (remembered) {
-    keyInput.value = remembered;
-    rememberInput.checked = true;
+  function currentAiTooLarge() {
+    if (!selectedFile) return false;
+    return providerUsesDirectPdf(loadAiConfig()) && selectedFile.size > MAX_INLINE_PDF_BYTES;
+  }
+
+  function refreshAiAvailability() {
+    const config = loadAiConfig();
+    const tooLarge = currentAiTooLarge();
+    analyzeButton.disabled = Boolean(controller) || tooLarge;
+    if (!selectedFile || controller) return;
+    if (tooLarge) {
+      analysisStatus.textContent = `Ready for local extraction. ${providerLabel(config.provider)} direct PDF input is limited to 25 MB; choose Ollama/OpenAI-compatible text mode or extract locally.`;
+    } else {
+      analysisStatus.textContent = `Ready for local extraction or AI analysis with ${providerLabel(config.provider)} (${config.model || "model not configured"}).`;
+    }
   }
 
   function closeDialog() {
@@ -454,17 +432,21 @@ function init() {
 
   function showFile(file) {
     selectedFile = file;
-    extractionContext = { mode: "ai", model: clean(modelInput.value) || DEFAULT_PDF_AI_MODEL, details: null };
+    const config = loadAiConfig();
+    extractionContext = {
+      mode: "ai",
+      provider: config.provider,
+      model: config.model,
+      baseUrl: config.baseUrl,
+      details: null,
+    };
     $("#pdf-ai-file-name", ui.dialog).textContent = file.name;
     $("#pdf-ai-file-size", ui.dialog).textContent = `${(file.size / 1024 / 1024).toFixed(1)} MB`;
     review.hidden = true;
     $("#pdf-reference-list", ui.dialog).replaceChildren();
     $("#pdf-reference-section", ui.dialog).hidden = true;
-    analysisStatus.textContent = file.size > MAX_INLINE_PDF_BYTES
-      ? "Ready for local extraction. This PDF exceeds the 25 MB AI inline-analysis limit."
-      : "Ready for local extraction or AI analysis.";
-    analyzeButton.disabled = file.size > MAX_INLINE_PDF_BYTES;
     localButton.disabled = false;
+    refreshAiAvailability();
     if (!ui.dialog.open) ui.dialog.showModal();
   }
 
@@ -483,10 +465,7 @@ function init() {
   $("#pdf-ai-close", ui.dialog).addEventListener("click", closeDialog);
   $("#pdf-ai-discard", ui.dialog).addEventListener("click", closeDialog);
   ui.dialog.addEventListener("cancel", () => controller?.abort());
-
-  rememberInput.addEventListener("change", () => rememberApiKey(keyInput.value, rememberInput.checked));
-  keyInput.addEventListener("change", () => rememberApiKey(keyInput.value, rememberInput.checked));
-  modelInput.addEventListener("change", () => saveModel(clean(modelInput.value) || DEFAULT_PDF_AI_MODEL));
+  document.addEventListener("paper-map-ai-config-changed", refreshAiAvailability);
 
   $("#pdf-ai-add-topic", ui.dialog).addEventListener("click", () => $("#pdf-ai-topics", ui.dialog).append(topicRow({ confidence: 1 })));
   $("#pdf-reference-accept-all", ui.dialog).addEventListener("click", () => {
@@ -506,7 +485,9 @@ function init() {
       const metadata = await extractPdfCitationsLocally(selectedFile);
       extractionContext = {
         mode: "local",
-        model: clean(modelInput.value) || DEFAULT_PDF_AI_MODEL,
+        provider: "rust-wasm",
+        model: metadata.localExtraction?.engine || "paper-map-rust-pdf",
+        baseUrl: "",
         details: metadata.localExtraction,
       };
       fillReview(ui, metadata, "local");
@@ -520,30 +501,53 @@ function init() {
       setGlobalStatus(error.message || String(error), "error");
     } finally {
       localButton.disabled = false;
-      analyzeButton.disabled = selectedFile?.size > MAX_INLINE_PDF_BYTES;
+      refreshAiAvailability();
     }
   }
 
   async function analyze() {
     if (!selectedFile || controller) return;
-    const apiKey = clean(keyInput.value);
-    const model = clean(modelInput.value) || DEFAULT_PDF_AI_MODEL;
-    saveModel(model);
-    rememberApiKey(apiKey, rememberInput.checked);
+    const { config, apiKey } = aiConfigSnapshot();
+    if (!config.model) {
+      analysisStatus.textContent = "Configure an AI model before analysis.";
+      setGlobalStatus("AI model is not configured.", "error");
+      return;
+    }
+    if (providerNeedsApiKey(config) && !clean(apiKey)) {
+      analysisStatus.textContent = `Configure an API key for ${providerLabel(config.provider)} before analysis.`;
+      setGlobalStatus("AI API key is not configured.", "error");
+      return;
+    }
+    if (providerUsesDirectPdf(config) && selectedFile.size > MAX_INLINE_PDF_BYTES) {
+      refreshAiAvailability();
+      return;
+    }
+
     controller = new AbortController();
     analyzeButton.disabled = true;
     localButton.disabled = true;
     cancelButton.hidden = false;
-    analysisStatus.textContent = "Analyzing PDF and extracting metadata/topics with AI…";
-    setGlobalStatus(`Analyzing ${selectedFile.name} with AI…`, "loading");
+    analysisStatus.textContent = `Analyzing PDF with ${providerLabel(config.provider)}…`;
+    setGlobalStatus(`Analyzing ${selectedFile.name} with ${providerLabel(config.provider)}…`, "loading");
 
     try {
-      const metadata = await analyzePdfWithOpenAI({ file: selectedFile, apiKey, model, signal: controller.signal });
-      extractionContext = { mode: "ai", model, details: null };
+      const metadata = await analyzePdfWithAi({
+        file: selectedFile,
+        config,
+        apiKey,
+        signal: controller.signal,
+      });
+      extractionContext = {
+        mode: "ai",
+        provider: config.provider,
+        model: config.model,
+        baseUrl: config.baseUrl,
+        details: { transport: metadata.aiTransport || null },
+      };
       fillReview(ui, metadata, "ai");
       review.hidden = false;
       await updateDuplicateHint(ui, selectedFile, extractionContext);
-      analysisStatus.textContent = "AI analysis complete. Review all fields before saving.";
+      analysisStatus.textContent = `${providerLabel(config.provider)} AI analysis complete. Review all fields before saving.`;
       setGlobalStatus("PDF AI analysis complete; awaiting your review.", "ready");
       $("#pdf-review-title", ui.dialog).focus();
     } catch (error) {
@@ -556,9 +560,9 @@ function init() {
       }
     } finally {
       controller = null;
-      analyzeButton.disabled = selectedFile?.size > MAX_INLINE_PDF_BYTES;
       localButton.disabled = false;
       cancelButton.hidden = true;
+      refreshAiAvailability();
     }
   }
 
