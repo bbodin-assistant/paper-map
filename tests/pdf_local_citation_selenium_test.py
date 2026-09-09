@@ -136,7 +136,8 @@ def main():
         review = wait_displayed(driver, "#pdf-ai-review")
         wait.until(lambda d: "Local extraction complete" in d.find_element(By.ID, "pdf-ai-analysis-status").text)
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "Rust PDF citation review widget")
-        assert_true("Local Rust/WASM proposal" in review.text, "Review should identify the local Rust/WASM source")
+        source_kicker = driver.find_element(By.ID, "pdf-review-source-kicker").get_attribute("textContent")
+        assert_true(source_kicker == "Local Rust/WASM proposal", "Review should identify the local Rust/WASM source")
 
         rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
         assert_true(len(rows) == 3, f"Expected 3 segmented references, got {len(rows)}")
