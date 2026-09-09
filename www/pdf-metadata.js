@@ -50,6 +50,7 @@ function stripAuthorMarkers(value) {
   return clean(value)
     .replace(AUTHOR_MARKERS_RE, "")
     .replace(/\s*\([^)]*(?:equal contribution|corresponding author)[^)]*\)\s*/gi, " ")
+    .replace(/\b([\p{Lu}])\s*\.\s*(?=[\p{Lu}])/gu, "$1 ")
     .replace(/^[,;·\s]+|[,;·\s]+$/g, "")
     .trim();
 }
@@ -103,7 +104,7 @@ function splitAuthors(line) {
 
 function markedAuthors(pageText) {
   const source = deglueCamelCase(pageText);
-  const pattern = /([\p{Lu}][\p{L}'’\-]*(?:[ \t]+(?:[\p{Lu}][\p{L}'’\-]*|[\p{Lu}]\.|da|de|del|der|di|du|la|le|van|von)){1,4})[ \t]*[∗*†‡]+/gu;
+  const pattern = /([\p{Lu}][\p{L}'’\-]*\.?(?:[ \t]+(?:[\p{Lu}][\p{L}'’\-]*\.?|da|de|del|der|di|du|la|le|van|von)){1,4})[ \t]*[∗*†‡]+/gu;
   const authors = [];
   let firstIndex = -1;
   for (const match of source.matchAll(pattern)) {
