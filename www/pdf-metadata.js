@@ -87,6 +87,9 @@ export function repairTrailingTitleAuthor(value, authorValues = []) {
   for (let suffixLength = 2; suffixLength <= Math.min(4, words.length - 4); suffixLength += 1) {
     const candidate = words.slice(-suffixLength).join(" ");
     const prefix = words.slice(0, -suffixLength).join(" ");
+    const candidateTokens = nameTokens(candidate);
+    const surname = candidateTokens.at(-1) || "";
+    if (!/^\p{Lu}\p{Ll}{1,2}$/u.test(surname)) continue;
     if (!looksLikeSingleName(candidate) || prefix.length < 18 || prefix.split(/\s+/).length < 4) continue;
     const candidateKey = candidate.toLowerCase();
     if (authors.some((author) => author.toLowerCase() === candidateKey)) continue;
