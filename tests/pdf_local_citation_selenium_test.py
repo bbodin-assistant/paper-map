@@ -88,6 +88,47 @@ def create_valid_citation_pdf():
     return path
 
 
+def install_resolution_fetch_mock(driver):
+    driver.execute_script(
+        """
+        const originalFetch = window.fetch.bind(window);
+        window.fetch = async (url, options) => {
+          const text = String(url);
+          if (text.includes("api.crossref.org/works/10.1234%2Ftest.55")) {
+            return new Response(JSON.stringify({
+              message: {
+                DOI: "10.1234/TEST.55",
+                title: ["Canonical Crossref DOI Paper"],
+                author: [{ given: "Ada", family: "Canonical" }],
+                issued: { "date-parts": [[2022]] },
+                "container-title": ["Canonical Journal"],
+                type: "journal-article",
+                URL: "https://doi.org/10.1234/TEST.55",
+                publisher: "Fixture Press",
+                "is-referenced-by-count": 12,
+              },
+            }), { status: 200, headers: { "Content-Type": "application/json" } });
+          }
+          if (text.includes("api.semanticscholar.org/graph/v1/paper/ARXIV%3A2401.01234")) {
+            return new Response(JSON.stringify({
+              paperId: "0123456789abcdef0123456789abcdef01234567",
+              title: "Canonical Semantic Scholar arXiv Paper",
+              year: 2024,
+              venue: "arXiv",
+              publicationTypes: ["JournalArticle"],
+              authors: [{ name: "Grace Canonical" }],
+              externalIds: { ArXiv: "2401.01234" },
+              url: "https://www.semanticscholar.org/paper/fixture",
+              citationCount: 8,
+              fieldsOfStudy: ["Computer Science"],
+            }), { status: 200, headers: { "Content-Type": "application/json" } });
+          }
+          return originalFetch(url, options);
+        };
+        """
+    )
+
+
 def read_all_indexeddb(driver, store_name):
     result = driver.execute_async_script(
         """
@@ -119,6 +160,7 @@ def main():
             not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
         )
         assert_no_page_horizontal_overflow(driver)
+        install_resolution_fetch_mock(driver)
 
         wait_click(driver, "#library-menu > summary")
         wait_displayed(driver, "#library-menu .library-panel")
@@ -145,6 +187,25 @@ def main():
         assert_true("2401.01234v2" in rows[1].text.lower(), "Second reference should expose arXiv ID")
         assert_true("2020" in rows[2].text, "Third reference should expose publication year")
         assert_true(all(row.find_element(By.CSS_SELECTOR, "[data-reference-use]").is_selected() for row in rows), "References should be accepted by default")
+        assert_true("Ready to resolve" in rows[0].text, "DOI reference should be marked ready for canonical resolution")
+        assert_true("Ready to resolve" in rows[1].text, "arXiv reference should be marked ready for canonical resolution")
+
+        resolve_button = wait_displayed(driver, "#pdf-reference-resolve")
+        center_element(driver, resolve_button)
+        resolve_button.click()
+        wait.until(lambda d: all(
+            row.get_attribute("data-resolution-status") == "matched"
+            for row in d.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")[:2]
+        ))
+        rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
+        assert_true("Crossref" in rows[0].text, "DOI reference should show Crossref as canonical provider")
+        assert_true("99% match" in rows[0].text, "DOI reference should show exact-match confidence")
+        assert_true("Canonical Crossref DOI Paper" in rows[0].text, "DOI reference should show canonical title")
+        assert_true("Semantic Scholar" in rows[1].text, "arXiv reference should show Semantic Scholar as canonical provider")
+        assert_true("98% match" in rows[1].text, "Version-normalized arXiv reference should show match confidence")
+        assert_true("Canonical Semantic Scholar arXiv Paper" in rows[1].text, "arXiv reference should show canonical title")
+        assert_true(rows[2].get_attribute("data-resolution-status") == "no-identifier", "Reference without persistent identifier should not be fabricated into a match")
+        assert_true("2 matched" in driver.find_element(By.ID, "pdf-reference-resolution-status").text, "Resolution summary should report canonical matches")
 
         rejected = rows[2].find_element(By.CSS_SELECTOR, "[data-reference-use]")
         center_element(driver, rejected)
@@ -186,6 +247,12 @@ def main():
         assert_true(references[0]["doi"] == "10.1234/test.55", "Accepted DOI reference should persist")
         assert_true(references[1]["arxivId"] == "2401.01234v2", "Accepted arXiv reference should persist")
         assert_true(all(reference.get("reviewed") for reference in references), "Persisted references should be marked reviewed")
+        assert_true(references[0]["resolution"]["provider"] == "crossref", "Crossref resolution provenance should persist")
+        assert_true(references[0]["resolution"]["confidence"] == 0.99, "DOI match confidence should persist")
+        assert_true(references[0]["resolution"]["canonical"]["title"] == "Canonical Crossref DOI Paper", "Crossref canonical metadata should persist")
+        assert_true(references[1]["resolution"]["provider"] == "semantic-scholar", "Semantic Scholar resolution provenance should persist")
+        assert_true(references[1]["resolution"]["confidence"] == 0.98, "arXiv match confidence should persist")
+        assert_true(references[1]["resolution"]["canonical"]["title"] == "Canonical Semantic Scholar arXiv Paper", "Semantic Scholar canonical metadata should persist")
 
         wait_click(driver, "#paper-list-button")
         wait_displayed(driver, "#paper-list-panel")
@@ -194,7 +261,7 @@ def main():
         assert_true(SAVED_TITLE in items[0].text, "Saved local PDF title should appear in Bibliography")
         save_screenshot(driver, "11-rust-citation-saved.png")
         assert_no_page_horizontal_overflow(driver)
-        print("Rust/WASM PDF bibliography detection, identifier extraction, review, and persistence checks passed.")
+        print("Rust/WASM PDF extraction, Crossref/Semantic Scholar resolution, confidence review, and persistence checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "rust-citation-failure.png")
