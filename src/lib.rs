@@ -144,13 +144,6 @@ fn author_year_start_regex() -> Regex {
         .expect("valid author-year regex")
 }
 
-fn author_list_start_regex() -> Regex {
-    Regex::new(
-        r"^\s*(?:\p{Lu}[\p{L}'’\-]+(?:\s+\p{Lu}[\p{L}'’\-]+){1,3}\s*,\s*\p{Lu}[\p{L}'’\-]+(?:\s+\p{Lu}[\p{L}'’\-]+){0,3}(?:\s*,|\s+and\b)|\p{Lu}[\p{L}'’\-]+(?:\s+\p{Lu}[\p{L}'’\-]+){1,3}\s+and\s+\p{Lu}[\p{L}'’\-]+(?:\s+\p{Lu}[\p{L}'’\-]+){0,3})",
-    )
-    .expect("valid author-list start regex")
-}
-
 fn trim_identifier_punctuation(mut value: String) -> String {
     while matches!(value.chars().last(), Some('.' | ',' | ';' | ':')) {
         value.pop();
@@ -194,8 +187,30 @@ fn looks_like_author_year_start(line: &str) -> bool {
     author_year_start_regex().is_match(line)
 }
 
+fn looks_like_person_name(fragment: &str) -> bool {
+    let words = fragment.split_whitespace().collect::<Vec<_>>();
+    if !(2..=4).contains(&words.len()) {
+        return false;
+    }
+    words.iter().all(|word| {
+        let token = word.trim_matches(|c: char| !c.is_alphabetic());
+        !token.is_empty() && token.chars().next().is_some_and(char::is_uppercase)
+    })
+}
+
 fn looks_like_author_list_start(line: &str) -> bool {
-    author_list_start_regex().is_match(line)
+    let text = line.trim();
+    if text.is_empty() || text.len() > 220 || extract_year(text).is_some() {
+        return false;
+    }
+    let comma = text.find(',');
+    let and = text.find(" and ");
+    let boundary = match (comma, and) {
+        (Some(left), Some(right)) => left.min(right),
+        (Some(index), None) | (None, Some(index)) => index,
+        (None, None) => return false,
+    };
+    looks_like_person_name(&text[..boundary])
 }
 
 fn draft_has_year(reference: &ReferenceDraft) -> bool {
