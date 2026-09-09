@@ -144,6 +144,13 @@ fn author_year_start_regex() -> Regex {
         .expect("valid author-year regex")
 }
 
+fn author_list_start_regex() -> Regex {
+    Regex::new(
+        r"^\s*(?:\p{Lu}[\p{L}'’\-]+(?:\s+\p{Lu}[\p{L}'’\-]+){1,3}\s*,\s*\p{Lu}[\p{L}'’\-]+(?:\s+\p{Lu}[\p{L}'’\-]+){0,3}(?:\s*,|\s+and\b)|\p{Lu}[\p{L}'’\-]+(?:\s+\p{Lu}[\p{L}'’\-]+){1,3}\s+and\s+\p{Lu}[\p{L}'’\-]+(?:\s+\p{Lu}[\p{L}'’\-]+){0,3})",
+    )
+    .expect("valid author-list start regex")
+}
+
 fn trim_identifier_punctuation(mut value: String) -> String {
     while matches!(value.chars().last(), Some('.' | ',' | ';' | ':')) {
         value.pop();
@@ -185,6 +192,17 @@ fn extract_year(text: &str) -> Option<u16> {
 
 fn looks_like_author_year_start(line: &str) -> bool {
     author_year_start_regex().is_match(line)
+}
+
+fn looks_like_author_list_start(line: &str) -> bool {
+    author_list_start_regex().is_match(line)
+}
+
+fn draft_has_year(reference: &ReferenceDraft) -> bool {
+    reference
+        .lines
+        .iter()
+        .any(|line| extract_year(&line.text).is_some())
 }
 
 fn reference_signal_count(text: &str) -> usize {
@@ -315,8 +333,11 @@ fn segment_author_year(lines: &[Option<SourceLine>]) -> Vec<ReferenceDraft> {
         match item {
             None => flush_reference(&mut current, &mut output),
             Some(source) => {
-                let starts_new = looks_like_author_year_start(&source.text);
-                if starts_new && current.is_some() {
+                let current_has_year = current.as_ref().is_some_and(draft_has_year);
+                let starts_new = current_has_year
+                    && (looks_like_author_year_start(&source.text)
+                        || looks_like_author_list_start(&source.text));
+                if starts_new {
                     flush_reference(&mut current, &mut output);
                 }
                 if current.is_none() {
@@ -541,6 +562,19 @@ mod tests {
         )]);
         assert_eq!(extraction.references.len(), 3);
         assert_eq!(extraction.references[1].doi.as_deref(), Some("10.9999/example.2"));
+    }
+
+    #[test]
+    fn segments_wrapped_author_year_references_without_blank_lines() {
+        let extraction = extract_from_pages(vec![page(
+            1,
+            "References\nAlan Akbik, Duncan Blythe, and Roland Vollgraf.\n2018. Contextual string embeddings for sequence labeling.\nRami Al-Rfou, Dokook Choe, Noah Constant, Mandy\nGuo, and Llion Jones. 2018. Character-level language modeling.\nJacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.\n2019. Deep bidirectional transformers for language understanding.\nRie Kubota Ando and Tong Zhang. 2005. A framework for learning predictive structures.",
+        )]);
+        assert_eq!(extraction.references.len(), 4);
+        assert!(extraction.references[0].raw_text.starts_with("Alan Akbik"));
+        assert!(extraction.references[1].raw_text.contains("Mandy Guo, and Llion Jones. 2018"));
+        assert!(extraction.references[2].raw_text.starts_with("Jacob Devlin"));
+        assert_eq!(extraction.references[3].year, Some(2005));
     }
 
     #[test]
