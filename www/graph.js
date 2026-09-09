@@ -1,4 +1,5 @@
 import { isResearchRelation, relationLabel } from "./research-relations.js";
+import { applyLocalRepulsion, fitTransform, layoutDimensions, layoutIterationBudget } from "./graph-layout.js";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const MIN_ZOOM = 0.35;
@@ -167,6 +168,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
   let animationFrame = null;
   let renderToken = 0;
   let lastCitationTopology = "";
+  let currentWorld = null;
   const citationLayout = new Map();
   const pinnedPapers = new Set();
   const topicLayout = new Map();
@@ -202,13 +204,24 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
 
   function empty(message) {
     clear();
+    currentWorld = null;
     const text = svgElement("text", { x: 28, y: 44, class: "graph-empty" });
     text.textContent = message;
     root.append(text);
   }
 
   function resetView() {
-    transform = { x: 0, y: 0, k: 1 };
+    if (currentWorld) {
+      transform = fitTransform(
+        currentWorld.viewportWidth,
+        currentWorld.viewportHeight,
+        currentWorld.width,
+        currentWorld.height,
+        { minZoom: MIN_ZOOM, maxZoom: 1 },
+      );
+    } else {
+      transform = { x: 0, y: 0, k: 1 };
+    }
     applyTransform();
   }
 
@@ -229,15 +242,25 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
 
     clear();
     const token = ++renderToken;
-    const width = Math.max(800, svg.clientWidth || 1200);
-    const height = Math.max(520, svg.clientHeight || 720);
+    const viewportWidth = Math.max(800, svg.clientWidth || 1200);
+    const viewportHeight = Math.max(520, svg.clientHeight || 720);
+    const logical = layoutDimensions(viewportWidth, viewportHeight, papers.length);
+    const width = logical.width;
+    const height = logical.height;
+    currentWorld = { width, height, viewportWidth, viewportHeight };
     const years = papers.map((paper) => Number(paper.year)).filter(Number.isFinite);
     const minYear = years.length ? Math.min(...years) : 2000;
     const maxYear = years.length ? Math.max(...years) : minYear + 1;
     const yearSpan = Math.max(1, maxYear - minYear);
     const topology = [...papers].map((paper) => paper.id).sort().join("|");
+    const firstCitationRender = !lastCitationTopology;
     const topologyChanged = topology !== lastCitationTopology;
     lastCitationTopology = topology;
+
+    if (firstCitationRender && logical.scale > 1) {
+      transform = fitTransform(viewportWidth, viewportHeight, width, height, { minZoom: MIN_ZOOM, maxZoom: 1 });
+      applyTransform();
+    }
 
     const nodes = papers.map((paper, index) => {
       const cached = citationLayout.get(paper.id);
@@ -352,11 +375,13 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     currentDraw = draw;
 
     let iteration = 0;
-    const maxIterations = papers.length > 250 ? 45 : papers.length > 100 ? 70 : 110;
+    let settledFrames = 0;
+    const maxIterations = layoutIterationBudget(papers.length);
+    const minimumIterations = Math.min(110, Math.floor(maxIterations * 0.55));
     function simulate() {
       if (token !== renderToken) return;
       iteration += 1;
-      const cooling = Math.max(0.04, 1 - iteration / maxIterations);
+      const cooling = Math.max(0.055, 1 - iteration / maxIterations);
 
       for (const node of nodes) {
         if (node.fixed) {
@@ -364,43 +389,17 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
           node.vy = 0;
           continue;
         }
-        node.vx *= 0.78;
-        node.vy *= 0.78;
+        node.vx *= 0.8;
+        node.vy *= 0.8;
         const year = Number(node.paper.year);
         if (Number.isFinite(year)) {
           const targetX = 100 + ((year - minYear) / yearSpan) * (width - 220);
-          node.vx += (targetX - node.x) * 0.0025;
+          node.vx += (targetX - node.x) * 0.0022;
         }
-        node.vy += (height / 2 - node.y) * 0.0004;
+        node.vy += (height / 2 - node.y) * 0.0003;
       }
 
-      for (let leftIndex = 0; leftIndex < nodes.length; leftIndex += 1) {
-        const left = nodes[leftIndex];
-        for (let rightIndex = leftIndex + 1; rightIndex < nodes.length; rightIndex += 1) {
-          const right = nodes[rightIndex];
-          let dx = right.x - left.x;
-          let dy = right.y - left.y;
-          let distanceSquared = dx * dx + dy * dy;
-          if (distanceSquared < 1) {
-            dx = 1;
-            dy = 1;
-            distanceSquared = 2;
-          }
-          if (distanceSquared > 24000) continue;
-          const distance = Math.sqrt(distanceSquared);
-          const minimum = left.radius + right.radius + 42;
-          const strength = distance < minimum ? 1.8 : 90 / distanceSquared;
-          const push = strength * cooling;
-          if (!left.fixed) {
-            left.vx -= (dx / distance) * push;
-            left.vy -= (dy / distance) * push;
-          }
-          if (!right.fixed) {
-            right.vx += (dx / distance) * push;
-            right.vy += (dy / distance) * push;
-          }
-        }
-      }
+      applyLocalRepulsion(nodes, cooling);
 
       for (const edge of visibleEdges) {
         const source = nodeById.get(edge.source);
@@ -408,8 +407,8 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
         const dx = target.x - source.x;
         const dy = target.y - source.y;
         const distance = Math.max(1, Math.sqrt(dx * dx + dy * dy));
-        const desired = isResearchRelation(edge) ? 175 : 145;
-        const pull = (distance - desired) * 0.0018 * cooling;
+        const desired = isResearchRelation(edge) ? 185 : 155;
+        const pull = (distance - desired) * 0.0017 * cooling;
         if (!source.fixed) {
           source.vx += (dx / distance) * pull;
           source.vy += (dy / distance) * pull;
@@ -420,14 +419,21 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
         }
       }
 
+      let speedTotal = 0;
+      let movingCount = 0;
       for (const node of nodes) {
         if (node.fixed) continue;
         node.x = Math.max(40, Math.min(width - 80, node.x + node.vx));
         node.y = Math.max(35, Math.min(height - 45, node.y + node.vy));
+        speedTotal += Math.hypot(node.vx, node.vy);
+        movingCount += 1;
       }
 
       draw();
-      if (iteration < maxIterations) animationFrame = requestAnimationFrame(simulate);
+      const averageSpeed = movingCount ? speedTotal / movingCount : 0;
+      if (iteration >= minimumIterations && averageSpeed < 0.045) settledFrames += 1;
+      else settledFrames = 0;
+      if (iteration < maxIterations && settledFrames < 12) animationFrame = requestAnimationFrame(simulate);
       else animationFrame = null;
     }
 
@@ -446,6 +452,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     const { blocks, connections } = buildTopicGraph(papers, edges, topics);
     const width = Math.max(800, svg.clientWidth || 1200);
     const height = Math.max(520, svg.clientHeight || 720);
+    currentWorld = { width, height, viewportWidth: width, viewportHeight: height };
     const centerX = width / 2;
     const centerY = height / 2;
     const orbitX = Math.max(190, width * 0.32);
