@@ -122,7 +122,7 @@ function markedAuthors(pageText) {
 
 function cleanTitlePrefix(prefix) {
   let value = deglueCamelCase(prefix).trim();
-  const reversedArxivDate = value.search(/\b\d{4}\s+(?:naJ|beF|raM|rpA|yaM|nuJ|luJ|guA|peS|tcO|voN|ceD)\b/i);
+  const reversedArxivDate = value.search(/\b\d{4}\s+[a-z]{2}\s*[A-Z]\b/);
   if (reversedArxivDate >= 0) value = value.slice(0, reversedArxivDate);
   value = value.replace(/\S*:vi\s*Xra.*$/i, "").trim();
 
