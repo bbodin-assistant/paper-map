@@ -27,11 +27,24 @@ async function loadWasm() {
   return wasmPromise;
 }
 
-export async function extractPdfCitationsLocally(file) {
+async function extractPdfLocally(file) {
   if (!(file instanceof Blob)) throw new Error("Select a PDF file first.");
   const module = await loadWasm();
   const bytes = new Uint8Array(await file.arrayBuffer());
-  const extraction = module.extract_pdf_citations(bytes);
+  return module.extract_pdf_citations(bytes);
+}
+
+export async function extractPdfTextLocally(file) {
+  const extraction = await extractPdfLocally(file);
+  return {
+    text: String(extraction?.documentText || ""),
+    pageCount: Number(extraction?.layout?.pageCount) || 0,
+    engine: extraction?.engine || "paper-map-rust-pdf",
+  };
+}
+
+export async function extractPdfCitationsLocally(file) {
+  const extraction = await extractPdfLocally(file);
   const references = Array.isArray(extraction?.references) ? extraction.references : [];
   const doiCount = references.filter((reference) => reference.doi).length;
   const arxivCount = references.filter((reference) => reference.arxivId).length;
