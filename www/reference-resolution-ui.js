@@ -22,13 +22,14 @@ function providerLabel(provider) {
 }
 
 function canonicalSummary(canonical = {}) {
-  const authors = Array.isArray(canonical.authors) ? canonical.authors.filter(Boolean) : [];
+  const value = canonical || {};
+  const authors = Array.isArray(value.authors) ? value.authors.filter(Boolean) : [];
   const detail = [
     authors.length ? authors.slice(0, 3).join(", ") + (authors.length > 3 ? " et al." : "") : "",
-    canonical.year || "",
-    canonical.venue || canonical.publisher || "",
+    value.year || "",
+    value.venue || value.publisher || "",
   ].filter(Boolean).join(" · ");
-  return { title: clean(canonical.title), detail };
+  return { title: clean(value.title), detail };
 }
 
 function resolutionLabel(resolution) {
