@@ -29,10 +29,16 @@ def install_candidate_search_mock(driver):
     install_resolution_fetch_mock(driver)
     driver.execute_script(
         """
-        const inheritedFetch = window.fetch;
+        const inheritedFetch = window.fetch.bind(window);
+        window.__paperMapCandidateSearchUrls = [];
         window.fetch = async (url, options) => {
           const text = String(url);
-          if (text.includes("api.semanticscholar.org/graph/v1/paper/search")) {
+          let pathname = "";
+          try {
+            pathname = new URL(text, window.location.href).pathname;
+          } catch {}
+          if (pathname.endsWith("/paper/search")) {
+            window.__paperMapCandidateSearchUrls.push(text);
             return new Response(JSON.stringify({
               data: [
                 {
@@ -128,6 +134,8 @@ def main():
             lambda d: d.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")[2]
             .get_attribute("data-resolution-status") == "candidates"
         )
+        search_urls = driver.execute_script("return window.__paperMapCandidateSearchUrls.slice();")
+        assert_true(len(search_urls) == 1, f"Expected one Semantic Scholar candidate search, got {search_urls}")
         rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
         assert_true("2 candidates" in rows[2].text, "Ambiguous metadata matches should remain a review queue")
         assert_true(
