@@ -77,6 +77,24 @@ function looksLikeSingleName(value) {
     || (index > 0 && index < tokens.length - 1 && NAME_PARTICLES.has(token.toLowerCase())));
 }
 
+export function repairTrailingTitleAuthor(value, authorValues = []) {
+  const title = clean(value);
+  const authors = Array.isArray(authorValues) ? authorValues.map(stripAuthorMarkers).filter(Boolean) : [];
+  if (authors.length < 2 || !authors.every(looksLikeSingleName)) return { title, authors };
+
+  const words = title.split(/\s+/).filter(Boolean);
+  if (words.length < 6) return { title, authors };
+  for (let suffixLength = 2; suffixLength <= Math.min(4, words.length - 4); suffixLength += 1) {
+    const candidate = words.slice(-suffixLength).join(" ");
+    const prefix = words.slice(0, -suffixLength).join(" ");
+    if (!looksLikeSingleName(candidate) || prefix.length < 18 || prefix.split(/\s+/).length < 4) continue;
+    const candidateKey = candidate.toLowerCase();
+    if (authors.some((author) => author.toLowerCase() === candidateKey)) continue;
+    return { title: prefix, authors: [candidate, ...authors] };
+  }
+  return { title, authors };
+}
+
 function looksLikeAuthorBlockLine(line, nextLine = "") {
   if (!line || line.includes("@") || AFFILIATION_RE.test(line) || DOI_RE.test(line) || ARXIV_RE.test(line)) return false;
   if (/[∗*†‡]/.test(line) && looksLikeSingleName(line.replace(/[,;].*$/, ""))) return true;
@@ -242,6 +260,11 @@ export function extractLocalPaperMetadata(documentText, { fallbackTitle = "" } =
     }
   }
 
+  if (title && authors.length >= 2) {
+    const repaired = repairTrailingTitleAuthor(title, authors);
+    title = repaired.title;
+    authors = repaired.authors;
+  }
   title ||= clean(fallbackTitle);
   const identifiers = sourceIdentifiers(lines);
   const warnings = [];
