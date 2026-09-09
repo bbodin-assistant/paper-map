@@ -412,11 +412,11 @@ function init() {
     return providerUsesDirectPdf(loadAiConfig()) && selectedFile.size > MAX_INLINE_PDF_BYTES;
   }
 
-  function refreshAiAvailability() {
+  function refreshAiAvailability({ updateStatus = true } = {}) {
     const config = loadAiConfig();
     const tooLarge = currentAiTooLarge();
     analyzeButton.disabled = Boolean(controller) || tooLarge;
-    if (!selectedFile || controller) return;
+    if (!updateStatus || !selectedFile || controller) return;
     if (tooLarge) {
       analysisStatus.textContent = `Ready for local extraction. ${providerLabel(config.provider)} direct PDF input is limited to 25 MB; choose Ollama/OpenAI-compatible text mode or extract locally.`;
     } else {
@@ -501,7 +501,7 @@ function init() {
       setGlobalStatus(error.message || String(error), "error");
     } finally {
       localButton.disabled = false;
-      refreshAiAvailability();
+      refreshAiAvailability({ updateStatus: false });
     }
   }
 
@@ -562,7 +562,7 @@ function init() {
       controller = null;
       localButton.disabled = false;
       cancelButton.hidden = true;
-      refreshAiAvailability();
+      refreshAiAvailability({ updateStatus: false });
     }
   }
 
