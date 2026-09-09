@@ -77,23 +77,6 @@ function looksLikeSingleName(value) {
     || (index > 0 && index < tokens.length - 1 && NAME_PARTICLES.has(token.toLowerCase())));
 }
 
-function titleWithTrailingAuthor(pageText) {
-  const lines = deglueCamelCase(pageText).split(/\r?\n/);
-  for (const rawLine of lines) {
-    const normalized = clean(rawLine);
-    if (!normalized) continue;
-    if (STOP_RE.test(normalized)) break;
-    if (HEADER_RE.test(normalized) || DOI_RE.test(normalized) || ARXIV_RE.test(normalized)) continue;
-    const parts = rawLine.trim().split(/\s{3,}/).map(clean).filter(Boolean);
-    if (parts.length !== 2) continue;
-    const [title, author] = parts;
-    if (title.length < 18 || title.split(/\s+/).length < 4 || title.length > 180) continue;
-    if (!looksLikeSingleName(author)) continue;
-    return { title: cleanTitlePrefix(title), author: stripAuthorMarkers(author) };
-  }
-  return null;
-}
-
 function looksLikeAuthorBlockLine(line, nextLine = "") {
   if (!line || line.includes("@") || AFFILIATION_RE.test(line) || DOI_RE.test(line) || ARXIV_RE.test(line)) return false;
   if (/[∗*†‡]/.test(line) && looksLikeSingleName(line.replace(/[,;].*$/, ""))) return true;
@@ -103,6 +86,38 @@ function looksLikeAuthorBlockLine(line, nextLine = "") {
   const nextLooksAffiliated = Boolean(nextLine && (AFFILIATION_RE.test(nextLine) || nextLine.includes("@")));
   return nextLooksAffiliated && tokens.length >= 2 && tokens.length <= 12
     && tokens.every((token) => nameToken(token) || NAME_PARTICLES.has(token.toLowerCase()));
+}
+
+function titleWithTrailingAuthor(pageText) {
+  const lines = deglueCamelCase(pageText).split(/\r?\n/);
+  for (let index = 0; index < lines.length; index += 1) {
+    const rawLine = lines[index];
+    const normalized = clean(rawLine);
+    if (!normalized) continue;
+    if (STOP_RE.test(normalized)) break;
+    if (HEADER_RE.test(normalized) || DOI_RE.test(normalized) || ARXIV_RE.test(normalized)) continue;
+
+    const parts = rawLine.trim().split(/\s{3,}/).map(clean).filter(Boolean);
+    if (parts.length === 2) {
+      const [title, author] = parts;
+      if (title.length >= 18 && title.split(/\s+/).length >= 4 && title.length <= 180 && looksLikeSingleName(author)) {
+        return { title: cleanTitlePrefix(title), author: stripAuthorMarkers(author) };
+      }
+    }
+
+    const nextLine = clean(lines[index + 1] || "");
+    const followingLine = clean(lines[index + 2] || "");
+    if (!looksLikeAuthorBlockLine(nextLine, followingLine)) continue;
+    const words = normalized.split(/\s+/);
+    if (words.length < 6) continue;
+    for (let suffixLength = 2; suffixLength <= Math.min(4, words.length - 4); suffixLength += 1) {
+      const author = words.slice(-suffixLength).join(" ");
+      const title = words.slice(0, -suffixLength).join(" ");
+      if (title.length < 18 || title.length > 180 || !looksLikeSingleName(author)) continue;
+      return { title: cleanTitlePrefix(title), author: stripAuthorMarkers(author) };
+    }
+  }
+  return null;
 }
 
 function splitAuthors(line) {
