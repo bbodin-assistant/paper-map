@@ -49,10 +49,13 @@ Abstract
   ]);
 });
 
-test("separates an inline first author from a flattened ResNet title line", () => {
+test("separates an inline first author across layout spacer rows", () => {
   const metadata = extractLocalPaperMetadata(`--- Page 1 ---
 Deep Residual Learning for Image Recognition Kaiming He
+
+
 Xiangyu Zhang Shaoqing Ren Jian Sun
+
 Microsoft Research
 {kahe, v-xiangz, v-shren, jiansun}@microsoft.com
 arXiv:1512.03385v1 [cs.CV] 10 Dec 2015
