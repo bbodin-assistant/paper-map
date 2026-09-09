@@ -148,8 +148,10 @@ function createUi() {
 
   function render(config = loadAiConfig(), { preserveKey = true } = {}) {
     const normalized = writeControls(controls, config, { preserveKey });
-    button.setAttribute("aria-label", `AI server: ${providerLabel(normalized.provider)}`);
-    button.title = `AI server: ${providerLabel(normalized.provider)} · ${normalized.model || "model required"}`;
+    const label = providerLabel(normalized.provider);
+    button.innerHTML = `AI <span class="visually-hidden">${label}</span>`;
+    button.setAttribute("aria-label", `AI server: ${label}`);
+    button.title = `AI server: ${label} · ${normalized.model || "model required"}`;
     return normalized;
   }
 
