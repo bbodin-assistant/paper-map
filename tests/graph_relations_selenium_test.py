@@ -88,6 +88,23 @@ def dispatch_background_pointer(driver):
     )
 
 
+def tap_first_node(driver):
+    return driver.execute_script(
+        """
+        const svg = document.querySelector('#paper-map');
+        const node = document.querySelector('.paper-node');
+        const rect = node.getBoundingClientRect();
+        const x = rect.left + rect.width / 2;
+        const y = rect.top + rect.height / 2;
+        const id = node.dataset.paperId;
+        node.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 703, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 703, pointerType: 'mouse', clientX: x, clientY: y, buttons: 0}));
+        svg.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: x, clientY: y, button: 0}));
+        return {id};
+        """
+    )
+
+
 def jitter_first_node(driver):
     return driver.execute_script(
         """
@@ -100,6 +117,7 @@ def jitter_first_node(driver):
         node.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 705, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
         svg.dispatchEvent(new PointerEvent('pointermove', {bubbles: true, pointerId: 705, pointerType: 'mouse', clientX: x + 3, clientY: y + 2, buttons: 1}));
         svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 705, pointerType: 'mouse', clientX: x + 3, clientY: y + 2, buttons: 0}));
+        svg.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: x + 3, clientY: y + 2, button: 0}));
         return {before, after: node.getAttribute('transform'), id: node.dataset.paperId};
         """
     )
@@ -182,17 +200,24 @@ def main():
         assert_true(citation_edges, "Demo should render citation edges")
         assert_true(all("citation-arrow" in (edge.get_attribute("marker-end") or "") for edge in citation_edges), "Citation edges should be directed")
 
-        # A small pointer wobble remains a click gesture: it must not reposition the
-        # node, and a normal click still opens its paper info without re-running layout.
+        # A plain press/release must select the node even when pointer capture makes
+        # pointerup and the compatibility click land on the SVG rather than the node.
         before_positions = wait_for_stable_node_positions(driver)
+        tap_result = tap_first_node(driver)
+        wait_displayed(driver, "#paper-detail")
+        after_tap_positions = node_positions(driver)
+        assert_true(before_positions == after_tap_positions, "Plain node tap must open info without resetting/re-simulating graph positions")
+        wait_click(driver, "#close-detail")
+
+        # A small pointer wobble remains a tap gesture: it must not reposition the
+        # node and must still open its paper info through the pointerup path.
         jitter_result = jitter_first_node(driver)
         assert_true(jitter_result["before"] == jitter_result["after"], f"Sub-threshold pointer jitter must not move a node: {jitter_result}")
-        first_node = driver.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{jitter_result["id"]}"]')
-        first_node_id = first_node.get_attribute("data-paper-id")
-        first_node.click()
         wait_displayed(driver, "#paper-detail")
-        after_positions = node_positions(driver)
-        assert_true(before_positions == after_positions, "Normal click must open info without resetting/re-simulating graph positions")
+        after_jitter_positions = node_positions(driver)
+        assert_true(before_positions == after_jitter_positions, "Sub-threshold tap jitter must not reset/re-simulate graph positions")
+        first_node_id = jitter_result["id"]
+        assert_true(tap_result["id"] == first_node_id, "Tap regression should exercise the same stable first node")
 
         # Detail view is richer and reading state is reading-only.
         status_values = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "detail-status")).options]
@@ -237,7 +262,7 @@ def main():
 
         save_screenshot(driver, "12-graph-relations-gestures.png")
         assert_no_page_horizontal_overflow(driver)
-        print("Graph click-to-open, drag-to-move, directed edges, provenance, stable selection, and pinch-zoom checks passed.")
+        print("Graph pointer tap, drag-to-move, directed edges, provenance, stable selection, and pinch-zoom checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "graph-relations-failure.png")

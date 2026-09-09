@@ -725,6 +725,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
 
   function endPointer(event) {
     const hadPinch = Boolean(pinchGesture);
+    let tappedItem = null;
     if (itemDrag && itemDrag.pointerId === event.pointerId) {
       if (itemDrag.dragging) {
         suppressNextClick = true;
@@ -732,6 +733,10 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
         event.preventDefault();
       } else {
         restorePendingItemDrag();
+        if (event.type === "pointerup") {
+          suppressNextClick = true;
+          tappedItem = { type: itemDrag.type, id: itemDrag.id };
+        }
       }
       itemDrag = null;
       svg.classList.remove("dragging-item");
@@ -752,6 +757,9 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     } catch {
       // Ignore capture state differences for cancelled/synthetic pointers.
     }
+
+    if (tappedItem?.type === "paper") onSelectPaper?.(tappedItem.id);
+    else if (tappedItem?.type === "topic") onSelectTopic?.(tappedItem.id);
   }
 
   svg.addEventListener("pointerup", endPointer);
