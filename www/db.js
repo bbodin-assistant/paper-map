@@ -109,6 +109,14 @@ export async function putMeta(key, value) {
   return putMany("meta", [{ key, value }]);
 }
 
+export async function deleteEdge(edgeId) {
+  if (!edgeId) return;
+  const db = await openDatabase();
+  const transaction = db.transaction("edges", "readwrite");
+  transaction.objectStore("edges").delete(edgeId);
+  await transactionDone(transaction);
+}
+
 export async function deletePaper(paperId) {
   const db = await openDatabase();
   const transaction = db.transaction(["papers", "edges"], "readwrite");
