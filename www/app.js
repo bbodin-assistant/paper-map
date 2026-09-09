@@ -1,3 +1,9 @@
+import "./activity-log.js";
+import {
+  installSourceFilterControl,
+  paperEntrySource,
+  sourceLabel,
+} from "./paper-source.js";
 import {
   clearLibrary,
   deleteEdge,
@@ -40,6 +46,8 @@ import { DEMO_LIBRARY } from "./demo-data.js";
 const UI_STORAGE_KEY = "paper-map-ui-v1";
 const EXPANSION_SIZE = 50;
 
+installSourceFilterControl();
+
 const $ = (selector) => document.querySelector(selector);
 const els = {
   status: $("#library-status"),
@@ -56,6 +64,7 @@ const els = {
   venue: $("#filter-venue"),
   type: $("#filter-type"),
   topic: $("#filter-topic"),
+  source: $("#filter-source"),
   starred: $("#filter-starred"),
   clearFilters: $("#clear-filters"),
   activeTopicFilter: $("#active-topic-filter"),
@@ -105,7 +114,7 @@ const els = {
 };
 
 function defaultFilters() {
-  return { query: "", yearMin: "", yearMax: "", author: "", venue: "", type: "", topic: "", starred: false };
+  return { query: "", yearMin: "", yearMax: "", author: "", venue: "", type: "", topic: "", source: "", starred: false };
 }
 
 function loadUiState() {
@@ -293,6 +302,7 @@ function matchesPaper(paper) {
   if (filters.author && !(paper.authors || []).some((author) => filterValue(author).includes(filterValue(filters.author)))) return false;
   if (filters.venue && !filterValue(paper.venue).includes(filterValue(filters.venue))) return false;
   if (filters.type && paper.type !== filters.type) return false;
+  if (filters.source && paperEntrySource(paper) !== filters.source) return false;
   if (filters.starred && !paper.starred) return false;
 
   if (filters.topic) {
@@ -322,6 +332,7 @@ function updateFilterInputs() {
   els.yearMax.value = state.filters.yearMax || "";
   els.author.value = state.filters.author || "";
   els.venue.value = state.filters.venue || "";
+  els.source.value = state.filters.source || "";
   els.starred.checked = Boolean(state.filters.starred);
 }
 
@@ -331,6 +342,12 @@ function populateFilterOptions() {
   els.type.replaceChildren(new Option("Any type", ""), ...types.map((type) => new Option(type, type)));
   els.type.value = types.includes(typeValue) ? typeValue : "";
   if (typeValue && !types.includes(typeValue)) state.filters.type = "";
+
+  const sourceValue = state.filters.source;
+  const sources = Array.from(new Set(state.library.papers.map(paperEntrySource))).sort((left, right) => sourceLabel(left).localeCompare(sourceLabel(right)));
+  els.source.replaceChildren(new Option("Any entry source", ""), ...sources.map((source) => new Option(sourceLabel(source), source)));
+  els.source.value = sources.includes(sourceValue) ? sourceValue : "";
+  if (sourceValue && !sources.includes(sourceValue)) state.filters.source = "";
 
   const topicValue = state.filters.topic;
   const options = [new Option("Any topic or tag", "")];
@@ -524,20 +541,7 @@ function renderResearchRelations(paper) {
 }
 
 function provenanceMethodLabel(value) {
-  const labels = {
-    demo: "Bundled demo dataset",
-    "demo-dataset": "Bundled demo dataset",
-    bibtex: "BibTeX import",
-    "bibtex-import": "BibTeX import",
-    "semantic-scholar": "Semantic Scholar",
-    "semantic-scholar-resolve": "Semantic Scholar identifier/title lookup",
-    "semantic-scholar-enrichment": "Semantic Scholar enrichment",
-    "semantic-scholar-expansion": "Semantic Scholar citation expansion",
-    "ai-pdf": "Reviewed PDF + OpenAI extraction",
-    "local-pdf": "Reviewed local Rust/WASM PDF extraction",
-    "backup-merge": "Paper Map backup merge",
-  };
-  return labels[value] || String(value || "Unknown").replaceAll("-", " ");
+  return sourceLabel(value);
 }
 
 function formatTimestamp(value) {
@@ -722,13 +726,14 @@ function updateFilterFromInputs() {
     venue: els.venue.value,
     type: els.type.value,
     topic: els.topic.value,
+    source: els.source.value,
     starred: els.starred.checked,
   };
   saveUiState();
   renderAll();
 }
 
-for (const input of [els.search, els.yearMin, els.yearMax, els.author, els.venue, els.type, els.topic, els.starred]) {
+for (const input of [els.search, els.yearMin, els.yearMax, els.author, els.venue, els.type, els.topic, els.source, els.starred]) {
   input.addEventListener(input.tagName === "SELECT" || input.type === "checkbox" ? "change" : "input", updateFilterFromInputs);
 }
 
