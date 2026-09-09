@@ -28,6 +28,20 @@
 .ai-config-actions { align-items: center; }
 .ai-config-actions .muted { text-align: right; }
 
+.ai-model-input-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+}
+.ai-model-input-row input { min-width: 0; }
+.ai-model-input-row button { white-space: nowrap; }
+.ai-model-status {
+  display: block;
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}
+
 .pdf-ai-provider-summary {
   align-items: center;
   padding-top: 10px;
@@ -49,4 +63,6 @@
   .ai-config-actions,
   .pdf-ai-provider-summary { align-items: stretch; flex-direction: column; }
   .ai-config-actions .muted { text-align: left; }
+  .ai-model-input-row { grid-template-columns: 1fr; }
+  .ai-model-input-row button { justify-self: start; }
 }
