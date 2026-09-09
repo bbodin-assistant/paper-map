@@ -31,6 +31,49 @@ function providerNote(config) {
   return `Paper Map extracts PDF text locally with Rust/WASM, then calls ${config.baseUrl}/chat/completions with OpenAI-compatible structured output. The server must allow browser CORS requests.`;
 }
 
+function providerOptions() {
+  return `
+    <option value="openai">OpenAI</option>
+    <option value="ollama">Ollama</option>
+    <option value="openai-compatible">OpenAI-compatible</option>
+  `;
+}
+
+function controlsSnapshot(controls) {
+  return {
+    provider: controls.provider.value,
+    baseUrl: controls.baseUrl.value,
+    model: controls.model.value,
+  };
+}
+
+function writeControls(controls, config = loadAiConfig(), { preserveKey = true } = {}) {
+  const normalized = normalizeAiConfig(config);
+  controls.provider.value = normalized.provider;
+  controls.baseUrl.value = normalized.baseUrl;
+  controls.model.value = normalized.model;
+  if (!preserveKey) controls.key.value = volatileApiKey || loadSessionApiKey();
+  controls.remember.checked = Boolean(loadSessionApiKey());
+  if (controls.keyHint) controls.keyHint.textContent = providerNeedsApiKey(normalized) ? "required" : "optional";
+  controls.key.placeholder = normalized.provider === "ollama" ? "not required" : "Bearer token";
+  if (controls.note) controls.note.textContent = providerNote(normalized);
+  return normalized;
+}
+
+function applyProviderPreset(controls) {
+  const preset = providerPreset(controls.provider.value);
+  writeControls(controls, { provider: preset.id, baseUrl: preset.baseUrl, model: preset.model });
+}
+
+function persistControls(controls) {
+  const config = saveAiConfig(controlsSnapshot(controls));
+  volatileApiKey = String(controls.key.value || "").trim();
+  saveSessionApiKey(volatileApiKey, controls.remember.checked);
+  writeControls(controls, config);
+  document.dispatchEvent(new CustomEvent("paper-map-ai-config-changed", { detail: config }));
+  return config;
+}
+
 function createUi() {
   if (ui || typeof document === "undefined") return ui;
   const tools = $(".header-tools");
@@ -63,11 +106,7 @@ function createUi() {
     </header>
     <div class="ai-config-grid">
       <label>Provider
-        <select id="ai-config-provider">
-          <option value="openai">OpenAI</option>
-          <option value="ollama">Ollama</option>
-          <option value="openai-compatible">OpenAI-compatible</option>
-        </select>
+        <select id="ai-config-provider">${providerOptions()}</select>
       </label>
       <label>Base URL
         <input id="ai-config-base-url" type="url" spellcheck="false" autocomplete="off" />
@@ -90,9 +129,7 @@ function createUi() {
   `;
   document.body.append(panel);
 
-  ui = {
-    button,
-    panel,
+  const controls = {
     provider: $("#ai-config-provider", panel),
     baseUrl: $("#ai-config-base-url", panel),
     model: $("#ai-config-model", panel),
@@ -100,20 +137,19 @@ function createUi() {
     remember: $("#ai-config-remember-key", panel),
     keyHint: $("#ai-config-key-hint", panel),
     note: $("#ai-config-note", panel),
+  };
+
+  ui = {
+    button,
+    panel,
+    ...controls,
     status: $("#ai-config-status", panel),
   };
 
   function render(config = loadAiConfig(), { preserveKey = true } = {}) {
-    const normalized = normalizeAiConfig(config);
-    ui.provider.value = normalized.provider;
-    ui.baseUrl.value = normalized.baseUrl;
-    ui.model.value = normalized.model;
-    if (!preserveKey) ui.key.value = volatileApiKey || loadSessionApiKey();
-    ui.remember.checked = Boolean(loadSessionApiKey());
-    ui.keyHint.textContent = providerNeedsApiKey(normalized) ? "required" : "optional";
-    ui.key.placeholder = normalized.provider === "ollama" ? "not required" : "Bearer token";
-    ui.note.textContent = providerNote(normalized);
-    ui.button.textContent = `AI: ${providerLabel(normalized.provider)}`;
+    const normalized = writeControls(controls, config, { preserveKey });
+    button.setAttribute("aria-label", `AI server: ${providerLabel(normalized.provider)}`);
+    button.title = `AI server: ${providerLabel(normalized.provider)} · ${normalized.model || "model required"}`;
     return normalized;
   }
 
@@ -130,25 +166,15 @@ function createUi() {
 
   button.addEventListener("click", () => panel.hidden ? open() : close());
   $("#ai-config-close", panel).addEventListener("click", close);
-
-  ui.provider.addEventListener("change", () => {
-    const preset = providerPreset(ui.provider.value);
-    render({ provider: preset.id, baseUrl: preset.baseUrl, model: preset.model });
-  });
+  controls.provider.addEventListener("change", () => applyProviderPreset(controls));
 
   $("#ai-config-save", panel).addEventListener("click", () => {
-    const config = saveAiConfig({
-      provider: ui.provider.value,
-      baseUrl: ui.baseUrl.value,
-      model: ui.model.value,
-    });
-    volatileApiKey = String(ui.key.value || "").trim();
-    saveSessionApiKey(volatileApiKey, ui.remember.checked);
+    const config = persistControls(controls);
     render(config);
     ui.status.textContent = `${providerLabel(config.provider)} selected.`;
-    document.dispatchEvent(new CustomEvent("paper-map-ai-config-changed", { detail: config }));
   });
 
+  document.addEventListener("paper-map-ai-config-changed", (event) => render(event.detail || loadAiConfig()));
   document.addEventListener("pointerdown", (event) => {
     if (!panel.hidden && !panel.contains(event.target) && !button.contains(event.target)) close();
   });
@@ -181,22 +207,65 @@ export function bindPdfAiConfigSummary(root) {
   if (!details) return;
   details.innerHTML = `
     <summary>AI server settings</summary>
-    <div class="pdf-ai-provider-summary">
-      <div>
-        <strong data-ai-provider-summary></strong>
-        <span data-ai-endpoint-summary class="muted"></span>
+    <div class="pdf-ai-inline-config">
+      <div class="pdf-ai-provider-summary">
+        <div>
+          <strong data-ai-provider-summary></strong>
+          <span data-ai-endpoint-summary class="muted"></span>
+        </div>
       </div>
-      <button type="button" class="quiet-button" data-open-ai-config>Configure AI server</button>
+      <div class="pdf-ai-settings-grid">
+        <label>Provider
+          <select data-pdf-ai-provider>${providerOptions()}</select>
+        </label>
+        <label>Base URL
+          <input data-pdf-ai-base-url type="url" spellcheck="false" autocomplete="off" />
+        </label>
+        <label>Model
+          <input data-pdf-ai-model type="text" spellcheck="false" autocomplete="off" />
+        </label>
+        <label>API key <span data-pdf-ai-key-hint class="field-hint"></span>
+          <input data-pdf-ai-key type="password" autocomplete="off" spellcheck="false" />
+        </label>
+        <label class="checkbox-row pdf-ai-remember-key">
+          <input data-pdf-ai-remember-key type="checkbox" /> Keep API key for this browser tab
+        </label>
+      </div>
+      <p data-pdf-ai-note class="muted ai-config-note"></p>
+      <div class="ai-config-actions">
+        <button type="button" data-save-pdf-ai-config>Save AI configuration</button>
+        <span data-pdf-ai-config-status class="muted" role="status" aria-live="polite"></span>
+      </div>
     </div>
   `;
-  const refresh = () => {
-    const config = loadAiConfig();
-    $("[data-ai-provider-summary]", details).textContent = `${providerLabel(config.provider)} · ${config.model || "model required"}`;
-    $("[data-ai-endpoint-summary]", details).textContent = config.baseUrl;
+
+  const controls = {
+    provider: $("[data-pdf-ai-provider]", details),
+    baseUrl: $("[data-pdf-ai-base-url]", details),
+    model: $("[data-pdf-ai-model]", details),
+    key: $("[data-pdf-ai-key]", details),
+    remember: $("[data-pdf-ai-remember-key]", details),
+    keyHint: $("[data-pdf-ai-key-hint]", details),
+    note: $("[data-pdf-ai-note]", details),
   };
-  $("[data-open-ai-config]", details).addEventListener("click", openAiConfig);
-  document.addEventListener("paper-map-ai-config-changed", refresh);
-  refresh();
+
+  const refresh = (config = loadAiConfig(), preserveKey = true) => {
+    const normalized = writeControls(controls, config, { preserveKey });
+    $("[data-ai-provider-summary]", details).textContent = `${providerLabel(normalized.provider)} · ${normalized.model || "model required"}`;
+    $("[data-ai-endpoint-summary]", details).textContent = normalized.baseUrl;
+  };
+
+  controls.provider.addEventListener("change", () => {
+    applyProviderPreset(controls);
+    refresh(controlsSnapshot(controls));
+  });
+  $("[data-save-pdf-ai-config]", details).addEventListener("click", () => {
+    const config = persistControls(controls);
+    refresh(config);
+    $("[data-pdf-ai-config-status]", details).textContent = `${providerLabel(config.provider)} selected.`;
+  });
+  document.addEventListener("paper-map-ai-config-changed", (event) => refresh(event.detail || loadAiConfig()));
+  refresh(loadAiConfig(), false);
 }
 
 if (typeof document !== "undefined") initAiConfigUi();
