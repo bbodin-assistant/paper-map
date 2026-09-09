@@ -1,7 +1,6 @@
 import { normalizeDoi } from "./import-export.js";
 
 const BASE_URL = "https://api.semanticscholar.org/graph/v1";
-const REQUEST_TIMEOUT_MS = 10_000;
 const PAPER_FIELDS = [
   "title",
   "abstract",
@@ -34,20 +33,7 @@ async function request(path, params = {}) {
   const key = apiKey();
   if (key) headers["x-api-key"] = key;
 
-  const controller = new AbortController();
-  const timeout = globalThis.setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
-  let response;
-  try {
-    response = await globalThis.fetch(url, { headers, signal: controller.signal });
-  } catch (error) {
-    if (error?.name === "AbortError") {
-      throw new Error(`Semantic Scholar request timed out after ${Math.round(REQUEST_TIMEOUT_MS / 1000)} seconds.`);
-    }
-    throw error;
-  } finally {
-    globalThis.clearTimeout(timeout);
-  }
-
+  const response = await fetch(url, { headers });
   if (!response.ok) {
     let detail = "";
     try {
@@ -161,11 +147,18 @@ async function fetchRelationship(paper, direction, offset = 0, limit = 50) {
     limit: boundedLimit,
     fields: PAPER_FIELDS,
   });
+
+  const paperKey = direction === "references" ? "citedPaper" : "citingPaper";
   const papers = (payload?.data || [])
-    .map((entry) => direction === "references" ? entry?.citedPaper : entry?.citingPaper)
-    .filter((entry) => entry?.paperId)
+    .map((item) => item?.[paperKey])
+    .filter((item) => item?.paperId && item?.title)
     .map(normalizeSemanticScholarPaper);
-  return { papers, next: payload?.next ?? null };
+
+  return {
+    papers,
+    next: payload?.next ?? null,
+    direction,
+  };
 }
 
 export function fetchReferences(paper, offset = 0, limit = 50) {
