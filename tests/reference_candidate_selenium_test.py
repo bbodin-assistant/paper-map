@@ -17,7 +17,6 @@ from mobile_selenium_test import (
 )
 from pdf_local_citation_selenium_test import (
     create_valid_citation_pdf,
-    install_resolution_fetch_mock,
     read_all_indexeddb,
 )
 from pdf_review_selenium_test import center_element
@@ -25,50 +24,86 @@ from pdf_review_selenium_test import center_element
 SAVED_TITLE = "Identifier-less Reference Candidate Fixture"
 
 
-def install_candidate_search_mock(driver):
-    install_resolution_fetch_mock(driver)
+def install_reference_provider_fetch_mock(driver):
+    """Mock the provider boundary once, matching the production browser request flow."""
     driver.execute_script(
         """
-        const inheritedFetch = window.fetch.bind(window);
+        const originalFetch = window.fetch.bind(window);
         window.__paperMapCandidateSearchUrls = [];
-        window.fetch = async (url, options) => {
+        window.fetch = async (url, options = {}) => {
           const text = String(url);
-          let pathname = "";
-          try {
-            pathname = new URL(text, window.location.href).pathname;
-          } catch {}
-          if (pathname.endsWith("/paper/search")) {
+          let parsed = null;
+          try { parsed = new URL(text, window.location.href); } catch {}
+          const hostname = parsed?.hostname || '';
+          const pathname = parsed?.pathname || '';
+
+          if (hostname === 'api.crossref.org' && pathname.includes('/works/10.1234%2Ftest.55')) {
+            return new Response(JSON.stringify({
+              message: {
+                DOI: '10.1234/TEST.55',
+                title: ['Canonical Crossref DOI Paper'],
+                author: [{ given: 'Ada', family: 'Canonical' }],
+                issued: { 'date-parts': [[2022]] },
+                'container-title': ['Canonical Journal'],
+                type: 'journal-article',
+                URL: 'https://doi.org/10.1234/TEST.55',
+                publisher: 'Fixture Press',
+                'is-referenced-by-count': 12,
+              },
+            }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+          }
+
+          if (
+            hostname === 'api.semanticscholar.org'
+            && pathname.includes('/graph/v1/paper/ARXIV%3A2401.01234')
+          ) {
+            return new Response(JSON.stringify({
+              paperId: '0123456789abcdef0123456789abcdef01234567',
+              title: 'Canonical Semantic Scholar arXiv Paper',
+              year: 2024,
+              venue: 'arXiv',
+              publicationTypes: ['JournalArticle'],
+              authors: [{ name: 'Grace Canonical' }],
+              externalIds: { ArXiv: '2401.01234' },
+              url: 'https://www.semanticscholar.org/paper/fixture',
+              citationCount: 8,
+              fieldsOfStudy: ['Computer Science'],
+            }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+          }
+
+          if (hostname === 'api.semanticscholar.org' && pathname.endsWith('/paper/search')) {
             window.__paperMapCandidateSearchUrls.push(text);
             return new Response(JSON.stringify({
               data: [
                 {
-                  paperId: "1111111111111111111111111111111111111111",
-                  title: "A Plain Reference Without Persistent Identifier",
+                  paperId: '1111111111111111111111111111111111111111',
+                  title: 'A Plain Reference Without Persistent Identifier',
                   year: 2020,
-                  venue: "Fixture Proceedings",
-                  publicationTypes: ["Conference"],
-                  authors: [{ name: "Linus Author" }],
+                  venue: 'Fixture Proceedings',
+                  publicationTypes: ['Conference'],
+                  authors: [{ name: 'Linus Author' }],
                   externalIds: {},
-                  url: "https://www.semanticscholar.org/paper/candidate-one",
+                  url: 'https://www.semanticscholar.org/paper/candidate-one',
                   citationCount: 3,
-                  fieldsOfStudy: ["Computer Science"],
+                  fieldsOfStudy: ['Computer Science'],
                 },
                 {
-                  paperId: "2222222222222222222222222222222222222222",
-                  title: "Plain Reference Without Persistent Identifier",
+                  paperId: '2222222222222222222222222222222222222222',
+                  title: 'Plain Reference Without Persistent Identifier',
                   year: 2020,
-                  venue: "Alternate Fixture Proceedings",
-                  publicationTypes: ["Conference"],
-                  authors: [{ name: "Linus Author" }],
+                  venue: 'Alternate Fixture Proceedings',
+                  publicationTypes: ['Conference'],
+                  authors: [{ name: 'Linus Author' }],
                   externalIds: {},
-                  url: "https://www.semanticscholar.org/paper/candidate-two",
+                  url: 'https://www.semanticscholar.org/paper/candidate-two',
                   citationCount: 4,
-                  fieldsOfStudy: ["Computer Science"],
+                  fieldsOfStudy: ['Computer Science'],
                 },
               ],
-            }), { status: 200, headers: { "Content-Type": "application/json" } });
+            }), { status: 200, headers: { 'Content-Type': 'application/json' } });
           }
-          return inheritedFetch(url, options);
+
+          return originalFetch(url, options);
         };
         """
     )
@@ -85,7 +120,7 @@ def main():
             lambda d: "Opening local library"
             not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
         )
-        install_candidate_search_mock(driver)
+        install_reference_provider_fetch_mock(driver)
 
         wait_click(driver, "#library-menu > summary")
         wait_displayed(driver, "#library-menu .library-panel")
