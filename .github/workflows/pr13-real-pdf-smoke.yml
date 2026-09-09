@@ -1,0 +1,49 @@
+name: PR 13 real PDF smoke
+
+on:
+  pull_request:
+
+jobs:
+  real-pdf-smoke:
+    if: github.event.pull_request.number == 13
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install WebAssembly target
+        run: rustup target add wasm32-unknown-unknown
+      - name: Install wasm-pack
+        run: cargo install wasm-pack --version 0.13.1 --locked
+      - name: Build local PDF extractor
+        run: make build-wasm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tests/requirements-ui.txt
+      - name: Install Selenium
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r tests/requirements-ui.txt
+      - name: Start static app server
+        run: |
+          mkdir -p artifacts/mobile-ui
+          python3 -m http.server 8080 --directory . > artifacts/mobile-ui/server.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8080/www/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat artifacts/mobile-ui/server.log
+          exit 1
+      - name: Run real public PDF corpus
+        env:
+          TEST_URL: http://127.0.0.1:8080/www/
+          MOBILE_TEST_ARTIFACT_DIR: artifacts/mobile-ui
+        run: python3 tests/real_pdf_smoke_selenium.py
+      - name: Upload smoke artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr13-real-pdf-smoke-artifacts
+          path: artifacts/mobile-ui
+          if-no-files-found: warn
