@@ -3,6 +3,7 @@ import { isResearchRelation, relationLabel } from "./research-relations.js";
 const SVG_NS = "http://www.w3.org/2000/svg";
 const MIN_ZOOM = 0.35;
 const MAX_ZOOM = 3.2;
+const ITEM_DRAG_THRESHOLD = 6;
 
 function svgElement(name, attributes = {}) {
   const element = document.createElementNS(SVG_NS, name);
@@ -565,6 +566,17 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     };
   }
 
+  function restorePendingItemDrag() {
+    if (!itemDrag) return;
+    itemDrag.item.fixed = itemDrag.wasFixed;
+  }
+
+  function pinActiveItemDrag() {
+    if (!itemDrag?.dragging) return;
+    if (itemDrag.type === "paper") pinnedPapers.add(itemDrag.id);
+    else pinnedTopics.add(itemDrag.id);
+  }
+
   function startPinch() {
     if (activePointers.size < 2) return;
     const [first, second] = Array.from(activePointers.values()).slice(0, 2);
@@ -574,13 +586,8 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
       startMidpoint: midpoint,
       startDistance: Math.max(1, Math.hypot(second.x - first.x, second.y - first.y)),
     };
-    if (itemDrag && !itemDrag.moved) {
-      if (itemDrag.type === "paper") {
-        itemDrag.item.fixed = pinnedPapers.has(itemDrag.id);
-      } else {
-        itemDrag.item.fixed = pinnedTopics.has(itemDrag.id);
-      }
-    }
+    if (itemDrag?.dragging) pinActiveItemDrag();
+    else restorePendingItemDrag();
     itemDrag = null;
     panGesture = null;
     suppressNextClick = true;
@@ -618,10 +625,17 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
       const item = currentPaperNodes.get(id);
       if (item) {
         const world = worldPoint(point);
-        item.fixed = true;
-        itemDrag = { type: "paper", id, item, pointerId: event.pointerId, offsetX: world.x - item.x, offsetY: world.y - item.y, start: point, moved: false };
-        svg.classList.add("dragging-item");
-        event.preventDefault();
+        itemDrag = {
+          type: "paper",
+          id,
+          item,
+          pointerId: event.pointerId,
+          offsetX: world.x - item.x,
+          offsetY: world.y - item.y,
+          start: point,
+          dragging: false,
+          wasFixed: item.fixed,
+        };
         return;
       }
     }
@@ -632,10 +646,17 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
       const item = currentTopicBlocks.get(id);
       if (item) {
         const world = worldPoint(point);
-        item.fixed = true;
-        itemDrag = { type: "topic", id, item, pointerId: event.pointerId, offsetX: world.x - item.x, offsetY: world.y - item.y, start: point, moved: false };
-        svg.classList.add("dragging-item");
-        event.preventDefault();
+        itemDrag = {
+          type: "topic",
+          id,
+          item,
+          pointerId: event.pointerId,
+          offsetX: world.x - item.x,
+          offsetY: world.y - item.y,
+          start: point,
+          dragging: false,
+          wasFixed: item.fixed,
+        };
         return;
       }
     }
@@ -667,10 +688,16 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     }
 
     if (itemDrag && itemDrag.pointerId === event.pointerId) {
-      const world = worldPoint(point);
       const dx = point.x - itemDrag.start.x;
       const dy = point.y - itemDrag.start.y;
-      if (Math.hypot(dx, dy) > 3) itemDrag.moved = true;
+      if (!itemDrag.dragging) {
+        if (Math.hypot(dx, dy) <= ITEM_DRAG_THRESHOLD) return;
+        itemDrag.dragging = true;
+        itemDrag.item.fixed = true;
+        svg.classList.add("dragging-item");
+      }
+
+      const world = worldPoint(point);
       itemDrag.item.x = world.x - itemDrag.offsetX;
       itemDrag.item.y = world.y - itemDrag.offsetY;
       if (itemDrag.type === "paper") {
@@ -699,14 +726,12 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
   function endPointer(event) {
     const hadPinch = Boolean(pinchGesture);
     if (itemDrag && itemDrag.pointerId === event.pointerId) {
-      if (itemDrag.moved) {
+      if (itemDrag.dragging) {
         suppressNextClick = true;
-        if (itemDrag.type === "paper") pinnedPapers.add(itemDrag.id);
-        else pinnedTopics.add(itemDrag.id);
-      } else if (itemDrag.type === "paper") {
-        itemDrag.item.fixed = pinnedPapers.has(itemDrag.id);
+        pinActiveItemDrag();
+        event.preventDefault();
       } else {
-        itemDrag.item.fixed = pinnedTopics.has(itemDrag.id);
+        restorePendingItemDrag();
       }
       itemDrag = null;
       svg.classList.remove("dragging-item");
