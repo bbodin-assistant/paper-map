@@ -42,12 +42,12 @@ export function aiRequestEndpoint(config) {
   return `${normalized.baseUrl}/${providerUsesDirectPdf(normalized) ? "responses" : "chat/completions"}`;
 }
 
-function chatPayload({ model, documentText, fileName, truncated }) {
+export function buildChatMetadataPayload({ model, documentText, fileName, truncated = false }) {
   const sourceNote = truncated
     ? "Paper Map supplied the beginning and end of the document because the extracted text exceeded the configured prompt limit. Mention any resulting uncertainty in warnings."
     : "Paper Map supplied the locally extracted PDF text below.";
   return {
-    model,
+    model: clean(model),
     temperature: 0,
     max_tokens: 5000,
     messages: [
@@ -91,7 +91,7 @@ async function analyzeViaChatCompatible({ file, config, apiKey, signal, fetchImp
   const response = await fetchImpl(aiRequestEndpoint(config), {
     method: "POST",
     headers,
-    body: JSON.stringify(chatPayload({
+    body: JSON.stringify(buildChatMetadataPayload({
       model: config.model,
       documentText: selected.text,
       fileName: file.name,
@@ -150,6 +150,7 @@ export async function analyzePdfWithAi({
   if (!isPdfFile(file)) throw new Error("Select a PDF file.");
   if (typeof fetchImpl !== "function") throw new Error("No fetch implementation is available for AI analysis.");
   const normalized = normalizeAiConfig(config);
+  if (!normalized.model) throw new Error("Configure an AI model before analysis.");
 
   if (providerUsesDirectPdf(normalized)) {
     const metadata = await analyzePdfWithOpenAI({
