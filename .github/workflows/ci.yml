@@ -6,22 +6,47 @@ on:
   pull_request:
 
 jobs:
-  syntax:
+  fast:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: JavaScript syntax checks
+      - name: JavaScript, Rust, and unit checks
         run: make test
 
+  rust-wasm:
+    needs: fast
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install WebAssembly target
+        run: rustup target add wasm32-unknown-unknown
+      - name: Install wasm-pack
+        run: cargo install wasm-pack --version 0.13.1 --locked
+      - name: Compile Rust citation extractor for WebAssembly
+        run: |
+          cargo check --target wasm32-unknown-unknown
+          make build-wasm
+      - name: Upload generated WASM package
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-map-wasm
+          path: www/pkg
+          if-no-files-found: error
+
   mobile-ui:
-    needs: syntax
+    needs: rust-wasm
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: paper-map-wasm
+          path: www/pkg
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -57,6 +82,7 @@ jobs:
         run: |
           python3 tests/mobile_selenium_test.py
           python3 tests/pdf_review_selenium_test.py
+          python3 tests/pdf_local_citation_selenium_test.py
       - name: Upload mobile UI screenshots and OCR output
         if: always()
         uses: actions/upload-artifact@v4

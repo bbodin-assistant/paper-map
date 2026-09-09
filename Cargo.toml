@@ -1,0 +1,21 @@
+[package]
+name = "paper_map_wasm"
+version = "0.1.0"
+edition = "2021"
+description = "Deterministic local PDF citation extraction for Paper Map."
+license = "MIT"
+repository = "https://github.com/bbodin-assistant/paper-map"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pdfplumber = { version = "0.4.1", default-features = false }
+regex = "1.11"
+serde = { version = "1", features = ["derive"] }
+serde-wasm-bindgen = "0.6"
+wasm-bindgen = "0.2"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.4", features = ["wasm_js"] }

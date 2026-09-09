@@ -207,11 +207,12 @@ def main():
         )
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI analysis widget")
 
+        wait_click(driver, ".pdf-ai-provider-settings > summary")
         key_input = wait_displayed(driver, "#pdf-ai-key")
         key_input.send_keys("selenium-test-api-key")
         wait_click(driver, "#pdf-ai-analyze")
         review = wait_displayed(driver, "#pdf-ai-review")
-        wait.until(lambda d: "Analysis complete" in d.find_element(By.ID, "pdf-ai-analysis-status").text)
+        wait.until(lambda d: "AI analysis complete" in d.find_element(By.ID, "pdf-ai-analysis-status").text)
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI review widget")
         assert_true("Review before saving" in review.text, "Review heading should be visible after analysis")
         assert_true("Deterministic Selenium fixture" in review.text, "Extraction warning should be visible")

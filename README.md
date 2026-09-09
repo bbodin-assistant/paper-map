@@ -9,7 +9,8 @@ The application is designed for static hosting. There is no application backend 
 - Store papers, citation edges, annotations, tags, topics, and UI state locally in IndexedDB.
 - Import and export a portable Paper Map JSON database.
 - Import BibTeX and enrich papers from Semantic Scholar when identifiers are available.
-- Import a research PDF with AI-assisted metadata and topic extraction, with an explicit review step before saving.
+- Import a research PDF with deterministic local citation extraction in Rust/WebAssembly.
+- Keep AI-assisted metadata/topic extraction as an optional reviewed alternative.
 - Load a small bundled demo dataset without mixing it into a user's saved library unless requested.
 - Explore two map modes:
   - **Citation map** — paper nodes linked by citation/reference relationships.
@@ -23,49 +24,68 @@ The application is designed for static hosting. There is no application backend 
 Paper Map deliberately follows the browser-first style of `train-route-explorer`:
 
 ```text
+Cargo.toml                  Rust/WASM citation extractor crate
+src/
+  lib.rs                    PDF layout, bibliography and identifier extraction
 www/
-  index.html              Static application shell
-  style.css               Main visual language and map layout
-  app.js                  Application state and orchestration
-  db.js                   IndexedDB persistence
-  graph.js                Citation and topic SVG rendering
-  import-export.js        JSON / BibTeX import and export
-  semantic-scholar.js     Scholarly-data provider adapter
-  pdf-ai.js               OpenAI PDF metadata/topic extraction adapter
-  pdf-ai-import.js        Reviewed PDF import workflow
-  pdf-ai-import.css       PDF review UI styles
-  demo-data.js            Bundled demo library
+  index.html                Static application shell
+  style.css                 Main visual language and map layout
+  app.js                    Application state and orchestration
+  db.js                     IndexedDB persistence
+  graph.js                  Citation and topic SVG rendering
+  import-export.js          JSON / BibTeX import and export
+  semantic-scholar.js       Scholarly-data provider adapter
+  pdf-local.js              Rust/WASM browser adapter
+  pdf-local.css             Local citation review styles
+  pdf-ai.js                 OpenAI PDF metadata/topic extraction adapter
+  pdf-ai-import.js          Shared reviewed PDF import workflow
+  pdf-ai-import.css         PDF review UI styles
+  pkg/                      Generated wasm-pack output; not committed
+  demo-data.js              Bundled demo library
 tests/
-  pdf-ai.test.mjs         PDF metadata normalization tests
-  mobile_selenium_test.py Mobile interaction, layout, screenshot and OCR test
-  requirements-ui.txt     Selenium dependency for the mobile test
-ROADMAP.md                 Product and implementation roadmap
-AGENTS.md                  Project-specific implementation guide
+  pdf-ai.test.mjs                       PDF metadata normalization tests
+  mobile_selenium_test.py               Mobile interaction/layout/OCR test
+  pdf_review_selenium_test.py           AI review/save test with mocked API
+  pdf_local_citation_selenium_test.py   Real Rust/WASM citation extraction test
+  requirements-ui.txt                   Selenium dependency
+ROADMAP.md                   Product and implementation roadmap
+AGENTS.md                    Project-specific implementation guide
 ```
 
-No Node framework is required at runtime. The browser uses ES modules directly.
+No UI framework or Node runtime is required in production. The browser uses ES modules directly; Rust is compiled to WebAssembly with `wasm-pack`.
 
 ## Run locally
 
-Serve the repository root with any static server and open `www/`.
-
-For example:
+Install Rust, the `wasm32-unknown-unknown` target, and `wasm-pack`:
 
 ```bash
-python3 -m http.server 8080
+rustup target add wasm32-unknown-unknown
+cargo install wasm-pack --version 0.13.1 --locked
 ```
 
-Then open `http://localhost:8080/www/`.
+Then build the generated browser package and serve the repository root:
+
+```bash
+make run
+```
+
+Open `http://localhost:8080/www/`.
 
 ## Tests
 
-Fast syntax/unit checks:
+Fast syntax/unit checks, including native Rust extraction tests:
 
 ```bash
 make test
 ```
 
-The mobile browser test uses Selenium with Chrome mobile emulation at a 390 × 844 CSS-pixel viewport. It clicks the About, Library, Filters, map-mode, bibliography, paper-detail, and PDF-import widgets; checks visible text/control geometry for clipping or horizontal overflow; captures screenshots; and runs Tesseract OCR against the Library widget screenshot.
+Explicit Rust/WASM validation:
+
+```bash
+make test-rust
+```
+
+The mobile browser suite uses Selenium with Chrome mobile emulation at a 390 × 844 CSS-pixel viewport. It exercises the main UI, OCR visibility checks, the reviewed AI flow, and a real Rust/WASM local citation extraction against a generated two-page PDF fixture.
 
 Install `selenium` from `tests/requirements-ui.txt` and Tesseract, start the static server, then run:
 
@@ -73,23 +93,41 @@ Install `selenium` from `tests/requirements-ui.txt` and Tesseract, start the sta
 make test-ui-mobile TEST_URL=http://127.0.0.1:8080/www/
 ```
 
-CI runs the same test after the fast checks and uploads screenshots, OCR output, and the server log as the `mobile-ui-artifacts` workflow artifact even when the UI test fails.
+CI compiles the Rust crate for `wasm32-unknown-unknown`, builds `www/pkg/`, runs the browser tests against that generated package, and uploads screenshots/OCR output as `mobile-ui-artifacts`.
 
 ## Local data
 
 The live library is stored in IndexedDB under `paper-map-v1`. Browser data can be downloaded as a JSON backup and restored later. Clearing browser site data removes the local library, so regular exports are recommended for important collections.
 
-The repository's demo records are source-controlled only to make the application immediately testable.
+The repository's demo records are source-controlled only to make the application immediately testable. Generated WebAssembly output, user PDFs, extracted references, notes, exports, and API keys are not committed.
+
+## Local PDF citation extraction
+
+The default systematic PDF path runs entirely in the browser:
+
+1. `pdfplumber` parses in-memory PDF bytes and performs layout-preserving text extraction.
+2. Rust searches for explicit bibliography headings such as `References`, `Bibliography`, `Works Cited`, or `Literature Cited`.
+3. If no heading is present, a conservative fallback looks for a cluster of citation-like lines only in the final 40% of the document.
+4. The bibliography is segmented as numbered entries (`[12]`, `12.`) or author/year entries.
+5. Each entry is normalized and inspected for DOI, modern/legacy arXiv identifiers, publication year, page range, and extraction confidence.
+6. Structured results are returned through `wasm-bindgen` / `serde-wasm-bindgen` and shown in the existing PDF review dialog.
+7. The user can accept or reject each extracted reference before saving.
+
+Accepted references are stored on the paper as reviewed extraction provenance. They are **not** immediately converted into citation graph edges, because a raw bibliography entry is not yet guaranteed to identify one canonical paper. Resolving accepted references through DOI/arXiv/provider lookup is a separate next step.
+
+Scanned/image-only PDFs are reported as requiring OCR rather than being guessed from images in this first systematic extractor.
+
+## Optional AI PDF analysis
+
+The OpenAI Responses API adapter remains available for metadata and topic suggestions. The selected PDF is sent directly from the browser as an inline file input with `store: false`. The user supplies the API key; it is not committed or saved in IndexedDB. By default it is kept only in the password field, with an explicit option to retain it in `sessionStorage` for the current browser tab.
+
+The AI result is treated as a proposal. Title, authors, year, venue, type, DOI, arXiv ID, URL, abstract, keywords, proposed topics, confidence values, and warnings are shown in the same review dialog. The paper and accepted topics are written to IndexedDB only after **Save reviewed paper** is pressed.
 
 ## External scholarly data
 
 V1 uses the Semantic Scholar Academic Graph API through an isolated provider module. Expansion is initiated by the user from a selected paper. Provider identifiers are retained so subsequent expansion can reuse the same scholarly record.
 
-PDF import uses a separate OpenAI Responses API adapter. The selected PDF is sent directly from the browser as an inline file input with `store: false`. The user supplies the API key; it is not committed or saved in IndexedDB. By default it is kept only in the password field, with an explicit option to retain it in `sessionStorage` for the current browser tab.
-
-The AI result is treated as a proposal. Title, authors, year, venue, type, DOI, arXiv ID, URL, abstract, keywords, proposed topics, confidence values, and warnings are shown in a review dialog. The paper and accepted topics are written to IndexedDB only after **Save reviewed paper** is pressed. Existing papers are merged using the same conservative identifier/title-year rules as other imports.
-
-The provider layer remains replaceable: OpenAlex, Crossref, Zotero, another AI provider, or local PDF extraction can be added without changing the core database schema or map renderer.
+The provider layer remains replaceable: OpenAlex, Crossref, Zotero, another AI provider, or reference-resolution adapters can be added without changing the core map renderer.
 
 ## Import paths
 
@@ -98,6 +136,7 @@ Current import paths are:
 - Paper Map JSON backup / restore
 - BibTeX
 - DOI, arXiv ID, Semantic Scholar ID, or title through Semantic Scholar
-- PDF through reviewed AI-assisted extraction
+- PDF through local Rust/WASM bibliography/citation extraction
+- PDF through optional reviewed AI-assisted metadata/topic extraction
 
-The PDF workflow currently supports inline PDFs up to 25 MB. The PDF itself is not stored in IndexedDB; only reviewed bibliographic metadata and topic records are saved locally.
+The PDF itself is not stored in IndexedDB. Only user-reviewed paper data, accepted topics, and accepted extracted-reference provenance are saved locally.
