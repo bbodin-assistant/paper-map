@@ -24,6 +24,12 @@ def create_bib_fixture():
     return path
 
 
+def source_option_values(driver):
+    return driver.execute_script(
+        "return Array.from(document.querySelectorAll('#filter-source option'), option => option.value);"
+    )
+
+
 def main():
     driver = create_driver()
     wait = WebDriverWait(driver, WAIT_SECONDS)
@@ -35,13 +41,13 @@ def main():
         wait_click(driver, "#library-menu > summary")
         wait_displayed(driver, "#library-menu .library-panel")
         wait_click(driver, "#load-demo")
-        wait.until(lambda d: int(d.find_element(By.ID, "visible-paper-count").text or "0") >= 8)
+        wait.until(lambda d: "demo" in source_option_values(d))
 
         wait_click(driver, "#library-menu > summary")
         fixture = create_bib_fixture()
         import_input = wait.until(EC.presence_of_element_located((By.ID, "import-file")))
         import_input.send_keys(str(fixture))
-        wait.until(lambda d: int(d.find_element(By.ID, "visible-paper-count").text or "0") >= 9)
+        wait.until(lambda d: "bibtex-import" in source_option_values(d))
 
         wait_click(driver, "#filter-menu > summary")
         source = Select(wait_displayed(driver, "#filter-source"))
