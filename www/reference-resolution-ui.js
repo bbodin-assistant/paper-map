@@ -69,6 +69,23 @@ function updateSummary(dialog) {
   }
 }
 
+function unexpectedResolution(error) {
+  return {
+    status: "unresolved",
+    provider: "",
+    matchedBy: "title-author-year",
+    queriedIdentifier: "",
+    confidence: 0,
+    canonical: null,
+    resolvedAt: new Date().toISOString(),
+    attempts: [{
+      provider: "semantic-scholar",
+      status: "failed",
+      message: clean(error?.message || error || "Reference resolution failed unexpectedly."),
+    }],
+  };
+}
+
 function renderResolution(row) {
   const body = $(".pdf-reference-body", row);
   if (!body) return;
@@ -107,7 +124,12 @@ function renderResolution(row) {
         searchButton.disabled = true;
         row.dataset.resolutionStatus = "resolving";
         searchButton.textContent = "Searching…";
-        const resolved = await resolveExtractedReference(reference);
+        let resolved;
+        try {
+          resolved = await resolveExtractedReference(reference);
+        } catch (error) {
+          resolved = unexpectedResolution(error);
+        }
         row.__paperMapReference = { ...reference, resolution: resolved };
         renderResolution(row);
         const dialog = row.closest("#pdf-ai-dialog");
