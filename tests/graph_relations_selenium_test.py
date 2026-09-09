@@ -29,6 +29,24 @@ def node_positions(driver):
     )
 
 
+def wait_for_stable_node_positions(driver, timeout=WAIT_SECONDS, stable_samples=3, interval=0.12):
+    deadline = time.monotonic() + timeout
+    previous = None
+    stable = 0
+    latest = None
+    while time.monotonic() < deadline:
+        latest = node_positions(driver)
+        if latest and latest == previous:
+            stable += 1
+            if stable >= stable_samples:
+                return latest
+        else:
+            stable = 0
+        previous = latest
+        time.sleep(interval)
+    raise AssertionError(f"Graph layout did not settle before stable-selection assertion: {latest}")
+
+
 def seed_citation_counts(driver):
     result = driver.execute_async_script(
         """
@@ -146,9 +164,10 @@ def main():
         assert_true(citation_edges, "Demo should render citation edges")
         assert_true(all("citation-arrow" in (edge.get_attribute("marker-end") or "") for edge in citation_edges), "Citation edges should be directed")
 
-        # Selecting a node must preserve the current graph layout.
-        time.sleep(0.35)
-        before_positions = node_positions(driver)
+        # Selecting a node must preserve an already-settled graph layout. Waiting for
+        # the initial force simulation avoids confusing normal layout motion with a
+        # selection-triggered reset/re-simulation.
+        before_positions = wait_for_stable_node_positions(driver)
         first_node = driver.find_elements(By.CSS_SELECTOR, ".paper-node")[0]
         first_node_id = first_node.get_attribute("data-paper-id")
         first_node.click()
