@@ -128,12 +128,18 @@ function cleanTitlePrefix(prefix) {
 
   const rawLines = value.split(/\r?\n/).map(clean).filter(Boolean);
   if (rawLines.length === 1) {
-    const sentenceParts = rawLines[0].split(/\.\s+/).map(clean).filter(Boolean);
+    const sentenceParts = rawLines[0].split(/\.\s*/).map(clean).filter(Boolean);
     return clean(sentenceParts.at(-1) || "");
   }
 
   const lines = rawLines.filter((line) => !HEADER_RE.test(line) && !DOI_RE.test(line) && !/^arxiv\s*:/i.test(line));
-  return clean(lines.join(" "));
+  let title = clean(lines.join(" "));
+  const sentenceParts = title.split(/\.\s*/).map(clean).filter(Boolean);
+  if (title.length > 140 && sentenceParts.length > 1) {
+    const tail = sentenceParts.at(-1) || "";
+    if (tail.length >= 8 && tail.length <= 180) title = tail;
+  }
+  return title;
 }
 
 function sourceIdentifiers(lines) {
