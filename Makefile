@@ -27,6 +27,7 @@ test:
 	node --check www/research-relations.js
 	node --check www/ai-config.js
 	node --check www/ai-config-ui.js
+	node --check www/ai-models.js
 	node --check www/ai-provider.js
 	node --check www/pdf-ai.js
 	node --check www/pdf-local.js
