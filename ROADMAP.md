@@ -4,11 +4,12 @@
 
 Paper Map is a private, local-first research atlas for one researcher. The map is the dominant surface; the bibliography list and paper editor support the map rather than replacing it.
 
-The application has three related layers:
+The application has four related layers:
 
-1. **Paper library** — canonical metadata, personal annotations, tags, status, relevance, links, provider identifiers, and reviewed extraction provenance.
-2. **Citation graph** — directed paper-to-paper relationships, with on-demand expansion in either direction.
-3. **Thematic graph** — topic blocks connected when papers/citations bridge themes. Themes may come from provider metadata, predefined taxonomies, manual curation, or optional AI suggestions.
+1. **Paper library** — canonical metadata, personal annotations, reading state, relevance, links, provider identifiers, library-entry provenance, and reviewed extraction provenance.
+2. **Citation graph** — directed `citing paper -> cited paper` relationships, with on-demand expansion in either direction.
+3. **Research-relation graph** — explicit directed semantic relationships such as `improves_on`, `outperforms`, `invalidates`, or `supports`, kept distinct from citation evidence.
+4. **Thematic graph** — topic blocks connected when paper links bridge themes. Themes may come from provider metadata, predefined taxonomies, manual curation, or optional AI suggestions.
 
 ## V1 information model
 
@@ -30,43 +31,63 @@ Each paper can contain:
 - manual tags
 - citation count snapshot
 - personal notes
-- reading state: unread / reading / read / key
+- reading state: unread / reading / read
 - relevance score
 - starred flag
-- import provenance and last-enriched timestamp
+- `libraryEntry` provenance describing how/when/context in which the paper entered the local library
+- provider/source provenance and last-enriched timestamp
 - reviewed local-PDF extraction provenance, including accepted raw references and layout/bibliography evidence
 - optional canonical resolution for each reviewed reference, including provider, identifier match type, confidence, canonical metadata and provider-attempt provenance
 
 ### Citation edge
 
-A directed edge stores `citingPaperId -> citedPaperId`, provenance, and whether the edge is confirmed by an external provider or manually entered.
+A citation edge is directed: `citingPaperId -> citedPaperId`. It stores provenance and may be confirmed by an external provider or added manually.
 
 A raw bibliography entry is not yet a citation edge. It becomes eligible for an edge only after identifier/provider resolution identifies a canonical target paper and that canonical paper is explicitly imported into the local library.
+
+### Research-relation edge
+
+A semantic research relationship is also directed but is a separate edge type from citation evidence. Current canonical types are:
+
+- `builds_on`
+- `improves_on`
+- `extends`
+- `outperforms`
+- `invalidates`
+- `contradicts`
+- `supports`
+- `replicates`
+
+The same pair of papers may have both a citation edge and one or more semantic research relationships. Each semantic edge stores its relation type and provenance.
 
 ### Topic
 
 A topic has a stable ID, name, optional parent/taxonomy path, source (`manual`, `provider`, `ai`, `taxonomy`), optional description, and optional aliases.
 
-Topic connections are derived initially from cross-topic citation edges. Later versions may add semantic similarity and manually asserted topic-to-topic relationships.
+Topic connections aggregate directed paper links crossing topic boundaries. Later versions may add semantic similarity and manually asserted topic-to-topic relationships.
 
 ## V1 user experience
 
 ### Primary screen
 
 - Sticky application header with library status, search, map mode, import/export, demo data, and About.
-- Compact filter bar/drawer for year, authors, venue, type, tags/topics, and starred papers.
+- Compact filter/library drawers that close when the user clicks or taps elsewhere.
 - Large central SVG map occupying most of the viewport.
 - Citation / Topic segmented mode switch.
-- Right-side paper detail drawer opened by selecting a paper node.
+- Right-side non-modal paper detail drawer opened by selecting a paper node.
 - Optional bibliography drawer/list for scanning the current filtered set.
 
 ### Citation map
 
-- Paper nodes sized modestly by citation count and visually marked when starred.
-- Directed citation links.
-- Selection highlights immediate references/citations.
-- Pan and zoom.
-- Search/filter changes dim or hide non-matching nodes.
+- Paper nodes sized modestly by citation-count snapshot and visually marked when starred.
+- Directed citation links with arrowheads that terminate at node boundaries.
+- Directed semantic research relationships rendered separately with labels.
+- Selection highlights immediate linked papers without restarting/resetting the graph layout.
+- Background drag pans the map.
+- Mouse wheel/trackpad zoom on desktop.
+- Two-finger pinch zoom on touch/mobile.
+- Paper nodes may be dragged and pinned for the current application session.
+- Search/filter changes alter the visible graph.
 - Selected paper offers `Expand references` and `Expand citations` actions.
 - Expansion is bounded per request and can be repeated to go farther.
 
@@ -74,19 +95,24 @@ Topic connections are derived initially from cross-topic citation edges. Later v
 
 - One block per theme rather than one node per paper.
 - Block size reflects number of papers in the filtered library.
-- Connections reflect cross-topic citation traffic.
+- Connections preserve direction from the underlying paper links.
+- Topic blocks can be dragged for the current application session.
 - Clicking a block filters/highlights its papers.
 - Topic blocks expose source/provenance so manual, provider, taxonomy and AI themes can coexist.
 
 ### Paper drawer
 
-Actions:
+Actions/information:
 
 - star / unstar
 - edit notes
 - edit tags
 - edit primary topic
-- edit reading state and relevance
+- edit reading state: unread / reading / read
+- edit relevance independently from reading state
+- add/remove canonical directed research relationships
+- inspect inbound/outbound semantic relationships with inverse wording
+- inspect how the paper was added to the local library
 - copy formatted citation
 - copy BibTeX
 - open DOI / source / PDF when available
@@ -118,6 +144,16 @@ Actions:
    - canonical title/authors/year/venue/type/URL/provider IDs normalized into a stable reference-resolution object
    - provider, attempts and match-confidence shown in the existing review UI
    - resolution persists only for references that remain accepted when the paper is saved
+9. Directed graph interaction/research workflow:
+   - canonical semantic research-relation vocabulary
+   - directed visible citation/research arrows
+   - modest citation-count node sizing
+   - stable node positions across paper selection/edit re-renders
+   - direct node/topic dragging
+   - mobile two-finger pinch zoom
+   - reading-only state model (`unread`, `reading`, `read`)
+   - paper library-entry provenance in the detail drawer
+   - outside-click dismissal for Filters/Library panels
 
 ### Next citation-import milestone
 
@@ -127,6 +163,14 @@ Actions:
 - Create `source paper -> resolved reference` citation edges only when the canonical target paper exists locally and the user confirms the operation.
 - Batch resolution with explicit rate limiting, cancellation and retry state.
 - Preserve the exact raw bibliography text and resolver evidence when a canonical paper is imported.
+
+### Later research-relation work
+
+- provider/AI-assisted proposals for `improves_on`, `outperforms`, `invalidates`, etc., always reviewed before persistence
+- evidence notes/quotes/sections for a semantic relation
+- confidence/provenance for inferred relation proposals
+- filtering/styling graph links by relation type
+- relation-specific legend and comparison workflows
 
 ### Later PDF ingestion
 
@@ -140,8 +184,8 @@ Actions:
 ## Data ownership and portability
 
 - IndexedDB is the canonical live database.
-- No personal bibliography, PDFs, extracted references, notes, or API keys are committed to GitHub.
-- One-click full JSON backup contains papers, citations, topics, annotations and settings needed to reconstruct the atlas.
+- No personal bibliography, PDFs, extracted references, notes, semantic relations, provenance, or API keys are committed to GitHub.
+- One-click full JSON backup contains papers, directed links, topics, annotations and settings needed to reconstruct the atlas.
 - Import uses schema versioning and migrations.
 - A demo dataset lives in source control and is loaded explicitly.
 - Generated WASM output is a build artifact, not source-controlled data.
@@ -177,8 +221,10 @@ The Rust/WASM PDF extractor is not a provider: it performs no network access and
 - IndexedDB for persistent structured data.
 - SVG for graph rendering.
 - Lightweight force simulation written in JavaScript for the initial graph sizes.
+- Graph positions cached across same-topology re-renders so selection/edit actions do not restart layout.
+- Pointer-event based pan, item drag and multi-touch pinch interaction.
 - Bounded expansion requests.
-- Rust/WebAssembly for deterministic PDF parsing, an isolated CPU-heavy local task with a stable byte-input / structured-output boundary.
+- Rust/WebAssembly for deterministic PDF parsing, an isolated CPU-heavy local task with a stable input/output boundary.
 - Identifier resolution runs sequentially in the review UI to avoid accidental request bursts against public scholarly APIs.
 
 ### Scale trigger
@@ -207,6 +253,9 @@ Move graph indexing/layout work into a Web Worker when the local graph grows lar
 
 ### Phase 3 — research workflow
 
+- direct graph manipulation and mobile pinch zoom
+- directed semantic paper relationships
+- richer non-modal paper drawer and import provenance
 - stronger bibliography list
 - comparison selection
 - filtered BibTeX export
@@ -228,8 +277,14 @@ Move graph indexing/layout work into a Web Worker when the local graph grows lar
 ## Acceptance criteria
 
 - Reloading the page restores the same local library and annotations.
-- Exporting then importing a database reconstructs papers, citations and topics.
+- Exporting then importing a database reconstructs papers, directed links and topics.
 - Demo mode produces a usable citation and topic map without network access.
-- Selecting any paper opens a detail drawer and permits local annotation edits.
+- Selecting a paper preserves the current graph layout and opens a non-modal detail drawer.
+- Citation/research edges visibly communicate direction.
+- Higher-citation papers are only modestly larger than lower-citation papers.
+- Mobile users can pinch zoom and users can drag graph items to rearrange them.
+- Filters and Library panels close when interaction moves elsewhere.
+- Reading state contains no importance/key-paper category.
+- A paper exposes available information about how it entered the local library.
 - Local PDF extraction can complete without network access.
 - Exact DOI/arXiv resolver results display provider and confidence before persistence, and unresolved references remain raw rather than becoming fabricated canonical papers.

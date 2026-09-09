@@ -1,23 +1,27 @@
 # Paper Map
 
-Paper Map is a local-first research bibliography explorer. It keeps the user's library in the browser, renders citation and thematic maps as the primary interface, and can expand the graph from public scholarly APIs on demand.
+Paper Map is a local-first research bibliography explorer. It keeps the user's library in the browser, renders directed citation, semantic-research and thematic maps as the primary interface, and can expand the graph from public scholarly APIs on demand.
 
 The application is designed for static hosting. There is no application backend and no bibliography data is uploaded to GitHub unless it is part of the bundled demo dataset.
 
 ## V1 goals
 
-- Store papers, citation edges, annotations, tags, topics, and UI state locally in IndexedDB.
+- Store papers, directed citation/research links, annotations, tags, topics, provenance, and UI state locally in IndexedDB.
 - Import and export a portable Paper Map JSON database.
 - Import BibTeX and enrich papers from Semantic Scholar when identifiers are available.
 - Import a research PDF with deterministic local citation extraction in Rust/WebAssembly.
 - Resolve extracted DOI/arXiv identifiers to canonical metadata through Crossref and Semantic Scholar with reviewed match confidence.
 - Keep AI-assisted metadata/topic extraction as an optional reviewed alternative.
+- Record canonical semantic relationships between papers such as **Builds on**, **Improves on**, **Extends**, **Outperforms**, **Invalidates**, **Contradicts**, **Supports**, and **Replicates**.
+- Preserve how a paper entered the local library: provider lookup/expansion, BibTeX, backup, reviewed PDF extraction, AI-assisted extraction, or the bundled demo.
 - Load a small bundled demo dataset without mixing it into a user's saved library unless requested.
 - Explore two map modes:
-  - **Citation map** — paper nodes linked by citation/reference relationships.
-  - **Topic map** — thematic blocks linked by cross-topic citation relationships.
+  - **Citation map** — paper nodes linked by directed citations and explicit semantic research relationships.
+  - **Topic map** — thematic blocks linked by directed cross-topic traffic.
+- Pan, wheel/pinch zoom, and manually drag graph items. Selecting a paper preserves the current graph layout.
 - Search and filter by text, year, author, venue, type, topic/tag, and starred state.
-- Inspect and edit a paper in a detail drawer: metadata, tags, topic, notes, reading state, relevance, links, BibTeX, and expansion controls.
+- Inspect and edit a paper in a richer non-modal detail drawer: metadata, research relationships, library provenance, tags, topic, notes, reading state, relevance, links, BibTeX, and expansion controls.
+- Keep reading state about reading only: **Unread**, **Reading**, or **Read**. Importance remains separate through stars/relevance.
 - Expand references or citing papers on demand rather than downloading an unbounded graph automatically.
 
 ## Architecture
@@ -33,7 +37,8 @@ www/
   style.css                 Main visual language and map layout
   app.js                    Application state and orchestration
   db.js                     IndexedDB persistence
-  graph.js                  Citation and topic SVG rendering
+  graph.js                  Directed SVG graph rendering and direct manipulation
+  research-relations.js     Canonical semantic paper-relation vocabulary
   import-export.js          JSON / BibTeX import and export
   semantic-scholar.js       Scholarly-data provider adapter
   pdf-local.js              Rust/WASM browser adapter
@@ -48,7 +53,9 @@ www/
 tests/
   pdf-ai.test.mjs                       PDF metadata normalization tests
   reference-resolver.test.mjs           DOI/arXiv resolver unit tests
+  research-relations.test.mjs           Research-link and graph-geometry tests
   mobile_selenium_test.py               Mobile interaction/layout/OCR test
+  graph_relations_selenium_test.py      Pinch/drag/direction/relation/provenance test
   pdf_review_selenium_test.py           AI review/save test with mocked API
   pdf_local_citation_selenium_test.py   Real Rust/WASM extraction + resolver review test
   requirements-ui.txt                   Selenium dependency
@@ -77,7 +84,7 @@ Open `http://localhost:8080/www/`.
 
 ## Tests
 
-Fast syntax/unit checks, including native Rust extraction and canonical resolver tests:
+Fast syntax/unit checks, including native Rust extraction, resolver, research-relation, graph-geometry and pinch-transform tests:
 
 ```bash
 make test
@@ -89,7 +96,7 @@ Explicit Rust/WASM validation:
 make test-rust
 ```
 
-The mobile browser suite uses Selenium with Chrome mobile emulation at a 390 × 844 CSS-pixel viewport. It exercises the main UI, OCR visibility checks, the reviewed AI flow, and a real Rust/WASM local citation extraction against a generated two-page PDF fixture. The citation fixture then mocks only Crossref and Semantic Scholar responses so the browser test verifies the resolver UI and IndexedDB persistence deterministically without depending on public API availability.
+The mobile browser suite uses Selenium with Chrome mobile emulation at a 390 × 844 CSS-pixel viewport. It exercises the main UI, OCR visibility checks, reviewed AI flow, real Rust/WASM local citation extraction, exact Crossref/Semantic Scholar resolution, outside-click menu dismissal, stable graph selection, directed arrows, semantic relation creation, library provenance, node drag and two-finger pinch zoom.
 
 Install `selenium` from `tests/requirements-ui.txt` and Tesseract, start the static server, then run:
 
@@ -104,6 +111,49 @@ CI compiles the Rust crate for `wasm32-unknown-unknown`, builds `www/pkg/`, runs
 The live library is stored in IndexedDB under `paper-map-v1`. Browser data can be downloaded as a JSON backup and restored later. Clearing browser site data removes the local library, so regular exports are recommended for important collections.
 
 The repository's demo records are source-controlled only to make the application immediately testable. Generated WebAssembly output, user PDFs, extracted references, notes, exports, and API keys are not committed.
+
+### Paper provenance
+
+Newly added papers retain a local `libraryEntry` record where possible. It records the method, time and relevant context used to bring the paper into the library, for example:
+
+- direct Semantic Scholar DOI/arXiv/title lookup
+- bounded Semantic Scholar references/citations expansion, including the parent paper
+- BibTeX import and source filename
+- Paper Map backup merge
+- reviewed local Rust/WASM PDF extraction
+- reviewed OpenAI-assisted PDF extraction
+- bundled demo dataset
+
+The paper detail drawer presents this information under **Added to library**. Older records without `libraryEntry` fall back to their existing `source`, `importedAt`, PDF-extraction and enrichment fields.
+
+## Directed graph and research relationships
+
+Citation links and semantic research relationships are intentionally different edge types.
+
+A citation remains directed as `citing paper -> cited paper`. Research relationships are also directed but carry a canonical semantic type, so the same pair of papers may have a citation and, independently, a relationship such as `new paper -> old paper : improves_on`.
+
+Current canonical research relationship types are:
+
+- Builds on
+- Improves on
+- Extends
+- Outperforms
+- Invalidates
+- Contradicts
+- Supports
+- Replicates
+
+The paper drawer lets the user add or remove these explicit relationships. The graph draws citations with solid arrows and semantic research links with labeled dashed arrows. Inbound relationships use their inverse wording in the paper view (for example, **Outperformed by**).
+
+Paper-node radius is a restrained logarithmic function of the provider citation-count snapshot, so highly cited papers are somewhat larger without dominating the map.
+
+### Direct manipulation
+
+- Drag the map background to pan.
+- Use a mouse wheel/trackpad to zoom on desktop.
+- Use two fingers to pinch zoom on touch/mobile.
+- Drag paper nodes or topic blocks to reposition them for the current application session.
+- Paper positions are cached across same-topology re-renders, so selecting or editing a paper does not restart the force layout.
 
 ## Local PDF citation extraction and resolution
 
@@ -147,4 +197,4 @@ Current import paths are:
 - PDF through local Rust/WASM bibliography/citation extraction, with optional reviewed Crossref/Semantic Scholar identifier resolution
 - PDF through optional reviewed AI-assisted metadata/topic extraction
 
-The PDF itself is not stored in IndexedDB. Only user-reviewed paper data, accepted topics, and accepted extracted-reference provenance are saved locally.
+The PDF itself is not stored in IndexedDB. Only user-reviewed paper data, accepted topics, accepted extracted-reference provenance, semantic research links and local library provenance are saved locally.

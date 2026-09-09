@@ -14,7 +14,7 @@
       <div class="brand" aria-label="Paper Map">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
         <span>
-          <strong>Paper Map <span class="app-version">v0.3</span></strong>
+          <strong>Paper Map <span class="app-version">v0.4</span></strong>
           <small>local research atlas</small>
         </span>
       </div>
@@ -35,8 +35,8 @@
 
     <div id="about-panel" class="about-panel" hidden role="dialog" aria-label="About Paper Map">
       <strong>Paper Map</strong>
-      <p>A browser-local bibliography, citation graph and thematic research atlas. Your working library stays in IndexedDB on this browser unless you explicitly export it.</p>
-      <p>PDF citations can be extracted locally with Rust/WebAssembly, then DOI/arXiv identifiers can be resolved on demand through Crossref and Semantic Scholar before saving. AI metadata/topic analysis remains optional.</p>
+      <p>A browser-local bibliography, directed citation graph and thematic research atlas. Your working library stays in IndexedDB on this browser unless you explicitly export it.</p>
+      <p>PDF citations can be extracted locally with Rust/WebAssembly, DOI/arXiv identifiers can be resolved through Crossref and Semantic Scholar, and papers can carry reviewed semantic research relationships such as “improves on”, “invalidates”, or “outperforms”.</p>
       <a href="https://github.com/bbodin-assistant/paper-map" target="_blank" rel="noreferrer">GitHub repository ↗</a>
     </div>
 
@@ -54,7 +54,7 @@
               <span>papers</span>
               <span class="summary-divider">·</span>
               <strong id="visible-edge-count">0</strong>
-              <span>citations</span>
+              <span>links</span>
             </div>
 
             <div class="toolbar-actions">
@@ -125,8 +125,8 @@
         </header>
 
         <section class="map-stage" aria-label="Paper map">
-          <svg id="paper-map" role="img" aria-label="Interactive research map"></svg>
-          <div class="map-help">Drag to pan · wheel to zoom · select a node for details</div>
+          <svg id="paper-map" role="img" aria-label="Interactive directed research map"></svg>
+          <div class="map-help">Drag background to pan · pinch or wheel to zoom · drag nodes to arrange</div>
         </section>
 
         <aside id="paper-list-panel" class="paper-list-panel" hidden aria-label="Bibliography">
@@ -173,7 +173,6 @@
               <option value="unread">Unread</option>
               <option value="reading">Reading</option>
               <option value="read">Read</option>
-              <option value="key">Key paper</option>
             </select>
           </label>
           <label>Relevance
@@ -191,6 +190,25 @@
           </label>
         </section>
 
+        <section class="detail-section research-relations-section">
+          <div class="section-heading">
+            <div>
+              <h3>Research relationships</h3>
+              <span class="muted">Directed semantic links between papers</span>
+            </div>
+          </div>
+          <div class="relation-create-grid">
+            <label>Relationship
+              <select id="detail-relation-type"></select>
+            </label>
+            <label>Target paper
+              <select id="detail-relation-target"></select>
+            </label>
+            <button type="button" id="detail-add-relation">Add directed link</button>
+          </div>
+          <div id="detail-relations" class="research-relation-list"></div>
+        </section>
+
         <section class="detail-section">
           <div class="section-heading">
             <h3>Citation graph</h3>
@@ -201,6 +219,14 @@
             <button type="button" id="expand-citations">Expand citing papers</button>
           </div>
           <small>Each action adds up to 50 papers. Repeat it to explore farther; Paper Map never recursively crawls without another action.</small>
+        </section>
+
+        <section class="detail-section provenance-section">
+          <div class="section-heading">
+            <h3>Added to library</h3>
+            <span class="muted">Local provenance</span>
+          </div>
+          <dl id="detail-provenance" class="provenance-grid"></dl>
         </section>
 
         <section class="detail-section danger-zone">

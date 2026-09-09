@@ -1,5 +1,6 @@
 import {
   clearLibrary,
+  deleteEdge,
   deletePaper,
   loadLibrary,
   putEdges,
@@ -26,6 +27,14 @@ import {
   fetchReferences,
   resolvePaper,
 } from "./semantic-scholar.js";
+import {
+  createResearchRelationEdge,
+  isCitationEdge,
+  isResearchRelation,
+  relationLabel,
+  RESEARCH_RELATIONS,
+  researchRelationEdgeId,
+} from "./research-relations.js";
 import { DEMO_LIBRARY } from "./demo-data.js";
 
 const UI_STORAGE_KEY = "paper-map-ui-v1";
@@ -87,6 +96,11 @@ const els = {
   detailCitationCount: $("#detail-citation-count"),
   expandReferences: $("#expand-references"),
   expandCitations: $("#expand-citations"),
+  relationType: $("#detail-relation-type"),
+  relationTarget: $("#detail-relation-target"),
+  addRelation: $("#detail-add-relation"),
+  relationList: $("#detail-relations"),
+  provenance: $("#detail-provenance"),
   removePaper: $("#remove-paper"),
 };
 
@@ -133,7 +147,7 @@ function setStatus(message, tone = "ready") {
 function setBusy(isBusy, message = "Working…") {
   state.busy = isBusy;
   if (isBusy) setStatus(message, "loading");
-  for (const control of [els.loadDemo, els.importButton, els.exportJson, els.exportBibtex, els.clearLibrary, els.expandReferences, els.expandCitations]) {
+  for (const control of [els.loadDemo, els.importButton, els.exportJson, els.exportBibtex, els.clearLibrary, els.expandReferences, els.expandCitations, els.addRelation]) {
     if (control) control.disabled = isBusy;
   }
 }
@@ -171,7 +185,18 @@ function titleYearKey(paper) {
   return `${normalizedTitle(paper.title)}:${paper.year || ""}`;
 }
 
-async function mergeIntoLibrary(incomingPapers = [], incomingEdges = [], incomingTopics = []) {
+function libraryEntryFor(paper, context = {}) {
+  if (paper.libraryEntry) return paper.libraryEntry;
+  return {
+    method: context.method || paper.source || "unknown",
+    addedAt: paper.importedAt || paper.createdAt || new Date().toISOString(),
+    fileName: context.fileName || paper.sourceFileName || "",
+    detail: context.detail || "",
+    parentPaperId: context.parentPaperId || "",
+  };
+}
+
+async function mergeIntoLibrary(incomingPapers = [], incomingEdges = [], incomingTopics = [], context = {}) {
   const existingPapers = state.library.papers;
   const byIdentity = new Map(existingPapers.map((paper) => [paperIdentityKey(paper), paper]));
   const byTitleYear = new Map(existingPapers.map((paper) => [titleYearKey(paper), paper]));
@@ -200,7 +225,12 @@ async function mergeIntoLibrary(incomingPapers = [], incomingEdges = [], incomin
     } else {
       let id = paper.id || `local:${crypto.randomUUID()}`;
       if (idMap.has(id)) id = `local:${crypto.randomUUID()}`;
-      const created = { ...paper, id, createdAt: paper.createdAt || new Date().toISOString() };
+      const created = {
+        ...paper,
+        id,
+        createdAt: paper.createdAt || new Date().toISOString(),
+        libraryEntry: libraryEntryFor(paper, context),
+      };
       idMap.set(rawPaper.id, id);
       idMap.set(paper.id, id);
       byIdentity.set(paperIdentityKey(created), created);
@@ -216,10 +246,11 @@ async function mergeIntoLibrary(incomingPapers = [], incomingEdges = [], incomin
     const source = idMap.get(edge.source) || edge.source;
     const target = idMap.get(edge.target) || edge.target;
     if (!source || !target || source === target) continue;
-    const id = `${source}->${target}`;
+    const research = isResearchRelation(edge);
+    const id = research ? researchRelationEdgeId(source, target, edge.relation) : `${source}->${target}`;
     if (existingEdgeIds.has(id)) continue;
     existingEdgeIds.add(id);
-    edgeWrites.push({ ...edge, id, source, target });
+    edgeWrites.push({ ...edge, id, source, target, kind: research ? "research-relation" : (edge.kind || "citation") });
   }
 
   await Promise.all([
@@ -334,6 +365,7 @@ function renderPaperList(papers) {
   for (const paper of sorted) {
     const button = document.createElement("button");
     button.type = "button";
+    button.dataset.paperId = paper.id;
     button.className = `paper-list-item${paper.id === selectedId ? " selected" : ""}`;
     const title = document.createElement("strong");
     title.textContent = `${paper.starred ? "★ " : ""}${paper.title}`;
@@ -379,11 +411,20 @@ function renderAll() {
   if (state.selectedPaperId) renderDetail();
 }
 
+async function migrateLegacyReadingStates(library) {
+  const legacy = library.papers.filter((paper) => paper.status === "key");
+  if (!legacy.length) return library;
+  const replacements = legacy.map((paper) => ({ ...paper, status: "read", updatedAt: new Date().toISOString() }));
+  await putPapers(replacements);
+  const byId = new Map(replacements.map((paper) => [paper.id, paper]));
+  return { ...library, papers: library.papers.map((paper) => byId.get(paper.id) || paper) };
+}
+
 async function refreshLibrary() {
-  state.library = await loadLibrary();
+  state.library = await migrateLegacyReadingStates(await loadLibrary());
   populateFilterOptions();
   renderAll();
-  setStatus(`${state.library.papers.length} papers · ${state.library.edges.length} citation edges stored locally`, "ready");
+  setStatus(`${state.library.papers.length} papers · ${state.library.edges.length} directed links stored locally`, "ready");
 }
 
 function formattedCitation(paper) {
@@ -410,6 +451,132 @@ function fillDetailTopicSelect(paper) {
   els.detailTopic.value = paper.topics?.[0] || "";
 }
 
+function fillRelationControls(paper) {
+  if (!els.relationType.options.length) {
+    els.relationType.replaceChildren(...RESEARCH_RELATIONS.map((relation) => new Option(relation.label, relation.id)));
+  }
+  const previous = els.relationTarget.value;
+  const otherPapers = state.library.papers
+    .filter((candidate) => candidate.id !== paper.id)
+    .sort((left, right) => left.title.localeCompare(right.title));
+  els.relationTarget.replaceChildren(
+    new Option(otherPapers.length ? "Select another paper…" : "Add another paper first", ""),
+    ...otherPapers.map((candidate) => new Option(`${candidate.title}${candidate.year ? ` (${candidate.year})` : ""}`, candidate.id)),
+  );
+  if (otherPapers.some((candidate) => candidate.id === previous)) els.relationTarget.value = previous;
+  els.addRelation.disabled = state.busy || !otherPapers.length;
+}
+
+function researchRelationsFor(paperId) {
+  return state.library.edges.filter((edge) => isResearchRelation(edge) && (edge.source === paperId || edge.target === paperId));
+}
+
+function renderResearchRelations(paper) {
+  const relations = researchRelationsFor(paper.id);
+  if (!relations.length) {
+    const empty = document.createElement("p");
+    empty.className = "relation-empty";
+    empty.textContent = "No semantic research relationships recorded yet.";
+    els.relationList.replaceChildren(empty);
+    return;
+  }
+
+  const paperById = new Map(state.library.papers.map((item) => [item.id, item]));
+  const fragment = document.createDocumentFragment();
+  for (const edge of relations.sort((left, right) => left.relation.localeCompare(right.relation))) {
+    const outgoing = edge.source === paper.id;
+    const otherId = outgoing ? edge.target : edge.source;
+    const other = paperById.get(otherId);
+    if (!other) continue;
+
+    const row = document.createElement("div");
+    row.className = "research-relation-row";
+    row.dataset.edgeId = edge.id;
+
+    const direction = document.createElement("span");
+    direction.className = `relation-direction ${outgoing ? "outgoing" : "incoming"}`;
+    direction.textContent = outgoing ? "OUT" : "IN";
+
+    const body = document.createElement("div");
+    body.className = "relation-body";
+    const label = document.createElement("strong");
+    label.textContent = relationLabel(edge.relation, { inverse: !outgoing });
+    const paperButton = document.createElement("button");
+    paperButton.type = "button";
+    paperButton.className = "relation-paper-link";
+    paperButton.dataset.paperId = other.id;
+    paperButton.textContent = other.title;
+    const meta = document.createElement("small");
+    meta.textContent = [other.year, other.venue, edge.provenance ? `source: ${edge.provenance}` : ""].filter(Boolean).join(" · ");
+    body.append(label, paperButton, meta);
+
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.className = "relation-remove quiet-button";
+    remove.dataset.edgeId = edge.id;
+    remove.textContent = "Remove";
+    remove.setAttribute("aria-label", `Remove ${label.textContent} relationship`);
+
+    row.append(direction, body, remove);
+    fragment.append(row);
+  }
+  els.relationList.replaceChildren(fragment);
+}
+
+function provenanceMethodLabel(value) {
+  const labels = {
+    demo: "Bundled demo dataset",
+    "demo-dataset": "Bundled demo dataset",
+    bibtex: "BibTeX import",
+    "bibtex-import": "BibTeX import",
+    "semantic-scholar": "Semantic Scholar",
+    "semantic-scholar-resolve": "Semantic Scholar identifier/title lookup",
+    "semantic-scholar-enrichment": "Semantic Scholar enrichment",
+    "semantic-scholar-expansion": "Semantic Scholar citation expansion",
+    "ai-pdf": "Reviewed PDF + OpenAI extraction",
+    "local-pdf": "Reviewed local Rust/WASM PDF extraction",
+    "backup-merge": "Paper Map backup merge",
+  };
+  return labels[value] || String(value || "Unknown").replaceAll("-", " ");
+}
+
+function formatTimestamp(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return String(value);
+  return new Intl.DateTimeFormat(undefined, { dateStyle: "medium", timeStyle: "short" }).format(date);
+}
+
+function renderProvenance(paper) {
+  const entry = paper.libraryEntry || {};
+  const method = entry.method || paper.source || "unknown";
+  const addedAt = entry.addedAt || paper.importedAt || paper.createdAt;
+  const fileName = entry.fileName || paper.sourceFileName || "";
+  const rows = [
+    ["Added via", provenanceMethodLabel(method)],
+    ["Added", formatTimestamp(addedAt)],
+    ["Original source", paper.source ? provenanceMethodLabel(paper.source) : ""],
+    ["Source file", fileName],
+    ["Lookup", entry.detail || ""],
+    ["Expanded from", entry.parentPaperId ? state.library.papers.find((item) => item.id === entry.parentPaperId)?.title || entry.parentPaperId : ""],
+    ["PDF extraction", paper.pdfExtraction?.provider ? `${paper.pdfExtraction.provider}${paper.pdfExtraction.engine ? ` · ${paper.pdfExtraction.engine}` : ""}` : ""],
+    ["AI extraction", paper.aiExtraction?.provider ? `${paper.aiExtraction.provider}${paper.aiExtraction.model ? ` · ${paper.aiExtraction.model}` : ""}` : ""],
+    ["Last enriched", formatTimestamp(paper.enrichedAt)],
+  ].filter(([, value]) => Boolean(value));
+
+  const fragment = document.createDocumentFragment();
+  for (const [label, value] of rows) {
+    const item = document.createElement("div");
+    const term = document.createElement("dt");
+    term.textContent = label;
+    const description = document.createElement("dd");
+    description.textContent = value;
+    item.append(term, description);
+    fragment.append(item);
+  }
+  els.provenance.replaceChildren(fragment);
+}
+
 function renderDetail() {
   const paper = currentPaper();
   if (!paper) {
@@ -418,8 +585,8 @@ function renderDetail() {
   }
 
   els.detail.hidden = false;
-  els.detailDismiss.hidden = false;
-  els.detailKicker.textContent = paper.source === "demo" ? "Demo paper" : paper.status === "key" ? "Key paper" : "Paper";
+  els.detailDismiss.hidden = true;
+  els.detailKicker.textContent = paper.source === "demo" ? "Demo paper" : "Paper";
   els.detailTitle.textContent = paper.title;
   els.detailMeta.textContent = [
     (paper.authors || []).join(", "),
@@ -429,12 +596,15 @@ function renderDetail() {
   ].filter(Boolean).join(" · ");
   els.detailAbstract.textContent = paper.abstract || "No abstract stored locally.";
   els.detailStar.textContent = paper.starred ? "★ Starred" : "☆ Star";
-  els.detailStatus.value = paper.status || "unread";
+  els.detailStatus.value = ["unread", "reading", "read"].includes(paper.status) ? paper.status : "unread";
   els.detailRelevance.value = String(Number(paper.relevance || 3));
   els.detailRelevanceValue.textContent = `${els.detailRelevance.value} / 5`;
   els.detailTags.value = (paper.tags || []).join(", ");
   els.detailNotes.value = paper.notes || "";
   fillDetailTopicSelect(paper);
+  fillRelationControls(paper);
+  renderResearchRelations(paper);
+  renderProvenance(paper);
 
   const links = [];
   if (paper.doi) links.push(linkButton("DOI", `https://doi.org/${normalizeDoi(paper.doi)}`));
@@ -443,10 +613,12 @@ function renderDetail() {
   if (paper.arxivId) links.push(linkButton("arXiv", `https://arxiv.org/abs/${paper.arxivId}`));
   els.detailLinks.replaceChildren(...links);
 
-  const localReferences = state.library.edges.filter((edge) => edge.source === paper.id).length;
-  const localCitations = state.library.edges.filter((edge) => edge.target === paper.id).length;
+  const citationEdges = state.library.edges.filter(isCitationEdge);
+  const localReferences = citationEdges.filter((edge) => edge.source === paper.id).length;
+  const localCitations = citationEdges.filter((edge) => edge.target === paper.id).length;
+  const semanticLinks = researchRelationsFor(paper.id).length;
   const snapshot = Number.isFinite(Number(paper.citationCount)) ? `${paper.citationCount} provider citations · ` : "";
-  els.detailCitationCount.textContent = `${snapshot}${localReferences} refs / ${localCitations} citing stored`;
+  els.detailCitationCount.textContent = `${snapshot}${localReferences} refs / ${localCitations} citing stored · ${semanticLinks} research link${semanticLinks === 1 ? "" : "s"}`;
 }
 
 function selectPaper(paperId) {
@@ -482,7 +654,7 @@ async function ensureExpandablePaper() {
 
   setStatus("Resolving this paper before citation expansion…", "loading");
   const enriched = await enrichPaper(paper);
-  const result = await mergeIntoLibrary([enriched]);
+  const result = await mergeIntoLibrary([enriched], [], [], { method: "semantic-scholar-enrichment" });
   const canonicalId = result.idMap.get(enriched.id) || paper.id;
   state.selectedPaperId = canonicalId;
   paper = state.library.papers.find((item) => item.id === canonicalId) || paper;
@@ -508,13 +680,17 @@ async function expand(direction) {
       : await fetchCitations(paper, savedOffset, EXPANSION_SIZE);
 
     const relationshipEdges = result.papers.map((related) => direction === "references"
-      ? { source: paper.id, target: related.id, provenance: "semantic-scholar" }
-      : { source: related.id, target: paper.id, provenance: "semantic-scholar" });
-    const merged = await mergeIntoLibrary(result.papers, relationshipEdges);
+      ? { source: paper.id, target: related.id, kind: "citation", provenance: "semantic-scholar" }
+      : { source: related.id, target: paper.id, kind: "citation", provenance: "semantic-scholar" });
+    const merged = await mergeIntoLibrary(result.papers, relationshipEdges, [], {
+      method: "semantic-scholar-expansion",
+      detail: direction,
+      parentPaperId: paper.id,
+    });
     state.expansionOffsets.set(offsetKey, result.next ?? -1);
     state.selectedPaperId = paper.id;
     renderAll();
-    setStatus(`Added ${merged.addedCount} papers and ${merged.edgeCount} citation edges from ${direction}.`, "ready");
+    setStatus(`Added ${merged.addedCount} papers and ${merged.edgeCount} directed citation links from ${direction}.`, "ready");
   } catch (error) {
     setStatus(error.message || String(error), "error");
   } finally {
@@ -602,6 +778,16 @@ for (const details of document.querySelectorAll("details.toolbar-menu")) {
   });
 }
 
+document.addEventListener("pointerdown", (event) => {
+  for (const details of document.querySelectorAll("details.toolbar-menu[open]")) {
+    if (!details.contains(event.target)) details.open = false;
+  }
+  if (!els.aboutPanel.hidden && !els.aboutPanel.contains(event.target) && !els.aboutButton.contains(event.target)) {
+    els.aboutPanel.hidden = true;
+    els.aboutButton.setAttribute("aria-expanded", "false");
+  }
+});
+
 els.addPaperForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   const query = els.addPaperQuery.value.trim();
@@ -609,7 +795,7 @@ els.addPaperForm.addEventListener("submit", async (event) => {
   try {
     setBusy(true, "Resolving paper…");
     const paper = await resolvePaper(query);
-    const merged = await mergeIntoLibrary([paper]);
+    const merged = await mergeIntoLibrary([paper], [], [], { method: "semantic-scholar-resolve", detail: query });
     const canonicalId = merged.idMap.get(paper.id) || paper.id;
     state.selectedPaperId = canonicalId;
     els.addPaperQuery.value = "";
@@ -629,7 +815,7 @@ els.loadDemo.addEventListener("click", async () => {
     if (state.library.papers.length === 0) {
       await replaceLibrary(DEMO_LIBRARY);
     } else {
-      await mergeIntoLibrary(DEMO_LIBRARY.papers, DEMO_LIBRARY.edges, DEMO_LIBRARY.topics);
+      await mergeIntoLibrary(DEMO_LIBRARY.papers, DEMO_LIBRARY.edges, DEMO_LIBRARY.topics, { method: "demo-dataset" });
     }
     await refreshLibrary();
     setStatus("Demo papers loaded into the local library.", "ready");
@@ -652,7 +838,7 @@ els.importFile.addEventListener("change", async () => {
     if (file.name.toLowerCase().endsWith(".bib")) {
       const papers = parseBibTeX(text);
       if (!papers.length) throw new Error("No BibTeX entries were found in this file.");
-      const merged = await mergeIntoLibrary(papers);
+      const merged = await mergeIntoLibrary(papers, [], [], { method: "bibtex-import", fileName: file.name });
       setStatus(`Imported ${papers.length} BibTeX entries; ${merged.addedCount} were new papers.`, "ready");
     } else {
       const backup = parsePaperMapJson(text);
@@ -662,8 +848,8 @@ els.importFile.addEventListener("change", async () => {
         await refreshLibrary();
         setStatus("Local library restored from backup.", "ready");
       } else {
-        const merged = await mergeIntoLibrary(backup.papers, backup.edges, backup.topics);
-        setStatus(`Backup merged: ${merged.addedCount} new papers and ${merged.edgeCount} new edges.`, "ready");
+        const merged = await mergeIntoLibrary(backup.papers, backup.edges, backup.topics, { method: "backup-merge", fileName: file.name });
+        setStatus(`Backup merged: ${merged.addedCount} new papers and ${merged.edgeCount} new links.`, "ready");
       }
     }
   } catch (error) {
@@ -706,7 +892,6 @@ els.clearLibrary.addEventListener("click", async () => {
 });
 
 els.closeDetail.addEventListener("click", () => { closeDetail(); renderAll(); });
-els.detailDismiss.addEventListener("click", () => { closeDetail(); renderAll(); });
 
 els.detailStar.addEventListener("click", () => {
   const paper = currentPaper();
@@ -766,13 +951,50 @@ els.detailTopic.addEventListener("change", async () => {
   await saveSelectedPaperPatch({ topics });
 });
 
+els.addRelation.addEventListener("click", async () => {
+  const paper = currentPaper();
+  const target = els.relationTarget.value;
+  const relation = els.relationType.value;
+  if (!paper || !target || !relation) {
+    setStatus("Choose another paper before adding a research relationship.", "error");
+    return;
+  }
+  try {
+    const edge = createResearchRelationEdge({ source: paper.id, target, relation, provenance: "manual" });
+    await putEdges([edge]);
+    state.library.edges = [...state.library.edges.filter((item) => item.id !== edge.id), edge];
+    renderAll();
+    setStatus(`${relationLabel(relation)} relationship added.`, "ready");
+  } catch (error) {
+    setStatus(error.message || String(error), "error");
+  }
+});
+
+els.relationList.addEventListener("click", async (event) => {
+  const paperButton = event.target.closest("button.relation-paper-link");
+  if (paperButton?.dataset.paperId) {
+    selectPaper(paperButton.dataset.paperId);
+    return;
+  }
+  const remove = event.target.closest("button.relation-remove");
+  if (!remove?.dataset.edgeId) return;
+  try {
+    await deleteEdge(remove.dataset.edgeId);
+    state.library.edges = state.library.edges.filter((edge) => edge.id !== remove.dataset.edgeId);
+    renderAll();
+    setStatus("Research relationship removed.", "ready");
+  } catch (error) {
+    setStatus(error.message || String(error), "error");
+  }
+});
+
 els.expandReferences.addEventListener("click", () => expand("references"));
 els.expandCitations.addEventListener("click", () => expand("citations"));
 
 els.removePaper.addEventListener("click", async () => {
   const paper = currentPaper();
   if (!paper) return;
-  if (!window.confirm(`Remove “${paper.title}” and its local citation edges?`)) return;
+  if (!window.confirm(`Remove “${paper.title}” and its local graph links?`)) return;
   try {
     await deletePaper(paper.id);
     closeDetail();
