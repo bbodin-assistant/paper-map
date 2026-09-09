@@ -1,4 +1,4 @@
-import { resolveExtractedReference } from "./reference-resolver.js";
+import { resolveExtractedReference, selectReferenceCandidate } from "./reference-resolver.js";
 
 const $ = (selector, root = document) => root.querySelector(selector);
 
@@ -15,6 +15,12 @@ function clean(value) {
   return String(value ?? "").trim();
 }
 
+function providerLabel(provider) {
+  if (provider === "crossref") return "Crossref";
+  if (provider === "semantic-scholar") return "Semantic Scholar";
+  return clean(provider) || "Resolver";
+}
+
 function canonicalSummary(canonical = {}) {
   const authors = Array.isArray(canonical.authors) ? canonical.authors.filter(Boolean) : [];
   const detail = [
@@ -28,12 +34,32 @@ function canonicalSummary(canonical = {}) {
 function resolutionLabel(resolution) {
   if (!resolution) return "Ready to resolve";
   if (resolution.status === "matched") {
-    const provider = resolution.provider === "crossref" ? "Crossref" : "Semantic Scholar";
-    return `${provider} · ${Math.round((Number(resolution.confidence) || 0) * 100)}% match`;
+    return `${providerLabel(resolution.provider)} · ${Math.round((Number(resolution.confidence) || 0) * 100)}% match`;
   }
-  if (resolution.status === "no-identifier") return "No DOI/arXiv identifier";
-  if (resolution.status === "unresolved") return "No canonical match";
+  if (resolution.status === "candidates") {
+    const count = resolution.candidates?.length || 0;
+    return `${count} candidate${count === 1 ? "" : "s"} · review required`;
+  }
+  if (resolution.status === "no-identifier") return "No searchable citation text";
+  if (resolution.status === "unresolved") return "No conservative canonical match";
   return "Resolution unavailable";
+}
+
+function updateSummary(dialog) {
+  const rows = referenceRows(dialog);
+  const matched = rows.filter((row) => row.__paperMapReference?.resolution?.status === "matched").length;
+  const candidates = rows.filter((row) => row.__paperMapReference?.resolution?.status === "candidates").length;
+  const unresolved = rows.filter((row) => row.__paperMapReference?.resolution?.status === "unresolved").length;
+  const identifiable = rows.filter((row) => row.__paperMapReference?.doi || row.__paperMapReference?.arxivId).length;
+  const searchable = rows.filter((row) => clean(row.__paperMapReference?.rawText)).length;
+  const status = $("#pdf-reference-resolution-status", dialog);
+  if (!status) return;
+  if (!rows.length) status.textContent = "";
+  else if (matched || candidates || unresolved) {
+    status.textContent = `${matched} matched · ${candidates} need review · ${unresolved} unresolved`;
+  } else {
+    status.textContent = `${identifiable} identifier matches available · ${searchable - identifiable} text-only references searchable`;
+  }
 }
 
 function renderResolution(row) {
@@ -49,15 +75,18 @@ function renderResolution(row) {
   const reference = row.__paperMapReference || {};
   const resolution = reference.resolution || null;
   const hasIdentifier = Boolean(reference.doi || reference.arxivId);
+  const hasSearchText = Boolean(clean(reference.rawText));
   const summary = canonicalSummary(resolution?.canonical);
   const confidence = Math.round((Number(resolution?.confidence) || 0) * 100);
-  row.dataset.resolutionStatus = resolution?.status || (hasIdentifier ? "ready" : "no-identifier");
+  row.dataset.resolutionStatus = resolution?.status || (hasIdentifier ? "ready" : hasSearchText ? "metadata-ready" : "no-identifier");
   row.dataset.resolutionConfidence = String(confidence);
 
   if (!resolution) {
     panel.innerHTML = hasIdentifier
       ? `<span class="reference-resolution-badge ready">${escapeHtml(resolutionLabel(null))}</span>`
-      : `<span class="reference-resolution-badge muted">No DOI/arXiv identifier</span>`;
+      : hasSearchText
+        ? `<span class="reference-resolution-badge ready">Ready to match by title/author/year</span>`
+        : `<span class="reference-resolution-badge muted">No searchable citation text</span>`;
     return;
   }
 
@@ -67,8 +96,42 @@ function renderResolution(row) {
         <span class="reference-resolution-badge matched">${escapeHtml(resolutionLabel(resolution))}</span>
         <strong>${escapeHtml(summary.title || "Canonical metadata match")}</strong>
         ${summary.detail ? `<span>${escapeHtml(summary.detail)}</span>` : ""}
+        ${resolution.selectedBy === "user" ? `<span class="muted">Selected explicitly from resolver candidates.</span>` : ""}
       </div>
     `;
+    return;
+  }
+
+  if (resolution.status === "candidates") {
+    const candidates = resolution.candidates || [];
+    panel.innerHTML = `
+      <div class="reference-resolution-match unresolved reference-resolution-review">
+        <span class="reference-resolution-badge ready">${escapeHtml(resolutionLabel(resolution))}</span>
+        <span>Semantic Scholar returned plausible metadata matches. Choose one explicitly; none is selected automatically.</span>
+        <div class="reference-resolution-candidate-list">
+          ${candidates.map((candidate, index) => {
+            const candidateSummary = canonicalSummary(candidate.canonical);
+            const candidateConfidence = Math.round((Number(candidate.confidence) || 0) * 100);
+            return `
+              <button type="button" class="quiet-button reference-resolution-candidate" data-reference-candidate="${index}">
+                <strong>${escapeHtml(candidateSummary.title || "Untitled candidate")}</strong>
+                ${candidateSummary.detail ? `<span>${escapeHtml(candidateSummary.detail)}</span>` : ""}
+                <span>${candidateConfidence}% evidence match</span>
+              </button>
+            `;
+          }).join("")}
+        </div>
+      </div>
+    `;
+    for (const button of panel.querySelectorAll("[data-reference-candidate]")) {
+      button.addEventListener("click", () => {
+        const selected = selectReferenceCandidate(resolution, Number(button.dataset.referenceCandidate));
+        row.__paperMapReference = { ...reference, resolution: selected };
+        renderResolution(row);
+        const dialog = row.closest("#pdf-ai-dialog");
+        if (dialog) updateSummary(dialog);
+      });
+    }
     return;
   }
 
@@ -83,18 +146,6 @@ function renderResolution(row) {
 
 function referenceRows(dialog) {
   return Array.from(dialog.querySelectorAll("#pdf-reference-list .pdf-reference-row"));
-}
-
-function updateSummary(dialog) {
-  const rows = referenceRows(dialog);
-  const matched = rows.filter((row) => row.__paperMapReference?.resolution?.status === "matched").length;
-  const unresolved = rows.filter((row) => row.__paperMapReference?.resolution?.status === "unresolved").length;
-  const identifiable = rows.filter((row) => row.__paperMapReference?.doi || row.__paperMapReference?.arxivId).length;
-  const status = $("#pdf-reference-resolution-status", dialog);
-  if (!status) return;
-  if (!rows.length) status.textContent = "";
-  else if (matched || unresolved) status.textContent = `${matched} matched · ${unresolved} unresolved · ${identifiable} identifiable`;
-  else status.textContent = `${identifiable} of ${rows.length} references have DOI/arXiv identifiers`;
 }
 
 function decorateRows(dialog) {
@@ -113,7 +164,7 @@ function install(dialog) {
   resolveButton.type = "button";
   resolveButton.id = "pdf-reference-resolve";
   resolveButton.className = "quiet-button";
-  resolveButton.textContent = "Resolve identifiers";
+  resolveButton.textContent = "Resolve references";
   actions.prepend(resolveButton);
 
   const status = document.createElement("span");
@@ -123,7 +174,7 @@ function install(dialog) {
 
   const note = $(".pdf-reference-note", dialog);
   if (note) {
-    note.textContent = "Resolve DOI/arXiv identifiers through Crossref and Semantic Scholar, review match confidence, then choose which references to persist. Canonical graph edges are still created only after an explicit later import step.";
+    note.textContent = "Resolve DOI/arXiv identifiers exactly, or conservatively search text-only references by title/author/year. Ambiguous candidates require an explicit choice before persistence. Canonical graph edges are still created only after an explicit later import step.";
   }
 
   const list = $("#pdf-reference-list", dialog);
@@ -134,15 +185,19 @@ function install(dialog) {
   resolveButton.addEventListener("click", async () => {
     if (resolveButton.disabled) return;
     const rows = referenceRows(dialog);
-    const targets = rows.filter((row) => row.__paperMapReference?.doi || row.__paperMapReference?.arxivId);
+    const targets = rows.filter((row) => {
+      const reference = row.__paperMapReference || {};
+      return reference.doi || reference.arxivId || clean(reference.rawText);
+    });
     if (!targets.length) {
-      status.textContent = "No DOI or arXiv identifiers are available to resolve.";
+      status.textContent = "No reference identifiers or citation text are available to resolve.";
       return;
     }
 
     resolveButton.disabled = true;
     const originalText = resolveButton.textContent;
     let matched = 0;
+    let candidates = 0;
     let unresolved = 0;
     try {
       for (let index = 0; index < targets.length; index += 1) {
@@ -157,10 +212,11 @@ function install(dialog) {
           resolution,
         };
         if (resolution.status === "matched") matched += 1;
+        else if (resolution.status === "candidates") candidates += 1;
         else unresolved += 1;
         renderResolution(row);
       }
-      status.textContent = `${matched} canonical matches · ${unresolved} unresolved. Review confidence before saving.`;
+      status.textContent = `${matched} canonical matches · ${candidates} need review · ${unresolved} unresolved.`;
     } finally {
       resolveButton.disabled = false;
       resolveButton.textContent = originalText;
