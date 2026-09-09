@@ -98,8 +98,8 @@ def main():
         rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
         assert_true(len(rows) == 3, f"Expected three extracted references, got {len(rows)}")
         assert_true(
-            rows[2].get_attribute("data-resolution-status") == "metadata-ready",
-            "Identifier-less reference should be ready for conservative metadata matching",
+            rows[2].get_attribute("data-resolution-status") == "no-identifier",
+            "Text-only reference should remain outside the exact identifier batch resolver",
         )
         assert_true(
             "Ready to match by title/author/year" in rows[2].text,
@@ -110,14 +110,25 @@ def main():
         center_element(driver, resolve_button)
         resolve_button.click()
         wait.until(
+            lambda d: all(
+                row.get_attribute("data-resolution-status") == "matched"
+                for row in d.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")[:2]
+            )
+        )
+        rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
+        assert_true(
+            rows[2].get_attribute("data-resolution-status") == "no-identifier",
+            "Bulk DOI/arXiv resolution should not silently search text-only references",
+        )
+
+        metadata_search = rows[2].find_element(By.CSS_SELECTOR, "[data-reference-search]")
+        center_element(driver, metadata_search)
+        metadata_search.click()
+        wait.until(
             lambda d: d.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")[2]
             .get_attribute("data-resolution-status") == "candidates"
         )
         rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
-        assert_true(
-            all(row.get_attribute("data-resolution-status") == "matched" for row in rows[:2]),
-            "Exact DOI/arXiv resolution should remain unchanged",
-        )
         assert_true("2 candidates" in rows[2].text, "Ambiguous metadata matches should remain a review queue")
         assert_true(
             "A Plain Reference Without Persistent Identifier" in rows[2].text
