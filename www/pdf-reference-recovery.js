@@ -241,7 +241,7 @@ function materialize(drafts) {
 
 export function recoverTwoColumnReferences(documentText) {
   const region = bibliographyRegion(documentText);
-  if (!region.sawTwoColumn || !region.lines.length) return [];
+  if (!region.lines.length) return [];
   const numberedCount = region.lines.filter((line) => NUMBERED_RE.test(line.text)).length;
   const authorStartCount = region.lines.filter((line) => looksLikeAuthorStart(line.text)).length;
   const drafts = numberedCount >= 2 && numberedCount > authorStartCount
