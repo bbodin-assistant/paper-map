@@ -103,7 +103,7 @@ function splitAuthors(line) {
 
 function markedAuthors(pageText) {
   const source = deglueCamelCase(pageText);
-  const pattern = /([\p{Lu}][\p{L}'’\-]*(?:[ \t]+(?:[\p{Lu}][\p{L}'’\-]*|da|de|del|der|di|du|la|le|van|von)){1,4})[ \t]*[∗*†‡]+/gu;
+  const pattern = /([\p{Lu}][\p{L}'’\-]*(?:[ \t]+(?:[\p{Lu}][\p{L}'’\-]*|[\p{Lu}]\.|da|de|del|der|di|du|la|le|van|von)){1,4})[ \t]*[∗*†‡]+/gu;
   const authors = [];
   let firstIndex = -1;
   for (const match of source.matchAll(pattern)) {
