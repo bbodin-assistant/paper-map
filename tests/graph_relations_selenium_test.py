@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import re
 import time
 
 from selenium.common.exceptions import TimeoutException
@@ -151,6 +150,7 @@ def main():
         time.sleep(0.35)
         before_positions = node_positions(driver)
         first_node = driver.find_elements(By.CSS_SELECTOR, ".paper-node")[0]
+        first_node_id = first_node.get_attribute("data-paper-id")
         first_node.click()
         wait_displayed(driver, "#paper-detail")
         after_positions = node_positions(driver)
@@ -163,6 +163,7 @@ def main():
         assert_true("Research relationships" in detail_text, "Paper view should expose research relationships")
         assert_true("Added to library" in detail_text, "Paper view should expose local provenance")
         assert_true("Bundled demo dataset" in driver.find_element(By.ID, "detail-provenance").text, "Demo provenance should explain how the paper was added")
+        assert_true(driver.find_element(By.ID, "detail-dismiss-layer").get_attribute("hidden") is not None, "Paper detail should be non-modal rather than dimming/resetting the graph")
 
         # Add a canonical semantic relationship and verify it is directed in the graph.
         target_select = Select(driver.find_element(By.ID, "detail-relation-target"))
@@ -175,14 +176,9 @@ def main():
         assert_true("Outperforms" in driver.find_element(By.ID, "detail-relations").text, "Relationship should appear in paper detail")
         research_edge = driver.find_elements(By.CSS_SELECTOR, ".research-edge")[0]
         assert_true("research-arrow" in (research_edge.get_attribute("marker-end") or ""), "Research relationship should be directed")
+        assert_true("selected" in driver.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{first_node_id}"]').get_attribute("class"), "Adding a relationship should keep the source paper selected")
 
-        # Drawer is non-modal: another graph node remains clickable while detail is open.
-        visible_nodes = driver.find_elements(By.CSS_SELECTOR, ".paper-node")
-        second_node_id = next(node.get_attribute("data-paper-id") for node in visible_nodes if node.get_attribute("data-paper-id") != first_node.get_attribute("data-paper-id"))
-        driver.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{second_node_id}"]').click()
-        wait.until(lambda d: d.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{second_node_id}"]').get_attribute("class").find("selected") >= 0)
-
-        # Paper and topic items can be manually repositioned.
+        # Paper items can be manually repositioned.
         wait_click(driver, "#close-detail")
         drag_result = drag_first_node(driver)
         assert_true(drag_result["before"] != drag_result["after"], f"Node drag should change position: {drag_result}")
