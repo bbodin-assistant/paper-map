@@ -192,7 +192,8 @@ export function scoreReferenceCandidate(reference, paper) {
 
   const yearScore = expectedYear ? 1 : 0.5;
   const authorScore = authorMatch ? 1 : surnames.length ? 0 : 0.5;
-  return Math.max(0, Math.min(1, (titleCoverage * 0.7) + (authorScore * 0.2) + (yearScore * 0.1)));
+  const score = Math.max(0, Math.min(1, (titleCoverage * 0.7) + (authorScore * 0.2) + (yearScore * 0.1)));
+  return Number(score.toFixed(4));
 }
 
 function candidateRecord(reference, paper) {
