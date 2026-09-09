@@ -15,7 +15,8 @@ function clean(value) {
 function deglueCamelCase(value) {
   return String(value ?? "")
     .replace(/([\p{Ll}])([\p{Lu}])/gu, "$1 $2")
-    .replace(/([\p{Lu}])([\p{Lu}][\p{Ll}])/gu, "$1 $2");
+    .replace(/([\p{Lu}])([\p{Lu}][\p{Ll}])/gu, "$1 $2")
+    .replace(/([\p{Lu}]\.)([\p{Lu}][\p{Ll}])/gu, "$1 $2");
 }
 
 function trimIdentifierPunctuation(value) {
