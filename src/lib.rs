@@ -73,6 +73,7 @@ struct CitationExtraction {
     schema_version: u32,
     engine: String,
     layout: LayoutSummary,
+    document_text: String,
     references: Vec<ExtractedReference>,
     warnings: Vec<String>,
 }
@@ -400,6 +401,14 @@ fn materialize_reference(index: usize, draft: ReferenceDraft) -> Option<Extracte
     })
 }
 
+fn document_text(pages: &[PageText]) -> String {
+    pages
+        .iter()
+        .map(|page| format!("--- Page {} ---\n{}", page.page, page.text.trim()))
+        .collect::<Vec<_>>()
+        .join("\n\n")
+}
+
 fn extract_from_pages(pages: Vec<PageText>) -> CitationExtraction {
     let mut warnings = Vec::new();
     let start = find_bibliography_start(&pages);
@@ -439,6 +448,7 @@ fn extract_from_pages(pages: Vec<PageText>) -> CitationExtraction {
             text_length: page.text.chars().count(),
         })
         .collect();
+    let document_text = document_text(&pages);
 
     CitationExtraction {
         schema_version: 1,
@@ -451,6 +461,7 @@ fn extract_from_pages(pages: Vec<PageText>) -> CitationExtraction {
             bibliography_end_page,
             bibliography_inferred: start.as_ref().is_some_and(|value| value.inferred),
         },
+        document_text,
         references,
         warnings,
     }
@@ -518,6 +529,8 @@ mod tests {
         assert_eq!(extraction.references[1].arxiv_id.as_deref(), Some("2401.01234v2"));
         assert_eq!(extraction.references[2].year, Some(2020));
         assert_eq!(extraction.layout.bibliography_heading.as_deref(), Some("References"));
+        assert!(extraction.document_text.contains("--- Page 1 ---"));
+        assert!(extraction.document_text.contains("Paper title"));
     }
 
     #[test]
