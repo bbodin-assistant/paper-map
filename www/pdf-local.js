@@ -1,3 +1,5 @@
+import { extractLocalPaperMetadata } from "./pdf-metadata.js";
+
 const WASM_MODULE_URL = "./pkg/paper_map_wasm.js";
 let wasmPromise = null;
 
@@ -51,20 +53,26 @@ export async function extractPdfCitationsLocally(file) {
   const layout = extraction?.layout || {};
   const heading = layout.bibliographyHeading || (layout.bibliographyInferred ? "inferred bibliography" : "bibliography");
   const summary = `${references.length} references · ${doiCount} DOI · ${arxivCount} arXiv`;
-  const warnings = [...(extraction?.warnings || [])];
+  const frontMatter = extractLocalPaperMetadata(extraction?.documentText || "", { fallbackTitle: fileStem(file.name) });
+  const warnings = [...(frontMatter.warnings || []), ...(extraction?.warnings || [])];
   if (references.length) {
     warnings.unshift(
       `Local Rust/WASM extraction found ${summary} from ${heading}${layout.bibliographyStartPage ? ` starting on page ${layout.bibliographyStartPage}` : ""}.`,
     );
   }
+  if (frontMatter.evidence?.titleDetected || frontMatter.evidence?.authorCount || frontMatter.evidence?.doiDetected || frontMatter.evidence?.arxivDetected) {
+    warnings.unshift(
+      `Local front-matter extraction proposed ${frontMatter.evidence.titleDetected ? "a title" : "no title"}, ${frontMatter.evidence.authorCount || 0} author${frontMatter.evidence.authorCount === 1 ? "" : "s"}${frontMatter.evidence.doiDetected ? ", and a DOI" : ""}${frontMatter.evidence.arxivDetected ? ", and an arXiv identifier" : ""}. Review these fields before saving.`,
+    );
+  }
   return {
-    title: fileStem(file.name),
-    authors: [],
-    year: null,
+    title: frontMatter.title || fileStem(file.name),
+    authors: frontMatter.authors || [],
+    year: frontMatter.year || null,
     venue: "",
     type: "article",
-    doi: "",
-    arxivId: "",
+    doi: frontMatter.doi || "",
+    arxivId: frontMatter.arxivId || "",
     url: "",
     abstract: "",
     keywords: [],
@@ -76,6 +84,7 @@ export async function extractPdfCitationsLocally(file) {
       engine: extraction?.engine || "paper-map-rust-pdf",
       layout,
       summary,
+      frontMatter: frontMatter.evidence || null,
     },
   };
 }
