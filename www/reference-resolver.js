@@ -1,7 +1,15 @@
 import { normalizeDoi } from "./import-export.js";
-import { resolvePaper } from "./semantic-scholar.js";
+import { resolvePaper, searchPapers } from "./semantic-scholar.js";
 
 const CROSSREF_BASE_URL = "https://api.crossref.org";
+const SEARCH_CANDIDATE_LIMIT = 5;
+const AUTO_MATCH_MIN_CONFIDENCE = 0.9;
+const AUTO_MATCH_MIN_MARGIN = 0.1;
+const CANDIDATE_MIN_CONFIDENCE = 0.72;
+const TOKEN_STOPWORDS = new Set([
+  "a", "an", "and", "by", "et", "for", "from", "in", "of", "on", "or", "the", "to", "with", "without",
+  "journal", "proceedings", "conference", "volume", "vol", "issue", "number", "pages", "page", "pp",
+]);
 
 function clean(value) {
   return String(value ?? "").trim();
@@ -135,6 +143,173 @@ export async function resolveWithSemanticScholar(identifier, matchedBy) {
   };
 }
 
+function normalizedTokens(value) {
+  return clean(value)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .match(/[a-z0-9]+/g) || [];
+}
+
+function meaningfulTokens(value) {
+  return normalizedTokens(value).filter((token) => token.length >= 2 && !TOKEN_STOPWORDS.has(token));
+}
+
+function referenceYear(reference) {
+  const year = Number(reference?.year);
+  return Number.isInteger(year) && year > 0 ? year : null;
+}
+
+export function referenceSearchQuery(reference) {
+  const rawText = clean(reference?.rawText);
+  if (!rawText) return "";
+  return rawText
+    .replace(/^\s*(?:\[[^\]]+\]|\d+[.)])\s*/, "")
+    .replace(/\b(?:18|19|20)\d{2}\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 300);
+}
+
+export function scoreReferenceCandidate(reference, paper) {
+  const rawTokens = new Set(meaningfulTokens(reference?.rawText));
+  const titleTokens = Array.from(new Set(meaningfulTokens(paper?.title)));
+  if (!rawTokens.size || !titleTokens.length) return 0;
+
+  const titleMatches = titleTokens.filter((token) => rawTokens.has(token)).length;
+  const titleCoverage = titleMatches / titleTokens.length;
+  const surnames = (paper?.authors || [])
+    .map((author) => normalizedTokens(author).at(-1) || "")
+    .filter((surname) => surname.length >= 3);
+  const authorMatch = surnames.length ? surnames.some((surname) => rawTokens.has(surname)) : false;
+  const expectedYear = referenceYear(reference);
+  const candidateYear = Number.isInteger(Number(paper?.year)) && Number(paper.year) > 0 ? Number(paper.year) : null;
+
+  if (expectedYear && candidateYear !== expectedYear) return 0;
+  const minimumCoverage = titleTokens.length <= 2 ? 1 : 0.7;
+  if (titleCoverage < minimumCoverage) return 0;
+  if (surnames.length && !authorMatch && titleCoverage < 0.92) return 0;
+
+  const yearScore = expectedYear ? 1 : 0.5;
+  const authorScore = authorMatch ? 1 : surnames.length ? 0 : 0.5;
+  const score = Math.max(0, Math.min(1, (titleCoverage * 0.7) + (authorScore * 0.2) + (yearScore * 0.1)));
+  return Number(score.toFixed(4));
+}
+
+function candidateRecord(reference, paper) {
+  const canonical = canonicalFromSemanticScholar(paper);
+  return {
+    provider: "semantic-scholar",
+    matchedBy: "title-author-year",
+    confidence: scoreReferenceCandidate(reference, canonical),
+    canonical,
+  };
+}
+
+async function resolveIdentifierlessReference(reference) {
+  const query = referenceSearchQuery(reference);
+  if (!query) {
+    return {
+      status: "no-identifier",
+      provider: "",
+      matchedBy: "",
+      queriedIdentifier: "",
+      queriedText: "",
+      confidence: 0,
+      canonical: null,
+      resolvedAt: new Date().toISOString(),
+      attempts: [],
+    };
+  }
+
+  try {
+    const papers = await searchPapers(query, SEARCH_CANDIDATE_LIMIT);
+    const candidates = papers
+      .map((paper) => candidateRecord(reference, paper))
+      .filter((candidate) => candidate.confidence >= CANDIDATE_MIN_CONFIDENCE)
+      .sort((a, b) => b.confidence - a.confidence);
+    const top = candidates[0];
+    const runnerUp = candidates[1];
+    const margin = top ? top.confidence - (runnerUp?.confidence || 0) : 0;
+
+    if (top && top.confidence >= AUTO_MATCH_MIN_CONFIDENCE && (!runnerUp || margin >= AUTO_MATCH_MIN_MARGIN)) {
+      return {
+        status: "matched",
+        provider: top.provider,
+        matchedBy: top.matchedBy,
+        queriedIdentifier: "",
+        queriedText: query,
+        confidence: top.confidence,
+        canonical: top.canonical,
+        resolvedAt: new Date().toISOString(),
+        attempts: [{ provider: "semantic-scholar", status: "matched", candidatesConsidered: papers.length }],
+      };
+    }
+
+    if (candidates.length) {
+      return {
+        status: "candidates",
+        provider: "semantic-scholar",
+        matchedBy: "title-author-year",
+        queriedIdentifier: "",
+        queriedText: query,
+        confidence: top.confidence,
+        canonical: null,
+        candidates,
+        resolvedAt: new Date().toISOString(),
+        attempts: [{ provider: "semantic-scholar", status: "candidates", candidatesConsidered: papers.length }],
+      };
+    }
+
+    return {
+      status: "unresolved",
+      provider: "",
+      matchedBy: "title-author-year",
+      queriedIdentifier: "",
+      queriedText: query,
+      confidence: 0,
+      canonical: null,
+      resolvedAt: new Date().toISOString(),
+      attempts: [{ provider: "semantic-scholar", status: "no-match", candidatesConsidered: papers.length }],
+    };
+  } catch (error) {
+    return {
+      status: "unresolved",
+      provider: "",
+      matchedBy: "title-author-year",
+      queriedIdentifier: "",
+      queriedText: query,
+      confidence: 0,
+      canonical: null,
+      resolvedAt: new Date().toISOString(),
+      attempts: [{ provider: "semantic-scholar", status: "failed", message: clean(error?.message) }],
+    };
+  }
+}
+
+export function selectReferenceCandidate(resolution, candidateIndex) {
+  const index = Number(candidateIndex);
+  const candidate = resolution?.status === "candidates" && Number.isInteger(index)
+    ? resolution.candidates?.[index]
+    : null;
+  if (!candidate?.canonical) throw new Error("Select a valid canonical reference candidate.");
+  return {
+    ...resolution,
+    status: "matched",
+    provider: candidate.provider,
+    matchedBy: candidate.matchedBy,
+    confidence: candidate.confidence,
+    canonical: candidate.canonical,
+    selectedBy: "user",
+    selectedCandidateIndex: index,
+    resolvedAt: new Date().toISOString(),
+    attempts: [
+      ...(resolution.attempts || []),
+      { provider: candidate.provider, status: "selected", candidateIndex: index },
+    ],
+  };
+}
+
 export async function resolveExtractedReference(reference, options = {}) {
   const doi = normalizeDoi(reference?.doi);
   const arxivId = normalizeArxivId(reference?.arxivId);
@@ -161,16 +336,7 @@ export async function resolveExtractedReference(reference, options = {}) {
       attempts.push({ provider: "semantic-scholar", status: "failed", message: clean(error?.message) });
     }
   } else {
-    return {
-      status: "no-identifier",
-      provider: "",
-      matchedBy: "",
-      queriedIdentifier: "",
-      confidence: 0,
-      canonical: null,
-      resolvedAt: new Date().toISOString(),
-      attempts: [],
-    };
+    return resolveIdentifierlessReference(reference);
   }
 
   return {

@@ -19,7 +19,8 @@ DOWNLOAD_DIR = ARTIFACT_DIR / "real-pdfs"
 
 def normalized(value):
     text = unicodedata.normalize("NFKD", str(value or ""))
-    return " ".join("".join(ch for ch in text if not unicodedata.combining(ch)).lower().split())
+    without_marks = "".join(ch for ch in text if not unicodedata.combining(ch))
+    return " ".join("".join(ch if ch.isalnum() else " " for ch in without_marks).casefold().split())
 
 
 def download_pdf(entry):

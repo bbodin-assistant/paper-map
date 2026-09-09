@@ -94,6 +94,16 @@ function providerIdentifier(paper) {
   return "";
 }
 
+export async function searchPapers(query, limit = 5) {
+  const text = String(query || "").trim();
+  if (!text) return [];
+  const boundedLimit = Math.max(1, Math.min(20, Number(limit) || 5));
+  const result = await request("/paper/search", { query: text, limit: boundedLimit, fields: PAPER_FIELDS });
+  return (result?.data || [])
+    .filter((paper) => paper?.paperId && paper?.title)
+    .map(normalizeSemanticScholarPaper);
+}
+
 export async function resolvePaper(query) {
   const text = String(query || "").trim();
   if (!text) throw new Error("Enter a DOI, Semantic Scholar ID, arXiv ID, or title.");
@@ -113,9 +123,9 @@ export async function resolvePaper(query) {
     return normalizeSemanticScholarPaper(paper);
   }
 
-  const result = await request("/paper/search", { query: text, limit: 1, fields: PAPER_FIELDS });
-  if (!result?.data?.length) throw new Error("No matching paper found in Semantic Scholar.");
-  return normalizeSemanticScholarPaper(result.data[0]);
+  const matches = await searchPapers(text, 1);
+  if (!matches.length) throw new Error("No matching paper found in Semantic Scholar.");
+  return matches[0];
 }
 
 export async function enrichPaper(paper) {
