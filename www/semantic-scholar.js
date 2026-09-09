@@ -38,7 +38,7 @@ async function request(path, params = {}) {
   const timeout = globalThis.setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
   let response;
   try {
-    response = await fetch(url, { headers, signal: controller.signal });
+    response = await globalThis.fetch(url, { headers, signal: controller.signal });
   } catch (error) {
     if (error?.name === "AbortError") {
       throw new Error(`Semantic Scholar request timed out after ${Math.round(REQUEST_TIMEOUT_MS / 1000)} seconds.`);
