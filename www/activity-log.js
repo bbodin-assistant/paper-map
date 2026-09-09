@@ -108,7 +108,7 @@ function installStyles() {
   const style = document.createElement("style");
   style.dataset.paperMapActivityLog = "true";
   style.textContent = `
-    .activity-log { position: fixed; z-index: 48; left: 20px; bottom: 42px; width: min(430px, calc(100vw - 40px)); font-size: 10px; pointer-events: none; }
+    .activity-log { position: fixed; z-index: 24; left: 20px; bottom: 42px; width: min(430px, calc(100vw - 40px)); font-size: 10px; pointer-events: none; }
     .activity-log-toggle, .activity-log-panel { pointer-events: auto; border: 1px solid rgba(176,184,187,.92); background: rgba(255,254,249,.96); box-shadow: 0 8px 28px rgba(24,32,42,.14); }
     .activity-log-toggle { display: grid; grid-template-columns: auto minmax(0,1fr) auto; gap: 7px; align-items: center; width: 100%; min-height: 31px; padding: 5px 8px; text-align: left; font-size: 9px; }
     .activity-log-toggle > strong { text-transform: uppercase; letter-spacing: .08em; }
