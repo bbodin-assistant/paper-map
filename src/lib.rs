@@ -120,7 +120,7 @@ fn is_post_bibliography_heading(line: &str) -> bool {
 }
 
 fn numbered_reference_regex() -> Regex {
-    Regex::new(r"^\s*(?:\[(\d{1,4})\]|(\d{1,4})[.)])\s*(.*)$").expect("valid numbered reference regex")
+    Regex::new(r"^\s*(?:\[(\d{1,4})\]|(\d{1,3})[.)])\s*(.*)$").expect("valid numbered reference regex")
 }
 
 fn year_regex() -> Regex {
