@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { extractLocalPaperMetadata, firstPageText } from "../www/pdf-metadata.js";
+import { extractLocalPaperMetadata, firstPageText, repairTrailingTitleAuthor } from "../www/pdf-metadata.js";
 
 const SCIENCEDIRECT_PUBLIC_COPY_FRONT_MATTER = `--- Page 1 ---
 End-to-End Timing Analysis of Cause-Effect
@@ -64,6 +64,15 @@ Abstract
   assert.equal(metadata.title, "Deep Residual Learning for Image Recognition");
   assert.deepEqual(metadata.authors, ["Kaiming He", "Xiangyu Zhang", "Shaoqing Ren", "Jian Sun"]);
   assert.equal(metadata.arxivId, "1512.03385v1");
+});
+
+test("repairs a trailing first author after other authors were detected", () => {
+  const repaired = repairTrailingTitleAuthor(
+    "Deep Residual Learning for Image Recognition Kaiming He",
+    ["Xiangyu Zhang", "Shaoqing Ren", "Jian Sun"],
+  );
+  assert.equal(repaired.title, "Deep Residual Learning for Image Recognition");
+  assert.deepEqual(repaired.authors, ["Kaiming He", "Xiangyu Zhang", "Shaoqing Ren", "Jian Sun"]);
 });
 
 test("extracts a source DOI only when it is present in front matter", () => {
