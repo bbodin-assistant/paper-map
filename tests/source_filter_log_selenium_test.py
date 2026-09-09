@@ -64,6 +64,8 @@ def main():
         year_min.send_keys("3000")
         wait.until(lambda d: d.find_element(By.ID, "visible-paper-count").get_attribute("textContent") == "0")
         driver.find_element(By.ID, "filter-menu").find_element(By.CSS_SELECTOR, ":scope > summary").click()
+        wait_click(driver, "#library-menu > summary")
+        wait_displayed(driver, "#library-menu .library-panel")
         wait_click(driver, "#export-bibtex")
         wait.until(lambda d: "There are no visible papers to export" in d.find_element(By.ID, "activity-log-summary").get_attribute("textContent"))
 
