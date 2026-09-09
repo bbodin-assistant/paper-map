@@ -77,6 +77,23 @@ function looksLikeSingleName(value) {
     || (index > 0 && index < tokens.length - 1 && NAME_PARTICLES.has(token.toLowerCase())));
 }
 
+function titleWithTrailingAuthor(pageText) {
+  const lines = deglueCamelCase(pageText).split(/\r?\n/);
+  for (const rawLine of lines) {
+    const normalized = clean(rawLine);
+    if (!normalized) continue;
+    if (STOP_RE.test(normalized)) break;
+    if (HEADER_RE.test(normalized) || DOI_RE.test(normalized) || ARXIV_RE.test(normalized)) continue;
+    const parts = rawLine.trim().split(/\s{3,}/).map(clean).filter(Boolean);
+    if (parts.length !== 2) continue;
+    const [title, author] = parts;
+    if (title.length < 18 || title.split(/\s+/).length < 4 || title.length > 180) continue;
+    if (!looksLikeSingleName(author)) continue;
+    return { title: cleanTitlePrefix(title), author: stripAuthorMarkers(author) };
+  }
+  return null;
+}
+
 function looksLikeAuthorBlockLine(line, nextLine = "") {
   if (!line || line.includes("@") || AFFILIATION_RE.test(line) || DOI_RE.test(line) || ARXIV_RE.test(line)) return false;
   if (/[∗*†‡]/.test(line) && looksLikeSingleName(line.replace(/[,;].*$/, ""))) return true;
@@ -167,6 +184,7 @@ export function extractLocalPaperMetadata(documentText, { fallbackTitle = "" } =
   const lines = frontMatterLines(documentText);
   const usable = lines.filter((line) => !HEADER_RE.test(line) && !DOI_RE.test(line) && !/^arxiv\s*:/i.test(line));
   const marked = markedAuthors(pageText);
+  const inlineTitleAuthor = titleWithTrailingAuthor(pageText);
   let authors = marked.authors;
   let title = marked.authors.length >= 2 && marked.firstIndex >= 0
     ? cleanTitlePrefix(marked.source.slice(0, marked.firstIndex))
@@ -182,11 +200,15 @@ export function extractLocalPaperMetadata(documentText, { fallbackTitle = "" } =
     }
 
     if (!title) {
-      const titleLines = authorStart > 0 ? usable.slice(0, authorStart) : [];
-      title = cleanTitlePrefix(titleLines.join("\n"));
+      if (inlineTitleAuthor) {
+        title = inlineTitleAuthor.title;
+      } else {
+        const titleLines = authorStart > 0 ? usable.slice(0, authorStart) : [];
+        title = cleanTitlePrefix(titleLines.join("\n"));
+      }
     }
 
-    authors = [];
+    authors = inlineTitleAuthor?.author ? [inlineTitleAuthor.author] : [];
     if (authorStart >= 0) {
       for (let index = authorStart; index < usable.length; index += 1) {
         const line = usable[index];
