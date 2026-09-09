@@ -75,7 +75,7 @@ jobs:
           done
           cat artifacts/mobile-ui/server.log
           exit 1
-      - name: Mobile Selenium interaction, AI model discovery, PDF review, and graph gesture tests
+      - name: Mobile Selenium interaction, AI model discovery, PDF review, reference resolution, and graph gesture tests
         env:
           TEST_URL: http://127.0.0.1:8080/www/
           MOBILE_TEST_ARTIFACT_DIR: artifacts/mobile-ui
@@ -84,6 +84,7 @@ jobs:
           python3 tests/ai_model_discovery_selenium_test.py
           python3 tests/pdf_review_selenium_test.py
           python3 tests/pdf_local_citation_selenium_test.py
+          python3 tests/reference_candidate_selenium_test.py
           python3 tests/graph_relations_selenium_test.py
       - name: Upload mobile UI screenshots and OCR output
         if: always()
