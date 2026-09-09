@@ -3,7 +3,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import Select, WebDriverWait
 
 from mobile_selenium_test import (
     ARTIFACT_DIR,
@@ -22,6 +22,8 @@ from mobile_selenium_test import (
 PAPER_ID = "doi:10.5555/selenium.pdf.review"
 ACCEPTED_TOPIC_ID = "topic:ai:accepted-topic-edited"
 REJECTED_TOPIC_ID = "topic:ai:rejected-topic"
+CUSTOM_BASE_URL = "https://llm.example.test/v1"
+CUSTOM_MODEL = "selenium-compatible-model"
 
 MOCK_METADATA = {
     "title": "AI Proposed Paper Title",
@@ -63,23 +65,68 @@ EDITED_FIELDS = {
 }
 
 
-def install_openai_fetch_mock(driver):
+def install_compatible_fetch_mock(driver):
     driver.execute_script(
         """
         const metadata = arguments[0];
+        const expectedUrl = arguments[1];
         const originalFetch = window.fetch.bind(window);
-        window.fetch = async (url, options) => {
-          if (String(url).includes("api.openai.com/v1/responses")) {
+        window.__paperMapCompatibleRequest = null;
+        window.fetch = async (url, options = {}) => {
+          if (String(url) === expectedUrl) {
+            const payload = JSON.parse(options.body || '{}');
+            window.__paperMapCompatibleRequest = {
+              url: String(url),
+              authorization: options.headers?.Authorization || options.headers?.authorization || '',
+              payload,
+            };
             return new Response(
-              JSON.stringify({ output_text: JSON.stringify(metadata) }),
-              { status: 200, headers: { "Content-Type": "application/json" } },
+              JSON.stringify({
+                choices: [{ message: { role: 'assistant', content: JSON.stringify(metadata) } }],
+              }),
+              { status: 200, headers: { 'Content-Type': 'application/json' } },
             );
           }
           return originalFetch(url, options);
         };
         """,
         MOCK_METADATA,
+        f"{CUSTOM_BASE_URL}/chat/completions",
     )
+
+
+def configure_compatible_ai(driver):
+    wait_click(driver, "#ai-config-button")
+    panel = wait_displayed(driver, "#ai-config-panel")
+    provider = Select(panel.find_element(By.ID, "ai-config-provider"))
+    assert_true(
+        [option.get_attribute("value") for option in provider.options]
+        == ["openai", "ollama", "openai-compatible"],
+        "AI configuration should expose OpenAI, Ollama, and OpenAI-compatible providers",
+    )
+    provider.select_by_value("ollama")
+    assert_true(
+        panel.find_element(By.ID, "ai-config-base-url").get_attribute("value") == "http://localhost:11434/v1",
+        "Ollama preset should select the local OpenAI-compatible endpoint",
+    )
+    provider.select_by_value("openai-compatible")
+
+    base = panel.find_element(By.ID, "ai-config-base-url")
+    base.send_keys(Keys.CONTROL, "a")
+    base.send_keys(CUSTOM_BASE_URL)
+    model = panel.find_element(By.ID, "ai-config-model")
+    model.send_keys(Keys.CONTROL, "a")
+    model.send_keys(CUSTOM_MODEL)
+    key = panel.find_element(By.ID, "ai-config-key")
+    key.send_keys("selenium-compatible-key")
+    remember = panel.find_element(By.ID, "ai-config-remember-key")
+    if not remember.is_selected():
+        remember.click()
+    wait_click(driver, "#ai-config-save")
+    WebDriverWait(driver, WAIT_SECONDS).until(
+        lambda d: "OpenAI-compatible" in d.find_element(By.ID, "ai-config-button").get_attribute("textContent")
+    )
+    wait_click(driver, "#ai-config-close")
 
 
 def center_element(driver, element):
@@ -168,6 +215,10 @@ def assert_saved_review(driver):
     assert_true(paper["topics"] == [ACCEPTED_TOPIC_ID], "Only the accepted topic should be attached to the paper")
     assert_true(paper["source"] == "ai-pdf", "Saved review should retain the AI PDF source marker")
     assert_true(paper["sourceFileName"] == "mobile-test-paper.pdf", "Saved review should retain the source PDF name")
+    assert_true(paper["aiExtraction"]["provider"] == "openai-compatible", "AI provenance should record the selected provider")
+    assert_true(paper["aiExtraction"]["model"] == CUSTOM_MODEL, "AI provenance should record the selected model")
+    assert_true(paper["aiExtraction"]["baseUrl"] == CUSTOM_BASE_URL, "AI provenance should record the selected server")
+    assert_true(paper["aiExtraction"]["transport"]["mode"] == "chat-text", "Custom provider should use local-text chat transport")
 
     accepted_topic = read_indexeddb(driver, "topics", ACCEPTED_TOPIC_ID)
     rejected_topic = read_indexeddb(driver, "topics", REJECTED_TOPIC_ID)
@@ -193,7 +244,8 @@ def main():
         )
         assert_no_page_horizontal_overflow(driver)
 
-        install_openai_fetch_mock(driver)
+        configure_compatible_ai(driver)
+        install_compatible_fetch_mock(driver)
         wait_click(driver, "#library-menu > summary")
         wait_displayed(driver, "#library-menu .library-panel")
 
@@ -208,11 +260,21 @@ def main():
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI analysis widget")
 
         wait_click(driver, ".pdf-ai-provider-settings > summary")
-        key_input = wait_displayed(driver, "#pdf-ai-key")
-        key_input.send_keys("selenium-test-api-key")
+        provider_summary = wait_displayed(driver, "[data-ai-provider-summary]")
+        assert_true("OpenAI-compatible" in provider_summary.get_attribute("textContent"), "PDF dialog should show the configured AI provider")
         wait_click(driver, "#pdf-ai-analyze")
         review = wait_displayed(driver, "#pdf-ai-review")
         wait.until(lambda d: "AI analysis complete" in d.find_element(By.ID, "pdf-ai-analysis-status").text)
+
+        request = driver.execute_script("return window.__paperMapCompatibleRequest")
+        assert_true(request is not None, "Custom OpenAI-compatible endpoint should receive the AI request")
+        assert_true(request["url"] == f"{CUSTOM_BASE_URL}/chat/completions", "Proxy should use the configured base URL")
+        assert_true(request["authorization"] == "Bearer selenium-compatible-key", "Proxy should forward an optional bearer key")
+        assert_true(request["payload"]["model"] == CUSTOM_MODEL, "Proxy should use the configured model")
+        assert_true(request["payload"]["response_format"]["type"] == "json_schema", "Proxy should request structured output")
+        user_prompt = request["payload"]["messages"][1]["content"]
+        assert_true("BEGIN PDF TEXT" in user_prompt, "Compatible providers should receive locally extracted PDF text")
+
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI review widget")
         assert_true("Review before saving" in review.text, "Review heading should be visible after analysis")
         assert_true("Deterministic Selenium fixture" in review.text, "Extraction warning should be visible")
@@ -278,7 +340,7 @@ def main():
         )
         save_screenshot(driver, "09-pdf-review-saved.png")
         assert_no_page_horizontal_overflow(driver)
-        print("PDF import review metadata, topic controls, final save, and persistence checks passed.")
+        print("Configurable AI proxy, PDF review metadata, topic controls, final save, and persistence checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "pdf-review-failure.png")
