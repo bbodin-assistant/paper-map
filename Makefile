@@ -24,19 +24,21 @@ test:
 	node --check www/graph.js
 	node --check www/import-export.js
 	node --check www/semantic-scholar.js
+	node --check www/research-relations.js
 	node --check www/pdf-ai.js
 	node --check www/pdf-local.js
 	node --check www/reference-resolver.js
 	node --check www/reference-resolution-ui.js
 	node --check www/pdf-ai-import.js
 	node --test tests/*.test.mjs
-	python3 -m py_compile tests/mobile_selenium_test.py tests/pdf_review_selenium_test.py tests/pdf_local_citation_selenium_test.py
+	python3 -m py_compile tests/mobile_selenium_test.py tests/pdf_review_selenium_test.py tests/pdf_local_citation_selenium_test.py tests/graph_relations_selenium_test.py
 	cargo test
 
 test-ui-mobile: build-wasm
 	TEST_URL="$(TEST_URL)" python3 tests/mobile_selenium_test.py
 	TEST_URL="$(TEST_URL)" python3 tests/pdf_review_selenium_test.py
 	TEST_URL="$(TEST_URL)" python3 tests/pdf_local_citation_selenium_test.py
+	TEST_URL="$(TEST_URL)" python3 tests/graph_relations_selenium_test.py
 
 clean:
 	rm -rf target "$(WASM_OUT_DIR)"
