@@ -39,6 +39,12 @@
   gap: 6px;
 }
 
+.pdf-reference-resolution-status {
+  display: block;
+  margin: -2px 0 8px;
+  font-size: 10px;
+}
+
 .pdf-reference-note {
   margin: 0 0 10px;
   font-size: 11px;
@@ -105,6 +111,69 @@
   background: #fff8da;
   color: #655014;
   font-weight: 700;
+}
+
+.pdf-reference-resolution {
+  margin-top: 7px;
+}
+
+.reference-resolution-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 2px 6px;
+  border: 1px solid #cfd5d1;
+  border-radius: 999px;
+  background: #f5f6f4;
+  color: #56616b;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.reference-resolution-badge.ready,
+.reference-resolution-badge.resolving {
+  border-color: #c8d4df;
+  background: #f2f7fb;
+  color: #385269;
+}
+
+.reference-resolution-badge.matched {
+  border-color: #9fc9ae;
+  background: #edf8f0;
+  color: #285b37;
+}
+
+.reference-resolution-badge.unresolved {
+  border-color: #dab5a4;
+  background: #fff4ef;
+  color: #854228;
+}
+
+.reference-resolution-match {
+  display: grid;
+  gap: 3px;
+  padding: 7px 8px;
+  border-left: 2px solid #9fc9ae;
+  background: #f8fbf8;
+}
+
+.reference-resolution-match.unresolved {
+  border-left-color: #dab5a4;
+  background: #fff9f6;
+}
+
+.reference-resolution-match strong {
+  color: #26323c;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.reference-resolution-match > span:not(.reference-resolution-badge) {
+  color: #66717b;
+  font-size: 10px;
+  line-height: 1.35;
 }
 
 @media (max-width: 720px) {
