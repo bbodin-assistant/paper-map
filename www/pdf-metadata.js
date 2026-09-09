@@ -6,9 +6,14 @@ const STOP_RE = /^(?:abstract\b|abstract[—-]|keywords?\b|index terms?\b|(?:1|i
 const AFFILIATION_RE = /\b(?:university|universit[aäeé]|institute|institut|department|dept\.?|laboratory|laboratories|lab\.?|research|school of|faculty of|college|corporation|corp\.?|inc\.?|gmbh|google|microsoft|facebook|meta|openai|bosch|systems ab|email)\b/i;
 const HEADER_RE = /^(?:journal\b|available online\b|www\.|https?:\/\/|doi\s*:|received\b|accepted\b|copyright\b|©|preprint\b|provided proper attribution\b|permission to reproduce\b|\d+(?:st|nd|rd|th) conference\b)/i;
 const AUTHOR_MARKERS_RE = /[∗*†‡§¶¹²³⁴⁵⁶⁷⁸⁹⁰]+/g;
+const NAME_PARTICLES = new Set(["da", "de", "del", "der", "di", "du", "la", "le", "van", "von"]);
 
 function clean(value) {
   return String(value ?? "").replace(/\s+/g, " ").trim();
+}
+
+function deglueCamelCase(value) {
+  return String(value ?? "").replace(/([\p{Ll}])([\p{Lu}])/gu, "$1 $2");
 }
 
 function trimIdentifierPunctuation(value) {
@@ -29,7 +34,7 @@ export function firstPageText(documentText) {
 }
 
 function frontMatterLines(documentText) {
-  const page = firstPageText(documentText);
+  const page = deglueCamelCase(firstPageText(documentText));
   const lines = page.split(/\r?\n/).map(clean).filter(Boolean);
   const result = [];
   for (const line of lines) {
@@ -54,12 +59,18 @@ function nameTokens(value) {
     .filter(Boolean);
 }
 
+function nameToken(value) {
+  return /^[\p{Lu}][\p{L}'’\-]*$/u.test(value) || /^[\p{Lu}]$/u.test(value);
+}
+
 function looksLikeSingleName(value) {
   const cleaned = stripAuthorMarkers(value);
   if (!cleaned || cleaned.includes("@") || AFFILIATION_RE.test(cleaned) || DOI_RE.test(cleaned) || ARXIV_RE.test(cleaned)) return false;
   const tokens = nameTokens(cleaned);
   if (tokens.length < 2 || tokens.length > 5) return false;
-  return tokens.every((token) => /^[\p{Lu}][\p{L}'’\-]+$/u.test(token) || /^[\p{Lu}]$/u.test(token) || /^[a-z][\p{L}'’\-]+$/u.test(token));
+  if (!nameToken(tokens[0]) || !nameToken(tokens.at(-1))) return false;
+  return tokens.every((token, index) => nameToken(token)
+    || (index > 0 && index < tokens.length - 1 && NAME_PARTICLES.has(token.toLowerCase())));
 }
 
 function looksLikeAuthorBlockLine(line, nextLine = "") {
@@ -70,7 +81,7 @@ function looksLikeAuthorBlockLine(line, nextLine = "") {
   const tokens = nameTokens(line);
   const nextLooksAffiliated = Boolean(nextLine && (AFFILIATION_RE.test(nextLine) || nextLine.includes("@")));
   return nextLooksAffiliated && tokens.length >= 2 && tokens.length <= 12
-    && tokens.every((token) => /^[\p{Lu}][\p{L}'’\-]+$/u.test(token) || /^[\p{Lu}]$/u.test(token));
+    && tokens.every((token) => nameToken(token) || NAME_PARTICLES.has(token.toLowerCase()));
 }
 
 function splitAuthors(line) {
@@ -86,6 +97,34 @@ function splitAuthors(line) {
     if (paired.every(looksLikeSingleName)) return paired;
   }
   return [];
+}
+
+function markedAuthors(pageText) {
+  const source = deglueCamelCase(pageText);
+  const pattern = /([\p{Lu}][\p{L}'’\-]*(?:\s+(?:[\p{Lu}][\p{L}'’\-]*|da|de|del|der|di|du|la|le|van|von)){1,4})\s*[∗*†‡]+/gu;
+  const authors = [];
+  let firstIndex = -1;
+  for (const match of source.matchAll(pattern)) {
+    const author = stripAuthorMarkers(match[1]);
+    if (!looksLikeSingleName(author)) continue;
+    if (firstIndex < 0) firstIndex = match.index ?? -1;
+    if (!authors.some((value) => value.toLowerCase() === author.toLowerCase())) authors.push(author);
+  }
+  return { authors, firstIndex, source };
+}
+
+function cleanTitlePrefix(prefix) {
+  let value = String(prefix || "").trim();
+  const reversedArxivDate = value.search(/\b\d{4}\s+(?:naJ|beF|raM|rpA|yaM|nuJ|luJ|guA|peS|tcO|voN|ceD)\b/i);
+  if (reversedArxivDate >= 0) value = value.slice(0, reversedArxivDate);
+  const lines = value.split(/\r?\n/).map(clean).filter(Boolean)
+    .filter((line) => !HEADER_RE.test(line) && !DOI_RE.test(line) && !/^arxiv\s*:/i.test(line));
+  if (!lines.length) return "";
+  value = clean(lines.join(" "));
+  if (/:viXra/i.test(value)) value = value.replace(/\S*:viXra.*$/i, "");
+  const sentenceParts = value.split(/\.\s+/).map(clean).filter(Boolean);
+  if (sentenceParts.length > 1) value = sentenceParts.at(-1);
+  return clean(value);
 }
 
 function sourceIdentifiers(lines) {
@@ -107,38 +146,51 @@ function probableYear(lines) {
 }
 
 export function extractLocalPaperMetadata(documentText, { fallbackTitle = "" } = {}) {
+  const pageText = firstPageText(documentText);
   const lines = frontMatterLines(documentText);
   const usable = lines.filter((line) => !HEADER_RE.test(line) && !DOI_RE.test(line) && !/^arxiv\s*:/i.test(line));
+  const marked = markedAuthors(pageText);
+  let authors = marked.authors;
+  let title = marked.authors.length >= 2 && marked.firstIndex >= 0
+    ? cleanTitlePrefix(marked.source.slice(0, marked.firstIndex))
+    : "";
+
   let authorStart = -1;
-  for (let index = 0; index < usable.length; index += 1) {
-    if (looksLikeAuthorBlockLine(usable[index], usable[index + 1] || "")) {
-      authorStart = index;
-      break;
+  if (authors.length < 2) {
+    for (let index = 0; index < usable.length; index += 1) {
+      if (looksLikeAuthorBlockLine(usable[index], usable[index + 1] || "")) {
+        authorStart = index;
+        break;
+      }
+    }
+
+    if (!title) {
+      const titleLines = authorStart > 0 ? usable.slice(0, authorStart) : [];
+      title = cleanTitlePrefix(titleLines.join("\n"));
+    }
+
+    authors = [];
+    if (authorStart >= 0) {
+      for (let index = authorStart; index < usable.length; index += 1) {
+        const line = usable[index];
+        if (AFFILIATION_RE.test(line) || line.includes("@") || DOI_RE.test(line) || ARXIV_RE.test(line)) continue;
+        const extracted = splitAuthors(line);
+        if (!extracted.length) {
+          if (authors.length) break;
+          continue;
+        }
+        for (const author of extracted) {
+          const key = author.toLowerCase();
+          if (!authors.some((value) => value.toLowerCase() === key)) authors.push(author);
+        }
+      }
     }
   }
 
-  const titleLines = authorStart > 0 ? usable.slice(0, authorStart) : [];
-  const title = clean(titleLines.join(" ")) || clean(fallbackTitle);
-  const authors = [];
-  if (authorStart >= 0) {
-    for (let index = authorStart; index < usable.length; index += 1) {
-      const line = usable[index];
-      if (AFFILIATION_RE.test(line) || line.includes("@") || DOI_RE.test(line) || ARXIV_RE.test(line)) continue;
-      const extracted = splitAuthors(line);
-      if (!extracted.length) {
-        if (authors.length && index > authorStart + 2) break;
-        continue;
-      }
-      for (const author of extracted) {
-        const key = author.toLowerCase();
-        if (!authors.some((value) => value.toLowerCase() === key)) authors.push(author);
-      }
-    }
-  }
-
+  title ||= clean(fallbackTitle);
   const identifiers = sourceIdentifiers(lines);
   const warnings = [];
-  if (!titleLines.length) warnings.push("Local front-matter extraction could not identify a reliable title; the filename was used as the review fallback.");
+  if (title === clean(fallbackTitle)) warnings.push("Local front-matter extraction could not identify a reliable title; the filename was used as the review fallback.");
   if (!authors.length) warnings.push("Local front-matter extraction could not identify authors reliably; review the author field manually.");
 
   return {
@@ -151,7 +203,7 @@ export function extractLocalPaperMetadata(documentText, { fallbackTitle = "" } =
     evidence: {
       page: 1,
       method: "deterministic-front-matter",
-      titleDetected: Boolean(titleLines.length),
+      titleDetected: title !== clean(fallbackTitle),
       authorCount: authors.length,
       doiDetected: Boolean(identifiers.doi),
       arxivDetected: Boolean(identifiers.arxivId),
