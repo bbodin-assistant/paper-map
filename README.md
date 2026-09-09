@@ -11,7 +11,7 @@ The application is designed for static hosting. There is no application backend 
 - Import BibTeX and enrich papers from Semantic Scholar when identifiers are available.
 - Import a research PDF with deterministic local citation extraction in Rust/WebAssembly.
 - Resolve extracted DOI/arXiv identifiers to canonical metadata through Crossref and Semantic Scholar with reviewed match confidence.
-- Keep AI-assisted metadata/topic extraction as an optional reviewed alternative.
+- Keep AI-assisted metadata/topic extraction as an optional reviewed alternative with a configurable OpenAI, Ollama, or OpenAI-compatible server.
 - Record canonical semantic relationships between papers such as **Builds on**, **Improves on**, **Extends**, **Outperforms**, **Invalidates**, **Contradicts**, **Supports**, and **Replicates**.
 - Preserve how a paper entered the local library: provider lookup/expansion, BibTeX, backup, reviewed PDF extraction, AI-assisted extraction, or the bundled demo.
 - Load a small bundled demo dataset without mixing it into a user's saved library unless requested.
@@ -31,7 +31,7 @@ Paper Map deliberately follows the browser-first style of `train-route-explorer`
 ```text
 Cargo.toml                  Rust/WASM citation extractor crate
 src/
-  lib.rs                    PDF layout, bibliography and identifier extraction
+  lib.rs                    PDF layout, full-text, bibliography and identifier extraction
 www/
   index.html                Static application shell
   style.css                 Main visual language and map layout
@@ -41,22 +41,27 @@ www/
   research-relations.js     Canonical semantic paper-relation vocabulary
   import-export.js          JSON / BibTeX import and export
   semantic-scholar.js       Scholarly-data provider adapter
-  pdf-local.js              Rust/WASM browser adapter
+  ai-config.js              AI provider/base URL/model preference model
+  ai-config-ui.js           Global and PDF-inline AI server configuration UI
+  ai-provider.js            Capability-aware AI proxy/router
+  ai-config.css             AI server configuration styles
+  pdf-local.js              Rust/WASM browser adapter and local PDF text boundary
   pdf-local.css             Local citation/resolution review styles
   reference-resolver.js     Crossref / Semantic Scholar exact-ID resolver
   reference-resolution-ui.js Resolution controls and confidence presentation
-  pdf-ai.js                 OpenAI PDF metadata/topic extraction adapter
+  pdf-ai.js                 Direct OpenAI Responses/PDF adapter
   pdf-ai-import.js          Shared reviewed PDF import workflow
   pdf-ai-import.css         PDF review UI styles
   pkg/                      Generated wasm-pack output; not committed
   demo-data.js              Bundled demo library
 tests/
   pdf-ai.test.mjs                       PDF metadata normalization tests
+  ai-provider.test.mjs                  AI proxy/provider request tests
   reference-resolver.test.mjs           DOI/arXiv resolver unit tests
   research-relations.test.mjs           Research-link and graph-geometry tests
   mobile_selenium_test.py               Mobile interaction/layout/OCR test
   graph_relations_selenium_test.py      Pinch/drag/direction/relation/provenance test
-  pdf_review_selenium_test.py           AI review/save test with mocked API
+  pdf_review_selenium_test.py           Configurable AI proxy review/save test
   pdf_local_citation_selenium_test.py   Real Rust/WASM extraction + resolver review test
   requirements-ui.txt                   Selenium dependency
 ROADMAP.md                   Product and implementation roadmap
@@ -84,7 +89,7 @@ Open `http://localhost:8080/www/`.
 
 ## Tests
 
-Fast syntax/unit checks, including native Rust extraction, resolver, research-relation, graph-geometry and pinch-transform tests:
+Fast syntax/unit checks, including native Rust extraction, AI proxy routing, resolver, research-relation, graph-geometry and pinch-transform tests:
 
 ```bash
 make test
@@ -96,7 +101,7 @@ Explicit Rust/WASM validation:
 make test-rust
 ```
 
-The mobile browser suite uses Selenium with Chrome mobile emulation at a 390 × 844 CSS-pixel viewport. It exercises the main UI, OCR visibility checks, reviewed AI flow, real Rust/WASM local citation extraction, exact Crossref/Semantic Scholar resolution, outside-click menu dismissal, stable graph selection, directed arrows, semantic relation creation, library provenance, node drag and two-finger pinch zoom.
+The mobile browser suite uses Selenium with Chrome mobile emulation at a 390 × 844 CSS-pixel viewport. It exercises the main UI, OCR visibility checks, configurable reviewed AI flow, real Rust/WASM local citation extraction, exact Crossref/Semantic Scholar resolution, outside-click menu dismissal, stable graph selection, directed arrows, semantic relation creation, library provenance, node drag and two-finger pinch zoom.
 
 Install `selenium` from `tests/requirements-ui.txt` and Tesseract, start the static server, then run:
 
@@ -121,7 +126,7 @@ Newly added papers retain a local `libraryEntry` record where possible. It recor
 - BibTeX import and source filename
 - Paper Map backup merge
 - reviewed local Rust/WASM PDF extraction
-- reviewed OpenAI-assisted PDF extraction
+- reviewed AI-assisted PDF extraction, including the selected provider/model/server transport
 - bundled demo dataset
 
 The paper detail drawer presents this information under **Added to library**. Older records without `libraryEntry` fall back to their existing `source`, `importedAt`, PDF-extraction and enrichment fields.
@@ -152,7 +157,9 @@ Paper-node radius is a restrained logarithmic function of the provider citation-
 - Drag the map background to pan.
 - Use a mouse wheel/trackpad to zoom on desktop.
 - Use two fingers to pinch zoom on touch/mobile.
-- Drag paper nodes or topic blocks to reposition them for the current application session.
+- Click/tap a paper node to open its information drawer.
+- Drag a paper node beyond the movement threshold to reposition it without opening the drawer.
+- Drag topic blocks to reposition them for the current application session.
 - Paper positions are cached across same-topology re-renders, so selecting or editing a paper does not restart the force layout.
 
 ## Local PDF citation extraction and resolution
@@ -177,15 +184,23 @@ Scanned/image-only PDFs are reported as requiring OCR rather than being guessed 
 
 ## Optional AI PDF analysis
 
-The OpenAI Responses API adapter remains available for metadata and topic suggestions. The selected PDF is sent directly from the browser as an inline file input with `store: false`. The user supplies the API key; it is not committed or saved in IndexedDB. By default it is kept only in the password field, with an explicit option to retain it in `sessionStorage` for the current browser tab.
+Paper Map has an AI proxy configuration menu in the header and the same controls inside the PDF import dialog. The current presets are:
 
-The AI result is treated as a proposal. Title, authors, year, venue, type, DOI, arXiv ID, URL, abstract, keywords, proposed topics, confidence values, and warnings are shown in the same review dialog. The paper and accepted topics are written to IndexedDB only after **Save reviewed paper** is pressed.
+- **OpenAI** — direct browser upload to the configured `/responses` API using a PDF `input_file` and structured JSON schema output.
+- **Ollama** — the existing Rust/WASM parser first extracts PDF text locally, then Paper Map sends that text to the configured OpenAI-compatible `/chat/completions` endpoint (default `http://localhost:11434/v1`).
+- **OpenAI-compatible** — same local-text transport as Ollama, but with an arbitrary base URL and model for self-hosted or third-party compatible servers.
+
+Provider, base URL and model are UI preferences stored in localStorage. API keys are never stored there or in IndexedDB: an entered key remains only in page memory by default, with an explicit option to retain it in sessionStorage for the current browser tab. Ollama does not require a key. Custom/Ollama servers must permit browser CORS access; when Paper Map is hosted on another origin, local Ollama may need an appropriate `OLLAMA_ORIGINS` configuration.
+
+For OpenAI direct-PDF mode, the selected PDF is sent to the configured AI server. For Ollama/OpenAI-compatible text mode, the PDF itself remains local but the Rust-extracted document text is sent to the configured server. Very long extracted documents are bounded before transmission: Paper Map preserves the beginning and end and records a warning when the middle was omitted. Scanned PDFs still require OCR before text-mode AI analysis.
+
+The AI result is always treated as a proposal. Title, authors, year, venue, type, DOI, arXiv ID, URL, abstract, keywords, proposed topics, confidence values, and warnings are shown in the same review dialog. The paper and accepted topics are written to IndexedDB only after **Save reviewed paper** is pressed. Saved provenance records the selected AI provider, model, base URL and transport mode.
 
 ## External scholarly data
 
 Paper Map uses Semantic Scholar Academic Graph for on-demand paper enrichment, citation expansion, arXiv resolution, and DOI fallback resolution. Crossref is used for exact DOI metadata lookup during extracted-reference review. Both adapters normalize provider responses before the canonical metadata reaches persisted review provenance.
 
-The provider layer remains replaceable: OpenAlex, DataCite, Zotero, another AI provider, or additional reference-resolution adapters can be added without changing the core map renderer.
+The provider layer remains replaceable: OpenAlex, DataCite, Zotero, additional AI transports, or additional reference-resolution adapters can be added without changing the core map renderer.
 
 ## Import paths
 
@@ -195,6 +210,6 @@ Current import paths are:
 - BibTeX
 - DOI, arXiv ID, Semantic Scholar ID, or title through Semantic Scholar
 - PDF through local Rust/WASM bibliography/citation extraction, with optional reviewed Crossref/Semantic Scholar identifier resolution
-- PDF through optional reviewed AI-assisted metadata/topic extraction
+- PDF through optional reviewed AI-assisted metadata/topic extraction using the configured AI provider
 
 The PDF itself is not stored in IndexedDB. Only user-reviewed paper data, accepted topics, accepted extracted-reference provenance, semantic research links and local library provenance are saved locally.
