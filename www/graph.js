@@ -63,22 +63,18 @@ export function pinchZoomTransform(startTransform, startMidpoint, startDistance,
   };
 }
 
-function primaryTopic(paper) {
-  return paper.topics?.[0] || "topic:uncategorized";
-}
-
-function buildTopicGraph(papers, edges, topics) {
+export function buildTopicGraph(papers, edges, topics) {
   const paperById = new Map(papers.map((paper) => [paper.id, paper]));
   const topicById = new Map(topics.map((topic) => [topic.id, topic]));
   const blocks = new Map();
 
   for (const paper of papers) {
-    const paperTopics = paper.topics?.length ? paper.topics : ["topic:uncategorized"];
+    const paperTopics = (paper.topics || []).filter(Boolean);
     for (const topicId of paperTopics) {
       if (!blocks.has(topicId)) {
         blocks.set(topicId, {
           id: topicId,
-          name: topicById.get(topicId)?.name || (topicId === "topic:uncategorized" ? "Uncategorized" : topicId),
+          name: topicById.get(topicId)?.name || topicId,
           source: topicById.get(topicId)?.source || "derived",
           paperIds: [],
           starred: 0,
@@ -95,8 +91,9 @@ function buildTopicGraph(papers, edges, topics) {
     const sourcePaper = paperById.get(edge.source);
     const targetPaper = paperById.get(edge.target);
     if (!sourcePaper || !targetPaper) continue;
-    const sourceTopics = sourcePaper.topics?.length ? sourcePaper.topics : [primaryTopic(sourcePaper)];
-    const targetTopics = targetPaper.topics?.length ? targetPaper.topics : [primaryTopic(targetPaper)];
+    const sourceTopics = (sourcePaper.topics || []).filter(Boolean);
+    const targetTopics = (targetPaper.topics || []).filter(Boolean);
+    if (!sourceTopics.length || !targetTopics.length) continue;
     for (const source of sourceTopics) {
       for (const target of targetTopics) {
         if (source === target) continue;
@@ -176,6 +173,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
   let currentPaperNodes = new Map();
   let currentTopicBlocks = new Map();
   let currentDraw = null;
+  let currentReheat = null;
   let activePointers = new Map();
   let panGesture = null;
   let pinchGesture = null;
@@ -200,6 +198,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     currentPaperNodes = new Map();
     currentTopicBlocks = new Map();
     currentDraw = null;
+    currentReheat = null;
   }
 
   function empty(message) {
@@ -376,12 +375,13 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
 
     let iteration = 0;
     let settledFrames = 0;
+    let heat = 1;
     const maxIterations = layoutIterationBudget(papers.length);
     const minimumIterations = Math.min(110, Math.floor(maxIterations * 0.55));
     function simulate() {
       if (token !== renderToken) return;
       iteration += 1;
-      const cooling = Math.max(0.055, 1 - iteration / maxIterations);
+      const cooling = Math.max(0.055, heat * (1 - iteration / maxIterations));
 
       for (const node of nodes) {
         if (node.fixed) {
@@ -437,8 +437,17 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
       else animationFrame = null;
     }
 
+    function startSimulation(nextHeat = 1) {
+      stopAnimation();
+      iteration = 0;
+      settledFrames = 0;
+      heat = Math.max(0.2, Math.min(1, Number(nextHeat) || 1));
+      animationFrame = requestAnimationFrame(simulate);
+    }
+
+    currentReheat = () => startSimulation(0.45);
     draw();
-    if (topologyChanged) animationFrame = requestAnimationFrame(simulate);
+    if (topologyChanged) startSimulation(1);
   }
 
   function renderTopicMap(papers, edges, topics, selectedTopicId) {
@@ -450,6 +459,10 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     clear();
     renderToken += 1;
     const { blocks, connections } = buildTopicGraph(papers, edges, topics);
+    if (!blocks.length) {
+      empty("No categorized papers match the current filters.");
+      return;
+    }
     const width = Math.max(800, svg.clientWidth || 1200);
     const height = Math.max(520, svg.clientHeight || 720);
     currentWorld = { width, height, viewportWidth: width, viewportHeight: height };
@@ -735,8 +748,10 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     let tappedItem = null;
     if (itemDrag && itemDrag.pointerId === event.pointerId) {
       if (itemDrag.dragging) {
+        const draggedType = itemDrag.type;
         suppressNextClick = true;
         pinActiveItemDrag();
+        if (draggedType === "paper") currentReheat?.();
         event.preventDefault();
       } else {
         restorePendingItemDrag();

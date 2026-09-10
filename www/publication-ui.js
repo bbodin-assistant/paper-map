@@ -1,3 +1,5 @@
+import "./ui-layout.js";
+
 const ACCEPTED_PUBLICATION_FILES = ".pdf,.json,.bib,application/pdf,application/json,application/x-bibtex,text/x-bibtex";
 
 function lowerName(file) {
@@ -121,12 +123,101 @@ function configureUnifiedFilePicker(root) {
   return true;
 }
 
+function waitForSaveAvailability(saveButton, dialog) {
+  if (!saveButton.disabled) return Promise.resolve(true);
+  return new Promise((resolve) => {
+    const observer = new MutationObserver(() => {
+      if (!dialog.open) {
+        observer.disconnect();
+        resolve(false);
+      } else if (!saveButton.disabled) {
+        observer.disconnect();
+        resolve(true);
+      }
+    });
+    observer.observe(saveButton, { attributes: true, attributeFilter: ["disabled"] });
+    observer.observe(dialog, { attributes: true, attributeFilter: ["open"] });
+  });
+}
+
+function triggerSingleSave(saveButton, tabs, dialog) {
+  const initialCount = tabs.children.length;
+  return new Promise((resolve) => {
+    let sawDisabled = saveButton.disabled;
+    const observer = new MutationObserver(() => {
+      if (tabs.children.length < initialCount || !dialog.open) {
+        observer.disconnect();
+        resolve(true);
+        return;
+      }
+      if (saveButton.disabled) sawDisabled = true;
+      if (sawDisabled && !saveButton.disabled && tabs.children.length === initialCount) {
+        observer.disconnect();
+        resolve(false);
+      }
+    });
+    observer.observe(tabs, { childList: true });
+    observer.observe(saveButton, { attributes: true, attributeFilter: ["disabled"] });
+    observer.observe(dialog, { attributes: true, attributeFilter: ["open"] });
+    saveButton.click();
+  });
+}
+
+function configureSaveAll(root) {
+  const dialog = root.querySelector("#pdf-ai-dialog");
+  const tabs = dialog?.querySelector("#pdf-review-tabs");
+  const saveButton = dialog?.querySelector("#pdf-ai-save");
+  const actions = saveButton?.parentElement;
+  if (!dialog || !tabs || !saveButton || !actions) return false;
+  if (dialog.querySelector("#pdf-ai-save-all")) return true;
+
+  const saveAllButton = root.createElement("button");
+  saveAllButton.type = "button";
+  saveAllButton.id = "pdf-ai-save-all";
+  saveAllButton.className = "quiet-button";
+  saveAllButton.textContent = "Save all";
+  saveAllButton.hidden = true;
+  saveButton.after(saveAllButton);
+
+  let batchRunning = false;
+  function refresh() {
+    const multiple = tabs.children.length > 1;
+    saveAllButton.hidden = !multiple;
+    saveAllButton.disabled = batchRunning || !multiple || saveButton.disabled;
+  }
+
+  const observer = new MutationObserver(refresh);
+  observer.observe(tabs, { childList: true });
+  observer.observe(saveButton, { attributes: true, attributeFilter: ["disabled"] });
+  observer.observe(dialog, { attributes: true, attributeFilter: ["open"] });
+
+  saveAllButton.addEventListener("click", async () => {
+    if (batchRunning || tabs.children.length < 2) return;
+    batchRunning = true;
+    refresh();
+    try {
+      while (dialog.open && tabs.children.length) {
+        if (!await waitForSaveAvailability(saveButton, dialog)) break;
+        const saved = await triggerSingleSave(saveButton, tabs, dialog);
+        if (!saved) break;
+      }
+    } finally {
+      batchRunning = false;
+      refresh();
+    }
+  });
+
+  refresh();
+  return true;
+}
+
 export function initPublicationUi(root = document) {
   if (!root?.querySelector || !root?.createElement) return false;
   const menuReady = configureAddPublicationMenu(root);
   const configReady = moveLibraryActionsToConfig(root);
   const pickerReady = configureUnifiedFilePicker(root);
-  return menuReady && configReady && pickerReady;
+  const saveAllReady = configureSaveAll(root);
+  return menuReady && configReady && pickerReady && saveAllReady;
 }
 
 function initWhenReady() {
