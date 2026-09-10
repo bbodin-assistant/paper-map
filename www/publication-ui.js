@@ -45,6 +45,8 @@ function configureAddPublicationMenu(root) {
   const panel = menu.querySelector(".library-panel");
   panel?.querySelector(".drawer-heading")?.remove();
   const form = panel?.querySelector("#add-paper-form");
+  const query = form?.querySelector("#add-paper-query");
+  if (query) query.setAttribute("aria-label", "Publication DOI, arXiv ID, provider ID, or title");
   form?.querySelector('label[for="add-paper-query"]')?.remove();
   form?.querySelector("small")?.remove();
 
