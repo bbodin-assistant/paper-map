@@ -144,3 +144,81 @@ test("merging paper writes preserves an earlier resolved reference identity", ()
   assert.equal(merged[0].resolution.status, "matched");
   assert.equal(merged[0].canonicalReference.doi, "10.1000/target");
 });
+
+const localTarget = {
+  id: "target", title: "Reliable End-to-End Scheduling for Distributed Control Systems",
+  authors: ["Amélie Martin", "Grace Hopper"], year: 2020,
+};
+const localReference = {
+  reviewed: true, year: 2020,
+  rawText: "AmelieMartin,GraceHopper.2020.ReliableEnd-to-EndSchedulingforDistributedControlSystems.JournalofComputing.",
+};
+function localEdges(reference, targets = [localTarget]) {
+  return inferResolvedReferenceCitationEdges([{ id: "source", extractedReferences: [reference] }, ...targets]);
+}
+
+test("reviewed local DOI and versioned arXiv references link without online resolution", () => {
+  const edges = localEdges({ reviewed: true, doi: "https://doi.org/10.1234/TARGET" }, [{ ...localTarget, doi: "10.1234/target" }]);
+  assert.equal(edges[0]?.id, "source->target");
+  assert.equal(edges[0]?.referenceResolution.provider, "local-library");
+  assert.equal(edges[0]?.referenceResolution.matchedBy, "local-doi");
+  assert.equal(localEdges({ reviewed: true, arxivId: "2401.01234v2" }, [{ ...localTarget, arxivId: "arXiv:2401.01234" }]).length, 1);
+  assert.equal(localEdges({ reviewed: false, doi: "10.1234/target" }, [{ ...localTarget, doi: "10.1234/target" }]).length, 0);
+  assert.equal(localEdges({ doi: "10.1234/target" }, [{ ...localTarget, doi: "10.1234/target" }]).length, 0);
+});
+
+test("whole citation title, author, and year survive PDF spacing and accent differences", () => {
+  const edges = localEdges(localReference);
+  assert.equal(edges[0]?.target, "target");
+  assert.equal(edges[0]?.referenceResolution.matchedBy, "local-title-author-year");
+  assert.equal(localEdges({ ...localReference, rawText: localReference.rawText.replace("Scheduling", "Schedu-\nling") }).length, 1);
+});
+
+test("long unique title and author can link a library entry whose year was not extracted", () => {
+  const missingYear = { ...localTarget, year: null };
+  const edges = localEdges(localReference, [missingYear]);
+  assert.equal(edges[0]?.referenceResolution.matchedBy, "local-title-author");
+  assert.equal(missingYear.year, null, "Linking must not invent the target publication year");
+  assert.equal(localEdges(localReference, [missingYear, { ...missingYear, id: "ambiguous" }]).length, 0);
+});
+
+test("local matching rejects missing review, wrong author/year, partial titles and identifier conflicts", () => {
+  for (const reference of [
+    { ...localReference, reviewed: undefined },
+    { ...localReference, reviewed: false },
+    { ...localReference, year: 2021 },
+    { ...localReference, year: null, rawText: localReference.rawText.replace("2020", "2021") },
+    { ...localReference, rawText: localReference.rawText.replace("AmelieMartin", "UnknownPerson") },
+    { ...localReference, rawText: localReference.rawText.replace("DistributedControlSystems", "DistributedSystems") },
+  ]) assert.deepEqual(localEdges(reference), []);
+  assert.equal(localEdges({ ...localReference, doi: "10.1234/conflict" }, [{ ...localTarget, doi: "10.1234/target" }]).length, 0);
+  assert.equal(localEdges({ reviewed: true, doi: "10.1234/x", arxivId: "2401.11111" }, [{ ...localTarget, doi: "10.1234/x", arxivId: "2401.22222" }]).length, 0);
+});
+
+test("duplicate identities, multiple title matches and resolved ambiguity never pick the first target", () => {
+  const twins = [{ ...localTarget, doi: "10.1234/target" }, { ...localTarget, id: "other", doi: "10.1234/target" }];
+  assert.deepEqual(localEdges({ reviewed: true, doi: "10.1234/target" }, twins), []);
+  assert.deepEqual(localEdges(resolvedReference({ doi: "10.1234/target" }), twins), []);
+  assert.deepEqual(localEdges(localReference, twins), []);
+  const second = { ...localTarget, id: "second", title: "Efficient Verification of Asynchronous Communication Between Embedded Devices" };
+  const merged = { ...localReference, rawText: localReference.rawText + " Martin. " + second.title + ". 2020." };
+  assert.deepEqual(localEdges(merged, [localTarget, second]), []);
+});
+
+test("complete DOI in printed text repairs a line-broken identifier without accepting prefixes", () => {
+  const target = { ...localTarget, doi: "10.1234/long.identifier.2020.42" };
+  const reference = { reviewed: true, doi: "10.1234/long", rawText: "A paper. https ://doi.org/10.1234/long. identifier.2020.42" };
+  assert.equal(localEdges(reference, [target])[0]?.referenceResolution.matchedBy, "local-doi-text");
+  assert.deepEqual(localEdges({ ...reference, rawText: reference.rawText + "5" }, [target]), []);
+  assert.deepEqual(localEdges({ ...reference, doi: "10.1234/different" }, [target]), []);
+});
+
+test("local citations are independent of insertion order and reloads do not duplicate edges", () => {
+  const source = { id: "source", extractedReferences: [localReference] };
+  assert.deepEqual(inferResolvedReferenceCitationEdges([source]), []);
+  const forward = inferResolvedReferenceCitationEdges([source, localTarget]);
+  assert.equal(forward.length, 1);
+  assert.deepEqual(inferResolvedReferenceCitationEdges([localTarget, source]), forward);
+  assert.deepEqual(inferResolvedReferenceCitationEdges([source, localTarget], forward), []);
+  assert.deepEqual(inferResolvedReferenceCitationEdges([{ ...localTarget, extractedReferences: [localReference] }]), []);
+});
