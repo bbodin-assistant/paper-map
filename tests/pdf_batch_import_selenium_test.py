@@ -225,6 +225,7 @@ def main():
 
         activate_tab(driver, "batch-four.pdf")
         doi = driver.find_element(By.ID, "pdf-review-doi")
+        driver.execute_script("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", doi)
         doi.click()
         doi.send_keys(Keys.CONTROL, "a")
         doi.send_keys(ONLINE_DOI)
