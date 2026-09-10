@@ -321,7 +321,10 @@ function createUi() {
 
   button.addEventListener("click", () => panel.hidden ? open() : close());
   $("#ai-config-close", panel).addEventListener("click", close);
-  $("#ai-config-save", panel).addEventListener("click", persist);
+  $("#ai-config-save", panel).addEventListener("click", () => {
+    persist();
+    close();
+  });
   aiControls.provider.addEventListener("change", () => {
     applyAiProviderPreset(aiControls);
     refreshModelOptions(aiControls);
