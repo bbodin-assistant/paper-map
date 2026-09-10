@@ -236,7 +236,9 @@ def main():
         assert_canonical_resolutions(driver)
 
         old_row = driver.find_element(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
-        wait_click(driver, "#pdf-local-extract")
+        local_button = wait_displayed(driver, "#pdf-local-extract")
+        center_element(driver, local_button)
+        local_button.click()
         wait.until(EC.staleness_of(old_row))
         wait_for_local_complete(driver)
         rows = assert_canonical_resolutions(driver)
