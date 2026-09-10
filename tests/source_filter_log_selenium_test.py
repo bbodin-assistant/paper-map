@@ -38,14 +38,15 @@ def main():
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
         wait.until(lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
 
-        wait_click(driver, "#library-menu > summary")
-        wait_displayed(driver, "#library-menu .library-panel")
+        wait_click(driver, "#ai-config-button")
+        wait_displayed(driver, "#ai-config-panel")
         wait_click(driver, "#load-demo")
         wait.until(lambda d: "demo" in source_option_values(d))
+        wait_click(driver, "#ai-config-close")
+        wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
 
-        wait_click(driver, "#library-menu > summary")
         fixture = create_bib_fixture()
-        import_input = wait.until(EC.presence_of_element_located((By.ID, "import-file")))
+        import_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
         import_input.send_keys(str(fixture))
         wait.until(lambda d: "bibtex-import" in source_option_values(d))
 
@@ -64,10 +65,13 @@ def main():
         year_min.send_keys("3000")
         wait.until(lambda d: d.find_element(By.ID, "visible-paper-count").get_attribute("textContent") == "0")
         driver.find_element(By.ID, "filter-menu").find_element(By.CSS_SELECTOR, ":scope > summary").click()
-        wait_click(driver, "#library-menu > summary")
-        wait_displayed(driver, "#library-menu .library-panel")
+
+        wait_click(driver, "#ai-config-button")
+        wait_displayed(driver, "#ai-config-panel")
         wait_click(driver, "#export-bibtex")
         wait.until(lambda d: "There are no visible papers to export" in d.find_element(By.ID, "activity-log-summary").get_attribute("textContent"))
+        wait_click(driver, "#ai-config-close")
+        wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
 
         wait_click(driver, "#activity-log-toggle")
         panel = wait_displayed(driver, "#activity-log-panel")
