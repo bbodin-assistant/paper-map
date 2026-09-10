@@ -179,13 +179,28 @@ def main():
         wait_click(driver, "#ai-config-close")
         wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
 
-        # Filter and Library menus dismiss when interaction moves elsewhere.
+        # Topic focus must not create an unusable synthetic category or cover Bibliography.
+        wait_click(driver, '#map-mode button[data-mode="topics"]')
+        topic_blocks = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".topic-block"))
+        assert_true(not driver.find_elements(By.CSS_SELECTOR, '.topic-block[data-topic-id="topic:uncategorized"]'), "Topic map should not expose a synthetic Uncategorized block")
+        topic_blocks[0].click()
+        topic_bar = wait_displayed(driver, "#active-topic-filter")
+        wait_click(driver, "#paper-list-button")
+        paper_panel = wait_displayed(driver, "#paper-list-panel")
+        wait.until(lambda d: d.find_element(By.ID, "paper-list-panel").rect["y"] >= d.find_element(By.ID, "active-topic-filter").rect["y"] + d.find_element(By.ID, "active-topic-filter").rect["height"] - 1)
+        assert_true(paper_panel.rect["y"] >= topic_bar.rect["y"] + topic_bar.rect["height"] - 1, "Topic focus bar should not overlap the Papers panel")
+        wait_click(driver, "#close-paper-list")
+        wait_click(driver, "#clear-topic-focus")
+        wait_click(driver, '#map-mode button[data-mode="citations"]')
+        wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
+
+        # Filter and Add publication menus dismiss when interaction moves elsewhere.
         wait_click(driver, "#filter-menu > summary")
         assert_true(driver.find_element(By.ID, "filter-menu").get_attribute("open") is not None, "Filter menu should open")
         dispatch_background_pointer(driver)
         wait.until(lambda d: d.find_element(By.ID, "filter-menu").get_attribute("open") is None)
         wait_click(driver, "#library-menu > summary")
-        assert_true(driver.find_element(By.ID, "library-menu").get_attribute("open") is not None, "Library menu should open")
+        assert_true(driver.find_element(By.ID, "library-menu").get_attribute("open") is not None, "Add publication menu should open")
         dispatch_background_pointer(driver)
         wait.until(lambda d: d.find_element(By.ID, "library-menu").get_attribute("open") is None)
 
@@ -245,16 +260,25 @@ def main():
         assert_true("research-arrow" in (research_edge.get_attribute("marker-end") or ""), "Research relationship should be directed")
         assert_true("selected" in driver.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{first_node_id}"]').get_attribute("class"), "Adding a relationship should keep the source paper selected")
 
-        # A true drag repositions and pins the node. The compatibility click that a
-        # browser emits after drag must be suppressed so dragging does not open info.
+        # A true drag repositions and pins the node, then reheats the remaining layout.
+        # The compatibility click that a browser emits after drag must remain suppressed.
         wait_click(driver, "#close-detail")
+        before_drag_positions = wait_for_stable_node_positions(driver)
         drag_result = drag_first_node(driver)
         assert_true(drag_result["before"] != drag_result["after"], f"Node drag should change position: {drag_result}")
         assert_true(driver.find_element(By.ID, "paper-detail").get_attribute("hidden") is not None, "Dragging a node must not open paper info")
+        dragged_id = drag_result["id"]
+        wait.until(lambda d: any(
+            transform != before_drag_positions.get(paper_id)
+            for paper_id, transform in node_positions(d).items()
+            if paper_id != dragged_id
+        ))
+        settled_after_drag = wait_for_stable_node_positions(driver)
+        assert_true(settled_after_drag[dragged_id] == drag_result["after"], "Dragged node should remain pinned while neighboring nodes settle")
 
         # Suppression is one-shot: the next deliberate click on the moved node opens
         # its paper info normally.
-        moved_node = driver.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{drag_result["id"]}"]')
+        moved_node = driver.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{dragged_id}"]')
         moved_node.click()
         wait_displayed(driver, "#paper-detail")
         wait_click(driver, "#close-detail")
@@ -265,7 +289,7 @@ def main():
 
         save_screenshot(driver, "12-graph-relations-gestures.png")
         assert_no_page_horizontal_overflow(driver)
-        print("Graph pointer tap, drag-to-move, directed edges, provenance, stable selection, and pinch-zoom checks passed.")
+        print("Graph topic focus, drag reheat, directed edges, provenance, stable selection, and pinch-zoom checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "graph-relations-failure.png")
