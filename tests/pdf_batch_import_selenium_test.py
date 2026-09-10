@@ -80,6 +80,16 @@ def create_batch_fixtures():
     return fixtures
 
 
+def create_save_all_fixtures():
+    source = create_ai_text_pdf_fixture()
+    fixtures = []
+    for name in ["save-all-one.pdf", "save-all-two.pdf"]:
+        target = (ARTIFACT_DIR / name).resolve()
+        shutil.copyfile(source, target)
+        fixtures.append(target)
+    return fixtures
+
+
 def install_batch_fetch_mock(driver):
     driver.execute_script(
         """
@@ -179,6 +189,16 @@ def save_active(driver, file_name):
     assert_true(tab_for_file(driver, file_name) is None, "Saving should remove only the saved tab")
 
 
+def replace_active_title_and_year(driver, title, year):
+    title_input = driver.find_element(By.ID, "pdf-review-title")
+    title_input.send_keys(Keys.CONTROL, "a")
+    title_input.send_keys(title)
+    year_input = driver.find_element(By.ID, "pdf-review-year")
+    year_input.send_keys(Keys.CONTROL, "a")
+    year_input.send_keys(str(year))
+    year_input.send_keys(Keys.TAB)
+
+
 def main():
     ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
     driver = create_driver()
@@ -252,9 +272,40 @@ def main():
         by_file = {paper.get("sourceFileName"): paper for paper in papers if paper.get("sourceFileName")}
         assert_true(set(by_file) == {"batch-one.pdf", "batch-three.pdf", "batch-four.pdf"}, "Skipped tab should be the only selected PDF not persisted")
         assert_true(driver.execute_script("return window.__paperMapBatchAiRequests || []") == [], "Reload should clear page-local AI request state")
+
+        save_all_fixtures = create_save_all_fixtures()
+        file_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
+        file_input.send_keys("\n".join(str(path) for path in save_all_fixtures))
+        wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is not None)
+        wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]")) == 2)
+        wait.until(
+            lambda d: all(
+                tab.get_attribute("data-local-status") == "complete"
+                for tab in d.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]")
+            )
+        )
+        save_all = wait.until(EC.element_to_be_clickable((By.ID, "pdf-ai-save-all")))
+        assert_true(save_all.text == "Save all", "Multi-PDF review should expose a Save all action")
+
+        activate_tab(driver, "save-all-one.pdf")
+        replace_active_title_and_year(driver, "Save All Paper One", 2031)
+        activate_tab(driver, "save-all-two.pdf")
+        replace_active_title_and_year(driver, "Save All Paper Two", 2032)
+        save_all = wait.until(EC.element_to_be_clickable((By.ID, "pdf-ai-save-all")))
+        save_all.click()
+
+        wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is None)
+        wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
+        wait.until(lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
+        papers = read_all_papers(driver)
+        by_file = {paper.get("sourceFileName"): paper for paper in papers if paper.get("sourceFileName")}
+        assert_true(by_file["save-all-one.pdf"]["title"] == "Save All Paper One", "Save all should persist edits from a non-active reviewed tab")
+        assert_true(by_file["save-all-two.pdf"]["title"] == "Save All Paper Two", "Save all should persist edits from the active reviewed tab")
+        assert_true(len(by_file) == 5, "Save all should persist every reviewed tab without dropping earlier saved papers")
+
         assert_no_page_horizontal_overflow(driver)
         save_screenshot(driver, "pdf-batch-review-tabs.png")
-        print("Automatic local extraction, out-of-order tabs, per-tab save/skip, AI merge, online merge, and provenance checks passed.")
+        print("Automatic local extraction, out-of-order tabs, per-tab save/skip, Save all, AI merge, online merge, and provenance checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "pdf-batch-review-failure.png")
