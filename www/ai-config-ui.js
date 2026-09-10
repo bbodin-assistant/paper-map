@@ -141,17 +141,17 @@ function createUi() {
 
   const button = document.createElement("button");
   button.type = "button";
-  button.id = "config-button";
+  button.id = "ai-config-button";
   button.className = "quiet-button";
   button.setAttribute("aria-expanded", "false");
-  button.setAttribute("aria-controls", "config-panel");
+  button.setAttribute("aria-controls", "ai-config-panel");
   button.textContent = "Config";
   const about = $("#about-button", tools);
   if (about) about.before(button);
   else tools.append(button);
 
   const panel = document.createElement("section");
-  panel.id = "config-panel";
+  panel.id = "ai-config-panel";
   panel.className = "config-panel";
   panel.hidden = true;
   panel.setAttribute("role", "dialog");
@@ -162,7 +162,7 @@ function createUi() {
         <span class="drawer-kicker">Local preferences</span>
         <h2>Configuration</h2>
       </div>
-      <button type="button" class="icon-button" id="config-close" aria-label="Close configuration">×</button>
+      <button type="button" class="icon-button" id="ai-config-close" aria-label="Close configuration">×</button>
     </header>
 
     <section class="config-section" aria-labelledby="paper-provider-config-heading">
@@ -239,7 +239,7 @@ function createUi() {
     </section>
 
     <div class="config-actions">
-      <button type="button" id="config-save">Save configuration</button>
+      <button type="button" id="ai-config-save">Save configuration</button>
       <span id="config-status" class="muted" role="status" aria-live="polite"></span>
     </div>
   `;
@@ -280,6 +280,10 @@ function createUi() {
     graphControls.spacing.value = String(graph.layoutSpacing);
     button.title = `Paper info: ${paperProviderLabel(paper.provider)} · AI: ${providerLabel(ai.provider)}`;
     button.setAttribute("aria-label", `Configuration. Paper information: ${paperProviderLabel(paper.provider)}. AI: ${providerLabel(ai.provider)}.`);
+    const addPaperInput = $("#add-paper-query");
+    const addPaperHelp = $("#add-paper-form small");
+    if (addPaperInput) addPaperInput.placeholder = "DOI, arXiv ID, provider ID, or title";
+    if (addPaperHelp) addPaperHelp.textContent = `Uses ${paperProviderLabel(paper.provider)} on demand. Existing papers are merged by canonical identity.`;
   }
 
   function close() {
@@ -316,8 +320,8 @@ function createUi() {
   }
 
   button.addEventListener("click", () => panel.hidden ? open() : close());
-  $("#config-close", panel).addEventListener("click", close);
-  $("#config-save", panel).addEventListener("click", persist);
+  $("#ai-config-close", panel).addEventListener("click", close);
+  $("#ai-config-save", panel).addEventListener("click", persist);
   aiControls.provider.addEventListener("change", () => {
     applyAiProviderPreset(aiControls);
     refreshModelOptions(aiControls);
