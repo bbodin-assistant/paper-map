@@ -1,3 +1,5 @@
+import "./ui-layout.js";
+
 const ACCEPTED_PUBLICATION_FILES = ".pdf,.json,.bib,application/pdf,application/json,application/x-bibtex,text/x-bibtex";
 
 function lowerName(file) {
