@@ -51,12 +51,13 @@ function createUi() {
   const button = document.createElement("button");
   button.type = "button";
   button.id = "import-pdf-ai";
-  button.textContent = "Import PDF with AI / local";
+  button.textContent = "Import PDFs with AI / local";
 
   const input = document.createElement("input");
   input.id = "pdf-ai-file";
   input.type = "file";
   input.accept = ".pdf,application/pdf";
+  input.multiple = true;
   input.hidden = true;
 
   const reference = $("#import-button", actions);
@@ -79,14 +80,15 @@ function createUi() {
       <section class="pdf-ai-step" id="pdf-ai-analysis-step">
         <div class="pdf-ai-file-card">
           <strong id="pdf-ai-file-name">No PDF selected</strong>
-          <span id="pdf-ai-file-size"></span>
+          <span><span id="pdf-ai-queue-progress" aria-live="polite"></span><span id="pdf-ai-file-separator"> · </span><span id="pdf-ai-file-size"></span></span>
         </div>
 
-        <p class="pdf-ai-explainer"><strong>Local extraction</strong> runs Rust/WebAssembly entirely in this browser and systematically detects the bibliography, reference entries, DOI and arXiv identifiers. <strong>AI analysis</strong> is optional and uses the AI server selected in the global configuration. Nothing is saved until you review it and press <strong>Save reviewed paper</strong>.</p>
+        <p class="pdf-ai-explainer"><strong>Local extraction</strong> runs Rust/WebAssembly entirely in this browser and systematically detects the bibliography, reference entries, DOI and arXiv identifiers. <strong>AI analysis</strong> is optional and uses the AI server selected in the global configuration. For a batch, Paper Map reviews one PDF at a time; saved items keep their own file provenance. Nothing is saved until you review it and press <strong>Save reviewed paper</strong>.</p>
 
         <div class="pdf-ai-analysis-actions pdf-extraction-actions">
           <button type="button" id="pdf-local-extract">Extract citations locally</button>
           <button type="button" id="pdf-ai-analyze" class="quiet-button">Analyze PDF with AI</button>
+          <button type="button" id="pdf-ai-skip-file" class="quiet-button">Skip PDF</button>
           <button type="button" id="pdf-ai-cancel-analysis" class="quiet-button" hidden>Cancel</button>
           <span id="pdf-ai-analysis-status" class="muted" role="status" aria-live="polite"></span>
         </div>
@@ -172,7 +174,7 @@ function createUi() {
         <div class="pdf-ai-review-actions">
           <button type="button" id="pdf-ai-save">Save reviewed paper</button>
           <button type="button" id="pdf-ai-reanalyze" class="quiet-button">Run extraction again</button>
-          <button type="button" id="pdf-ai-discard" class="quiet-button">Discard</button>
+          <button type="button" id="pdf-ai-discard" class="quiet-button">Discard remaining</button>
         </div>
       </section>
     </form>
@@ -391,7 +393,13 @@ function init() {
   if (!ui) return;
 
   let selectedFile = null;
+  let fileQueue = [];
+  let queueIndex = -1;
+  let batchSavedCount = 0;
+  let batchSkippedCount = 0;
   let controller = null;
+  let processing = false;
+  let operationToken = 0;
   const initialAi = loadAiConfig();
   let extractionContext = {
     mode: "ai",
@@ -404,8 +412,20 @@ function init() {
   const analysisStatus = $("#pdf-ai-analysis-status", ui.dialog);
   const analyzeButton = $("#pdf-ai-analyze", ui.dialog);
   const localButton = $("#pdf-local-extract", ui.dialog);
+  const skipButton = $("#pdf-ai-skip-file", ui.dialog);
   const cancelButton = $("#pdf-ai-cancel-analysis", ui.dialog);
+  const discardButton = $("#pdf-ai-discard", ui.dialog);
+  const closeButton = $("#pdf-ai-close", ui.dialog);
   const review = $("#pdf-ai-review", ui.dialog);
+
+  function queueProgress() {
+    if (!fileQueue.length || queueIndex < 0) return "";
+    return `${queueIndex + 1} of ${fileQueue.length}`;
+  }
+
+  function isPdfFile(file) {
+    return Boolean(file) && (file.type === "application/pdf" || file.name.toLowerCase().endsWith(".pdf"));
+  }
 
   function currentAiTooLarge() {
     if (!selectedFile) return false;
@@ -415,8 +435,11 @@ function init() {
   function refreshAiAvailability({ updateStatus = true } = {}) {
     const config = loadAiConfig();
     const tooLarge = currentAiTooLarge();
-    analyzeButton.disabled = Boolean(controller) || tooLarge;
-    if (!updateStatus || !selectedFile || controller) return;
+    analyzeButton.disabled = processing || tooLarge;
+    localButton.disabled = processing;
+    skipButton.disabled = processing || !selectedFile;
+    discardButton.disabled = processing || !selectedFile;
+    if (!updateStatus || !selectedFile || processing) return;
     if (tooLarge) {
       analysisStatus.textContent = `Ready for local extraction. ${providerLabel(config.provider)} direct PDF input is limited to 25 MB; choose Ollama/OpenAI-compatible text mode or extract locally.`;
     } else {
@@ -424,14 +447,61 @@ function init() {
     }
   }
 
-  function closeDialog() {
-    controller?.abort();
-    controller = null;
-    ui.dialog.close();
+  function clearQueueState() {
+    selectedFile = null;
+    fileQueue = [];
+    queueIndex = -1;
+    batchSavedCount = 0;
+    batchSkippedCount = 0;
+    processing = false;
+    $("#pdf-ai-queue-progress", ui.dialog).textContent = "";
   }
 
-  function showFile(file) {
+  function stopOutstandingWork() {
+    operationToken += 1;
+    controller?.abort();
+    controller = null;
+    processing = false;
+  }
+
+  function finishQueue(message) {
+    const shouldReload = batchSavedCount > 0;
+    const total = fileQueue.length;
+    const saved = batchSavedCount;
+    const skipped = batchSkippedCount;
+    stopOutstandingWork();
+    clearQueueState();
+    ui.dialog.close();
+    if (total > 1) {
+      setGlobalStatus(`PDF batch complete: ${saved} saved, ${skipped} skipped.`, "ready");
+    } else {
+      setGlobalStatus(message, "ready");
+    }
+    if (shouldReload) window.location.reload();
+  }
+
+  function discardRemaining() {
+    if (!fileQueue.length) {
+      stopOutstandingWork();
+      ui.dialog.close();
+      return;
+    }
+    const shouldReload = batchSavedCount > 0;
+    const saved = batchSavedCount;
+    const skipped = batchSkippedCount;
+    const discarded = Math.max(0, fileQueue.length - Math.max(queueIndex, 0));
+    stopOutstandingWork();
+    clearQueueState();
+    ui.dialog.close();
+    setGlobalStatus(`PDF batch stopped: ${saved} saved, ${skipped} skipped, ${discarded} discarded.`, "ready");
+    if (shouldReload) window.location.reload();
+  }
+
+  function showFile(file, index = queueIndex) {
+    operationToken += 1;
     selectedFile = file;
+    queueIndex = index;
+    processing = false;
     const config = loadAiConfig();
     extractionContext = {
       mode: "ai",
@@ -442,29 +512,66 @@ function init() {
     };
     $("#pdf-ai-file-name", ui.dialog).textContent = file.name;
     $("#pdf-ai-file-size", ui.dialog).textContent = `${(file.size / 1024 / 1024).toFixed(1)} MB`;
+    $("#pdf-ai-queue-progress", ui.dialog).textContent = queueProgress();
     review.hidden = true;
     $("#pdf-reference-list", ui.dialog).replaceChildren();
     $("#pdf-reference-section", ui.dialog).hidden = true;
-    localButton.disabled = false;
+    const hint = $("#pdf-ai-duplicate", ui.dialog);
+    hint.hidden = true;
+    hint.textContent = "";
+    const saveButton = $("#pdf-ai-save", ui.dialog);
+    saveButton.disabled = false;
     refreshAiAvailability();
     if (!ui.dialog.open) ui.dialog.showModal();
   }
 
-  ui.button.addEventListener("click", () => ui.input.click());
-  ui.input.addEventListener("change", () => {
-    const file = ui.input.files?.[0];
-    ui.input.value = "";
-    if (!file) return;
-    if (file.type !== "application/pdf" && !file.name.toLowerCase().endsWith(".pdf")) {
-      setGlobalStatus("PDF import requires a .pdf file.", "error");
+  function advanceQueue(message) {
+    if (processing || !selectedFile) return;
+    const nextIndex = queueIndex + 1;
+    if (nextIndex >= fileQueue.length) {
+      finishQueue(message);
       return;
     }
-    showFile(file);
+    showFile(fileQueue[nextIndex], nextIndex);
+    setGlobalStatus(`${message} Reviewing ${queueProgress()}: ${selectedFile.name}.`, "ready");
+  }
+
+  ui.button.addEventListener("click", () => ui.input.click());
+  ui.input.addEventListener("change", () => {
+    const files = Array.from(ui.input.files || []);
+    ui.input.value = "";
+    if (!files.length) return;
+    const pdfFiles = files.filter(isPdfFile);
+    const rejectedCount = files.length - pdfFiles.length;
+    if (!pdfFiles.length) {
+      setGlobalStatus("PDF import requires .pdf files.", "error");
+      return;
+    }
+    stopOutstandingWork();
+    fileQueue = pdfFiles;
+    queueIndex = 0;
+    batchSavedCount = 0;
+    batchSkippedCount = 0;
+    showFile(fileQueue[0], 0);
+    if (rejectedCount) {
+      setGlobalStatus(`${rejectedCount} non-PDF file${rejectedCount === 1 ? " was" : "s were"} ignored. Reviewing ${queueProgress()}.`, "ready");
+    } else if (pdfFiles.length > 1) {
+      setGlobalStatus(`PDF review queue ready: ${pdfFiles.length} files selected.`, "ready");
+    }
   });
 
-  $("#pdf-ai-close", ui.dialog).addEventListener("click", closeDialog);
-  $("#pdf-ai-discard", ui.dialog).addEventListener("click", closeDialog);
-  ui.dialog.addEventListener("cancel", () => controller?.abort());
+  closeButton.addEventListener("click", discardRemaining);
+  discardButton.addEventListener("click", discardRemaining);
+  skipButton.addEventListener("click", () => {
+    if (!selectedFile || processing) return;
+    const skippedName = selectedFile.name;
+    batchSkippedCount += 1;
+    advanceQueue(`Skipped ${skippedName}.`);
+  });
+  ui.dialog.addEventListener("cancel", (event) => {
+    event.preventDefault();
+    discardRemaining();
+  });
   document.addEventListener("paper-map-ai-config-changed", refreshAiAvailability);
 
   $("#pdf-ai-add-topic", ui.dialog).addEventListener("click", () => $("#pdf-ai-topics", ui.dialog).append(topicRow({ confidence: 1 })));
@@ -476,13 +583,16 @@ function init() {
   });
 
   async function extractLocal() {
-    if (!selectedFile || controller) return;
-    localButton.disabled = true;
-    analyzeButton.disabled = true;
+    if (!selectedFile || processing) return;
+    const file = selectedFile;
+    const token = operationToken;
+    processing = true;
+    refreshAiAvailability({ updateStatus: false });
     analysisStatus.textContent = "Parsing PDF layout and detecting bibliography locally…";
-    setGlobalStatus(`Extracting citations from ${selectedFile.name} locally…`, "loading");
+    setGlobalStatus(`Extracting citations from ${file.name} locally…`, "loading");
     try {
-      const metadata = await extractPdfCitationsLocally(selectedFile);
+      const metadata = await extractPdfCitationsLocally(file);
+      if (token !== operationToken || file !== selectedFile) return;
       extractionContext = {
         mode: "local",
         provider: "rust-wasm",
@@ -492,21 +602,27 @@ function init() {
       };
       fillReview(ui, metadata, "local");
       review.hidden = false;
-      await updateDuplicateHint(ui, selectedFile, extractionContext);
+      await updateDuplicateHint(ui, file, extractionContext);
+      if (token !== operationToken || file !== selectedFile) return;
       analysisStatus.textContent = `Local extraction complete: ${metadata.localExtraction?.summary || "review the detected references"}.`;
-      setGlobalStatus("Local PDF citation extraction complete; awaiting your review.", "ready");
+      setGlobalStatus(`Local extraction complete for ${queueProgress()}; awaiting your review.`, "ready");
       $("#pdf-review-title", ui.dialog).focus();
     } catch (error) {
+      if (token !== operationToken || file !== selectedFile) return;
       analysisStatus.textContent = error.message || String(error);
       setGlobalStatus(error.message || String(error), "error");
     } finally {
-      localButton.disabled = false;
-      refreshAiAvailability({ updateStatus: false });
+      if (token === operationToken && file === selectedFile) {
+        processing = false;
+        refreshAiAvailability({ updateStatus: false });
+      }
     }
   }
 
   async function analyze() {
-    if (!selectedFile || controller) return;
+    if (!selectedFile || processing) return;
+    const file = selectedFile;
+    const token = operationToken;
     const { config, apiKey } = aiConfigSnapshot();
     if (!config.model) {
       analysisStatus.textContent = "Configure an AI model before analysis.";
@@ -518,25 +634,26 @@ function init() {
       setGlobalStatus("AI API key is not configured.", "error");
       return;
     }
-    if (providerUsesDirectPdf(config) && selectedFile.size > MAX_INLINE_PDF_BYTES) {
+    if (providerUsesDirectPdf(config) && file.size > MAX_INLINE_PDF_BYTES) {
       refreshAiAvailability();
       return;
     }
 
     controller = new AbortController();
-    analyzeButton.disabled = true;
-    localButton.disabled = true;
+    processing = true;
+    refreshAiAvailability({ updateStatus: false });
     cancelButton.hidden = false;
     analysisStatus.textContent = `Analyzing PDF with ${providerLabel(config.provider)}…`;
-    setGlobalStatus(`Analyzing ${selectedFile.name} with ${providerLabel(config.provider)}…`, "loading");
+    setGlobalStatus(`Analyzing ${file.name} with ${providerLabel(config.provider)}…`, "loading");
 
     try {
       const metadata = await analyzePdfWithAi({
-        file: selectedFile,
+        file,
         config,
         apiKey,
         signal: controller.signal,
       });
+      if (token !== operationToken || file !== selectedFile) return;
       extractionContext = {
         mode: "ai",
         provider: config.provider,
@@ -546,11 +663,13 @@ function init() {
       };
       fillReview(ui, metadata, "ai");
       review.hidden = false;
-      await updateDuplicateHint(ui, selectedFile, extractionContext);
+      await updateDuplicateHint(ui, file, extractionContext);
+      if (token !== operationToken || file !== selectedFile) return;
       analysisStatus.textContent = `${providerLabel(config.provider)} AI analysis complete. Review all fields before saving.`;
-      setGlobalStatus("PDF AI analysis complete; awaiting your review.", "ready");
+      setGlobalStatus(`PDF AI analysis complete for ${queueProgress()}; awaiting your review.`, "ready");
       $("#pdf-review-title", ui.dialog).focus();
     } catch (error) {
+      if (token !== operationToken || file !== selectedFile) return;
       if (error?.name === "AbortError") {
         analysisStatus.textContent = "Analysis cancelled.";
         setGlobalStatus("PDF analysis cancelled.", "ready");
@@ -559,10 +678,12 @@ function init() {
         setGlobalStatus(error.message || String(error), "error");
       }
     } finally {
-      controller = null;
-      localButton.disabled = false;
-      cancelButton.hidden = true;
-      refreshAiAvailability({ updateStatus: false });
+      if (token === operationToken && file === selectedFile) {
+        controller = null;
+        processing = false;
+        cancelButton.hidden = true;
+        refreshAiAvailability({ updateStatus: false });
+      }
     }
   }
 
@@ -579,11 +700,13 @@ function init() {
   }
 
   $("#pdf-ai-save", ui.dialog).addEventListener("click", async () => {
-    if (!selectedFile) return;
+    if (!selectedFile || processing) return;
+    const file = selectedFile;
     const saveButton = $("#pdf-ai-save", ui.dialog);
     saveButton.disabled = true;
     try {
-      const { library, existing, incoming } = await updateDuplicateHint(ui, selectedFile, extractionContext);
+      const { library, existing, incoming } = await updateDuplicateHint(ui, file, extractionContext);
+      if (file !== selectedFile) return;
       if (!incoming.title) throw new Error("Title is required before saving.");
 
       const topicResult = reviewedTopics(ui, library);
@@ -596,9 +719,14 @@ function init() {
         putTopics(topicResult.topics),
       ]);
 
-      setGlobalStatus(existing ? "Reviewed PDF data merged into the existing paper." : "Reviewed PDF paper saved locally.", "ready");
-      ui.dialog.close();
-      window.location.reload();
+      batchSavedCount += 1;
+      const savedName = file.name;
+      if (queueIndex + 1 < fileQueue.length) {
+        saveButton.disabled = false;
+        advanceQueue(`${existing ? "Merged" : "Saved"} ${savedName}.`);
+      } else {
+        finishQueue(existing ? "Reviewed PDF data merged into the existing paper." : "Reviewed PDF paper saved locally.");
+      }
     } catch (error) {
       analysisStatus.textContent = error.message || String(error);
       setGlobalStatus(error.message || String(error), "error");
