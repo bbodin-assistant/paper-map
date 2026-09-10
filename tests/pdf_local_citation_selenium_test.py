@@ -154,7 +154,9 @@ def selected_tab(driver):
 
 def wait_for_local_complete(driver):
     WebDriverWait(driver, WAIT_SECONDS).until(
-        lambda d: selected_tab(d).get_attribute("data-local-status") == "complete"
+        lambda d: d.execute_script(
+            "return document.querySelector(\"#pdf-review-tabs button[aria-selected='true']\")?.dataset.localStatus === 'complete';"
+        )
     )
     WebDriverWait(driver, WAIT_SECONDS).until(
         lambda d: len(d.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")) == 3
