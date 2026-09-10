@@ -51,7 +51,7 @@ function createUi() {
   const button = document.createElement("button");
   button.type = "button";
   button.id = "import-pdf-ai";
-  button.textContent = "Import PDFs with AI / local";
+  button.textContent = "Import PDF with AI / local";
 
   const input = document.createElement("input");
   input.id = "pdf-ai-file";
