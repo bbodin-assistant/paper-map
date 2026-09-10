@@ -175,7 +175,9 @@ def configure_compatible_ai(driver):
     WebDriverWait(driver, WAIT_SECONDS).until(
         lambda d: "OpenAI-compatible" in d.find_element(By.ID, "ai-config-button").get_attribute("aria-label")
     )
-    wait_click(driver, "#ai-config-close")
+    WebDriverWait(driver, WAIT_SECONDS).until(
+        lambda d: d.find_element(By.ID, "ai-config-panel").get_attribute("hidden") is not None
+    )
 
 
 def center_element(driver, element):
