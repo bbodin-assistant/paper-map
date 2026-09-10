@@ -223,6 +223,8 @@ def main():
         assert_no_page_horizontal_overflow(driver)
         assert_widget_text_visible(driver, ".app-header", "mobile app header")
         assert_widget_text_visible(driver, ".atlas-toolbar", "mobile atlas toolbar")
+        add_pdf = wait_displayed(driver, "#add-pdf-button")
+        assert_true(add_pdf.text == "Add PDFs", "PDF import should be a direct Add PDFs toolbar action")
         initial = save_screenshot(driver, "01-initial-mobile.png")
         print(f"Initial mobile screenshot: {initial}")
 
@@ -239,9 +241,9 @@ def main():
         wait_click(driver, "#library-menu > summary")
         library_panel = wait_displayed(driver, "#library-menu .library-panel")
         assert_widget_text_visible(driver, "#library-menu .library-panel", "Library widget")
-        assert_true("Import PDF with AI" in library_panel.text, "AI PDF import action should be visible in Library")
+        assert_true("Import .json / .bib" in library_panel.text, "Structured file import should remain in Library")
         ocr_shot = save_screenshot(driver, "03-library-ocr.png", library_panel)
-        run_ocr(ocr_shot, ["Library", "Load demo", "Import PDF with AI"])
+        run_ocr(ocr_shot, ["Library", "Load demo", "Import"])
 
         wait_click(driver, "#load-demo")
         wait.until(lambda d: int(d.find_element(By.ID, "visible-paper-count").get_attribute("textContent") or "0") > 0)
@@ -290,22 +292,21 @@ def main():
         wait_click(driver, "#close-paper-list")
         wait.until(EC.invisibility_of_element_located((By.ID, "paper-list-panel")))
 
-        # Exercise the PDF import widget without making an external AI request.
-        wait_click(driver, "#library-menu > summary")
-        wait_displayed(driver, "#library-menu .library-panel")
+        # Exercise the direct PDF import widget without making an external AI request.
         fixture = create_pdf_fixture()
         file_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
         file_input.send_keys(str(fixture))
         dialog = wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog") if d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is not None else False)
-        assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI import widget")
+        assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF reviewed import widget")
         assert_true("PDF metadata, citations & topics" in dialog.text, "PDF import dialog heading should be visible")
-        assert_true("Analyze PDF" in dialog.text, "PDF AI analyze action should be visible")
+        assert_true("Run AI extraction" in dialog.text, "Per-paper AI extraction action should be visible")
+        assert_true("Run online extraction" in dialog.text, "Per-paper online extraction action should be visible")
         save_screenshot(driver, "07-pdf-ai-dialog.png")
         wait_click(driver, "#pdf-ai-close")
         wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is None)
 
         assert_no_page_horizontal_overflow(driver)
-        print("Mobile Selenium interaction, text-visibility, screenshot, and OCR checks passed.")
+        print("Mobile Selenium interaction, direct PDF import, text-visibility, screenshot, and OCR checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "failure.png")

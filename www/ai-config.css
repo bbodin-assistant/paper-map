@@ -1,9 +1,9 @@
-.ai-config-panel {
+.config-panel {
   position: fixed;
   z-index: 75;
   right: 18px;
   top: 48px;
-  width: min(460px, calc(100vw - 28px));
+  width: min(560px, calc(100vw - 28px));
   max-height: calc(100vh - 66px);
   overflow: auto;
   padding: 18px;
@@ -13,20 +13,39 @@
   font-size: 12px;
 }
 
-.ai-config-header,
-.ai-config-actions,
-.pdf-ai-provider-summary {
+.config-header,
+.config-actions,
+.config-section-heading {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
 }
 
-.ai-config-header { margin-bottom: 14px; }
-.ai-config-grid { display: grid; gap: 11px; }
-.ai-config-note { margin: 12px 0; line-height: 1.45; }
-.ai-config-actions { align-items: center; }
-.ai-config-actions .muted { text-align: right; }
+.config-header { margin-bottom: 10px; }
+.config-header h2,
+.config-section h3 { margin: 0; }
+
+.config-section {
+  padding: 15px 0;
+  border-top: 1px solid #d7dcd7;
+}
+
+.config-section-heading { margin-bottom: 10px; }
+.config-grid { display: grid; gap: 11px; }
+.config-grid-two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.config-note { margin: 10px 0 0; line-height: 1.45; }
+.config-actions {
+  position: sticky;
+  bottom: -18px;
+  align-items: center;
+  margin: 2px -18px -18px;
+  padding: 12px 18px;
+  border-top: 1px solid #cbd0cc;
+  background: rgba(255, 254, 249, 0.97);
+  backdrop-filter: blur(10px);
+}
+.config-actions .muted { text-align: right; }
 
 .ai-model-input-row {
   display: grid;
@@ -42,27 +61,23 @@
   overflow-wrap: anywhere;
 }
 
-.pdf-ai-provider-summary {
-  align-items: center;
-  padding-top: 10px;
-}
-.pdf-ai-provider-summary > div { min-width: 0; display: grid; gap: 3px; }
-.pdf-ai-provider-summary [data-ai-endpoint-summary] {
-  overflow-wrap: anywhere;
-  font-size: 10px;
-}
-
 @media (max-width: 680px) {
-  .ai-config-panel {
+  .config-panel {
     right: 8px;
     top: 48px;
     width: calc(100vw - 16px);
     max-height: calc(100vh - 56px);
     padding: 14px;
   }
-  .ai-config-actions,
-  .pdf-ai-provider-summary { align-items: stretch; flex-direction: column; }
-  .ai-config-actions .muted { text-align: left; }
+  .config-grid-two { grid-template-columns: 1fr; }
+  .config-actions {
+    bottom: -14px;
+    margin: 2px -14px -14px;
+    padding: 12px 14px;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .config-actions .muted { text-align: left; }
   .ai-model-input-row { grid-template-columns: 1fr; }
   .ai-model-input-row button { justify-self: start; }
 }

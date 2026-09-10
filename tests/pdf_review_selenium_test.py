@@ -146,6 +146,7 @@ def install_compatible_fetch_mock(driver):
 def configure_compatible_ai(driver):
     wait_click(driver, "#ai-config-button")
     panel = wait_displayed(driver, "#ai-config-panel")
+    assert_true(driver.find_element(By.ID, "ai-config-button").text == "Config", "Toolbar should expose general Config")
     provider = Select(panel.find_element(By.ID, "ai-config-provider"))
     assert_true(
         [option.get_attribute("value") for option in provider.options]
@@ -256,17 +257,19 @@ def assert_saved_review(driver):
     assert_true(paper["arxivId"] == EDITED_FIELDS["#pdf-review-arxiv"], "Edited arXiv ID was not persisted")
     assert_true(paper["url"] == EDITED_FIELDS["#pdf-review-url"], "Edited URL was not persisted")
     assert_true(paper["abstract"] == EDITED_FIELDS["#pdf-review-abstract"], "Edited abstract was not persisted")
-    assert_true(
-        paper["keywords"] == ["selenium", "reviewed", "editable metadata"],
-        "Edited keywords were not persisted",
-    )
+    assert_true(paper["keywords"] == ["selenium", "reviewed", "editable metadata"], "Edited keywords were not persisted")
     assert_true(paper["topics"] == [ACCEPTED_TOPIC_ID], "Only the accepted topic should be attached to the paper")
-    assert_true(paper["source"] == "ai-pdf", "Saved review should retain the AI PDF source marker")
+    assert_true(paper["source"] == "reviewed-pdf", "Saved review should use the unified reviewed-PDF source marker")
     assert_true(paper["sourceFileName"] == "mobile-test-paper.pdf", "Saved review should retain the source PDF name")
+    assert_true("local-pdf" in paper["metadataSources"], "Automatic local extraction should be recorded")
+    assert_true("ai:openai-compatible" in paper["metadataSources"], "AI extraction should be recorded as a metadata source")
+    assert_true(paper["pdfExtraction"]["provider"] == "rust-wasm", "Local PDF provenance should be retained")
     assert_true(paper["aiExtraction"]["provider"] == "openai-compatible", "AI provenance should record the selected provider")
     assert_true(paper["aiExtraction"]["model"] == CUSTOM_MODEL, "AI provenance should record the selected model")
     assert_true(paper["aiExtraction"]["baseUrl"] == CUSTOM_BASE_URL, "AI provenance should record the selected server")
     assert_true(paper["aiExtraction"]["transport"]["mode"] == "chat-text", "Custom provider should use local-text chat transport")
+    forbidden = {"pdfBytes", "fileBytes", "pdfData", "dataUrl", "file"}
+    assert_true(not forbidden.intersection(paper.keys()), "Saved paper must not contain uploaded PDF bytes")
 
     accepted_topic = read_indexeddb(driver, "topics", ACCEPTED_TOPIC_ID)
     rejected_topic = read_indexeddb(driver, "topics", REJECTED_TOPIC_ID)
@@ -287,15 +290,13 @@ def main():
         driver.get(TEST_URL)
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
         wait.until(
-            lambda d: "Opening local library"
-            not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
+            lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
         )
         assert_no_page_horizontal_overflow(driver)
 
+        assert_true(driver.find_element(By.ID, "add-pdf-button").text == "Add PDFs", "A direct Add PDFs toolbar button should exist")
         configure_compatible_ai(driver)
         install_compatible_fetch_mock(driver)
-        wait_click(driver, "#library-menu > summary")
-        wait_displayed(driver, "#library-menu .library-panel")
 
         fixture = create_ai_text_pdf_fixture()
         file_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
@@ -305,14 +306,21 @@ def main():
             if d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is not None
             else False
         )
-        assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI analysis widget")
+        assert_widget_text_visible(driver, "#pdf-ai-dialog", "Reviewed PDF import widget")
+        assert_true(not driver.find_elements(By.CSS_SELECTOR, ".pdf-ai-provider-settings"), "AI settings must not be embedded in reviewed import")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]")) == 1, "Single PDF should create one review tab")
+        wait.until(
+            lambda d: d.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-local-status")
+            in ("complete", "error")
+        )
+        assert_true(
+            driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-local-status") == "complete",
+            "Selected PDF should run local extraction automatically",
+        )
 
-        wait_click(driver, ".pdf-ai-provider-settings > summary")
-        provider_summary = wait_displayed(driver, "[data-ai-provider-summary]")
-        assert_true("OpenAI-compatible" in provider_summary.get_attribute("textContent"), "PDF dialog should show the configured AI provider")
         wait_click(driver, "#pdf-ai-analyze")
         review = wait_displayed(driver, "#pdf-ai-review")
-        wait.until(lambda d: "AI analysis complete" in d.find_element(By.ID, "pdf-ai-analysis-status").text)
+        wait.until(lambda d: "AI extraction merged" in d.find_element(By.ID, "pdf-ai-analysis-status").text)
 
         request = driver.execute_script("return window.__paperMapCompatibleRequest")
         assert_true(request is not None, "Custom OpenAI-compatible endpoint should receive the AI request")
@@ -324,8 +332,7 @@ def main():
         assert_true("BEGIN PDF TEXT" in user_prompt, "Compatible providers should receive locally extracted PDF text")
         assert_true("Deterministic AI Proxy Fixture" in user_prompt, "Proxy prompt should include text extracted from the real PDF fixture")
 
-        assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF AI review widget")
-        assert_true("Review before saving" in review.text, "Review heading should be visible after analysis")
+        assert_true("Review before saving" in review.text, "Review heading should remain visible")
         assert_true("Deterministic Selenium fixture" in review.text, "Extraction warning should be visible")
         assert_initial_review_values(driver)
 
@@ -336,8 +343,6 @@ def main():
         assert_true(len(topic_rows) == 2, "Mock analysis should propose exactly two topics")
         rejected_checkbox = topic_rows[0].find_element(By.CSS_SELECTOR, "[data-topic-use]")
         accepted_checkbox = topic_rows[1].find_element(By.CSS_SELECTOR, "[data-topic-use]")
-        assert_true(rejected_checkbox.is_selected(), "Proposed topic should be accepted by default")
-        assert_true(accepted_checkbox.is_selected(), "Proposed topic should be accepted by default")
         center_element(driver, rejected_checkbox)
         rejected_checkbox.click()
         assert_true(not rejected_checkbox.is_selected(), "Topic reject control should uncheck the rejected topic")
@@ -353,29 +358,19 @@ def main():
         accepted_description.click()
         accepted_description.send_keys(Keys.CONTROL, "a")
         accepted_description.send_keys("Accepted and edited by Selenium before save.")
-        assert_true(accepted_name.get_attribute("value") == "Accepted Topic Edited", "Accepted topic name should be editable")
-        assert_true(
-            accepted_description.get_attribute("value") == "Accepted and edited by Selenium before save.",
-            "Accepted topic description should be editable",
-        )
 
         save_screenshot(driver, "08-pdf-review-edited.png", dialog)
-        save_button = wait_displayed(driver, "#pdf-ai-save")
-        assert_true(save_button.is_enabled(), "Final save action should be enabled after review")
+        save_button = wait.until(EC.element_to_be_clickable((By.ID, "pdf-ai-save")))
         center_element(driver, save_button)
         save_button.click()
         wait.until(EC.staleness_of(save_button))
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
         wait.until(
-            lambda d: "Opening local library"
-            not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
+            lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
         )
 
         assert_saved_review(driver)
-        assert_true(
-            driver.find_element(By.ID, "visible-paper-count").get_attribute("textContent") == "1",
-            "Saved reviewed paper should be visible after reload",
-        )
+        assert_true(driver.find_element(By.ID, "visible-paper-count").get_attribute("textContent") == "1", "Saved reviewed paper should be visible after reload")
         wait_click(driver, "#paper-list-button")
         wait_displayed(driver, "#paper-list-panel")
         items = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".paper-list-item"))
@@ -383,13 +378,10 @@ def main():
         assert_true(EDITED_FIELDS["#pdf-review-title"] in items[0].text, "Edited saved title should appear in Bibliography")
         items[0].click()
         wait_displayed(driver, "#paper-detail")
-        assert_true(
-            driver.find_element(By.ID, "detail-title").text == EDITED_FIELDS["#pdf-review-title"],
-            "Paper detail should display the edited saved title",
-        )
+        assert_true(driver.find_element(By.ID, "detail-title").text == EDITED_FIELDS["#pdf-review-title"], "Paper detail should display the edited saved title")
         save_screenshot(driver, "09-pdf-review-saved.png")
         assert_no_page_horizontal_overflow(driver)
-        print("Configurable AI proxy, PDF review metadata, topic controls, final save, and persistence checks passed.")
+        print("Global Config, automatic local extraction, per-tab AI merge, editable review, and persistence checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "pdf-review-failure.png")

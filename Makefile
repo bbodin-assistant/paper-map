@@ -23,8 +23,14 @@ test:
 	node --check www/demo-data.js
 	node --check www/graph.js
 	node --check www/graph-layout.js
+	node --check www/graph-config.js
 	node --check www/import-export.js
 	node --check www/paper-source.js
+	node --check www/paper-provider-config.js
+	node --check www/paper-provider.js
+	node --check www/providers/semantic-scholar.js
+	node --check www/providers/openalex.js
+	node --check www/providers/crossref.js
 	node --check www/activity-log.js
 	node --check www/semantic-scholar.js
 	node --check www/research-relations.js
@@ -35,6 +41,7 @@ test:
 	node --check www/pdf-ai.js
 	node --check www/pdf-metadata.js
 	node --check www/pdf-local.js
+	node --check www/pdf-review-merge.js
 	node --check www/reference-resolver.js
 	node --check www/reference-resolution-ui.js
 	node --check www/pdf-ai-import.js

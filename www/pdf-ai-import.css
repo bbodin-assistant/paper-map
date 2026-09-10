@@ -1,5 +1,5 @@
 .pdf-ai-dialog {
-  width: min(980px, calc(100vw - 32px));
+  width: min(1040px, calc(100vw - 32px));
   max-height: min(920px, calc(100vh - 32px));
   padding: 0;
   border: 1px solid #bfc5c1;
@@ -22,7 +22,7 @@
 .pdf-ai-header {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -35,14 +35,40 @@
 
 .pdf-ai-header h2,
 .pdf-ai-review h3,
-.pdf-ai-warnings h3 {
-  margin: 0;
+.pdf-ai-warnings h3 { margin: 0; }
+
+.pdf-review-tabs {
+  position: sticky;
+  top: 57px;
+  z-index: 3;
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+  padding: 8px 12px;
+  border-bottom: 1px solid #d3d8d4;
+  background: #f1f2ef;
+  scrollbar-width: thin;
+}
+
+.pdf-review-tabs button {
+  flex: 0 0 auto;
+  max-width: 230px;
+  overflow: hidden;
+  border: 1px solid #c9ceca;
+  background: #fff;
+  color: #57616b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pdf-review-tabs button.selected {
+  border-color: #637466;
+  background: #e9eee9;
+  color: #17231b;
 }
 
 .pdf-ai-step,
-.pdf-ai-review {
-  padding: 16px;
-}
+.pdf-ai-review { padding: 16px; }
 
 .pdf-ai-review {
   border-top: 1px solid #d7dcd7;
@@ -74,17 +100,35 @@
   line-height: 1.5;
 }
 
-.pdf-ai-settings-grid,
+.pdf-source-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 2px;
+}
+
+.pdf-source-chip {
+  padding: 4px 7px;
+  border: 1px solid #ccd2cd;
+  border-radius: 999px;
+  background: #fff;
+  color: #66716a;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.pdf-source-chip.complete { border-color: #9db8a3; background: #eff7f0; color: #315a39; }
+.pdf-source-chip.running,
+.pdf-source-chip.queued { border-color: #b7b0df; background: #f1effc; color: #514887; }
+.pdf-source-chip.error { border-color: #d7a8a1; background: #fff0ed; color: #823c32; }
+
 .pdf-ai-metadata-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
-.pdf-ai-settings-grid .pdf-ai-remember-key,
-.pdf-ai-metadata-grid .full-width {
-  grid-column: 1 / -1;
-}
+.pdf-ai-metadata-grid .full-width { grid-column: 1 / -1; }
 
 .pdf-ai-analysis-actions,
 .pdf-ai-review-actions {
@@ -126,10 +170,7 @@
   border-top: 1px solid #d7dcd7;
 }
 
-.pdf-ai-topics {
-  display: grid;
-  gap: 8px;
-}
+.pdf-ai-topics { display: grid; gap: 8px; }
 
 .pdf-ai-topic-row {
   display: grid;
@@ -147,15 +188,8 @@
   justify-content: center;
   padding-top: 8px;
 }
-
-.pdf-ai-topic-use input {
-  width: auto;
-}
-
-.pdf-ai-topic-fields {
-  display: grid;
-  gap: 6px;
-}
+.pdf-ai-topic-use input { width: auto; }
+.pdf-ai-topic-fields { display: grid; gap: 6px; }
 
 .pdf-ai-topic-confidence {
   display: grid;
@@ -167,7 +201,6 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-
 .pdf-ai-topic-confidence strong {
   color: #26323c;
   font-size: 12px;
@@ -181,7 +214,6 @@
   border-radius: 6px;
   background: #fff9e9;
 }
-
 .pdf-ai-warnings ul {
   margin: 8px 0 0;
   padding-left: 18px;
@@ -193,6 +225,7 @@
 .pdf-ai-review-actions {
   position: sticky;
   bottom: 0;
+  z-index: 2;
   margin: 18px -16px -16px;
   padding: 12px 16px;
   border-top: 1px solid #cdd2ce;
@@ -201,25 +234,15 @@
 }
 
 @media (max-width: 720px) {
+  .toolbar-actions { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .pdf-ai-dialog {
     width: calc(100vw - 16px);
     max-height: calc(100vh - 16px);
   }
-
-  .pdf-ai-settings-grid,
-  .pdf-ai-metadata-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .pdf-ai-settings-grid .pdf-ai-remember-key,
-  .pdf-ai-metadata-grid .full-width {
-    grid-column: auto;
-  }
-
-  .pdf-ai-topic-row {
-    grid-template-columns: 30px minmax(0, 1fr) 34px;
-  }
-
+  .pdf-review-tabs { top: 94px; }
+  .pdf-ai-metadata-grid { grid-template-columns: 1fr; }
+  .pdf-ai-metadata-grid .full-width { grid-column: auto; }
+  .pdf-ai-topic-row { grid-template-columns: 30px minmax(0, 1fr) 34px; }
   .pdf-ai-topic-confidence {
     grid-column: 2;
     justify-items: start;

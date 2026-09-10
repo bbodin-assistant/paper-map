@@ -8,13 +8,33 @@ test("large graphs receive more settling iterations instead of fewer", () => {
   assert.ok(layoutIterationBudget(900) >= layoutIterationBudget(500));
 });
 
+test("layout effort multiplies the production iteration budget", () => {
+  const economical = layoutIterationBudget(250, { layoutEffort: 1, layoutSpacing: 1 });
+  const patient = layoutIterationBudget(250, { layoutEffort: 3, layoutSpacing: 1 });
+  assert.equal(economical, 230);
+  assert.equal(patient, 690);
+  assert.ok(patient > economical);
+});
+
+test("default graph effort gives the force layout twice the previous settling budget", () => {
+  assert.equal(layoutIterationBudget(40, { layoutEffort: 2, layoutSpacing: 1 }), 260);
+  assert.equal(layoutIterationBudget(900, { layoutEffort: 2, layoutSpacing: 1 }), 680);
+});
+
 test("large graphs use a larger logical layout area", () => {
-  const small = layoutDimensions(1200, 720, 40);
-  const large = layoutDimensions(1200, 720, 500);
+  const small = layoutDimensions(1200, 720, 40, { layoutEffort: 2, layoutSpacing: 1 });
+  const large = layoutDimensions(1200, 720, 500, { layoutEffort: 2, layoutSpacing: 1 });
   assert.equal(small.width, 1200);
   assert.equal(small.height, 720);
   assert.ok(large.width > small.width);
   assert.ok(large.height > small.height);
+});
+
+test("layout spacing enlarges the logical graph without changing the viewport", () => {
+  const compact = layoutDimensions(1200, 720, 500, { layoutEffort: 2, layoutSpacing: 0.75 });
+  const spacious = layoutDimensions(1200, 720, 500, { layoutEffort: 2, layoutSpacing: 2 });
+  assert.ok(spacious.width > compact.width);
+  assert.ok(spacious.height > compact.height);
 });
 
 test("fit transform keeps a larger logical graph visible", () => {

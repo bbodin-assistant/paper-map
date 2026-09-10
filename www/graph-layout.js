@@ -1,17 +1,22 @@
-export function layoutIterationBudget(nodeCount) {
+import { loadGraphConfig, normalizeGraphConfig } from "./graph-config.js";
+
+export function layoutIterationBudget(nodeCount, config = loadGraphConfig()) {
   const count = Math.max(0, Number(nodeCount) || 0);
-  if (count <= 40) return 130;
-  if (count <= 100) return 170;
-  if (count <= 250) return 230;
-  if (count <= 500) return 290;
-  return 340;
+  const normalized = normalizeGraphConfig(config);
+  let base = 340;
+  if (count <= 40) base = 130;
+  else if (count <= 100) base = 170;
+  else if (count <= 250) base = 230;
+  else if (count <= 500) base = 290;
+  return Math.max(1, Math.round(base * normalized.layoutEffort));
 }
 
-export function layoutDimensions(viewportWidth, viewportHeight, nodeCount) {
+export function layoutDimensions(viewportWidth, viewportHeight, nodeCount, config = loadGraphConfig()) {
   const width = Math.max(800, Number(viewportWidth) || 1200);
   const height = Math.max(520, Number(viewportHeight) || 720);
   const count = Math.max(1, Number(nodeCount) || 1);
-  const targetArea = count * 8_500;
+  const normalized = normalizeGraphConfig(config);
+  const targetArea = count * 8_500 * normalized.layoutSpacing;
   const scale = Math.max(1, Math.min(3.2, Math.sqrt(targetArea / (width * height))));
   return {
     width: Math.round(width * scale),
