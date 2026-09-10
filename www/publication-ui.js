@@ -1,4 +1,4 @@
-const ACCEPTED_PUBLICATION_FILES = ".pdf,.json,.bib,application/pdf,application/json,application/x-bibtex,text/x-bibtex,text/plain";
+const ACCEPTED_PUBLICATION_FILES = ".pdf,.json,.bib,application/pdf,application/json,application/x-bibtex,text/x-bibtex";
 
 function lowerName(file) {
   return String(file?.name || "").trim().toLowerCase();
