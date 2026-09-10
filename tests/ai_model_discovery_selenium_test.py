@@ -119,6 +119,8 @@ def main():
         if not remember.is_selected():
             remember.click()
         wait_click(driver, "#ai-config-save")
+        wait.until(lambda d: d.find_element(By.ID, "ai-config-panel").get_attribute("hidden") is not None)
+        assert_true(config_button.get_attribute("aria-expanded") == "false", "Saving configuration should close the Config dialog")
 
         saved_ai = driver.execute_script("return JSON.parse(localStorage.getItem('paper-map-ai-config-v1'))")
         assert_true(saved_ai["baseUrl"] == CUSTOM_BASE_URL, "Configured base URL should be persisted")
@@ -129,9 +131,9 @@ def main():
         assert_true(saved_graph["layoutEffort"] == 3.25, "Graph layout effort should be persisted")
         assert_true(saved_graph["layoutSpacing"] == 1.4, "Graph layout spacing should be persisted")
 
-        save_screenshot(driver, "10-ai-model-discovery.png", panel)
+        save_screenshot(driver, "10-ai-model-discovery.png")
         assert_no_page_horizontal_overflow(driver)
-        print("General config, scholarly method selection, graph settings, AI model discovery, and persistence checks passed.")
+        print("General config, scholarly method selection, graph settings, AI model discovery, persistence, and close-after-save checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "ai-model-discovery-failure.png")
