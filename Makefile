@@ -1,8 +1,19 @@
 PORT ?= 8080
 TEST_URL ?= http://127.0.0.1:8080/www/
 WASM_OUT_DIR ?= www/pkg
+LET_PAPERS_DIR ?= LET_papers
 
-.PHONY: install-wasm build-wasm run test test-rust test-ui-mobile clean
+LET_PAPERS := \
+	$(LET_PAPERS_DIR)/Becker2017.pdf \
+	$(LET_PAPERS_DIR)/Davare2007.pdf \
+	$(LET_PAPERS_DIR)/Feiertag2009.pdf \
+	$(LET_PAPERS_DIR)/Forget2017.pdf \
+	$(LET_PAPERS_DIR)/Gemlau2021.pdf \
+	$(LET_PAPERS_DIR)/Günzel2023.pdf \
+	$(LET_PAPERS_DIR)/Kohler2023.pdf \
+	$(LET_PAPERS_DIR)/Martinez2020.pdf
+
+.PHONY: install-wasm build-wasm run test test-rust test-ui-mobile test-let-papers-local-import download-let-papers clean
 
 install-wasm:
 	@command -v wasm-pack >/dev/null || { echo "Install wasm-pack first: https://rustwasm.github.io/wasm-pack/"; exit 1; }
@@ -46,7 +57,7 @@ test:
 	node --check www/reference-resolution-ui.js
 	node --check www/pdf-ai-import.js
 	node --test tests/*.test.mjs
-	python3 -m py_compile tests/mobile_selenium_test.py tests/ai_model_discovery_selenium_test.py tests/pdf_review_selenium_test.py tests/pdf_batch_import_selenium_test.py tests/pdf_local_citation_selenium_test.py tests/reference_candidate_selenium_test.py tests/source_filter_log_selenium_test.py tests/real_pdf_smoke_selenium.py tests/graph_relations_selenium_test.py
+	python3 -m py_compile tests/mobile_selenium_test.py tests/ai_model_discovery_selenium_test.py tests/pdf_review_selenium_test.py tests/pdf_batch_import_selenium_test.py tests/pdf_local_citation_selenium_test.py tests/let_papers_local_import_selenium_test.py tests/reference_candidate_selenium_test.py tests/source_filter_log_selenium_test.py tests/real_pdf_smoke_selenium.py tests/graph_relations_selenium_test.py
 	cargo test
 
 test-ui-mobile: build-wasm
@@ -58,6 +69,55 @@ test-ui-mobile: build-wasm
 	TEST_URL="$(TEST_URL)" python3 tests/reference_candidate_selenium_test.py
 	TEST_URL="$(TEST_URL)" python3 tests/source_filter_log_selenium_test.py
 	TEST_URL="$(TEST_URL)" python3 tests/graph_relations_selenium_test.py
+
+test-let-papers-local-import: build-wasm
+	TEST_URL="$(TEST_URL)" python3 tests/let_papers_local_import_selenium_test.py
+
+# Each file target is skipped automatically when the expected PDF is present.
+download-let-papers: $(LET_PAPERS)
+
+$(LET_PAPERS_DIR):
+	mkdir -p "$@"
+
+$(LET_PAPERS_DIR)/Becker2017.pdf: | $(LET_PAPERS_DIR)
+	curl --fail --location --retry 3 --output "$@.tmp" "https://www.es.mdh.se/pdf_publications/4877.pdf"
+	test "$$(head -c 4 "$@.tmp")" = "%PDF"
+	mv "$@.tmp" "$@"
+
+$(LET_PAPERS_DIR)/Davare2007.pdf: | $(LET_PAPERS_DIR)
+	curl --fail --location --retry 3 --output "$@.tmp" "https://dl.acm.org/doi/pdf/10.1145/1278480.1278553"
+	test "$$(head -c 4 "$@.tmp")" = "%PDF"
+	mv "$@.tmp" "$@"
+
+$(LET_PAPERS_DIR)/Feiertag2009.pdf: | $(LET_PAPERS_DIR)
+	curl --fail --location --retry 3 --output "$@.tmp" "https://www.diva-portal.org/smash/get/diva2%3A1003533/FULLTEXT01.pdf"
+	test "$$(head -c 4 "$@.tmp")" = "%PDF"
+	mv "$@.tmp" "$@"
+
+$(LET_PAPERS_DIR)/Forget2017.pdf: | $(LET_PAPERS_DIR)
+	curl --fail --location --retry 3 --output "$@.tmp" "https://hal.science/hal-01620403v1/document"
+	test "$$(head -c 4 "$@.tmp")" = "%PDF"
+	mv "$@.tmp" "$@"
+
+$(LET_PAPERS_DIR)/Gemlau2021.pdf: | $(LET_PAPERS_DIR)
+	curl --fail --location --retry 3 --output "$@.tmp" "https://dl.acm.org/doi/pdf/10.1145/3381847"
+	test "$$(head -c 4 "$@.tmp")" = "%PDF"
+	mv "$@.tmp" "$@"
+
+$(LET_PAPERS_DIR)/Günzel2023.pdf: | $(LET_PAPERS_DIR)
+	curl --fail --location --retry 3 --output "$@.tmp" "https://daes.cs.tu-dortmund.de/storages/daes-cs/r/publications/guenzel23ecrts-equivalence.pdf"
+	test "$$(head -c 4 "$@.tmp")" = "%PDF"
+	mv "$@.tmp" "$@"
+
+$(LET_PAPERS_DIR)/Kohler2023.pdf: | $(LET_PAPERS_DIR)
+	curl --fail --location --retry 3 --output "$@.tmp" "https://dl.acm.org/doi/pdf/10.1145/3573388"
+	test "$$(head -c 4 "$@.tmp")" = "%PDF"
+	mv "$@.tmp" "$@"
+
+$(LET_PAPERS_DIR)/Martinez2020.pdf: | $(LET_PAPERS_DIR)
+	curl --fail --location --retry 3 --output "$@.tmp" "https://link.springer.com/content/pdf/10.1007/s11241-020-09350-3.pdf"
+	test "$$(head -c 4 "$@.tmp")" = "%PDF"
+	mv "$@.tmp" "$@"
 
 clean:
 	rm -rf target "$(WASM_OUT_DIR)"

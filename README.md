@@ -111,6 +111,22 @@ make test-ui-mobile TEST_URL=http://127.0.0.1:8080/www/
 
 CI compiles the Rust crate for `wasm32-unknown-unknown`, builds `www/pkg/`, runs the browser tests against that generated package, and uploads screenshots/OCR output as `mobile-ui-artifacts`.
 
+To measure local Rust/WASM import quality against the PDFs in the local `LET_papers/` folder, start the static server and run:
+
+```bash
+make test-let-papers-local-import TEST_URL=http://127.0.0.1:8080/www/
+```
+
+The Selenium test selects every PDF through **Add PDFs**, waits for automatic local extraction, and writes a per-file JSON scorecard plus screenshot to `artifacts/mobile-ui/`. Each file receives 30 points for title, 20 for first author, 15 for year, 15 for source DOI when present, and 20 for detecting a bibliography. Set `LET_PAPERS_FILES=Becker2017.pdf,Martinez2020.pdf` to score a smaller named subset.
+
+To restore missing PDFs from their public or publisher PDF endpoints, run:
+
+```bash
+make download-let-papers
+```
+
+Each file has its own Make target, so existing PDFs are left untouched. A download is accepted only when its first bytes identify it as a PDF; this prevents a publisher login or paywall HTML page from being saved as a paper. Some publisher endpoints may require institutional access.
+
 ## Local data
 
 The live library is stored in IndexedDB under `paper-map-v1`. Browser data can be downloaded as a JSON backup and restored later. Clearing browser site data removes the local library, so regular exports are recommended for important collections.
