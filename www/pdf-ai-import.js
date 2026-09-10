@@ -321,7 +321,8 @@ function createReviewItem(file) {
     aiContext: null,
     onlineContext: null,
     networkController: null,
-    operationToken: 0,
+    localToken: 0,
+    networkToken: 0,
   };
 }
 
@@ -481,7 +482,7 @@ function init() {
     const config = loadAiConfig();
     const tooLarge = providerUsesDirectPdf(config) && item.file.size > MAX_INLINE_PDF_BYTES;
     const busy = networkBusy(item);
-    localButton.disabled = item.status.local === "running" || item.status.local === "queued";
+    localButton.disabled = item.status.local === "running";
     analyzeButton.disabled = busy || tooLarge;
     onlineButton.disabled = busy;
     cancelButton.hidden = !busy;
@@ -538,7 +539,7 @@ function init() {
 
   async function runLocal(item) {
     if (!items.includes(item)) return;
-    const token = ++item.operationToken;
+    const token = ++item.localToken;
     item.status.local = "running";
     item.errors.local = "";
     if (item.id === activeId) {
@@ -547,13 +548,13 @@ function init() {
     } else renderTabs();
     try {
       const metadata = await extractPdfCitationsLocally(item.file);
-      if (!items.includes(item) || token !== item.operationToken) return;
+      if (!items.includes(item) || token !== item.localToken) return;
       item.sources.local = metadata;
       item.status.local = "complete";
       mergeSources(item);
       if (item.id === activeId) analysisStatus.textContent = `Local extraction complete: ${metadata.localExtraction?.summary || "review the proposal"}.`;
     } catch (error) {
-      if (!items.includes(item) || token !== item.operationToken) return;
+      if (!items.includes(item) || token !== item.localToken) return;
       item.status.local = "error";
       item.errors.local = error.message || String(error);
       item.draft.warnings = uniqueStrings([...(item.draft.warnings || []), `Local extraction failed: ${item.errors.local}`]);
@@ -572,6 +573,9 @@ function init() {
       runLocal(item).finally(() => {
         localActive -= 1;
         drainLocalQueue();
+        if (localActive === 0 && localQueue.length === 0 && items.length) {
+          setGlobalStatus(`Local extraction finished for ${items.length} remaining PDF tab${items.length === 1 ? "" : "s"}.`, "ready");
+        }
       });
     }
   }
@@ -604,7 +608,7 @@ function init() {
       return;
     }
 
-    const token = ++item.operationToken;
+    const token = ++item.networkToken;
     const controller = new AbortController();
     item.networkController = controller;
     item.status.ai = "running";
@@ -612,7 +616,7 @@ function init() {
     renderActive();
     try {
       const metadata = await analyzePdfWithAi({ file: item.file, config, apiKey, signal: controller.signal });
-      if (!items.includes(item) || token !== item.operationToken) return;
+      if (!items.includes(item) || token !== item.networkToken) return;
       item.sources.ai = metadata;
       item.aiContext = {
         provider: config.provider,
@@ -625,7 +629,7 @@ function init() {
       mergeSources(item);
       analysisStatus.textContent = `${providerLabel(config.provider)} AI extraction merged into this tab.`;
     } catch (error) {
-      if (!items.includes(item) || token !== item.operationToken) return;
+      if (!items.includes(item) || token !== item.networkToken) return;
       if (error?.name === "AbortError") {
         item.status.ai = "idle";
         analysisStatus.textContent = "AI extraction cancelled.";
@@ -636,7 +640,7 @@ function init() {
       }
       renderActive();
     } finally {
-      if (items.includes(item) && token === item.operationToken) {
+      if (items.includes(item) && token === item.networkToken) {
         item.networkController = null;
         refreshButtons(item);
       }
@@ -655,7 +659,7 @@ function init() {
     captureActive();
     const query = onlineQuery(item);
     const providerConfig = loadPaperProviderConfig();
-    const token = ++item.operationToken;
+    const token = ++item.networkToken;
     const controller = new AbortController();
     item.networkController = controller;
     item.status.online = "running";
@@ -663,7 +667,7 @@ function init() {
     renderActive();
     try {
       const metadata = await resolveOnlinePaper(query, { signal: controller.signal });
-      if (!items.includes(item) || token !== item.operationToken) return;
+      if (!items.includes(item) || token !== item.networkToken) return;
       item.sources.online = metadata;
       item.onlineContext = {
         provider: metadata.providerPrimary || metadata.source || providerConfig.provider,
@@ -675,7 +679,7 @@ function init() {
       mergeSources(item);
       analysisStatus.textContent = `${paperProviderLabel(providerConfig.provider)} metadata merged into this tab.`;
     } catch (error) {
-      if (!items.includes(item) || token !== item.operationToken) return;
+      if (!items.includes(item) || token !== item.networkToken) return;
       if (error?.name === "AbortError") {
         item.status.online = "idle";
         analysisStatus.textContent = "Online extraction cancelled.";
@@ -686,7 +690,7 @@ function init() {
       }
       renderActive();
     } finally {
-      if (items.includes(item) && token === item.operationToken) {
+      if (items.includes(item) && token === item.networkToken) {
         item.networkController = null;
         refreshButtons(item);
       }
@@ -782,7 +786,8 @@ function init() {
   }
 
   function removeItem(item, { skipped = false, message = "" } = {}) {
-    item.operationToken += 1;
+    item.localToken += 1;
+    item.networkToken += 1;
     item.networkController?.abort();
     item.networkController = null;
     localQueue = localQueue.filter((candidate) => candidate !== item);
@@ -805,7 +810,8 @@ function init() {
 
   function closeRemaining() {
     for (const item of items) {
-      item.operationToken += 1;
+      item.localToken += 1;
+      item.networkToken += 1;
       item.networkController?.abort();
     }
     const discarded = items.length;
@@ -857,7 +863,8 @@ function init() {
 
   function closeOutstandingWithoutClosing() {
     for (const item of items) {
-      item.operationToken += 1;
+      item.localToken += 1;
+      item.networkToken += 1;
       item.networkController?.abort();
     }
     localQueue = [];
