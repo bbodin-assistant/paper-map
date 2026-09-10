@@ -1,6 +1,9 @@
+import { normalizeDoi } from "./import-export.js";
 import { resolveExtractedReference, selectReferenceCandidate } from "./reference-resolver.js";
 
 const $ = (selector, root = document) => root.querySelector(selector);
+const resolutionCache = new Map();
+const resolvingTabs = new Map();
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -46,6 +49,39 @@ function resolutionLabel(resolution) {
   return "Resolution unavailable";
 }
 
+function activeTabId(dialog) {
+  return $("#pdf-review-tabs button[aria-selected='true']", dialog)?.dataset.pdfTabId || "single-review";
+}
+
+function referenceKey(reference = {}) {
+  const doi = normalizeDoi(reference.doi);
+  if (doi) return `doi:${doi}`;
+  const arxivId = clean(reference.arxivId).replace(/^arxiv:\s*/i, "").toLowerCase();
+  if (arxivId) return `arxiv:${arxivId}`;
+  return clean(reference.rawText).replace(/\s+/g, " ").toLowerCase();
+}
+
+function cacheForTab(tabId) {
+  if (!resolutionCache.has(tabId)) resolutionCache.set(tabId, new Map());
+  return resolutionCache.get(tabId);
+}
+
+function rememberResolution(tabId, reference) {
+  const key = referenceKey(reference);
+  if (!key || !reference?.resolution) return;
+  cacheForTab(tabId).set(key, structuredClone(reference.resolution));
+}
+
+function restoreResolution(tabId, row) {
+  const reference = row.__paperMapReference || {};
+  if (reference.resolution) {
+    rememberResolution(tabId, reference);
+    return;
+  }
+  const cached = resolutionCache.get(tabId)?.get(referenceKey(reference));
+  if (cached) row.__paperMapReference = { ...reference, resolution: structuredClone(cached) };
+}
+
 function referenceRows(dialog) {
   return Array.from(dialog.querySelectorAll("#pdf-reference-list .pdf-reference-row"));
 }
@@ -70,6 +106,14 @@ function updateSummary(dialog) {
   }
 }
 
+function refreshResolveButton(dialog) {
+  const resolveButton = $("#pdf-reference-resolve", dialog);
+  if (!resolveButton) return;
+  const progress = resolvingTabs.get(activeTabId(dialog));
+  resolveButton.disabled = Boolean(progress);
+  resolveButton.textContent = progress || "Resolve identifiers";
+}
+
 function unexpectedResolution(error) {
   return {
     status: "unresolved",
@@ -87,7 +131,7 @@ function unexpectedResolution(error) {
   };
 }
 
-function renderResolution(row) {
+function renderResolution(row, dialog, tabId = activeTabId(dialog)) {
   const body = $(".pdf-reference-body", row);
   if (!body) return;
   let panel = $(".pdf-reference-resolution", row);
@@ -132,9 +176,11 @@ function renderResolution(row) {
           resolved = unexpectedResolution(error);
         }
         row.__paperMapReference = { ...reference, resolution: resolved };
-        renderResolution(row);
-        const dialog = row.closest("#pdf-ai-dialog");
-        if (dialog) updateSummary(dialog);
+        rememberResolution(tabId, row.__paperMapReference);
+        if (row.isConnected && activeTabId(dialog) === tabId) {
+          renderResolution(row, dialog, tabId);
+          updateSummary(dialog);
+        }
       });
       return;
     }
@@ -179,9 +225,9 @@ function renderResolution(row) {
       button.addEventListener("click", () => {
         const selected = selectReferenceCandidate(resolution, Number(button.dataset.referenceCandidate));
         row.__paperMapReference = { ...reference, resolution: selected };
-        renderResolution(row);
-        const dialog = row.closest("#pdf-ai-dialog");
-        if (dialog) updateSummary(dialog);
+        rememberResolution(tabId, row.__paperMapReference);
+        renderResolution(row, dialog, tabId);
+        if (activeTabId(dialog) === tabId) updateSummary(dialog);
       });
     }
     return;
@@ -197,8 +243,13 @@ function renderResolution(row) {
 }
 
 function decorateRows(dialog) {
-  for (const row of referenceRows(dialog)) renderResolution(row);
+  const tabId = activeTabId(dialog);
+  for (const row of referenceRows(dialog)) {
+    restoreResolution(tabId, row);
+    renderResolution(row, dialog, tabId);
+  }
   updateSummary(dialog);
+  refreshResolveButton(dialog);
 }
 
 function install(dialog) {
@@ -226,44 +277,57 @@ function install(dialog) {
   }
 
   const list = $("#pdf-reference-list", dialog);
-  const observer = new MutationObserver(() => decorateRows(dialog));
-  if (list) observer.observe(list, { childList: true });
+  const listObserver = new MutationObserver(() => decorateRows(dialog));
+  if (list) listObserver.observe(list, { childList: true });
+  const tabs = $("#pdf-review-tabs", dialog);
+  const tabsObserver = new MutationObserver(() => refreshResolveButton(dialog));
+  if (tabs) tabsObserver.observe(tabs, { childList: true, attributes: true, subtree: true, attributeFilter: ["aria-selected"] });
   decorateRows(dialog);
 
   resolveButton.addEventListener("click", async () => {
-    if (resolveButton.disabled) return;
+    const tabId = activeTabId(dialog);
+    if (resolvingTabs.has(tabId)) return;
     const rows = referenceRows(dialog);
-    const targets = rows.filter((row) => row.__paperMapReference?.doi || row.__paperMapReference?.arxivId);
+    const targets = rows
+      .filter((row) => row.__paperMapReference?.doi || row.__paperMapReference?.arxivId)
+      .map((row) => ({ row, reference: structuredClone(row.__paperMapReference || {}) }));
     if (!targets.length) {
       status.textContent = "No DOI or arXiv identifiers are available to resolve.";
       return;
     }
 
-    resolveButton.disabled = true;
-    const originalText = resolveButton.textContent;
     let matched = 0;
     let unresolved = 0;
     try {
       for (let index = 0; index < targets.length; index += 1) {
-        const row = targets[index];
-        resolveButton.textContent = `Resolving ${index + 1}/${targets.length}…`;
-        row.dataset.resolutionStatus = "resolving";
-        const panel = $(".pdf-reference-resolution", row);
-        if (panel) panel.innerHTML = `<span class="reference-resolution-badge resolving">Resolving…</span>`;
-        const resolution = await resolveExtractedReference(row.__paperMapReference || {});
-        row.__paperMapReference = {
-          ...(row.__paperMapReference || {}),
-          resolution,
-        };
+        resolvingTabs.set(tabId, `Resolving ${index + 1}/${targets.length}…`);
+        refreshResolveButton(dialog);
+        const { row, reference } = targets[index];
+        if (row.isConnected && activeTabId(dialog) === tabId) {
+          row.dataset.resolutionStatus = "resolving";
+          const panel = $(".pdf-reference-resolution", row);
+          if (panel) panel.innerHTML = `<span class="reference-resolution-badge resolving">Resolving…</span>`;
+        }
+        let resolution;
+        try {
+          resolution = await resolveExtractedReference(reference);
+        } catch (error) {
+          resolution = unexpectedResolution(error);
+        }
+        const resolvedReference = { ...reference, resolution };
+        row.__paperMapReference = resolvedReference;
+        rememberResolution(tabId, resolvedReference);
         if (resolution.status === "matched") matched += 1;
         else unresolved += 1;
-        renderResolution(row);
+        if (row.isConnected && activeTabId(dialog) === tabId) renderResolution(row, dialog, tabId);
       }
-      status.textContent = `${matched} canonical matches · ${unresolved} unresolved. Review confidence before saving.`;
+      if (activeTabId(dialog) === tabId) {
+        status.textContent = `${matched} canonical matches · ${unresolved} unresolved. Review confidence before saving.`;
+      }
     } finally {
-      resolveButton.disabled = false;
-      resolveButton.textContent = originalText;
-      updateSummary(dialog);
+      resolvingTabs.delete(tabId);
+      if (activeTabId(dialog) === tabId) updateSummary(dialog);
+      refreshResolveButton(dialog);
     }
   });
 }
