@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import json
 import os
 import re
 import shutil
@@ -204,10 +205,67 @@ def create_pdf_fixture():
     return fixture.resolve()
 
 
+def create_bib_fixture():
+    ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
+    fixture = ARTIFACT_DIR / "mobile-test-paper.bib"
+    fixture.write_text(
+        "@article{unifiedpicker2026,\n"
+        "  title = {Unified Picker Bib Test},\n"
+        "  author = {Picker, Test},\n"
+        "  year = {2026}\n"
+        "}\n",
+        encoding="utf-8",
+    )
+    return fixture.resolve()
+
+
+def create_json_fixture():
+    ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
+    fixture = ARTIFACT_DIR / "mobile-test-backup.json"
+    fixture.write_text(
+        json.dumps(
+            {
+                "schemaVersion": 1,
+                "papers": [
+                    {
+                        "id": "local:unified-json-test",
+                        "title": "Unified Picker JSON Test",
+                        "authors": ["Picker Test"],
+                        "year": 2026,
+                        "venue": "",
+                        "type": "article",
+                        "doi": "",
+                        "url": "",
+                        "abstract": "",
+                        "keywords": [],
+                        "topics": [],
+                        "tags": [],
+                        "notes": "",
+                        "status": "unread",
+                        "relevance": 3,
+                        "starred": False,
+                        "citationCount": None,
+                        "source": "backup-test",
+                    }
+                ],
+                "edges": [],
+                "topics": [],
+                "meta": {},
+            }
+        ),
+        encoding="utf-8",
+    )
+    return fixture.resolve()
+
+
 def close_details_if_open(driver, selector):
     opened = driver.find_elements(By.CSS_SELECTOR, selector)
     if opened and opened[0].get_attribute("open") is not None:
         opened[0].find_element(By.CSS_SELECTOR, ":scope > summary").click()
+
+
+def visible_paper_count(driver):
+    return int(driver.find_element(By.ID, "visible-paper-count").get_attribute("textContent") or "0")
 
 
 def main():
@@ -223,8 +281,12 @@ def main():
         assert_no_page_horizontal_overflow(driver)
         assert_widget_text_visible(driver, ".app-header", "mobile app header")
         assert_widget_text_visible(driver, ".atlas-toolbar", "mobile atlas toolbar")
-        add_pdf = wait_displayed(driver, "#add-pdf-button")
-        assert_true(add_pdf.text == "Add PDFs", "PDF import should be a direct Add PDFs toolbar action")
+        add_files = wait_displayed(driver, "#add-pdf-button")
+        assert_true(add_files.text == "Add", "Publication file import should be a direct Add toolbar action")
+        file_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
+        accepted = file_input.get_attribute("accept") or ""
+        for suffix in (".pdf", ".json", ".bib"):
+            assert_true(suffix in accepted, f"Unified Add picker should accept {suffix} files: {accepted!r}")
         initial = save_screenshot(driver, "01-initial-mobile.png")
         print(f"Initial mobile screenshot: {initial}")
 
@@ -237,17 +299,35 @@ def main():
         wait_click(driver, "#about-button")
         wait.until(EC.invisibility_of_element_located((By.ID, "about-panel")))
 
-        # Library drawer and demo data.
-        wait_click(driver, "#library-menu > summary")
-        library_panel = wait_displayed(driver, "#library-menu .library-panel")
-        assert_widget_text_visible(driver, "#library-menu .library-panel", "Library widget")
-        assert_true("Import .json / .bib" in library_panel.text, "Structured file import should remain in Library")
-        ocr_shot = save_screenshot(driver, "03-library-ocr.png", library_panel)
-        run_ocr(ocr_shot, ["Library", "Load demo", "Import"])
+        # Add-publication resolver contains only the query input and its Add button.
+        summary = wait_click(driver, "#library-menu > summary")
+        assert_true(summary.text == "Add publication", "Library toolbar action should be renamed Add publication")
+        publication_panel = wait_displayed(driver, "#library-menu .library-panel")
+        assert_widget_text_visible(driver, "#library-menu .library-panel", "Add publication widget")
+        controls = publication_panel.find_elements(By.CSS_SELECTOR, "input:not([type='hidden']), button")
+        assert_true(len(controls) == 2, f"Add publication should expose only textbox + Add button, got {len(controls)} controls")
+        assert_true(controls[0].get_attribute("id") == "add-paper-query", "Add publication textbox should be the resolver query")
+        assert_true(controls[1].get_attribute("type") == "submit", "Add publication should retain the resolver Add submit button")
+        assert_true("Import .json / .bib" not in publication_panel.text, "Portable import button should not remain in Add publication")
+        assert_true(not publication_panel.find_elements(By.CSS_SELECTOR, ".library-actions"), "Library management actions should move out of Add publication")
+        ocr_shot = save_screenshot(driver, "03-add-publication-ocr.png", publication_panel)
+        run_ocr(ocr_shot, ["Add"])
+        close_details_if_open(driver, "#library-menu")
+
+        # Library management actions live in Config; no standalone JSON/Bib import button remains.
+        wait_click(driver, "#ai-config-button")
+        config_panel = wait_displayed(driver, "#ai-config-panel")
+        assert_widget_text_visible(driver, "#ai-config-panel", "Configuration widget")
+        assert_true("Library data" in config_panel.text, "Config should contain the Library data section")
+        for selector in ("#load-demo", "#export-json", "#export-bibtex", "#clear-library"):
+            assert_true(config_panel.find_elements(By.CSS_SELECTOR, selector), f"{selector} should be inside Config")
+        assert_true(not driver.find_elements(By.ID, "import-button"), "Legacy Import .json / .bib button should be removed")
+        save_screenshot(driver, "04-config-library-actions.png")
 
         wait_click(driver, "#load-demo")
-        wait.until(lambda d: int(d.find_element(By.ID, "visible-paper-count").get_attribute("textContent") or "0") > 0)
-        close_details_if_open(driver, "#library-menu")
+        wait.until(lambda d: visible_paper_count(d) > 0)
+        wait_click(driver, "#ai-config-close")
+        wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
         assert_no_page_horizontal_overflow(driver)
 
         # Filters widget: click a real filter, then clear it.
@@ -259,7 +339,7 @@ def main():
         wait.until(lambda d: not d.find_element(By.ID, "filter-count").get_attribute("hidden"))
         wait_click(driver, "#clear-filters")
         wait.until(lambda d: not d.find_element(By.ID, "filter-starred").is_selected())
-        save_screenshot(driver, "04-filters.png")
+        save_screenshot(driver, "05-filters.png")
         close_details_if_open(driver, "#filter-menu")
 
         # Toggle map modes and make sure the topic map renders clickable blocks.
@@ -267,7 +347,7 @@ def main():
         wait.until(lambda d: "selected" in d.find_element(By.CSS_SELECTOR, "#map-mode button[data-mode='topics']").get_attribute("class"))
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".topic-block")) > 0)
         assert_widget_text_visible(driver, ".atlas-toolbar", "Topic-map toolbar")
-        save_screenshot(driver, "05-topic-map.png")
+        save_screenshot(driver, "06-topic-map.png")
         wait_click(driver, "#map-mode button[data-mode='citations']")
         wait.until(lambda d: "selected" in d.find_element(By.CSS_SELECTOR, "#map-mode button[data-mode='citations']").get_attribute("class"))
 
@@ -279,34 +359,47 @@ def main():
         first_paper = driver.find_elements(By.CSS_SELECTOR, ".paper-list-item")[0]
         assert_true(first_paper.text.strip(), "First bibliography item should have visible text")
         first_paper.click()
-        detail = wait_displayed(driver, "#paper-detail")
+        wait_displayed(driver, "#paper-detail")
         assert_widget_text_visible(driver, "#paper-detail", "Paper detail widget")
         assert_true(driver.find_element(By.ID, "detail-title").text.strip(), "Paper detail title should be visible")
         star = wait_displayed(driver, "#detail-star")
         before_star = star.text
         star.click()
         wait.until(lambda d: d.find_element(By.ID, "detail-star").text != before_star)
-        save_screenshot(driver, "06-paper-detail.png")
+        save_screenshot(driver, "07-paper-detail.png")
         wait_click(driver, "#close-detail")
         wait.until(EC.invisibility_of_element_located((By.ID, "paper-detail")))
         wait_click(driver, "#close-paper-list")
         wait.until(EC.invisibility_of_element_located((By.ID, "paper-list-panel")))
 
-        # Exercise the direct PDF import widget without making an external AI request.
-        fixture = create_pdf_fixture()
-        file_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
-        file_input.send_keys(str(fixture))
+        # The unified Add input routes BibTeX through the existing import/merge path.
+        before_bib = visible_paper_count(driver)
+        file_input.send_keys(str(create_bib_fixture()))
+        wait.until(lambda d: "Imported 1 BibTeX" in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
+        wait.until(lambda d: visible_paper_count(d) == before_bib + 1)
+
+        # JSON backups use the same restore-vs-merge confirmation; choose merge here.
+        before_json = visible_paper_count(driver)
+        file_input.send_keys(str(create_json_fixture()))
+        alert = wait.until(EC.alert_is_present())
+        assert_true("replacing the current local library" in alert.text, "JSON import should retain the restore-vs-merge confirmation")
+        alert.dismiss()
+        wait.until(lambda d: "Backup merged:" in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
+        wait.until(lambda d: visible_paper_count(d) == before_json + 1)
+
+        # PDF selection still enters the reviewed local PDF workflow.
+        file_input.send_keys(str(create_pdf_fixture()))
         dialog = wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog") if d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is not None else False)
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF reviewed import widget")
         assert_true("PDF metadata, citations & topics" in dialog.text, "PDF import dialog heading should be visible")
         assert_true("Run AI extraction" in dialog.text, "Per-paper AI extraction action should be visible")
         assert_true("Run online extraction" in dialog.text, "Per-paper online extraction action should be visible")
-        save_screenshot(driver, "07-pdf-ai-dialog.png")
+        save_screenshot(driver, "08-pdf-ai-dialog.png")
         wait_click(driver, "#pdf-ai-close")
         wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is None)
 
         assert_no_page_horizontal_overflow(driver)
-        print("Mobile Selenium interaction, direct PDF import, text-visibility, screenshot, and OCR checks passed.")
+        print("Mobile Selenium publication controls, JSON/Bib/PDF routing, text-visibility, screenshot, and OCR checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "failure.png")
