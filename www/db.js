@@ -1,3 +1,9 @@
+import {
+  inferResolvedReferenceCitationEdges,
+  mergeExtractedReferenceProvenance,
+  normalizePaperReferenceIdentities,
+} from "./citation-reconciliation.js";
+
 const DB_NAME = "paper-map-v1";
 const DB_VERSION = 1;
 const STORES = ["papers", "edges", "topics", "meta"];
@@ -76,6 +82,29 @@ async function putMany(storeName, values) {
   await transactionDone(transaction);
 }
 
+function putMissingEdges(edgeStore, edges) {
+  for (const edge of edges || []) {
+    const request = edgeStore.get(edge.id);
+    request.onsuccess = () => {
+      if (!request.result) edgeStore.put(structuredClone(edge));
+    };
+  }
+}
+
+function preparePaperWrites(existingPapers, incomingPapers) {
+  const existingById = new Map((existingPapers || []).map((paper) => [paper.id, paper]));
+  return (incomingPapers || []).map((paper) => {
+    const existing = existingById.get(paper.id);
+    const hadReferenceField = Array.isArray(existing?.extractedReferences) || Array.isArray(paper?.extractedReferences);
+    const extractedReferences = mergeExtractedReferenceProvenance(
+      existing?.extractedReferences || [],
+      paper?.extractedReferences || [],
+    );
+    const merged = hadReferenceField ? { ...paper, extractedReferences } : paper;
+    return normalizePaperReferenceIdentities(merged);
+  });
+}
+
 export async function loadLibrary() {
   const [papers, edges, topics, meta] = await Promise.all([
     getAll("papers"),
@@ -84,17 +113,40 @@ export async function loadLibrary() {
     getAll("meta"),
   ]);
 
+  const normalizedPapers = papers.map(normalizePaperReferenceIdentities);
+  const changedPapers = normalizedPapers.filter((paper, index) => paper !== papers[index]);
+  const inferredEdges = inferResolvedReferenceCitationEdges(normalizedPapers, edges);
+  if (changedPapers.length || inferredEdges.length) {
+    await Promise.all([
+      putMany("papers", changedPapers),
+      putMany("edges", inferredEdges),
+    ]);
+  }
+
   return {
     schemaVersion: 1,
-    papers,
-    edges,
+    papers: normalizedPapers,
+    edges: [...edges, ...inferredEdges],
     topics,
     meta: Object.fromEntries(meta.map((entry) => [entry.key, entry.value])),
   };
 }
 
-export function putPapers(papers) {
-  return putMany("papers", papers);
+export async function putPapers(papers) {
+  if (!papers?.length) return;
+  const existingPapers = await getAll("papers");
+  const prepared = preparePaperWrites(existingPapers, papers);
+  const prospectiveById = new Map(existingPapers.map((paper) => [paper.id, paper]));
+  for (const paper of prepared) prospectiveById.set(paper.id, paper);
+  const inferredEdges = inferResolvedReferenceCitationEdges(Array.from(prospectiveById.values()));
+
+  const db = await openDatabase();
+  const transaction = db.transaction(["papers", "edges"], "readwrite");
+  const paperStore = transaction.objectStore("papers");
+  const edgeStore = transaction.objectStore("edges");
+  for (const paper of prepared) paperStore.put(structuredClone(paper));
+  putMissingEdges(edgeStore, inferredEdges);
+  await transactionDone(transaction);
 }
 
 export function putEdges(edges) {
@@ -140,16 +192,21 @@ export async function clearLibrary() {
 }
 
 export async function replaceLibrary(library) {
+  const papers = (library.papers || []).map(normalizePaperReferenceIdentities);
+  const explicitEdges = library.edges || [];
+  const inferredEdges = inferResolvedReferenceCitationEdges(papers, explicitEdges);
+  const edges = [...explicitEdges, ...inferredEdges];
+
   const db = await openDatabase();
   const transaction = db.transaction(STORES, "readwrite");
 
   for (const storeName of STORES) transaction.objectStore(storeName).clear();
 
   const paperStore = transaction.objectStore("papers");
-  for (const paper of library.papers || []) paperStore.put(structuredClone(paper));
+  for (const paper of papers) paperStore.put(structuredClone(paper));
 
   const edgeStore = transaction.objectStore("edges");
-  for (const edge of library.edges || []) edgeStore.put(structuredClone(edge));
+  for (const edge of edges) edgeStore.put(structuredClone(edge));
 
   const topicStore = transaction.objectStore("topics");
   for (const topic of library.topics || []) topicStore.put(structuredClone(topic));
