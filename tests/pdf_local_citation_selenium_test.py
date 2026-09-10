@@ -148,6 +148,33 @@ def read_all_indexeddb(driver, store_name):
     return result.get("values", [])
 
 
+def selected_tab(driver):
+    return driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs button[aria-selected='true']")
+
+
+def wait_for_local_complete(driver):
+    WebDriverWait(driver, WAIT_SECONDS).until(
+        lambda d: selected_tab(d).get_attribute("data-local-status") == "complete"
+    )
+    WebDriverWait(driver, WAIT_SECONDS).until(
+        lambda d: len(d.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")) == 3
+    )
+
+
+def assert_canonical_resolutions(driver):
+    rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
+    assert_true(len(rows) == 3, f"Expected 3 segmented references, got {len(rows)}")
+    assert_true(rows[0].get_attribute("data-resolution-status") == "matched", "DOI reference should retain its canonical resolution")
+    assert_true(rows[1].get_attribute("data-resolution-status") == "matched", "arXiv reference should retain its canonical resolution")
+    assert_true("Crossref" in rows[0].text, "DOI reference should show Crossref as canonical provider")
+    assert_true("99% match" in rows[0].text, "DOI reference should show exact-match confidence")
+    assert_true("Canonical Crossref DOI Paper" in rows[0].text, "DOI reference should show canonical title")
+    assert_true("Semantic Scholar" in rows[1].text, "arXiv reference should show Semantic Scholar as canonical provider")
+    assert_true("98% match" in rows[1].text, "Version-normalized arXiv reference should show match confidence")
+    assert_true("Canonical Semantic Scholar arXiv Paper" in rows[1].text, "arXiv reference should show canonical title")
+    return rows
+
+
 def main():
     ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
     driver = create_driver()
@@ -162,27 +189,26 @@ def main():
         assert_no_page_horizontal_overflow(driver)
         install_resolution_fetch_mock(driver)
 
-        wait_click(driver, "#library-menu > summary")
-        wait_displayed(driver, "#library-menu .library-panel")
         fixture = create_valid_citation_pdf()
+        second_fixture = Path(fixture).with_name("rust-citation-fixture-second.pdf")
+        second_fixture.write_bytes(Path(fixture).read_bytes())
         file_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
-        file_input.send_keys(str(fixture))
+        file_input.send_keys(f"{fixture}\n{second_fixture}")
         dialog = wait.until(
             lambda d: d.find_element(By.ID, "pdf-ai-dialog")
             if d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is not None
             else False
         )
-        assert_true("Extract citations locally" in dialog.text, "Local extraction action should be visible")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs button")) == 2, "Reviewed import should create one tab per selected PDF")
+        assert_true(not driver.find_elements(By.CSS_SELECTOR, ".pdf-ai-provider-settings"), "AI settings should not be embedded in Reviewed import")
+        assert_true("Run local again" in dialog.text, "Per-paper local re-extraction action should be visible")
 
-        wait_click(driver, "#pdf-local-extract")
+        wait_for_local_complete(driver)
         review = wait_displayed(driver, "#pdf-ai-review")
-        wait.until(lambda d: "Local extraction complete" in d.find_element(By.ID, "pdf-ai-analysis-status").text)
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "Rust PDF citation review widget")
-        source_kicker = driver.find_element(By.ID, "pdf-review-source-kicker").get_attribute("textContent")
-        assert_true(source_kicker == "Local Rust/WASM proposal", "Review should identify the local Rust/WASM source")
+        assert_true("Review before saving" in review.text, "Reviewed import should expose the merged review form")
 
         rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
-        assert_true(len(rows) == 3, f"Expected 3 segmented references, got {len(rows)}")
         assert_true("10.1234/test.55" in rows[0].text.lower(), "First reference should expose normalized DOI")
         assert_true("2401.01234v2" in rows[1].text.lower(), "Second reference should expose arXiv ID")
         assert_true("2020" in rows[2].text, "Third reference should expose publication year")
@@ -197,15 +223,23 @@ def main():
             row.get_attribute("data-resolution-status") == "matched"
             for row in d.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")[:2]
         ))
-        rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
-        assert_true("Crossref" in rows[0].text, "DOI reference should show Crossref as canonical provider")
-        assert_true("99% match" in rows[0].text, "DOI reference should show exact-match confidence")
-        assert_true("Canonical Crossref DOI Paper" in rows[0].text, "DOI reference should show canonical title")
-        assert_true("Semantic Scholar" in rows[1].text, "arXiv reference should show Semantic Scholar as canonical provider")
-        assert_true("98% match" in rows[1].text, "Version-normalized arXiv reference should show match confidence")
-        assert_true("Canonical Semantic Scholar arXiv Paper" in rows[1].text, "arXiv reference should show canonical title")
+        rows = assert_canonical_resolutions(driver)
         assert_true(rows[2].get_attribute("data-resolution-status") == "no-identifier", "Reference without persistent identifier should not be fabricated into a match")
         assert_true("2 matched" in driver.find_element(By.ID, "pdf-reference-resolution-status").text, "Resolution summary should report canonical matches")
+
+        driver.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs button")[1].click()
+        wait.until(lambda d: d.find_element(By.ID, "pdf-ai-file-name").text == "rust-citation-fixture-second.pdf")
+        wait_for_local_complete(driver)
+        driver.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs button")[0].click()
+        wait.until(lambda d: d.find_element(By.ID, "pdf-ai-file-name").text == "rust-citation-fixture.pdf")
+        wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")) == 3)
+        assert_canonical_resolutions(driver)
+
+        old_row = driver.find_element(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
+        wait_click(driver, "#pdf-local-extract")
+        wait.until(EC.staleness_of(old_row))
+        wait_for_local_complete(driver)
+        rows = assert_canonical_resolutions(driver)
 
         rejected = rows[2].find_element(By.CSS_SELECTOR, "[data-reference-use]")
         center_element(driver, rejected)
@@ -224,7 +258,13 @@ def main():
         save_button = wait_displayed(driver, "#pdf-ai-save")
         center_element(driver, save_button)
         save_button.click()
-        wait.until(EC.staleness_of(save_button))
+        wait.until(lambda d: d.find_element(By.ID, "pdf-ai-file-name").text == "rust-citation-fixture-second.pdf")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs button")) == 1, "Saving should remove only the saved paper tab")
+
+        saved_before_close = read_all_indexeddb(driver, "papers")
+        assert_true(len(saved_before_close) == 1, "Saving a tab should persist it immediately without waiting for the remaining tabs")
+        wait_click(driver, "#pdf-ai-skip-file")
+        wait.until(EC.staleness_of(dialog))
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
         wait.until(
             lambda d: "Opening local library"
@@ -235,7 +275,8 @@ def main():
         assert_true(len(papers) == 1, f"Expected one saved local PDF paper, got {len(papers)}")
         paper = papers[0]
         assert_true(paper["title"] == SAVED_TITLE, "Edited title should persist after local extraction")
-        assert_true(paper["source"] == "local-pdf", "Local extraction should persist local-pdf provenance")
+        assert_true(paper["source"] == "reviewed-pdf", "Tabbed reviewed import should persist the shared reviewed-pdf source marker")
+        assert_true("local-pdf" in paper.get("metadataSources", []), "Saved paper should record local extraction among its metadata sources")
         assert_true(paper["pdfExtraction"]["provider"] == "rust-wasm", "Saved extraction should record rust-wasm provider")
         assert_true(paper["pdfExtraction"]["engine"].startswith("paper-map-rust-pdf/"), "Saved extraction should retain Rust engine version")
         assert_true(paper["pdfExtraction"]["layout"]["pageCount"] == 2, "Layout summary should retain page count")
@@ -261,7 +302,7 @@ def main():
         assert_true(SAVED_TITLE in items[0].text, "Saved local PDF title should appear in Bibliography")
         save_screenshot(driver, "11-rust-citation-saved.png")
         assert_no_page_horizontal_overflow(driver)
-        print("Rust/WASM PDF extraction, Crossref/Semantic Scholar resolution, confidence review, and persistence checks passed.")
+        print("Rust/WASM extraction, per-tab reference resolution, rerender preservation, and persistence checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "rust-citation-failure.png")
