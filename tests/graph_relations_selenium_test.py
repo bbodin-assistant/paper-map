@@ -3,6 +3,7 @@ import time
 
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
 from mobile_selenium_test import (
@@ -171,10 +172,12 @@ def main():
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
         wait.until(lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
 
-        wait_click(driver, "#library-menu > summary")
-        wait_displayed(driver, "#library-menu .library-panel")
+        wait_click(driver, "#ai-config-button")
+        wait_displayed(driver, "#ai-config-panel")
         wait_click(driver, "#load-demo")
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
+        wait_click(driver, "#ai-config-close")
+        wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
 
         # Filter and Library menus dismiss when interaction moves elsewhere.
         wait_click(driver, "#filter-menu > summary")
