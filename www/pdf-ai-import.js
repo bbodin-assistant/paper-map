@@ -277,11 +277,15 @@ function referenceRow(reference = {}) {
 }
 
 function preserveReferenceSelections(previous = [], incoming = []) {
-  const accepted = new Map(previous.map((reference) => [referenceKey(reference), reference.use !== false]));
-  return incoming.map((reference) => ({
-    ...structuredClone(reference),
-    use: accepted.has(referenceKey(reference)) ? accepted.get(referenceKey(reference)) : true,
-  }));
+  const previousByKey = new Map(previous.map((reference) => [referenceKey(reference), reference]));
+  return incoming.map((reference) => {
+    const prior = previousByKey.get(referenceKey(reference));
+    return {
+      ...structuredClone(reference),
+      use: prior ? prior.use !== false : true,
+      ...(prior?.resolution ? { resolution: structuredClone(prior.resolution) } : {}),
+    };
+  });
 }
 
 function emptyDraft(file) {
@@ -535,6 +539,7 @@ function init() {
     item.draft = applyMergedMetadataToDraft(item.draft, merged, item.dirtyFields);
     item.draft.references = preserveReferenceSelections(previousReferences, merged.references || []);
     if (item.id === activeId) renderActive();
+    else renderTabs();
   }
 
   async function runLocal(item) {
