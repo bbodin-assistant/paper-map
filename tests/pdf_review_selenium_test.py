@@ -294,7 +294,9 @@ def main():
         )
         assert_no_page_horizontal_overflow(driver)
 
-        assert_true(driver.find_element(By.ID, "add-pdf-button").text == "Add PDFs", "A direct Add PDFs toolbar button should exist")
+        add_button = driver.find_element(By.ID, "add-pdf-button")
+        assert_true(add_button.text == "Add", "The unified Add toolbar button should remain available to the PDF review flow")
+        assert_true(".pdf" in (driver.find_element(By.ID, "pdf-ai-file").get_attribute("accept") or ""), "Unified Add picker should still accept PDF files")
         configure_compatible_ai(driver)
         install_compatible_fetch_mock(driver)
 
