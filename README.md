@@ -111,6 +111,8 @@ make test-ui-mobile TEST_URL=http://127.0.0.1:8080/www/
 
 CI compiles the Rust crate for `wasm32-unknown-unknown`, builds `www/pkg/`, runs the browser tests against that generated package, and uploads screenshots/OCR output as `mobile-ui-artifacts`.
 
+With the eight LET PDFs in `test_papers/`, run `make test-papers-citation-links TEST_URL=http://127.0.0.1:8080/www/` to check actual local import, saving citing papers before their targets, 13 independently checked citation arrows, reload persistence, and reconstruction of missing edges in an existing library. The test blocks external fetches and uses the real WASM extractor.
+
 To measure local Rust/WASM import quality against every PDF in the local `test_papers/` folder, start the static server and run:
 
 ```bash
@@ -194,7 +196,7 @@ The systematic PDF path begins entirely in the browser:
 
 The Rust/WASM extraction itself never makes network requests. Resolution happens only after the user explicitly requests it. Exact Crossref DOI matches receive 99% confidence; exact Semantic Scholar DOI fallbacks receive 97%; arXiv matches receive 99% when the provider preserves the version or 98% when a versioned extracted identifier maps to the same canonical version-free arXiv record. These values describe identifier fidelity, not semantic similarity.
 
-Accepted references are stored on the paper as reviewed extraction provenance together with any canonical resolution object. Identifier-less or unresolved entries remain raw reviewed references; Paper Map does not invent canonical papers. Citation graph edges are still created only after a later explicit canonical-paper import/edge step.
+Accepted references are stored on the paper as reviewed extraction provenance together with any canonical resolution object. Saving or reopening the library connects references to unambiguous existing papers using resolved identities, exact local identifiers, or a complete distinctive title with the first author's surname and an agreeing publication year when known. Local matching tolerates PDF spacing and hyphenation and requires no network access. Import order does not matter. Unmatched or ambiguous references remain reviewed provenance; Paper Map does not invent canonical papers.
 
 Scanned/image-only PDFs are reported as requiring OCR rather than being guessed from images in this first systematic extractor.
 

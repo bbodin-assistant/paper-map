@@ -17,7 +17,7 @@ DOWNLOADABLE_TEST_PAPERS := \
 	$(TEST_PAPERS_DIR)/ppdp21.pdf \
 	$(TEST_PAPERS_DIR)/RizziAug22_AComprehensiveTimingModelForAccurateFrequencyTuningInDataflowCircuits_FPL22.pdf
 
-.PHONY: install-wasm build-wasm run test test-rust test-ui-mobile test-papers-local-import download-test-papers clean
+.PHONY: install-wasm build-wasm run test test-rust test-ui-mobile test-papers-local-import test-papers-citation-links download-test-papers clean
 
 install-wasm:
 	@command -v wasm-pack >/dev/null || { echo "Install wasm-pack first: https://rustwasm.github.io/wasm-pack/"; exit 1; }
@@ -63,6 +63,7 @@ test:
 	node --test tests/*.test.mjs
 	python3 -m unittest discover -s tests -p 'local_import_scoring_test.py'
 	python3 -m py_compile tests/mobile_selenium_test.py tests/ai_model_discovery_selenium_test.py tests/pdf_review_selenium_test.py tests/pdf_batch_import_selenium_test.py tests/pdf_local_citation_selenium_test.py tests/test_papers_local_import_selenium_test.py tests/reference_candidate_selenium_test.py tests/source_filter_log_selenium_test.py tests/real_pdf_smoke_selenium.py tests/graph_relations_selenium_test.py
+	python3 -m py_compile tests/test_papers_citation_links_selenium_test.py
 	cargo test
 
 test-ui-mobile: build-wasm
@@ -77,6 +78,9 @@ test-ui-mobile: build-wasm
 
 test-papers-local-import: build-wasm
 	TEST_URL="$(TEST_URL)" python3 tests/test_papers_local_import_selenium_test.py
+
+test-papers-citation-links: build-wasm
+	TEST_URL="$(TEST_URL)" TEST_PAPERS_DIR="$(TEST_PAPERS_DIR)" python3 tests/test_papers_citation_links_selenium_test.py
 
 # Each file target is skipped automatically when the expected PDF is present.
 download-test-papers: $(DOWNLOADABLE_TEST_PAPERS)

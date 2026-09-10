@@ -185,7 +185,7 @@ function createUi() {
               <button type="button" id="pdf-reference-reject-all" class="quiet-button">Reject all</button>
             </div>
           </div>
-          <p class="muted pdf-reference-note">Accepted entries are stored as reviewed extraction provenance. Citation graph edges are created only after later canonical resolution identifies a target paper.</p>
+          <p class="muted pdf-reference-note">Accepted references are saved with the paper and linked to unambiguous matches in your library. Importing a cited paper later also connects it automatically.</p>
           <div id="pdf-reference-list" class="pdf-reference-list"></div>
         </section>
 

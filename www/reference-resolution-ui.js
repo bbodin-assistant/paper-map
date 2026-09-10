@@ -273,7 +273,7 @@ function install(dialog) {
 
   const note = $(".pdf-reference-note", dialog);
   if (note) {
-    note.textContent = "Resolve DOI/arXiv identifiers exactly, or search an individual text-only reference conservatively by title/author/year. Ambiguous candidates require an explicit choice before persistence. Canonical graph edges are still created only after an explicit later import step.";
+    note.textContent = "Resolve DOI/arXiv identifiers exactly, or search an individual text-only reference conservatively by title/author/year. Ambiguous candidates require an explicit choice before persistence. Saving accepted references connects unambiguous matches already in your library; other references stay available for later resolution.";
   }
 
   const list = $("#pdf-reference-list", dialog);
