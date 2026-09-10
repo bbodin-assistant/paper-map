@@ -205,7 +205,7 @@ def main():
 
         wait_for_local_complete(driver)
         review = wait_displayed(driver, "#pdf-ai-review")
-        assert_widget_text_visible(driver, "#pdf-ai-dialog", "Rust PDF citation review widget")
+        assert_widget_text_visible(driver, "#pdf-ai-review", "Rust PDF citation review widget")
         assert_true("Review before saving" in review.text, "Reviewed import should expose the merged review form")
 
         rows = driver.find_elements(By.CSS_SELECTOR, "#pdf-reference-list .pdf-reference-row")
