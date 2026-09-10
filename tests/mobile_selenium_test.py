@@ -311,7 +311,7 @@ def main():
         assert_true("Import .json / .bib" not in publication_panel.text, "Portable import button should not remain in Add publication")
         assert_true(not publication_panel.find_elements(By.CSS_SELECTOR, ".library-actions"), "Library management actions should move out of Add publication")
         ocr_shot = save_screenshot(driver, "03-add-publication-ocr.png", publication_panel)
-        run_ocr(ocr_shot, ["Add"])
+        run_ocr(ocr_shot, ["DOI, arXiv ID, provider ID, or title"])
         close_details_if_open(driver, "#library-menu")
 
         # Library management actions live in Config; no standalone JSON/Bib import button remains.
