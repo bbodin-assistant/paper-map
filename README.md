@@ -111,6 +111,22 @@ make test-ui-mobile TEST_URL=http://127.0.0.1:8080/www/
 
 CI compiles the Rust crate for `wasm32-unknown-unknown`, builds `www/pkg/`, runs the browser tests against that generated package, and uploads screenshots/OCR output as `mobile-ui-artifacts`.
 
+To measure local Rust/WASM import quality against every PDF in the local `test_papers/` folder, start the static server and run:
+
+```bash
+make test-papers-local-import TEST_URL=http://127.0.0.1:8080/www/
+```
+
+The Selenium test selects every PDF through **Add PDFs**, waits for automatic local extraction, and writes a versioned per-file JSON scorecard plus screenshot to `artifacts/mobile-ui/`. Rubric v2 accepts explicit title alternatives and scores the complete ordered author list, publication metadata, and individual reference text against independent expectations in `test_papers/expected_local_import.json`. Missing, extra, merged and truncated references lose credit. Set `TEST_PAPERS_FILES=Becker2017.pdf,Martinez2020.pdf` to score a subset, or `TEST_PAPERS_MIN_SCORE=80` to enforce a quality gate. Missing expectations and changed PDFs fail validation. See [the rubric and fixture guide](tests/README-local-import.md) for weights, matching tolerances and fixture maintenance; v2 scores are not comparable to the earlier presence-based score.
+
+To restore missing PDFs from their public or publisher PDF endpoints, run:
+
+```bash
+make download-test-papers
+```
+
+The twelve files with verified download sources each have their own Make target, so existing PDFs are left untouched. Downloads are checked as PDFs, and the four newer open-access rules also require an exact SHA-256 match with the scorecard fixture. This prevents publisher login pages, changed editions, or other content from silently replacing a paper. Some publisher endpoints may require institutional access.
+
 ## Local data
 
 The live library is stored in IndexedDB under `paper-map-v1`. Browser data can be downloaded as a JSON backup and restored later. Clearing browser site data removes the local library, so regular exports are recommended for important collections.
