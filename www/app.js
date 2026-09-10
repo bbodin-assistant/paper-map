@@ -32,7 +32,7 @@ import {
   fetchCitations,
   fetchReferences,
   resolvePaper,
-} from "./semantic-scholar.js";
+} from "./paper-provider.js";
 import {
   createResearchRelationEdge,
   isCitationEdge,
@@ -178,11 +178,12 @@ function topicName(topicId) {
 function providerTopics(paper) {
   const topics = [];
   const ids = [];
+  const providerSource = paper.providerPrimary || paper.source || "provider";
   for (const name of paper.topicNames || []) {
     const id = `topic:provider:${slug(name)}`;
     if (!id.endsWith(":")) {
       ids.push(id);
-      topics.push({ id, name, source: "semantic-scholar" });
+      topics.push({ id, name, source: providerSource });
     }
   }
   const normalized = { ...paper, topics: Array.from(new Set([...(paper.topics || []), ...ids])) };
@@ -205,6 +206,13 @@ function libraryEntryFor(paper, context = {}) {
   };
 }
 
+function mergedMetadataSources(existing, incoming) {
+  return Array.from(new Set([
+    ...(existing?.metadataSources || [existing?.providerPrimary || existing?.source].filter(Boolean)),
+    ...(incoming?.metadataSources || [incoming?.providerPrimary || incoming?.source].filter(Boolean)),
+  ]));
+}
+
 async function mergeIntoLibrary(incomingPapers = [], incomingEdges = [], incomingTopics = [], context = {}) {
   const existingPapers = state.library.papers;
   const byIdentity = new Map(existingPapers.map((paper) => [paperIdentityKey(paper), paper]));
@@ -225,7 +233,13 @@ async function mergeIntoLibrary(incomingPapers = [], incomingEdges = [], incomin
     const existing = byIdentity.get(identity) || byTitleYear.get(fallback);
 
     if (existing) {
-      const merged = mergePaperRecords(existing, paper);
+      const merged = {
+        ...mergePaperRecords(existing, paper),
+        id: existing.id,
+        source: existing.source || paper.source,
+        libraryEntry: existing.libraryEntry || paper.libraryEntry,
+        metadataSources: mergedMetadataSources(existing, paper),
+      };
       idMap.set(rawPaper.id, existing.id);
       idMap.set(paper.id, existing.id);
       byIdentity.set(paperIdentityKey(merged), merged);
@@ -565,6 +579,8 @@ function renderProvenance(paper) {
     ["Expanded from", entry.parentPaperId ? state.library.papers.find((item) => item.id === entry.parentPaperId)?.title || entry.parentPaperId : ""],
     ["PDF extraction", paper.pdfExtraction?.provider ? `${paper.pdfExtraction.provider}${paper.pdfExtraction.engine ? ` · ${paper.pdfExtraction.engine}` : ""}` : ""],
     ["AI extraction", paper.aiExtraction?.provider ? `${paper.aiExtraction.provider}${paper.aiExtraction.model ? ` · ${paper.aiExtraction.model}` : ""}` : ""],
+    ["Online extraction", paper.onlineExtraction?.provider ? `${paper.onlineExtraction.provider}${paper.onlineExtraction.metadataSources?.length > 1 ? ` · merged ${paper.onlineExtraction.metadataSources.join(", ")}` : ""}` : ""],
+    ["Metadata sources", paper.metadataSources?.length ? paper.metadataSources.join(", ") : ""],
     ["Last enriched", formatTimestamp(paper.enrichedAt)],
   ].filter(([, value]) => Boolean(value));
 
@@ -654,11 +670,12 @@ async function saveSelectedPaperPatch(patch) {
 async function ensureExpandablePaper() {
   let paper = currentPaper();
   if (!paper) throw new Error("Select a paper first.");
-  if (paper.doi || paper.semanticScholarId || paper.arxivId) return paper;
+  if (paper.doi || paper.semanticScholarId || paper.openAlexId || paper.arxivId) return paper;
 
   setStatus("Resolving this paper before citation expansion…", "loading");
   const enriched = await enrichPaper(paper);
-  const result = await mergeIntoLibrary([enriched], [], [], { method: "semantic-scholar-enrichment" });
+  const provider = enriched.providerPrimary || enriched.source || "paper-provider";
+  const result = await mergeIntoLibrary([enriched], [], [], { method: `${provider}-enrichment` });
   const canonicalId = result.idMap.get(enriched.id) || paper.id;
   state.selectedPaperId = canonicalId;
   paper = state.library.papers.find((item) => item.id === canonicalId) || paper;
@@ -682,19 +699,20 @@ async function expand(direction) {
     const result = direction === "references"
       ? await fetchReferences(paper, savedOffset, EXPANSION_SIZE)
       : await fetchCitations(paper, savedOffset, EXPANSION_SIZE);
+    const provider = result.provider || "paper-provider";
 
     const relationshipEdges = result.papers.map((related) => direction === "references"
-      ? { source: paper.id, target: related.id, kind: "citation", provenance: "semantic-scholar" }
-      : { source: related.id, target: paper.id, kind: "citation", provenance: "semantic-scholar" });
+      ? { source: paper.id, target: related.id, kind: "citation", provenance: provider }
+      : { source: related.id, target: paper.id, kind: "citation", provenance: provider });
     const merged = await mergeIntoLibrary(result.papers, relationshipEdges, [], {
-      method: "semantic-scholar-expansion",
+      method: `${provider}-expansion`,
       detail: direction,
       parentPaperId: paper.id,
     });
     state.expansionOffsets.set(offsetKey, result.next ?? -1);
     state.selectedPaperId = paper.id;
     renderAll();
-    setStatus(`Added ${merged.addedCount} papers and ${merged.edgeCount} directed citation links from ${direction}.`, "ready");
+    setStatus(`Added ${merged.addedCount} papers and ${merged.edgeCount} directed citation links from ${direction} via ${sourceLabel(provider)}.`, "ready");
   } catch (error) {
     setStatus(error.message || String(error), "error");
   } finally {
@@ -800,13 +818,14 @@ els.addPaperForm.addEventListener("submit", async (event) => {
   try {
     setBusy(true, "Resolving paper…");
     const paper = await resolvePaper(query);
-    const merged = await mergeIntoLibrary([paper], [], [], { method: "semantic-scholar-resolve", detail: query });
+    const provider = paper.providerPrimary || paper.source || "paper-provider";
+    const merged = await mergeIntoLibrary([paper], [], [], { method: `${provider}-resolve`, detail: query });
     const canonicalId = merged.idMap.get(paper.id) || paper.id;
     state.selectedPaperId = canonicalId;
     els.addPaperQuery.value = "";
     document.querySelector("#library-menu").open = false;
     renderAll();
-    setStatus(merged.addedCount ? "Paper added to the local library." : "Existing paper enriched and merged.", "ready");
+    setStatus(merged.addedCount ? `Paper added via ${sourceLabel(provider)}.` : `Existing paper enriched via ${sourceLabel(provider)} and merged.`, "ready");
   } catch (error) {
     setStatus(error.message || String(error), "error");
   } finally {
@@ -1019,7 +1038,7 @@ async function openLibrary() {
   try {
     setStatus("Opening local library…", "loading");
     await refreshLibrary();
-    if (!state.library.papers.length) setStatus("Local library is empty. Load the demo, import BibTeX, or add a paper.", "ready");
+    if (!state.library.papers.length) setStatus("Local library is empty. Load the demo, import BibTeX, add PDFs, or add a paper.", "ready");
   } catch (error) {
     setStatus(`Could not open local library: ${error.message || error}`, "error");
   }
