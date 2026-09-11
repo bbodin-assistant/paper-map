@@ -1,3 +1,5 @@
+import "./timeline.js";
+
 function initTopicFocusLayout(root = document) {
   const toolbar = root.querySelector(".atlas-toolbar");
   const topicBar = root.querySelector("#active-topic-filter");
