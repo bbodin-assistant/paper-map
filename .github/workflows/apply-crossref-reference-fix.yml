@@ -1,0 +1,109 @@
+name: Apply Crossref reference preservation fix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/apply-crossref-reference-fix.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preserve provider bibliographies across online extraction
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          def replace_once(path, old, new):
+              p = Path(path)
+              text = p.read_text()
+              if old not in text:
+                  raise SystemExit(f"Expected text not found in {path}: {old[:140]!r}")
+              p.write_text(text.replace(old, new, 1))
+
+          # Crossref exposes a bibliography directly on works; normalize it into
+          # the same reference record shape used by local/AI/provider extraction.
+          replace_once(
+              'www/providers/crossref.js',
+              '''function plainAbstract(value) {\n  return clean(value)\n    .replace(/<[^>]+>/g, " ")\n    .replace(/&lt;/g, "<")\n    .replace(/&gt;/g, ">")\n    .replace(/&amp;/g, "&")\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, "'")\n    .replace(/\\s+/g, " ")\n    .trim();\n}\n\n''',
+              '''function plainAbstract(value) {\n  return clean(value)\n    .replace(/<[^>]+>/g, " ")\n    .replace(/&lt;/g, "<")\n    .replace(/&gt;/g, ">")\n    .replace(/&amp;/g, "&")\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, "'")\n    .replace(/\\s+/g, " ")\n    .trim();\n}\n\nexport function normalizeReference(reference = {}, index = 0) {\n  const doi = normalizeDoi(reference?.DOI || reference?.doi);\n  const title = clean(reference?.["article-title"] || reference?.["series-title"] || reference?.title);\n  const yearValue = Number(reference?.year);\n  const year = Number.isInteger(yearValue) && yearValue > 0 ? yearValue : null;\n  const authorText = clean(reference?.author);\n  const venue = clean(reference?.["journal-title"] || reference?.["series-title"]);\n  const rawText = clean(reference?.unstructured) || [\n    authorText,\n    year ? `(${year})` : "",\n    title,\n    venue,\n    doi ? `https://doi.org/${doi}` : "",\n  ].filter(Boolean).join(". ").replace(/\\.\\s*\\./g, ".");\n  if (!rawText && !doi && !title) return null;\n  return {\n    index: index + 1,\n    label: clean(reference?.key) || String(index + 1),\n    rawText,\n    title,\n    authors: authorText ? [authorText] : [],\n    year,\n    venue,\n    doi,\n    arxivId: "",\n    confidence: doi ? 0.98 : title ? 0.86 : 0.65,\n    source: providerId,\n    canonicalReference: { doi, title, year },\n  };\n}\n\n''',
+          )
+          replace_once(
+              'www/providers/crossref.js',
+              '''  const topicNames = Array.from(new Set((work?.subject || []).map(clean).filter(Boolean)));\n  return {\n''',
+              '''  const topicNames = Array.from(new Set((work?.subject || []).map(clean).filter(Boolean)));\n  const references = (work?.reference || []).map(normalizeReference).filter(Boolean);\n  return {\n''',
+          )
+          replace_once(
+              'www/providers/crossref.js',
+              '''    topicNames,\n    tags: [],\n''',
+              '''    topicNames,\n    references,\n    tags: [],\n''',
+          )
+
+          # Automatic multi-provider metadata merge must retain the bibliography
+          # supplied by Crossref even when another provider is primary.
+          replace_once(
+              'www/paper-provider.js',
+              'import { normalizeDoi, normalizedTitle } from "./import-export.js";\n',
+              'import { normalizeDoi, normalizedTitle } from "./import-export.js";\nimport { mergeReferenceRecords } from "./provider-references.js?v=0.4.5";\n',
+          )
+          replace_once(
+              'www/paper-provider.js',
+              '''      topicNames: Array.from(new Set([...(merged.topicNames || []), ...(paper.topicNames || [])].filter(Boolean))),\n      metadataSources: Array.from(new Set([\n''',
+              '''      topicNames: Array.from(new Set([...(merged.topicNames || []), ...(paper.topicNames || [])].filter(Boolean))),\n      references: mergeReferenceRecords(merged.references || [], paper.references || []),\n      metadataSources: Array.from(new Set([\n''',
+          )
+
+          # Reviewed PDF online extraction starts with provider-native references
+          # (notably Crossref) and augments them with citation-provider records.
+          replace_once(
+              'www/pdf-ai-import.js',
+              '} from "./paper-provider.js";\nimport { providerPapersToReferences } from "./provider-references.js?v=0.4.5";\n',
+              '} from "./paper-provider.js?v=0.4.5";\nimport { mergeReferenceRecords, providerPapersToReferences } from "./provider-references.js?v=0.4.5";\n',
+          )
+          replace_once(
+              'www/pdf-ai-import.js',
+              '''      const provider = metadata.providerPrimary || metadata.source || providerConfig.provider;\n      let providerReferences = [];\n      let referenceWarning = "";\n      try {\n        const referenceResult = await fetchOnlineReferences(metadata, 0, 100, { signal: controller.signal });\n        providerReferences = providerPapersToReferences(referenceResult.papers || [], referenceResult.provider || provider);\n      } catch (error) {\n        if (error?.name === "AbortError") throw error;\n        referenceWarning = error?.message || String(error);\n      }\n''',
+              '''      const provider = metadata.providerPrimary || metadata.source || providerConfig.provider;\n      let providerReferences = mergeReferenceRecords(metadata.references || []);\n      let referenceWarning = "";\n      if (provider !== "crossref") {\n        try {\n          const referenceResult = await fetchOnlineReferences(metadata, 0, 100, { signal: controller.signal });\n          providerReferences = mergeReferenceRecords(\n            providerReferences,\n            providerPapersToReferences(referenceResult.papers || [], referenceResult.provider || provider),\n          );\n        } catch (error) {\n          if (error?.name === "AbortError") throw error;\n          referenceWarning = error?.message || String(error);\n        }\n      }\n''',
+          )
+
+          # Paper-dialog online update preserves already-reviewed local PDF refs,
+          # adds provider-native refs, then augments with relation-provider refs.
+          replace_once(
+              'www/paper-online-update.js',
+              'import { fetchReferences, resolvePaper } from "./paper-provider.js";\nimport { providerPapersToReferences } from "./provider-references.js?v=0.4.5";\n',
+              'import { fetchReferences, resolvePaper } from "./paper-provider.js?v=0.4.5";\nimport { mergeReferenceRecords, providerPapersToReferences } from "./provider-references.js?v=0.4.5";\n',
+          )
+          replace_once(
+              'www/paper-online-update.js',
+              '''      const provider = online.providerPrimary || online.source || "online";\n      let providerReferences = [];\n      let referenceWarning = "";\n      try {\n        const result = await fetchReferences(online, 0, 100);\n        providerReferences = providerPapersToReferences(result.papers || [], result.provider || provider)\n          .map((reference) => ({ ...reference, reviewed: true }));\n      } catch (error) {\n        referenceWarning = error?.message || String(error);\n      }\n\n      const merged = mergePaperRecords(existing, online);\n''',
+              '''      const provider = online.providerPrimary || online.source || "online";\n      let providerReferences = mergeReferenceRecords(online.references || []);\n      let referenceWarning = "";\n      if (provider !== "crossref") {\n        try {\n          const result = await fetchReferences(online, 0, 100);\n          providerReferences = mergeReferenceRecords(\n            providerReferences,\n            providerPapersToReferences(result.papers || [], result.provider || provider),\n          );\n        } catch (error) {\n          referenceWarning = error?.message || String(error);\n        }\n      }\n      const updatedReferences = mergeReferenceRecords(\n        existing.extractedReferences || [],\n        providerReferences,\n      ).map((reference) => ({ ...reference, reviewed: true }));\n\n      const merged = mergePaperRecords(existing, online);\n''',
+          )
+          replace_once(
+              'www/paper-online-update.js',
+              '        extractedReferences: providerReferences,\n',
+              '        extractedReferences: updatedReferences,\n',
+          )
+          replace_once(
+              'www/paper-online-update.js',
+              '          referenceCount: providerReferences.length,\n',
+              '          referenceCount: providerReferences.length,\n          totalStoredReferenceRecords: updatedReferences.length,\n',
+          )
+
+          # Ensure the app also reloads the changed paper-provider dependency.
+          replace_once(
+              'www/app.js',
+              '} from "./paper-provider.js";\n',
+              '} from "./paper-provider.js?v=0.4.5";\n',
+          )
+          PY
+      - name: Commit provider-reference fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add www
+          git commit -m "Preserve online provider references"
+          git push
