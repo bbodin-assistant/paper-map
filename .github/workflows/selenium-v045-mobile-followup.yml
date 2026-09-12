@@ -1,0 +1,69 @@
+name: v0.4.5 mobile Selenium follow-up
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/selenium-v045-mobile-followup.yml
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  mobile-followup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ffb38032d573eff55b555772e99310a04f7677d4
+      - uses: actions/download-artifact@v4
+        with:
+          name: paper-map-wasm
+          path: www/pkg
+          run-id: 34699886645
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: tests/requirements-ui.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r tests/requirements-ui.txt
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+      - name: Patch obsolete test label only
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('tests/mobile_selenium_test.py')
+          text = p.read_text()
+          old = 'assert_true(summary.text == "Add publication", "Library toolbar action should be renamed Add publication")'
+          new = 'assert_true(summary.text == "Add paper", "Library toolbar action should be named Add paper")'
+          if old not in text:
+              raise SystemExit('obsolete assertion not found')
+          p.write_text(text.replace(old, new, 1))
+          PY
+      - name: Start app server
+        run: |
+          mkdir -p artifacts/mobile-followup
+          python3 -m http.server 8080 --directory . > artifacts/mobile-followup/server.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            curl --fail --silent http://127.0.0.1:8080/www/ >/dev/null && exit 0
+            sleep 1
+          done
+          exit 1
+      - name: Run complete mobile Selenium script
+        env:
+          TEST_URL: http://127.0.0.1:8080/www/
+          MOBILE_TEST_ARTIFACT_DIR: artifacts/mobile-followup
+        run: python3 tests/mobile_selenium_test.py
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: selenium-v045-mobile-followup
+          path: artifacts/mobile-followup
+          if-no-files-found: warn
