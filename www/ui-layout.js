@@ -1,4 +1,5 @@
-import "./timeline.js";
+import "./timeline.js?v=0.4.3";
+import "./timeline-selection.js?v=0.4.3";
 
 function installTimelineInteractionPolish(root = document) {
   if (!root?.querySelector || !root?.createElement) return false;
@@ -26,25 +27,7 @@ function installTimelineInteractionPolish(root = document) {
     root.head?.append(style);
   }
 
-  const map = root.querySelector("#paper-map");
-  if (!map || map.dataset.timelineDetailFallback === "true") return Boolean(map);
-  map.dataset.timelineDetailFallback = "true";
-
-  root.addEventListener("click", (event) => {
-    const paper = event.target.closest?.(".timeline-paper[data-paper-id]");
-    if (!paper?.dataset.paperId) return;
-
-    const paperId = paper.dataset.paperId;
-    requestAnimationFrame(() => {
-      const detail = root.querySelector("#paper-detail");
-      if (detail && !detail.hidden) return;
-      const button = Array.from(root.querySelectorAll("#paper-list .paper-list-item[data-paper-id]"))
-        .find((candidate) => candidate.dataset.paperId === paperId);
-      button?.click();
-    });
-  }, true);
-
-  return true;
+  return Boolean(root.querySelector("#paper-map"));
 }
 
 function initTopicFocusLayout(root = document) {
