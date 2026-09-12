@@ -1,5 +1,5 @@
-import "./timeline.js?v=0.4.3";
-import "./timeline-selection.js?v=0.4.3";
+import "./timeline.js?v=0.4.4";
+import "./timeline-selection.js?v=0.4.4";
 
 function installTimelineInteractionPolish(root = document) {
   if (!root?.querySelector || !root?.createElement) return false;
