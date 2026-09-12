@@ -282,7 +282,7 @@ def main():
         assert_widget_text_visible(driver, ".app-header", "mobile app header")
         assert_widget_text_visible(driver, ".atlas-toolbar", "mobile atlas toolbar")
         add_files = wait_displayed(driver, "#add-pdf-button")
-        assert_true(add_files.text == "Add", "Publication file import should be a direct Add toolbar action")
+        assert_true(add_files.text == "Add files", "Publication file import should be labeled Add files")
         file_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
         accepted = file_input.get_attribute("accept") or ""
         for suffix in (".pdf", ".json", ".bib"):
