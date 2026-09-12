@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import time
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -57,6 +59,20 @@ def exercise_timeline_click(driver, label):
     )
     assert_true(expected_title, f"Could not resolve the expected title for Timeline paper {paper_id} in {label}")
 
+    # Count every proxy click sent to the hidden bibliography, even if renderAll
+    # replaces the button node between two accidental selection attempts.
+    driver.execute_script(
+        """
+        const id = arguments[0];
+        window.__timelineSelectionClicks = 0;
+        document.addEventListener('click', (event) => {
+          const button = event.target?.closest?.('#paper-list .paper-list-item[data-paper-id]');
+          if (button?.dataset.paperId === id) window.__timelineSelectionClicks += 1;
+        }, true);
+        """,
+        paper_id,
+    )
+
     # Keep this as a real WebDriver click. The regression was caused by SVG
     # pointer capture retargeting the compatibility click away from the card.
     paper.click()
@@ -76,6 +92,11 @@ def exercise_timeline_click(driver, label):
             d.find_element(By.CSS_SELECTOR, f'.timeline-paper[data-paper-id="{paper_id}"]').get_attribute("class") or ""
         )
     )
+    wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, ".timeline-selection-freeze"))
+    time.sleep(0.12)
+    click_count = int(driver.execute_script("return window.__timelineSelectionClicks || 0"))
+    assert_true(click_count == 1, f"One Timeline click must select exactly once in {label}; got {click_count}")
+
     save_screenshot(driver, f"timeline-paper-detail-open-{label}.png")
 
 
