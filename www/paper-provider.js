@@ -1,4 +1,5 @@
 import { normalizeDoi, normalizedTitle } from "./import-export.js";
+import { mergeReferenceRecords } from "./provider-references.js?v=0.4.5";
 import { loadPaperProviderConfig, paperProviderLabel } from "./paper-provider-config.js";
 import * as semanticScholar from "./providers/semantic-scholar.js";
 import * as openAlex from "./providers/openalex.js";
@@ -84,6 +85,7 @@ export function mergeProviderPaperRecords(records = []) {
       keywords: Array.from(new Set([...(merged.keywords || []), ...(paper.keywords || [])].filter(Boolean))),
       topics: Array.from(new Set([...(merged.topics || []), ...(paper.topics || [])].filter(Boolean))),
       topicNames: Array.from(new Set([...(merged.topicNames || []), ...(paper.topicNames || [])].filter(Boolean))),
+      references: mergeReferenceRecords(merged.references || [], paper.references || []),
       metadataSources: Array.from(new Set([
         ...(merged.metadataSources || [merged.providerPrimary || merged.source].filter(Boolean)),
         ...(paper.metadataSources || [paper.providerPrimary || paper.source].filter(Boolean)),

@@ -18,8 +18,8 @@ import { extractPdfCitationsLocally } from "./pdf-local.js";
 import {
   fetchReferences as fetchOnlineReferences,
   resolvePaper as resolveOnlinePaper,
-} from "./paper-provider.js";
-import { providerPapersToReferences } from "./provider-references.js?v=0.4.5";
+} from "./paper-provider.js?v=0.4.5";
+import { mergeReferenceRecords, providerPapersToReferences } from "./provider-references.js?v=0.4.5";
 import { loadPaperProviderConfig, paperProviderLabel } from "./paper-provider-config.js";
 import {
   applyMergedMetadataToDraft,
@@ -691,14 +691,19 @@ function init() {
       const metadata = await resolveOnlinePaper(query, { signal: controller.signal });
       if (!items.includes(item) || token !== item.networkToken) return;
       const provider = metadata.providerPrimary || metadata.source || providerConfig.provider;
-      let providerReferences = [];
+      let providerReferences = mergeReferenceRecords(metadata.references || []);
       let referenceWarning = "";
-      try {
-        const referenceResult = await fetchOnlineReferences(metadata, 0, 100, { signal: controller.signal });
-        providerReferences = providerPapersToReferences(referenceResult.papers || [], referenceResult.provider || provider);
-      } catch (error) {
-        if (error?.name === "AbortError") throw error;
-        referenceWarning = error?.message || String(error);
+      if (provider !== "crossref") {
+        try {
+          const referenceResult = await fetchOnlineReferences(metadata, 0, 100, { signal: controller.signal });
+          providerReferences = mergeReferenceRecords(
+            providerReferences,
+            providerPapersToReferences(referenceResult.papers || [], referenceResult.provider || provider),
+          );
+        } catch (error) {
+          if (error?.name === "AbortError") throw error;
+          referenceWarning = error?.message || String(error);
+        }
       }
       const onlineMetadata = {
         ...metadata,

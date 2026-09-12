@@ -37,11 +37,43 @@ function plainAbstract(value) {
     .trim();
 }
 
+export function normalizeReference(reference = {}, index = 0) {
+  const doi = normalizeDoi(reference?.DOI || reference?.doi);
+  const title = clean(reference?.["article-title"] || reference?.["series-title"] || reference?.title);
+  const yearValue = Number(reference?.year);
+  const year = Number.isInteger(yearValue) && yearValue > 0 ? yearValue : null;
+  const authorText = clean(reference?.author);
+  const venue = clean(reference?.["journal-title"] || reference?.["series-title"]);
+  const rawText = clean(reference?.unstructured) || [
+    authorText,
+    year ? `(${year})` : "",
+    title,
+    venue,
+    doi ? `https://doi.org/${doi}` : "",
+  ].filter(Boolean).join(". ").replace(/\.\s*\./g, ".");
+  if (!rawText && !doi && !title) return null;
+  return {
+    index: index + 1,
+    label: clean(reference?.key) || String(index + 1),
+    rawText,
+    title,
+    authors: authorText ? [authorText] : [],
+    year,
+    venue,
+    doi,
+    arxivId: "",
+    confidence: doi ? 0.98 : title ? 0.86 : 0.65,
+    source: providerId,
+    canonicalReference: { doi, title, year },
+  };
+}
+
 export function normalizePaper(work) {
   const doi = normalizeDoi(work?.DOI);
   const title = clean(work?.title?.[0]);
   const year = firstDateYear(work);
   const topicNames = Array.from(new Set((work?.subject || []).map(clean).filter(Boolean)));
+  const references = (work?.reference || []).map(normalizeReference).filter(Boolean);
   return {
     id: doi ? `doi:${doi}` : `title:${normalizedTitle(title)}:${year || ""}`,
     semanticScholarId: "",
@@ -59,6 +91,7 @@ export function normalizePaper(work) {
     keywords: [],
     topics: [],
     topicNames,
+    references,
     tags: [],
     notes: "",
     status: "unread",

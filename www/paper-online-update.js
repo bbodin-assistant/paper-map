@@ -1,7 +1,7 @@
 import { loadLibrary, putPapers } from "./db.js";
 import { mergePaperRecords } from "./import-export.js";
-import { fetchReferences, resolvePaper } from "./paper-provider.js";
-import { providerPapersToReferences } from "./provider-references.js?v=0.4.5";
+import { fetchReferences, resolvePaper } from "./paper-provider.js?v=0.4.5";
+import { mergeReferenceRecords, providerPapersToReferences } from "./provider-references.js?v=0.4.5";
 
 function clean(value) {
   return String(value ?? "").trim();
@@ -102,15 +102,23 @@ export function initPaperOnlineUpdate(root = document) {
 
       const online = await resolvePaper(proposedTitle);
       const provider = online.providerPrimary || online.source || "online";
-      let providerReferences = [];
+      let providerReferences = mergeReferenceRecords(online.references || []);
       let referenceWarning = "";
-      try {
-        const result = await fetchReferences(online, 0, 100);
-        providerReferences = providerPapersToReferences(result.papers || [], result.provider || provider)
-          .map((reference) => ({ ...reference, reviewed: true }));
-      } catch (error) {
-        referenceWarning = error?.message || String(error);
+      if (provider !== "crossref") {
+        try {
+          const result = await fetchReferences(online, 0, 100);
+          providerReferences = mergeReferenceRecords(
+            providerReferences,
+            providerPapersToReferences(result.papers || [], result.provider || provider),
+          );
+        } catch (error) {
+          referenceWarning = error?.message || String(error);
+        }
       }
+      const updatedReferences = mergeReferenceRecords(
+        existing.extractedReferences || [],
+        providerReferences,
+      ).map((reference) => ({ ...reference, reviewed: true }));
 
       const merged = mergePaperRecords(existing, online);
       const updated = {
@@ -118,7 +126,7 @@ export function initPaperOnlineUpdate(root = document) {
         id: existing.id,
         source: existing.source || merged.source,
         libraryEntry: existing.libraryEntry,
-        extractedReferences: providerReferences,
+        extractedReferences: updatedReferences,
         metadataSources: uniqueStrings([
           ...(existing.metadataSources || []),
           ...(online.metadataSources || [provider]),
@@ -128,6 +136,7 @@ export function initPaperOnlineUpdate(root = document) {
           metadataSources: online.metadataSources || [provider],
           query: proposedTitle,
           referenceCount: providerReferences.length,
+          totalStoredReferenceRecords: updatedReferences.length,
           extractedAt: new Date().toISOString(),
         },
       };

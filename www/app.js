@@ -33,7 +33,7 @@ import {
   fetchCitations,
   fetchReferences,
   resolvePaper,
-} from "./paper-provider.js";
+} from "./paper-provider.js?v=0.4.5";
 import {
   createResearchRelationEdge,
   isCitationEdge,
