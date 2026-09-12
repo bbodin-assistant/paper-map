@@ -297,7 +297,7 @@ def main():
         assert_no_page_horizontal_overflow(driver)
 
         add_button = driver.find_element(By.ID, "add-pdf-button")
-        assert_true(add_button.text == "Add", "The unified Add toolbar button should remain available to the PDF review flow")
+        assert_true(add_button.text == "Add files", "The unified file-import toolbar button should be labeled Add files")
         assert_true(".pdf" in (driver.find_element(By.ID, "pdf-ai-file").get_attribute("accept") or ""), "Unified Add picker should still accept PDF files")
         configure_compatible_ai(driver)
         install_compatible_fetch_mock(driver)
@@ -312,6 +312,10 @@ def main():
         )
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "Reviewed PDF import widget")
         assert_true(not driver.find_elements(By.CSS_SELECTOR, ".pdf-ai-provider-settings"), "AI settings must not be embedded in reviewed import")
+        open_pdf = wait.until(EC.element_to_be_clickable((By.ID, "pdf-ai-open-file")))
+        driver.execute_script("window.__paperMapOpenedPdf = ''; window.open = (url) => { window.__paperMapOpenedPdf = String(url); return null; };")
+        open_pdf.click()
+        wait.until(lambda d: (d.execute_script("return window.__paperMapOpenedPdf || ''") or '').startswith('blob:'))
         assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]")) == 1, "Single PDF should create one review tab")
         wait.until(
             lambda d: d.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-local-status")
@@ -320,6 +324,10 @@ def main():
         assert_true(
             driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-local-status") == "complete",
             "Selected PDF should run local extraction automatically",
+        )
+        assert_true(
+            driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-review-status") == "success",
+            "A successfully processed PDF tab should be marked success for green styling",
         )
 
         wait_click(driver, "#pdf-ai-analyze")

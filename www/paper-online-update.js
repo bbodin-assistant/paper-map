@@ -1,7 +1,7 @@
 import { loadLibrary, putPapers } from "./db.js";
 import { mergePaperRecords } from "./import-export.js";
 import { fetchReferences, resolvePaper } from "./paper-provider.js";
-import { providerPapersToReferences } from "./provider-references.js";
+import { providerPapersToReferences } from "./provider-references.js?v=0.4.5";
 
 function clean(value) {
   return String(value ?? "").trim();

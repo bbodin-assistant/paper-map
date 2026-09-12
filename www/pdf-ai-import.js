@@ -115,7 +115,7 @@ function createUi() {
           <button type="button" id="pdf-ai-open-file" class="quiet-button">Open PDF ↗</button>
         </div>
 
-        <p class="pdf-ai-explainer">Every selected PDF is extracted locally with Rust/WebAssembly. On an individual tab you can additionally run <strong>AI extraction</strong> or <strong>Online extraction</strong> using the paper-information method selected in Config. Results are merged without overwriting fields you have edited manually. PDF bytes remain transient browser input and are not stored in IndexedDB.</p>
+        <p class="pdf-ai-explainer">Every selected PDF is extracted locally with Rust/WebAssembly. On an individual tab you can additionally run <strong>AI extraction</strong> or <strong>Online extraction</strong> using the paper-information method selected in Config. Results are merged without overwriting fields you have edited manually. When a reviewed PDF is saved, its original file is stored locally in this browser so it can be reopened from the paper details.</p>
 
         <div id="pdf-source-status" class="pdf-source-status" aria-live="polite"></div>
 
