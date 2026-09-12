@@ -247,12 +247,17 @@ async function refreshStoredPdfAction(root = document) {
   const library = await loadLibrary();
   const paper = library.papers.find((candidate) => candidate.id === paperId);
   activeAttachment = paper ? await attachmentForPaper(paper) : null;
-  section.hidden = !activeAttachment;
+  section.hidden = false;
   const button = section.querySelector("#open-stored-pdf");
-  if (button && activeAttachment) {
+  if (!button) return;
+  button.disabled = !activeAttachment;
+  if (activeAttachment) {
     const megabytes = activeAttachment.size ? ` · ${(activeAttachment.size / (1024 * 1024)).toFixed(1)} MB` : "";
     button.textContent = `Open stored PDF${megabytes} ↗`;
     button.title = activeAttachment.name || "Stored PDF";
+  } else {
+    button.textContent = "PDF not stored";
+    button.title = "No PDF file is stored locally for this paper.";
   }
 }
 

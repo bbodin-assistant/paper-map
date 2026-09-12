@@ -1,4 +1,5 @@
 import { normalizeDoi } from "./import-export.js";
+import { mergeReferenceRecords } from "./provider-references.js?v=0.4.5";
 
 const BIBLIOGRAPHIC_FIELDS = Object.freeze([
   "title",
@@ -127,7 +128,7 @@ export function mergeReviewMetadataSources(rawSources = {}) {
   merged.citationCount = validCount(merged.citationCount);
   merged.keywords = uniqueStrings(priority.flatMap((record) => record.keywords || []));
   merged.topics = mergedTopics(sources);
-  merged.references = sources.local?.references || [];
+  merged.references = mergeReferenceRecords(sources.online?.references || [], sources.ai?.references || [], sources.local?.references || []);
   merged.warnings = uniqueStrings([
     ...(sources.local?.warnings || []),
     ...(sources.ai?.warnings || []),

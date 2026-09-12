@@ -42,13 +42,15 @@ function configureAddPublicationMenu(root) {
   if (!menu) return false;
 
   const summary = menu.querySelector("summary");
-  if (summary) summary.textContent = "Add publication";
+  if (summary) summary.textContent = "Add paper";
 
   const panel = menu.querySelector(".library-panel");
   panel?.querySelector(".drawer-heading")?.remove();
   const form = panel?.querySelector("#add-paper-form");
   const query = form?.querySelector("#add-paper-query");
+  const submit = form?.querySelector('button[type="submit"]');
   if (query) query.setAttribute("aria-label", "Publication DOI, arXiv ID, provider ID, or title");
+  if (submit) submit.textContent = "Find & add";
   form?.querySelector('label[for="add-paper-query"]')?.remove();
   form?.querySelector("small")?.remove();
 
@@ -99,7 +101,7 @@ function configureUnifiedFilePicker(root) {
   const input = root.querySelector("#pdf-ai-file");
   if (!button || !input || input.dataset.publicationPicker === "true") return Boolean(button && input);
 
-  button.textContent = "Add";
+  button.textContent = "Add files";
   button.setAttribute("aria-label", "Add publication files");
   input.accept = ACCEPTED_PUBLICATION_FILES;
   input.dataset.publicationPicker = "true";

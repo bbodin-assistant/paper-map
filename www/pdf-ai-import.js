@@ -15,13 +15,17 @@ import {
 } from "./ai-config.js";
 import { aiConfigSnapshot } from "./ai-config-ui.js";
 import { extractPdfCitationsLocally } from "./pdf-local.js";
-import { resolvePaper as resolveOnlinePaper } from "./paper-provider.js";
+import {
+  fetchReferences as fetchOnlineReferences,
+  resolvePaper as resolveOnlinePaper,
+} from "./paper-provider.js";
+import { providerPapersToReferences } from "./provider-references.js?v=0.4.5";
 import { loadPaperProviderConfig, paperProviderLabel } from "./paper-provider-config.js";
 import {
   applyMergedMetadataToDraft,
   mergeReviewMetadataSources,
   reviewedPaperIdentity,
-} from "./pdf-review-merge.js";
+} from "./pdf-review-merge.js?v=0.4.5";
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const LOCAL_EXTRACTION_CONCURRENCY = 2;
@@ -74,7 +78,7 @@ function createUi() {
   const button = document.createElement("button");
   button.type = "button";
   button.id = "add-pdf-button";
-  button.textContent = "Add PDFs";
+  button.textContent = "Add files";
   const reset = $("#reset-view", actions);
   if (reset) actions.insertBefore(button, reset);
   else actions.append(button);
@@ -104,8 +108,11 @@ function createUi() {
 
       <section class="pdf-ai-step" id="pdf-ai-analysis-step">
         <div class="pdf-ai-file-card">
-          <strong id="pdf-ai-file-name">No PDF selected</strong>
-          <span><span id="pdf-ai-queue-progress" aria-live="polite"></span><span id="pdf-ai-file-separator"> · </span><span id="pdf-ai-file-size"></span></span>
+          <div class="pdf-ai-file-meta">
+            <strong id="pdf-ai-file-name">No PDF selected</strong>
+            <span><span id="pdf-ai-queue-progress" aria-live="polite"></span><span id="pdf-ai-file-separator"> · </span><span id="pdf-ai-file-size"></span></span>
+          </div>
+          <button type="button" id="pdf-ai-open-file" class="quiet-button">Open PDF ↗</button>
         </div>
 
         <p class="pdf-ai-explainer">Every selected PDF is extracted locally with Rust/WebAssembly. On an individual tab you can additionally run <strong>AI extraction</strong> or <strong>Online extraction</strong> using the paper-information method selected in Config. Results are merged without overwriting fields you have edited manually. PDF bytes remain transient browser input and are not stored in IndexedDB.</p>
@@ -364,6 +371,7 @@ function init() {
   const skipButton = $("#pdf-ai-skip-file", ui.dialog);
   const cancelButton = $("#pdf-ai-cancel-analysis", ui.dialog);
   const saveButton = $("#pdf-ai-save", ui.dialog);
+  const openFileButton = $("#pdf-ai-open-file", ui.dialog);
 
   const fieldMap = new Map([
     ["#pdf-review-title", "title"],
@@ -438,6 +446,13 @@ function init() {
     `;
   }
 
+  function tabOutcome(item) {
+    const statuses = Object.values(item.status || {});
+    if (statuses.includes("error")) return "error";
+    if (item.status.local === "complete" && !networkBusy(item)) return "success";
+    return "working";
+  }
+
   function renderTabs() {
     tabs.replaceChildren(...items.map((item) => {
       const button = document.createElement("button");
@@ -445,10 +460,12 @@ function init() {
       button.role = "tab";
       button.dataset.pdfTabId = item.id;
       button.dataset.localStatus = item.status.local;
-      button.className = item.id === activeId ? "selected" : "";
+      const outcome = tabOutcome(item);
+      button.dataset.reviewStatus = outcome;
+      button.className = `${item.id === activeId ? "selected " : ""}${outcome}`.trim();
       button.setAttribute("aria-selected", String(item.id === activeId));
       button.title = item.file.name;
-      const state = item.status.local === "complete" ? "✓" : item.status.local === "error" ? "!" : "…";
+      const state = outcome === "success" ? "✓" : outcome === "error" ? "!" : "…";
       button.textContent = `${state} ${item.file.name}`;
       return button;
     }));
@@ -465,7 +482,7 @@ function init() {
     const section = $("#pdf-reference-section", ui.dialog);
     $("#pdf-reference-list", ui.dialog).replaceChildren(...references.map(referenceRow));
     section.hidden = references.length === 0;
-    $("#pdf-reference-summary", ui.dialog).textContent = item.draft.localExtraction?.summary || `${references.length} references`;
+    $("#pdf-reference-summary", ui.dialog).textContent = `${references.length} merged reference${references.length === 1 ? "" : "s"}`;
   }
 
   function renderWarnings(item) {
@@ -673,16 +690,38 @@ function init() {
     try {
       const metadata = await resolveOnlinePaper(query, { signal: controller.signal });
       if (!items.includes(item) || token !== item.networkToken) return;
-      item.sources.online = metadata;
+      const provider = metadata.providerPrimary || metadata.source || providerConfig.provider;
+      let providerReferences = [];
+      let referenceWarning = "";
+      try {
+        const referenceResult = await fetchOnlineReferences(metadata, 0, 100, { signal: controller.signal });
+        providerReferences = providerPapersToReferences(referenceResult.papers || [], referenceResult.provider || provider);
+      } catch (error) {
+        if (error?.name === "AbortError") throw error;
+        referenceWarning = error?.message || String(error);
+      }
+      const onlineMetadata = {
+        ...metadata,
+        references: providerReferences,
+        warnings: referenceWarning
+          ? uniqueStrings([...(metadata.warnings || []), `Online references unavailable: ${referenceWarning}`])
+          : (metadata.warnings || []),
+      };
+      item.sources.online = onlineMetadata;
       item.onlineContext = {
-        provider: metadata.providerPrimary || metadata.source || providerConfig.provider,
-        metadataSources: metadata.metadataSources || [metadata.providerPrimary || metadata.source || providerConfig.provider],
+        provider,
+        metadataSources: metadata.metadataSources || [provider],
         query,
+        referenceCount: providerReferences.length,
         extractedAt: new Date().toISOString(),
       };
       item.status.online = "complete";
       mergeSources(item);
-      analysisStatus.textContent = `${paperProviderLabel(providerConfig.provider)} metadata merged into this tab.`;
+      analysisStatus.textContent = providerReferences.length
+        ? `${paperProviderLabel(providerConfig.provider)} metadata and ${providerReferences.length} provider reference${providerReferences.length === 1 ? "" : "s"} merged into this tab.`
+        : referenceWarning
+          ? `${paperProviderLabel(providerConfig.provider)} metadata merged. Provider references were unavailable: ${referenceWarning}`
+          : `${paperProviderLabel(providerConfig.provider)} metadata merged into this tab.`;
     } catch (error) {
       if (!items.includes(item) || token !== item.networkToken) return;
       if (error?.name === "AbortError") {
@@ -882,6 +921,14 @@ function init() {
   ui.dialog.addEventListener("cancel", (event) => {
     event.preventDefault();
     closeRemaining();
+  });
+
+  openFileButton.addEventListener("click", () => {
+    const item = activeItem();
+    if (!item?.file) return;
+    const url = URL.createObjectURL(item.file);
+    window.open(url, "_blank", "noopener,noreferrer");
+    window.setTimeout(() => URL.revokeObjectURL(url), 60000);
   });
 
   localButton.addEventListener("click", () => {

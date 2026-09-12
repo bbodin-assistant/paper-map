@@ -67,6 +67,27 @@
   color: #17231b;
 }
 
+.pdf-review-tabs button.success {
+  border-color: #8eaf96;
+  background: #eff7f0;
+  color: #315a39;
+}
+.pdf-review-tabs button.success.selected {
+  border-color: #52735b;
+  background: #dfeee2;
+  color: #183d22;
+}
+.pdf-review-tabs button.error {
+  border-color: #d7a8a1;
+  background: #fff0ed;
+  color: #823c32;
+}
+.pdf-review-tabs button.error.selected {
+  border-color: #a75f54;
+  background: #f9ded9;
+  color: #65251d;
+}
+
 .pdf-ai-step,
 .pdf-ai-review { padding: 16px; }
 
@@ -77,14 +98,18 @@
 
 .pdf-ai-file-card {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
   padding: 10px 12px;
   border: 1px solid #cdd2ce;
   border-radius: 6px;
   background: #fff;
 }
+
+.pdf-ai-file-meta { display: grid; gap: 3px; }
+#pdf-ai-open-file { flex: 0 0 auto; }
 
 .pdf-ai-file-card span,
 .field-hint {

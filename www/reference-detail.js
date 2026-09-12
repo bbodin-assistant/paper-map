@@ -89,7 +89,7 @@ function createSection(root) {
     <div class="section-heading">
       <div>
         <h3>Extracted references</h3>
-        <span class="muted">Reviewed references stored from the PDF import</span>
+        <span class="muted">Reviewed extracted or provider references stored with this paper</span>
       </div>
     </div>
     <p id="stored-reference-summary" class="stored-reference-summary"></p>
@@ -152,12 +152,12 @@ export function initStoredReferenceDetail(root = document) {
     section.hidden = false;
     summary.textContent = references.length
       ? `${references.length} reviewed reference${references.length === 1 ? "" : "s"} stored with this paper in the local library.`
-      : "No reviewed references are stored for this PDF paper.";
+      : "No reviewed references are stored for this paper.";
 
     if (!references.length) {
       const empty = root.createElement("p");
       empty.className = "stored-reference-empty";
-      empty.textContent = "The PDF import did not save any accepted reference records for this paper.";
+      empty.textContent = "No accepted extracted or provider reference records are stored for this paper.";
       list.replaceChildren(empty);
       return;
     }

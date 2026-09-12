@@ -15,6 +15,7 @@ import {
   replaceLibrary,
 } from "./db.js";
 import { createGraph } from "./graph.js";
+import { paperCitationSummary } from "./citation-summary.js?v=0.4.5";
 import {
   downloadText,
   libraryToBibTeX,
@@ -634,11 +635,8 @@ function renderDetail() {
   els.detailLinks.replaceChildren(...links);
 
   const citationEdges = state.library.edges.filter(isCitationEdge);
-  const localReferences = citationEdges.filter((edge) => edge.source === paper.id).length;
-  const localCitations = citationEdges.filter((edge) => edge.target === paper.id).length;
   const semanticLinks = researchRelationsFor(paper.id).length;
-  const snapshot = Number.isFinite(Number(paper.citationCount)) ? `${paper.citationCount} provider citations · ` : "";
-  els.detailCitationCount.textContent = `${snapshot}${localReferences} refs / ${localCitations} citing stored · ${semanticLinks} research link${semanticLinks === 1 ? "" : "s"}`;
+  els.detailCitationCount.textContent = paperCitationSummary(paper, citationEdges, semanticLinks);
 }
 
 function timelineViewActive() {
@@ -812,6 +810,17 @@ els.aboutButton.addEventListener("click", () => {
   const open = els.aboutPanel.hidden;
   els.aboutPanel.hidden = !open;
   els.aboutButton.setAttribute("aria-expanded", String(open));
+});
+
+document.addEventListener("paper-map-library-updated", async (event) => {
+  const paperId = event.detail?.paperId;
+  if (paperId) state.selectedPaperId = paperId;
+  try {
+    await refreshLibrary();
+    if (event.detail?.message) setStatus(event.detail.message, "ready");
+  } catch (error) {
+    setStatus(error?.message || String(error), "error");
+  }
 });
 
 for (const details of document.querySelectorAll("details.toolbar-menu")) {
