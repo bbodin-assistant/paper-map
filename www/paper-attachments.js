@@ -165,11 +165,12 @@ async function persistActivePdfBeforeSave(root, button) {
 
   const identity = paperIdentityParts(snapshot);
   const key = attachmentIdentity(snapshot, file) || `file:${crypto.randomUUID()}`;
+  const storedBlob = file.type === "application/pdf" ? file : new Blob([file], { type: "application/pdf" });
   await putPdfAttachment({
     key,
-    blob: file,
+    blob: storedBlob,
     name: file.name,
-    type: file.type || "application/pdf",
+    type: "application/pdf",
     size: Number(file.size) || 0,
     lastModified: Number(file.lastModified) || 0,
     storedAt: new Date().toISOString(),
@@ -182,6 +183,7 @@ async function persistActivePdfBeforeSave(root, button) {
   consumePendingFile(snapshot.sourceFileName, file);
 
   button.dataset.pdfAttachmentStored = "true";
+  button.disabled = false;
   try {
     button.click();
   } finally {
@@ -196,6 +198,7 @@ function installSaveInterception(root = document) {
     if (!button || button.dataset.pdfAttachmentStored === "true" || button.disabled) return;
     event.preventDefault();
     event.stopImmediatePropagation();
+    button.disabled = true;
     persistActivePdfBeforeSave(root, button).catch((error) => {
       setStorageError(root, error?.message || String(error));
       button.disabled = false;
