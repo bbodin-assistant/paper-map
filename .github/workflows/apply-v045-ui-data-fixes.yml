@@ -1,0 +1,175 @@
+name: Apply v0.4.5 UI and data fixes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/apply-v045-ui-data-fixes.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply coordinated UI and data fixes
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          def replace_once(path, old, new):
+              p = Path(path)
+              text = p.read_text()
+              if old not in text:
+                  raise SystemExit(f"Expected text not found in {path}: {old[:120]!r}")
+              p.write_text(text.replace(old, new, 1))
+
+          # PDF import: naming, preview, tab outcomes, and provider references.
+          replace_once(
+              'www/pdf-ai-import.js',
+              'import { resolvePaper as resolveOnlinePaper } from "./paper-provider.js";\n',
+              'import {\n  fetchReferences as fetchOnlineReferences,\n  resolvePaper as resolveOnlinePaper,\n} from "./paper-provider.js";\nimport { providerPapersToReferences } from "./provider-references.js?v=0.4.5";\n',
+          )
+          replace_once(
+              'www/pdf-ai-import.js',
+              '} from "./pdf-review-merge.js";\n',
+              '} from "./pdf-review-merge.js?v=0.4.5";\n',
+          )
+          replace_once('www/pdf-ai-import.js', '  button.textContent = "Add PDFs";\n', '  button.textContent = "Add files";\n')
+          replace_once(
+              'www/pdf-ai-import.js',
+              '''        <div class="pdf-ai-file-card">\n          <strong id="pdf-ai-file-name">No PDF selected</strong>\n          <span><span id="pdf-ai-queue-progress" aria-live="polite"></span><span id="pdf-ai-file-separator"> · </span><span id="pdf-ai-file-size"></span></span>\n        </div>\n''',
+              '''        <div class="pdf-ai-file-card">\n          <div class="pdf-ai-file-meta">\n            <strong id="pdf-ai-file-name">No PDF selected</strong>\n            <span><span id="pdf-ai-queue-progress" aria-live="polite"></span><span id="pdf-ai-file-separator"> · </span><span id="pdf-ai-file-size"></span></span>\n          </div>\n          <button type="button" id="pdf-ai-open-file" class="quiet-button">Open PDF ↗</button>\n        </div>\n''',
+          )
+          replace_once(
+              'www/pdf-ai-import.js',
+              '  const saveButton = $("#pdf-ai-save", ui.dialog);\n',
+              '  const saveButton = $("#pdf-ai-save", ui.dialog);\n  const openFileButton = $("#pdf-ai-open-file", ui.dialog);\n',
+          )
+          replace_once(
+              'www/pdf-ai-import.js',
+              '''  function renderTabs() {\n    tabs.replaceChildren(...items.map((item) => {\n      const button = document.createElement("button");\n      button.type = "button";\n      button.role = "tab";\n      button.dataset.pdfTabId = item.id;\n      button.dataset.localStatus = item.status.local;\n      button.className = item.id === activeId ? "selected" : "";\n      button.setAttribute("aria-selected", String(item.id === activeId));\n      button.title = item.file.name;\n      const state = item.status.local === "complete" ? "✓" : item.status.local === "error" ? "!" : "…";\n      button.textContent = `${state} ${item.file.name}`;\n      return button;\n    }));\n  }\n''',
+              '''  function tabOutcome(item) {\n    const statuses = Object.values(item.status || {});\n    if (statuses.includes("error")) return "error";\n    if (item.status.local === "complete" && !networkBusy(item)) return "success";\n    return "working";\n  }\n\n  function renderTabs() {\n    tabs.replaceChildren(...items.map((item) => {\n      const button = document.createElement("button");\n      button.type = "button";\n      button.role = "tab";\n      button.dataset.pdfTabId = item.id;\n      button.dataset.localStatus = item.status.local;\n      const outcome = tabOutcome(item);\n      button.dataset.reviewStatus = outcome;\n      button.className = `${item.id === activeId ? "selected " : ""}${outcome}`.trim();\n      button.setAttribute("aria-selected", String(item.id === activeId));\n      button.title = item.file.name;\n      const state = outcome === "success" ? "✓" : outcome === "error" ? "!" : "…";\n      button.textContent = `${state} ${item.file.name}`;\n      return button;\n    }));\n  }\n''',
+          )
+          replace_once(
+              'www/pdf-ai-import.js',
+              '    $("#pdf-reference-summary", ui.dialog).textContent = item.draft.localExtraction?.summary || `${references.length} references`;\n',
+              '    $("#pdf-reference-summary", ui.dialog).textContent = `${references.length} merged reference${references.length === 1 ? "" : "s"}`;\n',
+          )
+          replace_once(
+              'www/pdf-ai-import.js',
+              '''      const metadata = await resolveOnlinePaper(query, { signal: controller.signal });\n      if (!items.includes(item) || token !== item.networkToken) return;\n      item.sources.online = metadata;\n      item.onlineContext = {\n        provider: metadata.providerPrimary || metadata.source || providerConfig.provider,\n        metadataSources: metadata.metadataSources || [metadata.providerPrimary || metadata.source || providerConfig.provider],\n        query,\n        extractedAt: new Date().toISOString(),\n      };\n      item.status.online = "complete";\n      mergeSources(item);\n      analysisStatus.textContent = `${paperProviderLabel(providerConfig.provider)} metadata merged into this tab.`;\n''',
+              '''      const metadata = await resolveOnlinePaper(query, { signal: controller.signal });\n      if (!items.includes(item) || token !== item.networkToken) return;\n      const provider = metadata.providerPrimary || metadata.source || providerConfig.provider;\n      let providerReferences = [];\n      let referenceWarning = "";\n      try {\n        const referenceResult = await fetchOnlineReferences(metadata, 0, 100, { signal: controller.signal });\n        providerReferences = providerPapersToReferences(referenceResult.papers || [], referenceResult.provider || provider);\n      } catch (error) {\n        if (error?.name === "AbortError") throw error;\n        referenceWarning = error?.message || String(error);\n      }\n      const onlineMetadata = {\n        ...metadata,\n        references: providerReferences,\n        warnings: referenceWarning\n          ? uniqueStrings([...(metadata.warnings || []), `Online references unavailable: ${referenceWarning}`])\n          : (metadata.warnings || []),\n      };\n      item.sources.online = onlineMetadata;\n      item.onlineContext = {\n        provider,\n        metadataSources: metadata.metadataSources || [provider],\n        query,\n        referenceCount: providerReferences.length,\n        extractedAt: new Date().toISOString(),\n      };\n      item.status.online = "complete";\n      mergeSources(item);\n      analysisStatus.textContent = providerReferences.length\n        ? `${paperProviderLabel(providerConfig.provider)} metadata and ${providerReferences.length} provider reference${providerReferences.length === 1 ? "" : "s"} merged into this tab.`\n        : referenceWarning\n          ? `${paperProviderLabel(providerConfig.provider)} metadata merged. Provider references were unavailable: ${referenceWarning}`\n          : `${paperProviderLabel(providerConfig.provider)} metadata merged into this tab.`;\n''',
+          )
+          replace_once(
+              'www/pdf-ai-import.js',
+              '''  localButton.addEventListener("click", () => {\n    const item = captureActive();\n    if (item) queueLocal(item, { first: true });\n  });\n''',
+              '''  openFileButton.addEventListener("click", () => {\n    const item = activeItem();\n    if (!item?.file) return;\n    const url = URL.createObjectURL(item.file);\n    window.open(url, "_blank", "noopener,noreferrer");\n    window.setTimeout(() => URL.revokeObjectURL(url), 60000);\n  });\n\n  localButton.addEventListener("click", () => {\n    const item = captureActive();\n    if (item) queueLocal(item, { first: true });\n  });\n''',
+          )
+
+          # Merge provider reference records with local extraction records.
+          replace_once(
+              'www/pdf-review-merge.js',
+              'import { normalizeDoi } from "./import-export.js";\n',
+              'import { normalizeDoi } from "./import-export.js";\nimport { mergeReferenceRecords } from "./provider-references.js?v=0.4.5";\n',
+          )
+          replace_once(
+              'www/pdf-review-merge.js',
+              '  merged.references = sources.local?.references || [];\n',
+              '  merged.references = mergeReferenceRecords(sources.online?.references || [], sources.ai?.references || [], sources.local?.references || []);\n',
+          )
+
+          # Import review styling: green success tabs, red failure tabs, file-preview layout.
+          replace_once(
+              'www/pdf-ai-import.css',
+              '''.pdf-review-tabs button.selected {\n  border-color: #637466;\n  background: #e9eee9;\n  color: #17231b;\n}\n''',
+              '''.pdf-review-tabs button.selected {\n  border-color: #637466;\n  background: #e9eee9;\n  color: #17231b;\n}\n\n.pdf-review-tabs button.success {\n  border-color: #8eaf96;\n  background: #eff7f0;\n  color: #315a39;\n}\n.pdf-review-tabs button.success.selected {\n  border-color: #52735b;\n  background: #dfeee2;\n  color: #183d22;\n}\n.pdf-review-tabs button.error {\n  border-color: #d7a8a1;\n  background: #fff0ed;\n  color: #823c32;\n}\n.pdf-review-tabs button.error.selected {\n  border-color: #a75f54;\n  background: #f9ded9;\n  color: #65251d;\n}\n''',
+          )
+          replace_once(
+              'www/pdf-ai-import.css',
+              '''.pdf-ai-file-card {\n  display: flex;\n  align-items: baseline;\n  justify-content: space-between;\n  gap: 12px;\n''',
+              '''.pdf-ai-file-card {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  gap: 12px;\n''',
+          )
+          replace_once(
+              'www/pdf-ai-import.css',
+              '''.pdf-ai-file-card span,\n.field-hint {\n''',
+              '''.pdf-ai-file-meta { display: grid; gap: 3px; }\n#pdf-ai-open-file { flex: 0 0 auto; }\n\n.pdf-ai-file-card span,\n.field-hint {\n''',
+          )
+
+          # Stored PDF action: active label only when the binary actually exists.
+          replace_once(
+              'www/paper-attachments.js',
+              '''  activeAttachment = paper ? await attachmentForPaper(paper) : null;\n  section.hidden = !activeAttachment;\n  const button = section.querySelector("#open-stored-pdf");\n  if (button && activeAttachment) {\n    const megabytes = activeAttachment.size ? ` · ${(activeAttachment.size / (1024 * 1024)).toFixed(1)} MB` : "";\n    button.textContent = `Open stored PDF${megabytes} ↗`;\n    button.title = activeAttachment.name || "Stored PDF";\n  }\n''',
+              '''  activeAttachment = paper ? await attachmentForPaper(paper) : null;\n  section.hidden = false;\n  const button = section.querySelector("#open-stored-pdf");\n  if (!button) return;\n  button.disabled = !activeAttachment;\n  if (activeAttachment) {\n    const megabytes = activeAttachment.size ? ` · ${(activeAttachment.size / (1024 * 1024)).toFixed(1)} MB` : "";\n    button.textContent = `Open stored PDF${megabytes} ↗`;\n    button.title = activeAttachment.name || "Stored PDF";\n  } else {\n    button.textContent = "PDF not stored";\n    button.title = "No PDF file is stored locally for this paper.";\n  }\n''',
+          )
+
+          # Clearer Add actions.
+          replace_once('www/publication-ui.js', '  if (summary) summary.textContent = "Add publication";\n', '  if (summary) summary.textContent = "Add paper";\n')
+          replace_once(
+              'www/publication-ui.js',
+              '''  const query = form?.querySelector("#add-paper-query");\n  if (query) query.setAttribute("aria-label", "Publication DOI, arXiv ID, provider ID, or title");\n''',
+              '''  const query = form?.querySelector("#add-paper-query");\n  const submit = form?.querySelector('button[type="submit"]');\n  if (query) query.setAttribute("aria-label", "Publication DOI, arXiv ID, provider ID, or title");\n  if (submit) submit.textContent = "Find & add";\n''',
+          )
+          replace_once('www/publication-ui.js', '  button.textContent = "Add";\n', '  button.textContent = "Add files";\n')
+
+          # Reference drawer wording is no longer PDF-only now online updates can add references.
+          replace_once(
+              'www/reference-detail.js',
+              '<span class="muted">Reviewed references stored from the PDF import</span>',
+              '<span class="muted">Reviewed extracted or provider references stored with this paper</span>',
+          )
+          replace_once(
+              'www/reference-detail.js',
+              '      : "No reviewed references are stored for this PDF paper.";\n',
+              '      : "No reviewed references are stored for this paper.";\n',
+          )
+          replace_once(
+              'www/reference-detail.js',
+              '      empty.textContent = "The PDF import did not save any accepted reference records for this paper.";\n',
+              '      empty.textContent = "No accepted extracted or provider reference records are stored for this paper.";\n',
+          )
+
+          # Paper detail: clearer counters and online-update refresh hook.
+          replace_once(
+              'www/app.js',
+              'import { createGraph } from "./graph.js";\n',
+              'import { createGraph } from "./graph.js";\nimport { paperCitationSummary } from "./citation-summary.js?v=0.4.5";\n',
+          )
+          replace_once(
+              'www/app.js',
+              '''  const citationEdges = state.library.edges.filter(isCitationEdge);\n  const localReferences = citationEdges.filter((edge) => edge.source === paper.id).length;\n  const localCitations = citationEdges.filter((edge) => edge.target === paper.id).length;\n  const semanticLinks = researchRelationsFor(paper.id).length;\n  const snapshot = Number.isFinite(Number(paper.citationCount)) ? `${paper.citationCount} provider citations · ` : "";\n  els.detailCitationCount.textContent = `${snapshot}${localReferences} refs / ${localCitations} citing stored · ${semanticLinks} research link${semanticLinks === 1 ? "" : "s"}`;\n''',
+              '''  const citationEdges = state.library.edges.filter(isCitationEdge);\n  const semanticLinks = researchRelationsFor(paper.id).length;\n  els.detailCitationCount.textContent = paperCitationSummary(paper, citationEdges, semanticLinks);\n''',
+          )
+          replace_once(
+              'www/app.js',
+              '''els.aboutButton.addEventListener("click", () => {\n  const open = els.aboutPanel.hidden;\n  els.aboutPanel.hidden = !open;\n  els.aboutButton.setAttribute("aria-expanded", String(open));\n});\n\n''',
+              '''els.aboutButton.addEventListener("click", () => {\n  const open = els.aboutPanel.hidden;\n  els.aboutPanel.hidden = !open;\n  els.aboutButton.setAttribute("aria-expanded", String(open));\n});\n\ndocument.addEventListener("paper-map-library-updated", async (event) => {\n  const paperId = event.detail?.paperId;\n  if (paperId) state.selectedPaperId = paperId;\n  try {\n    await refreshLibrary();\n    if (event.detail?.message) setStatus(event.detail.message, "ready");\n  } catch (error) {\n    setStatus(error?.message || String(error), "error");\n  }\n});\n\n''',
+          )
+
+          # HTML wording, clearer citation help, online-update module, and cache bust.
+          index = Path('www/index.html')
+          html = index.read_text()
+          if 'v0.4.4' not in html:
+              raise SystemExit('Expected v0.4.4 index before bump')
+          html = html.replace('v0.4.4', 'v0.4.5').replace('?v=0.4.4', '?v=0.4.5')
+          html = html.replace('<button type="submit">Add</button>', '<button type="submit">Find & add</button>', 1)
+          old_help = '<small>Each action adds up to 50 papers. Repeat it to explore farther; Paper Map never recursively crawls without another action.</small>'
+          new_help = '<small><strong>Expand references</strong> adds papers this work cites. <strong>Expand citing papers</strong> adds papers that cite this work. Each action adds up to 50 papers per click.</small>'
+          if old_help not in html:
+              raise SystemExit('Citation help text not found')
+          html = html.replace(old_help, new_help, 1)
+          marker = '    <script type="module" src="./reference-detail.js?v=0.4.5"></script>\n'
+          if marker not in html:
+              raise SystemExit('reference-detail script marker not found')
+          html = html.replace(marker, marker + '    <script type="module" src="./paper-online-update.js?v=0.4.5"></script>\n', 1)
+          index.write_text(html)
+          PY
+      - name: Commit coordinated fixes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add www
+          git commit -m "Improve PDF import and paper detail updates"
+          git push
