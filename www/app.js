@@ -641,8 +641,30 @@ function renderDetail() {
   els.detailCitationCount.textContent = `${snapshot}${localReferences} refs / ${localCitations} citing stored · ${semanticLinks} research link${semanticLinks === 1 ? "" : "s"}`;
 }
 
+function timelineViewActive() {
+  return Boolean(
+    els.map.querySelector(".timeline-papers")
+    && els.mapMode.querySelector('button[data-mode="timeline"].selected'),
+  );
+}
+
+function renderTimelinePaperSelection() {
+  for (const button of els.paperList.querySelectorAll(".paper-list-item[data-paper-id]")) {
+    button.classList.toggle("selected", button.dataset.paperId === state.selectedPaperId);
+  }
+  if (state.selectedPaperId) renderDetail();
+  else {
+    els.detail.hidden = true;
+    els.detailDismiss.hidden = true;
+  }
+}
+
 function selectPaper(paperId) {
   state.selectedPaperId = paperId;
+  if (timelineViewActive()) {
+    renderTimelinePaperSelection();
+    return;
+  }
   if (!paperId) {
     closeDetail();
     renderAll();
