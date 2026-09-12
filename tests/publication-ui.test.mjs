@@ -29,8 +29,8 @@ test("publication picker separates reviewed PDFs from portable imports", () => {
 
 test("page loads publication controls after the reviewed PDF module", async () => {
   const html = await readFile(new URL("../www/index.html", import.meta.url), "utf8");
-  const pdfIndex = html.indexOf('src="./pdf-ai-import.js"');
-  const publicationIndex = html.indexOf('src="./publication-ui.js"');
+  const pdfIndex = html.indexOf('src="./pdf-ai-import.js');
+  const publicationIndex = html.indexOf('src="./publication-ui.js');
 
   assert.ok(pdfIndex >= 0, "reviewed PDF module should be loaded");
   assert.ok(publicationIndex > pdfIndex, "publication UI should enhance controls created by the PDF module");
