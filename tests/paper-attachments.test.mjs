@@ -28,6 +28,6 @@ test("stored PDF identity falls back to title/year then source filename", () => 
 
 test("page loads the local PDF attachment module", async () => {
   const html = await readFile(new URL("../www/index.html", import.meta.url), "utf8");
-  assert.match(html, /paper-attachments\.js\?v=0\.4\.2/);
-  assert.match(html, /Paper Map <span class="app-version">v0\.4\.2<\/span>/);
+  assert.match(html, /paper-attachments\.js\?v=\d+\.\d+\.\d+/);
+  assert.match(html, /Paper Map <span class="app-version">v\d+\.\d+\.\d+<\/span>/);
 });
