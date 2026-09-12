@@ -75,7 +75,7 @@ jobs:
           done
           cat artifacts/mobile-ui/server.log
           exit 1
-      - name: Mobile Selenium interaction, AI model discovery, PDF review, batch import, reference resolution, source filtering/logging, and graph gesture tests
+      - name: Mobile Selenium interaction, AI model discovery, PDF review, batch import, reference resolution, source filtering/logging, graph gesture, and Timeline tests
         env:
           TEST_URL: http://127.0.0.1:8080/www/
           MOBILE_TEST_ARTIFACT_DIR: artifacts/mobile-ui
@@ -88,6 +88,7 @@ jobs:
           python3 tests/reference_candidate_selenium_test.py
           python3 tests/source_filter_log_selenium_test.py
           python3 tests/graph_relations_selenium_test.py
+          python3 tests/timeline_selenium_test.py
       - name: Upload mobile UI screenshots and OCR output
         if: always()
         uses: actions/upload-artifact@v4
