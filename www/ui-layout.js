@@ -3,6 +3,18 @@ import "./timeline-selection.js?v=0.4.4";
 
 const DESKTOP_LAYOUT_MEDIA = "(min-width: 1001px)";
 const EMPTY_LIBRARY_MESSAGE = "Local library is empty. Load the demo, import BibTeX, add PDFs, or add a paper.";
+const PDF_REVIEW_FIELD_SELECTORS = Object.freeze({
+  title: "#pdf-review-title",
+  authors: "#pdf-review-authors",
+  year: "#pdf-review-year",
+  type: "#pdf-review-type",
+  venue: "#pdf-review-venue",
+  doi: "#pdf-review-doi",
+  arxivId: "#pdf-review-arxiv",
+  url: "#pdf-review-url",
+  abstract: "#pdf-review-abstract",
+  keywords: "#pdf-review-keywords",
+});
 
 function installTimelineInteractionPolish(root = document) {
   if (!root?.querySelector || !root?.createElement) return false;
@@ -90,16 +102,90 @@ function normalizedPdfMetadataText(value) {
     .replace(/\s+/g, " ");
 }
 
-export function pdfReviewMissingMetadata({ title = "", authors = "", fileName = "", localStatus = "" } = {}) {
-  if (localStatus !== "complete" && localStatus !== "error") return { title: false, authors: false };
+function pdfMetadataTextMissing(value) {
+  return !String(value ?? "").trim();
+}
+
+function pdfMetadataYearMissing(value) {
+  const cleanValue = String(value ?? "").trim();
+  if (!cleanValue) return true;
+  const year = Number(cleanValue);
+  return !Number.isInteger(year) || year <= 0;
+}
+
+function pdfMetadataDoiMissing(value) {
+  const cleanValue = String(value ?? "")
+    .trim()
+    .replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, "")
+    .replace(/^doi:\s*/i, "");
+  return !cleanValue || !/^10\.\d{4,9}\/\S+$/i.test(cleanValue);
+}
+
+function pdfMetadataArxivMissing(value) {
+  const cleanValue = String(value ?? "").trim().replace(/^arxiv:\s*/i, "");
+  return !cleanValue || !/^(?:\d{4}\.\d{4,5}|[a-z-]+(?:\.[a-z]{2})?\/\d{7})(?:v\d+)?$/i.test(cleanValue);
+}
+
+function pdfMetadataUrlMissing(value) {
+  const cleanValue = String(value ?? "").trim();
+  if (!cleanValue) return true;
+  try {
+    const parsed = new URL(cleanValue);
+    return parsed.protocol !== "http:" && parsed.protocol !== "https:";
+  } catch {
+    return true;
+  }
+}
+
+export function pdfReviewMissingMetadata({
+  title = "",
+  authors = "",
+  year = "",
+  type = "",
+  venue = "",
+  doi = "",
+  arxivId = "",
+  url = "",
+  abstract = "",
+  keywords = "",
+  fileName = "",
+  localStatus = "",
+} = {}) {
+  const result = {
+    title: false,
+    authors: false,
+    year: false,
+    type: false,
+    venue: false,
+    doi: false,
+    arxivId: false,
+    url: false,
+    abstract: false,
+    keywords: false,
+  };
+  if (localStatus !== "complete" && localStatus !== "error") return result;
+
   const cleanTitle = String(title).trim();
-  const authorsMissing = !String(authors).trim();
+  const authorsMissing = pdfMetadataTextMissing(authors);
   const titleMatchesFilenameFallback = Boolean(cleanTitle)
     && normalizedPdfMetadataText(cleanTitle) === normalizedPdfMetadataText(pdfFileStem(fileName));
+
   return {
     title: !cleanTitle || (titleMatchesFilenameFallback && (authorsMissing || localStatus === "error")),
     authors: authorsMissing,
+    year: pdfMetadataYearMissing(year),
+    type: pdfMetadataTextMissing(type),
+    venue: pdfMetadataTextMissing(venue),
+    doi: pdfMetadataDoiMissing(doi),
+    arxivId: pdfMetadataArxivMissing(arxivId),
+    url: pdfMetadataUrlMissing(url),
+    abstract: pdfMetadataTextMissing(abstract),
+    keywords: Array.isArray(keywords) ? keywords.length === 0 : pdfMetadataTextMissing(keywords),
   };
+}
+
+export function pdfReviewHasMissingMetadata(metadata = {}) {
+  return Object.values(pdfReviewMissingMetadata(metadata)).some(Boolean);
 }
 
 function installPdfReviewPolish(root = document) {
@@ -107,15 +193,29 @@ function installPdfReviewPolish(root = document) {
   const dialog = root.querySelector("#pdf-ai-dialog");
   if (!dialog || dialog.dataset.requiredMetadataPolish === "true") return false;
 
-  const title = dialog.querySelector("#pdf-review-title");
-  const authors = dialog.querySelector("#pdf-review-authors");
+  const fields = new Map(Object.entries(PDF_REVIEW_FIELD_SELECTORS).map(([key, selector]) => [key, dialog.querySelector(selector)]));
   const fileName = dialog.querySelector("#pdf-ai-file-name");
-  const titleLabel = title?.closest("label");
-  const authorsLabel = authors?.closest("label");
-  if (!title || !authors || !fileName || !titleLabel || !authorsLabel) return false;
+  if (!fileName || Array.from(fields.values()).some((field) => !field?.closest("label"))) return false;
 
-  titleLabel.classList.add("pdf-required-metadata");
-  authorsLabel.classList.add("pdf-required-metadata");
+  for (const field of fields.values()) field.closest("label").classList.add("pdf-required-metadata");
+
+  if (!root.querySelector("#pdf-review-metadata-tab-warning-style")) {
+    const style = root.createElement("style");
+    style.id = "pdf-review-metadata-tab-warning-style";
+    style.textContent = `
+      #pdf-review-tabs button.metadata-warning,
+      #pdf-review-tabs button.metadata-warning.success,
+      #pdf-review-tabs button.metadata-warning.selected,
+      #pdf-review-tabs button.metadata-warning.success.selected {
+        border-color: #d7a8a1;
+        background: #fff0ed;
+        color: #823c32;
+      }
+    `;
+    root.head?.append(style);
+  }
+
+  const missingByTabId = new Map();
 
   const localStatus = () => {
     const chip = Array.from(dialog.querySelectorAll(".pdf-source-chip"))
@@ -128,21 +228,39 @@ function installPdfReviewPolish(root = document) {
     return "idle";
   };
 
+  const syncTabWarnings = (hasMissing, status) => {
+    const activeTab = dialog.querySelector('#pdf-review-tabs button[aria-selected="true"]');
+    const activeTabId = activeTab?.dataset.pdfTabId;
+    if (activeTabId) {
+      if (status === "complete" || status === "error") missingByTabId.set(activeTabId, hasMissing);
+      else missingByTabId.delete(activeTabId);
+    }
+
+    for (const tab of dialog.querySelectorAll("#pdf-review-tabs button[data-pdf-tab-id]")) {
+      const finalLocalState = tab.dataset.localStatus === "complete" || tab.dataset.localStatus === "error";
+      tab.classList.toggle("metadata-warning", finalLocalState && missingByTabId.get(tab.dataset.pdfTabId) === true);
+    }
+  };
+
   const sync = () => {
+    const status = localStatus();
+    const values = Object.fromEntries(Array.from(fields, ([key, field]) => [key, field.value]));
     const missing = pdfReviewMissingMetadata({
-      title: title.value,
-      authors: authors.value,
+      ...values,
       fileName: fileName.textContent,
-      localStatus: localStatus(),
+      localStatus: status,
     });
-    titleLabel.classList.toggle("missing-extracted-metadata", missing.title);
-    authorsLabel.classList.toggle("missing-extracted-metadata", missing.authors);
-    title.setAttribute("aria-invalid", String(missing.title));
-    authors.setAttribute("aria-invalid", String(missing.authors));
+
+    for (const [key, field] of fields) {
+      const isMissing = Boolean(missing[key]);
+      field.closest("label").classList.toggle("missing-extracted-metadata", isMissing);
+      field.setAttribute("aria-invalid", String(isMissing));
+    }
+    syncTabWarnings(Object.values(missing).some(Boolean), status);
   };
 
   dialog.addEventListener("input", (event) => {
-    if (event.target === title || event.target === authors) sync();
+    if (Array.from(fields.values()).includes(event.target)) sync();
   });
   const observer = new MutationObserver(sync);
   observer.observe(dialog, { subtree: true, childList: true, characterData: true });
