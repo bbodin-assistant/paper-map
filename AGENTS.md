@@ -20,6 +20,18 @@
 - `www/demo-data.js` is the only bibliography data intended to be committed to the repository.
 - `www/style.css`, `www/pdf-ai-import.css`, and `www/pdf-local.css` own the visual system and PDF review layout.
 
+## Architecture guardrails
+
+- Preserve the browser-only/static architecture.
+- Do not introduce an application server unless there is a compelling requirement.
+- Keep network/provider logic isolated in provider modules.
+- Normalize external API responses before persistence.
+- Paper identity priority is DOI, Semantic Scholar paper ID, arXiv ID, then normalized title+year.
+- Citation edges are directed: source paper cites target paper.
+- Do not recursively expand the citation graph without explicit user intent.
+- Do not store uploaded PDF bytes in IndexedDB unless explicitly requested.
+- Rust/WASM should remain focused on deterministic/local computational work.
+
 ## Data ownership rules
 
 - The user's live bibliography belongs in IndexedDB, never in repository files.
