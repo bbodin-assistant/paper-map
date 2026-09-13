@@ -57,6 +57,9 @@ test:
 	node --check www/pdf-metadata.js
 	node --check www/pdf-local.js
 	node --check www/pdf-review-merge.js
+	node --check www/pdf-review-state.js
+	node --check www/pdf-review-ui.js
+	node --check www/pdf-review-controller.js
 	node --check www/online-candidates.js
 	node --check www/reference-resolver.js
 	node --check www/reference-resolution-ui.js
