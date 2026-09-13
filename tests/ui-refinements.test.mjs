@@ -33,4 +33,7 @@ test("configuration sections are visually segmented", async () => {
   assert.match(css, /\.config-section[\s\S]*?border: 1px solid #cfd5d0;/);
   assert.match(css, /\.config-section[\s\S]*?background: #f7f8f5;/);
   assert.match(css, /box-shadow: inset 3px 0 0 #8a9790;/);
+  const mobile = css.slice(css.indexOf("@media (max-width: 680px)"));
+  assert.match(mobile, /\.config-actions/);
+  assert.match(mobile, /position: sticky/);
 });
