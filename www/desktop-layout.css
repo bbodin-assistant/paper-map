@@ -1,0 +1,155 @@
+@media (min-width: 1001px) {
+  .app-header.desktop-layout-active {
+    grid-template-columns: auto minmax(18px, 1fr) auto minmax(18px, 1fr) auto;
+    gap: 10px;
+  }
+
+  .app-header.desktop-layout-active > .brand {
+    grid-column: 1;
+  }
+
+  .desktop-header-overview {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
+  }
+
+  .desktop-header-overview .map-summary {
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  .desktop-header-overview #filter-menu > summary {
+    min-height: 34px;
+    white-space: nowrap;
+  }
+
+  .desktop-header-overview #filter-menu .drawer-panel {
+    right: 0;
+    top: calc(100% + 8px);
+  }
+
+  .desktop-filter-search {
+    margin-bottom: 12px;
+  }
+
+  .desktop-filter-search input {
+    height: 34px;
+  }
+
+  .app-header.desktop-layout-active > .header-tools {
+    grid-column: 5;
+    gap: 7px;
+  }
+
+  .app-header.desktop-layout-active .status {
+    max-width: min(42vw, 540px);
+    gap: 6px;
+    font-size: 10px;
+  }
+
+  .desktop-status-label {
+    flex: 0 0 auto;
+    color: #3e4952;
+    font-size: 9px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .toolbar-primary.desktop-layout-active {
+    grid-template-columns: auto minmax(14px, 1fr) auto minmax(14px, 1fr) auto;
+    gap: 8px;
+    padding: 7px 10px;
+  }
+
+  .desktop-toolbar-left {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
+  }
+
+  .desktop-toolbar-left #paper-list-button {
+    min-height: 34px;
+    white-space: nowrap;
+  }
+
+  .desktop-toolbar-left #map-mode {
+    flex: 0 0 auto;
+  }
+
+  .toolbar-actions.desktop-add-actions {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 0;
+  }
+
+  .desktop-add-paper-form {
+    display: block;
+    width: min(330px, 31vw);
+    padding: 0;
+    border: 0;
+  }
+
+  .desktop-add-paper-form .inline-control {
+    grid-template-columns: minmax(180px, 1fr) auto;
+  }
+
+  .desktop-add-paper-form input,
+  .desktop-add-paper-form button,
+  .desktop-add-actions > button {
+    min-height: 34px;
+    height: 34px;
+  }
+
+  .desktop-add-paper-form > label,
+  .desktop-add-paper-form > small {
+    display: none;
+  }
+
+  .desktop-add-actions #add-pdf-button {
+    white-space: nowrap;
+  }
+
+  .desktop-toolbar-right {
+    grid-column: 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #desktop-filter-button {
+    min-height: 34px;
+    white-space: nowrap;
+  }
+
+  .map-stage > .map-reset-button {
+    position: absolute;
+    z-index: 16;
+    top: 12px;
+    right: 12px;
+    min-height: 32px;
+    padding: 6px 9px;
+    border-color: rgba(185, 192, 197, .88);
+    background: rgba(255, 254, 249, .94);
+    box-shadow: 0 2px 8px rgba(24, 32, 42, .08);
+    pointer-events: auto;
+  }
+
+  .map-stage > .map-reset-button:hover {
+    background: #f0f2ef;
+  }
+
+  .map-help {
+    right: 12px;
+    left: auto;
+    max-width: calc(100% - 24px);
+  }
+}
