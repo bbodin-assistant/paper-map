@@ -28,12 +28,12 @@ test("PDF review uses a left tab rail and visible missing-metadata styling", asy
   assert.match(css, /content: "Not extracted"/);
 });
 
-test("configuration sections are visually segmented", async () => {
+test("configuration sections are visually segmented without covering mobile controls", async () => {
   const css = await readFile(new URL("../www/ai-config.css", import.meta.url), "utf8");
   assert.match(css, /\.config-section[\s\S]*?border: 1px solid #cfd5d0;/);
   assert.match(css, /\.config-section[\s\S]*?background: #f7f8f5;/);
   assert.match(css, /box-shadow: inset 3px 0 0 #8a9790;/);
   const mobile = css.slice(css.indexOf("@media (max-width: 680px)"));
-  assert.match(mobile, /\.config-actions/);
-  assert.match(mobile, /position: sticky/);
+  assert.match(mobile, /\.config-actions[\s\S]*?position: static;/);
+  assert.match(mobile, /\.config-actions[\s\S]*?bottom: auto;/);
 });
