@@ -194,6 +194,7 @@ function createDesktopLayoutController(root = document, view = window) {
       filterButton.setAttribute("aria-expanded", String(filterMenu.open));
     };
     const syncFilterToggle = () => filterButton.setAttribute("aria-expanded", String(filterMenu.open));
+    filterButton.addEventListener("pointerdown", (event) => event.stopPropagation());
     filterButton.addEventListener("click", toggleFilter);
     filterMenu.addEventListener("toggle", syncFilterToggle);
     state.filterToggleHandler = syncFilterToggle;
