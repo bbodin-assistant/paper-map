@@ -9,4 +9,8 @@ if (typeof document !== "undefined") {
     document.head.append(link);
   }
   initPdfReviewController();
+  const explainer = document.querySelector(".pdf-ai-explainer");
+  if (explainer) {
+    explainer.textContent = "Every selected PDF is extracted locally with Rust/WebAssembly. Run online extraction from Title, DOI, or arXiv ID using the Search online button beside that field. You can also run optional AI extraction. Results are merged without overwriting fields you edited manually.";
+  }
 }
