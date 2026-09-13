@@ -20,7 +20,9 @@ function repairAccents(value) {
 }
 
 function isAffiliation(line) {
-  return AFFILIATION_RE.test(line) || /\b(?:departmentof|schoolof|engineering|sciences|ETH\s*Zurich|EPFL|Ecole)/i.test(line);
+  return AFFILIATION_RE.test(line)
+    || /^(?:TU|TUM|MIT)\b/.test(clean(line))
+    || /\b(?:departmentof|schoolof|engineering|sciences|ETH\s*Zurich|EPFL|Ecole)/i.test(line);
 }
 
 function repairDetachedTitleLigatures(title, documentText) {
@@ -167,12 +169,16 @@ export function repairTrailingTitleAuthor(value, authorValues = []) {
 function looksLikeAuthorBlockLine(line, nextLine = "") {
   const marked = /[⁎∗*†‡#]/.test(line);
   line = stripAuthorMarkers(line);
-  if (!line || line.includes("@") || isAffiliation(line) || DOI_RE.test(line) || ARXIV_RE.test(line)) return false;
+  if (!line || line.includes("@") || DOI_RE.test(line) || ARXIV_RE.test(line)) return false;
+  const lineLooksAffiliated = isAffiliation(line);
   if (marked && looksLikeSingleName(line.replace(/[,;].*$/, ""))) return true;
   const separated = line.split(/\s*(?:,|;|\band\b|·)\s*/i).map(stripAuthorMarkers).filter(Boolean);
   if (separated.length >= 2 && separated.every(looksLikeSingleName)) return true;
+  const separatedNames = separated.filter(looksLikeSingleName);
   const tokens = nameTokens(line);
-  const nextLooksAffiliated = Boolean(nextLine && (AFFILIATION_RE.test(nextLine) || nextLine.includes("@")));
+  const nextLooksAffiliated = Boolean(nextLine && (isAffiliation(nextLine) || nextLine.includes("@")));
+  if (separatedNames.length >= 2 && (lineLooksAffiliated || nextLooksAffiliated)) return true;
+  if (lineLooksAffiliated) return false;
   return nextLooksAffiliated && tokens.length >= 2 && tokens.length <= 12
     && tokens.every((token) => nameToken(token) || NAME_PARTICLES.has(token.toLowerCase()));
 }
@@ -215,7 +221,7 @@ function titleWithTrailingAuthor(pageText) {
 function splitAuthors(line) {
   const cleaned = stripAuthorMarkers(line).replace(/^and\s+/i, "");
   const explicit = cleaned.split(/\s*(?:,|;|\band\b|·)\s*/i).map(stripAuthorMarkers).filter(looksLikeSingleName);
-  if (explicit.length >= 2) return explicit;
+  if (explicit.length >= 2 || (explicit.length === 1 && isAffiliation(cleaned))) return explicit;
   if (looksLikeSingleName(cleaned)) return [cleaned];
 
   const tokens = nameTokens(cleaned);
@@ -324,10 +330,11 @@ export function extractLocalPaperMetadata(documentText, { fallbackTitle = "" } =
     if (authorStart >= 0) {
       for (let index = authorStart; index < usable.length; index += 1) {
         const line = usable[index];
-        if (isAffiliation(line) || line.includes("@") || DOI_RE.test(line) || ARXIV_RE.test(line)) continue;
+        if (line.includes("@") || DOI_RE.test(line) || ARXIV_RE.test(line)) continue;
+        const extracted = splitAuthors(line);
+        if (isAffiliation(line) && !extracted.length) continue;
         // Location lines following an affiliation are not two-part names.
         if (index > authorStart && isAffiliation(usable[index - 1]) && line.includes(",") && !looksLikeAuthorBlockLine(line)) continue;
-        const extracted = splitAuthors(line);
         if (!extracted.length) {
           if (authors.length) break;
           continue;
