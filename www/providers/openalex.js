@@ -10,6 +10,14 @@ function clean(value) {
   return String(value ?? "").trim();
 }
 
+function searchText(value) {
+  return clean(value).replace(/\s+/g, " ");
+}
+
+function quotedSearchPhrase(value) {
+  return `"${searchText(value).replaceAll("\\", "\\\\").replaceAll('"', '\\"')}"`;
+}
+
 function openAlexId(value) {
   const raw = clean(value);
   const match = raw.match(/(?:openalex\.org\/)?(W\d+)$/i);
@@ -114,10 +122,18 @@ async function works(params, options = {}) {
 }
 
 export async function searchPapers(query, limit = 5, options = {}) {
-  const text = clean(query);
+  const text = searchText(query);
   if (!text) return [];
   const boundedLimit = Math.max(1, Math.min(20, Number(limit) || 5));
   const result = await works({ search: text, "per-page": boundedLimit }, options);
+  return result.papers.filter((paper) => paper.title && paper.title !== "Untitled paper");
+}
+
+async function searchTitlePapers(query, limit = 20, options = {}) {
+  const text = searchText(query);
+  if (!text) return [];
+  const boundedLimit = Math.max(1, Math.min(20, Number(limit) || 20));
+  const result = await works({ filter: `title.search:${quotedSearchPhrase(text)}`, "per-page": boundedLimit }, options);
   return result.papers.filter((paper) => paper.title && paper.title !== "Untitled paper");
 }
 
@@ -138,13 +154,21 @@ export async function resolvePaper(query, options = {}) {
   const workId = openAlexId(text);
   if (workId) return normalizePaper(await request(`/works/${workId}`, {}, options));
 
-  const searchText = text.replace(/^arxiv:/i, "");
-  const matches = await searchPapers(searchText, 20, options);
-  const requestedArxiv = searchText;
+  const lookupText = searchText(text.replace(/^arxiv:/i, ""));
+  const arxivLike = /^(?:\d{4}\.\d{4,5}|[a-z][a-z0-9.\-]+\/\d{7})(?:v\d+)?$/i.test(lookupText);
+  const requestedTitle = normalizedTitle(lookupText);
+
+  if (!arxivLike && requestedTitle) {
+    const titleMatches = await searchTitlePapers(lookupText, 20, options);
+    const exactTitle = titleMatches.find((paper) => normalizedTitle(paper.title) === requestedTitle);
+    if (exactTitle) return exactTitle;
+  }
+
+  const matches = await searchPapers(lookupText, 20, options);
+  const requestedArxiv = lookupText;
   const exactArxiv = matches.find((paper) => paper.arxivId && paper.arxivId.toLowerCase() === requestedArxiv.toLowerCase());
   if (exactArxiv) return exactArxiv;
 
-  const requestedTitle = normalizedTitle(text);
   const exactTitle = requestedTitle
     ? matches.find((paper) => normalizedTitle(paper.title) === requestedTitle)
     : null;
