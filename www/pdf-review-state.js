@@ -11,6 +11,17 @@ function normalizedText(value) {
     .replace(/\s+/g, " ");
 }
 
+function normalizedDoi(value) {
+  return clean(value)
+    .replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, "")
+    .replace(/^doi:\s*/i, "")
+    .toLowerCase();
+}
+
+function normalizedArxiv(value) {
+  return clean(value).replace(/^arxiv:\s*/i, "");
+}
+
 export function pdfFileStem(name) {
   return clean(name)
     .replace(/\.pdf$/i, "")
@@ -25,15 +36,32 @@ export function validPdfReviewYear(value) {
 }
 
 export function validPdfReviewDoi(value) {
-  const normalized = clean(value)
-    .replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, "")
-    .replace(/^doi:\s*/i, "");
+  const normalized = normalizedDoi(value);
   return Boolean(normalized && /^10\.\d{4,9}\/\S+$/i.test(normalized));
 }
 
 export function validPdfReviewArxiv(value) {
-  const normalized = clean(value).replace(/^arxiv:\s*/i, "");
+  const normalized = normalizedArxiv(value);
   return Boolean(normalized && /^(?:\d{4}\.\d{4,5}|[a-z-]+(?:\.[a-z]{2})?\/\d{7})(?:v\d+)?$/i.test(normalized));
+}
+
+export function pdfReviewOnlineQuery({ title = "", doi = "", arxivId = "" } = {}, kind) {
+  if (kind === "title") {
+    const query = clean(title).replace(/\s+/g, " ");
+    if (!query) throw new Error("Enter a title before searching online.");
+    return { kind, query };
+  }
+  if (kind === "doi") {
+    const query = normalizedDoi(doi);
+    if (!validPdfReviewDoi(query)) throw new Error("Enter a valid DOI before searching online.");
+    return { kind, query };
+  }
+  if (kind === "arxiv") {
+    const arxiv = normalizedArxiv(arxivId);
+    if (!validPdfReviewArxiv(arxiv)) throw new Error("Enter a valid arXiv ID before searching online.");
+    return { kind, query: `arxiv:${arxiv}` };
+  }
+  throw new Error(`Unsupported online search field: ${clean(kind) || "unknown"}.`);
 }
 
 export function pdfReviewLookupState({
