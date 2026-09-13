@@ -98,8 +98,8 @@
   }
   .config-grid-two { grid-template-columns: 1fr; }
   .config-actions {
-    position: static;
-    bottom: auto;
+    position: sticky;
+    bottom: -14px;
     margin: 12px -14px -14px;
     padding: 12px 14px;
     align-items: stretch;
