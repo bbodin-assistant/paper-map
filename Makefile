@@ -147,7 +147,7 @@ $(TEST_PAPERS_DIR)/ppdp21.pdf: | $(TEST_PAPERS_DIR)
 
 $(TEST_PAPERS_DIR)/RizziAug22_AComprehensiveTimingModelForAccurateFrequencyTuningInDataflowCircuits_FPL22.pdf: | $(TEST_PAPERS_DIR)
 	curl --fail --location --retry 3 --output "$@.tmp" "https://www.epfl.ch/labs/lap/wp-content/uploads/2022/09/RizziAug22_AComprehensiveTimingModelForAccurateFrequencyTuningInDataflowCircuits_FPL22.pdf"
-	test "$$(sha256sum "$@.tmp")" | cut -d ' ' -f 1 | grep -qx "2ef4b85d74b7b588d7c6977d36083799ef7c6f2cbf59b71bf5f1b588b29bfc3a"
+	test "$$(sha256sum "$@.tmp" | cut -d ' ' -f 1)" = "2ef4b85d74b7b588d7c6977d36083799ef7c6f2cbf59b71bf5f1b588b29bfc3a"
 	mv "$@.tmp" "$@"
 
 clean:
