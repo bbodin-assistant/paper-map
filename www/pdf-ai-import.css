@@ -162,7 +162,99 @@
 .pdf-source-chip.complete { border-color: #9db8a3; background: #eff7f0; color: #315a39; }
 .pdf-source-chip.running,
 .pdf-source-chip.queued { border-color: #b7b0df; background: #f1effc; color: #514887; }
+.pdf-source-chip.candidates { border-color: #d3b668; background: #fff8dd; color: #6f5619; }
 .pdf-source-chip.error { border-color: #d7a8a1; background: #fff0ed; color: #823c32; }
+
+.pdf-online-candidates {
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid #d8c98f;
+  border-radius: 7px;
+  background: #fffdf4;
+}
+
+.pdf-online-candidates .section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.pdf-online-candidates h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.pdf-online-candidate-note {
+  margin: 4px 0 10px;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.pdf-online-candidate-list {
+  display: grid;
+  gap: 7px;
+}
+
+.pdf-online-candidate {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 9px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cfd4cf;
+  border-radius: 6px;
+  background: #fff;
+  color: #25312a;
+  text-align: left;
+}
+
+.pdf-online-candidate:hover:not(:disabled),
+.pdf-online-candidate:focus-visible {
+  border-color: #708879;
+  background: #f3f7f3;
+}
+
+.pdf-online-candidate-rank {
+  padding-top: 2px;
+  color: #6c776f;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.pdf-online-candidate-copy {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.pdf-online-candidate-copy strong {
+  color: #17231b;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.pdf-online-candidate-copy span {
+  color: #68736c;
+  font-size: 11px;
+  line-height: 1.35;
+  white-space: normal;
+}
+
+.pdf-online-exact-title {
+  align-self: start;
+  padding: 3px 6px;
+  border: 1px solid #9db8a3;
+  border-radius: 999px;
+  background: #eff7f0;
+  color: #315a39;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
 
 .pdf-ai-metadata-grid {
   display: grid;
@@ -324,6 +416,13 @@
   .pdf-review-tabs button {
     width: auto;
     max-width: 230px;
+  }
+  .pdf-online-candidate {
+    grid-template-columns: 28px minmax(0, 1fr);
+  }
+  .pdf-online-exact-title {
+    grid-column: 2;
+    justify-self: start;
   }
   .pdf-ai-metadata-grid { grid-template-columns: 1fr; }
   .pdf-ai-metadata-grid .full-width { grid-column: auto; }
