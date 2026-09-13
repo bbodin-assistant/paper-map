@@ -1,5 +1,7 @@
 # Paper Map
 
+**Live deployment:** [https://bbodin-assistant.github.io/paper-map/](https://bbodin-assistant.github.io/paper-map/)
+
 Paper Map is a local-first research bibliography explorer. It keeps the user's library in the browser, renders directed citation, semantic-research and thematic maps as the primary interface, and can expand the graph from public scholarly APIs on demand.
 
 The application is designed for static hosting. There is no application backend and no bibliography data is uploaded to GitHub unless it is part of the bundled demo dataset.
