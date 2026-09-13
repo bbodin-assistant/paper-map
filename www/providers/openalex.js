@@ -129,11 +129,11 @@ export async function searchPapers(query, limit = 5, options = {}) {
   return result.papers.filter((paper) => paper.title && paper.title !== "Untitled paper");
 }
 
-async function searchTitlePapers(query, limit = 20, options = {}) {
+async function searchExactTitleCandidates(query, limit = 100, options = {}) {
   const text = searchText(query);
   if (!text) return [];
-  const boundedLimit = Math.max(1, Math.min(20, Number(limit) || 20));
-  const result = await works({ filter: `title.search:${quotedSearchPhrase(text)}`, "per-page": boundedLimit }, options);
+  const boundedLimit = Math.max(1, Math.min(100, Number(limit) || 100));
+  const result = await works({ "search.exact": quotedSearchPhrase(text), "per-page": boundedLimit }, options);
   return result.papers.filter((paper) => paper.title && paper.title !== "Untitled paper");
 }
 
@@ -159,8 +159,8 @@ export async function resolvePaper(query, options = {}) {
   const requestedTitle = normalizedTitle(lookupText);
 
   if (!arxivLike && requestedTitle) {
-    const titleMatches = await searchTitlePapers(lookupText, 20, options);
-    const exactTitle = titleMatches.find((paper) => normalizedTitle(paper.title) === requestedTitle);
+    const exactCandidates = await searchExactTitleCandidates(lookupText, 100, options);
+    const exactTitle = exactCandidates.find((paper) => normalizedTitle(paper.title) === requestedTitle);
     if (exactTitle) return exactTitle;
   }
 
