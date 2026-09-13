@@ -138,10 +138,18 @@ export async function resolvePaper(query, options = {}) {
   const workId = openAlexId(text);
   if (workId) return normalizePaper(await request(`/works/${workId}`, {}, options));
 
-  const matches = await searchPapers(text.replace(/^arxiv:/i, ""), 5, options);
-  const requestedArxiv = text.replace(/^arxiv:/i, "");
+  const searchText = text.replace(/^arxiv:/i, "");
+  const matches = await searchPapers(searchText, 20, options);
+  const requestedArxiv = searchText;
   const exactArxiv = matches.find((paper) => paper.arxivId && paper.arxivId.toLowerCase() === requestedArxiv.toLowerCase());
   if (exactArxiv) return exactArxiv;
+
+  const requestedTitle = normalizedTitle(text);
+  const exactTitle = requestedTitle
+    ? matches.find((paper) => normalizedTitle(paper.title) === requestedTitle)
+    : null;
+  if (exactTitle) return exactTitle;
+
   if (!matches.length) throw new Error("No matching paper found in OpenAlex.");
   return matches[0];
 }

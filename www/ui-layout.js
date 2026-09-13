@@ -38,7 +38,7 @@ function installDesktopLayoutStyles(root = document) {
   if (root.querySelector('link[data-paper-map-desktop-layout]')) return true;
   const link = root.createElement("link");
   link.rel = "stylesheet";
-  link.href = "./desktop-layout.css?v=0.4.6";
+  link.href = "./desktop-layout.css?v=0.4.7";
   link.dataset.paperMapDesktopLayout = "true";
   root.head.append(link);
   return true;
@@ -69,6 +69,85 @@ function initTopicFocusLayout(root = document) {
   }
 
   syncAtlasContentTop();
+  return true;
+}
+
+function pdfFileStem(name) {
+  return String(name ?? "")
+    .trim()
+    .replace(/\.pdf$/i, "")
+    .replace(/[_-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizedPdfMetadataText(value) {
+  return String(value ?? "")
+    .normalize("NFKD")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+export function pdfReviewMissingMetadata({ title = "", authors = "", fileName = "", localStatus = "" } = {}) {
+  if (localStatus !== "complete" && localStatus !== "error") return { title: false, authors: false };
+  const cleanTitle = String(title).trim();
+  const authorsMissing = !String(authors).trim();
+  const titleMatchesFilenameFallback = Boolean(cleanTitle)
+    && normalizedPdfMetadataText(cleanTitle) === normalizedPdfMetadataText(pdfFileStem(fileName));
+  return {
+    title: !cleanTitle || (titleMatchesFilenameFallback && (authorsMissing || localStatus === "error")),
+    authors: authorsMissing,
+  };
+}
+
+function installPdfReviewPolish(root = document) {
+  if (!root?.querySelector) return false;
+  const dialog = root.querySelector("#pdf-ai-dialog");
+  if (!dialog || dialog.dataset.requiredMetadataPolish === "true") return false;
+
+  const title = dialog.querySelector("#pdf-review-title");
+  const authors = dialog.querySelector("#pdf-review-authors");
+  const fileName = dialog.querySelector("#pdf-ai-file-name");
+  const titleLabel = title?.closest("label");
+  const authorsLabel = authors?.closest("label");
+  if (!title || !authors || !fileName || !titleLabel || !authorsLabel) return false;
+
+  titleLabel.classList.add("pdf-required-metadata");
+  authorsLabel.classList.add("pdf-required-metadata");
+
+  const localStatus = () => {
+    const chip = Array.from(dialog.querySelectorAll(".pdf-source-chip"))
+      .find((candidate) => candidate.textContent.trim().startsWith("Local:"));
+    if (!chip) return "";
+    if (chip.classList.contains("complete")) return "complete";
+    if (chip.classList.contains("error")) return "error";
+    if (chip.classList.contains("running")) return "running";
+    if (chip.classList.contains("queued")) return "queued";
+    return "idle";
+  };
+
+  const sync = () => {
+    const missing = pdfReviewMissingMetadata({
+      title: title.value,
+      authors: authors.value,
+      fileName: fileName.textContent,
+      localStatus: localStatus(),
+    });
+    titleLabel.classList.toggle("missing-extracted-metadata", missing.title);
+    authorsLabel.classList.toggle("missing-extracted-metadata", missing.authors);
+    title.setAttribute("aria-invalid", String(missing.title));
+    authors.setAttribute("aria-invalid", String(missing.authors));
+  };
+
+  dialog.addEventListener("input", (event) => {
+    if (event.target === title || event.target === authors) sync();
+  });
+  const observer = new MutationObserver(sync);
+  observer.observe(dialog, { subtree: true, childList: true, characterData: true });
+  dialog.dataset.requiredMetadataPolish = "true";
+  sync();
   return true;
 }
 
@@ -146,25 +225,18 @@ function createDesktopLayoutController(root = document, view = window) {
       headerOverview: null,
       toolbarLeft: null,
       toolbarRight: null,
-      statusLabel: null,
     };
 
     const headerOverview = root.createElement("div");
     headerOverview.className = "desktop-header-overview";
     header.insertBefore(headerOverview, headerTools);
-    headerOverview.append(mapSummary, filterMenu);
+    headerOverview.append(mapSummary);
     state.headerOverview = headerOverview;
 
     if (headerSearch) {
       headerSearch.classList.add("desktop-filter-search");
       filterPanel.insertBefore(headerSearch, filterGrid);
     }
-
-    const statusLabel = root.createElement("strong");
-    statusLabel.className = "desktop-status-label";
-    statusLabel.textContent = "Status";
-    status.insertBefore(statusLabel, root.querySelector("#library-status-text"));
-    state.statusLabel = statusLabel;
 
     const toolbarLeft = root.createElement("div");
     toolbarLeft.className = "desktop-toolbar-left";
@@ -175,7 +247,7 @@ function createDesktopLayoutController(root = document, view = window) {
     toolbarActions.classList.add("desktop-add-actions");
     toolbarActions.insertBefore(addPaperForm, addFileButton);
     addPaperForm.classList.add("desktop-add-paper-form");
-    paperListButton.textContent = "Show papers";
+    paperListButton.textContent = "Papers ↓";
     addPaperQuery.placeholder = "Name of a paper to add";
     addPaperSubmit.textContent = "Add";
     addFileButton.textContent = "Add paper";
@@ -198,7 +270,7 @@ function createDesktopLayoutController(root = document, view = window) {
     filterButton.addEventListener("click", toggleFilter);
     filterMenu.addEventListener("toggle", syncFilterToggle);
     state.filterToggleHandler = syncFilterToggle;
-    toolbarRight.append(filterButton);
+    toolbarRight.append(filterButton, filterMenu);
     toolbarPrimary.append(toolbarRight);
     state.toolbarRight = toolbarRight;
 
@@ -257,7 +329,6 @@ function createDesktopLayoutController(root = document, view = window) {
     if (addFileButton) addFileButton.textContent = state.addFileText;
     if (libraryMenu) libraryMenu.hidden = state.libraryMenuHidden;
 
-    state.statusLabel?.remove();
     state.headerOverview?.remove();
     state.toolbarLeft?.remove();
     state.toolbarRight?.remove();
@@ -289,6 +360,7 @@ if (typeof document !== "undefined") {
   installTimelineInteractionPolish(document);
   installDesktopLayoutStyles(document);
   initTopicFocusLayout(document);
+  installPdfReviewPolish(document);
   if (!globalThis.__paperMapDesktopLayoutController) {
     globalThis.__paperMapDesktopLayoutController = createDesktopLayoutController(document, window);
   }

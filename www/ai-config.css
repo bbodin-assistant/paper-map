@@ -3,7 +3,7 @@
   z-index: 75;
   right: 18px;
   top: 48px;
-  width: min(560px, calc(100vw - 28px));
+  width: min(580px, calc(100vw - 28px));
   max-height: calc(100vh - 66px);
   overflow: auto;
   padding: 18px;
@@ -22,24 +22,47 @@
   gap: 12px;
 }
 
-.config-header { margin-bottom: 10px; }
+.config-header { margin-bottom: 14px; }
 .config-header h2,
 .config-section h3 { margin: 0; }
 
 .config-section {
-  padding: 15px 0;
-  border-top: 1px solid #d7dcd7;
+  margin: 12px 0;
+  padding: 14px;
+  border: 1px solid #cfd5d0;
+  border-radius: 6px;
+  background: #f7f8f5;
+  box-shadow: inset 3px 0 0 #8a9790;
 }
 
-.config-section-heading { margin-bottom: 10px; }
+.config-section-heading {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dce1dc;
+}
+
+.config-section-heading h3 {
+  color: #26323b;
+  font-size: 13px;
+}
+
+.config-section-heading .drawer-kicker {
+  color: #6f7d75;
+}
+
 .config-grid { display: grid; gap: 11px; }
 .config-grid-two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.config-note { margin: 10px 0 0; line-height: 1.45; }
+.config-note {
+  margin: 11px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid #e0e4e0;
+  line-height: 1.45;
+}
 .config-actions {
   position: sticky;
   bottom: -18px;
   align-items: center;
-  margin: 2px -18px -18px;
+  margin: 14px -18px -18px;
   padding: 12px 18px;
   border-top: 1px solid #cbd0cc;
   background: rgba(255, 254, 249, 0.97);
@@ -57,8 +80,12 @@
 .ai-model-input-row button { white-space: nowrap; }
 .ai-model-status {
   display: block;
+  height: 34px;
   margin-top: 4px;
+  overflow-x: hidden;
+  overflow-y: auto;
   overflow-wrap: anywhere;
+  line-height: 1.35;
 }
 
 @media (max-width: 680px) {
@@ -69,11 +96,15 @@
     max-height: calc(100vh - 56px);
     padding: 14px;
   }
+  .config-section {
+    margin: 10px 0;
+    padding: 12px;
+  }
   .config-grid-two { grid-template-columns: 1fr; }
   .config-actions {
     position: static;
     bottom: auto;
-    margin: 2px -14px -14px;
+    margin: 12px -14px -14px;
     padding: 12px 14px;
     align-items: stretch;
     flex-direction: column;
