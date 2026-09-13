@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 
 import {
   pdfReviewLookupState,
+  pdfReviewOnlineQuery,
   validPdfReviewArxiv,
   validPdfReviewDoi,
 } from "../www/pdf-review-state.js";
@@ -91,6 +92,28 @@ test("non-empty malformed identifiers are red but missing optional identifiers a
   assert.equal(validPdfReviewDoi("wrong"), false);
   assert.equal(validPdfReviewArxiv("2501.01234v2"), true);
   assert.equal(validPdfReviewArxiv("wrong"), false);
+});
+
+test("online queries use exactly the field whose button was pressed", () => {
+  const draft = {
+    title: "  FLOWER: A FRIENDLY\nFEDERATED LEARNING FRAMEWORK  ",
+    doi: "https://doi.org/10.5555/Example.DOI",
+    arxivId: "2007.14390v5",
+  };
+  assert.deepEqual(pdfReviewOnlineQuery(draft, "title"), {
+    kind: "title",
+    query: "FLOWER: A FRIENDLY FEDERATED LEARNING FRAMEWORK",
+  });
+  assert.deepEqual(pdfReviewOnlineQuery(draft, "doi"), {
+    kind: "doi",
+    query: "10.5555/example.doi",
+  });
+  assert.deepEqual(pdfReviewOnlineQuery(draft, "arxiv"), {
+    kind: "arxiv",
+    query: "arxiv:2007.14390v5",
+  });
+  assert.throws(() => pdfReviewOnlineQuery({ doi: "bad" }, "doi"), /valid DOI/);
+  assert.throws(() => pdfReviewOnlineQuery({ arxivId: "bad" }, "arxiv"), /valid arXiv/);
 });
 
 test("a completed online lookup turns the tab green regardless of optional descriptive metadata", () => {
