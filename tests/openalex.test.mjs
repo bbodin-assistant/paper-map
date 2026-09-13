@@ -19,13 +19,13 @@ const relevanceWork = {
   locations: [],
 };
 
-test("OpenAlex title resolution uses an exact title-only phrase lookup before relevance search", async () => {
+test("OpenAlex title resolution uses an exact phrase lookup before relevance search", async () => {
   const previousFetch = globalThis.fetch;
   const requestedUrls = [];
   globalThis.fetch = async (input) => {
     const url = new URL(String(input));
     requestedUrls.push(url);
-    if (url.searchParams.has("filter")) {
+    if (url.searchParams.has("search.exact")) {
       return new Response(JSON.stringify({ results: [exactWork], meta: { count: 1 } }), {
         status: 200,
         headers: { "Content-Type": "application/json" },
@@ -43,23 +43,24 @@ test("OpenAlex title resolution uses an exact title-only phrase lookup before re
     assert.equal(paper.title, "On-Demand Container Partitioning for Distributed ML");
     assert.equal(requestedUrls.length, 1, "an exact title match should not fall through to broad relevance search");
     assert.equal(
-      requestedUrls[0].searchParams.get("filter"),
-      'title.search:"On-Demand Container Partitioning for Distributed ML"',
+      requestedUrls[0].searchParams.get("search.exact"),
+      '"On-Demand Container Partitioning for Distributed ML"',
     );
-    assert.equal(requestedUrls[0].searchParams.get("per-page"), "20");
+    assert.equal(requestedUrls[0].searchParams.get("per-page"), "100");
     assert.equal(requestedUrls[0].searchParams.get("search"), null);
+    assert.equal(requestedUrls[0].searchParams.get("filter"), null);
   } finally {
     globalThis.fetch = previousFetch;
   }
 });
 
-test("OpenAlex title resolution falls back to broad relevance search when the title-only lookup has no exact match", async () => {
+test("OpenAlex title resolution falls back to broad relevance search when exact phrase candidates have no exact title", async () => {
   const previousFetch = globalThis.fetch;
   const requestedUrls = [];
   globalThis.fetch = async (input) => {
     const url = new URL(String(input));
     requestedUrls.push(url);
-    const results = url.searchParams.has("filter") ? [] : [relevanceWork];
+    const results = url.searchParams.has("search.exact") ? [] : [relevanceWork];
     return new Response(JSON.stringify({ results, meta: { count: results.length } }), {
       status: 200,
       headers: { "Content-Type": "application/json" },
@@ -70,7 +71,7 @@ test("OpenAlex title resolution falls back to broad relevance search when the ti
     const paper = await resolvePaper("Uncatalogued Container Partitioning Study");
     assert.equal(paper.openAlexId, "W111");
     assert.equal(requestedUrls.length, 2);
-    assert.equal(requestedUrls[0].searchParams.get("filter"), 'title.search:"Uncatalogued Container Partitioning Study"');
+    assert.equal(requestedUrls[0].searchParams.get("search.exact"), '"Uncatalogued Container Partitioning Study"');
     assert.equal(requestedUrls[1].searchParams.get("search"), "Uncatalogued Container Partitioning Study");
   } finally {
     globalThis.fetch = previousFetch;
