@@ -33,6 +33,8 @@ test("configuration sections are visually segmented without covering mobile cont
   assert.match(css, /\.config-section[\s\S]*?border: 1px solid #cfd5d0;/);
   assert.match(css, /\.config-section[\s\S]*?background: #f7f8f5;/);
   assert.match(css, /box-shadow: inset 3px 0 0 #8a9790;/);
+  assert.match(css, /\.ai-model-status[\s\S]*?height: 34px;/);
+  assert.match(css, /\.ai-model-status[\s\S]*?overflow-y: auto;/);
   const mobile = css.slice(css.indexOf("@media (max-width: 680px)"));
   assert.match(mobile, /\.config-actions[\s\S]*?position: static;/);
   assert.match(mobile, /\.config-actions[\s\S]*?bottom: auto;/);
