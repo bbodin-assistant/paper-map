@@ -1,4 +1,4 @@
-use pdfplumber::{Pdf, TextOptions};
+use pdfplumber::{ColumnMode, Pdf, TextOptions};
 use regex::Regex;
 use serde::Serialize;
 use wasm_bindgen::prelude::*;
@@ -9,6 +9,7 @@ struct PageText {
     width: f64,
     height: f64,
     text: String,
+    citation_text: String,
 }
 
 #[derive(Clone, Debug)]
@@ -237,7 +238,7 @@ fn reference_signal_count(text: &str) -> usize {
 fn find_bibliography_start(pages: &[PageText]) -> Option<BibliographyStart> {
     let mut exact = None;
     for (page_index, page) in pages.iter().enumerate() {
-        for (line_index, line) in page.text.lines().enumerate() {
+        for (line_index, line) in page.citation_text.lines().enumerate() {
             if let Some(heading) = heading_name(line) {
                 exact = Some(BibliographyStart {
                     page_index,
@@ -257,7 +258,7 @@ fn find_bibliography_start(pages: &[PageText]) -> Option<BibliographyStart> {
     }
     let search_start = pages.len().saturating_mul(3) / 5;
     for (page_index, page) in pages.iter().enumerate().skip(search_start) {
-        if reference_signal_count(&page.text) >= 3 {
+        if reference_signal_count(&page.citation_text) >= 3 {
             return Some(BibliographyStart {
                 page_index,
                 line_index: 0,
@@ -277,7 +278,7 @@ fn bibliography_lines(pages: &[PageText], start: &BibliographyStart) -> Vec<Opti
         } else {
             0
         };
-        for line in page.text.lines().skip(first_line) {
+        for line in page.citation_text.lines().skip(first_line) {
             if page_index > start.page_index && is_post_bibliography_heading(line) {
                 break 'pages;
             }
@@ -315,8 +316,14 @@ fn segment_numbered(lines: &[Option<SourceLine>]) -> Vec<ReferenceDraft> {
     let numbered = numbered_reference_regex();
     let mut output = Vec::new();
     let mut current: Option<ReferenceDraft> = None;
+    let mut after_block_break = false;
 
-    for source in lines.iter().flatten() {
+    for (index, item) in lines.iter().enumerate() {
+        let Some(source) = item else {
+            after_block_break = true;
+            continue;
+        };
+
         if let Some(captures) = numbered.captures(&source.text) {
             flush_reference(&mut current, &mut output);
             let label = captures
@@ -332,9 +339,28 @@ fn segment_numbered(lines: &[Option<SourceLine>]) -> Vec<ReferenceDraft> {
                 }],
                 numbered: true,
             });
-        } else if let Some(reference) = current.as_mut() {
-            reference.lines.push(source.clone());
+            after_block_break = false;
+            continue;
         }
+
+        if current.is_none() {
+            after_block_break = false;
+            continue;
+        }
+
+        let future_numbered = lines[index + 1..]
+            .iter()
+            .flatten()
+            .any(|future| numbered.is_match(&future.text));
+        if after_block_break
+            && !future_numbered
+            && current.as_ref().is_some_and(draft_has_year)
+        {
+            break;
+        }
+
+        current.as_mut().unwrap().lines.push(source.clone());
+        after_block_break = false;
     }
     flush_reference(&mut current, &mut output);
     output
@@ -508,19 +534,26 @@ fn parse_pdf(pdf_bytes: &[u8]) -> Result<CitationExtraction, String> {
         return Err("Select a non-empty PDF file.".to_string());
     }
     let pdf = Pdf::open_bytes(pdf_bytes, None).map_err(|error| format!("Could not parse PDF: {error}"))?;
-    let options = TextOptions {
+    let document_options = TextOptions {
         layout: true,
+        ..Default::default()
+    };
+    let citation_options = TextOptions {
+        layout: true,
+        column_mode: ColumnMode::Auto,
         ..Default::default()
     };
     let mut pages = Vec::new();
     for page_result in pdf.pages() {
         let page = page_result.map_err(|error| format!("Could not extract PDF page: {error}"))?;
-        let text = page.extract_text(&options);
+        let text = page.extract_text(&document_options);
+        let citation_text = page.extract_text(&citation_options);
         pages.push(PageText {
             page: page.page_number() + 1,
             width: page.width(),
             height: page.height(),
             text,
+            citation_text,
         });
     }
     if pages.is_empty() {
@@ -548,6 +581,17 @@ mod tests {
             width: 612.0,
             height: 792.0,
             text: text.to_string(),
+            citation_text: text.to_string(),
+        }
+    }
+
+    fn page_with_citation_text(page: usize, text: &str, citation_text: &str) -> PageText {
+        PageText {
+            page,
+            width: 612.0,
+            height: 792.0,
+            text: text.to_string(),
+            citation_text: citation_text.to_string(),
         }
     }
 
@@ -590,6 +634,28 @@ mod tests {
         assert!(extraction.references[1].raw_text.contains("Mandy Guo, and Llion Jones. 2018"));
         assert!(extraction.references[2].raw_text.starts_with("Jacob Devlin"));
         assert_eq!(extraction.references[3].year, Some(2005));
+    }
+
+    #[test]
+    fn uses_column_aware_text_for_bibliography_without_changing_document_text() {
+        let row_order = "References\n[1] Left one. 2020. [3] Right three. 2022.\n[2] Left two. 2021. [4] Right four. 2023.";
+        let column_order = "References\n[1] Left one. 2020.\n[2] Left two. 2021.\n[3] Right three. 2022.\n[4] Right four. 2023.";
+        let extraction = extract_from_pages(vec![page_with_citation_text(1, row_order, column_order)]);
+        assert_eq!(extraction.references.len(), 4);
+        assert_eq!(extraction.references[0].label.as_deref(), Some("1"));
+        assert_eq!(extraction.references[3].label.as_deref(), Some("4"));
+        assert!(extraction.document_text.contains("[1] Left one. 2020. [3] Right three. 2022."));
+    }
+
+    #[test]
+    fn numbered_references_stop_before_trailing_prose_after_final_block() {
+        let extraction = extract_from_pages(vec![page(
+            1,
+            "References\n[1] First citation. Journal, 2001.\n[2] Final citation. Conference, 2002.\npp. 61-75.\n\nThomas Example is a professor of computer science.\nHis research focuses on embedded systems.",
+        )]);
+        assert_eq!(extraction.references.len(), 2);
+        assert!(extraction.references[1].raw_text.contains("pp. 61-75"));
+        assert!(!extraction.references[1].raw_text.contains("professor"));
     }
 
     #[test]
