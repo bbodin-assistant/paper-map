@@ -164,7 +164,7 @@ def main():
 
         save_screenshot(driver, "12-rust-two-column-citations.png", dialog)
         driver.find_element(By.ID, "pdf-ai-skip-file").click()
-        wait.until(EC.staleness_of(dialog))
+        wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is None)
         print("Rust/WASM two-column bibliography ordering and biography-boundary checks passed.")
     except Exception:
         try:
