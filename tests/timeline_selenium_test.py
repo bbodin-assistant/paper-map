@@ -49,6 +49,7 @@ def assert_desktop_layout(driver):
           brand: rect('.app-header .brand'),
           headerOverview: rect('.desktop-header-overview'),
           headerTools: rect('.app-header .header-tools'),
+          toolbar: rect('.toolbar-primary'),
           toolbarLeft: rect('.desktop-toolbar-left'),
           toolbarCenter: rect('.desktop-add-actions'),
           toolbarRight: rect('.desktop-toolbar-right'),
@@ -79,14 +80,15 @@ def assert_desktop_layout(driver):
 
     assert_true(structure["brand"]["right"] < structure["headerOverview"]["left"], f"Header overview should follow brand: {structure}")
     assert_true(structure["headerOverview"]["right"] < structure["headerTools"]["left"], f"Status/Config/About should stay at header right: {structure}")
-    assert_true(structure["toolbarLeft"]["right"] < structure["toolbarCenter"]["left"], f"Add controls should be centered after map controls: {structure}")
-    assert_true(structure["toolbarCenter"]["right"] < structure["toolbarRight"]["left"], f"Trailing Filters should stay at toolbar right: {structure}")
+    assert_true(structure["toolbarRight"]["right"] < structure["toolbarLeft"]["left"], f"Filters should sit immediately left of Papers/map controls: {structure}")
+    assert_true(structure["toolbarLeft"]["right"] < structure["toolbarCenter"]["left"], f"Add controls should stay after the left toolbar controls: {structure}")
+    assert_true(abs(structure["toolbar"]["right"] - structure["toolbarCenter"]["right"] - 10) <= 2, f"Add controls should align to the toolbar right edge: {structure}")
     assert_true(structure["mapSummaryParent"] == "desktop-header-overview", f"Paper/link summary should live in header overview: {structure}")
-    assert_true(structure["headerFilterParent"] == "desktop-toolbar-right", f"The Filters menu should live only at the toolbar right: {structure}")
-    assert_true(structure["paperButtonParent"] == "desktop-toolbar-left", f"Papers should lead the second row: {structure}")
+    assert_true(structure["headerFilterParent"] == "desktop-toolbar-right", f"The Filters menu should remain in its desktop filter control wrapper: {structure}")
+    assert_true(structure["paperButtonParent"] == "desktop-toolbar-left", f"Papers should follow Filters in the second row: {structure}")
     assert_true(structure["mapModeParent"] == "desktop-toolbar-left", f"Map switch should follow Papers: {structure}")
-    assert_true("desktop-add-actions" in structure["addFormParent"], f"Resolver should be centered in the second row: {structure}")
-    assert_true("desktop-add-actions" in structure["addFileParent"], f"Add paper file picker should follow resolver: {structure}")
+    assert_true("desktop-add-actions" in structure["addFormParent"], f"Resolver should be right-aligned in the second row: {structure}")
+    assert_true("desktop-add-actions" in structure["addFileParent"], f"Add paper file picker should follow the right-aligned resolver: {structure}")
     assert_true(structure["resetParent"] == "map-stage", f"Reset view should float inside the map: {structure}")
     assert_true(structure["statusLabel"] == "", f"Desktop status should not inject a STATUS label: {structure}")
     assert_true(structure["paperButton"] == "Papers ↓", f"Desktop paper drawer button label is wrong: {structure}")
@@ -94,7 +96,7 @@ def assert_desktop_layout(driver):
     assert_true(structure["addSubmit"] == "Add", f"Desktop resolver submit label is wrong: {structure}")
     assert_true(structure["addFile"] == "Add paper", f"Desktop file picker label is wrong: {structure}")
     assert_true(structure["modeLabels"] == ["Citation map", "Topic map", "Timeline"], f"Desktop map switch should expose all three modes: {structure}")
-    assert_true(structure["filterLabels"][1] == "Filters", f"The right-side Filters control should remain visible: {structure}")
+    assert_true(structure["filterLabels"][1] == "Filters", f"The left-side Filters control should remain visible: {structure}")
 
     stage = structure["stage"]
     reset = structure["reset"]
