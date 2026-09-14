@@ -120,6 +120,20 @@ def replace_title(driver, value):
     assert_true(field.get_attribute("value") == value, "Title edit should be retained before online lookup")
 
 
+def assert_field_search_buttons(driver):
+    for field_id, button_id in [
+        ("pdf-review-title", "pdf-online-search-title"),
+        ("pdf-review-doi", "pdf-online-search-doi"),
+        ("pdf-review-arxiv", "pdf-online-search-arxiv"),
+    ]:
+        field = driver.find_element(By.ID, field_id)
+        wrapper = field.find_element(By.XPATH, "..")
+        assert_true(
+            wrapper.find_element(By.ID, button_id).text == "Search online",
+            f"{field_id} should have its own adjacent Search online action",
+        )
+
+
 def main():
     ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
     driver = create_driver()
@@ -146,15 +160,18 @@ def main():
             lambda d: d.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-local-status")
             in ("complete", "error")
         )
+        tab = driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]")
+        assert_true(tab.get_attribute("data-local-status") == "complete", "Fixture should complete local extraction before online candidate review")
         assert_true(
-            driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-local-status") == "complete",
-            "Fixture should complete local extraction before online candidate review",
+            tab.get_attribute("data-review-status") in ("searchable", "error"),
+            "A locally extracted tab should immediately expose metadata readiness instead of defaulting green",
         )
+        assert_field_search_buttons(driver)
         replace_title(driver, QUERY_TITLE)
         assert_true(not driver.find_element(By.ID, "pdf-review-doi").get_attribute("value"), "Fixture should not provide a DOI")
         assert_true(not driver.find_element(By.ID, "pdf-review-arxiv").get_attribute("value"), "Fixture should not provide an arXiv ID")
 
-        wait_click(driver, "#pdf-online-extract")
+        wait_click(driver, "#pdf-online-search-title")
         candidate_section = wait.until(
             lambda d: d.find_element(By.ID, "pdf-online-candidates")
             if d.find_element(By.ID, "pdf-online-candidates").get_attribute("hidden") is None
@@ -167,10 +184,7 @@ def main():
         assert_true("2021" in buttons[1].text, "Candidate should expose publication year")
         assert_true("Proceedings of Machine Learning Systems" in buttons[1].text, "Candidate should expose venue")
         assert_true("Flower Federated Learning at Scale" in buttons[2].text, "Non-exact provider result should remain available after exact-title candidates")
-        assert_true(
-            "choose match" in driver.find_element(By.ID, "pdf-source-status").text,
-            "OpenAlex source status should require an explicit choice",
-        )
+        assert_true("choose match" in driver.find_element(By.ID, "pdf-source-status").text, "OpenAlex source status should require an explicit choice")
         assert_true(
             "Incorrect Version Author" not in driver.find_element(By.ID, "pdf-review-authors").get_attribute("value"),
             "Candidate search must not auto-merge the first result",
@@ -180,9 +194,7 @@ def main():
 
         center_element(driver, buttons[1])
         buttons[1].click()
-        wait.until(
-            lambda d: "Online (OpenAlex): ready" in d.find_element(By.ID, "pdf-source-status").text
-        )
+        wait.until(lambda d: "Online (OpenAlex): ready" in d.find_element(By.ID, "pdf-source-status").text)
         assert_true(
             driver.find_element(By.ID, "pdf-review-authors").get_attribute("value") == "\n".join(CORRECT_AUTHORS),
             "Only the explicitly selected candidate authors should be merged",
@@ -192,9 +204,10 @@ def main():
             driver.find_element(By.ID, "pdf-review-venue").get_attribute("value") == "Proceedings of Machine Learning Systems",
             "Selected candidate venue should merge",
         )
+        assert_true(driver.find_element(By.ID, "pdf-review-title").get_attribute("value") == QUERY_TITLE, "A manually edited title should remain untouched after candidate selection")
         assert_true(
-            driver.find_element(By.ID, "pdf-review-title").get_attribute("value") == QUERY_TITLE,
-            "A manually edited title should remain untouched after candidate selection",
+            driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-review-status") == "resolved",
+            "Explicit online selection should turn the tab green/resolved",
         )
         work_fetches = driver.execute_script("return window.__paperMapOpenAlexWorkFetches.slice();")
         assert_true(work_fetches == ["W303"], f"Reference expansion should canonicalize only the selected OpenAlex work, got {work_fetches}")
@@ -205,10 +218,7 @@ def main():
         save_button.click()
         wait.until(EC.staleness_of(save_button))
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
-        wait.until(
-            lambda d: "Opening local library"
-            not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
-        )
+        wait.until(lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
 
         papers = read_all_indexeddb(driver, "papers")
         assert_true(len(papers) == 1, f"Expected one saved paper, got {len(papers)}")
@@ -218,7 +228,7 @@ def main():
         assert_true(paper["onlineExtraction"]["selectedBy"] == "user", "Online provenance should record explicit selection")
         assert_true(paper["onlineExtraction"]["selectedCandidateRank"] == 2, "Online provenance should retain selected candidate rank")
         assert_true(paper["onlineExtraction"]["query"] == QUERY_TITLE, "Online provenance should retain the original title query")
-        print("OpenAlex title candidate review and explicit selection checks passed.")
+        print("OpenAlex field-specific title search, candidate review, and explicit selection checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "openalex-candidate-failure.png")

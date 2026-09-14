@@ -36,16 +36,8 @@ MOCK_METADATA = {
     "abstract": "AI proposed abstract for the deterministic Selenium review flow.",
     "keywords": ["proposal", "selenium"],
     "topics": [
-        {
-            "name": "Rejected Topic",
-            "description": "This topic should be rejected before saving.",
-            "confidence": 0.83,
-        },
-        {
-            "name": "Accepted Topic",
-            "description": "This topic should be accepted and edited before saving.",
-            "confidence": 0.94,
-        },
+        {"name": "Rejected Topic", "description": "This topic should be rejected before saving.", "confidence": 0.83},
+        {"name": "Accepted Topic", "description": "This topic should be accepted and edited before saving.", "confidence": 0.94},
     ],
     "warnings": ["Deterministic Selenium fixture: review all fields."],
 }
@@ -84,7 +76,6 @@ def create_ai_text_pdf_fixture():
         commands.append(f"({pdf_escape(line)}) Tj")
     commands.append("ET")
     stream = "\n".join(commands).encode("latin-1")
-
     objects = [
         b"<< /Type /Catalog /Pages 2 0 R >>",
         b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
@@ -92,7 +83,6 @@ def create_ai_text_pdf_fixture():
         b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>",
         b"<< /Length " + str(len(stream)).encode("ascii") + b" >>\nstream\n" + stream + b"\nendstream",
     ]
-
     output = bytearray(b"%PDF-1.4\n%\xe2\xe3\xcf\xd3\n")
     offsets = [0]
     for number, body in enumerate(objects, start=1):
@@ -100,15 +90,12 @@ def create_ai_text_pdf_fixture():
         output.extend(f"{number} 0 obj\n".encode("ascii"))
         output.extend(body)
         output.extend(b"\nendobj\n")
-
     xref_offset = len(output)
     output.extend(f"xref\n0 {len(objects) + 1}\n".encode("ascii"))
     output.extend(b"0000000000 65535 f \n")
     for offset in offsets[1:]:
         output.extend(f"{offset:010d} 00000 n \n".encode("ascii"))
-    output.extend(
-        f"trailer\n<< /Size {len(objects) + 1} /Root 1 0 R >>\nstartxref\n{xref_offset}\n%%EOF\n".encode("ascii")
-    )
+    output.extend(f"trailer\n<< /Size {len(objects) + 1} /Root 1 0 R >>\nstartxref\n{xref_offset}\n%%EOF\n".encode("ascii"))
     path.write_bytes(output)
     return path
 
@@ -128,12 +115,7 @@ def install_compatible_fetch_mock(driver):
               authorization: options.headers?.Authorization || options.headers?.authorization || '',
               payload,
             };
-            return new Response(
-              JSON.stringify({
-                choices: [{ message: { role: 'assistant', content: JSON.stringify(metadata) } }],
-              }),
-              { status: 200, headers: { 'Content-Type': 'application/json' } },
-            );
+            return new Response(JSON.stringify({ choices: [{ message: { role: 'assistant', content: JSON.stringify(metadata) } }] }), { status: 200, headers: { 'Content-Type': 'application/json' } });
           }
           return originalFetch(url, options);
         };
@@ -148,18 +130,10 @@ def configure_compatible_ai(driver):
     panel = wait_displayed(driver, "#ai-config-panel")
     assert_true(driver.find_element(By.ID, "ai-config-button").text == "Config", "Toolbar should expose general Config")
     provider = Select(panel.find_element(By.ID, "ai-config-provider"))
-    assert_true(
-        [option.get_attribute("value") for option in provider.options]
-        == ["openai", "ollama", "openai-compatible"],
-        "AI configuration should expose OpenAI, Ollama, and OpenAI-compatible providers",
-    )
+    assert_true([option.get_attribute("value") for option in provider.options] == ["openai", "ollama", "openai-compatible"], "AI configuration should expose OpenAI, Ollama, and OpenAI-compatible providers")
     provider.select_by_value("ollama")
-    assert_true(
-        panel.find_element(By.ID, "ai-config-base-url").get_attribute("value") == "http://localhost:11434/v1",
-        "Ollama preset should select the local OpenAI-compatible endpoint",
-    )
+    assert_true(panel.find_element(By.ID, "ai-config-base-url").get_attribute("value") == "http://localhost:11434/v1", "Ollama preset should select the local OpenAI-compatible endpoint")
     provider.select_by_value("openai-compatible")
-
     base = panel.find_element(By.ID, "ai-config-base-url")
     base.send_keys(Keys.CONTROL, "a")
     base.send_keys(CUSTOM_BASE_URL)
@@ -172,19 +146,12 @@ def configure_compatible_ai(driver):
     if not remember.is_selected():
         remember.click()
     wait_click(driver, "#ai-config-save")
-    WebDriverWait(driver, WAIT_SECONDS).until(
-        lambda d: "OpenAI-compatible" in d.find_element(By.ID, "ai-config-button").get_attribute("aria-label")
-    )
-    WebDriverWait(driver, WAIT_SECONDS).until(
-        lambda d: d.find_element(By.ID, "ai-config-panel").get_attribute("hidden") is not None
-    )
+    WebDriverWait(driver, WAIT_SECONDS).until(lambda d: "OpenAI-compatible" in d.find_element(By.ID, "ai-config-button").get_attribute("aria-label"))
+    WebDriverWait(driver, WAIT_SECONDS).until(lambda d: d.find_element(By.ID, "ai-config-panel").get_attribute("hidden") is not None)
 
 
 def center_element(driver, element):
-    driver.execute_script(
-        "arguments[0].scrollIntoView({block: 'center', inline: 'nearest', behavior: 'instant'});",
-        element,
-    )
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center', inline: 'nearest', behavior: 'instant'});", element)
 
 
 def replace_field(driver, selector, value):
@@ -211,12 +178,8 @@ def read_indexeddb(driver, store_name, key):
         open.onsuccess = () => {
           const db = open.result;
           let request;
-          try {
-            request = db.transaction(storeName, "readonly").objectStore(storeName).get(key);
-          } catch (error) {
-            done({ error: String(error) });
-            return;
-          }
+          try { request = db.transaction(storeName, "readonly").objectStore(storeName).get(key); }
+          catch (error) { done({ error: String(error) }); return; }
           request.onerror = () => done({ error: String(request.error || "IndexedDB read failed") });
           request.onsuccess = () => done({ value: request.result ?? null });
         };
@@ -272,15 +235,11 @@ def assert_saved_review(driver):
     assert_true(paper["aiExtraction"]["transport"]["mode"] == "chat-text", "Custom provider should use local-text chat transport")
     forbidden = {"pdfBytes", "fileBytes", "pdfData", "dataUrl", "file"}
     assert_true(not forbidden.intersection(paper.keys()), "Saved paper must not contain uploaded PDF bytes")
-
     accepted_topic = read_indexeddb(driver, "topics", ACCEPTED_TOPIC_ID)
     rejected_topic = read_indexeddb(driver, "topics", REJECTED_TOPIC_ID)
     assert_true(accepted_topic is not None, "Accepted topic should be persisted")
     assert_true(accepted_topic["name"] == "Accepted Topic Edited", "Edited accepted topic name was not persisted")
-    assert_true(
-        accepted_topic["description"] == "Accepted and edited by Selenium before save.",
-        "Edited accepted topic description was not persisted",
-    )
+    assert_true(accepted_topic["description"] == "Accepted and edited by Selenium before save.", "Edited accepted topic description was not persisted")
     assert_true(rejected_topic is None, "Rejected topic should not be persisted")
 
 
@@ -291,11 +250,8 @@ def main():
     try:
         driver.get(TEST_URL)
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
-        wait.until(
-            lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
-        )
+        wait.until(lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
         assert_no_page_horizontal_overflow(driver)
-
         add_button = driver.find_element(By.ID, "add-pdf-button")
         assert_true(add_button.text == "Add files", "The unified file-import toolbar button should be labeled Add files")
         assert_true(".pdf" in (driver.find_element(By.ID, "pdf-ai-file").get_attribute("accept") or ""), "Unified Add picker should still accept PDF files")
@@ -305,11 +261,7 @@ def main():
         fixture = create_ai_text_pdf_fixture()
         file_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
         file_input.send_keys(str(fixture))
-        dialog = wait.until(
-            lambda d: d.find_element(By.ID, "pdf-ai-dialog")
-            if d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is not None
-            else False
-        )
+        dialog = wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog") if d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is not None else False)
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "Reviewed PDF import widget")
         assert_true(not driver.find_elements(By.CSS_SELECTOR, ".pdf-ai-provider-settings"), "AI settings must not be embedded in reviewed import")
         open_pdf = wait.until(EC.element_to_be_clickable((By.ID, "pdf-ai-open-file")))
@@ -317,23 +269,14 @@ def main():
         open_pdf.click()
         wait.until(lambda d: (d.execute_script("return window.__paperMapOpenedPdf || ''") or '').startswith('blob:'))
         assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]")) == 1, "Single PDF should create one review tab")
-        wait.until(
-            lambda d: d.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-local-status")
-            in ("complete", "error")
-        )
-        assert_true(
-            driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-local-status") == "complete",
-            "Selected PDF should run local extraction automatically",
-        )
-        assert_true(
-            driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-review-status") == "success",
-            "A successfully processed PDF tab should be marked success for green styling",
-        )
+        wait.until(lambda d: d.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]").get_attribute("data-local-status") in ("complete", "error"))
+        tab = driver.find_element(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]")
+        assert_true(tab.get_attribute("data-local-status") == "complete", "Selected PDF should run local extraction automatically")
+        assert_true(tab.get_attribute("data-review-status") in ("searchable", "error"), "Local extraction should immediately show yellow/red lookup readiness instead of green success")
 
         wait_click(driver, "#pdf-ai-analyze")
         review = wait_displayed(driver, "#pdf-ai-review")
         wait.until(lambda d: "AI extraction merged" in d.find_element(By.ID, "pdf-ai-analysis-status").text)
-
         request = driver.execute_script("return window.__paperMapCompatibleRequest")
         assert_true(request is not None, "Custom OpenAI-compatible endpoint should receive the AI request")
         assert_true(request["url"] == f"{CUSTOM_BASE_URL}/chat/completions", "Proxy should use the configured base URL")
@@ -343,7 +286,6 @@ def main():
         user_prompt = request["payload"]["messages"][1]["content"]
         assert_true("BEGIN PDF TEXT" in user_prompt, "Compatible providers should receive locally extracted PDF text")
         assert_true("Deterministic AI Proxy Fixture" in user_prompt, "Proxy prompt should include text extracted from the real PDF fixture")
-
         assert_true("Review before saving" in review.text, "Review heading should remain visible")
         assert_true("Deterministic Selenium fixture" in review.text, "Extraction warning should be visible")
         assert_initial_review_values(driver)
@@ -359,7 +301,6 @@ def main():
         rejected_checkbox.click()
         assert_true(not rejected_checkbox.is_selected(), "Topic reject control should uncheck the rejected topic")
         assert_true(accepted_checkbox.is_selected(), "Accepted topic should remain selected")
-
         accepted_name = topic_rows[1].find_element(By.CSS_SELECTOR, "[data-topic-name]")
         center_element(driver, accepted_name)
         accepted_name.click()
@@ -377,10 +318,7 @@ def main():
         save_button.click()
         wait.until(EC.staleness_of(save_button))
         wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
-        wait.until(
-            lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
-        )
-
+        wait.until(lambda d: "Opening local library" not in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
         assert_saved_review(driver)
         assert_true(driver.find_element(By.ID, "visible-paper-count").get_attribute("textContent") == "1", "Saved reviewed paper should be visible after reload")
         wait_click(driver, "#paper-list-button")
@@ -393,7 +331,7 @@ def main():
         assert_true(driver.find_element(By.ID, "detail-title").text == EDITED_FIELDS["#pdf-review-title"], "Paper detail should display the edited saved title")
         save_screenshot(driver, "09-pdf-review-saved.png")
         assert_no_page_horizontal_overflow(driver)
-        print("Global Config, automatic local extraction, per-tab AI merge, editable review, and persistence checks passed.")
+        print("Global Config, automatic local extraction readiness, per-tab AI merge, editable review, and persistence checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "pdf-review-failure.png")

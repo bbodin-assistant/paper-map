@@ -18,16 +18,20 @@ test("v0.4.5 exposes clearer add actions and paper online update", async () => {
   assert.match(publication, /button\.textContent = "Add files"/);
 });
 
-test("PDF review exposes direct preview and success/error tab styling", async () => {
-  const [script, css] = await Promise.all([
-    source("www/pdf-ai-import.js"),
+test("PDF review exposes direct preview and lookup-readiness tab styling", async () => {
+  const [ui, controller, baseCss, readinessCss] = await Promise.all([
+    source("www/pdf-review-ui.js"),
+    source("www/pdf-review-controller.js"),
     source("www/pdf-ai-import.css"),
+    source("www/pdf-review-state.css"),
   ]);
-  assert.match(script, /id="pdf-ai-open-file"/);
-  assert.match(script, /window\.open\(url, "_blank"/);
-  assert.match(script, /data\.reviewStatus|dataset\.reviewStatus/);
-  assert.match(css, /\.pdf-review-tabs button\.success/);
-  assert.match(css, /\.pdf-review-tabs button\.error/);
+  assert.match(ui, /id="pdf-ai-open-file"/);
+  assert.match(controller, /window\.open\(url, "_blank"/);
+  assert.match(controller, /dataset\.reviewStatus/);
+  assert.match(readinessCss, /button\.searchable/);
+  assert.match(readinessCss, /button\.resolved/);
+  assert.match(readinessCss, /button\.error/);
+  assert.match(baseCss, /\.pdf-review-tabs button/);
 });
 
 test("stored PDF action is disabled and relabeled when no binary exists", async () => {

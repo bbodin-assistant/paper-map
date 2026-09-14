@@ -1,0 +1,88 @@
+.pdf-online-field-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.pdf-field-online-search {
+  white-space: nowrap;
+}
+
+.pdf-review-lookup-field.lookup-metadata-available {
+  color: #745b16;
+}
+
+.pdf-review-lookup-field.lookup-metadata-available input,
+.pdf-review-lookup-field.lookup-metadata-available textarea {
+  border-color: #d1b456 !important;
+  background: #fff8d8 !important;
+  box-shadow: inset 0 0 0 1px rgba(209, 180, 86, .15) !important;
+}
+
+.pdf-review-lookup-field.lookup-metadata-missing,
+.pdf-review-lookup-field.lookup-metadata-invalid {
+  color: #8b342d;
+}
+
+.pdf-review-lookup-field.lookup-metadata-missing input,
+.pdf-review-lookup-field.lookup-metadata-missing textarea,
+.pdf-review-lookup-field.lookup-metadata-invalid input,
+.pdf-review-lookup-field.lookup-metadata-invalid textarea {
+  border-color: #bd5d54 !important;
+  background: #fff3f1 !important;
+  box-shadow: inset 0 0 0 1px rgba(189, 93, 84, .16) !important;
+}
+
+.pdf-review-lookup-field.lookup-metadata-missing::after,
+.pdf-review-lookup-field.lookup-metadata-invalid::after {
+  display: block;
+  margin-top: 4px;
+  color: #a4473f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.pdf-review-lookup-field.lookup-metadata-missing::after {
+  content: "Not extracted";
+}
+
+.pdf-review-lookup-field.lookup-metadata-invalid::after {
+  content: "Invalid value";
+}
+
+#pdf-review-tabs button.searchable,
+#pdf-review-tabs button.searchable.selected,
+#pdf-review-tabs button.searchable.metadata-warning,
+#pdf-review-tabs button.searchable.metadata-warning.selected {
+  border-color: #d1b456 !important;
+  background: #fff8d8 !important;
+  color: #745b16 !important;
+}
+
+#pdf-review-tabs button.resolved,
+#pdf-review-tabs button.resolved.selected,
+#pdf-review-tabs button.resolved.metadata-warning,
+#pdf-review-tabs button.resolved.metadata-warning.selected {
+  border-color: #8eaf96 !important;
+  background: #eff7f0 !important;
+  color: #315a39 !important;
+}
+
+#pdf-review-tabs button.error,
+#pdf-review-tabs button.error.selected {
+  border-color: #d7a8a1 !important;
+  background: #fff0ed !important;
+  color: #823c32 !important;
+}
+
+@media (max-width: 720px) {
+  .pdf-online-field-control {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .pdf-field-online-search {
+    padding-inline: 9px;
+  }
+}

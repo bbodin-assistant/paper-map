@@ -228,6 +228,15 @@ def main():
                 for tab in d.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]")
             )
         )
+        initial_tabs = driver.find_elements(By.CSS_SELECTOR, "#pdf-review-tabs [data-pdf-tab-id]")
+        assert_true(
+            all(tab.get_attribute("data-review-status") in {"searchable", "error"} for tab in initial_tabs),
+            "Every completed local-extraction tab should show its real yellow/red metadata readiness before it is opened",
+        )
+        assert_true(
+            all("success" not in (tab.get_attribute("class") or "").split() for tab in initial_tabs),
+            "Local extraction alone must not make untouched tabs green",
+        )
         assert_no_page_horizontal_overflow(driver)
 
         activate_tab(driver, "batch-three.pdf")
@@ -250,10 +259,13 @@ def main():
         doi.send_keys(Keys.CONTROL, "a")
         doi.send_keys(ONLINE_DOI)
         doi.send_keys(Keys.TAB)
-        online = wait.until(EC.element_to_be_clickable((By.ID, "pdf-online-extract")))
+        online = wait.until(EC.element_to_be_clickable((By.ID, "pdf-online-search-doi")))
+        assert_true(online.find_element(By.XPATH, "..").find_element(By.ID, "pdf-review-doi") == doi, "DOI Search online action should sit beside the DOI field")
         driver.execute_script("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", online)
         online.click()
         wait.until(lambda d: "metadata merged" in d.find_element(By.ID, "pdf-ai-analysis-status").text)
+        requests = driver.execute_script("return window.__paperMapBatchOnlineRequests.slice();")
+        assert_true(any(ONLINE_DOI in request or ONLINE_DOI.replace('/', '%2F') in request for request in requests), "DOI action should query the DOI value, not the title")
         assert_true(driver.find_element(By.ID, "pdf-review-title").get_attribute("value") == ONLINE_PAPER["title"], "Online extraction should enrich the active tab")
         save_active(driver, "batch-four.pdf")
         fourth = read_indexeddb(driver, "papers", f"doi:{ONLINE_DOI}")
@@ -305,7 +317,7 @@ def main():
 
         assert_no_page_horizontal_overflow(driver)
         save_screenshot(driver, "pdf-batch-review-tabs.png")
-        print("Automatic local extraction, out-of-order tabs, per-tab save/skip, Save all, AI merge, online merge, and provenance checks passed.")
+        print("Immediate PDF tab readiness, out-of-order tabs, per-tab save/skip, Save all, AI merge, explicit DOI search, and provenance checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "pdf-batch-review-failure.png")
