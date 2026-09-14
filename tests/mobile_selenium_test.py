@@ -393,7 +393,18 @@ def main():
         assert_widget_text_visible(driver, "#pdf-ai-dialog", "PDF reviewed import widget")
         assert_true("PDF metadata, citations & topics" in dialog.text, "PDF import dialog heading should be visible")
         assert_true("Run AI extraction" in dialog.text, "Per-paper AI extraction action should be visible")
-        assert_true("Run online extraction" in dialog.text, "Per-paper online extraction action should be visible")
+        for input_id, button_id, label in (
+            ("pdf-review-title", "pdf-online-search-title", "Title"),
+            ("pdf-review-doi", "pdf-online-search-doi", "DOI"),
+            ("pdf-review-arxiv", "pdf-online-search-arxiv", "arXiv ID"),
+        ):
+            field = dialog.find_element(By.ID, input_id)
+            search = dialog.find_element(By.ID, button_id)
+            assert_true(search.text == "Search online", f"{label} should expose a Search online action")
+            assert_true(
+                driver.execute_script("return arguments[0].parentElement === arguments[1].parentElement", field, search),
+                f"{label} Search online action should be adjacent to its field",
+            )
         save_screenshot(driver, "08-pdf-ai-dialog.png")
         wait_click(driver, "#pdf-ai-close")
         wait.until(lambda d: d.find_element(By.ID, "pdf-ai-dialog").get_attribute("open") is None)
