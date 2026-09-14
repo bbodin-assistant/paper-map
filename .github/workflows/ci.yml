@@ -85,6 +85,7 @@ jobs:
           python3 tests/pdf_review_selenium_test.py
           python3 tests/pdf_batch_import_selenium_test.py
           python3 tests/pdf_local_citation_selenium_test.py
+          python3 tests/pdf_multicolumn_citation_selenium_test.py
           python3 tests/reference_candidate_selenium_test.py
           python3 tests/source_filter_log_selenium_test.py
           python3 tests/graph_relations_selenium_test.py
