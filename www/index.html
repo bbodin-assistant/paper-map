@@ -6,6 +6,7 @@
     <meta name="color-scheme" content="light" />
     <title>Paper Map</title>
     <link rel="stylesheet" href="./style.css?v=0.4.5" />
+    <link rel="stylesheet" href="./citation-map-legend.css?v=0.4.5" />
     <link rel="stylesheet" href="./pdf-ai-import.css?v=0.4.5" />
     <link rel="stylesheet" href="./pdf-local.css?v=0.4.5" />
   </head>
@@ -126,6 +127,12 @@
 
         <section class="map-stage" aria-label="Paper map">
           <svg id="paper-map" role="img" aria-label="Interactive directed research map"></svg>
+          <div class="citation-map-legend" role="group" aria-label="Citation map paper colors">
+            <span class="citation-map-legend-title">Paper colors</span>
+            <span class="citation-map-legend-item"><span class="citation-map-legend-swatch starred" aria-hidden="true"></span>Starred</span>
+            <span class="citation-map-legend-item"><span class="citation-map-legend-swatch manual-added" aria-hidden="true"></span>Manually added</span>
+            <span class="citation-map-legend-item"><span class="citation-map-legend-swatch auto-added" aria-hidden="true"></span>Automatically added</span>
+          </div>
           <div class="map-help">Drag background to pan · pinch or wheel to zoom · drag nodes to arrange</div>
         </section>
 
