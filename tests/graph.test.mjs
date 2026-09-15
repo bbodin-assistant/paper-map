@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { buildTopicGraph } from "../www/graph.js";
+import { buildTopicGraph, paperNodeKind } from "../www/graph.js";
 
 test("topic graph omits papers without real topics", () => {
   const papers = [
@@ -23,4 +23,20 @@ test("topic graph omits papers without real topics", () => {
   assert.deepEqual(graph.blocks.map((block) => block.id).sort(), ["topic:a", "topic:b"]);
   assert.ok(!graph.blocks.some((block) => block.name === "Uncategorized" || block.id === "topic:uncategorized"));
   assert.deepEqual(graph.connections, [{ source: "topic:a", target: "topic:b", weight: 1 }]);
+});
+
+test("paper node kind distinguishes starred, manual, and automatic additions", () => {
+  assert.equal(paperNodeKind({
+    starred: true,
+    libraryEntry: { method: "semantic-scholar-expansion" },
+  }), "starred");
+  assert.equal(paperNodeKind({
+    libraryEntry: { method: "semantic-scholar-resolve" },
+  }), "manual-added");
+  assert.equal(paperNodeKind({
+    libraryEntry: { method: "openalex-expansion" },
+  }), "auto-added");
+  assert.equal(paperNodeKind({
+    libraryEntry: { method: "bibtex-import" },
+  }), "other");
 });
