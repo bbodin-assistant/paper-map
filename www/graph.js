@@ -1,10 +1,17 @@
 import { isResearchRelation, relationLabel } from "./research-relations.js";
 import { applyLocalRepulsion, fitTransform, layoutDimensions, layoutIterationBudget } from "./graph-layout.js";
+import { paperEntrySource } from "./paper-source.js";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const MIN_ZOOM = 0.35;
 const MAX_ZOOM = 3.2;
 const ITEM_DRAG_THRESHOLD = 6;
+const PAPER_NODE_STYLE = `
+.paper-node.manual-added { --paper-node-fill: #dcecff; --paper-node-stroke: #517aa3; }
+.paper-node.auto-added { --paper-node-fill: #e1f2e6; --paper-node-stroke: #5c8266; }
+.paper-node.starred { --paper-node-fill: #ffe5a3; --paper-node-stroke: #ad7810; }
+.paper-node-circle { fill: var(--paper-node-fill, #fffdf5); stroke: var(--paper-node-stroke, #58646e); }
+`;
 
 function svgElement(name, attributes = {}) {
   const element = document.createElementNS(SVG_NS, name);
@@ -26,6 +33,21 @@ function hash(value) {
 function shortTitle(value, max = 34) {
   const text = String(value || "Untitled").replace(/\s+/g, " ").trim();
   return text.length <= max ? text : `${text.slice(0, max - 1)}…`;
+}
+
+export function paperNodeKind(paper) {
+  if (paper?.starred) return "starred";
+  const source = paperEntrySource(paper);
+  if (source.endsWith("-expansion")) return "auto-added";
+  if (source.endsWith("-resolve")) return "manual-added";
+  return "other";
+}
+
+function paperNodeKindLabel(kind) {
+  if (kind === "starred") return "Starred";
+  if (kind === "manual-added") return "Manually added";
+  if (kind === "auto-added") return "Automatically added";
+  return "Imported or other source";
 }
 
 export function citationRadius(paper) {
@@ -136,6 +158,8 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
   svg.append(root);
 
   const defs = svgElement("defs");
+  const paperNodeStyle = svgElement("style");
+  paperNodeStyle.textContent = PAPER_NODE_STYLE;
   const citationMarker = svgElement("marker", {
     id: "citation-arrow",
     viewBox: "0 0 10 10",
@@ -158,7 +182,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     markerUnits: "userSpaceOnUse",
   });
   relationMarker.append(svgElement("path", { d: "M 0 0 L 10 5 L 0 10 z", class: "research-arrow" }));
-  defs.append(citationMarker, relationMarker);
+  defs.append(paperNodeStyle, citationMarker, relationMarker);
   svg.prepend(defs);
 
   let transform = { x: 0, y: 0, k: 1 };
@@ -312,12 +336,15 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     const nodeElements = nodes.map((node) => {
       const paper = node.paper;
       const selected = paper.id === selectedId;
+      const nodeKind = paperNodeKind(paper);
+      const nodeKindLabel = paperNodeKindLabel(nodeKind);
       const group = svgElement("g", {
-        class: `paper-node${selected ? " selected" : ""}${paper.starred ? " starred" : ""}`,
+        class: `paper-node ${nodeKind}${selected ? " selected" : ""}`,
         tabindex: "0",
         role: "button",
         "data-paper-id": paper.id,
-        "aria-label": `${paper.title}, ${paper.year || "year unknown"}`,
+        "data-node-kind": nodeKind,
+        "aria-label": `${paper.title}, ${paper.year || "year unknown"}, ${nodeKindLabel}`,
       });
       const halo = svgElement("circle", { class: "paper-node-halo", r: node.radius + 5 });
       const circle = svgElement("circle", { class: "paper-node-circle", r: node.radius });
@@ -335,7 +362,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
       const citationMeta = Number.isFinite(Number(paper.citationCount)) ? `${paper.citationCount} cites` : "";
       meta.textContent = [paper.authors?.[0], paper.year, citationMeta].filter(Boolean).join(" · ");
       const title = svgElement("title");
-      title.textContent = `${paper.title}\n${(paper.authors || []).join(", ")}\n${paper.venue || ""} ${paper.year || ""}${citationMeta ? `\n${citationMeta}` : ""}`.trim();
+      title.textContent = `${paper.title}\n${(paper.authors || []).join(", ")}\n${paper.venue || ""} ${paper.year || ""}${citationMeta ? `\n${citationMeta}` : ""}\n${nodeKindLabel}`.trim();
       group.append(halo, circle, label, meta, title);
       group.addEventListener("click", (event) => {
         if (consumeSuppressedClick(event)) return;
