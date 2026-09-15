@@ -1,0 +1,98 @@
+:root {
+  --paper-node-starred-fill: #ffe5a3;
+  --paper-node-starred-stroke: #ad7810;
+  --paper-node-manual-fill: #dcecff;
+  --paper-node-manual-stroke: #517aa3;
+  --paper-node-auto-fill: #e1f2e6;
+  --paper-node-auto-stroke: #5c8266;
+}
+
+/* Keep citation nodes and the visible legend on the same color tokens. */
+#paper-map .paper-node.starred {
+  --paper-node-fill: var(--paper-node-starred-fill);
+  --paper-node-stroke: var(--paper-node-starred-stroke);
+}
+
+#paper-map .paper-node.manual-added {
+  --paper-node-fill: var(--paper-node-manual-fill);
+  --paper-node-stroke: var(--paper-node-manual-stroke);
+}
+
+#paper-map .paper-node.auto-added {
+  --paper-node-fill: var(--paper-node-auto-fill);
+  --paper-node-stroke: var(--paper-node-auto-stroke);
+}
+
+.citation-map-legend {
+  position: absolute;
+  z-index: 20;
+  right: 12px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  max-width: calc(100% - 24px);
+  padding: 6px 9px;
+  border: 1px solid rgba(200, 206, 210, 0.78);
+  border-radius: 4px;
+  background: rgba(255, 254, 249, 0.92);
+  box-shadow: 0 2px 8px rgba(24, 32, 42, 0.06);
+  color: #59636c;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.25;
+  pointer-events: none;
+}
+
+.citation-map-legend-title {
+  color: #303b45;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.citation-map-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.citation-map-legend-swatch {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 10px;
+  border: 1.5px solid;
+  border-radius: 50%;
+}
+
+.citation-map-legend-swatch.starred {
+  border-color: var(--paper-node-starred-stroke);
+  background: var(--paper-node-starred-fill);
+}
+
+.citation-map-legend-swatch.manual-added {
+  border-color: var(--paper-node-manual-stroke);
+  background: var(--paper-node-manual-fill);
+}
+
+.citation-map-legend-swatch.auto-added {
+  border-color: var(--paper-node-auto-stroke);
+  background: var(--paper-node-auto-fill);
+}
+
+/* The legend describes paper-node colors, so it belongs to Citation mode only. */
+.atlas-shell:has(#map-mode button[data-mode="topics"][aria-pressed="true"]) .citation-map-legend {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .citation-map-legend {
+    right: 10px;
+    bottom: 38px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px 10px;
+    max-width: calc(100% - 20px);
+  }
+}
