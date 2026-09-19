@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { buildTimelineLayout, clusterPapers, timelineEdgePath } from "../www/timeline.js";
+import { buildTimelineLayout, clusterPapers, timelineClusterColor, timelineEdgePath } from "../www/timeline.js";
 
 test("timeline clustering uses paper text rather than publication year", () => {
   const papers = [
@@ -15,6 +15,25 @@ test("timeline clustering uses paper text rather than publication year", () => {
   assert.equal(assignmentByPaperId.get("nlp-old"), assignmentByPaperId.get("nlp-new"));
   assert.equal(assignmentByPaperId.get("compiler-old"), assignmentByPaperId.get("compiler-new"));
   assert.notEqual(assignmentByPaperId.get("nlp-old"), assignmentByPaperId.get("compiler-old"));
+});
+
+test("timeline clustering can use authors as the clustering basis", () => {
+  const papers = [
+    { id: "ada-a", title: "Vector scheduling", authors: ["Ada Lovelace"], venue: "Venue One" },
+    { id: "ada-b", title: "Probabilistic memory", authors: ["Ada Lovelace"], venue: "Venue Two" },
+    { id: "grace-a", title: "Graph synthesis", authors: ["Grace Hopper"], venue: "Venue One" },
+    { id: "grace-b", title: "Neural compilation", authors: ["Grace Hopper"], venue: "Venue Two" },
+  ];
+
+  const { assignmentByPaperId } = clusterPapers(papers, 2, { fields: ["authors"] });
+  assert.equal(assignmentByPaperId.get("ada-a"), assignmentByPaperId.get("ada-b"));
+  assert.equal(assignmentByPaperId.get("grace-a"), assignmentByPaperId.get("grace-b"));
+  assert.notEqual(assignmentByPaperId.get("ada-a"), assignmentByPaperId.get("grace-a"));
+});
+
+test("timeline exposes a distinct color for every configurable cluster slot", () => {
+  const colors = Array.from({ length: 12 }, (_, index) => timelineClusterColor(index).accent);
+  assert.equal(new Set(colors).size, 12);
 });
 
 test("timeline compresses empty calendar gaps while preserving chronological order", () => {

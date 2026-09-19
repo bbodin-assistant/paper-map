@@ -1,10 +1,31 @@
 import { loadLibrary } from "./db.js";
 import { fitTransform } from "./graph-layout.js";
+import {
+  DEFAULT_GRAPH_CONFIG,
+  loadGraphConfig,
+  TIMELINE_CLUSTER_FIELD_OPTIONS,
+} from "./graph-config.js?v=0.4.10";
 import { isCitationEdge } from "./research-relations.js";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const TIMELINE_STORAGE_KEY = "paper-map-timeline-mode-v1";
-const GROUP_COUNT = 5;
+const GROUP_COUNT = DEFAULT_GRAPH_CONFIG.timelineClusterCount;
+const DEFAULT_CLUSTER_FIELDS = DEFAULT_GRAPH_CONFIG.timelineClusterFields;
+const CLUSTER_FIELD_IDS = new Set(TIMELINE_CLUSTER_FIELD_OPTIONS.map(({ id }) => id));
+const TIMELINE_CLUSTER_COLORS = Object.freeze([
+  Object.freeze({ band: "#f2effd", paper: "#fbfaff", accent: "#6e5aa6" }),
+  Object.freeze({ band: "#edf5fc", paper: "#f9fcff", accent: "#477aa4" }),
+  Object.freeze({ band: "#eaf7f3", paper: "#f8fcfb", accent: "#3f806d" }),
+  Object.freeze({ band: "#f1f7e8", paper: "#fbfdf7", accent: "#687f3f" }),
+  Object.freeze({ band: "#fff6df", paper: "#fffdf7", accent: "#a7781e" }),
+  Object.freeze({ band: "#fff0e6", paper: "#fffaf7", accent: "#a96138" }),
+  Object.freeze({ band: "#fceeed", paper: "#fff9f8", accent: "#a65350" }),
+  Object.freeze({ band: "#fcecf4", paper: "#fff9fc", accent: "#a45479" }),
+  Object.freeze({ band: "#f4edfc", paper: "#fbf9ff", accent: "#7657a0" }),
+  Object.freeze({ band: "#eaf7f9", paper: "#f8fcfd", accent: "#3d7b85" }),
+  Object.freeze({ band: "#f5efe8", paper: "#fcfaf7", accent: "#82664c" }),
+  Object.freeze({ band: "#edf2f5", paper: "#fafcfd", accent: "#5d7384" }),
+]);
 const MIN_ZOOM = 0.35;
 const MAX_ZOOM = 3.2;
 const CARD_WIDTH = 176;
@@ -40,15 +61,29 @@ function tokenize(value) {
     .match(/[a-z0-9][a-z0-9-]{1,}/g)?.filter((token) => token.length > 2 && !STOP_WORDS.has(token) && !/^\d+$/.test(token)) || [];
 }
 
-function paperTermCounts(paper) {
+function normalizedClusterFields(fields) {
+  const requested = Array.isArray(fields) ? fields : DEFAULT_CLUSTER_FIELDS;
+  const normalized = Array.from(new Set(requested.filter((field) => CLUSTER_FIELD_IDS.has(field))));
+  return normalized.length ? normalized : [...DEFAULT_CLUSTER_FIELDS];
+}
+
+function paperTermCounts(paper, fields = DEFAULT_CLUSTER_FIELDS) {
+  const selected = new Set(normalizedClusterFields(fields));
   const counts = new Map();
   const add = (value, weight) => {
     for (const token of tokenize(value)) counts.set(token, (counts.get(token) || 0) + weight);
   };
-  add(paper.title, 3);
-  const keywords = Array.isArray(paper.keywords) ? paper.keywords : String(paper.keywords || "").split(/[,;]+/);
-  for (const keyword of keywords) add(keyword, 5);
-  add(paper.abstract, 1);
+  if (selected.has("title")) add(paper.title, 3);
+  if (selected.has("keywords")) {
+    const keywords = Array.isArray(paper.keywords) ? paper.keywords : String(paper.keywords || "").split(/[,;]+/);
+    for (const keyword of keywords) add(keyword, 5);
+  }
+  if (selected.has("abstract")) add(paper.abstract, 1);
+  if (selected.has("authors")) {
+    const authors = Array.isArray(paper.authors) ? paper.authors : String(paper.authors || "").split(/[,;]+/);
+    for (const author of authors) add(author, 2);
+  }
+  if (selected.has("venue")) add(paper.venue, 2);
   return counts;
 }
 
@@ -76,8 +111,8 @@ function averageVectors(vectors) {
   return normalized(result);
 }
 
-function buildVectors(papers) {
-  const countsByPaper = papers.map(paperTermCounts);
+function buildVectors(papers, fields = DEFAULT_CLUSTER_FIELDS) {
+  const countsByPaper = papers.map((paper) => paperTermCounts(paper, fields));
   const documentFrequency = new Map();
   for (const counts of countsByPaper) {
     for (const term of counts.keys()) documentFrequency.set(term, (documentFrequency.get(term) || 0) + 1);
@@ -125,10 +160,11 @@ function centroidTerms(centroid, limit = 3) {
     .map(([term]) => term);
 }
 
-export function clusterPapers(papers = [], requestedGroups = GROUP_COUNT) {
+export function clusterPapers(papers = [], requestedGroups = GROUP_COUNT, options = {}) {
   if (!papers.length) return { groups: [], assignmentByPaperId: new Map() };
   const groupCount = Math.max(1, Math.min(Number(requestedGroups) || GROUP_COUNT, papers.length));
-  const vectors = buildVectors(papers);
+  const fields = normalizedClusterFields(options.fields);
+  const vectors = buildVectors(papers, fields);
   const seeds = farthestFirstSeeds(papers, vectors, groupCount);
   let centroids = seeds.map((index) => vectors[index]);
   let assignments = new Array(papers.length).fill(-1);
@@ -183,8 +219,8 @@ export function clusterPapers(papers = [], requestedGroups = GROUP_COUNT) {
   return { groups, assignmentByPaperId };
 }
 
-export function buildTimelineLayout(papers = [], viewportWidth = 1200, viewportHeight = 720, requestedGroups = GROUP_COUNT) {
-  const { groups, assignmentByPaperId } = clusterPapers(papers, requestedGroups);
+export function buildTimelineLayout(papers = [], viewportWidth = 1200, viewportHeight = 720, requestedGroups = GROUP_COUNT, options = {}) {
+  const { groups, assignmentByPaperId } = clusterPapers(papers, requestedGroups, options);
   const years = Array.from(new Set(papers.map((paper) => Number(paper.year)).filter(Number.isFinite))).sort((a, b) => a - b);
   const yearIndex = new Map(years.map((year, index) => [year, index]));
   const middleBucket = years.length ? Math.floor((years.length - 1) / 2) : 0;
@@ -247,6 +283,11 @@ function rectBoundary(node, towardX, towardY, padding = 0) {
   return { x: cx + dx * scale, y: cy + dy * scale };
 }
 
+export function timelineClusterColor(index) {
+  const normalized = Math.max(0, Math.floor(Number(index) || 0));
+  return TIMELINE_CLUSTER_COLORS[normalized % TIMELINE_CLUSTER_COLORS.length];
+}
+
 export function timelineEdgePath(source, target) {
   const sourceCx = source.x + source.width / 2;
   const sourceCy = source.y + source.height / 2;
@@ -270,19 +311,18 @@ function installStyles(root = document) {
     #map-mode.timeline-enabled { grid-template-columns: repeat(3, minmax(0, 1fr)); width: 326px; }
     .timeline-year-guide { stroke: #d8ddda; stroke-width: 1; stroke-dasharray: 3 6; }
     .timeline-year-label { fill: #6f7a82; font-size: 10px; font-weight: 800; text-anchor: middle; }
-    .timeline-band { fill: #fafaf6; stroke: #e0e4e0; stroke-width: 1; }
-    .timeline-band.alt { fill: #f6f7f3; }
-    .timeline-band-name { fill: #25313b; font-size: 11px; font-weight: 850; }
-    .timeline-band-terms { fill: #899198; font-size: 8px; font-weight: 650; }
+    .timeline-band { fill: var(--timeline-cluster-band, #fafaf6); stroke: var(--timeline-cluster-accent, #e0e4e0); stroke-width: 1.2; }
+    .timeline-band-name { fill: var(--timeline-cluster-accent, #25313b); font-size: 11px; font-weight: 850; }
+    .timeline-band-terms { fill: var(--timeline-cluster-accent, #899198); font-size: 8px; font-weight: 650; opacity: .82; }
     .timeline-axis-note { fill: #929a9f; font-size: 8px; font-weight: 650; }
     .timeline-citation-edge { fill: none; stroke: #9ca6a6; stroke-width: 1; opacity: .18; pointer-events: none; }
     .timeline-citation-edge.selected { stroke: #47545e; stroke-width: 1.8; opacity: .62; }
     .timeline-paper { cursor: pointer; outline: none; }
-    .timeline-paper rect { fill: #fffef9; stroke: #69757e; stroke-width: 1.15; }
+    .timeline-paper rect { fill: var(--timeline-cluster-paper, #fffef9); stroke: var(--timeline-cluster-accent, #69757e); stroke-width: 1.3; }
     .timeline-paper:hover rect, .timeline-paper:focus rect { fill: #fff6cd; stroke: #26333e; stroke-width: 1.5; }
     .timeline-paper.selected rect { fill: #f6c445; stroke: #1f2933; stroke-width: 2; }
     .timeline-paper.starred rect { stroke: #ad7810; stroke-width: 2; }
-    .timeline-paper-year { fill: #7d878e; font-size: 8px; font-weight: 850; }
+    .timeline-paper-year { fill: var(--timeline-cluster-accent, #7d878e); font-size: 8px; font-weight: 850; }
     .timeline-paper-title { fill: #202b35; font-size: 10px; font-weight: 800; }
     .timeline-paper-meta { fill: #79838b; font-size: 8px; font-weight: 650; }
     .timeline-empty { fill: #7d878e; font-size: 13px; font-weight: 650; }
@@ -378,10 +418,16 @@ export function initTimelineMap(root = document) {
     const paperIds = new Set(papers.map((paper) => paper.id));
     const citations = library.edges.filter((edge) => isCitationEdge(edge) && paperIds.has(edge.source) && paperIds.has(edge.target));
     const selectedId = selectedPaperId(root);
+    const graphConfig = loadGraphConfig();
 
     viewport.replaceChildren();
     syncModeButtons();
-    if (mapHelp) mapHelp.textContent = "Timeline: observed years are evenly spaced · vertical bands are text clusters · drag background, pinch or wheel to zoom";
+    if (mapHelp) {
+      const clusterFields = graphConfig.timelineClusterFields
+        .map((field) => TIMELINE_CLUSTER_FIELD_OPTIONS.find((option) => option.id === field)?.label || field)
+        .join(", ");
+      mapHelp.textContent = `Timeline: observed years are evenly spaced · ${graphConfig.timelineClusterCount} requested clusters using ${clusterFields} · drag background, pinch or wheel to zoom`;
+    }
 
     if (!papers.length) {
       currentLayout = null;
@@ -394,9 +440,16 @@ export function initTimelineMap(root = document) {
 
     const viewportWidth = Math.max(800, svg.clientWidth || 1200);
     const viewportHeight = Math.max(520, svg.clientHeight || 720);
-    const layout = buildTimelineLayout(papers, viewportWidth, viewportHeight, GROUP_COUNT);
+    const layout = buildTimelineLayout(
+      papers,
+      viewportWidth,
+      viewportHeight,
+      graphConfig.timelineClusterCount,
+      { fields: graphConfig.timelineClusterFields },
+    );
     currentLayout = layout;
-    const signature = `${viewportWidth}x${viewportHeight}|${papers.map((paper) => `${paper.id}:${paper.year || ""}:${paper.title || ""}:${(paper.keywords || []).join?.("|") || paper.keywords || ""}:${String(paper.abstract || "").length}`).sort().join(";")}`;
+    const clusteringSignature = `${graphConfig.timelineClusterCount}:${graphConfig.timelineClusterFields.join(",")}`;
+    const signature = `${viewportWidth}x${viewportHeight}|${clusteringSignature}|${papers.map((paper) => `${paper.id}:${paper.year || ""}:${paper.title || ""}:${(paper.keywords || []).join?.("|") || paper.keywords || ""}:${String(paper.abstract || "").length}:${(paper.authors || []).join?.("|") || paper.authors || ""}:${paper.venue || ""}`).sort().join(";")}`;
     const shouldReset = signature !== currentSignature;
     currentSignature = signature;
 
@@ -418,19 +471,27 @@ export function initTimelineMap(root = document) {
     }
 
     for (const band of layout.groups) {
+      const color = timelineClusterColor(band.index);
+      const bandGroup = svgElement("g", {
+        class: "timeline-band-group",
+        "data-timeline-cluster-index": band.index,
+        "data-timeline-cluster-color": color.accent,
+        style: `--timeline-cluster-band:${color.band};--timeline-cluster-paper:${color.paper};--timeline-cluster-accent:${color.accent}`,
+      });
       const rect = svgElement("rect", {
         x: 10,
         y: band.y,
         width: layout.width - 20,
         height: band.height,
         rx: 8,
-        class: `timeline-band${band.index % 2 ? " alt" : ""}`,
+        class: "timeline-band",
       });
       const name = svgElement("text", { x: 24, y: band.y + 27, class: "timeline-band-name" });
       name.textContent = band.name;
       const terms = svgElement("text", { x: 24, y: band.y + 42, class: "timeline-band-terms" });
       terms.textContent = shortText(band.label, 22);
-      bandLayer.append(rect, name, terms);
+      bandGroup.append(rect, name, terms);
+      bandLayer.append(bandGroup);
     }
 
     const nodeById = new Map(layout.nodes.map((node) => [node.paper.id, node]));
@@ -453,12 +514,16 @@ export function initTimelineMap(root = document) {
 
     for (const node of layout.nodes) {
       const paper = node.paper;
+      const color = timelineClusterColor(node.groupIndex);
       const group = svgElement("g", {
         class: `timeline-paper${paper.id === selectedId ? " selected" : ""}${paper.starred ? " starred" : ""}`,
         transform: `translate(${node.x} ${node.y})`,
         tabindex: "0",
         role: "button",
         "data-paper-id": paper.id,
+        "data-timeline-cluster-index": node.groupIndex,
+        "data-timeline-cluster-color": color.accent,
+        style: `--timeline-cluster-band:${color.band};--timeline-cluster-paper:${color.paper};--timeline-cluster-accent:${color.accent}`,
         "aria-label": `${paper.title || "Untitled"}, ${paper.year || "year unknown"}`,
       });
       const rect = svgElement("rect", { width: CARD_WIDTH, height: CARD_HEIGHT, rx: 6 });
@@ -629,6 +694,7 @@ export function initTimelineMap(root = document) {
   const observer = new MutationObserver(() => queueRender());
   observer.observe(paperList, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
   window.addEventListener("resize", queueRender);
+  root.addEventListener?.("paper-map-graph-config-changed", queueRender);
 
   try {
     if (localStorage.getItem(TIMELINE_STORAGE_KEY) === "true") requestAnimationFrame(activate);
