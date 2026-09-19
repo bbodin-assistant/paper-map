@@ -241,6 +241,25 @@ main { height: calc(100vh - var(--header-height)); padding: 0 14px 14px; }
 .add-paper-search-match { color: inherit; font-weight: 850; }
 .library-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-top: 14px; }
 
+
+.bibtex-import-review-dialog {
+  width: min(760px, calc(100vw - 28px));
+  max-height: min(820px, calc(100vh - 28px));
+  padding: 0;
+  border: 1px solid #bfc6c2;
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 24px 70px rgba(24, 32, 42, .24);
+}
+.bibtex-import-review-dialog::backdrop { background: rgba(24, 32, 42, .26); }
+.bibtex-import-shell { display: grid; gap: 12px; padding: 16px; }
+.bibtex-import-shell > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.bibtex-import-original { display: grid; gap: 5px; padding: 11px 12px; border: 1px solid #d9ddd9; background: #fafaf6; }
+.bibtex-import-original strong { font-size: 12px; line-height: 1.4; }
+.bibtex-import-original > span:last-child { color: var(--muted); font-size: 10px; line-height: 1.45; overflow-wrap: anywhere; }
+.bibtex-import-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; padding-top: 3px; border-top: 1px solid #e2e5e2; }
+
 .active-topic-filter { display: flex; align-items: center; gap: 7px; min-height: 32px; padding: 5px 11px; border-top: 1px solid #e2e5e2; color: #64707a; font-size: 11px; }
 .active-topic-filter[hidden] { display: none; }
 .active-topic-filter strong { color: #26323d; }
