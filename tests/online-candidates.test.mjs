@@ -21,10 +21,12 @@ test("candidate summaries expose all review fields used by the chooser", () => {
     authors: ["Daniel J. Beutel", "Taner Topal", "Akhil Mathur"],
     year: 2020,
     venue: "arXiv",
+    doi: "https://doi.org/10.1234/flower",
   }), {
     title: "Flower: A Friendly Federated Learning Framework",
     authors: ["Daniel J. Beutel", "Taner Topal", "Akhil Mathur"],
     year: 2020,
     venue: "arXiv",
+    doi: "10.1234/flower",
   });
 });
