@@ -1,7 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { normalizePaper as normalizeOpenAlexPaper } from "../www/providers/openalex.js";\n\nimport {
+import { normalizePaper as normalizeOpenAlexPaper } from "../www/providers/openalex.js";
+
+import {
   mergeProviderPaperRecords,
   papersRepresentSameWork,
   resolvePaper,
