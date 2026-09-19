@@ -1,10 +1,31 @@
 import { loadLibrary } from "./db.js";
 import { fitTransform } from "./graph-layout.js";
+import {
+  DEFAULT_GRAPH_CONFIG,
+  loadGraphConfig,
+  TIMELINE_CLUSTER_FIELD_OPTIONS,
+} from "./graph-config.js?v=0.4.10";
 import { isCitationEdge } from "./research-relations.js";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const TIMELINE_STORAGE_KEY = "paper-map-timeline-mode-v1";
-const GROUP_COUNT = 5;
+const GROUP_COUNT = DEFAULT_GRAPH_CONFIG.timelineClusterCount;
+const DEFAULT_CLUSTER_FIELDS = DEFAULT_GRAPH_CONFIG.timelineClusterFields;
+const CLUSTER_FIELD_IDS = new Set(TIMELINE_CLUSTER_FIELD_OPTIONS.map(({ id }) => id));
+const TIMELINE_CLUSTER_COLORS = Object.freeze([
+  Object.freeze({ band: "#f2effd", paper: "#fbfaff", accent: "#6e5aa6" }),
+  Object.freeze({ band: "#edf5fc", paper: "#f9fcff", accent: "#477aa4" }),
+  Object.freeze({ band: "#eaf7f3", paper: "#f8fcfb", accent: "#3f806d" }),
+  Object.freeze({ band: "#f1f7e8", paper: "#fbfdf7", accent: "#687f3f" }),
+  Object.freeze({ band: "#fff6df", paper: "#fffdf7", accent: "#a7781e" }),
+  Object.freeze({ band: "#fff0e6", paper: "#fffaf7", accent: "#a96138" }),
+  Object.freeze({ band: "#fceeed", paper: "#fff9f8", accent: "#a65350" }),
+  Object.freeze({ band: "#fcecf4", paper: "#fff9fc", accent: "#a45479" }),
+  Object.freeze({ band: "#f4edfc", paper: "#fbf9ff", accent: "#7657a0" }),
+  Object.freeze({ band: "#eaf7f9", paper: "#f8fcfd", accent: "#3d7b85" }),
+  Object.freeze({ band: "#f5efe8", paper: "#fcfaf7", accent: "#82664c" }),
+  Object.freeze({ band: "#edf2f5", paper: "#fafcfd", accent: "#5d7384" }),
+]);
 const MIN_ZOOM = 0.35;
 const MAX_ZOOM = 3.2;
 const CARD_WIDTH = 176;
@@ -40,15 +61,29 @@ function tokenize(value) {
     .match(/[a-z0-9][a-z0-9-]{1,}/g)?.filter((token) => token.length > 2 && !STOP_WORDS.has(token) && !/^\d+$/.test(token)) || [];
 }
 
-function paperTermCounts(paper) {
+function normalizedClusterFields(fields) {
+  const requested = Array.isArray(fields) ? fields : DEFAULT_CLUSTER_FIELDS;
+  const normalized = Array.from(new Set(requested.filter((field) => CLUSTER_FIELD_IDS.has(field))));
+  return normalized.length ? normalized : [...DEFAULT_CLUSTER_FIELDS];
+}
+
+function paperTermCounts(paper, fields = DEFAULT_CLUSTER_FIELDS) {
+  const selected = new Set(normalizedClusterFields(fields));
   const counts = new Map();
   const add = (value, weight) => {
     for (const token of tokenize(value)) counts.set(token, (counts.get(token) || 0) + weight);
   };
-  add(paper.title, 3);
-  const keywords = Array.isArray(paper.keywords) ? paper.keywords : String(paper.keywords || "").split(/[,;]+/);
-  for (const keyword of keywords) add(keyword, 5);
-  add(paper.abstract, 1);
+  if (selected.has("title")) add(paper.title, 3);
+  if (selected.has("keywords")) {
+    const keywords = Array.isArray(paper.keywords) ? paper.keywords : String(paper.keywords || "").split(/[,;]+/);
+    for (const keyword of keywords) add(keyword, 5);
+  }
+  if (selected.has("abstract")) add(paper.abstract, 1);
+  if (selected.has("authors")) {
+    const authors = Array.isArray(paper.authors) ? paper.authors : String(paper.authors || "").split(/[,;]+/);
+    for (const author of authors) add(author, 2);
+  }
+  if (selected.has("venue")) add(paper.venue, 2);
   return counts;
 }
 
@@ -76,8 +111,8 @@ function averageVectors(vectors) {
   return normalized(result);
 }
 
-function buildVectors(papers) {
-  const countsByPaper = papers.map(paperTermCounts);
+function buildVectors(papers, fields = DEFAULT_CLUSTER_FIELDS) {
+  const countsByPaper = papers.map((paper) => paperTermCounts(paper, fields));
   const documentFrequency = new Map();
   for (const counts of countsByPaper) {
     for (const term of counts.keys()) documentFrequency.set(term, (documentFrequency.get(term) || 0) + 1);
@@ -125,10 +160,11 @@ function centroidTerms(centroid, limit = 3) {
     .map(([term]) => term);
 }
 
-export function clusterPapers(papers = [], requestedGroups = GROUP_COUNT) {
+export function clusterPapers(papers = [], requestedGroups = GROUP_COUNT, options = {}) {
   if (!papers.length) return { groups: [], assignmentByPaperId: new Map() };
   const groupCount = Math.max(1, Math.min(Number(requestedGroups) || GROUP_COUNT, papers.length));
-  const vectors = buildVectors(papers);
+  const fields = normalizedClusterFields(options.fields);
+  const vectors = buildVectors(papers, fields);
   const seeds = farthestFirstSeeds(papers, vectors, groupCount);
   let centroids = seeds.map((index) => vectors[index]);
   let assignments = new Array(papers.length).fill(-1);
@@ -183,8 +219,8 @@ export function clusterPapers(papers = [], requestedGroups = GROUP_COUNT) {
   return { groups, assignmentByPaperId };
 }
 
-export function buildTimelineLayout(papers = [], viewportWidth = 1200, viewportHeight = 720, requestedGroups = GROUP_COUNT) {
-  const { groups, assignmentByPaperId } = clusterPapers(papers, requestedGroups);
+export function buildTimelineLayout(papers = [], viewportWidth = 1200, viewportHeight = 720, requestedGroups = GROUP_COUNT, options = {}) {
+  const { groups, assignmentByPaperId } = clusterPapers(papers, requestedGroups, options);
   const years = Array.from(new Set(papers.map((paper) => Number(paper.year)).filter(Number.isFinite))).sort((a, b) => a - b);
   const yearIndex = new Map(years.map((year, index) => [year, index]));
   const middleBucket = years.length ? Math.floor((years.length - 1) / 2) : 0;
@@ -245,6 +281,11 @@ function rectBoundary(node, towardX, towardY, padding = 0) {
   const halfH = node.height / 2 + padding;
   const scale = 1 / Math.max(Math.abs(dx) / Math.max(1, halfW), Math.abs(dy) / Math.max(1, halfH), 0.001);
   return { x: cx + dx * scale, y: cy + dy * scale };
+}
+
+export function timelineClusterColor(index) {
+  const normalized = Math.max(0, Math.floor(Number(index) || 0));
+  return TIMELINE_CLUSTER_COLORS[normalized % TIMELINE_CLUSTER_COLORS.length];
 }
 
 export function timelineEdgePath(source, target) {
