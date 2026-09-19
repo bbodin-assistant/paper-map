@@ -84,6 +84,18 @@ def main():
         )
         paper_provider.select_by_value("auto")
 
+        search_settings = {
+            "semantic-scholar": (True, "2"),
+            "openalex": (True, "3"),
+            "crossref": (False, "4"),
+        }
+        for provider_id, (enabled, limit) in search_settings.items():
+            toggle = panel.find_element(By.CSS_SELECTOR, f'[data-paper-search-enabled="{provider_id}"]')
+            limit_input = panel.find_element(By.CSS_SELECTOR, f'[data-paper-search-limit="{provider_id}"]')
+            if toggle.is_selected() != enabled:
+                toggle.click()
+            replace_value(limit_input, limit)
+
         effort = panel.find_element(By.ID, "graph-config-layout-effort")
         spacing = panel.find_element(By.ID, "graph-config-layout-spacing")
         assert_true(effort.get_attribute("value") == "2", "Default graph effort should extend the old settling budget to 2x")
@@ -127,6 +139,9 @@ def main():
         assert_true(saved_ai["model"] == SELECTED_MODEL, "Selected discovered model should be persisted")
         saved_paper = driver.execute_script("return JSON.parse(localStorage.getItem('paper-map-paper-provider-config-v1'))")
         assert_true(saved_paper["provider"] == "auto", "Selected scholarly methodology should be persisted")
+        assert_true(saved_paper["searchProviders"]["semantic-scholar"] == {"enabled": True, "limit": 2}, "Semantic Scholar search settings should persist")
+        assert_true(saved_paper["searchProviders"]["openalex"] == {"enabled": True, "limit": 3}, "OpenAlex search settings should persist")
+        assert_true(saved_paper["searchProviders"]["crossref"] == {"enabled": False, "limit": 4}, "Disabled Crossref search settings should persist")
         saved_graph = driver.execute_script("return JSON.parse(localStorage.getItem('paper-map-graph-config-v1'))")
         assert_true(saved_graph["layoutEffort"] == 3.25, "Graph layout effort should be persisted")
         assert_true(saved_graph["layoutSpacing"] == 1.4, "Graph layout spacing should be persisted")
