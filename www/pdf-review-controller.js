@@ -237,7 +237,7 @@ export function initPdfReviewController() {
     doiSearchButton.disabled = busy || searching;
     arxivSearchButton.disabled = busy || searching;
     cancelButton.hidden = !busy && !searching;
-    saveButton.disabled = item.status.local === "queued" || item.status.local === "running" || busy;
+    saveButton.disabled = item.status.local === "queued" || item.status.local === "running" || busy || searching;
     skipButton.disabled = false;
     if (tooLarge && item.status.ai === "idle") analysisStatus.textContent = `${providerLabel(config.provider)} direct PDF input is limited to 25 MB. Local and online extraction remain available.`;
   }
