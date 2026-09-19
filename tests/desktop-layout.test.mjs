@@ -39,6 +39,7 @@ test("desktop layout keeps the requested controls and floating map affordances",
   assert.match(css, /\.desktop-toolbar-right #filter-menu > summary[\s\S]*?display: none;/);
   assert.match(css, /\.desktop-toolbar-right #filter-menu \.drawer-panel[\s\S]*?right: 0;[\s\S]*?left: auto;/);
   assert.match(css, /\.desktop-add-paper-form \.add-paper-candidates[\s\S]*?position: absolute;[\s\S]*?right: 0;/);
+  assert.match(css, /\.paper-detail\s*\{[\s\S]*?top: calc\(var\(--header-height\) \+ var\(--toolbar-height\)\);/);
   assert.match(css, /\.map-stage > \.map-reset-button[\s\S]*?top: 12px;[\s\S]*?right: 12px;/);
   assert.match(css, /\.map-help[\s\S]*?right: 12px;[\s\S]*?left: auto;/);
 });
