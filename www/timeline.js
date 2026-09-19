@@ -34,6 +34,12 @@ const YEAR_STEP = 205;
 const LEFT_GUTTER = 166;
 const BAND_TOP_PADDING = 46;
 const ROW_STEP = 62;
+const YEAR_TICK_MIN_SCREEN_GAP = 105;
+
+export function timelineYearTickStep(zoom = 1) {
+  const boundedZoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number(zoom) || 1));
+  return Math.max(1, Math.ceil(YEAR_TICK_MIN_SCREEN_GAP / (YEAR_STEP * boundedZoom)));
+}
 
 const STOP_WORDS = new Set(`
 a about above after again against all am an and any are as at be because been before being below between both but by can could did do does doing down during each few for from further had has have having he her here hers herself him himself his how i if in into is it its itself just may me might more most must my myself no nor not of off on once only or other our ours ourselves out over own same she should so some such than that the their theirs them themselves then there these they this those through to too under until up very was we were what when where which while who whom why will with would you your yours yourself yourselves
@@ -308,26 +314,36 @@ function installStyles(root = document) {
   const style = root.createElement("style");
   style.id = "timeline-map-styles";
   style.textContent = `
-    #map-mode.timeline-enabled { grid-template-columns: repeat(3, minmax(0, 1fr)); width: 326px; }
+    #map-mode.timeline-enabled { grid-template-columns: repeat(4, minmax(0, 1fr)); width: 440px; }
     .timeline-year-guide { stroke: #d8ddda; stroke-width: 1; stroke-dasharray: 3 6; }
-    .timeline-year-label { fill: #6f7a82; font-size: 10px; font-weight: 800; text-anchor: middle; }
     .timeline-band { fill: var(--timeline-cluster-band, #fafaf6); stroke: var(--timeline-cluster-accent, #e0e4e0); stroke-width: 1.2; }
-    .timeline-band-name { fill: var(--timeline-cluster-accent, #25313b); font-size: 11px; font-weight: 850; }
-    .timeline-band-terms { fill: var(--timeline-cluster-accent, #899198); font-size: 8px; font-weight: 650; opacity: .82; }
-    .timeline-axis-note { fill: #929a9f; font-size: 8px; font-weight: 650; }
     .timeline-citation-edge { fill: none; stroke: #9ca6a6; stroke-width: 1; opacity: .18; pointer-events: none; }
     .timeline-citation-edge.selected { stroke: #47545e; stroke-width: 1.8; opacity: .62; }
     .timeline-paper { cursor: pointer; outline: none; }
     .timeline-paper rect { fill: var(--timeline-cluster-paper, #fffef9); stroke: var(--timeline-cluster-accent, #69757e); stroke-width: 1.3; }
     .timeline-paper:hover rect, .timeline-paper:focus rect { fill: #fff6cd; stroke: #26333e; stroke-width: 1.5; }
-    .timeline-paper.selected rect { fill: #f6c445; stroke: #1f2933; stroke-width: 2; }
+    .timeline-paper.citation-neighbor rect { stroke: #3f4b55; stroke-width: 2.5; }
+    .timeline-paper.selected rect { fill: #f6c445; stroke: #1f2933; stroke-width: 2.8; }
     .timeline-paper.starred rect { stroke: #ad7810; stroke-width: 2; }
+    .timeline-paper.selected.starred rect { stroke: #1f2933; stroke-width: 2.8; }
     .timeline-paper-year { fill: var(--timeline-cluster-accent, #7d878e); font-size: 8px; font-weight: 850; }
     .timeline-paper-title { fill: #202b35; font-size: 10px; font-weight: 800; }
     .timeline-paper-meta { fill: #79838b; font-size: 8px; font-weight: 650; }
+    .timeline-paper-star { fill: #a56f08; font-size: 12px; font-weight: 900; text-anchor: end; }
     .timeline-empty { fill: #7d878e; font-size: 13px; font-weight: 650; }
-    @media (max-width: 720px) { #map-mode.timeline-enabled { width: 286px; } #map-mode.timeline-enabled button { padding-inline: 8px; } }
-  `;
+    .timeline-sticky-overlay { pointer-events: none; }
+    .timeline-sticky-year-strip { fill: rgba(255, 254, 249, .94); stroke: #e0e3df; stroke-width: 0 0 1 0; }
+    .timeline-sticky-year-label { fill: #5f6971; font-size: clamp(10px, 1vw, 12px); font-weight: 850; text-anchor: middle; }
+    .timeline-sticky-theme-bg { fill: rgba(255, 254, 249, .94); stroke: var(--timeline-cluster-accent, #cfd4d1); stroke-width: 1; }
+    .timeline-sticky-theme-name { fill: var(--timeline-cluster-accent, #25313b); font-size: clamp(11px, 1.05vw, 13px); font-weight: 850; }
+    .timeline-sticky-theme-terms { fill: #657079; font-size: clamp(8px, .8vw, 10px); font-weight: 650; }
+    @media (max-width: 720px) {
+      #map-mode.timeline-enabled { width: 100%; }
+      #map-mode.timeline-enabled button { padding-inline: 7px; }
+      .timeline-sticky-theme-name { font-size: 11px; }
+      .timeline-sticky-theme-terms { font-size: 8px; }
+    }
+  ``;
   root.head.append(style);
 }
 
@@ -340,8 +356,11 @@ function selectedPaperId(root) {
 }
 
 function selectPaperThroughApp(root, paperId) {
-  const button = Array.from(root.querySelectorAll("#paper-list .paper-list-item[data-paper-id]")).find((candidate) => candidate.dataset.paperId === paperId);
-  button?.click();
+  if (!paperId) return;
+  root.dispatchEvent(new CustomEvent("paper-map-timeline-paper-activate", {
+    bubbles: true,
+    detail: { paperId },
+  }));
 }
 
 function restoreGraphTransform(svg, viewport) {
@@ -381,9 +400,98 @@ export function initTimelineMap(root = document) {
   const pointers = new Map();
   let panGesture = null;
   let pinchGesture = null;
+  let stickyOverlay = null;
+
+  function removeStickyOverlay() {
+    stickyOverlay?.remove();
+    stickyOverlay = null;
+  }
+
+  function rebuildStickyOverlay() {
+    removeStickyOverlay();
+    if (!active || !currentLayout) return;
+    stickyOverlay = svgElement("g", { class: "timeline-sticky-overlay", "aria-hidden": "true" });
+
+    const yearStrip = svgElement("rect", {
+      x: 0,
+      y: 0,
+      width: Math.max(1, svg.clientWidth || 1200),
+      height: 28,
+      class: "timeline-sticky-year-strip",
+    });
+    const yearLayer = svgElement("g", { class: "timeline-sticky-years" });
+    for (let index = 0; index < currentLayout.years.length; index += 1) {
+      const label = svgElement("text", {
+        y: 18,
+        class: "timeline-sticky-year-label",
+        "data-year-index": index,
+      });
+      label.textContent = String(currentLayout.years[index]);
+      yearLayer.append(label);
+    }
+
+    const themeLayer = svgElement("g", { class: "timeline-sticky-themes" });
+    for (const band of currentLayout.groups) {
+      const color = timelineClusterColor(band.index);
+      const group = svgElement("g", {
+        class: "timeline-sticky-theme",
+        "data-band-index": band.index,
+        style: `--timeline-cluster-accent:${color.accent}`,
+      });
+      const bg = svgElement("rect", { x: 7, y: 0, width: 150, height: 38, rx: 6, class: "timeline-sticky-theme-bg" });
+      const name = svgElement("text", { x: 15, y: 15, class: "timeline-sticky-theme-name" });
+      name.textContent = band.name;
+      const terms = svgElement("text", { x: 15, y: 30, class: "timeline-sticky-theme-terms" });
+      terms.textContent = shortText(band.label, 22);
+      group.append(bg, name, terms);
+      themeLayer.append(group);
+    }
+
+    stickyOverlay.append(yearStrip, yearLayer, themeLayer);
+    svg.append(stickyOverlay);
+    updateStickyOverlay();
+  }
+
+  function updateStickyOverlay() {
+    if (!stickyOverlay || !currentLayout) return;
+    const width = Math.max(1, svg.clientWidth || 1200);
+    const height = Math.max(1, svg.clientHeight || 720);
+    stickyOverlay.querySelector(".timeline-sticky-year-strip")?.setAttribute("width", String(width));
+    const tickStep = timelineYearTickStep(timelineTransform.k);
+
+    for (const guide of viewport.querySelectorAll(".timeline-year-guide[data-year-index]")) {
+      const index = Number(guide.dataset.yearIndex);
+      const show = index % tickStep === 0 || index === currentLayout.years.length - 1;
+      guide.style.display = show ? "" : "none";
+    }
+
+    for (const label of stickyOverlay.querySelectorAll(".timeline-sticky-year-label[data-year-index]")) {
+      const index = Number(label.dataset.yearIndex);
+      const worldX = LEFT_GUTTER + index * YEAR_STEP + CARD_WIDTH / 2;
+      const x = timelineTransform.x + worldX * timelineTransform.k;
+      const showTick = index % tickStep === 0 || index === currentLayout.years.length - 1;
+      const visible = showTick && x >= 30 && x <= width - 12;
+      label.style.display = visible ? "" : "none";
+      if (visible) label.setAttribute("x", String(x));
+    }
+
+    for (const group of stickyOverlay.querySelectorAll(".timeline-sticky-theme[data-band-index]")) {
+      const band = currentLayout.groups[Number(group.dataset.bandIndex)];
+      if (!band) continue;
+      const screenTop = timelineTransform.y + band.y * timelineTransform.k;
+      const screenBottom = timelineTransform.y + (band.y + band.height) * timelineTransform.k;
+      const visible = screenBottom > 29 && screenTop < height;
+      group.style.display = visible ? "" : "none";
+      if (!visible) continue;
+      const maxY = Math.max(30, Math.min(height - 40, screenBottom - 40));
+      const y = Math.max(30, Math.min(maxY, screenTop + 7));
+      group.setAttribute("transform", `translate(0 ${y})`);
+    }
+  }
 
   function applyTimelineTransform() {
     viewport.setAttribute("transform", `translate(${timelineTransform.x} ${timelineTransform.y}) scale(${timelineTransform.k})`);
+    updateStickyOverlay();
   }
 
   function resetTimelineView() {
@@ -423,14 +531,12 @@ export function initTimelineMap(root = document) {
     viewport.replaceChildren();
     syncModeButtons();
     if (mapHelp) {
-      const clusterFields = graphConfig.timelineClusterFields
-        .map((field) => TIMELINE_CLUSTER_FIELD_OPTIONS.find((option) => option.id === field)?.label || field)
-        .join(", ");
-      mapHelp.textContent = `Timeline: observed years are evenly spaced · ${graphConfig.timelineClusterCount} requested clusters using ${clusterFields} · drag background, pinch or wheel to zoom`;
+      mapHelp.textContent = "Drag background to pan · pinch or wheel to zoom";
     }
 
     if (!papers.length) {
       currentLayout = null;
+      removeStickyOverlay();
       const text = svgElement("text", { x: 28, y: 44, class: "timeline-empty" });
       text.textContent = "No papers match the current filters.";
       viewport.append(text);
@@ -459,15 +565,17 @@ export function initTimelineMap(root = document) {
     const paperLayer = svgElement("g", { class: "timeline-papers" });
     viewport.append(guideLayer, bandLayer, edgeLayer, paperLayer);
 
-    const axisNote = svgElement("text", { x: LEFT_GUTTER, y: 14, class: "timeline-axis-note" });
-    axisNote.textContent = "Chronology → equal spacing between observed years; empty calendar gaps are compressed";
-    guideLayer.append(axisNote);
     for (let index = 0; index < layout.years.length; index += 1) {
       const x = LEFT_GUTTER + index * YEAR_STEP + CARD_WIDTH / 2;
-      const line = svgElement("line", { x1: x, y1: 28, x2: x, y2: layout.height - 24, class: "timeline-year-guide" });
-      const label = svgElement("text", { x, y: 34, class: "timeline-year-label" });
-      label.textContent = String(layout.years[index]);
-      guideLayer.append(line, label);
+      const line = svgElement("line", {
+        x1: x,
+        y1: 28,
+        x2: x,
+        y2: layout.height - 24,
+        class: "timeline-year-guide",
+        "data-year-index": index,
+      });
+      guideLayer.append(line);
     }
 
     for (const band of layout.groups) {
@@ -486,15 +594,18 @@ export function initTimelineMap(root = document) {
         rx: 8,
         class: "timeline-band",
       });
-      const name = svgElement("text", { x: 24, y: band.y + 27, class: "timeline-band-name" });
-      name.textContent = band.name;
-      const terms = svgElement("text", { x: 24, y: band.y + 42, class: "timeline-band-terms" });
-      terms.textContent = shortText(band.label, 22);
-      bandGroup.append(rect, name, terms);
+      bandGroup.append(rect);
       bandLayer.append(bandGroup);
     }
 
     const nodeById = new Map(layout.nodes.map((node) => [node.paper.id, node]));
+    const citationNeighbors = new Set();
+    if (selectedId) {
+      for (const edge of citations) {
+        if (edge.source === selectedId) citationNeighbors.add(edge.target);
+        if (edge.target === selectedId) citationNeighbors.add(edge.source);
+      }
+    }
     for (const edge of citations) {
       const source = nodeById.get(edge.source);
       const target = nodeById.get(edge.target);
@@ -516,7 +627,7 @@ export function initTimelineMap(root = document) {
       const paper = node.paper;
       const color = timelineClusterColor(node.groupIndex);
       const group = svgElement("g", {
-        class: `timeline-paper${paper.id === selectedId ? " selected" : ""}${paper.starred ? " starred" : ""}`,
+        class: `timeline-paper${paper.id === selectedId ? " selected" : ""}${paper.starred ? " starred" : ""}${citationNeighbors.has(paper.id) ? " citation-neighbor" : ""}`,
         transform: `translate(${node.x} ${node.y})`,
         tabindex: "0",
         role: "button",
@@ -534,9 +645,13 @@ export function initTimelineMap(root = document) {
       const meta = svgElement("text", { x: 10, y: 46, class: "timeline-paper-meta" });
       const citationMeta = Number.isFinite(Number(paper.citationCount)) ? `${paper.citationCount} cites` : "";
       meta.textContent = shortText([(paper.authors || [])[0], citationMeta].filter(Boolean).join(" · "), 31);
+      const star = paper.starred ? svgElement("text", { x: CARD_WIDTH - 8, y: 15, class: "timeline-paper-star" }) : null;
+      if (star) star.textContent = "★";
       const tooltip = svgElement("title");
-      tooltip.textContent = `${paper.title || "Untitled"}\n${(paper.authors || []).join(", ")}\n${paper.year || "Year unknown"}`;
-      group.append(rect, year, title, meta, tooltip);
+      tooltip.textContent = `${paper.title || "Untitled"}\n${(paper.authors || []).join(", ")}\n${paper.year || "Year unknown"}${paper.venue ? `\n${paper.venue}` : ""}`;
+      group.append(rect, year, title, meta);
+      if (star) group.append(star);
+      group.append(tooltip);
       group.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
@@ -547,6 +662,7 @@ export function initTimelineMap(root = document) {
       paperLayer.append(group);
     }
 
+    rebuildStickyOverlay();
     if (shouldReset) resetTimelineView();
     else applyTimelineTransform();
   }
@@ -581,6 +697,7 @@ export function initTimelineMap(root = document) {
     panGesture = null;
     pinchGesture = null;
     if (mapHelp) mapHelp.textContent = defaultHelp;
+    removeStickyOverlay();
     try { localStorage.removeItem(TIMELINE_STORAGE_KEY); } catch { /* Non-critical UI preference. */ }
     restoreGraphTransform(svg, viewport);
   }
