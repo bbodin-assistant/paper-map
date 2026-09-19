@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { buildTimelineLayout, clusterPapers, timelineClusterColor, timelineEdgePath } from "../www/timeline.js";
+import { buildTimelineLayout, clusterPapers, timelineClusterColor, timelineEdgePath, timelineYearTickStep } from "../www/timeline.js";
 
 test("timeline clustering uses paper text rather than publication year", () => {
   const papers = [
@@ -76,4 +76,11 @@ test("citation paths terminate as curved background links between paper cards", 
   assert.match(path, /^M /);
   assert.match(path, / C /);
   assert.ok(!path.includes("NaN"));
+});
+
+
+test("timeline thins year ticks only when zoomed far out", () => {
+  assert.equal(timelineYearTickStep(1), 1);
+  assert.ok(timelineYearTickStep(0.35) > 1);
+  assert.ok(timelineYearTickStep(0.35) >= timelineYearTickStep(0.7));
 });
