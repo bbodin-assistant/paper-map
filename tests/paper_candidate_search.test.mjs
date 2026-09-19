@@ -21,6 +21,7 @@ test("candidate search reports providers progressively and preserves configured 
   const openalex = deferred();
   const calls = [];
   const updates = [];
+  const firstProviderUpdate = deferred();
   const providers = [
     { id: "semantic-scholar", label: "Semantic Scholar", limit: 2 },
     { id: "openalex", label: "OpenAlex", limit: 3 },
@@ -32,7 +33,10 @@ test("candidate search reports providers progressively and preserves configured 
       calls.push({ providerId, query, limit, signal: options.signal });
       return providerId === "semantic-scholar" ? semantic.promise : openalex.promise;
     },
-    onUpdate: (snapshot) => updates.push(snapshot),
+    onUpdate: (snapshot) => {
+      updates.push(snapshot);
+      if (snapshot.totals.finished === 1) firstProviderUpdate.resolve(snapshot);
+    },
   });
 
   assert.deepEqual(
@@ -48,10 +52,7 @@ test("candidate search reports providers progressively and preserves configured 
     { id: "s2:broad", title: "Shared Candidate Fixture Background", year: 2023 },
     { id: "s2:exact", title: "SHARED CANDIDATE FIXTURE", year: 2024 },
   ]);
-  await Promise.resolve();
-  await Promise.resolve();
-
-  const afterSemantic = updates.at(-1);
+  const afterSemantic = await firstProviderUpdate.promise;
   assert.equal(afterSemantic.providerStates[0].status, "complete");
   assert.equal(afterSemantic.providerStates[1].status, "searching");
   assert.equal(afterSemantic.providerStates[0].candidates[0].id, "s2:exact");
