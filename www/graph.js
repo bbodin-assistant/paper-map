@@ -130,6 +130,148 @@ export function buildTopicGraph(papers, edges, topics) {
   return { blocks: Array.from(blocks.values()), connections: Array.from(connections.values()) };
 }
 
+function authorKey(value) {
+  return String(value || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+export function buildAuthorGraph(papers, edges) {
+  const paperById = new Map(papers.map((paper) => [paper.id, paper]));
+  const blocks = new Map();
+  const authorsByPaper = new Map();
+
+  for (const paper of papers) {
+    const authors = [];
+    const seen = new Set();
+    for (const rawName of paper.authors || []) {
+      const name = String(rawName || "").replace(/\s+/g, " ").trim();
+      const key = authorKey(name);
+      if (!name || !key || seen.has(key)) continue;
+      seen.add(key);
+      const id = `author:${key}`;
+      authors.push(id);
+      if (!blocks.has(id)) {
+        blocks.set(id, { id, name, source: "author", paperIds: [], starred: 0 });
+      }
+      const block = blocks.get(id);
+      block.paperIds.push(paper.id);
+      if (paper.starred) block.starred += 1;
+    }
+    authorsByPaper.set(paper.id, authors);
+  }
+
+  const connections = new Map();
+  for (const edge of edges) {
+    if (!paperById.has(edge.source) || !paperById.has(edge.target)) continue;
+    const sourceAuthors = authorsByPaper.get(edge.source) || [];
+    const targetAuthors = authorsByPaper.get(edge.target) || [];
+    for (const source of sourceAuthors) {
+      for (const target of targetAuthors) {
+        if (source === target) continue;
+        const key = `${source}->${target}`;
+        const current = connections.get(key) || { source, target, weight: 0 };
+        current.weight += 1;
+        connections.set(key, current);
+      }
+    }
+  }
+
+  return { blocks: Array.from(blocks.values()), connections: Array.from(connections.values()) };
+}
+
+export function hierarchicalBlockLayout(blocks = [], connections = [], viewportWidth = 1200, viewportHeight = 720) {
+  if (!blocks.length) {
+    return { width: Math.max(800, Number(viewportWidth) || 1200), height: Math.max(520, Number(viewportHeight) || 720), blocks: [] };
+  }
+
+  const sorted = [...blocks].sort((left, right) =>
+    right.paperIds.length - left.paperIds.length || left.name.localeCompare(right.name));
+  const ids = new Set(sorted.map((block) => block.id));
+  const outgoing = new Map(sorted.map((block) => [block.id, new Set()]));
+  const incoming = new Map(sorted.map((block) => [block.id, new Set()]));
+  for (const connection of connections) {
+    if (!ids.has(connection.source) || !ids.has(connection.target) || connection.source === connection.target) continue;
+    outgoing.get(connection.source).add(connection.target);
+    incoming.get(connection.target).add(connection.source);
+  }
+
+  const levels = new Map();
+  const remainingIndegree = new Map(sorted.map((block) => [block.id, incoming.get(block.id).size]));
+  const queue = sorted.filter((block) => remainingIndegree.get(block.id) === 0).map((block) => block.id);
+  for (const id of queue) levels.set(id, 0);
+
+  while (queue.length) {
+    const source = queue.shift();
+    const sourceLevel = levels.get(source) || 0;
+    for (const target of outgoing.get(source) || []) {
+      levels.set(target, Math.max(levels.get(target) || 0, sourceLevel + 1));
+      remainingIndegree.set(target, Math.max(0, (remainingIndegree.get(target) || 0) - 1));
+      if (remainingIndegree.get(target) === 0) queue.push(target);
+    }
+  }
+
+  for (const block of sorted) {
+    if (levels.has(block.id)) continue;
+    const predecessorLevels = Array.from(incoming.get(block.id) || [])
+      .map((id) => levels.get(id))
+      .filter(Number.isFinite);
+    levels.set(block.id, predecessorLevels.length ? Math.max(...predecessorLevels) + 1 : 0);
+    const cycleQueue = [block.id];
+    while (cycleQueue.length) {
+      const source = cycleQueue.shift();
+      const sourceLevel = levels.get(source) || 0;
+      for (const target of outgoing.get(source) || []) {
+        if (levels.has(target)) continue;
+        levels.set(target, sourceLevel + 1);
+        cycleQueue.push(target);
+      }
+    }
+  }
+
+  const rowsPerColumn = Math.max(4, Math.min(8, Math.floor((Math.max(520, Number(viewportHeight) || 720) - 100) / 92)));
+  const byLevel = new Map();
+  for (const block of sorted) {
+    const level = levels.get(block.id) || 0;
+    if (!byLevel.has(level)) byLevel.set(level, []);
+    byLevel.get(level).push(block);
+  }
+
+  const positioned = [];
+  let visualColumn = 0;
+  let maxRows = 0;
+  for (const level of Array.from(byLevel.keys()).sort((a, b) => a - b)) {
+    const levelBlocks = byLevel.get(level);
+    for (let offset = 0; offset < levelBlocks.length; offset += rowsPerColumn) {
+      const columnBlocks = levelBlocks.slice(offset, offset + rowsPerColumn);
+      maxRows = Math.max(maxRows, columnBlocks.length);
+      for (let row = 0; row < columnBlocks.length; row += 1) {
+        const block = columnBlocks[row];
+        const blockWidth = 210;
+        const blockHeight = Math.max(68, Math.min(96, 64 + block.paperIds.length * 5));
+        positioned.push({
+          ...block,
+          hierarchyLevel: level,
+          x: 34 + visualColumn * 245,
+          y: 54 + row * 110,
+          width: blockWidth,
+          height: blockHeight,
+        });
+      }
+      visualColumn += 1;
+    }
+  }
+
+  return {
+    width: Math.max(Number(viewportWidth) || 1200, 68 + Math.max(1, visualColumn) * 245),
+    height: Math.max(Number(viewportHeight) || 720, 94 + Math.max(1, maxRows) * 110),
+    blocks: positioned,
+  };
+}
+
 function blockSegment(source, target, padding = 5) {
   const sourceCx = source.x + source.width / 2;
   const sourceCy = source.y + source.height / 2;
@@ -153,7 +295,7 @@ function blockSegment(source, target, padding = 5) {
   return { x1: start.x, y1: start.y, x2: end.x, y2: end.y };
 }
 
-export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
+export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor }) {
   const root = svgElement("g", { class: "graph-viewport" });
   svg.append(root);
 
@@ -189,6 +331,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
   let animationFrame = null;
   let renderToken = 0;
   let lastCitationTopology = "";
+  let lastAggregateTopology = "";
   let currentWorld = null;
   const citationLayout = new Map();
   const pinnedPapers = new Set();
@@ -477,48 +620,57 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     if (topologyChanged) startSimulation(1);
   }
 
-  function renderTopicMap(papers, edges, topics, selectedTopicId) {
+  function renderAggregateMap({
+    papers,
+    blocks,
+    connections,
+    selectedBlockId = null,
+    kind = "topic",
+    emptyMessage,
+    onSelectBlock,
+  }) {
     if (!papers.length) {
       empty("No papers match the current filters.");
+      lastAggregateTopology = "";
       return;
     }
 
     clear();
     renderToken += 1;
-    const { blocks, connections } = buildTopicGraph(papers, edges, topics);
     if (!blocks.length) {
-      empty("No categorized papers match the current filters.");
+      empty(emptyMessage);
+      lastAggregateTopology = "";
       return;
     }
-    const width = Math.max(800, svg.clientWidth || 1200);
-    const height = Math.max(520, svg.clientHeight || 720);
-    currentWorld = { width, height, viewportWidth: width, viewportHeight: height };
-    const centerX = width / 2;
-    const centerY = height / 2;
-    const orbitX = Math.max(190, width * 0.32);
-    const orbitY = Math.max(150, height * 0.31);
 
-    const positioned = blocks
-      .sort((left, right) => right.paperIds.length - left.paperIds.length || left.name.localeCompare(right.name))
-      .map((block, index) => {
-        const angle = blocks.length === 1 ? 0 : (index / blocks.length) * Math.PI * 2 - Math.PI / 2;
-        const blockWidth = Math.max(150, Math.min(260, 128 + block.paperIds.length * 16));
-        const blockHeight = Math.max(70, Math.min(130, 62 + block.paperIds.length * 8));
-        const cached = topicLayout.get(block.id);
-        return {
-          ...block,
-          x: cached?.x ?? centerX + Math.cos(angle) * orbitX - blockWidth / 2,
-          y: cached?.y ?? centerY + Math.sin(angle) * orbitY - blockHeight / 2,
-          width: blockWidth,
-          height: blockHeight,
-          fixed: pinnedTopics.has(block.id),
-        };
-      });
+    const viewportWidth = Math.max(800, svg.clientWidth || 1200);
+    const viewportHeight = Math.max(520, svg.clientHeight || 720);
+    const layout = hierarchicalBlockLayout(blocks, connections, viewportWidth, viewportHeight);
+    const width = layout.width;
+    const height = layout.height;
+    currentWorld = { width, height, viewportWidth, viewportHeight };
+    const topology = `${kind}|${blocks.map((block) => block.id).sort().join("|")}`;
+    if (topology !== lastAggregateTopology) {
+      transform = fitTransform(viewportWidth, viewportHeight, width, height, { minZoom: MIN_ZOOM, maxZoom: 1, padding: 40 });
+      applyTransform();
+      lastAggregateTopology = topology;
+    }
+
+    const positioned = layout.blocks.map((block) => {
+      const cached = topicLayout.get(block.id);
+      const fixed = pinnedTopics.has(block.id);
+      return {
+        ...block,
+        x: fixed && cached ? cached.x : block.x,
+        y: fixed && cached ? cached.y : block.y,
+        fixed,
+      };
+    });
     const blockById = new Map(positioned.map((block) => [block.id, block]));
     currentTopicBlocks = blockById;
 
-    const edgeLayer = svgElement("g", { class: "topic-edges" });
-    const blockLayer = svgElement("g", { class: "topic-blocks" });
+    const edgeLayer = svgElement("g", { class: `${kind}-edges` });
+    const blockLayer = svgElement("g", { class: `${kind}-blocks` });
     root.append(edgeLayer, blockLayer);
 
     const edgeElements = [];
@@ -527,12 +679,12 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
       const target = blockById.get(connection.target);
       if (!source || !target) continue;
       const line = svgElement("line", {
-        class: "topic-edge",
+        class: `topic-edge ${kind}-edge`,
         "marker-end": "url(#citation-arrow)",
         "stroke-width": Math.max(1, Math.min(7, 1 + Math.log2(connection.weight + 1))),
       });
       const title = svgElement("title");
-      title.textContent = `${source.name} → ${target.name}: ${connection.weight} cross-topic link${connection.weight === 1 ? "" : "s"}`;
+      title.textContent = `${source.name} → ${target.name}: ${connection.weight} cross-${kind} link${connection.weight === 1 ? "" : "s"}`;
       line.append(title);
       edgeLayer.append(line);
       edgeElements.push({ connection, line });
@@ -540,12 +692,13 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
 
     const blockElements = [];
     for (const block of positioned) {
-      const selected = block.id === selectedTopicId;
+      const selected = block.id === selectedBlockId;
       const group = svgElement("g", {
-        class: `topic-block${selected ? " selected" : ""}`,
+        class: `topic-block ${kind}-block${selected ? " selected" : ""}`,
         tabindex: "0",
         role: "button",
-        "data-topic-id": block.id,
+        "data-block-id": block.id,
+        ...(kind === "topic" ? { "data-topic-id": block.id } : { "data-author-id": block.id }),
         "aria-label": `${block.name}, ${block.paperIds.length} papers`,
       });
       const rect = svgElement("rect", {
@@ -558,19 +711,19 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
       const count = svgElement("text", { class: "topic-block-count", x: 15, y: 49 });
       count.textContent = `${block.paperIds.length} paper${block.paperIds.length === 1 ? "" : "s"}`;
       const source = svgElement("text", { class: "topic-block-source", x: 15, y: block.height - 12 });
-      source.textContent = block.starred ? `${block.source} · ★ ${block.starred}` : block.source;
+      source.textContent = block.starred ? `${kind === "author" ? "Author" : block.source} · ★ ${block.starred}` : (kind === "author" ? "Author" : block.source);
       const title = svgElement("title");
-      title.textContent = `${block.name}\n${block.paperIds.length} papers\nSource: ${block.source}`;
+      title.textContent = `${block.name}\n${block.paperIds.length} papers${block.starred ? `\n${block.starred} starred` : ""}`;
       group.append(rect, name, count, source, title);
       group.addEventListener("click", (event) => {
         if (consumeSuppressedClick(event)) return;
         event.stopPropagation();
-        onSelectTopic?.(block.id);
+        onSelectBlock?.(block);
       });
       group.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          onSelectTopic?.(block.id);
+          onSelectBlock?.(block);
         }
       });
       blockLayer.append(group);
@@ -596,8 +749,37 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
     draw();
   }
 
-  function render({ mode = "citations", papers = [], edges = [], topics = [], selectedId = null, selectedTopicId = null }) {
+  function renderTopicMap(papers, edges, topics, selectedTopicId) {
+    const { blocks, connections } = buildTopicGraph(papers, edges, topics);
+    renderAggregateMap({
+      papers,
+      blocks,
+      connections,
+      selectedBlockId: selectedTopicId,
+      kind: "topic",
+      emptyMessage: "No categorized papers match the current filters.",
+      onSelectBlock: (block) => onSelectTopic?.(block.id),
+    });
+  }
+
+  function renderAuthorMap(papers, edges, selectedAuthor) {
+    const { blocks, connections } = buildAuthorGraph(papers, edges);
+    const selectedKey = authorKey(selectedAuthor);
+    const selectedBlock = blocks.find((block) => authorKey(block.name) === selectedKey);
+    renderAggregateMap({
+      papers,
+      blocks,
+      connections,
+      selectedBlockId: selectedBlock?.id || null,
+      kind: "author",
+      emptyMessage: "No author metadata matches the current filters.",
+      onSelectBlock: (block) => onSelectAuthor?.(block.name),
+    });
+  }
+
+  function render({ mode = "citations", papers = [], edges = [], topics = [], selectedId = null, selectedTopicId = null, selectedAuthor = "" }) {
     if (mode === "topics") renderTopicMap(papers, edges, topics, selectedTopicId);
+    else if (mode === "authors") renderAuthorMap(papers, edges, selectedAuthor);
     else renderCitationMap(papers, edges, selectedId);
   }
 
@@ -689,7 +871,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic }) {
 
     const topicGroup = event.target.closest?.(".topic-block");
     if (topicGroup) {
-      const id = topicGroup.dataset.topicId;
+      const id = topicGroup.dataset.blockId || topicGroup.dataset.topicId;
       const item = currentTopicBlocks.get(id);
       if (item) {
         const world = worldPoint(point);
