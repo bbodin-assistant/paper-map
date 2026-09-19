@@ -15,4 +15,5 @@ test("paper source remains a fallback for legacy/demo records", () => {
 test("source labels are concise and user-facing", () => {
   assert.equal(sourceLabel("semantic-scholar-expansion"), "Semantic Scholar citation expansion");
   assert.equal(sourceLabel("local-pdf"), "Reviewed local PDF extraction");
+  assert.equal(sourceLabel("openalex-search"), "OpenAlex search");
 });
