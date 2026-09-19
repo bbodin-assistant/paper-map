@@ -90,8 +90,8 @@
     z-index: 70;
     right: 0;
     top: calc(100% + 8px);
-    width: min(520px, calc(100vw - 24px));
-    max-height: min(420px, calc(100vh - var(--header-height) - var(--toolbar-height) - 24px));
+    width: min(720px, calc(100vw - 24px));
+    max-height: min(520px, calc(100vh - var(--header-height) - var(--toolbar-height) - 24px));
   }
 
   .desktop-add-paper-form .inline-control {
