@@ -343,7 +343,7 @@ function installStyles(root = document) {
       .timeline-sticky-theme-name { font-size: 11px; }
       .timeline-sticky-theme-terms { font-size: 8px; }
     }
-  ``;
+  `;
   root.head.append(style);
 }
 
