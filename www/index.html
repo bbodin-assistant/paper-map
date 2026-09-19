@@ -100,7 +100,8 @@
                       <input id="add-paper-query" type="search" placeholder="DOI, arXiv ID, S2 ID, or title" />
                       <button type="submit">Find & add</button>
                     </div>
-                    <small>Uses Semantic Scholar on demand. Existing papers are merged conservatively.</small>
+                    <div id="add-paper-candidates" class="add-paper-candidates" hidden aria-live="polite"></div>
+                    <small>Searches the configured paper provider. Choose a result before it is added.</small>
                   </form>
 
                   <div class="library-actions">

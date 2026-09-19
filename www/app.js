@@ -33,6 +33,7 @@ import {
   fetchCitations,
   fetchReferences,
   resolvePaper,
+  searchPapers,
 } from "./paper-provider.js?v=0.4.5";
 import {
   createResearchRelationEdge,
@@ -43,6 +44,7 @@ import {
   researchRelationEdgeId,
 } from "./research-relations.js";
 import { DEMO_LIBRARY } from "./demo-data.js";
+import { onlineCandidateSummary, rankOnlineCandidates } from "./online-candidates.js";
 
 const UI_STORAGE_KEY = "paper-map-ui-v1";
 const EXPANSION_SIZE = 50;
@@ -78,6 +80,7 @@ const els = {
   paperList: $("#paper-list"),
   addPaperForm: $("#add-paper-form"),
   addPaperQuery: $("#add-paper-query"),
+  addPaperCandidates: $("#add-paper-candidates"),
   loadDemo: $("#load-demo"),
   importButton: $("#import-button"),
   importFile: $("#import-file"),
@@ -160,6 +163,100 @@ function setBusy(isBusy, message = "Working…") {
   for (const control of [els.loadDemo, els.importButton, els.exportJson, els.exportBibtex, els.clearLibrary, els.expandReferences, els.expandCitations, els.addRelation]) {
     if (control) control.disabled = isBusy;
   }
+}
+
+let pendingAddPaperQuery = "";
+let pendingAddPaperCandidates = [];
+
+function clearAddPaperCandidates() {
+  pendingAddPaperQuery = "";
+  pendingAddPaperCandidates = [];
+  els.addPaperCandidates.replaceChildren();
+  els.addPaperCandidates.hidden = true;
+}
+
+function isDirectPaperIdentifier(query) {
+  const text = String(query || "").trim();
+  const doi = normalizeDoi(text);
+  return /^10\.\d{4,9}\//i.test(doi)
+    || /^[0-9a-f]{40}$/i.test(text)
+    || /^(?:arxiv:)?\d{4}\.\d{4,5}(?:v\d+)?$/i.test(text);
+}
+
+async function findAddPaperCandidates(query) {
+  const raw = isDirectPaperIdentifier(query)
+    ? [await resolvePaper(query)]
+    : await searchPapers(query, 8);
+  return rankOnlineCandidates(raw, query);
+}
+
+async function addPaperCandidate(paper, query) {
+  if (!paper || state.busy) return;
+  try {
+    setBusy(true, "Adding selected paper…");
+    const provider = paper.providerPrimary || paper.source || "paper-provider";
+    const merged = await mergeIntoLibrary([paper], [], [], { method: `${provider}-search`, detail: query });
+    const canonicalId = merged.idMap.get(paper.id) || paper.id;
+    state.selectedPaperId = canonicalId;
+    els.addPaperQuery.value = "";
+    clearAddPaperCandidates();
+    const libraryMenu = document.querySelector("#library-menu");
+    if (libraryMenu) libraryMenu.open = false;
+    renderAll();
+    setStatus(
+      merged.addedCount
+        ? `Selected paper added via ${sourceLabel(provider)}.`
+        : `Selected paper already existed; metadata from ${sourceLabel(provider)} was merged.`,
+      "ready",
+    );
+  } catch (error) {
+    setStatus(error.message || String(error), "error");
+  } finally {
+    setBusy(false);
+  }
+}
+
+function renderAddPaperCandidates(candidates, query) {
+  pendingAddPaperQuery = query;
+  pendingAddPaperCandidates = candidates;
+  const fragment = document.createDocumentFragment();
+
+  const heading = document.createElement("div");
+  heading.className = "add-paper-candidates-heading";
+  const title = document.createElement("strong");
+  title.textContent = "Choose a paper";
+  const detail = document.createElement("small");
+  detail.textContent = `${candidates.length} result${candidates.length === 1 ? "" : "s"} for “${query}”`;
+  heading.append(title, detail);
+  fragment.append(heading);
+
+  for (const [index, paper] of candidates.entries()) {
+    const summary = onlineCandidateSummary(paper);
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "add-paper-candidate";
+    button.dataset.addPaperCandidateIndex = String(index);
+
+    const candidateTitle = document.createElement("strong");
+    candidateTitle.textContent = summary.title;
+    const candidateMeta = document.createElement("span");
+    const authorText = summary.authors.length
+      ? `${summary.authors.slice(0, 3).join(", ")}${summary.authors.length > 3 ? " et al." : ""}`
+      : "";
+    candidateMeta.textContent = [
+      authorText,
+      summary.year,
+      summary.venue,
+      sourceLabel(paper.providerPrimary || paper.source || "provider"),
+    ].filter(Boolean).join(" · ");
+
+    button.append(candidateTitle, candidateMeta);
+    button.addEventListener("click", () => addPaperCandidate(paper, query));
+    fragment.append(button);
+  }
+
+  els.addPaperCandidates.replaceChildren(fragment);
+  els.addPaperCandidates.hidden = false;
 }
 
 function slug(value) {
@@ -846,21 +943,27 @@ els.addPaperForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   const query = els.addPaperQuery.value.trim();
   if (!query || state.busy) return;
+  clearAddPaperCandidates();
   try {
-    setBusy(true, "Resolving paper…");
-    const paper = await resolvePaper(query);
-    const provider = paper.providerPrimary || paper.source || "paper-provider";
-    const merged = await mergeIntoLibrary([paper], [], [], { method: `${provider}-resolve`, detail: query });
-    const canonicalId = merged.idMap.get(paper.id) || paper.id;
-    state.selectedPaperId = canonicalId;
-    els.addPaperQuery.value = "";
-    document.querySelector("#library-menu").open = false;
-    renderAll();
-    setStatus(merged.addedCount ? `Paper added via ${sourceLabel(provider)}.` : `Existing paper enriched via ${sourceLabel(provider)} and merged.`, "ready");
+    setBusy(true, "Searching papers…");
+    const candidates = await findAddPaperCandidates(query);
+    if (!candidates.length) throw new Error("No matching papers found.");
+    renderAddPaperCandidates(candidates, query);
+    setStatus(
+      `Found ${candidates.length} candidate${candidates.length === 1 ? "" : "s"}. Choose the paper to add.`,
+      "ready",
+    );
   } catch (error) {
+    clearAddPaperCandidates();
     setStatus(error.message || String(error), "error");
   } finally {
     setBusy(false);
+  }
+});
+
+els.addPaperQuery.addEventListener("input", () => {
+  if (pendingAddPaperCandidates.length && els.addPaperQuery.value.trim() !== pendingAddPaperQuery) {
+    clearAddPaperCandidates();
   }
 });
 

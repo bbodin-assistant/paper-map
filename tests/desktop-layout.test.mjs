@@ -33,10 +33,13 @@ test("desktop layout keeps the requested controls and floating map affordances",
   assert.match(source, /addFileButton\.textContent = "Add paper"/);
   assert.match(source, /mapStage\.insertBefore\(resetView, mapStage\.firstChild\)/);
   assert.match(css, /\.toolbar-primary\.desktop-layout-active\s*\{[\s\S]*?display: flex;/);
-  assert.match(css, /\.desktop-toolbar-right\s*\{[\s\S]*?order: 0;/);
-  assert.match(css, /\.desktop-toolbar-left\s*\{[\s\S]*?order: 1;/);
-  assert.match(css, /\.toolbar-actions\.desktop-add-actions\s*\{[\s\S]*?order: 2;[\s\S]*?justify-content: flex-end;[\s\S]*?margin-left: auto;/);
+  assert.match(css, /\.desktop-toolbar-left\s*\{[\s\S]*?order: 0;/);
+  assert.match(css, /\.toolbar-actions\.desktop-add-actions\s*\{[\s\S]*?order: 1;[\s\S]*?justify-content: flex-end;[\s\S]*?margin-left: auto;/);
+  assert.match(css, /\.desktop-toolbar-right\s*\{[\s\S]*?order: 2;[\s\S]*?margin-left: auto;/);
   assert.match(css, /\.desktop-toolbar-right #filter-menu > summary[\s\S]*?display: none;/);
+  assert.match(css, /\.desktop-toolbar-right #filter-menu \.drawer-panel[\s\S]*?right: 0;[\s\S]*?left: auto;/);
+  assert.match(css, /\.desktop-add-paper-form \.add-paper-candidates[\s\S]*?position: absolute;[\s\S]*?right: 0;/);
+  assert.match(css, /\.paper-detail\s*\{[\s\S]*?top: calc\(var\(--header-height\) \+ var\(--toolbar-height\)\);/);
   assert.match(css, /\.map-stage > \.map-reset-button[\s\S]*?top: 12px;[\s\S]*?right: 12px;/);
   assert.match(css, /\.map-help[\s\S]*?right: 12px;[\s\S]*?left: auto;/);
 });
