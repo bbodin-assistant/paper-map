@@ -255,6 +255,11 @@ main { height: calc(100vh - var(--header-height)); padding: 0 14px 14px; }
 .bibtex-import-review-dialog::backdrop { background: rgba(24, 32, 42, .26); }
 .bibtex-import-shell { display: grid; gap: 12px; padding: 16px; }
 .bibtex-import-shell > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.bibtex-import-review-dialog .add-paper-candidates {
+  height: min(320px, 38vh);
+  max-height: none;
+  overflow: auto;
+}
 .bibtex-import-original { display: grid; gap: 5px; padding: 11px 12px; border: 1px solid #d9ddd9; background: #fafaf6; }
 .bibtex-import-original strong { font-size: 12px; line-height: 1.4; }
 .bibtex-import-original > span:last-child { color: var(--muted); font-size: 10px; line-height: 1.45; overflow-wrap: anywhere; }
