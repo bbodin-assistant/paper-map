@@ -235,9 +235,10 @@ main { height: calc(100vh - var(--header-height)); padding: 0 14px 14px; }
 .add-paper-provider-status { min-width: 0; text-align: right; overflow-wrap: anywhere; }
 .add-paper-candidate { display: grid; gap: 5px; width: 100%; min-width: 0; padding: 10px 11px; border: 1px solid #d6dad7; background: #fff; text-align: left; }
 .add-paper-candidate:hover, .add-paper-candidate:focus-visible { border-color: #929ca4; background: #f2f4f1; }
-.add-paper-candidate-title { color: #27333d; font-size: 11px; line-height: 1.35; white-space: normal; overflow-wrap: anywhere; }
+.add-paper-candidate-title { color: #27333d; font-size: 11px; font-weight: 650; line-height: 1.35; white-space: normal; overflow-wrap: anywhere; }
 .add-paper-candidate-authors { color: #4f5c66; font-size: 10px; line-height: 1.4; white-space: normal; overflow: visible; overflow-wrap: anywhere; }
 .add-paper-candidate-meta { color: #7a848c; font-size: 9px; line-height: 1.35; white-space: normal; overflow-wrap: anywhere; }
+.add-paper-search-match { color: inherit; font-weight: 850; }
 .library-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-top: 14px; }
 
 .active-topic-filter { display: flex; align-items: center; gap: 7px; min-height: 32px; padding: 5px 11px; border-top: 1px solid #e2e5e2; color: #64707a; font-size: 11px; }

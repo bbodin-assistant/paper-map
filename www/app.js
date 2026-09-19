@@ -45,6 +45,7 @@ import {
 } from "./research-relations.js";
 import { DEMO_LIBRARY } from "./demo-data.js";
 import { onlineCandidateSummary, rankOnlineCandidates } from "./online-candidates.js";
+import { searchHighlightParts } from "./search-highlight.js?v=0.4.9";
 import {
   enabledPaperSearchProviders,
   loadPaperProviderConfig,
@@ -206,6 +207,20 @@ function providerSearchStatusText(item) {
   return `${item.candidates.length} result${item.candidates.length === 1 ? "" : "s"} · limit ${item.limit}`;
 }
 
+function appendSearchHighlightedText(element, text, query) {
+  const parts = searchHighlightParts(text, query);
+  for (const part of parts) {
+    if (!part.match) {
+      element.append(document.createTextNode(part.text));
+      continue;
+    }
+    const strong = document.createElement("strong");
+    strong.className = "add-paper-search-match";
+    strong.textContent = part.text;
+    element.append(strong);
+  }
+}
+
 function renderAddPaperCandidates(query) {
   if (!query || query !== pendingAddPaperQuery) return;
   const fragment = document.createDocumentFragment();
@@ -244,17 +259,25 @@ function renderAddPaperCandidates(query) {
       button.dataset.addPaperCandidateIndex = String(index);
       button.dataset.addPaperCandidateProvider = providerId;
 
-      const candidateTitle = document.createElement("strong");
+      const candidateTitle = document.createElement("span");
       candidateTitle.className = "add-paper-candidate-title";
-      candidateTitle.textContent = summary.title;
+      appendSearchHighlightedText(candidateTitle, summary.title, query);
 
       const candidateAuthors = document.createElement("span");
       candidateAuthors.className = "add-paper-candidate-authors";
-      candidateAuthors.textContent = summary.authors.length ? summary.authors.join(", ") : "Authors not provided";
+      appendSearchHighlightedText(
+        candidateAuthors,
+        summary.authors.length ? summary.authors.join(", ") : "Authors not provided",
+        query,
+      );
 
       const candidateMeta = document.createElement("span");
       candidateMeta.className = "add-paper-candidate-meta";
-      candidateMeta.textContent = [summary.year, summary.venue, paperProviderLabel(providerId)].filter(Boolean).join(" · ");
+      appendSearchHighlightedText(
+        candidateMeta,
+        [summary.year, summary.venue, paperProviderLabel(providerId)].filter(Boolean).join(" · "),
+        query,
+      );
 
       button.append(candidateTitle, candidateAuthors, candidateMeta);
       button.addEventListener("click", () => addPaperCandidate(paper, query));
