@@ -33,6 +33,18 @@ function arxivIdFromWork(work) {
   return "";
 }
 
+function doiFromWork(work) {
+  const direct = normalizeDoi(work?.doi || work?.ids?.doi);
+  if (direct) return direct;
+  for (const location of [work?.primary_location, work?.best_oa_location, ...(work?.locations || [])]) {
+    const candidate = clean(location?.landing_page_url);
+    if (!/doi\.org\//i.test(candidate)) continue;
+    const doi = normalizeDoi(candidate);
+    if (doi) return doi;
+  }
+  return "";
+}
+
 function abstractFromInvertedIndex(index) {
   if (!index || typeof index !== "object") return "";
   let maxPosition = -1;
@@ -70,15 +82,22 @@ async function request(path, params = {}, { signal } = {}) {
 }
 
 export function normalizePaper(value) {
-  const doi = normalizeDoi(value?.doi || value?.ids?.doi);
+  const doi = doiFromWork(value);
   const workId = openAlexId(value?.id || value?.ids?.openalex);
   const arxivId = arxivIdFromWork(value);
   const topicNames = Array.from(new Set([
     ...(value?.topics || []).map((topic) => clean(topic?.display_name)),
     ...(value?.concepts || []).filter((concept) => Number(concept?.score) >= 0.45).slice(0, 6).map((concept) => clean(concept?.display_name)),
   ].filter(Boolean)));
-  const primaryLocation = value?.primary_location || value?.best_oa_location || {};
-  const venue = clean(primaryLocation?.source?.display_name || value?.host_venue?.display_name);
+  const primaryLocation = value?.primary_location || {};
+  const bestOaLocation = value?.best_oa_location || {};
+  const firstVenueLocation = (value?.locations || []).find((location) => clean(location?.source?.display_name)) || {};
+  const venue = clean(
+    primaryLocation?.source?.display_name
+    || bestOaLocation?.source?.display_name
+    || firstVenueLocation?.source?.display_name
+    || value?.host_venue?.display_name,
+  );
   const id = doi
     ? `doi:${doi}`
     : arxivId
@@ -97,8 +116,8 @@ export function normalizePaper(value) {
     year: Number.isInteger(Number(value?.publication_year)) ? Number(value.publication_year) : null,
     venue,
     type: clean(value?.type_crossref || value?.type),
-    url: clean(primaryLocation?.landing_page_url || value?.id) || (doi ? `https://doi.org/${doi}` : ""),
-    pdfUrl: clean(value?.best_oa_location?.pdf_url || primaryLocation?.pdf_url),
+    url: clean(primaryLocation?.landing_page_url || bestOaLocation?.landing_page_url || value?.id) || (doi ? `https://doi.org/${doi}` : ""),
+    pdfUrl: clean(bestOaLocation?.pdf_url || primaryLocation?.pdf_url),
     abstract: abstractFromInvertedIndex(value?.abstract_inverted_index),
     keywords: (value?.keywords || []).map((keyword) => clean(keyword?.display_name || keyword?.keyword)).filter(Boolean),
     topics: [],
