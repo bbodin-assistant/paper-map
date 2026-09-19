@@ -616,6 +616,8 @@ export function initTimelineMap(root = document) {
         class: `timeline-citation-edge${selected ? " selected" : ""}`,
         "marker-end": "url(#citation-arrow)",
         "data-edge-id": edge.id,
+        "data-source-paper-id": edge.source,
+        "data-target-paper-id": edge.target,
       });
       const title = svgElement("title");
       title.textContent = `Cites · ${edge.source} → ${edge.target}`;
@@ -665,6 +667,23 @@ export function initTimelineMap(root = document) {
     rebuildStickyOverlay();
     if (shouldReset) resetTimelineView();
     else applyTimelineTransform();
+  }
+
+  function syncTimelineSelectionClasses(selectedId = null) {
+    if (!active) return;
+    const neighbors = new Set();
+    for (const edge of viewport.querySelectorAll(".timeline-citation-edge[data-source-paper-id][data-target-paper-id]")) {
+      const source = edge.dataset.sourcePaperId;
+      const target = edge.dataset.targetPaperId;
+      const selected = Boolean(selectedId && (source === selectedId || target === selectedId));
+      edge.classList.toggle("selected", selected);
+      if (!selected) continue;
+      neighbors.add(source === selectedId ? target : source);
+    }
+    for (const paper of viewport.querySelectorAll(".timeline-paper[data-paper-id]")) {
+      paper.classList.toggle("selected", Boolean(selectedId && paper.dataset.paperId === selectedId));
+      paper.classList.toggle("citation-neighbor", neighbors.has(paper.dataset.paperId));
+    }
   }
 
   function queueRender() {
@@ -812,6 +831,12 @@ export function initTimelineMap(root = document) {
   observer.observe(paperList, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
   window.addEventListener("resize", queueRender);
   root.addEventListener?.("paper-map-graph-config-changed", queueRender);
+  root.addEventListener?.("paper-map-timeline-paper-activate", (event) => {
+    syncTimelineSelectionClasses(event.detail?.paperId || null);
+  });
+  root.addEventListener?.("paper-map-timeline-background-activate", () => {
+    syncTimelineSelectionClasses(null);
+  });
 
   try {
     if (localStorage.getItem(TIMELINE_STORAGE_KEY) === "true") requestAnimationFrame(activate);
