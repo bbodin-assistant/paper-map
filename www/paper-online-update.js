@@ -194,7 +194,8 @@ export function initPaperOnlineUpdate(root = document) {
     searchQuery = proposedTitle;
     status.textContent = `Searching configured providers for “${proposedTitle}”…`;
     button.disabled = true;
-    const session = startPaperCandidateSearch(proposedTitle, {
+    let session;
+    session = startPaperCandidateSearch(proposedTitle, {
       onUpdate(snapshot) {
         if (searchSession !== session && searchSession !== null) return;
         renderPaperCandidatePicker(candidates, {
