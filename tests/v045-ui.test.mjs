@@ -13,7 +13,7 @@ test("paper UI exposes clearer add actions and reviewed online update", async ()
   ]);
   assert.match(html, /app-version">v0\.4\.5/);
   assert.match(html, />Find & add<\/button>/);
-  assert.match(html, /paper-online-update\\.js\\?v=0\\.4\\.11/);
+  assert.match(html, /paper-online-update\.js\?v=0\.4\.11/);
   assert.match(publication, /summary\.textContent = "Add paper"/);
   assert.match(publication, /button\.textContent = "Add files"/);
 });
