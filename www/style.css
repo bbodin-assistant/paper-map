@@ -288,9 +288,10 @@ main { height: calc(100vh - var(--header-height)); padding: 0 14px 14px; }
 .paper-node-halo { fill: transparent; stroke: transparent; stroke-width: 2; }
 .paper-node-circle { fill: #fffdf5; stroke: #58646e; stroke-width: 1.5; }
 .paper-node:hover .paper-node-circle, .paper-node:focus .paper-node-circle { fill: #fff5c8; stroke: #26333e; }
-.paper-node.selected .paper-node-halo { fill: rgba(246,196,69,.19); stroke: #d59c15; }
-.paper-node.selected .paper-node-circle { fill: #f6c445; stroke: #1f2933; stroke-width: 2; }
+.paper-node.selected .paper-node-halo { fill: rgba(211, 76, 94, .18); stroke: #b84757; }
+.paper-node.selected .paper-node-circle { fill: #f4bdc5; stroke: #9f3546; stroke-width: 2.4; }
 .paper-node.starred .paper-node-circle { stroke: #ad7810; stroke-width: 2.2; }
+.paper-node.selected.starred .paper-node-circle { fill: #f4bdc5; stroke: #9f3546; stroke-width: 2.4; }
 .paper-node-label { fill: #25313b; font-size: 10px; font-weight: 760; dominant-baseline: middle; }
 .paper-node-meta { fill: #8a939a; font-size: 8px; font-weight: 600; }
 .graph-empty { fill: #7d878e; font-size: 13px; font-weight: 650; }

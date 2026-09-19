@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-import time
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -95,7 +93,7 @@ def assert_desktop_layout(driver):
     assert_true(structure["addPlaceholder"] == "Name of a paper to add", f"Desktop resolver placeholder is wrong: {structure}")
     assert_true(structure["addSubmit"] == "Add", f"Desktop resolver submit label is wrong: {structure}")
     assert_true(structure["addFile"] == "Add paper", f"Desktop file picker label is wrong: {structure}")
-    assert_true(structure["modeLabels"] == ["Citation map", "Topic map", "Timeline"], f"Desktop map switch should expose all three modes: {structure}")
+    assert_true(structure["modeLabels"] == ["Citation map", "Topic map", "Author map", "Timeline"], f"Desktop map switch should expose all four modes: {structure}")
     assert_true(structure["filterLabels"][1] == "Filters", f"The left-side Filters control should remain visible: {structure}")
 
     stage = structure["stage"]
@@ -173,43 +171,55 @@ def exercise_timeline_click(driver, label):
     )
     assert_true(expected_title, f"Could not resolve the expected title for Timeline paper {paper_id} in {label}")
 
-    # Count every proxy click sent to the hidden bibliography, even if renderAll
-    # replaces the button node between two accidental selection attempts.
-    driver.execute_script(
-        """
-        const id = arguments[0];
-        window.__timelineSelectionClicks = 0;
-        document.addEventListener('click', (event) => {
-          const button = event.target?.closest?.('#paper-list .paper-list-item[data-paper-id]');
-          if (button?.dataset.paperId === id) window.__timelineSelectionClicks += 1;
-        }, true);
-        """,
-        paper_id,
-    )
-
-    # Keep this as a real WebDriver click. The regression was caused by SVG
-    # pointer capture retargeting the compatibility click away from the card.
+    # First click selects the paper without opening details.
     paper.click()
-
-    detail = wait_displayed(driver, "#paper-detail")
-    wait.until(
-        lambda d: bool(
-            d.find_elements(By.CSS_SELECTOR, f'#paper-list .paper-list-item.selected[data-paper-id="{paper_id}"]')
-        )
-    )
-    detail_title = driver.find_element(By.ID, "detail-title").get_attribute("textContent").strip()
-    assert_true(detail_title == expected_title, f"Timeline click opened the wrong paper in {label}: {detail_title!r} != {expected_title!r}")
-    assert_true(detail.get_attribute("hidden") is None, f"Timeline click must leave the paper detail drawer visible in {label}")
-
     wait.until(
         lambda d: "selected" in (
             d.find_element(By.CSS_SELECTOR, f'.timeline-paper[data-paper-id="{paper_id}"]').get_attribute("class") or ""
         )
     )
-    wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, ".timeline-selection-freeze"))
-    time.sleep(0.12)
-    click_count = int(driver.execute_script("return window.__timelineSelectionClicks || 0"))
-    assert_true(click_count == 1, f"One Timeline click must select exactly once in {label}; got {click_count}")
+    assert_true(
+        driver.find_element(By.ID, "paper-detail").get_attribute("hidden") is not None,
+        f"First Timeline click should select without opening details in {label}",
+    )
+    assert_true(
+        driver.find_elements(By.CSS_SELECTOR, ".timeline-paper.citation-neighbor"),
+        f"Selected Timeline paper should emphasize citing/cited neighbors in {label}",
+    )
+
+    sticky_years = driver.find_elements(By.CSS_SELECTOR, ".timeline-sticky-year-label")
+    sticky_themes = driver.find_elements(By.CSS_SELECTOR, ".timeline-sticky-theme")
+    assert_true(sticky_years and sticky_themes, f"Timeline should keep years on top and theme details on the left in {label}")
+    help_text = driver.find_element(By.CSS_SELECTOR, ".map-help").get_attribute("textContent")
+    assert_true("Chronology" not in help_text and "observed years" not in help_text, f"Timeline should omit implementation hints in {label}: {help_text!r}")
+
+    # Second click on the already selected paper opens the detail drawer.
+    paper = driver.find_element(By.CSS_SELECTOR, f'.timeline-paper[data-paper-id="{paper_id}"]')
+    paper.click()
+    detail = wait_displayed(driver, "#paper-detail")
+    detail_title = driver.find_element(By.ID, "detail-title").get_attribute("textContent").strip()
+    assert_true(detail_title == expected_title, f"Second Timeline click opened the wrong paper in {label}: {detail_title!r} != {expected_title!r}")
+    assert_true("Venue:" in driver.find_element(By.ID, "detail-meta").get_attribute("textContent"), f"Timeline paper details should show venue in {label}")
+
+    driver.find_element(By.ID, "close-detail").click()
+    wait.until(lambda d: d.find_element(By.ID, "paper-detail").get_attribute("hidden") is not None)
+    assert_true(
+        "selected" in (driver.find_element(By.CSS_SELECTOR, f'.timeline-paper[data-paper-id="{paper_id}"]').get_attribute("class") or ""),
+        f"Closing Timeline details should preserve selection in {label}",
+    )
+
+    # Clicking empty Timeline space clears the selection.
+    driver.execute_script(
+        """
+        const svg = document.querySelector('#paper-map');
+        const rect = svg.getBoundingClientRect();
+        const x = rect.left + 8;
+        const y = rect.bottom - 8;
+        svg.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 980, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 980, pointerType: 'mouse', clientX: x, clientY: y, buttons: 0}));
+        """
+    )
+    wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, ".timeline-paper.selected"))
 
     save_screenshot(driver, f"timeline-paper-detail-open-{label}.png")
 
@@ -229,7 +239,7 @@ def main():
             raise
         finally:
             driver.quit()
-    print("timeline clustering configuration, distinct cluster colors, and selection regression passed on desktop and mobile")
+    print("timeline clustering, sticky labels, and two-step selection regression passed on desktop and mobile")
 
 
 if __name__ == "__main__":

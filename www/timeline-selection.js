@@ -1,65 +1,29 @@
 const TAP_MOVE_THRESHOLD = 8;
-const FREEZE_TIMEOUT_MS = 1200;
 
-function findPaperButton(root, paperId) {
-  return Array.from(root.querySelectorAll("#paper-list .paper-list-item[data-paper-id]"))
-    .find((candidate) => candidate.dataset.paperId === paperId) || null;
-}
-
-function selectedTimelinePaper(root, paperId) {
-  return Array.from(root.querySelectorAll("#paper-map .timeline-paper[data-paper-id]"))
-    .find((candidate) => candidate.dataset.paperId === paperId) || null;
-}
-
-function freezeTimeline(root, paperId) {
-  const svg = root.querySelector("#paper-map");
-  const stage = svg?.parentElement;
-  if (!svg || !stage || !svg.querySelector(".timeline-papers")) return null;
-
-  stage.querySelector(".timeline-selection-freeze")?.remove();
-  const clone = svg.cloneNode(true);
-  clone.removeAttribute("id");
-  clone.classList.add("timeline-selection-freeze");
-  clone.setAttribute("aria-hidden", "true");
-  clone.style.position = "absolute";
-  clone.style.inset = "0";
-  clone.style.width = "100%";
-  clone.style.height = "100%";
-  clone.style.pointerEvents = "none";
-  clone.style.zIndex = "3";
-
-  const clonePaper = Array.from(clone.querySelectorAll(".timeline-paper[data-paper-id]"))
-    .find((candidate) => candidate.dataset.paperId === paperId);
-  clonePaper?.classList.add("selected");
-  stage.append(clone);
-  return clone;
-}
-
-function removeFreezeWhenStable(root, freeze, paperId) {
-  if (!freeze) return;
-  const started = performance.now();
-  const check = () => {
-    if (!freeze.isConnected) return;
-    const paper = selectedTimelinePaper(root, paperId);
-    const detail = root.querySelector("#paper-detail");
-    if ((paper?.classList.contains("selected") && detail && !detail.hidden)
-        || performance.now() - started >= FREEZE_TIMEOUT_MS) {
-      freeze.remove();
-      return;
-    }
-    requestAnimationFrame(check);
-  };
-  requestAnimationFrame(check);
+function timelineMap(root) {
+  const map = root.querySelector("#paper-map");
+  return map?.querySelector(".timeline-papers") ? map : null;
 }
 
 function selectTimelinePaper(root, paperId) {
-  if (!paperId) return false;
-  const button = findPaperButton(root, paperId);
-  if (!button) return false;
-  const freeze = freezeTimeline(root, paperId);
-  button.click();
-  removeFreezeWhenStable(root, freeze, paperId);
-  return !root.querySelector("#paper-detail")?.hidden;
+  if (!paperId || !timelineMap(root)) return false;
+  for (const paper of root.querySelectorAll("#paper-map .timeline-paper[data-paper-id]")) {
+    paper.classList.toggle("selected", paper.dataset.paperId === paperId);
+  }
+  root.dispatchEvent(new CustomEvent("paper-map-timeline-paper-activate", {
+    bubbles: true,
+    detail: { paperId },
+  }));
+  return true;
+}
+
+function clearTimelineSelection(root) {
+  if (!timelineMap(root)) return false;
+  for (const paper of root.querySelectorAll("#paper-map .timeline-paper.selected")) {
+    paper.classList.remove("selected");
+  }
+  root.dispatchEvent(new CustomEvent("paper-map-timeline-background-activate", { bubbles: true }));
+  return true;
 }
 
 export function installTimelineTapSelection(root = document) {
@@ -71,7 +35,7 @@ export function installTimelineTapSelection(root = document) {
 
   root.addEventListener("click", (event) => {
     if (!suppressCompatibilityClick) return;
-    const map = root.querySelector("#paper-map");
+    const map = timelineMap(root);
     if (!map || !(event.target === map || map.contains(event.target))) return;
     suppressCompatibilityClick = false;
     event.preventDefault();
@@ -79,11 +43,12 @@ export function installTimelineTapSelection(root = document) {
   }, true);
 
   root.addEventListener("pointerdown", (event) => {
+    const map = timelineMap(root);
+    if (!map || event.button > 0 || !(event.target === map || map.contains(event.target))) return;
     const paper = event.target?.closest?.(".timeline-paper[data-paper-id]");
-    if (!paper?.dataset.paperId || event.button > 0) return;
     gesture = {
       pointerId: event.pointerId,
-      paperId: paper.dataset.paperId,
+      paperId: paper?.dataset.paperId || "",
       x: event.clientX,
       y: event.clientY,
       moved: false,
@@ -105,7 +70,8 @@ export function installTimelineTapSelection(root = document) {
 
     suppressCompatibilityClick = true;
     setTimeout(() => { suppressCompatibilityClick = false; }, 0);
-    selectTimelinePaper(root, completed.paperId);
+    if (completed.paperId) selectTimelinePaper(root, completed.paperId);
+    else clearTimelineSelection(root);
   }, true);
 
   root.addEventListener("pointercancel", (event) => {
@@ -115,7 +81,7 @@ export function installTimelineTapSelection(root = document) {
   root.addEventListener("keydown", (event) => {
     if (event.key !== "Enter" && event.key !== " ") return;
     const paper = event.target?.closest?.(".timeline-paper[data-paper-id]");
-    if (!paper?.dataset.paperId) return;
+    if (!paper?.dataset.paperId || !timelineMap(root)) return;
     event.preventDefault();
     event.stopImmediatePropagation();
     selectTimelinePaper(root, paper.dataset.paperId);

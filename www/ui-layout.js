@@ -1,5 +1,5 @@
-import "./timeline.js?v=0.4.10";
-import "./timeline-selection.js?v=0.4.4";
+import "./timeline.js?v=0.4.12";
+import "./timeline-selection.js?v=0.4.12";
 
 const DESKTOP_LAYOUT_MEDIA = "(min-width: 1001px)";
 const EMPTY_LIBRARY_MESSAGE = "Local library is empty. Load the demo, import BibTeX, add PDFs, or add a paper.";

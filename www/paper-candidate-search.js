@@ -1,6 +1,6 @@
-import { findPaperCandidatesWithProvider } from "./paper-provider.js?v=0.4.11";
+import { findPaperCandidatesWithProvider } from "./paper-provider.js?v=0.4.12";
 import { enabledPaperSearchProviders, loadPaperProviderConfig } from "./paper-provider-config.js?v=0.4.11";
-import { rankOnlineCandidates } from "./online-candidates.js";
+import { rankOnlineCandidates } from "./online-candidates.js?v=0.4.12";
 
 function clean(value) {
   return String(value ?? "").trim();

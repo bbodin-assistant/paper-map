@@ -51,17 +51,22 @@ def install_openalex_mock(driver):
         const originalFetch = window.fetch.bind(window);
         window.__paperMapOpenAlexSearches = [];
         window.__paperMapOpenAlexWorkFetches = [];
-        const work = (id, title, authors, year, venue, arxiv = '') => ({
+        const work = (id, title, authors, year, venue, arxiv = '', doi = '', venueInBestLocation = false) => ({
           id: `https://openalex.org/${id}`,
+          doi: doi ? `https://doi.org/${doi}` : null,
+          ids: doi ? { doi: `https://doi.org/${doi}` } : {},
           title,
           publication_year: year,
           cited_by_count: 10,
           authorships: authors.map((name) => ({ author: { display_name: name } })),
           primary_location: {
-            source: { display_name: venue },
+            source: venueInBestLocation ? null : { display_name: venue },
             landing_page_url: `https://openalex.org/${id}`,
           },
-          best_oa_location: null,
+          best_oa_location: venueInBestLocation ? {
+            source: { display_name: venue },
+            landing_page_url: doi ? `https://doi.org/${doi}` : `https://openalex.org/${id}`,
+          } : null,
           locations: arxiv ? [{ landing_page_url: `https://arxiv.org/abs/${arxiv}` }] : [],
           referenced_works: [],
           keywords: [],
@@ -91,6 +96,8 @@ def install_openalex_mock(driver):
             2021,
             'Proceedings of Machine Learning Systems',
             '2007.14390v5',
+            '10.5555/flower.2021',
+            true,
           ),
         ];
         window.fetch = async (url, options = {}) => {
@@ -191,6 +198,7 @@ def main():
         assert_true("Daniel J. Beutel" in buttons[1].text, "Second exact-title candidate should expose its authors")
         assert_true("2021" in buttons[1].text, "Candidate should expose publication year")
         assert_true("Proceedings of Machine Learning Systems" in buttons[1].text, "Candidate should expose venue")
+        assert_true("DOI 10.5555/flower.2021" in buttons[1].text, "Candidate should expose DOI")
         assert_true("Flower Federated Learning at Scale" in buttons[2].text, "Non-exact provider result should remain available after exact-title candidates")
         assert_true("Online search: choose match" in driver.find_element(By.ID, "pdf-source-status").text, "Online source status should require an explicit choice")
         assert_true(
@@ -210,7 +218,11 @@ def main():
         assert_true(driver.find_element(By.ID, "pdf-review-year").get_attribute("value") == "2021", "Selected candidate year should merge")
         assert_true(
             driver.find_element(By.ID, "pdf-review-venue").get_attribute("value") == "Proceedings of Machine Learning Systems",
-            "Selected candidate venue should merge",
+            "Selected candidate venue should merge from the OpenAlex fallback location",
+        )
+        assert_true(
+            driver.find_element(By.ID, "pdf-review-doi").get_attribute("value") == "10.5555/flower.2021",
+            "Selected candidate DOI should merge",
         )
         assert_true(driver.find_element(By.ID, "pdf-review-title").get_attribute("value") == QUERY_TITLE, "A manually edited title should remain untouched after candidate selection")
         assert_true(
@@ -233,6 +245,8 @@ def main():
         paper = papers[0]
         assert_true(paper["openAlexId"] == "W303", "Selected OpenAlex work ID should persist")
         assert_true(paper["authors"] == CORRECT_AUTHORS, "Selected candidate authors should persist")
+        assert_true(paper["venue"] == "Proceedings of Machine Learning Systems", "Selected candidate venue should persist")
+        assert_true(paper["doi"] == "10.5555/flower.2021", "Selected candidate DOI should persist")
         assert_true(paper["onlineExtraction"]["selectedBy"] == "user", "Online provenance should record explicit selection")
         assert_true(paper["onlineExtraction"]["selectedCandidateRank"] == 2, "Online provenance should retain selected candidate rank")
         assert_true(paper["onlineExtraction"]["query"] == QUERY_TITLE, "Online provenance should retain the original title query")

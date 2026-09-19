@@ -14,7 +14,7 @@ import {
   putTopics,
   replaceLibrary,
 } from "./db.js";
-import { createGraph } from "./graph.js";
+import { createGraph } from "./graph.js?v=0.4.12";
 import { paperCitationSummary } from "./citation-summary.js?v=0.4.5";
 import {
   downloadText,
@@ -34,7 +34,7 @@ import {
   fetchReferences,
   findPaperCandidatesWithProvider,
   resolvePaper,
-} from "./paper-provider.js?v=0.4.11";
+} from "./paper-provider.js?v=0.4.12";
 import {
   createResearchRelationEdge,
   isCitationEdge,
@@ -44,9 +44,9 @@ import {
   researchRelationEdgeId,
 } from "./research-relations.js";
 import { DEMO_LIBRARY } from "./demo-data.js";
-import { onlineCandidateSummary, rankOnlineCandidates } from "./online-candidates.js";
-import { startPaperCandidateSearch } from "./paper-candidate-search.js?v=0.4.11";
-import { renderPaperCandidatePicker } from "./paper-candidate-ui.js?v=0.4.11";
+import { onlineCandidateSummary, rankOnlineCandidates } from "./online-candidates.js?v=0.4.12";
+import { startPaperCandidateSearch } from "./paper-candidate-search.js?v=0.4.12";
+import { renderPaperCandidatePicker } from "./paper-candidate-ui.js?v=0.4.12";
 import { searchHighlightParts } from "./search-highlight.js?v=0.4.9";
 import {
   enabledPaperSearchProviders,
@@ -133,7 +133,7 @@ function loadUiState() {
   try {
     const saved = JSON.parse(localStorage.getItem(UI_STORAGE_KEY) || "{}");
     return {
-      mode: saved.mode === "topics" ? "topics" : "citations",
+      mode: ["citations", "topics", "authors"].includes(saved.mode) ? saved.mode : "citations",
       filters: { ...defaultFilters(), ...(saved.filters || {}) },
     };
   } catch {
@@ -168,9 +168,10 @@ function setStatus(message, tone = "ready") {
 function setBusy(isBusy, message = "Working…") {
   state.busy = isBusy;
   if (isBusy) setStatus(message, "loading");
-  for (const control of [els.loadDemo, els.importButton, els.exportJson, els.exportBibtex, els.clearLibrary, els.expandReferences, els.expandCitations, els.addRelation]) {
+  for (const control of [els.loadDemo, els.importButton, els.exportJson, els.exportBibtex, els.clearLibrary, els.addRelation]) {
     if (control) control.disabled = isBusy;
   }
+  syncExpansionButtons();
 }
 
 let pendingAddPaperQuery = "";
@@ -277,7 +278,7 @@ function renderAddPaperCandidates(query) {
       candidateMeta.className = "add-paper-candidate-meta";
       appendSearchHighlightedText(
         candidateMeta,
-        [summary.year, summary.venue, paperProviderLabel(providerId)].filter(Boolean).join(" · "),
+        [summary.year, summary.venue, summary.doi ? `DOI ${summary.doi}` : "", paperProviderLabel(providerId)].filter(Boolean).join(" · "),
         query,
       );
 
@@ -817,6 +818,7 @@ function renderAll() {
     topics: state.library.topics,
     selectedId: state.selectedPaperId,
     selectedTopicId: state.selectedTopicId,
+    selectedAuthor: state.filters.author,
   });
 
   if (state.selectedPaperId) renderDetail();
@@ -991,7 +993,7 @@ function renderDetail() {
   els.detailMeta.textContent = [
     (paper.authors || []).join(", "),
     paper.year,
-    paper.venue,
+    `Venue: ${paper.venue || "not available"}`,
     paper.type,
   ].filter(Boolean).join(" · ");
   els.detailAbstract.textContent = paper.abstract || "No abstract stored locally.";
@@ -1016,6 +1018,36 @@ function renderDetail() {
   const citationEdges = state.library.edges.filter(isCitationEdge);
   const semanticLinks = researchRelationsFor(paper.id).length;
   els.detailCitationCount.textContent = paperCitationSummary(paper, citationEdges, semanticLinks);
+  syncExpansionButtons(paper);
+}
+
+function paperExpansionDone(paper, direction) {
+  if (!paper) return false;
+  if (paper.citationExpansion?.[direction]?.completedAt) return true;
+  return state.library.papers.some((candidate) => {
+    const entry = candidate.libraryEntry;
+    return entry?.parentPaperId === paper.id
+      && entry?.detail === direction
+      && String(entry?.method || "").endsWith("-expansion");
+  });
+}
+
+function syncExpansionButtons(paper = currentPaper()) {
+  const controls = [
+    [els.expandReferences, "references", "References already expanded for this paper."],
+    [els.expandCitations, "citations", "Citing papers already expanded for this paper."],
+  ];
+  for (const [button, direction, doneTitle] of controls) {
+    if (!button) continue;
+    const done = paperExpansionDone(paper, direction);
+    button.disabled = state.busy || done || !paper;
+    button.title = done ? doneTitle : "";
+  }
+}
+
+function hideDetail() {
+  els.detail.hidden = true;
+  els.detailDismiss.hidden = true;
 }
 
 function timelineViewActive() {
@@ -1029,19 +1061,36 @@ function renderTimelinePaperSelection() {
   for (const button of els.paperList.querySelectorAll(".paper-list-item[data-paper-id]")) {
     button.classList.toggle("selected", button.dataset.paperId === state.selectedPaperId);
   }
-  if (state.selectedPaperId) renderDetail();
-  else {
-    els.detail.hidden = true;
-    els.detailDismiss.hidden = true;
+  if (!state.selectedPaperId) hideDetail();
+  else if (!els.detail.hidden) renderDetail();
+  syncExpansionButtons();
+}
+
+function activateTimelinePaper(paperId) {
+  if (!paperId) return;
+  if (state.selectedPaperId === paperId) {
+    renderDetail();
+    return;
   }
+  state.selectedPaperId = paperId;
+  hideDetail();
+  renderTimelinePaperSelection();
+}
+
+function clearTimelineSelection() {
+  if (!state.selectedPaperId) return;
+  state.selectedPaperId = null;
+  hideDetail();
+  renderTimelinePaperSelection();
 }
 
 function selectPaper(paperId) {
-  state.selectedPaperId = paperId;
   if (timelineViewActive()) {
-    renderTimelinePaperSelection();
+    if (paperId) activateTimelinePaper(paperId);
+    else clearTimelineSelection();
     return;
   }
+  state.selectedPaperId = paperId;
   if (!paperId) {
     closeDetail();
     renderAll();
@@ -1052,8 +1101,8 @@ function selectPaper(paperId) {
 
 function closeDetail() {
   state.selectedPaperId = null;
-  els.detail.hidden = true;
-  els.detailDismiss.hidden = true;
+  hideDetail();
+  syncExpansionButtons();
 }
 
 async function saveSelectedPaperPatch(patch) {
@@ -1084,7 +1133,7 @@ async function ensureExpandablePaper() {
 async function expand(direction) {
   if (state.busy) return;
   const selectedBefore = state.selectedPaperId;
-  if (!selectedBefore) return;
+  if (!selectedBefore || paperExpansionDone(currentPaper(), direction)) return;
   const offsetKey = `${selectedBefore}:${direction}`;
   const savedOffset = state.expansionOffsets.get(offsetKey) ?? 0;
   if (savedOffset === -1) {
@@ -1108,8 +1157,23 @@ async function expand(direction) {
       detail: direction,
       parentPaperId: paper.id,
     });
-    state.expansionOffsets.set(offsetKey, result.next ?? -1);
-    state.selectedPaperId = paper.id;
+    state.expansionOffsets.set(offsetKey, -1);
+    const canonical = state.library.papers.find((item) => item.id === paper.id) || paper;
+    const updatedPaper = {
+      ...canonical,
+      citationExpansion: {
+        ...(canonical.citationExpansion || {}),
+        [direction]: {
+          completedAt: new Date().toISOString(),
+          provider,
+          returnedCount: result.papers.length,
+        },
+      },
+      updatedAt: new Date().toISOString(),
+    };
+    await putPapers([updatedPaper]);
+    state.library.papers = state.library.papers.map((item) => item.id === updatedPaper.id ? updatedPaper : item);
+    state.selectedPaperId = updatedPaper.id;
     renderAll();
     setStatus(`Added ${merged.addedCount} papers and ${merged.edgeCount} directed citation links from ${direction} via ${sourceLabel(provider)}.`, "ready");
   } catch (error) {
@@ -1130,6 +1194,12 @@ const graph = createGraph({
   },
   onSelectTopic: (topicId) => {
     state.selectedTopicId = state.selectedTopicId === topicId ? null : topicId;
+    renderAll();
+  },
+  onSelectAuthor: (authorName) => {
+    state.filters.author = filterValue(state.filters.author) === filterValue(authorName) ? "" : authorName;
+    updateFilterInputs();
+    saveUiState();
     renderAll();
   },
 });
@@ -1171,7 +1241,7 @@ els.clearTopicFocus.addEventListener("click", () => {
 els.mapMode.addEventListener("click", (event) => {
   const button = event.target.closest("button[data-mode]");
   if (!button) return;
-  state.mode = button.dataset.mode === "topics" ? "topics" : "citations";
+  state.mode = ["citations", "topics", "authors"].includes(button.dataset.mode) ? button.dataset.mode : "citations";
   saveUiState();
   renderAll();
 });
@@ -1329,7 +1399,24 @@ els.clearLibrary.addEventListener("click", async () => {
   }
 });
 
-els.closeDetail.addEventListener("click", () => { closeDetail(); renderAll(); });
+els.closeDetail.addEventListener("click", () => {
+  if (timelineViewActive()) {
+    hideDetail();
+    renderTimelinePaperSelection();
+    return;
+  }
+  closeDetail();
+  renderAll();
+});
+
+document.addEventListener("paper-map-timeline-paper-activate", (event) => {
+  if (!timelineViewActive()) return;
+  activateTimelinePaper(event.detail?.paperId);
+});
+
+document.addEventListener("paper-map-timeline-background-activate", () => {
+  if (timelineViewActive()) clearTimelineSelection();
+});
 
 els.detailStar.addEventListener("click", () => {
   const paper = currentPaper();

@@ -5,14 +5,14 @@ import { analyzePdfWithAi } from "./ai-provider.js";
 import { loadAiConfig, providerLabel, providerNeedsApiKey, providerUsesDirectPdf } from "./ai-config.js";
 import { aiConfigSnapshot } from "./ai-config-ui.js?v=0.4.11";
 import { extractPdfCitationsLocally } from "./pdf-local.js";
-import { fetchReferences as fetchOnlineReferences, fetchReferencesWithProvider, resolvePaper as resolveOnlinePaper } from "./paper-provider.js?v=0.4.11";
+import { fetchReferences as fetchOnlineReferences, fetchReferencesWithProvider, resolvePaper as resolveOnlinePaper } from "./paper-provider.js?v=0.4.12";
 import { mergeReferenceRecords, providerPapersToReferences } from "./provider-references.js?v=0.4.5";
 import { loadPaperProviderConfig, paperProviderLabel } from "./paper-provider-config.js?v=0.4.11";
-import { paperCandidateSearchTotals, startPaperCandidateSearch } from "./paper-candidate-search.js?v=0.4.11";
-import { renderPaperCandidatePicker } from "./paper-candidate-ui.js?v=0.4.11";
+import { paperCandidateSearchTotals, startPaperCandidateSearch } from "./paper-candidate-search.js?v=0.4.12";
+import { renderPaperCandidatePicker } from "./paper-candidate-ui.js?v=0.4.12";
 import { pdfReviewLookupState, pdfReviewOnlineQuery } from "./pdf-review-state.js";
 import { applyMergedMetadataToDraft, mergeReviewMetadataSources, reviewedPaperIdentity } from "./pdf-review-merge.js?v=0.4.5";
-import { authorsFromTextarea, commaList, createPdfReviewUi, referenceKey, referenceRow, topicRow } from "./pdf-review-ui.js?v=0.4.11";
+import { authorsFromTextarea, commaList, createPdfReviewUi, referenceKey, referenceRow, topicRow } from "./pdf-review-ui.js?v=0.4.12";
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const LOCAL_EXTRACTION_CONCURRENCY = 2;

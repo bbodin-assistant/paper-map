@@ -1,6 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
+import { normalizePaper as normalizeOpenAlexPaper } from "../www/providers/openalex.js";
+
 import {
   mergeProviderPaperRecords,
   papersRepresentSameWork,
@@ -129,4 +131,20 @@ test("automatic provider mode queries and merges Semantic Scholar, OpenAlex, and
     globalThis.sessionStorage = previousSessionStorage;
     globalThis.fetch = previousFetch;
   }
+});
+
+
+test("OpenAlex normalization falls back across locations for venue and DOI", () => {
+  const paper = normalizeOpenAlexPaper({
+    id: "https://openalex.org/W999",
+    title: "Location fallback paper",
+    publication_year: 2026,
+    primary_location: { source: null, landing_page_url: "https://example.test/work" },
+    best_oa_location: { source: { display_name: "Fallback Venue" }, landing_page_url: "https://doi.org/10.7777/fallback" },
+    ids: { doi: "https://doi.org/10.7777/fallback" },
+    authorships: [],
+    locations: [],
+  });
+  assert.equal(paper.venue, "Fallback Venue");
+  assert.equal(paper.doi, "10.7777/fallback");
 });

@@ -45,5 +45,6 @@ export function onlineCandidateSummary(paper = {}) {
     authors,
     year,
     venue: clean(paper.venue),
+    doi: normalizeDoi(paper.doi),
   };
 }

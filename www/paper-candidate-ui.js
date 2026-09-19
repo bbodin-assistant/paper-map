@@ -1,4 +1,4 @@
-import { onlineCandidateSummary } from "./online-candidates.js";
+import { onlineCandidateSummary } from "./online-candidates.js?v=0.4.12";
 import { paperProviderLabel } from "./paper-provider-config.js?v=0.4.11";
 import { searchHighlightParts } from "./search-highlight.js?v=0.4.9";
 
@@ -88,7 +88,7 @@ export function renderPaperCandidatePicker(container, {
       candidateMeta.className = "add-paper-candidate-meta";
       appendSearchHighlightedText(
         candidateMeta,
-        [candidate.year, candidate.venue, item.label || paperProviderLabel(item.id)].filter(Boolean).join(" · "),
+        [candidate.year, candidate.venue, candidate.doi ? `DOI ${candidate.doi}` : "", item.label || paperProviderLabel(item.id)].filter(Boolean).join(" · "),
         query,
       );
 

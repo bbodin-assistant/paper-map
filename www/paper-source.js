@@ -11,6 +11,8 @@ const SOURCE_LABELS = {
   "openalex-resolve": "OpenAlex lookup",
   "openalex-enrichment": "OpenAlex enrichment",
   "openalex-expansion": "OpenAlex citation expansion",
+  "openalex-search": "OpenAlex search",
+  "openalex-title-search": "OpenAlex search",
   crossref: "Crossref",
   "crossref-resolve": "Crossref lookup",
   "crossref-enrichment": "Crossref enrichment",

@@ -2,7 +2,7 @@ import { normalizeDoi, normalizedTitle } from "./import-export.js";
 import { mergeReferenceRecords } from "./provider-references.js?v=0.4.5";
 import { loadPaperProviderConfig, paperProviderLabel } from "./paper-provider-config.js";
 import * as semanticScholar from "./providers/semantic-scholar.js";
-import * as openAlex from "./providers/openalex.js";
+import * as openAlex from "./providers/openalex.js?v=0.4.12";
 import * as crossref from "./providers/crossref.js";
 
 const PROVIDERS = Object.freeze({
