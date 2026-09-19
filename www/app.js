@@ -34,7 +34,7 @@ import {
   fetchReferences,
   findPaperCandidatesWithProvider,
   resolvePaper,
-} from "./paper-provider.js?v=0.4.11";
+} from "./paper-provider.js?v=0.4.12";
 import {
   createResearchRelationEdge,
   isCitationEdge,
@@ -44,9 +44,9 @@ import {
   researchRelationEdgeId,
 } from "./research-relations.js";
 import { DEMO_LIBRARY } from "./demo-data.js";
-import { onlineCandidateSummary, rankOnlineCandidates } from "./online-candidates.js";
-import { startPaperCandidateSearch } from "./paper-candidate-search.js?v=0.4.11";
-import { renderPaperCandidatePicker } from "./paper-candidate-ui.js?v=0.4.11";
+import { onlineCandidateSummary, rankOnlineCandidates } from "./online-candidates.js?v=0.4.12";
+import { startPaperCandidateSearch } from "./paper-candidate-search.js?v=0.4.12";
+import { renderPaperCandidatePicker } from "./paper-candidate-ui.js?v=0.4.12";
 import { searchHighlightParts } from "./search-highlight.js?v=0.4.9";
 import {
   enabledPaperSearchProviders,
