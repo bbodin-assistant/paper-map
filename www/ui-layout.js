@@ -1,4 +1,4 @@
-import "./timeline.js?v=0.4.4";
+import "./timeline.js?v=0.4.10";
 import "./timeline-selection.js?v=0.4.4";
 
 const DESKTOP_LAYOUT_MEDIA = "(min-width: 1001px)";
