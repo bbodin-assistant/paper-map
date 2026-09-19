@@ -1,8 +1,21 @@
 export const GRAPH_CONFIG_STORAGE_KEY = "paper-map-graph-config-v1";
 
+export const TIMELINE_CLUSTER_FIELD_OPTIONS = Object.freeze([
+  Object.freeze({ id: "title", label: "Title" }),
+  Object.freeze({ id: "keywords", label: "Keywords" }),
+  Object.freeze({ id: "abstract", label: "Abstract" }),
+  Object.freeze({ id: "authors", label: "Authors" }),
+  Object.freeze({ id: "venue", label: "Venue" }),
+]);
+
+const TIMELINE_CLUSTER_FIELD_IDS = new Set(TIMELINE_CLUSTER_FIELD_OPTIONS.map((option) => option.id));
+const DEFAULT_TIMELINE_CLUSTER_FIELDS = Object.freeze(["title", "keywords", "abstract"]);
+
 export const DEFAULT_GRAPH_CONFIG = Object.freeze({
   layoutEffort: 2,
   layoutSpacing: 1,
+  timelineClusterCount: 5,
+  timelineClusterFields: DEFAULT_TIMELINE_CLUSTER_FIELDS,
 });
 
 function boundedNumber(value, fallback, min, max) {
@@ -10,10 +23,18 @@ function boundedNumber(value, fallback, min, max) {
   return Number.isFinite(number) ? Math.max(min, Math.min(max, number)) : fallback;
 }
 
+function normalizedTimelineClusterFields(value) {
+  if (!Array.isArray(value)) return [...DEFAULT_TIMELINE_CLUSTER_FIELDS];
+  const fields = Array.from(new Set(value.map((field) => String(field || "").trim()).filter((field) => TIMELINE_CLUSTER_FIELD_IDS.has(field))));
+  return fields.length ? fields : [...DEFAULT_TIMELINE_CLUSTER_FIELDS];
+}
+
 export function normalizeGraphConfig(value = {}) {
   return {
     layoutEffort: boundedNumber(value.layoutEffort, DEFAULT_GRAPH_CONFIG.layoutEffort, 0.5, 6),
     layoutSpacing: boundedNumber(value.layoutSpacing, DEFAULT_GRAPH_CONFIG.layoutSpacing, 0.5, 3),
+    timelineClusterCount: Math.round(boundedNumber(value.timelineClusterCount, DEFAULT_GRAPH_CONFIG.timelineClusterCount, 1, 12)),
+    timelineClusterFields: normalizedTimelineClusterFields(value.timelineClusterFields),
   };
 }
 
