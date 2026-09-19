@@ -120,6 +120,17 @@ def exercise_timeline_click(driver, label):
     else:
         assert_true(not driver.find_elements(By.ID, "desktop-filter-button"), "Desktop-only toolbar controls must not appear on mobile")
 
+    driver.execute_script(
+        """
+        localStorage.setItem('paper-map-graph-config-v1', JSON.stringify({
+          layoutEffort: 2,
+          layoutSpacing: 1,
+          timelineClusterCount: 3,
+          timelineClusterFields: ['title', 'keywords', 'abstract'],
+        }));
+        """
+    )
+
     # Seed a deterministic local library without depending on network providers.
     driver.execute_script("document.querySelector('#load-demo').click()")
     wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
@@ -127,6 +138,27 @@ def exercise_timeline_click(driver, label):
     wait_click(driver, '#map-mode button[data-mode="timeline"]')
     timeline_papers = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".timeline-paper[data-paper-id]"))
     assert_true(timeline_papers, f"Timeline should render paper cards in {label}")
+
+    bands = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".timeline-band-group[data-timeline-cluster-index]"))
+    assert_true(1 < len(bands) <= 3, f"Configured cluster count should bound visible Timeline bands in {label}: {len(bands)}")
+    band_colors = [band.get_attribute("data-timeline-cluster-color") for band in bands]
+    assert_true(len(set(band_colors)) == len(band_colors), f"Every Timeline cluster should have a distinct accent color in {label}: {band_colors}")
+    band_fills = [
+        driver.execute_script("return getComputedStyle(arguments[0].querySelector('.timeline-band')).fill;", band)
+        for band in bands
+    ]
+    assert_true(len(set(band_fills)) == len(band_fills), f"Every Timeline cluster should have a distinct band fill in {label}: {band_fills}")
+
+    band_color_by_index = {
+        band.get_attribute("data-timeline-cluster-index"): band.get_attribute("data-timeline-cluster-color")
+        for band in bands
+    }
+    for timeline_paper in timeline_papers:
+        cluster_index = timeline_paper.get_attribute("data-timeline-cluster-index")
+        assert_true(
+            timeline_paper.get_attribute("data-timeline-cluster-color") == band_color_by_index.get(cluster_index),
+            f"Timeline paper card should inherit its cluster color in {label}: cluster {cluster_index}",
+        )
 
     paper = timeline_papers[0]
     paper_id = paper.get_attribute("data-paper-id")
@@ -197,7 +229,7 @@ def main():
             raise
         finally:
             driver.quit()
-    print("timeline Selenium regression passed on desktop and mobile")
+    print("timeline clustering configuration, distinct cluster colors, and selection regression passed on desktop and mobile")
 
 
 if __name__ == "__main__":
