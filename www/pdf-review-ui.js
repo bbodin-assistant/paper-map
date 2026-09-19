@@ -1,5 +1,5 @@
 import { normalizeDoi, normalizedTitle } from "./import-export.js";
-import { onlineCandidateSummary } from "./online-candidates.js";
+import { onlineCandidateSummary } from "./online-candidates.js?v=0.4.12";
 
 function clean(value) {
   return String(value ?? "").trim();
@@ -74,7 +74,7 @@ export function onlineCandidateRow(paper, index, query, disabled = false) {
     <span class="pdf-online-candidate-copy">
       <strong>${escapeHtml(summary.title)}</strong>
       <span>${escapeHtml(summary.authors.length ? summary.authors.join(", ") : "Authors unavailable")}</span>
-      <span>${escapeHtml([summary.year || "", summary.venue].filter(Boolean).join(" · ") || "Year / venue unavailable")}</span>
+      <span>${escapeHtml([summary.year || "", summary.venue, summary.doi ? `DOI ${summary.doi}` : ""].filter(Boolean).join(" · ") || "Year / venue / DOI unavailable")}</span>
     </span>
     ${exactTitle ? '<span class="pdf-online-exact-title">Exact title</span>' : ""}
   `;
