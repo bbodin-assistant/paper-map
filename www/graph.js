@@ -400,6 +400,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     }
 
     clear();
+    lastAggregateTopology = "";
     const token = ++renderToken;
     const viewportWidth = Math.max(800, svg.clientWidth || 1200);
     const viewportHeight = Math.max(520, svg.clientHeight || 720);
@@ -629,6 +630,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     }
 
     clear();
+    lastCitationTopology = "";
     renderToken += 1;
     if (!blocks.length) {
       empty(emptyMessage);
