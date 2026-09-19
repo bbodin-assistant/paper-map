@@ -311,19 +311,18 @@ function installStyles(root = document) {
     #map-mode.timeline-enabled { grid-template-columns: repeat(3, minmax(0, 1fr)); width: 326px; }
     .timeline-year-guide { stroke: #d8ddda; stroke-width: 1; stroke-dasharray: 3 6; }
     .timeline-year-label { fill: #6f7a82; font-size: 10px; font-weight: 800; text-anchor: middle; }
-    .timeline-band { fill: #fafaf6; stroke: #e0e4e0; stroke-width: 1; }
-    .timeline-band.alt { fill: #f6f7f3; }
-    .timeline-band-name { fill: #25313b; font-size: 11px; font-weight: 850; }
-    .timeline-band-terms { fill: #899198; font-size: 8px; font-weight: 650; }
+    .timeline-band { fill: var(--timeline-cluster-band, #fafaf6); stroke: var(--timeline-cluster-accent, #e0e4e0); stroke-width: 1.2; }
+    .timeline-band-name { fill: var(--timeline-cluster-accent, #25313b); font-size: 11px; font-weight: 850; }
+    .timeline-band-terms { fill: var(--timeline-cluster-accent, #899198); font-size: 8px; font-weight: 650; opacity: .82; }
     .timeline-axis-note { fill: #929a9f; font-size: 8px; font-weight: 650; }
     .timeline-citation-edge { fill: none; stroke: #9ca6a6; stroke-width: 1; opacity: .18; pointer-events: none; }
     .timeline-citation-edge.selected { stroke: #47545e; stroke-width: 1.8; opacity: .62; }
     .timeline-paper { cursor: pointer; outline: none; }
-    .timeline-paper rect { fill: #fffef9; stroke: #69757e; stroke-width: 1.15; }
+    .timeline-paper rect { fill: var(--timeline-cluster-paper, #fffef9); stroke: var(--timeline-cluster-accent, #69757e); stroke-width: 1.3; }
     .timeline-paper:hover rect, .timeline-paper:focus rect { fill: #fff6cd; stroke: #26333e; stroke-width: 1.5; }
     .timeline-paper.selected rect { fill: #f6c445; stroke: #1f2933; stroke-width: 2; }
     .timeline-paper.starred rect { stroke: #ad7810; stroke-width: 2; }
-    .timeline-paper-year { fill: #7d878e; font-size: 8px; font-weight: 850; }
+    .timeline-paper-year { fill: var(--timeline-cluster-accent, #7d878e); font-size: 8px; font-weight: 850; }
     .timeline-paper-title { fill: #202b35; font-size: 10px; font-weight: 800; }
     .timeline-paper-meta { fill: #79838b; font-size: 8px; font-weight: 650; }
     .timeline-empty { fill: #7d878e; font-size: 13px; font-weight: 650; }
@@ -419,10 +418,16 @@ export function initTimelineMap(root = document) {
     const paperIds = new Set(papers.map((paper) => paper.id));
     const citations = library.edges.filter((edge) => isCitationEdge(edge) && paperIds.has(edge.source) && paperIds.has(edge.target));
     const selectedId = selectedPaperId(root);
+    const graphConfig = loadGraphConfig();
 
     viewport.replaceChildren();
     syncModeButtons();
-    if (mapHelp) mapHelp.textContent = "Timeline: observed years are evenly spaced · vertical bands are text clusters · drag background, pinch or wheel to zoom";
+    if (mapHelp) {
+      const clusterFields = graphConfig.timelineClusterFields
+        .map((field) => TIMELINE_CLUSTER_FIELD_OPTIONS.find((option) => option.id === field)?.label || field)
+        .join(", ");
+      mapHelp.textContent = `Timeline: observed years are evenly spaced · ${graphConfig.timelineClusterCount} requested clusters using ${clusterFields} · drag background, pinch or wheel to zoom`;
+    }
 
     if (!papers.length) {
       currentLayout = null;
@@ -435,9 +440,16 @@ export function initTimelineMap(root = document) {
 
     const viewportWidth = Math.max(800, svg.clientWidth || 1200);
     const viewportHeight = Math.max(520, svg.clientHeight || 720);
-    const layout = buildTimelineLayout(papers, viewportWidth, viewportHeight, GROUP_COUNT);
+    const layout = buildTimelineLayout(
+      papers,
+      viewportWidth,
+      viewportHeight,
+      graphConfig.timelineClusterCount,
+      { fields: graphConfig.timelineClusterFields },
+    );
     currentLayout = layout;
-    const signature = `${viewportWidth}x${viewportHeight}|${papers.map((paper) => `${paper.id}:${paper.year || ""}:${paper.title || ""}:${(paper.keywords || []).join?.("|") || paper.keywords || ""}:${String(paper.abstract || "").length}`).sort().join(";")}`;
+    const clusteringSignature = `${graphConfig.timelineClusterCount}:${graphConfig.timelineClusterFields.join(",")}`;
+    const signature = `${viewportWidth}x${viewportHeight}|${clusteringSignature}|${papers.map((paper) => `${paper.id}:${paper.year || ""}:${paper.title || ""}:${(paper.keywords || []).join?.("|") || paper.keywords || ""}:${String(paper.abstract || "").length}:${(paper.authors || []).join?.("|") || paper.authors || ""}:${paper.venue || ""}`).sort().join(";")}`;
     const shouldReset = signature !== currentSignature;
     currentSignature = signature;
 
@@ -459,19 +471,27 @@ export function initTimelineMap(root = document) {
     }
 
     for (const band of layout.groups) {
+      const color = timelineClusterColor(band.index);
+      const bandGroup = svgElement("g", {
+        class: "timeline-band-group",
+        "data-timeline-cluster-index": band.index,
+        "data-timeline-cluster-color": color.accent,
+        style: `--timeline-cluster-band:${color.band};--timeline-cluster-paper:${color.paper};--timeline-cluster-accent:${color.accent}`,
+      });
       const rect = svgElement("rect", {
         x: 10,
         y: band.y,
         width: layout.width - 20,
         height: band.height,
         rx: 8,
-        class: `timeline-band${band.index % 2 ? " alt" : ""}`,
+        class: "timeline-band",
       });
       const name = svgElement("text", { x: 24, y: band.y + 27, class: "timeline-band-name" });
       name.textContent = band.name;
       const terms = svgElement("text", { x: 24, y: band.y + 42, class: "timeline-band-terms" });
       terms.textContent = shortText(band.label, 22);
-      bandLayer.append(rect, name, terms);
+      bandGroup.append(rect, name, terms);
+      bandLayer.append(bandGroup);
     }
 
     const nodeById = new Map(layout.nodes.map((node) => [node.paper.id, node]));
@@ -494,12 +514,16 @@ export function initTimelineMap(root = document) {
 
     for (const node of layout.nodes) {
       const paper = node.paper;
+      const color = timelineClusterColor(node.groupIndex);
       const group = svgElement("g", {
         class: `timeline-paper${paper.id === selectedId ? " selected" : ""}${paper.starred ? " starred" : ""}`,
         transform: `translate(${node.x} ${node.y})`,
         tabindex: "0",
         role: "button",
         "data-paper-id": paper.id,
+        "data-timeline-cluster-index": node.groupIndex,
+        "data-timeline-cluster-color": color.accent,
+        style: `--timeline-cluster-band:${color.band};--timeline-cluster-paper:${color.paper};--timeline-cluster-accent:${color.accent}`,
         "aria-label": `${paper.title || "Untitled"}, ${paper.year || "year unknown"}`,
       });
       const rect = svgElement("rect", { width: CARD_WIDTH, height: CARD_HEIGHT, rx: 6 });
@@ -670,6 +694,7 @@ export function initTimelineMap(root = document) {
   const observer = new MutationObserver(() => queueRender());
   observer.observe(paperList, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
   window.addEventListener("resize", queueRender);
+  root.addEventListener?.("paper-map-graph-config-changed", queueRender);
 
   try {
     if (localStorage.getItem(TIMELINE_STORAGE_KEY) === "true") requestAnimationFrame(activate);
