@@ -28,7 +28,7 @@ import {
 if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-config]')) {
   const link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = "./ai-config.css";
+  link.href = "./ai-config.css?v=0.4.10";
   link.dataset.paperMapConfig = "true";
   document.head.append(link);
 }
