@@ -52,6 +52,43 @@
 
 .config-grid { display: grid; gap: 11px; }
 .config-grid-two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.paper-search-config {
+  display: grid;
+  gap: 7px;
+  padding: 10px;
+  border: 1px solid #d7dcd7;
+  border-radius: 5px;
+  background: #fffefb;
+}
+.paper-search-config-heading { display: grid; gap: 3px; margin-bottom: 2px; }
+.paper-search-config-heading strong { color: #26323b; font-size: 11px; }
+.paper-search-provider-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  align-items: center;
+  gap: 12px;
+  padding: 7px 8px;
+  border: 1px solid #e1e4e1;
+  border-radius: 4px;
+  background: #fafbf8;
+}
+.paper-search-provider-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.paper-search-provider-toggle input { width: auto; }
+.paper-search-provider-limit {
+  display: grid;
+  grid-template-columns: auto 58px;
+  align-items: center;
+  gap: 7px;
+  color: #66717d;
+  font-size: 10px;
+}
+.paper-search-provider-limit input { min-width: 0; padding: 6px 7px; }
 .config-note {
   margin: 11px 0 0;
   padding-top: 10px;
@@ -101,6 +138,7 @@
     padding: 12px;
   }
   .config-grid-two { grid-template-columns: 1fr; }
+  .paper-search-provider-row { grid-template-columns: minmax(0, 1fr) 104px; }
   .config-actions {
     position: static;
     bottom: auto;

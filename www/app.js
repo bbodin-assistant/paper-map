@@ -32,9 +32,9 @@ import {
   enrichPaper,
   fetchCitations,
   fetchReferences,
+  findPaperCandidatesWithProvider,
   resolvePaper,
-  searchPapers,
-} from "./paper-provider.js?v=0.4.5";
+} from "./paper-provider.js?v=0.4.8";
 import {
   createResearchRelationEdge,
   isCitationEdge,
@@ -45,6 +45,11 @@ import {
 } from "./research-relations.js";
 import { DEMO_LIBRARY } from "./demo-data.js";
 import { onlineCandidateSummary, rankOnlineCandidates } from "./online-candidates.js";
+import {
+  enabledPaperSearchProviders,
+  loadPaperProviderConfig,
+  paperProviderLabel,
+} from "./paper-provider-config.js?v=0.4.8";
 
 const UI_STORAGE_KEY = "paper-map-ui-v1";
 const EXPANSION_SIZE = 50;
@@ -167,27 +172,170 @@ function setBusy(isBusy, message = "Working…") {
 
 let pendingAddPaperQuery = "";
 let pendingAddPaperCandidates = [];
+let pendingAddPaperSearchGeneration = 0;
+let pendingAddPaperProviderStates = new Map();
+let pendingAddPaperSearchControllers = new Map();
+
+function abortAddPaperSearches() {
+  for (const controller of pendingAddPaperSearchControllers.values()) controller.abort();
+  pendingAddPaperSearchControllers.clear();
+}
 
 function clearAddPaperCandidates() {
+  pendingAddPaperSearchGeneration += 1;
+  abortAddPaperSearches();
   pendingAddPaperQuery = "";
   pendingAddPaperCandidates = [];
+  pendingAddPaperProviderStates = new Map();
   els.addPaperCandidates.replaceChildren();
   els.addPaperCandidates.hidden = true;
 }
 
-function isDirectPaperIdentifier(query) {
-  const text = String(query || "").trim();
-  const doi = normalizeDoi(text);
-  return /^10\.\d{4,9}\//i.test(doi)
-    || /^[0-9a-f]{40}$/i.test(text)
-    || /^(?:arxiv:)?\d{4}\.\d{4,5}(?:v\d+)?$/i.test(text);
+function addPaperSearchTotals() {
+  const states = Array.from(pendingAddPaperProviderStates.values());
+  return {
+    candidates: states.reduce((sum, item) => sum + item.candidates.length, 0),
+    finished: states.filter((item) => item.status !== "searching").length,
+    providers: states.length,
+  };
 }
 
-async function findAddPaperCandidates(query) {
-  const raw = isDirectPaperIdentifier(query)
-    ? [await resolvePaper(query)]
-    : await searchPapers(query, 8);
-  return rankOnlineCandidates(raw, query);
+function providerSearchStatusText(item) {
+  if (item.status === "searching") return `Searching… up to ${item.limit}`;
+  if (item.status === "error") return item.error || "Search failed";
+  return `${item.candidates.length} result${item.candidates.length === 1 ? "" : "s"} · limit ${item.limit}`;
+}
+
+function renderAddPaperCandidates(query) {
+  if (!query || query !== pendingAddPaperQuery) return;
+  const fragment = document.createDocumentFragment();
+  const totals = addPaperSearchTotals();
+  pendingAddPaperCandidates = Array.from(pendingAddPaperProviderStates.values()).flatMap((item) => item.candidates);
+
+  const heading = document.createElement("div");
+  heading.className = "add-paper-candidates-heading";
+  const title = document.createElement("strong");
+  title.textContent = "Choose a paper";
+  const detail = document.createElement("small");
+  detail.textContent = `${totals.candidates} result${totals.candidates === 1 ? "" : "s"} so far · ${totals.finished}/${totals.providers} providers finished · “${query}”`;
+  heading.append(title, detail);
+  fragment.append(heading);
+
+  for (const [providerId, item] of pendingAddPaperProviderStates) {
+    const section = document.createElement("section");
+    section.className = `add-paper-provider-results ${item.status}`;
+    section.dataset.addPaperProvider = providerId;
+
+    const sectionHeading = document.createElement("div");
+    sectionHeading.className = "add-paper-provider-heading";
+    const providerName = document.createElement("strong");
+    providerName.textContent = paperProviderLabel(providerId);
+    const providerStatus = document.createElement("small");
+    providerStatus.className = "add-paper-provider-status";
+    providerStatus.textContent = providerSearchStatusText(item);
+    sectionHeading.append(providerName, providerStatus);
+    section.append(sectionHeading);
+
+    for (const [index, paper] of item.candidates.entries()) {
+      const summary = onlineCandidateSummary(paper);
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "add-paper-candidate";
+      button.dataset.addPaperCandidateIndex = String(index);
+      button.dataset.addPaperCandidateProvider = providerId;
+
+      const candidateTitle = document.createElement("strong");
+      candidateTitle.className = "add-paper-candidate-title";
+      candidateTitle.textContent = summary.title;
+
+      const candidateAuthors = document.createElement("span");
+      candidateAuthors.className = "add-paper-candidate-authors";
+      candidateAuthors.textContent = summary.authors.length ? summary.authors.join(", ") : "Authors not provided";
+
+      const candidateMeta = document.createElement("span");
+      candidateMeta.className = "add-paper-candidate-meta";
+      candidateMeta.textContent = [summary.year, summary.venue, paperProviderLabel(providerId)].filter(Boolean).join(" · ");
+
+      button.append(candidateTitle, candidateAuthors, candidateMeta);
+      button.addEventListener("click", () => addPaperCandidate(paper, query));
+      section.append(button);
+    }
+
+    fragment.append(section);
+  }
+
+  els.addPaperCandidates.replaceChildren(fragment);
+  els.addPaperCandidates.hidden = false;
+}
+
+function syncAddPaperSearchStatus(query) {
+  if (query !== pendingAddPaperQuery) return;
+  const totals = addPaperSearchTotals();
+  if (totals.finished < totals.providers) {
+    setStatus(
+      `Searching ${totals.providers} paper provider${totals.providers === 1 ? "" : "s"}… ${totals.candidates} candidate${totals.candidates === 1 ? "" : "s"} available so far.`,
+      "loading",
+    );
+    return;
+  }
+  if (totals.candidates) {
+    setStatus(
+      `Found ${totals.candidates} candidate${totals.candidates === 1 ? "" : "s"} across ${totals.providers} provider${totals.providers === 1 ? "" : "s"}. Choose the paper to add.`,
+      "ready",
+    );
+  } else {
+    setStatus("No matching papers were returned by the enabled providers.", "error");
+  }
+}
+
+async function searchAddPaperProvider(providerConfig, query, generation) {
+  const controller = new AbortController();
+  pendingAddPaperSearchControllers.set(providerConfig.id, controller);
+  try {
+    const raw = await findPaperCandidatesWithProvider(
+      providerConfig.id,
+      query,
+      providerConfig.limit,
+      { signal: controller.signal },
+    );
+    if (generation !== pendingAddPaperSearchGeneration || query !== pendingAddPaperQuery) return;
+    const item = pendingAddPaperProviderStates.get(providerConfig.id);
+    if (!item) return;
+    item.status = "complete";
+    item.candidates = rankOnlineCandidates(raw, query);
+    item.error = "";
+  } catch (error) {
+    if (error?.name === "AbortError" || generation !== pendingAddPaperSearchGeneration || query !== pendingAddPaperQuery) return;
+    const item = pendingAddPaperProviderStates.get(providerConfig.id);
+    if (!item) return;
+    item.status = "error";
+    item.candidates = [];
+    item.error = error?.message || String(error);
+  } finally {
+    if (pendingAddPaperSearchControllers.get(providerConfig.id) === controller) {
+      pendingAddPaperSearchControllers.delete(providerConfig.id);
+    }
+    if (generation === pendingAddPaperSearchGeneration && query === pendingAddPaperQuery) {
+      renderAddPaperCandidates(query);
+      syncAddPaperSearchStatus(query);
+    }
+  }
+}
+
+function startAddPaperSearch(query) {
+  clearAddPaperCandidates();
+  pendingAddPaperQuery = query;
+  const providerConfigs = enabledPaperSearchProviders(loadPaperProviderConfig());
+  pendingAddPaperProviderStates = new Map(providerConfigs.map((provider) => [
+    provider.id,
+    { status: "searching", limit: provider.limit, candidates: [], error: "" },
+  ]));
+  const generation = pendingAddPaperSearchGeneration;
+  renderAddPaperCandidates(query);
+  syncAddPaperSearchStatus(query);
+  for (const provider of providerConfigs) {
+    searchAddPaperProvider(provider, query, generation);
+  }
 }
 
 async function addPaperCandidate(paper, query) {
@@ -214,49 +362,6 @@ async function addPaperCandidate(paper, query) {
   } finally {
     setBusy(false);
   }
-}
-
-function renderAddPaperCandidates(candidates, query) {
-  pendingAddPaperQuery = query;
-  pendingAddPaperCandidates = candidates;
-  const fragment = document.createDocumentFragment();
-
-  const heading = document.createElement("div");
-  heading.className = "add-paper-candidates-heading";
-  const title = document.createElement("strong");
-  title.textContent = "Choose a paper";
-  const detail = document.createElement("small");
-  detail.textContent = `${candidates.length} result${candidates.length === 1 ? "" : "s"} for “${query}”`;
-  heading.append(title, detail);
-  fragment.append(heading);
-
-  for (const [index, paper] of candidates.entries()) {
-    const summary = onlineCandidateSummary(paper);
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "add-paper-candidate";
-    button.dataset.addPaperCandidateIndex = String(index);
-
-    const candidateTitle = document.createElement("strong");
-    candidateTitle.textContent = summary.title;
-    const candidateMeta = document.createElement("span");
-    const authorText = summary.authors.length
-      ? `${summary.authors.slice(0, 3).join(", ")}${summary.authors.length > 3 ? " et al." : ""}`
-      : "";
-    candidateMeta.textContent = [
-      authorText,
-      summary.year,
-      summary.venue,
-      sourceLabel(paper.providerPrimary || paper.source || "provider"),
-    ].filter(Boolean).join(" · ");
-
-    button.append(candidateTitle, candidateMeta);
-    button.addEventListener("click", () => addPaperCandidate(paper, query));
-    fragment.append(button);
-  }
-
-  els.addPaperCandidates.replaceChildren(fragment);
-  els.addPaperCandidates.hidden = false;
 }
 
 function slug(value) {
@@ -939,30 +1044,15 @@ document.addEventListener("pointerdown", (event) => {
   }
 });
 
-els.addPaperForm.addEventListener("submit", async (event) => {
+els.addPaperForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const query = els.addPaperQuery.value.trim();
   if (!query || state.busy) return;
-  clearAddPaperCandidates();
-  try {
-    setBusy(true, "Searching papers…");
-    const candidates = await findAddPaperCandidates(query);
-    if (!candidates.length) throw new Error("No matching papers found.");
-    renderAddPaperCandidates(candidates, query);
-    setStatus(
-      `Found ${candidates.length} candidate${candidates.length === 1 ? "" : "s"}. Choose the paper to add.`,
-      "ready",
-    );
-  } catch (error) {
-    clearAddPaperCandidates();
-    setStatus(error.message || String(error), "error");
-  } finally {
-    setBusy(false);
-  }
+  startAddPaperSearch(query);
 });
 
 els.addPaperQuery.addEventListener("input", () => {
-  if (pendingAddPaperCandidates.length && els.addPaperQuery.value.trim() !== pendingAddPaperQuery) {
+  if (pendingAddPaperQuery && els.addPaperQuery.value.trim() !== pendingAddPaperQuery) {
     clearAddPaperCandidates();
   }
 });

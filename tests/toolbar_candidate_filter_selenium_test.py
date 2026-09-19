@@ -10,12 +10,11 @@ from mobile_selenium_test import (
     assert_true,
     chrome_binary,
     save_screenshot,
-    wait_click,
     wait_displayed,
 )
 from pdf_local_citation_selenium_test import read_all_indexeddb
 
-QUERY = "Explicit Candidate Selection Fixture"
+QUERY = "Progressive Multi Provider Candidate Fixture"
 
 
 def create_desktop_driver():
@@ -31,58 +30,128 @@ def create_desktop_driver():
     return webdriver.Chrome(options=options)
 
 
-def install_semantic_scholar_search_mock(driver):
+def configure_search_sources(driver):
+    config = {
+        "provider": "semantic-scholar",
+        "searchProviders": {
+            "semantic-scholar": {"enabled": True, "limit": 2},
+            "openalex": {"enabled": True, "limit": 3},
+            "crossref": {"enabled": False, "limit": 4},
+        },
+    }
+    driver.execute_script(
+        "localStorage.setItem('paper-map-paper-provider-config-v1', JSON.stringify(arguments[0]));",
+        config,
+    )
+    driver.refresh()
+
+
+def install_progressive_provider_mocks(driver):
     driver.execute_script(
         """
         const originalFetch = window.fetch.bind(window);
         window.__paperMapToolbarSearchUrls = [];
+        let releaseOpenAlex;
+        const openAlexGate = new Promise((resolve) => { releaseOpenAlex = resolve; });
+        window.__releasePaperMapOpenAlex = () => releaseOpenAlex();
+
+        const openAlexWork = (id, title, authors, year, venue) => ({
+          id: 'https://openalex.org/' + id,
+          title,
+          publication_year: year,
+          cited_by_count: 10,
+          authorships: authors.map((name) => ({ author: { display_name: name } })),
+          primary_location: {
+            source: { display_name: venue },
+            landing_page_url: 'https://openalex.org/' + id,
+          },
+          best_oa_location: null,
+          locations: [],
+          referenced_works: [],
+          keywords: [],
+          topics: [],
+          concepts: [],
+        });
+
         window.fetch = async (url, options = {}) => {
           const parsed = new URL(String(url), window.location.href);
-          if (parsed.hostname !== 'api.semanticscholar.org') return originalFetch(url, options);
-          if (parsed.pathname === '/graph/v1/paper/search') {
-            window.__paperMapToolbarSearchUrls.push(parsed.toString());
+          if (!['api.semanticscholar.org', 'api.openalex.org', 'api.crossref.org'].includes(parsed.hostname)) {
+            return originalFetch(url, options);
+          }
+          window.__paperMapToolbarSearchUrls.push(parsed.toString());
+
+          if (parsed.hostname === 'api.semanticscholar.org' && parsed.pathname === '/graph/v1/paper/search') {
             return new Response(JSON.stringify({
               data: [
                 {
                   paperId: '1111111111111111111111111111111111111111',
-                  title: 'Explicit Candidate Selection Overview',
+                  title: 'Progressive Multi Provider Candidate Fixture',
                   year: 2024,
-                  venue: 'Broad Results',
-                  publicationTypes: ['JournalArticle'],
-                  authors: [{ name: 'Broad Author' }],
+                  venue: 'Semantic Venue A',
+                  publicationTypes: ['Conference'],
+                  authors: [{ name: 'Semantic First Author' }],
                   externalIds: {},
-                  url: 'https://www.semanticscholar.org/paper/broad',
+                  url: 'https://www.semanticscholar.org/paper/s2-a',
                   citationCount: 2,
                   fieldsOfStudy: ['Computer Science'],
                 },
                 {
                   paperId: '2222222222222222222222222222222222222222',
-                  title: 'Explicit Candidate Selection Fixture',
+                  title: 'Progressive Multi Provider Candidate Overview',
                   year: 2023,
-                  venue: 'Candidate Venue A',
-                  publicationTypes: ['Conference'],
-                  authors: [{ name: 'First Exact Author' }],
+                  venue: 'Semantic Venue B',
+                  publicationTypes: ['JournalArticle'],
+                  authors: [{ name: 'Semantic Broad Author' }],
                   externalIds: {},
-                  url: 'https://www.semanticscholar.org/paper/exact-a',
+                  url: 'https://www.semanticscholar.org/paper/s2-b',
                   citationCount: 3,
-                  fieldsOfStudy: ['Computer Science'],
-                },
-                {
-                  paperId: '3333333333333333333333333333333333333333',
-                  title: 'EXPLICIT CANDIDATE SELECTION FIXTURE',
-                  year: 2025,
-                  venue: 'Candidate Venue B',
-                  publicationTypes: ['Conference'],
-                  authors: [{ name: 'Chosen Exact Author' }],
-                  externalIds: {},
-                  url: 'https://www.semanticscholar.org/paper/exact-b',
-                  citationCount: 4,
                   fieldsOfStudy: ['Computer Science'],
                 },
               ],
             }), { status: 200, headers: { 'Content-Type': 'application/json' } });
           }
-          throw new Error(`Unexpected Semantic Scholar request: ${parsed.toString()}`);
+
+          if (parsed.hostname === 'api.openalex.org' && parsed.pathname === '/works' && parsed.searchParams.has('search')) {
+            await openAlexGate;
+            return new Response(JSON.stringify({
+              results: [
+                openAlexWork(
+                  'W201',
+                  'Progressive Multi Provider Candidate Background',
+                  ['OpenAlex Background Author'],
+                  2022,
+                  'OpenAlex Background Venue',
+                ),
+                openAlexWork(
+                  'W202',
+                  'PROGRESSIVE MULTI PROVIDER CANDIDATE FIXTURE',
+                  [
+                    'First Extremely Long Author Name',
+                    'Second Extremely Long Author Name',
+                    'Third Extremely Long Author Name',
+                    'Fourth Extremely Long Author Name',
+                    'Fifth Extremely Long Author Name',
+                    'Sixth Very Long Author Name',
+                  ],
+                  2025,
+                  'OpenAlex Target Venue',
+                ),
+                openAlexWork(
+                  'W203',
+                  'Progressive Multi Provider Candidate Companion',
+                  ['OpenAlex Companion Author'],
+                  2021,
+                  'OpenAlex Companion Venue',
+                ),
+              ],
+              meta: { count: 3 },
+            }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+          }
+
+          if (parsed.hostname === 'api.crossref.org') {
+            throw new Error('Crossref should be disabled for this Add search');
+          }
+          throw new Error('Unexpected provider request: ' + parsed.toString());
         };
         """
     )
@@ -99,33 +168,60 @@ def main():
             lambda d: "Opening local library"
             not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
         )
-        wait.until(lambda d: d.find_element(By.CSS_SELECTOR, ".toolbar-primary").get_attribute("class").find("desktop-layout-active") >= 0)
-        install_semantic_scholar_search_mock(driver)
+        configure_search_sources(driver)
+        wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
+        wait.until(
+            lambda d: "Opening local library"
+            not in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
+        )
+        wait.until(lambda d: "desktop-layout-active" in d.find_element(By.CSS_SELECTOR, ".toolbar-primary").get_attribute("class"))
+        install_progressive_provider_mocks(driver)
 
         query = wait_displayed(driver, "#add-paper-query")
         query.send_keys(QUERY)
-        wait_click(driver, "#add-paper-form button[type='submit']")
+        query.submit()
 
-        chooser = wait.until(
-            lambda d: d.find_element(By.ID, "add-paper-candidates")
-            if d.find_element(By.ID, "add-paper-candidates").get_attribute("hidden") is None
-            else False
+        chooser = wait_displayed(driver, "#add-paper-candidates")
+        semantic_section = wait.until(
+            lambda d: d.find_element(By.CSS_SELECTOR, '[data-add-paper-provider="semantic-scholar"].complete')
         )
-        buttons = chooser.find_elements(By.CSS_SELECTOR, "[data-add-paper-candidate-index]")
-        assert_true(len(buttons) == 3, f"Expected three explicit toolbar candidates, got {len(buttons)}")
-        assert_true("First Exact Author" in buttons[0].text, "Exact title candidates should be promoted while preserving provider order")
-        assert_true("Chosen Exact Author" in buttons[1].text, "Second exact candidate should remain available for explicit selection")
-        assert_true("Broad Author" in buttons[2].text, "Broader provider results should remain visible after exact matches")
-        assert_true(len(read_all_indexeddb(driver, "papers")) == 0, "Searching must not persist the provider's first match")
+        openalex_section = driver.find_element(By.CSS_SELECTOR, '[data-add-paper-provider="openalex"]')
+        assert_true("Searching" in openalex_section.text, "OpenAlex should still show progress while Semantic Scholar results are already usable")
+        semantic_buttons = semantic_section.find_elements(By.CSS_SELECTOR, "[data-add-paper-candidate-index]")
+        assert_true(len(semantic_buttons) == 2, f"Semantic Scholar limit should expose two results, got {len(semantic_buttons)}")
+        assert_true("Semantic First Author" in semantic_buttons[0].text, "Semantic Scholar candidates should be visible before OpenAlex finishes")
+        assert_true(len(read_all_indexeddb(driver, "papers")) == 0, "Progressive search must not persist a candidate before explicit selection")
 
-        buttons[1].click()
+        driver.execute_script("window.__releasePaperMapOpenAlex();")
+        openalex_section = wait.until(
+            lambda d: d.find_element(By.CSS_SELECTOR, '[data-add-paper-provider="openalex"].complete')
+        )
+        openalex_buttons = openalex_section.find_elements(By.CSS_SELECTOR, "[data-add-paper-candidate-index]")
+        assert_true(len(openalex_buttons) == 3, f"OpenAlex limit should expose three results, got {len(openalex_buttons)}")
+        target = next((button for button in openalex_buttons if "Sixth Very Long Author Name" in button.text), None)
+        assert_true(target is not None, "The complete long OpenAlex author list should remain visible")
+        authors = target.find_element(By.CSS_SELECTOR, ".add-paper-candidate-authors")
+        author_style = driver.execute_script(
+            "const s=getComputedStyle(arguments[0]); return {whiteSpace:s.whiteSpace,overflow:s.overflow,height:arguments[0].getBoundingClientRect().height};",
+            authors,
+        )
+        assert_true(author_style["whiteSpace"] == "normal", f"Author list should wrap instead of truncating: {author_style}")
+        assert_true(author_style["overflow"] != "hidden", f"Author list should not be clipped: {author_style}")
+        assert_true(author_style["height"] > 20, f"Long author list should occupy multiple visible lines: {author_style}")
+
+        searches = driver.execute_script("return window.__paperMapToolbarSearchUrls.slice();")
+        semantic_urls = [url for url in searches if "api.semanticscholar.org" in url]
+        openalex_urls = [url for url in searches if "api.openalex.org" in url]
+        crossref_urls = [url for url in searches if "api.crossref.org" in url]
+        assert_true(len(semantic_urls) == 1 and "limit=2" in semantic_urls[0], f"Semantic Scholar should use its configured limit: {semantic_urls}")
+        assert_true(len(openalex_urls) == 1 and "per-page=3" in openalex_urls[0], f"OpenAlex should use its configured limit: {openalex_urls}")
+        assert_true(not crossref_urls, f"Disabled Crossref must not be queried: {crossref_urls}")
+
+        target.click()
         wait.until(lambda d: "Selected paper added" in d.find_element(By.ID, "library-status-text").text)
         papers = read_all_indexeddb(driver, "papers")
         assert_true(len(papers) == 1, f"Expected one explicitly selected paper, got {len(papers)}")
-        assert_true(
-            papers[0].get("semanticScholarId") == "3333333333333333333333333333333333333333",
-            "Toolbar add should persist only the candidate selected by the user",
-        )
+        assert_true(papers[0].get("openAlexId") == "W202", "Only the explicitly selected OpenAlex proposal should persist")
 
         filter_button = wait_displayed(driver, "#desktop-filter-button")
         filter_rect = driver.execute_script(
@@ -142,10 +238,8 @@ def main():
         assert_true(rect["left"] >= -0.5, f"Filter drawer extends off the left edge: {rect}")
         assert_true(rect["right"] <= rect["width"] + 0.5, f"Filter drawer extends off the right edge: {rect}")
 
-        searches = driver.execute_script("return window.__paperMapToolbarSearchUrls.slice();")
-        assert_true(len(searches) == 1 and "limit=8" in searches[0], f"Expected one bounded provider search, got {searches}")
         save_screenshot(driver, "toolbar-candidate-filter-regression.png")
-        print("Toolbar candidate selection and desktop filter placement checks passed.")
+        print("Progressive multi-provider toolbar candidate selection, full author visibility, and filter placement checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "toolbar-candidate-filter-failure.png")

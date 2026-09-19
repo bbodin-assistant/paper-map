@@ -3,11 +3,11 @@ import { mergePaperRecords, normalizeDoi, normalizedTitle, paperIdentityKey } fr
 import { MAX_INLINE_PDF_BYTES, slugTopic } from "./pdf-ai.js";
 import { analyzePdfWithAi } from "./ai-provider.js";
 import { loadAiConfig, providerLabel, providerNeedsApiKey, providerUsesDirectPdf } from "./ai-config.js";
-import { aiConfigSnapshot } from "./ai-config-ui.js";
+import { aiConfigSnapshot } from "./ai-config-ui.js?v=0.4.8";
 import { extractPdfCitationsLocally } from "./pdf-local.js";
-import { fetchReferences as fetchOnlineReferences, resolvePaper as resolveOnlinePaper, searchPapers as searchOnlinePapers } from "./paper-provider.js?v=0.4.5";
+import { fetchReferences as fetchOnlineReferences, resolvePaper as resolveOnlinePaper, searchPapers as searchOnlinePapers } from "./paper-provider.js?v=0.4.8";
 import { mergeReferenceRecords, providerPapersToReferences } from "./provider-references.js?v=0.4.5";
-import { loadPaperProviderConfig, paperProviderLabel } from "./paper-provider-config.js";
+import { loadPaperProviderConfig, paperProviderLabel } from "./paper-provider-config.js?v=0.4.8";
 import { rankOnlineCandidates } from "./online-candidates.js";
 import { pdfReviewLookupState, pdfReviewOnlineQuery } from "./pdf-review-state.js";
 import { applyMergedMetadataToDraft, mergeReviewMetadataSources, reviewedPaperIdentity } from "./pdf-review-merge.js?v=0.4.5";
