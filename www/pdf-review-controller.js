@@ -12,7 +12,7 @@ import { paperCandidateSearchTotals, startPaperCandidateSearch } from "./paper-c
 import { renderPaperCandidatePicker } from "./paper-candidate-ui.js?v=0.4.11";
 import { pdfReviewLookupState, pdfReviewOnlineQuery } from "./pdf-review-state.js";
 import { applyMergedMetadataToDraft, mergeReviewMetadataSources, reviewedPaperIdentity } from "./pdf-review-merge.js?v=0.4.5";
-import { authorsFromTextarea, commaList, createPdfReviewUi, referenceKey, referenceRow, topicRow } from "./pdf-review-ui.js";
+import { authorsFromTextarea, commaList, createPdfReviewUi, referenceKey, referenceRow, topicRow } from "./pdf-review-ui.js?v=0.4.11";
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const LOCAL_EXTRACTION_CONCURRENCY = 2;
