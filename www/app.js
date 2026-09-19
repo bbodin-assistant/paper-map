@@ -34,7 +34,7 @@ import {
   fetchReferences,
   findPaperCandidatesWithProvider,
   resolvePaper,
-} from "./paper-provider.js?v=0.4.8";
+} from "./paper-provider.js?v=0.4.11";
 import {
   createResearchRelationEdge,
   isCitationEdge,
@@ -52,7 +52,7 @@ import {
   enabledPaperSearchProviders,
   loadPaperProviderConfig,
   paperProviderLabel,
-} from "./paper-provider-config.js?v=0.4.8";
+} from "./paper-provider-config.js?v=0.4.11";
 
 const UI_STORAGE_KEY = "paper-map-ui-v1";
 const EXPANSION_SIZE = 50;
