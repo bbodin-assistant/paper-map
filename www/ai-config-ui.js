@@ -17,7 +17,7 @@ import {
   paperProviderLabel,
   savePaperProviderConfig,
   saveSemanticScholarApiKey,
-} from "./paper-provider-config.js";
+} from "./paper-provider-config.js?v=0.4.8";
 import { loadGraphConfig, normalizeGraphConfig, saveGraphConfig } from "./graph-config.js";
 
 if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-config]')) {
