@@ -240,33 +240,26 @@ export function hierarchicalBlockLayout(blocks = [], connections = [], viewportW
     byLevel.get(level).push(block);
   }
 
-  const positioned = [];
-  let visualColumn = 0;
-  let maxRows = 0;
-  for (const level of Array.from(byLevel.keys()).sort((a, b) => a - b)) {
-    const levelBlocks = byLevel.get(level);
-    for (let offset = 0; offset < levelBlocks.length; offset += rowsPerColumn) {
-      const columnBlocks = levelBlocks.slice(offset, offset + rowsPerColumn);
-      maxRows = Math.max(maxRows, columnBlocks.length);
-      for (let row = 0; row < columnBlocks.length; row += 1) {
-        const block = columnBlocks[row];
-        const blockWidth = 210;
-        const blockHeight = Math.max(68, Math.min(96, 64 + block.paperIds.length * 5));
-        positioned.push({
-          ...block,
-          hierarchyLevel: level,
-          x: 34 + visualColumn * 245,
-          y: 54 + row * 110,
-          width: blockWidth,
-          height: blockHeight,
-        });
-      }
-      visualColumn += 1;
-    }
-  }
+  const ordered = Array.from(byLevel.keys())
+    .sort((a, b) => a - b)
+    .flatMap((level) => byLevel.get(level).map((block) => ({ block, level })));
+  const positioned = ordered.map(({ block, level }, index) => {
+    const visualColumn = Math.floor(index / rowsPerColumn);
+    const row = index % rowsPerColumn;
+    return {
+      ...block,
+      hierarchyLevel: level,
+      x: 34 + visualColumn * 245,
+      y: 54 + row * 110,
+      width: 210,
+      height: Math.max(68, Math.min(96, 64 + block.paperIds.length * 5)),
+    };
+  });
+  const visualColumns = Math.ceil(positioned.length / rowsPerColumn);
+  const maxRows = Math.min(rowsPerColumn, positioned.length);
 
   return {
-    width: Math.max(Number(viewportWidth) || 1200, 68 + Math.max(1, visualColumn) * 245),
+    width: Math.max(Number(viewportWidth) || 1200, 68 + Math.max(1, visualColumns) * 245),
     height: Math.max(Number(viewportHeight) || 720, 94 + Math.max(1, maxRows) * 110),
     blocks: positioned,
   };
