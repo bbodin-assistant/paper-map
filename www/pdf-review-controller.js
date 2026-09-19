@@ -5,18 +5,17 @@ import { analyzePdfWithAi } from "./ai-provider.js";
 import { loadAiConfig, providerLabel, providerNeedsApiKey, providerUsesDirectPdf } from "./ai-config.js";
 import { aiConfigSnapshot } from "./ai-config-ui.js?v=0.4.10";
 import { extractPdfCitationsLocally } from "./pdf-local.js";
-import { fetchReferences as fetchOnlineReferences, resolvePaper as resolveOnlinePaper, searchPapers as searchOnlinePapers } from "./paper-provider.js?v=0.4.8";
+import { fetchReferences as fetchOnlineReferences, fetchReferencesWithProvider, resolvePaper as resolveOnlinePaper } from "./paper-provider.js?v=0.4.11";
 import { mergeReferenceRecords, providerPapersToReferences } from "./provider-references.js?v=0.4.5";
-import { loadPaperProviderConfig, paperProviderLabel } from "./paper-provider-config.js?v=0.4.8";
-import { rankOnlineCandidates } from "./online-candidates.js";
+import { loadPaperProviderConfig, paperProviderLabel } from "./paper-provider-config.js?v=0.4.11";
+import { paperCandidateSearchTotals, startPaperCandidateSearch } from "./paper-candidate-search.js?v=0.4.11";
+import { renderPaperCandidatePicker } from "./paper-candidate-ui.js?v=0.4.11";
 import { pdfReviewLookupState, pdfReviewOnlineQuery } from "./pdf-review-state.js";
 import { applyMergedMetadataToDraft, mergeReviewMetadataSources, reviewedPaperIdentity } from "./pdf-review-merge.js?v=0.4.5";
-import { authorsFromTextarea, commaList, createPdfReviewUi, onlineCandidateRow, referenceKey, referenceRow, topicRow } from "./pdf-review-ui.js";
+import { authorsFromTextarea, commaList, createPdfReviewUi, referenceKey, referenceRow, topicRow } from "./pdf-review-ui.js";
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const LOCAL_EXTRACTION_CONCURRENCY = 2;
-const ONLINE_CANDIDATE_DISPLAY_LIMIT = 8;
-const ONLINE_CANDIDATE_SEARCH_LIMIT = 20;
 const LOOKUP_FIELD_SELECTORS = Object.freeze({
   title: "#pdf-review-title",
   authors: "#pdf-review-authors",
@@ -58,7 +57,8 @@ function createReviewItem(file) {
     id: `pdf-review:${crypto.randomUUID()}`, file, sources: { local: null, ai: null, online: null },
     draft: emptyDraft(file), dirtyFields: new Set(), status: { local: "queued", ai: "idle", online: "idle" },
     errors: { local: "", ai: "", online: "" }, aiContext: null, onlineContext: null,
-    onlineCandidates: [], onlineCandidateQuery: "", networkController: null, localToken: 0, networkToken: 0,
+    onlineCandidates: [], onlineCandidateStates: [], onlineCandidateQuery: "", onlineSearchSession: null,
+    networkController: null, localToken: 0, networkToken: 0,
   };
 }
 function matchingPaper(library, incoming) {
@@ -153,7 +153,13 @@ export function initPdfReviewController() {
   }
   function renderSourceStatus(item) {
     const provider = loadPaperProviderConfig();
-    sourceStatus.innerHTML = `<span class="pdf-source-chip ${item.status.local}">Local: ${statusLabel(item.status.local)}</span><span class="pdf-source-chip ${item.status.ai}">AI: ${statusLabel(item.status.ai)}</span><span class="pdf-source-chip ${item.status.online}">Online (${paperProviderLabel(provider.provider)}): ${statusLabel(item.status.online)}</span>`;
+    const selectedProvider = item.onlineContext?.provider;
+    const onlineName = selectedProvider
+      ? `Online (${paperProviderLabel(selectedProvider)})`
+      : item.onlineCandidateStates.length
+        ? "Online search"
+        : `Online (${paperProviderLabel(provider.provider)})`;
+    sourceStatus.innerHTML = `<span class="pdf-source-chip ${item.status.local}">Local: ${statusLabel(item.status.local)}</span><span class="pdf-source-chip ${item.status.ai}">AI: ${statusLabel(item.status.ai)}</span><span class="pdf-source-chip ${item.status.online}">${onlineName}: ${statusLabel(item.status.online)}</span>`;
   }
   function renderTabs() {
     tabs.replaceChildren(...items.map((item) => {
@@ -201,21 +207,36 @@ export function initPdfReviewController() {
     $("#pdf-ai-warnings-section", ui.dialog).hidden = warnings.children.length === 0;
   }
   function renderOnlineCandidates(item) {
-    const candidates = item.onlineCandidates || [];
-    $("#pdf-online-candidates", ui.dialog).hidden = candidates.length === 0;
-    $("#pdf-online-candidate-summary", ui.dialog).textContent = candidates.length ? `${candidates.length} ranked candidate${candidates.length === 1 ? "" : "s"}` : "";
-    onlineCandidateList.replaceChildren(...candidates.map((paper, index) => onlineCandidateRow(paper, index, item.onlineCandidateQuery, networkBusy(item))));
+    const providerStates = item.onlineCandidateStates || [];
+    const section = $("#pdf-online-candidates", ui.dialog);
+    section.hidden = providerStates.length === 0;
+    if (!providerStates.length) {
+      onlineCandidateList.replaceChildren();
+      $("#pdf-online-candidate-summary", ui.dialog).textContent = "";
+      return;
+    }
+    const totals = paperCandidateSearchTotals(providerStates);
+    $("#pdf-online-candidate-summary", ui.dialog).textContent = `${totals.candidates} candidate${totals.candidates === 1 ? "" : "s"} · ${totals.finished}/${totals.providers} providers finished`;
+    renderPaperCandidatePicker(onlineCandidateList, {
+      query: item.onlineCandidateQuery,
+      providerStates,
+      totals,
+      disabled: networkBusy(item),
+      heading: "Choose the matching paper",
+      onSelect: (paper, providerId, rank) => selectOnlineCandidate(item, paper, providerId, rank),
+    });
   }
   function refreshButtons(item) {
     const config = loadAiConfig();
     const tooLarge = providerUsesDirectPdf(config) && item.file.size > MAX_INLINE_PDF_BYTES;
     const busy = networkBusy(item);
+    const searching = Boolean(item.onlineSearchSession);
     localButton.disabled = item.status.local === "running";
-    analyzeButton.disabled = busy || tooLarge;
-    titleSearchButton.disabled = busy;
-    doiSearchButton.disabled = busy;
-    arxivSearchButton.disabled = busy;
-    cancelButton.hidden = !busy;
+    analyzeButton.disabled = busy || searching || tooLarge;
+    titleSearchButton.disabled = busy || searching;
+    doiSearchButton.disabled = busy || searching;
+    arxivSearchButton.disabled = busy || searching;
+    cancelButton.hidden = !busy && !searching;
     saveButton.disabled = item.status.local === "queued" || item.status.local === "running" || busy;
     skipButton.disabled = false;
     if (tooLarge && item.status.ai === "idle") analysisStatus.textContent = `${providerLabel(config.provider)} direct PDF input is limited to 25 MB. Local and online extraction remain available.`;
@@ -327,15 +348,20 @@ export function initPdfReviewController() {
     }
   }
 
-  async function mergeOnlineMetadata(item, metadata, { query, providerConfig, token, controller, selectedCandidateRank = null }) {
+  async function mergeOnlineMetadata(item, metadata, { query, providerId, token, controller, selectedCandidateRank = null }) {
     if (!items.includes(item) || token !== item.networkToken) return;
-    const provider = metadata.providerPrimary || metadata.source || providerConfig.provider;
+    const provider = metadata.providerPrimary || metadata.source || providerId;
     let providerReferences = mergeReferenceRecords(metadata.references || []);
     let referenceWarning = "";
-    if (provider !== "crossref") {
+    if (providerId !== "crossref") {
       try {
-        const referenceResult = await fetchOnlineReferences(metadata, 0, 100, { signal: controller.signal });
-        providerReferences = mergeReferenceRecords(providerReferences, providerPapersToReferences(referenceResult.papers || [], referenceResult.provider || provider));
+        const referenceResult = providerId === "auto"
+          ? await fetchOnlineReferences(metadata, 0, 100, { signal: controller.signal })
+          : await fetchReferencesWithProvider(providerId, metadata, 0, 100, { signal: controller.signal });
+        providerReferences = mergeReferenceRecords(
+          providerReferences,
+          providerPapersToReferences(referenceResult.papers || [], referenceResult.provider || provider),
+        );
       } catch (error) {
         if (error?.name === "AbortError") throw error;
         referenceWarning = error?.message || String(error);
@@ -349,23 +375,65 @@ export function initPdfReviewController() {
     };
     item.onlineContext = {
       provider, metadataSources: metadata.metadataSources || [provider], query, referenceCount: providerReferences.length,
-      ...(selectedCandidateRank ? { selectedBy: "user", selectedCandidateRank, selectedOpenAlexId: clean(metadata.openAlexId) } : {}),
+      ...(selectedCandidateRank ? { selectedBy: "user", selectedCandidateRank, selectedProvider: providerId, selectedOpenAlexId: clean(metadata.openAlexId) } : {}),
       extractedAt: new Date().toISOString(),
     };
     item.status.online = "complete";
     item.onlineCandidates = [];
+    item.onlineCandidateStates = [];
     item.onlineCandidateQuery = "";
+    item.onlineSearchSession?.cancel();
+    item.onlineSearchSession = null;
     mergeSources(item);
     analysisStatus.textContent = providerReferences.length
-      ? `${paperProviderLabel(providerConfig.provider)} metadata and ${providerReferences.length} provider reference${providerReferences.length === 1 ? "" : "s"} merged into this tab.`
-      : referenceWarning ? `${paperProviderLabel(providerConfig.provider)} metadata merged. Provider references were unavailable: ${referenceWarning}` : `${paperProviderLabel(providerConfig.provider)} metadata merged into this tab.`;
+      ? `${paperProviderLabel(providerId)} metadata and ${providerReferences.length} provider reference${providerReferences.length === 1 ? "" : "s"} merged into this tab.`
+      : referenceWarning ? `${paperProviderLabel(providerId)} metadata merged. Provider references were unavailable: ${referenceWarning}` : `${paperProviderLabel(providerId)} metadata merged into this tab.`;
   }
+
   async function runOnline(item, kind) {
-    if (!items.includes(item) || networkBusy(item)) return;
+    if (!items.includes(item) || networkBusy(item) || item.onlineSearchSession) return;
     captureActive();
     let lookup;
     try { lookup = pdfReviewOnlineQuery(item.draft, kind); }
     catch (error) { analysisStatus.textContent = error.message || String(error); renderLookupFieldStates(item); renderTabs(); return; }
+
+    if (lookup.kind === "title") {
+      const token = ++item.networkToken;
+      item.status.online = "running";
+      item.errors.online = "";
+      item.onlineCandidates = [];
+      item.onlineCandidateStates = [];
+      item.onlineCandidateQuery = lookup.query;
+      analysisStatus.textContent = "Searching configured paper providers by title…";
+      renderActive();
+
+      let session;
+      session = startPaperCandidateSearch(lookup.query, {
+        onUpdate(snapshot) {
+          if (!items.includes(item) || token !== item.networkToken) return;
+          if (item.onlineSearchSession && item.onlineSearchSession !== session) return;
+          item.onlineCandidateStates = snapshot.providerStates;
+          item.onlineCandidates = snapshot.providerStates.flatMap((state) => state.candidates || []);
+          const { totals } = snapshot;
+          item.status.online = totals.candidates ? "candidates" : (totals.finished < totals.providers ? "running" : "error");
+          analysisStatus.textContent = totals.finished < totals.providers
+            ? `Searching ${totals.providers} providers… ${totals.candidates} candidate${totals.candidates === 1 ? "" : "s"} available so far.`
+            : totals.candidates
+              ? `Found ${totals.candidates} candidate${totals.candidates === 1 ? "" : "s"} across ${totals.providers} providers. Choose the matching paper before metadata is merged.`
+              : "No title candidates were returned by the enabled providers.";
+          renderActive();
+        },
+      });
+      item.onlineSearchSession = session;
+      refreshButtons(item);
+      session.promise.finally(() => {
+        if (!items.includes(item) || token !== item.networkToken || item.onlineSearchSession !== session) return;
+        item.onlineSearchSession = null;
+        refreshButtons(item);
+      });
+      return;
+    }
+
     const providerConfig = loadPaperProviderConfig();
     const token = ++item.networkToken;
     const controller = new AbortController();
@@ -373,53 +441,48 @@ export function initPdfReviewController() {
     item.status.online = "running";
     item.errors.online = "";
     item.onlineCandidates = [];
+    item.onlineCandidateStates = [];
     item.onlineCandidateQuery = "";
-    analysisStatus.textContent = `Searching ${lookup.kind === "title" ? "title" : lookup.kind === "doi" ? "DOI" : "arXiv ID"} with ${paperProviderLabel(providerConfig.provider)}…`;
+    analysisStatus.textContent = `Resolving ${lookup.kind === "doi" ? "DOI" : "arXiv ID"} with ${paperProviderLabel(providerConfig.provider)}…`;
     renderActive();
     try {
-      if (providerConfig.provider === "openalex" && lookup.kind === "title") {
-        const results = await searchOnlinePapers(lookup.query, ONLINE_CANDIDATE_SEARCH_LIMIT, { signal: controller.signal });
-        if (!items.includes(item) || token !== item.networkToken) return;
-        const candidates = rankOnlineCandidates(results, lookup.query).slice(0, ONLINE_CANDIDATE_DISPLAY_LIMIT);
-        if (!candidates.length) throw new Error("No OpenAlex title candidates found.");
-        item.onlineCandidates = candidates;
-        item.onlineCandidateQuery = lookup.query;
-        item.status.online = "candidates";
-        analysisStatus.textContent = `OpenAlex found ${candidates.length} ranked candidate${candidates.length === 1 ? "" : "s"}. Choose the matching paper before metadata is merged.`;
-        renderActive();
-        return;
-      }
       const metadata = await resolveOnlinePaper(lookup.query, { signal: controller.signal });
-      await mergeOnlineMetadata(item, metadata, { query: lookup.query, providerConfig, token, controller });
+      await mergeOnlineMetadata(item, metadata, { query: lookup.query, providerId: providerConfig.provider, token, controller });
     } catch (error) {
       if (!items.includes(item) || token !== item.networkToken) return;
-      if (error?.name === "AbortError") { item.status.online = item.onlineCandidates.length ? "candidates" : "idle"; analysisStatus.textContent = "Online extraction cancelled."; }
+      if (error?.name === "AbortError") { item.status.online = "idle"; analysisStatus.textContent = "Online extraction cancelled."; }
       else { item.status.online = "error"; item.errors.online = error.message || String(error); analysisStatus.textContent = item.errors.online; }
       renderActive();
     } finally {
       if (items.includes(item) && token === item.networkToken) { item.networkController = null; refreshButtons(item); }
     }
   }
-  async function selectOnlineCandidate(item, index) {
-    if (!items.includes(item) || networkBusy(item)) return;
-    const candidate = item.onlineCandidates?.[index];
-    if (!candidate) return;
-    const providerConfig = loadPaperProviderConfig();
-    if (providerConfig.provider !== "openalex") return;
+
+  async function selectOnlineCandidate(item, candidate, providerId, selectedCandidateRank) {
+    if (!items.includes(item) || networkBusy(item) || !candidate) return;
     const query = item.onlineCandidateQuery || clean(item.draft.title);
+    const previousStates = item.onlineCandidateStates;
+    const previousCandidates = item.onlineCandidates;
+    item.onlineSearchSession?.cancel();
+    item.onlineSearchSession = null;
     const token = ++item.networkToken;
     const controller = new AbortController();
     item.networkController = controller;
     item.status.online = "running";
     item.errors.online = "";
-    analysisStatus.textContent = `Loading OpenAlex candidate #${index + 1}: ${candidate.title}…`;
+    analysisStatus.textContent = `Loading selected ${paperProviderLabel(providerId)} candidate: ${candidate.title}…`;
     renderActive();
-    try { await mergeOnlineMetadata(item, candidate, { query, providerConfig, token, controller, selectedCandidateRank: index + 1 }); }
-    catch (error) {
+    try {
+      await mergeOnlineMetadata(item, candidate, { query, providerId, token, controller, selectedCandidateRank });
+    } catch (error) {
       if (!items.includes(item) || token !== item.networkToken) return;
+      item.onlineCandidateStates = previousStates;
+      item.onlineCandidates = previousCandidates;
       item.status.online = "candidates";
       item.errors.online = error?.name === "AbortError" ? "" : (error.message || String(error));
-      analysisStatus.textContent = error?.name === "AbortError" ? "Selected OpenAlex candidate loading cancelled. Choose a candidate to try again." : `Could not load the selected OpenAlex candidate: ${item.errors.online}`;
+      analysisStatus.textContent = error?.name === "AbortError"
+        ? "Selected candidate loading cancelled. Choose a candidate to try again."
+        : `Could not load the selected candidate: ${item.errors.online}`;
       renderActive();
     } finally {
       if (items.includes(item) && token === item.networkToken) { item.networkController = null; refreshButtons(item); }
@@ -472,7 +535,7 @@ export function initPdfReviewController() {
     return Array.from(records.values());
   }
   function removeItem(item, { skipped = false, message = "" } = {}) {
-    item.localToken += 1; item.networkToken += 1; item.networkController?.abort(); item.networkController = null;
+    item.localToken += 1; item.networkToken += 1; item.networkController?.abort(); item.onlineSearchSession?.cancel(); item.onlineSearchSession = null; item.networkController = null;
     localQueue = localQueue.filter((candidate) => candidate !== item);
     const index = items.indexOf(item);
     items = items.filter((candidate) => candidate !== item);
@@ -489,14 +552,14 @@ export function initPdfReviewController() {
     renderActive();
   }
   function closeRemaining() {
-    for (const item of items) { item.localToken += 1; item.networkToken += 1; item.networkController?.abort(); }
+    for (const item of items) { item.localToken += 1; item.networkToken += 1; item.networkController?.abort(); item.onlineSearchSession?.cancel(); }
     const discarded = items.length;
     localQueue = []; items = []; activeId = null; ui.dialog.close();
     setGlobalStatus(`PDF review closed: ${savedCount} saved, ${skippedCount} skipped, ${discarded} remaining discarded.`, "ready");
     if (savedCount) window.location.reload();
   }
   function closeOutstandingWithoutClosing() {
-    for (const item of items) { item.localToken += 1; item.networkToken += 1; item.networkController?.abort(); }
+    for (const item of items) { item.localToken += 1; item.networkToken += 1; item.networkController?.abort(); item.onlineSearchSession?.cancel(); }
     localQueue = []; items = []; activeId = null;
   }
 
@@ -533,11 +596,18 @@ export function initPdfReviewController() {
   titleSearchButton.addEventListener("click", () => { const item = activeItem(); if (item) runOnline(item, "title"); });
   doiSearchButton.addEventListener("click", () => { const item = activeItem(); if (item) runOnline(item, "doi"); });
   arxivSearchButton.addEventListener("click", () => { const item = activeItem(); if (item) runOnline(item, "arxiv"); });
-  onlineCandidateList.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-online-candidate-index]"); if (!button) return;
-    const item = activeItem(); if (item) selectOnlineCandidate(item, Number(button.dataset.onlineCandidateIndex));
+  cancelButton.addEventListener("click", () => {
+    const item = activeItem();
+    if (!item) return;
+    item.networkController?.abort();
+    if (item.onlineSearchSession) {
+      item.onlineSearchSession.cancel();
+      item.onlineSearchSession = null;
+      item.status.online = item.onlineCandidates.length ? "candidates" : "idle";
+      analysisStatus.textContent = "Online title search cancelled.";
+      renderActive();
+    }
   });
-  cancelButton.addEventListener("click", () => activeItem()?.networkController?.abort());
   skipButton.addEventListener("click", () => { const item = activeItem(); if (item) removeItem(item, { skipped: true, message: `Skipped ${item.file.name}.` }); });
 
   for (const [selector, field] of fieldMap) {
@@ -545,10 +615,11 @@ export function initPdfReviewController() {
     input.addEventListener("input", () => {
       const item = activeItem(); if (!item) return;
       item.dirtyFields.add(field);
-      if (["title", "doi", "arxivId"].includes(field) && item.onlineCandidates.length) {
-        item.onlineCandidates = []; item.onlineCandidateQuery = "";
-        if (item.status.online === "candidates") item.status.online = "idle";
-        renderOnlineCandidates(item); renderSourceStatus(item);
+      if (["title", "doi", "arxivId"].includes(field) && (item.onlineCandidates.length || item.onlineSearchSession)) {
+        item.onlineSearchSession?.cancel(); item.onlineSearchSession = null;
+        item.onlineCandidates = []; item.onlineCandidateStates = []; item.onlineCandidateQuery = "";
+        if (item.status.online === "candidates" || item.status.online === "running") item.status.online = "idle";
+        renderOnlineCandidates(item); renderSourceStatus(item); refreshButtons(item);
       }
     });
     input.addEventListener("change", () => {
@@ -601,9 +672,9 @@ export function initPdfReviewController() {
   document.addEventListener("paper-map-ai-config-changed", () => { const item = activeItem(); if (item) refreshButtons(item); });
   document.addEventListener("paper-map-paper-provider-config-changed", () => {
     const item = activeItem(); if (!item) return;
-    if (loadPaperProviderConfig().provider !== "openalex" && item.onlineCandidates.length) {
-      item.onlineCandidates = []; item.onlineCandidateQuery = ""; if (item.status.online === "candidates") item.status.online = "idle";
-    }
+    item.onlineSearchSession?.cancel(); item.onlineSearchSession = null;
+    item.onlineCandidates = []; item.onlineCandidateStates = []; item.onlineCandidateQuery = "";
+    if (item.status.online === "candidates" || item.status.online === "running") item.status.online = "idle";
     renderActive();
   });
   return true;
