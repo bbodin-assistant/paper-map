@@ -18,7 +18,12 @@ import {
   savePaperProviderConfig,
   saveSemanticScholarApiKey,
 } from "./paper-provider-config.js?v=0.4.8";
-import { loadGraphConfig, normalizeGraphConfig, saveGraphConfig } from "./graph-config.js";
+import {
+  loadGraphConfig,
+  normalizeGraphConfig,
+  saveGraphConfig,
+  TIMELINE_CLUSTER_FIELD_OPTIONS,
+} from "./graph-config.js?v=0.4.10";
 
 if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-config]')) {
   const link = document.createElement("link");
@@ -73,6 +78,15 @@ function paperSearchProviderRows() {
         <input type="number" min="1" max="20" step="1" inputmode="numeric" data-paper-search-limit="${id}" />
       </label>
     </div>
+  `).join("");
+}
+
+function timelineClusterFieldRows() {
+  return TIMELINE_CLUSTER_FIELD_OPTIONS.map(({ id, label }) => `
+    <label class="timeline-cluster-field">
+      <input type="checkbox" data-timeline-cluster-field="${id}" />
+      <span>${label}</span>
+    </label>
   `).join("");
 }
 
@@ -214,7 +228,7 @@ function createUi() {
       <div class="config-section-heading">
         <div>
           <span class="drawer-kicker">Map behavior</span>
-          <h3 id="graph-config-heading">Graph visualizer</h3>
+          <h3 id="graph-config-heading">Map visualizer</h3>
         </div>
       </div>
       <div class="config-grid config-grid-two">
@@ -227,7 +241,23 @@ function createUi() {
           <span class="field-hint">Logical area multiplier for larger maps. Default: 1×.</span>
         </label>
       </div>
-      <p class="muted config-note">Changes apply when the citation topology is laid out again, such as after adding/removing visible papers or reloading the page.</p>
+      <div class="timeline-cluster-config" role="group" aria-labelledby="timeline-cluster-config-heading">
+        <div class="timeline-cluster-config-heading">
+          <strong id="timeline-cluster-config-heading">Timeline clustering</strong>
+          <small>Control how papers are grouped into colored timeline bands.</small>
+        </div>
+        <label>Number of clusters
+          <input id="graph-config-timeline-cluster-count" type="number" min="1" max="12" step="1" inputmode="numeric" />
+          <span class="field-hint">Requested bands; fewer may be shown when the visible library is small.</span>
+        </label>
+        <fieldset class="timeline-cluster-fields">
+          <legend>Cluster using</legend>
+          <div class="timeline-cluster-field-grid">
+            ${timelineClusterFieldRows()}
+          </div>
+        </fieldset>
+      </div>
+      <p class="muted config-note">Citation-map layout changes apply when topology is laid out again. Timeline clustering changes apply on the next Timeline render and use only local paper metadata.</p>
     </section>
 
     <section class="config-section" aria-labelledby="ai-config-heading">
@@ -293,6 +323,11 @@ function createUi() {
   const graphControls = {
     effort: $("#graph-config-layout-effort", panel),
     spacing: $("#graph-config-layout-spacing", panel),
+    clusterCount: $("#graph-config-timeline-cluster-count", panel),
+    clusterFields: new Map(TIMELINE_CLUSTER_FIELD_OPTIONS.map(({ id }) => [
+      id,
+      panel.querySelector(`[data-timeline-cluster-field="${id}"]`),
+    ])),
   };
 
   function render({ preserveKeys = true } = {}) {
@@ -308,6 +343,10 @@ function createUi() {
     paperControls.remember.checked = Boolean(loadSemanticScholarApiKey());
     graphControls.effort.value = String(graph.layoutEffort);
     graphControls.spacing.value = String(graph.layoutSpacing);
+    graphControls.clusterCount.value = String(graph.timelineClusterCount);
+    for (const { id } of TIMELINE_CLUSTER_FIELD_OPTIONS) {
+      graphControls.clusterFields.get(id).checked = graph.timelineClusterFields.includes(id);
+    }
     button.title = `Paper info: ${paperProviderLabel(paper.provider)} · AI: ${providerLabel(ai.provider)}`;
     button.setAttribute("aria-label", `Configuration. Paper information: ${paperProviderLabel(paper.provider)}. AI: ${providerLabel(ai.provider)}.`);
     const addPaperInput = $("#add-paper-query");
@@ -349,9 +388,14 @@ function createUi() {
     volatileSemanticScholarKey = String(paperControls.key.value || "").trim();
     saveSemanticScholarApiKey(volatileSemanticScholarKey, paperControls.remember.checked);
 
+    const timelineClusterFields = TIMELINE_CLUSTER_FIELD_OPTIONS
+      .map(({ id }) => id)
+      .filter((id) => graphControls.clusterFields.get(id).checked);
     const graph = saveGraphConfig(normalizeGraphConfig({
       layoutEffort: graphControls.effort.value,
       layoutSpacing: graphControls.spacing.value,
+      timelineClusterCount: graphControls.clusterCount.value,
+      timelineClusterFields,
     }));
 
     document.dispatchEvent(new CustomEvent("paper-map-ai-config-changed", { detail: ai }));
