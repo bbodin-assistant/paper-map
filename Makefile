@@ -61,6 +61,7 @@ test:
 	node --check www/pdf-review-ui.js
 	node --check www/pdf-review-controller.js
 	node --check www/online-candidates.js
+	node --check www/search-highlight.js
 	node --check www/reference-resolver.js
 	node --check www/reference-resolution-ui.js
 	node --check www/pdf-ai-import.js
