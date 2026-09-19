@@ -139,6 +139,39 @@ function attachResolutionProvenance(paper, selectedProvider, query) {
   };
 }
 
+export async function searchPapersWithProvider(providerId, query, limit = 5, options = {}) {
+  const provider = providerFor(providerId);
+  if (typeof provider.searchPapers !== "function") {
+    throw new Error(`${paperProviderLabel(providerId)} does not support paper search.`);
+  }
+  return provider.searchPapers(query, limit, options);
+}
+
+export async function findPaperCandidatesWithProvider(providerId, query, limit = 5, options = {}) {
+  const text = clean(query);
+  if (!text) return [];
+  const provider = providerFor(providerId);
+  const doi = normalizeDoi(text);
+  const looksLikeDoi = /^10\.\d{4,9}\//i.test(doi);
+  const looksLikeS2 = /^[0-9a-f]{40}$/i.test(text);
+  const looksLikeOpenAlex = /^(?:https?:\/\/openalex\.org\/)?W\d+$/i.test(text);
+  const looksLikeArxiv = /^(?:arxiv:)?(?:\d{4}\.\d{4,5}|[a-z][a-z0-9.\-]+\/\d{7})(?:v\d+)?$/i.test(text);
+
+  if (looksLikeDoi
+    || (looksLikeS2 && providerId === "semantic-scholar")
+    || (looksLikeOpenAlex && providerId === "openalex")
+    || (looksLikeArxiv && providerId !== "crossref")) {
+    const paper = await provider.resolvePaper(text, options);
+    return paper ? [attachResolutionProvenance(paper, providerId, text)] : [];
+  }
+
+  if (looksLikeS2 || looksLikeOpenAlex || looksLikeArxiv) {
+    throw new Error(`${paperProviderLabel(providerId)} cannot resolve this identifier type.`);
+  }
+
+  return searchPapersWithProvider(providerId, text, limit, options);
+}
+
 export async function searchPapers(query, limit = 5, options = {}) {
   const selected = configuredProvider();
   if (selected !== "auto") return providerFor(selected).searchPapers(query, limit, options);
