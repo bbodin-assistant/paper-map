@@ -10,8 +10,10 @@ import {
 } from "./ai-config.js";
 import { discoverAiModels } from "./ai-models.js";
 import {
+  enabledPaperSearchProviders,
   loadPaperProviderConfig,
   loadSemanticScholarApiKey,
+  PAPER_SEARCH_PROVIDER_IDS,
   paperProviderLabel,
   savePaperProviderConfig,
   saveSemanticScholarApiKey,
@@ -57,6 +59,21 @@ function paperProviderOptions() {
     <option value="crossref">Crossref</option>
     <option value="auto">Automatic merge</option>
   `;
+}
+
+function paperSearchProviderRows() {
+  return PAPER_SEARCH_PROVIDER_IDS.map((id) => `
+    <div class="paper-search-provider-row">
+      <label class="paper-search-provider-toggle">
+        <input type="checkbox" data-paper-search-enabled="${id}" />
+        <span>${paperProviderLabel(id)}</span>
+      </label>
+      <label class="paper-search-provider-limit">
+        <span>Results</span>
+        <input type="number" min="1" max="20" step="1" inputmode="numeric" data-paper-search-limit="${id}" />
+      </label>
+    </div>
+  `).join("");
 }
 
 function aiControlsSnapshot(controls) {
@@ -173,9 +190,16 @@ function createUi() {
         </div>
       </div>
       <div class="config-grid">
-        <label>Method
+        <label>Resolution / enrichment method
           <select id="paper-provider-config-provider">${paperProviderOptions()}</select>
         </label>
+        <div class="paper-search-config" role="group" aria-labelledby="paper-search-config-heading">
+          <div class="paper-search-config-heading">
+            <strong id="paper-search-config-heading">Add paper search</strong>
+            <small>Enable the providers to query in parallel and set the maximum proposals from each.</small>
+          </div>
+          ${paperSearchProviderRows()}
+        </div>
         <label>Semantic Scholar API key <span class="field-hint">optional</span>
           <input id="paper-provider-config-key" type="password" autocomplete="off" spellcheck="false" />
         </label>
@@ -183,7 +207,7 @@ function createUi() {
           <input id="paper-provider-config-remember-key" type="checkbox" /> Keep Semantic Scholar key for this browser tab
         </label>
       </div>
-      <p class="muted config-note">Automatic merge queries Semantic Scholar, OpenAlex, and Crossref and combines only records that identify the same work. Crossref supplies metadata but not graph expansion.</p>
+      <p class="muted config-note">Resolution / enrichment controls single-paper metadata updates. Add paper search queries each enabled provider independently and shows proposals as each provider responds. Crossref supplies metadata but not graph expansion.</p>
     </section>
 
     <section class="config-section" aria-labelledby="graph-config-heading">
@@ -262,6 +286,8 @@ function createUi() {
     provider: $("#paper-provider-config-provider", panel),
     key: $("#paper-provider-config-key", panel),
     remember: $("#paper-provider-config-remember-key", panel),
+    searchEnabled: new Map(PAPER_SEARCH_PROVIDER_IDS.map((id) => [id, panel.querySelector(`[data-paper-search-enabled="${id}"]`)])),
+    searchLimit: new Map(PAPER_SEARCH_PROVIDER_IDS.map((id) => [id, panel.querySelector(`[data-paper-search-limit="${id}"]`)])),
   };
 
   const graphControls = {
@@ -274,6 +300,10 @@ function createUi() {
     const paper = loadPaperProviderConfig();
     const graph = loadGraphConfig();
     paperControls.provider.value = paper.provider;
+    for (const id of PAPER_SEARCH_PROVIDER_IDS) {
+      paperControls.searchEnabled.get(id).checked = paper.searchProviders[id].enabled;
+      paperControls.searchLimit.get(id).value = String(paper.searchProviders[id].limit);
+    }
     if (!preserveKeys) paperControls.key.value = volatileSemanticScholarKey || loadSemanticScholarApiKey();
     paperControls.remember.checked = Boolean(loadSemanticScholarApiKey());
     graphControls.effort.value = String(graph.layoutEffort);
@@ -282,8 +312,11 @@ function createUi() {
     button.setAttribute("aria-label", `Configuration. Paper information: ${paperProviderLabel(paper.provider)}. AI: ${providerLabel(ai.provider)}.`);
     const addPaperInput = $("#add-paper-query");
     const addPaperHelp = $("#add-paper-form small");
+    const searchSummary = enabledPaperSearchProviders(paper)
+      .map(({ id, limit }) => `${paperProviderLabel(id)} (up to ${limit})`)
+      .join(", ");
     if (addPaperInput) addPaperInput.placeholder = "DOI, arXiv ID, provider ID, or title";
-    if (addPaperHelp) addPaperHelp.textContent = `Uses ${paperProviderLabel(paper.provider)} on demand. Existing papers are merged by canonical identity.`;
+    if (addPaperHelp) addPaperHelp.textContent = `Add search: ${searchSummary}. Results appear as providers respond.`;
   }
 
   function close() {
@@ -302,7 +335,17 @@ function createUi() {
     volatileApiKey = String(aiControls.key.value || "").trim();
     saveSessionApiKey(volatileApiKey, aiControls.remember.checked);
 
-    const paper = savePaperProviderConfig({ provider: paperControls.provider.value });
+    const searchProviders = Object.fromEntries(PAPER_SEARCH_PROVIDER_IDS.map((id) => [
+      id,
+      {
+        enabled: paperControls.searchEnabled.get(id).checked,
+        limit: paperControls.searchLimit.get(id).value,
+      },
+    ]));
+    const paper = savePaperProviderConfig({
+      provider: paperControls.provider.value,
+      searchProviders,
+    });
     volatileSemanticScholarKey = String(paperControls.key.value || "").trim();
     saveSemanticScholarApiKey(volatileSemanticScholarKey, paperControls.remember.checked);
 
