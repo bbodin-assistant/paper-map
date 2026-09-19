@@ -101,7 +101,7 @@ def install_progressive_provider_mocks(driver):
                   year: 2023,
                   venue: 'Semantic Venue B',
                   publicationTypes: ['JournalArticle'],
-                  authors: [{ name: 'Semantic Broad Author' }],
+                  authors: [{ name: 'Semantic Candidate Author' }],
                   externalIds: {},
                   url: 'https://www.semanticscholar.org/paper/s2-b',
                   citationCount: 3,
@@ -190,6 +190,24 @@ def main():
         semantic_buttons = semantic_section.find_elements(By.CSS_SELECTOR, "[data-add-paper-candidate-index]")
         assert_true(len(semantic_buttons) == 2, f"Semantic Scholar limit should expose two results, got {len(semantic_buttons)}")
         assert_true("Semantic First Author" in semantic_buttons[0].text, "Semantic Scholar candidates should be visible before OpenAlex finishes")
+
+        exact_title = semantic_buttons[0].find_element(By.CSS_SELECTOR, ".add-paper-candidate-title")
+        exact_matches = exact_title.find_elements(By.CSS_SELECTOR, ".add-paper-search-match")
+        assert_true(len(exact_matches) == 1, f"Exact title should highlight one contiguous query phrase, got {len(exact_matches)}")
+        assert_true(exact_matches[0].text.lower() == QUERY.lower(), "Exact title highlight should preserve and bold the full matching phrase")
+        exact_weight = int(driver.execute_script("return parseInt(getComputedStyle(arguments[0]).fontWeight, 10);", exact_matches[0]))
+        assert_true(exact_weight >= 700, f"Matching title phrase should be visibly bold, got font weight {exact_weight}")
+
+        broad_title = semantic_buttons[1].find_element(By.CSS_SELECTOR, ".add-paper-candidate-title")
+        broad_matches = [item.text.lower() for item in broad_title.find_elements(By.CSS_SELECTOR, ".add-paper-search-match")]
+        assert_true(
+            broad_matches == ["progressive", "multi", "provider", "candidate"],
+            f"Broader titles should bold the individual matching search terms, got {broad_matches}",
+        )
+        broad_authors = semantic_buttons[1].find_element(By.CSS_SELECTOR, ".add-paper-candidate-authors")
+        author_matches = [item.text.lower() for item in broad_authors.find_elements(By.CSS_SELECTOR, ".add-paper-search-match")]
+        assert_true(author_matches == ["candidate"], f"Matching author text should also be bold, got {author_matches}")
+
         assert_true(len(read_all_indexeddb(driver, "papers")) == 0, "Progressive search must not persist a candidate before explicit selection")
 
         driver.execute_script("window.__releasePaperMapOpenAlex();")
@@ -239,7 +257,7 @@ def main():
         assert_true(rect["right"] <= rect["width"] + 0.5, f"Filter drawer extends off the right edge: {rect}")
 
         save_screenshot(driver, "toolbar-candidate-filter-regression.png")
-        print("Progressive multi-provider toolbar candidate selection, full author visibility, and filter placement checks passed.")
+        print("Progressive multi-provider toolbar candidates, search highlighting, full author visibility, and filter placement checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "toolbar-candidate-filter-failure.png")
