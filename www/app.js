@@ -1022,7 +1022,14 @@ function renderDetail() {
 }
 
 function paperExpansionDone(paper, direction) {
-  return Boolean(paper?.citationExpansion?.[direction]?.completedAt);
+  if (!paper) return false;
+  if (paper.citationExpansion?.[direction]?.completedAt) return true;
+  return state.library.papers.some((candidate) => {
+    const entry = candidate.libraryEntry;
+    return entry?.parentPaperId === paper.id
+      && entry?.detail === direction
+      && String(entry?.method || "").endsWith("-expansion");
+  });
 }
 
 function syncExpansionButtons(paper = currentPaper()) {
