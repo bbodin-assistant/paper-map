@@ -31,6 +31,14 @@ def configure_openalex(driver):
     wait_click(driver, "#ai-config-button")
     panel = wait_displayed(driver, "#ai-config-panel")
     Select(panel.find_element(By.ID, "paper-provider-config-provider")).select_by_value("openalex")
+    for provider_id in ("semantic-scholar", "openalex", "crossref"):
+        checkbox = panel.find_element(By.CSS_SELECTOR, f'[data-paper-search-enabled="{provider_id}"]')
+        should_enable = provider_id == "openalex"
+        if checkbox.is_selected() != should_enable:
+            checkbox.click()
+    limit = panel.find_element(By.CSS_SELECTOR, '[data-paper-search-limit="openalex"]')
+    limit.send_keys(Keys.CONTROL, "a")
+    limit.send_keys("20")
     wait_click(driver, "#ai-config-save")
     WebDriverWait(driver, WAIT_SECONDS).until(
         lambda d: d.find_element(By.ID, "ai-config-panel").get_attribute("hidden") is not None
@@ -177,14 +185,14 @@ def main():
             if d.find_element(By.ID, "pdf-online-candidates").get_attribute("hidden") is None
             else False
         )
-        buttons = candidate_section.find_elements(By.CSS_SELECTOR, "[data-online-candidate-index]")
+        buttons = candidate_section.find_elements(By.CSS_SELECTOR, "[data-paper-candidate-index]")
         assert_true(len(buttons) == 3, f"Expected three ranked OpenAlex candidates, got {len(buttons)}")
         assert_true("Incorrect Version Author" in buttons[0].text, "First exact-title OpenAlex result should retain provider order")
         assert_true("Daniel J. Beutel" in buttons[1].text, "Second exact-title candidate should expose its authors")
         assert_true("2021" in buttons[1].text, "Candidate should expose publication year")
         assert_true("Proceedings of Machine Learning Systems" in buttons[1].text, "Candidate should expose venue")
         assert_true("Flower Federated Learning at Scale" in buttons[2].text, "Non-exact provider result should remain available after exact-title candidates")
-        assert_true("choose match" in driver.find_element(By.ID, "pdf-source-status").text, "OpenAlex source status should require an explicit choice")
+        assert_true("Online search: choose match" in driver.find_element(By.ID, "pdf-source-status").text, "Online source status should require an explicit choice")
         assert_true(
             "Incorrect Version Author" not in driver.find_element(By.ID, "pdf-review-authors").get_attribute("value"),
             "Candidate search must not auto-merge the first result",
