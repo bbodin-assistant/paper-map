@@ -456,8 +456,6 @@ async function reviewBibTeXMatches(papers, fileName) {
   let skippedCount = 0;
   let cancelled = false;
 
-  if (!ui.dialog.open) ui.dialog.showModal();
-
   for (const [index, paper] of papers.entries()) {
     ui.progress.textContent = `Entry ${index + 1} of ${papers.length}`;
     ui.source.textContent = fileName;
@@ -517,6 +515,10 @@ async function reviewBibTeXMatches(papers, fileName) {
       } catch (error) {
         ui.status.textContent = error?.message || String(error);
       }
+
+      // Open only after the decision handlers are installed. Otherwise a fast
+      // user click can land in the gap between showModal() and onclick setup.
+      if (!ui.dialog.open) ui.dialog.showModal();
     });
 
     if (decision.kind === "cancel") {
