@@ -73,7 +73,8 @@ def main():
         panel = wait_displayed(driver, "#ai-config-panel")
         assert_true("Configuration" in panel.text, "General configuration heading should be visible")
         assert_true("Paper information" in panel.text, "Paper metadata provider settings should live in Config")
-        assert_true("Graph visualizer" in panel.text, "Graph visualizer settings should live in Config")
+        assert_true("Map visualizer" in panel.text, "Map visualizer settings should live in Config")
+        assert_true("Timeline clustering" in panel.text, "Timeline clustering settings should live in Config")
         assert_true("AI" in panel.text, "AI settings should remain available inside Config")
 
         paper_provider = Select(panel.find_element(By.ID, "paper-provider-config-provider"))
@@ -98,9 +99,24 @@ def main():
 
         effort = panel.find_element(By.ID, "graph-config-layout-effort")
         spacing = panel.find_element(By.ID, "graph-config-layout-spacing")
+        cluster_count = panel.find_element(By.ID, "graph-config-timeline-cluster-count")
         assert_true(effort.get_attribute("value") == "2", "Default graph effort should extend the old settling budget to 2x")
+        assert_true(cluster_count.get_attribute("value") == "5", "Timeline should default to five requested clusters")
         replace_value(effort, "3.25")
         replace_value(spacing, "1.4")
+        replace_value(cluster_count, "3")
+
+        cluster_fields = {
+            "title": True,
+            "keywords": True,
+            "abstract": False,
+            "authors": True,
+            "venue": False,
+        }
+        for field_id, enabled in cluster_fields.items():
+            checkbox = panel.find_element(By.CSS_SELECTOR, f'[data-timeline-cluster-field="{field_id}"]')
+            if checkbox.is_selected() != enabled:
+                checkbox.click()
 
         provider = Select(panel.find_element(By.ID, "ai-config-provider"))
         provider.select_by_value("openai-compatible")
@@ -145,10 +161,15 @@ def main():
         saved_graph = driver.execute_script("return JSON.parse(localStorage.getItem('paper-map-graph-config-v1'))")
         assert_true(saved_graph["layoutEffort"] == 3.25, "Graph layout effort should be persisted")
         assert_true(saved_graph["layoutSpacing"] == 1.4, "Graph layout spacing should be persisted")
+        assert_true(saved_graph["timelineClusterCount"] == 3, "Timeline cluster count should be persisted")
+        assert_true(
+            saved_graph["timelineClusterFields"] == ["title", "keywords", "authors"],
+            f"Timeline clustering fields should be persisted in canonical order: {saved_graph}",
+        )
 
         save_screenshot(driver, "10-ai-model-discovery.png")
         assert_no_page_horizontal_overflow(driver)
-        print("General config, scholarly method selection, graph settings, AI model discovery, persistence, and close-after-save checks passed.")
+        print("General config, scholarly method selection, timeline clustering, graph settings, AI model discovery, persistence, and close-after-save checks passed.")
     except Exception:
         try:
             save_screenshot(driver, "ai-model-discovery-failure.png")
