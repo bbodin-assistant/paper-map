@@ -241,6 +241,14 @@ async function relationship(method, paper, offset, limit, options) {
   throw new Error(`No citation provider succeeded: ${failures.join(" ")}`);
 }
 
+export async function fetchReferencesWithProvider(providerId, paper, offset = 0, limit = 50, options = {}) {
+  const provider = providerFor(providerId);
+  if (typeof provider.fetchReferences !== "function") {
+    throw new Error(`${paperProviderLabel(providerId)} does not support citation expansion.`);
+  }
+  return provider.fetchReferences(paper, offset, limit, options);
+}
+
 export function fetchReferences(paper, offset = 0, limit = 50, options = {}) {
   return relationship("fetchReferences", paper, offset, limit, options);
 }
