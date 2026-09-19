@@ -6,7 +6,7 @@ async function source(path) {
   return readFile(new URL(`../${path}`, import.meta.url), "utf8");
 }
 
-test("v0.4.5 exposes clearer add actions and paper online update", async () => {
+test("paper UI exposes clearer add actions and reviewed online update", async () => {
   const [html, publication] = await Promise.all([
     source("www/index.html"),
     source("www/publication-ui.js"),
