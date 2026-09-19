@@ -64,6 +64,17 @@ def seed_citation_counts(driver):
             if (papers.length < 2) return done({error: 'Need at least two papers'});
             papers[0].citationCount = 5;
             papers[1].citationCount = 50000;
+            const expansionParent = papers.find((paper) => paper.id === 'demo:transformer');
+            const expansionChild = papers.find((paper) => paper.id !== 'demo:transformer');
+            if (expansionParent && expansionChild) {
+              expansionChild.libraryEntry = {
+                ...(expansionChild.libraryEntry || {}),
+                method: 'openalex-expansion',
+                parentPaperId: expansionParent.id,
+                detail: 'references',
+              };
+              store.put(expansionChild);
+            }
             store.put(papers[0]);
             store.put(papers[1]);
             tx.oncomplete = () => done({ids: [papers[0].id, papers[1].id]});
@@ -320,6 +331,8 @@ def main():
         timeline_card.click()
         wait_displayed(driver, "#paper-detail")
         assert_true("Venue: NeurIPS" in driver.find_element(By.ID, "detail-meta").get_attribute("textContent"), "Timeline paper details should show venue")
+        assert_true(driver.find_element(By.ID, "expand-references").get_attribute("disabled") is not None, "Previously completed reference expansion should disable the button")
+        assert_true(driver.find_element(By.ID, "expand-citations").get_attribute("disabled") is None, "Independent citing-paper expansion should remain available")
         wait_click(driver, "#close-detail")
         assert_true(
             "selected" in driver.find_element(By.CSS_SELECTOR, '.timeline-paper[data-paper-id="demo:transformer"]').get_attribute("class"),
