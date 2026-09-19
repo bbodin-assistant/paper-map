@@ -157,10 +157,10 @@ export function createPdfReviewUi() {
           <button type="button" id="pdf-ai-cancel-analysis" class="quiet-button" hidden>Cancel network extraction</button>
           <span id="pdf-ai-analysis-status" class="muted" role="status" aria-live="polite"></span>
         </div>
-        <section id="pdf-online-candidates" class="pdf-online-candidates" hidden aria-label="OpenAlex paper candidates">
-          <div class="section-heading"><div><span class="drawer-kicker">OpenAlex title search</span><h3>Choose the matching paper</h3></div><span id="pdf-online-candidate-summary" class="muted"></span></div>
-          <p class="muted pdf-online-candidate-note">Title searches are not merged automatically. Review the ranked title, authors, year, and venue, then choose the intended work.</p>
-          <div id="pdf-online-candidate-list" class="pdf-online-candidate-list"></div>
+        <section id="pdf-online-candidates" class="pdf-online-candidates" hidden aria-label="Online paper candidates">
+          <div class="section-heading"><div><span class="drawer-kicker">Online title search</span><h3>Choose the matching paper</h3></div><span id="pdf-online-candidate-summary" class="muted"></span></div>
+          <p class="muted pdf-online-candidate-note">Title searches query every enabled provider and never merge the first result automatically. Review title, authors, year, venue, and provider, then choose the intended work.</p>
+          <div id="pdf-online-candidate-list" class="pdf-online-candidate-list add-paper-candidates"></div>
         </section>
       </section>
       <section class="pdf-ai-review" id="pdf-ai-review">

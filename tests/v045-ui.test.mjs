@@ -6,14 +6,14 @@ async function source(path) {
   return readFile(new URL(`../${path}`, import.meta.url), "utf8");
 }
 
-test("v0.4.5 exposes clearer add actions and paper online update", async () => {
+test("paper UI exposes clearer add actions and reviewed online update", async () => {
   const [html, publication] = await Promise.all([
     source("www/index.html"),
     source("www/publication-ui.js"),
   ]);
   assert.match(html, /app-version">v0\.4\.5/);
   assert.match(html, />Find & add<\/button>/);
-  assert.match(html, /paper-online-update\.js\?v=0\.4\.5/);
+  assert.match(html, /paper-online-update\.js\?v=0\.4\.11/);
   assert.match(publication, /summary\.textContent = "Add paper"/);
   assert.match(publication, /button\.textContent = "Add files"/);
 });

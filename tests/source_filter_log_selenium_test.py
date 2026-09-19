@@ -48,6 +48,13 @@ def main():
         fixture = create_bib_fixture()
         import_input = wait.until(EC.presence_of_element_located((By.ID, "pdf-ai-file")))
         import_input.send_keys(str(fixture))
+        wait.until(
+            lambda d: d.find_element(By.ID, "bibtex-import-review-dialog")
+            if d.find_element(By.ID, "bibtex-import-review-dialog").get_attribute("open") is not None
+            else False
+        )
+        wait_click(driver, "#bibtex-import-keep")
+        wait.until(lambda d: d.find_element(By.ID, "bibtex-import-review-dialog").get_attribute("open") is None)
         wait.until(lambda d: "bibtex-import" in source_option_values(d))
 
         wait_click(driver, "#filter-menu > summary")

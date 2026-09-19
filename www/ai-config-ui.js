@@ -209,7 +209,7 @@ function createUi() {
         </label>
         <div class="paper-search-config" role="group" aria-labelledby="paper-search-config-heading">
           <div class="paper-search-config-heading">
-            <strong id="paper-search-config-heading">Add paper search</strong>
+            <strong id="paper-search-config-heading">Paper title search</strong>
             <small>Enable the providers to query in parallel and set the maximum proposals from each.</small>
           </div>
           ${paperSearchProviderRows()}
@@ -221,7 +221,7 @@ function createUi() {
           <input id="paper-provider-config-remember-key" type="checkbox" /> Keep Semantic Scholar key for this browser tab
         </label>
       </div>
-      <p class="muted config-note">Resolution / enrichment controls single-paper metadata updates. Add paper search queries each enabled provider independently and shows proposals as each provider responds. Crossref supplies metadata but not graph expansion.</p>
+      <p class="muted config-note">Resolution / enrichment controls exact identifier lookups and enrichment. Title searches in Add, Update online, PDF review, and BibTeX review query each enabled provider independently and show proposals as each provider responds. Crossref supplies metadata but not graph expansion.</p>
     </section>
 
     <section class="config-section" aria-labelledby="graph-config-heading">

@@ -61,13 +61,15 @@ test:
 	node --check www/pdf-review-ui.js
 	node --check www/pdf-review-controller.js
 	node --check www/online-candidates.js
+	node --check www/paper-candidate-search.js
+	node --check www/paper-candidate-ui.js
 	node --check www/search-highlight.js
 	node --check www/reference-resolver.js
 	node --check www/reference-resolution-ui.js
 	node --check www/pdf-ai-import.js
 	node --test tests/*.test.mjs
 	python3 -m unittest discover -s tests -p 'local_import_scoring_test.py'
-	python3 -m py_compile tests/mobile_selenium_test.py tests/ai_model_discovery_selenium_test.py tests/pdf_review_selenium_test.py tests/openalex_candidate_selenium_test.py tests/pdf_batch_import_selenium_test.py tests/pdf_local_citation_selenium_test.py tests/pdf_multicolumn_citation_selenium_test.py tests/test_papers_local_import_selenium_test.py tests/reference_candidate_selenium_test.py tests/source_filter_log_selenium_test.py tests/real_pdf_smoke_selenium.py tests/graph_relations_selenium_test.py tests/toolbar_candidate_filter_selenium_test.py
+	python3 -m py_compile tests/mobile_selenium_test.py tests/ai_model_discovery_selenium_test.py tests/pdf_review_selenium_test.py tests/openalex_candidate_selenium_test.py tests/pdf_batch_import_selenium_test.py tests/pdf_local_citation_selenium_test.py tests/pdf_multicolumn_citation_selenium_test.py tests/test_papers_local_import_selenium_test.py tests/reference_candidate_selenium_test.py tests/source_filter_log_selenium_test.py tests/real_pdf_smoke_selenium.py tests/graph_relations_selenium_test.py tests/toolbar_candidate_filter_selenium_test.py tests/title_candidate_review_selenium_test.py
 	python3 -m py_compile tests/test_papers_citation_links_selenium_test.py
 	cargo test
 
@@ -82,6 +84,7 @@ test-ui-mobile: build-wasm
 	TEST_URL="$(TEST_URL)" python3 tests/reference_candidate_selenium_test.py
 	TEST_URL="$(TEST_URL)" python3 tests/source_filter_log_selenium_test.py
 	TEST_URL="$(TEST_URL)" python3 tests/toolbar_candidate_filter_selenium_test.py
+	TEST_URL="$(TEST_URL)" python3 tests/title_candidate_review_selenium_test.py
 	TEST_URL="$(TEST_URL)" python3 tests/graph_relations_selenium_test.py
 
 test-papers-local-import: build-wasm

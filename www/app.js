@@ -34,7 +34,7 @@ import {
   fetchReferences,
   findPaperCandidatesWithProvider,
   resolvePaper,
-} from "./paper-provider.js?v=0.4.8";
+} from "./paper-provider.js?v=0.4.11";
 import {
   createResearchRelationEdge,
   isCitationEdge,
@@ -45,12 +45,14 @@ import {
 } from "./research-relations.js";
 import { DEMO_LIBRARY } from "./demo-data.js";
 import { onlineCandidateSummary, rankOnlineCandidates } from "./online-candidates.js";
+import { startPaperCandidateSearch } from "./paper-candidate-search.js?v=0.4.11";
+import { renderPaperCandidatePicker } from "./paper-candidate-ui.js?v=0.4.11";
 import { searchHighlightParts } from "./search-highlight.js?v=0.4.9";
 import {
   enabledPaperSearchProviders,
   loadPaperProviderConfig,
   paperProviderLabel,
-} from "./paper-provider-config.js?v=0.4.8";
+} from "./paper-provider-config.js?v=0.4.11";
 
 const UI_STORAGE_KEY = "paper-map-ui-v1";
 const EXPANSION_SIZE = 50;
@@ -385,6 +387,158 @@ async function addPaperCandidate(paper, query) {
   } finally {
     setBusy(false);
   }
+}
+
+function ensureBibTeXReviewDialog() {
+  let dialog = document.querySelector("#bibtex-import-review-dialog");
+  if (dialog) {
+    return {
+      dialog,
+      progress: dialog.querySelector("#bibtex-import-progress"),
+      source: dialog.querySelector("#bibtex-import-source"),
+      title: dialog.querySelector("#bibtex-import-title"),
+      meta: dialog.querySelector("#bibtex-import-meta"),
+      status: dialog.querySelector("#bibtex-import-status"),
+      candidates: dialog.querySelector("#bibtex-import-candidates"),
+      keep: dialog.querySelector("#bibtex-import-keep"),
+      skip: dialog.querySelector("#bibtex-import-skip"),
+      cancel: dialog.querySelector("#bibtex-import-cancel"),
+    };
+  }
+
+  dialog = document.createElement("dialog");
+  dialog.id = "bibtex-import-review-dialog";
+  dialog.className = "bibtex-import-review-dialog";
+  dialog.innerHTML = `
+    <div class="bibtex-import-shell">
+      <header>
+        <div>
+          <span class="drawer-kicker">Reviewed import</span>
+          <h2>Match BibTeX papers online</h2>
+        </div>
+        <span id="bibtex-import-progress" class="muted"></span>
+      </header>
+      <section class="bibtex-import-original">
+        <span id="bibtex-import-source" class="drawer-kicker"></span>
+        <strong id="bibtex-import-title"></strong>
+        <span id="bibtex-import-meta"></span>
+      </section>
+      <p class="muted">Choose an online result only when it is the same work. You can keep the original BibTeX metadata instead.</p>
+      <div id="bibtex-import-candidates" class="add-paper-candidates" aria-live="polite"></div>
+      <small id="bibtex-import-status" class="muted" role="status" aria-live="polite"></small>
+      <footer class="bibtex-import-actions">
+        <button type="button" id="bibtex-import-keep">Keep BibTeX metadata</button>
+        <button type="button" id="bibtex-import-skip" class="quiet-button">Skip entry</button>
+        <button type="button" id="bibtex-import-cancel" class="quiet-button">Cancel import</button>
+      </footer>
+    </div>
+  `;
+  document.body.append(dialog);
+  return ensureBibTeXReviewDialog();
+}
+
+function mergeReviewedBibTeXCandidate(original, candidate, providerId) {
+  const merged = mergePaperRecords(original, candidate);
+  const providerSources = candidate.metadataSources || [candidate.providerPrimary || candidate.source || providerId];
+  return {
+    ...merged,
+    id: candidate.id || original.id,
+    citationKey: original.citationKey,
+    source: "bibtex",
+    importedAt: original.importedAt,
+    metadataSources: Array.from(new Set(["bibtex", ...providerSources].filter(Boolean))),
+  };
+}
+
+async function reviewBibTeXMatches(papers, fileName) {
+  const ui = ensureBibTeXReviewDialog();
+  const reviewed = [];
+  let skippedCount = 0;
+  let cancelled = false;
+
+  for (const [index, paper] of papers.entries()) {
+    ui.progress.textContent = `Entry ${index + 1} of ${papers.length}`;
+    ui.source.textContent = fileName;
+    ui.title.textContent = paper.title || paper.citationKey || "Untitled BibTeX entry";
+    ui.meta.textContent = [
+      (paper.authors || []).join(", "),
+      paper.year,
+      paper.venue,
+      paper.doi ? `DOI ${paper.doi}` : "",
+    ].filter(Boolean).join(" · ");
+    ui.status.textContent = `Searching enabled providers for “${paper.title}”…`;
+    ui.candidates.replaceChildren();
+    ui.candidates.hidden = false;
+
+    const decision = await new Promise((resolve) => {
+      let settled = false;
+      let searchSession = null;
+      const finish = (value) => {
+        if (settled) return;
+        settled = true;
+        searchSession?.cancel();
+        ui.keep.onclick = null;
+        ui.skip.onclick = null;
+        ui.cancel.onclick = null;
+        resolve(value);
+      };
+
+      ui.keep.onclick = () => finish({ kind: "keep" });
+      ui.skip.onclick = () => finish({ kind: "skip" });
+      ui.cancel.onclick = () => finish({ kind: "cancel" });
+      ui.dialog.oncancel = (event) => {
+        event.preventDefault();
+        finish({ kind: "cancel" });
+      };
+
+      try {
+        searchSession = startPaperCandidateSearch(paper.title, {
+          onUpdate(snapshot) {
+            renderPaperCandidatePicker(ui.candidates, {
+              ...snapshot,
+              heading: "Choose the matching paper",
+              onSelect: (candidate, providerId, rank) => finish({
+                kind: "candidate",
+                candidate,
+                providerId,
+                rank,
+              }),
+            });
+            const { totals } = snapshot;
+            ui.status.textContent = totals.finished < totals.providers
+              ? `Searching ${totals.providers} providers… ${totals.candidates} candidate${totals.candidates === 1 ? "" : "s"} available so far.`
+              : totals.candidates
+                ? `Found ${totals.candidates} candidate${totals.candidates === 1 ? "" : "s"}. Select one or keep the BibTeX metadata.`
+                : "No online candidates found. Keep the BibTeX metadata or skip this entry.";
+          },
+        });
+      } catch (error) {
+        ui.status.textContent = error?.message || String(error);
+      }
+
+      // Open only after the decision handlers are installed. Otherwise a fast
+      // user click can land in the gap between showModal() and onclick setup.
+      if (!ui.dialog.open) ui.dialog.showModal();
+    });
+
+    if (decision.kind === "cancel") {
+      cancelled = true;
+      break;
+    }
+    if (decision.kind === "skip") {
+      skippedCount += 1;
+      continue;
+    }
+    if (decision.kind === "candidate") {
+      reviewed.push(mergeReviewedBibTeXCandidate(paper, decision.candidate, decision.providerId));
+      continue;
+    }
+    reviewed.push(paper);
+  }
+
+  ui.dialog.oncancel = null;
+  if (ui.dialog.open) ui.dialog.close();
+  return { papers: reviewed, skippedCount, cancelled };
 }
 
 function slug(value) {
@@ -1109,8 +1263,21 @@ els.importFile.addEventListener("change", async () => {
     if (file.name.toLowerCase().endsWith(".bib")) {
       const papers = parseBibTeX(text);
       if (!papers.length) throw new Error("No BibTeX entries were found in this file.");
-      const merged = await mergeIntoLibrary(papers, [], [], { method: "bibtex-import", fileName: file.name });
-      setStatus(`Imported ${papers.length} BibTeX entries; ${merged.addedCount} were new papers.`, "ready");
+      setStatus(`Reviewing ${papers.length} BibTeX entr${papers.length === 1 ? "y" : "ies"} before import…`, "loading");
+      const review = await reviewBibTeXMatches(papers, file.name);
+      if (review.cancelled) {
+        setStatus("BibTeX import cancelled; the local library was not changed.", "ready");
+        return;
+      }
+      if (!review.papers.length) {
+        setStatus(`BibTeX review finished with no entries imported; ${review.skippedCount} skipped.`, "ready");
+        return;
+      }
+      const merged = await mergeIntoLibrary(review.papers, [], [], { method: "bibtex-import", fileName: file.name });
+      setStatus(
+        `Reviewed ${papers.length} BibTeX entr${papers.length === 1 ? "y" : "ies"}; imported ${review.papers.length}, skipped ${review.skippedCount}, and added ${merged.addedCount} new paper${merged.addedCount === 1 ? "" : "s"}.`,
+        "ready",
+      );
     } else {
       const backup = parsePaperMapJson(text);
       const replace = window.confirm("Restore this backup by replacing the current local library? Choose Cancel to merge the backup instead.");
