@@ -191,6 +191,18 @@ def main():
         assert_true(paper_panel.rect["y"] >= topic_bar.rect["y"] + topic_bar.rect["height"] - 1, "Topic focus bar should not overlap the Papers panel")
         wait_click(driver, "#close-paper-list")
         wait_click(driver, "#clear-topic-focus")
+
+        # Author map groups visible papers by author in the same hierarchical block layout.
+        wait_click(driver, '#map-mode button[data-mode="authors"]')
+        author_blocks = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".author-block"))
+        assert_true(len(author_blocks) >= 2, "Author map should render author blocks for the demo library")
+        author_x = {
+            block.get_attribute("transform").split(" ")[0]
+            for block in author_blocks
+            if block.get_attribute("transform")
+        }
+        assert_true(len(author_x) > 1, "Author map should use multiple hierarchy columns instead of a circular orbit")
+
         wait_click(driver, '#map-mode button[data-mode="citations"]')
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
 
@@ -246,6 +258,11 @@ def main():
         assert_true(provenance_heading == "Added to library", f"Paper view should expose local provenance: {provenance_heading!r}")
         assert_true("Bundled demo dataset" in driver.find_element(By.ID, "detail-provenance").get_attribute("textContent"), "Demo provenance should explain how the paper was added")
         assert_true(driver.find_element(By.ID, "detail-dismiss-layer").get_attribute("hidden") is not None, "Paper detail should be non-modal rather than dimming/resetting the graph")
+        assert_true("Venue:" in driver.find_element(By.ID, "detail-meta").get_attribute("textContent"), "Paper detail should explicitly show venue")
+        selected_fill = driver.execute_script(
+            "return getComputedStyle(document.querySelector('.paper-node.selected .paper-node-circle')).fill"
+        )
+        assert_true(selected_fill == "rgb(244, 189, 197)", f"Selected citation node should be pinkish-red, got {selected_fill!r}")
 
         # Add a canonical semantic relationship and verify it is directed in the graph.
         target_select = Select(driver.find_element(By.ID, "detail-relation-target"))
@@ -283,7 +300,37 @@ def main():
         wait_displayed(driver, "#paper-detail")
         wait_click(driver, "#close-detail")
 
-        # Mobile two-finger pinch changes the graph zoom factor.
+        # Timeline selection is deliberately two-step: select first, open detail second.
+        wait_click(driver, '#map-mode button[data-mode="timeline"]')
+        timeline_card = wait.until(
+            lambda d: d.find_element(By.CSS_SELECTOR, '.timeline-paper[data-paper-id="demo:transformer"]')
+        )
+        help_text = driver.find_element(By.CSS_SELECTOR, ".map-help").get_attribute("textContent")
+        assert_true("Chronology" not in help_text and "observed years" not in help_text, f"Timeline should omit implementation hints: {help_text!r}")
+        assert_true(driver.find_elements(By.CSS_SELECTOR, ".timeline-sticky-year-label"), "Timeline years should render in the fixed top overlay")
+        assert_true(driver.find_elements(By.CSS_SELECTOR, ".timeline-sticky-theme"), "Timeline theme details should render in the fixed left overlay")
+        assert_true(timeline_card.find_elements(By.CSS_SELECTOR, ".timeline-paper-star"), "Starred timeline paper should show a star marker")
+
+        timeline_card.click()
+        wait.until(lambda d: "selected" in d.find_element(By.CSS_SELECTOR, '.timeline-paper[data-paper-id="demo:transformer"]').get_attribute("class"))
+        assert_true(driver.find_element(By.ID, "paper-detail").get_attribute("hidden") is not None, "First Timeline click should select without opening details")
+        assert_true(driver.find_elements(By.CSS_SELECTOR, ".timeline-paper.citation-neighbor"), "Timeline should bold papers citing or cited by the selected paper")
+
+        timeline_card = driver.find_element(By.CSS_SELECTOR, '.timeline-paper[data-paper-id="demo:transformer"]')
+        timeline_card.click()
+        wait_displayed(driver, "#paper-detail")
+        assert_true("Venue: NeurIPS" in driver.find_element(By.ID, "detail-meta").get_attribute("textContent"), "Timeline paper details should show venue")
+        wait_click(driver, "#close-detail")
+        assert_true(
+            "selected" in driver.find_element(By.CSS_SELECTOR, '.timeline-paper[data-paper-id="demo:transformer"]').get_attribute("class"),
+            "Closing Timeline details should keep the paper selected",
+        )
+        dispatch_background_pointer(driver)
+        wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, ".timeline-paper.selected"))
+
+        # Mobile two-finger pinch changes the graph zoom factor after returning to the citation map.
+        wait_click(driver, '#map-mode button[data-mode="citations"]')
+        wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
         pinch = pinch_zoom(driver)
         assert_true(pinch["after"] > pinch["before"], f"Pinch-out should zoom in: {pinch}")
 
