@@ -372,10 +372,22 @@ def main():
         wait_click(driver, "#close-paper-list")
         wait.until(EC.invisibility_of_element_located((By.ID, "paper-list-panel")))
 
-        # The unified Add input routes BibTeX through the existing import/merge path.
+        # BibTeX import now pauses for an explicit online-match review before merging.
         before_bib = visible_paper_count(driver)
         file_input.send_keys(str(create_bib_fixture()))
-        wait.until(lambda d: "Imported 1 BibTeX" in d.find_element(By.ID, "library-status-text").get_attribute("textContent"))
+        bib_dialog = wait.until(
+            lambda d: d.find_element(By.ID, "bibtex-import-review-dialog")
+            if d.find_element(By.ID, "bibtex-import-review-dialog").get_attribute("open") is not None
+            else False
+        )
+        assert_widget_text_visible(driver, "#bibtex-import-review-dialog", "BibTeX reviewed import widget")
+        assert_true("Match BibTeX papers online" in bib_dialog.text, "BibTeX import should require a reviewed match decision")
+        wait_click(driver, "#bibtex-import-keep")
+        wait.until(lambda d: d.find_element(By.ID, "bibtex-import-review-dialog").get_attribute("open") is None)
+        wait.until(
+            lambda d: "Reviewed 1 BibTeX entry" in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
+            and "imported 1" in d.find_element(By.ID, "library-status-text").get_attribute("textContent")
+        )
         wait.until(lambda d: visible_paper_count(d) == before_bib + 1)
 
         # JSON backups use the same restore-vs-merge confirmation; choose merge here.
