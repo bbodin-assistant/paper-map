@@ -155,7 +155,7 @@ export function buildAuthorGraph(papers, edges) {
       const id = `author:${key}`;
       authors.push(id);
       if (!blocks.has(id)) {
-        blocks.set(id, { id, name, source: "author", paperIds: [], starred: 0 });
+        blocks.set(id, { id, name, source: "author", paperIds: [], starred: 0, coauthorCount: 0 });
       }
       const block = blocks.get(id);
       block.paperIds.push(paper.id);
@@ -163,6 +163,17 @@ export function buildAuthorGraph(papers, edges) {
     }
     authorsByPaper.set(paper.id, authors);
   }
+
+  const coauthors = new Map(Array.from(blocks.keys(), (id) => [id, new Set()]));
+  for (const authors of authorsByPaper.values()) {
+    for (let left = 0; left < authors.length; left += 1) {
+      for (let right = left + 1; right < authors.length; right += 1) {
+        coauthors.get(authors[left])?.add(authors[right]);
+        coauthors.get(authors[right])?.add(authors[left]);
+      }
+    }
+  }
+  for (const block of blocks.values()) block.coauthorCount = coauthors.get(block.id)?.size || 0;
 
   const connections = new Map();
   for (const edge of edges) {
@@ -263,6 +274,122 @@ export function hierarchicalBlockLayout(blocks = [], connections = [], viewportW
     height: Math.max(Number(viewportHeight) || 720, 94 + Math.max(1, maxRows) * 110),
     blocks: positioned,
   };
+}
+
+export function rankedBlockLayout(blocks = [], metric = () => 0, viewportWidth = 1200, viewportHeight = 720) {
+  if (!blocks.length) {
+    return { width: Math.max(800, Number(viewportWidth) || 1200), height: Math.max(520, Number(viewportHeight) || 720), blocks: [] };
+  }
+
+  const values = Array.from(new Set(blocks.map((block) => Number(metric(block)) || 0))).sort((a, b) => b - a);
+  const columnByValue = new Map(values.map((value, index) => [value, index]));
+  const byColumn = new Map(values.map((_, index) => [index, []]));
+  for (const block of blocks) {
+    const value = Number(metric(block)) || 0;
+    byColumn.get(columnByValue.get(value)).push(block);
+  }
+  for (const column of byColumn.values()) {
+    column.sort((left, right) =>
+      right.paperIds.length - left.paperIds.length || left.name.localeCompare(right.name));
+  }
+
+  const positioned = [];
+  let maxRows = 0;
+  for (let column = 0; column < values.length; column += 1) {
+    const columnBlocks = byColumn.get(column) || [];
+    maxRows = Math.max(maxRows, columnBlocks.length);
+    columnBlocks.forEach((block, row) => {
+      positioned.push({
+        ...block,
+        rankValue: values[column],
+        x: 34 + column * 245,
+        y: 54 + row * 110,
+        width: 210,
+        height: Math.max(68, Math.min(96, 64 + block.paperIds.length * 5)),
+      });
+    });
+  }
+
+  return {
+    width: Math.max(Number(viewportWidth) || 1200, 68 + Math.max(1, values.length) * 245),
+    height: Math.max(Number(viewportHeight) || 720, 94 + Math.max(1, maxRows) * 110),
+    blocks: positioned,
+  };
+}
+
+export function gravityBlockLayout(blocks = [], connections = [], viewportWidth = 1200, viewportHeight = 720) {
+  if (!blocks.length) {
+    return { width: Math.max(800, Number(viewportWidth) || 1200), height: Math.max(520, Number(viewportHeight) || 720), blocks: [] };
+  }
+
+  const logical = layoutDimensions(viewportWidth, viewportHeight, blocks.length);
+  const width = logical.width;
+  const height = logical.height;
+  const sorted = [...blocks].sort((left, right) => left.id.localeCompare(right.id));
+  const nodes = sorted.map((block, index) => {
+    const random = hash(block.id);
+    const angle = ((random % 360) / 180) * Math.PI;
+    const ring = 80 + ((random >>> 9) % Math.max(100, Math.floor(Math.min(width, height) * 0.36)));
+    const blockHeight = Math.max(68, Math.min(96, 64 + block.paperIds.length * 5));
+    return {
+      ...block,
+      index,
+      width: 210,
+      height: blockHeight,
+      radius: Math.hypot(105, blockHeight / 2),
+      x: width / 2 + Math.cos(angle) * ring,
+      y: height / 2 + Math.sin(angle) * ring,
+      vx: 0,
+      vy: 0,
+      fixed: false,
+    };
+  });
+  const nodeById = new Map(nodes.map((node) => [node.id, node]));
+  const visibleConnections = connections.filter((connection) => nodeById.has(connection.source) && nodeById.has(connection.target));
+  const iterations = Math.min(260, Math.max(90, layoutIterationBudget(nodes.length)));
+
+  for (let iteration = 0; iteration < iterations; iteration += 1) {
+    const cooling = Math.max(0.08, 1 - iteration / iterations);
+    for (const node of nodes) {
+      node.vx *= 0.76;
+      node.vy *= 0.76;
+      node.vx += (width / 2 - node.x) * 0.0007 * cooling;
+      node.vy += (height / 2 - node.y) * 0.0007 * cooling;
+    }
+
+    applyLocalRepulsion(nodes, cooling, { cellSize: 320, padding: 34 });
+
+    for (const connection of visibleConnections) {
+      const source = nodeById.get(connection.source);
+      const target = nodeById.get(connection.target);
+      const dx = target.x - source.x;
+      const dy = target.y - source.y;
+      const distance = Math.max(1, Math.hypot(dx, dy));
+      const desired = 245;
+      const strength = Math.min(2.5, 0.65 + Math.log2((Number(connection.weight) || 1) + 1));
+      const pull = (distance - desired) * 0.0018 * strength * cooling;
+      source.vx += (dx / distance) * pull;
+      source.vy += (dy / distance) * pull;
+      target.vx -= (dx / distance) * pull;
+      target.vy -= (dy / distance) * pull;
+    }
+
+    for (const node of nodes) {
+      node.x = Math.max(24, Math.min(width - node.width - 24, node.x + node.vx));
+      node.y = Math.max(30, Math.min(height - node.height - 30, node.y + node.vy));
+    }
+  }
+
+  return { width, height, blocks: nodes };
+}
+
+export function aggregateBlockLayout(kind, technique, blocks = [], connections = [], viewportWidth = 1200, viewportHeight = 720) {
+  if (technique === "gravity") return gravityBlockLayout(blocks, connections, viewportWidth, viewportHeight);
+  if (technique === "hierarchy") return hierarchicalBlockLayout(blocks, connections, viewportWidth, viewportHeight);
+  if (kind === "author") {
+    return rankedBlockLayout(blocks, (block) => block.coauthorCount, viewportWidth, viewportHeight);
+  }
+  return rankedBlockLayout(blocks, (block) => block.paperIds.length, viewportWidth, viewportHeight);
 }
 
 function blockSegment(source, target, padding = 5) {
