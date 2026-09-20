@@ -690,6 +690,8 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
         class: `topic-edge ${kind}-edge${fromSelected ? " focus-source" : ""}`,
         "marker-end": "url(#citation-arrow)",
         "stroke-width": Math.max(1, Math.min(7, 1 + Math.log2(connection.weight + 1))),
+        "data-source-block-id": connection.source,
+        "data-target-block-id": connection.target,
       });
       const title = svgElement("title");
       title.textContent = `${source.name} → ${target.name}: ${connection.weight} cross-${kind} link${connection.weight === 1 ? "" : "s"}`;
