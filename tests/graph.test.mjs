@@ -42,22 +42,39 @@ test("paper node kind distinguishes starred, manual, and automatic additions", (
 });
 
 
-test("author graph aggregates papers and preserves citation direction", () => {
+test("author graph links only actual co-authors and weights shared papers", () => {
   const papers = [
     { id: "a", authors: ["Ada Lovelace", "Shared Author"], starred: true },
     { id: "b", authors: ["Grace Hopper", "Shared Author"], starred: false },
+    { id: "c", authors: ["Ada Lovelace", "Shared Author"], starred: false },
   ];
-  const graph = buildAuthorGraph(papers, [{ source: "a", target: "b" }]);
+  const graph = buildAuthorGraph(papers, [
+    { source: "a", target: "b" },
+    { source: "b", target: "c" },
+  ]);
   const ada = graph.blocks.find((block) => block.name === "Ada Lovelace");
   const grace = graph.blocks.find((block) => block.name === "Grace Hopper");
   const shared = graph.blocks.find((block) => block.name === "Shared Author");
-  assert.deepEqual(ada.paperIds, ["a"]);
+
+  assert.deepEqual(ada.paperIds.sort(), ["a", "c"]);
   assert.deepEqual(grace.paperIds, ["b"]);
-  assert.deepEqual(shared.paperIds.sort(), ["a", "b"]);
+  assert.deepEqual(shared.paperIds.sort(), ["a", "b", "c"]);
   assert.equal(ada.coauthorCount, 1);
   assert.equal(grace.coauthorCount, 1);
   assert.equal(shared.coauthorCount, 2);
-  assert.ok(graph.connections.some((edge) => edge.source === ada.id && edge.target === grace.id));
+
+  const edgeBetween = (left, right) => graph.connections.find(
+    (edge) => new Set([edge.source, edge.target]).has(left.id)
+      && new Set([edge.source, edge.target]).has(right.id),
+  );
+  const adaShared = edgeBetween(ada, shared);
+  const graceShared = edgeBetween(grace, shared);
+  assert.equal(adaShared?.weight, 2);
+  assert.deepEqual(adaShared?.paperIds.sort(), ["a", "c"]);
+  assert.equal(graceShared?.weight, 1);
+  assert.deepEqual(graceShared?.paperIds, ["b"]);
+  assert.equal(edgeBetween(ada, grace), undefined, "paper citations must not create Author-map links");
+  assert.equal(graph.connections.length, 2);
 });
 
 test("hierarchical block layout remains usable with 200 topics", () => {

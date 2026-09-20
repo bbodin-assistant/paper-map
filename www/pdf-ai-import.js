@@ -1,4 +1,4 @@
-import { initPdfReviewController } from "./pdf-review-controller.js?v=0.4.13";
+import { initPdfReviewController } from "./pdf-review-controller.js?v=0.4.14";
 
 if (typeof document !== "undefined") {
   if (!document.querySelector('link[data-pdf-review-state]')) {

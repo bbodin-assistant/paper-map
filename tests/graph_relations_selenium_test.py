@@ -306,6 +306,19 @@ def main():
         author_block_count = len(author_blocks)
         author_edge_count = len(author_edges)
         assert_true(len(author_blocks) >= 2, "Author map should render author blocks for the demo library")
+        assert_true(author_edges, "Author map should render links for actual co-authors in the demo library")
+        assert_true(
+            all(not (edge.get_attribute("marker-end") or "") for edge in author_edges),
+            "Author-map co-author links should be undirected and must not use citation arrowheads",
+        )
+        author_edge_titles = [
+            edge.find_element(By.TAG_NAME, "title").get_attribute("textContent")
+            for edge in author_edges
+        ]
+        assert_true(
+            all("co-authored" in title for title in author_edge_titles),
+            f"Author-map link labels should describe shared papers, not citations: {author_edge_titles}",
+        )
         author_layout = driver.execute_script(
             """
             return Array.from(document.querySelectorAll('.author-block')).map((block) => {
