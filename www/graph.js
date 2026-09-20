@@ -950,6 +950,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
   function endPointer(event) {
     const hadPinch = Boolean(pinchGesture);
     let tappedItem = null;
+    let tappedBackground = false;
     if (itemDrag && itemDrag.pointerId === event.pointerId) {
       if (itemDrag.dragging) {
         const draggedType = itemDrag.type;
@@ -969,6 +970,10 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     }
     if (panGesture && panGesture.pointerId === event.pointerId) {
       if (panGesture.moved) suppressNextClick = true;
+      else if (event.type === "pointerup") {
+        suppressNextClick = true;
+        tappedBackground = true;
+      }
       panGesture = null;
     }
 
@@ -986,6 +991,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
 
     if (tappedItem?.type === "paper") onSelectPaper?.(tappedItem.id);
     else if (tappedItem?.type === "topic") onSelectTopic?.(tappedItem.id);
+    else if (tappedBackground) onSelectPaper?.(null);
   }
 
   svg.addEventListener("pointerup", endPointer);
