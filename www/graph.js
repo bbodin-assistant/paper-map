@@ -155,7 +155,7 @@ export function buildAuthorGraph(papers, edges) {
       const id = `author:${key}`;
       authors.push(id);
       if (!blocks.has(id)) {
-        blocks.set(id, { id, name, source: "author", paperIds: [], starred: 0 });
+        blocks.set(id, { id, name, source: "author", paperIds: [], starred: 0, coauthorCount: 0 });
       }
       const block = blocks.get(id);
       block.paperIds.push(paper.id);
@@ -163,6 +163,17 @@ export function buildAuthorGraph(papers, edges) {
     }
     authorsByPaper.set(paper.id, authors);
   }
+
+  const coauthors = new Map(Array.from(blocks.keys(), (id) => [id, new Set()]));
+  for (const authors of authorsByPaper.values()) {
+    for (let left = 0; left < authors.length; left += 1) {
+      for (let right = left + 1; right < authors.length; right += 1) {
+        coauthors.get(authors[left])?.add(authors[right]);
+        coauthors.get(authors[right])?.add(authors[left]);
+      }
+    }
+  }
+  for (const block of blocks.values()) block.coauthorCount = coauthors.get(block.id)?.size || 0;
 
   const connections = new Map();
   for (const edge of edges) {
@@ -263,6 +274,122 @@ export function hierarchicalBlockLayout(blocks = [], connections = [], viewportW
     height: Math.max(Number(viewportHeight) || 720, 94 + Math.max(1, maxRows) * 110),
     blocks: positioned,
   };
+}
+
+export function rankedBlockLayout(blocks = [], metric = () => 0, viewportWidth = 1200, viewportHeight = 720) {
+  if (!blocks.length) {
+    return { width: Math.max(800, Number(viewportWidth) || 1200), height: Math.max(520, Number(viewportHeight) || 720), blocks: [] };
+  }
+
+  const values = Array.from(new Set(blocks.map((block) => Number(metric(block)) || 0))).sort((a, b) => b - a);
+  const columnByValue = new Map(values.map((value, index) => [value, index]));
+  const byColumn = new Map(values.map((_, index) => [index, []]));
+  for (const block of blocks) {
+    const value = Number(metric(block)) || 0;
+    byColumn.get(columnByValue.get(value)).push(block);
+  }
+  for (const column of byColumn.values()) {
+    column.sort((left, right) =>
+      right.paperIds.length - left.paperIds.length || left.name.localeCompare(right.name));
+  }
+
+  const positioned = [];
+  let maxRows = 0;
+  for (let column = 0; column < values.length; column += 1) {
+    const columnBlocks = byColumn.get(column) || [];
+    maxRows = Math.max(maxRows, columnBlocks.length);
+    columnBlocks.forEach((block, row) => {
+      positioned.push({
+        ...block,
+        rankValue: values[column],
+        x: 34 + column * 245,
+        y: 54 + row * 110,
+        width: 210,
+        height: Math.max(68, Math.min(96, 64 + block.paperIds.length * 5)),
+      });
+    });
+  }
+
+  return {
+    width: Math.max(Number(viewportWidth) || 1200, 68 + Math.max(1, values.length) * 245),
+    height: Math.max(Number(viewportHeight) || 720, 94 + Math.max(1, maxRows) * 110),
+    blocks: positioned,
+  };
+}
+
+export function gravityBlockLayout(blocks = [], connections = [], viewportWidth = 1200, viewportHeight = 720) {
+  if (!blocks.length) {
+    return { width: Math.max(800, Number(viewportWidth) || 1200), height: Math.max(520, Number(viewportHeight) || 720), blocks: [] };
+  }
+
+  const logical = layoutDimensions(viewportWidth, viewportHeight, blocks.length);
+  const width = logical.width;
+  const height = logical.height;
+  const sorted = [...blocks].sort((left, right) => left.id.localeCompare(right.id));
+  const nodes = sorted.map((block, index) => {
+    const random = hash(block.id);
+    const angle = ((random % 360) / 180) * Math.PI;
+    const ring = 80 + ((random >>> 9) % Math.max(100, Math.floor(Math.min(width, height) * 0.36)));
+    const blockHeight = Math.max(68, Math.min(96, 64 + block.paperIds.length * 5));
+    return {
+      ...block,
+      index,
+      width: 210,
+      height: blockHeight,
+      radius: Math.hypot(105, blockHeight / 2),
+      x: width / 2 + Math.cos(angle) * ring,
+      y: height / 2 + Math.sin(angle) * ring,
+      vx: 0,
+      vy: 0,
+      fixed: false,
+    };
+  });
+  const nodeById = new Map(nodes.map((node) => [node.id, node]));
+  const visibleConnections = connections.filter((connection) => nodeById.has(connection.source) && nodeById.has(connection.target));
+  const iterations = Math.min(260, Math.max(90, layoutIterationBudget(nodes.length)));
+
+  for (let iteration = 0; iteration < iterations; iteration += 1) {
+    const cooling = Math.max(0.08, 1 - iteration / iterations);
+    for (const node of nodes) {
+      node.vx *= 0.76;
+      node.vy *= 0.76;
+      node.vx += (width / 2 - node.x) * 0.0007 * cooling;
+      node.vy += (height / 2 - node.y) * 0.0007 * cooling;
+    }
+
+    applyLocalRepulsion(nodes, cooling, { cellSize: 320, padding: 34 });
+
+    for (const connection of visibleConnections) {
+      const source = nodeById.get(connection.source);
+      const target = nodeById.get(connection.target);
+      const dx = target.x - source.x;
+      const dy = target.y - source.y;
+      const distance = Math.max(1, Math.hypot(dx, dy));
+      const desired = 245;
+      const strength = Math.min(2.5, 0.65 + Math.log2((Number(connection.weight) || 1) + 1));
+      const pull = (distance - desired) * 0.0018 * strength * cooling;
+      source.vx += (dx / distance) * pull;
+      source.vy += (dy / distance) * pull;
+      target.vx -= (dx / distance) * pull;
+      target.vy -= (dy / distance) * pull;
+    }
+
+    for (const node of nodes) {
+      node.x = Math.max(24, Math.min(width - node.width - 24, node.x + node.vx));
+      node.y = Math.max(30, Math.min(height - node.height - 30, node.y + node.vy));
+    }
+  }
+
+  return { width, height, blocks: nodes };
+}
+
+export function aggregateBlockLayout(kind, technique, blocks = [], connections = [], viewportWidth = 1200, viewportHeight = 720) {
+  if (technique === "gravity") return gravityBlockLayout(blocks, connections, viewportWidth, viewportHeight);
+  if (technique === "hierarchy") return hierarchicalBlockLayout(blocks, connections, viewportWidth, viewportHeight);
+  if (kind === "author") {
+    return rankedBlockLayout(blocks, (block) => block.coauthorCount, viewportWidth, viewportHeight);
+  }
+  return rankedBlockLayout(blocks, (block) => block.paperIds.length, viewportWidth, viewportHeight);
 }
 
 function blockSegment(source, target, padding = 5) {
@@ -620,8 +747,9 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     papers,
     blocks,
     connections,
-    selectedBlockId = null,
+    selectedBlockIds = [],
     kind = "topic",
+    layoutTechnique = kind === "author" ? "coauthors" : "generality",
     emptyMessage,
     onSelectBlock,
   }) {
@@ -643,11 +771,11 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
 
     const viewportWidth = Math.max(800, svg.clientWidth || 1200);
     const viewportHeight = Math.max(520, svg.clientHeight || 720);
-    const layout = hierarchicalBlockLayout(blocks, connections, viewportWidth, viewportHeight);
+    const layout = aggregateBlockLayout(kind, layoutTechnique, blocks, connections, viewportWidth, viewportHeight);
     const width = layout.width;
     const height = layout.height;
     currentWorld = { width, height, viewportWidth, viewportHeight };
-    const topology = `${kind}|${blocks.map((block) => block.id).sort().join("|")}`;
+    const topology = `${kind}|${layoutTechnique}|${blocks.map((block) => block.id).sort().join("|")}`;
     if (topology !== lastAggregateTopology) {
       transform = fitTransform(viewportWidth, viewportHeight, width, height, { minZoom: MIN_ZOOM, maxZoom: 1, padding: 40 });
       applyTransform();
@@ -671,13 +799,14 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     const blockLayer = svgElement("g", { class: `${kind}-blocks` });
     root.append(edgeLayer, blockLayer);
 
+    const selectedIds = new Set(Array.isArray(selectedBlockIds) ? selectedBlockIds.filter(Boolean) : []);
     const connectedBlockIds = new Set();
-    if (selectedBlockId) {
+    if (selectedIds.size) {
       for (const connection of connections) {
-        if (connection.source === selectedBlockId) connectedBlockIds.add(connection.target);
-        if (connection.target === selectedBlockId) connectedBlockIds.add(connection.source);
+        if (selectedIds.has(connection.source)) connectedBlockIds.add(connection.target);
+        if (selectedIds.has(connection.target)) connectedBlockIds.add(connection.source);
       }
-      connectedBlockIds.delete(selectedBlockId);
+      for (const selectedId of selectedIds) connectedBlockIds.delete(selectedId);
     }
 
     const edgeElements = [];
@@ -685,7 +814,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       const source = blockById.get(connection.source);
       const target = blockById.get(connection.target);
       if (!source || !target) continue;
-      const fromSelected = connection.source === selectedBlockId;
+      const fromSelected = selectedIds.has(connection.source);
       const line = svgElement("line", {
         class: `topic-edge ${kind}-edge${fromSelected ? " focus-source" : ""}`,
         "marker-end": "url(#citation-arrow)",
@@ -702,13 +831,16 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
 
     const blockElements = [];
     for (const block of positioned) {
-      const selected = block.id === selectedBlockId;
+      const selected = selectedIds.has(block.id);
       const connected = connectedBlockIds.has(block.id);
       const group = svgElement("g", {
         class: `topic-block ${kind}-block${connected ? " connected" : ""}${selected ? " selected" : ""}`,
         tabindex: "0",
         role: "button",
         "data-block-id": block.id,
+        "data-layout-technique": layoutTechnique,
+        "data-paper-count": block.paperIds.length,
+        ...(kind === "author" ? { "data-coauthor-count": block.coauthorCount || 0 } : {}),
         ...(kind === "topic" ? { "data-topic-id": block.id } : { "data-author-id": block.id }),
         "aria-label": `${block.name}, ${block.paperIds.length} papers`,
       });
@@ -722,19 +854,22 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       const count = svgElement("text", { class: "topic-block-count", x: 15, y: 49 });
       count.textContent = `${block.paperIds.length} paper${block.paperIds.length === 1 ? "" : "s"}`;
       const source = svgElement("text", { class: "topic-block-source", x: 15, y: block.height - 12 });
-      source.textContent = block.starred ? `${kind === "author" ? "Author" : block.source} · ★ ${block.starred}` : (kind === "author" ? "Author" : block.source);
+      const sourceLabel = kind === "author"
+        ? `${block.coauthorCount || 0} co-author${block.coauthorCount === 1 ? "" : "s"}`
+        : block.source;
+      source.textContent = block.starred ? `${sourceLabel} · ★ ${block.starred}` : sourceLabel;
       const title = svgElement("title");
-      title.textContent = `${block.name}\n${block.paperIds.length} papers${block.starred ? `\n${block.starred} starred` : ""}`;
+      title.textContent = `${block.name}\n${block.paperIds.length} papers${kind === "author" ? `\n${block.coauthorCount || 0} distinct co-authors` : ""}${block.starred ? `\n${block.starred} starred` : ""}`;
       group.append(rect, name, count, source, title);
       group.addEventListener("click", (event) => {
         if (consumeSuppressedClick(event)) return;
         event.stopPropagation();
-        onSelectBlock?.(block);
+        onSelectBlock?.(block, { additive: Boolean(event.ctrlKey || event.metaKey) });
       });
       group.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          onSelectBlock?.(block);
+          onSelectBlock?.(block, { additive: Boolean(event.ctrlKey || event.metaKey) });
         }
       });
       blockLayer.append(group);
@@ -760,37 +895,51 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     draw();
   }
 
-  function renderTopicMap(papers, edges, topics, selectedTopicId) {
+  function renderTopicMap(papers, edges, topics, selectedTopicIds = [], layoutTechnique = "generality") {
     const { blocks, connections } = buildTopicGraph(papers, edges, topics);
     renderAggregateMap({
       papers,
       blocks,
       connections,
-      selectedBlockId: selectedTopicId,
+      selectedBlockIds: selectedTopicIds,
       kind: "topic",
+      layoutTechnique,
       emptyMessage: "No categorized papers match the current filters.",
-      onSelectBlock: (block) => onSelectTopic?.(block.id),
+      onSelectBlock: (block, options) => onSelectTopic?.(block.id, options),
     });
   }
 
-  function renderAuthorMap(papers, edges, selectedAuthor) {
+  function renderAuthorMap(papers, edges, selectedAuthors = [], layoutTechnique = "coauthors") {
     const { blocks, connections } = buildAuthorGraph(papers, edges);
-    const selectedKey = authorKey(selectedAuthor);
-    const selectedBlock = blocks.find((block) => authorKey(block.name) === selectedKey);
+    const selectedKeys = new Set((selectedAuthors || []).map(authorKey).filter(Boolean));
+    const selectedBlockIds = blocks
+      .filter((block) => selectedKeys.has(authorKey(block.name)))
+      .map((block) => block.id);
     renderAggregateMap({
       papers,
       blocks,
       connections,
-      selectedBlockId: selectedBlock?.id || null,
+      selectedBlockIds,
       kind: "author",
+      layoutTechnique,
       emptyMessage: "No author metadata matches the current filters.",
-      onSelectBlock: (block) => onSelectAuthor?.(block.name),
+      onSelectBlock: (block, options) => onSelectAuthor?.(block.name, options),
     });
   }
 
-  function render({ mode = "citations", papers = [], edges = [], topics = [], selectedId = null, selectedTopicId = null, selectedAuthor = "" }) {
-    if (mode === "topics") renderTopicMap(papers, edges, topics, selectedTopicId);
-    else if (mode === "authors") renderAuthorMap(papers, edges, selectedAuthor);
+  function render({
+    mode = "citations",
+    papers = [],
+    edges = [],
+    topics = [],
+    selectedId = null,
+    selectedTopicIds = [],
+    selectedAuthors = [],
+    topicLayoutTechnique = "generality",
+    authorLayoutTechnique = "coauthors",
+  }) {
+    if (mode === "topics") renderTopicMap(papers, edges, topics, selectedTopicIds, topicLayoutTechnique);
+    else if (mode === "authors") renderAuthorMap(papers, edges, selectedAuthors, authorLayoutTechnique);
     else renderCitationMap(papers, edges, selectedId);
   }
 
@@ -978,7 +1127,11 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
         restorePendingItemDrag();
         if (event.type === "pointerup") {
           suppressNextClick = true;
-          tappedItem = { type: itemDrag.type, id: itemDrag.id };
+          tappedItem = {
+            type: itemDrag.type,
+            id: itemDrag.id,
+            additive: Boolean(event.ctrlKey || event.metaKey),
+          };
         }
       }
       itemDrag = null;
@@ -1006,8 +1159,8 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     }
 
     if (tappedItem?.type === "paper") onSelectPaper?.(tappedItem.id);
-    else if (tappedItem?.type === "topic") onSelectTopic?.(tappedItem.id);
-    else if (tappedItem?.type === "author") onSelectAuthor?.(currentTopicBlocks.get(tappedItem.id)?.name || null);
+    else if (tappedItem?.type === "topic") onSelectTopic?.(tappedItem.id, { additive: tappedItem.additive });
+    else if (tappedItem?.type === "author") onSelectAuthor?.(currentTopicBlocks.get(tappedItem.id)?.name || null, { additive: tappedItem.additive });
     else if (tappedBackground) {
       if (currentAggregateKind === "topic") onSelectTopic?.(null);
       else if (currentAggregateKind === "author") onSelectAuthor?.(null);

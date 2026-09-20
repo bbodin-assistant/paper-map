@@ -218,6 +218,12 @@ main { height: calc(100vh - var(--header-height)); padding: 0 14px 14px; }
 .drawer-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
 .drawer-kicker { display: block; margin-bottom: 3px; color: #89929a; font-size: 9px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
 .filter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 11px; }
+.filter-focus-field { display: grid; gap: 5px; align-content: start; }
+.filter-focus-field > span { color: #59656f; font-weight: 700; }
+.filter-focus-list { display: flex; flex-wrap: wrap; gap: 5px; min-height: 26px; align-items: flex-start; }
+.filter-focus-list[hidden] { display: none; }
+.filter-focus-chip { border: 1px solid #d6a1aa; border-radius: 999px; padding: 3px 8px; background: #fff0f2; color: #6f3944; font: inherit; cursor: pointer; }
+.filter-focus-chip:hover, .filter-focus-chip:focus-visible { border-color: #9a5966; background: #ffe3e8; }
 .checkbox-row { grid-column: 1 / -1; display: flex; flex-direction: row; align-items: center; gap: 8px; }
 .checkbox-row input { width: auto; }
 .library-panel { width: min(530px, calc(100vw - 36px)); }
