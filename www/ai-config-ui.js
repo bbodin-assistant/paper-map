@@ -19,11 +19,13 @@ import {
   saveSemanticScholarApiKey,
 } from "./paper-provider-config.js?v=0.4.8";
 import {
+  AUTHOR_LAYOUT_OPTIONS,
   loadGraphConfig,
   normalizeGraphConfig,
   saveGraphConfig,
   TIMELINE_CLUSTER_FIELD_OPTIONS,
-} from "./graph-config.js?v=0.4.10";
+  TOPIC_LAYOUT_OPTIONS,
+} from "./graph-config.js?v=0.4.11";
 
 if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-config]')) {
   const link = document.createElement("link");
@@ -88,6 +90,10 @@ function timelineClusterFieldRows() {
       <span>${label}</span>
     </label>
   `).join("");
+}
+
+function aggregateLayoutOptions(options) {
+  return options.map(({ id, label }) => `<option value="${id}">${label}</option>`).join("");
 }
 
 function aiControlsSnapshot(controls) {
@@ -240,6 +246,14 @@ function createUi() {
           <input id="graph-config-layout-spacing" type="number" min="0.5" max="3" step="0.1" />
           <span class="field-hint">Logical area multiplier for larger maps. Default: 1×.</span>
         </label>
+        <label>Topic map layout
+          <select id="graph-config-topic-layout">${aggregateLayoutOptions(TOPIC_LAYOUT_OPTIONS)}</select>
+          <span class="field-hint">Generality puts topics used by the most papers on the left.</span>
+        </label>
+        <label>Author map layout
+          <select id="graph-config-author-layout">${aggregateLayoutOptions(AUTHOR_LAYOUT_OPTIONS)}</select>
+          <span class="field-hint">Co-authors puts authors with the most distinct collaborators on the left.</span>
+        </label>
       </div>
       <div class="timeline-cluster-config" role="group" aria-labelledby="timeline-cluster-config-heading">
         <div class="timeline-cluster-config-heading">
@@ -257,7 +271,7 @@ function createUi() {
           </div>
         </fieldset>
       </div>
-      <p class="muted config-note">Citation-map layout changes apply when topology is laid out again. Timeline clustering changes apply on the next Timeline render and use only local paper metadata.</p>
+      <p class="muted config-note">Topic and Author layout techniques apply immediately after saving. Gravity uses local force layout; generality/co-author layouts use local metadata only. Timeline clustering changes apply on the next Timeline render.</p>
     </section>
 
     <section class="config-section" aria-labelledby="ai-config-heading">
@@ -323,6 +337,8 @@ function createUi() {
   const graphControls = {
     effort: $("#graph-config-layout-effort", panel),
     spacing: $("#graph-config-layout-spacing", panel),
+    topicLayout: $("#graph-config-topic-layout", panel),
+    authorLayout: $("#graph-config-author-layout", panel),
     clusterCount: $("#graph-config-timeline-cluster-count", panel),
     clusterFields: new Map(TIMELINE_CLUSTER_FIELD_OPTIONS.map(({ id }) => [
       id,
@@ -343,6 +359,8 @@ function createUi() {
     paperControls.remember.checked = Boolean(loadSemanticScholarApiKey());
     graphControls.effort.value = String(graph.layoutEffort);
     graphControls.spacing.value = String(graph.layoutSpacing);
+    graphControls.topicLayout.value = graph.topicLayoutTechnique;
+    graphControls.authorLayout.value = graph.authorLayoutTechnique;
     graphControls.clusterCount.value = String(graph.timelineClusterCount);
     for (const { id } of TIMELINE_CLUSTER_FIELD_OPTIONS) {
       graphControls.clusterFields.get(id).checked = graph.timelineClusterFields.includes(id);
@@ -394,6 +412,8 @@ function createUi() {
     const graph = saveGraphConfig(normalizeGraphConfig({
       layoutEffort: graphControls.effort.value,
       layoutSpacing: graphControls.spacing.value,
+      topicLayoutTechnique: graphControls.topicLayout.value,
+      authorLayoutTechnique: graphControls.authorLayout.value,
       timelineClusterCount: graphControls.clusterCount.value,
       timelineClusterFields,
     }));
