@@ -747,8 +747,9 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     papers,
     blocks,
     connections,
-    selectedBlockId = null,
+    selectedBlockIds = [],
     kind = "topic",
+    layoutTechnique = kind === "author" ? "coauthors" : "generality",
     emptyMessage,
     onSelectBlock,
   }) {
@@ -770,11 +771,11 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
 
     const viewportWidth = Math.max(800, svg.clientWidth || 1200);
     const viewportHeight = Math.max(520, svg.clientHeight || 720);
-    const layout = hierarchicalBlockLayout(blocks, connections, viewportWidth, viewportHeight);
+    const layout = aggregateBlockLayout(kind, layoutTechnique, blocks, connections, viewportWidth, viewportHeight);
     const width = layout.width;
     const height = layout.height;
     currentWorld = { width, height, viewportWidth, viewportHeight };
-    const topology = `${kind}|${blocks.map((block) => block.id).sort().join("|")}`;
+    const topology = `${kind}|${layoutTechnique}|${blocks.map((block) => block.id).sort().join("|")}`;
     if (topology !== lastAggregateTopology) {
       transform = fitTransform(viewportWidth, viewportHeight, width, height, { minZoom: MIN_ZOOM, maxZoom: 1, padding: 40 });
       applyTransform();
@@ -798,13 +799,14 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     const blockLayer = svgElement("g", { class: `${kind}-blocks` });
     root.append(edgeLayer, blockLayer);
 
+    const selectedIds = new Set(Array.isArray(selectedBlockIds) ? selectedBlockIds.filter(Boolean) : []);
     const connectedBlockIds = new Set();
-    if (selectedBlockId) {
+    if (selectedIds.size) {
       for (const connection of connections) {
-        if (connection.source === selectedBlockId) connectedBlockIds.add(connection.target);
-        if (connection.target === selectedBlockId) connectedBlockIds.add(connection.source);
+        if (selectedIds.has(connection.source)) connectedBlockIds.add(connection.target);
+        if (selectedIds.has(connection.target)) connectedBlockIds.add(connection.source);
       }
-      connectedBlockIds.delete(selectedBlockId);
+      for (const selectedId of selectedIds) connectedBlockIds.delete(selectedId);
     }
 
     const edgeElements = [];
@@ -812,7 +814,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       const source = blockById.get(connection.source);
       const target = blockById.get(connection.target);
       if (!source || !target) continue;
-      const fromSelected = connection.source === selectedBlockId;
+      const fromSelected = selectedIds.has(connection.source);
       const line = svgElement("line", {
         class: `topic-edge ${kind}-edge${fromSelected ? " focus-source" : ""}`,
         "marker-end": "url(#citation-arrow)",
@@ -829,13 +831,16 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
 
     const blockElements = [];
     for (const block of positioned) {
-      const selected = block.id === selectedBlockId;
+      const selected = selectedIds.has(block.id);
       const connected = connectedBlockIds.has(block.id);
       const group = svgElement("g", {
         class: `topic-block ${kind}-block${connected ? " connected" : ""}${selected ? " selected" : ""}`,
         tabindex: "0",
         role: "button",
         "data-block-id": block.id,
+        "data-layout-technique": layoutTechnique,
+        "data-paper-count": block.paperIds.length,
+        ...(kind === "author" ? { "data-coauthor-count": block.coauthorCount || 0 } : {}),
         ...(kind === "topic" ? { "data-topic-id": block.id } : { "data-author-id": block.id }),
         "aria-label": `${block.name}, ${block.paperIds.length} papers`,
       });
@@ -856,12 +861,12 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       group.addEventListener("click", (event) => {
         if (consumeSuppressedClick(event)) return;
         event.stopPropagation();
-        onSelectBlock?.(block);
+        onSelectBlock?.(block, { additive: Boolean(event.ctrlKey || event.metaKey) });
       });
       group.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          onSelectBlock?.(block);
+          onSelectBlock?.(block, { additive: Boolean(event.ctrlKey || event.metaKey) });
         }
       });
       blockLayer.append(group);
@@ -887,37 +892,51 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     draw();
   }
 
-  function renderTopicMap(papers, edges, topics, selectedTopicId) {
+  function renderTopicMap(papers, edges, topics, selectedTopicIds = [], layoutTechnique = "generality") {
     const { blocks, connections } = buildTopicGraph(papers, edges, topics);
     renderAggregateMap({
       papers,
       blocks,
       connections,
-      selectedBlockId: selectedTopicId,
+      selectedBlockIds: selectedTopicIds,
       kind: "topic",
+      layoutTechnique,
       emptyMessage: "No categorized papers match the current filters.",
-      onSelectBlock: (block) => onSelectTopic?.(block.id),
+      onSelectBlock: (block, options) => onSelectTopic?.(block.id, options),
     });
   }
 
-  function renderAuthorMap(papers, edges, selectedAuthor) {
+  function renderAuthorMap(papers, edges, selectedAuthors = [], layoutTechnique = "coauthors") {
     const { blocks, connections } = buildAuthorGraph(papers, edges);
-    const selectedKey = authorKey(selectedAuthor);
-    const selectedBlock = blocks.find((block) => authorKey(block.name) === selectedKey);
+    const selectedKeys = new Set((selectedAuthors || []).map(authorKey).filter(Boolean));
+    const selectedBlockIds = blocks
+      .filter((block) => selectedKeys.has(authorKey(block.name)))
+      .map((block) => block.id);
     renderAggregateMap({
       papers,
       blocks,
       connections,
-      selectedBlockId: selectedBlock?.id || null,
+      selectedBlockIds,
       kind: "author",
+      layoutTechnique,
       emptyMessage: "No author metadata matches the current filters.",
-      onSelectBlock: (block) => onSelectAuthor?.(block.name),
+      onSelectBlock: (block, options) => onSelectAuthor?.(block.name, options),
     });
   }
 
-  function render({ mode = "citations", papers = [], edges = [], topics = [], selectedId = null, selectedTopicId = null, selectedAuthor = "" }) {
-    if (mode === "topics") renderTopicMap(papers, edges, topics, selectedTopicId);
-    else if (mode === "authors") renderAuthorMap(papers, edges, selectedAuthor);
+  function render({
+    mode = "citations",
+    papers = [],
+    edges = [],
+    topics = [],
+    selectedId = null,
+    selectedTopicIds = [],
+    selectedAuthors = [],
+    topicLayoutTechnique = "generality",
+    authorLayoutTechnique = "coauthors",
+  }) {
+    if (mode === "topics") renderTopicMap(papers, edges, topics, selectedTopicIds, topicLayoutTechnique);
+    else if (mode === "authors") renderAuthorMap(papers, edges, selectedAuthors, authorLayoutTechnique);
     else renderCitationMap(papers, edges, selectedId);
   }
 
@@ -1105,7 +1124,11 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
         restorePendingItemDrag();
         if (event.type === "pointerup") {
           suppressNextClick = true;
-          tappedItem = { type: itemDrag.type, id: itemDrag.id };
+          tappedItem = {
+            type: itemDrag.type,
+            id: itemDrag.id,
+            additive: Boolean(event.ctrlKey || event.metaKey),
+          };
         }
       }
       itemDrag = null;
@@ -1133,8 +1156,8 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     }
 
     if (tappedItem?.type === "paper") onSelectPaper?.(tappedItem.id);
-    else if (tappedItem?.type === "topic") onSelectTopic?.(tappedItem.id);
-    else if (tappedItem?.type === "author") onSelectAuthor?.(currentTopicBlocks.get(tappedItem.id)?.name || null);
+    else if (tappedItem?.type === "topic") onSelectTopic?.(tappedItem.id, { additive: tappedItem.additive });
+    else if (tappedItem?.type === "author") onSelectAuthor?.(currentTopicBlocks.get(tappedItem.id)?.name || null, { additive: tappedItem.additive });
     else if (tappedBackground) {
       if (currentAggregateKind === "topic") onSelectTopic?.(null);
       else if (currentAggregateKind === "author") onSelectAuthor?.(null);
