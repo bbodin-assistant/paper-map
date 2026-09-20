@@ -886,7 +886,7 @@ export function initTimelineMap(root = document) {
   svg.addEventListener("pointercancel", endPointer, true);
 
   const observer = new MutationObserver(() => queueRender());
-  observer.observe(paperList, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
+  observer.observe(paperList, { childList: true, subtree: true });
   window.addEventListener("resize", queueRender);
   root.addEventListener?.("paper-map-graph-config-changed", queueRender);
   root.addEventListener?.("paper-map-timeline-paper-activate", (event) => {
