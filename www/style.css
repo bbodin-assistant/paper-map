@@ -308,7 +308,7 @@ main { height: calc(100vh - var(--header-height)); padding: 0 14px 14px; }
 .topic-block rect { fill: #f8f8f4; stroke: #78838a; stroke-width: 1.2; }
 .topic-block:hover rect, .topic-block:focus rect { fill: #fff7d5; stroke: #34424d; }
 .topic-block.connected rect { fill: #f6c445; stroke: #8f6a0f; stroke-width: 1.8; }
-.topic-block.selected rect { fill: #f4bdc5; stroke: #9f3546; stroke-width: 2.4; }
+.topic-block.selected rect { fill: #f4bdc5; stroke: #9f3546; stroke-width: 3.2; }
 .topic-block-name { fill: #23303b; font-size: 13px; font-weight: 850; }
 .topic-block-count { fill: #68737c; font-size: 10px; font-weight: 650; }
 .topic-block-source { fill: #92999d; font-size: 8px; font-weight: 700; text-transform: uppercase; }
