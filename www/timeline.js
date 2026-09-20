@@ -32,13 +32,28 @@ const CARD_WIDTH = 176;
 const CARD_HEIGHT = 54;
 const YEAR_STEP = 205;
 const LEFT_GUTTER = 166;
-const BAND_TOP_PADDING = 46;
+const BAND_TOP_PADDING = 28;
 const ROW_STEP = 62;
 const YEAR_TICK_MIN_SCREEN_GAP = 105;
 
 export function timelineYearTickStep(zoom = 1) {
   const boundedZoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number(zoom) || 1));
   return Math.max(1, Math.ceil(YEAR_TICK_MIN_SCREEN_GAP / (YEAR_STEP * boundedZoom)));
+}
+
+export function clampTimelineTransform(transform, viewportWidth, viewportHeight, worldWidth, worldHeight) {
+  const k = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number(transform?.k) || 1));
+  const width = Math.max(1, Number(viewportWidth) || 1);
+  const height = Math.max(1, Number(viewportHeight) || 1);
+  const scaledWidth = Math.max(1, Number(worldWidth) || width) * k;
+  const scaledHeight = Math.max(1, Number(worldHeight) || height) * k;
+  const minX = Math.min(0, width - scaledWidth);
+  const minY = Math.min(0, height - scaledHeight);
+  return {
+    k,
+    x: Math.max(minX, Math.min(0, Number(transform?.x) || 0)),
+    y: Math.max(minY, Math.min(0, Number(transform?.y) || 0)),
+  };
 }
 
 const STOP_WORDS = new Set(`
@@ -301,12 +316,19 @@ export function timelineEdgePath(source, target) {
   const targetCy = target.y + target.height / 2;
   const start = rectBoundary(source, targetCx, targetCy, 0);
   const end = rectBoundary(target, sourceCx, sourceCy, 7);
-  const dx = end.x - start.x;
-  const bend = Math.max(26, Math.min(120, Math.abs(dx) * 0.42));
-  const direction = dx >= 0 ? 1 : -1;
-  const c1x = start.x + bend * direction;
-  const c2x = end.x - bend * direction;
-  return `M ${start.x} ${start.y} C ${c1x} ${start.y}, ${c2x} ${end.y}, ${end.x} ${end.y}`;
+  const distance = Math.max(1, Math.hypot(end.x - start.x, end.y - start.y));
+  const bend = Math.max(26, Math.min(120, distance * 0.34));
+  const startDistance = Math.max(1, Math.hypot(targetCx - start.x, targetCy - start.y));
+  const endDistance = Math.max(1, Math.hypot(targetCx - end.x, targetCy - end.y));
+  const startUx = (targetCx - start.x) / startDistance;
+  const startUy = (targetCy - start.y) / startDistance;
+  const endUx = (targetCx - end.x) / endDistance;
+  const endUy = (targetCy - end.y) / endDistance;
+  const c1x = start.x + startUx * bend;
+  const c1y = start.y + startUy * bend;
+  const c2x = end.x - endUx * bend;
+  const c2y = end.y - endUy * bend;
+  return `M ${start.x} ${start.y} C ${c1x} ${c1y}, ${c2x} ${c2y}, ${end.x} ${end.y}`;
 }
 
 function installStyles(root = document) {
@@ -334,7 +356,7 @@ function installStyles(root = document) {
     .timeline-sticky-overlay { pointer-events: none; }
     .timeline-sticky-year-strip { fill: rgba(255, 254, 249, .94); stroke: #e0e3df; stroke-width: 0 0 1 0; }
     .timeline-sticky-year-label { fill: #5f6971; font-size: clamp(10px, 1vw, 12px); font-weight: 850; text-anchor: middle; }
-    .timeline-sticky-theme-bg { fill: rgba(255, 254, 249, .94); stroke: var(--timeline-cluster-accent, #cfd4d1); stroke-width: 1; }
+    .timeline-sticky-theme-bg { fill: var(--timeline-cluster-band, #fafaf6); stroke: var(--timeline-cluster-accent, #cfd4d1); stroke-width: 1; }
     .timeline-sticky-theme-name { fill: var(--timeline-cluster-accent, #25313b); font-size: clamp(11px, 1.05vw, 13px); font-weight: 850; }
     .timeline-sticky-theme-terms { fill: #657079; font-size: clamp(8px, .8vw, 10px); font-weight: 650; }
     @media (max-width: 720px) {
@@ -436,12 +458,12 @@ export function initTimelineMap(root = document) {
       const group = svgElement("g", {
         class: "timeline-sticky-theme",
         "data-band-index": band.index,
-        style: `--timeline-cluster-accent:${color.accent}`,
+        style: `--timeline-cluster-band:${color.band};--timeline-cluster-accent:${color.accent}`,
       });
-      const bg = svgElement("rect", { x: 7, y: 0, width: 150, height: 38, rx: 6, class: "timeline-sticky-theme-bg" });
-      const name = svgElement("text", { x: 15, y: 15, class: "timeline-sticky-theme-name" });
+      const bg = svgElement("rect", { x: 0, y: 0, width: LEFT_GUTTER, height: 38, class: "timeline-sticky-theme-bg" });
+      const name = svgElement("text", { x: 10, y: 15, class: "timeline-sticky-theme-name" });
       name.textContent = band.name;
-      const terms = svgElement("text", { x: 15, y: 30, class: "timeline-sticky-theme-terms" });
+      const terms = svgElement("text", { x: 10, y: 30, class: "timeline-sticky-theme-terms" });
       terms.textContent = shortText(band.label, 22);
       group.append(bg, name, terms);
       themeLayer.append(group);
@@ -490,6 +512,15 @@ export function initTimelineMap(root = document) {
   }
 
   function applyTimelineTransform() {
+    if (currentLayout) {
+      timelineTransform = clampTimelineTransform(
+        timelineTransform,
+        Math.max(1, svg.clientWidth || 1200),
+        Math.max(1, svg.clientHeight || 720),
+        currentLayout.width,
+        currentLayout.height,
+      );
+    }
     viewport.setAttribute("transform", `translate(${timelineTransform.x} ${timelineTransform.y}) scale(${timelineTransform.k})`);
     updateStickyOverlay();
   }
@@ -587,9 +618,9 @@ export function initTimelineMap(root = document) {
         style: `--timeline-cluster-band:${color.band};--timeline-cluster-paper:${color.paper};--timeline-cluster-accent:${color.accent}`,
       });
       const rect = svgElement("rect", {
-        x: 10,
+        x: 0,
         y: band.y,
-        width: layout.width - 20,
+        width: layout.width,
         height: band.height,
         rx: 8,
         class: "timeline-band",
