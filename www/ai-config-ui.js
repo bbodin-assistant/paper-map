@@ -25,7 +25,7 @@ import {
   saveGraphConfig,
   TIMELINE_CLUSTER_FIELD_OPTIONS,
   TOPIC_LAYOUT_OPTIONS,
-} from "./graph-config.js?v=0.4.11";
+} from "./graph-config.js?v=0.4.12";
 
 if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-config]')) {
   const link = document.createElement("link");
