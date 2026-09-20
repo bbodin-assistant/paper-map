@@ -317,6 +317,10 @@ export function rankedBlockLayout(blocks = [], metric = () => 0, viewportWidth =
   };
 }
 
+export function gravityIterationBudget(nodeCount) {
+  return Math.min(900, Math.max(220, Math.round(layoutIterationBudget(nodeCount) * 2.5)));
+}
+
 export function gravityBlockLayout(blocks = [], connections = [], viewportWidth = 1200, viewportHeight = 720) {
   if (!blocks.length) {
     return { width: Math.max(800, Number(viewportWidth) || 1200), height: Math.max(520, Number(viewportHeight) || 720), blocks: [] };
@@ -346,7 +350,7 @@ export function gravityBlockLayout(blocks = [], connections = [], viewportWidth 
   });
   const nodeById = new Map(nodes.map((node) => [node.id, node]));
   const visibleConnections = connections.filter((connection) => nodeById.has(connection.source) && nodeById.has(connection.target));
-  const iterations = Math.min(260, Math.max(90, layoutIterationBudget(nodes.length)));
+  const iterations = gravityIterationBudget(nodes.length);
 
   for (let iteration = 0; iteration < iterations; iteration += 1) {
     const cooling = Math.max(0.08, 1 - iteration / iterations);
@@ -771,16 +775,39 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
 
     const viewportWidth = Math.max(800, svg.clientWidth || 1200);
     const viewportHeight = Math.max(520, svg.clientHeight || 720);
-    const layout = aggregateBlockLayout(kind, layoutTechnique, blocks, connections, viewportWidth, viewportHeight);
+    const connectionTopology = connections
+      .map((connection) => `${connection.source}>${connection.target}:${connection.weight || 0}`)
+      .sort()
+      .join("|");
+    const topology = `${kind}|${layoutTechnique}|${blocks.map((block) => block.id).sort().join("|")}|${connectionTopology}`;
+    const topologyChanged = topology !== lastAggregateTopology;
+    const canReuseLayout = !topologyChanged
+      && currentWorld
+      && blocks.every((block) => topicLayout.has(block.id));
+    const layout = canReuseLayout
+      ? {
+          width: currentWorld.width,
+          height: currentWorld.height,
+          blocks: blocks.map((block) => {
+            const cached = topicLayout.get(block.id);
+            return {
+              ...block,
+              x: cached.x,
+              y: cached.y,
+              width: 210,
+              height: Math.max(68, Math.min(96, 64 + block.paperIds.length * 5)),
+            };
+          }),
+        }
+      : aggregateBlockLayout(kind, layoutTechnique, blocks, connections, viewportWidth, viewportHeight);
     const width = layout.width;
     const height = layout.height;
     currentWorld = { width, height, viewportWidth, viewportHeight };
-    const topology = `${kind}|${layoutTechnique}|${blocks.map((block) => block.id).sort().join("|")}`;
-    if (topology !== lastAggregateTopology) {
+    if (topologyChanged) {
       transform = fitTransform(viewportWidth, viewportHeight, width, height, { minZoom: MIN_ZOOM, maxZoom: 1, padding: 40 });
       applyTransform();
-      lastAggregateTopology = topology;
     }
+    lastAggregateTopology = topology;
 
     const positioned = layout.blocks.map((block) => {
       const cached = topicLayout.get(block.id);
