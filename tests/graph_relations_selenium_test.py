@@ -100,22 +100,24 @@ def dispatch_background_pointer(driver):
     )
 
 
-def tap_aggregate_block(driver, selector, pointer_id):
+def tap_aggregate_block(driver, selector, pointer_id, additive=False):
     return driver.execute_script(
         """
         const svg = document.querySelector('#paper-map');
         const block = document.querySelector(arguments[0]);
         if (!block) return {error: 'block not found'};
+        const additive = Boolean(arguments[2]);
         const rect = block.getBoundingClientRect();
         const x = rect.left + Math.min(18, rect.width / 2);
         const y = rect.top + Math.min(18, rect.height / 2);
-        block.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: arguments[1], pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
-        svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: arguments[1], pointerType: 'mouse', clientX: x, clientY: y, buttons: 0}));
-        svg.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: x, clientY: y, button: 0}));
+        block.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: arguments[1], pointerType: 'mouse', clientX: x, clientY: y, buttons: 1, ctrlKey: additive}));
+        svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: arguments[1], pointerType: 'mouse', clientX: x, clientY: y, buttons: 0, ctrlKey: additive}));
+        svg.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: x, clientY: y, button: 0, ctrlKey: additive}));
         return {id: block.dataset.blockId || '', label: block.getAttribute('aria-label') || ''};
         """,
         selector,
         pointer_id,
+        additive,
     )
 
 
@@ -227,71 +229,114 @@ def main():
 
         wait_click(driver, "#ai-config-button")
         wait_displayed(driver, "#ai-config-panel")
+        topic_layout_options = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "graph-config-topic-layout")).options]
+        author_layout_options = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "graph-config-author-layout")).options]
+        assert_true(topic_layout_options == ["generality", "gravity", "hierarchy"], f"Topic layout techniques should be configurable: {topic_layout_options}")
+        assert_true(author_layout_options == ["coauthors", "gravity", "hierarchy"], f"Author layout techniques should be configurable: {author_layout_options}")
+        assert_true(Select(driver.find_element(By.ID, "graph-config-topic-layout")).first_selected_option.get_attribute("value") == "generality", "Topic layout should default to generality")
+        assert_true(Select(driver.find_element(By.ID, "graph-config-author-layout")).first_selected_option.get_attribute("value") == "coauthors", "Author layout should default to co-author count")
         wait_click(driver, "#load-demo")
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
         wait_click(driver, "#ai-config-close")
         wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
 
-        # Topic selection is visual focus only: preserve the complete map, color the
-        # selected topic pink, connected topics yellow, and bold outgoing links.
+        # Topic generality places the most-used topics on the left. Selecting a
+        # topic writes an exact focused-topic filter; Ctrl-click adds another topic.
         wait_click(driver, '#map-mode button[data-mode="topics"]')
         topic_blocks = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".topic-block"))
-        topic_edges = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".topic-edge"))
+        topic_edges = driver.find_elements(By.CSS_SELECTOR, ".topic-edge")
         assert_true(not driver.find_elements(By.CSS_SELECTOR, '.topic-block[data-topic-id="topic:uncategorized"]'), "Topic map should not expose a synthetic Uncategorized block")
-        topic_block_count = len(topic_blocks)
-        topic_edge_count = len(topic_edges)
-        topic_source_id = topic_edges[0].get_attribute("data-source-block-id")
+        topic_layout = driver.execute_script(
+            """
+            return Array.from(document.querySelectorAll('.topic-block')).map((block) => {
+              const match = /translate\\(([-0-9.]+)/.exec(block.getAttribute('transform') || '');
+              return {
+                id: block.dataset.blockId,
+                papers: Number(block.dataset.paperCount || 0),
+                x: Number(match?.[1] || 0),
+                technique: block.dataset.layoutTechnique || '',
+              };
+            });
+            """
+        )
+        assert_true(topic_layout and all(item["technique"] == "generality" for item in topic_layout), f"Topic map should use configured generality layout: {topic_layout}")
+        most_general = max(item["papers"] for item in topic_layout)
+        least_general = min(item["papers"] for item in topic_layout)
+        leftmost_general = min(item["x"] for item in topic_layout if item["papers"] == most_general)
+        rightmost_specific = max(item["x"] for item in topic_layout if item["papers"] == least_general)
+        assert_true(leftmost_general <= rightmost_specific, f"More general topics should not be to the right of least-used topics: {topic_layout}")
+
+        topic_source_id = (topic_edges[0].get_attribute("data-source-block-id") if topic_edges else topic_blocks[0].get_attribute("data-block-id"))
         tap_aggregate_block(driver, f'.topic-block[data-block-id="{topic_source_id}"]', 730)
         wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, f'.topic-block[data-block-id="{topic_source_id}"].selected'))
-        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".topic-block")) == topic_block_count, "Topic selection must not filter topics out of the map")
-        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".topic-edge")) == topic_edge_count, "Topic selection must preserve all topic links")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-topic-focus .filter-focus-chip")) == 1, "Topic selection should create an exact focused-topic filter chip")
         selected_topic_fill = driver.execute_script("return getComputedStyle(document.querySelector('.topic-block.selected rect')).fill")
         assert_true(selected_topic_fill == "rgb(244, 189, 197)", f"Selected topic should be pink, got {selected_topic_fill!r}")
-        connected_topics = driver.find_elements(By.CSS_SELECTOR, ".topic-block.connected")
-        assert_true(connected_topics, "Topic selection should identify connected topics")
-        connected_topic_fill = driver.execute_script("return getComputedStyle(document.querySelector('.topic-block.connected rect')).fill")
-        assert_true(connected_topic_fill == "rgb(246, 196, 69)", f"Connected topics should be yellow, got {connected_topic_fill!r}")
-        focused_topic_edges = driver.find_elements(By.CSS_SELECTOR, ".topic-edge.focus-source")
-        assert_true(focused_topic_edges, "Outgoing links from the selected topic should be emphasized")
-        assert_true(all(edge.get_attribute("data-source-block-id") == topic_source_id for edge in focused_topic_edges), "Only outgoing links from the selected topic should receive focus styling")
         topic_bar = wait_displayed(driver, "#active-topic-filter")
+        assert_true(topic_source_id in [block.get_attribute("data-block-id") for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block.selected")], "Focused topic should remain selected after filtering")
+
+        additional_topics = [block for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block") if block.get_attribute("data-block-id") != topic_source_id]
+        assert_true(additional_topics, "Focused topic filter should keep related/co-occurring topics available for additive selection")
+        second_topic_id = additional_topics[0].get_attribute("data-block-id")
+        tap_aggregate_block(driver, f'.topic-block[data-block-id="{second_topic_id}"]', 732, additive=True)
+        wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".topic-block.selected")) == 2)
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-topic-focus .filter-focus-chip")) == 2, "Ctrl-click should add a second focused-topic filter")
+        assert_true({block.get_attribute("data-block-id") for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block.selected")} == {topic_source_id, second_topic_id}, "Ctrl-click should preserve the first selected topic")
+        assert_true(all(driver.execute_script("return getComputedStyle(arguments[0].querySelector('rect')).fill", block) == "rgb(244, 189, 197)" for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block.selected")), "Every focused topic should stay pink")
+
         wait_click(driver, "#paper-list-button")
         paper_panel = wait_displayed(driver, "#paper-list-panel")
         wait.until(lambda d: d.find_element(By.ID, "paper-list-panel").rect["y"] >= d.find_element(By.ID, "active-topic-filter").rect["y"] + d.find_element(By.ID, "active-topic-filter").rect["height"] - 1)
-        assert_true(paper_panel.rect["y"] >= topic_bar.rect["y"] + topic_bar.rect["height"] - 1, "Topic focus bar should not overlap the Papers panel")
+        assert_true(paper_panel.rect["y"] >= topic_bar.rect["y"] + topic_bar.rect["height"] - 1, "Topic focus filter bar should not overlap the Papers panel")
         wait_click(driver, "#close-paper-list")
         wait_click(driver, "#clear-topic-focus")
+        wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, "#filter-topic-focus .filter-focus-chip"))
 
-        # Author selection uses the same visual focus model and must never enter the
-        # topic-focus state or mutate the Author text filter.
+        # Author co-author layout places authors with the most distinct collaborators
+        # on the left. Author focus is also an exact filter and supports Ctrl-click.
         wait_click(driver, '#map-mode button[data-mode="authors"]')
         author_blocks = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".author-block"))
-        author_edges = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".author-edge"))
         assert_true(len(author_blocks) >= 2, "Author map should render author blocks for the demo library")
-        author_x = {
-            block.get_attribute("transform").split(" ")[0]
-            for block in author_blocks
-            if block.get_attribute("transform")
-        }
-        assert_true(len(author_x) > 1, "Author map should use multiple hierarchy columns instead of a circular orbit")
-        author_block_count = len(author_blocks)
-        author_edge_count = len(author_edges)
-        author_source_id = author_edges[0].get_attribute("data-source-block-id")
+        author_layout = driver.execute_script(
+            """
+            return Array.from(document.querySelectorAll('.author-block')).map((block) => {
+              const match = /translate\\(([-0-9.]+)/.exec(block.getAttribute('transform') || '');
+              return {
+                id: block.dataset.blockId,
+                coauthors: Number(block.dataset.coauthorCount || 0),
+                x: Number(match?.[1] || 0),
+                technique: block.dataset.layoutTechnique || '',
+              };
+            });
+            """
+        )
+        assert_true(author_layout and all(item["technique"] == "coauthors" for item in author_layout), f"Author map should use configured co-author layout: {author_layout}")
+        max_coauthors = max(item["coauthors"] for item in author_layout)
+        min_coauthors = min(item["coauthors"] for item in author_layout)
+        leftmost_hub = min(item["x"] for item in author_layout if item["coauthors"] == max_coauthors)
+        rightmost_low = max(item["x"] for item in author_layout if item["coauthors"] == min_coauthors)
+        assert_true(leftmost_hub <= rightmost_low, f"Authors with more co-authors should not be to the right of least-connected authors: {author_layout}")
+
+        author_source_id = author_blocks[0].get_attribute("data-block-id")
         tap_aggregate_block(driver, f'.author-block[data-block-id="{author_source_id}"]', 731)
         wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, f'.author-block[data-block-id="{author_source_id}"].selected'))
-        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".author-block")) == author_block_count, "Author selection must not filter authors out of the map")
-        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".author-edge")) == author_edge_count, "Author selection must preserve all author links")
-        assert_true(driver.find_element(By.ID, "filter-author").get_attribute("value") == "", "Author-map selection must stay separate from the Author filter")
-        assert_true(driver.find_element(By.ID, "active-topic-filter").get_attribute("hidden") is not None, "Selecting an author must not create a Topic focus")
+        assert_true(driver.find_element(By.ID, "filter-author").get_attribute("value") == "", "Exact Author-map focus must not overwrite the manual Author contains filter")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-author-focus .filter-focus-chip")) == 1, "Author selection should create an exact focused-author filter chip")
+        assert_true(driver.find_element(By.ID, "active-topic-filter").get_attribute("hidden") is not None, "Selecting an author must not create a Topic focus filter")
         selected_author_fill = driver.execute_script("return getComputedStyle(document.querySelector('.author-block.selected rect')).fill")
         assert_true(selected_author_fill == "rgb(244, 189, 197)", f"Selected author should be pink, got {selected_author_fill!r}")
-        connected_authors = driver.find_elements(By.CSS_SELECTOR, ".author-block.connected")
-        assert_true(connected_authors, "Author selection should identify connected authors")
-        connected_author_fill = driver.execute_script("return getComputedStyle(document.querySelector('.author-block.connected rect')).fill")
-        assert_true(connected_author_fill == "rgb(246, 196, 69)", f"Connected authors should be yellow, got {connected_author_fill!r}")
-        focused_author_edges = driver.find_elements(By.CSS_SELECTOR, ".author-edge.focus-source")
-        assert_true(focused_author_edges, "Outgoing links from the selected author should be emphasized")
-        assert_true(all(edge.get_attribute("data-source-block-id") == author_source_id for edge in focused_author_edges), "Only outgoing links from the selected author should receive focus styling")
+
+        additional_authors = [block for block in driver.find_elements(By.CSS_SELECTOR, ".author-block") if block.get_attribute("data-block-id") != author_source_id]
+        assert_true(additional_authors, "Focused author filter should keep co-authors available for additive selection")
+        second_author_id = additional_authors[0].get_attribute("data-block-id")
+        tap_aggregate_block(driver, f'.author-block[data-block-id="{second_author_id}"]', 733, additive=True)
+        wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".author-block.selected")) == 2)
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-author-focus .filter-focus-chip")) == 2, "Ctrl-click should add a second focused-author filter")
+        assert_true({block.get_attribute("data-block-id") for block in driver.find_elements(By.CSS_SELECTOR, ".author-block.selected")} == {author_source_id, second_author_id}, "Ctrl-click should preserve the first selected author")
+
+        dispatch_background_pointer(driver)
+        wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, "#filter-author-focus .filter-focus-chip"))
+        wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, ".author-block.selected"))
 
         wait_click(driver, '#map-mode button[data-mode="citations"]')
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
