@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { aggregateBlockLayout, buildAuthorGraph, buildTopicGraph, gravityBlockLayout, hierarchicalBlockLayout, paperNodeKind } from "../www/graph.js";
+import { aggregateBlockLayout, buildAuthorGraph, buildTopicGraph, gravityBlockLayout, gravityIterationBudget, hierarchicalBlockLayout, paperNodeKind } from "../www/graph.js";
 
 test("topic graph omits papers without real topics", () => {
   const papers = [
@@ -128,4 +128,10 @@ test("gravity block layout is deterministic and finite", () => {
   );
   assert.ok(first.blocks.every((block) => Number.isFinite(block.x) && Number.isFinite(block.y)));
   assert.ok(new Set(first.blocks.map((block) => `${Math.round(block.x)}:${Math.round(block.y)}`)).size > 6);
+});
+
+test("gravity layout settles substantially longer than the old cap", () => {
+  assert.ok(gravityIterationBudget(12) > 260);
+  assert.ok(gravityIterationBudget(100) >= gravityIterationBudget(12));
+  assert.ok(gravityIterationBudget(1000) <= 900);
 });
