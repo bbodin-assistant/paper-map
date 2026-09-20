@@ -14,7 +14,7 @@ import {
   putTopics,
   replaceLibrary,
 } from "./db.js";
-import { createGraph } from "./graph.js?v=0.4.12";
+import { createGraph } from "./graph.js?v=0.4.13";
 import { paperCitationSummary } from "./citation-summary.js?v=0.4.5";
 import {
   downloadText,
