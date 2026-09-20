@@ -292,15 +292,17 @@ main { height: calc(100vh - var(--header-height)); padding: 0 14px 14px; }
 .paper-node.selected .paper-node-circle { fill: #f4bdc5; stroke: #9f3546; stroke-width: 2.4; }
 .paper-node.starred .paper-node-circle { stroke: #ad7810; stroke-width: 2.2; }
 .paper-node.selected.starred .paper-node-circle { fill: #f4bdc5; stroke: #9f3546; stroke-width: 2.4; }
-.paper-node-label { fill: #25313b; font-size: 10px; font-weight: 760; dominant-baseline: middle; }
-.paper-node-meta { fill: #8a939a; font-size: 8px; font-weight: 600; }
+.paper-node-label { fill: #25313b; font-size: 10px; font-weight: 760; dominant-baseline: middle; pointer-events: none; }
+.paper-node-meta { fill: #8a939a; font-size: 8px; font-weight: 600; pointer-events: none; }
 .graph-empty { fill: #7d878e; font-size: 13px; font-weight: 650; }
 
 .topic-edge { stroke: #b7bfbd; opacity: .66; }
+.topic-edge.focus-source { stroke: #5d6871; stroke-width: 3.4px; opacity: .96; }
 .topic-block { cursor: move; outline: none; }
 .topic-block rect { fill: #f8f8f4; stroke: #78838a; stroke-width: 1.2; }
 .topic-block:hover rect, .topic-block:focus rect { fill: #fff7d5; stroke: #34424d; }
-.topic-block.selected rect { fill: #f6c445; stroke: #1f2933; stroke-width: 2; }
+.topic-block.connected rect { fill: #f6c445; stroke: #8f6a0f; stroke-width: 1.8; }
+.topic-block.selected rect { fill: #f4bdc5; stroke: #9f3546; stroke-width: 2.4; }
 .topic-block-name { fill: #23303b; font-size: 13px; font-weight: 850; }
 .topic-block-count { fill: #68737c; font-size: 10px; font-weight: 650; }
 .topic-block-source { fill: #92999d; font-size: 8px; font-weight: 700; text-transform: uppercase; }
