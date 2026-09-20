@@ -241,24 +241,25 @@ def main():
         assert_true(citation_edges, "Demo should render citation edges")
         assert_true(all("citation-arrow" in (edge.get_attribute("marker-end") or "") for edge in citation_edges), "Citation edges should be directed")
 
-        # A plain press/release must select the node even when pointer capture makes
-        # pointerup and the compatibility click land on the SVG rather than the node.
+        # Citation-map paper activation is deliberately two-step. A plain press/release
+        # selects the node even when pointer capture makes pointerup and the compatibility
+        # click land on the SVG rather than the node, but it must not open details yet.
         before_positions = wait_for_stable_node_positions(driver)
         tap_result = tap_first_node(driver)
-        wait_displayed(driver, "#paper-detail")
+        wait.until(lambda d: "selected" in d.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{tap_result["id"]}"]').get_attribute("class"))
+        assert_true(driver.find_element(By.ID, "paper-detail").get_attribute("hidden") is not None, "First citation-map tap should select without opening details")
         after_tap_positions = node_positions(driver)
-        assert_true(before_positions == after_tap_positions, "Plain node tap must open info without resetting/re-simulating graph positions")
-        wait_click(driver, "#close-detail")
+        assert_true(before_positions == after_tap_positions, "First citation-map tap must not reset/re-simulate graph positions")
 
-        # A small pointer wobble remains a tap gesture: it must not reposition the
-        # node and must still open its paper info through the pointerup path.
+        # A small pointer wobble remains a tap gesture. Because it targets the already
+        # selected node, this second activation opens the paper details without moving it.
         jitter_result = jitter_first_node(driver)
         assert_true(jitter_result["before"] == jitter_result["after"], f"Sub-threshold pointer jitter must not move a node: {jitter_result}")
         wait_displayed(driver, "#paper-detail")
         after_jitter_positions = node_positions(driver)
-        assert_true(before_positions == after_jitter_positions, "Sub-threshold tap jitter must not reset/re-simulate graph positions")
+        assert_true(before_positions == after_jitter_positions, "Second citation-map tap must not reset/re-simulate graph positions")
         first_node_id = jitter_result["id"]
-        assert_true(tap_result["id"] == first_node_id, "Tap regression should exercise the same stable first node")
+        assert_true(tap_result["id"] == first_node_id, "Two-step citation regression should exercise the same stable first node")
 
         # Detail view is richer and reading state is reading-only.
         status_values = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "detail-status")).options]
@@ -304,12 +305,25 @@ def main():
         settled_after_drag = wait_for_stable_node_positions(driver)
         assert_true(settled_after_drag[dragged_id] == drag_result["after"], "Dragged node should remain pinned while neighboring nodes settle")
 
-        # Suppression is one-shot: the next deliberate click on the moved node opens
-        # its paper info normally.
+        # Closing details keeps citation selection, so the next deliberate click on the
+        # same moved node opens its paper info normally after drag suppression is consumed.
         moved_node = driver.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{dragged_id}"]')
         moved_node.click()
         wait_displayed(driver, "#paper-detail")
         wait_click(driver, "#close-detail")
+        assert_true(
+            "selected" in driver.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{dragged_id}"]').get_attribute("class"),
+            "Closing citation details should preserve the selected paper",
+        )
+
+        # Clicking citation-map background clears that preserved selection before changing modes.
+        driver.execute_script(
+            """
+            const svg = document.querySelector('#paper-map');
+            svg.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: 4, clientY: 4}));
+            """
+        )
+        wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, ".paper-node.selected"))
 
         # Timeline selection is deliberately two-step: select first, open detail second.
         wait_click(driver, '#map-mode button[data-mode="timeline"]')
