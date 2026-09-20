@@ -11,13 +11,13 @@ export const TIMELINE_CLUSTER_FIELD_OPTIONS = Object.freeze([
 export const TOPIC_LAYOUT_OPTIONS = Object.freeze([
   Object.freeze({ id: "generality", label: "Generality · most-used topics left" }),
   Object.freeze({ id: "gravity", label: "Gravity · connected topics attract" }),
-  Object.freeze({ id: "hierarchy", label: "Co-author network · deterministic columns" }),
+  Object.freeze({ id: "hierarchy", label: "Citation hierarchy · directional columns" }),
 ]);
 
 export const AUTHOR_LAYOUT_OPTIONS = Object.freeze([
   Object.freeze({ id: "coauthors", label: "Co-authors · most collaborators left" }),
   Object.freeze({ id: "gravity", label: "Gravity · connected authors attract" }),
-  Object.freeze({ id: "hierarchy", label: "Citation hierarchy · directional columns" }),
+  Object.freeze({ id: "hierarchy", label: "Co-author network · deterministic columns" }),
 ]);
 
 const TIMELINE_CLUSTER_FIELD_IDS = new Set(TIMELINE_CLUSTER_FIELD_OPTIONS.map((option) => option.id));
