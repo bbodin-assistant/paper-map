@@ -861,7 +861,7 @@ function renderModeButtons() {
 
 function renderAll() {
   const { papers, edges } = visibleGraph();
-  const aggregateView = state.mode === "topics" || state.mode === "authors"
+  const mapView = state.mode === "topics" || state.mode === "authors" || state.mode === "citations"
     ? visibleGraph({ ignoreAggregateFocus: true })
     : { papers, edges };
   els.visiblePaperCount.textContent = String(papers.length);
@@ -882,8 +882,8 @@ function renderAll() {
   const graphConfig = loadGraphConfig();
   graph.render({
     mode: state.mode,
-    papers: aggregateView.papers,
-    edges: aggregateView.edges,
+    papers: mapView.papers,
+    edges: mapView.edges,
     topics: state.library.topics,
     selectedId: state.selectedPaperId,
     selectedTopicIds: focusedTopics,
