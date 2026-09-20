@@ -14,7 +14,8 @@ import {
   putTopics,
   replaceLibrary,
 } from "./db.js";
-import { createGraph } from "./graph.js?v=0.4.14";
+import { createGraph } from "./graph.js?v=0.4.15";
+import { loadGraphConfig } from "./graph-config.js?v=0.4.11";
 import { paperCitationSummary } from "./citation-summary.js?v=0.4.5";
 import {
   downloadText,
@@ -72,9 +73,11 @@ const els = {
   yearMin: $("#filter-year-min"),
   yearMax: $("#filter-year-max"),
   author: $("#filter-author"),
+  authorFocus: $("#filter-author-focus"),
   venue: $("#filter-venue"),
   type: $("#filter-type"),
   topic: $("#filter-topic"),
+  topicFocus: $("#filter-topic-focus"),
   source: $("#filter-source"),
   starred: $("#filter-starred"),
   clearFilters: $("#clear-filters"),
@@ -126,15 +129,35 @@ const els = {
 };
 
 function defaultFilters() {
-  return { query: "", yearMin: "", yearMax: "", author: "", venue: "", type: "", topic: "", source: "", starred: false };
+  return {
+    query: "",
+    yearMin: "",
+    yearMax: "",
+    author: "",
+    focusAuthors: [],
+    venue: "",
+    type: "",
+    topic: "",
+    focusTopics: [],
+    source: "",
+    starred: false,
+  };
+}
+
+function normalizedFocusValues(values = []) {
+  if (!Array.isArray(values)) return [];
+  return Array.from(new Set(values.map((value) => String(value || "").trim()).filter(Boolean)));
 }
 
 function loadUiState() {
   try {
     const saved = JSON.parse(localStorage.getItem(UI_STORAGE_KEY) || "{}");
+    const filters = { ...defaultFilters(), ...(saved.filters || {}) };
+    filters.focusAuthors = normalizedFocusValues(filters.focusAuthors);
+    filters.focusTopics = normalizedFocusValues(filters.focusTopics);
     return {
       mode: ["citations", "topics", "authors"].includes(saved.mode) ? saved.mode : "citations",
-      filters: { ...defaultFilters(), ...(saved.filters || {}) },
+      filters,
     };
   } catch {
     return { mode: "citations", filters: defaultFilters() };
@@ -147,8 +170,6 @@ const state = {
   mode: storedUi.mode,
   filters: storedUi.filters,
   selectedPaperId: null,
-  selectedTopicId: null,
-  selectedAuthorName: "",
   expansionOffsets: new Map(),
   busy: false,
 };
@@ -697,6 +718,10 @@ function matchesPaper(paper) {
   if (filters.yearMin && (!Number.isFinite(year) || year < Number(filters.yearMin))) return false;
   if (filters.yearMax && (!Number.isFinite(year) || year > Number(filters.yearMax))) return false;
   if (filters.author && !(paper.authors || []).some((author) => filterValue(author).includes(filterValue(filters.author)))) return false;
+  if (filters.focusAuthors?.length) {
+    const paperAuthors = new Set((paper.authors || []).map(filterValue));
+    if (!filters.focusAuthors.some((author) => paperAuthors.has(filterValue(author)))) return false;
+  }
   if (filters.venue && !filterValue(paper.venue).includes(filterValue(filters.venue))) return false;
   if (filters.type && paper.type !== filters.type) return false;
   if (filters.source && paperEntrySource(paper) !== filters.source) return false;
@@ -707,6 +732,7 @@ function matchesPaper(paper) {
     if (kind === "topic" && !(paper.topics || []).includes(value)) return false;
     if (kind === "tag" && !(paper.tags || []).includes(value)) return false;
   }
+  if (filters.focusTopics?.length && !filters.focusTopics.some((topicId) => (paper.topics || []).includes(topicId))) return false;
 
   return true;
 }
@@ -719,7 +745,11 @@ function visibleGraph() {
 }
 
 function activeFilterCount() {
-  return Object.entries(state.filters).filter(([key, value]) => key !== "query" && Boolean(value)).length + (state.filters.query ? 1 : 0);
+  return Object.entries(state.filters).reduce((count, [key, value]) => {
+    if (key === "query") return count;
+    if (Array.isArray(value)) return count + (value.length ? 1 : 0);
+    return count + (value ? 1 : 0);
+  }, state.filters.query ? 1 : 0);
 }
 
 function updateFilterInputs() {
@@ -791,6 +821,34 @@ function renderPaperList(papers) {
   els.paperList.replaceChildren(fragment);
 }
 
+function renderFocusFilterList(container, values, labelFor, removeValue) {
+  if (!container) return;
+  container.replaceChildren();
+  container.hidden = !values.length;
+  for (const value of values) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "filter-focus-chip";
+    button.textContent = `${labelFor(value)} ×`;
+    button.setAttribute("aria-label", `Remove ${labelFor(value)} from focused filters`);
+    button.addEventListener("click", () => removeValue(value));
+    container.append(button);
+  }
+}
+
+function removeFocusedTopic(topicId) {
+  state.filters.focusTopics = state.filters.focusTopics.filter((value) => value !== topicId);
+  saveUiState();
+  renderAll();
+}
+
+function removeFocusedAuthor(authorName) {
+  const key = filterValue(authorName);
+  state.filters.focusAuthors = state.filters.focusAuthors.filter((value) => filterValue(value) !== key);
+  saveUiState();
+  renderAll();
+}
+
 function renderModeButtons() {
   for (const button of els.mapMode.querySelectorAll("button[data-mode]")) {
     const selected = button.dataset.mode === state.mode;
@@ -807,19 +865,26 @@ function renderAll() {
   els.filterCount.hidden = count === 0;
   els.filterCount.textContent = String(count);
 
-  els.activeTopicFilter.hidden = !state.selectedTopicId;
-  if (state.selectedTopicId) els.activeTopicFilterName.textContent = topicName(state.selectedTopicId);
+  const focusedTopics = state.filters.focusTopics || [];
+  const focusedAuthors = state.filters.focusAuthors || [];
+  els.activeTopicFilter.hidden = !focusedTopics.length;
+  if (focusedTopics.length) els.activeTopicFilterName.textContent = focusedTopics.map(topicName).join(", ");
+  renderFocusFilterList(els.topicFocus, focusedTopics, topicName, removeFocusedTopic);
+  renderFocusFilterList(els.authorFocus, focusedAuthors, (value) => value, removeFocusedAuthor);
 
   renderModeButtons();
   renderPaperList(papers);
+  const graphConfig = loadGraphConfig();
   graph.render({
     mode: state.mode,
     papers,
     edges,
     topics: state.library.topics,
     selectedId: state.selectedPaperId,
-    selectedTopicId: state.selectedTopicId,
-    selectedAuthor: state.selectedAuthorName,
+    selectedTopicIds: focusedTopics,
+    selectedAuthors: focusedAuthors,
+    topicLayoutTechnique: graphConfig.topicLayoutTechnique,
+    authorLayoutTechnique: graphConfig.authorLayoutTechnique,
   });
 
   if (state.selectedPaperId && !els.detail.hidden) renderDetail();
@@ -1221,12 +1286,36 @@ const graph = createGraph({
       renderAll();
     }
   },
-  onSelectTopic: (topicId) => {
-    state.selectedTopicId = state.selectedTopicId === topicId ? null : topicId;
+  onSelectTopic: (topicId, { additive = false } = {}) => {
+    const current = normalizedFocusValues(state.filters.focusTopics);
+    if (!topicId) {
+      state.filters.focusTopics = [];
+    } else if (additive) {
+      state.filters.focusTopics = current.includes(topicId)
+        ? current.filter((value) => value !== topicId)
+        : [...current, topicId];
+    } else {
+      state.filters.focusTopics = current.length === 1 && current[0] === topicId ? [] : [topicId];
+    }
+    saveUiState();
     renderAll();
   },
-  onSelectAuthor: (authorName) => {
-    state.selectedAuthorName = filterValue(state.selectedAuthorName) === filterValue(authorName) ? "" : (authorName || "");
+  onSelectAuthor: (authorName, { additive = false } = {}) => {
+    const current = normalizedFocusValues(state.filters.focusAuthors);
+    const key = filterValue(authorName);
+    if (!key) {
+      state.filters.focusAuthors = [];
+    } else {
+      const existing = current.find((value) => filterValue(value) === key);
+      if (additive) {
+        state.filters.focusAuthors = existing
+          ? current.filter((value) => filterValue(value) !== key)
+          : [...current, authorName];
+      } else {
+        state.filters.focusAuthors = current.length === 1 && existing ? [] : [authorName];
+      }
+    }
+    saveUiState();
     renderAll();
   },
 });
@@ -1237,9 +1326,11 @@ function updateFilterFromInputs() {
     yearMin: els.yearMin.value,
     yearMax: els.yearMax.value,
     author: els.author.value,
+    focusAuthors: normalizedFocusValues(state.filters.focusAuthors),
     venue: els.venue.value,
     type: els.type.value,
     topic: els.topic.value,
+    focusTopics: normalizedFocusValues(state.filters.focusTopics),
     source: els.source.value,
     starred: els.starred.checked,
   };
@@ -1253,7 +1344,6 @@ for (const input of [els.search, els.yearMin, els.yearMax, els.author, els.venue
 
 els.clearFilters.addEventListener("click", () => {
   state.filters = defaultFilters();
-  state.selectedTopicId = null;
   updateFilterInputs();
   populateFilterOptions();
   saveUiState();
@@ -1261,7 +1351,8 @@ els.clearFilters.addEventListener("click", () => {
 });
 
 els.clearTopicFocus.addEventListener("click", () => {
-  state.selectedTopicId = null;
+  state.filters.focusTopics = [];
+  saveUiState();
   renderAll();
 });
 
@@ -1272,6 +1363,8 @@ els.mapMode.addEventListener("click", (event) => {
   saveUiState();
   renderAll();
 });
+
+document.addEventListener("paper-map-graph-config-changed", () => renderAll());
 
 els.resetView.addEventListener("click", () => graph.resetView());
 
@@ -1416,7 +1509,8 @@ els.clearLibrary.addEventListener("click", async () => {
     setBusy(true, "Clearing local library…");
     await clearLibrary();
     state.selectedPaperId = null;
-    state.selectedTopicId = null;
+    state.filters.focusTopics = [];
+    state.filters.focusAuthors = [];
     closeDetail();
     await refreshLibrary();
     setStatus("Local library cleared.", "ready");
