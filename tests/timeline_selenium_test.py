@@ -228,6 +228,82 @@ def exercise_timeline_click(driver, label):
     help_text = driver.find_element(By.CSS_SELECTOR, ".map-help").get_attribute("textContent")
     assert_true("Chronology" not in help_text and "observed years" not in help_text, f"Timeline should omit implementation hints in {label}: {help_text!r}")
 
+    # Zooming out must shrink the fixed theme gutter with the world-space paper
+    # gutter so sticky theme labels never cover a paper card.
+    overlay_geometry = driver.execute_script(
+        """
+        const svg = document.querySelector('#paper-map');
+        const box = svg.getBoundingClientRect();
+        for (let index = 0; index < 12; index += 1) {
+          svg.dispatchEvent(new WheelEvent('wheel', {
+            bubbles: true,
+            cancelable: true,
+            deltaY: 500,
+            clientX: box.left + box.width / 2,
+            clientY: box.top + box.height / 2,
+          }));
+        }
+        const visible = (element) => element && getComputedStyle(element).display !== 'none';
+        const themes = Array.from(document.querySelectorAll('.timeline-sticky-theme'))
+          .filter(visible)
+          .map((group) => {
+            const bg = group.querySelector('.timeline-sticky-theme-bg')?.getBoundingClientRect();
+            return bg ? {left: bg.left, right: bg.right, top: bg.top, bottom: bg.bottom} : null;
+          })
+          .filter(Boolean);
+        const papers = Array.from(document.querySelectorAll('.timeline-paper')).map((paper) => {
+          const rect = paper.getBoundingClientRect();
+          return {left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom};
+        });
+        const overlaps = [];
+        for (const theme of themes) {
+          for (const paper of papers) {
+            const overlap = theme.left < paper.right
+              && theme.right > paper.left
+              && theme.top < paper.bottom
+              && theme.bottom > paper.top;
+            if (overlap) overlaps.push({theme, paper});
+          }
+        }
+        return {
+          zoom: Number((document.querySelector('#paper-map .graph-viewport')?.getAttribute('transform') || '').match(/scale\\(([-0-9.]+)\\)/)?.[1] || 1),
+          themeCount: themes.length,
+          overlaps,
+        };
+        """
+    )
+    assert_true(overlay_geometry["zoom"] <= 0.5, f"Timeline zoom-out regression did not reach a small scale in {label}: {overlay_geometry}")
+    assert_true(not overlay_geometry["overlaps"], f"Timeline theme labels must not overlap paper cards when zoomed out in {label}: {overlay_geometry}")
+
+    # Reset keeps the final year readable rather than placing it under the floating
+    # Reset view control. The control is desktop-only, so mobile only checks reset.
+    reset_geometry = driver.execute_script(
+        """
+        document.querySelector('#reset-view')?.click();
+        const labels = Array.from(document.querySelectorAll('.timeline-sticky-year-label'));
+        const last = labels[labels.length - 1];
+        const reset = document.querySelector('#reset-view');
+        const lastRect = last?.getBoundingClientRect();
+        const resetRect = reset?.getBoundingClientRect();
+        const resetVisible = Boolean(resetRect?.width && resetRect?.height && getComputedStyle(reset).display !== 'none');
+        const overlap = Boolean(resetVisible && lastRect
+          && lastRect.left < resetRect.right
+          && lastRect.right > resetRect.left
+          && lastRect.top < resetRect.bottom
+          && lastRect.bottom > resetRect.top);
+        return {
+          lastDisplay: last ? getComputedStyle(last).display : 'missing',
+          lastText: last?.textContent || '',
+          resetVisible,
+          overlap,
+          lastRect: lastRect ? {left: lastRect.left, right: lastRect.right, top: lastRect.top, bottom: lastRect.bottom} : null,
+          resetRect: resetRect ? {left: resetRect.left, right: resetRect.right, top: resetRect.top, bottom: resetRect.bottom} : null,
+        };
+        """
+    )
+    assert_true(reset_geometry["lastDisplay"] != "none", f"Reset view should keep the final Timeline year visible in {label}: {reset_geometry}")
+    assert_true(not reset_geometry["overlap"], f"Reset view must not cover the final Timeline year in {label}: {reset_geometry}")
+
     # Second click on the already selected paper opens the detail drawer.
     paper = driver.find_element(By.CSS_SELECTOR, f'.timeline-paper[data-paper-id="{paper_id}"]')
     paper.click()
