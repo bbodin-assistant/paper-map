@@ -14,7 +14,7 @@ import {
   putTopics,
   replaceLibrary,
 } from "./db.js";
-import { createGraph } from "./graph.js?v=0.4.13";
+import { createGraph } from "./graph.js?v=0.4.14";
 import { paperCitationSummary } from "./citation-summary.js?v=0.4.5";
 import {
   downloadText,
@@ -148,6 +148,7 @@ const state = {
   filters: storedUi.filters,
   selectedPaperId: null,
   selectedTopicId: null,
+  selectedAuthorName: "",
   expansionOffsets: new Map(),
   busy: false,
 };
@@ -707,7 +708,6 @@ function matchesPaper(paper) {
     if (kind === "tag" && !(paper.tags || []).includes(value)) return false;
   }
 
-  if (state.selectedTopicId && !(paper.topics || []).includes(state.selectedTopicId)) return false;
   return true;
 }
 
@@ -819,7 +819,7 @@ function renderAll() {
     topics: state.library.topics,
     selectedId: state.selectedPaperId,
     selectedTopicId: state.selectedTopicId,
-    selectedAuthor: state.filters.author,
+    selectedAuthor: state.selectedAuthorName,
   });
 
   if (state.selectedPaperId && !els.detail.hidden) renderDetail();
@@ -1226,9 +1226,7 @@ const graph = createGraph({
     renderAll();
   },
   onSelectAuthor: (authorName) => {
-    state.filters.author = filterValue(state.filters.author) === filterValue(authorName) ? "" : authorName;
-    updateFilterInputs();
-    saveUiState();
+    state.selectedAuthorName = filterValue(state.selectedAuthorName) === filterValue(authorName) ? "" : (authorName || "");
     renderAll();
   },
 });
