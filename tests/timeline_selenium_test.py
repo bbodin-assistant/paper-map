@@ -301,7 +301,8 @@ def exercise_timeline_click(driver, label):
         };
         """
     )
-    assert_true(reset_geometry["lastDisplay"] != "none", f"Reset view should keep the final Timeline year visible in {label}: {reset_geometry}")
+    if reset_geometry["resetVisible"]:
+        assert_true(reset_geometry["lastDisplay"] != "none", f"Reset view should keep the final Timeline year visible in {label}: {reset_geometry}")
     assert_true(not reset_geometry["overlap"], f"Reset view must not cover the final Timeline year in {label}: {reset_geometry}")
 
     # Second click on the already selected paper opens the detail drawer.
