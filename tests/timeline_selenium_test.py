@@ -172,8 +172,8 @@ def exercise_timeline_click(driver, label):
         };
         """
     )
-    assert_true(pan_bounds["x"] <= 0.01 and pan_bounds["y"] <= 0.01, f"Timeline pan should stop before exposing blank left/top space in {label}: {pan_bounds}")
-    assert_true(pan_bounds["bandLeft"] <= pan_bounds["svgLeft"] + 1, f"Timeline theme color should reach the left edge in {label}: {pan_bounds}")
+    assert_true(0 < pan_bounds["x"] <= 49 and pan_bounds["y"] <= 0.01, f"Timeline drag should allow only a small left-edge overscroll in {label}: {pan_bounds}")
+    assert_true(pan_bounds["bandLeft"] <= pan_bounds["svgLeft"] + 49, f"Timeline left-edge drag allowance should remain small in {label}: {pan_bounds}")
     assert_true(pan_bounds["bandTop"] <= pan_bounds["yearBottom"] + 1, f"Timeline content should reach the fixed year strip without a top blank gutter in {label}: {pan_bounds}")
 
     band_color_by_index = {
@@ -225,6 +225,41 @@ def exercise_timeline_click(driver, label):
     matching_band = driver.find_element(By.CSS_SELECTOR, f'.timeline-band-group[data-timeline-cluster-index="{sticky_index}"]')
     matching_fill = driver.execute_script("return getComputedStyle(arguments[0].querySelector('.timeline-band')).fill;", matching_band)
     assert_true(sticky_fill == matching_fill, f"Fixed theme label should continue the theme color to the left edge in {label}: {sticky_fill!r} != {matching_fill!r}")
+
+    # Drag the world far left so papers pass underneath the sticky theme gutter.
+    # Theme titles must remain present rather than being hidden when the available
+    # gutter becomes narrow.
+    dragged_theme_titles = driver.execute_script(
+        """
+        const svg = document.querySelector('#paper-map');
+        const box = svg.getBoundingClientRect();
+        const startX = box.left + box.width * 0.7;
+        const startY = box.top + box.height * 0.45;
+        svg.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 982, pointerType: 'mouse', clientX: startX, clientY: startY, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointermove', {bubbles: true, pointerId: 982, pointerType: 'mouse', clientX: startX - 2000, clientY: startY, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 982, pointerType: 'mouse', clientX: startX - 2000, clientY: startY, buttons: 0}));
+        const visible = (element) => element && getComputedStyle(element).display !== 'none';
+        const themes = Array.from(document.querySelectorAll('.timeline-sticky-theme'))
+          .filter(visible)
+          .map((group) => {
+            const name = group.querySelector('.timeline-sticky-theme-name');
+            const bg = group.querySelector('.timeline-sticky-theme-bg');
+            return {
+              text: name?.textContent?.trim() || '',
+              nameVisible: visible(name),
+              width: Number(bg?.getAttribute('width') || 0),
+            };
+          });
+        document.querySelector('#reset-view')?.click();
+        return themes;
+        """
+    )
+    assert_true(dragged_theme_titles, f"Timeline should keep visible theme headers after a far-left drag in {label}")
+    assert_true(
+        all(theme["nameVisible"] and theme["text"] and theme["width"] >= 36 for theme in dragged_theme_titles),
+        f"Timeline theme titles must never disappear when horizontally dragged in {label}: {dragged_theme_titles}",
+    )
+
     help_text = driver.find_element(By.CSS_SELECTOR, ".map-help").get_attribute("textContent")
     assert_true("Chronology" not in help_text and "observed years" not in help_text, f"Timeline should omit implementation hints in {label}: {help_text!r}")
 
@@ -261,7 +296,13 @@ def exercise_timeline_click(driver, label):
           .filter(Boolean);
         const papers = Array.from(document.querySelectorAll('.timeline-paper')).map((paper) => {
           const rect = paper.getBoundingClientRect();
-          return {left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom};
+          return {
+            left: rect.left,
+            right: rect.right,
+            top: rect.top,
+            bottom: rect.bottom,
+            fullyVisible: rect.left >= box.left && rect.right <= box.right,
+          };
         });
         const yearLabels = Array.from(document.querySelectorAll('.timeline-sticky-year-label'))
           .filter(visible)
@@ -272,6 +313,7 @@ def exercise_timeline_click(driver, label):
         const overlaps = [];
         for (const theme of themes) {
           for (const paper of papers) {
+            if (!paper.fullyVisible) continue;
             const overlap = theme.left < paper.right
               && theme.right > paper.left
               && theme.top < paper.bottom
@@ -314,7 +356,7 @@ def exercise_timeline_click(driver, label):
     assert_true(overlay_geometry["zoom"] <= 0.5, f"Timeline zoom-out regression did not reach a small scale in {label}: {overlay_geometry}")
     assert_true(overlay_geometry["themeCount"] > 0, f"Timeline should retain visible theme headers when zoomed out in {label}: {overlay_geometry}")
     assert_true(overlay_geometry["visibleThemeNames"] == overlay_geometry["themeCount"], f"Every visible Timeline theme should keep its name when zoomed out in {label}: {overlay_geometry}")
-    assert_true(not overlay_geometry["overlaps"], f"Timeline theme labels must not overlap paper cards when zoomed out in {label}: {overlay_geometry}")
+    assert_true(not overlay_geometry["overlaps"], f"Timeline theme labels must not cover fully visible paper cards when zoomed out in {label}: {overlay_geometry}")
     assert_true(not overlay_geometry["yearPaperOverlaps"], f"Timeline year labels must not overlap paper cards when zoomed out in {label}: {overlay_geometry}")
     assert_true(not overlay_geometry["yearLabelOverlaps"], f"Timeline year labels must not overlap each other when zoomed out in {label}: {overlay_geometry}")
 

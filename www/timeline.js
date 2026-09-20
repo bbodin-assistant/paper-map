@@ -38,13 +38,14 @@ const YEAR_TICK_MIN_SCREEN_GAP = 105;
 const YEAR_STRIP_HEIGHT = 28;
 const YEAR_LABEL_COLLISION_GAP = 52;
 const THEME_NAME_MIN_WIDTH = 36;
+const LEFT_EDGE_DRAG_OVERSCROLL = 48;
 
 export function timelineYearTickStep(zoom = 1) {
   const boundedZoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number(zoom) || 1));
   return Math.max(1, Math.ceil(YEAR_TICK_MIN_SCREEN_GAP / (YEAR_STEP * boundedZoom)));
 }
 
-export function clampTimelineTransform(transform, viewportWidth, viewportHeight, worldWidth, worldHeight) {
+export function clampTimelineTransform(transform, viewportWidth, viewportHeight, worldWidth, worldHeight, { leftOverscroll = 0 } = {}) {
   const k = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number(transform?.k) || 1));
   const width = Math.max(1, Number(viewportWidth) || 1);
   const height = Math.max(1, Number(viewportHeight) || 1);
@@ -52,9 +53,10 @@ export function clampTimelineTransform(transform, viewportWidth, viewportHeight,
   const scaledHeight = Math.max(1, Number(worldHeight) || height) * k;
   const minX = Math.min(0, width - scaledWidth);
   const minY = Math.min(0, height - scaledHeight);
+  const maxX = Math.max(0, Number(leftOverscroll) || 0);
   return {
     k,
-    x: Math.max(minX, Math.min(0, Number(transform?.x) || 0)),
+    x: Math.max(minX, Math.min(maxX, Number(transform?.x) || 0)),
     y: Math.max(minY, Math.min(0, Number(transform?.y) || 0)),
   };
 }
@@ -552,13 +554,13 @@ export function initTimelineMap(root = document) {
         .filter((paper) => paper.right > 0 && paper.left < width)
         .reduce((left, paper) => Math.min(left, paper.left), Infinity);
       const stickyThemeWidth = Math.max(
-        0,
+        THEME_NAME_MIN_WIDTH,
         Math.min(LEFT_GUTTER, (Number.isFinite(visiblePaperLeft) ? visiblePaperLeft : LEFT_GUTTER) - 4),
       );
       bg?.setAttribute("width", String(stickyThemeWidth));
       if (name) {
         const compact = stickyThemeWidth < 62;
-        name.style.display = stickyThemeWidth >= THEME_NAME_MIN_WIDTH ? "" : "none";
+        name.style.display = "";
         name.style.fontSize = compact ? "9px" : "";
         name.setAttribute("x", compact ? "5" : "10");
       }
@@ -570,7 +572,7 @@ export function initTimelineMap(root = document) {
     }
   }
 
-  function applyTimelineTransform() {
+  function applyTimelineTransform({ leftOverscroll = 0 } = {}) {
     if (currentLayout) {
       timelineTransform = clampTimelineTransform(
         timelineTransform,
@@ -578,6 +580,7 @@ export function initTimelineMap(root = document) {
         Math.max(1, svg.clientHeight || 720),
         currentLayout.width,
         currentLayout.height,
+        { leftOverscroll },
       );
     }
     viewport.setAttribute("transform", `translate(${timelineTransform.x} ${timelineTransform.y}) scale(${timelineTransform.k})`);
@@ -902,7 +905,7 @@ export function initTimelineMap(root = document) {
     if (panGesture?.pointerId === event.pointerId) {
       timelineTransform.x = panGesture.origin.x + point.x - panGesture.start.x;
       timelineTransform.y = panGesture.origin.y + point.y - panGesture.start.y;
-      applyTimelineTransform();
+      applyTimelineTransform({ leftOverscroll: LEFT_EDGE_DRAG_OVERSCROLL });
     }
   }, true);
 

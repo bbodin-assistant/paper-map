@@ -103,6 +103,20 @@ test("timeline transform clamp prevents blank space above or left of the world",
   );
 });
 
+test("timeline drag clamp allows only a small left-edge overscroll", () => {
+  assert.deepEqual(
+    clampTimelineTransform(
+      { x: 180, y: 0, k: 1 },
+      800,
+      600,
+      1400,
+      900,
+      { leftOverscroll: 48 },
+    ),
+    { x: 48, y: 0, k: 1 },
+  );
+});
+
 test("timeline thins year ticks only when zoomed far out", () => {
   assert.equal(timelineYearTickStep(1), 1);
   assert.ok(timelineYearTickStep(0.35) > 1);
