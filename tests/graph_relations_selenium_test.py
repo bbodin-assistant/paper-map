@@ -100,6 +100,45 @@ def dispatch_background_pointer(driver):
     )
 
 
+def tap_aggregate_block(driver, selector, pointer_id):
+    return driver.execute_script(
+        """
+        const svg = document.querySelector('#paper-map');
+        const block = document.querySelector(arguments[0]);
+        if (!block) return {error: 'block not found'};
+        const rect = block.getBoundingClientRect();
+        const x = rect.left + Math.min(18, rect.width / 2);
+        const y = rect.top + Math.min(18, rect.height / 2);
+        block.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: arguments[1], pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: arguments[1], pointerType: 'mouse', clientX: x, clientY: y, buttons: 0}));
+        svg.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: x, clientY: y, button: 0}));
+        return {id: block.dataset.blockId || '', label: block.getAttribute('aria-label') || ''};
+        """,
+        selector,
+        pointer_id,
+    )
+
+
+def tap_citation_label_area(driver):
+    return driver.execute_script(
+        """
+        const svg = document.querySelector('#paper-map');
+        const label = document.querySelector('.paper-node-label');
+        const rect = label.getBoundingClientRect();
+        const x = rect.left + Math.max(2, rect.width / 2);
+        const y = rect.top + Math.max(2, rect.height / 2);
+        const target = document.elementFromPoint(x, y) || svg;
+        target.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 702, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 702, pointerType: 'mouse', clientX: x, clientY: y, buttons: 0}));
+        target.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: x, clientY: y, button: 0}));
+        return {
+          hitClass: typeof target.className === 'object' ? target.className.baseVal : (target.className || ''),
+          labelPointerEvents: getComputedStyle(label).pointerEvents,
+        };
+        """
+    )
+
+
 def tap_first_node(driver):
     return driver.execute_script(
         """
@@ -190,11 +229,28 @@ def main():
         wait_click(driver, "#ai-config-close")
         wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
 
-        # Topic focus must not create an unusable synthetic category or cover Bibliography.
+        # Topic selection is visual focus only: preserve the complete map, color the
+        # selected topic pink, connected topics yellow, and bold outgoing links.
         wait_click(driver, '#map-mode button[data-mode="topics"]')
         topic_blocks = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".topic-block"))
+        topic_edges = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".topic-edge"))
         assert_true(not driver.find_elements(By.CSS_SELECTOR, '.topic-block[data-topic-id="topic:uncategorized"]'), "Topic map should not expose a synthetic Uncategorized block")
-        topic_blocks[0].click()
+        topic_block_count = len(topic_blocks)
+        topic_edge_count = len(topic_edges)
+        topic_source_id = topic_edges[0].get_attribute("data-source-block-id")
+        tap_aggregate_block(driver, f'.topic-block[data-block-id="{topic_source_id}"]', 730)
+        wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, f'.topic-block[data-block-id="{topic_source_id}"].selected'))
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".topic-block")) == topic_block_count, "Topic selection must not filter topics out of the map")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".topic-edge")) == topic_edge_count, "Topic selection must preserve all topic links")
+        selected_topic_fill = driver.execute_script("return getComputedStyle(document.querySelector('.topic-block.selected rect')).fill")
+        assert_true(selected_topic_fill == "rgb(244, 189, 197)", f"Selected topic should be pink, got {selected_topic_fill!r}")
+        connected_topics = driver.find_elements(By.CSS_SELECTOR, ".topic-block.connected")
+        assert_true(connected_topics, "Topic selection should identify connected topics")
+        connected_topic_fill = driver.execute_script("return getComputedStyle(document.querySelector('.topic-block.connected rect')).fill")
+        assert_true(connected_topic_fill == "rgb(246, 196, 69)", f"Connected topics should be yellow, got {connected_topic_fill!r}")
+        focused_topic_edges = driver.find_elements(By.CSS_SELECTOR, ".topic-edge.focus-source")
+        assert_true(focused_topic_edges, "Outgoing links from the selected topic should be emphasized")
+        assert_true(all(edge.get_attribute("data-source-block-id") == topic_source_id for edge in focused_topic_edges), "Only outgoing links from the selected topic should receive focus styling")
         topic_bar = wait_displayed(driver, "#active-topic-filter")
         wait_click(driver, "#paper-list-button")
         paper_panel = wait_displayed(driver, "#paper-list-panel")
@@ -203,9 +259,11 @@ def main():
         wait_click(driver, "#close-paper-list")
         wait_click(driver, "#clear-topic-focus")
 
-        # Author map groups visible papers by author in the same hierarchical block layout.
+        # Author selection uses the same visual focus model and must never enter the
+        # topic-focus state or mutate the Author text filter.
         wait_click(driver, '#map-mode button[data-mode="authors"]')
         author_blocks = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".author-block"))
+        author_edges = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".author-edge"))
         assert_true(len(author_blocks) >= 2, "Author map should render author blocks for the demo library")
         author_x = {
             block.get_attribute("transform").split(" ")[0]
@@ -213,6 +271,24 @@ def main():
             if block.get_attribute("transform")
         }
         assert_true(len(author_x) > 1, "Author map should use multiple hierarchy columns instead of a circular orbit")
+        author_block_count = len(author_blocks)
+        author_edge_count = len(author_edges)
+        author_source_id = author_edges[0].get_attribute("data-source-block-id")
+        tap_aggregate_block(driver, f'.author-block[data-block-id="{author_source_id}"]', 731)
+        wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, f'.author-block[data-block-id="{author_source_id}"].selected'))
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".author-block")) == author_block_count, "Author selection must not filter authors out of the map")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".author-edge")) == author_edge_count, "Author selection must preserve all author links")
+        assert_true(driver.find_element(By.ID, "filter-author").get_attribute("value") == "", "Author-map selection must stay separate from the Author filter")
+        assert_true(driver.find_element(By.ID, "active-topic-filter").get_attribute("hidden") is not None, "Selecting an author must not create a Topic focus")
+        selected_author_fill = driver.execute_script("return getComputedStyle(document.querySelector('.author-block.selected rect')).fill")
+        assert_true(selected_author_fill == "rgb(244, 189, 197)", f"Selected author should be pink, got {selected_author_fill!r}")
+        connected_authors = driver.find_elements(By.CSS_SELECTOR, ".author-block.connected")
+        assert_true(connected_authors, "Author selection should identify connected authors")
+        connected_author_fill = driver.execute_script("return getComputedStyle(document.querySelector('.author-block.connected rect')).fill")
+        assert_true(connected_author_fill == "rgb(246, 196, 69)", f"Connected authors should be yellow, got {connected_author_fill!r}")
+        focused_author_edges = driver.find_elements(By.CSS_SELECTOR, ".author-edge.focus-source")
+        assert_true(focused_author_edges, "Outgoing links from the selected author should be emphasized")
+        assert_true(all(edge.get_attribute("data-source-block-id") == author_source_id for edge in focused_author_edges), "Only outgoing links from the selected author should receive focus styling")
 
         wait_click(driver, '#map-mode button[data-mode="citations"]')
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
@@ -240,6 +316,12 @@ def main():
         citation_edges = driver.find_elements(By.CSS_SELECTOR, ".citation-edge")
         assert_true(citation_edges, "Demo should render citation edges")
         assert_true(all("citation-arrow" in (edge.get_attribute("marker-end") or "") for edge in citation_edges), "Citation edges should be directed")
+
+        # Citation labels are informational only; clicking where the label is painted
+        # must behave like background interaction rather than selecting its paper.
+        label_tap = tap_citation_label_area(driver)
+        assert_true(label_tap["labelPointerEvents"] == "none", f"Citation label should not be a hit target: {label_tap}")
+        assert_true(not driver.find_elements(By.CSS_SELECTOR, ".paper-node.selected"), f"Citation label area must not select a paper: {label_tap}")
 
         # Citation-map paper activation is deliberately two-step. A plain press/release
         # selects the node even when pointer capture makes pointerup and the compatibility
