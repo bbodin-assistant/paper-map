@@ -774,6 +774,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     selectedBlockIds = [],
     kind = "topic",
     layoutTechnique = kind === "author" ? "coauthors" : "generality",
+    linkMode = kind === "author" ? "coauthors" : "citations",
     emptyMessage,
     onSelectBlock,
   }) {
