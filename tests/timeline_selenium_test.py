@@ -162,19 +162,23 @@ def exercise_timeline_click(driver, label):
         const match = /translate\(([-0-9.]+) ([-0-9.]+)\)/.exec(viewport?.getAttribute('transform') || '');
         const firstBand = document.querySelector('.timeline-band');
         const yearStrip = document.querySelector('.timeline-sticky-year-strip');
+        const bandRect = firstBand?.getBoundingClientRect();
         return {
           x: Number(match?.[1] || 0),
           y: Number(match?.[2] || 0),
-          bandLeft: firstBand?.getBoundingClientRect().left,
-          bandTop: firstBand?.getBoundingClientRect().top,
+          bandLeft: bandRect?.left,
+          bandRight: bandRect?.right,
+          bandTop: bandRect?.top,
           svgLeft: box.left,
+          svgRight: box.right,
           yearBottom: yearStrip?.getBoundingClientRect().bottom,
         };
         """
     )
-    assert_true(0 < pan_bounds["x"] <= 49 and pan_bounds["y"] <= 0.01, f"Timeline drag should allow only a small left-edge overscroll in {label}: {pan_bounds}")
-    assert_true(pan_bounds["bandLeft"] <= pan_bounds["svgLeft"] + 49, f"Timeline left-edge drag allowance should remain small in {label}: {pan_bounds}")
-    assert_true(pan_bounds["bandTop"] <= pan_bounds["yearBottom"] + 1, f"Timeline content should reach the fixed year strip without a top blank gutter in {label}: {pan_bounds}")
+    assert_true(0 < pan_bounds["x"] <= 129 and 0 < pan_bounds["y"] <= 49, f"Timeline drag should allow bounded right/down room beside sticky overlays in {label}: {pan_bounds}")
+    assert_true(pan_bounds["bandLeft"] <= pan_bounds["svgLeft"] - 2, f"Timeline theme band should extend past the left viewport edge in {label}: {pan_bounds}")
+    assert_true(pan_bounds["bandRight"] >= pan_bounds["svgRight"] + 2, f"Timeline theme band should extend past the right viewport edge in {label}: {pan_bounds}")
+    assert_true(pan_bounds["bandTop"] >= pan_bounds["yearBottom"] + 1, f"Timeline top band should be draggable fully below the fixed year strip in {label}: {pan_bounds}")
 
     band_color_by_index = {
         band.get_attribute("data-timeline-cluster-index"): band.get_attribute("data-timeline-cluster-color")
@@ -187,7 +191,25 @@ def exercise_timeline_click(driver, label):
             f"Timeline paper card should inherit its cluster color in {label}: cluster {cluster_index}",
         )
 
-    paper = timeline_papers[0]
+    clickable_paper_id = driver.execute_script(
+        """
+        const svgRect = document.querySelector('#paper-map')?.getBoundingClientRect();
+        if (!svgRect) return null;
+        const paper = Array.from(document.querySelectorAll('.timeline-paper[data-paper-id]'))
+          .find((candidate) => {
+            const rect = candidate.getBoundingClientRect();
+            const centerX = (rect.left + rect.right) / 2;
+            const centerY = (rect.top + rect.bottom) / 2;
+            return centerX >= svgRect.left
+              && centerX <= svgRect.right
+              && centerY >= svgRect.top
+              && centerY <= svgRect.bottom;
+          });
+        return paper?.dataset.paperId || null;
+        """
+    )
+    assert_true(clickable_paper_id, f"Timeline should keep at least one rendered paper center inside the viewport after bounded pan in {label}")
+    paper = driver.find_element(By.CSS_SELECTOR, f'.timeline-paper[data-paper-id="{clickable_paper_id}"]')
     paper_id = paper.get_attribute("data-paper-id")
     expected_title = driver.execute_script(
         """
@@ -226,9 +248,8 @@ def exercise_timeline_click(driver, label):
     matching_fill = driver.execute_script("return getComputedStyle(arguments[0].querySelector('.timeline-band')).fill;", matching_band)
     assert_true(sticky_fill == matching_fill, f"Fixed theme label should continue the theme color to the left edge in {label}: {sticky_fill!r} != {matching_fill!r}")
 
-    # Drag the world far left so papers pass underneath the sticky theme gutter.
-    # Theme titles must remain present rather than being hidden when the available
-    # gutter becomes narrow.
+    # Drag the world far left so papers pass underneath the sticky theme box.
+    # Theme titles and their fixed box must remain independent of paper geometry.
     dragged_theme_titles = driver.execute_script(
         """
         const svg = document.querySelector('#paper-map');
@@ -256,15 +277,15 @@ def exercise_timeline_click(driver, label):
     )
     assert_true(dragged_theme_titles, f"Timeline should keep visible theme headers after a far-left drag in {label}")
     assert_true(
-        all(theme["nameVisible"] and theme["text"] and theme["width"] >= 36 for theme in dragged_theme_titles),
+        all(theme["nameVisible"] and theme["text"] and theme["width"] >= 160 for theme in dragged_theme_titles),
         f"Timeline theme titles must never disappear when horizontally dragged in {label}: {dragged_theme_titles}",
     )
 
     help_text = driver.find_element(By.CSS_SELECTOR, ".map-help").get_attribute("textContent")
     assert_true("Chronology" not in help_text and "observed years" not in help_text, f"Timeline should omit implementation hints in {label}: {help_text!r}")
 
-    # Zooming out must shrink the fixed theme gutter with the world-space paper
-    # gutter so sticky theme labels never cover a paper card.
+    # At maximum zoom-out the sticky theme box remains fixed. Paper cards may
+    # pass beneath it; the label drawing no longer depends on paper geometry.
     overlay_geometry = driver.execute_script(
         """
         const svg = document.querySelector('#paper-map');
@@ -356,9 +377,56 @@ def exercise_timeline_click(driver, label):
     assert_true(overlay_geometry["zoom"] <= 0.5, f"Timeline zoom-out regression did not reach a small scale in {label}: {overlay_geometry}")
     assert_true(overlay_geometry["themeCount"] > 0, f"Timeline should retain visible theme headers when zoomed out in {label}: {overlay_geometry}")
     assert_true(overlay_geometry["visibleThemeNames"] == overlay_geometry["themeCount"], f"Every visible Timeline theme should keep its name when zoomed out in {label}: {overlay_geometry}")
-    assert_true(not overlay_geometry["overlaps"], f"Timeline theme labels must not cover fully visible paper cards when zoomed out in {label}: {overlay_geometry}")
     assert_true(not overlay_geometry["yearPaperOverlaps"], f"Timeline year labels must not overlap paper cards when zoomed out in {label}: {overlay_geometry}")
     assert_true(not overlay_geometry["yearLabelOverlaps"], f"Timeline year labels must not overlap each other when zoomed out in {label}: {overlay_geometry}")
+
+    reveal_geometry = driver.execute_script(
+        """
+        const svg = document.querySelector('#paper-map');
+        const box = svg.getBoundingClientRect();
+        const startX = box.left + box.width * 0.45;
+        const startY = box.top + box.height * 0.45;
+        svg.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 983, pointerType: 'mouse', clientX: startX, clientY: startY, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointermove', {bubbles: true, pointerId: 983, pointerType: 'mouse', clientX: startX + 1000, clientY: startY + 1000, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 983, pointerType: 'mouse', clientX: startX + 1000, clientY: startY + 1000, buttons: 0}));
+
+        const viewport = document.querySelector('#paper-map .graph-viewport');
+        const transform = /translate\\(([-0-9.]+) ([-0-9.]+)\\)/.exec(viewport?.getAttribute('transform') || '');
+        const bandRect = document.querySelector('.timeline-band')?.getBoundingClientRect();
+        const yearBottom = document.querySelector('.timeline-sticky-year-strip')?.getBoundingClientRect().bottom;
+        const themeRects = Array.from(document.querySelectorAll('.timeline-sticky-theme'))
+          .filter((theme) => getComputedStyle(theme).display !== 'none')
+          .map((theme) => theme.querySelector('.timeline-sticky-theme-bg')?.getBoundingClientRect())
+          .filter(Boolean);
+        const paperRects = Array.from(document.querySelectorAll('.timeline-paper'))
+          .map((paper) => paper.getBoundingClientRect())
+          .filter((rect) => rect.width > 0 && rect.height > 0);
+        const leftmostPaper = paperRects.sort((a, b) => a.left - b.left)[0];
+        return {
+          x: Number(transform?.[1] || 0),
+          y: Number(transform?.[2] || 0),
+          bandLeft: bandRect?.left,
+          bandRight: bandRect?.right,
+          bandTop: bandRect?.top,
+          svgLeft: box.left,
+          svgRight: box.right,
+          yearBottom,
+          themeWidths: themeRects.map((rect) => rect.width),
+          themeRight: themeRects.length ? Math.max(...themeRects.map((rect) => rect.right)) : null,
+          leftmostPaper: leftmostPaper ? {left: leftmostPaper.left, right: leftmostPaper.right} : null,
+        };
+        """
+    )
+    assert_true(100 < reveal_geometry["x"] <= 129 and 0 < reveal_geometry["y"] <= 49, f"Timeline max zoom-out should retain enough bounded drag room in {label}: {reveal_geometry}")
+    assert_true(reveal_geometry["themeWidths"] and all(width >= 160 for width in reveal_geometry["themeWidths"]), f"Timeline theme boxes should keep a fixed width independent of paper positions in {label}: {reveal_geometry}")
+    assert_true(reveal_geometry["bandLeft"] <= reveal_geometry["svgLeft"] - 2 and reveal_geometry["bandRight"] >= reveal_geometry["svgRight"] + 2, f"Timeline bands should read as borderless horizontal continuations across the viewport in {label}: {reveal_geometry}")
+    assert_true(reveal_geometry["bandTop"] >= reveal_geometry["yearBottom"] + 1, f"Timeline top band should be movable below the years at maximum zoom-out in {label}: {reveal_geometry}")
+    assert_true(
+        reveal_geometry["leftmostPaper"]
+        and reveal_geometry["leftmostPaper"]["left"] >= reveal_geometry["themeRight"] - 1
+        and reveal_geometry["leftmostPaper"]["right"] <= reveal_geometry["svgRight"] + 1,
+        f"Timeline rightward drag should fully reveal the earliest paper card beside the fixed theme box in {label}: {reveal_geometry}",
+    )
 
     # Reset keeps the final year readable rather than placing it under the floating
     # Reset view control. The control is desktop-only, so mobile only checks reset.

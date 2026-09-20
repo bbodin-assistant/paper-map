@@ -37,15 +37,16 @@ const ROW_STEP = 62;
 const YEAR_TICK_MIN_SCREEN_GAP = 105;
 const YEAR_STRIP_HEIGHT = 28;
 const YEAR_LABEL_COLLISION_GAP = 52;
-const THEME_NAME_MIN_WIDTH = 36;
-const LEFT_EDGE_DRAG_OVERSCROLL = 48;
+const LEFT_EDGE_DRAG_OVERSCROLL = 128;
+const TOP_EDGE_DRAG_OVERSCROLL = 48;
+const BAND_VIEWPORT_MARGIN = 4;
 
 export function timelineYearTickStep(zoom = 1) {
   const boundedZoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number(zoom) || 1));
   return Math.max(1, Math.ceil(YEAR_TICK_MIN_SCREEN_GAP / (YEAR_STEP * boundedZoom)));
 }
 
-export function clampTimelineTransform(transform, viewportWidth, viewportHeight, worldWidth, worldHeight, { leftOverscroll = 0 } = {}) {
+export function clampTimelineTransform(transform, viewportWidth, viewportHeight, worldWidth, worldHeight, { leftOverscroll = 0, topOverscroll = 0 } = {}) {
   const k = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number(transform?.k) || 1));
   const width = Math.max(1, Number(viewportWidth) || 1);
   const height = Math.max(1, Number(viewportHeight) || 1);
@@ -54,10 +55,11 @@ export function clampTimelineTransform(transform, viewportWidth, viewportHeight,
   const minX = Math.min(0, width - scaledWidth);
   const minY = Math.min(0, height - scaledHeight);
   const maxX = Math.max(0, Number(leftOverscroll) || 0);
+  const maxY = Math.max(0, Number(topOverscroll) || 0);
   return {
     k,
     x: Math.max(minX, Math.min(maxX, Number(transform?.x) || 0)),
-    y: Math.max(minY, Math.min(0, Number(transform?.y) || 0)),
+    y: Math.max(minY, Math.min(maxY, Number(transform?.y) || 0)),
   };
 }
 
@@ -545,26 +547,13 @@ export function initTimelineMap(root = document) {
       const bg = group.querySelector(".timeline-sticky-theme-bg");
       const name = group.querySelector(".timeline-sticky-theme-name");
       const terms = group.querySelector(".timeline-sticky-theme-terms");
-      const visiblePaperLeft = currentLayout.nodes
-        .filter((node) => node.groupIndex === band.index)
-        .map((node) => ({
-          left: timelineTransform.x + node.x * timelineTransform.k,
-          right: timelineTransform.x + (node.x + node.width) * timelineTransform.k,
-        }))
-        .filter((paper) => paper.right > 0 && paper.left < width)
-        .reduce((left, paper) => Math.min(left, paper.left), Infinity);
-      const stickyThemeWidth = Math.max(
-        THEME_NAME_MIN_WIDTH,
-        Math.min(LEFT_GUTTER, (Number.isFinite(visiblePaperLeft) ? visiblePaperLeft : LEFT_GUTTER) - 4),
-      );
-      bg?.setAttribute("width", String(stickyThemeWidth));
+      bg?.setAttribute("width", String(LEFT_GUTTER));
       if (name) {
-        const compact = stickyThemeWidth < 62;
         name.style.display = "";
-        name.style.fontSize = compact ? "9px" : "";
-        name.setAttribute("x", compact ? "5" : "10");
+        name.style.fontSize = "";
+        name.setAttribute("x", "10");
       }
-      if (terms) terms.style.display = stickyThemeWidth >= 118 ? "" : "none";
+      if (terms) terms.style.display = "";
       const stickyTop = YEAR_STRIP_HEIGHT + 2;
       const maxY = Math.max(stickyTop, Math.min(height - 40, screenBottom - 40));
       const y = Math.max(stickyTop, Math.min(maxY, screenTop + 7));
@@ -572,7 +561,20 @@ export function initTimelineMap(root = document) {
     }
   }
 
-  function applyTimelineTransform({ leftOverscroll = 0 } = {}) {
+  function updateTimelineBandExtents() {
+    if (!currentLayout) return;
+    const k = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number(timelineTransform.k) || 1));
+    const width = Math.max(1, svg.clientWidth || 1200);
+    const marginWorld = BAND_VIEWPORT_MARGIN / k;
+    const leftWorld = (-timelineTransform.x / k) - marginWorld;
+    const bandWidth = (width / k) + marginWorld * 2;
+    for (const band of viewport.querySelectorAll(".timeline-band")) {
+      band.setAttribute("x", String(leftWorld));
+      band.setAttribute("width", String(bandWidth));
+    }
+  }
+
+  function applyTimelineTransform({ leftOverscroll = 0, topOverscroll = 0 } = {}) {
     if (currentLayout) {
       timelineTransform = clampTimelineTransform(
         timelineTransform,
@@ -580,9 +582,10 @@ export function initTimelineMap(root = document) {
         Math.max(1, svg.clientHeight || 720),
         currentLayout.width,
         currentLayout.height,
-        { leftOverscroll },
+        { leftOverscroll, topOverscroll },
       );
     }
+    updateTimelineBandExtents();
     viewport.setAttribute("transform", `translate(${timelineTransform.x} ${timelineTransform.y}) scale(${timelineTransform.k})`);
     updateStickyOverlay();
   }
@@ -684,7 +687,6 @@ export function initTimelineMap(root = document) {
         y: band.y,
         width: layout.width,
         height: band.height,
-        rx: 8,
         class: "timeline-band",
       });
       bandGroup.append(rect);
@@ -905,7 +907,10 @@ export function initTimelineMap(root = document) {
     if (panGesture?.pointerId === event.pointerId) {
       timelineTransform.x = panGesture.origin.x + point.x - panGesture.start.x;
       timelineTransform.y = panGesture.origin.y + point.y - panGesture.start.y;
-      applyTimelineTransform({ leftOverscroll: LEFT_EDGE_DRAG_OVERSCROLL });
+      applyTimelineTransform({
+        leftOverscroll: LEFT_EDGE_DRAG_OVERSCROLL,
+        topOverscroll: TOP_EDGE_DRAG_OVERSCROLL,
+      });
     }
   }, true);
 

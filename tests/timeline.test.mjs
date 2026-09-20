@@ -103,17 +103,17 @@ test("timeline transform clamp prevents blank space above or left of the world",
   );
 });
 
-test("timeline drag clamp allows only a small left-edge overscroll", () => {
+test("timeline drag clamp allows bounded room to reveal content beside sticky overlays", () => {
   assert.deepEqual(
     clampTimelineTransform(
-      { x: 180, y: 0, k: 1 },
+      { x: 180, y: 90, k: 1 },
       800,
       600,
       1400,
       900,
-      { leftOverscroll: 48 },
+      { leftOverscroll: 128, topOverscroll: 48 },
     ),
-    { x: 48, y: 0, k: 1 },
+    { x: 128, y: 48, k: 1 },
   );
 });
 
