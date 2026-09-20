@@ -4,7 +4,7 @@ import {
   DEFAULT_GRAPH_CONFIG,
   loadGraphConfig,
   TIMELINE_CLUSTER_FIELD_OPTIONS,
-} from "./graph-config.js?v=0.4.10";
+} from "./graph-config.js?v=0.4.11";
 import { isCitationEdge } from "./research-relations.js";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
