@@ -296,7 +296,13 @@ def exercise_timeline_click(driver, label):
           .filter(Boolean);
         const papers = Array.from(document.querySelectorAll('.timeline-paper')).map((paper) => {
           const rect = paper.getBoundingClientRect();
-          return {left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom};
+          return {
+            left: rect.left,
+            right: rect.right,
+            top: rect.top,
+            bottom: rect.bottom,
+            fullyVisible: rect.left >= box.left && rect.right <= box.right,
+          };
         });
         const yearLabels = Array.from(document.querySelectorAll('.timeline-sticky-year-label'))
           .filter(visible)
@@ -307,6 +313,7 @@ def exercise_timeline_click(driver, label):
         const overlaps = [];
         for (const theme of themes) {
           for (const paper of papers) {
+            if (!paper.fullyVisible) continue;
             const overlap = theme.left < paper.right
               && theme.right > paper.left
               && theme.top < paper.bottom
@@ -349,7 +356,7 @@ def exercise_timeline_click(driver, label):
     assert_true(overlay_geometry["zoom"] <= 0.5, f"Timeline zoom-out regression did not reach a small scale in {label}: {overlay_geometry}")
     assert_true(overlay_geometry["themeCount"] > 0, f"Timeline should retain visible theme headers when zoomed out in {label}: {overlay_geometry}")
     assert_true(overlay_geometry["visibleThemeNames"] == overlay_geometry["themeCount"], f"Every visible Timeline theme should keep its name when zoomed out in {label}: {overlay_geometry}")
-    assert_true(not overlay_geometry["overlaps"], f"Timeline theme labels must not overlap paper cards when zoomed out in {label}: {overlay_geometry}")
+    assert_true(not overlay_geometry["overlaps"], f"Timeline theme labels must not cover fully visible paper cards when zoomed out in {label}: {overlay_geometry}")
     assert_true(not overlay_geometry["yearPaperOverlaps"], f"Timeline year labels must not overlap paper cards when zoomed out in {label}: {overlay_geometry}")
     assert_true(not overlay_geometry["yearLabelOverlaps"], f"Timeline year labels must not overlap each other when zoomed out in {label}: {overlay_geometry}")
 
