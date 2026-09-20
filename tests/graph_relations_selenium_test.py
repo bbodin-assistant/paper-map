@@ -386,9 +386,11 @@ def main():
         wait_displayed(driver, "#ai-config-panel")
         Select(driver.find_element(By.ID, "graph-config-author-links")).select_by_value("citations")
         wait_click(driver, "#ai-config-save")
-        wait.until(lambda d: Select(d.find_element(By.ID, "graph-config-author-links")).first_selected_option.get_attribute("value") == "citations")
-        wait_click(driver, "#ai-config-close")
         wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
+        stored_author_link_mode = driver.execute_script(
+            "return JSON.parse(localStorage.getItem('paper-map-graph-config-v1') || '{}').authorLinkMode || ''"
+        )
+        assert_true(stored_author_link_mode == "citations", f"Author citation link mode should persist after Save: {stored_author_link_mode!r}")
         citation_author_edges = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".author-edge"))
         assert_true(
             all("citation-arrow" in (edge.get_attribute("marker-end") or "") for edge in citation_author_edges),
