@@ -242,6 +242,9 @@ def main():
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
         wait_click(driver, "#ai-config-close")
         wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
+        citation_node_count = len(driver.find_elements(By.CSS_SELECTOR, ".paper-node"))
+        citation_edge_count = len(driver.find_elements(By.CSS_SELECTOR, ".citation-edge"))
+        assert_true(citation_edge_count > 0, "Demo citation map should expose citation links before aggregate focus")
 
         # Topic generality places the most-used topics on the left. Selecting a
         # topic writes an exact focused-topic filter; Ctrl-click adds another topic.
@@ -281,6 +284,16 @@ def main():
         assert_true(selected_topic_fill == "rgb(244, 189, 197)", f"Selected topic should be pink, got {selected_topic_fill!r}")
         topic_bar = wait_displayed(driver, "#active-topic-filter")
         assert_true(topic_source_id in [block.get_attribute("data-block-id") for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block.selected")], "Focused topic should remain selected after filtering")
+
+        # Aggregate focus filters the paper list/count, but the Citation map must
+        # keep the surrounding citation graph so citation links do not disappear
+        # merely because the other endpoint is outside the focused topic.
+        wait_click(driver, '#map-mode button[data-mode="citations"]')
+        wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) == citation_node_count)
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".citation-edge")) == citation_edge_count, "Focused Topic must not remove citation links from the Citation map")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-topic-focus .filter-focus-chip")) == 1, "Topic focus should remain active when viewing citation context")
+        wait_click(driver, '#map-mode button[data-mode="topics"]')
+        wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, f'.topic-block[data-block-id="{topic_source_id}"].selected'))
 
         additional_topics = [block for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block") if block.get_attribute("data-block-id") != topic_source_id]
         assert_true(additional_topics, "Focused topic filter should keep related/co-occurring topics available for additive selection")
