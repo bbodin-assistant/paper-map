@@ -191,7 +191,25 @@ def exercise_timeline_click(driver, label):
             f"Timeline paper card should inherit its cluster color in {label}: cluster {cluster_index}",
         )
 
-    paper = timeline_papers[0]
+    clickable_paper_id = driver.execute_script(
+        """
+        const svgRect = document.querySelector('#paper-map')?.getBoundingClientRect();
+        if (!svgRect) return null;
+        const paper = Array.from(document.querySelectorAll('.timeline-paper[data-paper-id]'))
+          .find((candidate) => {
+            const rect = candidate.getBoundingClientRect();
+            const centerX = (rect.left + rect.right) / 2;
+            const centerY = (rect.top + rect.bottom) / 2;
+            return centerX >= svgRect.left
+              && centerX <= svgRect.right
+              && centerY >= svgRect.top
+              && centerY <= svgRect.bottom;
+          });
+        return paper?.dataset.paperId || null;
+        """
+    )
+    assert_true(clickable_paper_id, f"Timeline should keep at least one rendered paper center inside the viewport after bounded pan in {label}")
+    paper = driver.find_element(By.CSS_SELECTOR, f'.timeline-paper[data-paper-id="{clickable_paper_id}"]')
     paper_id = paper.get_attribute("data-paper-id")
     expected_title = driver.execute_script(
         """
