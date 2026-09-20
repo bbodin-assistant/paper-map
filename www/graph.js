@@ -799,7 +799,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       .map((connection) => `${connection.source}>${connection.target}:${connection.weight || 0}`)
       .sort()
       .join("|");
-    const topology = `${kind}|${layoutTechnique}|${blocks.map((block) => block.id).sort().join("|")}|${connectionTopology}`;
+    const topology = `${kind}|${linkMode}|${layoutTechnique}|${blocks.map((block) => block.id).sort().join("|")}|${connectionTopology}`;
     const topologyChanged = topology !== lastAggregateTopology;
     const canReuseLayout = !topologyChanged
       && currentWorld
