@@ -14,7 +14,7 @@ import {
   putTopics,
   replaceLibrary,
 } from "./db.js";
-import { createGraph } from "./graph.js?v=0.4.15";
+import { createGraph } from "./graph.js?v=0.4.16";
 import { loadGraphConfig } from "./graph-config.js?v=0.4.11";
 import { paperCitationSummary } from "./citation-summary.js?v=0.4.5";
 import {
@@ -697,7 +697,7 @@ function filterValue(value) {
   return String(value || "").trim().toLowerCase();
 }
 
-function matchesPaper(paper) {
+function matchesPaper(paper, { ignoreAggregateFocus = false } = {}) {
   const filters = state.filters;
   const query = filterValue(filters.query);
   if (query) {
@@ -718,7 +718,7 @@ function matchesPaper(paper) {
   if (filters.yearMin && (!Number.isFinite(year) || year < Number(filters.yearMin))) return false;
   if (filters.yearMax && (!Number.isFinite(year) || year > Number(filters.yearMax))) return false;
   if (filters.author && !(paper.authors || []).some((author) => filterValue(author).includes(filterValue(filters.author)))) return false;
-  if (filters.focusAuthors?.length) {
+  if (!ignoreAggregateFocus && filters.focusAuthors?.length) {
     const paperAuthors = new Set((paper.authors || []).map(filterValue));
     if (!filters.focusAuthors.some((author) => paperAuthors.has(filterValue(author)))) return false;
   }
@@ -732,13 +732,13 @@ function matchesPaper(paper) {
     if (kind === "topic" && !(paper.topics || []).includes(value)) return false;
     if (kind === "tag" && !(paper.tags || []).includes(value)) return false;
   }
-  if (filters.focusTopics?.length && !filters.focusTopics.some((topicId) => (paper.topics || []).includes(topicId))) return false;
+  if (!ignoreAggregateFocus && filters.focusTopics?.length && !filters.focusTopics.some((topicId) => (paper.topics || []).includes(topicId))) return false;
 
   return true;
 }
 
-function visibleGraph() {
-  const papers = state.library.papers.filter(matchesPaper);
+function visibleGraph({ ignoreAggregateFocus = false } = {}) {
+  const papers = state.library.papers.filter((paper) => matchesPaper(paper, { ignoreAggregateFocus }));
   const ids = new Set(papers.map((paper) => paper.id));
   const edges = state.library.edges.filter((edge) => ids.has(edge.source) && ids.has(edge.target));
   return { papers, edges };
@@ -861,6 +861,9 @@ function renderModeButtons() {
 
 function renderAll() {
   const { papers, edges } = visibleGraph();
+  const aggregateView = state.mode === "topics" || state.mode === "authors"
+    ? visibleGraph({ ignoreAggregateFocus: true })
+    : { papers, edges };
   els.visiblePaperCount.textContent = String(papers.length);
   els.visibleEdgeCount.textContent = String(edges.length);
   const count = activeFilterCount();
@@ -879,8 +882,8 @@ function renderAll() {
   const graphConfig = loadGraphConfig();
   graph.render({
     mode: state.mode,
-    papers,
-    edges,
+    papers: aggregateView.papers,
+    edges: aggregateView.edges,
     topics: state.library.topics,
     selectedId: state.selectedPaperId,
     selectedTopicIds: focusedTopics,

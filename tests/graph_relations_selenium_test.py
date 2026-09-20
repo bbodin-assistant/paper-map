@@ -245,6 +245,8 @@ def main():
         wait_click(driver, '#map-mode button[data-mode="topics"]')
         topic_blocks = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".topic-block"))
         topic_edges = driver.find_elements(By.CSS_SELECTOR, ".topic-edge")
+        topic_block_count = len(topic_blocks)
+        topic_edge_count = len(topic_edges)
         assert_true(not driver.find_elements(By.CSS_SELECTOR, '.topic-block[data-topic-id="topic:uncategorized"]'), "Topic map should not expose a synthetic Uncategorized block")
         topic_layout = driver.execute_script(
             """
@@ -269,6 +271,8 @@ def main():
         topic_source_id = (topic_edges[0].get_attribute("data-source-block-id") if topic_edges else topic_blocks[0].get_attribute("data-block-id"))
         tap_aggregate_block(driver, f'.topic-block[data-block-id="{topic_source_id}"]', 730)
         wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, f'.topic-block[data-block-id="{topic_source_id}"].selected'))
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".topic-block")) == topic_block_count, "Topic focus must keep every topic visible in the Topic map")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".topic-edge")) == topic_edge_count, "Topic focus must keep every Topic-map link visible")
         assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-topic-focus .filter-focus-chip")) == 1, "Topic selection should create an exact focused-topic filter chip")
         selected_topic_fill = driver.execute_script("return getComputedStyle(document.querySelector('.topic-block.selected rect')).fill")
         assert_true(selected_topic_fill == "rgb(244, 189, 197)", f"Selected topic should be pink, got {selected_topic_fill!r}")
@@ -280,6 +284,8 @@ def main():
         second_topic_id = additional_topics[0].get_attribute("data-block-id")
         tap_aggregate_block(driver, f'.topic-block[data-block-id="{second_topic_id}"]', 732, additive=True)
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".topic-block.selected")) == 2)
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".topic-block")) == topic_block_count, "Multi-topic focus must not remove unselected topics from the Topic map")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".topic-edge")) == topic_edge_count, "Multi-topic focus must not remove Topic-map links")
         assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-topic-focus .filter-focus-chip")) == 2, "Ctrl-click should add a second focused-topic filter")
         assert_true({block.get_attribute("data-block-id") for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block.selected")} == {topic_source_id, second_topic_id}, "Ctrl-click should preserve the first selected topic")
         assert_true(all(driver.execute_script("return getComputedStyle(arguments[0].querySelector('rect')).fill", block) == "rgb(244, 189, 197)" for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block.selected")), "Every focused topic should stay pink")
@@ -296,6 +302,9 @@ def main():
         # on the left. Author focus is also an exact filter and supports Ctrl-click.
         wait_click(driver, '#map-mode button[data-mode="authors"]')
         author_blocks = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".author-block"))
+        author_edges = driver.find_elements(By.CSS_SELECTOR, ".author-edge")
+        author_block_count = len(author_blocks)
+        author_edge_count = len(author_edges)
         assert_true(len(author_blocks) >= 2, "Author map should render author blocks for the demo library")
         author_layout = driver.execute_script(
             """
@@ -320,6 +329,8 @@ def main():
         author_source_id = author_blocks[0].get_attribute("data-block-id")
         tap_aggregate_block(driver, f'.author-block[data-block-id="{author_source_id}"]', 731)
         wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, f'.author-block[data-block-id="{author_source_id}"].selected'))
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".author-block")) == author_block_count, "Author focus must keep every author visible in the Author map")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".author-edge")) == author_edge_count, "Author focus must keep every Author-map link visible")
         assert_true(driver.find_element(By.ID, "filter-author").get_attribute("value") == "", "Exact Author-map focus must not overwrite the manual Author contains filter")
         assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-author-focus .filter-focus-chip")) == 1, "Author selection should create an exact focused-author filter chip")
         assert_true(driver.find_element(By.ID, "active-topic-filter").get_attribute("hidden") is not None, "Selecting an author must not create a Topic focus filter")
@@ -331,6 +342,8 @@ def main():
         second_author_id = additional_authors[0].get_attribute("data-block-id")
         tap_aggregate_block(driver, f'.author-block[data-block-id="{second_author_id}"]', 733, additive=True)
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".author-block.selected")) == 2)
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".author-block")) == author_block_count, "Multi-author focus must not remove unselected authors from the Author map")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".author-edge")) == author_edge_count, "Multi-author focus must not remove Author-map links")
         assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-author-focus .filter-focus-chip")) == 2, "Ctrl-click should add a second focused-author filter")
         assert_true({block.get_attribute("data-block-id") for block in driver.find_elements(By.CSS_SELECTOR, ".author-block.selected")} == {author_source_id, second_author_id}, "Ctrl-click should preserve the first selected author")
 
