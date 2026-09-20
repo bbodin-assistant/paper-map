@@ -144,11 +144,12 @@ def tap_first_node(driver):
         """
         const svg = document.querySelector('#paper-map');
         const node = document.querySelector('.paper-node');
-        const rect = node.getBoundingClientRect();
+        const circle = node.querySelector('.paper-node-circle');
+        const rect = circle.getBoundingClientRect();
         const x = rect.left + rect.width / 2;
         const y = rect.top + rect.height / 2;
         const id = node.dataset.paperId;
-        node.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 703, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
+        circle.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 703, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
         svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 703, pointerType: 'mouse', clientX: x, clientY: y, buttons: 0}));
         svg.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: x, clientY: y, button: 0}));
         return {id};
@@ -161,11 +162,12 @@ def jitter_first_node(driver):
         """
         const svg = document.querySelector('#paper-map');
         const node = document.querySelector('.paper-node');
+        const circle = node.querySelector('.paper-node-circle');
         const before = node.getAttribute('transform');
-        const rect = node.getBoundingClientRect();
+        const rect = circle.getBoundingClientRect();
         const x = rect.left + rect.width / 2;
         const y = rect.top + rect.height / 2;
-        node.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 705, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
+        circle.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 705, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
         svg.dispatchEvent(new PointerEvent('pointermove', {bubbles: true, pointerId: 705, pointerType: 'mouse', clientX: x + 3, clientY: y + 2, buttons: 1}));
         svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 705, pointerType: 'mouse', clientX: x + 3, clientY: y + 2, buttons: 0}));
         svg.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: x + 3, clientY: y + 2, button: 0}));
@@ -179,11 +181,12 @@ def drag_first_node(driver):
         """
         const svg = document.querySelector('#paper-map');
         const node = document.querySelector('.paper-node');
+        const circle = node.querySelector('.paper-node-circle');
         const before = node.getAttribute('transform');
-        const rect = node.getBoundingClientRect();
+        const rect = circle.getBoundingClientRect();
         const x = rect.left + rect.width / 2;
         const y = rect.top + rect.height / 2;
-        node.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 710, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
+        circle.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 710, pointerType: 'mouse', clientX: x, clientY: y, buttons: 1}));
         svg.dispatchEvent(new PointerEvent('pointermove', {bubbles: true, pointerId: 710, pointerType: 'mouse', clientX: x + 48, clientY: y + 26, buttons: 1}));
         svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 710, pointerType: 'mouse', clientX: x + 48, clientY: y + 26, buttons: 0}));
         node.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: x + 48, clientY: y + 26, button: 0}));
@@ -390,7 +393,7 @@ def main():
         # Closing details keeps citation selection, so the next deliberate click on the
         # same moved node opens its paper info normally after drag suppression is consumed.
         moved_node = driver.find_element(By.CSS_SELECTOR, f'.paper-node[data-paper-id="{dragged_id}"]')
-        moved_node.click()
+        moved_node.find_element(By.CSS_SELECTOR, ".paper-node-circle").click()
         wait_displayed(driver, "#paper-detail")
         wait_click(driver, "#close-detail")
         assert_true(
