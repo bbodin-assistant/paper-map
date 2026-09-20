@@ -230,9 +230,8 @@ def exercise_timeline_click(driver, label):
     matching_fill = driver.execute_script("return getComputedStyle(arguments[0].querySelector('.timeline-band')).fill;", matching_band)
     assert_true(sticky_fill == matching_fill, f"Fixed theme label should continue the theme color to the left edge in {label}: {sticky_fill!r} != {matching_fill!r}")
 
-    # Drag the world far left so papers pass underneath the sticky theme gutter.
-    # Theme titles must remain present rather than being hidden when the available
-    # gutter becomes narrow.
+    # Drag the world far left so papers pass underneath the sticky theme box.
+    # Theme titles and their fixed box must remain independent of paper geometry.
     dragged_theme_titles = driver.execute_script(
         """
         const svg = document.querySelector('#paper-map');
@@ -260,7 +259,7 @@ def exercise_timeline_click(driver, label):
     )
     assert_true(dragged_theme_titles, f"Timeline should keep visible theme headers after a far-left drag in {label}")
     assert_true(
-        all(theme["nameVisible"] and theme["text"] and theme["width"] >= 36 for theme in dragged_theme_titles),
+        all(theme["nameVisible"] and theme["text"] and theme["width"] >= 160 for theme in dragged_theme_titles),
         f"Timeline theme titles must never disappear when horizontally dragged in {label}: {dragged_theme_titles}",
     )
 
