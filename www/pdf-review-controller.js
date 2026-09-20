@@ -3,7 +3,7 @@ import { mergePaperRecords, normalizeDoi, normalizedTitle, paperIdentityKey } fr
 import { MAX_INLINE_PDF_BYTES, slugTopic } from "./pdf-ai.js";
 import { analyzePdfWithAi } from "./ai-provider.js";
 import { loadAiConfig, providerLabel, providerNeedsApiKey, providerUsesDirectPdf } from "./ai-config.js";
-import { aiConfigSnapshot } from "./ai-config-ui.js?v=0.4.12";
+import { aiConfigSnapshot } from "./ai-config-ui.js?v=0.4.13";
 import { extractPdfCitationsLocally } from "./pdf-local.js";
 import { fetchReferences as fetchOnlineReferences, fetchReferencesWithProvider, resolvePaper as resolveOnlinePaper } from "./paper-provider.js?v=0.4.12";
 import { mergeReferenceRecords, providerPapersToReferences } from "./provider-references.js?v=0.4.5";
