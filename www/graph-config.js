@@ -17,12 +17,18 @@ export const TOPIC_LAYOUT_OPTIONS = Object.freeze([
 export const AUTHOR_LAYOUT_OPTIONS = Object.freeze([
   Object.freeze({ id: "coauthors", label: "Co-authors · most collaborators left" }),
   Object.freeze({ id: "gravity", label: "Gravity · connected authors attract" }),
-  Object.freeze({ id: "hierarchy", label: "Co-author network · deterministic columns" }),
+  Object.freeze({ id: "hierarchy", label: "Network hierarchy · connection columns" }),
+]);
+
+export const AUTHOR_LINK_OPTIONS = Object.freeze([
+  Object.freeze({ id: "coauthors", label: "Co-authors · shared papers" }),
+  Object.freeze({ id: "citations", label: "Who cites whom · directed citations" }),
 ]);
 
 const TIMELINE_CLUSTER_FIELD_IDS = new Set(TIMELINE_CLUSTER_FIELD_OPTIONS.map((option) => option.id));
 const TOPIC_LAYOUT_IDS = new Set(TOPIC_LAYOUT_OPTIONS.map((option) => option.id));
 const AUTHOR_LAYOUT_IDS = new Set(AUTHOR_LAYOUT_OPTIONS.map((option) => option.id));
+const AUTHOR_LINK_IDS = new Set(AUTHOR_LINK_OPTIONS.map((option) => option.id));
 const DEFAULT_TIMELINE_CLUSTER_FIELDS = Object.freeze(["title", "keywords", "abstract"]);
 
 export const DEFAULT_GRAPH_CONFIG = Object.freeze({
@@ -30,6 +36,7 @@ export const DEFAULT_GRAPH_CONFIG = Object.freeze({
   layoutSpacing: 1,
   topicLayoutTechnique: "generality",
   authorLayoutTechnique: "coauthors",
+  authorLinkMode: "coauthors",
   timelineClusterCount: 5,
   timelineClusterFields: DEFAULT_TIMELINE_CLUSTER_FIELDS,
 });
@@ -56,6 +63,7 @@ export function normalizeGraphConfig(value = {}) {
     layoutSpacing: boundedNumber(value.layoutSpacing, DEFAULT_GRAPH_CONFIG.layoutSpacing, 0.5, 3),
     topicLayoutTechnique: normalizedChoice(value.topicLayoutTechnique, TOPIC_LAYOUT_IDS, DEFAULT_GRAPH_CONFIG.topicLayoutTechnique),
     authorLayoutTechnique: normalizedChoice(value.authorLayoutTechnique, AUTHOR_LAYOUT_IDS, DEFAULT_GRAPH_CONFIG.authorLayoutTechnique),
+    authorLinkMode: normalizedChoice(value.authorLinkMode, AUTHOR_LINK_IDS, DEFAULT_GRAPH_CONFIG.authorLinkMode),
     timelineClusterCount: Math.round(boundedNumber(value.timelineClusterCount, DEFAULT_GRAPH_CONFIG.timelineClusterCount, 1, 12)),
     timelineClusterFields: normalizedTimelineClusterFields(value.timelineClusterFields),
   };
