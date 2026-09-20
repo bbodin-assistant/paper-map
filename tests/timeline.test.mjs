@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { buildTimelineLayout, clusterPapers, timelineClusterColor, timelineEdgePath, timelineYearTickStep } from "../www/timeline.js";
+import { buildTimelineLayout, clampTimelineTransform, clusterPapers, timelineClusterColor, timelineEdgePath, timelineYearTickStep } from "../www/timeline.js";
 
 test("timeline clustering uses paper text rather than publication year", () => {
   const papers = [
@@ -69,15 +69,39 @@ test("timeline creates at most five populated text bands", () => {
   assert.equal(groups.reduce((sum, group) => sum + group.paperIds.length, 0), papers.length);
 });
 
-test("citation paths terminate as curved background links between paper cards", () => {
+test("citation paths terminate as curved background links with arrow tangents aimed into target cards", () => {
   const source = { x: 100, y: 50, width: 176, height: 54 };
   const target = { x: 510, y: 190, width: 176, height: 54 };
   const path = timelineEdgePath(source, target);
   assert.match(path, /^M /);
   assert.match(path, / C /);
   assert.ok(!path.includes("NaN"));
+
+  const values = path.match(/-?\d+(?:\.\d+)?/g).map(Number);
+  const [, , , , c2x, c2y, endX, endY] = values;
+  const targetCx = target.x + target.width / 2;
+  const targetCy = target.y + target.height / 2;
+  const tangent = { x: endX - c2x, y: endY - c2y };
+  const inward = { x: targetCx - endX, y: targetCy - endY };
+  const cosine = (tangent.x * inward.x + tangent.y * inward.y)
+    / (Math.hypot(tangent.x, tangent.y) * Math.hypot(inward.x, inward.y));
+  assert.ok(cosine > 0.99, `arrow tangent should point toward the target card center, cosine=${cosine}`);
 });
 
+test("timeline transform clamp prevents blank space above or left of the world", () => {
+  assert.deepEqual(
+    clampTimelineTransform({ x: 180, y: 90, k: 1 }, 800, 600, 1400, 900),
+    { x: 0, y: 0, k: 1 },
+  );
+  assert.deepEqual(
+    clampTimelineTransform({ x: -900, y: -500, k: 1 }, 800, 600, 1400, 900),
+    { x: -600, y: -300, k: 1 },
+  );
+  assert.deepEqual(
+    clampTimelineTransform({ x: -50, y: -50, k: 0.5 }, 800, 600, 1200, 800),
+    { x: 0, y: 0, k: 0.5 },
+  );
+});
 
 test("timeline thins year ticks only when zoomed far out", () => {
   assert.equal(timelineYearTickStep(1), 1);
