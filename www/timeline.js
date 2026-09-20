@@ -35,6 +35,9 @@ const LEFT_GUTTER = 166;
 const BAND_TOP_PADDING = 28;
 const ROW_STEP = 62;
 const YEAR_TICK_MIN_SCREEN_GAP = 105;
+const YEAR_STRIP_HEIGHT = 28;
+const YEAR_LABEL_COLLISION_GAP = 52;
+const THEME_NAME_MIN_WIDTH = 36;
 
 export function timelineYearTickStep(zoom = 1) {
   const boundedZoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number(zoom) || 1));
@@ -281,7 +284,7 @@ export function buildTimelineLayout(papers = [], viewportWidth = 1200, viewportH
         groupIndex: band.index,
         bucket,
         x: LEFT_GUTTER + bucket * YEAR_STEP,
-        y: band.y + 48 + slot * ROW_STEP,
+        y: band.y + 64 + slot * ROW_STEP,
         width: CARD_WIDTH,
         height: CARD_HEIGHT,
       });
@@ -354,7 +357,7 @@ function installStyles(root = document) {
     .timeline-paper-star { fill: #a56f08; font-size: 12px; font-weight: 900; text-anchor: end; }
     .timeline-empty { fill: #7d878e; font-size: 13px; font-weight: 650; }
     .timeline-sticky-overlay { pointer-events: none; }
-    .timeline-sticky-year-strip { fill: rgba(255, 254, 249, .94); stroke: #e0e3df; stroke-width: 0 0 1 0; }
+    .timeline-sticky-year-strip { fill: #fffef9; stroke: #e0e3df; stroke-width: 0 0 1 0; }
     .timeline-sticky-year-label { fill: #5f6971; font-size: clamp(10px, 1vw, 12px); font-weight: 850; text-anchor: middle; }
     .timeline-sticky-theme-bg { fill: var(--timeline-cluster-band, #fafaf6); stroke: var(--timeline-cluster-accent, #cfd4d1); stroke-width: 1; }
     .timeline-sticky-theme-name { fill: var(--timeline-cluster-accent, #25313b); font-size: clamp(11px, 1.05vw, 13px); font-weight: 850; }
@@ -438,7 +441,7 @@ export function initTimelineMap(root = document) {
       x: 0,
       y: 0,
       width: Math.max(1, svg.clientWidth || 1200),
-      height: 28,
+      height: YEAR_STRIP_HEIGHT,
       class: "timeline-sticky-year-strip",
     });
     const yearLayer = svgElement("g", { class: "timeline-sticky-years" });
@@ -483,16 +486,12 @@ export function initTimelineMap(root = document) {
     const resetCoversYearStrip = Boolean(
       resetRect?.width
       && resetRect?.height
-      && resetRect.top < svgRect.top + 28
+      && resetRect.top < svgRect.top + YEAR_STRIP_HEIGHT
       && resetRect.bottom > svgRect.top,
     );
     const yearRightLimit = resetCoversYearStrip
       ? Math.max(48, resetRect.left - svgRect.left - 24)
       : width - 12;
-    const stickyThemeWidth = Math.max(
-      0,
-      Math.min(LEFT_GUTTER, timelineTransform.x + LEFT_GUTTER * timelineTransform.k - 4),
-    );
     stickyOverlay.querySelector(".timeline-sticky-year-strip")?.setAttribute("width", String(width));
     const tickStep = timelineYearTickStep(timelineTransform.k);
 
@@ -502,6 +501,7 @@ export function initTimelineMap(root = document) {
       guide.style.display = show ? "" : "none";
     }
 
+    const yearCandidates = [];
     for (const label of stickyOverlay.querySelectorAll(".timeline-sticky-year-label[data-year-index]")) {
       const index = Number(label.dataset.yearIndex);
       const worldX = LEFT_GUTTER + index * YEAR_STEP + CARD_WIDTH / 2;
@@ -510,12 +510,26 @@ export function initTimelineMap(root = document) {
       const showTick = index % tickStep === 0 || isLast;
       const underReset = resetCoversYearStrip && x > yearRightLimit;
       const displayX = isLast && underReset ? yearRightLimit : x;
-      const visible = showTick
-        && x >= 30
-        && x <= width - 12
-        && (!underReset || isLast);
-      label.style.display = visible ? "" : "none";
-      if (visible) label.setAttribute("x", String(displayX));
+      const inViewport = isLast && underReset
+        ? displayX >= 30 && displayX <= width - 12
+        : x >= 30 && x <= width - 12;
+      yearCandidates.push({
+        label,
+        isLast,
+        displayX,
+        visible: showTick && inViewport && (!underReset || isLast),
+      });
+    }
+    const finalYear = yearCandidates.find((candidate) => candidate.isLast && candidate.visible);
+    for (const candidate of yearCandidates) {
+      const collidesWithFinalYear = Boolean(
+        finalYear
+        && !candidate.isLast
+        && Math.abs(candidate.displayX - finalYear.displayX) < YEAR_LABEL_COLLISION_GAP,
+      );
+      const visible = candidate.visible && !collidesWithFinalYear;
+      candidate.label.style.display = visible ? "" : "none";
+      if (visible) candidate.label.setAttribute("x", String(candidate.displayX));
     }
 
     for (const group of stickyOverlay.querySelectorAll(".timeline-sticky-theme[data-band-index]")) {
@@ -523,17 +537,35 @@ export function initTimelineMap(root = document) {
       if (!band) continue;
       const screenTop = timelineTransform.y + band.y * timelineTransform.k;
       const screenBottom = timelineTransform.y + (band.y + band.height) * timelineTransform.k;
-      const visible = screenBottom > 29 && screenTop < height;
+      const visible = screenBottom > YEAR_STRIP_HEIGHT + 1 && screenTop < height;
       group.style.display = visible ? "" : "none";
       if (!visible) continue;
       const bg = group.querySelector(".timeline-sticky-theme-bg");
       const name = group.querySelector(".timeline-sticky-theme-name");
       const terms = group.querySelector(".timeline-sticky-theme-terms");
+      const visiblePaperLeft = currentLayout.nodes
+        .filter((node) => node.groupIndex === band.index)
+        .map((node) => ({
+          left: timelineTransform.x + node.x * timelineTransform.k,
+          right: timelineTransform.x + (node.x + node.width) * timelineTransform.k,
+        }))
+        .filter((paper) => paper.right > 0 && paper.left < width)
+        .reduce((left, paper) => Math.min(left, paper.left), Infinity);
+      const stickyThemeWidth = Math.max(
+        0,
+        Math.min(LEFT_GUTTER, (Number.isFinite(visiblePaperLeft) ? visiblePaperLeft : LEFT_GUTTER) - 4),
+      );
       bg?.setAttribute("width", String(stickyThemeWidth));
-      if (name) name.style.display = stickyThemeWidth >= 62 ? "" : "none";
+      if (name) {
+        const compact = stickyThemeWidth < 62;
+        name.style.display = stickyThemeWidth >= THEME_NAME_MIN_WIDTH ? "" : "none";
+        name.style.fontSize = compact ? "9px" : "";
+        name.setAttribute("x", compact ? "5" : "10");
+      }
       if (terms) terms.style.display = stickyThemeWidth >= 118 ? "" : "none";
-      const maxY = Math.max(30, Math.min(height - 40, screenBottom - 40));
-      const y = Math.max(30, Math.min(maxY, screenTop + 7));
+      const stickyTop = YEAR_STRIP_HEIGHT + 2;
+      const maxY = Math.max(stickyTop, Math.min(height - 40, screenBottom - 40));
+      const y = Math.max(stickyTop, Math.min(maxY, screenTop + 7));
       group.setAttribute("transform", `translate(0 ${y})`);
     }
   }
@@ -627,7 +659,7 @@ export function initTimelineMap(root = document) {
       const x = LEFT_GUTTER + index * YEAR_STEP + CARD_WIDTH / 2;
       const line = svgElement("line", {
         x1: x,
-        y1: 28,
+        y1: YEAR_STRIP_HEIGHT,
         x2: x,
         y2: layout.height - 24,
         class: "timeline-year-guide",
