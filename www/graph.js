@@ -139,8 +139,7 @@ function authorKey(value) {
     .trim();
 }
 
-export function buildAuthorGraph(papers, edges) {
-  const paperById = new Map(papers.map((paper) => [paper.id, paper]));
+export function buildAuthorGraph(papers, _edges = []) {
   const blocks = new Map();
   const authorsByPaper = new Map();
 
@@ -165,31 +164,26 @@ export function buildAuthorGraph(papers, edges) {
   }
 
   const coauthors = new Map(Array.from(blocks.keys(), (id) => [id, new Set()]));
-  for (const authors of authorsByPaper.values()) {
+  const connections = new Map();
+  for (const paper of papers) {
+    const authors = authorsByPaper.get(paper.id) || [];
     for (let left = 0; left < authors.length; left += 1) {
       for (let right = left + 1; right < authors.length; right += 1) {
-        coauthors.get(authors[left])?.add(authors[right]);
-        coauthors.get(authors[right])?.add(authors[left]);
-      }
-    }
-  }
-  for (const block of blocks.values()) block.coauthorCount = coauthors.get(block.id)?.size || 0;
+        const first = authors[left];
+        const second = authors[right];
+        coauthors.get(first)?.add(second);
+        coauthors.get(second)?.add(first);
 
-  const connections = new Map();
-  for (const edge of edges) {
-    if (!paperById.has(edge.source) || !paperById.has(edge.target)) continue;
-    const sourceAuthors = authorsByPaper.get(edge.source) || [];
-    const targetAuthors = authorsByPaper.get(edge.target) || [];
-    for (const source of sourceAuthors) {
-      for (const target of targetAuthors) {
-        if (source === target) continue;
-        const key = `${source}->${target}`;
-        const current = connections.get(key) || { source, target, weight: 0 };
+        const [source, target] = first < second ? [first, second] : [second, first];
+        const key = `${source}<->${target}`;
+        const current = connections.get(key) || { source, target, weight: 0, paperIds: [] };
         current.weight += 1;
+        current.paperIds.push(paper.id);
         connections.set(key, current);
       }
     }
   }
+  for (const block of blocks.values()) block.coauthorCount = coauthors.get(block.id)?.size || 0;
 
   return { blocks: Array.from(blocks.values()), connections: Array.from(connections.values()) };
 }
@@ -841,16 +835,21 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       const source = blockById.get(connection.source);
       const target = blockById.get(connection.target);
       if (!source || !target) continue;
-      const fromSelected = selectedIds.has(connection.source);
+      const focusedConnection = kind === "author"
+        ? selectedIds.has(connection.source) || selectedIds.has(connection.target)
+        : selectedIds.has(connection.source);
       const line = svgElement("line", {
-        class: `topic-edge ${kind}-edge${fromSelected ? " focus-source" : ""}`,
-        "marker-end": "url(#citation-arrow)",
+        class: `topic-edge ${kind}-edge${focusedConnection ? " focus-source" : ""}`,
+        ...(kind === "topic" ? { "marker-end": "url(#citation-arrow)" } : {}),
         "stroke-width": Math.max(1, Math.min(7, 1 + Math.log2(connection.weight + 1))),
         "data-source-block-id": connection.source,
         "data-target-block-id": connection.target,
+        "data-link-weight": connection.weight,
       });
       const title = svgElement("title");
-      title.textContent = `${source.name} → ${target.name}: ${connection.weight} cross-${kind} link${connection.weight === 1 ? "" : "s"}`;
+      title.textContent = kind === "author"
+        ? `${source.name} ↔ ${target.name}: co-authored ${connection.weight} paper${connection.weight === 1 ? "" : "s"}`
+        : `${source.name} → ${target.name}: ${connection.weight} cross-topic link${connection.weight === 1 ? "" : "s"}`;
       line.append(title);
       edgeLayer.append(line);
       edgeElements.push({ connection, line });
