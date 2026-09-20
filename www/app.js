@@ -377,6 +377,7 @@ async function addPaperCandidate(paper, query) {
     const libraryMenu = document.querySelector("#library-menu");
     if (libraryMenu) libraryMenu.open = false;
     renderAll();
+    renderDetail();
     setStatus(
       merged.addedCount
         ? `Selected paper added via ${sourceLabel(provider)}.`
@@ -821,7 +822,7 @@ function renderAll() {
     selectedAuthor: state.filters.author,
   });
 
-  if (state.selectedPaperId) renderDetail();
+  if (state.selectedPaperId && !els.detail.hidden) renderDetail();
 }
 
 async function migrateLegacyReadingStates(library) {
@@ -1057,6 +1058,10 @@ function timelineViewActive() {
   );
 }
 
+function citationViewActive() {
+  return state.mode === "citations" && !timelineViewActive();
+}
+
 function renderTimelinePaperSelection() {
   for (const button of els.paperList.querySelectorAll(".paper-list-item[data-paper-id]")) {
     button.classList.toggle("selected", button.dataset.paperId === state.selectedPaperId);
@@ -1084,6 +1089,24 @@ function clearTimelineSelection() {
   renderTimelinePaperSelection();
 }
 
+function activateCitationPaper(paperId) {
+  if (!paperId) return;
+  if (state.selectedPaperId === paperId) {
+    renderDetail();
+    return;
+  }
+  state.selectedPaperId = paperId;
+  hideDetail();
+  renderAll();
+}
+
+function clearCitationSelection() {
+  if (!state.selectedPaperId) return;
+  state.selectedPaperId = null;
+  hideDetail();
+  renderAll();
+}
+
 function selectPaper(paperId) {
   if (timelineViewActive()) {
     if (paperId) activateTimelinePaper(paperId);
@@ -1097,6 +1120,7 @@ function selectPaper(paperId) {
     return;
   }
   renderAll();
+  renderDetail();
 }
 
 function closeDetail() {
@@ -1186,6 +1210,11 @@ async function expand(direction) {
 const graph = createGraph({
   svg: els.map,
   onSelectPaper: (paperId) => {
+    if (citationViewActive()) {
+      if (paperId) activateCitationPaper(paperId);
+      else clearCitationSelection();
+      return;
+    }
     if (paperId) selectPaper(paperId);
     else if (state.selectedPaperId) {
       closeDetail();
@@ -1266,6 +1295,7 @@ document.addEventListener("paper-map-library-updated", async (event) => {
   if (paperId) state.selectedPaperId = paperId;
   try {
     await refreshLibrary();
+    if (paperId) renderDetail();
     if (event.detail?.message) setStatus(event.detail.message, "ready");
   } catch (error) {
     setStatus(error?.message || String(error), "error");
@@ -1403,6 +1433,11 @@ els.closeDetail.addEventListener("click", () => {
   if (timelineViewActive()) {
     hideDetail();
     renderTimelinePaperSelection();
+    return;
+  }
+  if (citationViewActive()) {
+    hideDetail();
+    renderAll();
     return;
   }
   closeDetail();
