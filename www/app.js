@@ -14,8 +14,8 @@ import {
   putTopics,
   replaceLibrary,
 } from "./db.js";
-import { createGraph } from "./graph.js?v=0.4.17";
-import { loadGraphConfig } from "./graph-config.js?v=0.4.11";
+import { createGraph } from "./graph.js?v=0.4.18";
+import { loadGraphConfig } from "./graph-config.js?v=0.4.13";
 import { paperCitationSummary } from "./citation-summary.js?v=0.4.5";
 import {
   downloadText,
@@ -861,7 +861,7 @@ function renderModeButtons() {
 
 function renderAll() {
   const { papers, edges } = visibleGraph();
-  const aggregateView = state.mode === "topics" || state.mode === "authors"
+  const mapView = state.mode === "topics" || state.mode === "authors" || state.mode === "citations"
     ? visibleGraph({ ignoreAggregateFocus: true })
     : { papers, edges };
   els.visiblePaperCount.textContent = String(papers.length);
@@ -882,14 +882,15 @@ function renderAll() {
   const graphConfig = loadGraphConfig();
   graph.render({
     mode: state.mode,
-    papers: aggregateView.papers,
-    edges: aggregateView.edges,
+    papers: mapView.papers,
+    edges: mapView.edges,
     topics: state.library.topics,
     selectedId: state.selectedPaperId,
     selectedTopicIds: focusedTopics,
     selectedAuthors: focusedAuthors,
     topicLayoutTechnique: graphConfig.topicLayoutTechnique,
     authorLayoutTechnique: graphConfig.authorLayoutTechnique,
+    authorLinkMode: graphConfig.authorLinkMode,
   });
 
   if (state.selectedPaperId && !els.detail.hidden) renderDetail();

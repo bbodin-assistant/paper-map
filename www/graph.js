@@ -139,7 +139,7 @@ function authorKey(value) {
     .trim();
 }
 
-export function buildAuthorGraph(papers, _edges = []) {
+export function buildAuthorGraph(papers, edges = [], linkMode = "coauthors") {
   const blocks = new Map();
   const authorsByPaper = new Map();
 
@@ -164,26 +164,52 @@ export function buildAuthorGraph(papers, _edges = []) {
   }
 
   const coauthors = new Map(Array.from(blocks.keys(), (id) => [id, new Set()]));
-  const connections = new Map();
   for (const paper of papers) {
     const authors = authorsByPaper.get(paper.id) || [];
     for (let left = 0; left < authors.length; left += 1) {
       for (let right = left + 1; right < authors.length; right += 1) {
-        const first = authors[left];
-        const second = authors[right];
-        coauthors.get(first)?.add(second);
-        coauthors.get(second)?.add(first);
-
-        const [source, target] = first < second ? [first, second] : [second, first];
-        const key = `${source}<->${target}`;
-        const current = connections.get(key) || { source, target, weight: 0, paperIds: [] };
-        current.weight += 1;
-        current.paperIds.push(paper.id);
-        connections.set(key, current);
+        coauthors.get(authors[left])?.add(authors[right]);
+        coauthors.get(authors[right])?.add(authors[left]);
       }
     }
   }
   for (const block of blocks.values()) block.coauthorCount = coauthors.get(block.id)?.size || 0;
+
+  const connections = new Map();
+  if (linkMode === "citations") {
+    for (const edge of edges) {
+      if (isResearchRelation(edge)) continue;
+      const sourceAuthors = authorsByPaper.get(edge.source) || [];
+      const targetAuthors = authorsByPaper.get(edge.target) || [];
+      if (!sourceAuthors.length || !targetAuthors.length) continue;
+      for (const source of sourceAuthors) {
+        for (const target of targetAuthors) {
+          if (source === target) continue;
+          const key = `${source}->${target}`;
+          const current = connections.get(key) || { source, target, weight: 0, paperIds: [] };
+          current.weight += 1;
+          current.paperIds.push(edge.source);
+          connections.set(key, current);
+        }
+      }
+    }
+  } else {
+    for (const paper of papers) {
+      const authors = authorsByPaper.get(paper.id) || [];
+      for (let left = 0; left < authors.length; left += 1) {
+        for (let right = left + 1; right < authors.length; right += 1) {
+          const first = authors[left];
+          const second = authors[right];
+          const [source, target] = first < second ? [first, second] : [second, first];
+          const key = `${source}<->${target}`;
+          const current = connections.get(key) || { source, target, weight: 0, paperIds: [] };
+          current.weight += 1;
+          current.paperIds.push(paper.id);
+          connections.set(key, current);
+        }
+      }
+    }
+  }
 
   return { blocks: Array.from(blocks.values()), connections: Array.from(connections.values()) };
 }
@@ -748,6 +774,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     selectedBlockIds = [],
     kind = "topic",
     layoutTechnique = kind === "author" ? "coauthors" : "generality",
+    linkMode = kind === "author" ? "coauthors" : "citations",
     emptyMessage,
     onSelectBlock,
   }) {
@@ -773,7 +800,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       .map((connection) => `${connection.source}>${connection.target}:${connection.weight || 0}`)
       .sort()
       .join("|");
-    const topology = `${kind}|${layoutTechnique}|${blocks.map((block) => block.id).sort().join("|")}|${connectionTopology}`;
+    const topology = `${kind}|${linkMode}|${layoutTechnique}|${blocks.map((block) => block.id).sort().join("|")}|${connectionTopology}`;
     const topologyChanged = topology !== lastAggregateTopology;
     const canReuseLayout = !topologyChanged
       && currentWorld
@@ -835,21 +862,25 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       const source = blockById.get(connection.source);
       const target = blockById.get(connection.target);
       if (!source || !target) continue;
-      const focusedConnection = kind === "author"
-        ? selectedIds.has(connection.source) || selectedIds.has(connection.target)
-        : selectedIds.has(connection.source);
+      const directed = kind === "topic" || (kind === "author" && linkMode === "citations");
+      const focusedConnection = directed
+        ? selectedIds.has(connection.source)
+        : selectedIds.has(connection.source) || selectedIds.has(connection.target);
       const line = svgElement("line", {
         class: `topic-edge ${kind}-edge${focusedConnection ? " focus-source" : ""}`,
-        ...(kind === "topic" ? { "marker-end": "url(#citation-arrow)" } : {}),
+        ...(directed ? { "marker-end": "url(#citation-arrow)" } : {}),
         "stroke-width": Math.max(1, Math.min(7, 1 + Math.log2(connection.weight + 1))),
         "data-source-block-id": connection.source,
         "data-target-block-id": connection.target,
         "data-link-weight": connection.weight,
+        "data-link-mode": linkMode,
       });
       const title = svgElement("title");
-      title.textContent = kind === "author"
+      title.textContent = kind === "author" && linkMode === "coauthors"
         ? `${source.name} ↔ ${target.name}: co-authored ${connection.weight} paper${connection.weight === 1 ? "" : "s"}`
-        : `${source.name} → ${target.name}: ${connection.weight} cross-topic link${connection.weight === 1 ? "" : "s"}`;
+        : kind === "author"
+          ? `${source.name} → ${target.name}: author papers cite ${connection.weight} paper${connection.weight === 1 ? "" : "s"} by this author`
+          : `${source.name} → ${target.name}: ${connection.weight} cross-topic link${connection.weight === 1 ? "" : "s"}`;
       line.append(title);
       edgeLayer.append(line);
       edgeElements.push({ connection, line });
@@ -935,8 +966,8 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     });
   }
 
-  function renderAuthorMap(papers, edges, selectedAuthors = [], layoutTechnique = "coauthors") {
-    const { blocks, connections } = buildAuthorGraph(papers, edges);
+  function renderAuthorMap(papers, edges, selectedAuthors = [], layoutTechnique = "coauthors", linkMode = "coauthors") {
+    const { blocks, connections } = buildAuthorGraph(papers, edges, linkMode);
     const selectedKeys = new Set((selectedAuthors || []).map(authorKey).filter(Boolean));
     const selectedBlockIds = blocks
       .filter((block) => selectedKeys.has(authorKey(block.name)))
@@ -948,6 +979,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       selectedBlockIds,
       kind: "author",
       layoutTechnique,
+      linkMode,
       emptyMessage: "No author metadata matches the current filters.",
       onSelectBlock: (block, options) => onSelectAuthor?.(block.name, options),
     });
@@ -963,9 +995,10 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     selectedAuthors = [],
     topicLayoutTechnique = "generality",
     authorLayoutTechnique = "coauthors",
+    authorLinkMode = "coauthors",
   }) {
     if (mode === "topics") renderTopicMap(papers, edges, topics, selectedTopicIds, topicLayoutTechnique);
-    else if (mode === "authors") renderAuthorMap(papers, edges, selectedAuthors, authorLayoutTechnique);
+    else if (mode === "authors") renderAuthorMap(papers, edges, selectedAuthors, authorLayoutTechnique, authorLinkMode);
     else renderCitationMap(papers, edges, selectedId);
   }
 

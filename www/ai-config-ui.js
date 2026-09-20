@@ -20,12 +20,13 @@ import {
 } from "./paper-provider-config.js?v=0.4.8";
 import {
   AUTHOR_LAYOUT_OPTIONS,
+  AUTHOR_LINK_OPTIONS,
   loadGraphConfig,
   normalizeGraphConfig,
   saveGraphConfig,
   TIMELINE_CLUSTER_FIELD_OPTIONS,
   TOPIC_LAYOUT_OPTIONS,
-} from "./graph-config.js?v=0.4.12";
+} from "./graph-config.js?v=0.4.13";
 
 if (typeof document !== "undefined" && !document.querySelector('link[data-paper-map-config]')) {
   const link = document.createElement("link");
@@ -250,9 +251,13 @@ function createUi() {
           <select id="graph-config-topic-layout">${aggregateLayoutOptions(TOPIC_LAYOUT_OPTIONS)}</select>
           <span class="field-hint">Generality puts topics used by the most papers on the left.</span>
         </label>
+        <label>Author map links
+          <select id="graph-config-author-links">${aggregateLayoutOptions(AUTHOR_LINK_OPTIONS)}</select>
+          <span class="field-hint">Choose shared-paper co-authorship or directed citation relationships between authors.</span>
+        </label>
         <label>Author map layout
           <select id="graph-config-author-layout">${aggregateLayoutOptions(AUTHOR_LAYOUT_OPTIONS)}</select>
-          <span class="field-hint">Co-authors puts authors with the most distinct collaborators on the left.</span>
+          <span class="field-hint">Co-authors puts authors with the most distinct collaborators on the left; Gravity follows the selected Author links.</span>
         </label>
       </div>
       <div class="timeline-cluster-config" role="group" aria-labelledby="timeline-cluster-config-heading">
@@ -271,7 +276,7 @@ function createUi() {
           </div>
         </fieldset>
       </div>
-      <p class="muted config-note">Topic and Author layout techniques apply immediately after saving. Gravity uses local force layout; generality/co-author layouts use local metadata only. Timeline clustering changes apply on the next Timeline render.</p>
+      <p class="muted config-note">Topic and Author layout/link settings apply immediately after saving. Author Gravity follows the selected link model; generality/co-author layouts use local metadata only. Timeline clustering changes apply on the next Timeline render.</p>
     </section>
 
     <section class="config-section" aria-labelledby="ai-config-heading">
@@ -338,6 +343,7 @@ function createUi() {
     effort: $("#graph-config-layout-effort", panel),
     spacing: $("#graph-config-layout-spacing", panel),
     topicLayout: $("#graph-config-topic-layout", panel),
+    authorLinks: $("#graph-config-author-links", panel),
     authorLayout: $("#graph-config-author-layout", panel),
     clusterCount: $("#graph-config-timeline-cluster-count", panel),
     clusterFields: new Map(TIMELINE_CLUSTER_FIELD_OPTIONS.map(({ id }) => [
@@ -360,6 +366,7 @@ function createUi() {
     graphControls.effort.value = String(graph.layoutEffort);
     graphControls.spacing.value = String(graph.layoutSpacing);
     graphControls.topicLayout.value = graph.topicLayoutTechnique;
+    graphControls.authorLinks.value = graph.authorLinkMode;
     graphControls.authorLayout.value = graph.authorLayoutTechnique;
     graphControls.clusterCount.value = String(graph.timelineClusterCount);
     for (const { id } of TIMELINE_CLUSTER_FIELD_OPTIONS) {
@@ -413,6 +420,7 @@ function createUi() {
       layoutEffort: graphControls.effort.value,
       layoutSpacing: graphControls.spacing.value,
       topicLayoutTechnique: graphControls.topicLayout.value,
+      authorLinkMode: graphControls.authorLinks.value,
       authorLayoutTechnique: graphControls.authorLayout.value,
       timelineClusterCount: graphControls.clusterCount.value,
       timelineClusterFields,

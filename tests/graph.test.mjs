@@ -77,6 +77,30 @@ test("author graph links only actual co-authors and weights shared papers", () =
   assert.equal(graph.connections.length, 2);
 });
 
+test("author citation link mode preserves who-cites-whom direction", () => {
+  const papers = [
+    { id: "a", authors: ["Ada Lovelace"], starred: false },
+    { id: "b", authors: ["Grace Hopper"], starred: false },
+    { id: "c", authors: ["Grace Hopper"], starred: false },
+  ];
+  const graph = buildAuthorGraph(papers, [
+    { id: "cite:a-b", source: "a", target: "b" },
+    { id: "cite:a-c", source: "a", target: "c" },
+    { id: "relation:b-a", kind: "research-relation", relation: "supports", source: "b", target: "a" },
+  ], "citations");
+
+  const ada = graph.blocks.find((block) => block.name === "Ada Lovelace");
+  const grace = graph.blocks.find((block) => block.name === "Grace Hopper");
+  assert.deepEqual(graph.connections, [{
+    source: ada.id,
+    target: grace.id,
+    weight: 2,
+    paperIds: ["a", "a"],
+  }]);
+  assert.equal(ada.coauthorCount, 0);
+  assert.equal(grace.coauthorCount, 0);
+});
+
 test("hierarchical block layout remains usable with 200 topics", () => {
   const blocks = Array.from({ length: 200 }, (_, index) => ({
     id: `topic:${index}`,

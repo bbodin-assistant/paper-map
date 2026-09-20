@@ -231,14 +231,20 @@ def main():
         wait_displayed(driver, "#ai-config-panel")
         topic_layout_options = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "graph-config-topic-layout")).options]
         author_layout_options = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "graph-config-author-layout")).options]
+        author_link_options = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "graph-config-author-links")).options]
         assert_true(topic_layout_options == ["generality", "gravity", "hierarchy"], f"Topic layout techniques should be configurable: {topic_layout_options}")
         assert_true(author_layout_options == ["coauthors", "gravity", "hierarchy"], f"Author layout techniques should be configurable: {author_layout_options}")
+        assert_true(author_link_options == ["coauthors", "citations"], f"Author link models should be configurable: {author_link_options}")
         assert_true(Select(driver.find_element(By.ID, "graph-config-topic-layout")).first_selected_option.get_attribute("value") == "generality", "Topic layout should default to generality")
         assert_true(Select(driver.find_element(By.ID, "graph-config-author-layout")).first_selected_option.get_attribute("value") == "coauthors", "Author layout should default to co-author count")
+        assert_true(Select(driver.find_element(By.ID, "graph-config-author-links")).first_selected_option.get_attribute("value") == "coauthors", "Author links should default to co-authorship")
         wait_click(driver, "#load-demo")
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
         wait_click(driver, "#ai-config-close")
         wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
+        citation_node_count = len(driver.find_elements(By.CSS_SELECTOR, ".paper-node"))
+        citation_edge_count = len(driver.find_elements(By.CSS_SELECTOR, ".citation-edge"))
+        assert_true(citation_edge_count > 0, "Demo citation map should expose citation links before aggregate focus")
 
         # Topic generality places the most-used topics on the left. Selecting a
         # topic writes an exact focused-topic filter; Ctrl-click adds another topic.
@@ -278,6 +284,16 @@ def main():
         assert_true(selected_topic_fill == "rgb(244, 189, 197)", f"Selected topic should be pink, got {selected_topic_fill!r}")
         topic_bar = wait_displayed(driver, "#active-topic-filter")
         assert_true(topic_source_id in [block.get_attribute("data-block-id") for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block.selected")], "Focused topic should remain selected after filtering")
+
+        # Aggregate focus filters the paper list/count, but the Citation map must
+        # keep the surrounding citation graph so citation links do not disappear
+        # merely because the other endpoint is outside the focused topic.
+        wait_click(driver, '#map-mode button[data-mode="citations"]')
+        wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) == citation_node_count)
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, ".citation-edge")) == citation_edge_count, "Focused Topic must not remove citation links from the Citation map")
+        assert_true(len(driver.find_elements(By.CSS_SELECTOR, "#filter-topic-focus .filter-focus-chip")) == 1, "Topic focus should remain active when viewing citation context")
+        wait_click(driver, '#map-mode button[data-mode="topics"]')
+        wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, f'.topic-block[data-block-id="{topic_source_id}"].selected'))
 
         additional_topics = [block for block in driver.find_elements(By.CSS_SELECTOR, ".topic-block") if block.get_attribute("data-block-id") != topic_source_id]
         assert_true(additional_topics, "Focused topic filter should keep related/co-occurring topics available for additive selection")
@@ -363,6 +379,35 @@ def main():
         dispatch_background_pointer(driver)
         wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, "#filter-author-focus .filter-focus-chip"))
         wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, ".author-block.selected"))
+
+        # Switch the Author relationship model without changing the Author layout.
+        # Citation mode must use directed author-to-author citation links.
+        wait_click(driver, "#ai-config-button")
+        wait_displayed(driver, "#ai-config-panel")
+        Select(driver.find_element(By.ID, "graph-config-author-links")).select_by_value("citations")
+        wait_click(driver, "#ai-config-save")
+        wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
+        stored_author_link_mode = driver.execute_script(
+            "return JSON.parse(localStorage.getItem('paper-map-graph-config-v1') || '{}').authorLinkMode || ''"
+        )
+        assert_true(stored_author_link_mode == "citations", f"Author citation link mode should persist after Save: {stored_author_link_mode!r}")
+        citation_author_edges = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".author-edge"))
+        assert_true(
+            all("citation-arrow" in (edge.get_attribute("marker-end") or "") for edge in citation_author_edges),
+            "Who-cites-whom Author links should be directed with citation arrowheads",
+        )
+        assert_true(
+            all(edge.get_attribute("data-link-mode") == "citations" for edge in citation_author_edges),
+            "Author edges should expose the configured citation link mode",
+        )
+        citation_author_titles = [
+            edge.find_element(By.TAG_NAME, "title").get_attribute("textContent")
+            for edge in citation_author_edges
+        ]
+        assert_true(
+            all("author papers cite" in title for title in citation_author_titles),
+            f"Who-cites-whom link labels should describe directed author citations: {citation_author_titles}",
+        )
 
         wait_click(driver, '#map-mode button[data-mode="citations"]')
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
