@@ -316,13 +316,8 @@ def main():
             "Closing citation details should preserve the selected paper",
         )
 
-        # Clicking citation-map background clears that preserved selection before changing modes.
-        driver.execute_script(
-            """
-            const svg = document.querySelector('#paper-map');
-            svg.dispatchEvent(new MouseEvent('click', {bubbles: true, clientX: 4, clientY: 4}));
-            """
-        )
+        # A real background press/release clears that preserved selection before changing modes.
+        dispatch_background_pointer(driver)
         wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, ".paper-node.selected"))
 
         # Timeline selection is deliberately two-step: select first, open detail second.
