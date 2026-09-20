@@ -854,9 +854,12 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       const count = svgElement("text", { class: "topic-block-count", x: 15, y: 49 });
       count.textContent = `${block.paperIds.length} paper${block.paperIds.length === 1 ? "" : "s"}`;
       const source = svgElement("text", { class: "topic-block-source", x: 15, y: block.height - 12 });
-      source.textContent = block.starred ? `${kind === "author" ? "Author" : block.source} · ★ ${block.starred}` : (kind === "author" ? "Author" : block.source);
+      const sourceLabel = kind === "author"
+        ? `${block.coauthorCount || 0} co-author${block.coauthorCount === 1 ? "" : "s"}`
+        : block.source;
+      source.textContent = block.starred ? `${sourceLabel} · ★ ${block.starred}` : sourceLabel;
       const title = svgElement("title");
-      title.textContent = `${block.name}\n${block.paperIds.length} papers${block.starred ? `\n${block.starred} starred` : ""}`;
+      title.textContent = `${block.name}\n${block.paperIds.length} papers${kind === "author" ? `\n${block.coauthorCount || 0} distinct co-authors` : ""}${block.starred ? `\n${block.starred} starred` : ""}`;
       group.append(rect, name, count, source, title);
       group.addEventListener("click", (event) => {
         if (consumeSuppressedClick(event)) return;
