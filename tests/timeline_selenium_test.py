@@ -68,6 +68,7 @@ def assert_desktop_layout(driver):
           addSubmit: document.querySelector('#add-paper-form button[type="submit"]')?.textContent || '',
           addFile: document.querySelector('#add-pdf-button')?.textContent || '',
           modeLabels: Array.from(document.querySelectorAll('#map-mode button[data-mode]'), (button) => button.textContent.trim()),
+          modeText: document.querySelector('#map-mode')?.textContent || '',
           filterLabels: [
             document.querySelector('#filter-menu > summary')?.childNodes[0]?.textContent?.trim() || '',
             document.querySelector('#desktop-filter-button')?.textContent?.trim() || '',
@@ -94,6 +95,7 @@ def assert_desktop_layout(driver):
     assert_true(structure["addSubmit"] == "Add", f"Desktop resolver submit label is wrong: {structure}")
     assert_true(structure["addFile"] == "Add paper", f"Desktop file picker label is wrong: {structure}")
     assert_true(structure["modeLabels"] == ["Citation map", "Topic map", "Author map", "Timeline"], f"Desktop map switch should expose all four modes: {structure}")
+    assert_true("\\n" not in structure["modeText"], f"Map switch must not render a literal \\n text node: {structure}")
     assert_true(structure["filterLabels"][1] == "Filters", f"The left-side Filters control should remain visible: {structure}")
 
     stage = structure["stage"]
@@ -147,6 +149,33 @@ def exercise_timeline_click(driver, label):
     ]
     assert_true(len(set(band_fills)) == len(band_fills), f"Every Timeline cluster should have a distinct band fill in {label}: {band_fills}")
 
+    pan_bounds = driver.execute_script(
+        """
+        const svg = document.querySelector('#paper-map');
+        const box = svg.getBoundingClientRect();
+        const startX = box.left + Math.max(80, box.width * 0.45);
+        const startY = box.top + Math.max(80, box.height * 0.45);
+        svg.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, pointerId: 981, pointerType: 'mouse', clientX: startX, clientY: startY, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointermove', {bubbles: true, pointerId: 981, pointerType: 'mouse', clientX: startX + 600, clientY: startY + 500, buttons: 1}));
+        svg.dispatchEvent(new PointerEvent('pointerup', {bubbles: true, pointerId: 981, pointerType: 'mouse', clientX: startX + 600, clientY: startY + 500, buttons: 0}));
+        const viewport = document.querySelector('#paper-map .graph-viewport');
+        const match = /translate\(([-0-9.]+) ([-0-9.]+)\)/.exec(viewport?.getAttribute('transform') || '');
+        const firstBand = document.querySelector('.timeline-band');
+        const yearStrip = document.querySelector('.timeline-sticky-year-strip');
+        return {
+          x: Number(match?.[1] || 0),
+          y: Number(match?.[2] || 0),
+          bandLeft: firstBand?.getBoundingClientRect().left,
+          bandTop: firstBand?.getBoundingClientRect().top,
+          svgLeft: box.left,
+          yearBottom: yearStrip?.getBoundingClientRect().bottom,
+        };
+        """
+    )
+    assert_true(pan_bounds["x"] <= 0.01 and pan_bounds["y"] <= 0.01, f"Timeline pan should stop before exposing blank left/top space in {label}: {pan_bounds}")
+    assert_true(pan_bounds["bandLeft"] <= pan_bounds["svgLeft"] + 1, f"Timeline theme color should reach the left edge in {label}: {pan_bounds}")
+    assert_true(pan_bounds["bandTop"] <= pan_bounds["yearBottom"] + 1, f"Timeline content should reach the fixed year strip without a top blank gutter in {label}: {pan_bounds}")
+
     band_color_by_index = {
         band.get_attribute("data-timeline-cluster-index"): band.get_attribute("data-timeline-cluster-color")
         for band in bands
@@ -190,6 +219,12 @@ def exercise_timeline_click(driver, label):
     sticky_years = driver.find_elements(By.CSS_SELECTOR, ".timeline-sticky-year-label")
     sticky_themes = driver.find_elements(By.CSS_SELECTOR, ".timeline-sticky-theme")
     assert_true(sticky_years and sticky_themes, f"Timeline should keep years on top and theme details on the left in {label}")
+    first_sticky = sticky_themes[0]
+    sticky_index = first_sticky.get_attribute("data-band-index")
+    sticky_fill = driver.execute_script("return getComputedStyle(arguments[0].querySelector('.timeline-sticky-theme-bg')).fill;", first_sticky)
+    matching_band = driver.find_element(By.CSS_SELECTOR, f'.timeline-band-group[data-timeline-cluster-index="{sticky_index}"]')
+    matching_fill = driver.execute_script("return getComputedStyle(arguments[0].querySelector('.timeline-band')).fill;", matching_band)
+    assert_true(sticky_fill == matching_fill, f"Fixed theme label should continue the theme color to the left edge in {label}: {sticky_fill!r} != {matching_fill!r}")
     help_text = driver.find_element(By.CSS_SELECTOR, ".map-help").get_attribute("textContent")
     assert_true("Chronology" not in help_text and "observed years" not in help_text, f"Timeline should omit implementation hints in {label}: {help_text!r}")
 
