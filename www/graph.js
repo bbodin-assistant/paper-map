@@ -332,6 +332,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
   const pinnedTopics = new Set();
   let currentPaperNodes = new Map();
   let currentTopicBlocks = new Map();
+  let currentAggregateKind = null;
   let currentDraw = null;
   let currentReheat = null;
   let activePointers = new Map();
@@ -393,6 +394,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
   }
 
   function renderCitationMap(papers, edges, selectedId) {
+    currentAggregateKind = null;
     if (!papers.length) {
       empty("No papers match the current filters.");
       lastCitationTopology = "";
@@ -623,6 +625,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     emptyMessage,
     onSelectBlock,
   }) {
+    currentAggregateKind = kind;
     if (!papers.length) {
       empty("No papers match the current filters.");
       lastAggregateTopology = "";
@@ -668,15 +671,27 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     const blockLayer = svgElement("g", { class: `${kind}-blocks` });
     root.append(edgeLayer, blockLayer);
 
+    const connectedBlockIds = new Set();
+    if (selectedBlockId) {
+      for (const connection of connections) {
+        if (connection.source === selectedBlockId) connectedBlockIds.add(connection.target);
+        if (connection.target === selectedBlockId) connectedBlockIds.add(connection.source);
+      }
+      connectedBlockIds.delete(selectedBlockId);
+    }
+
     const edgeElements = [];
     for (const connection of connections) {
       const source = blockById.get(connection.source);
       const target = blockById.get(connection.target);
       if (!source || !target) continue;
+      const fromSelected = connection.source === selectedBlockId;
       const line = svgElement("line", {
-        class: `topic-edge ${kind}-edge`,
+        class: `topic-edge ${kind}-edge${fromSelected ? " focus-source" : ""}`,
         "marker-end": "url(#citation-arrow)",
         "stroke-width": Math.max(1, Math.min(7, 1 + Math.log2(connection.weight + 1))),
+        "data-source-block-id": connection.source,
+        "data-target-block-id": connection.target,
       });
       const title = svgElement("title");
       title.textContent = `${source.name} → ${target.name}: ${connection.weight} cross-${kind} link${connection.weight === 1 ? "" : "s"}`;
@@ -688,8 +703,9 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
     const blockElements = [];
     for (const block of positioned) {
       const selected = block.id === selectedBlockId;
+      const connected = connectedBlockIds.has(block.id);
       const group = svgElement("g", {
-        class: `topic-block ${kind}-block${selected ? " selected" : ""}`,
+        class: `topic-block ${kind}-block${connected ? " connected" : ""}${selected ? " selected" : ""}`,
         tabindex: "0",
         role: "button",
         "data-block-id": block.id,
@@ -871,7 +887,7 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
       if (item) {
         const world = worldPoint(point);
         itemDrag = {
-          type: "topic",
+          type: topicGroup.classList.contains("author-block") ? "author" : "topic",
           id,
           item,
           pointerId: event.pointerId,
@@ -991,7 +1007,12 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
 
     if (tappedItem?.type === "paper") onSelectPaper?.(tappedItem.id);
     else if (tappedItem?.type === "topic") onSelectTopic?.(tappedItem.id);
-    else if (tappedBackground) onSelectPaper?.(null);
+    else if (tappedItem?.type === "author") onSelectAuthor?.(currentTopicBlocks.get(tappedItem.id)?.name || null);
+    else if (tappedBackground) {
+      if (currentAggregateKind === "topic") onSelectTopic?.(null);
+      else if (currentAggregateKind === "author") onSelectAuthor?.(null);
+      else onSelectPaper?.(null);
+    }
   }
 
   svg.addEventListener("pointerup", endPointer);
@@ -999,7 +1020,9 @@ export function createGraph({ svg, onSelectPaper, onSelectTopic, onSelectAuthor 
   svg.addEventListener("click", (event) => {
     if (event.target.closest?.(".paper-node, .topic-block")) return;
     if (consumeSuppressedClick(event)) return;
-    onSelectPaper?.(null);
+    if (currentAggregateKind === "topic") onSelectTopic?.(null);
+    else if (currentAggregateKind === "author") onSelectAuthor?.(null);
+    else onSelectPaper?.(null);
   });
 
   applyTransform();

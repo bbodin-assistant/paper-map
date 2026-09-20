@@ -478,6 +478,21 @@ export function initTimelineMap(root = document) {
     if (!stickyOverlay || !currentLayout) return;
     const width = Math.max(1, svg.clientWidth || 1200);
     const height = Math.max(1, svg.clientHeight || 720);
+    const svgRect = svg.getBoundingClientRect();
+    const resetRect = resetButton?.getBoundingClientRect();
+    const resetCoversYearStrip = Boolean(
+      resetRect?.width
+      && resetRect?.height
+      && resetRect.top < svgRect.top + 28
+      && resetRect.bottom > svgRect.top,
+    );
+    const yearRightLimit = resetCoversYearStrip
+      ? Math.max(48, resetRect.left - svgRect.left - 24)
+      : width - 12;
+    const stickyThemeWidth = Math.max(
+      0,
+      Math.min(LEFT_GUTTER, timelineTransform.x + LEFT_GUTTER * timelineTransform.k - 4),
+    );
     stickyOverlay.querySelector(".timeline-sticky-year-strip")?.setAttribute("width", String(width));
     const tickStep = timelineYearTickStep(timelineTransform.k);
 
@@ -491,10 +506,16 @@ export function initTimelineMap(root = document) {
       const index = Number(label.dataset.yearIndex);
       const worldX = LEFT_GUTTER + index * YEAR_STEP + CARD_WIDTH / 2;
       const x = timelineTransform.x + worldX * timelineTransform.k;
-      const showTick = index % tickStep === 0 || index === currentLayout.years.length - 1;
-      const visible = showTick && x >= 30 && x <= width - 12;
+      const isLast = index === currentLayout.years.length - 1;
+      const showTick = index % tickStep === 0 || isLast;
+      const underReset = resetCoversYearStrip && x > yearRightLimit;
+      const displayX = isLast && underReset ? yearRightLimit : x;
+      const visible = showTick
+        && x >= 30
+        && x <= width - 12
+        && (!underReset || isLast);
       label.style.display = visible ? "" : "none";
-      if (visible) label.setAttribute("x", String(x));
+      if (visible) label.setAttribute("x", String(displayX));
     }
 
     for (const group of stickyOverlay.querySelectorAll(".timeline-sticky-theme[data-band-index]")) {
@@ -505,6 +526,12 @@ export function initTimelineMap(root = document) {
       const visible = screenBottom > 29 && screenTop < height;
       group.style.display = visible ? "" : "none";
       if (!visible) continue;
+      const bg = group.querySelector(".timeline-sticky-theme-bg");
+      const name = group.querySelector(".timeline-sticky-theme-name");
+      const terms = group.querySelector(".timeline-sticky-theme-terms");
+      bg?.setAttribute("width", String(stickyThemeWidth));
+      if (name) name.style.display = stickyThemeWidth >= 62 ? "" : "none";
+      if (terms) terms.style.display = stickyThemeWidth >= 118 ? "" : "none";
       const maxY = Math.max(30, Math.min(height - 40, screenBottom - 40));
       const y = Math.max(30, Math.min(maxY, screenTop + 7));
       group.setAttribute("transform", `translate(0 ${y})`);
@@ -859,7 +886,7 @@ export function initTimelineMap(root = document) {
   svg.addEventListener("pointercancel", endPointer, true);
 
   const observer = new MutationObserver(() => queueRender());
-  observer.observe(paperList, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
+  observer.observe(paperList, { childList: true, subtree: true });
   window.addEventListener("resize", queueRender);
   root.addEventListener?.("paper-map-graph-config-changed", queueRender);
   root.addEventListener?.("paper-map-timeline-paper-activate", (event) => {
