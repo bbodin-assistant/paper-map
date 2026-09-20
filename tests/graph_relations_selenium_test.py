@@ -231,10 +231,13 @@ def main():
         wait_displayed(driver, "#ai-config-panel")
         topic_layout_options = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "graph-config-topic-layout")).options]
         author_layout_options = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "graph-config-author-layout")).options]
+        author_link_options = [option.get_attribute("value") for option in Select(driver.find_element(By.ID, "graph-config-author-links")).options]
         assert_true(topic_layout_options == ["generality", "gravity", "hierarchy"], f"Topic layout techniques should be configurable: {topic_layout_options}")
         assert_true(author_layout_options == ["coauthors", "gravity", "hierarchy"], f"Author layout techniques should be configurable: {author_layout_options}")
+        assert_true(author_link_options == ["coauthors", "citations"], f"Author link models should be configurable: {author_link_options}")
         assert_true(Select(driver.find_element(By.ID, "graph-config-topic-layout")).first_selected_option.get_attribute("value") == "generality", "Topic layout should default to generality")
         assert_true(Select(driver.find_element(By.ID, "graph-config-author-layout")).first_selected_option.get_attribute("value") == "coauthors", "Author layout should default to co-author count")
+        assert_true(Select(driver.find_element(By.ID, "graph-config-author-links")).first_selected_option.get_attribute("value") == "coauthors", "Author links should default to co-authorship")
         wait_click(driver, "#load-demo")
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
         wait_click(driver, "#ai-config-close")
@@ -363,6 +366,33 @@ def main():
         dispatch_background_pointer(driver)
         wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, "#filter-author-focus .filter-focus-chip"))
         wait.until(lambda d: not d.find_elements(By.CSS_SELECTOR, ".author-block.selected"))
+
+        # Switch the Author relationship model without changing the Author layout.
+        # Citation mode must use directed author-to-author citation links.
+        wait_click(driver, "#ai-config-button")
+        wait_displayed(driver, "#ai-config-panel")
+        Select(driver.find_element(By.ID, "graph-config-author-links")).select_by_value("citations")
+        wait_click(driver, "#ai-config-save")
+        wait.until(lambda d: Select(d.find_element(By.ID, "graph-config-author-links")).first_selected_option.get_attribute("value") == "citations")
+        wait_click(driver, "#ai-config-close")
+        wait.until(EC.invisibility_of_element_located((By.ID, "ai-config-panel")))
+        citation_author_edges = wait.until(lambda d: d.find_elements(By.CSS_SELECTOR, ".author-edge"))
+        assert_true(
+            all("citation-arrow" in (edge.get_attribute("marker-end") or "") for edge in citation_author_edges),
+            "Who-cites-whom Author links should be directed with citation arrowheads",
+        )
+        assert_true(
+            all(edge.get_attribute("data-link-mode") == "citations" for edge in citation_author_edges),
+            "Author edges should expose the configured citation link mode",
+        )
+        citation_author_titles = [
+            edge.find_element(By.TAG_NAME, "title").get_attribute("textContent")
+            for edge in citation_author_edges
+        ]
+        assert_true(
+            all("author papers cite" in title for title in citation_author_titles),
+            f"Who-cites-whom link labels should describe directed author citations: {citation_author_titles}",
+        )
 
         wait_click(driver, '#map-mode button[data-mode="citations"]')
         wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, ".paper-node")) >= 2)
