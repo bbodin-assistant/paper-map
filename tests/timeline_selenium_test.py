@@ -248,13 +248,27 @@ def exercise_timeline_click(driver, label):
           .filter(visible)
           .map((group) => {
             const bg = group.querySelector('.timeline-sticky-theme-bg')?.getBoundingClientRect();
-            return bg ? {left: bg.left, right: bg.right, top: bg.top, bottom: bg.bottom} : null;
+            const name = group.querySelector('.timeline-sticky-theme-name');
+            return bg ? {
+              left: bg.left,
+              right: bg.right,
+              top: bg.top,
+              bottom: bg.bottom,
+              name: name?.textContent || '',
+              nameVisible: visible(name),
+            } : null;
           })
           .filter(Boolean);
         const papers = Array.from(document.querySelectorAll('.timeline-paper')).map((paper) => {
           const rect = paper.getBoundingClientRect();
           return {left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom};
         });
+        const yearLabels = Array.from(document.querySelectorAll('.timeline-sticky-year-label'))
+          .filter(visible)
+          .map((label) => {
+            const rect = label.getBoundingClientRect();
+            return {text: label.textContent || '', left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom};
+          });
         const overlaps = [];
         for (const theme of themes) {
           for (const paper of papers) {
@@ -265,15 +279,44 @@ def exercise_timeline_click(driver, label):
             if (overlap) overlaps.push({theme, paper});
           }
         }
+        const yearPaperOverlaps = [];
+        for (const year of yearLabels) {
+          for (const paper of papers) {
+            const overlap = year.left < paper.right
+              && year.right > paper.left
+              && year.top < paper.bottom
+              && year.bottom > paper.top;
+            if (overlap) yearPaperOverlaps.push({year, paper});
+          }
+        }
+        const yearLabelOverlaps = [];
+        for (let left = 0; left < yearLabels.length; left += 1) {
+          for (let right = left + 1; right < yearLabels.length; right += 1) {
+            const a = yearLabels[left];
+            const b = yearLabels[right];
+            const overlap = a.left < b.right
+              && a.right > b.left
+              && a.top < b.bottom
+              && a.bottom > b.top;
+            if (overlap) yearLabelOverlaps.push({a, b});
+          }
+        }
         return {
           zoom: Number((document.querySelector('#paper-map .graph-viewport')?.getAttribute('transform') || '').match(/scale\\(([-0-9.]+)\\)/)?.[1] || 1),
           themeCount: themes.length,
+          visibleThemeNames: themes.filter((theme) => theme.nameVisible && theme.name.trim()).length,
           overlaps,
+          yearPaperOverlaps,
+          yearLabelOverlaps,
         };
         """
     )
     assert_true(overlay_geometry["zoom"] <= 0.5, f"Timeline zoom-out regression did not reach a small scale in {label}: {overlay_geometry}")
+    assert_true(overlay_geometry["themeCount"] > 0, f"Timeline should retain visible theme headers when zoomed out in {label}: {overlay_geometry}")
+    assert_true(overlay_geometry["visibleThemeNames"] == overlay_geometry["themeCount"], f"Every visible Timeline theme should keep its name when zoomed out in {label}: {overlay_geometry}")
     assert_true(not overlay_geometry["overlaps"], f"Timeline theme labels must not overlap paper cards when zoomed out in {label}: {overlay_geometry}")
+    assert_true(not overlay_geometry["yearPaperOverlaps"], f"Timeline year labels must not overlap paper cards when zoomed out in {label}: {overlay_geometry}")
+    assert_true(not overlay_geometry["yearLabelOverlaps"], f"Timeline year labels must not overlap each other when zoomed out in {label}: {overlay_geometry}")
 
     # Reset keeps the final year readable rather than placing it under the floating
     # Reset view control. The control is desktop-only, so mobile only checks reset.
@@ -291,11 +334,24 @@ def exercise_timeline_click(driver, label):
           && lastRect.right > resetRect.left
           && lastRect.top < resetRect.bottom
           && lastRect.bottom > resetRect.top);
+        const visibleLabels = labels.filter((label) => getComputedStyle(label).display !== 'none');
+        const lastCollisions = visibleLabels
+          .filter((label) => label !== last)
+          .filter((label) => {
+            const rect = label.getBoundingClientRect();
+            return Boolean(lastRect
+              && rect.left < lastRect.right
+              && rect.right > lastRect.left
+              && rect.top < lastRect.bottom
+              && rect.bottom > lastRect.top);
+          })
+          .map((label) => label.textContent || '');
         return {
           lastDisplay: last ? getComputedStyle(last).display : 'missing',
           lastText: last?.textContent || '',
           resetVisible,
           overlap,
+          lastCollisions,
           lastRect: lastRect ? {left: lastRect.left, right: lastRect.right, top: lastRect.top, bottom: lastRect.bottom} : null,
           resetRect: resetRect ? {left: resetRect.left, right: resetRect.right, top: resetRect.top, bottom: resetRect.bottom} : null,
         };
@@ -304,6 +360,7 @@ def exercise_timeline_click(driver, label):
     if reset_geometry["resetVisible"]:
         assert_true(reset_geometry["lastDisplay"] != "none", f"Reset view should keep the final Timeline year visible in {label}: {reset_geometry}")
     assert_true(not reset_geometry["overlap"], f"Reset view must not cover the final Timeline year in {label}: {reset_geometry}")
+    assert_true(not reset_geometry["lastCollisions"], f"The final Timeline year must not overlap another visible year label in {label}: {reset_geometry}")
 
     # Second click on the already selected paper opens the detail drawer.
     paper = driver.find_element(By.CSS_SELECTOR, f'.timeline-paper[data-paper-id="{paper_id}"]')
