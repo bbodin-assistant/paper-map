@@ -825,6 +825,8 @@ function renderFocusFilterList(container, values, labelFor, removeValue) {
   if (!container) return;
   container.replaceChildren();
   container.hidden = !values.length;
+  const field = container.closest?.(".filter-focus-field");
+  if (field) field.hidden = !values.length;
   for (const value of values) {
     const button = document.createElement("button");
     button.type = "button";
@@ -1511,6 +1513,7 @@ els.clearLibrary.addEventListener("click", async () => {
     state.selectedPaperId = null;
     state.filters.focusTopics = [];
     state.filters.focusAuthors = [];
+    saveUiState();
     closeDetail();
     await refreshLibrary();
     setStatus("Local library cleared.", "ready");
