@@ -9,6 +9,8 @@
 - `www/graph.js` owns directed citation/topic graph rendering, cached layout, pan/zoom, pinch gestures, draggable graph items and selection callbacks.
 - `www/research-relations.js` owns the canonical directed semantic relationship vocabulary between papers.
 - `www/import-export.js` owns portable JSON and BibTeX parsing/serialization.
+- `www/library-archive.js` owns the full ZIP database format: `library.bib` plus citation-keyed PDFs.
+- `www/paper-attachments.js` owns reviewed local PDF persistence and archive restore.
 - `www/semantic-scholar.js` is an external-provider adapter; provider response shapes must be normalized before they reach the rest of the app.
 - `www/pdf-ai.js` owns optional network AI PDF metadata/topic extraction.
 - `www/pdf-local.js` owns the browser boundary for deterministic local Rust/WASM PDF extraction.
@@ -29,18 +31,18 @@
 - Paper identity priority is DOI, Semantic Scholar paper ID, arXiv ID, then normalized title+year.
 - Citation edges are directed: source paper cites target paper.
 - Do not recursively expand the citation graph without explicit user intent.
-- Do not store uploaded PDF bytes in IndexedDB unless explicitly requested.
+- Reviewed PDF bytes may be stored in the dedicated local PDF IndexedDB because full-library PDF persistence/export is an explicit product feature; keep them out of the main research-data stores.
 - Rust/WASM should remain focused on deterministic/local computational work.
 
 ## Data ownership rules
 
 - The user's live bibliography belongs in IndexedDB, never in repository files.
 - Do not add user-provided papers, semantic relationships, provenance, notes, PDFs, exports or API keys to source control.
-- Full database export must be schema-versioned and sufficient to restore papers, directed graph edges, topics and annotations.
+- Full database export must be schema-versioned and sufficient to restore papers, directed graph edges, topics, annotations, meta values and locally stored reviewed PDFs.
 - UI preferences may use localStorage, but canonical research data may not.
 - Session-only graph arrangement can remain in memory unless a future explicit saved-layout feature is introduced.
 - Destructive database replacement must require an explicit user action in the UI.
-- The selected PDF itself is transient browser input. Do not persist PDF bytes unless a future feature explicitly introduces reviewed local file storage.
+- Selected PDF input remains transient until the user saves the reviewed paper. At that point the reviewed PDF may be persisted in the dedicated PDF IndexedDB and must be included in full ZIP backups.
 
 ## Paper identity and duplicate rules
 

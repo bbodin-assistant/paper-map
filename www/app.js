@@ -18,6 +18,7 @@ import { createGraph } from "./graph.js?v=0.4.18";
 import { loadGraphConfig } from "./graph-config.js?v=0.4.13";
 import { paperCitationSummary } from "./citation-summary.js?v=0.4.5";
 import {
+  downloadBlob,
   downloadText,
   libraryToBibTeX,
   mergePaperRecords,
@@ -27,7 +28,6 @@ import {
   paperToBibTeX,
   parseBibTeX,
   parsePaperMapJson,
-  serializeLibrary,
 } from "./import-export.js";
 import {
   enrichPaper,
@@ -54,6 +54,14 @@ import {
   loadPaperProviderConfig,
   paperProviderLabel,
 } from "./paper-provider-config.js?v=0.4.11";
+import {
+  createLibraryArchive,
+  parseLibraryArchive,
+} from "./library-archive.js?v=0.4.20";
+import {
+  importStoredPdfAttachments,
+  storedPdfAttachmentForPaper,
+} from "./paper-attachments.js?v=0.4.20";
 
 const UI_STORAGE_KEY = "paper-map-ui-v1";
 const EXPANSION_SIZE = 50;
@@ -1456,8 +1464,42 @@ els.importFile.addEventListener("change", async () => {
 
   try {
     setBusy(true, `Importing ${file.name}…`);
+    const lowerName = file.name.toLowerCase();
+
+    if (lowerName.endsWith(".zip")) {
+      const archive = await parseLibraryArchive(await file.arrayBuffer());
+      const replace = window.confirm("Restore this full database archive by replacing the current local library and stored PDFs? Choose Cancel to merge it instead.");
+      const paperById = new Map(archive.library.papers.map((paper) => [paper.id, paper]));
+      const pdfEntries = archive.pdfs
+        .map((entry) => ({ ...entry, paper: paperById.get(entry.paperId) }))
+        .filter((entry) => entry.paper);
+
+      if (replace) {
+        await replaceLibrary(archive.library);
+        await importStoredPdfAttachments(pdfEntries, { replace: true });
+        await refreshLibrary();
+        setStatus(
+          `Full database restored: ${archive.library.papers.length} papers, ${archive.library.edges.length} links, and ${pdfEntries.length} stored PDF${pdfEntries.length === 1 ? "" : "s"}.`,
+          "ready",
+        );
+      } else {
+        const merged = await mergeIntoLibrary(
+          archive.library.papers,
+          archive.library.edges,
+          archive.library.topics,
+          { method: "backup-merge", fileName: file.name },
+        );
+        await importStoredPdfAttachments(pdfEntries);
+        setStatus(
+          `Archive merged: ${merged.addedCount} new papers, ${merged.edgeCount} new links, and ${pdfEntries.length} stored PDF${pdfEntries.length === 1 ? "" : "s"} imported.`,
+          "ready",
+        );
+      }
+      return;
+    }
+
     const text = await file.text();
-    if (file.name.toLowerCase().endsWith(".bib")) {
+    if (lowerName.endsWith(".bib")) {
       const papers = parseBibTeX(text);
       if (!papers.length) throw new Error("No BibTeX entries were found in this file.");
       setStatus(`Reviewing ${papers.length} BibTeX entr${papers.length === 1 ? "y" : "ies"} before import…`, "loading");
@@ -1494,9 +1536,30 @@ els.importFile.addEventListener("change", async () => {
   }
 });
 
-els.exportJson.addEventListener("click", () => {
-  downloadText(`paper-map-backup-${new Date().toISOString().slice(0, 10)}.json`, serializeLibrary(state.library));
-  setStatus("Local database backup downloaded.", "ready");
+els.exportJson.addEventListener("click", async () => {
+  try {
+    setBusy(true, "Building full database archive…");
+    const pdfEntries = [];
+    for (const paper of state.library.papers) {
+      const attachment = await storedPdfAttachmentForPaper(paper);
+      if (!attachment?.blob) continue;
+      pdfEntries.push({
+        paperId: paper.id,
+        blob: attachment.blob,
+        metadata: attachment,
+      });
+    }
+    const archive = await createLibraryArchive(state.library, pdfEntries);
+    downloadBlob(`paper-map-full-db-${new Date().toISOString().slice(0, 10)}.zip`, archive);
+    setStatus(
+      `Full database downloaded: ${state.library.papers.length} papers and ${pdfEntries.length} stored PDF${pdfEntries.length === 1 ? "" : "s"}.`,
+      "ready",
+    );
+  } catch (error) {
+    setStatus(error.message || String(error), "error");
+  } finally {
+    setBusy(false);
+  }
 });
 
 els.exportBibtex.addEventListener("click", () => {
