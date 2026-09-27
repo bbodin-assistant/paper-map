@@ -26,8 +26,13 @@ test("stored PDF identity falls back to title/year then source filename", () => 
   );
 });
 
-test("page loads the local PDF attachment module", async () => {
-  const html = await readFile(new URL("../www/index.html", import.meta.url), "utf8");
-  assert.match(html, /paper-attachments\.js\?v=\d+\.\d+\.\d+/);
+test("page initializes local PDF attachments after the application modules", async () => {
+  const [html, initializer] = await Promise.all([
+    readFile(new URL("../www/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../www/paper-attachments-init.js", import.meta.url), "utf8"),
+  ]);
+  assert.match(html, /paper-attachments-init\.js\?v=\d+\.\d+\.\d+/);
+  assert.match(initializer, /paper-attachments\.js\?v=\d+\.\d+\.\d+/);
+  assert.match(initializer, /initPaperAttachments\(document\)/);
   assert.match(html, /Paper Map <span class="app-version">v\d+\.\d+\.\d+<\/span>/);
 });

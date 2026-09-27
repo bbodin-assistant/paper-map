@@ -61,7 +61,7 @@ import {
 import {
   importStoredPdfAttachments,
   storedPdfAttachmentForPaper,
-} from "./paper-attachments.js?v=0.4.20";
+} from "./paper-attachments.js?v=0.4.21";
 
 const UI_STORAGE_KEY = "paper-map-ui-v1";
 const EXPANSION_SIZE = 50;

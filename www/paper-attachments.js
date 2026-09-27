@@ -350,7 +350,7 @@ function updateImportExplanation(root = document) {
   explainer.innerHTML = "Every selected PDF is extracted locally with Rust/WebAssembly. On an individual tab you can additionally run <strong>AI extraction</strong> or <strong>Online extraction</strong> using the paper-information method selected in Config. Results are merged without overwriting fields you have edited manually. When you save a reviewed PDF, the original PDF file is also stored locally in this browser so it can be reopened from the paper details.";
 }
 
-function init(root = document) {
+export function initPaperAttachments(root = document) {
   if (!root?.querySelector) return false;
   installSaveInterception(root);
   installTimelineDrawerBridge(root);
@@ -375,4 +375,3 @@ function init(root = document) {
   return true;
 }
 
-if (typeof document !== "undefined") init(document);
