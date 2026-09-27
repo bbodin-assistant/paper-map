@@ -9,7 +9,7 @@ The application is designed for static hosting. There is no application backend 
 ## V1 goals
 
 - Store papers, directed citation/research links, annotations, tags, topics, provenance, and UI state locally in IndexedDB.
-- Import and export a portable Paper Map JSON database.
+- Import legacy Paper Map JSON backups and export/import a full ZIP database containing keyed BibTeX plus locally stored PDFs.
 - Import BibTeX and enrich papers from Semantic Scholar when identifiers are available.
 - Import a research PDF with deterministic local citation extraction in Rust/WebAssembly.
 - Resolve extracted DOI/arXiv identifiers to canonical metadata through Crossref and Semantic Scholar with reviewed match confidence.
@@ -42,6 +42,8 @@ www/
   graph.js                  Directed SVG graph rendering and direct manipulation
   research-relations.js     Canonical semantic paper-relation vocabulary
   import-export.js          JSON / BibTeX import and export
+  library-archive.js         Full ZIP database archive with keyed BibTeX + PDFs
+  paper-attachments.js       Local reviewed PDF persistence and archive restore
   semantic-scholar.js       Scholarly-data provider adapter
   ai-config.js              AI provider/base URL/model preference model
   ai-config-ui.js           Global and PDF-inline AI server configuration UI
@@ -133,7 +135,18 @@ The twelve files with verified download sources each have their own Make target,
 
 ## Local data
 
-The live library is stored in IndexedDB under `paper-map-v1`. Browser data can be downloaded as a JSON backup and restored later. Clearing browser site data removes the local library, so regular exports are recommended for important collections.
+The live library is stored in IndexedDB under `paper-map-v1`, and reviewed PDF files are stored separately under `paper-map-pdf-files-v1`. **Download full DB (.zip)** creates a portable archive that can restore both stores. Clearing browser site data removes the local library and stored PDFs, so regular exports are recommended for important collections.
+
+The ZIP layout is intentionally simple:
+
+```text
+library.bib
+<citation-key-1>.pdf
+<citation-key-2>.pdf
+...
+```
+
+`library.bib` contains normal keyed BibTeX entries. Paper Map's lossless database payload (full paper records, directed citation/research edges, topic records, meta values, provenance, notes, annotations, and PDF attachment metadata) is embedded in `% PaperMap-Metadata:` BibTeX comment lines, so no second JSON metadata file is required. PDF filenames use the same unique, filename-safe citation keys as the BibTeX entries.
 
 The repository's demo records are source-controlled only to make the application immediately testable. Generated WebAssembly output, user PDFs, extracted references, notes, exports, and API keys are not committed.
 
@@ -226,10 +239,11 @@ The provider layer remains replaceable: OpenAlex, DataCite, Zotero, additional A
 
 Current import paths are:
 
-- Paper Map JSON backup / restore
+- Full Paper Map ZIP database backup / restore (`library.bib` + `<key>.pdf` files)
+- Legacy Paper Map JSON backup / restore
 - BibTeX
 - DOI, arXiv ID, Semantic Scholar ID, or title through Semantic Scholar
 - PDF through local Rust/WASM bibliography/citation extraction, with optional reviewed Crossref/Semantic Scholar identifier resolution
 - PDF through optional reviewed AI-assisted metadata/topic extraction using the configured AI provider
 
-The PDF itself is not stored in IndexedDB. Only user-reviewed paper data, accepted topics, accepted extracted-reference provenance, semantic research links and local library provenance are saved locally.
+When a reviewed PDF is saved, its original bytes are stored locally in the separate PDF IndexedDB so the paper can be reopened and included in a full database ZIP. User-reviewed metadata, accepted topics, accepted extracted-reference provenance, semantic research links and local library provenance remain in the main Paper Map database.

@@ -40,6 +40,8 @@ test:
 	node --check www/graph-layout.js
 	node --check www/graph-config.js
 	node --check www/import-export.js
+	node --check www/library-archive.js
+	node --check www/paper-attachments-init.js
 	node --check www/paper-source.js
 	node --check www/paper-provider-config.js
 	node --check www/paper-provider.js

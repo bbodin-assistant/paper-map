@@ -96,6 +96,7 @@ async function allPdfAttachments() {
 }
 
 function sameAttachmentPaper(record, paper) {
+  if (record.paperId && paper?.id && record.paperId === paper.id) return true;
   const identity = paperIdentityParts(paper);
   if (identity.doi && record.doi) return identity.doi === record.doi;
   if (identity.arxivId && record.arxivId) return identity.arxivId === record.arxivId;
@@ -111,6 +112,60 @@ async function attachmentForPaper(paper) {
   return records.find((record) => record.key === exactKey)
     || records.find((record) => sameAttachmentPaper(record, paper))
     || null;
+}
+
+export async function storedPdfAttachmentForPaper(paper) {
+  return attachmentForPaper(paper);
+}
+
+function importedAttachmentRecord(entry) {
+  const paper = entry?.paper || {};
+  const metadata = entry?.metadata || {};
+  const sourceFileName = clean(
+    metadata.sourceFileName
+      || paper.sourceFileName
+      || paper.libraryEntry?.fileName
+      || metadata.name
+      || entry?.archiveName,
+  );
+  const identity = paperIdentityParts({ ...paper, sourceFileName });
+  const blob = entry?.blob instanceof Blob && entry.blob.type === "application/pdf"
+    ? entry.blob
+    : new Blob([entry?.blob || new Uint8Array()], { type: "application/pdf" });
+  const fallbackFile = {
+    name: sourceFileName || metadata.name || entry?.archiveName || "paper.pdf",
+    size: blob.size,
+    lastModified: Number(metadata.lastModified) || 0,
+  };
+  const key = attachmentIdentity({ ...paper, sourceFileName }, fallbackFile)
+    || clean(metadata.key)
+    || "file:" + clean(paper.id || fallbackFile.name).toLowerCase() + ":" + blob.size;
+
+  return {
+    ...metadata,
+    key,
+    blob,
+    name: clean(metadata.name || sourceFileName || entry?.archiveName || "paper.pdf"),
+    type: "application/pdf",
+    size: blob.size,
+    lastModified: Number(metadata.lastModified) || 0,
+    storedAt: metadata.storedAt || new Date().toISOString(),
+    sourceFileName,
+    paperId: clean(paper.id),
+    doi: identity.doi,
+    arxivId: identity.arxivId,
+    title: identity.title,
+    year: identity.year,
+  };
+}
+
+export async function importStoredPdfAttachments(entries = [], { replace = false } = {}) {
+  const db = await openPdfDatabase();
+  const transaction = db.transaction(PDF_STORE, "readwrite");
+  const store = transaction.objectStore(PDF_STORE);
+  if (replace) store.clear();
+  for (const entry of entries) store.put(importedAttachmentRecord(entry));
+  await transactionDone(transaction);
 }
 
 function reviewPaperSnapshot(root = document) {
@@ -295,7 +350,7 @@ function updateImportExplanation(root = document) {
   explainer.innerHTML = "Every selected PDF is extracted locally with Rust/WebAssembly. On an individual tab you can additionally run <strong>AI extraction</strong> or <strong>Online extraction</strong> using the paper-information method selected in Config. Results are merged without overwriting fields you have edited manually. When you save a reviewed PDF, the original PDF file is also stored locally in this browser so it can be reopened from the paper details.";
 }
 
-function init(root = document) {
+export function initPaperAttachments(root = document) {
   if (!root?.querySelector) return false;
   installSaveInterception(root);
   installTimelineDrawerBridge(root);
@@ -320,4 +375,3 @@ function init(root = document) {
   return true;
 }
 
-if (typeof document !== "undefined") init(document);

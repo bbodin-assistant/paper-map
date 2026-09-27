@@ -262,8 +262,7 @@ export function parsePaperMapJson(text) {
   return value;
 }
 
-export function downloadText(filename, text, type = "application/json") {
-  const blob = new Blob([text], { type });
+export function downloadBlob(filename, blob) {
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement("a");
   anchor.href = url;
@@ -272,4 +271,8 @@ export function downloadText(filename, text, type = "application/json") {
   anchor.click();
   anchor.remove();
   URL.revokeObjectURL(url);
+}
+
+export function downloadText(filename, text, type = "application/json") {
+  downloadBlob(filename, new Blob([text], { type }));
 }
