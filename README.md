@@ -146,7 +146,9 @@ library.bib
 ...
 ```
 
-`library.bib` contains normal keyed BibTeX entries. Paper Map's lossless database payload (full paper records, directed citation/research edges, topic records, meta values, provenance, notes, annotations, and PDF attachment metadata) is embedded in `% PaperMap-Metadata:` BibTeX comment lines, so no second JSON metadata file is required. PDF filenames use the same unique, filename-safe citation keys as the BibTeX entries.
+`library.bib` contains normal keyed BibTeX entries. Paper Map's lossless database payload (full paper records, directed citation/research edges, topic records, meta values, provenance, notes, annotations, and PDF attachment metadata) is embedded in `% PaperMap-Metadata:` BibTeX comment lines, so no second JSON metadata file is required. PDF filenames use the same unique, filename-safe citation keys as the BibTeX entries. The current archive uses ZIP32, so the practical complete-archive limit is approximately **4 GiB** and ZIP64 is not supported.
+
+See [`ARCHIVE_FORMAT.md`](ARCHIVE_FORMAT.md) for the normative archive layout, metadata encoding, citation-key rules, validation, versioning, compatibility, and size limits.
 
 The repository's demo records are source-controlled only to make the application immediately testable. Generated WebAssembly output, user PDFs, extracted references, notes, exports, and API keys are not committed.
 
