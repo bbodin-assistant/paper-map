@@ -2,51 +2,44 @@
 
 This document is the normative specification for the Paper Map full-database ZIP backup format.
 
-The current archive format version is **1**. The key words **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, and **MAY** are to be interpreted as normative requirements.
+The current archive format version is **2**. The key words **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, and **MAY** are normative.
 
 ## Archive layout
 
-A Paper Map full-database archive MUST be a ZIP file with this root-level layout:
+A version-2 Paper Map full-database archive MUST be a ZIP file with this root-level layout:
 
 ```text
 library.bib
+metadata.json
 <citation-key>.pdf
 <citation-key>.pdf
 ...
 ```
 
 - `library.bib` MUST exist at the archive root.
-- PDF entries are optional.
-- PDF entries MUST also be at the archive root and MUST use the corresponding citation key as their filename.
+- `metadata.json` MUST exist at the archive root.
+- PDF entries are optional and MUST be stored at the archive root.
 - Writers currently emit ZIP entries using the ZIP `STORE` method.
 - Readers SHOULD accept standard ZIP `STORE` and `DEFLATE` entries.
 - Encrypted ZIP entries are not supported.
 
 ## `library.bib`
 
-`library.bib` MUST be valid, human-readable BibTeX and MUST contain one BibTeX entry for each archived paper.
+`library.bib` MUST be valid, human-readable BibTeX and MUST contain one keyed BibTeX entry for each archived paper.
 
-A full-database archive MUST also include Paper Map metadata comments of the form:
+Version-2 writers MUST store Paper Map's lossless application metadata in `metadata.json`, not in BibTeX metadata comments. This keeps `library.bib` directly reusable by ordinary BibTeX software.
 
-```text
-% Paper Map full database archive
-% PaperMap-Archive-Version: 1
-% PaperMap-Metadata: <base64url-data>
-% PaperMap-Metadata: <base64url-data>
-...
-```
+Each paper key in `metadata.json` MUST match a citation key in `library.bib`.
 
-The `PaperMap-Metadata` values MUST be concatenated in file order, decoded as Base64URL, decoded as UTF-8, and parsed as JSON.
+## `metadata.json`
 
-Writers SHOULD split the encoded metadata into comment lines containing no more than 120 encoded characters.
-
-For archive version 1, the decoded payload has this structure:
+`metadata.json` MUST be UTF-8 JSON. For archive version 2 it has this structure:
 
 ```json
 {
-  "archiveVersion": 1,
+  "archiveVersion": 2,
   "schemaVersion": 1,
-  "exportedAt": "2026-09-28T00:00:00.000Z",
+  "exportedAt": "2026-09-29T00:00:00.000Z",
   "papers": [
     {
       "key": "Smith-2026-Example",
@@ -66,17 +59,17 @@ For archive version 1, the decoded payload has this structure:
 }
 ```
 
-The metadata payload is the lossless Paper Map representation. It MUST contain the complete paper records and the database collections needed to restore the library, including directed edges, topics, annotations and notes stored on records, provenance, and database metadata.
+The JSON payload is the lossless Paper Map representation. It MUST contain the complete paper records and database collections required to restore the library, including directed citation/research edges, topics, annotations and notes stored on records, provenance, and database metadata.
 
-PDF binary data MUST NOT be embedded in the metadata payload. It is stored only in the corresponding `.pdf` ZIP entry.
+PDF binary data MUST NOT be embedded in `metadata.json`. PDF bytes are stored only in the corresponding `.pdf` ZIP entry.
 
-Each `papers[].key` MUST match the citation key of a visible BibTeX entry in `library.bib`.
+The `attachments` array MAY preserve additional PDF metadata such as the original filename, modification time, or storage timestamp.
 
 ## Citation keys and PDF filenames
 
 Archive citation keys MUST be safe as root-level filenames.
 
-Version 1 citation keys:
+Version-2 citation keys:
 
 - MUST contain only ASCII letters, digits, `.`, `_`, and `-`.
 - MUST NOT begin or end with `.` or `-`.
@@ -91,16 +84,16 @@ A stored PDF for citation key `Smith-2026-Example` MUST be named:
 Smith-2026-Example.pdf
 ```
 
-A PDF filename MUST correspond to a known paper citation key. Attachment metadata MAY preserve additional properties such as the original filename, modification time, or storage timestamp.
+A PDF filename MUST correspond to a paper citation key present in both `metadata.json` and `library.bib`.
 
 ## Validation
 
-A version-1 reader MUST reject an archive when any of the following applies:
+A version-2 reader MUST reject an archive when any of the following applies:
 
 - `library.bib` is missing.
-- `PaperMap-Archive-Version` is missing or unsupported.
-- `PaperMap-Metadata` is missing, cannot be decoded, or is not valid JSON.
-- The decoded `archiveVersion` is unsupported or does not match version 1.
+- `metadata.json` is missing, except when reading a supported legacy version-1 archive.
+- `metadata.json` cannot be decoded as UTF-8 JSON.
+- `archiveVersion` is missing or unsupported.
 - Required database collections are missing or have invalid basic types.
 - A paper has an invalid citation key.
 - Citation keys are duplicated case-insensitively.
@@ -110,31 +103,39 @@ A version-1 reader MUST reject an archive when any of the following applies:
 - ZIP entry integrity checks, including size or CRC checks, fail.
 - The archive uses encryption or an unsupported compression method.
 
-Readers MUST NOT silently reinterpret an unsupported archive version.
+If `metadata.json` is present, it is authoritative. Readers MUST NOT silently fall back to legacy BibTeX metadata when a present version-2 metadata file is malformed.
 
 ## Versioning
 
-`PaperMap-Archive-Version` and the decoded `archiveVersion` identify the archive format.
+`archiveVersion` in `metadata.json` identifies the archive format.
 
 `schemaVersion` identifies the Paper Map database schema stored inside the archive and is independent of the archive format version.
 
-A change that makes the archive structure or metadata encoding incompatible with version-1 readers MUST increment the archive version.
+A change that makes the archive structure or metadata encoding incompatible with version-2 readers MUST increment the archive version.
 
-Compatible additions to the metadata payload MAY be made without incrementing the archive version. Readers SHOULD tolerate unknown additional metadata fields.
+Compatible additions to the JSON payload MAY be made without incrementing the archive version. Readers SHOULD tolerate unknown additional JSON properties.
 
 ## Compatibility
 
+Version-2 writers MUST emit `library.bib` and `metadata.json`.
+
+Paper Map readers SHOULD remain able to import version-1 archives. Version 1 stored:
+
+```text
+library.bib
+<citation-key>.pdf
+...
+```
+
+and embedded the lossless payload in `% PaperMap-Metadata:` comments inside `library.bib`, with `% PaperMap-Archive-Version: 1`.
+
+A reader MAY treat those comments as the metadata source only when `metadata.json` is absent and the archive explicitly identifies itself as version 1.
+
 A conforming full-database backup MUST contain enough local data to restore the archived Paper Map library without access to an external service.
-
-The visible BibTeX entries make `library.bib` useful to ordinary BibTeX software. Such software is not expected to understand or preserve Paper Map metadata comments.
-
-For a full-database restore, Paper Map readers MUST use the embedded metadata payload rather than reconstructing the database solely from visible BibTeX fields.
-
-A BibTeX file without the Paper Map archive-version and metadata comments is an ordinary BibTeX import, not a Paper Map full-database backup.
 
 ## ZIP32 limits
 
-Archive format version 1 uses **ZIP32**, not ZIP64.
+Archive format version 2 uses **ZIP32**, not ZIP64.
 
 ZIP32 represents entry sizes and archive offsets with 32-bit values. Individual entries, relevant offsets, and central-directory values therefore cannot exceed `0xffffffff` bytes, and the practical maximum complete archive size is approximately **4 GiB**.
 

@@ -1,7 +1,9 @@
 import { paperToBibTeX, parseBibTeX } from "./import-export.js";
 
-const ARCHIVE_VERSION = 1;
+const ARCHIVE_VERSION = 2;
+const LEGACY_ARCHIVE_VERSION = 1;
 const BIB_FILENAME = "library.bib";
+const METADATA_FILENAME = "metadata.json";
 const UTF8_FLAG = 0x0800;
 const ZIP_STORE = 0;
 const ZIP_DEFLATE = 8;
@@ -55,18 +57,6 @@ export function assignArchiveKeys(papers = []) {
   });
 }
 
-function bytesToBase64Url(bytes) {
-  let binary = "";
-  const chunkSize = 0x8000;
-  for (let offset = 0; offset < bytes.length; offset += chunkSize) {
-    binary += String.fromCharCode(...bytes.subarray(offset, offset + chunkSize));
-  }
-  const base64 = typeof btoa === "function"
-    ? btoa(binary)
-    : Buffer.from(bytes).toString("base64");
-  return base64.replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
-}
-
 function base64UrlToBytes(value) {
   const base64 = String(value || "").replace(/-/g, "+").replace(/_/g, "/");
   const padded = base64 + "=".repeat((4 - (base64.length % 4)) % 4);
@@ -75,20 +65,6 @@ function base64UrlToBytes(value) {
     return Uint8Array.from(binary, (char) => char.charCodeAt(0));
   }
   return new Uint8Array(Buffer.from(padded, "base64"));
-}
-
-function metadataComment(payload) {
-  const json = JSON.stringify(payload);
-  const encoded = bytesToBase64Url(new TextEncoder().encode(json));
-  const lines = [];
-  for (let offset = 0; offset < encoded.length; offset += 120) {
-    lines.push("% PaperMap-Metadata: " + encoded.slice(offset, offset + 120));
-  }
-  return [
-    "% Paper Map full database archive",
-    "% PaperMap-Archive-Version: " + ARCHIVE_VERSION,
-    ...lines,
-  ].join("\n");
 }
 
 function attachmentMetadata(entry) {
@@ -128,32 +104,13 @@ export function libraryToArchiveBibTeX(library, pdfEntries = []) {
   };
 
   const entries = keyedPapers.map(({ key, paper }) => paperToBibTeX({ ...paper, citationKey: key }));
-  const bibtex = metadataComment(payload) + "\n\n" + entries.join("\n\n") + "\n";
-  return { bibtex, keyedPapers, payload };
+  const bibtex = entries.join("\n\n") + (entries.length ? "\n" : "");
+  const metadataJson = JSON.stringify(payload, null, 2) + "\n";
+  return { bibtex, metadataJson, keyedPapers, payload };
 }
 
-function parseArchiveMetadata(bibtex) {
-  const versionMatch = String(bibtex || "").match(/^%\s*PaperMap-Archive-Version:\s*(\d+)\s*$/im);
-  if (!versionMatch) throw new Error("This BibTeX file is not a Paper Map full database archive.");
-  if (Number(versionMatch[1]) !== ARCHIVE_VERSION) {
-    throw new Error("Unsupported Paper Map archive version: " + versionMatch[1] + ".");
-  }
-
-  const chunks = [];
-  for (const line of String(bibtex || "").split(/\r?\n/)) {
-    const match = line.match(/^%\s*PaperMap-Metadata:\s*([A-Za-z0-9_-]+)\s*$/);
-    if (match) chunks.push(match[1]);
-  }
-  if (!chunks.length) throw new Error("Paper Map archive metadata is missing from library.bib.");
-
-  let payload;
-  try {
-    payload = JSON.parse(new TextDecoder().decode(base64UrlToBytes(chunks.join(""))));
-  } catch (error) {
-    throw new Error("Paper Map archive metadata is invalid: " + (error?.message || error));
-  }
-
-  if (!payload || Number(payload.archiveVersion) !== ARCHIVE_VERSION || !Array.isArray(payload.papers)) {
+function validateArchivePayload(payload, bibtex, expectedVersion) {
+  if (!payload || Number(payload.archiveVersion) !== expectedVersion || !Array.isArray(payload.papers)) {
     throw new Error("Paper Map archive metadata has an unsupported structure.");
   }
   if (!Array.isArray(payload.edges) || !Array.isArray(payload.topics) || !payload.meta || typeof payload.meta !== "object") {
@@ -176,8 +133,45 @@ function parseArchiveMetadata(bibtex) {
       throw new Error("Paper Map archive metadata does not match the BibTeX entry " + item.key + ".");
     }
   }
-
   return payload;
+}
+
+function parseArchiveMetadataJson(bytes, bibtex) {
+  let payload;
+  try {
+    payload = JSON.parse(new TextDecoder().decode(bytes));
+  } catch (error) {
+    throw new Error("Paper Map metadata.json is invalid: " + (error?.message || error));
+  }
+  if (Number(payload?.archiveVersion) !== ARCHIVE_VERSION) {
+    throw new Error("Unsupported Paper Map archive version: " + String(payload?.archiveVersion ?? "missing") + ".");
+  }
+  return validateArchivePayload(payload, bibtex, ARCHIVE_VERSION);
+}
+
+function parseLegacyArchiveMetadata(bibtex) {
+  const versionMatch = String(bibtex || "").match(/^%\s*PaperMap-Archive-Version:\s*(\d+)\s*$/im);
+  if (!versionMatch) {
+    throw new Error("Paper Map archive must contain metadata.json at the ZIP root.");
+  }
+  if (Number(versionMatch[1]) !== LEGACY_ARCHIVE_VERSION) {
+    throw new Error("Unsupported Paper Map archive version: " + versionMatch[1] + ".");
+  }
+
+  const chunks = [];
+  for (const line of String(bibtex || "").split(/\r?\n/)) {
+    const match = line.match(/^%\s*PaperMap-Metadata:\s*([A-Za-z0-9_-]+)\s*$/);
+    if (match) chunks.push(match[1]);
+  }
+  if (!chunks.length) throw new Error("Legacy Paper Map archive metadata is missing from library.bib.");
+
+  let payload;
+  try {
+    payload = JSON.parse(new TextDecoder().decode(base64UrlToBytes(chunks.join(""))));
+  } catch (error) {
+    throw new Error("Legacy Paper Map archive metadata is invalid: " + (error?.message || error));
+  }
+  return validateArchivePayload(payload, bibtex, LEGACY_ARCHIVE_VERSION);
 }
 
 function dosDateTime(date = new Date()) {
@@ -374,9 +368,12 @@ function isPdf(bytes) {
 }
 
 export async function createLibraryArchive(library, pdfEntries = []) {
-  const { bibtex, keyedPapers } = libraryToArchiveBibTeX(library, pdfEntries);
+  const { bibtex, metadataJson, keyedPapers } = libraryToArchiveBibTeX(library, pdfEntries);
   const pdfByPaperId = new Map((pdfEntries || []).map((entry) => [entry.paperId, entry]));
-  const entries = [{ name: BIB_FILENAME, content: bibtex }];
+  const entries = [
+    { name: BIB_FILENAME, content: bibtex },
+    { name: METADATA_FILENAME, content: metadataJson },
+  ];
 
   for (const { key, paper } of keyedPapers) {
     const entry = pdfByPaperId.get(paper.id);
@@ -392,7 +389,10 @@ export async function parseLibraryArchive(buffer) {
   if (!bibName) throw new Error("Paper Map archive must contain library.bib at the ZIP root.");
 
   const bibtex = new TextDecoder().decode(files.get(bibName));
-  const payload = parseArchiveMetadata(bibtex);
+  const metadataName = Array.from(files.keys()).find((name) => name.toLowerCase() === METADATA_FILENAME);
+  const payload = metadataName
+    ? parseArchiveMetadataJson(files.get(metadataName), bibtex)
+    : parseLegacyArchiveMetadata(bibtex);
   const keyedPapers = payload.papers.map(({ key, paper }) => ({ key, paper }));
   const attachmentMeta = new Map((payload.attachments || []).map((item) => [item.key, item]));
   const knownPdfNames = new Set(keyedPapers.map(({ key }) => key + ".pdf"));

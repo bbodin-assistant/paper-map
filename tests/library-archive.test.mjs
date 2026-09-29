@@ -11,6 +11,9 @@ import {
 const PDF_A = new Blob([new TextEncoder().encode("%PDF-1.4\narchive-a\n%%EOF\n")], { type: "application/pdf" });
 const PDF_B = new Blob([new TextEncoder().encode("%PDF-1.4\narchive-b\n%%EOF\n")], { type: "application/pdf" });
 
+const LEGACY_V1_ARCHIVE_BASE64 =
+  "UEsDBBQAAAAAALopPV0Hl+1IcwIAAHMCAAALAAAAbGlicmFyeS5iaWIlIFBhcGVyIE1hcCBmdWxsIGRhdGFiYXNlIGFyY2hpdmUKJSBQYXBlck1hcC1BcmNoaXZlLVZlcnNpb246IDEKJSBQYXBlck1hcC1NZXRhZGF0YTogZXlKaGNtTm9hWFpsVm1WeWMybHZiaUk2TVN3aWMyTm9aVzFoVm1WeWMybHZiaUk2TVN3aVpYaHdiM0owWldSQmRDSTZJakl3TWpZdE1Ea3RNamRVTVRJNk1EQTZNREF1TURBd1dpSXNJbkJoY0dWeWN5STZXM3NpCiUgUGFwZXJNYXAtTWV0YWRhdGE6IGEyVjVJam9pVDJ4a0xUSXdNalF0VUdGd1pYSWlMQ0p3WVhCbGNpSTZleUpwWkNJNkluQmhjR1Z5T205c1pDSXNJbU5wZEdGMGFXOXVTMlY1SWpvaVQyeGtJREl3TWpRZ1VHRndaWElpTENKMGFYUnNaU0k2SWs5cwolIFBhcGVyTWFwLU1ldGFkYXRhOiBaQ0JRWVhCbGNpSXNJbUYxZEdodmNuTWlPbHNpUVdSaElFOXNaQ0pkTENKNVpXRnlJam95TURJMGZYMWRMQ0psWkdkbGN5STZXMTBzSW5SdmNHbGpjeUk2VzEwc0ltMWxkR0VpT25zaWJHVm5ZV041SWpwMGNuVmwKJSBQYXBlck1hcC1NZXRhZGF0YTogZlN3aVlYUjBZV05vYldWdWRITWlPbHRkZlEKCkBhcnRpY2xle09sZC0yMDI0LVBhcGVyLAogIHRpdGxlID0ge09sZCBQYXBlcn0sCiAgYXV0aG9yID0ge0FkYSBPbGR9LAogIHllYXIgPSB7MjAyNH0KfQpQSwECFAMUAAAAAAC6KT1dB5ftSHMCAABzAgAACwAAAAAAAAAAAAAAgAEAAAAAbGlicmFyeS5iaWJQSwUGAAAAAAEAAQA5AAAAnAIAAAAA";
+
 function sampleLibrary() {
   return {
     schemaVersion: 1,
@@ -60,7 +63,23 @@ test("archive keys are filename-safe and unique", () => {
   assert.deepEqual(keys, ["Doe-2024-Alpha", "Doe-2024-Alpha-2"]);
 });
 
-test("full database ZIP round-trips metadata, keyed BibTeX, and PDFs", async () => {
+test("version 2 keeps BibTeX clean and stores lossless metadata as JSON", () => {
+  const library = sampleLibrary();
+  const { bibtex, metadataJson } = libraryToArchiveBibTeX(library, []);
+
+  assert.doesNotMatch(bibtex, /PaperMap-Metadata|PaperMap-Archive-Version/);
+  assert.match(bibtex, /@article\{Doe-2024-Alpha,/);
+  assert.match(bibtex, /@article\{Doe-2024-Alpha-2,/);
+
+  const metadata = JSON.parse(metadataJson);
+  assert.equal(metadata.archiveVersion, 2);
+  assert.equal(metadata.papers.length, 2);
+  assert.deepEqual(metadata.edges, library.edges);
+  assert.deepEqual(metadata.topics, library.topics);
+  assert.deepEqual(metadata.meta, library.meta);
+});
+
+test("full database ZIP round-trips metadata.json, keyed BibTeX, and PDFs", async () => {
   const library = sampleLibrary();
   const pdfEntries = [
     {
@@ -80,19 +99,32 @@ test("full database ZIP round-trips metadata, keyed BibTeX, and PDFs", async () 
     },
   ];
 
-  const { bibtex } = libraryToArchiveBibTeX(library, pdfEntries);
-  assert.match(bibtex, /% PaperMap-Archive-Version: 1/);
-  assert.match(bibtex, /@article\{Doe-2024-Alpha,/);
-  assert.match(bibtex, /@article\{Doe-2024-Alpha-2,/);
-
   const zip = await createLibraryArchive(library, pdfEntries);
   assert.equal(zip.type, "application/zip");
 
-  const restored = await parseLibraryArchive(await zip.arrayBuffer());
+  const zipBytes = new Uint8Array(await zip.arrayBuffer());
+  const zipText = new TextDecoder("latin1").decode(zipBytes);
+  assert.match(zipText, /library\.bib/);
+  assert.match(zipText, /metadata\.json/);
+  assert.match(zipText, /Doe-2024-Alpha\.pdf/);
+
+  const restored = await parseLibraryArchive(zipBytes.buffer);
   assert.deepEqual(restored.library, library);
   assert.deepEqual(restored.keyedPapers.map(({ key }) => key), ["Doe-2024-Alpha", "Doe-2024-Alpha-2"]);
   assert.deepEqual(restored.pdfs.map((item) => item.archiveName), ["Doe-2024-Alpha.pdf", "Doe-2024-Alpha-2.pdf"]);
   assert.equal(await restored.pdfs[0].blob.text(), await PDF_A.text());
   assert.equal(await restored.pdfs[1].blob.text(), await PDF_B.text());
   assert.equal(restored.pdfs[0].metadata.sourceFileName, "alpha-original.pdf");
+});
+
+test("version 1 archives with metadata comments remain importable", async () => {
+  const bytes = Uint8Array.from(Buffer.from(LEGACY_V1_ARCHIVE_BASE64, "base64"));
+  const restored = await parseLibraryArchive(bytes.buffer);
+
+  assert.equal(restored.library.schemaVersion, 1);
+  assert.equal(restored.library.papers.length, 1);
+  assert.equal(restored.library.papers[0].id, "paper:old");
+  assert.equal(restored.library.papers[0].title, "Old Paper");
+  assert.deepEqual(restored.library.meta, { legacy: true });
+  assert.deepEqual(restored.keyedPapers.map(({ key }) => key), ["Old-2024-Paper"]);
 });
