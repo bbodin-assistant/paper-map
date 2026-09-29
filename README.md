@@ -9,7 +9,7 @@ The application is designed for static hosting. There is no application backend 
 ## V1 goals
 
 - Store papers, directed citation/research links, annotations, tags, topics, provenance, and UI state locally in IndexedDB.
-- Import legacy Paper Map JSON backups and export/import a full ZIP database containing keyed BibTeX plus locally stored PDFs.
+- Import legacy Paper Map JSON backups and export/import a full ZIP database containing keyed BibTeX, lossless JSON metadata, and locally stored PDFs.
 - Import BibTeX and enrich papers from Semantic Scholar when identifiers are available.
 - Import a research PDF with deterministic local citation extraction in Rust/WebAssembly.
 - Resolve extracted DOI/arXiv identifiers to canonical metadata through Crossref and Semantic Scholar with reviewed match confidence.
@@ -42,7 +42,7 @@ www/
   graph.js                  Directed SVG graph rendering and direct manipulation
   research-relations.js     Canonical semantic paper-relation vocabulary
   import-export.js          JSON / BibTeX import and export
-  library-archive.js         Full ZIP database archive with keyed BibTeX + PDFs
+  library-archive.js         Full ZIP database archive with BibTeX + JSON metadata + PDFs
   paper-attachments.js       Local reviewed PDF persistence and archive restore
   semantic-scholar.js       Scholarly-data provider adapter
   ai-config.js              AI provider/base URL/model preference model
@@ -141,12 +141,13 @@ The ZIP layout is intentionally simple:
 
 ```text
 library.bib
+metadata.json
 <citation-key-1>.pdf
 <citation-key-2>.pdf
 ...
 ```
 
-`library.bib` contains normal keyed BibTeX entries. Paper Map's lossless database payload (full paper records, directed citation/research edges, topic records, meta values, provenance, notes, annotations, and PDF attachment metadata) is embedded in `% PaperMap-Metadata:` BibTeX comment lines, so no second JSON metadata file is required. PDF filenames use the same unique, filename-safe citation keys as the BibTeX entries. The current archive uses ZIP32, so the practical complete-archive limit is approximately **4 GiB** and ZIP64 is not supported.
+`library.bib` is ordinary keyed BibTeX. `metadata.json` contains Paper Map's lossless database payload: full paper records, directed citation/research edges, topic records, meta values, provenance, notes, annotations, and PDF attachment metadata. PDF filenames use the same unique, filename-safe citation keys as the BibTeX entries. Current exports use archive format version 2; imports remain compatible with version-1 archives that embedded metadata in BibTeX comments. The archive uses ZIP32, so the practical complete-archive limit is approximately **4 GiB** and ZIP64 is not supported.
 
 See [`ARCHIVE_FORMAT.md`](ARCHIVE_FORMAT.md) for the normative archive layout, metadata encoding, citation-key rules, validation, versioning, compatibility, and size limits.
 
@@ -241,7 +242,7 @@ The provider layer remains replaceable: OpenAlex, DataCite, Zotero, additional A
 
 Current import paths are:
 
-- Full Paper Map ZIP database backup / restore (`library.bib` + `<key>.pdf` files)
+- Full Paper Map ZIP database backup / restore (`library.bib` + `metadata.json` + `<key>.pdf` files)
 - Legacy Paper Map JSON backup / restore
 - BibTeX
 - DOI, arXiv ID, Semantic Scholar ID, or title through Semantic Scholar
