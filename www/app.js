@@ -57,7 +57,7 @@ import {
 import {
   createLibraryArchive,
   parseLibraryArchive,
-} from "./library-archive.js?v=0.4.20";
+} from "./library-archive.js?v=0.4.22";
 import {
   importStoredPdfAttachments,
   storedPdfAttachmentForPaper,
