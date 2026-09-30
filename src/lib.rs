@@ -35,7 +35,7 @@ struct BibliographyStart {
 
 #[derive(Serialize)]
 #[serde(rename_all = "camelCase")]
-struct PageLayoutSummary {
+pub struct PageLayoutSummary {
     page: usize,
     width: f64,
     height: f64,
@@ -45,7 +45,7 @@ struct PageLayoutSummary {
 
 #[derive(Serialize)]
 #[serde(rename_all = "camelCase")]
-struct LayoutSummary {
+pub struct LayoutSummary {
     page_count: usize,
     pages: Vec<PageLayoutSummary>,
     bibliography_heading: Option<String>,
@@ -56,7 +56,7 @@ struct LayoutSummary {
 
 #[derive(Serialize)]
 #[serde(rename_all = "camelCase")]
-struct ExtractedReference {
+pub struct ExtractedReference {
     index: usize,
     label: Option<String>,
     raw_text: String,
@@ -70,7 +70,7 @@ struct ExtractedReference {
 
 #[derive(Serialize)]
 #[serde(rename_all = "camelCase")]
-struct CitationExtraction {
+pub struct CitationExtraction {
     schema_version: u32,
     engine: String,
     layout: LayoutSummary,
@@ -92,13 +92,14 @@ fn heading_name(line: &str) -> Option<&'static str> {
         .trim()
         .trim_matches(|c: char| c == ':' || c == '.' || c == '—' || c == '-')
         .trim()
-        .to_lowercase();
+        .to_lowercase()
+        .replace(' ', "");  // Remove spaces to handle "R EFERENCES"
     match normalized.as_str() {
         "references" => Some("References"),
         "bibliography" => Some("Bibliography"),
-        "works cited" => Some("Works Cited"),
-        "literature cited" => Some("Literature Cited"),
-        "references and notes" => Some("References and Notes"),
+        "workscited" => Some("Works Cited"),
+        "literaturecited" => Some("Literature Cited"),
+        "referencesandnotes" => Some("References and Notes"),
         _ => None,
     }
 }
@@ -330,14 +331,36 @@ fn segment_numbered(lines: &[Option<SourceLine>]) -> Vec<ReferenceDraft> {
                 .get(1)
                 .or_else(|| captures.get(2))
                 .map(|value| value.as_str().to_string());
-            let body = captures.get(3).map(|value| value.as_str()).unwrap_or("").trim();
+            // Strip the numbered prefix (e.g., [1], [14]) from the body
+            let body = captures.get(3).map(|value| value.as_str()).unwrap_or("").trim().to_string();
             current = Some(ReferenceDraft {
                 label,
                 lines: vec![SourceLine {
                     page: source.page,
-                    text: body.to_string(),
+                    text: body,
                 }],
                 numbered: true,
+            });
+            after_block_break = false;
+            continue;
+        }
+
+        // Also start a new reference for unnumbered lines that look like references
+        if current.is_none() 
+            && (looks_like_author_year_start(&source.text) 
+                || extract_doi(&source.text).is_some()
+                || extract_arxiv(&source.text).is_some()
+                || !source.text.trim().is_empty())
+        {
+            flush_reference(&mut current, &mut output);
+            let body = source.text.trim().to_string();
+            current = Some(ReferenceDraft {
+                label: None,
+                lines: vec![SourceLine {
+                    page: source.page,
+                    text: body,
+                }],
+                numbered: false,
             });
             after_block_break = false;
             continue;
@@ -529,7 +552,7 @@ fn extract_from_pages(pages: Vec<PageText>) -> CitationExtraction {
     }
 }
 
-fn parse_pdf(pdf_bytes: &[u8]) -> Result<CitationExtraction, String> {
+pub fn parse_pdf(pdf_bytes: &[u8]) -> Result<CitationExtraction, String> {
     if pdf_bytes.is_empty() {
         return Err("Select a non-empty PDF file.".to_string());
     }

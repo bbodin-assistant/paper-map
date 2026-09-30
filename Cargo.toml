@@ -10,10 +10,15 @@ publish = false
 [lib]
 crate-type = ["cdylib", "rlib"]
 
+[[bin]]
+name = "extract-pdf-citations"
+path = "src/main.rs"
+
 [dependencies]
 pdfplumber = { version = "0.4.1", default-features = false }
 regex = "1.11"
 serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
 serde-wasm-bindgen = "0.6"
 wasm-bindgen = "0.2"
 
