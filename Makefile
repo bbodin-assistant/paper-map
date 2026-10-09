@@ -48,7 +48,7 @@ ALIASES := logical-execution-time-models.pdf embedded-edge-cloud-orchestration.p
 	Engineering_Transportation_Software_outline.pdf Automotive_Programming_and_Modeling_Scientific_Report.pdf \
 	dataflow-models-of-computation.pdf mixed-event-time-triggered.pdf
 
-.PHONY: all clean download-paper paper-map-archive paper-map-json version-diffs check-report-layout check-report-theme check-report-style figures figures-pdf figures-svg figures-png \
+.PHONY: all clean download-paper paper-map-archive paper-map-json test-paper-map-json version-diffs check-report-layout check-report-theme check-report-style figures figures-pdf figures-svg figures-png \
 	figures-all figures-list tikz-pdf figure clean-figures $(ALIASES)
 
 all: $(TARGETS)
@@ -71,6 +71,17 @@ paper-map-archive:
 paper-map-json:
 	@python3 scripts/combine_paper_map_json.py papers $(OUTPUT_DIR_ABS)
 	@echo "Combined Paper Map JSON created at $(OUTPUT_DIR_ABS)/papers-paper-map.json"
+
+# Test Paper Map JSON compatibility by generating JSON and validating with paper-map
+PAPER_MAP_DIR ?= $(shell pwd)/paper-map
+PAPER_MAP_VALIDATE_BINARY ?= $(PAPER_MAP_DIR)/target/debug/validate-paper-map-json
+
+test-paper-map-json: paper-map-json
+	@mkdir -p "$(PAPER_MAP_DIR)"
+	@echo "Testing Paper Map JSON compatibility..."
+	@cd "$(PAPER_MAP_DIR)" && cargo build --bin validate-paper-map-json --quiet
+	@"$(PAPER_MAP_VALIDATE_BINARY)" "$(OUTPUT_DIR_ABS)/papers-paper-map.json"
+	@echo "Paper Map JSON test completed successfully"
 
 check-report-layout:
 	python3 scripts/check_report_layout.py
