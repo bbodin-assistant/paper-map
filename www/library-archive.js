@@ -1,6 +1,7 @@
 import { paperToBibTeX, parseBibTeX } from "./import-export.js";
 
-const ARCHIVE_VERSION = 2;
+const ARCHIVE_VERSION = 3;
+const PREVIOUS_ARCHIVE_VERSION = 2;
 const LEGACY_ARCHIVE_VERSION = 1;
 const BIB_FILENAME = "library.bib";
 const METADATA_FILENAME = "metadata.json";
@@ -127,10 +128,12 @@ function validateArchivePayload(payload, bibtex, expectedVersion) {
     keySet.add(key.toLowerCase());
   }
 
-  const visibleKeys = new Set(parseBibTeX(bibtex).map((paper) => paper.citationKey));
-  for (const item of payload.papers) {
-    if (!visibleKeys.has(item.key)) {
-      throw new Error("Paper Map archive metadata does not match the BibTeX entry " + item.key + ".");
+  if (bibtex !== null && bibtex !== undefined) {
+    const visibleKeys = new Set(parseBibTeX(bibtex).map((paper) => paper.citationKey));
+    for (const item of payload.papers) {
+      if (!visibleKeys.has(item.key)) {
+        throw new Error("Paper Map archive metadata does not match the BibTeX entry " + item.key + ".");
+      }
     }
   }
   return payload;
@@ -143,10 +146,14 @@ function parseArchiveMetadataJson(bytes, bibtex) {
   } catch (error) {
     throw new Error("Paper Map metadata.json is invalid: " + (error?.message || error));
   }
-  if (Number(payload?.archiveVersion) !== ARCHIVE_VERSION) {
+  const version = Number(payload?.archiveVersion);
+  if (![ARCHIVE_VERSION, PREVIOUS_ARCHIVE_VERSION].includes(version)) {
     throw new Error("Unsupported Paper Map archive version: " + String(payload?.archiveVersion ?? "missing") + ".");
   }
-  return validateArchivePayload(payload, bibtex, ARCHIVE_VERSION);
+  if (version === PREVIOUS_ARCHIVE_VERSION && (bibtex === null || bibtex === undefined)) {
+    throw new Error("This version 2 Paper Map archive requires library.bib.");
+  }
+  return validateArchivePayload(payload, bibtex, version);
 }
 
 function parseLegacyArchiveMetadata(bibtex) {
@@ -370,10 +377,14 @@ function isPdf(bytes) {
 export async function createLibraryArchive(library, pdfEntries = []) {
   const { bibtex, metadataJson, keyedPapers } = libraryToArchiveBibTeX(library, pdfEntries);
   const pdfByPaperId = new Map((pdfEntries || []).map((entry) => [entry.paperId, entry]));
-  const entries = [
-    { name: BIB_FILENAME, content: bibtex },
-    { name: METADATA_FILENAME, content: metadataJson },
-  ];
+  const entries = [{ name: METADATA_FILENAME, content: metadataJson }];
+
+  for (const { key, paper } of keyedPapers) {
+    entries.push({
+      name: "papers/" + key + ".json",
+      content: JSON.stringify({ schemaVersion: 1, paper }, null, 2) + "\n",
+    });
+  }
 
   for (const { key, paper } of keyedPapers) {
     const entry = pdfByPaperId.get(paper.id);
@@ -386,10 +397,11 @@ export async function createLibraryArchive(library, pdfEntries = []) {
 export async function parseLibraryArchive(buffer) {
   const files = await readZip(buffer);
   const bibName = Array.from(files.keys()).find((name) => name.toLowerCase() === BIB_FILENAME);
-  if (!bibName) throw new Error("Paper Map archive must contain library.bib at the ZIP root.");
-
-  const bibtex = new TextDecoder().decode(files.get(bibName));
   const metadataName = Array.from(files.keys()).find((name) => name.toLowerCase() === METADATA_FILENAME);
+  const bibtex = bibName ? new TextDecoder().decode(files.get(bibName)) : null;
+  if (!metadataName && !bibName) {
+    throw new Error("Paper Map archive must contain metadata.json at the ZIP root.");
+  }
   const payload = metadataName
     ? parseArchiveMetadataJson(files.get(metadataName), bibtex)
     : parseLegacyArchiveMetadata(bibtex);
@@ -399,7 +411,7 @@ export async function parseLibraryArchive(buffer) {
 
   for (const name of files.keys()) {
     if (/\.pdf$/i.test(name) && !knownPdfNames.has(name)) {
-      throw new Error("PDF filename does not match a BibTeX citation key: " + name + ".");
+      throw new Error("PDF filename does not match a paper key in the archive metadata: " + name + ".");
     }
   }
 
@@ -429,6 +441,6 @@ export async function parseLibraryArchive(buffer) {
     },
     keyedPapers,
     pdfs,
-    bibtex,
+    bibtex: bibtex || "",
   };
 }
