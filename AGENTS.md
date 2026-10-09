@@ -9,7 +9,7 @@
 - `www/graph.js` owns directed citation/topic graph rendering, cached layout, pan/zoom, pinch gestures, draggable graph items and selection callbacks.
 - `www/research-relations.js` owns the canonical directed semantic relationship vocabulary between papers.
 - `www/import-export.js` owns portable JSON and BibTeX parsing/serialization.
-- `www/library-archive.js` owns the full ZIP database format: clean `library.bib`, `metadata.json`, and citation-keyed PDFs.
+- `www/library-archive.js` owns the full ZIP database format: `metadata.json`, individual `papers/*.json` records, and citation-keyed PDFs; legacy archives containing `library.bib` remain importable.
 - `www/paper-attachments.js` owns reviewed local PDF persistence and archive restore.
 - `www/semantic-scholar.js` is an external-provider adapter; provider response shapes must be normalized before they reach the rest of the app.
 - `www/pdf-ai.js` owns optional network AI PDF metadata/topic extraction.
