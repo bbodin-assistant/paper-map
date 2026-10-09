@@ -277,12 +277,15 @@ export function parsePaperRecordJson(text) {
     throw new Error("This JSON contains library collections, not one individual paper record.");
   }
 
-  const paper = value.paper && typeof value.paper === "object" && !Array.isArray(value.paper)
-    ? value.paper
-    : value;
-  if (Number(value.schemaVersion) !== PAPER_MAP_SCHEMA_VERSION && paper === value) {
-    throw new Error("Individual paper JSON must use schemaVersion 1 and contain a paper object.");
+  const wrappedPaper = value.paper && typeof value.paper === "object" && !Array.isArray(value.paper);
+  if (wrappedPaper && Number(value.schemaVersion) !== PAPER_MAP_SCHEMA_VERSION) {
+    throw new Error("Individual paper JSON wrapper must use schemaVersion 1.");
   }
+  if (!wrappedPaper && value.schemaVersion !== undefined
+    && Number(value.schemaVersion) !== PAPER_MAP_SCHEMA_VERSION) {
+    throw new Error("Unsupported individual paper JSON schema version: " + value.schemaVersion + ".");
+  }
+  const paper = wrappedPaper ? value.paper : value;
   if (typeof paper.title !== "string" || !paper.title.trim()) {
     throw new Error("Individual paper JSON must include a non-empty title.");
   }
