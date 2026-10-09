@@ -1467,11 +1467,42 @@ els.uploadFullDb.addEventListener("click", () => {
   els.importFile.click();
 });
 els.importFile.addEventListener("change", async () => {
-  const file = els.importFile.files?.[0];
+  const files = Array.from(els.importFile.files || []);
   els.importFile.value = "";
-  if (!file) return;
+  if (!files.length) return;
 
   try {
+    if (files.length > 1) {
+      if (files.some((item) => !item.name.toLowerCase().endsWith(".json"))) {
+        throw new Error("Select either one ZIP or BibTeX file, or one or more JSON files at a time.");
+      }
+      setBusy(true, `Importing ${files.length} JSON files…`);
+      const incoming = { papers: [], edges: [], topics: [] };
+      for (const item of files) {
+        const text = await item.text();
+        let value;
+        try { value = JSON.parse(text); }
+        catch (error) { throw new Error(item.name + " is invalid JSON: " + (error?.message || error)); }
+        if (value && Number(value.schemaVersion) === 1
+          && Array.isArray(value.papers) && Array.isArray(value.edges) && Array.isArray(value.topics)) {
+          const backup = parsePaperMapJson(text);
+          incoming.papers.push(...backup.papers);
+          incoming.edges.push(...backup.edges);
+          incoming.topics.push(...backup.topics);
+        } else {
+          incoming.papers.push(parsePaperRecordJson(text));
+        }
+      }
+      if (!incoming.papers.length) throw new Error("No paper records were found in the selected JSON files.");
+      const merged = await mergeIntoLibrary(incoming.papers, incoming.edges, incoming.topics, {
+        method: "backup-merge",
+        fileName: files.map((item) => item.name).join(", "),
+      });
+      setStatus(`Imported ${files.length} JSON files: ${merged.addedCount} new papers and ${merged.edgeCount} new links.`, "ready");
+      return;
+    }
+
+    const file = files[0];
     setBusy(true, `Importing ${file.name}…`);
     const lowerName = file.name.toLowerCase();
 
@@ -1487,22 +1518,11 @@ els.importFile.addEventListener("change", async () => {
         await replaceLibrary(archive.library);
         await importStoredPdfAttachments(pdfEntries, { replace: true });
         await refreshLibrary();
-        setStatus(
-          `Full database restored: ${archive.library.papers.length} papers, ${archive.library.edges.length} links, and ${pdfEntries.length} stored PDF${pdfEntries.length === 1 ? "" : "s"}.`,
-          "ready",
-        );
+        setStatus(`Full database restored: ${archive.library.papers.length} papers, ${archive.library.edges.length} links, and ${pdfEntries.length} stored PDF${pdfEntries.length === 1 ? "" : "s"}.`, "ready");
       } else {
-        const merged = await mergeIntoLibrary(
-          archive.library.papers,
-          archive.library.edges,
-          archive.library.topics,
-          { method: "backup-merge", fileName: file.name },
-        );
+        const merged = await mergeIntoLibrary(archive.library.papers, archive.library.edges, archive.library.topics, { method: "backup-merge", fileName: file.name });
         await importStoredPdfAttachments(pdfEntries);
-        setStatus(
-          `Archive merged: ${merged.addedCount} new papers, ${merged.edgeCount} new links, and ${pdfEntries.length} stored PDF${pdfEntries.length === 1 ? "" : "s"} imported.`,
-          "ready",
-        );
+        setStatus(`Archive merged: ${merged.addedCount} new papers, ${merged.edgeCount} new links, and ${pdfEntries.length} stored PDF${pdfEntries.length === 1 ? "" : "s"} imported.`, "ready");
       }
       return;
     }
@@ -1522,20 +1542,26 @@ els.importFile.addEventListener("change", async () => {
         return;
       }
       const merged = await mergeIntoLibrary(review.papers, [], [], { method: "bibtex-import", fileName: file.name });
-      setStatus(
-        `Reviewed ${papers.length} BibTeX entr${papers.length === 1 ? "y" : "ies"}; imported ${review.papers.length}, skipped ${review.skippedCount}, and added ${merged.addedCount} new paper${merged.addedCount === 1 ? "" : "s"}.`,
-        "ready",
-      );
+      setStatus(`Reviewed ${papers.length} BibTeX entr${papers.length === 1 ? "y" : "ies"}; imported ${review.papers.length}, skipped ${review.skippedCount}, and added ${merged.addedCount} new paper${merged.addedCount === 1 ? "" : "s"}.`, "ready");
     } else {
-      const backup = parsePaperMapJson(text);
-      const replace = window.confirm("Restore this backup by replacing the current local library? Choose Cancel to merge the backup instead.");
-      if (replace) {
-        await replaceLibrary(backup);
-        await refreshLibrary();
-        setStatus("Local library restored from backup.", "ready");
+      let value;
+      try { value = JSON.parse(text); } catch { value = null; }
+      if (value && Number(value.schemaVersion) === 1
+        && Array.isArray(value.papers) && Array.isArray(value.edges) && Array.isArray(value.topics)) {
+        const backup = parsePaperMapJson(text);
+        const replace = window.confirm("Restore this backup by replacing the current local library? Choose Cancel to merge the backup instead.");
+        if (replace) {
+          await replaceLibrary(backup);
+          await refreshLibrary();
+          setStatus("Local library restored from backup.", "ready");
+        } else {
+          const merged = await mergeIntoLibrary(backup.papers, backup.edges, backup.topics, { method: "backup-merge", fileName: file.name });
+          setStatus(`Backup merged: ${merged.addedCount} new papers and ${merged.edgeCount} new links.`, "ready");
+        }
       } else {
-        const merged = await mergeIntoLibrary(backup.papers, backup.edges, backup.topics, { method: "backup-merge", fileName: file.name });
-        setStatus(`Backup merged: ${merged.addedCount} new papers and ${merged.edgeCount} new links.`, "ready");
+        const paper = parsePaperRecordJson(text);
+        const merged = await mergeIntoLibrary([paper], [], [], { method: "backup-merge", fileName: file.name });
+        setStatus(`Paper JSON imported: ${merged.addedCount} new papers.`, "ready");
       }
     }
   } catch (error) {
