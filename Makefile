@@ -72,6 +72,11 @@ paper-map-json:
 	@python3 scripts/combine_paper_map_json.py papers $(OUTPUT_DIR_ABS)
 	@echo "Combined Paper Map JSON created at $(OUTPUT_DIR_ABS)/papers-paper-map.json"
 
+# Generate Paper Map ZIP archive with metadata.json and PDFs
+paper-map-zip: paper-map-json
+	@python3 scripts/create_paper_map_zip.py papers $(OUTPUT_DIR_ABS)/papers-paper-map.json $(OUTPUT_DIR_ABS)/papers-paper-map.zip
+	@echo "Paper Map ZIP archive created at $(OUTPUT_DIR_ABS)/papers-paper-map.zip"
+
 # Test Paper Map JSON compatibility by generating JSON and validating with paper-map
 PAPER_MAP_DIR ?= $(shell pwd)/paper-map
 

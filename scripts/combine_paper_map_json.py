@@ -111,6 +111,9 @@ def main():
     all_topics = []
     json_files = list(papers_dir.rglob('*.json'))
     
+    # Track seen papers to deduplicate
+    seen_papers = {}  # key: (citationKey, title, authors_tuple) -> paper
+    
     for json_file in json_files:
         try:
             data = json.loads(json_file.read_text())
@@ -119,10 +122,27 @@ def main():
                 if 'papers' in data:
                     for entry in data['papers']:
                         if isinstance(entry, dict) and 'paper' in entry:
-                            all_papers.append(entry['paper'])
+                            paper = entry['paper']
                         else:
                             # Direct paper format
-                            all_papers.append(entry)
+                            paper = entry
+                        
+                        # Deduplicate papers based on citationKey, title, and authors
+                        if isinstance(paper, dict):
+                            citation_key = paper.get('citationKey', '')
+                            title = paper.get('title', '')
+                            authors = paper.get('authors', [])
+                            # Create a deduplication key
+                            dedup_key = (citation_key, title, tuple(authors) if authors else ())
+                            
+                            if dedup_key not in seen_papers:
+                                seen_papers[dedup_key] = paper
+                                all_papers.append(paper)
+                            else:
+                                # Skip duplicate
+                                print(f"Warning: Duplicate paper skipped from {json_file}: citationKey={citation_key}, title={title[:50]}")
+                        else:
+                            all_papers.append(paper)
                 else:
                     # Single paper format - use directly
                     all_papers.append(data)
@@ -235,6 +255,16 @@ def main():
                 all_topics_extended.append(topic)
         elif isinstance(topic, str) and topic not in topic_set:
             all_topics_extended.append({'id': topic, 'name': topic})
+    
+    # Fix known date issues
+    for paper in all_papers:
+        if isinstance(paper, dict):
+            # Phan2009: Set year to 2009 (based on citationKey)
+            if paper.get('citationKey') == 'Phan2009-3' or paper.get('id') == 'pdf:papers-automotive-phan2009.pdf':
+                paper['year'] = 2009
+            # Roumage2025b: Set year to 2025 (based on PDF creation date)
+            if paper.get('citationKey') == 'Roumage2025b-3' or paper.get('id') == 'pdf:papers-dataflow-roumage2025b.pdf':
+                paper['year'] = 2025
     
     # Create combined JSON structure with correct format
     # For direct JSON import, Paper Map expects papers array to contain paper objects directly
