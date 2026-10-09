@@ -262,6 +262,36 @@ export function parsePaperMapJson(text) {
   return value;
 }
 
+export function parsePaperRecordJson(text) {
+  let value;
+  try {
+    value = JSON.parse(text);
+  } catch (error) {
+    throw new Error("Paper JSON is invalid: " + (error?.message || error));
+  }
+
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    throw new Error("Paper JSON must contain a paper object.");
+  }
+  if (Array.isArray(value.papers) || Array.isArray(value.edges) || Array.isArray(value.topics)) {
+    throw new Error("This JSON contains library collections, not one individual paper record.");
+  }
+
+  const paper = value.paper && typeof value.paper === "object" && !Array.isArray(value.paper)
+    ? value.paper
+    : value;
+  if (Number(value.schemaVersion) !== PAPER_MAP_SCHEMA_VERSION && paper === value) {
+    throw new Error("Individual paper JSON must use schemaVersion 1 and contain a paper object.");
+  }
+  if (typeof paper.title !== "string" || !paper.title.trim()) {
+    throw new Error("Individual paper JSON must include a non-empty title.");
+  }
+  if (!Array.isArray(paper.authors || [])) {
+    throw new Error("Individual paper JSON authors must be an array.");
+  }
+  return paper;
+}
+
 export function downloadBlob(filename, blob) {
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement("a");
