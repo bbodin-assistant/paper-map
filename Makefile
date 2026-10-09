@@ -1,165 +1,178 @@
-PORT ?= 8080
-TEST_URL ?= http://127.0.0.1:8080/www/
-WASM_OUT_DIR ?= www/pkg
-TEST_PAPERS_DIR ?= test_papers
+REPORTS_DIR := reports
+OUTPUT_DIR ?= output
+OUTPUT_DIR_ABS := $(abspath $(OUTPUT_DIR))
+REPORTS_OUTPUT_DIR ?= $(OUTPUT_DIR)/reports
+REPORTS_OUTPUT_DIR_ABS := $(abspath $(REPORTS_OUTPUT_DIR))
+VERSION_DIFF_DIR ?= $(OUTPUT_DIR)/version-diffs
+VERSION_DIFF_BASE ?=
 
-DOWNLOADABLE_TEST_PAPERS := \
-	$(TEST_PAPERS_DIR)/1911.02430v1.pdf \
-	$(TEST_PAPERS_DIR)/2107.09333v1.pdf \
-	$(TEST_PAPERS_DIR)/Becker2017.pdf \
-	$(TEST_PAPERS_DIR)/Davare2007.pdf \
-	$(TEST_PAPERS_DIR)/Feiertag2009.pdf \
-	$(TEST_PAPERS_DIR)/Forget2017.pdf \
-	$(TEST_PAPERS_DIR)/Gemlau2021.pdf \
-	$(TEST_PAPERS_DIR)/Günzel2023.pdf \
-	$(TEST_PAPERS_DIR)/Kohler2023.pdf \
-	$(TEST_PAPERS_DIR)/Martinez2020.pdf \
-	$(TEST_PAPERS_DIR)/ppdp21.pdf \
-	$(TEST_PAPERS_DIR)/RizziAug22_AComprehensiveTimingModelForAccurateFrequencyTuningInDataflowCircuits_FPL22.pdf
+FIGURE_OUTPUT_DIR ?= $(OUTPUT_DIR)/figures
+FIGURE ?=
+REPORT ?=
+PAPER ?=
+FIGURE_FORMAT ?= pdf
+FIGURE_DPI ?= 200
+FIGURE_JOBS ?= 4
+FIGURE_REPORT_ARG = $(if $(strip $(REPORT)),--report "$(REPORT)",)
 
-.PHONY: install-wasm build-wasm run test test-rust test-ui-mobile test-papers-local-import test-papers-citation-links download-test-papers clean
+LET_DIR := $(REPORTS_DIR)/logical-execution-time-models
+CONTINUUM_DIR := $(REPORTS_DIR)/embedded-edge-cloud-orchestration
+TRANSPORT_DIR := $(REPORTS_DIR)/Engineering_Transportation_Software_outline
+AUTOMOTIVE_DIR := $(REPORTS_DIR)/Automotive_Programming_and_Modeling_Scientific_Report
+DATAFLOW_DIR := $(REPORTS_DIR)/dataflow-models-of-computation
+MIXED_DIR := $(REPORTS_DIR)/mixed-event-time-triggered
+SHARED_STYLE := $(REPORTS_DIR)/shared/report-style.tex
 
-install-wasm:
-	@command -v wasm-pack >/dev/null || { echo "Install wasm-pack first: https://rustwasm.github.io/wasm-pack/"; exit 1; }
+LET_TEX_SOURCES := $(wildcard $(LET_DIR)/*.tex) $(wildcard $(LET_DIR)/chapters/*.tex) \
+	$(wildcard $(LET_DIR)/figures/*.tex) $(wildcard $(LET_DIR)/tables/*.tex)
+CONTINUUM_TEX_SOURCES := $(wildcard $(CONTINUUM_DIR)/*.tex) $(wildcard $(CONTINUUM_DIR)/chapters/*.tex) \
+	$(wildcard $(CONTINUUM_DIR)/figures/*.tex) $(wildcard $(CONTINUUM_DIR)/tables/*.tex)
+TRANSPORT_TEX_SOURCES := $(wildcard $(TRANSPORT_DIR)/*.tex) $(wildcard $(TRANSPORT_DIR)/chapters/*.tex) \
+	$(wildcard $(TRANSPORT_DIR)/figures/*.tex) $(wildcard $(TRANSPORT_DIR)/tables/*.tex)
+AUTOMOTIVE_TEX_SOURCES := $(wildcard $(AUTOMOTIVE_DIR)/*.tex) $(wildcard $(AUTOMOTIVE_DIR)/chapters/*.tex) \
+	$(wildcard $(AUTOMOTIVE_DIR)/figures/*.tex) $(wildcard $(AUTOMOTIVE_DIR)/tables/*.tex)
+DATAFLOW_TEX_SOURCES := $(wildcard $(DATAFLOW_DIR)/*.tex) $(wildcard $(DATAFLOW_DIR)/chapters/*.tex) \
+	$(wildcard $(DATAFLOW_DIR)/figures/*.tex) $(wildcard $(DATAFLOW_DIR)/tables/*.tex)
+MIXED_TEX_SOURCES := $(wildcard $(MIXED_DIR)/*.tex) $(wildcard $(MIXED_DIR)/chapters/*.tex) \
+	$(wildcard $(MIXED_DIR)/figures/*.tex) $(wildcard $(MIXED_DIR)/tables/*.tex)
 
-build-wasm: install-wasm
-	wasm-pack build --target web --out-dir "$(WASM_OUT_DIR)"
+LET_PDF := $(REPORTS_OUTPUT_DIR)/logical-execution-time-models.pdf
+CONTINUUM_PDF := $(REPORTS_OUTPUT_DIR)/embedded-edge-cloud-orchestration.pdf
+TRANSPORT_PDF := $(REPORTS_OUTPUT_DIR)/Engineering_Transportation_Software_outline.pdf
+AUTOMOTIVE_PDF := $(REPORTS_OUTPUT_DIR)/Automotive_Programming_and_Modeling_Scientific_Report.pdf
+DATAFLOW_PDF := $(REPORTS_OUTPUT_DIR)/dataflow-models-of-computation.pdf
+MIXED_PDF := $(REPORTS_OUTPUT_DIR)/mixed-event-time-triggered.pdf
 
-test-rust:
-	cargo test
-	cargo check --target wasm32-unknown-unknown
+TARGETS := $(LET_PDF) $(CONTINUUM_PDF) $(TRANSPORT_PDF) $(AUTOMOTIVE_PDF) $(DATAFLOW_PDF) $(MIXED_PDF)
+ALIASES := logical-execution-time-models.pdf embedded-edge-cloud-orchestration.pdf \
+	Engineering_Transportation_Software_outline.pdf Automotive_Programming_and_Modeling_Scientific_Report.pdf \
+	dataflow-models-of-computation.pdf mixed-event-time-triggered.pdf
 
-run: build-wasm
-	python3 -m http.server $(PORT)
+.PHONY: all clean download-paper paper-map-archive paper-map-json version-diffs check-report-layout check-report-theme check-report-style figures figures-pdf figures-svg figures-png \
+	figures-all figures-list tikz-pdf figure clean-figures $(ALIASES)
 
-test:
-	node --check www/app.js
-	node --check www/db.js
-	node --check www/demo-data.js
-	node --check www/graph.js
-	node --check www/graph-layout.js
-	node --check www/graph-config.js
-	node --check www/import-export.js
-	node --check www/library-archive.js
-	node --check www/paper-attachments-init.js
-	node --check www/paper-source.js
-	node --check www/paper-provider-config.js
-	node --check www/paper-provider.js
-	node --check www/providers/semantic-scholar.js
-	node --check www/providers/openalex.js
-	node --check www/providers/crossref.js
-	node --check www/activity-log.js
-	node --check www/semantic-scholar.js
-	node --check www/research-relations.js
-	node --check www/ai-config.js
-	node --check www/ai-config-ui.js
-	node --check www/ai-models.js
-	node --check www/ai-provider.js
-	node --check www/pdf-ai.js
-	node --check www/pdf-metadata.js
-	node --check www/pdf-local.js
-	node --check www/pdf-review-merge.js
-	node --check www/pdf-review-state.js
-	node --check www/pdf-review-ui.js
-	node --check www/pdf-review-controller.js
-	node --check www/online-candidates.js
-	node --check www/paper-candidate-search.js
-	node --check www/paper-candidate-ui.js
-	node --check www/search-highlight.js
-	node --check www/reference-resolver.js
-	node --check www/reference-resolution-ui.js
-	node --check www/pdf-ai-import.js
-	node --test tests/*.test.mjs
-	python3 -m unittest discover -s tests -p 'local_import_scoring_test.py'
-	python3 -m py_compile tests/mobile_selenium_test.py tests/ai_model_discovery_selenium_test.py tests/pdf_review_selenium_test.py tests/openalex_candidate_selenium_test.py tests/pdf_batch_import_selenium_test.py tests/pdf_local_citation_selenium_test.py tests/pdf_multicolumn_citation_selenium_test.py tests/test_papers_local_import_selenium_test.py tests/reference_candidate_selenium_test.py tests/source_filter_log_selenium_test.py tests/real_pdf_smoke_selenium.py tests/graph_relations_selenium_test.py tests/toolbar_candidate_filter_selenium_test.py tests/title_candidate_review_selenium_test.py
-	python3 -m py_compile tests/test_papers_citation_links_selenium_test.py
-	cargo test
+all: $(TARGETS)
 
-test-ui-mobile: build-wasm
-	TEST_URL="$(TEST_URL)" python3 tests/mobile_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/ai_model_discovery_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/pdf_review_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/openalex_candidate_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/pdf_batch_import_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/pdf_local_citation_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/pdf_multicolumn_citation_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/reference_candidate_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/source_filter_log_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/toolbar_candidate_filter_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/title_candidate_review_selenium_test.py
-	TEST_URL="$(TEST_URL)" python3 tests/graph_relations_selenium_test.py
+# Download and identity-check source PDFs. Set PAPER=<path/to/key.json> to process one archive.
+download-paper:
+	bash download_pdfs_only.sh $(if $(strip $(PAPER)),"$(PAPER)",)
 
-test-papers-local-import: build-wasm
-	TEST_URL="$(TEST_URL)" python3 tests/test_papers_local_import_selenium_test.py
+# Create Paper Map compatible archive from papers/**/*.{pdf,json}
+paper-map-archive:
+	@mkdir -p /tmp/paper-map-simple
+	@find papers -name "*.pdf" -exec cp {} /tmp/paper-map-simple/ \;
+	@find papers -name "*.json" -exec cp {} /tmp/paper-map-simple/ \;
+	@echo '% Paper Map full database archive\n% PaperMap-Archive-Version: 2\n' > /tmp/paper-map-simple/library.bib
+	@python3 scripts/create_paper_map_archive.py /tmp/paper-map-simple $(OUTPUT_DIR_ABS)
+	@rm -rf /tmp/paper-map-simple
+	@echo "Paper Map archive created at $(OUTPUT_DIR_ABS)/papers-paper-map.zip"
 
-test-papers-citation-links: build-wasm
-	TEST_URL="$(TEST_URL)" TEST_PAPERS_DIR="$(TEST_PAPERS_DIR)" python3 tests/test_papers_citation_links_selenium_test.py
+# Generate combined Paper Map JSON from all papers/**/*.json
+paper-map-json:
+	@python3 scripts/combine_paper_map_json.py papers $(OUTPUT_DIR_ABS)
+	@echo "Combined Paper Map JSON created at $(OUTPUT_DIR_ABS)/papers-paper-map.json"
 
-# Each file target is skipped automatically when the expected PDF is present.
-download-test-papers: $(DOWNLOADABLE_TEST_PAPERS)
+check-report-layout:
+	python3 scripts/check_report_layout.py
 
-$(TEST_PAPERS_DIR):
+check-report-theme:
+	python3 scripts/check_report_theme.py
+
+check-report-style: check-report-layout check-report-theme
+
+# Compile isolated figure sources with the owning report's real document class and
+# report-style.tex. PDF is the canonical render; SVG/PNG are derived from it.
+figures: figures-pdf
+
+figures-pdf:
+	python3 scripts/export_figures.py --kind figure --format pdf \
+		--output-dir "$(FIGURE_OUTPUT_DIR)" --dpi "$(FIGURE_DPI)" --jobs "$(FIGURE_JOBS)" \
+		$(FIGURE_REPORT_ARG)
+
+figures-svg:
+	python3 scripts/export_figures.py --kind figure --format svg \
+		--output-dir "$(FIGURE_OUTPUT_DIR)" --dpi "$(FIGURE_DPI)" --jobs "$(FIGURE_JOBS)" \
+		$(FIGURE_REPORT_ARG)
+
+figures-png:
+	python3 scripts/export_figures.py --kind figure --format png \
+		--output-dir "$(FIGURE_OUTPUT_DIR)" --dpi "$(FIGURE_DPI)" --jobs "$(FIGURE_JOBS)" \
+		$(FIGURE_REPORT_ARG)
+
+figures-all:
+	python3 scripts/export_figures.py --kind figure --format all \
+		--output-dir "$(FIGURE_OUTPUT_DIR)" --dpi "$(FIGURE_DPI)" --jobs "$(FIGURE_JOBS)" \
+		$(FIGURE_REPORT_ARG)
+
+figures-list:
+	python3 scripts/export_figures.py --kind figure --list $(FIGURE_REPORT_ARG)
+
+# Raw TikZ-only previews are useful when the caption/float wrapper is not wanted.
+tikz-pdf:
+	python3 scripts/export_figures.py --kind tikz --format pdf \
+		--output-dir "$(FIGURE_OUTPUT_DIR)" --dpi "$(FIGURE_DPI)" --jobs "$(FIGURE_JOBS)" \
+		$(FIGURE_REPORT_ARG)
+
+# Select one source by basename, stem, path, substring, or glob.
+# Examples:
+#   make figure REPORT=let FIGURE=04-figure-01-zet-bet-let
+#   make figure REPORT=let FIGURE=04-tikz-01 FIGURE_FORMAT=svg
+figure:
+	@test -n "$(strip $(FIGURE))" || \
+		(echo 'Usage: make figure FIGURE=<name-or-path> [REPORT=let] [FIGURE_FORMAT=pdf|svg|png|all]' >&2; exit 2)
+	python3 scripts/export_figures.py --kind all --figure "$(FIGURE)" --format "$(FIGURE_FORMAT)" \
+		--output-dir "$(FIGURE_OUTPUT_DIR)" --dpi "$(FIGURE_DPI)" --jobs "$(FIGURE_JOBS)" \
+		$(FIGURE_REPORT_ARG)
+
+clean-figures:
+	rm -rf "$(FIGURE_OUTPUT_DIR)"
+
+# Compare the current report version with the previous distinct REPORT_VERSION snapshot.
+# Requires: git, latexpand, latexdiff, pdflatex, and xelatex.
+# Override VERSION_DIFF_BASE=<git-ref> to select an explicit older version snapshot.
+version-diffs:
+	python3 scripts/build_version_diffs.py \
+		--output-dir "$(VERSION_DIFF_DIR)" \
+		$(if $(strip $(VERSION_DIFF_BASE)),--base-ref "$(VERSION_DIFF_BASE)",)
+
+$(OUTPUT_DIR):
 	mkdir -p "$@"
 
-$(TEST_PAPERS_DIR)/1911.02430v1.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://arxiv.org/pdf/1911.02430v1"
-	test "$$(sha256sum "$@.tmp" | cut -d ' ' -f 1)" = "2a46c0d5a35c9f6d70cabfb06cecadf5b289351b50314575558bcad17c5f195c"
-	mv "$@.tmp" "$@"
+$(REPORTS_OUTPUT_DIR):
+	mkdir -p "$@"
 
-$(TEST_PAPERS_DIR)/2107.09333v1.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://arxiv.org/pdf/2107.09333v1"
-	test "$$(sha256sum "$@.tmp" | cut -d ' ' -f 1)" = "057039867609fda5f272aed4563203f6cfff33644da8143360fd3d1736784ae5"
-	mv "$@.tmp" "$@"
+logical-execution-time-models.pdf: $(LET_PDF)
+embedded-edge-cloud-orchestration.pdf: $(CONTINUUM_PDF)
+Engineering_Transportation_Software_outline.pdf: $(TRANSPORT_PDF)
+Automotive_Programming_and_Modeling_Scientific_Report.pdf: $(AUTOMOTIVE_PDF)
+dataflow-models-of-computation.pdf: $(DATAFLOW_PDF)
+mixed-event-time-triggered.pdf: $(MIXED_PDF)
 
-$(TEST_PAPERS_DIR)/Becker2017.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://www.es.mdh.se/pdf_publications/4877.pdf"
-	test "$$(head -c 4 "$@.tmp")" = "%PDF"
-	mv "$@.tmp" "$@"
+# Mixed event/time-triggered survey.
+$(MIXED_PDF): $(MIXED_TEX_SOURCES) $(MIXED_DIR)/mixed-event-time-triggered.bib $(SHARED_STYLE) | $(REPORTS_OUTPUT_DIR)
+	latexmk -cd -pdf -outdir="$(REPORTS_OUTPUT_DIR_ABS)" -interaction=nonstopmode -halt-on-error $(MIXED_DIR)/mixed-event-time-triggered.tex
 
-$(TEST_PAPERS_DIR)/Davare2007.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://dl.acm.org/doi/pdf/10.1145/1278480.1278553"
-	test "$$(head -c 4 "$@.tmp")" = "%PDF"
-	mv "$@.tmp" "$@"
+$(TRANSPORT_PDF): $(TRANSPORT_TEX_SOURCES) $(TRANSPORT_DIR)/Engineering_Transportation_Software.bib $(SHARED_STYLE) | $(REPORTS_OUTPUT_DIR)
+	latexmk -cd -pdf -outdir="$(REPORTS_OUTPUT_DIR_ABS)" -interaction=nonstopmode -halt-on-error $(TRANSPORT_DIR)/Engineering_Transportation_Software_outline.tex
 
-$(TEST_PAPERS_DIR)/Feiertag2009.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://www.diva-portal.org/smash/get/diva2%3A1003533/FULLTEXT01.pdf"
-	test "$$(head -c 4 "$@.tmp")" = "%PDF"
-	mv "$@.tmp" "$@"
+$(CONTINUUM_PDF): $(CONTINUUM_TEX_SOURCES) $(CONTINUUM_DIR)/embedded-edge-cloud-orchestration.bib $(SHARED_STYLE) | $(REPORTS_OUTPUT_DIR)
+	latexmk -cd -pdf -outdir="$(REPORTS_OUTPUT_DIR_ABS)" -interaction=nonstopmode -halt-on-error $(CONTINUUM_DIR)/embedded-edge-cloud-orchestration.tex
 
-$(TEST_PAPERS_DIR)/Forget2017.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://hal.science/hal-01620403v1/document"
-	test "$$(head -c 4 "$@.tmp")" = "%PDF"
-	mv "$@.tmp" "$@"
+$(LET_PDF): $(LET_TEX_SOURCES) $(LET_DIR)/logical-execution-time-models.bib $(SHARED_STYLE) | $(REPORTS_OUTPUT_DIR)
+	latexmk -cd -pdf -outdir="$(REPORTS_OUTPUT_DIR_ABS)" -interaction=nonstopmode -halt-on-error $(LET_DIR)/logical-execution-time-models.tex
 
-$(TEST_PAPERS_DIR)/Gemlau2021.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://dl.acm.org/doi/pdf/10.1145/3381847"
-	test "$$(head -c 4 "$@.tmp")" = "%PDF"
-	mv "$@.tmp" "$@"
+$(AUTOMOTIVE_PDF): $(AUTOMOTIVE_TEX_SOURCES) $(AUTOMOTIVE_DIR)/Automotive_Programming_and_Modeling_Scientific_Report.bib $(SHARED_STYLE) | $(REPORTS_OUTPUT_DIR)
+	latexmk -cd -pdf -outdir="$(REPORTS_OUTPUT_DIR_ABS)" -interaction=nonstopmode -halt-on-error $(AUTOMOTIVE_DIR)/Automotive_Programming_and_Modeling_Scientific_Report.tex
 
-$(TEST_PAPERS_DIR)/Günzel2023.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://daes.cs.tu-dortmund.de/storages/daes-cs/r/publications/guenzel23ecrts-equivalence.pdf"
-	test "$$(head -c 4 "$@.tmp")" = "%PDF"
-	mv "$@.tmp" "$@"
+$(DATAFLOW_PDF): $(DATAFLOW_TEX_SOURCES) $(DATAFLOW_DIR)/dataflow-models-of-computation.bib $(SHARED_STYLE) | $(REPORTS_OUTPUT_DIR)
+	latexmk -cd -pdf -outdir="$(REPORTS_OUTPUT_DIR_ABS)" -interaction=nonstopmode -halt-on-error $(DATAFLOW_DIR)/dataflow-models-of-computation.tex
 
-$(TEST_PAPERS_DIR)/Kohler2023.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://dl.acm.org/doi/pdf/10.1145/3573388"
-	test "$$(head -c 4 "$@.tmp")" = "%PDF"
-	mv "$@.tmp" "$@"
-
-$(TEST_PAPERS_DIR)/Martinez2020.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://link.springer.com/content/pdf/10.1007/s11241-020-09350-3.pdf"
-	test "$$(head -c 4 "$@.tmp")" = "%PDF"
-	mv "$@.tmp" "$@"
-
-$(TEST_PAPERS_DIR)/ppdp21.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://harrisonwl.github.io/assets/papers/ppdp21.pdf"
-	test "$$(sha256sum "$@.tmp" | cut -d ' ' -f 1)" = "2ffa5567da9a91901e5f49b68bdcea76e8a3587fb1dc63a9186322c679902808"
-	mv "$@.tmp" "$@"
-
-$(TEST_PAPERS_DIR)/RizziAug22_AComprehensiveTimingModelForAccurateFrequencyTuningInDataflowCircuits_FPL22.pdf: | $(TEST_PAPERS_DIR)
-	curl --fail --location --retry 3 --output "$@.tmp" "https://www.epfl.ch/labs/lap/wp-content/uploads/2022/09/RizziAug22_AComprehensiveTimingModelForAccurateFrequencyTuningInDataflowCircuits_FPL22.pdf"
-	test "$$(sha256sum "$@.tmp" | cut -d ' ' -f 1)" = "2ef4b85d74b7b588d7c6977d36083799ef7c6f2cbf59b71bf5f1b588b29bfc3a"
-	mv "$@.tmp" "$@"
 
 clean:
-	rm -rf target "$(WASM_OUT_DIR)"
+	latexmk -cd -C $(MIXED_DIR)/mixed-event-time-triggered.tex
+	latexmk -cd -C $(TRANSPORT_DIR)/Engineering_Transportation_Software_outline.tex
+	latexmk -cd -C $(CONTINUUM_DIR)/embedded-edge-cloud-orchestration.tex
+	latexmk -cd -C $(LET_DIR)/logical-execution-time-models.tex
+	latexmk -cd -C $(AUTOMOTIVE_DIR)/Automotive_Programming_and_Modeling_Scientific_Report.tex
+	latexmk -cd -C $(DATAFLOW_DIR)/dataflow-models-of-computation.tex
+	rm -rf "$(OUTPUT_DIR)"
