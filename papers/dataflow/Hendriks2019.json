@@ -1,0 +1,650 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.218759+00:00",
+  "papers": [
+    {
+      "key": "Hendriks2019",
+      "paper": {
+        "id": "doi:10.1007/s11265-018-1415-2",
+        "citationKey": "Hendriks2019",
+        "title": "Monotonic Optimization of Dataflow Buffer Sizes",
+        "authors": [
+          "Martijn Hendriks",
+          "Hadi Alizadeh Ara",
+          "Marc Geilen",
+          "Twan Basten",
+          "Ruben Guerra Marin",
+          "Rob de Jong",
+          "Steven van der Vlugt"
+        ],
+        "year": 2019,
+        "venue": "Journal of Signal Processing Systems",
+        "type": "article",
+        "doi": "10.1007/s11265-018-1415-2",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Hendriks, Martijn and Alizadeh Ara, Hadi and Geilen, Marc and Basten, Twan and\n    Guerra Marin, Ruben and de Jong, Rob and van der Vlugt, Steven",
+          "title": "Monotonic Optimization of Dataflow Buffer Sizes",
+          "journal": "Journal of Signal Processing Systems",
+          "volume": "91",
+          "number": "1",
+          "pages": "21--32",
+          "year": "2019",
+          "doi": "10.1007/s11265-018-1415-2",
+          "url": "https://doi.org/10.1007/s11265-018-1415-2"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.143503+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1415_CR1",
+            "rawText": "Sdf3 website. \n                    http://www.es.ele.tue.nl/sdf3/\n                    \n                  .",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1415_CR1",
+              "unstructured": "Sdf3 website. \n                    http://www.es.ele.tue.nl/sdf3/\n                    \n                  ."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:1415_CR1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "1415_CR2",
+            "rawText": "Adé, M., Lauwereins, R., Peperstraete, J.A. (1997). Data memory minimisation for synchronous data flow graphs emulated on dsp-fpga targets. In Proceedings of the 34th annual design automation conference. New York: ACM.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1415_CR2",
+              "unstructured": "Adé, M., Lauwereins, R., Peperstraete, J.A. (1997). Data memory minimisation for synchronous data flow graphs emulated on dsp-fpga targets. In Proceedings of the 34th annual design automation conference. New York: ACM."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:1415_CR2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "1415_CR3",
+            "rawText": "Benazouz, M., Marchetti, O., Munier-Kordon, A., Michel, T. (2010). A new method for minimizing buffer sizes for cyclo-static dataflow graphs. In 8th IEEE workshop on embedded systems for real-time multimedia.",
+            "doi": "10.1109/estmed.2010.5666980",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1415_CR3",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Benazouz, M., Marchetti, O., Munier-Kordon, A., Michel, T. (2010). A new method for minimizing buffer sizes for cyclo-static dataflow graphs. In 8th IEEE workshop on embedded systems for real-time multimedia.",
+              "DOI": "10.1109/ESTMED.2010.5666980"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/estmed.2010.5666980",
+                "doi": "10.1109/estmed.2010.5666980",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ESTMED.2010.5666980"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "1415_CR4",
+            "rawText": "Benazouz, M., & Munier-Kordon, A. (2013). Cyclo-static dataflow phases scheduling optimization for buffer sizes minimization. In Proceedings of the 16th international workshop on software and compilers for embedded systems. New York: ACM.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1415_CR4",
+              "unstructured": "Benazouz, M., & Munier-Kordon, A. (2013). Cyclo-static dataflow phases scheduling optimization for buffer sizes minimization. In Proceedings of the 16th international workshop on software and compilers for embedded systems. New York: ACM."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:1415_CR4",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "1415_CR5",
+            "rawText": "Bilsen, G., Engels, M., Lauwereins, R., Peperstraete, J. (1996). Cycle-static dataflow. IEEE Transactions on Signal Processing, 44(2), 397–408.",
+            "doi": "10.1109/78.485935",
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "1415_CR5",
+              "doi-asserted-by": "publisher",
+              "first-page": "397",
+              "DOI": "10.1109/78.485935",
+              "volume": "44",
+              "author": "G Bilsen",
+              "year": "1996",
+              "unstructured": "Bilsen, G., Engels, M., Lauwereins, R., Peperstraete, J. (1996). Cycle-static dataflow. IEEE Transactions on Signal Processing, 44(2), 397–408.",
+              "journal-title": "IEEE Transactions on Signal Processing"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/78.485935",
+                "doi": "10.1109/78.485935",
+                "title": "",
+                "authors": [
+                  "G Bilsen"
+                ],
+                "year": 1996,
+                "venue": "IEEE Transactions on Signal Processing",
+                "type": "",
+                "url": "https://doi.org/10.1109/78.485935"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "1415_CR6",
+            "rawText": "Lee, E.A., & Parks, T.M. (1995). Dataflow process networks. Proceedings of the IEEE, 83(5), 773–801.",
+            "doi": "10.1109/5.381846",
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "5",
+              "key": "1415_CR6",
+              "doi-asserted-by": "publisher",
+              "first-page": "773",
+              "DOI": "10.1109/5.381846",
+              "volume": "83",
+              "author": "EA Lee",
+              "year": "1995",
+              "unstructured": "Lee, E.A., & Parks, T.M. (1995). Dataflow process networks. Proceedings of the IEEE, 83(5), 773–801.",
+              "journal-title": "Proceedings of the IEEE"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.381846",
+                "doi": "10.1109/5.381846",
+                "title": "",
+                "authors": [
+                  "EA Lee"
+                ],
+                "year": 1995,
+                "venue": "Proceedings of the IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.381846"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "1415_CR7",
+            "rawText": "Legriel, J., Le Guernic, C., Cotton, S., Maler, O. (2010). Approximating the Pareto front of multi-criteria optimization problems. In Proceedings of the 16th international conference on tools and algorithms for the construction and analysis of systems. Berlin: Springer.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1415_CR7",
+              "unstructured": "Legriel, J., Le Guernic, C., Cotton, S., Maler, O. (2010). Approximating the Pareto front of multi-criteria optimization problems. In Proceedings of the 16th international conference on tools and algorithms for the construction and analysis of systems. Berlin: Springer."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:1415_CR7",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "1415_CR8",
+            "rawText": "Moreira, O., Basten, T., Geilen, M., Stuijk, S. (2010). Buffer sizing for rate-optimal single-rate data-flow scheduling revisited. IEEE Transactions on Computers, 59(2), 188–201.",
+            "doi": "10.1109/tc.2009.155",
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "1415_CR8",
+              "doi-asserted-by": "publisher",
+              "first-page": "188",
+              "DOI": "10.1109/TC.2009.155",
+              "volume": "59",
+              "author": "O Moreira",
+              "year": "2010",
+              "unstructured": "Moreira, O., Basten, T., Geilen, M., Stuijk, S. (2010). Buffer sizing for rate-optimal single-rate data-flow scheduling revisited. IEEE Transactions on Computers, 59(2), 188–201.",
+              "journal-title": "IEEE Transactions on Computers"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tc.2009.155",
+                "doi": "10.1109/tc.2009.155",
+                "title": "",
+                "authors": [
+                  "O Moreira"
+                ],
+                "year": 2010,
+                "venue": "IEEE Transactions on Computers",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.2009.155"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "1415_CR9",
+            "rawText": "Qian, L.P., Zhang, Y.J., Huang, J. (2009). Mapel: achieving global optimality for a non-convex wireless power control problem. IEEE Transactions on Wireless Communications, 8(3), 1553–1563.",
+            "doi": "10.1109/twc.2009.080649",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "1415_CR9",
+              "doi-asserted-by": "publisher",
+              "first-page": "1553",
+              "DOI": "10.1109/TWC.2009.080649",
+              "volume": "8",
+              "author": "LP Qian",
+              "year": "2009",
+              "unstructured": "Qian, L.P., Zhang, Y.J., Huang, J. (2009). Mapel: achieving global optimality for a non-convex wireless power control problem. IEEE Transactions on Wireless Communications, 8(3), 1553–1563.",
+              "journal-title": "IEEE Transactions on Wireless Communications"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/twc.2009.080649",
+                "doi": "10.1109/twc.2009.080649",
+                "title": "",
+                "authors": [
+                  "LP Qian"
+                ],
+                "year": 2009,
+                "venue": "IEEE Transactions on Wireless Communications",
+                "type": "",
+                "url": "https://doi.org/10.1109/twc.2009.080649"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "1415_CR10",
+            "rawText": "Stuijk, S., Geilen, M., Basten, T. (2006). Exploring trade-offs in buffer requirements and throughput constraints for synchronous dataflow graphs. In Proceedings of the 43rd annual design automation conference. New York: ACM.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1415_CR10",
+              "unstructured": "Stuijk, S., Geilen, M., Basten, T. (2006). Exploring trade-offs in buffer requirements and throughput constraints for synchronous dataflow graphs. In Proceedings of the 43rd annual design automation conference. New York: ACM."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:1415_CR10",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "1415_CR11",
+            "rawText": "Stuijk, S., Geilen, M., Basten, T. (2008). Throughput-buffering trade-off exploration for cyclo-static and synchronous dataflow graphs. IEEE Transactions on Computers, 57(10), 1331–1345.",
+            "doi": "10.1109/tc.2008.58",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "10",
+              "key": "1415_CR11",
+              "doi-asserted-by": "publisher",
+              "first-page": "1331",
+              "DOI": "10.1109/TC.2008.58",
+              "volume": "57",
+              "author": "S Stuijk",
+              "year": "2008",
+              "unstructured": "Stuijk, S., Geilen, M., Basten, T. (2008). Throughput-buffering trade-off exploration for cyclo-static and synchronous dataflow graphs. IEEE Transactions on Computers, 57(10), 1331–1345.",
+              "journal-title": "IEEE Transactions on Computers"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tc.2008.58",
+                "doi": "10.1109/tc.2008.58",
+                "title": "",
+                "authors": [
+                  "S Stuijk"
+                ],
+                "year": 2008,
+                "venue": "IEEE Transactions on Computers",
+                "type": "",
+                "url": "https://doi.org/10.1109/TC.2008.58"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "1415_CR12",
+            "rawText": "Tuy, H. (2000). Monotonic optimization: problems and solution approaches. SIAM Journal on Optimization, 11(2), 464–491.",
+            "doi": "10.1137/s1052623499359828",
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "1415_CR12",
+              "doi-asserted-by": "publisher",
+              "first-page": "464",
+              "DOI": "10.1137/S1052623499359828",
+              "volume": "11",
+              "author": "H Tuy",
+              "year": "2000",
+              "unstructured": "Tuy, H. (2000). Monotonic optimization: problems and solution approaches. SIAM Journal on Optimization, 11(2), 464–491.",
+              "journal-title": "SIAM Journal on Optimization"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1137/s1052623499359828",
+                "doi": "10.1137/s1052623499359828",
+                "title": "",
+                "authors": [
+                  "H Tuy"
+                ],
+                "year": 2000,
+                "venue": "SIAM Journal on Optimization",
+                "type": "",
+                "url": "https://doi.org/10.1137/s1052623499359828"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "1415_CR13",
+            "rawText": "Tuy, H., Al-Khayyal, F., Thach, P. (2005). Monotonic optimization: branch and cut methods, (pp. 39–78). US: Springer.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1415_CR13",
+              "first-page": "39",
+              "volume-title": "Monotonic optimization: branch and cut methods",
+              "author": "H Tuy",
+              "year": "2005",
+              "unstructured": "Tuy, H., Al-Khayyal, F., Thach, P. (2005). Monotonic optimization: branch and cut methods, (pp. 39–78). US: Springer."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:1415_CR13",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "H Tuy"
+                ],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "1415_CR14",
+            "rawText": "Utschick, W., & Brehmer, J. (2012). Monotonic optimization framework for coordinated beamforming in multicell networks. IEEE Transactions on Signal Processing, 60(4), 1899–1909.",
+            "doi": "10.1109/tsp.2011.2182343",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "1415_CR14",
+              "doi-asserted-by": "publisher",
+              "first-page": "1899",
+              "DOI": "10.1109/TSP.2011.2182343",
+              "volume": "60",
+              "author": "W Utschick",
+              "year": "2012",
+              "unstructured": "Utschick, W., & Brehmer, J. (2012). Monotonic optimization framework for coordinated beamforming in multicell networks. IEEE Transactions on Signal Processing, 60(4), 1899–1909.",
+              "journal-title": "IEEE Transactions on Signal Processing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tsp.2011.2182343",
+                "doi": "10.1109/tsp.2011.2182343",
+                "title": "",
+                "authors": [
+                  "W Utschick"
+                ],
+                "year": 2012,
+                "venue": "IEEE Transactions on Signal Processing",
+                "type": "",
+                "url": "https://doi.org/10.1109/tsp.2011.2182343"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "1415_CR15",
+            "rawText": "Wiggers, M.H., Bekooij, M.J.G., Smit, G.J.M. (2007). Efficient computation of buffer capacities for cyclo-static dataflow graphs. In 44th ACM/IEEE design automation conference.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1415_CR15",
+              "unstructured": "Wiggers, M.H., Bekooij, M.J.G., Smit, G.J.M. (2007). Efficient computation of buffer capacities for cyclo-static dataflow graphs. In 44th ACM/IEEE design automation conference."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:1415_CR15",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "1415_CR16",
+            "rawText": "Xing, C., Ma, S., Zhou, Y. (2015). Matrix-monotonic optimization for mimo systems. IEEE Transactions on Signal Processing, 63(2), 334–348.",
+            "doi": "10.1109/tsp.2014.2373332",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "1415_CR16",
+              "doi-asserted-by": "publisher",
+              "first-page": "334",
+              "DOI": "10.1109/TSP.2014.2373332",
+              "volume": "63",
+              "author": "C Xing",
+              "year": "2015",
+              "unstructured": "Xing, C., Ma, S., Zhou, Y. (2015). Matrix-monotonic optimization for mimo systems. IEEE Transactions on Signal Processing, 63(2), 334–348.",
+              "journal-title": "IEEE Transactions on Signal Processing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tsp.2014.2373332",
+                "doi": "10.1109/tsp.2014.2373332",
+                "title": "",
+                "authors": [
+                  "C Xing"
+                ],
+                "year": 2015,
+                "venue": "IEEE Transactions on Signal Processing",
+                "type": "",
+                "url": "https://doi.org/10.1109/tsp.2014.2373332"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/s11265-018-1415-2",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 4,
+          "extractedReferenceCount": 16,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/s11265-018-1415-2",
+          "crossrefReferenceCount": 16
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/s11265-018-1415-2->doi:10.1109/estmed.2010.5666980@papers-dataflow-Hendriks2019.pdf",
+      "source": "doi:10.1007/s11265-018-1415-2",
+      "target": "doi:10.1109/estmed.2010.5666980",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Hendriks2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/s11265-018-1415-2->doi:10.1109/78.485935@papers-dataflow-Hendriks2019.pdf",
+      "source": "doi:10.1007/s11265-018-1415-2",
+      "target": "doi:10.1109/78.485935",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Hendriks2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/s11265-018-1415-2->doi:10.1109/5.381846@papers-dataflow-Hendriks2019.pdf",
+      "source": "doi:10.1007/s11265-018-1415-2",
+      "target": "doi:10.1109/5.381846",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Hendriks2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/s11265-018-1415-2->doi:10.1109/tc.2008.58@papers-dataflow-Hendriks2019.pdf",
+      "source": "doi:10.1007/s11265-018-1415-2",
+      "target": "doi:10.1109/tc.2008.58",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Hendriks2019.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Hendriks2019",
+      "paperId": "doi:10.1007/s11265-018-1415-2",
+      "metadata": {
+        "fileName": "Hendriks2019.pdf",
+        "sourcePath": "papers/dataflow/Hendriks2019.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1639 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.321444+00:00",
+  "papers": [
+    {
+      "key": "Klaus2021",
+      "paper": {
+        "id": "doi:10.1109/rtas52030.2021.00014",
+        "citationKey": "Klaus2021",
+        "title": "Constrained Data-Age with Job-Level Dependencies: How to Reconcile Tight Bounds and Overheads",
+        "authors": [
+          "Tobias Klaus",
+          "Matthias Becker",
+          "Wolfgang Schroder-Preikschat",
+          "Peter Ulbrich"
+        ],
+        "year": 2021,
+        "venue": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+        "type": "inproceedings",
+        "doi": "10.1109/rtas52030.2021.00014",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/rtas52030.2021.00014",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Klaus, Tobias and Becker, Matthias and Schroder-Preikschat, Wolfgang and Ulbrich, Peter",
+          "title": "{Constrained Data-Age with Job-Level Dependencies: How to Reconcile Tight Bounds and Overheads}",
+          "year": "2021",
+          "booktitle": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+          "publisher": "IEEE",
+          "pages": "66--79",
+          "doi": "10.1109/rtas52030.2021.00014",
+          "url": "https://doi.org/10.1109/rtas52030.2021.00014"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.075612+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref39",
+            "rawText": "https://doi.org/10.1145/2659787.2659820",
+            "doi": "10.1145/2659787.2659820",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref39",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2659787.2659820"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2659787.2659820",
+                "doi": "10.1145/2659787.2659820",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2659787.2659820"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref38",
+            "rawText": "https://doi.org/10.1016/s0005-1098(97)00170-2",
+            "doi": "10.1016/s0005-1098(97)00170-2",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref38",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/S0005-1098(97)00170-2"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/s0005-1098(97)00170-2",
+                "doi": "10.1016/s0005-1098(97)00170-2",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/s0005-1098(97)00170-2"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref33",
+            "rawText": "https://doi.org/10.1109/rtas.2010.26",
+            "doi": "10.1109/rtas.2010.26",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref33",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2010.26"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtas.2010.26",
+                "doi": "10.1109/rtas.2010.26",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2010.26"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref32",
+            "rawText": "https://doi.org/10.1109/aspdac.2018.8297382",
+            "doi": "10.1109/aspdac.2018.8297382",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref32",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ASPDAC.2018.8297382"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/aspdac.2018.8297382",
+                "doi": "10.1109/aspdac.2018.8297382",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/aspdac.2018.8297382"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref31",
+            "rawText": "https://doi.org/10.1109/rtas48715.2020.000-4",
+            "doi": "10.1109/rtas48715.2020.000-4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref31",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS48715.2020.000-4"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtas48715.2020.000-4",
+                "doi": "10.1109/rtas48715.2020.000-4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas48715.2020.000-4"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref30",
+            "rawText": "https://doi.org/10.1109/rtss.2007.40",
+            "doi": "10.1109/rtss.2007.40",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref30",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2007.40"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2007.40",
+                "doi": "10.1109/rtss.2007.40",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2007.40"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref37",
+            "rawText": "https://doi.org/10.1109/acc.1995.531240",
+            "doi": "10.1109/acc.1995.531240",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref37",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ACC.1995.531240"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/acc.1995.531240",
+                "doi": "10.1109/acc.1995.531240",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/acc.1995.531240"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref36",
+            "rawText": "https://doi.org/10.1145/1176887.1176892",
+            "doi": "10.1145/1176887.1176892",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref36",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1176887.1176892"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176892",
+                "doi": "10.1145/1176887.1176892",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1176887.1176892"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref35",
+            "rawText": "https://doi.org/10.1109/isorc.2016.27",
+            "doi": "10.1109/isorc.2016.27",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref35",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISORC.2016.27"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isorc.2016.27",
+                "doi": "10.1109/isorc.2016.27",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isorc.2016.27"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref34",
+            "rawText": "https://doi.org/10.1109/isorc.2010.11",
+            "doi": "10.1109/isorc.2010.11",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref34",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISORC.2010.11"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isorc.2010.11",
+                "doi": "10.1109/isorc.2010.11",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isorc.2010.11"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref10",
+            "rawText": "https://doi.org/10.1007/s10626-011-0107-x",
+            "doi": "10.1007/s10626-011-0107-x",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s10626-011-0107-x"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/s10626-011-0107-x",
+                "doi": "10.1007/s10626-011-0107-x",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s10626-011-0107-x"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref40",
+            "rawText": "klaus. Boosting Job-Level Migration by Static Analysis. 2019. Proceedings of the 15th Workshop on Operating Systems Platforms for Embedded Real-Time Applications (OSPERT)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref40",
+              "first-page": "17",
+              "article-title": "Boosting Job-Level Migration by Static Analysis",
+              "author": "klaus",
+              "year": "2019",
+              "journal-title": "Proceedings of the 15th Workshop on Operating Systems Platforms for Embedded Real-Time Applications (OSPERT)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref40",
+                "doi": "",
+                "title": "Boosting Job-Level Migration by Static Analysis",
+                "authors": [
+                  "klaus"
+                ],
+                "year": 2019,
+                "venue": "Proceedings of the 15th Workshop on Operating Systems Platforms for Embedded Real-Time Applications (OSPERT)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1109/rtcsa.2016.41",
+            "doi": "10.1109/rtcsa.2016.41",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTCSA.2016.41"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2016.41",
+                "doi": "10.1109/rtcsa.2016.41",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2016.41"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1145/3273905.3273923",
+            "doi": "10.1145/3273905.3273923",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3273905.3273923"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3273905.3273923",
+                "doi": "10.1145/3273905.3273923",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3273905.3273923"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref13",
+            "rawText": "https://doi.org/10.1109/emrts.2001.934029",
+            "doi": "10.1109/emrts.2001.934029",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/EMRTS.2001.934029"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/emrts.2001.934029",
+                "doi": "10.1109/emrts.2001.934029",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/emrts.2001.934029"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref14",
+            "rawText": "sandell. Static timing analysis of real-time operating system code. 2004. Proceedings of the International Symposium On Leveraging Applications of Formal Methods Verification and Validation (ISoLA &#x2019;04) ser Lecture Notes in Computer Science",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "first-page": "146",
+              "article-title": "Static timing analysis of real-time operating system code",
+              "author": "sandell",
+              "year": "2004",
+              "journal-title": "Proceedings of the International Symposium On Leveraging Applications of Formal Methods Verification and Validation (ISoLA &#x2019;04) ser Lecture Notes in Computer Science"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref14",
+                "doi": "",
+                "title": "Static timing analysis of real-time operating system code",
+                "authors": [
+                  "sandell"
+                ],
+                "year": 2004,
+                "venue": "Proceedings of the International Symposium On Leveraging Applications of Formal Methods Verification and Validation (ISoLA &#x2019;04) ser Lecture Notes in Computer Science",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref15",
+            "rawText": "schneider. Why you can&#x2019;t analyze RTOSs without considering applications and vice versa. 2002. Proceedings of the 2nd Workshop on Worst-Case Execution Time Analysis (WCET &#x2019;02)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "first-page": "79",
+              "article-title": "Why you can&#x2019;t analyze RTOSs without considering applications and vice versa",
+              "author": "schneider",
+              "year": "2002",
+              "journal-title": "Proceedings of the 2nd Workshop on Worst-Case Execution Time Analysis (WCET &#x2019;02)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref15",
+                "doi": "",
+                "title": "Why you can&#x2019;t analyze RTOSs without considering applications and vice versa",
+                "authors": [
+                  "schneider"
+                ],
+                "year": 2002,
+                "venue": "Proceedings of the 2nd Workshop on Worst-Case Execution Time Analysis (WCET &#x2019;02)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1109/rtas.2019.00034",
+            "doi": "10.1109/rtas.2019.00034",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2019.00034"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2019.00034",
+                "doi": "10.1109/rtas.2019.00034",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2019.00034"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref17",
+            "rawText": "https://doi.org/10.1007/bf00365326",
+            "doi": "10.1007/bf00365326",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/BF00365326"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf00365326",
+                "doi": "10.1007/bf00365326",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf00365326"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref18",
+            "rawText": "hamann. 2017. The industrial challenge of WATERS 2017",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "journal-title": "The industrial challenge of WATERS 2017",
+              "year": "2017",
+              "author": "hamann",
+              "key": "ref18"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref18",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "hamann"
+                ],
+                "year": 2017,
+                "venue": "The industrial challenge of WATERS 2017",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref19",
+            "rawText": "https://doi.org/10.1049/ip-cdt:20045088",
+            "doi": "10.1049/ip-cdt:20045088",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1049/ip-cdt:20045088"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1049/ip-cdt:20045088",
+                "doi": "10.1049/ip-cdt:20045088",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1049/ip-cdt:20045088"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref28",
+            "rawText": "https://doi.org/10.1109/sies.2018.8442077",
+            "doi": "10.1109/sies.2018.8442077",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref28",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SIES.2018.8442077"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/sies.2018.8442077",
+                "doi": "10.1109/sies.2018.8442077",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sies.2018.8442077"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref4",
+            "rawText": "https://doi.org/10.1145/2480362.2480678",
+            "doi": "10.1145/2480362.2480678",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2480362.2480678"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2480362.2480678",
+                "doi": "10.1145/2480362.2480678",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2480362.2480678"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "ref27",
+            "rawText": "https://doi.org/10.1007/s11241-020-09350-3",
+            "doi": "10.1007/s11241-020-09350-3",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref27",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-020-09350-3"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/s11241-020-09350-3",
+                "doi": "10.1007/s11241-020-09350-3",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-020-09350-3"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "ref3",
+            "rawText": "feiertag. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. 2008. Proceedings of the 1st International Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "article-title": "A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics",
+              "author": "feiertag",
+              "year": "2008",
+              "journal-title": "Proceedings of the 1st International Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS)"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+                "doi": "",
+                "title": "A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics",
+                "authors": [
+                  "feiertag"
+                ],
+                "year": 2008,
+                "venue": "Proceedings of the 1st International Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS)",
+                "type": "",
+                "url": "https://research.chalmers.se/en/publication/139048"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "ref6",
+            "rawText": "cervin. How does control timing affect performance? Analysis and simulation of timing using jitterbug and truetime. 2003. IEEE Control Systems Magazine. https://doi.org/10.1109/mcs.2003.1200240",
+            "doi": "10.1109/mcs.2003.1200240",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "crossref",
+              "first-page": "16",
+              "DOI": "10.1109/MCS.2003.1200240",
+              "article-title": "How does control timing affect performance? Analysis and simulation of timing using jitterbug and truetime",
+              "volume": "23",
+              "author": "cervin",
+              "year": "2003",
+              "journal-title": "IEEE Control Systems Magazine"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mcs.2003.1200240",
+                "doi": "10.1109/mcs.2003.1200240",
+                "title": "How does control timing affect performance? Analysis and simulation of timing using jitterbug and truetime",
+                "authors": [
+                  "cervin"
+                ],
+                "year": 2003,
+                "venue": "IEEE Control Systems Magazine",
+                "type": "",
+                "url": "https://doi.org/10.1109/mcs.2003.1200240"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "ref29",
+            "rawText": "davare. Period optimization for hard real-time distributed automotive systems. 2007. Proceedings of the 44th Annual Design Automation Conference (DAC)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref29",
+              "first-page": "278",
+              "article-title": "Period optimization for hard real-time distributed automotive systems",
+              "author": "davare",
+              "year": "2007",
+              "journal-title": "Proceedings of the 44th Annual Design Automation Conference (DAC)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref29",
+                "doi": "",
+                "title": "Period optimization for hard real-time distributed automotive systems",
+                "authors": [
+                  "davare"
+                ],
+                "year": 2007,
+                "venue": "Proceedings of the 44th Annual Design Automation Conference (DAC)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.1109/etfa.2017.8247612",
+            "doi": "10.1109/etfa.2017.8247612",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA.2017.8247612"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/etfa.2017.8247612",
+                "doi": "10.1109/etfa.2017.8247612",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2017.8247612"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1109/rtas.2018.00032",
+            "doi": "10.1109/rtas.2018.00032",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2018.00032"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtas.2018.00032",
+                "doi": "10.1109/rtas.2018.00032",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2018.00032"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "ref7",
+            "rawText": "hamann. Communication Centric Design in Complex Automotive Embedded Systems. 2017. 29th Euromicro Conference on Real-Time Systems (ECRTS 2017) ser Leibniz International Proceedings in Informatics (LIPIcs)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "first-page": "10:1",
+              "article-title": "Communication Centric Design in Complex Automotive Embedded Systems",
+              "volume": "76",
+              "author": "hamann",
+              "year": "2017",
+              "journal-title": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017) ser Leibniz International Proceedings in Informatics (LIPIcs)"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2017.10",
+                "doi": "",
+                "title": "Communication Centric Design in Complex Automotive Embedded Systems",
+                "authors": [
+                  "hamann"
+                ],
+                "year": 2017,
+                "venue": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017) ser Leibniz International Proceedings in Informatics (LIPIcs)",
+                "type": "",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2017.10"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "ref2",
+            "rawText": "kramer. Real world automotive benchmarks for free. 2015. Proceedings of the 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "article-title": "Real world automotive benchmarks for free",
+              "author": "kramer",
+              "year": "2015",
+              "journal-title": "Proceedings of the 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:real world automotive benchmarks for free:2015",
+                "doi": "",
+                "title": "Real world automotive benchmarks for free",
+                "authors": [
+                  "kramer"
+                ],
+                "year": 2015,
+                "venue": "Proceedings of the 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+                "type": "",
+                "url": "https://www.ecrts.org/archives/fileadmin/WebsitesArchiv/ecrts2015/waters2015/WATERS2015.pdf"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1109/tcad.2018.2857398",
+            "doi": "10.1109/tcad.2018.2857398",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TCAD.2018.2857398"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tcad.2018.2857398",
+                "doi": "10.1109/tcad.2018.2857398",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tcad.2018.2857398"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "ref1",
+            "rawText": "prasad. 1996. Concurrent Engineering Fundamentals",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "volume": "1",
+              "author": "prasad",
+              "year": "1996",
+              "journal-title": "Concurrent Engineering Fundamentals"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "prasad"
+                ],
+                "year": 1996,
+                "venue": "Concurrent Engineering Fundamentals",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "ref46",
+            "rawText": "brandenburg. 2011. Scheduling and Locking in Multiprocessor Real-time Operating Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "journal-title": "Scheduling and Locking in Multiprocessor Real-time Operating Systems",
+              "year": "2011",
+              "author": "brandenburg",
+              "key": "ref46"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref46",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "brandenburg"
+                ],
+                "year": 2011,
+                "venue": "Scheduling and Locking in Multiprocessor Real-time Operating Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "ref20",
+            "rawText": "https://doi.org/10.2298/csis120614011m",
+            "doi": "10.2298/csis120614011m",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2298/CSIS120614011M"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.2298/csis120614011m",
+                "doi": "10.2298/csis120614011m",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.2298/csis120614011m"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "ref45",
+            "rawText": "https://doi.org/10.1109/isorc.2011.29",
+            "doi": "10.1109/isorc.2011.29",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref45",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISORC.2011.29"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isorc.2011.29",
+                "doi": "10.1109/isorc.2011.29",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isorc.2011.29"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "ref22",
+            "rawText": "https://doi.org/10.1109/etfa.2018.8502498",
+            "doi": "10.1109/etfa.2018.8502498",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA.2018.8502498"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa.2018.8502498",
+                "doi": "10.1109/etfa.2018.8502498",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2018.8502498"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "ref47",
+            "rawText": "https://doi.org/10.1007/3-540-45449-7_12",
+            "doi": "10.1007/3-540-45449-7_12",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref47",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/3-540-45449-7_12"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/3-540-45449-7_12",
+                "doi": "10.1007/3-540-45449-7_12",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45449-7_12"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "ref21",
+            "rawText": "https://doi.org/10.1016/j.sysarc.2017.09.004",
+            "doi": "10.1016/j.sysarc.2017.09.004",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.sysarc.2017.09.004"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2017.09.004",
+                "doi": "10.1016/j.sysarc.2017.09.004",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "ref42",
+            "rawText": "https://doi.org/10.1109/rtcsa.2006.22",
+            "doi": "10.1109/rtcsa.2006.22",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref42",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTCSA.2006.22"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2006.22",
+                "doi": "10.1109/rtcsa.2006.22",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2006.22"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "ref24",
+            "rawText": "https://doi.org/10.1109/tcad.2018.2861016",
+            "doi": "10.1109/tcad.2018.2861016",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref24",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TCAD.2018.2861016"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tcad.2018.2861016",
+                "doi": "10.1109/tcad.2018.2861016",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tcad.2018.2861016"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "ref41",
+            "rawText": "chetto. 2014. Real-time Systems Scheduling 1 Fundamentals. https://doi.org/10.1002/9781118984413",
+            "doi": "10.1002/9781118984413",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref41",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1002/9781118984413",
+              "volume": "1",
+              "author": "chetto",
+              "year": "2014",
+              "journal-title": "Real-time Systems Scheduling 1 Fundamentals"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1002/9781118984413",
+                "doi": "10.1002/9781118984413",
+                "title": "",
+                "authors": [
+                  "chetto"
+                ],
+                "year": 2014,
+                "venue": "Real-time Systems Scheduling 1 Fundamentals",
+                "type": "",
+                "url": "https://doi.org/10.1002/9781118984413"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "ref23",
+            "rawText": "https://doi.org/10.1109/sies.2018.8442095",
+            "doi": "10.1109/sies.2018.8442095",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SIES.2018.8442095"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/sies.2018.8442095",
+                "doi": "10.1109/sies.2018.8442095",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sies.2018.8442095"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "ref44",
+            "rawText": "2020. Absint angewandte informatik gmbh ait Worst case execution time analyzers",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "journal-title": "Absint angewandte informatik gmbh ait Worst case execution time analyzers",
+              "year": "2020",
+              "key": "ref44"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref44",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "Absint angewandte informatik gmbh ait Worst case execution time analyzers",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "ref26",
+            "rawText": "https://doi.org/10.1145/3358181",
+            "doi": "10.1145/3358181",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref26",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3358181"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3358181",
+                "doi": "10.1145/3358181",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3358181"
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "ref43",
+            "rawText": "becker. MECHAniSer - a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies. 2016. Proceedings of the 7th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref43",
+              "article-title": "MECHAniSer - a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies",
+              "author": "becker",
+              "year": "2016",
+              "journal-title": "Proceedings of the 7th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref43",
+                "doi": "",
+                "title": "MECHAniSer - a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies",
+                "authors": [
+                  "becker"
+                ],
+                "year": 2016,
+                "venue": "Proceedings of the 7th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "ref25",
+            "rawText": "https://doi.org/10.1016/j.sysarc.2020.101824",
+            "doi": "10.1016/j.sysarc.2020.101824",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref25",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.sysarc.2020.101824"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2020.101824",
+                "doi": "10.1016/j.sysarc.2020.101824",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sysarc.2020.101824"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/rtas52030.2021.00014",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 17,
+          "extractedReferenceCount": 47,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/rtas52030.2021.00014",
+          "crossrefReferenceCount": 47
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1109/rtas.2010.26@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1109/rtas.2010.26",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1109/rtas48715.2020.000-4@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1109/rtas48715.2020.000-4",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1145/1176887.1176892@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1145/1176887.1176892",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1007/s10626-011-0107-x@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1007/s10626-011-0107-x",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1109/sies.2018.8442077@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1109/sies.2018.8442077",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1007/s11241-020-09350-3@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1007/s11241-020-09350-3",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1109/etfa.2017.8247612@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1109/etfa.2017.8247612",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1109/rtas.2018.00032@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1109/rtas.2018.00032",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.4230/lipics.ecrts.2017.10@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.4230/lipics.ecrts.2017.10",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->title:real world automotive benchmarks for free:2015@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "title:real world automotive benchmarks for free:2015",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1109/tcad.2018.2857398@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1109/tcad.2018.2857398",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1007/3-540-45449-7_12@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1007/3-540-45449-7_12",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1016/j.sysarc.2017.09.004@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1016/j.sysarc.2017.09.004",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1109/tcad.2018.2861016@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1109/tcad.2018.2861016",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1145/3358181@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1145/3358181",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00014->doi:10.1016/j.sysarc.2020.101824@papers-LET-Klaus2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00014",
+      "target": "doi:10.1016/j.sysarc.2020.101824",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Klaus2021.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Klaus2021",
+      "paperId": "doi:10.1109/rtas52030.2021.00014",
+      "metadata": {
+        "fileName": "Klaus2021.pdf",
+        "sourcePath": "papers/LET/Klaus2021.pdf"
+      }
+    }
+  ]
+}

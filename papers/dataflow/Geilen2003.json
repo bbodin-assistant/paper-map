@@ -1,0 +1,519 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.372091+00:00",
+  "papers": [
+    {
+      "key": "Geilen2003",
+      "paper": {
+        "id": "doi:10.1007/3-540-36575-3_22",
+        "citationKey": "Geilen2003",
+        "title": "Requirements on the Execution of Kahn Process Networks",
+        "authors": [
+          "Marc C. W. Geilen",
+          "Twan Basten"
+        ],
+        "year": 2003,
+        "venue": "Programming Languages and Systems: 12th European Symposium on Programming, ESOP 2003",
+        "type": "inproceedings",
+        "doi": "10.1007/3-540-36575-3_22",
+        "arxivId": "",
+        "url": "https://doi.org/10.1007/3-540-36575-3_22",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Geilen, Marc C. W. and Basten, Twan",
+          "title": "Requirements on the Execution of Kahn Process Networks",
+          "booktitle": "Programming Languages and Systems: 12th European Symposium on Programming, ESOP 2003",
+          "series": "Lecture Notes in Computer Science",
+          "volume": "2618",
+          "pages": "319--334",
+          "publisher": "Springer",
+          "year": "2003",
+          "doi": "10.1007/3-540-36575-3_22",
+          "isbn": "3-540-00886-1",
+          "url": "https://doi.org/10.1007/3-540-36575-3_22"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.095707+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "22_CR1",
+            "rawText": "G.E. Allen, B. Evans, and D. Schanbacher. Real-time sonar beamforming on a UNIX workstation using process networks and POSIX threads. In Proc. of the 32nd Asilomar Conference on Signals, Systems and Computers, pages 1725–1729. IEEE Computer Society, 1998.",
+            "doi": "10.1109/acssc.1998.751620",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "G.E. Allen, B. Evans, and D. Schanbacher. Real-time sonar beamforming on a UNIX workstation using process networks and POSIX threads. In Proc. of the 32nd Asilomar Conference on Signals, Systems and Computers, pages 1725–1729. IEEE Computer Society, 1998.",
+              "DOI": "10.1109/ACSSC.1998.751620"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/acssc.1998.751620",
+                "doi": "10.1109/acssc.1998.751620",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/acssc.1998.751620"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "22_CR2",
+            "rawText": "T. Basten and J. Hoogerbrugge. Efficient execution of process networks. In A. Chalmers, M. Mirmehdi, and H. Muller, editors, Proc. of Communicating Process Architectures 2001, Bristol, UK, September 2001, pages 1–14. IOS Press, 2001.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR2",
+              "unstructured": "T. Basten and J. Hoogerbrugge. Efficient execution of process networks. In A. Chalmers, M. Mirmehdi, and H. Muller, editors, Proc. of Communicating Process Architectures 2001, Bristol, UK, September 2001, pages 1–14. IOS Press, 2001."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22_CR2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "22_CR3",
+            "rawText": "S. Brookes. On the Kahn principle and fair networks. Technical Report CMU-CS-98-156, School of Computer Science, Carnegie Mellon University, 1998. Presented at FMPS’98. Submitted to Theoretical Computer Science.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR3",
+              "unstructured": "S. Brookes. On the Kahn principle and fair networks. Technical Report CMU-CS-98-156, School of Computer Science, Carnegie Mellon University, 1998. Presented at FMPS’98. Submitted to Theoretical Computer Science."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22_CR3",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "22_CR4",
+            "rawText": "J.T. Buck. Scheduling Dynamic Dataflow Graphs with Bounded Memory Using the Token Flow Model. PhD thesis, University of California, EECS Dept., Berkeley, CA, 1993.",
+            "doi": "10.1109/icassp.1993.319147",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR4",
+              "doi-asserted-by": "crossref",
+              "unstructured": "J.T. Buck. Scheduling Dynamic Dataflow Graphs with Bounded Memory Using the Token Flow Model. PhD thesis, University of California, EECS Dept., Berkeley, CA, 1993.",
+              "DOI": "10.1109/ICASSP.1993.319147"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1993.319147",
+                "doi": "10.1109/icassp.1993.319147",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1993.319147"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "22_CR5",
+            "rawText": "A.A. Faustini. An operational semantics for pure dataflow. In M. Nielsen and E. M. Schmidt, editors, Automata, Languages and Programming, 9th Colloquium, Aarhus, Denmark, July 12-16, 1982, Proceedings, pages 212–224. Springer, 1982.",
+            "doi": "10.1007/bfb0012771",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR5",
+              "doi-asserted-by": "crossref",
+              "unstructured": "A.A. Faustini. An operational semantics for pure dataflow. In M. Nielsen and E. M. Schmidt, editors, Automata, Languages and Programming, 9th Colloquium, Aarhus, Denmark, July 12-16, 1982, Proceedings, pages 212–224. Springer, 1982.",
+              "DOI": "10.1007/BFb0012771"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bfb0012771",
+                "doi": "10.1007/bfb0012771",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/bfb0012771"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "22_CR6",
+            "rawText": "M. Goel. Process networks in Ptolemy II. Technical Memorandum UCB/ERL No. M98/69, University of California, EECS Dept., Berkeley, CA, December 1998.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR6",
+              "unstructured": "M. Goel. Process networks in Ptolemy II. Technical Memorandum UCB/ERL No. M98/69, University of California, EECS Dept., Berkeley, CA, December 1998."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22_CR6",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "22_CR7",
+            "rawText": "G. Kahn. The semantics of a simple language for parallel programming. In J.L. Rosenfeld, editor, Information Processing 74: Proceedings of the IFIP Congress 74, Stockholm, Sweden, August 1974, pages 471–475. North-Holland, 1974.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR7",
+              "unstructured": "G. Kahn. The semantics of a simple language for parallel programming. In J.L. Rosenfeld, editor, Information Processing 74: Proceedings of the IFIP Congress 74, Stockholm, Sweden, August 1974, pages 471–475. North-Holland, 1974."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22_CR7",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "22_CR8",
+            "rawText": "G. Kahn and D.B. MacQueen. Coroutines and networks of parallel programming. In B. Gilchrist, editor, Information Processing 77: Proceedings of the IFIP Congress 77, Toronto, Canada, August 8-12, 1977, pages 993–998. North-Holland, 1977.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR8",
+              "unstructured": "G. Kahn and D.B. MacQueen. Coroutines and networks of parallel programming. In B. Gilchrist, editor, Information Processing 77: Proceedings of the IFIP Congress 77, Toronto, Canada, August 8-12, 1977, pages 993–998. North-Holland, 1977."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22_CR8",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "22_CR9",
+            "rawText": "E.A. de Kock et al. YAPI: Application modeling for signal processing systems. In Proc. of the 37th. Design Automation Conference, Los Angeles, CA, June 2000, pages 402–405. IEEE, 2000.",
+            "doi": "10.1145/337292.337511",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR9",
+              "doi-asserted-by": "crossref",
+              "unstructured": "E.A. de Kock et al. YAPI: Application modeling for signal processing systems. In Proc. of the 37th. Design Automation Conference, Los Angeles, CA, June 2000, pages 402–405. IEEE, 2000.",
+              "DOI": "10.1145/337292.337511"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/337292.337511",
+                "doi": "10.1145/337292.337511",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/337292.337511"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "22_CR10",
+            "rawText": "E.A. Lee. Overview of the Ptolemy project. Technical Memorandum UCB/ERL No. M01/11, University of California, EECS Dept., Berkeley, CA, March 2001.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR10",
+              "unstructured": "E.A. Lee. Overview of the Ptolemy project. Technical Memorandum UCB/ERL No. M01/11, University of California, EECS Dept., Berkeley, CA, March 2001."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22_CR10",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "22_CR11",
+            "rawText": "E.A. Lee and D.G. Messerschmitt. Synchronous data flow. IEEE Proceedings, 75(9):1235–1245, September 1987.",
+            "doi": "10.1109/proc.1987.13876",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR11",
+              "doi-asserted-by": "crossref",
+              "unstructured": "E.A. Lee and D.G. Messerschmitt. Synchronous data flow. IEEE Proceedings, 75(9):1235–1245, September 1987.",
+              "DOI": "10.1109/PROC.1987.13876"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/proc.1987.13876",
+                "doi": "10.1109/proc.1987.13876",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/PROC.1987.13876"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "22_CR12",
+            "rawText": "T.M. Parks. Bounded Scheduling of Process Networks. PhD thesis, University of California, EECS Dept., Berkeley, CA, December 1995.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR12",
+              "unstructured": "T.M. Parks. Bounded Scheduling of Process Networks. PhD thesis, University of California, EECS Dept., Berkeley, CA, December 1995."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22_CR12",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "22_CR13",
+            "rawText": "E.W. Stark. Concurrent transition system semantics of process networks. In Proc. of the 1987 SIGACT-SIGPLAN Symposium on Principles of Programming Languages, Munich, Germany, January 1987, pages 199–210. ACM Press, 1987.",
+            "doi": "10.1145/41625.41643",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR13",
+              "doi-asserted-by": "crossref",
+              "unstructured": "E.W. Stark. Concurrent transition system semantics of process networks. In Proc. of the 1987 SIGACT-SIGPLAN Symposium on Principles of Programming Languages, Munich, Germany, January 1987, pages 199–210. ACM Press, 1987.",
+              "DOI": "10.1145/41625.41643"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/41625.41643",
+                "doi": "10.1145/41625.41643",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/41625.41643"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "22_CR14",
+            "rawText": "R.S. Stevens, M. Wan, P. Laramie, T.M. Parks, and E.A. Lee. Implementation of process networks in Java. Technical Memorandum UCB/ERL No. M97/84, University of California, EECS Dept., Berkeley, CA, 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR14",
+              "unstructured": "R.S. Stevens, M. Wan, P. Laramie, T.M. Parks, and E.A. Lee. Implementation of process networks in Java. Technical Memorandum UCB/ERL No. M97/84, University of California, EECS Dept., Berkeley, CA, 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22_CR14",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "22_CR15",
+            "rawText": "J. Vayssière, D. Webb, and A. Wendelborn. Distributed process networks. Technical Report TR 99-03, University of Adelaide, Department of Computer Science, South Australia 5005, Australia, October 1999.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22_CR15",
+              "unstructured": "J. Vayssière, D. Webb, and A. Wendelborn. Distributed process networks. Technical Report TR 99-03, University of Adelaide, Department of Computer Science, South Australia 5005, Australia, October 1999."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22_CR15",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/3-540-36575-3_22",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 15,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/3-540-36575-3_22",
+          "crossrefReferenceCount": 15
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/3-540-36575-3_22->doi:10.1109/proc.1987.13876@papers-dataflow-Geilen2003.pdf",
+      "source": "doi:10.1007/3-540-36575-3_22",
+      "target": "doi:10.1109/proc.1987.13876",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Geilen2003.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Geilen2003",
+      "paperId": "doi:10.1007/3-540-36575-3_22",
+      "metadata": {
+        "fileName": "Geilen2003.pdf",
+        "sourcePath": "papers/dataflow/Geilen2003.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,633 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.154688+00:00",
+  "papers": [
+    {
+      "key": "Abdullah2019",
+      "paper": {
+        "id": "doi:10.23919/date.2019.8715264",
+        "citationKey": "Abdullah2019",
+        "title": "Worst-Case Cause-Effect Reaction Latency in Systems with Non-Blocking Communication",
+        "authors": [
+          "Jakaria Abdullah",
+          "Gaoyang Dai",
+          "Wang Yi"
+        ],
+        "year": 2019,
+        "venue": "2019 Design, Automation \\& Test in Europe Conference \\& Exhibition (DATE)",
+        "type": "inproceedings",
+        "doi": "10.23919/DATE.2019.8715264",
+        "arxivId": "",
+        "url": "https://doi.org/10.23919/DATE.2019.8715264",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Abdullah, Jakaria and Dai, Gaoyang and Yi, Wang",
+          "title": "{Worst-Case Cause-Effect Reaction Latency in Systems with Non-Blocking Communication}",
+          "year": "2019",
+          "booktitle": "2019 Design, Automation \\& Test in Europe Conference \\& Exhibition (DATE)",
+          "publisher": "IEEE",
+          "pages": "1625--1630",
+          "doi": "10.23919/DATE.2019.8715264",
+          "url": "https://doi.org/10.23919/DATE.2019.8715264"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.055603+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref10",
+            "rawText": "kramer. Real world automotive benchmark for free. 2015. 6th Workshop on Tools and Methodologies for Embedded and Real-time Systems at ECRTS 15",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "article-title": "Real world automotive benchmark for free",
+              "author": "kramer",
+              "year": "2015",
+              "journal-title": "6th Workshop on Tools and Methodologies for Embedded and Real-time Systems at ECRTS 15"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "Real world automotive benchmark for free",
+                "authors": [
+                  "kramer"
+                ],
+                "year": 2015,
+                "venue": "6th Workshop on Tools and Methodologies for Embedded and Real-time Systems at ECRTS 15",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1109/rtas.2016.7461359",
+            "doi": "10.1109/rtas.2016.7461359",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2016.7461359"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2016.7461359",
+                "doi": "10.1109/rtas.2016.7461359",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2016.7461359"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1109/real.1994.342716",
+            "doi": "10.1109/real.1994.342716",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/REAL.1994.342716"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1994.342716",
+                "doi": "10.1109/real.1994.342716",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1994.342716"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref13",
+            "rawText": "feiertag. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. 2008. Workshop on Compositional Theory and Technology for Real-Time Embedded Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "article-title": "A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics",
+              "author": "feiertag",
+              "year": "2008",
+              "journal-title": "Workshop on Compositional Theory and Technology for Real-Time Embedded Systems"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+                "doi": "",
+                "title": "A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics",
+                "authors": [
+                  "feiertag"
+                ],
+                "year": 2008,
+                "venue": "Workshop on Compositional Theory and Technology for Real-Time Embedded Systems",
+                "type": "",
+                "url": "https://research.chalmers.se/en/publication/139048"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref14",
+            "rawText": "https://doi.org/10.1049/ip-cdt:20045088",
+            "doi": "10.1049/ip-cdt:20045088",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1049/ip-cdt:20045088"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1049/ip-cdt:20045088",
+                "doi": "10.1049/ip-cdt:20045088",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1049/ip-cdt:20045088"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805825",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805825"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1109/rtss.2005.43",
+            "doi": "10.1109/rtss.2005.43",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2005.43"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2005.43",
+                "doi": "10.1109/rtss.2005.43",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2005.43"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref17",
+            "rawText": "https://doi.org/10.1109/etfa.2017.8247612",
+            "doi": "10.1109/etfa.2017.8247612",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA.2017.8247612"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/etfa.2017.8247612",
+                "doi": "10.1109/etfa.2017.8247612",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2017.8247612"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref4",
+            "rawText": "https://doi.org/10.1145/1331331.1331339",
+            "doi": "10.1145/1331331.1331339",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1331331.1331339"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1331331.1331339",
+                "doi": "10.1145/1331331.1331339",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1331331.1331339"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref3",
+            "rawText": "yi. Towards customizable cps: Composability, efficiency and predictability. 2017. Formal Methods and Software Engineering",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "first-page": "3",
+              "article-title": "Towards customizable cps: Composability, efficiency and predictability",
+              "author": "yi",
+              "year": "2017",
+              "journal-title": "Formal Methods and Software Engineering"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref3",
+                "doi": "",
+                "title": "Towards customizable cps: Composability, efficiency and predictability",
+                "authors": [
+                  "yi"
+                ],
+                "year": 2017,
+                "venue": "Formal Methods and Software Engineering",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1007/s10626-011-0107-x",
+            "doi": "10.1007/s10626-011-0107-x",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s10626-011-0107-x"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/s10626-011-0107-x",
+                "doi": "10.1007/s10626-011-0107-x",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s10626-011-0107-x"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805826",
+            "doi": "10.1109/jproc.2002.805826",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805826"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805826",
+                "doi": "10.1109/jproc.2002.805826",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805826"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1093/comjnl/29.5.390",
+            "doi": "10.1093/comjnl/29.5.390",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1093/comjnl/29.5.390"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1093/comjnl/29.5.390",
+                "doi": "10.1093/comjnl/29.5.390",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1093/comjnl/29.5.390"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref7",
+            "rawText": "Specification of timing extensions",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "year": "0",
+              "key": "ref7",
+              "article-title": "Specification of timing extensions"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref7",
+                "doi": "",
+                "title": "Specification of timing extensions",
+                "authors": [],
+                "year": 0,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref2",
+            "rawText": "singh. Mapping on multi/many-core systems: Survey of current and emerging trends. 2013. Proceedings of the 50th Annual Design Automation Conference Ser DAC '13",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "first-page": "1:1",
+              "article-title": "Mapping on multi/many-core systems: Survey of current and emerging trends",
+              "author": "singh",
+              "year": "2013",
+              "journal-title": "Proceedings of the 50th Annual Design Automation Conference Ser DAC '13"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "Mapping on multi/many-core systems: Survey of current and emerging trends",
+                "authors": [
+                  "singh"
+                ],
+                "year": 2013,
+                "venue": "Proceedings of the 50th Annual Design Automation Conference Ser DAC '13",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref1",
+            "rawText": "Autosar adaptive platfrom",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "year": "0",
+              "key": "ref1",
+              "article-title": "Autosar adaptive platfrom"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "Autosar adaptive platfrom",
+                "authors": [],
+                "year": 0,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref9",
+            "rawText": "knuth. The Art of Computer Programming. 1997. Seminumerical Algorithms",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "article-title": "The Art of Computer Programming",
+              "volume": "2",
+              "author": "knuth",
+              "year": "1997",
+              "journal-title": "Seminumerical Algorithms"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref9",
+                "doi": "",
+                "title": "The Art of Computer Programming",
+                "authors": [
+                  "knuth"
+                ],
+                "year": 1997,
+                "venue": "Seminumerical Algorithms",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.23919/date.2019.8715264",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 5,
+          "extractedReferenceCount": 17,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.23919/date.2019.8715264",
+          "crossrefReferenceCount": 17
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.23919/date.2019.8715264->title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008@papers-LET-Abdullah2019.pdf",
+      "source": "doi:10.23919/date.2019.8715264",
+      "target": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Abdullah2019.pdf"
+    },
+    {
+      "id": "doi:10.23919/date.2019.8715264->doi:10.1109/jproc.2002.805825@papers-LET-Abdullah2019.pdf",
+      "source": "doi:10.23919/date.2019.8715264",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Abdullah2019.pdf"
+    },
+    {
+      "id": "doi:10.23919/date.2019.8715264->doi:10.1109/etfa.2017.8247612@papers-LET-Abdullah2019.pdf",
+      "source": "doi:10.23919/date.2019.8715264",
+      "target": "doi:10.1109/etfa.2017.8247612",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Abdullah2019.pdf"
+    },
+    {
+      "id": "doi:10.23919/date.2019.8715264->doi:10.1007/s10626-011-0107-x@papers-LET-Abdullah2019.pdf",
+      "source": "doi:10.23919/date.2019.8715264",
+      "target": "doi:10.1007/s10626-011-0107-x",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Abdullah2019.pdf"
+    },
+    {
+      "id": "doi:10.23919/date.2019.8715264->doi:10.1093/comjnl/29.5.390@papers-LET-Abdullah2019.pdf",
+      "source": "doi:10.23919/date.2019.8715264",
+      "target": "doi:10.1093/comjnl/29.5.390",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Abdullah2019.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Abdullah2019",
+      "paperId": "doi:10.23919/date.2019.8715264",
+      "metadata": {
+        "fileName": "Abdullah2019.pdf",
+        "sourcePath": "papers/LET/Abdullah2019.pdf"
+      }
+    }
+  ]
+}

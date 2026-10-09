@@ -1,0 +1,682 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.703314+00:00",
+  "papers": [
+    {
+      "key": "Sofronis2006",
+      "paper": {
+        "id": "doi:10.1145/1176887.1176892",
+        "citationKey": "Sofronis2006",
+        "title": "A memory-optimal buffering protocol for preservation of synchronous semantics under preemptive scheduling",
+        "authors": [
+          "Christos Sofronis",
+          "Stavros Tripakis",
+          "Paul Caspi"
+        ],
+        "year": 2006,
+        "venue": "Proceedings of the 6th ACM \\& IEEE International conference on Embedded software - EMSOFT '06",
+        "type": "inproceedings",
+        "doi": "10.1145/1176887.1176892",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/1176887.1176892",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Sofronis, Christos and Tripakis, Stavros and Caspi, Paul",
+          "title": "{A memory-optimal buffering protocol for preservation of synchronous semantics under preemptive scheduling}",
+          "year": "2006",
+          "booktitle": "Proceedings of the 6th ACM \\& IEEE International conference on Embedded software  - EMSOFT '06",
+          "publisher": "ACM Press",
+          "pages": "21",
+          "doi": "10.1145/1176887.1176892",
+          "url": "https://doi.org/10.1145/1176887.1176892"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.086441+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Audsley, N., Burns, A., Davis, R., Tindell, K., and Wellings, A. Fixed priority pre-emptive scheduling: An historical perspective. Real Time Systems 8, 2-3 (1995).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Audsley, N., Burns, A., Davis, R., Tindell, K., and Wellings, A. Fixed priority pre-emptive scheduling: An historical perspective. Real Time Systems 8, 2-3 (1995)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "Baleani, M., Ferrari, A., Mangeruca, L., and Sangiovanni-Vincentelli, A. Eﬃcient embedded software design with synchronous models. In 5th ACM International Conference on Embedded Software (EMSOFT’05) (2005), pp. 187 – 190.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Baleani, M., Ferrari, A., Mangeruca, L., and Sangiovanni-Vincentelli, A. Eﬃcient embedded software design with synchronous models. In 5th ACM International Conference on Embedded Software (EMSOFT’05) (2005), pp. 187 – 190."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "Benveniste, A., and Berry, G. The synchronous approach to reactive and real-time systems. IEEE Proceedings 79 (Sept. 1991), 1270–1282.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Benveniste, A., and Berry, G. The synchronous approach to reactive and real-time systems. IEEE Proceedings 79 (Sept. 1991), 1270–1282."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "Benveniste, A., Caspi, P., Guernic, P. L., Marchand, H., Talpin, J., and Tripakis, S. A protocol for loosely time-triggered architectures. In Embedded Software (EMSOFT’02) (2002), vol. 2491 of LNCS, Springer.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Benveniste, A., Caspi, P., Guernic, P. L., Marchand, H., Talpin, J., and Tripakis, S. A protocol for loosely time-triggered architectures. In Embedded Software (EMSOFT’02) (2002), vol. 2491 of LNCS, Springer."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "Bhattacharyya, S. S., Murthy, P. K., and Lee, E. A. Software Synthesis from Dataﬂow Graphs. Kluwer, 1996.",
+            "doi": "10.1007/978-1-4613-1389-2",
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Bhattacharyya, S. S., Murthy, P. K., and Lee, E. A. Software Synthesis from Dataﬂow Graphs. Kluwer, 1996."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/978-1-4613-1389-2",
+                "doi": "10.1007/978-1-4613-1389-2",
+                "arxivId": "",
+                "title": "Software Synthesis from Dataflow Graphs",
+                "authors": [
+                  "Shuvra S. Bhattacharyya",
+                  "Praveen K. Murthy",
+                  "Edward A. Lee"
+                ],
+                "year": 1996,
+                "venue": "Kluwer Academic Publishers",
+                "type": "book",
+                "url": "https://doi.org/10.1007/978-1-4613-1389-2"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "Caspi, P., Curic, A., Maignan, A., Sofronis, C., Tripakis, S., and Niebert, P. From Simulink to SCADE/Lustre to TTA: a layered approach for distributed embedded applications. In Languages, Compilers, and Tools for Embedded Systems (LCTES’03) (2003), ACM.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Caspi, P., Curic, A., Maignan, A., Sofronis, C., Tripakis, S., and Niebert, P. From Simulink to SCADE/Lustre to TTA: a layered approach for distributed embedded applications. In Languages, Compilers, and Tools for Embedded Systems (LCTES’03) (2003), ACM."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Chen, J., and Burns, A. A three-slot asynchronous reader-writer mechanism for multiprocessor real-time systems. Tech. Rep. YCS-286, Department of Computer Science, University of York, May 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Chen, J., and Burns, A. A three-slot asynchronous reader-writer mechanism for multiprocessor real-time systems. Tech. Rep. YCS-286, Department of Computer Science, University of York, May 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "Fersman, E., and Yi, W. A generic approach to schedulability analysis of real-time tasks. Nordic J. of Computing 11, 2 (2004), 129–147.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Fersman, E., and Yi, W. A generic approach to schedulability analysis of real-time tasks. Nordic J. of Computing 11, 2 (2004), 129–147."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Halbwachs, N. Synchronous Programming of Reactive Systems. Kluwer, 1992.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Halbwachs, N. Synchronous Programming of Reactive Systems. Kluwer, 1992."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "Harbour, M., Klein, M., Obenza, R., Pollak, B., and Ralya, T. A Practitioner’s Handbook for Real-Time Analysis: Guide to Rate-Monotonic Analysis for Real-Time Systems. Kluwer, 1993.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Harbour, M., Klein, M., Obenza, R., Pollak, B., and Ralya, T. A Practitioner’s Handbook for Real-Time Analysis: Guide to Rate-Monotonic Analysis for Real-Time Systems. Kluwer, 1993."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "Huang, H., Pillai, P., and Shin, K. Improving wait-free algorithms for interprocess communication in embedded real-time systems. In USENIX’02 (2002).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Huang, H., Pillai, P., and Shin, K. Improving wait-free algorithms for interprocess communication in embedded real-time systems. In USENIX’02 (2002)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Lee, E., and Messerschmitt, D. Synchronous data ﬂow. Proceedings of the IEEE 75, 9 (1987), 1235–1245.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lee, E., and Messerschmitt, D. Synchronous data ﬂow. Proceedings of the IEEE 75, 9 (1987), 1235–1245."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1987,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "Liu, C., and Layland, J. Scheduling algorithms for multiprogramming in a hard real-time environment. Journal of the ACM 20, 1 (Jan. 1973), 46–61.",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Liu, C., and Layland, J. Scheduling algorithms for multiprogramming in a hard real-time environment. Journal of the ACM 20, 1 (Jan. 1973), 46–61."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "arxivId": "",
+                "title": "Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment",
+                "authors": [
+                  "C. L. Liu",
+                  "James W. Layland"
+                ],
+                "year": 1973,
+                "venue": "Journal of the ACM",
+                "type": "article",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "Murthy, P. K., and Bhattacharyya, S. S. Buﬀer merging — a powerful technique for reducing memory requirements of synchronous dataﬂow speciﬁcations. ACM Transactions on Design Automation of Electronic Systems 9, 2 (April 2004), 212–237.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Murthy, P. K., and Bhattacharyya, S. S. Buﬀer merging — a powerful technique for reducing memory requirements of synchronous dataﬂow speciﬁcations. ACM Transactions on Design Automation of Electronic Systems 9, 2 (April 2004), 212–237."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "Natale, M. D. Optimizing the multitask implementation of multirate Simulink models. In 12th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS’06) (2006). To appear.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Natale, M. D. Optimizing the multitask implementation of multirate Simulink models. In 12th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS’06) (2006). To appear."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "Scaife, N., and Caspi, P. Integrating model-based design and preemptive scheduling in mixed timeand event-triggered systems. In Euromicro conference on Real-Time Systems (ECRTS’04) (2004).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Scaife, N., and Caspi, P. Integrating model-based design and preemptive scheduling in mixed timeand event-triggered systems. In Euromicro conference on Real-Time Systems (ECRTS’04) (2004)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "Sha, L., Rajkumar, R., and Lehoczky, J. Priority inheritance protocols: An approach to real-time synchronization. IEEE Trans. Computers (Sept. 1990).",
+            "doi": "10.1109/12.57058",
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Sha, L., Rajkumar, R., and Lehoczky, J. Priority inheritance protocols: An approach to real-time synchronization. IEEE Trans. Computers (Sept. 1990)."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/12.57058",
+                "doi": "10.1109/12.57058",
+                "arxivId": "",
+                "title": "Priority Inheritance Protocols: An Approach to Real-Time Synchronization",
+                "authors": [
+                  "Lui Sha",
+                  "Ragunathan Rajkumar",
+                  "John P. Lehoczky"
+                ],
+                "year": 1990,
+                "venue": "IEEE Transactions on Computers",
+                "type": "article",
+                "url": "https://www.math.unipd.it/ tullio/RTS/2009/SRL-1990.pdf"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "Stankovic, J., Spuri, M., Ramamritham, K., and Buttazzo, G. Deadline Scheduling For Real-Time Systems: EDF and Related Algorithms. Kluwer Academic Publishers, 1998.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Stankovic, J., Spuri, M., Ramamritham, K., and Buttazzo, G. Deadline Scheduling For Real-Time Systems: EDF and Related Algorithms. Kluwer Academic Publishers, 1998."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "Tripakis, S., Sofronis, C., Scaife, N., and Caspi, P. Semantics-preserving and memory-eﬃcient implementation of inter-task communication on static-priority or EDF schedulers. In 5th ACM International Conference on Embedded Software (EMSOFT’05) (2005), pp. 353 – 360. APPENDIX A. PROOF OF CORRECTNESS OF THE DYNAMIC BUFFERING PROTOCOL What we want to prove is semantical preservation, that is, that for any possible arrival pattern and values written by the writer, the values read by the readers in the ideal semantics are equal to the values read by the readers in the implementation, assuming DBP is used. More formally, consider a reader τi and let ti be the time when an arbitrary instance of τi is released. We denote this instance by τ ti i . Let t′ i ≥ti be the time when τ ti i reads. Let τw be the writer task. For the moment, let us assume that τw is released at least twice before time ti. We relax this assumption later in this section. Let t ≤ti be the last time before ti that an instance of τw was released. We denote this instance by τ t w. Let te > t be the time that τ t w produces its output and ﬁnishes. Let y(t) be the output of τ t w. Let t′ < t be the last time before t that an instance of the writer τw was released. This instance is denoted τ t′ w . It ﬁnishes execution at time t′ e > t′. Let y(t′) be the output of τ t′ w . Figure 11 illustrates the notation deﬁned above. Notice that the order of events shown in the ﬁgure is just one of the possible orders. rt′ rm rt w i w τ t′ τ m τ t w writes i reads w writes t′ t′ t′ ti te t e i Figure 11: Illustration used in the proof of DBP. A.1 Lower-priority reader without unit-delay Suppose, as a ﬁrst case, that the reader τi has a lower priority than the writer τw and we have τw →τi. Let x(ti) be the value read by τ ti i . The ideal semantics states that x(ti) = y(t). We want to show that this equality holds in the implementation as well. Let us ﬁrst handle the case where the writer is never released before time ti. In this case, y(t) is equal to the default output of τw. Also, when τ ti i is released, R[i] is set to 1, which is the initial value of current (Figure 3). R[i] is not modiﬁed in the interval [ti, t′ i]. Thus, at time t′ i, τi reads the value stored in buﬀer B[1]. This is the default output of τw, since no buﬀer has been written by the writer yet. Let us now turn to the case where the writer is released at t ≤ti. Recall that the writer chooses upon release a “free” position in the buﬀer array where it will write to (Figure 3). Such a free position always exists by the pigeon-hole principle, as already mentioned. Let jt be the position that τ t w chooses. Let Rt, pt and ct be the values of R, previous and current at time t, right after the execution of the assignments previous := current and current := .... Then, by deﬁnition of DBP, the following hold: pt̸ = jt and ∀i ∈[1..n].Rt[i]̸ = jt and ct = jt. w ﬁnishes writing: let Bte be the value of B after this write operation.8 Then, since current te ≥t is the time when τ t 8Notice that in Figure 11 we have te < ti but this need not be the case. We could also have te > ti. 32 is not modiﬁed between t and te and ct = jt (this is because current can only be changed by a newer release of the same writer), we also have: Bte[jt] = y(t). Now consider the reader τ ti i . Again, current is not modiﬁed between t and ti, thus, we have: Rti[i] = ct = jt. τ ti i reads the value Bt′ i[Rt′ i[i]] = Bt′ i[Rti[i]] = Bt′ i[jt]. This is because R[i] is not modiﬁed between ti and t′ i. To show that τ ti i read the correct value y(t), we must show that Bt′ i[jt] = Bte[jt], that is, that the position jt is not over-written between te and t′ i. This is because only the writer can write into B[jt] and in order to do so it must choose jt as a free position. Since the writer does not arrive in the interval [te, ti], it suﬃces to show that free(jt) is false in the interval [ti, t′ i]. This is because R[i] equals jt in all this interval. A.2 Lower-priority reader with unit-delay Suppose, next, that the reader τi has a lower priority than the writer τw and we have a link with a unit-delay: τw −1 →τi. Again, let x(ti) be the value read by τ ti i . The ideal semantics states that x(ti) = y(t′). We want to show that this equality holds in the implementation as well. Let us ﬁrst handle the case where the writer is released not more than once before time ti. In this case, y(t′) is equal to the default output of τw. Also, when τ ti i is released, R[i] is set to 1, which is the value of previous at this point. Indeed, either the writer has never been released yet and previous is equal to its initial value 1, or the writer has been released once and previous is set to the initial value of current, which is also 1. R[i] is not modiﬁed in the interval [ti, t′ i]. Thus, at time t′ i, τi reads the value stored in buﬀer B[1]. If the writer has not been released before ti then B[1] holds the default output of τw. If the writer has been released once before ti then it has not written to B[1]: to do so, it must choose 1 as a free position to assign to current, however, 1 is not free because previous=1. Let us now turn to the case where the writer is released twice before ti. Upon arrival of the writer at time t′, a free position in the buﬀer array is chosen to write to: let this position be jt′. Let also Rt′, pt′ and ct′ be the values of R, previous and current at time t′, right after the execution of the assignments to previous and current. Then, by deﬁnition of DBP, the following hold: pt′̸ = jt′ and ∀i ∈[1..n].Rt′[i]̸ = jt′ and ct′ = jt′. e ≥t′ is the time when τ t′ w ﬁnishes writing: let Bt′ e be the value of B after this write operation. Then, since current is not modiﬁed between t′ and t′ t′ e and ct′ = jt′, we also have: Bt′ e[jt′] = y(t′). On the next arrival of the writer at time t, new assignments will be made to the pointers previous and current. Let jt be the new free position chosen. Let Rt, pt and ct be the values of R, previous and current at time t, right after the assignments to previous and current. Then, the following hold: pt = ct′ and pt̸ = jt and ∀i ∈[1..n].Rt[i]̸ = jt and ct = jt When the reader arrives at time ti, R[i] is set to previous. previous is not modiﬁed between t and ti, thus, the value of R[i] at time ti is equal to pt: Rti[i] = pt = ct′ = jt′. i. Thus, τ ti R[i] is not modiﬁed between ti and t′ i reads the value Bt′ i[Rt′ i[i]] = Bt′ i[Rti[i]] = Bt′ i[jt′]. To show that τ ti i reads the correct value y(t′), we must show that Bt′ i[jt′] = Bt′ e[jt′], that is, that the position jt′ is not over-written between t′ e and t′ i. This is because only the writer can write into B[jt′] and in order to do so it must choose jt′ as a free position. Since the writer does not arrive in the interval [t′ e, t], it suﬃces to show that free(jt′) is false in the interval [t, t′ i]. In the interval [t, ti], free(jt′) is false because previous equals jt′. In the interval [ti, t′ i], free(jt′) is false because R[i] equals jt′. A.3 Higher-priority reader (with unit-delay) Now consider the case where τ ti i is a higher-priority task. Thus, the link is τw −1 →τi. Let again x(ti) be the value read by τ ti i . We must show that x(ti) = y(t′). The case where the writer is released not more than once before time ti is identical to the corresponding case in Section A.2. We thus omit it and turn directly to the case where the writer is released twice before ti. Let ct′ be the value of current that is chosen at time t′. Since current is not modiﬁed between t′ and t, we have: pt = ct′. The value y(t′) is written in buﬀer position ct′ and this is not modiﬁed until t, when the writer is released next. At this point, pt̸ = jt, or ct′̸ = jt, thus, this position is not over-written by the instance τ t w. previous is not modiﬁed between t and ti, thus, we have: P ti[i] = pt = ct′. i, τ ti P[i] is not modiﬁed between ti and t′ i, thus, at time t′ i reads the value Bt′ i[P t′ i[i]] = Bt′ i[P ti[i]] = Bt′ i[pt] = Bt′ i[ct′]. To show that τ ti i reads the correct value y(t′), we must show that the position ct′ is not over-written by any instance of the writer until time t′ i. This is true because in order for the writer to write in position ct′, it must choose it as a free position. Note that no instance of the writer is released between t and ti, by deﬁnition of t and ti. Also, if an instance of the writer is released between ti and t′ i, this instance cannot execute before τ ti i ﬁnishes, because it has lower priority than τ ti i . 33",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tripakis, S., Sofronis, C., Scaife, N., and Caspi, P. Semantics-preserving and memory-eﬃcient implementation of inter-task communication on static-priority or EDF schedulers. In 5th ACM International Conference on Embedded Software (EMSOFT’05) (2005), pp. 353 – 360. APPENDIX A. PROOF OF CORRECTNESS OF THE DYNAMIC BUFFERING PROTOCOL What we want to prove is semantical preservation, that is, that for any possible arrival pattern and values written by the writer, the values read by the readers in the ideal semantics are equal to the values read by the readers in the implementation, assuming DBP is used. More formally, consider a reader τi and let ti be the time when an arbitrary instance of τi is released. We denote this instance by τ ti i . Let t′ i ≥ti be the time when τ ti i reads. Let τw be the writer task. For the moment, let us assume that τw is released at least twice before time ti. We relax this assumption later in this section. Let t ≤ti be the last time before ti that an instance of τw was released. We denote this instance by τ t w. Let te > t be the time that τ t w produces its output and ﬁnishes. Let y(t) be the output of τ t w. Let t′ < t be the last time before t that an instance of the writer τw was released. This instance is denoted τ t′ w . It ﬁnishes execution at time t′ e > t′. Let y(t′) be the output of τ t′ w . Figure 11 illustrates the notation deﬁned above. Notice that the order of events shown in the ﬁgure is just one of the possible orders. rt′ rm rt w i w τ t′ τ m τ t w writes i reads w writes t′ t′ t′ ti te t e i Figure 11: Illustration used in the proof of DBP. A.1 Lower-priority reader without unit-delay Suppose, as a ﬁrst case, that the reader τi has a lower priority than the writer τw and we have τw →τi. Let x(ti) be the value read by τ ti i . The ideal semantics states that x(ti) = y(t). We want to show that this equality holds in the implementation as well. Let us ﬁrst handle the case where the writer is never released before time ti. In this case, y(t) is equal to the default output of τw. Also, when τ ti i is released, R[i] is set to 1, which is the initial value of current (Figure 3). R[i] is not modiﬁed in the interval [ti, t′ i]. Thus, at time t′ i, τi reads the value stored in buﬀer B[1]. This is the default output of τw, since no buﬀer has been written by the writer yet. Let us now turn to the case where the writer is released at t ≤ti. Recall that the writer chooses upon release a “free” position in the buﬀer array where it will write to (Figure 3). Such a free position always exists by the pigeon-hole principle, as already mentioned. Let jt be the position that τ t w chooses. Let Rt, pt and ct be the values of R, previous and current at time t, right after the execution of the assignments previous := current and current := .... Then, by deﬁnition of DBP, the following hold: pt̸ = jt and ∀i ∈[1..n].Rt[i]̸ = jt and ct = jt. w ﬁnishes writing: let Bte be the value of B after this write operation.8 Then, since current te ≥t is the time when τ t 8Notice that in Figure 11 we have te < ti but this need not be the case. We could also have te > ti. 32 is not modiﬁed between t and te and ct = jt (this is because current can only be changed by a newer release of the same writer), we also have: Bte[jt] = y(t). Now consider the reader τ ti i . Again, current is not modiﬁed between t and ti, thus, we have: Rti[i] = ct = jt. τ ti i reads the value Bt′ i[Rt′ i[i]] = Bt′ i[Rti[i]] = Bt′ i[jt]. This is because R[i] is not modiﬁed between ti and t′ i. To show that τ ti i read the correct value y(t), we must show that Bt′ i[jt] = Bte[jt], that is, that the position jt is not over-written between te and t′ i. This is because only the writer can write into B[jt] and in order to do so it must choose jt as a free position. Since the writer does not arrive in the interval [te, ti], it suﬃces to show that free(jt) is false in the interval [ti, t′ i]. This is because R[i] equals jt in all this interval. A.2 Lower-priority reader with unit-delay Suppose, next, that the reader τi has a lower priority than the writer τw and we have a link with a unit-delay: τw −1 →τi. Again, let x(ti) be the value read by τ ti i . The ideal semantics states that x(ti) = y(t′). We want to show that this equality holds in the implementation as well. Let us ﬁrst handle the case where the writer is released not more than once before time ti. In this case, y(t′) is equal to the default output of τw. Also, when τ ti i is released, R[i] is set to 1, which is the value of previous at this point. Indeed, either the writer has never been released yet and previous is equal to its initial value 1, or the writer has been released once and previous is set to the initial value of current, which is also 1. R[i] is not modiﬁed in the interval [ti, t′ i]. Thus, at time t′ i, τi reads the value stored in buﬀer B[1]. If the writer has not been released before ti then B[1] holds the default output of τw. If the writer has been released once before ti then it has not written to B[1]: to do so, it must choose 1 as a free position to assign to current, however, 1 is not free because previous=1. Let us now turn to the case where the writer is released twice before ti. Upon arrival of the writer at time t′, a free position in the buﬀer array is chosen to write to: let this position be jt′. Let also Rt′, pt′ and ct′ be the values of R, previous and current at time t′, right after the execution of the assignments to previous and current. Then, by deﬁnition of DBP, the following hold: pt′̸ = jt′ and ∀i ∈[1..n].Rt′[i]̸ = jt′ and ct′ = jt′. e ≥t′ is the time when τ t′ w ﬁnishes writing: let Bt′ e be the value of B after this write operation. Then, since current is not modiﬁed between t′ and t′ t′ e and ct′ = jt′, we also have: Bt′ e[jt′] = y(t′). On the next arrival of the writer at time t, new assignments will be made to the pointers previous and current. Let jt be the new free position chosen. Let Rt, pt and ct be the values of R, previous and current at time t, right after the assignments to previous and current. Then, the following hold: pt = ct′ and pt̸ = jt and ∀i ∈[1..n].Rt[i]̸ = jt and ct = jt When the reader arrives at time ti, R[i] is set to previous. previous is not modiﬁed between t and ti, thus, the value of R[i] at time ti is equal to pt: Rti[i] = pt = ct′ = jt′. i. Thus, τ ti R[i] is not modiﬁed between ti and t′ i reads the value Bt′ i[Rt′ i[i]] = Bt′ i[Rti[i]] = Bt′ i[jt′]. To show that τ ti i reads the correct value y(t′), we must show that Bt′ i[jt′] = Bt′ e[jt′], that is, that the position jt′ is not over-written between t′ e and t′ i. This is because only the writer can write into B[jt′] and in order to do so it must choose jt′ as a free position. Since the writer does not arrive in the interval [t′ e, t], it suﬃces to show that free(jt′) is false in the interval [t, t′ i]. In the interval [t, ti], free(jt′) is false because previous equals jt′. In the interval [ti, t′ i], free(jt′) is false because R[i] equals jt′. A.3 Higher-priority reader (with unit-delay) Now consider the case where τ ti i is a higher-priority task. Thus, the link is τw −1 →τi. Let again x(ti) be the value read by τ ti i . We must show that x(ti) = y(t′). The case where the writer is released not more than once before time ti is identical to the corresponding case in Section A.2. We thus omit it and turn directly to the case where the writer is released twice before ti. Let ct′ be the value of current that is chosen at time t′. Since current is not modiﬁed between t′ and t, we have: pt = ct′. The value y(t′) is written in buﬀer position ct′ and this is not modiﬁed until t, when the writer is released next. At this point, pt̸ = jt, or ct′̸ = jt, thus, this position is not over-written by the instance τ t w. previous is not modiﬁed between t and ti, thus, we have: P ti[i] = pt = ct′. i, τ ti P[i] is not modiﬁed between ti and t′ i, thus, at time t′ i reads the value Bt′ i[P t′ i[i]] = Bt′ i[P ti[i]] = Bt′ i[pt] = Bt′ i[ct′]. To show that τ ti i reads the correct value y(t′), we must show that the position ct′ is not over-written by any instance of the writer until time t′ i. This is true because in order for the writer to write in position ct′, it must choose it as a free position. Note that no instance of the writer is released between t and ti, by deﬁnition of t and ti. Also, if an instance of the writer is released between ti and t′ i, this instance cannot execute before τ ti i ﬁnishes, because it has lower priority than τ ti i . 33"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1176887.1176892:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/1176887.1176892",
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 3,
+          "extractedReferenceCount": 19,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/1176887.1176892",
+          "crossrefReferenceCount": 0
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/1176887.1176892->doi:10.1007/978-1-4613-1389-2@papers-LET-Sofronis2006.pdf",
+      "source": "doi:10.1145/1176887.1176892",
+      "target": "doi:10.1007/978-1-4613-1389-2",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Sofronis2006.pdf"
+    },
+    {
+      "id": "doi:10.1145/1176887.1176892->doi:10.1145/321738.321743@papers-LET-Sofronis2006.pdf",
+      "source": "doi:10.1145/1176887.1176892",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Sofronis2006.pdf"
+    },
+    {
+      "id": "doi:10.1145/1176887.1176892->doi:10.1109/12.57058@papers-LET-Sofronis2006.pdf",
+      "source": "doi:10.1145/1176887.1176892",
+      "target": "doi:10.1109/12.57058",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Sofronis2006.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Sofronis2006",
+      "paperId": "doi:10.1145/1176887.1176892",
+      "metadata": {
+        "fileName": "Sofronis2006.pdf",
+        "sourcePath": "papers/LET/Sofronis2006.pdf"
+      }
+    }
+  ]
+}

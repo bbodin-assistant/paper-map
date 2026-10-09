@@ -1,0 +1,596 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.632807+00:00",
+  "papers": [
+    {
+      "key": "Pop2003b",
+      "paper": {
+        "id": "title:design optimization of mixed time event triggered distributed embedded systems:2003",
+        "citationKey": "Pop2003b",
+        "title": "Design Optimization of Mixed Time/Event-Triggered Distributed Embedded Systems",
+        "authors": [
+          "Traian Pop",
+          "Petru Eles",
+          "Zebo Peng"
+        ],
+        "year": 2003,
+        "venue": "CODES+ISSS",
+        "type": "misc",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www.ida.liu.se/labs/eslab/publications/pap/db/codes03.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Traian Pop and Petru Eles and Zebo Peng",
+          "title": "{Design Optimization of Mixed Time/Event-Triggered Distributed Embedded Systems}",
+          "year": "2003",
+          "howpublished": "CODES+ISSS",
+          "url": "https://www.ida.liu.se/labs/eslab/publications/pap/db/codes03.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.291431+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "14",
+            "rawText": "(line 03). This function is based on a critical path metric and it also takes into consideration the delay introduced by message passing considering the particular communication protocol, as well as the nature of the messages (ST or DYN). Once a task τij has been selected, its mapping and domain will be decided in a greedy fashion. If τij∈ΨM (the task mapping is not ﬁxed), it will be successively mapped to each node (lines 06-15) and for each alternative, the schedulability analysis (Section 3,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "(line 03). This function is based on a critical path metric and it also takes into consideration the delay introduced by message passing considering the particular communication protocol, as well as the nature of the messages (ST or DYN). Once a task τij has been selected, its mapping and domain will be decided in a greedy fashion. If τij∈ΨM (the task mapping is not ﬁxed), it will be successively mapped to each node (lines 06-15) and for each alternative, the schedulability analysis (Section 3,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "13",
+            "rawText": ") returns the cost DSch, which captures the degree of schedulability of the produced conﬁguration. If the domain, ET or TT, is also to be decided (τij∈ΨP), both alternatives are evaluated (line 08). This is performed using the function partition (lines 25-29). Finally, that node and domain are selected for τij which produce the smallest value for DSch. If only the domain of τij is to be decided, but the mapping is ﬁxed, the best of the two alternatives is selected (line 19). It should be mentioned that a mapping or 01 while (ΨP∪ΨM ≠ ∅and BestCost > 0) do 02 update priority function PF 03 select task τij∈ΨP∪ΨM with highest PF 04 BestCost = ∞ 05 if τij∈ΨM then -- task τij is not mapped 06 for (p = 1 to NrNodes)do 07 map τij on Nodep and adjust bus access cycle 08 if τij∈ΨP then Cost,d = partition(τij) -- τij is not partitioned 09 else Cost = DSch; d = domain of τij 10 endif 11 if BestCost > Cost then 12 BestCost = Cost; BestDomain = d; 13 BestNode = p; BestCycle = BusCycle; 14 endif 15 endfor 16 else 17 BestNode = Node on which τij is mapped 18 BestCycle = BusCycle; 19 BestCost, BestDomain = partition(τij); 20 endif 21 τij.node = BestNode; BusCycle=BestCycle; 22 set domain(Γi) to BestDomain 23 ΨP=ΨP \\ {τij}; ΨM = ΨM \\ {τij} 24 end while 25 function partition(τij) 26 τij.domain = ET; Cost1 = DSch; d1 = ET; 27 τij.domain = TT; Cost2 = DSch; d2 = ET; 28 return min(Cost1, Cost2) and associated di 29 end partition Figure 7. Mapping and Partitioning algorithm partitioning alternative is considered only if, with the resulted conﬁguration, the TT domain is still schedulable (this aspect is not captured in Figure 7). Whenever the mapping of a task is modified, the bus cycle has to be adjusted so that it can ensure the minimum requirements for transmitting the messages (for example, in line 07). Such an adjustment of the bus access cycle is illustrated in Figure 8, where 4 TT tasks are mapped on 3 nodes (N1, N2 and N3). The number at the side of each message represents its length. Tasks mapped on different nodes communicate through ST messages and an ST slot should be able to accommodate the longest message transmitted by the associated node. The figure shows how the lengths of the slots associated with N1 and N2 are modified after a task has been remapped. In one case, task τ2 is moved from N2 to N1and therefore, the message m1,2 will disappear (τ1 and τ2 are both mapped on N1), while message m2,4 will be transmitted in Slot1 instead of Slot2. In the second case, τ3 is moved from N2 to N1, which means that m1,3 disappears, while m3,4 is transmitted in Slot1. 5.3 The third step: Optimization of the bus cycle It may be the case that even after the mapping and partitioning step, some ET activities are still not schedulable. In the third step (lines 10-12, Figure 5), our algorithm tries to remedy this problem by changing the parameters of the bus cycle, like ST slot lengths and order, as well as the number, length and order of the ST and DYN phases. The goal is to generate a bus access scheme which is adaptN1 N2 N3 2 1 τ1 τ1 τ2,τ3 τ4 τ3 τ2 Initial slot lengths: 3 4 Slot1 = max (2, 1) = 2 Slot2 = max (4, 3) = 4 Remap τ2 from N2 to N1 Slot1 = max (1, 4) = 4 Slot2 = max (3) = 3 τ4 Remap τ3 from N2 to N1 Slot1 = max (2, 3) = 3 Slot2 = max (4) = 4 Figure 8. Adjustment of the Bus Access Cycle ed to the particular task conﬁguration. The heuristic is illustrated in Figure 9. The algorithm iteratively looks for the right place and size of Sloti used for transmission of ST messages from Nodei (outermost two loops). Sloti is swapped with all the slots of higher order (line 03), and all alternative lengths (lines 04-05) of Sloti larger than its minimal allowed length (which is equal to the length of the largest ST message generated by a task mapped on Nodei) are considered. For any particular length and position of Sloti, alternative lengths of the adjacent ET phase Phi are considered (innermost loop). For each alternative, the schedulability analysis evaluates cost DSch, and the solution with the lowest cost is selected. If DSch ≤ 0, the system is schedulable and the heuristic is stopped.. It is important to notice that the possible length π of an ET phase (line 6) includes also the value 0. Therefore, in the ﬁnal bus cycle, it is not needed that each static slot is followed by a dynamic phase (see also Figure 1). Dynamic phases introduced as result of the previous steps can be eliminated by setting the length to π=0 (such a transformation is illustrated in Figure 4.c). It should be also mentioned that enlarging a slot/phase can increase the schedulability by allowing several ST/DYN messages to be transmitted quickly immediately one after another. At the same time, the following slots are delayed, which means that ST messages transmitted by nodes assigned to upcoming slots will arrive later. Therefore, the optimal schedulability will be obtained for slot and phase lengths which are not tending towards the maximum. The number of alternative slot and phase lengths to be considered by the heuristic in Figure 9 is limited by the following two factors: 1. The maximum length of a static slot or dynamic phase is ﬁxed by the technology (e.g. 32 or 64 bits). 2. Only frames consisting of entire messages can be transmitted, which excludes several alternatives. 6. Experimental Results In order to evaluate the proposed heuristic, we have generated a large set of applications with different characteristics. All experiments were run on an AMD Athlon 850 MHz PC. For our ﬁrst experiments we considered an architecture consisting of 6 nodes. We have generated 4 sets of applications composed of 60, 75, 90, and 120 tasks respectively. Each set consists of 40 applications. The number of unmapped tasks was between 10 and the total number of tasks in the application. 10 task graphs are considered to be unassigned to any of the two domains (ET and TT). The average load on the processors is 60%. Figure 10 shows the percentage of schedulable applications obtained after the successive steps of our heuristic. By straight forward conﬁguration we mean the mapping, partitioning and bus cycle generated at the start of step 1 (line 01 in Figure 5).This is a conﬁguration which, in principle, could be elaborated by a careful designer without the aid of optimization tools like the one proposed in the paper. Out of the total number of applications 01 for i = 1 to NrNodes 02 for j = i to NrNodes 03 swap Sloti with Slotj 04 for all slot lengths λ > min_len(Sloti) 05 len(Sloti) = λ 06 for all DYN phase lengths π do 07 len(Phi) = π 08 if DSch ≤ 0 then stop endif 09 keep solution with smallest DSch 10 end for 11 end for 12 swap back Sloti and Slotj 13 end for 14 bind best position and length of Sloti 15 bind length of Phi 16 end for Figure 9. Bus Access Optimization schedulable solutions 100% With Straight-forward conﬁguration Percent of 75% 50% After Step 1 After Step 2 After Step 3 25% No. Tasks 60 75 90 120 Figure 10. Percentage of Schedulable Applications consisting of 60 tasks, for example, only 10% were schedulable with the straight-forward conﬁguration and 90% continued the optimization process. 9% of the total number of tasks have been found schedulable with the conﬁguration generated by step 1. As expected, the mapping, partitioning and bus cycle adjustment performed in step 2 are leading to a huge improvement, adding 61% of the total number of applications to the group of schedulable ones. An additional 4% of the total number of applications is found schedulable after performing the bus optimization in step 3. A similar trend can be followed in the experiments with 75, 90 and 120 tasks. It is easy to observe that by performing the proposed optimizations, huge improvements over the straight-forward conﬁguration could be produced. An interesting question is to what extent the partitioning of tasks into the ET and TT domains is contributing to the results illustrated in Figure 10. Or, ar these results mostly due to the optimized mapping? The same question can also be put relative to the bus cycle optimization. In order to answer these questions, we considered a second set of applications consisting of 60, 80 and 100 tasks grouped into 12, 15, 18 or 20 task graphs and mapped on 4 or 6 nodes. We have run our heuristic for each of these applications considering four cases. First, with a subset of tasks that have to be partitioned but no tasks to be mapped (|ΨM| = 0). Second, with the same subset of tasks open for mapping but not for partitioning (|ΨP| = 0). The third case does not allow any bus access optimization, so we switched off the optimizations in lines 5 and 11 in Figure 5 (however, we keep the bus cycle adjustment which is needed in Step 2, line 7 in Figure 7). The fourth case represents the reference, the complete heuristic. The results are presented in Figure 11, which shows the percentage of schedulable applications (relative to the total number of applications) that have been produced by each optimization step. For example, after step 2, 45% additional applications were schedulable if we only allow to perform re-mapping (|ΨP| = 0), as opposed to 74% in the case when both optimizations are performed. The same number is 40% if we only allow to perform re-partitioning (|ΨM| = 0). The percentage of unschedulable tasks after the three steps is 34% when |ΨP| = 0, 44% for |ΨM| = 0, and 24% when no bus optimization was performed, as compared to 7% in the case of the complete heuristic. The conclusions which we can draw are the following: 1. An efﬁcient partitioning into the ET and TT domains is contributing essentially to the overall optimization, to an extent comparable to the mapping. With Straight-forward schedulable solutions 100% conﬁguration After Step 1 75% Percent of After Step 2 50% After Step 3 25% Complete No Bus Opt. |ΨM|=0 |Ψp|=0 Figure 11. Partial Optimization 1800 Step 2 succeeds 120 tasks, 24 task graphs 6 nodes (60% avg. utilization) 10 unmapped tasks Step 2 fails 1600 1000 1200 1400 Time(s) 200 400 600 800 5 10 15 20 No. of Unpartitioned Task Graphs Figure 12. Runtime of step 2 function of |ΨP| 2. When applied together, the three techniques provide much better results than the ones obtained when any of the techniques is eliminated. Concerning the runtime needed for the optimization process, we have analyzed each of the three steps separately. For the examples leading to the results in Figure 10, the average run time for step 1 was 11.7s (60 tasks), 40.1s (75 tasks), 73.2s (90 tasks), and 150s (120 tasks). The execution time for step 2 is presented in more detail in Figure 12 and Figure 13. Figure 12 illustrates the time needed for step 2 as a function of the total number of task graphs to be partitioned (the characteristics of the applications and the number of nodes are shown in the ﬁgure). The upper curve illustrates the average execution times for those applications which are running through step 2 without reaching a system conﬁguration which makes them schedulable. This curve can be considered as an upper bound for the execution time in step 2. The second curve in Figure 12 gives the average execution times of those applications that have been found schedulable during step 2. In Figure 13, we show, in a similar way, the average execution times as a function of the number of unmapped tasks. The execution times needed for the third optimization step are given in Figure 14. As this step is concentrating only on the communication aspect, the average execution time is given as a function of the number of nodes. Finally, we considered a real-life example from the automotive area, implementing a vehicle cruise controller and a control application related to the Anti Blocking System (ABS) on an architecture consisting of 5 nodes. The cruise controller consists of 42 tasks organized in 11 task graphs. One of these task graphs is ﬁxed into the TT domain, and the other 10 are unpartitioned. 10 out of the 42 tasks are unmapped. The ABS system consists of 35 tasks already mapped over the 5 nodes and assigned to the ET domain. Running our optimization heuristic, step 1 was able to generate a correct static schedule for the TT domain, but without producing a globally schedulable system. Step 2 manages to improve the degree of schedulability of the system (function DSch) by two orders of magnitude without, however, producing a schedulable system. A correct 60 tasks, 15 task graphs 6 nodes (60%avg.utilization) 10 unpartitioned task graphs 700 600 Step 2 fails Step 2 succeeds 500 400 Time (s) 300 200 100 10 20 30 40 50 No. of Unmapped Tasks Figure 13. Runtime of step 2 function of |ΨM| 40 tasks 60%avg. processor utilization 200 150 Step 3 succeeded Step 3 failed Time(s) 100 50 0 2 4 6 8 No. of Nodes Figure 14. Runtime of step 3 implementation has been produced after the bus optimization in step 3. It is interesting to mention that for the ﬁnal schedulable solution, out of the 10 unpartitioned task graphs, 2 were assigned to the ET and 8 to the TT partition. The run times for the three optimization steps were 5.3s, 708s and 164s respectively. 7. Conclusions Distributed embedded systems based on mixed static/dynamic communication protocols are becoming the new standard for automotive applications. Such systems typically run applications consisting of both ET and TT tasks. We have identified a new class of system optimization issues typical for the heterogeneous systems considered in the paper: partitioning of the system functionality into TT and ET domains and the optimization of the bus access scheme. Both problems were considered in the context of a heuristic which performs the mapping and scheduling of the system functionality. We have shown that the quality of the system implementation can be signiﬁcantly improved by the proposed optimization heuristics. 8. References",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ") returns the cost DSch, which captures the degree of schedulability of the produced conﬁguration. If the domain, ET or TT, is also to be decided (τij∈ΨP), both alternatives are evaluated (line 08). This is performed using the function partition (lines 25-29). Finally, that node and domain are selected for τij which produce the smallest value for DSch. If only the domain of τij is to be decided, but the mapping is ﬁxed, the best of the two alternatives is selected (line 19). It should be mentioned that a mapping or 01 while (ΨP∪ΨM ≠ ∅and BestCost > 0) do 02 update priority function PF 03 select task τij∈ΨP∪ΨM with highest PF 04 BestCost = ∞ 05 if τij∈ΨM then -- task τij is not mapped 06 for (p = 1 to NrNodes)do 07 map τij on Nodep and adjust bus access cycle 08 if τij∈ΨP then Cost,d = partition(τij) -- τij is not partitioned 09 else Cost = DSch; d = domain of τij 10 endif 11 if BestCost > Cost then 12 BestCost = Cost; BestDomain = d; 13 BestNode = p; BestCycle = BusCycle; 14 endif 15 endfor 16 else 17 BestNode = Node on which τij is mapped 18 BestCycle = BusCycle; 19 BestCost, BestDomain = partition(τij); 20 endif 21 τij.node = BestNode; BusCycle=BestCycle; 22 set domain(Γi) to BestDomain 23 ΨP=ΨP \\ {τij}; ΨM = ΨM \\ {τij} 24 end while 25 function partition(τij) 26 τij.domain = ET; Cost1 = DSch; d1 = ET; 27 τij.domain = TT; Cost2 = DSch; d2 = ET; 28 return min(Cost1, Cost2) and associated di 29 end partition Figure 7. Mapping and Partitioning algorithm partitioning alternative is considered only if, with the resulted conﬁguration, the TT domain is still schedulable (this aspect is not captured in Figure 7). Whenever the mapping of a task is modified, the bus cycle has to be adjusted so that it can ensure the minimum requirements for transmitting the messages (for example, in line 07). Such an adjustment of the bus access cycle is illustrated in Figure 8, where 4 TT tasks are mapped on 3 nodes (N1, N2 and N3). The number at the side of each message represents its length. Tasks mapped on different nodes communicate through ST messages and an ST slot should be able to accommodate the longest message transmitted by the associated node. The figure shows how the lengths of the slots associated with N1 and N2 are modified after a task has been remapped. In one case, task τ2 is moved from N2 to N1and therefore, the message m1,2 will disappear (τ1 and τ2 are both mapped on N1), while message m2,4 will be transmitted in Slot1 instead of Slot2. In the second case, τ3 is moved from N2 to N1, which means that m1,3 disappears, while m3,4 is transmitted in Slot1. 5.3 The third step: Optimization of the bus cycle It may be the case that even after the mapping and partitioning step, some ET activities are still not schedulable. In the third step (lines 10-12, Figure 5), our algorithm tries to remedy this problem by changing the parameters of the bus cycle, like ST slot lengths and order, as well as the number, length and order of the ST and DYN phases. The goal is to generate a bus access scheme which is adaptN1 N2 N3 2 1 τ1 τ1 τ2,τ3 τ4 τ3 τ2 Initial slot lengths: 3 4 Slot1 = max (2, 1) = 2 Slot2 = max (4, 3) = 4 Remap τ2 from N2 to N1 Slot1 = max (1, 4) = 4 Slot2 = max (3) = 3 τ4 Remap τ3 from N2 to N1 Slot1 = max (2, 3) = 3 Slot2 = max (4) = 4 Figure 8. Adjustment of the Bus Access Cycle ed to the particular task conﬁguration. The heuristic is illustrated in Figure 9. The algorithm iteratively looks for the right place and size of Sloti used for transmission of ST messages from Nodei (outermost two loops). Sloti is swapped with all the slots of higher order (line 03), and all alternative lengths (lines 04-05) of Sloti larger than its minimal allowed length (which is equal to the length of the largest ST message generated by a task mapped on Nodei) are considered. For any particular length and position of Sloti, alternative lengths of the adjacent ET phase Phi are considered (innermost loop). For each alternative, the schedulability analysis evaluates cost DSch, and the solution with the lowest cost is selected. If DSch ≤ 0, the system is schedulable and the heuristic is stopped.. It is important to notice that the possible length π of an ET phase (line 6) includes also the value 0. Therefore, in the ﬁnal bus cycle, it is not needed that each static slot is followed by a dynamic phase (see also Figure 1). Dynamic phases introduced as result of the previous steps can be eliminated by setting the length to π=0 (such a transformation is illustrated in Figure 4.c). It should be also mentioned that enlarging a slot/phase can increase the schedulability by allowing several ST/DYN messages to be transmitted quickly immediately one after another. At the same time, the following slots are delayed, which means that ST messages transmitted by nodes assigned to upcoming slots will arrive later. Therefore, the optimal schedulability will be obtained for slot and phase lengths which are not tending towards the maximum. The number of alternative slot and phase lengths to be considered by the heuristic in Figure 9 is limited by the following two factors: 1. The maximum length of a static slot or dynamic phase is ﬁxed by the technology (e.g. 32 or 64 bits). 2. Only frames consisting of entire messages can be transmitted, which excludes several alternatives. 6. Experimental Results In order to evaluate the proposed heuristic, we have generated a large set of applications with different characteristics. All experiments were run on an AMD Athlon 850 MHz PC. For our ﬁrst experiments we considered an architecture consisting of 6 nodes. We have generated 4 sets of applications composed of 60, 75, 90, and 120 tasks respectively. Each set consists of 40 applications. The number of unmapped tasks was between 10 and the total number of tasks in the application. 10 task graphs are considered to be unassigned to any of the two domains (ET and TT). The average load on the processors is 60%. Figure 10 shows the percentage of schedulable applications obtained after the successive steps of our heuristic. By straight forward conﬁguration we mean the mapping, partitioning and bus cycle generated at the start of step 1 (line 01 in Figure 5).This is a conﬁguration which, in principle, could be elaborated by a careful designer without the aid of optimization tools like the one proposed in the paper. Out of the total number of applications 01 for i = 1 to NrNodes 02 for j = i to NrNodes 03 swap Sloti with Slotj 04 for all slot lengths λ > min_len(Sloti) 05 len(Sloti) = λ 06 for all DYN phase lengths π do 07 len(Phi) = π 08 if DSch ≤ 0 then stop endif 09 keep solution with smallest DSch 10 end for 11 end for 12 swap back Sloti and Slotj 13 end for 14 bind best position and length of Sloti 15 bind length of Phi 16 end for Figure 9. Bus Access Optimization schedulable solutions 100% With Straight-forward conﬁguration Percent of 75% 50% After Step 1 After Step 2 After Step 3 25% No. Tasks 60 75 90 120 Figure 10. Percentage of Schedulable Applications consisting of 60 tasks, for example, only 10% were schedulable with the straight-forward conﬁguration and 90% continued the optimization process. 9% of the total number of tasks have been found schedulable with the conﬁguration generated by step 1. As expected, the mapping, partitioning and bus cycle adjustment performed in step 2 are leading to a huge improvement, adding 61% of the total number of applications to the group of schedulable ones. An additional 4% of the total number of applications is found schedulable after performing the bus optimization in step 3. A similar trend can be followed in the experiments with 75, 90 and 120 tasks. It is easy to observe that by performing the proposed optimizations, huge improvements over the straight-forward conﬁguration could be produced. An interesting question is to what extent the partitioning of tasks into the ET and TT domains is contributing to the results illustrated in Figure 10. Or, ar these results mostly due to the optimized mapping? The same question can also be put relative to the bus cycle optimization. In order to answer these questions, we considered a second set of applications consisting of 60, 80 and 100 tasks grouped into 12, 15, 18 or 20 task graphs and mapped on 4 or 6 nodes. We have run our heuristic for each of these applications considering four cases. First, with a subset of tasks that have to be partitioned but no tasks to be mapped (|ΨM| = 0). Second, with the same subset of tasks open for mapping but not for partitioning (|ΨP| = 0). The third case does not allow any bus access optimization, so we switched off the optimizations in lines 5 and 11 in Figure 5 (however, we keep the bus cycle adjustment which is needed in Step 2, line 7 in Figure 7). The fourth case represents the reference, the complete heuristic. The results are presented in Figure 11, which shows the percentage of schedulable applications (relative to the total number of applications) that have been produced by each optimization step. For example, after step 2, 45% additional applications were schedulable if we only allow to perform re-mapping (|ΨP| = 0), as opposed to 74% in the case when both optimizations are performed. The same number is 40% if we only allow to perform re-partitioning (|ΨM| = 0). The percentage of unschedulable tasks after the three steps is 34% when |ΨP| = 0, 44% for |ΨM| = 0, and 24% when no bus optimization was performed, as compared to 7% in the case of the complete heuristic. The conclusions which we can draw are the following: 1. An efﬁcient partitioning into the ET and TT domains is contributing essentially to the overall optimization, to an extent comparable to the mapping. With Straight-forward schedulable solutions 100% conﬁguration After Step 1 75% Percent of After Step 2 50% After Step 3 25% Complete No Bus Opt. |ΨM|=0 |Ψp|=0 Figure 11. Partial Optimization 1800 Step 2 succeeds 120 tasks, 24 task graphs 6 nodes (60% avg. utilization) 10 unmapped tasks Step 2 fails 1600 1000 1200 1400 Time(s) 200 400 600 800 5 10 15 20 No. of Unpartitioned Task Graphs Figure 12. Runtime of step 2 function of |ΨP| 2. When applied together, the three techniques provide much better results than the ones obtained when any of the techniques is eliminated. Concerning the runtime needed for the optimization process, we have analyzed each of the three steps separately. For the examples leading to the results in Figure 10, the average run time for step 1 was 11.7s (60 tasks), 40.1s (75 tasks), 73.2s (90 tasks), and 150s (120 tasks). The execution time for step 2 is presented in more detail in Figure 12 and Figure 13. Figure 12 illustrates the time needed for step 2 as a function of the total number of task graphs to be partitioned (the characteristics of the applications and the number of nodes are shown in the ﬁgure). The upper curve illustrates the average execution times for those applications which are running through step 2 without reaching a system conﬁguration which makes them schedulable. This curve can be considered as an upper bound for the execution time in step 2. The second curve in Figure 12 gives the average execution times of those applications that have been found schedulable during step 2. In Figure 13, we show, in a similar way, the average execution times as a function of the number of unmapped tasks. The execution times needed for the third optimization step are given in Figure 14. As this step is concentrating only on the communication aspect, the average execution time is given as a function of the number of nodes. Finally, we considered a real-life example from the automotive area, implementing a vehicle cruise controller and a control application related to the Anti Blocking System (ABS) on an architecture consisting of 5 nodes. The cruise controller consists of 42 tasks organized in 11 task graphs. One of these task graphs is ﬁxed into the TT domain, and the other 10 are unpartitioned. 10 out of the 42 tasks are unmapped. The ABS system consists of 35 tasks already mapped over the 5 nodes and assigned to the ET domain. Running our optimization heuristic, step 1 was able to generate a correct static schedule for the TT domain, but without producing a globally schedulable system. Step 2 manages to improve the degree of schedulability of the system (function DSch) by two orders of magnitude without, however, producing a schedulable system. A correct 60 tasks, 15 task graphs 6 nodes (60%avg.utilization) 10 unpartitioned task graphs 700 600 Step 2 fails Step 2 succeeds 500 400 Time (s) 300 200 100 10 20 30 40 50 No. of Unmapped Tasks Figure 13. Runtime of step 2 function of |ΨM| 40 tasks 60%avg. processor utilization 200 150 Step 3 succeeded Step 3 failed Time(s) 100 50 0 2 4 6 8 No. of Nodes Figure 14. Runtime of step 3 implementation has been produced after the bus optimization in step 3. It is interesting to mention that for the ﬁnal schedulable solution, out of the 10 unpartitioned task graphs, 2 were assigned to the ET and 8 to the TT partition. The run times for the three optimization steps were 5.3s, 708s and 164s respectively. 7. Conclusions Distributed embedded systems based on mixed static/dynamic communication protocols are becoming the new standard for automotive applications. Such systems typically run applications consisting of both ET and TT tasks. We have identified a new class of system optimization issues typical for the heterogeneous systems considered in the paper: partitioning of the system functionality into TT and ET domains and the optimization of the bus access scheme. Both problems were considered in the context of a heuristic which performs the mapping and scheduling of the system functionality. We have shown that the quality of the system implementation can be signiﬁcantly improved by the proposed optimization heuristics. 8. References"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "1",
+            "rawText": "N. Audsley, K. Tindell, A. et. al., “The End of Line for Static Cyclic Scheduling?”, 5th Euromicro Works. on Real-Time Systems, 1993.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "N. Audsley, K. Tindell, A. et. al., “The End of Line for Static Cyclic Scheduling?”, 5th Euromicro Works. on Real-Time Systems, 1993."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "2",
+            "rawText": "N. Audsley, A. Burns, et. al., “Fixed Priority Preemptive Scheduling: An Historical Perspective”, Real-Time Systems, 8(2/3), 1995.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "N. Audsley, A. Burns, et. al., “Fixed Priority Preemptive Scheduling: An Historical Perspective”, Real-Time Systems, 8(2/3), 1995."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "3",
+            "rawText": "R. Bosch GmbH, “CAN Speciﬁcation Version 2.0”, 1991.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Bosch GmbH, “CAN Speciﬁcation Version 2.0”, 1991."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "4",
+            "rawText": "T. Demmeler, P. Giusto, “A Universal Communication Model for an Automotive System Integration Platform”, DATE, 2001.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Demmeler, P. Giusto, “A Universal Communication Model for an Automotive System Integration Platform”, DATE, 2001."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "5",
+            "rawText": "R. Ernst, “Codesign of Embedded Systems: Status and Trends”, IEEE Design&Test of Comp., April-June, 1998.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Ernst, “Codesign of Embedded Systems: Status and Trends”, IEEE Design&Test of Comp., April-June, 1998."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "6",
+            "rawText": "FlexRay homepage: http://www.ﬂexray-group.com/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "FlexRay homepage: http://www.ﬂexray-group.com/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "7",
+            "rawText": "H. Kopetz, “Real-Time Systems - Design Principles for Distributed Embedded Applications”, Kluwer Academic Publisher, 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Kopetz, “Real-Time Systems - Design Principles for Distributed Embedded Applications”, Kluwer Academic Publisher, 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "8",
+            "rawText": "H. Lönn, J. Axelsson, “A Comparison of Fixed-Priority and Static Cyclic Scheduling for Distributed Automotive Control Applications”, Euromicro Conf. on Real-Time Systems, 1999.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Lönn, J. Axelsson, “A Comparison of Fixed-Priority and Static Cyclic Scheduling for Distributed Automotive Control Applications”, Euromicro Conf. on Real-Time Systems, 1999."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "9",
+            "rawText": "P. Pedreiras, L. Almeida, “Combining Event-Triggered and TimeTriggered Trafﬁc in FTT-CAN: Analysis of the Asynchronous Messaging System”, WFCS, 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P. Pedreiras, L. Almeida, “Combining Event-Triggered and TimeTriggered Trafﬁc in FTT-CAN: Analysis of the Asynchronous Messaging System”, WFCS, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "10",
+            "rawText": "P. Raja, G. Noubir, “Static and Dynamic Polling Mechanisms for Fieldbus Networks”, ACM Operating Systems Review, 27(3), 1993.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P. Raja, G. Noubir, “Static and Dynamic Polling Mechanisms for Fieldbus Networks”, ACM Operating Systems Review, 27(3), 1993."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "11",
+            "rawText": "W. Wolf, “Hardware-Software Co-Design of Embedded Systems”, Proceedings of the IEEE, V82, N7, 1994.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Wolf, “Hardware-Software Co-Design of Embedded Systems”, Proceedings of the IEEE, V82, N7, 1994."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1994,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "12",
+            "rawText": "J. Xu, D.L. Parnas, “On satisfying timing constraints in hard-real-time systems”, IEEE Transactions on Software Engineering, 19(1), 1993.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Xu, D.L. Parnas, “On satisfying timing constraints in hard-real-time systems”, IEEE Transactions on Software Engineering, 19(1), 1993."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "13",
+            "rawText": "T. Pop, P. Eles, Z. Peng, “Schedulability Analysis for Distributed Heterogeneous Time/Event-Triggered Real-Time Systems”, EuroMicro Conf. on Real-Time Systems, 2003.",
+            "doi": "10.1109/EMRTS.2003.1212751",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Pop, P. Eles, Z. Peng, “Schedulability Analysis for Distributed Heterogeneous Time/Event-Triggered Real-Time Systems”, EuroMicro Conf. on Real-Time Systems, 2003."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/emrts.2003.1212751",
+                "doi": "10.1109/EMRTS.2003.1212751",
+                "arxivId": "",
+                "title": "Schedulability Analysis for Distributed Heterogeneous Time/Event-Triggered Real-Time Systems",
+                "authors": [
+                  "Traian Pop",
+                  "Petru Eles",
+                  "Zebo Peng"
+                ],
+                "year": 2003,
+                "venue": "ECRTS",
+                "type": "misc",
+                "url": "https://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A243645"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "14",
+            "rawText": "P., A. Doboli, P. Pop, Z. Peng, “Scheduling with Bus Access Optimization for Distributed Embedded Systems”, IEEE Transactions on VLSI Systems, 8(5), 472-491, 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P., A. Doboli, P. Pop, Z. Peng, “Scheduling with Bus Access Optimization for Distributed Embedded Systems”, IEEE Transactions on VLSI Systems, 8(5), 472-491, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "15",
+            "rawText": "P. Pop, P. Eles, Z. Peng, “Bus Access Optimization for Distributed Embedded Systems based on Schedulability Analysis”, DATE, 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P. Pop, P. Eles, Z. Peng, “Bus Access Optimization for Distributed Embedded Systems based on Schedulability Analysis”, DATE, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:design optimization of mixed time event triggered distributed embedded systems:2003:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/944671.944672",
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 17,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/944671.944672",
+          "crossrefReferenceCount": 0
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:design optimization of mixed time event triggered distributed embedded systems:2003->doi:10.1109/emrts.2003.1212751@papers-mixed-event-time-triggered-Pop2003b.pdf",
+      "source": "title:design optimization of mixed time event triggered distributed embedded systems:2003",
+      "target": "doi:10.1109/emrts.2003.1212751",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Pop2003b.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Pop2003b",
+      "paperId": "title:design optimization of mixed time event triggered distributed embedded systems:2003",
+      "metadata": {
+        "fileName": "Pop2003b.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Pop2003b.pdf"
+      }
+    }
+  ]
+}

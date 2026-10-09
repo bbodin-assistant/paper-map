@@ -1,0 +1,2321 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.038978+00:00",
+  "papers": [
+    {
+      "key": "Gunzel2023b",
+      "paper": {
+        "id": "doi:10.4230/lipics.ecrts.2023.10",
+        "citationKey": "Gunzel2023b",
+        "title": "On the Equivalence of Maximum Reaction Time and Maximum Data Age for Cause-Effect Chains",
+        "authors": [
+          "Mario G\\\"unzel",
+          "Harun Teper",
+          "Kuan-Hsun Chen",
+          "Georg von der Br\\\"uggen",
+          "Jian-Jia Chen"
+        ],
+        "year": 2023,
+        "venue": "35th Euromicro Conference on Real-Time Systems (ECRTS 2023)",
+        "type": "inproceedings",
+        "doi": "10.4230/LIPIcs.ECRTS.2023.10",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models",
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "G{\\\"u}nzel, Mario and Teper, Harun and Chen, Kuan-Hsun and von der Br{\\\"u}ggen, Georg and Chen, Jian-Jia",
+          "title": "{On the Equivalence of Maximum Reaction Time and Maximum Data Age for Cause-Effect Chains}",
+          "year": "2023",
+          "booktitle": "35th Euromicro Conference on Real-Time Systems (ECRTS 2023)",
+          "publisher": "Schloss Dagstuhl -- Leibniz-Zentrum f{\\\"u}r Informatik",
+          "series": "Leibniz International Proceedings in Informatics (LIPIcs)",
+          "volume": "262",
+          "pages": "10:1--10:22",
+          "doi": "10.4230/LIPIcs.ECRTS.2023.10",
+          "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2023.10"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.068669+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "1 AUTOSAR. Specification of timing extensions (AUTOSAR CP R21-11). https: //www.autosar.org/fileadmin/user_upload/standards/classic/21-11/AUTOSAR_TPS_",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 AUTOSAR. Specification of timing extensions (AUTOSAR CP R21-11). https: //www.autosar.org/fileadmin/user_upload/standards/classic/21-11/AUTOSAR_TPS_"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": null,
+            "rawText": "TimingExtensions.pdf, 2021. Accessed: 2022-10-18. 2 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Mechaniser-a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies. In Workshop on Analysis Tools and Methodologies for Embedded and Real-time",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "TimingExtensions.pdf, 2021. Accessed: 2022-10-18. 2 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Mechaniser-a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies. In Workshop on Analysis Tools and Methodologies for Embedded and Real-time"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": null,
+            "rawText": "Systems (WATERS), 2016. 3 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Synthesizing job-level dependencies for automotive multi-rate effect chains. In International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), pages",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Systems (WATERS), 2016. 3 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Synthesizing job-level dependencies for automotive multi-rate effect chains. In International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), pages"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "159–169, 2016. doi:10.1109/RTCSA.2016.41. 4 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. End-toend timing analysis of cause-effect chains in automotive embedded systems. J. Syst. Archit., 80(C):104–113, October 2017. doi:10.1016/j.sysarc.2017.09.004. 5 Matthias Becker, Saad Mubeen, Dakshina Dasari, Moris Behnam, and Thomas Nolte. A generic framework facilitating early analysis of data propagation delays in multi-rate systems. In International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), pages 1–11, 2017. doi:10.1109/RTCSA.2017.8046323. 6 Albert Benveniste, Paul Caspi, Paul Le Guernic, Hervé Marchand, Jean-Pierre Talpin, and Stavros Tripakis. A protocol for loosely time-triggered architectures. In EMSOFT, pages 252–265, 2002. doi:10.1007/3-540-45828-X_19. 7 Hyunjong Choi, Mohsen Karimi, and Hyoseung Kim. Chain-based fixed-priority scheduling of loosely-dependent tasks. In International Conference on Computer Design (ICCD). IEEE,",
+            "doi": "10.1016/j.sysarc.2017.09.004",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "159–169, 2016. doi:10.1109/RTCSA.2016.41. 4 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. End-toend timing analysis of cause-effect chains in automotive embedded systems. J. Syst. Archit., 80(C):104–113, October 2017. doi:10.1016/j.sysarc.2017.09.004. 5 Matthias Becker, Saad Mubeen, Dakshina Dasari, Moris Behnam, and Thomas Nolte. A generic framework facilitating early analysis of data propagation delays in multi-rate systems. In International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), pages 1–11, 2017. doi:10.1109/RTCSA.2017.8046323. 6 Albert Benveniste, Paul Caspi, Paul Le Guernic, Hervé Marchand, Jean-Pierre Talpin, and Stavros Tripakis. A protocol for loosely time-triggered architectures. In EMSOFT, pages 252–265, 2002. doi:10.1007/3-540-45828-X_19. 7 Hyunjong Choi, Mohsen Karimi, and Hyoseung Kim. Chain-based fixed-priority scheduling of loosely-dependent tasks. In International Conference on Computer Design (ICCD). IEEE,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2017.09.004",
+                "doi": "10.1016/j.sysarc.2017.09.004",
+                "arxivId": "",
+                "title": "End-to-end timing analysis of cause-effect chains in automotive embedded systems",
+                "authors": [
+                  "Matthias Becker",
+                  "Dakshina Dasari",
+                  "Saad Mubeen",
+                  "Moris Behnam",
+                  "Thomas Nolte"
+                ],
+                "year": 2016,
+                "venue": "Journal of Systems Architecture",
+                "type": "article",
+                "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "2020",
+            "rawText": "8 Abhijit Davare, Qi Zhu, Marco Di Natale, Claudio Pinello, Sri Kanajan, and Alberto L. Sangiovanni-Vincentelli. Period optimization for hard real-time distributed automotive systems. In Design Automation Conference, DAC, pages 278–283, 2007. doi:10.1145/1278480.",
+            "doi": "10.1145/1278480",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "8 Abhijit Davare, Qi Zhu, Marco Di Natale, Claudio Pinello, Sri Kanajan, and Alberto L. Sangiovanni-Vincentelli. Period optimization for hard real-time distributed automotive systems. In Design Automation Conference, DAC, pages 278–283, 2007. doi:10.1145/1278480."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/1278480",
+                "doi": "10.1145/1278480",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1278480"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "1278553",
+            "rawText": "9 Marco Dürr, Georg von der Brüggen, Kuan-Hsun Chen, and Jian-Jia Chen. End-to-end timing analysis of sporadic cause-effect chains in distributed systems. ACM Trans. Embedded Comput. Syst. (Special Issue for CASES), 18(5s):58:1–58:24, 2019. doi:10.1145/3358181. 10 Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems, 2009. 11 Julien Forget, Frédéric Boniol, and Claire Pagetti. Verifying end-to-end real-time constraints on multi-periodic models. In ETFA, pages 1–8, 2017. doi:10.1109/ETFA.2017.8247612. 12 Alain Girault, Christophe Prevot, Sophie Quinton, Rafik Henia, and Nicolas Sordon. Improving and estimating the precision of bounds on the worst-case latency of task chains. IEEE Trans. on CAD of Integrated Circuits and Systems, (Special Issue for EMSOFT), 37(11):2578–2589,",
+            "doi": "10.1109/etfa.2017.8247612",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "9 Marco Dürr, Georg von der Brüggen, Kuan-Hsun Chen, and Jian-Jia Chen. End-to-end timing analysis of sporadic cause-effect chains in distributed systems. ACM Trans. Embedded Comput. Syst. (Special Issue for CASES), 18(5s):58:1–58:24, 2019. doi:10.1145/3358181. 10 Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems, 2009. 11 Julien Forget, Frédéric Boniol, and Claire Pagetti. Verifying end-to-end real-time constraints on multi-periodic models. In ETFA, pages 1–8, 2017. doi:10.1109/ETFA.2017.8247612. 12 Alain Girault, Christophe Prevot, Sophie Quinton, Rafik Henia, and Nicolas Sordon. Improving and estimating the precision of bounds on the worst-case latency of task chains. IEEE Trans. on CAD of Integrated Circuits and Systems, (Special Issue for EMSOFT), 37(11):2578–2589,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/etfa.2017.8247612",
+                "doi": "10.1109/etfa.2017.8247612",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2017.8247612"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "2018",
+            "rawText": "doi:10.1109/TCAD.2018.2861016. 13 Mario Günzel, Kuan-Hsun Chen, Niklas Ueter, Georg von der Brüggen, Marco Dürr, and Jian-Jia Chen. Timing analysis of asynchronized distributed cause-effect chains. In IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 40–52, 2021.",
+            "doi": "10.1109/tcad.2018.2861016",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1109/TCAD.2018.2861016. 13 Mario Günzel, Kuan-Hsun Chen, Niklas Ueter, Georg von der Brüggen, Marco Dürr, and Jian-Jia Chen. Timing analysis of asynchronized distributed cause-effect chains. In IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 40–52, 2021."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/tcad.2018.2861016",
+                "doi": "10.1109/tcad.2018.2861016",
+                "arxivId": "",
+                "title": "Improving and Estimating the Precision of Bounds on the Worst-Case Latency of Task Chains",
+                "authors": [
+                  "Alain Girault",
+                  "Christophe Pr\\'evot",
+                  "Sophie Quinton",
+                  "Rafik Henia",
+                  "Nicolas Sordon"
+                ],
+                "year": 2018,
+                "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1109/tcad.2018.2861016"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": null,
+            "rawText": "doi:10.1109/RTAS52030.2021.00012. 14 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, and Falk Wurst. Communication centric design in complex automotive embedded systems. In Euromicro Conference on",
+            "doi": "10.1109/rtas52030.2021.00012",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1109/RTAS52030.2021.00012. 14 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, and Falk Wurst. Communication centric design in complex automotive embedded systems. In Euromicro Conference on"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00012",
+                "doi": "10.1109/rtas52030.2021.00012",
+                "arxivId": "",
+                "title": "Timing Analysis of Asynchronized Distributed Cause-Effect Chains",
+                "authors": [
+                  "Mario Gunzel",
+                  "Kuan-Hsun Chen",
+                  "Niklas Ueter",
+                  "Georg von der Bruggen",
+                  "Marco Durr",
+                  "Jian-Jia Chen"
+                ],
+                "year": 2021,
+                "venue": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00012"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "Real-Time Systems, ECRTS, pages 10:1–10:20, 2017. doi:10.4230/LIPIcs.ECRTS.2017.10. 15 Christoph M. Kirsch and Ana Sokolova. The logical execution time paradigm. In Advances in",
+            "doi": "10.4230/lipics.ecrts.2017.10",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Real-Time Systems, ECRTS, pages 10:1–10:20, 2017. doi:10.4230/LIPIcs.ECRTS.2017.10. 15 Christoph M. Kirsch and Ana Sokolova. The logical execution time paradigm. In Advances in"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2017.10",
+                "doi": "10.4230/lipics.ecrts.2017.10",
+                "arxivId": "",
+                "title": "Communication Centric Design in Complex Automotive Embedded Systems",
+                "authors": [
+                  "Arne Hamann",
+                  "Dakshina Dasari",
+                  "Simon Kramer",
+                  "Michael Pressler",
+                  "Falk Wurst"
+                ],
+                "year": 2017,
+                "venue": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2017.10"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": null,
+            "rawText": "Real-Time Systems, pages 103–120. Springer, 2012. doi:10.1007/978-3-642-24349-3_5. 16 Tobias Klaus, Florian Franzmann, Matthias Becker, and Peter Ulbrich. Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies. In Proceedings of the 26th International Conference on Real-Time Networks and Systems, pages 93–103. ACM,",
+            "doi": "10.1007/978-3-642-24349-3_5",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Real-Time Systems, pages 103–120. Springer, 2012. doi:10.1007/978-3-642-24349-3_5. 16 Tobias Klaus, Florian Franzmann, Matthias Becker, and Peter Ulbrich. Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies. In Proceedings of the 26th International Conference on Real-Time Networks and Systems, pages 93–103. ACM,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-3_5",
+                "arxivId": "",
+                "title": "The Logical Execution Time Paradigm",
+                "authors": [
+                  "Christoph M. Kirsch",
+                  "Ana Sokolova"
+                ],
+                "year": 2012,
+                "venue": "Advances in Real-Time Systems",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "10:20 Equivalence of Max. Reaction Time and Max. Data Age for Cause-Effect Chains",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "10:20 Equivalence of Max. Reaction Time and Max. Data Age for Cause-Effect Chains"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": null,
+            "rawText": "17 Tomasz Kloda, Antoine Bertout, and Yves Sorel. Latency analysis for data chains of real-time periodic tasks. In IEEE International Conference on Emerging Technologies and Factory",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "17 Tomasz Kloda, Antoine Bertout, and Yves Sorel. Latency analysis for data chains of real-time periodic tasks. In IEEE International Conference on Emerging Technologies and Factory"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": null,
+            "rawText": "Automation, ETFA, pages 360–367, 2018. doi:10.1109/ETFA.2018.8502498. 18 Alix Munier Kordon and Ning Tang. Evaluation of the Age Latency of a Real-Time Communicating System Using the LET Paradigm. In Marcus Völp, editor, 32nd Euromicro Conference on Real-Time Systems (ECRTS 2020), volume 165 of Leibniz International Proceedings in Informatics (LIPIcs), pages 20:1–20:20, Dagstuhl, Germany, 2020. Schloss Dagstuhl–Leibniz-Zentrum",
+            "doi": "10.1109/etfa.2018.8502498",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Automation, ETFA, pages 360–367, 2018. doi:10.1109/ETFA.2018.8502498. 18 Alix Munier Kordon and Ning Tang. Evaluation of the Age Latency of a Real-Time Communicating System Using the LET Paradigm. In Marcus Völp, editor, 32nd Euromicro Conference on Real-Time Systems (ECRTS 2020), volume 165 of Leibniz International Proceedings in Informatics (LIPIcs), pages 20:1–20:20, Dagstuhl, Germany, 2020. Schloss Dagstuhl–Leibniz-Zentrum"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2020.20",
+                "doi": "10.1109/etfa.2018.8502498",
+                "arxivId": "",
+                "title": "Evaluation of the Age Latency of a Real-Time Communicating System Using the LET Paradigm",
+                "authors": [
+                  "Alix Munier Kordon",
+                  "Ning Tang"
+                ],
+                "year": 2018,
+                "venue": "32nd Euromicro Conference on Real-Time Systems (ECRTS 2020)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2020.20"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": null,
+            "rawText": "für Informatik. doi:10.4230/LIPIcs.ECRTS.2020.20. 19 Simon Kramer, Dirk Ziegenbein, and Arne Hamann. Real world automotive benchmarks for free. In International Workshop on Analysis Tools and Methodologies for Embedded and",
+            "doi": "10.4230/lipics.ecrts.2020.20",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "für Informatik. doi:10.4230/LIPIcs.ECRTS.2020.20. 19 Simon Kramer, Dirk Ziegenbein, and Arne Hamann. Real world automotive benchmarks for free. In International Workshop on Analysis Tools and Methodologies for Embedded and"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2020.20",
+                "doi": "10.4230/lipics.ecrts.2020.20",
+                "arxivId": "",
+                "title": "Evaluation of the Age Latency of a Real-Time Communicating System Using the LET Paradigm",
+                "authors": [
+                  "Alix Munier Kordon",
+                  "Ning Tang"
+                ],
+                "year": 2020,
+                "venue": "32nd Euromicro Conference on Real-Time Systems (ECRTS 2020)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2020.20"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": null,
+            "rawText": "Real-time Systems (WATERS), 2015. 20 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. End-to-end latency characterization of task communication models for automotive systems. Real-Time Syst., 56(3):315–347, July",
+            "doi": "10.1007/s11241-020-09350-3",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Real-time Systems (WATERS), 2015. 20 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. End-to-end latency characterization of task communication models for automotive systems. Real-Time Syst., 56(3):315–347, July"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/s11241-020-09350-3",
+                "doi": "10.1007/s11241-020-09350-3",
+                "arxivId": "",
+                "title": "End-to-end latency characterization of task communication models for automotive systems",
+                "authors": [
+                  "Jorge Martinez",
+                  "Ignacio Sa\\ nudo",
+                  "Marko Bertogna"
+                ],
+                "year": 2015,
+                "venue": "Real-Time Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1007/s11241-020-09350-3"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "2020",
+            "rawText": "doi:10.1007/s11241-020-09350-3. 21 Saad Mubeen, Jukka Mäki-Turja, and Mikael Sjödin. Implementation of end-to-end latency analysis for component-based multi-rate real-time systems in rubus-ice. In Factory Communication Systems (WFCS), 2012 9th IEEE International Workshop on, pages 165–168. IEEE,",
+            "doi": "10.1007/s11241-020-09350-3",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1007/s11241-020-09350-3. 21 Saad Mubeen, Jukka Mäki-Turja, and Mikael Sjödin. Implementation of end-to-end latency analysis for component-based multi-rate real-time systems in rubus-ice. In Factory Communication Systems (WFCS), 2012 9th IEEE International Workshop on, pages 165–168. IEEE,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/s11241-020-09350-3",
+                "doi": "10.1007/s11241-020-09350-3",
+                "arxivId": "",
+                "title": "End-to-end latency characterization of task communication models for automotive systems",
+                "authors": [
+                  "Jorge Martinez",
+                  "Ignacio Sa\\ nudo",
+                  "Marko Bertogna"
+                ],
+                "year": 2012,
+                "venue": "Real-Time Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1007/s11241-020-09350-3"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "2012",
+            "rawText": "22 Saad Mubeen, Jukka Mäki-Turja, and Mikael Sjödin. Translating end-to-end timing requirements to timing analysis model in component-based distributed real-time systems. SIGBED Review, 9(4):17–20, 2012. doi:10.1145/2452537.2452539. 23 Open Robotics. Ros 2 documentation: Foxy, May 2022. URL: https://docs.ros.org/en/ foxy. 24 AC Rajeev, Swarup Mohalik, Manoj G Dixit, Devesh B Chokshi, and S Ramesh. Schedulability and end-to-end latency in distributed ecu networks: formal modeling and precise estimation. In International Conference on Embedded Software, pages 129–138, 2010. 25 Johannes Schlatow and Rolf Ernst. Response-time analysis for task chains in communicating threads. In IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 245–254, 2016. doi:10.1109/RTAS.2016.7461359. 26 Johannes Schlatow, Mischa Möstl, Sebastian Tobuschat, Tasuku Ishigooka, and Rolf Ernst. Data-age analysis and optimisation for cause-effect chains in automotive control systems. In IEEE International Symposium on Industrial Embedded Systems (SIES), pages 1–9, 2018. 27 Harun Teper, Mario Günzel, Niklas Ueter, Georg von der Brüggen, and Jian-Jia Chen. End-to-end timing analysis in ros2. In 43rd IEEE Real-Time Systems Symposium (RTSS),",
+            "doi": "10.1145/2452537.2452539",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "22 Saad Mubeen, Jukka Mäki-Turja, and Mikael Sjödin. Translating end-to-end timing requirements to timing analysis model in component-based distributed real-time systems. SIGBED Review, 9(4):17–20, 2012. doi:10.1145/2452537.2452539. 23 Open Robotics. Ros 2 documentation: Foxy, May 2022. URL: https://docs.ros.org/en/ foxy. 24 AC Rajeev, Swarup Mohalik, Manoj G Dixit, Devesh B Chokshi, and S Ramesh. Schedulability and end-to-end latency in distributed ecu networks: formal modeling and precise estimation. In International Conference on Embedded Software, pages 129–138, 2010. 25 Johannes Schlatow and Rolf Ernst. Response-time analysis for task chains in communicating threads. In IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 245–254, 2016. doi:10.1109/RTAS.2016.7461359. 26 Johannes Schlatow, Mischa Möstl, Sebastian Tobuschat, Tasuku Ishigooka, and Rolf Ernst. Data-age analysis and optimisation for cause-effect chains in automotive control systems. In IEEE International Symposium on Industrial Embedded Systems (SIES), pages 1–9, 2018. 27 Harun Teper, Mario Günzel, Niklas Ueter, Georg von der Brüggen, and Jian-Jia Chen. End-to-end timing analysis in ros2. In 43rd IEEE Real-Time Systems Symposium (RTSS),"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/sies.2018.8442077",
+                "doi": "10.1145/2452537.2452539",
+                "arxivId": "",
+                "title": "Data-Age Analysis and Optimisation for Cause-Effect Chains in Automotive Control Systems",
+                "authors": [
+                  "Johannes Schlatow",
+                  "Mischa Mostl",
+                  "Sebastian Tobuschat",
+                  "Tasuku Ishigooka",
+                  "Rolf Ernst"
+                ],
+                "year": 2012,
+                "venue": "2018 IEEE 13th International Symposium on Industrial Embedded Systems (SIES)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/sies.2018.8442077"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "2022",
+            "rawText": "28 Rémy Wyss, Frédéric Boniol, Claire Pagetti, and Julien Forget. End-to-end latency computation in a multi-periodic design. In Proceedings of the 28th Annual ACM Symposium on Applied Computing, SAC, pages 1682–1687, 2013. doi:10.1145/2480362.2480678.",
+            "doi": "10.1145/2480362.2480678",
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "28 Rémy Wyss, Frédéric Boniol, Claire Pagetti, and Julien Forget. End-to-end latency computation in a multi-periodic design. In Proceedings of the 28th Annual ACM Symposium on Applied Computing, SAC, pages 1682–1687, 2013. doi:10.1145/2480362.2480678."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/2480362.2480678",
+                "doi": "10.1145/2480362.2480678",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2480362.2480678"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": null,
+            "rawText": "A Proof of Lemma 13",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A Proof of Lemma 13"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": null,
+            "rawText": "We first restate Lemma 13.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "We first restate Lemma 13."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": null,
+            "rawText": "▶Lemma 13. Let E be a cause-effect chain for the task set T. Moreover, let c be a job chain for E, let⃗c be an immediate forward job chain for E, and let⃗c be an immediate backward job chain for E.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "▶Lemma 13. Let E be a cause-effect chain for the task set T. Moreover, let c be a job chain for E, let⃗c be an immediate forward job chain for E, and let⃗c be an immediate backward job chain for E."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "1",
+            "rawText": "If there exists i ∈{1, . . . , |E|} such that⃗c(i) ≼c(i), then⃗c(j) ≼c(j) for all j ∈ {i, . . . , |E|}.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "If there exists i ∈{1, . . . , |E|} such that⃗c(i) ≼c(i), then⃗c(j) ≼c(j) for all j ∈ {i, . . . , |E|}."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "2",
+            "rawText": "If there exists i ∈{1, . . . , |E|} such that c(i) ≼⃗c(i), then c(j) ≼⃗c(j) for all j ∈{1, . . . , i}.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "If there exists i ∈{1, . . . , |E|} such that c(i) ≼⃗c(i), then c(j) ≼⃗c(j) for all j ∈{1, . . . , i}."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "M. Günzel, H. Teper, K.-H. Chen, G. von der Brüggen, and J.-J. Chen 10:21",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Günzel, H. Teper, K.-H. Chen, G. von der Brüggen, and J.-J. Chen 10:21"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": null,
+            "rawText": "Proof. We prove 1) by induction over j = i, . . . , |E|.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Proof. We prove 1) by induction over j = i, . . . , |E|."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": null,
+            "rawText": "Initial case. For j = i,⃗c(j) ≼c(j) by assumption.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Initial case. For j = i,⃗c(j) ≼c(j) by assumption."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": null,
+            "rawText": "We prove 2) by induction over j = i, . . . , 1.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "We prove 2) by induction over j = i, . . . , 1."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": null,
+            "rawText": "Initial case. For j = i, c(j) ≼⃗c(j) by assumption.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Initial case. For j = i, c(j) ≼⃗c(j) by assumption."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": null,
+            "rawText": "B Proof of Extension to Valid Chains",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "B Proof of Extension to Valid Chains"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": null,
+            "rawText": "this relates to MDAV and MRTV. We start with MDAV.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "this relates to MDAV and MRTV. We start with MDAV."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": null,
+            "rawText": "▶Lemma 14. We have MDAV = supm≥V|E|+1 ℓ(⃗acm).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "▶Lemma 14. We have MDAV = supm≥V|E|+1 ℓ(⃗acm)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": null,
+            "rawText": "we(E(|E|)(V|E| + 1)), the immediate backward job chain⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "we(E(|E|)(V|E| + 1)), the immediate backward job chain⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": null,
+            "rawText": "be a job before E(V|E|). Since by Definition 20,⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "be a job before E(V|E|). Since by Definition 20,⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": null,
+            "rawText": "Induction step. If⃗c(j) ≼c(j) for j ∈{i, . . . , |E| −1}, then this means that the write-event of the job⃗c(j) is no later than the write-event of the job c(j). Since the read-event of the job c(j + 1) is no earlier than the write-event of c(j) by definition of a job chain, the read-event of c(j + 1) is also no earlier than the write-event of⃗c(j). Since⃗c(j + 1) is the earliest job with read-event no earlier than the write-event of⃗c(j), we conclude that⃗c(j + 1) ≼c(j + 1).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Induction step. If⃗c(j) ≼c(j) for j ∈{i, . . . , |E| −1}, then this means that the write-event of the job⃗c(j) is no later than the write-event of the job c(j). Since the read-event of the job c(j + 1) is no earlier than the write-event of c(j) by definition of a job chain, the read-event of c(j + 1) is also no earlier than the write-event of⃗c(j). Since⃗c(j + 1) is the earliest job with read-event no earlier than the write-event of⃗c(j), we conclude that⃗c(j + 1) ≼c(j + 1)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": null,
+            "rawText": "Induction step. If c(j) ≼⃗c(j) for j ∈{i, . . . , 2}, then this means that the read-event of the job c(j) is no later than the read-event of the job c(j). Since the write-event of the job c(j −1) is no later than the read-event of c(j) by definition of a job chain, the write-event of c(j −1) is also no later than the read-event of⃗c(j). Since⃗c(j −1) is the latest job with write-event no later than the read-event of⃗c(j), we conclude that c(j −1) ≼⃗c(j −1). ◀",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Induction step. If c(j) ≼⃗c(j) for j ∈{i, . . . , 2}, then this means that the read-event of the job c(j) is no later than the read-event of the job c(j). Since the write-event of the job c(j −1) is no later than the read-event of c(j) by definition of a job chain, the write-event of c(j −1) is also no later than the read-event of⃗c(j). Since⃗c(j −1) is the latest job with write-event no later than the read-event of⃗c(j), we conclude that c(j −1) ≼⃗c(j −1). ◀"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": null,
+            "rawText": "In Section 7.2 it is shown that supm≥V1 ℓ(⃗acm) = supm≥V|E|+1 ℓ(⃗acm). It is left to show how",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "In Section 7.2 it is shown that supm≥V1 ℓ(⃗acm) = supm≥V|E|+1 ℓ(⃗acm). It is left to show how"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": null,
+            "rawText": "Proof. By definition in Equation (12), MDAV = sup {ℓ(⃗acm) | m ∈N+,⃗acm exists and valid}. We divide the proof in two steps: MDAV ≥ supm≥V|E|+1 ℓ(⃗acm) and MDAV ≤",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Proof. By definition in Equation (12), MDAV = sup {ℓ(⃗acm) | m ∈N+,⃗acm exists and valid}. We divide the proof in two steps: MDAV ≥ supm≥V|E|+1 ℓ(⃗acm) and MDAV ≤"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": null,
+            "rawText": "Step 1 (MDAV ≥supm≥V|E|+1 ℓ(⃗acm)). We know that⃗acV|E|+1 is composed of z′ =",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Step 1 (MDAV ≥supm≥V|E|+1 ℓ(⃗acm)). We know that⃗acV|E|+1 is composed of z′ ="
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": null,
+            "rawText": "Therefore,⃗acV|E|+1 is valid. Consequently, all⃗acm with m ≥V|E| + 1 are valid and MDAV ≥ supm≥V|E|+1 ℓ(⃗acm) holds.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Therefore,⃗acV|E|+1 is valid. Consequently, all⃗acm with m ≥V|E| + 1 are valid and MDAV ≥ supm≥V|E|+1 ℓ(⃗acm) holds."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:39",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": null,
+            "rawText": "Step 2 (MDAV ≤supm≥V|E|+1 ℓ(⃗acm)). We prove this step by contradiction and assume",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Step 2 (MDAV ≤supm≥V|E|+1 ℓ(⃗acm)). We prove this step by contradiction and assume"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:40",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": null,
+            "rawText": "that there exists a valid⃗acm = (z, J1, . . . , J|E|, z′) with m < V|E| + 1. In that case J|E| must",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "that there exists a valid⃗acm = (z, J1, . . . , J|E|, z′) with m < V|E| + 1. In that case J|E| must"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:41",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": null,
+            "rawText": "the job J1 must be earlier than E(1)(vE). Hence,⃗acm = (z, J1, . . . , J|E|, z′) is not valid, which is a contradiction. ◀",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "the job J1 must be earlier than E(1)(vE). Hence,⃗acm = (z, J1, . . . , J|E|, z′) is not valid, which is a contradiction. ◀"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:42",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": null,
+            "rawText": "For the MRT, we may need to account for additional immediate forward augmented job chains before V1. By definition, valid immediate forward augmented job chains⃗acm with vE ≤m < V1 include the immediate forward job chain⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "For the MRT, we may need to account for additional immediate forward augmented job chains before V1. By definition, valid immediate forward augmented job chains⃗acm with vE ≤m < V1 include the immediate forward job chain⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": null,
+            "rawText": "m+1 with v|E| < m + 1 ≤V1. The following lemma examines those immediate forward job chains further, showing that all of them end at the same job, which means that the longest⃗ac1",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "m+1 with v|E| < m + 1 ≤V1. The following lemma examines those immediate forward job chains further, showing that all of them end at the same job, which means that the longest⃗ac1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": null,
+            "rawText": "V|E|, and z ≥re(E(1)(vE)).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "V|E|, and z ≥re(E(1)(vE))."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": null,
+            "rawText": "V|E| is the first chain with E(1)(vE) ≼⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "V|E| is the first chain with E(1)(vE) ≼⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": null,
+            "rawText": "m with m < F1 is the first one.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "m with m < F1 is the first one."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:47",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": null,
+            "rawText": "10:22 Equivalence of Max. Reaction Time and Max. Data Age for Cause-Effect Chains",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "10:22 Equivalence of Max. Reaction Time and Max. Data Age for Cause-Effect Chains"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:48",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": null,
+            "rawText": "m is the job where⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "m is the job where⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:49",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": null,
+            "rawText": "Proof. Let ξ ∈N+ such that⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Proof. Let ξ ∈N+ such that⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:50",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": null,
+            "rawText": "ξ is immediate backward and⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "ξ is immediate backward and⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:51",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": null,
+            "rawText": "ξ (1). Hence, E(1)(v|E|) ≼⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "ξ (1). Hence, E(1)(v|E|) ≼⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:52",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": null,
+            "rawText": "entry, by Lemma 13⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "entry, by Lemma 13⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:53",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": null,
+            "rawText": "Since the last job of every⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Since the last job of every⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:54",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": null,
+            "rawText": ". Moreover, by Lemma 15 max",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". Moreover, by Lemma 15 max"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:55",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": null,
+            "rawText": "We summarize the relation between MDAV and MRTV.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "We summarize the relation between MDAV and MRTV."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:56",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": null,
+            "rawText": "The MRTV can also be formulated as MRTV = max(ℓ(pc1",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The MRTV can also be formulated as MRTV = max(ℓ(pc1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:57",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": null,
+            "rawText": "m(|E|) = E(|E|)(ξ). In the following, we show that ξ = V . Since there exist job chains with last job E(|E|)(ξ), this means that⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "m(|E|) = E(|E|)(ξ). In the following, we show that ξ = V . Since there exist job chains with last job E(|E|)(ξ), this means that⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:58",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": null,
+            "rawText": "ξ exists as well because for the backward construction of that chain in each step a job can be chosen. Moreover, since⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "ξ exists as well because for the backward construction of that chain in each step a job can be chosen. Moreover, since⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:59",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": null,
+            "rawText": "V is the earliest immediate backward job chain with this property, we obtain ξ ≥V .",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "V is the earliest immediate backward job chain with this property, we obtain ξ ≥V ."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:60",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": null,
+            "rawText": "m is immediate forward, we can apply Lemma 13 and obtain⃗cE",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "m is immediate forward, we can apply Lemma 13 and obtain⃗cE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:61",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": null,
+            "rawText": "m with v|E| ≤m ≤V1 is E(|E|)(V|E|), the last job of every⃗",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "m with v|E| ≤m ≤V1 is E(|E|)(V|E|), the last job of every⃗"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:62",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": null,
+            "rawText": "acm with v|E| ≤m < V1 is E(|E|)(V|E|) as well. Furthermore, since the⃗ac1",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "acm with v|E| ≤m < V1 is E(|E|)(V|E|) as well. Furthermore, since the⃗ac1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:63",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": null,
+            "rawText": "m has the earliest first job, it is the longest one, i.e., to obtain MRTV only the first valid immediate forward augmented job chain is considered in addition to supm≥V1 ℓ(⃗acm).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "m has the earliest first job, it is the longest one, i.e., to obtain MRTV only the first valid immediate forward augmented job chain is considered in addition to supm≥V1 ℓ(⃗acm)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:64",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": null,
+            "rawText": "▶Lemma 16. We have MRTV = max(ℓ(⃗acvE), supm≥V1 ℓ(⃗acm)), where⃗acvE is the first valid immediate forward augmented job chain.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "▶Lemma 16. We have MRTV = max(ℓ(⃗acvE), supm≥V1 ℓ(⃗acm)), where⃗acvE is the first valid immediate forward augmented job chain."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:65",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": null,
+            "rawText": "Proof. By definition, V1 ≥vE. Moreover, 1-partitioned job chains⃗acm are valid if and only if m ≥vE. Therefore, MRTV is the maximum of sup {ℓ(⃗acm) | m ≥V1} and",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Proof. By definition, V1 ≥vE. Moreover, 1-partitioned job chains⃗acm are valid if and only if m ≥vE. Therefore, MRTV is the maximum of sup {ℓ(⃗acm) | m ≥V1} and"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:66",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": null,
+            "rawText": "either 0 if V1 = vE, or it is the length of⃗acvE. ◀",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "either 0 if V1 = vE, or it is the length of⃗acvE. ◀"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:67",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": null,
+            "rawText": "▶Proposition 17. The maximum reaction time MRTV = sup(ℓ(⃗acvE), MDAV), where⃗acvE is the first valid immediate forward augmented job chain.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "▶Proposition 17. The maximum reaction time MRTV = sup(ℓ(⃗acvE), MDAV), where⃗acvE is the first valid immediate forward augmented job chain."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:68",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": null,
+            "rawText": "vE is the first valid immediate forward augmented job chain, since by Lemma 10 ℓ(pc1",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "vE is the first valid immediate forward augmented job chain, since by Lemma 10 ℓ(pc1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:69",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": null,
+            "rawText": "ℓ(⃗acvE). Moreover, MDAV can be computed through p-partitioned job chains as MDAV = supm≥Vp ℓ(pcp",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "ℓ(⃗acvE). Moreover, MDAV can be computed through p-partitioned job chains as MDAV = supm≥Vp ℓ(pcp"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:70",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 71,
+            "label": null,
+            "rawText": "m is a job chain with the same job as last",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "m is a job chain with the same job as last"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.10:71",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 8,
+          "extractedReferenceCount": 71,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.10->doi:10.1016/j.sysarc.2017.09.004@papers-mixed-event-time-triggered-Guenzel2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.10",
+      "target": "doi:10.1016/j.sysarc.2017.09.004",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Guenzel2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.10->doi:10.1109/tcad.2018.2861016@papers-mixed-event-time-triggered-Guenzel2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.10",
+      "target": "doi:10.1109/tcad.2018.2861016",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Guenzel2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.10->doi:10.1109/rtas52030.2021.00012@papers-mixed-event-time-triggered-Guenzel2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.10",
+      "target": "doi:10.1109/rtas52030.2021.00012",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Guenzel2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.10->doi:10.4230/lipics.ecrts.2017.10@papers-mixed-event-time-triggered-Guenzel2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.10",
+      "target": "doi:10.4230/lipics.ecrts.2017.10",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Guenzel2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.10->doi:10.1007/978-3-642-24349-3_5@papers-mixed-event-time-triggered-Guenzel2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.10",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Guenzel2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.10->doi:10.4230/lipics.ecrts.2020.20@papers-mixed-event-time-triggered-Guenzel2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.10",
+      "target": "doi:10.4230/lipics.ecrts.2020.20",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Guenzel2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.10->doi:10.1007/s11241-020-09350-3@papers-mixed-event-time-triggered-Guenzel2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.10",
+      "target": "doi:10.1007/s11241-020-09350-3",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Guenzel2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.10->doi:10.1109/sies.2018.8442077@papers-mixed-event-time-triggered-Guenzel2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.10",
+      "target": "doi:10.1109/sies.2018.8442077",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Guenzel2023.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Gunzel2023b",
+      "paperId": "doi:10.4230/lipics.ecrts.2023.10",
+      "metadata": {
+        "fileName": "Guenzel2023.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Guenzel2023.pdf"
+      }
+    }
+  ]
+}

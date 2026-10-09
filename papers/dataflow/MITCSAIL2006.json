@@ -1,0 +1,3008 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.621561+00:00",
+  "papers": [
+    {
+      "key": "MITCSAIL2006",
+      "paper": {
+        "id": "title:streamit language specification:2006",
+        "citationKey": "MITCSAIL2006",
+        "title": "StreamIt Language Specification",
+        "authors": [
+          "MIT CSAIL Computer Architecture Group"
+        ],
+        "year": 2006,
+        "venue": "",
+        "type": "manual",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://groups.csail.mit.edu/cag/streamit/papers/streamit-lang-spec.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "{MIT CSAIL Computer Architecture Group}",
+          "title": "StreamIt Language Specification",
+          "edition": "2.1",
+          "year": "2006",
+          "url": "https://groups.csail.mit.edu/cag/streamit/papers/streamit-lang-spec.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.104087+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "se are identical to legal statements in C or Java. Some statements, particularly those that set up the stream graph, are only legal in initialization code; other statements are legal anywhere.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "se are identical to legal statements in C or Java. Some statements, particularly those that set up the stream graph, are only legal in initialization code; other statements are legal anywhere."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "3",
+            "rawText": "1 Initialization-Only Statements",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Initialization-Only Statements"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": null,
+            "rawText": "The add statement adds a child stream to the current stream object. It is valid in splitjoins and pipelines only. In a splitjoin, it adds a new stream to the end of the current list of children. In a pipeline, it adds a new stream to the end of the chain of children.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The add statement adds a child stream to the current stream object. It is valid in splitjoins and pipelines only. In a splitjoin, it adds a new stream to the end of the current list of children. In a pipeline, it adds a new stream to the end of the chain of children."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "This statement takes a stream constructor; see section 4.2.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This statement takes a stream constructor; see section 4.2."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "3",
+            "rawText": "1.2 body Statement",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1.2 body Statement"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "The body statement adds a child stream as the body part of a feedback loop. This statement must be executed at most once in the initialization code of a feedback loop, and is invalid anywhere else. If a feedback loop does not contain a body statement, an Identity ﬁlter of the appropriate type is used by default.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The body statement adds a child stream as the body part of a feedback loop. This statement must be executed at most once in the initialization code of a feedback loop, and is invalid anywhere else. If a feedback loop does not contain a body statement, an Identity ﬁlter of the appropriate type is used by default."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": null,
+            "rawText": "This statement takes a stream constructor; see section 4.2.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This statement takes a stream constructor; see section 4.2."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "3",
+            "rawText": "1.3 enqueue Statement",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1.3 enqueue Statement"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "The enqueue statement is valid only within the initialization code of a feedback loop. It causes the speciﬁed item to be placed after all other previously enqueued items on the input to the feedback loop joiner. This statement takes a single value expression.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The enqueue statement is valid only within the initialization code of a feedback loop. It causes the speciﬁed item to be placed after all other previously enqueued items on the input to the feedback loop joiner. This statement takes a single value expression."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "3",
+            "rawText": "1.4 join Statement",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1.4 join Statement"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "The join statement declares the joiner type of a feedback loop or splitjoin. It only appears in initialization code, and is invalid in initialization code for any other construct.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The join statement declares the joiner type of a feedback loop or splitjoin. It only appears in initialization code, and is invalid in initialization code for any other construct."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "3",
+            "rawText": "1.5 loop Statement",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1.5 loop Statement"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": null,
+            "rawText": "The loop statement adds a child stream as the loop part of a feedback loop. This statement must be executed at most once in the initialization code of a feedback loop, and is invalid anywhere else. If a feedback loop does not contain a loop statement, an Identity ﬁlter of the appropriate type is used by default.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The loop statement adds a child stream as the loop part of a feedback loop. This statement must be executed at most once in the initialization code of a feedback loop, and is invalid anywhere else. If a feedback loop does not contain a loop statement, an Identity ﬁlter of the appropriate type is used by default."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": null,
+            "rawText": "This statement takes a stream constructor; see section 4.2.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This statement takes a stream constructor; see section 4.2."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "3",
+            "rawText": "1.6 split Statement",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1.6 split Statement"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "The split statement declares the splitter type of a feedback loop or splitjoin. It only appears in initialization code, and is invalid in initialization code for any other construct.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The split statement declares the splitter type of a feedback loop or splitjoin. It only appears in initialization code, and is invalid in initialization code for any other construct."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "3",
+            "rawText": "2 Work and Helper Statements",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2 Work and Helper Statements"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "These statements may appear only within work or helper functions.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "These statements may appear only within work or helper functions."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "3",
+            "rawText": "2.1 push Statement",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2.1 push Statement"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": null,
+            "rawText": "The push statement takes a value expression and pushes its value onto the output tape of the current ﬁlter. The type of the expression must match the output type of the ﬁlter.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The push statement takes a value expression and pushes its value onto the output tape of the current ﬁlter. The type of the expression must match the output type of the ﬁlter."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "3",
+            "rawText": "2.2 Message-sending Statements",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2.2 Message-sending Statements"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": null,
+            "rawText": "As detailed in Section 6, ﬁlters can exchange control messages by invoking methods on portal variables. The syntax of this is like a Java function call: the portal variable name is followed by a period, the name of the message handler, and a parameter list. There is also an optional latency range enclosed in brackets.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "As detailed in Section 6, ﬁlters can exchange control messages by invoking methods on portal variables. The syntax of this is like a Java function call: the portal variable name is followed by a period, the name of the message handler, and a parameter list. There is also an optional latency range enclosed in brackets."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "3",
+            "rawText": "3 General-use Statements",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "3 General-use Statements"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "These statements may appear anywhere code is legal.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "These statements may appear anywhere code is legal."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "3",
+            "rawText": "3.1 Statements with Java-like Semantics",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "3.1 Statements with Java-like Semantics"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": null,
+            "rawText": "do, for, and while loops have the same syntax and semantics they do in Java. The continue and break statements are also recognized, though they may not take a label reference.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "do, for, and while loops have the same syntax and semantics they do in Java. The continue and break statements are also recognized, though they may not take a label reference."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": null,
+            "rawText": "For statements whose syntax match exactly",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "For statements whose syntax match exactly"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": null,
+            "rawText": "cause the induction variable i to be compile-time constant within the loop if the start and end indices S and N are also compile-time constant.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "cause the induction variable i to be compile-time constant within the loop if the start and end indices S and N are also compile-time constant."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "3",
+            "rawText": "3.2 Assignment Statements",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "3.2 Assignment Statements"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": null,
+            "rawText": "Assignment statements have the form lhs = expr;. The left-hand side may be a variable, a ﬁeld reference, or an array element reference. Each of these is evaluated to a location, with the result being either a primitive value, a structure, or an entire array. If it is a primitive value, the righthand side must be a value expression. Otherwise, the right-hand side must be an array or structure of identical type, and causes all of the elements from the right-hand-side object to be copied to the left-hand-side object.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Assignment statements have the form lhs = expr;. The left-hand side may be a variable, a ﬁeld reference, or an array element reference. Each of these is evaluated to a location, with the result being either a primitive value, a structure, or an entire array. If it is a primitive value, the righthand side must be a value expression. Otherwise, the right-hand side must be an array or structure of identical type, and causes all of the elements from the right-hand-side object to be copied to the left-hand-side object."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "3",
+            "rawText": "3.3 Variable Declarations",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "3.3 Variable Declarations"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": null,
+            "rawText": "Variable declarations have the form type name;. type must be a data type; name may be any legal name not corresponding to another variable previously declared in the current block. A declaration must appear before the variable is used. The variable declaration may also contain an initialization, as in type name = expr; The initialization acts exactly as an initialization statement, above.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Variable declarations have the form type name;. type must be a data type; name may be any legal name not corresponding to another variable previously declared in the current block. A declaration must appear before the variable is used. The variable declaration may also contain an initialization, as in type name = expr; The initialization acts exactly as an initialization statement, above."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": null,
+            "rawText": "Variables declared without initialization are initialized to 0 as best as possible. complex variables are initialized to 0+0i. Each element of an array variable is initialized to 0 as described here. Similarly, each ﬁeld of a structure variable is initialized to 0 in the same way.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Variables declared without initialization are initialized to 0 as best as possible. complex variables are initialized to 0+0i. Each element of an array variable is initialized to 0 as described here. Similarly, each ﬁeld of a structure variable is initialized to 0 in the same way."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "4",
+            "rawText": "1 Value Expressions",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Value Expressions"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": null,
+            "rawText": "A value expression carries some value of a data type. Literal values are value expressions; these can be signed integer or real values, e.g. 17, 2.45, or 1.4e6. A literal value can also be a pure imaginary number, e.g. 17i or 3.4i. Unary, binary, and ternary expressions of value expressions are also value expressions, as described in section 2.1.1. Thus, while 3+4i is not a literal, it is a valid value expression of complex type.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A value expression carries some value of a data type. Literal values are value expressions; these can be signed integer or real values, e.g. 17, 2.45, or 1.4e6. A literal value can also be a pure imaginary number, e.g. 17i or 3.4i. Unary, binary, and ternary expressions of value expressions are also value expressions, as described in section 2.1.1. Thus, while 3+4i is not a literal, it is a valid value expression of complex type."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": null,
+            "rawText": "Field references to structure objects are also value expressions. These have the form a.b, where a is a variable of structured type A and b is a ﬁeld in A. Similarly, array references a[b] are value expressions; a must be an array variable, and b must be an integer-valued value expression.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Field references to structure objects are also value expressions. These have the form a.b, where a is a variable of structured type A and b is a ﬁeld in A. Similarly, array references a[b] are value expressions; a must be an array variable, and b must be an integer-valued value expression."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": null,
+            "rawText": "The peek and pop expressions look at items on the incoming tape in a ﬁlter’s work or helper functions; they are illegal in init or message-handler functions. peek(n) examines the n-th item on the tape without removing it; peek(0) returns the next incoming item, peek(1) the one afterwards, and so on. pop() returns the same item peek(0) returns, but also removes it from the tape.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The peek and pop expressions look at items on the incoming tape in a ﬁlter’s work or helper functions; they are illegal in init or message-handler functions. peek(n) examines the n-th item on the tape without removing it; peek(0) returns the next incoming item, peek(1) the one afterwards, and so on. pop() returns the same item peek(0) returns, but also removes it from the tape."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": null,
+            "rawText": "Note: There is not a guaranteed evaluation order for StreamIt expressions, and the implementation of pop() in C doesn’t give any guarantees for when the item is actually removed from the tape. Thus, an expression should contain no more than one pop(), and if there is one, there should be no peek()s.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Note: There is not a guaranteed evaluation order for StreamIt expressions, and the implementation of pop() in C doesn’t give any guarantees for when the item is actually removed from the tape. Thus, an expression should contain no more than one pop(), and if there is one, there should be no peek()s."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": null,
+            "rawText": "Note that pop() removes an item from the tape, so peek()s afterwards use different indices. A function may not peek at more items than it declares in its rate declaration, though it may peek at fewer. The peek declaration declares the furthest position on the tape examined from the point of view of the beginning of the function.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Note that pop() removes an item from the tape, so peek()s afterwards use different indices. A function may not peek at more items than it declares in its rate declaration, though it may peek at fewer. The peek declaration declares the furthest position on the tape examined from the point of view of the beginning of the function."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:39",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": null,
+            "rawText": "int->int filter PeekRates {",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "int->int filter PeekRates {"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:40",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": null,
+            "rawText": "work pop 1 peek 3 push 1 {",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "work pop 1 peek 3 push 1 {"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:41",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": null,
+            "rawText": "int a, b, c, d, e; a = peek(0); b = peek(1); c = pop(); // Same value as a d = peek(0); // Same value as b e = peek(1); push(a + b + c + d + e); } }",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "int a, b, c, d, e; a = peek(0); b = peek(1); c = pop(); // Same value as a d = peek(0); // Same value as b e = peek(1); push(a + b + c + d + e); } }"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:42",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": null,
+            "rawText": "This function pops one item and pushes 1. It declares a peek rate of 3 because e peeks at the third item that was on the tape at the start of the function – one is popped, and e contains the second item beyond that.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This function pops one item and pushes 1. It declares a peek rate of 3 because e peeks at the third item that was on the tape at the start of the function – one is popped, and e contains the second item beyond that."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "4",
+            "rawText": "1.2 Function Calls",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1.2 Function Calls"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": null,
+            "rawText": "Function calls are value expressions; certain cases of built-in functions may return values that are compile-time constant if their parameters are compile-time constant. The function call syntax fn(p1, p2) is identical to that of Java. All parameters are passed by value, with all elements of structures and arrays implicitly copied across a call; this differs from Java’s semantics, in which the value passed is a reference (i.e., a pointer) to each object and array parameter.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Function calls are value expressions; certain cases of built-in functions may return values that are compile-time constant if their parameters are compile-time constant. The function call syntax fn(p1, p2) is identical to that of Java. All parameters are passed by value, with all elements of structures and arrays implicitly copied across a call; this differs from Java’s semantics, in which the value passed is a reference (i.e., a pointer) to each object and array parameter."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": null,
+            "rawText": "Function calls may be made to declared helper functions, or to built-in math functions. The math functions are listed in Table 2.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Function calls may be made to declared helper functions, or to built-in math functions. The math functions are listed in Table 2."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": null,
+            "rawText": "Note: As an implementation detail, any function name not optimized as a built-in function in the front-end or recognized as a helper function is treated as a call to a function in the Java package java.lang.Math; see Java in a Nutshell or another Java reference for details. These get blindly translated again to calls to the C math library.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Note: As an implementation detail, any function name not optimized as a built-in function in the front-end or recognized as a helper function is treated as a call to a function in the Java package java.lang.Math; see Java in a Nutshell or another Java reference for details. These get blindly translated again to calls to the C math library."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:47",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": null,
+            "rawText": "Note: It is conceivable that calls to side-effect-free functions with compile-time constant parameters return compile-time constant results. This is only the case for built-in functions in the current implementation of the compiler; adding this involves inlining helper functions, and doing analysis to determine if a helper is in fact side-effect free.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Note: It is conceivable that calls to side-effect-free functions with compile-time constant parameters return compile-time constant results. This is only the case for built-in functions in the current implementation of the compiler; adding this involves inlining helper functions, and doing analysis to determine if a helper is in fact side-effect free."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:48",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": null,
+            "rawText": "abs(v) Real absolute value or complex magnitude arg(v) Polar angle of complex value exp(v) Real or complex exponent log(v) Real or complex natural logarithm sin(v) Real or complex sine cos(v) Real or complex cosine sqrt(v) Real or complex square root csqrt(v) Complex square root",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "abs(v) Real absolute value or complex magnitude arg(v) Polar angle of complex value exp(v) Real or complex exponent log(v) Real or complex natural logarithm sin(v) Real or complex sine cos(v) Real or complex cosine sqrt(v) Real or complex square root csqrt(v) Complex square root"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:49",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": null,
+            "rawText": "Table 2: StreamIt Math Functions",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Table 2: StreamIt Math Functions"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:50",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": null,
+            "rawText": "If a primitive type in parentheses precedes an expression, that expression is interpreted as being of the particular type. See the listing of types in Section 2.1.1. Conversions to types later in the list take place in the obvious way: boolean values convert to bit values with 0 for false and 1 for true, bit values convert to int values with the same value, and so on. float values convert to complex values with an imaginary part of 0. Conversions to types earlier in the list may lose data; conversions from complex are not possible, bit converts to boolean in the obvious way. The exact conversion from float to int is not speciﬁed. int values of 0 convert to bit values of 0, and other int values convert to 1.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "If a primitive type in parentheses precedes an expression, that expression is interpreted as being of the particular type. See the listing of types in Section 2.1.1. Conversions to types later in the list take place in the obvious way: boolean values convert to bit values with 0 for false and 1 for true, bit values convert to int values with the same value, and so on. float values convert to complex values with an imaginary part of 0. Conversions to types earlier in the list may lose data; conversions from complex are not possible, bit converts to boolean in the obvious way. The exact conversion from float to int is not speciﬁed. int values of 0 convert to bit values of 0, and other int values convert to 1."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:51",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": null,
+            "rawText": "/* For each input, pushes (float) 1 if the integer representation",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "/* For each input, pushes (float) 1 if the integer representation"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:52",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": null,
+            "rawText": "* of the input has the 64-bit set. */ float->float filter TypeCast {",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "* of the input has the 64-bit set. */ float->float filter TypeCast {"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:53",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": null,
+            "rawText": "complex c = (complex)pop(); float f = abs(c); // can’t directly cast from complex int i = (int)f; bit b = (bit)(i & 64); push((float)b); } }",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "complex c = (complex)pop(); float f = abs(c); // can’t directly cast from complex int i = (int)f; bit b = (bit)(i & 64); push((float)b); } }"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:54",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "4",
+            "rawText": "2 Stream Constructors",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2 Stream Constructors"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:55",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": null,
+            "rawText": "A stream constructor indicates that a new stream object should be created. Stream constructors appear in add, body, and loop statements in composite stream initialization code.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A stream constructor indicates that a new stream object should be created. Stream constructors appear in add, body, and loop statements in composite stream initialization code."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:56",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": null,
+            "rawText": "Stream constructors may reference an already-declared stream type. In this case, the stream constructor form is Name(param, ...). There must be exactly as many parameters in the constructor as parameters for the stream type.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Stream constructors may reference an already-declared stream type. In this case, the stream constructor form is Name(param, ...). There must be exactly as many parameters in the constructor as parameters for the stream type."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:57",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": null,
+            "rawText": "An anonymous stream declaration is also a valid stream constructor; see section 2.2.8. A statement containing an anonymous stream declaration does not need to be terminated with a semicolon, since it ends with a close-brace.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "An anonymous stream declaration is also a valid stream constructor; see section 2.2.8. A statement containing an anonymous stream declaration does not need to be terminated with a semicolon, since it ends with a close-brace."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:58",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": null,
+            "rawText": "A stream constructor may be followed by the keyword to and the name of a portal variable. This causes the newly created stream to be registered with the named portal. See Section 6 for details.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A stream constructor may be followed by the keyword to and the name of a portal variable. This causes the newly created stream to be registered with the named portal. See Section 6 for details."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:59",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": null,
+            "rawText": "This section describes built in data and stream types in StreamIt. These types are implicitly declared; code can just use these types without explicitly importing or otherwise declaring them.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This section describes built in data and stream types in StreamIt. These types are implicitly declared; code can just use these types without explicitly importing or otherwise declaring them."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:60",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "5",
+            "rawText": "1 Built-in Data Types",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Built-in Data Types"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:61",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": null,
+            "rawText": "The complex type is actually implemented as a structure, though the compiler implements syntactic sugar for complex variables. The structure deﬁnition is shown above in section 2.1.2. It is legal to explicitly reference the real and imag ﬁelds of complex numbers as though they were the structure type instead.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The complex type is actually implemented as a structure, though the compiler implements syntactic sugar for complex variables. The structure deﬁnition is shown above in section 2.1.2. It is legal to explicitly reference the real and imag ﬁelds of complex numbers as though they were the structure type instead."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:62",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "5",
+            "rawText": "2 Built-in Streams",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2 Built-in Streams"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:63",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": null,
+            "rawText": "Several stream types are in common use, and are either simple enough or require non-standard language functionality that the compiler should support them directly. These include parameterized Identity, FileReader, and FileWriter types, as shown in ﬁgure 4.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Several stream types are in common use, and are either simple enough or require non-standard language functionality that the compiler should support them directly. These include parameterized Identity, FileReader, and FileWriter types, as shown in ﬁgure 4."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:64",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": null,
+            "rawText": "template<T> T->T filter Identity {",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "template<T> T->T filter Identity {"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:65",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": null,
+            "rawText": "work pop 1 push 1 { push(pop()); } } template<T> void->T filter FileReader",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "work pop 1 push 1 { push(pop()); } } template<T> void->T filter FileReader"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:66",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": null,
+            "rawText": "(string filename) { work push 1 { /* Implementation defined */ } } template<T> T->void filter FileWriter",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "(string filename) { work push 1 { /* Implementation defined */ } } template<T> T->void filter FileWriter"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:67",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": null,
+            "rawText": "(string filename) { work pop 1 { /* Implementation defined */ } }",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "(string filename) { work pop 1 { /* Implementation defined */ } }"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:68",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": null,
+            "rawText": "Figure 4: Built-in Stream Types",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Figure 4: Built-in Stream Types"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:69",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": null,
+            "rawText": "6 Teleport Messaging",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6 Teleport Messaging"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:70",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 71,
+            "label": null,
+            "rawText": "It is sometimes necessary to send occasional messages outside of the normal stream data ﬂow. A radio application might contain an in-band signal requesting a change in the listening frequency, for example; this signal would happen infrequently, but it would be detected by a ﬁlter late in the application and require a change in a ﬁlter early in the application. StreamIt provides an out-ofband messaging system called “teleport messaging” to accomodate this sort of application.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "It is sometimes necessary to send occasional messages outside of the normal stream data ﬂow. A radio application might contain an in-band signal requesting a change in the listening frequency, for example; this signal would happen infrequently, but it would be detected by a ﬁlter late in the application and require a change in a ﬁlter early in the application. StreamIt provides an out-ofband messaging system called “teleport messaging” to accomodate this sort of application."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:71",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 72,
+            "label": null,
+            "rawText": "Only ﬁlters can receive messages. The possible messages are deﬁned by message handler functions; these functions have the keyword handler in place of their return type. A message is sent to a portal, which can have multiple targets registered with it.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Only ﬁlters can receive messages. The possible messages are deﬁned by message handler functions; these functions have the keyword handler in place of their return type. A message is sent to a portal, which can have multiple targets registered with it."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:72",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 73,
+            "label": null,
+            "rawText": "A portal is a special type of variable. It is associated with a single message receiver type; the full type name is portal<ReceiverType>. Unlike other variables in StreamIt, portals are passed by reference in stream parameters. Declaring a portal as a local variable, and then passing that as a parameter to a child stream which adds a ﬁlter to the portal, results in the ﬁlter also being added to",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A portal is a special type of variable. It is associated with a single message receiver type; the full type name is portal<ReceiverType>. Unlike other variables in StreamIt, portals are passed by reference in stream parameters. Declaring a portal as a local variable, and then passing that as a parameter to a child stream which adds a ﬁlter to the portal, results in the ﬁlter also being added to"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:73",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 74,
+            "label": null,
+            "rawText": "the portal in the original container. When a ﬁlter is created, it may be added to a portal by adding the keyword to and the portal variable to the end of the declaration (see Section 6.4 for an example).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "the portal in the original container. When a ﬁlter is created, it may be added to a portal by adding the keyword to and the portal variable to the end of the declaration (see Section 6.4 for an example)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:74",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 75,
+            "label": "6",
+            "rawText": "2 Sending and receiving messages",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2 Sending and receiving messages"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:75",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 76,
+            "label": null,
+            "rawText": "Work or helper functions may send messages through portals. This looks like a function call in Java: the portal name is followed by a period, the message name, and a parenthesized parameter list. This may, optionally, be followed by a message latency, which speciﬁes the minimum and maximum delay to receive the message. The latency speciﬁcation is an open bracket, a minimum latency, a colon, a maximum latency, and a close bracket. If the latency speciﬁcation is omitted, the default message latency is zero (for both the minimum and maximum).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Work or helper functions may send messages through portals. This looks like a function call in Java: the portal name is followed by a period, the message name, and a parenthesized parameter list. This may, optionally, be followed by a message latency, which speciﬁes the minimum and maximum delay to receive the message. The latency speciﬁcation is an open bracket, a minimum latency, a colon, a maximum latency, and a close bracket. If the latency speciﬁcation is omitted, the default message latency is zero (for both the minimum and maximum)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:76",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 77,
+            "label": null,
+            "rawText": "For each ﬁlter that receives messages, the runtime system maintains a queue to hold incoming messages. This queue is checked prior to each execution of the work function; any messages in the queue are dispatched to the appropriate message handlers.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "For each ﬁlter that receives messages, the runtime system maintains a queue to hold incoming messages. This queue is checked prior to each execution of the work function; any messages in the queue are dispatched to the appropriate message handlers."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:77",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 78,
+            "label": null,
+            "rawText": "Messages sent with a ﬁxed latency (i.e., the minimum and maximum latencies are equal) on a given execution of the sending ﬁlter will always arrive at a given execution of the receiving ﬁlter. This deterministic property holds even if the compiler is parallelizing or reordering the ﬁlters at runtime. Messages sent with a range of latencies (i.e., the minimum and maximum latencies are different) are sent as if some latency is chosen from within the range on every message invocation.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Messages sent with a ﬁxed latency (i.e., the minimum and maximum latencies are equal) on a given execution of the sending ﬁlter will always arrive at a given execution of the receiving ﬁlter. This deterministic property holds even if the compiler is parallelizing or reordering the ﬁlters at runtime. Messages sent with a range of latencies (i.e., the minimum and maximum latencies are different) are sent as if some latency is chosen from within the range on every message invocation."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:78",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 79,
+            "label": null,
+            "rawText": "For each pair of message senders and receivers, there must be a directed path in the stream graph from one ﬁlter to the other (messages cannot be sent between ﬁlters on parallel paths in a splitjoin). We refer to the ﬁlter at the start of this path as the upstream ﬁlter, and the ﬁlter at the end of this path as the downstream ﬁlter.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "For each pair of message senders and receivers, there must be a directed path in the stream graph from one ﬁlter to the other (messages cannot be sent between ﬁlters on parallel paths in a splitjoin). We refer to the ﬁlter at the start of this path as the upstream ﬁlter, and the ﬁlter at the end of this path as the downstream ﬁlter."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:79",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 80,
+            "label": null,
+            "rawText": "Messages are timed relative to a pull schedule. A pull schedule corresponds to a sequence of atomic ﬁlter ﬁrings. For each pair of message senders and receivers, a pull schedule executes the upstream ﬁlter as few times as possible for each execution of the downstream ﬁlter. This corresponds to a ﬁne-grained execution with the minimal amount of buffering between ﬁlters. While the runtime system may deviate from the pull schedule, it must time the delivery of messages as if the pull schedule is in effect.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Messages are timed relative to a pull schedule. A pull schedule corresponds to a sequence of atomic ﬁlter ﬁrings. For each pair of message senders and receivers, a pull schedule executes the upstream ﬁlter as few times as possible for each execution of the downstream ﬁlter. This corresponds to a ﬁne-grained execution with the minimal amount of buffering between ﬁlters. While the runtime system may deviate from the pull schedule, it must time the delivery of messages as if the pull schedule is in effect."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:80",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 81,
+            "label": null,
+            "rawText": "Assuming execution under a pull schedule, messages sent with default (zero) latency are immediately added to the message queue of the target stream. Non-zero latencies are measured in terms of ﬁlter executions. If a ﬁlter sends a message with latency k during its nth execution, the outcome is equivalent to sending a message with latency 0 during its n + kth execution.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Assuming execution under a pull schedule, messages sent with default (zero) latency are immediately added to the message queue of the target stream. Non-zero latencies are measured in terms of ﬁlter executions. If a ﬁlter sends a message with latency k during its nth execution, the outcome is equivalent to sending a message with latency 0 during its n + kth execution."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:81",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 82,
+            "label": null,
+            "rawText": "Message latencies can be interpreted as follows. If the message is sent in the direction of dataﬂow (from an upstream node to a downstream node), a positive latency indicates that the message is synchronized with some data that the message sender will produce in the future. Likewise, a negative latency synchronizes the message with some data that the message sender produced in the past.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Message latencies can be interpreted as follows. If the message is sent in the direction of dataﬂow (from an upstream node to a downstream node), a positive latency indicates that the message is synchronized with some data that the message sender will produce in the future. Likewise, a negative latency synchronizes the message with some data that the message sender produced in the past."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:82",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 83,
+            "label": null,
+            "rawText": "If a message is sent opposite the direction of dataﬂow (from a downstream node to an upstream node), a positive latency synchronizes the message with some data the message sender will consume in the future. In this case, negative latencies are illegal (they correspond to data consumed by the message sender in the past).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "If a message is sent opposite the direction of dataﬂow (from a downstream node to an upstream node), a positive latency synchronizes the message with some data the message sender will consume in the future. In this case, negative latencies are illegal (they correspond to data consumed by the message sender in the past)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:83",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 84,
+            "label": "6",
+            "rawText": "4 Messaging Example",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "4 Messaging Example"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:84",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 85,
+            "label": null,
+            "rawText": "The following code uses teleport messaging to count in sequence:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The following code uses teleport messaging to count in sequence:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:85",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 86,
+            "label": null,
+            "rawText": "void->void pipeline Counter {",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "void->void pipeline Counter {"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:86",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 87,
+            "label": null,
+            "rawText": "portal<Sink> p; add Source(p); add Sink to p; }",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "portal<Sink> p; add Source(p); add Sink to p; }"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:87",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 88,
+            "label": null,
+            "rawText": "void->int filter Source(portal<Sink> p) {",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "void->int filter Source(portal<Sink> p) {"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:88",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 89,
+            "label": null,
+            "rawText": "int->void filter Sink {",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "int->void filter Sink {"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:89",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 90,
+            "label": null,
+            "rawText": "handler count(int val) {",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "handler count(int val) {"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:90",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 91,
+            "label": null,
+            "rawText": "When run for 6 iterations, the code above outputs “123456”. The pull schedule executes the Source and Sink in alternation. On the ﬁrst execution of the Source, a count() message is sent to portal p with the default latency of zero. The message is immediately added to the Sink’s incoming message queue. Thus, when the Sink executes, it checks the queue and handles the message before executing work, thereby updating its output variable before it is printed to the screen.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "When run for 6 iterations, the code above outputs “123456”. The pull schedule executes the Source and Sink in alternation. On the ﬁrst execution of the Source, a count() message is sent to portal p with the default latency of zero. The message is immediately added to the Sink’s incoming message queue. Thus, when the Sink executes, it checks the queue and handles the message before executing work, thereby updating its output variable before it is printed to the screen."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:91",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 92,
+            "label": null,
+            "rawText": "Suppose that the message was sent with a latency of 1 instead of 0:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Suppose that the message was sent with a latency of 1 instead of 0:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:92",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 93,
+            "label": null,
+            "rawText": "void->int filter Source(portal<Sink> p) {",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "void->int filter Source(portal<Sink> p) {"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:93",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 94,
+            "label": null,
+            "rawText": "push(0); p.count(i++) [1:1]; } }",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "push(0); p.count(i++) [1:1]; } }"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:94",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 95,
+            "label": null,
+            "rawText": "In this case, the program outputs “012345” because the message was effectively sent one iteration later.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "In this case, the program outputs “012345” because the message was effectively sent one iteration later."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:95",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 96,
+            "label": null,
+            "rawText": "Adding support for dynamic rates, teleport messaging, static sections, and prework functions.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Adding support for dynamic rates, teleport messaging, static sections, and prework functions."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:96",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 97,
+            "label": null,
+            "rawText": "The ﬁrst formal language speciﬁcation for StreamIt documented StreamIt 2.0. Version 2.0 of the language adds a completely new syntax with simpliﬁed constructs for declaring stream objects but keeping a Java-like syntax for the bodies of init and work functions. It also changes from delay functions to enqueue statements in feedback loops. The null splitter/joiner type was replaced with roundrobin(0).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The ﬁrst formal language speciﬁcation for StreamIt documented StreamIt 2.0. Version 2.0 of the language adds a completely new syntax with simpliﬁed constructs for declaring stream objects but keeping a Java-like syntax for the bodies of init and work functions. It also changes from delay functions to enqueue statements in feedback loops. The null splitter/joiner type was replaced with roundrobin(0)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:97",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 98,
+            "label": null,
+            "rawText": "The initial StreamIt compiler was based on a restricted subset of Java, dubbed StreamIt 1.0. This version of the language used pure Java syntax for stream constructs, and was compilable with a normal Java compiler given an appropriate run-time library. Early publications referred to the language as StreaMIT, but this capitalization is now deprecated.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The initial StreamIt compiler was based on a restricted subset of Java, dubbed StreamIt 1.0. This version of the language used pure Java syntax for stream constructs, and was compilable with a normal Java compiler given an appropriate run-time library. Early publications referred to the language as StreaMIT, but this capitalization is now deprecated."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamit language specification:2006:98",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 98,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "MITCSAIL2006",
+      "paperId": "title:streamit language specification:2006",
+      "metadata": {
+        "fileName": "MITCSAIL2006.pdf",
+        "sourcePath": "papers/dataflow/MITCSAIL2006.pdf"
+      }
+    }
+  ]
+}

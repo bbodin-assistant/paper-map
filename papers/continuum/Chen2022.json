@@ -1,0 +1,2054 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.939895+00:00",
+  "papers": [
+    {
+      "key": "Chen2022",
+      "paper": {
+        "id": "title:starlight fast container provisioning on the edge and over the wan:2022",
+        "citationKey": "Chen2022",
+        "title": "Starlight: Fast Container Provisioning on the Edge and over the WAN",
+        "authors": [
+          "Jun Lin Chen",
+          "Daniyal Liaqat",
+          "Moshe Gabel",
+          "Eyal de Lara"
+        ],
+        "year": 2022,
+        "venue": "19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22)",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www.usenix.org/conference/nsdi22/presentation/chen-jun-lin",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:embedded-edge-cloud-orchestration"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Jun Lin Chen and Daniyal Liaqat and Moshe Gabel and Eyal de Lara",
+          "title": "{Starlight: Fast Container Provisioning on the Edge and over the WAN}",
+          "year": "2022",
+          "booktitle": "19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22)",
+          "publisher": "USENIX Association",
+          "pages": "35--50",
+          "url": "https://www.usenix.org/conference/nsdi22/presentation/chen-jun-lin"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.198025+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Alexandru Agache, Marc Brooker, Alexandra Iordache, Anthony Liguori, Rolf Neugebauer, Phil Piwonka, and Diana-Maria Popa. Firecracker: Lightweight virtualization for serverless applications. In 17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20), pages 419–434, Santa Clara, CA, February 2020. USENIX Association.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Alexandru Agache, Marc Brooker, Alexandra Iordache, Anthony Liguori, Rolf Neugebauer, Phil Piwonka, and Diana-Maria Popa. Firecracker: Lightweight virtualization for serverless applications. In 17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20), pages 419–434, Santa Clara, CA, February 2020. USENIX Association."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:firecracker lightweight virtualization for serverless applications:2020",
+                "doi": "",
+                "arxivId": "",
+                "title": "Firecracker: Lightweight Virtualization for Serverless Applications",
+                "authors": [
+                  "Alexandru Agache",
+                  "Marc Brooker",
+                  "Andreea Florescu",
+                  "Alexandra Iordache",
+                  "Anthony Liguori",
+                  "Rolf Neugebauer",
+                  "Phil Piwonka",
+                  "Diana-Maria Popa"
+                ],
+                "year": 2020,
+                "venue": "17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20)",
+                "type": "inproceedings",
+                "url": "https://www.usenix.org/conference/nsdi20/presentation/agache"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "Werner Almesberger. Linux trafﬁc control - implementation overview. Technical report, EPFL ICA, 1998.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Werner Almesberger. Linux trafﬁc control - implementation overview. Technical report, EPFL ICA, 1998."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "Amazon. Amazon Elastic Container Service (Amazon ECS). https://aws.amazon.com/ecs/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Amazon. Amazon Elastic Container Service (Amazon ECS). https://aws.amazon.com/ecs/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "Ali Anwar, Mohamed Mohamed, Vasily Tarasov, Michael Littley, Lukas Rupprecht, Yue Cheng, Nannan Zhao, Dimitrios Skourtis, Amit S. Warke, Heiko Ludwig, Dean Hildebrand, and Ali R. Butt. Improving docker registry design based on production workload analysis. In 16th USENIX Conference on File and Storage Technologies (FAST 18), pages 265–278, Oakland, CA, February 2018. USENIX Association.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Ali Anwar, Mohamed Mohamed, Vasily Tarasov, Michael Littley, Lukas Rupprecht, Yue Cheng, Nannan Zhao, Dimitrios Skourtis, Amit S. Warke, Heiko Ludwig, Dean Hildebrand, and Ali R. Butt. Improving docker registry design based on production workload analysis. In 16th USENIX Conference on File and Storage Technologies (FAST 18), pages 265–278, Oakland, CA, February 2018. USENIX Association."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "A. Balalaie, A. Heydarnoori, and P. Jamshidi. Microservices architecture enables devops: Migration to a cloud-native architecture. IEEE Software, 33(3):42–52, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Balalaie, A. Heydarnoori, and P. Jamshidi. Microservices architecture enables devops: Migration to a cloud-native architecture. IEEE Software, 33(3):42–52, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "Steve Beattie, Seth Arnold, Crispin Cowan, Perry Wagle, Chris Wright, and Adam Shostack. Timing the application of security patches for optimal uptime. In 16th Systems Administration Conference (LISA 02), Philadelphia, PA, November 2002. USENIX Association.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Steve Beattie, Seth Arnold, Crispin Cowan, Perry Wagle, Chris Wright, and Adam Shostack. Timing the application of security patches for optimal uptime. In 16th Systems Administration Conference (LISA 02), Philadelphia, PA, November 2002. USENIX Association."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Containerd. Snapshots design. https: //github.com/containerd/containerd/blob/ main/design/snapshots.md.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Containerd. Snapshots design. https: //github.com/containerd/containerd/blob/ main/design/snapshots.md."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "Containerd. Stargz snapshotter. https:// github.com/containerd/stargz-snapshotter.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Containerd. Stargz snapshotter. https:// github.com/containerd/stargz-snapshotter."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Brian F. Cooper, Adam Silberstein, Erwin Tam, Raghu Ramakrishnan, and Russell Sears. Benchmarking cloud serving systems with ycsb. In Proceedings of the 1st ACM Symposium on Cloud Computing, SoCC ’10, page 143–154, New York, NY, USA, 2010. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Brian F. Cooper, Adam Silberstein, Erwin Tam, Raghu Ramakrishnan, and Russell Sears. Benchmarking cloud serving systems with ycsb. In Proceedings of the 1st ACM Symposium on Cloud Computing, SoCC ’10, page 143–154, New York, NY, USA, 2010. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "Lorenzo Corneo, Maximilian Eder, Nitinder Mohan, Aleksandr Zavodovski, Suzan Bayhan, Walter Wong, Per Gunningberg, Jussi Kangasharju, and Jörg Ott. Surrounded by the Clouds: A Comprehensive Cloud Reachability Study, page 295–304. Association for Computing Machinery, New York, NY, USA, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lorenzo Corneo, Maximilian Eder, Nitinder Mohan, Aleksandr Zavodovski, Suzan Bayhan, Walter Wong, Per Gunningberg, Jussi Kangasharju, and Jörg Ott. Surrounded by the Clouds: A Comprehensive Cloud Reachability Study, page 295–304. Association for Computing Machinery, New York, NY, USA, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "Breno Costa, Joao Bachiega, Leonardo Rebouças de Carvalho, and Aleteia P. F. Araujo. Orchestration in fog computing: A comprehensive survey. ACM Comput. Surv., 55(2), January 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Breno Costa, Joao Bachiega, Leonardo Rebouças de Carvalho, and Aleteia P. F. Araujo. Orchestration in fog computing: A comprehensive survey. ACM Comput. Surv., 55(2), January 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Geoff Cumming, Fiona Fidler, and David L. Vaux. Error bars in experimental biology . Journal of Cell Biology, 177(1):7–11, 04 2007.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Geoff Cumming, Fiona Fidler, and David L. Vaux. Error bars in experimental biology . Journal of Cell Biology, 177(1):7–11, 04 2007."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "Richard Cziva and Dimitrios P. Pezaros. Container network functions: Bringing nfv to the network edge. IEEE Communications Magazine, 55(6):24–31, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Richard Cziva and Dimitrios P. Pezaros. Container network functions: Bringing nfv to the network edge. IEEE Communications Magazine, 55(6):24–31, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "Bradley Denby and Brandon Lucia. Orbital edge computing: Nanosatellite constellations as a new class of computer system. In Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS ’20, page 939–954, New York, NY, USA, 2020. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Bradley Denby and Brandon Lucia. Orbital edge computing: Nanosatellite constellations as a new class of computer system. In Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS ’20, page 939–954, New York, NY, USA, 2020. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "Docker. Best practices for writing dockerﬁles. https://docs.docker.com/develop/ develop-images/dockerfile_best-practices/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Docker. Best practices for writing dockerﬁles. https://docs.docker.com/develop/ develop-images/dockerfile_best-practices/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "Docker. Docker compose. https://github.com/ docker/compose.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Docker. Docker compose. https://github.com/ docker/compose."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "Docker. Docker documentation. https: //docs.docker.com/engine/reference/ commandline/dockerd/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Docker. Docker documentation. https: //docs.docker.com/engine/reference/ commandline/dockerd/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "Docker. Empowering app development for developers | docker. https://www.docker.com/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Docker. Empowering app development for developers | docker. https://www.docker.com/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "Philip J. Fleming and John J. Wallace. How not to lie with statistics: The correct way to summarize benchmark results. Commun. ACM, 29(3):218–221, March 1986.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Philip J. Fleming and John J. Wallace. How not to lie with statistics: The correct way to summarize benchmark results. Commun. ACM, 29(3):218–221, March 1986."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1986,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "The Linux Foundation. Cloud native computing foundation. https://cncf.io.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Linux Foundation. Cloud native computing foundation. https://cncf.io."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "The Linux Foundation. containerd: An industrystandard container runtime with an emphasis on simplicity, robustness and portability. https:// containerd.io/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Linux Foundation. containerd: An industrystandard container runtime with an emphasis on simplicity, robustness and portability. https:// containerd.io/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "The Linux Foundation. K3s: Lightweight kubernetes. https://k3s.io.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Linux Foundation. K3s: Lightweight kubernetes. https://k3s.io."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "The Linux Foundation. Kubernetes. https:// kubernetes.io/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Linux Foundation. Kubernetes. https:// kubernetes.io/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "The Linux Foundation. Open container initiative. https://opencontainers.org/. USENIX Association 19th USENIX Symposium on Networked Systems Design and Implementation 47",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Linux Foundation. Open container initiative. https://opencontainers.org/. USENIX Association 19th USENIX Symposium on Networked Systems Design and Implementation 47"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "Silvery Fu, Radhika Mittal, Lei Zhang, and Sylvia Ratnasamy. Fast and efﬁcient container startup at the edge via dependency scheduling. In 3rd USENIX Workshop on Hot Topics in Edge Computing (HotEdge 20). USENIX Association, June 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Silvery Fu, Radhika Mittal, Lei Zhang, and Sylvia Ratnasamy. Fast and efﬁcient container startup at the edge via dependency scheduling. In 3rd USENIX Workshop on Hot Topics in Edge Computing (HotEdge 20). USENIX Association, June 2020."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:fast and efficient container startup at the edge via dependency scheduling:2020",
+                "doi": "",
+                "arxivId": "",
+                "title": "Fast and Efficient Container Startup at the Edge via Dependency Scheduling",
+                "authors": [
+                  "Silvery Fu",
+                  "Radhika Mittal",
+                  "Lei Zhang",
+                  "Sylvia Ratnasamy"
+                ],
+                "year": 2020,
+                "venue": "3rd USENIX Workshop on Hot Topics in Edge Computing (HotEdge 20)",
+                "type": "inproceedings",
+                "url": "https://www.usenix.org/system/files/hotedge20_paper_fu.pdf"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "Lisa Gerhardt, Wahid Bhimji, Shane Canon, Markus Fasel, Doug Jacobsen, Mustafa Mustafa, Jeff Porter, and Vakho Tsulaia. Shifter: Containers for HPC. In Journal of physics: Conference series, volume 898, page 082021. IOP Publishing, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lisa Gerhardt, Wahid Bhimji, Shane Canon, Markus Fasel, Doug Jacobsen, Mustafa Mustafa, Jeff Porter, and Vakho Tsulaia. Shifter: Containers for HPC. In Journal of physics: Conference series, volume 898, page 082021. IOP Publishing, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "27",
+            "rawText": "Google. CRFS: Container registry ﬁlesystem. https: //github.com/google/crfs.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Google. CRFS: Container registry ﬁlesystem. https: //github.com/google/crfs."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "28",
+            "rawText": "Tyler Harter, Brandon Salmon, Rose Liu, Andrea C. Arpaci-Dusseau, and Remzi H. Arpaci-Dusseau. Slacker: Fast distribution with lazy docker containers. In 14th USENIX Conference on File and Storage Technologies (FAST 16), pages 181–195, Santa Clara, CA, February 2016. USENIX Association.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tyler Harter, Brandon Salmon, Rose Liu, Andrea C. Arpaci-Dusseau, and Remzi H. Arpaci-Dusseau. Slacker: Fast distribution with lazy docker containers. In 14th USENIX Conference on File and Storage Technologies (FAST 16), pages 181–195, Santa Clara, CA, February 2016. USENIX Association."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "29",
+            "rawText": "Stephen Hemminger. Network emulation with NetEm. In Linux Conf Australia, pages 18–23, 2005.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Stephen Hemminger. Network emulation with NetEm. In Linux Conf Australia, pages 18–23, 2005."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "30",
+            "rawText": "Docker Inc. Docker Hub: Container image library | app containerization. https:// registry.hub.docker.com/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Docker Inc. Docker Hub: Container image library | app containerization. https:// registry.hub.docker.com/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "31",
+            "rawText": "Uber Inc. Kraken - p2p docker registry capable of distributing tbs of data in seconds. https://github.com/ uber/kraken.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Uber Inc. Kraken - p2p docker registry capable of distributing tbs of data in seconds. https://github.com/ uber/kraken."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "32",
+            "rawText": "Wang Kangjin, Yang Yong, Li Ying, Luo Hanmei, and Ma Lin. Fid: A faster image distribution system for docker platform. In 2017 IEEE 2nd International Workshops on Foundations and Applications of Self* Systems (FAS*W), pages 191–198, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Wang Kangjin, Yang Yong, Li Ying, Luo Hanmei, and Ma Lin. Fid: A faster image distribution system for docker platform. In 2017 IEEE 2nd International Workshops on Foundations and Applications of Self* Systems (FAS*W), pages 191–198, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "33",
+            "rawText": "The kernel development community. Fuse the linux kernel documentation. https://www.kernel.org/doc/ html/latest/filesystems/fuse.html.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The kernel development community. Fuse the linux kernel documentation. https://www.kernel.org/doc/ html/latest/filesystems/fuse.html."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "34",
+            "rawText": "kernel.org. Overlay ﬁlesystem – the linux kernel documentation. https://www.kernel.org/doc/html/ latest/filesystems/overlayfs.html.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "kernel.org. Overlay ﬁlesystem – the linux kernel documentation. https://www.kernel.org/doc/html/ latest/filesystems/overlayfs.html."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "35",
+            "rawText": "Petros Koutoupis. Everything you need to know about Linux containers, part i: Linux control groups and process isolation. Linux Journal, 2018, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Petros Koutoupis. Everything you need to know about Linux containers, part i: Linux control groups and process isolation. Linux Journal, 2018, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "36",
+            "rawText": "Adam Langley, Alistair Riddoch, Alyssa Wilk, Antonio Vicente, Charles Krasic, Dan Zhang, Fan Yang, Fedor Kouranov, Ian Swett, Janardhan Iyengar, Jeff Bailey, Jeremy Dorfman, Jim Roskind, Joanna Kulik, Patrik Westin, Raman Tenneti, Robbie Shade, Ryan Hamilton, Victor Vasiliev, Wan-Teh Chang, and Zhongyi Shi. The quic transport protocol: Design and internet-scale deployment. In Proceedings of the Conference of the ACM Special Interest Group on Data Communication, SIGCOMM ’17, page 183–196, New York, NY, USA, 2017. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Adam Langley, Alistair Riddoch, Alyssa Wilk, Antonio Vicente, Charles Krasic, Dan Zhang, Fan Yang, Fedor Kouranov, Ian Swett, Janardhan Iyengar, Jeff Bailey, Jeremy Dorfman, Jim Roskind, Joanna Kulik, Patrik Westin, Raman Tenneti, Robbie Shade, Ryan Hamilton, Victor Vasiliev, Wan-Teh Chang, and Zhongyi Shi. The quic transport protocol: Design and internet-scale deployment. In Proceedings of the Conference of the ACM Special Interest Group on Data Communication, SIGCOMM ’17, page 183–196, New York, NY, USA, 2017. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "37",
+            "rawText": "Huiba Li, Yifan Yuan, Rui Du, Kai Ma, Lanzheng Liu, and Windsor Hsu. DADI: Block-level image service for agile and elastic application deployment. In 2020 USENIX Annual Technical Conference (USENIX ATC 20), pages 727–740. USENIX Association, July 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Huiba Li, Yifan Yuan, Rui Du, Kai Ma, Lanzheng Liu, and Windsor Hsu. DADI: Block-level image service for agile and elastic application deployment. In 2020 USENIX Annual Technical Conference (USENIX ATC 20), pages 727–740. USENIX Association, July 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "38",
+            "rawText": "Filipe Manco, Costin Lupu, Florian Schmidt, Jose Mendes, Simon Kuenzer, Sumit Sati, Kenichi Yasukata, Costin Raiciu, and Felipe Huici. My vm is lighter (and safer) than your container. In Proceedings of the 26th Symposium on Operating Systems Principles, SOSP ’17, page 218–233, New York, NY, USA, 2017. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Filipe Manco, Costin Lupu, Florian Schmidt, Jose Mendes, Simon Kuenzer, Sumit Sati, Kenichi Yasukata, Costin Raiciu, and Felipe Huici. My vm is lighter (and safer) than your container. In Proceedings of the 26th Symposium on Operating Systems Principles, SOSP ’17, page 218–233, New York, NY, USA, 2017. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "39",
+            "rawText": "Scott McCarty. A practical introduction to container terminology, 2018. https://developers.redhat.com/ blog/2018/02/22/container-terminologypractical-introduction.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Scott McCarty. A practical introduction to container terminology, 2018. https://developers.redhat.com/ blog/2018/02/22/container-terminologypractical-introduction."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:39",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "40",
+            "rawText": "Isla Mcketta. How Starlink’s satellite internet stacks up against HughesNet and Viasat around the globe, 2021. https://www.speedtest.net/insights/ blog/starlink-hughesnet-viasat-performanceq2-2021/.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Isla Mcketta. How Starlink’s satellite internet stacks up against HughesNet and Viasat around the globe, 2021. https://www.speedtest.net/insights/ blog/starlink-hughesnet-viasat-performanceq2-2021/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:40",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "41",
+            "rawText": "Microsoft. Azure container instances. https://azure.microsoft.com/en-us/services/ container-instances/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Microsoft. Azure container instances. https://azure.microsoft.com/en-us/services/ container-instances/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:41",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "42",
+            "rawText": "Seyed Hossein Mortazavi, Mohammad Salehe, Moshe Gabel, and Eyal de Lara. Feather: Hierarchical querying for the edge. In 2020 IEEE/ACM Symposium on Edge Computing (SEC), pages 271–284, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Seyed Hossein Mortazavi, Mohammad Salehe, Moshe Gabel, and Eyal de Lara. Feather: Hierarchical querying for the edge. In 2020 IEEE/ACM Symposium on Edge Computing (SEC), pages 271–284, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:42",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "43",
+            "rawText": "Seyed Hossein Mortazavi, Mohammad Salehe, Carolina Simoes Gomes, Caleb Phillips, and Eyal de Lara. Cloudpath: A multi-tier cloud computing framework. In Proceedings of the Second ACM/IEEE Symposium on Edge Computing, SEC ’17, New York, NY, USA, 2017. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Seyed Hossein Mortazavi, Mohammad Salehe, Carolina Simoes Gomes, Caleb Phillips, and Eyal de Lara. Cloudpath: A multi-tier cloud computing framework. In Proceedings of the Second ACM/IEEE Symposium on Edge Computing, SEC ’17, New York, NY, USA, 2017. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "44",
+            "rawText": "Senthil Nathan, Rahul Ghosh, Tridib Mukherjee, and Krishnaprasad Narayanan. CoMICon: A co-operative management system for docker container images. In 2017 IEEE International Conference on Cloud Engineering (IC2E), pages 116–126, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Senthil Nathan, Rahul Ghosh, Tridib Mukherjee, and Krishnaprasad Narayanan. CoMICon: A co-operative management system for docker container images. In 2017 IEEE International Conference on Cloud Engineering (IC2E), pages 116–126, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "45",
+            "rawText": "Mahesh Nayak, Kumud Dwivedi, and Cheryl McGuire. Azure network round-trip latency statistics, 2021. https://docs.microsoft.com/en-us/azure/ networking/azure-network-latency. 48 19th USENIX Symposium on Networked Systems Design and Implementation USENIX Association",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Mahesh Nayak, Kumud Dwivedi, and Cheryl McGuire. Azure network round-trip latency statistics, 2021. https://docs.microsoft.com/en-us/azure/ networking/azure-network-latency. 48 19th USENIX Symposium on Networked Systems Design and Implementation USENIX Association"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "46",
+            "rawText": "The Containers Organization. Buildah: a tool that facilitates building open container initiative (oci) container images. https://buildah.io/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Containers Organization. Buildah: a tool that facilitates building open container initiative (oci) container images. https://buildah.io/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "47",
+            "rawText": "Misun Park, Ketan Bhardwaj, and Ada Gavrilovska. Toward lighter containers for the edge. In 3rd USENIX Workshop on Hot Topics in Edge Computing (HotEdge 20). USENIX Association, June 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Misun Park, Ketan Bhardwaj, and Ada Gavrilovska. Toward lighter containers for the edge. In 3rd USENIX Workshop on Hot Topics in Edge Computing (HotEdge 20). USENIX Association, June 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:47",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "48",
+            "rawText": "Valerio Persico, Alessio Botta, Pietro Marchetta, Antonio Montieri, and Antonio Pescap. On the performance of the wide-area networks interconnecting publiccloud datacenters around the globe. Comput. Netw., 112(C):67–83, January 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Valerio Persico, Alessio Botta, Pietro Marchetta, Antonio Montieri, and Antonio Pescap. On the performance of the wide-area networks interconnecting publiccloud datacenters around the globe. Comput. Netw., 112(C):67–83, January 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:48",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "49",
+            "rawText": "CNCF Distribution Project. Distribution - the toolkit to pack, ship, store, and deliver container content. https: //github.com/distribution/distribution.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "CNCF Distribution Project. Distribution - the toolkit to pack, ship, store, and deliver container content. https: //github.com/distribution/distribution."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:49",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "50",
+            "rawText": "Prashanth Rajivan, Efrat Aharonov-Majar, and Cleotilde Gonzalez. Update now or later? effects of experience, cost, and risk preference on update decisions. Journal of Cybersecurity, 6(1):tyaa002, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Prashanth Rajivan, Efrat Aharonov-Majar, and Cleotilde Gonzalez. Update now or later? effects of experience, cost, and risk preference on update decisions. Journal of Cybersecurity, 6(1):tyaa002, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:50",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "51",
+            "rawText": "Brian Ramprasad, Alexandre da Silva Veith, Moshe Gabel, and Eyal de Lara. Sustainable computing on the edge: A system dynamics perspective. In Proceedings of the 22nd International Workshop on Mobile Computing Systems and Applications, HotMobile ’21, page 64–70, New York, NY, USA, 2021. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Brian Ramprasad, Alexandre da Silva Veith, Moshe Gabel, and Eyal de Lara. Sustainable computing on the edge: A system dynamics perspective. In Proceedings of the 22nd International Workshop on Mobile Computing Systems and Applications, HotMobile ’21, page 64–70, New York, NY, USA, 2021. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:51",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "52",
+            "rawText": "Mahadev Satyanarayanan. The emergence of edge computing. Computer, 50(1):30–39, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Mahadev Satyanarayanan. The emergence of edge computing. Computer, 50(1):30–39, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:52",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "53",
+            "rawText": "J. Shah and D. Dubaria. Building modern clouds: Using Docker, Kubernetes & Google Cloud Platform. In 2019 IEEE 9th Annual Computing and Communication Workshop and Conference (CCWC), pages 0184–0189, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Shah and D. Dubaria. Building modern clouds: Using Docker, Kubernetes & Google Cloud Platform. In 2019 IEEE 9th Annual Computing and Communication Workshop and Conference (CCWC), pages 0184–0189, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:53",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "54",
+            "rawText": "Weisong Shi, Jie Cao, Quan Zhang, Youhuizi Li, and Lanyu Xu. Edge computing: Vision and challenges. IEEE Internet of Things Journal, 3(5):637–646, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Weisong Shi, Jie Cao, Quan Zhang, Youhuizi Li, and Lanyu Xu. Edge computing: Vision and challenges. IEEE Internet of Things Journal, 3(5):637–646, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:54",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "55",
+            "rawText": "Dimitris Skourtis, Lukas Rupprecht, Vasily Tarasov, and Nimrod Megiddo. Carving perfect layers out of docker images. In 11th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 19), Renton, WA, July 2019. USENIX Association.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Dimitris Skourtis, Lukas Rupprecht, Vasily Tarasov, and Nimrod Megiddo. Carving perfect layers out of docker images. In 11th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 19), Renton, WA, July 2019. USENIX Association."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:55",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "56",
+            "rawText": "Jörg Thalheim, Pramod Bhatotia, Pedro Fonseca, and Baris Kasikci. Cntr: Lightweight OS containers. In 2018 USENIX Annual Technical Conference (USENIX ATC 18), pages 199–212, Boston, MA, July 2018. USENIX Association.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Jörg Thalheim, Pramod Bhatotia, Pedro Fonseca, and Baris Kasikci. Cntr: Lightweight OS containers. In 2018 USENIX Annual Technical Conference (USENIX ATC 18), pages 199–212, Boston, MA, July 2018. USENIX Association."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:56",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "57",
+            "rawText": "Abhishek Tiwari, Brian Ramprasad, Seyed Hossein Mortazavi, Moshe Gabel, and Eyal de Lara. Reconﬁgurable streaming for the mobile edge. In Proceedings of the 20th International Workshop on Mobile Computing Systems and Applications, HotMobile ’19, page 153–158, New York, NY, USA, 2019. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Abhishek Tiwari, Brian Ramprasad, Seyed Hossein Mortazavi, Moshe Gabel, and Eyal de Lara. Reconﬁgurable streaming for the mobile edge. In Proceedings of the 20th International Workshop on Mobile Computing Systems and Applications, HotMobile ’19, page 153–158, New York, NY, USA, 2019. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:57",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "58",
+            "rawText": "Kohei Tokunaga. Startup containers in lightning speed with lazy image distribution on containerd, Apr 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Kohei Tokunaga. Startup containers in lightning speed with lazy image distribution on containerd, Apr 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:58",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "59",
+            "rawText": "B. Varghese, E. De Lara, A. Ding, C. Hong, F. Bonomi, S. Dustdar, P. Harvey, P. Hewkin, W. Shi, M. Thiele, and P. Willis. Revisiting the arguments for edge computing research. IEEE Internet Computing, (01):1–1, jun 5555.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "B. Varghese, E. De Lara, A. Ding, C. Hong, F. Bonomi, S. Dustdar, P. Harvey, P. Hewkin, W. Shi, M. Thiele, and P. Willis. Revisiting the arguments for edge computing research. IEEE Internet Computing, (01):1–1, jun 5555."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:59",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "60",
+            "rawText": "Ao Wang, Shuai Chang, Huangshi Tian, Hongqi Wang, Haoran Yang, Huiba Li, Rui Du, and Yue Cheng. FaaSNet: Scalable and fast provisioning of custom serverless container runtimes at Alibaba cloud function compute. In 2021 USENIX Annual Technical Conference (USENIX ATC 21), pages 443–457. USENIX Association, July 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Ao Wang, Shuai Chang, Huangshi Tian, Hongqi Wang, Haoran Yang, Huiba Li, Rui Du, and Yue Cheng. FaaSNet: Scalable and fast provisioning of custom serverless container runtimes at Alibaba cloud function compute. In 2021 USENIX Annual Technical Conference (USENIX ATC 21), pages 443–457. USENIX Association, July 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:60",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "61",
+            "rawText": "Ying Xiong, Yulin Sun, Li Xing, and Ying Huang. Extend cloud to edge with KubeEdge. In 2018 IEEE/ACM Symposium on Edge Computing (SEC), pages 373–377, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Ying Xiong, Yulin Sun, Li Xing, and Ying Huang. Extend cloud to edge with KubeEdge. In 2018 IEEE/ACM Symposium on Edge Computing (SEC), pages 373–377, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:61",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "62",
+            "rawText": "Ashkan Yousefpour, Caleb Fung, Tam Nguyen, Krishna Kadiyala, Fatemeh Jalali, Amirreza Niakanlahiji, Jian Kong, and Jason P. Jue. All one needs to know about fog computing and related edge computing paradigms: A complete survey. Journal of Systems Architecture, 98:289–330, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Ashkan Yousefpour, Caleb Fung, Tam Nguyen, Krishna Kadiyala, Fatemeh Jalali, Amirreza Niakanlahiji, Jian Kong, and Jason P. Jue. All one needs to know about fog computing and related edge computing paradigms: A complete survey. Journal of Systems Architecture, 98:289–330, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:62",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "63",
+            "rawText": "N. Zhao, V. Tarasov, A. Anwar, L. Rupprecht, D. Skourtis, A. Warke, M. Mohamed, and A. Butt. Slimmer: Weight loss secrets for Docker registries. In 2019 IEEE 12th International Conference on Cloud Computing (CLOUD), pages 517–519, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "N. Zhao, V. Tarasov, A. Anwar, L. Rupprecht, D. Skourtis, A. Warke, M. Mohamed, and A. Butt. Slimmer: Weight loss secrets for Docker registries. In 2019 IEEE 12th International Conference on Cloud Computing (CLOUD), pages 517–519, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:63",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": "64",
+            "rawText": "Nannan Zhao, Vasily Tarasov, Hadeel Albahar, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Amit S. Warke, Mohamed Mohamed, and Ali R. Butt. Largescale analysis of the docker hub dataset. In 2019 IEEE International Conference on Cluster Computing (CLUSTER), pages 1–10, Sep. 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Nannan Zhao, Vasily Tarasov, Hadeel Albahar, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Amit S. Warke, Mohamed Mohamed, and Ali R. Butt. Largescale analysis of the docker hub dataset. In 2019 IEEE International Conference on Cluster Computing (CLUSTER), pages 1–10, Sep. 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:64",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": "65",
+            "rawText": "Chao Zheng, Lukas Rupprecht, Vasily Tarasov, Douglas Thain, Mohamed Mohamed, Dimitrios Skourtis, Amit S. Warke, and Dean Hildebrand. Wharf: Sharing docker images in a distributed ﬁle system. In Proceedings of the ACM Symposium on Cloud Computing, SoCC ’18, page 174–185, New York, NY, USA, 2018. Association for Computing Machinery. USENIX Association 19th USENIX Symposium on Networked Systems Design and Implementation 49 A Appendix A.1 Container Images Used in Evaluation Table 2 below lists containers and version tags used in our experiments; combined, they have over 15 billion downloads in Docker Hub. Category Images Linux alpine:3.13.4 ubuntu:focal-20210401 Web memcached:1.6.8 nginx:1.19.10 httpd:2.4.43 Data mysql:8.0.23 mariadb:10.5.8 redis:6.2.1 mongo:4.0.23 postgres:13.1 rabbitmq:3.8.13 Services registry:2.7.0 wordpress:php7.3-fpm ghost:3.42.5-alpine Dev node:16-alpine3.11 openjdk:11.0.11-9-jdk golang:1.16.2 python:3.9.3 Edge ﬂink:1.12.3-scala_2.11-java8 cassandra:3.11.9 eclipse-mosquitto:2.0.9-openssl Table 2: Container images used in our evaluation. A.2 Analysis of Selected Containers Figure 5 shows provisioning time of selected containers across a range of latencies at 100Mbps. When updating wordpress, the baseline approach is able to reuse 4 out of 18 layers, making it faster in update. eStargz, though faster than the baseline approach in fresh deployments, does not beneﬁt much from this layer reuse since it is bottlenecked by on-demand ﬁle downloads. Starlight, on the other hand, is much faster than either approach, reducing update provisioning time by approximately 8×. For alpine eStargz is slower than the baseline when RTT is above 50ms. This is because the alpine image is small and its ﬁle access pattern is not entirely deterministic. Provisioning time is thus dominated by queuing delays due layer downloads and on-demand ﬁle downloads. Starlight also suffers somewhat from out-of-order ﬁle accesses, but is still able to deploy the container quickly, and is even faster than wget. Finally, we discuss ghost – the worst case for Starlight. Starlight’s provisioning time with low RTT is 10% higher wordpress alpine ghost Prov. time (s) 5.0 Fresh 20 50 2.5 0 0.0 0 Prov. time (s) 5.0 Update 20 50 2.5 0 0.0 0 0 100 200 300 RTT (ms) 0 100 200 300 RTT (ms) 0 100 200 300 RTT (ms) baseline eStargz Starlight warm startup wget Figure 5: Provisioning times versus round-trip latency for selected containers. Shaded areas show standard deviation. (ﬁgure repeated from page 10) than eStargz’s – the only container where this happens. Building a delta bundle takes 3 seconds for this 84K ﬁle container. eStargz provisioning time grows quickly with latency, however, and Starlight outperforms it when RTT is above 50ms. 50 19th USENIX Symposium on Networked Systems Design and Implementation USENIX Association",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Chao Zheng, Lukas Rupprecht, Vasily Tarasov, Douglas Thain, Mohamed Mohamed, Dimitrios Skourtis, Amit S. Warke, and Dean Hildebrand. Wharf: Sharing docker images in a distributed ﬁle system. In Proceedings of the ACM Symposium on Cloud Computing, SoCC ’18, page 174–185, New York, NY, USA, 2018. Association for Computing Machinery. USENIX Association 19th USENIX Symposium on Networked Systems Design and Implementation 49 A Appendix A.1 Container Images Used in Evaluation Table 2 below lists containers and version tags used in our experiments; combined, they have over 15 billion downloads in Docker Hub. Category Images Linux alpine:3.13.4 ubuntu:focal-20210401 Web memcached:1.6.8 nginx:1.19.10 httpd:2.4.43 Data mysql:8.0.23 mariadb:10.5.8 redis:6.2.1 mongo:4.0.23 postgres:13.1 rabbitmq:3.8.13 Services registry:2.7.0 wordpress:php7.3-fpm ghost:3.42.5-alpine Dev node:16-alpine3.11 openjdk:11.0.11-9-jdk golang:1.16.2 python:3.9.3 Edge ﬂink:1.12.3-scala_2.11-java8 cassandra:3.11.9 eclipse-mosquitto:2.0.9-openssl Table 2: Container images used in our evaluation. A.2 Analysis of Selected Containers Figure 5 shows provisioning time of selected containers across a range of latencies at 100Mbps. When updating wordpress, the baseline approach is able to reuse 4 out of 18 layers, making it faster in update. eStargz, though faster than the baseline approach in fresh deployments, does not beneﬁt much from this layer reuse since it is bottlenecked by on-demand ﬁle downloads. Starlight, on the other hand, is much faster than either approach, reducing update provisioning time by approximately 8×. For alpine eStargz is slower than the baseline when RTT is above 50ms. This is because the alpine image is small and its ﬁle access pattern is not entirely deterministic. Provisioning time is thus dominated by queuing delays due layer downloads and on-demand ﬁle downloads. Starlight also suffers somewhat from out-of-order ﬁle accesses, but is still able to deploy the container quickly, and is even faster than wget. Finally, we discuss ghost – the worst case for Starlight. Starlight’s provisioning time with low RTT is 10% higher wordpress alpine ghost Prov. time (s) 5.0 Fresh 20 50 2.5 0 0.0 0 Prov. time (s) 5.0 Update 20 50 2.5 0 0.0 0 0 100 200 300 RTT (ms) 0 100 200 300 RTT (ms) 0 100 200 300 RTT (ms) baseline eStargz Starlight warm startup wget Figure 5: Provisioning times versus round-trip latency for selected containers. Shaded areas show standard deviation. (ﬁgure repeated from page 10) than eStargz’s – the only container where this happens. Building a delta bundle takes 3 seconds for this 84K ﬁle container. eStargz provisioning time grows quickly with latency, however, and Starlight outperforms it when RTT is above 50ms. 50 19th USENIX Symposium on Networked Systems Design and Implementation USENIX Association"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:starlight fast container provisioning on the edge and over the wan:2022:65",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 65,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:starlight fast container provisioning on the edge and over the wan:2022->title:firecracker lightweight virtualization for serverless applications:2020@papers-continuum-Chen2022.pdf",
+      "source": "title:starlight fast container provisioning on the edge and over the wan:2022",
+      "target": "title:firecracker lightweight virtualization for serverless applications:2020",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/continuum/Chen2022.pdf"
+    },
+    {
+      "id": "title:starlight fast container provisioning on the edge and over the wan:2022->title:fast and efficient container startup at the edge via dependency scheduling:2020@papers-continuum-Chen2022.pdf",
+      "source": "title:starlight fast container provisioning on the edge and over the wan:2022",
+      "target": "title:fast and efficient container startup at the edge via dependency scheduling:2020",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/continuum/Chen2022.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Chen2022",
+      "paperId": "title:starlight fast container provisioning on the edge and over the wan:2022",
+      "metadata": {
+        "fileName": "Chen2022.pdf",
+        "sourcePath": "papers/continuum/Chen2022.pdf"
+      }
+    }
+  ]
+}

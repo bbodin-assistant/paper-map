@@ -1,0 +1,4365 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.523449+00:00",
+  "papers": [
+    {
+      "key": "FAA2024",
+      "paper": {
+        "id": "title:ac 20 193 use of multi core processors:2024",
+        "citationKey": "FAA2024",
+        "title": "AC 20-193: Use of Multi-Core Processors",
+        "authors": [],
+        "year": 2024,
+        "venue": "",
+        "type": "manual",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-193.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:Engineering_Transportation_Software_outline"
+        ],
+        "notes": "8 January 2024. Full authority text examined for applicability, interference, and allocation limitations. Accessed 2026-09-13; acceptable means of compliance within its stated scope, not a universal multicore mandate.",
+        "bibtexFields": {
+          "title": "{AC 20-193: Use of Multi-Core Processors}",
+          "organization": "{Federal Aviation Administration}",
+          "year": "2024",
+          "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-193.pdf",
+          "note": "8 January 2024. Full authority text examined for applicability, interference, and allocation limitations.\n    Accessed 2026-09-13; acceptable means of compliance within its stated scope, not a universal multicore mandate."
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.249295+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "ask may increase significantly when other software components or tasks are executing in parallel on the other cores of an MCP. This could cause some software applications to have insufficient time to complete the execution of their safety-critical functionality.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "ask may increase significantly when other software components or tasks are executing in parallel on the other cores of an MCP. This could cause some software applications to have insufficient time to complete the execution of their safety-critical functionality."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "5",
+            "rawText": "5.4 Interference and interactions between software applications or tasks occur via the proprietary internal mechanisms of an MCP. Any simulation of those mechanisms is therefore less likely to be representative in terms of functionality or execution time than testing conducted on the target MCP in the intended final configuration, and thus is less likely to detect errors.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "5.4 Interference and interactions between software applications or tasks occur via the proprietary internal mechanisms of an MCP. Any simulation of those mechanisms is therefore less likely to be representative in terms of functionality or execution time than testing conducted on the target MCP in the intended final configuration, and thus is less likely to detect errors."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "5",
+            "rawText": "5.5 To adapt the software verification guidance for different types of MCP platforms, the two following categories of MCP platforms are considered:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "5.5 To adapt the software verification guidance for different types of MCP platforms, the two following categories of MCP platforms are considered:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "• MCP platforms with robust partitioning, and",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• MCP platforms with robust partitioning, and"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": null,
+            "rawText": "• All other MCP platforms.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• All other MCP platforms."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "The applicant has verified that all the software components hosted by the MCP meet the objectives of the applicable software guidance. In particular, the applicant has verified that all the hosted software components function correctly and have sufficient time to complete their execution when all the hosted software and hardware of the MCP is executing in the intended final configuration.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The applicant has verified that all the software components hosted by the MCP meet the objectives of the applicable software guidance. In particular, the applicant has verified that all the hosted software components function correctly and have sufficient time to complete their execution when all the hosted software and hardware of the MCP is executing in the intended final configuration."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": null,
+            "rawText": "The way in which the applicant should satisfy this objective depends on the type of the MCP platform:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The way in which the applicant should satisfy this objective depends on the type of the MCP platform:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": null,
+            "rawText": "• MCP platforms with robust partitioning:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• MCP platforms with robust partitioning:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "Applicants who have verified that their MCP platform provides both robust resource partitioning and robust time partitioning (as defined in this document) may verify software applications separately on the MCP and determine their WCETs separately.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Applicants who have verified that their MCP platform provides both robust resource partitioning and robust time partitioning (as defined in this document) may verify software applications separately on the MCP and determine their WCETs separately."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": null,
+            "rawText": "• All other MCP platforms:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• All other MCP platforms:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "Applicants may verify separately on the MCP any software component or set of requirements for which the interference identified in the interference analysis is mitigated or is precluded by design. Software components or sets of software requirements for which interference is not avoided or mitigated should be tested on the target MCP with all software components executing in the intended final configuration, including robustness testing of the interfaces of the MCP.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Applicants may verify separately on the MCP any software component or set of requirements for which the interference identified in the interference analysis is mitigated or is precluded by design. Software components or sets of software requirements for which interference is not avoided or mitigated should be tested on the target MCP with all software components executing in the intended final configuration, including robustness testing of the interfaces of the MCP."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": null,
+            "rawText": "The WCET of a software component may be determined separately on the MCP if the applicant shows that time interference is mitigated for that software component; otherwise, the WCET should be determined by analysis and confirmed by test on the target MCP with all the software components executing in the intended final configuration.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The WCET of a software component may be determined separately on the MCP if the applicant shows that time interference is mitigated for that software component; otherwise, the WCET should be determined by analysis and confirmed by test on the target MCP with all the software components executing in the intended final configuration."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": null,
+            "rawText": "a) All the interfaces between the hosted software and the hardware of the MCP should",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "a) All the interfaces between the hosted software and the hardware of the MCP should"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": null,
+            "rawText": "be included in this testing.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "be included in this testing."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": null,
+            "rawText": "b) The robustness testing mentioned above is intended to cover the specific aspects of",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "b) The robustness testing mentioned above is intended to cover the specific aspects of"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "an MCP that are not specifically covered by the standard verification activities described in the applicable software guidance.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "an MCP that are not specifically covered by the standard verification activities described in the applicable software guidance."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": null,
+            "rawText": "c) If the highest IDAL of the MCP hardware and of all the software applications",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "c) If the highest IDAL of the MCP hardware and of all the software applications"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "hosted on the MCP is C and the hosted software applications are not required by the safety analysis to be robustly partitioned, then the applicant has the option to not conduct an interference analysis and therefore to not meet objective MCP_Resource_Usage_3. In such a case where no interference analysis has been performed, the hosted software components should be verified according to this objective as components for which interference is not avoided or mitigated and for which separate verification is therefore not permitted.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "hosted on the MCP is C and the hosted software applications are not required by the safety analysis to be robustly partitioned, then the applicant has the option to not conduct an interference analysis and therefore to not meet objective MCP_Resource_Usage_3. In such a case where no interference analysis has been performed, the hosted software components should be verified according to this objective as components for which interference is not avoided or mitigated and for which separate verification is therefore not permitted."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": null,
+            "rawText": "d) To “verify separately” and “determine the WCET separately” mean to conduct",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "d) To “verify separately” and “determine the WCET separately” mean to conduct"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": null,
+            "rawText": "these activities without all the software executing at the same time on other cores of the MCP.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "these activities without all the software executing at the same time on other cores of the MCP."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": null,
+            "rawText": "e) Interference may occur between tasks of a single component when the tasks execute",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "e) Interference may occur between tasks of a single component when the tasks execute"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": null,
+            "rawText": "on different cores.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "on different cores."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": null,
+            "rawText": "The applicant has verified that the data and control coupling between all the individual software components hosted on the same core or on different cores of the MCP has been exercised during software requirement-based testing, including exercising any interfaces between the software components via shared memory and any mechanisms to control the access to shared memory, and that the data and control coupling is correct.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The applicant has verified that the data and control coupling between all the individual software components hosted on the same core or on different cores of the MCP has been exercised during software requirement-based testing, including exercising any interfaces between the software components via shared memory and any mechanisms to control the access to shared memory, and that the data and control coupling is correct."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "a) When this objective cannot be completely met during the software verification,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "a) When this objective cannot be completely met during the software verification,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": null,
+            "rawText": "applicants may propose to use system level testing to exercise the data and control coupling between software components hosted on different cores. b) Interference may occur between tasks of a single component when the tasks execute",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "applicants may propose to use system level testing to exercise the data and control coupling between software components hosted on different cores. b) Interference may occur between tasks of a single component when the tasks execute"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": null,
+            "rawText": "on different cores (see definition of task).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "on different cores (see definition of task)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "5",
+            "rawText": "6 Error detection and handling, and safety nets.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6 Error detection and handling, and safety nets."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "5",
+            "rawText": "6.1 In addition to the types of errors and failures normally detected and handled in a system that incorporates a single-core processor, additional types of errors and failures may need to be detected and handled in an MCP environment due to problems caused by the features of MCPs and due to the additional complexity of executing several software applications or tasks in parallel in real time.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6.1 In addition to the types of errors and failures normally detected and handled in a system that incorporates a single-core processor, additional types of errors and failures may need to be detected and handled in an MCP environment due to problems caused by the features of MCPs and due to the additional complexity of executing several software applications or tasks in parallel in real time."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "5",
+            "rawText": "6.2 Features of an MCP may therefore contain unintended functionality that may cause errors and produce unexpected behavior. Applicants may therefore wish to consider the use of a “safety net” independent from the MCP to detect and handle failures within the MCP and to contain any such failures within the equipment in which the MCP is installed.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6.2 Features of an MCP may therefore contain unintended functionality that may cause errors and produce unexpected behavior. Applicants may therefore wish to consider the use of a “safety net” independent from the MCP to detect and handle failures within the MCP and to contain any such failures within the equipment in which the MCP is installed."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": null,
+            "rawText": "MCP_Error_Handling_1:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Error_Handling_1:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": null,
+            "rawText": "The applicant has identified the effects of failures that may occur within the MCP and has designed, implemented, and verified means commensurate with the safety objectives, by which to detect and handle those failures in a fail-safe manner that contains the effects of any failures within the equipment in which the MCP is installed. These means may include a “safety net” independent from the MCP.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The applicant has identified the effects of failures that may occur within the MCP and has designed, implemented, and verified means commensurate with the safety objectives, by which to detect and handle those failures in a fail-safe manner that contains the effects of any failures within the equipment in which the MCP is installed. These means may include a “safety net” independent from the MCP."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "5",
+            "rawText": "7 Data to complement the accomplishment summaries.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "7 Data to complement the accomplishment summaries."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": null,
+            "rawText": "The applicant is expected to describe how the objectives of this AC were satisfied.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The applicant is expected to describe how the objectives of this AC were satisfied."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": null,
+            "rawText": "MCP_Accomplishment_Summary_1:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Accomplishment_Summary_1:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": null,
+            "rawText": "In addition to providing the information requested by the applicable software and AEH guidance, the applicant has provided documentation that summarizes how they have met each of the objectives of this document.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "In addition to providing the information requested by the applicable software and AEH guidance, the applicant has provided documentation that summarizes how they have met each of the objectives of this document."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "5",
+            "rawText": "8 Applicability of the MCP objectives according to their IDALs.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "8 Applicability of the MCP objectives according to their IDALs."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "5",
+            "rawText": "8.1 The column “IDAL A or B” shows the objectives applicable when the highest IDAL of any of the software applications hosted by the MCP or of the MCP hardware device is A or B.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "8.1 The column “IDAL A or B” shows the objectives applicable when the highest IDAL of any of the software applications hosted by the MCP or of the MCP hardware device is A or B."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "5",
+            "rawText": "8.2 The column “IDAL C” shows the objectives applicable when the highest IDAL of any of the software applications hosted by the MCP or of the MCP hardware device is C.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "8.2 The column “IDAL C” shows the objectives applicable when the highest IDAL of any of the software applications hosted by the MCP or of the MCP hardware device is C."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": null,
+            "rawText": "MCP OBJECTIVES IDAL A or B IDAL C",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP OBJECTIVES IDAL A or B IDAL C"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:39",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": null,
+            "rawText": "MCP_Planning_1 Yes Yes",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Planning_1 Yes Yes"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:40",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": null,
+            "rawText": "MCP_Planning_2 Yes Yes",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Planning_2 Yes Yes"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:41",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": null,
+            "rawText": "MCP_Resource_Usage_1 Yes Yes",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Resource_Usage_1 Yes Yes"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:42",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": null,
+            "rawText": "MCP_Resource_Usage_2 n/a n/a",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Resource_Usage_2 n/a n/a"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": null,
+            "rawText": "MCP_Resource_Usage_3 Yes Refer to NOTE d",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Resource_Usage_3 Yes Refer to NOTE d"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": null,
+            "rawText": "MCP_Resource_Usage_4 Yes No",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Resource_Usage_4 Yes No"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": null,
+            "rawText": "MCP_Software_1 Yes Yes",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Software_1 Yes Yes"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": null,
+            "rawText": "MCP_Software_2 Yes Yes",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Software_2 Yes Yes"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:47",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": null,
+            "rawText": "MCP_Error_Handling_1 Yes No",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Error_Handling_1 Yes No"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:48",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": null,
+            "rawText": "MCP_Accomplishment_Summary_1 Yes Yes",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "MCP_Accomplishment_Summary_1 Yes Yes"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:49",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": null,
+            "rawText": "6 RELATED READING MATERIAL",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6 RELATED READING MATERIAL"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:50",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "6",
+            "rawText": "1 Title 14, Code of Federal Regulations (14 CFR).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Title 14, Code of Federal Regulations (14 CFR)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:51",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": null,
+            "rawText": "This AC provides guidance on development of an acceptable means of compliance to the following regulations, with respect to the development assurance of software and AEH.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This AC provides guidance on development of an acceptable means of compliance to the following regulations, with respect to the development assurance of software and AEH."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:52",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": null,
+            "rawText": "• Part 21, Certification Procedures for Products and Articles.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Part 21, Certification Procedures for Products and Articles."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:53",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": null,
+            "rawText": "• Part 23, Airworthiness Standards: Normal Category Airplanes.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Part 23, Airworthiness Standards: Normal Category Airplanes."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:54",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": null,
+            "rawText": "• Part 25, Airworthiness Standards: Transport Category Airplanes.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Part 25, Airworthiness Standards: Transport Category Airplanes."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:55",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": null,
+            "rawText": "• Part 27, Airworthiness Standards: Normal Category Rotorcraft.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Part 27, Airworthiness Standards: Normal Category Rotorcraft."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:56",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": null,
+            "rawText": "• Part 29, Airworthiness Standards: Transport Category Rotorcraft.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Part 29, Airworthiness Standards: Transport Category Rotorcraft."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:57",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": null,
+            "rawText": "• Part 33, Airworthiness Standards: Aircraft Engines.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Part 33, Airworthiness Standards: Aircraft Engines."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:58",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": null,
+            "rawText": "• Part 35. Airworthiness Standards: Propellers.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Part 35. Airworthiness Standards: Propellers."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:59",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": null,
+            "rawText": "• Section 21 subpart O, Technical Standard Order Approvals.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 21 subpart O, Technical Standard Order Approvals."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:60",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": null,
+            "rawText": "• Section 23.2500, Airplane level systems requirements.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 23.2500, Airplane level systems requirements."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:61",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": null,
+            "rawText": "• Section 23.2505, Function and installation.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 23.2505, Function and installation."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:62",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": null,
+            "rawText": "• Section 23.2510, Equipment, systems, and installations.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 23.2510, Equipment, systems, and installations."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:63",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": null,
+            "rawText": "• Section 25.1301, Function and installation.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 25.1301, Function and installation."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:64",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": null,
+            "rawText": "• Section 25.1309, Equipment, systems, and installations.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 25.1309, Equipment, systems, and installations."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:65",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": null,
+            "rawText": "• Section 27.1301, Function and installation.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 27.1301, Function and installation."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:66",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": null,
+            "rawText": "• Section 27.1309, Equipment, systems, and installations.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 27.1309, Equipment, systems, and installations."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:67",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": null,
+            "rawText": "• Section 29.1301, Function and installation.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 29.1301, Function and installation."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:68",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": null,
+            "rawText": "• Section 29.1309, Equipment, systems, and installations.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 29.1309, Equipment, systems, and installations."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:69",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": null,
+            "rawText": "• Section 33.28, Engine control systems.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 33.28, Engine control systems."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:70",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 71,
+            "label": null,
+            "rawText": "• Section 35.23, Propeller control systems.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• Section 35.23, Propeller control systems."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:71",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 72,
+            "label": "6",
+            "rawText": "2 FAA Advisory Circulars. • AC 20-115, Airborne Software Development Assurance Using EUROCAE ED-12( ) and RTCA DO-178( ).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2 FAA Advisory Circulars. • AC 20-115, Airborne Software Development Assurance Using EUROCAE ED-12( ) and RTCA DO-178( )."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:72",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 73,
+            "label": null,
+            "rawText": "• AC 20-152, Development Assurance for Airborne Electronic Hardware (AEH).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 20-152, Development Assurance for Airborne Electronic Hardware (AEH)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:73",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 74,
+            "label": null,
+            "rawText": "• AC 20-170, Integrated Modular Avionics Development, Verification, Integration and Approval using RTCA DO-297 and Technical Standard Order C153.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 20-170, Integrated Modular Avionics Development, Verification, Integration and Approval using RTCA DO-297 and Technical Standard Order C153."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:74",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 75,
+            "label": null,
+            "rawText": "• AC 20-171, Alternatives to RTCA/DO-178B for Software in Airborne Systems and Equipment.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 20-171, Alternatives to RTCA/DO-178B for Software in Airborne Systems and Equipment."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:75",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 76,
+            "label": null,
+            "rawText": "• AC 20-174, Development of Civil Aircraft and Systems.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 20-174, Development of Civil Aircraft and Systems."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:ac 20 174 development of civil aircraft and systems:2011",
+                "doi": "",
+                "arxivId": "",
+                "title": "AC 20-174: Development of Civil Aircraft and Systems",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "manual",
+                "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-174.pdf"
+              }
+            }
+          },
+          {
+            "index": 77,
+            "label": null,
+            "rawText": "• AC 20-189, Management of Open Problem Reports (OPRs).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 20-189, Management of Open Problem Reports (OPRs)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:77",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 78,
+            "label": null,
+            "rawText": "• AC 21-46, Technical Standard Order Program.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 21-46, Technical Standard Order Program."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:78",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 79,
+            "label": null,
+            "rawText": "• AC 21-50, Installation of TSOA Articles and LODA Appliances.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 21-50, Installation of TSOA Articles and LODA Appliances."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:79",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 80,
+            "label": null,
+            "rawText": "• AC 23.1309-1, System Safety Analysis and Assessment for Part 23 Airplanes.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 23.1309-1, System Safety Analysis and Assessment for Part 23 Airplanes."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:80",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 81,
+            "label": null,
+            "rawText": "• AC 23.2010-1, FAA Accepted Means of Compliance Process for 14 CFR Part 23.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 23.2010-1, FAA Accepted Means of Compliance Process for 14 CFR Part 23."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:81",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 82,
+            "label": null,
+            "rawText": "• AC 25.1309-1, System Design and Analysis.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 25.1309-1, System Design and Analysis."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:82",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 83,
+            "label": null,
+            "rawText": "• AC 27-1, Certification of Normal Category Rotorcraft.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 27-1, Certification of Normal Category Rotorcraft."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:83",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 84,
+            "label": null,
+            "rawText": "• AC 29-2, Certification of Transport Category Rotorcraft.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 29-2, Certification of Transport Category Rotorcraft."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:84",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 85,
+            "label": null,
+            "rawText": "• AC 33.28-1, Compliance Criteria for 14 CFR § 33.28, Aircraft Engines, Electrical and Electronic Engine Control Systems.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 33.28-1, Compliance Criteria for 14 CFR § 33.28, Aircraft Engines, Electrical and Electronic Engine Control Systems."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:85",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 86,
+            "label": null,
+            "rawText": "• AC 33.28-2, Guidance Material for 14 CFR § 33.28, Reciprocating Engines, Electrical and Electronic Engine Control Systems.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 33.28-2, Guidance Material for 14 CFR § 33.28, Reciprocating Engines, Electrical and Electronic Engine Control Systems."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:86",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 87,
+            "label": null,
+            "rawText": "• AC 33.28-3, Guidance Material for 14 CFR § 33.28, Engine Control Systems.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 33.28-3, Guidance Material for 14 CFR § 33.28, Engine Control Systems."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:87",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 88,
+            "label": null,
+            "rawText": "• AC 35.23-1, Guidance Material for 14 CFR § 35.23, Propeller Control Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AC 35.23-1, Guidance Material for 14 CFR § 35.23, Propeller Control Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:88",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 89,
+            "label": "6",
+            "rawText": "3 EASA Acceptable Means of Compliance. • AMC 20-115( ), Airborne Software Development Assurance Using EUROCAE ED12 and RTCA DO-178.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "3 EASA Acceptable Means of Compliance. • AMC 20-115( ), Airborne Software Development Assurance Using EUROCAE ED12 and RTCA DO-178."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:89",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 90,
+            "label": null,
+            "rawText": "• AMC 20-152( ), Development Assurance for Airborne Electronic Hardware (AEH).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• AMC 20-152( ), Development Assurance for Airborne Electronic Hardware (AEH)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:90",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 91,
+            "label": "6",
+            "rawText": "4 Industry Documents.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "4 Industry Documents."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:91",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 92,
+            "label": null,
+            "rawText": "• SAE International Aerospace Recommended Practice (ARP) 4754A, Guidelines for",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• SAE International Aerospace Recommended Practice (ARP) 4754A, Guidelines for"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:92",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 93,
+            "label": null,
+            "rawText": "Development of Civil Aircraft and Systems, dated December 21, 2010.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Development of Civil Aircraft and Systems, dated December 21, 2010."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:93",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 94,
+            "label": null,
+            "rawText": "• RTCA DO-178, Software Considerations in Airborne Systems and Equipment Certification, dated January 1982 (no longer in print).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1982,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-178, Software Considerations in Airborne Systems and Equipment Certification, dated January 1982 (no longer in print)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:94",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1982,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 95,
+            "label": null,
+            "rawText": "• RTCA DO-178A, Software Considerations in Airborne Systems and Equipment Certification, dated March 1985 (no longer in print).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-178A, Software Considerations in Airborne Systems and Equipment Certification, dated March 1985 (no longer in print)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:95",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1985,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 96,
+            "label": null,
+            "rawText": "• RTCA DO-178B, Software Considerations in Airborne Systems and Equipment",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-178B, Software Considerations in Airborne Systems and Equipment"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:96",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 97,
+            "label": null,
+            "rawText": "Certification, dated December 1, 1992.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Certification, dated December 1, 1992."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:97",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 98,
+            "label": null,
+            "rawText": "• RTCA DO-178C, Software Considerations in Airborne Systems and Equipment",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-178C, Software Considerations in Airborne Systems and Equipment"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:98",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 99,
+            "label": null,
+            "rawText": "Certification, dated December 13, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Certification, dated December 13, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:99",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 100,
+            "label": null,
+            "rawText": "• RTCA DO-248C, Supporting Information for DO-178C and DO-278A, dated",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-248C, Supporting Information for DO-178C and DO-278A, dated"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:100",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 101,
+            "label": null,
+            "rawText": "• RTCA DO-254, Design Assurance Guidance for Airborne Electronic Hardware, dated April 19, 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-254, Design Assurance Guidance for Airborne Electronic Hardware, dated April 19, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:101",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 102,
+            "label": null,
+            "rawText": "• RTCA DO-297, Integrated Modular Avionics (IMA) Development Guidance and",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-297, Integrated Modular Avionics (IMA) Development Guidance and"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:102",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 103,
+            "label": null,
+            "rawText": "Certification Considerations, dated November 8, 2005.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Certification Considerations, dated November 8, 2005."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:103",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 104,
+            "label": null,
+            "rawText": "• RTCA DO-330, Software Tool Qualification Considerations, dated December 13,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-330, Software Tool Qualification Considerations, dated December 13,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:104",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 105,
+            "label": null,
+            "rawText": "• RTCA DO-331, Model-Based Development and Verification Supplement to DO178C and DO-278A, dated December 13, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-331, Model-Based Development and Verification Supplement to DO178C and DO-278A, dated December 13, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:105",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 106,
+            "label": null,
+            "rawText": "• RTCA DO-332, Object-Oriented Technology and Related Techniques Supplement to DO-178C and DO-278A, dated December 13, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-332, Object-Oriented Technology and Related Techniques Supplement to DO-178C and DO-278A, dated December 13, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:106",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 107,
+            "label": null,
+            "rawText": "• RTCA DO-333, Formal Methods Supplement to DO-178C and DO-278A, dated",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• RTCA DO-333, Formal Methods Supplement to DO-178C and DO-278A, dated"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:107",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 108,
+            "label": null,
+            "rawText": "• EUROCAE ED-12, Software Considerations in Airborne Systems and Equipment Certification, dated May 1982 (no longer in print).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1982,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-12, Software Considerations in Airborne Systems and Equipment Certification, dated May 1982 (no longer in print)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:108",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1982,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 109,
+            "label": null,
+            "rawText": "• EUROCAE ED-12A, Software Considerations in Airborne Systems and Equipment Certification, dated October 1985 (no longer in print).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-12A, Software Considerations in Airborne Systems and Equipment Certification, dated October 1985 (no longer in print)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:109",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1985,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 110,
+            "label": null,
+            "rawText": "• EUROCAE ED-12B, Software Considerations in Airborne Systems and Equipment",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-12B, Software Considerations in Airborne Systems and Equipment"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:110",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 111,
+            "label": null,
+            "rawText": "Certification, dated December 1992.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Certification, dated December 1992."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:111",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 112,
+            "label": null,
+            "rawText": "• EUROCAE ED-12C, Software Considerations in Airborne Systems and Equipment",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-12C, Software Considerations in Airborne Systems and Equipment"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:112",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 113,
+            "label": null,
+            "rawText": "Certification, dated January 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Certification, dated January 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:113",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 114,
+            "label": null,
+            "rawText": "• EUROCAE ED-79A, Guidelines for Development of Civil Aircraft and Systems, dated December 2010.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-79A, Guidelines for Development of Civil Aircraft and Systems, dated December 2010."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:114",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 115,
+            "label": null,
+            "rawText": "• EUROCAE ED-80, Design Assurance Guidance for Airborne Electronic",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-80, Design Assurance Guidance for Airborne Electronic"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:115",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 116,
+            "label": null,
+            "rawText": "Hardware, dated April 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Hardware, dated April 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:116",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 117,
+            "label": null,
+            "rawText": "• EUROCAE ED-94C, Supporting Information for ED-12C and ED-109A, dated",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-94C, Supporting Information for ED-12C and ED-109A, dated"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:117",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 118,
+            "label": null,
+            "rawText": "• EUROCAE ED-124, Integrated Modular Avionics (IMA) Development Guidance and Certification Considerations, dated June 2007.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-124, Integrated Modular Avionics (IMA) Development Guidance and Certification Considerations, dated June 2007."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:118",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 119,
+            "label": null,
+            "rawText": "• EUROCAE ED-215, Software Tool Qualification Considerations, dated January",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-215, Software Tool Qualification Considerations, dated January"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:119",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 120,
+            "label": null,
+            "rawText": "• EUROCAE ED-216, Formal Methods Supplement to ED-12C and ED-109A, dated",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-216, Formal Methods Supplement to ED-12C and ED-109A, dated"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:120",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 121,
+            "label": null,
+            "rawText": "• EUROCAE ED-217, Object-Oriented Technology and Related Techniques",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-217, Object-Oriented Technology and Related Techniques"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:121",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 122,
+            "label": null,
+            "rawText": "Supplement to ED-12C and ED-109A, dated January 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Supplement to ED-12C and ED-109A, dated January 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:122",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 123,
+            "label": null,
+            "rawText": "• EUROCAE ED-218, Model-Based Development and Verification Supplement to",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "• EUROCAE ED-218, Model-Based Development and Verification Supplement to"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:123",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 124,
+            "label": null,
+            "rawText": "ED-12C and ED-109A, dated January 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "ED-12C and ED-109A, dated January 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:124",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 125,
+            "label": null,
+            "rawText": "7 WHERE TO FIND THIS AC",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "7 WHERE TO FIND THIS AC"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:125",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 126,
+            "label": null,
+            "rawText": "You can find this AC in the Dynamic Regulatory System (DRS) at https://drs.faa.gov/browse.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "You can find this AC in the Dynamic Regulatory System (DRS) at https://drs.faa.gov/browse."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:126",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 127,
+            "label": null,
+            "rawText": "8 SUGGESTIONS FOR IMPROVING THIS AC.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "8 SUGGESTIONS FOR IMPROVING THIS AC."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:127",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 128,
+            "label": null,
+            "rawText": "If you have suggestions for improving this AC, you may use the FAA Form 1320-73, Advisory Circular Feedback Information at the end of this AC.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "If you have suggestions for improving this AC, you may use the FAA Form 1320-73, Advisory Circular Feedback Information at the end of this AC."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:128",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 129,
+            "label": null,
+            "rawText": "Digitally signed by DANIEL J.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Digitally signed by DANIEL J."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:129",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 130,
+            "label": null,
+            "rawText": "Date: 2024.01.08 12:16:17 ELGAS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Date: 2024.01.08 12:16:17 ELGAS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:130",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2024,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 131,
+            "label": null,
+            "rawText": "Daniel Elgas Director, Policy and Standards Division Aircraft Certification Service",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Daniel Elgas Director, Policy and Standards Division Aircraft Certification Service"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:131",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 132,
+            "label": null,
+            "rawText": "AC 20-193 Appendix A",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "AC 20-193 Appendix A"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:132",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 133,
+            "label": null,
+            "rawText": "Appendix A. Advisory Circular Feedback Form",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Appendix A. Advisory Circular Feedback Form"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:133",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 134,
+            "label": null,
+            "rawText": "Paperwork Reduction Act Burden Statement: A federal agency may not conduct or sponsor, and a person is not required to respond to, nor shall a person be subject to a penalty for failure to comply with a collection of information subject to the requirements of the Paperwork Reduction Act unless that collection of information displays a currently valid OMB Control Number. The OMB Control Number for this information collection is 2120-",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Paperwork Reduction Act Burden Statement: A federal agency may not conduct or sponsor, and a person is not required to respond to, nor shall a person be subject to a penalty for failure to comply with a collection of information subject to the requirements of the Paperwork Reduction Act unless that collection of information displays a currently valid OMB Control Number. The OMB Control Number for this information collection is 2120-"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:134",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 135,
+            "label": "0746",
+            "rawText": "Public reporting for this collection of information is estimated to be approximately 20 minutes per response, including the time for reviewing instructions, searching existing data sources, gathering, and maintaining the data needed, completing and reviewing the collection of information. All responses to this collection of information are voluntary FAA Order 1320.46D Send comments regarding this burden estimate or any other aspect of this collection of information, including suggestions for reducing this burden to: Information Collection Clearance Officer, Barbara Hall, 800 Independence Ave, Washington, D.C. 20590.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Public reporting for this collection of information is estimated to be approximately 20 minutes per response, including the time for reviewing instructions, searching existing data sources, gathering, and maintaining the data needed, completing and reviewing the collection of information. All responses to this collection of information are voluntary FAA Order 1320.46D Send comments regarding this burden estimate or any other aspect of this collection of information, including suggestions for reducing this burden to: Information Collection Clearance Officer, Barbara Hall, 800 Independence Ave, Washington, D.C. 20590."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:135",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 136,
+            "label": null,
+            "rawText": "If you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to 9-AWA-AVSAIR-DMO@faa.gov or (2) faxing it to the attention of the LOB/SO (_____________________).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "If you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to 9-AWA-AVSAIR-DMO@faa.gov or (2) faxing it to the attention of the LOB/SO (_____________________)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:136",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 137,
+            "label": null,
+            "rawText": "Subject: AC 20-193, Use of Multi-Core Processors Date: ___________________",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Subject: AC 20-193, Use of Multi-Core Processors Date: ___________________"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:137",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 138,
+            "label": null,
+            "rawText": "Please mark all appropriate line items:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Please mark all appropriate line items:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:138",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 139,
+            "label": null,
+            "rawText": "☐ An error (procedural or typographical) has been noted in paragraph ____________ on page ________________________.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "☐ An error (procedural or typographical) has been noted in paragraph ____________ on page ________________________."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:139",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 140,
+            "label": null,
+            "rawText": "☐ Recommend paragraph ____________ on page ____________ be changed as follows:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "☐ Recommend paragraph ____________ on page ____________ be changed as follows:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:140",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 141,
+            "label": null,
+            "rawText": "☐ In a future change to this AC, please cover the following subject: (Briefly describe what you want added.)",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "☐ In a future change to this AC, please cover the following subject: (Briefly describe what you want added.)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:141",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 142,
+            "label": null,
+            "rawText": "☐ I would like to discuss the above. Please contact me.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "☐ I would like to discuss the above. Please contact me."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:142",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 143,
+            "label": null,
+            "rawText": "FAA Form 1320-73 (09/22) SUPERSEDES PREVIOUS EDITIONS",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "FAA Form 1320-73 (09/22) SUPERSEDES PREVIOUS EDITIONS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:ac 20 193 use of multi core processors:2024:143",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 143,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:ac 20 193 use of multi core processors:2024->title:ac 20 174 development of civil aircraft and systems:2011@papers-transportation-software-FAA2024.pdf",
+      "source": "title:ac 20 193 use of multi core processors:2024",
+      "target": "title:ac 20 174 development of civil aircraft and systems:2011",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/transportation-software/FAA2024.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "FAA2024",
+      "paperId": "title:ac 20 193 use of multi core processors:2024",
+      "metadata": {
+        "fileName": "FAA2024.pdf",
+        "sourcePath": "papers/transportation-software/FAA2024.pdf"
+      }
+    }
+  ]
+}

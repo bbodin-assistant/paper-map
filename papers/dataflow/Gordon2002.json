@@ -1,0 +1,1030 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.642345+00:00",
+  "papers": [
+    {
+      "key": "Gordon2002",
+      "paper": {
+        "id": "doi:10.1145/605397.605428",
+        "citationKey": "Gordon2002",
+        "title": "A Stream Compiler for Communication-Exposed Architectures",
+        "authors": [
+          "Michael I. Gordon",
+          "William Thies",
+          "Michal Karczmarek",
+          "Jasper Lin",
+          "Ali S. Meli",
+          "Andrew A. Lamb",
+          "Chris Leger",
+          "Jeremy Wong",
+          "Henry Hoffmann",
+          "David Maze",
+          "Saman Amarasinghe"
+        ],
+        "year": 2002,
+        "venue": "ASPLOS",
+        "type": "inproceedings",
+        "doi": "10.1145/605397.605428",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/605397.605428",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Gordon, Michael I. and Thies, William and Karczmarek, Michal and Lin, Jasper and Meli, Ali S. and Lamb, Andrew A. and\n    Leger, Chris and Wong, Jeremy and Hoffmann, Henry and Maze, David and Amarasinghe, Saman",
+          "title": "A Stream Compiler for Communication-Exposed Architectures",
+          "booktitle": "ASPLOS",
+          "pages": "291--303",
+          "year": "2002",
+          "doi": "10.1145/605397.605428",
+          "url": "https://doi.org/10.1145/605397.605428"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.104591+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_1_1_1",
+            "rawText": "Streamit homepage. http://compiler.lcs.mit.edu/streamit.]]  Streamit homepage. http://compiler.lcs.mit.edu/streamit.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_1_1",
+              "unstructured": "Streamit homepage. http://compiler.lcs.mit.edu/streamit.]]  Streamit homepage. http://compiler.lcs.mit.edu/streamit.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_1_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_1_2_1",
+            "rawText": "The Transputer Databook. Inmos Corporation 1988.]]  The Transputer Databook. Inmos Corporation 1988.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_2_1",
+              "unstructured": "The Transputer Databook. Inmos Corporation 1988.]]  The Transputer Databook. Inmos Corporation 1988.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_1_3_1",
+            "rawText": "https://doi.org/10.1016/0167-6423(92)90005-v",
+            "doi": "10.1016/0167-6423(92)90005-v",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0167-6423(92)90005-V"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/0167-6423(92)90005-v",
+                "doi": "10.1016/0167-6423(92)90005-v",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0167-6423(92)90005-v"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_1_4_1",
+            "rawText": "https://doi.org/10.5555/547038",
+            "doi": "10.5555/547038",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_4_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/547038"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/547038",
+                "doi": "10.5555/547038",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/547038"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_1_5_1",
+            "rawText": "https://doi.org/10.1109/78.485935",
+            "doi": "10.1109/78.485935",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/78.485935"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/78.485935",
+                "doi": "10.1109/78.485935",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/78.485935"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_1_6_1",
+            "rawText": "S. Borkar , R. Cohn , G. Cox , S. Gleason , T. Gross , H. T. Kung , M. Lam , B. Moore , C. Peterson , J. Pieper , L. Rankin , P. S. Tseng , J. Sutton , J. Urbanski , and J. Webb . iWarp: An integrated solution to high-speed parallel computing . In Supercomputing , 1988 .]] S. Borkar, R. Cohn, G. Cox, S. Gleason, T. Gross, H. T. Kung, M. Lam, B. Moore, C. Peterson, J. Pieper, L. Rankin, P. S. Tseng, J. Sutton, J. Urbanski, and J. Webb. iWarp: An integrated solution to high-speed parallel computing. In Supercomputing, 1988.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_6_1",
+              "volume-title": "Supercomputing",
+              "author": "Borkar S.",
+              "year": "1988",
+              "unstructured": "S. Borkar , R. Cohn , G. Cox , S. Gleason , T. Gross , H. T. Kung , M. Lam , B. Moore , C. Peterson , J. Pieper , L. Rankin , P. S. Tseng , J. Sutton , J. Urbanski , and J. Webb . iWarp: An integrated solution to high-speed parallel computing . In Supercomputing , 1988 .]] S. Borkar, R. Cohn, G. Cox, S. Gleason, T. Gross, H. T. Kung, M. Lam, B. Moore, C. Peterson, J. Pieper, L. Rankin, P. S. Tseng, J. Sutton, J. Urbanski, and J. Webb. iWarp: An integrated solution to high-speed parallel computing. In Supercomputing, 1988.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_6_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Borkar S."
+                ],
+                "year": 1988,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_1_7_1",
+            "rawText": "E. Caspi , M. Chu , R. Huang , J. Yeh , J. Wawrzynek , and A. DeHon . Stream Computations Organized for Reconfigurable Execution (SCORE): Extended Abstract . In Proceedings of the Conference on Field Programmable Logic and Applications , 2000 .]] E. Caspi, M. Chu, R. Huang, J. Yeh, J. Wawrzynek, and A. DeHon. Stream Computations Organized for Reconfigurable Execution (SCORE): Extended Abstract. In Proceedings of the Conference on Field Programmable Logic and Applications, 2000.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_7_1",
+              "volume-title": "Proceedings of the Conference on Field Programmable Logic and Applications",
+              "author": "Caspi E.",
+              "year": "2000",
+              "unstructured": "E. Caspi , M. Chu , R. Huang , J. Yeh , J. Wawrzynek , and A. DeHon . Stream Computations Organized for Reconfigurable Execution (SCORE): Extended Abstract . In Proceedings of the Conference on Field Programmable Logic and Applications , 2000 .]] E. Caspi, M. Chu, R. Huang, J. Yeh, J. Wawrzynek, and A. DeHon. Stream Computations Organized for Reconfigurable Execution (SCORE): Extended Abstract. In Proceedings of the Conference on Field Programmable Logic and Applications, 2000.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_7_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Caspi E."
+                ],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_1_8_1",
+            "rawText": "https://doi.org/10.1109/mm.2002.997877",
+            "doi": "10.1109/mm.2002.997877",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MM.2002.997877"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mm.2002.997877",
+                "doi": "10.1109/mm.2002.997877",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mm.2002.997877"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_1_9_1",
+            "rawText": "https://doi.org/10.5555/523978.826095",
+            "doi": "10.5555/523978.826095",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_9_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/523978.826095"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/523978.826095",
+                "doi": "10.5555/523978.826095",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/523978.826095"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_1_10_1",
+            "rawText": "T. Gautier , P. L. Guernic , and L. Besnard . Signal: A declarative language for synchronous programming of real-time systems . Springer Verlag Lecture Notes in Computer Science, 274, 1987 .]] T. Gautier, P. L. Guernic, and L. Besnard. Signal: A declarative language for synchronous programming of real-time systems. Springer Verlag Lecture Notes in Computer Science, 274, 1987.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_10_1",
+              "volume-title": "Signal: A declarative language for synchronous programming of real-time systems",
+              "author": "Gautier T.",
+              "year": "1987",
+              "unstructured": "T. Gautier , P. L. Guernic , and L. Besnard . Signal: A declarative language for synchronous programming of real-time systems . Springer Verlag Lecture Notes in Computer Science, 274, 1987 .]] T. Gautier, P. L. Guernic, and L. Besnard. Signal: A declarative language for synchronous programming of real-time systems. Springer Verlag Lecture Notes in Computer Science, 274, 1987.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_10_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Gautier T."
+                ],
+                "year": 1987,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_1_11_1",
+            "rawText": "V. Gay-Para T. Graf A.-G. Lemonnier and E. Wais. Kopi Reference manual. http://www.dms.at/kopi/docs/kopi.html 2001.]]  V. Gay-Para T. Graf A.-G. Lemonnier and E. Wais. Kopi Reference manual. http://www.dms.at/kopi/docs/kopi.html 2001.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_11_1",
+              "unstructured": "V. Gay-Para T. Graf A.-G. Lemonnier and E. Wais. Kopi Reference manual. http://www.dms.at/kopi/docs/kopi.html 2001.]]  V. Gay-Para T. Graf A.-G. Lemonnier and E. Wais. Kopi Reference manual. http://www.dms.at/kopi/docs/kopi.html 2001.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_11_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_3_2_1_12_1",
+            "rawText": "T. Gross and D. R. O'Halloron . iWarp , Anatomy of a Parallel Computing System . MIT Press , 1998 .]] T. Gross and D. R. O'Halloron. iWarp, Anatomy of a Parallel Computing System. MIT Press, 1998.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_12_1",
+              "volume-title": "Anatomy of a Parallel Computing System",
+              "author": "Gross T.",
+              "year": "1998",
+              "unstructured": "T. Gross and D. R. O'Halloron . iWarp , Anatomy of a Parallel Computing System . MIT Press , 1998 .]] T. Gross and D. R. O'Halloron. iWarp, Anatomy of a Parallel Computing System. MIT Press, 1998.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_12_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Gross T."
+                ],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_3_2_1_13_1",
+            "rawText": "https://doi.org/10.1109/5.97300",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/5.97300"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_3_2_1_14_1",
+            "rawText": "R. Ho , K. Mai , and M. Horowitz . The Future of Wires . In Proc. of the IEEE , 2001 .]] R. Ho, K. Mai, and M. Horowitz. The Future of Wires. In Proc. of the IEEE, 2001.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_14_1",
+              "volume-title": "Proc. of the",
+              "author": "Ho R.",
+              "year": "2001",
+              "unstructured": "R. Ho , K. Mai , and M. Horowitz . The Future of Wires . In Proc. of the IEEE , 2001 .]] R. Ho, K. Mai, and M. Horowitz. The Future of Wires. In Proc. of the IEEE, 2001.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_14_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Ho R."
+                ],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_3_2_1_15_1",
+            "rawText": "https://doi.org/10.1145/359576.359585",
+            "doi": "10.1145/359576.359585",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_15_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/359576.359585"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/359576.359585",
+                "doi": "10.1145/359576.359585",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/359576.359585"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_3_2_1_16_1",
+            "rawText": "Inmos Corporation . Occam 2 Reference Manual . Prentice Hall , 1988 .]] Inmos Corporation. Occam 2 Reference Manual. Prentice Hall, 1988.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_16_1",
+              "volume-title": "Occam 2 Reference Manual",
+              "author": "Inmos Corporation",
+              "year": "1988",
+              "unstructured": "Inmos Corporation . Occam 2 Reference Manual . Prentice Hall , 1988 .]] Inmos Corporation. Occam 2 Reference Manual. Prentice Hall, 1988.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_16_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Inmos Corporation"
+                ],
+                "year": 1988,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_3_2_1_17_1",
+            "rawText": "U. J. Kapasi , P. Mattson , W. J. Dally , J. D. Owens , and B. Towles . Stream scheduling . In Proc. of the 3rd Workshop on Media and Streaming Processors , 2001 .]] U. J. Kapasi, P. Mattson, W. J. Dally, J. D. Owens, and B. Towles. Stream scheduling. In Proc. of the 3rd Workshop on Media and Streaming Processors, 2001.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_17_1",
+              "volume-title": "Proc. of the 3rd Workshop on Media and Streaming Processors",
+              "author": "Kapasi U. J.",
+              "year": "2001",
+              "unstructured": "U. J. Kapasi , P. Mattson , W. J. Dally , J. D. Owens , and B. Towles . Stream scheduling . In Proc. of the 3rd Workshop on Media and Streaming Processors , 2001 .]] U. J. Kapasi, P. Mattson, W. J. Dally, J. D. Owens, and B. Towles. Stream scheduling. In Proc. of the 3rd Workshop on Media and Streaming Processors, 2001.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_17_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kapasi U. J."
+                ],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_3_2_1_18_1",
+            "rawText": "S. Kirkpatrick , J. C. D. Gelatt , and M. Vecchi . Optimization by Simulated Annealing. Science, 220(4598) , May 1983 .]] S. Kirkpatrick, J. C. D. Gelatt, and M. Vecchi. Optimization by Simulated Annealing. Science, 220(4598), May 1983.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 1983,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_18_1",
+              "volume-title": "May",
+              "author": "Kirkpatrick S.",
+              "year": "1983",
+              "unstructured": "S. Kirkpatrick , J. C. D. Gelatt , and M. Vecchi . Optimization by Simulated Annealing. Science, 220(4598) , May 1983 .]] S. Kirkpatrick, J. C. D. Gelatt, and M. Vecchi. Optimization by Simulated Annealing. Science, 220(4598), May 1983.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_18_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kirkpatrick S."
+                ],
+                "year": 1983,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_3_2_1_19_1",
+            "rawText": "J. Lebak . Polymorphous Computing Architecture (PCA) Example Applications and Description. External Report, Lincoln Laboratory , Mass. Inst. of Technology , 2001 .]] J. Lebak. Polymorphous Computing Architecture (PCA) Example Applications and Description. External Report, Lincoln Laboratory, Mass. Inst. of Technology, 2001.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_19_1",
+              "volume-title": "Mass. Inst. of Technology",
+              "author": "Lebak J.",
+              "year": "2001",
+              "unstructured": "J. Lebak . Polymorphous Computing Architecture (PCA) Example Applications and Description. External Report, Lincoln Laboratory , Mass. Inst. of Technology , 2001 .]] J. Lebak. Polymorphous Computing Architecture (PCA) Example Applications and Description. External Report, Lincoln Laboratory, Mass. Inst. of Technology, 2001.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_19_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Lebak J."
+                ],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_3_2_1_20_1",
+            "rawText": "E. A. Lee . Overview of the Ptolemy Project. UCB/ERL Technical Memorandum UCB/ERL M01/11 , Dept. EECS , University of California , Berkeley, CA , March 2001 .]] E. A. Lee. Overview of the Ptolemy Project. UCB/ERL Technical Memorandum UCB/ERL M01/11, Dept. EECS, University of California, Berkeley, CA, March 2001.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_20_1",
+              "volume-title": "Dept. EECS",
+              "author": "Lee E. A.",
+              "year": "2001",
+              "unstructured": "E. A. Lee . Overview of the Ptolemy Project. UCB/ERL Technical Memorandum UCB/ERL M01/11 , Dept. EECS , University of California , Berkeley, CA , March 2001 .]] E. A. Lee. Overview of the Ptolemy Project. UCB/ERL Technical Memorandum UCB/ERL M01/11, Dept. EECS, University of California, Berkeley, CA, March 2001.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_20_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Lee E. A."
+                ],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_3_2_1_21_1",
+            "rawText": "https://doi.org/10.1145/291069.291018",
+            "doi": "10.1145/291069.291018",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_21_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/291069.291018"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/291069.291018",
+                "doi": "10.1145/291069.291018",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/291069.291018"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_3_2_1_22_1",
+            "rawText": "https://doi.org/10.1145/339647.339673",
+            "doi": "10.1145/339647.339673",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_22_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/339647.339673"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/339647.339673",
+                "doi": "10.1145/339647.339673",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/339647.339673"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_3_2_1_23_1",
+            "rawText": "D. May , R. Shepherd , and C. Keane . Communicating Process Architecture: Transputers and Occam. Future Parallel Computers: An Advanced Course, Pisa , Lecture Notes in Computer Science , 272, June 1987 .]] D. May, R. Shepherd, and C. Keane. Communicating Process Architecture: Transputers and Occam. Future Parallel Computers: An Advanced Course, Pisa, Lecture Notes in Computer Science, 272, June 1987.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_23_1",
+              "volume-title": "Lecture Notes in Computer Science",
+              "author": "May D.",
+              "year": "1987",
+              "unstructured": "D. May , R. Shepherd , and C. Keane . Communicating Process Architecture: Transputers and Occam. Future Parallel Computers: An Advanced Course, Pisa , Lecture Notes in Computer Science , 272, June 1987 .]] D. May, R. Shepherd, and C. Keane. Communicating Process Architecture: Transputers and Occam. Future Parallel Computers: An Advanced Course, Pisa, Lecture Notes in Computer Science, 272, June 1987.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_23_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "May D."
+                ],
+                "year": 1987,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_3_2_1_24_1",
+            "rawText": "A. Mitschele-Thiel. Automatic Configuration and Optimization of Parallel Transputer Applications. Transputer Applications and Systems '93 , 1993 .]] A. Mitschele-Thiel. Automatic Configuration and Optimization of Parallel Transputer Applications. Transputer Applications and Systems '93, 1993.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_24_1",
+              "volume-title": "Mitschele-Thiel. Automatic Configuration and Optimization of Parallel Transputer Applications. Transputer Applications and Systems '93",
+              "author": "A.",
+              "year": "1993",
+              "unstructured": "A. Mitschele-Thiel. Automatic Configuration and Optimization of Parallel Transputer Applications. Transputer Applications and Systems '93 , 1993 .]] A. Mitschele-Thiel. Automatic Configuration and Optimization of Parallel Transputer Applications. Transputer Applications and Systems '93, 1993.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_24_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "A."
+                ],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_3_2_1_26_1",
+            "rawText": "https://doi.org/10.1145/237721.237760",
+            "doi": "10.1145/237721.237760",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_26_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/237721.237760"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/237721.237760",
+                "doi": "10.1145/237721.237760",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/237721.237760"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_3_2_1_27_1",
+            "rawText": "https://doi.org/10.5555/290940.290946",
+            "doi": "10.5555/290940.290946",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_27_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/290940.290946"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/290940.290946",
+                "doi": "10.5555/290940.290946",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/290940.290946"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_3_2_1_29_1",
+            "rawText": "https://doi.org/10.1007/s002360050095",
+            "doi": "10.1007/s002360050095",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_29_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s002360050095"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s002360050095",
+                "doi": "10.1007/s002360050095",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s002360050095"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_3_2_1_31_1",
+            "rawText": "W. Thies , M. Karczmarek , and S. Amarasinghe . StreamIt: A Language for Streaming Applications . In Proceedings of the International Conference on Compiler Construction , to appear, Grenoble, France, 2002.]] W. Thies, M. Karczmarek, and S. Amarasinghe. StreamIt: A Language for Streaming Applications. In Proceedings of the International Conference on Compiler Construction, to appear, Grenoble, France, 2002.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_31_1",
+              "volume-title": "Proceedings of the International Conference on Compiler Construction",
+              "author": "Thies W.",
+              "unstructured": "W. Thies , M. Karczmarek , and S. Amarasinghe . StreamIt: A Language for Streaming Applications . In Proceedings of the International Conference on Compiler Construction , to appear, Grenoble, France, 2002.]] W. Thies, M. Karczmarek, and S. Amarasinghe. StreamIt: A Language for Streaming Applications. In Proceedings of the International Conference on Compiler Construction, to appear, Grenoble, France, 2002.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_31_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Thies W."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_3_2_1_32_1",
+            "rawText": "W. Thies , M. Karczmarek , M. Gordon , D. Maze , J. Wong , H. Hoffmann , M. Brown , and S. Amarasinghe . StreamIt: A Compiler for Streaming Applications. MIT-LCS Technical Memo LCS-TM-622 , Cambridge, MA , 2001 .]] W. Thies, M. Karczmarek, M. Gordon, D. Maze, J. Wong, H. Hoffmann, M. Brown, and S. Amarasinghe. StreamIt: A Compiler for Streaming Applications. MIT-LCS Technical Memo LCS-TM-622, Cambridge, MA, 2001.]]",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_32_1",
+              "volume-title": "StreamIt: A Compiler for Streaming Applications. MIT-LCS Technical Memo LCS-TM-622",
+              "author": "Thies W.",
+              "year": "2001",
+              "unstructured": "W. Thies , M. Karczmarek , M. Gordon , D. Maze , J. Wong , H. Hoffmann , M. Brown , and S. Amarasinghe . StreamIt: A Compiler for Streaming Applications. MIT-LCS Technical Memo LCS-TM-622 , Cambridge, MA , 2001 .]] W. Thies, M. Karczmarek, M. Gordon, D. Maze, J. Wong, H. Hoffmann, M. Brown, and S. Amarasinghe. StreamIt: A Compiler for Streaming Applications. MIT-LCS Technical Memo LCS-TM-622, Cambridge, MA, 2001.]]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_32_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Thies W."
+                ],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_3_2_1_33_1",
+            "rawText": "https://doi.org/10.1109/2.612254",
+            "doi": "10.1109/2.612254",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_33_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/2.612254"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/2.612254",
+                "doi": "10.1109/2.612254",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/2.612254"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/605397.605428",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 3,
+          "extractedReferenceCount": 30,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/605397.605428",
+          "crossrefReferenceCount": 30
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/605397.605428->doi:10.1016/0167-6423(92)90005-v@papers-dataflow-Gordon2002.pdf",
+      "source": "doi:10.1145/605397.605428",
+      "target": "doi:10.1016/0167-6423(92)90005-v",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Gordon2002.pdf"
+    },
+    {
+      "id": "doi:10.1145/605397.605428->doi:10.1109/78.485935@papers-dataflow-Gordon2002.pdf",
+      "source": "doi:10.1145/605397.605428",
+      "target": "doi:10.1109/78.485935",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Gordon2002.pdf"
+    },
+    {
+      "id": "doi:10.1145/605397.605428->doi:10.1109/5.97300@papers-dataflow-Gordon2002.pdf",
+      "source": "doi:10.1145/605397.605428",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Gordon2002.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Gordon2002",
+      "paperId": "doi:10.1145/605397.605428",
+      "metadata": {
+        "fileName": "Gordon2002.pdf",
+        "sourcePath": "papers/dataflow/Gordon2002.pdf"
+      }
+    }
+  ]
+}

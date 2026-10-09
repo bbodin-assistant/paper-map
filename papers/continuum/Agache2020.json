@@ -1,0 +1,1908 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.885150+00:00",
+  "papers": [
+    {
+      "key": "Agache2020",
+      "paper": {
+        "id": "title:firecracker lightweight virtualization for serverless applications:2020",
+        "citationKey": "Agache2020",
+        "title": "Firecracker: Lightweight Virtualization for Serverless Applications",
+        "authors": [
+          "Alexandru Agache",
+          "Marc Brooker",
+          "Andreea Florescu",
+          "Alexandra Iordache",
+          "Anthony Liguori",
+          "Rolf Neugebauer",
+          "Phil Piwonka",
+          "Diana-Maria Popa"
+        ],
+        "year": 2020,
+        "venue": "17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20)",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www.usenix.org/conference/nsdi20/presentation/agache",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:embedded-edge-cloud-orchestration"
+        ],
+        "notes": "Author list follows the publisher page and paper; publisher BibTeX omits Florescu",
+        "bibtexFields": {
+          "author": "Alexandru Agache and Marc Brooker and Andreea Florescu and Alexandra Iordache and Anthony Liguori and Rolf Neugebauer and Phil Piwonka and Diana-Maria Popa",
+          "title": "{Firecracker: Lightweight Virtualization for Serverless Applications}",
+          "year": "2020",
+          "booktitle": "17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20)",
+          "publisher": "USENIX Association",
+          "pages": "419--434",
+          "url": "https://www.usenix.org/conference/nsdi20/presentation/agache",
+          "note": "Author list follows the publisher page and paper; publisher BibTeX omits Florescu"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.195870+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Istemi Ekin Akkus, Ruichuan Chen, Ivica Rimac, Manuel Stein, Klaus Satzke, Andre Beck, Paarijaat 430 17th USENIX Symposium on Networked Systems Design and Implementation USENIX Association Aditya, and Volker Hilt. Sand: Towards highperformance serverless computing. In 2018 USENIX Annual Technical Conference (USENIX ATC 18), pages 923–935, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Istemi Ekin Akkus, Ruichuan Chen, Ivica Rimac, Manuel Stein, Klaus Satzke, Andre Beck, Paarijaat 430 17th USENIX Symposium on Networked Systems Design and Implementation USENIX Association Aditya, and Volker Hilt. Sand: Towards highperformance serverless computing. In 2018 USENIX Annual Technical Conference (USENIX ATC 18), pages 923–935, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "Alejandro Cabrera Aldaya, Billy Bob Brumley, Sohaib ul Hassan, Cesar Pereida García, and Nicola Tuveri. Port contention for fun and proﬁt. IACR Cryptology ePrint Archive, 2018:1060, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Alejandro Cabrera Aldaya, Billy Bob Brumley, Sohaib ul Hassan, Cesar Pereida García, and Nicola Tuveri. Port contention for fun and proﬁt. IACR Cryptology ePrint Archive, 2018:1060, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "Jens Axboe. Fio: Flexible i/o tester, 2019. URL: https: //github.com/axboe/fio/.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Jens Axboe. Fio: Flexible i/o tester, 2019. URL: https: //github.com/axboe/fio/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "Microsoft Azure. Azure functions, 2019. URL: https://azure.microsoft.com/en-us/services/ functions/.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Microsoft Azure. Azure functions, 2019. URL: https://azure.microsoft.com/en-us/services/ functions/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "Paul Barham, Boris Dragovic, Keir Fraser, Steven Hand, Tim Harris, Alex Ho, Rolf Neugebauer, Ian Pratt, and Andrew Warﬁeld. Xen and the art of virtualization. In ACM SIGOPS operating systems review, volume 37, pages 164–177. ACM, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Paul Barham, Boris Dragovic, Keir Fraser, Steven Hand, Tim Harris, Alex Ho, Rolf Neugebauer, Ian Pratt, and Andrew Warﬁeld. Xen and the art of virtualization. In ACM SIGOPS operating systems review, volume 37, pages 164–177. ACM, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "Andrew Baumann, Dongyoon Lee, Pedro Fonseca, Lisa Glendenning, Jacob R. Lorch, Barry Bond, Reuben Olinsky, and Galen C. Hunt. Composing os extensions safely and efﬁciently with bascule. In Proceedings of the 8th ACM European Conference on Computer Systems, EuroSys ’13, pages 239–252, New York, NY, USA, 2013. ACM. URL: http://doi.acm.org/10.1145/2465351.2465375, doi:10.1145/2465351.2465375.",
+            "doi": "10.1145/2465351.2465375",
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Andrew Baumann, Dongyoon Lee, Pedro Fonseca, Lisa Glendenning, Jacob R. Lorch, Barry Bond, Reuben Olinsky, and Galen C. Hunt. Composing os extensions safely and efﬁciently with bascule. In Proceedings of the 8th ACM European Conference on Computer Systems, EuroSys ’13, pages 239–252, New York, NY, USA, 2013. ACM. URL: http://doi.acm.org/10.1145/2465351.2465375, doi:10.1145/2465351.2465375."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/2465351.2465375",
+                "doi": "10.1145/2465351.2465375",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2465351.2465375"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Fabrice Bellard. Qemu, a fast and portable dynamic translator. In USENIX Annual Technical Conference, FREENIX Track, volume 41, page 46, 2005.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Fabrice Bellard. Qemu, a fast and portable dynamic translator. In USENIX Annual Technical Conference, FREENIX Track, volume 41, page 46, 2005."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "Paolo Bonzini. Minimal x86 ﬁrmware for booting linux kernels, 2019. URL: https://github.com/bonzini/ qboot.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Paolo Bonzini. Minimal x86 ﬁrmware for booting linux kernels, 2019. URL: https://github.com/bonzini/ qboot."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Reto Buerki and Adrian-Ken Rueegsegger. Muen-an x86/64 separation kernel for high assurance. University of Applied Sciences Rapperswil (HSR), Tech. Rep, 2013.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Reto Buerki and Adrian-Ken Rueegsegger. Muen-an x86/64 separation kernel for high assurance. University of Applied Sciences Rapperswil (HSR), Tech. Rep, 2013."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "Claudio Canella, Jo Van Bulck, Michael Schwarz, Moritz Lipp, Benjamin von Berg, Philipp Ortner, Frank Piessens, Dmitry Evtyushkin, and Daniel Gruss. A systematic evaluation of transient execution attacks and defenses. arXiv preprint arXiv:1811.05441, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Claudio Canella, Jo Van Bulck, Michael Schwarz, Moritz Lipp, Benjamin von Berg, Philipp Ortner, Frank Piessens, Dmitry Evtyushkin, and Daniel Gruss. A systematic evaluation of transient execution attacks and defenses. arXiv preprint arXiv:1811.05441, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "Google Cloud. KNative, 2018. URL: https://cloud. google.com/knative/.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Google Cloud. KNative, 2018. URL: https://cloud. google.com/knative/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Sadjad Fouladi, Francisco Romero, Dan Iter, Qian Li, Shuvo Chatterjee, Christos Kozyrakis, Matei Zaharia, and Keith Winstein. From laptop to lambda: Outsourcing everyday jobs to thousands of transient functional containers. In 2019 USENIX Annual Technical Conference (USENIX ATC 19), pages 475–488, Renton, WA, July 2019. USENIX Association. URL: https://www.usenix.org/conference/ atc19/presentation/fouladi.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Sadjad Fouladi, Francisco Romero, Dan Iter, Qian Li, Shuvo Chatterjee, Christos Kozyrakis, Matei Zaharia, and Keith Winstein. From laptop to lambda: Outsourcing everyday jobs to thousands of transient functional containers. In 2019 USENIX Annual Technical Conference (USENIX ATC 19), pages 475–488, Renton, WA, July 2019. USENIX Association. URL: https://www.usenix.org/conference/ atc19/presentation/fouladi."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "Sadjad Fouladi, Riad S Wahby, Brennan Shacklett, Karthikeyan Balasubramaniam, William Zeng, Rahul Bhalerao, Anirudh Sivaraman, George Porter, and Keith Winstein. Encoding, fast and slow: Low-latency video processing using thousands of tiny threads. In NSDI, pages 363–376, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Sadjad Fouladi, Riad S Wahby, Brennan Shacklett, Karthikeyan Balasubramaniam, William Zeng, Rahul Bhalerao, Anirudh Sivaraman, George Porter, and Keith Winstein. Encoding, fast and slow: Low-latency video processing using thousands of tiny threads. In NSDI, pages 363–376, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "The Operstack Foundation. Kata Containers - The speed of containers, the security of VMs, 2017. URL: https: //katacontainers.io/.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Operstack Foundation. Kata Containers - The speed of containers, the security of VMs, 2017. URL: https: //katacontainers.io/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "Google. gvisor: Container runtime sandbox, November 2018. URL: https://github.com/google/gvisor.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Google. gvisor: Container runtime sandbox, November 2018. URL: https://github.com/google/gvisor."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "Google. Google cloud functions, 2019. URL: https: //cloud.google.com/functions/.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Google. Google cloud functions, 2019. URL: https: //cloud.google.com/functions/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "C. Gray and D. Cheriton. Leases: An efﬁcient faulttolerant mechanism for distributed ﬁle cache consistency. In Proceedings of the Twelfth ACM Symposium on Operating Systems Principles, SOSP ’89, pages 202–210, New York, NY, USA, 1989. ACM. URL: http://doi.acm.org/10.1145/74850.74870, doi:10.1145/74850.74870.",
+            "doi": "10.1145/74850.74870",
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. Gray and D. Cheriton. Leases: An efﬁcient faulttolerant mechanism for distributed ﬁle cache consistency. In Proceedings of the Twelfth ACM Symposium on Operating Systems Principles, SOSP ’89, pages 202–210, New York, NY, USA, 1989. ACM. URL: http://doi.acm.org/10.1145/74850.74870, doi:10.1145/74850.74870."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/74850.74870",
+                "doi": "10.1145/74850.74870",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1989,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/74850.74870"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "Brendan Gregg. Systems performance: enterprise and the cloud. Pearson Education, 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Brendan Gregg. Systems performance: enterprise and the cloud. Pearson Education, 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "Daniel Gruss, Erik Kraft, Trishita Tiwari, Michael Schwarz, Ari Trachtenberg, Jason Hennessey, Alex Ionescu, and Anders Fogh. Page cache attacks. arXiv preprint arXiv:1901.01161, 2019. URL: https:// arxiv.org/abs/1901.01161.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1901,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Daniel Gruss, Erik Kraft, Trishita Tiwari, Michael Schwarz, Ari Trachtenberg, Jason Hennessey, Alex Ionescu, and Anders Fogh. Page cache attacks. arXiv preprint arXiv:1901.01161, 2019. URL: https:// arxiv.org/abs/1901.01161."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1901,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "Vipul Gupta, Swanand Kadhe, Thomas Courtade, Michael W. Mahoney, and Kannan Ramchandran. Oversketched newton: Fast convex optimization for serverless systems, 2019. arXiv:1903.08857.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Vipul Gupta, Swanand Kadhe, Thomas Courtade, Michael W. Mahoney, and Kannan Ramchandran. Oversketched newton: Fast convex optimization for serverless systems, 2019. arXiv:1903.08857."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "Joseph M Hellerstein, Jose Faleiro, Joseph E Gonzalez, Johann Schleier-Smith, Vikram Sreekanti, Alexey Tumanov, and Chenggang Wu. Serverless computing: One step forward, two steps back. arXiv preprint arXiv:1812.03651, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Joseph M Hellerstein, Jose Faleiro, Joseph E Gonzalez, Johann Schleier-Smith, Vikram Sreekanti, Alexey Tumanov, and Chenggang Wu. Serverless computing: One step forward, two steps back. arXiv preprint arXiv:1812.03651, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "Apache HttpClient. Thread interrupt ﬂag leaking when aborting httprequest during connection leasing stage, 2019. URL: https://issues.apache.org/jira/ browse/HTTPCLIENT-1958. USENIX Association 17th USENIX Symposium on Networked Systems Design and Implementation 431",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Apache HttpClient. Thread interrupt ﬂag leaking when aborting httprequest during connection leasing stage, 2019. URL: https://issues.apache.org/jira/ browse/HTTPCLIENT-1958. USENIX Association 17th USENIX Symposium on Networked Systems Design and Implementation 431"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "Apache HttpCore. Connection leak when aborting httprequest after connection leasing, 2019. URL: https://issues.apache.org/jira/browse/ HTTPCORE-567.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Apache HttpCore. Connection leak when aborting httprequest after connection leasing, 2019. URL: https://issues.apache.org/jira/browse/ HTTPCORE-567."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "Intel. Nemu: Modern hypervisor for the cloud, 2018. URL: https://github.com/intel/nemu.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Intel. Nemu: Modern hypervisor for the cloud, 2018. URL: https://github.com/intel/nemu."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "Intel. Cloud hypervisor, 2019. URL: https://github. com/intel/cloud-hypervisor.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Intel. Cloud hypervisor, 2019. URL: https://github. com/intel/cloud-hypervisor."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "Eric Jonas, Qifan Pu, Shivaram Venkataraman, Ion Stoica, and Benjamin Recht. Occupy the cloud: Distributed computing for the 99%. In Proceedings of the 2017 Symposium on Cloud Computing, pages 445–451. ACM, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Eric Jonas, Qifan Pu, Shivaram Venkataraman, Ion Stoica, and Benjamin Recht. Occupy the cloud: Distributed computing for the 99%. In Proceedings of the 2017 Symposium on Cloud Computing, pages 445–451. ACM, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "27",
+            "rawText": "Eric Jonas, Johann Schleier-Smith, Vikram Sreekanti, Chia-Che Tsai, Anurag Khandelwal, Qifan Pu, Vaishaal Shankar, Joao Menezes Carreira, Karl Krauth, Neeraja Yadwadkar, Joseph Gonzalez, Raluca Ada Popa, Ion Stoica, and David A. Patterson. Cloud programming simpliﬁed: A berkeley view on serverless computing. Technical Report UCB/EECS-2019-3, EECS Department, University of California, Berkeley, Feb 2019. URL: http://www2.eecs.berkeley.edu/ Pubs/TechRpts/2019/EECS-2019-3.html.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Eric Jonas, Johann Schleier-Smith, Vikram Sreekanti, Chia-Che Tsai, Anurag Khandelwal, Qifan Pu, Vaishaal Shankar, Joao Menezes Carreira, Karl Krauth, Neeraja Yadwadkar, Joseph Gonzalez, Raluca Ada Popa, Ion Stoica, and David A. Patterson. Cloud programming simpliﬁed: A berkeley view on serverless computing. Technical Report UCB/EECS-2019-3, EECS Department, University of California, Berkeley, Feb 2019. URL: http://www2.eecs.berkeley.edu/ Pubs/TechRpts/2019/EECS-2019-3.html."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "28",
+            "rawText": "Yoongu Kim, Ross Daly, Jeremie Kim, Chris Fallin, Ji Hye Lee, Donghyuk Lee, Chris Wilkerson, Konrad Lai, and Onur Mutlu. Flipping bits in memory without accessing them: An experimental study of dram disturbance errors. SIGARCH Comput. Archit. News, 42(3):361–372, June 2014. URL: https://doi.org/10.1145/2678373.2665726, doi:10.1145/2678373.2665726.",
+            "doi": "10.1145/2678373.2665726",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Yoongu Kim, Ross Daly, Jeremie Kim, Chris Fallin, Ji Hye Lee, Donghyuk Lee, Chris Wilkerson, Konrad Lai, and Onur Mutlu. Flipping bits in memory without accessing them: An experimental study of dram disturbance errors. SIGARCH Comput. Archit. News, 42(3):361–372, June 2014. URL: https://doi.org/10.1145/2678373.2665726, doi:10.1145/2678373.2665726."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/2678373.2665726",
+                "doi": "10.1145/2678373.2665726",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2678373.2665726"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "29",
+            "rawText": "Avi Kivity, Yaniv Kamay, Dor Laor, Uri Lublin, and Anthony Liguori. kvm: The linux virtual machine monitor. In In Proc. 2007 Ottawa Linux Symposium (OLS ’07), 2007.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Avi Kivity, Yaniv Kamay, Dor Laor, Uri Lublin, and Anthony Liguori. kvm: The linux virtual machine monitor. In In Proc. 2007 Ottawa Linux Symposium (OLS ’07), 2007."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "30",
+            "rawText": "Paul Kocher, Jann Horn, Anders Fogh, , Daniel Genkin, Daniel Gruss, Werner Haas, Mike Hamburg, Moritz Lipp, Stefan Mangard, Thomas Prescher, Michael Schwarz, and Yuval Yarom. Spectre attacks: Exploiting speculative execution. In 40th IEEE Symposium on Security and Privacy (S&P’19), 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Paul Kocher, Jann Horn, Anders Fogh, , Daniel Genkin, Daniel Gruss, Werner Haas, Mike Hamburg, Moritz Lipp, Stefan Mangard, Thomas Prescher, Michael Schwarz, and Yuval Yarom. Spectre attacks: Exploiting speculative execution. In 40th IEEE Symposium on Security and Privacy (S&P’19), 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "31",
+            "rawText": "James Larisch, James Mickens, and Eddie Kohler. Alto: lightweight vms using virtualization-aware managed runtimes. In Proceedings of the 15th International Conference on Managed Languages & Runtimes, page 8. ACM, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "James Larisch, James Mickens, and Eddie Kohler. Alto: lightweight vms using virtualization-aware managed runtimes. In Proceedings of the 15th International Conference on Managed Languages & Runtimes, page 8. ACM, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "32",
+            "rawText": "Yiwen Li, Brendan Dolan-Gavitt, Sam Weber, and Justin Cappos. Lock-in-pop: Securing privileged operating system kernels by keeping on the beaten path. In 2017 USENIX Annual Technical Conference (USENIX ATC 17), pages 1–13, Santa Clara, CA, 2017. USENIX Association. URL: https://www.usenix.org/conference/atc17/ technical-sessions/presentation/li-yiwen.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Yiwen Li, Brendan Dolan-Gavitt, Sam Weber, and Justin Cappos. Lock-in-pop: Securing privileged operating system kernels by keeping on the beaten path. In 2017 USENIX Annual Technical Conference (USENIX ATC 17), pages 1–13, Santa Clara, CA, 2017. USENIX Association. URL: https://www.usenix.org/conference/atc17/ technical-sessions/presentation/li-yiwen."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "33",
+            "rawText": "Arm Limited. Cache speculation sidechannels, version 2.4. Technical report, October 2018. URL: https://developer. arm.com/support/arm-security-updates/ speculative-processor-vulnerability/ download-the-whitepaper.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Arm Limited. Cache speculation sidechannels, version 2.4. Technical report, October 2018. URL: https://developer. arm.com/support/arm-security-updates/ speculative-processor-vulnerability/ download-the-whitepaper."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "34",
+            "rawText": "Moritz Lipp, Michael Schwarz, Daniel Gruss, Thomas Prescher, Werner Haas, Anders Fogh, Jann Horn, Stefan Mangard, Paul Kocher, Daniel Genkin, Yuval Yarom, and Mike Hamburg. Meltdown: Reading kernel memory from user space. In 27th USENIX Security Symposium (USENIX Security 18), 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Moritz Lipp, Michael Schwarz, Daniel Gruss, Thomas Prescher, Werner Haas, Anders Fogh, Jann Horn, Stefan Mangard, Paul Kocher, Daniel Genkin, Yuval Yarom, and Mike Hamburg. Meltdown: Reading kernel memory from user space. In 27th USENIX Security Symposium (USENIX Security 18), 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "35",
+            "rawText": "John DC Little. A proof for the queuing formula: L = λ w. Operations research, 9(3):383–387, 1961.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1961,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "John DC Little. A proof for the queuing formula: L = λ w. Operations research, 9(3):383–387, 1961."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1961,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "36",
+            "rawText": "Jean-Pierre Lozi, Baptiste Lepers, Justin Funston, Fabien Gaud, Vivien Quéma, and Alexandra Fedorova. The linux scheduler: a decade of wasted cores. In Proceedings of the Eleventh European Conference on Computer Systems, page 1. ACM, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Jean-Pierre Lozi, Baptiste Lepers, Justin Funston, Fabien Gaud, Vivien Quéma, and Alexandra Fedorova. The linux scheduler: a decade of wasted cores. In Proceedings of the Eleventh European Conference on Computer Systems, page 1. ACM, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "37",
+            "rawText": "Giorgi Maisuradze and Christian Rossow. ret2spec: Speculative execution using return stack buffers. In Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security, pages 2109– 2122. ACM, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Giorgi Maisuradze and Christian Rossow. ret2spec: Speculative execution using return stack buffers. In Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security, pages 2109– 2122. ACM, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "38",
+            "rawText": "Filipe Manco, Costin Lupu, Florian Schmidt, Jose Mendes, Simon Kuenzer, Sumit Sati, Kenichi Yasukata, Costin Raiciu, and Felipe Huici. My vm is lighter (and safer) than your container. In Proceedings of the 26th Symposium on Operating Systems Principles, SOSP ’17, pages 218–233, New York, NY, USA, 2017. ACM. URL: http://doi.acm.org/10.1145/3132747.3132763, doi:10.1145/3132747.3132763.",
+            "doi": "10.1145/3132747.3132763",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Filipe Manco, Costin Lupu, Florian Schmidt, Jose Mendes, Simon Kuenzer, Sumit Sati, Kenichi Yasukata, Costin Raiciu, and Felipe Huici. My vm is lighter (and safer) than your container. In Proceedings of the 26th Symposium on Operating Systems Principles, SOSP ’17, pages 218–233, New York, NY, USA, 2017. ACM. URL: http://doi.acm.org/10.1145/3132747.3132763, doi:10.1145/3132747.3132763."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3132747.3132763",
+                "doi": "10.1145/3132747.3132763",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3132747.3132763"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "39",
+            "rawText": "Ross McIlroy, Jaroslav Sevcík, Tobias Tebbi, Ben L. Titzer, and Toon Verwaest. Spectre is here to stay: An analysis of side-channels and speculative execution. CoRR, abs/1902.05178, 2019. URL: http://arxiv. org/abs/1902.05178, arXiv:1902.05178.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1902,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Ross McIlroy, Jaroslav Sevcík, Tobias Tebbi, Ben L. Titzer, and Toon Verwaest. Spectre is here to stay: An analysis of side-channels and speculative execution. CoRR, abs/1902.05178, 2019. URL: http://arxiv. org/abs/1902.05178, arXiv:1902.05178."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:39",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1902,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "40",
+            "rawText": "OASIS. Virtual i/o device (virtio) version 1.0, March 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "OASIS. Virtual i/o device (virtio) version 1.0, March 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:40",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "41",
+            "rawText": "OpenFaaS. OpenFaaS: Serverless Functions Made Simple , 2019. URL: https://www.openfaas.com/. 432 17th USENIX Symposium on Networked Systems Design and Implementation USENIX Association",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "OpenFaaS. OpenFaaS: Serverless Functions Made Simple , 2019. URL: https://www.openfaas.com/. 432 17th USENIX Symposium on Networked Systems Design and Implementation USENIX Association"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:41",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "42",
+            "rawText": "Dag Arne Osvik, Adi Shamir, and Eran Tromer. Cache attacks and countermeasures: The case of aes. In Proceedings of the 2006 The Cryptographers’ Track at the RSA Conference on Topics in Cryptology, CT-RSA’06, pages 1–20, Berlin, Heidelberg, 2006. Springer-Verlag. URL: http://dx.doi.org/ 10.1007/11605805_1, doi:10.1007/11605805_1.",
+            "doi": "10.1007/11605805_1",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Dag Arne Osvik, Adi Shamir, and Eran Tromer. Cache attacks and countermeasures: The case of aes. In Proceedings of the 2006 The Cryptographers’ Track at the RSA Conference on Topics in Cryptology, CT-RSA’06, pages 1–20, Berlin, Heidelberg, 2006. Springer-Verlag. URL: http://dx.doi.org/ 10.1007/11605805_1, doi:10.1007/11605805_1."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/11605805_1",
+                "doi": "10.1007/11605805_1",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/11605805_1"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "43",
+            "rawText": "K. Park, S. Baeg, S. Wen, and R. Wong. Activeprecharge hammering on a row induced failure in ddr3 sdrams under 3nm technology. In 2014 IEEE International Integrated Reliability Workshop Final Report (IIRW), pages 82–85, Oct 2014. doi:10.1109/IIRW. 2014.7049516.",
+            "doi": "10.1109/iirw",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "K. Park, S. Baeg, S. Wen, and R. Wong. Activeprecharge hammering on a row induced failure in ddr3 sdrams under 3nm technology. In 2014 IEEE International Integrated Reliability Workshop Final Report (IIRW), pages 82–85, Oct 2014. doi:10.1109/IIRW. 2014.7049516."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/iirw",
+                "doi": "10.1109/iirw",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iirw"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "44",
+            "rawText": "Matthew Perron, Raul Castro Fernandez, David DeWitt, and Samuel Madden. Starling: A scalable query engine on cloud function services, 2019. arXiv:1911.11727.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Matthew Perron, Raul Castro Fernandez, David DeWitt, and Samuel Madden. Starling: A scalable query engine on cloud function services, 2019. arXiv:1911.11727."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "45",
+            "rawText": "Donald E. Porter, Silas Boyd-Wickizer, Jon Howell, Reuben Olinsky, and Galen C. Hunt. Rethinking the library os from the top down. SIGARCH Comput. Archit. News, 39(1):291–304, March 2011. URL: http://doi.acm.org/10.1145/1961295.1950399, doi:10.1145/1961295.1950399.",
+            "doi": "10.1145/1961295.1950399",
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Donald E. Porter, Silas Boyd-Wickizer, Jon Howell, Reuben Olinsky, and Galen C. Hunt. Rethinking the library os from the top down. SIGARCH Comput. Archit. News, 39(1):291–304, March 2011. URL: http://doi.acm.org/10.1145/1961295.1950399, doi:10.1145/1961295.1950399."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/1961295.1950399",
+                "doi": "10.1145/1961295.1950399",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1961295.1950399"
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "46",
+            "rawText": "The Chromium Projects. Site isolation design, 2018. URL: https://www.chromium.org/ developers/design-documents/site-isolation.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Chromium Projects. Site isolation design, 2018. URL: https://www.chromium.org/ developers/design-documents/site-isolation."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "47",
+            "rawText": "Qifan Pu, Shivaram Venkataraman, and Ion Stoica. Shufﬂing, fast and slow: Scalable analytics on serverless infrastructure. In 16th USENIX Symposium on Networked Systems Design and Implementation (NSDI 19), pages 193–206, Boston, MA, 2019. USENIX Association. URL: https://www.usenix.org/conference/ nsdi19/presentation/pu.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Qifan Pu, Shivaram Venkataraman, and Ion Stoica. Shufﬂing, fast and slow: Scalable analytics on serverless infrastructure. In 16th USENIX Symposium on Networked Systems Design and Implementation (NSDI 19), pages 193–206, Boston, MA, 2019. USENIX Association. URL: https://www.usenix.org/conference/ nsdi19/presentation/pu."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:47",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "48",
+            "rawText": "Rusty Russell. Virtio: Towards a de-facto standard for virtual i/o devices. SIGOPS Oper. Syst. Rev., 42(5):95–103, July 2008. URL: http://doi.acm.org/10.1145/1400097.1400108, doi:10.1145/1400097.1400108.",
+            "doi": "10.1145/1400097.1400108",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Rusty Russell. Virtio: Towards a de-facto standard for virtual i/o devices. SIGOPS Oper. Syst. Rev., 42(5):95–103, July 2008. URL: http://doi.acm.org/10.1145/1400097.1400108, doi:10.1145/1400097.1400108."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/1400097.1400108",
+                "doi": "10.1145/1400097.1400108",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1400097.1400108"
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "49",
+            "rawText": "Michael Schwarz, Moritz Lipp, Daniel Moghimi, Jo Van Bulck, Julian Stecklina, Thomas Prescher, and Daniel Gruss. Zombieload: Cross-privilege-boundary data sampling. In Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security, CCS ’19, page 753–768, New York, NY, USA, 2019. Association for Computing Machinery. URL: https://doi.org/10.1145/3319535. 3354252, doi:10.1145/3319535.3354252.",
+            "doi": "10.1145/3319535.3354252",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Michael Schwarz, Moritz Lipp, Daniel Moghimi, Jo Van Bulck, Julian Stecklina, Thomas Prescher, and Daniel Gruss. Zombieload: Cross-privilege-boundary data sampling. In Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security, CCS ’19, page 753–768, New York, NY, USA, 2019. Association for Computing Machinery. URL: https://doi.org/10.1145/3319535. 3354252, doi:10.1145/3319535.3354252."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3319535.3354252",
+                "doi": "10.1145/3319535.3354252",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3319535.3354252"
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "50",
+            "rawText": "Amazon Web Services. AWS Fargate - Run containers without managing servers or clusters, 2018. URL: https://aws.amazon.com/fargate/.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Amazon Web Services. AWS Fargate - Run containers without managing servers or clusters, 2018. URL: https://aws.amazon.com/fargate/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:50",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "51",
+            "rawText": "Amazon Web Services. Aws lambda - serverless compute, 2018. URL: https://aws.amazon.com/ lambda/.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Amazon Web Services. Aws lambda - serverless compute, 2018. URL: https://aws.amazon.com/ lambda/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:51",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "52",
+            "rawText": "Amazon Web Services. Firecracker production host setup recommendations, 2018. URL: https://github. com/firecracker-microvm/firecracker/blob/ master/docs/prod-host-setup.md.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Amazon Web Services. Firecracker production host setup recommendations, 2018. URL: https://github. com/firecracker-microvm/firecracker/blob/ master/docs/prod-host-setup.md."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:52",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "53",
+            "rawText": "Vaishaal Shankar, Karl Krauth, Qifan Pu, Eric Jonas, Shivaram Venkataraman, Ion Stoica, Benjamin Recht, and Jonathan Ragan-Kelley. numpywren: serverless linear algebra, 2018. arXiv:1810.09679.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Vaishaal Shankar, Karl Krauth, Qifan Pu, Eric Jonas, Shivaram Venkataraman, Ion Stoica, Benjamin Recht, and Jonathan Ragan-Kelley. numpywren: serverless linear algebra, 2018. arXiv:1810.09679."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:53",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "54",
+            "rawText": "Julian Stecklina and Thomas Prescher. Lazyfp: Leaking fpu register state using microarchitectural side-channels, 2018. arXiv:1806.07480.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Julian Stecklina and Thomas Prescher. Lazyfp: Leaking fpu register state using microarchitectural side-channels, 2018. arXiv:1806.07480."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:54",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "55",
+            "rawText": "Udo Steinberg and Bernhard Kauer. Nova: A microhypervisor-based secure virtualization architecture. In Proceedings of the 5th European Conference on Computer Systems, EuroSys ’10, pages 209–222, New York, NY, USA, 2010. ACM. URL: http://doi.acm.org/10.1145/1755913.1755935, doi:10.1145/1755913.1755935.",
+            "doi": "10.1145/1755913.1755935",
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Udo Steinberg and Bernhard Kauer. Nova: A microhypervisor-based secure virtualization architecture. In Proceedings of the 5th European Conference on Computer Systems, EuroSys ’10, pages 209–222, New York, NY, USA, 2010. ACM. URL: http://doi.acm.org/10.1145/1755913.1755935, doi:10.1145/1755913.1755935."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/1755913.1755935",
+                "doi": "10.1145/1755913.1755935",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1755913.1755935"
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "56",
+            "rawText": "Chia-Che Tsai, Kumar Saurabh Arora, Nehal Bandi, Bhushan Jain, William Jannen, Jitin John, Harry A. Kalodner, Vrushali Kulkarni, Daniela Oliveira, and Donald E. Porter. Cooperation and security isolation of library oses for multi-process applications. In Proceedings of the Ninth European Conference on Computer Systems, EuroSys ’14, pages 9:1– 9:14, New York, NY, USA, 2014. ACM. URL: http://doi.acm.org/10.1145/2592798.2592812, doi:10.1145/2592798.2592812.",
+            "doi": "10.1145/2592798.2592812",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Chia-Che Tsai, Kumar Saurabh Arora, Nehal Bandi, Bhushan Jain, William Jannen, Jitin John, Harry A. Kalodner, Vrushali Kulkarni, Daniela Oliveira, and Donald E. Porter. Cooperation and security isolation of library oses for multi-process applications. In Proceedings of the Ninth European Conference on Computer Systems, EuroSys ’14, pages 9:1– 9:14, New York, NY, USA, 2014. ACM. URL: http://doi.acm.org/10.1145/2592798.2592812, doi:10.1145/2592798.2592812."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/2592798.2592812",
+                "doi": "10.1145/2592798.2592812",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2592798.2592812"
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "57",
+            "rawText": "Chia-Che Tsai, Bhushan Jain, Nafees Ahmed Abdul, and Donald E. Porter. A study of modern linux api usage and compatibility: What to support when you’re supporting. In Proceedings of the Eleventh European Conference on Computer Systems, EuroSys ’16, pages 16:1–16:16, New York, NY, USA, 2016. ACM. URL: http://doi.acm.org/10.1145/2901318.2901341, doi:10.1145/2901318.2901341.",
+            "doi": "10.1145/2901318.2901341",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Chia-Che Tsai, Bhushan Jain, Nafees Ahmed Abdul, and Donald E. Porter. A study of modern linux api usage and compatibility: What to support when you’re supporting. In Proceedings of the Eleventh European Conference on Computer Systems, EuroSys ’16, pages 16:1–16:16, New York, NY, USA, 2016. ACM. URL: http://doi.acm.org/10.1145/2901318.2901341, doi:10.1145/2901318.2901341."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/2901318.2901341",
+                "doi": "10.1145/2901318.2901341",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2901318.2901341"
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "58",
+            "rawText": "Oﬁr Weisse, Jo Van Bulck, Marina Minkin, Daniel Genkin, Baris Kasikci, Frank Piessens, Mark Silberstein, Raoul Strackx, Thomas F Wenisch, and Yuval Yarom. Foreshadow-ng: Breaking the virtual memory abstraction with transient out-of-order execution. Technical report, Technical report, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Oﬁr Weisse, Jo Van Bulck, Marina Minkin, Daniel Genkin, Baris Kasikci, Frank Piessens, Mark Silberstein, Raoul Strackx, Thomas F Wenisch, and Yuval Yarom. Foreshadow-ng: Breaking the virtual memory abstraction with transient out-of-order execution. Technical report, Technical report, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:58",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "59",
+            "rawText": "Dan Williams and Ricardo Koller. Unikernel monitors: Extending minimalism outside of the box. In 8th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 16), Denver, USENIX Association 17th USENIX Symposium on Networked Systems Design and Implementation 433 CO, 2016. USENIX Association. URL: https: //www.usenix.org/conference/hotcloud16/ workshop-program/presentation/williams.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Dan Williams and Ricardo Koller. Unikernel monitors: Extending minimalism outside of the box. In 8th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 16), Denver, USENIX Association 17th USENIX Symposium on Networked Systems Design and Implementation 433 CO, 2016. USENIX Association. URL: https: //www.usenix.org/conference/hotcloud16/ workshop-program/presentation/williams."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:59",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "61",
+            "rawText": "Yuval Yarom and Katrina Falkner. Flush+reload: A high resolution, low noise, l3 cache side-channel attack. In 23rd USENIX Security Symposium (USENIX Security 14), pages 719–732, San Diego, CA, August 2014. USENIX Association. URL: https://www. usenix.org/conference/usenixsecurity14/ technical-sessions/presentation/yarom.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Yuval Yarom and Katrina Falkner. Flush+reload: A high resolution, low noise, l3 cache side-channel attack. In 23rd USENIX Security Symposium (USENIX Security 14), pages 719–732, San Diego, CA, August 2014. USENIX Association. URL: https://www. usenix.org/conference/usenixsecurity14/ technical-sessions/presentation/yarom."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:60",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "60",
+            "rawText": "Dan Williams, Ricardo Koller, and Brandon Lum. Say goodbye to virtualization for a safer cloud. In 10th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 18), 2018. 434 17th USENIX Symposium on Networked Systems Design and Implementation USENIX Association",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Dan Williams, Ricardo Koller, and Brandon Lum. Say goodbye to virtualization for a safer cloud. In 10th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 18), 2018. 434 17th USENIX Symposium on Networked Systems Design and Implementation USENIX Association"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firecracker lightweight virtualization for serverless applications:2020:61",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 61,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Agache2020",
+      "paperId": "title:firecracker lightweight virtualization for serverless applications:2020",
+      "metadata": {
+        "fileName": "Agache2020.pdf",
+        "sourcePath": "papers/continuum/Agache2020.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1126 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.461676+00:00",
+  "papers": [
+    {
+      "key": "Li2022",
+      "paper": {
+        "id": "doi:10.1109/rtss55097.2022.00014",
+        "citationKey": "Li2022",
+        "title": "Worst-Case Time Disparity Analysis of Message Synchronization in ROS",
+        "authors": [
+          "Ruoxiang Li",
+          "Nan Guan",
+          "Xu Jiang",
+          "Zhishan Guo",
+          "Zheng Dong",
+          "Mingsong Lv"
+        ],
+        "year": 2022,
+        "venue": "2022 IEEE Real-Time Systems Symposium (RTSS)",
+        "type": "inproceedings",
+        "doi": "10.1109/RTSS55097.2022.00014",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/RTSS55097.2022.00014",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Li, Ruoxiang and Guan, Nan and Jiang, Xu and Guo, Zhishan and Dong, Zheng and Lv, Mingsong",
+          "title": "{Worst-Case Time Disparity Analysis of Message Synchronization in ROS}",
+          "year": "2022",
+          "booktitle": "2022 IEEE Real-Time Systems Symposium (RTSS)",
+          "publisher": "IEEE",
+          "pages": "40--52",
+          "doi": "10.1109/RTSS55097.2022.00014",
+          "url": "https://doi.org/10.1109/RTSS55097.2022.00014"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.078064+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref1",
+            "rawText": "https://doi.org/10.1109/access.2019.2962554",
+            "doi": "10.1109/access.2019.2962554",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ACCESS.2019.2962554"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/access.2019.2962554",
+                "doi": "10.1109/access.2019.2962554",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/access.2019.2962554"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref2",
+            "rawText": "https://doi.org/10.3390/s21062140",
+            "doi": "10.3390/s21062140",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.3390/s21062140"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.3390/s21062140",
+                "doi": "10.3390/s21062140",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.3390/s21062140"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.1109/rtas52030.2021.00040",
+            "doi": "10.1109/rtas52030.2021.00040",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS52030.2021.00040"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00040",
+                "doi": "10.1109/rtas52030.2021.00040",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00040"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref4",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "volume-title": "ROS Introduction"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref4",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref5",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "volume-title": "Policy-Based Synchronizer"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref5",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1109/iccps.2018.00035",
+            "doi": "10.1109/iccps.2018.00035",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICCPS.2018.00035"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iccps.2018.00035",
+                "doi": "10.1109/iccps.2018.00035",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iccps.2018.00035"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref7",
+            "rawText": "https://doi.org/10.1109/mm.2015.133",
+            "doi": "10.1109/mm.2015.133",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MM.2015.133"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mm.2015.133",
+                "doi": "10.1109/mm.2015.133",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mm.2015.133"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref8",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "volume-title": "Apollo Cyber RT"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref8",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref9",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "volume-title": "ROS Message Filter: Exact Time Synchronization Policy"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref9",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref10",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "volume-title": "ROS Message Filter: Approximate Time Synchronization Policy"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref11",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "volume-title": "ROS2 Humble"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref11",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref12",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "volume-title": "ROS Diamondback"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref12",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref13",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "volume-title": "SVL Simulator"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref13",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref14",
+            "rawText": "https://doi.org/10.5244/c.31.16",
+            "doi": "10.5244/c.31.16",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5244/C.31.16"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5244/c.31.16",
+                "doi": "10.5244/c.31.16",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5244/c.31.16"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref15",
+            "rawText": "Huber. Application of time-delay estimation to mixed reality multisensor tracking. 2014. J. Virtual Real. Broadcast.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "article-title": "Application of time-delay estimation to mixed reality multisensor tracking",
+              "author": "Huber",
+              "year": "2014",
+              "journal-title": "J. Virtual Real. Broadcast."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref15",
+                "doi": "",
+                "title": "Application of time-delay estimation to mixed reality multisensor tracking",
+                "authors": [
+                  "Huber"
+                ],
+                "year": 2014,
+                "venue": "J. Virtual Real. Broadcast.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1080/01691864.2020.1819874",
+            "doi": "10.1080/01691864.2020.1819874",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/01691864.2020.1819874"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1080/01691864.2020.1819874",
+                "doi": "10.1080/01691864.2020.1819874",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1080/01691864.2020.1819874"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref17",
+            "rawText": "https://doi.org/10.1109/lra.2020.3014639",
+            "doi": "10.1109/lra.2020.3014639",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/LRA.2020.3014639"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/lra.2020.3014639",
+                "doi": "10.1109/lra.2020.3014639",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/lra.2020.3014639"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref18",
+            "rawText": "https://doi.org/10.1007/978-3-642-28572-1_14",
+            "doi": "10.1007/978-3-642-28572-1_14",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-642-28572-1_14"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-28572-1_14",
+                "doi": "10.1007/978-3-642-28572-1_14",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-28572-1_14"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref19",
+            "rawText": "https://doi.org/10.1145/2968478.2968502",
+            "doi": "10.1145/2968478.2968502",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2968478.2968502"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2968478.2968502",
+                "doi": "10.1145/2968478.2968502",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2968478.2968502"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref20",
+            "rawText": "Gutierrez. Towards a distributed and real-time framework for robots: Evaluation of ROS 2.0 communications for real-time robotic applications. 2018. arXiv preprint",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "article-title": "Towards a distributed and real-time framework for robots: Evaluation of ROS 2.0 communications for real-time robotic applications",
+              "author": "Gutierrez",
+              "year": "2018",
+              "journal-title": "arXiv preprint"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref20",
+                "doi": "",
+                "title": "Towards a distributed and real-time framework for robots: Evaluation of ROS 2.0 communications for real-time robotic applications",
+                "authors": [
+                  "Gutierrez"
+                ],
+                "year": 2018,
+                "venue": "arXiv preprint",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref21",
+            "rawText": "https://doi.org/10.1109/lra.2022.3174346",
+            "doi": "10.1109/lra.2022.3174346",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/LRA.2022.3174346"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/lra.2022.3174346",
+                "doi": "10.1109/lra.2022.3174346",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/lra.2022.3174346"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref22",
+            "rawText": "https://doi.org/10.1016/j.future.2015.05.008",
+            "doi": "10.1016/j.future.2015.05.008",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.future.2015.05.008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.future.2015.05.008",
+                "doi": "10.1016/j.future.2015.05.008",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.future.2015.05.008"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref23",
+            "rawText": "https://doi.org/10.1109/isorc.2018.00035",
+            "doi": "10.1109/isorc.2018.00035",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISORC.2018.00035"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isorc.2018.00035",
+                "doi": "10.1109/isorc.2018.00035",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isorc.2018.00035"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "ref24",
+            "rawText": "https://doi.org/10.1109/cpsna.2016.24",
+            "doi": "10.1109/cpsna.2016.24",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref24",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CPSNA.2016.24"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cpsna.2016.24",
+                "doi": "10.1109/cpsna.2016.24",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cpsna.2016.24"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "ref25",
+            "rawText": "https://doi.org/10.1109/rtcsa.2018.00015",
+            "doi": "10.1109/rtcsa.2018.00015",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref25",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTCSA.2018.00015"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2018.00015",
+                "doi": "10.1109/rtcsa.2018.00015",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2018.00015"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "ref26",
+            "rawText": "Casini. Response-time analysis of ROS 2 processing chains under reservation-based scheduling",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref26",
+              "first-page": "1",
+              "article-title": "Response-time analysis of ROS 2 processing chains under reservation-based scheduling",
+              "volume-title": "31 st Euromicro Conference on Real-Time Systems. Schloss Dagstuhl",
+              "author": "Casini"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2019.6",
+                "doi": "",
+                "title": "Response-time analysis of ROS 2 processing chains under reservation-based scheduling",
+                "authors": [
+                  "Casini"
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2019.6"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "ref27",
+            "rawText": "https://doi.org/10.1109/rtss49844.2020.00030",
+            "doi": "10.1109/rtss49844.2020.00030",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref27",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS49844.2020.00030"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss49844.2020.00030",
+                "doi": "10.1109/rtss49844.2020.00030",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss49844.2020.00030"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "ref28",
+            "rawText": "https://doi.org/10.1109/rtas52030.2021.00028",
+            "doi": "10.1109/rtas52030.2021.00028",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref28",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS52030.2021.00028"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00028",
+                "doi": "10.1109/rtas52030.2021.00028",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00028"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "ref29",
+            "rawText": "https://doi.org/10.1109/rtas52030.2021.00029",
+            "doi": "10.1109/rtas52030.2021.00029",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref29",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS52030.2021.00029"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00029",
+                "doi": "10.1109/rtas52030.2021.00029",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00029"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "ref30",
+            "rawText": "https://doi.org/10.1109/rtss52674.2021.00016",
+            "doi": "10.1109/rtss52674.2021.00016",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref30",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS52674.2021.00016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss52674.2021.00016",
+                "doi": "10.1109/rtss52674.2021.00016",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss52674.2021.00016"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "ref31",
+            "rawText": "Randolph. 2021",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref31",
+              "volume-title": "Improving the Predictability of Event Chains in ROS 2",
+              "author": "Randolph",
+              "year": "2021"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref31",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Randolph"
+                ],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "ref32",
+            "rawText": "https://doi.org/10.1093/comjnl/29.5.390",
+            "doi": "10.1093/comjnl/29.5.390",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref32",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1093/comjnl/29.5.390"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1093/comjnl/29.5.390",
+                "doi": "10.1093/comjnl/29.5.390",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1093/comjnl/29.5.390"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "ref33",
+            "rawText": "https://doi.org/10.1023/b:time.0000045315.61234.1e",
+            "doi": "10.1023/b:time.0000045315.61234.1e",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref33",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/B:TIME.0000045315.61234.1e"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/b:time.0000045315.61234.1e",
+                "doi": "10.1023/b:time.0000045315.61234.1e",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/b:time.0000045315.61234.1e"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "ref34",
+            "rawText": "https://doi.org/10.1007/s11241-007-9042-1",
+            "doi": "10.1007/s11241-007-9042-1",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref34",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-007-9042-1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-007-9042-1",
+                "doi": "10.1007/s11241-007-9042-1",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-007-9042-1"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "ref35",
+            "rawText": "https://doi.org/10.1109/rtas52030.2021.00012",
+            "doi": "10.1109/rtas52030.2021.00012",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref35",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS52030.2021.00012"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00012",
+                "doi": "10.1109/rtas52030.2021.00012",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00012"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/rtss55097.2022.00014",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 3,
+          "extractedReferenceCount": 35,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/rtss55097.2022.00014",
+          "crossrefReferenceCount": 35
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/rtss55097.2022.00014->doi:10.4230/lipics.ecrts.2019.6@papers-LET-Li2022.pdf",
+      "source": "doi:10.1109/rtss55097.2022.00014",
+      "target": "doi:10.4230/lipics.ecrts.2019.6",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Li2022.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss55097.2022.00014->doi:10.1093/comjnl/29.5.390@papers-LET-Li2022.pdf",
+      "source": "doi:10.1109/rtss55097.2022.00014",
+      "target": "doi:10.1093/comjnl/29.5.390",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Li2022.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss55097.2022.00014->doi:10.1109/rtas52030.2021.00012@papers-LET-Li2022.pdf",
+      "source": "doi:10.1109/rtss55097.2022.00014",
+      "target": "doi:10.1109/rtas52030.2021.00012",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Li2022.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Li2022",
+      "paperId": "doi:10.1109/rtss55097.2022.00014",
+      "metadata": {
+        "fileName": "Li2022.pdf",
+        "sourcePath": "papers/LET/Li2022.pdf"
+      }
+    }
+  ]
+}

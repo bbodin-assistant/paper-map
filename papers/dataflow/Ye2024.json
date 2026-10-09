@@ -1,0 +1,2593 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.020745+00:00",
+  "papers": [
+    {
+      "key": "Ye2024",
+      "paper": {
+        "id": "doi:10.1145/3617232.3624850",
+        "citationKey": "Ye2024",
+        "title": "HIDA: A Hierarchical Dataflow Compiler for High-Level Synthesis",
+        "authors": [
+          "Hanchen Ye",
+          "Hyegang Jun",
+          "Deming Chen"
+        ],
+        "year": 2024,
+        "venue": "ASPLOS",
+        "type": "inproceedings",
+        "doi": "10.1145/3617232.3624850",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/3617232.3624850",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Ye, Hanchen and Jun, Hyegang and Chen, Deming",
+          "title": "{HIDA}: A Hierarchical Dataflow Compiler for High-Level Synthesis",
+          "booktitle": "ASPLOS",
+          "pages": "215--230",
+          "year": "2024",
+          "doi": "10.1145/3617232.3624850",
+          "url": "https://doi.org/10.1145/3617232.3624850"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.125854+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_1_1_1",
+            "rawText": "https://doi.org/10.1145/3508352.3549424",
+            "doi": "10.1145/3508352.3549424",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_1_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3508352.3549424"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3508352.3549424",
+                "doi": "10.1145/3508352.3549424",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3508352.3549424"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_1_2_1",
+            "rawText": "https://doi.org/10.1109/micro.2016.7783725",
+            "doi": "10.1109/micro.2016.7783725",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_2_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MICRO.2016.7783725"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/micro.2016.7783725",
+                "doi": "10.1109/micro.2016.7783725",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/micro.2016.7783725"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_1_3_1",
+            "rawText": "https://doi.org/10.1145/2228360.2228584",
+            "doi": "10.1145/2228360.2228584",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2228360.2228584"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2228360.2228584",
+                "doi": "10.1145/2228360.2228584",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2228360.2228584"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_1_4_1",
+            "rawText": "https://doi.org/10.1145/3295500.3356173",
+            "doi": "10.1145/3295500.3356173",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_4_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3295500.3356173"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3295500.3356173",
+                "doi": "10.1145/3295500.3356173",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3295500.3356173"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_1_5_1",
+            "rawText": "https://doi.org/10.1007/978-3-642-11970-5_16",
+            "doi": "10.1007/978-3-642-11970-5_16",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-642-11970-5_16"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-11970-5_16",
+                "doi": "10.1007/978-3-642-11970-5_16",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-11970-5_16"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_1_6_1",
+            "rawText": "https://doi.org/10.1145/2654822.2541967",
+            "doi": "10.1145/2654822.2541967",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2654822.2541967"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2654822.2541967",
+                "doi": "10.1145/2654822.2541967",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2654822.2541967"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_1_7_1",
+            "rawText": "https://doi.org/10.1145/3007787.3001177",
+            "doi": "10.1145/3007787.3001177",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_7_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3007787.3001177"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3007787.3001177",
+                "doi": "10.1145/3007787.3001177",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3007787.3001177"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_1_8_1",
+            "rawText": "https://doi.org/10.1145/3373087.3375297",
+            "doi": "10.1145/3373087.3375297",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3373087.3375297"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3373087.3375297",
+                "doi": "10.1145/3373087.3375297",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3373087.3375297"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_1_9_1",
+            "rawText": "https://doi.org/10.1145/3240765.3240850",
+            "doi": "10.1145/3240765.3240850",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_9_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3240765.3240850"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3240765.3240850",
+                "doi": "10.1145/3240765.3240850",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3240765.3240850"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_1_10_1",
+            "rawText": "Yuze Chi, Licheng Guo, Jason Lau, Young-kyu Choi, Jie Wang, and Jason Cong. 2021. Extending high-level synthesis for task-parallel programs. In 2021 IEEE 29th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). IEEE, 204--213.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_10_1",
+              "volume-title": "2021 IEEE 29th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). IEEE, 204--213",
+              "author": "Chi Yuze",
+              "year": "2021",
+              "unstructured": "Yuze Chi, Licheng Guo, Jason Lau, Young-kyu Choi, Jie Wang, and Jason Cong. 2021. Extending high-level synthesis for task-parallel programs. In 2021 IEEE 29th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). IEEE, 204--213."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_10_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Chi Yuze"
+                ],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_1_11_1",
+            "rawText": "Jason Cong, Muhuan Huang, Peichen Pan, Yuxin Wang, and Peng Zhang. 2016. Source-to-source optimization for HLS. FPGAs for Software Programmers (2016), 137--163.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_11_1",
+              "volume-title": "Source-to-source optimization for HLS. FPGAs for Software Programmers",
+              "author": "Cong Jason",
+              "year": "2016",
+              "unstructured": "Jason Cong, Muhuan Huang, Peichen Pan, Yuxin Wang, and Peng Zhang. 2016. Source-to-source optimization for HLS. FPGAs for Software Programmers (2016), 137--163."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_11_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Cong Jason"
+                ],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_3_2_1_12_1",
+            "rawText": "https://doi.org/10.1109/tcad.2011.2110592",
+            "doi": "10.1109/tcad.2011.2110592",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_12_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TCAD.2011.2110592"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tcad.2011.2110592",
+                "doi": "10.1109/tcad.2011.2110592",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tcad.2011.2110592"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_3_2_1_13_1",
+            "rawText": "https://doi.org/10.1145/3240765.3240838",
+            "doi": "10.1145/3240765.3240838",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3240765.3240838"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3240765.3240838",
+                "doi": "10.1145/3240765.3240838",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3240765.3240838"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_3_2_1_14_1",
+            "rawText": "CIRCT Contributors. 2023. CIRCT ESI Dialect. https://circt.llvm.org/docs/Dialects/ESI/",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_14_1",
+              "unstructured": "CIRCT Contributors. 2023. CIRCT ESI Dialect. https://circt.llvm.org/docs/Dialects/ESI/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_14_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_3_2_1_15_1",
+            "rawText": "CIRCT Contributors. 2023. CIRCT Handshake Dialect. https://circt.llvm.org/docs/Dialects/Handshake/",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_15_1",
+              "unstructured": "CIRCT Contributors. 2023. CIRCT Handshake Dialect. https://circt.llvm.org/docs/Dialects/Handshake/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_15_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_3_2_1_16_1",
+            "rawText": "CIRCT Contributors. 2023. The CIRCT Project. https://github.com/llvm/circt",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_16_1",
+              "unstructured": "CIRCT Contributors. 2023. The CIRCT Project. https://github.com/llvm/circt"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_16_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_3_2_1_17_1",
+            "rawText": "IREE Contributors. 2023. The IREE Project. https://github.com/openxla/iree",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_17_1",
+              "unstructured": "IREE Contributors. 2023. The IREE Project. https://github.com/openxla/iree"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_17_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_3_2_1_18_1",
+            "rawText": "MLIR Contributors. 2023. MLIR Affine Dialect. https://mlir.llvm.org/docs/Dialects/Affine/",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_18_1",
+              "unstructured": "MLIR Contributors. 2023. MLIR Affine Dialect. https://mlir.llvm.org/docs/Dialects/Affine/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_18_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_3_2_1_19_1",
+            "rawText": "MLIR Contributors. 2023. MLIR LinAlg Dialect. https://mlir.llvm.org/docs/Dialects/Linalg/",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_19_1",
+              "unstructured": "MLIR Contributors. 2023. MLIR LinAlg Dialect. https://mlir.llvm.org/docs/Dialects/Linalg/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_19_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_3_2_1_20_1",
+            "rawText": "MLIR Contributors. 2023. MLIR Project. https://github.com/llvm/llvm-project/tree/main/mlir",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_20_1",
+              "unstructured": "MLIR Contributors. 2023. MLIR Project. https://github.com/llvm/llvm-project/tree/main/mlir"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_20_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_3_2_1_21_1",
+            "rawText": "MLIR Contributors. 2023. MLIR Tensor Dialect. https://mlir.llvm.org/docs/Dialects/TensorOps/",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_21_1",
+              "unstructured": "MLIR Contributors. 2023. MLIR Tensor Dialect. https://mlir.llvm.org/docs/Dialects/TensorOps/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_21_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_3_2_1_22_1",
+            "rawText": "Torch-MLIR Contributors. 2023. Torch-MLIR Project. https://github.com/llvm/torch-mlir/",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_22_1",
+              "unstructured": "Torch-MLIR Contributors. 2023. Torch-MLIR Project. https://github.com/llvm/torch-mlir/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_22_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_3_2_1_23_1",
+            "rawText": "https://doi.org/10.1145/115372.115320",
+            "doi": "10.1145/115372.115320",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_23_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/115372.115320"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/115372.115320",
+                "doi": "10.1145/115372.115320",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/115372.115320"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_3_2_1_24_1",
+            "rawText": "https://doi.org/10.1145/2749469.2750389",
+            "doi": "10.1145/2749469.2750389",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_24_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2749469.2750389"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2749469.2750389",
+                "doi": "10.1145/2749469.2750389",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2749469.2750389"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_3_2_1_25_1",
+            "rawText": "https://doi.org/10.1145/3385412.3385983",
+            "doi": "10.1145/3385412.3385983",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_25_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3385412.3385983"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3385412.3385983",
+                "doi": "10.1145/3385412.3385983",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3385412.3385983"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_3_2_1_26_1",
+            "rawText": "https://doi.org/10.1109/asap54787.2022.00012",
+            "doi": "10.1109/asap54787.2022.00012",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_26_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ASAP54787.2022.00012"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/asap54787.2022.00012",
+                "doi": "10.1109/asap54787.2022.00012",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/asap54787.2022.00012"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_3_2_1_27_1",
+            "rawText": "Farah Fahim, Benjamin Hawks, Christian Herwig, James Hirschauer, Sergo Jindariani, Nhan Tran, Luca P Carloni, Giuseppe Di Guglielmo, Philip Harris, Jeffrey Krupa, et al. 2021. hls4ml: An open-source code-sign workflow to empower scientific low-power machine learning devices. arXiv preprint arXiv:2103.05579 (2021).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_27_1",
+              "volume-title": "Philip Harris, Jeffrey Krupa, et al.",
+              "author": "Fahim Farah",
+              "year": "2021",
+              "unstructured": "Farah Fahim, Benjamin Hawks, Christian Herwig, James Hirschauer, Sergo Jindariani, Nhan Tran, Luca P Carloni, Giuseppe Di Guglielmo, Philip Harris, Jeffrey Krupa, et al. 2021. hls4ml: An open-source code-sign workflow to empower scientific low-power machine learning devices. arXiv preprint arXiv:2103.05579 (2021)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_27_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Fahim Farah"
+                ],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_3_2_1_28_1",
+            "rawText": "https://doi.org/10.1109/dac18074.2021.9586216",
+            "doi": "10.1109/dac18074.2021.9586216",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_28_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/DAC18074.2021.9586216"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/dac18074.2021.9586216",
+                "doi": "10.1109/dac18074.2021.9586216",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/dac18074.2021.9586216"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_3_2_1_29_1",
+            "rawText": "Licheng Guo, Yuze Chi, Jason Lau, Linghao Song, Xingyu Tian, Moazin Khatti, Weikang Qiao, Jie Wang, Ecenur Ustun, Zhenman Fang, et al. 2022. TAPA: A Scalable Task-Parallel Dataflow Programming Framework for Modern FPGAs with Co-Optimization of HLS and Physical Design. arXiv preprint arXiv:2209.02663 (2022).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_29_1",
+              "volume-title": "TAPA: A Scalable Task-Parallel Dataflow Programming Framework for Modern FPGAs with Co-Optimization of HLS and Physical Design. arXiv preprint arXiv:2209.02663",
+              "author": "Guo Licheng",
+              "year": "2022",
+              "unstructured": "Licheng Guo, Yuze Chi, Jason Lau, Linghao Song, Xingyu Tian, Moazin Khatti, Weikang Qiao, Jie Wang, Ecenur Ustun, Zhenman Fang, et al. 2022. TAPA: A Scalable Task-Parallel Dataflow Programming Framework for Modern FPGAs with Co-Optimization of HLS and Physical Design. arXiv preprint arXiv:2209.02663 (2022)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_29_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Guo Licheng"
+                ],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_3_2_1_30_1",
+            "rawText": "https://doi.org/10.1109/cvpr.2016.90",
+            "doi": "10.1109/cvpr.2016.90",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_30_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CVPR.2016.90"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cvpr.2016.90",
+                "doi": "10.1109/cvpr.2016.90",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cvpr.2016.90"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "e_1_3_2_1_31_1",
+            "rawText": "Andrew G Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, and Hartwig Adam. 2017. Mobilenets: Efficient convolutional neural networks for mobile vision applications. arXiv preprint arXiv:1704.04861 (2017).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_31_1",
+              "volume-title": "Mobilenets: Efficient convolutional neural networks for mobile vision applications. arXiv preprint arXiv:1704.04861",
+              "author": "Howard Andrew G",
+              "year": "2017",
+              "unstructured": "Andrew G Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, and Hartwig Adam. 2017. Mobilenets: Efficient convolutional neural networks for mobile vision applications. arXiv preprint arXiv:1704.04861 (2017)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_31_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Howard Andrew G"
+                ],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "e_1_3_2_1_32_1",
+            "rawText": "https://doi.org/10.1109/tc.2021.3123465",
+            "doi": "10.1109/tc.2021.3123465",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_32_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.2021.3123465"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tc.2021.3123465",
+                "doi": "10.1109/tc.2021.3123465",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.2021.3123465"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "e_1_3_2_1_33_1",
+            "rawText": "https://doi.org/10.1145/3519939.3523446",
+            "doi": "10.1145/3519939.3523446",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_33_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3519939.3523446"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3519939.3523446",
+                "doi": "10.1145/3519939.3523446",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3519939.3523446"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "e_1_3_2_1_34_1",
+            "rawText": "Advanced Micro Devices Inc. 2022. Vitis High-Level Synthesis User Guide UG1399 (v2022.2).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_34_1",
+              "unstructured": "Advanced Micro Devices Inc. 2022. Vitis High-Level Synthesis User Guide UG1399 (v2022.2)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_34_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "e_1_3_2_1_35_1",
+            "rawText": "Intel Inc. 2022. Intel High Level Synthesis Compiler Pro Edition Reference Manual (22.4).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_35_1",
+              "unstructured": "Intel Inc. 2022. Intel High Level Synthesis Compiler Pro Edition Reference Manual (22.4)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_35_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "e_1_3_2_1_36_1",
+            "rawText": "Microchip Technology Inc. 2021. LegUp 2021.1 Documentation.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_36_1",
+              "unstructured": "Microchip Technology Inc. 2021. LegUp 2021.1 Documentation."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_36_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "e_1_3_2_1_37_1",
+            "rawText": "https://doi.org/10.1109/isca45697.2020.00034",
+            "doi": "10.1109/isca45697.2020.00034",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_37_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISCA45697.2020.00034"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isca45697.2020.00034",
+                "doi": "10.1109/isca45697.2020.00034",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isca45697.2020.00034"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "e_1_3_2_1_38_1",
+            "rawText": "https://doi.org/10.1145/3126525",
+            "doi": "10.1145/3126525",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_38_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3126525"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3126525",
+                "doi": "10.1145/3126525",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3126525"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "e_1_3_2_1_39_1",
+            "rawText": "https://doi.org/10.1145/3174243.3174264",
+            "doi": "10.1145/3174243.3174264",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_39_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3174243.3174264"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3174243.3174264",
+                "doi": "10.1145/3174243.3174264",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3174243.3174264"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "e_1_3_2_1_40_1",
+            "rawText": "https://doi.org/10.1145/3079856.3080246",
+            "doi": "10.1145/3079856.3080246",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_40_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3079856.3080246"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3079856.3080246",
+                "doi": "10.1145/3079856.3080246",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3079856.3080246"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "e_1_3_2_1_41_1",
+            "rawText": "HyeGang Jun Hanchen Ye Hyunmin Jeong and Deming Chen. 2023. AutoScaleDSE: A Scalable Design Space Exploration Engine for High-Level Synthesis. ACM Trans. Reconfigurable Technol. Syst. (2023).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_41_1",
+              "unstructured": "HyeGang Jun Hanchen Ye Hyunmin Jeong and Deming Chen. 2023. AutoScaleDSE: A Scalable Design Space Exploration Engine for High-Level Synthesis. ACM Trans. Reconfigurable Technol. Syst. (2023)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_41_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "e_1_3_2_1_42_1",
+            "rawText": "https://doi.org/10.1145/3192366.3192379",
+            "doi": "10.1145/3192366.3192379",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_42_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3192366.3192379"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3192366.3192379",
+                "doi": "10.1145/3192366.3192379",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3192366.3192379"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "e_1_3_2_1_43_1",
+            "rawText": "https://doi.org/10.1145/3289602.3293910",
+            "doi": "10.1145/3289602.3293910",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_43_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3289602.3293910"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3289602.3293910",
+                "doi": "10.1145/3289602.3293910",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3289602.3293910"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "e_1_3_2_1_44_1",
+            "rawText": "https://doi.org/10.1109/cgo51591.2021.9370308",
+            "doi": "10.1109/cgo51591.2021.9370308",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_44_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CGO51591.2021.9370308"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cgo51591.2021.9370308",
+                "doi": "10.1109/cgo51591.2021.9370308",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cgo51591.2021.9370308"
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "e_1_3_2_1_45_1",
+            "rawText": "https://doi.org/10.1109/5.726791",
+            "doi": "10.1109/5.726791",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_45_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/5.726791"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/5.726791",
+                "doi": "10.1109/5.726791",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.726791"
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "e_1_3_2_1_46_1",
+            "rawText": "https://doi.org/10.1145/3572908",
+            "doi": "10.1145/3572908",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_46_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3572908"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3572908",
+                "doi": "10.1145/3572908",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3572908"
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "e_1_3_2_1_47_1",
+            "rawText": "https://doi.org/10.1109/micro.2018.00028",
+            "doi": "10.1109/micro.2018.00028",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_47_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MICRO.2018.00028"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/micro.2018.00028",
+                "doi": "10.1109/micro.2018.00028",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/micro.2018.00028"
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "e_1_3_2_1_48_1",
+            "rawText": "Thierry Moreau, Tianqi Chen, Ziheng Jiang, Luis Ceze, Carlos Guestrin, and Arvind Krishnamurthy. 2018. VTA: an open hardware-software stack for deep learning. arXiv preprint arXiv:1807.04188 (2018).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_48_1",
+              "volume-title": "VTA: an open hardware-software stack for deep learning. arXiv preprint arXiv:1807.04188",
+              "author": "Moreau Thierry",
+              "year": "2018",
+              "unstructured": "Thierry Moreau, Tianqi Chen, Ziheng Jiang, Luis Ceze, Carlos Guestrin, and Arvind Krishnamurthy. 2018. VTA: an open hardware-software stack for deep learning. arXiv preprint arXiv:1807.04188 (2018)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_48_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Moreau Thierry"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "e_1_3_2_1_49_1",
+            "rawText": "https://doi.org/10.1109/pact52795.2021.00011",
+            "doi": "10.1109/pact52795.2021.00011",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_49_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PACT52795.2021.00011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/pact52795.2021.00011",
+                "doi": "10.1109/pact52795.2021.00011",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/pact52795.2021.00011"
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "e_1_3_2_1_50_1",
+            "rawText": "https://doi.org/10.1145/2786763.2694364",
+            "doi": "10.1145/2786763.2694364",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_50_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2786763.2694364"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2786763.2694364",
+                "doi": "10.1145/2786763.2694364",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2786763.2694364"
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "e_1_3_2_1_51_1",
+            "rawText": "https://doi.org/10.1109/mascots.2019.00045",
+            "doi": "10.1109/mascots.2019.00045",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_51_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MASCOTS.2019.00045"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mascots.2019.00045",
+                "doi": "10.1109/mascots.2019.00045",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mascots.2019.00045"
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "e_1_3_2_1_52_1",
+            "rawText": "https://doi.org/10.1145/3385412.3385974",
+            "doi": "10.1145/3385412.3385974",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_52_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3385412.3385974"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3385412.3385974",
+                "doi": "10.1145/3385412.3385974",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3385412.3385974"
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "e_1_3_2_1_53_1",
+            "rawText": "https://doi.org/10.1145/3445814.3446712",
+            "doi": "10.1145/3445814.3446712",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_53_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3445814.3446712"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3445814.3446712",
+                "doi": "10.1145/3445814.3446712",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3445814.3446712"
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "e_1_3_2_1_54_1",
+            "rawText": "https://doi.org/10.1109/ispass.2019.00042",
+            "doi": "10.1109/ispass.2019.00042",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_54_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISPASS.2019.00042"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ispass.2019.00042",
+                "doi": "10.1109/ispass.2019.00042",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ispass.2019.00042"
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "e_1_3_2_1_55_1",
+            "rawText": "Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, et al. 2019. Pytorch: An imperative style, high-performance deep learning library. Advances in neural information processing systems 32 (2019).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_55_1",
+              "volume-title": "Pytorch: An imperative style, high-performance deep learning library. Advances in neural information processing systems 32",
+              "author": "Paszke Adam",
+              "year": "2019",
+              "unstructured": "Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, et al. 2019. Pytorch: An imperative style, high-performance deep learning library. Advances in neural information processing systems 32 (2019)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_55_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Paszke Adam"
+                ],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "e_1_3_2_1_56_1",
+            "rawText": "Louis-Noël Pouchet et al. 2012. Polybench: The polyhedral benchmark suite. URL: http://www.cs.ucla.edu/pouchet/software/polybench 437 (2012), 1--1.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_56_1",
+              "volume-title": "Polybench: The polyhedral benchmark suite. URL: http://www.cs.ucla.edu/pouchet/software/polybench 437",
+              "author": "Pouchet Louis-Noël",
+              "year": "2012",
+              "unstructured": "Louis-Noël Pouchet et al. 2012. Polybench: The polyhedral benchmark suite. URL: http://www.cs.ucla.edu/pouchet/software/polybench 437 (2012), 1--1."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_56_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Pouchet Louis-Noël"
+                ],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "e_1_3_2_1_57_1",
+            "rawText": "https://doi.org/10.1145/3140659.3080256",
+            "doi": "10.1145/3140659.3080256",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_57_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3140659.3080256"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3140659.3080256",
+                "doi": "10.1145/3140659.3080256",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3140659.3080256"
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "e_1_3_2_1_58_1",
+            "rawText": "https://doi.org/10.1109/cvpr.2016.91",
+            "doi": "10.1109/cvpr.2016.91",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_58_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CVPR.2016.91"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cvpr.2016.91",
+                "doi": "10.1109/cvpr.2016.91",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cvpr.2016.91"
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "e_1_3_2_1_59_1",
+            "rawText": "Alexander Rucker, Shiv Sundram, Coleman Smith, Matthew Vilim, Raghu Prabhakar, Fredrik Kjolstad, and Kunle Olukotun. 2023. Revet: A Language and Compiler for Dataflow Threads. arXiv preprint arXiv:2302.06124 (2023).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_59_1",
+              "volume-title": "Revet: A Language and Compiler for Dataflow Threads. arXiv preprint arXiv:2302.06124",
+              "author": "Rucker Alexander",
+              "year": "2023",
+              "unstructured": "Alexander Rucker, Shiv Sundram, Coleman Smith, Matthew Vilim, Raghu Prabhakar, Fredrik Kjolstad, and Kunle Olukotun. 2023. Revet: A Language and Compiler for Dataflow Threads. arXiv preprint arXiv:2302.06124 (2023)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_59_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Rucker Alexander"
+                ],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "e_1_3_2_1_60_1",
+            "rawText": "https://doi.org/10.1145/3018743.3018758",
+            "doi": "10.1145/3018743.3018758",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_60_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3018743.3018758"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3018743.3018758",
+                "doi": "10.1145/3018743.3018758",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3018743.3018758"
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "e_1_3_2_1_61_1",
+            "rawText": "Karen Simonyan and Andrew Zisserman. 2014. Very deep convolutional networks for large-scale image recognition. arXiv preprint arXiv:1409.1556 (2014).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_61_1",
+              "volume-title": "Very deep convolutional networks for large-scale image recognition. arXiv preprint arXiv:1409.1556",
+              "author": "Simonyan Karen",
+              "year": "2014",
+              "unstructured": "Karen Simonyan and Andrew Zisserman. 2014. Very deep convolutional networks for large-scale image recognition. arXiv preprint arXiv:1409.1556 (2014)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_61_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Simonyan Karen"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "e_1_3_2_1_62_1",
+            "rawText": "https://doi.org/10.1145/3494534",
+            "doi": "10.1145/3494534",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_62_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3494534"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3494534",
+                "doi": "10.1145/3494534",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3494534"
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "e_1_3_2_1_63_1",
+            "rawText": "https://doi.org/10.1145/3020078.3021744",
+            "doi": "10.1145/3020078.3021744",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_63_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3020078.3021744"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3020078.3021744",
+                "doi": "10.1145/3020078.3021744",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3020078.3021744"
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": "e_1_3_2_1_64_1",
+            "rawText": "https://doi.org/10.1145/2463209.2488748",
+            "doi": "10.1145/2463209.2488748",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_64_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2463209.2488748"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2463209.2488748",
+                "doi": "10.1145/2463209.2488748",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2463209.2488748"
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": "e_1_3_2_1_65_1",
+            "rawText": "https://doi.org/10.1145/3240765.3240856",
+            "doi": "10.1145/3240765.3240856",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_65_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3240765.3240856"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3240765.3240856",
+                "doi": "10.1145/3240765.3240856",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3240765.3240856"
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": "e_1_3_2_1_66_1",
+            "rawText": "https://doi.org/10.1145/3490422.3502369",
+            "doi": "10.1145/3490422.3502369",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_66_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3490422.3502369"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3490422.3502369",
+                "doi": "10.1145/3490422.3502369",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3490422.3502369"
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": "e_1_3_2_1_67_1",
+            "rawText": "https://doi.org/10.1145/3508352.3549370",
+            "doi": "10.1145/3508352.3549370",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_67_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3508352.3549370"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3508352.3549370",
+                "doi": "10.1145/3508352.3549370",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3508352.3549370"
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": "e_1_3_2_1_68_1",
+            "rawText": "https://doi.org/10.1109/hpca53966.2022.00060",
+            "doi": "10.1109/hpca53966.2022.00060",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_68_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/HPCA53966.2022.00060"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/hpca53966.2022.00060",
+                "doi": "10.1109/hpca53966.2022.00060",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/hpca53966.2022.00060"
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": "e_1_3_2_1_69_1",
+            "rawText": "https://doi.org/10.1145/3489517.3530631",
+            "doi": "10.1145/3489517.3530631",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_69_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3489517.3530631"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3489517.3530631",
+                "doi": "10.1145/3489517.3530631",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3489517.3530631"
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": "e_1_3_2_1_70_1",
+            "rawText": "https://doi.org/10.1109/dac18072.2020.9218684",
+            "doi": "10.1109/dac18072.2020.9218684",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_70_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/DAC18072.2020.9218684"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/dac18072.2020.9218684",
+                "doi": "10.1109/dac18072.2020.9218684",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/dac18072.2020.9218684"
+              }
+            }
+          },
+          {
+            "index": 71,
+            "label": "e_1_3_2_1_71_1",
+            "rawText": "Mang Yu Sitao Huang and Deming Chen. 2021. Chimera: A hybrid machine learning-driven multi-objective design space exploration tool for fpga high-level synthesis. In Intelligent Data Engineering and Automated Learning-IDEAL 2021: 22nd International Conference IDEAL 2021 Manchester UK November 25--27 2021 Proceedings 22. Springer 524--536.",
+            "doi": "10.1007/978-3-030-91608-4_52",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_71_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Mang Yu Sitao Huang and Deming Chen. 2021. Chimera: A hybrid machine learning-driven multi-objective design space exploration tool for fpga high-level synthesis. In Intelligent Data Engineering and Automated Learning-IDEAL 2021: 22nd International Conference IDEAL 2021 Manchester UK November 25--27 2021 Proceedings 22. Springer 524--536.",
+              "DOI": "10.1007/978-3-030-91608-4_52"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-030-91608-4_52",
+                "doi": "10.1007/978-3-030-91608-4_52",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-030-91608-4_52"
+              }
+            }
+          },
+          {
+            "index": 72,
+            "label": "e_1_3_2_1_72_1",
+            "rawText": "Matthew D Zeiler and Rob Fergus. 2014. Visualizing and understanding convolutional networks. In Computer Vision-ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6--12, 2014, Proceedings, Part I 13. Springer, 818--833.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_72_1",
+              "volume-title": "Proceedings, Part I 13",
+              "author": "Zeiler Matthew D",
+              "year": "2014",
+              "unstructured": "Matthew D Zeiler and Rob Fergus. 2014. Visualizing and understanding convolutional networks. In Computer Vision-ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6--12, 2014, Proceedings, Part I 13. Springer, 818--833."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_72_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zeiler Matthew D"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 73,
+            "label": "e_1_3_2_1_73_1",
+            "rawText": "Bingyi Zhang, Rajgopal Kannan, and Viktor Prasanna. 2021. Boost-gcn: A framework for optimizing gcn inference on fpga. In 2021 IEEE 29th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). IEEE, 29--39.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_73_1",
+              "volume-title": "2021 IEEE 29th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). IEEE, 29--39",
+              "author": "Zhang Bingyi",
+              "year": "2021",
+              "unstructured": "Bingyi Zhang, Rajgopal Kannan, and Viktor Prasanna. 2021. Boost-gcn: A framework for optimizing gcn inference on fpga. In 2021 IEEE 29th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). IEEE, 29--39."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_73_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zhang Bingyi"
+                ],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 74,
+            "label": "e_1_3_2_1_74_1",
+            "rawText": "https://doi.org/10.1145/2684746.2689060",
+            "doi": "10.1145/2684746.2689060",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_74_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2684746.2689060"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2684746.2689060",
+                "doi": "10.1145/2684746.2689060",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2684746.2689060"
+              }
+            }
+          },
+          {
+            "index": 75,
+            "label": "e_1_3_2_1_75_1",
+            "rawText": "https://doi.org/10.1145/3240765.3240801",
+            "doi": "10.1145/3240765.3240801",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_75_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3240765.3240801"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3240765.3240801",
+                "doi": "10.1145/3240765.3240801",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3240765.3240801"
+              }
+            }
+          },
+          {
+            "index": 76,
+            "label": "e_1_3_2_1_76_1",
+            "rawText": "https://doi.org/10.1145/3400302.3415609",
+            "doi": "10.1145/3400302.3415609",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_76_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3400302.3415609"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3400302.3415609",
+                "doi": "10.1145/3400302.3415609",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3400302.3415609"
+              }
+            }
+          },
+          {
+            "index": 77,
+            "label": "e_1_3_2_1_77_1",
+            "rawText": "https://doi.org/10.1109/iccad.2017.8203809",
+            "doi": "10.1109/iccad.2017.8203809",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_77_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICCAD.2017.8203809"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iccad.2017.8203809",
+                "doi": "10.1109/iccad.2017.8203809",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iccad.2017.8203809"
+              }
+            }
+          },
+          {
+            "index": 78,
+            "label": "e_1_3_2_1_78_1",
+            "rawText": "Ruizhe Zhao, Jianyi Cheng, Wayne Luk, and George A Constantinides. 2022. POLSCA: Polyhedral High-Level Synthesis with Compiler Transformations. In 32nd International Conference on Field Programmable Logic and Applications (FPL'22).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_78_1",
+              "volume-title": "POLSCA: Polyhedral High-Level Synthesis with Compiler Transformations. In 32nd International Conference on Field Programmable Logic and Applications (FPL'22)",
+              "author": "Zhao Ruizhe",
+              "year": "2022",
+              "unstructured": "Ruizhe Zhao, Jianyi Cheng, Wayne Luk, and George A Constantinides. 2022. POLSCA: Polyhedral High-Level Synthesis with Compiler Transformations. In 32nd International Conference on Field Programmable Logic and Applications (FPL'22)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_78_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zhao Ruizhe"
+                ],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 79,
+            "label": "e_1_3_2_1_79_1",
+            "rawText": "https://doi.org/10.1145/3575693.3575694",
+            "doi": "10.1145/3575693.3575694",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_79_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3575693.3575694"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3575693.3575694",
+                "doi": "10.1145/3575693.3575694",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3575693.3575694"
+              }
+            }
+          },
+          {
+            "index": 80,
+            "label": "e_1_3_2_1_80_1",
+            "rawText": "https://doi.org/10.1109/tcad.2018.2858384",
+            "doi": "10.1109/tcad.2018.2858384",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_80_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TCAD.2018.2858384"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tcad.2018.2858384",
+                "doi": "10.1109/tcad.2018.2858384",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tcad.2018.2858384"
+              }
+            }
+          },
+          {
+            "index": 81,
+            "label": "e_1_3_2_1_81_1",
+            "rawText": "https://doi.org/10.1145/2897937.2898040",
+            "doi": "10.1145/2897937.2898040",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_81_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2897937.2898040"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2897937.2898040",
+                "doi": "10.1145/2897937.2898040",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2897937.2898040"
+              }
+            }
+          },
+          {
+            "index": 82,
+            "label": "e_1_3_2_1_82_1",
+            "rawText": "https://doi.org/10.1145/3431920.3439304",
+            "doi": "10.1145/3431920.3439304",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_82_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3431920.3439304"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3431920.3439304",
+                "doi": "10.1145/3431920.3439304",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3431920.3439304"
+              }
+            }
+          },
+          {
+            "index": 83,
+            "label": "e_1_3_2_1_83_1",
+            "rawText": "Jinming Zhuang, Jason Lau, Hanchen Ye, Zhuoping Yang, Yubo Du, Jack Lo, Kristof Denolf, Stephen Neuendorffer, Alex Jones, Jingtong Hu, et al. 2023. CHARM: Composing Heterogeneous AcceleRators for Matrix Multiply on Versal ACAP Architecture. arXiv preprint arXiv:2301.02359 (2023).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_83_1",
+              "volume-title": "CHARM: Composing Heterogeneous AcceleRators for Matrix Multiply on Versal ACAP Architecture. arXiv preprint arXiv:2301.02359",
+              "author": "Zhuang Jinming",
+              "year": "2023",
+              "unstructured": "Jinming Zhuang, Jason Lau, Hanchen Ye, Zhuoping Yang, Yubo Du, Jack Lo, Kristof Denolf, Stephen Neuendorffer, Alex Jones, Jingtong Hu, et al. 2023. CHARM: Composing Heterogeneous AcceleRators for Matrix Multiply on Versal ACAP Architecture. arXiv preprint arXiv:2301.02359 (2023)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_83_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zhuang Jinming"
+                ],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 84,
+            "label": "e_1_3_2_1_84_1",
+            "rawText": "https://doi.org/10.1109/iccad.2015.7372592",
+            "doi": "10.1109/iccad.2015.7372592",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_84_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICCAD.2015.7372592"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iccad.2015.7372592",
+                "doi": "10.1109/iccad.2015.7372592",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iccad.2015.7372592"
+              }
+            }
+          },
+          {
+            "index": 85,
+            "label": "e_1_3_2_1_85_1",
+            "rawText": "https://doi.org/10.1145/3061639.3062195",
+            "doi": "10.1145/3061639.3062195",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_85_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3061639.3062195"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3061639.3062195",
+                "doi": "10.1145/3061639.3062195",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3061639.3062195"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/3617232.3624850",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 85,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/3617232.3624850",
+          "crossrefReferenceCount": 85
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/3617232.3624850->doi:10.1145/3295500.3356173@papers-dataflow-Ye2024.pdf",
+      "source": "doi:10.1145/3617232.3624850",
+      "target": "doi:10.1145/3295500.3356173",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Ye2024.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Ye2024",
+      "paperId": "doi:10.1145/3617232.3624850",
+      "metadata": {
+        "fileName": "Ye2024.pdf",
+        "sourcePath": "papers/dataflow/Ye2024.pdf"
+      }
+    }
+  ]
+}

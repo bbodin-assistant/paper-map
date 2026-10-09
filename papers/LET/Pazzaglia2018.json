@@ -1,0 +1,780 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.570487+00:00",
+  "papers": [
+    {
+      "key": "Pazzaglia2018",
+      "paper": {
+        "id": "doi:10.4230/lipics.ecrts.2018.10",
+        "citationKey": "Pazzaglia2018",
+        "title": "Beyond the Weakly Hard Model: Measuring the Performance Cost of Deadline Misses",
+        "authors": [
+          "Paolo Pazzaglia",
+          "Luigi Pannocchi",
+          "Alessandro Biondi",
+          "Marco Di Natale"
+        ],
+        "year": 2018,
+        "venue": "30th Euromicro Conference on Real-Time Systems (ECRTS 2018)",
+        "type": "inproceedings",
+        "doi": "10.4230/LIPIcs.ECRTS.2018.10",
+        "arxivId": "",
+        "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2018.10",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Pazzaglia, Paolo and Pannocchi, Luigi and Biondi, Alessandro and Di Natale, Marco",
+          "title": "{Beyond the Weakly Hard Model: Measuring the Performance Cost of Deadline Misses}",
+          "year": "2018",
+          "booktitle": "30th Euromicro Conference on Real-Time Systems (ECRTS 2018)",
+          "publisher": "Schloss Dagstuhl -- Leibniz-Zentrum f{\\\"u}r Informatik",
+          "series": "Leibniz International Proceedings in Informatics (LIPIcs)",
+          "volume": "106",
+          "pages": "10:1--10:22",
+          "doi": "10.4230/LIPIcs.ECRTS.2018.10",
+          "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2018.10"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.081717+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "Figure 8 Results related to the job killed strategy. Plots on the left: state trajectories for the H/M sequence that leads to the worst-case performance under diﬀerent (m, K) constraints. Plot on the right: normalized worst-case performance for the considered conﬁgurations. The elements",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Figure 8 Results related to the job killed strategy. Plots on the left: state trajectories for the H/M sequence that leads to the worst-case performance under diﬀerent (m, K) constraints. Plot on the right: normalized worst-case performance for the considered conﬁgurations. The elements"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": null,
+            "rawText": "We presented a new methodology to compute a state machine abstraction that allows to",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "We presented a new methodology to compute a state machine abstraction that allows to"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": null,
+            "rawText": "relate the performance of a control application to a sequence of deadline hits and misses, subject to weakly-hard constraints, in the execution of a control task updating a control value. We show the possibility of computing the state machine by formal derivation assuming knowledge of the deadline management policy, the LTI system and a simple performance metric. The size of our state representation is constrained by leveraging worst case timing analysis and assuming a ﬁnite time horizon.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "relate the performance of a control application to a sequence of deadline hits and misses, subject to weakly-hard constraints, in the execution of a control task updating a control value. We show the possibility of computing the state machine by formal derivation assuming knowledge of the deadline management policy, the LTI system and a simple performance metric. The size of our state representation is constrained by leveraging worst case timing analysis and assuming a ﬁnite time horizon."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "Future work will include consideration of additional performance metrics and the possible use of simulation techniques to compute the state abstraction when an analytical derivation is not possible.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Future work will include consideration of additional performance metrics and the possible use of simulation techniques to compute the state abstraction when an analytical derivation is not possible."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": null,
+            "rawText": "1 Amir Aminifar, Petru Eles, Zebo Peng, and Anton Cervin. Control-quality driven design of cyber-physical systems with robustness guarantees. In Proceedings of the Conference on",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Amir Aminifar, Petru Eles, Zebo Peng, and Anton Cervin. Control-quality driven design of cyber-physical systems with robustness guarantees. In Proceedings of the Conference on"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "Design, Automation and Test in Europe, pages 1093–1098. EDA Consortium, 2013.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Design, Automation and Test in Europe, pages 1093–1098. EDA Consortium, 2013."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": null,
+            "rawText": "2 Amir Aminifar, Soheil Samii, Petru Eles, Zebo Peng, and Anton Cervin. Designing highquality embedded control systems with guaranteed stability. In Real-Time Systems Symposium (RTSS), 2012 IEEE 33rd, pages 283–292, 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2 Amir Aminifar, Soheil Samii, Petru Eles, Zebo Peng, and Anton Cervin. Designing highquality embedded control systems with guaranteed stability. In Real-Time Systems Symposium (RTSS), 2012 IEEE 33rd, pages 283–292, 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": null,
+            "rawText": "3 Karl-Erik Årzén, Anton Cervin, Johan Eker, and Lui Sha. An introduction to control and scheduling co-design. In Decision and Control, 2000. Proceedings of the 39th IEEE",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "3 Karl-Erik Årzén, Anton Cervin, Johan Eker, and Lui Sha. An introduction to control and scheduling co-design. In Decision and Control, 2000. Proceedings of the 39th IEEE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "Conference on, volume 5, pages 4865–4870, 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Conference on, volume 5, pages 4865–4870, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": null,
+            "rawText": "4 Karl Johan Åström and Björn Wittenmark. Computer-controlled systems: theory and design. Prentice-Hall, 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "4 Karl Johan Åström and Björn Wittenmark. Computer-controlled systems: theory and design. Prentice-Hall, 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "P. Pazzaglia, L. Pannocchi, A. Biondi, and M. Di Natale 10:21",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P. Pazzaglia, L. Pannocchi, A. Biondi, and M. Di Natale 10:21"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": null,
+            "rawText": "5 Guillem Bernat, Alan Burns, and Albert Liamosi. Weakly hard real-time systems. IEEE transactions on Computers, 50(4):308–321, 2001. 6 Rainer Blind and Frank Allgöwer. Towards networked control systems with guaranteed stability: Using weakly hard real-time constraints to model the loss process. In Decision and Control (CDC), 2015 IEEE 54th Annual Conference on, pages 7510–7515. IEEE, 2015. 7 Tobias Bund and Frank Slomka. Controller/platform co-design of networked control systems based on density functions. In Proceedings of the 4th ACM SIGBED International Workshop on Design, Modeling, and Evaluation of Cyber-Physical Systems, pages 11–14,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "5 Guillem Bernat, Alan Burns, and Albert Liamosi. Weakly hard real-time systems. IEEE transactions on Computers, 50(4):308–321, 2001. 6 Rainer Blind and Frank Allgöwer. Towards networked control systems with guaranteed stability: Using weakly hard real-time constraints to model the loss process. In Decision and Control (CDC), 2015 IEEE 54th Annual Conference on, pages 7510–7515. IEEE, 2015. 7 Tobias Bund and Frank Slomka. Controller/platform co-design of networked control systems based on density functions. In Proceedings of the 4th ACM SIGBED International Workshop on Design, Modeling, and Evaluation of Cyber-Physical Systems, pages 11–14,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "2014",
+            "rawText": "8 Tobias Bund and Frank Slomka. Worst-case performance validation of safety-critical control systems with dropped samples. In Proceedings of the 23rd International Conference on Real Time and Networks Systems, pages 319–326, 2015. 9 Benjamin Seth Cazzolato and Zebb Prime. On the dynamics of the furuta pendulum. Journal of Control Science and Engineering, 2011:3, 2011. 10 A. Cervin, D. Henriksson, B. Lincoln, J. Eker, and K. E. Arzen. How does control timing aﬀect performance? analysis and simulation of timing using jitterbug and truetime. IEEE Control Syst. Mag, 23 (3):16–30, 2003. 11 F. Cremona, M. Morelli, and M. Di Natale. Tres: A modular representation of schedulers, tasks, and messages to control simulations in simulink. In Proceedings of the 30th Annual ACM Symposium on Applied Computing, pages 1940–1947. ACM, 2015. 12 Goran Frehse, Arne Hamann, Sophie Quinton, and Matthias Woehrle. Formal analysis of timing eﬀects on closed-loop properties of control software. In Real-Time Systems Symposium (RTSS), 2014 IEEE, pages 53–62. IEEE, 2014. 13 Katsuhisa Furuta, Masaki Yamakita, and Seiichi Kobayashi. Swing up control of inverted pendulum. In Industrial Electronics, Control and Instrumentation, 1991. Proceedings. IECON’91., 1991 International Conference on, pages 2193–2198. IEEE, 1991. 14 Madan Gopal. Digital control engineering. New Age International, 1988. 15 Dip Goswami, Reinhard Schneider, and Samarjit Chakraborty. Co-design of cyber-physical systems via controllers with ﬂexible delay constraints. In Proceedings of the 16th Asia and South Paciﬁc Design Automation Conference, pages 225–230. IEEE Press, 2011. 16 Zain AH Hammadeh, Sophie Quinton, and Rolf Ernst. Extending typical worst-case analysis using response-time dependencies to bound deadline misses. In Proceedings of the 14th International Conference on Embedded Software, page 10. ACM, 2014. 17 Thomas A Henzinger, Benjamin Horowitz, and Christoph M Kirsch. Giotto: A timetriggered language for embedded programming. Proceedings of the IEEE, 91(1):84–99,",
+            "doi": "10.1109/rtss.2014.28",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "8 Tobias Bund and Frank Slomka. Worst-case performance validation of safety-critical control systems with dropped samples. In Proceedings of the 23rd International Conference on Real Time and Networks Systems, pages 319–326, 2015. 9 Benjamin Seth Cazzolato and Zebb Prime. On the dynamics of the furuta pendulum. Journal of Control Science and Engineering, 2011:3, 2011. 10 A. Cervin, D. Henriksson, B. Lincoln, J. Eker, and K. E. Arzen. How does control timing aﬀect performance? analysis and simulation of timing using jitterbug and truetime. IEEE Control Syst. Mag, 23 (3):16–30, 2003. 11 F. Cremona, M. Morelli, and M. Di Natale. Tres: A modular representation of schedulers, tasks, and messages to control simulations in simulink. In Proceedings of the 30th Annual ACM Symposium on Applied Computing, pages 1940–1947. ACM, 2015. 12 Goran Frehse, Arne Hamann, Sophie Quinton, and Matthias Woehrle. Formal analysis of timing eﬀects on closed-loop properties of control software. In Real-Time Systems Symposium (RTSS), 2014 IEEE, pages 53–62. IEEE, 2014. 13 Katsuhisa Furuta, Masaki Yamakita, and Seiichi Kobayashi. Swing up control of inverted pendulum. In Industrial Electronics, Control and Instrumentation, 1991. Proceedings. IECON’91., 1991 International Conference on, pages 2193–2198. IEEE, 1991. 14 Madan Gopal. Digital control engineering. New Age International, 1988. 15 Dip Goswami, Reinhard Schneider, and Samarjit Chakraborty. Co-design of cyber-physical systems via controllers with ﬂexible delay constraints. In Proceedings of the 16th Asia and South Paciﬁc Design Automation Conference, pages 225–230. IEEE Press, 2011. 16 Zain AH Hammadeh, Sophie Quinton, and Rolf Ernst. Extending typical worst-case analysis using response-time dependencies to bound deadline misses. In Proceedings of the 14th International Conference on Embedded Software, page 10. ACM, 2014. 17 Thomas A Henzinger, Benjamin Horowitz, and Christoph M Kirsch. Giotto: A timetriggered language for embedded programming. Proceedings of the IEEE, 91(1):84–99,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2014.28",
+                "doi": "10.1109/rtss.2014.28",
+                "arxivId": "",
+                "title": "Formal Analysis of Timing Effects on Closed-Loop Properties of Control Software",
+                "authors": [
+                  "Goran Frehse",
+                  "Arne Hamann",
+                  "Sophie Quinton",
+                  "Matthias Woehrle"
+                ],
+                "year": 2015,
+                "venue": "2014 IEEE Real-Time Systems Symposium",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtss.2014.28"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "2003",
+            "rawText": "18 Pavel Krcal and Wang Yi. Decidable and undecidable problems in schedulability analysis using timed automata. In proceedings of 10th International Conference, TACAS’04. IEEE,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "18 Pavel Krcal and Wang Yi. Decidable and undecidable problems in schedulability analysis using timed automata. In proceedings of 10th International Conference, TACAS’04. IEEE,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "2004",
+            "rawText": "19 Steﬀen Linsenmayer and Frank Allgower. Stabilization of networked control systems with weakly hard real-time dropout description. In Decision and Control (CDC), 2017 IEEE 56th Annual Conference on, pages 4765–4770. IEEE, 2017. 20 M. M Hamdaoui and P. Ramanathan. A dynamic priority assignment technique for streams with (m, k)-ﬁrm deadlines. In IEEE Transactions on Computers, 1995. 21 Tsutomu Mita. Optimal digital feedback control systems counting computation time of control laws. In Decision and Control, 1984. The 23rd IEEE Conference on, volume 23, pages 520–525. IEEE, 1984. 22 Marieke Posthumus-cloosterman, Cover Design, Gerda Cloosterman, and Paul Verspaget. Control over communication networks: Modelling, analysis and synthesis. PhD thesis, Uni-",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "19 Steﬀen Linsenmayer and Frank Allgower. Stabilization of networked control systems with weakly hard real-time dropout description. In Decision and Control (CDC), 2017 IEEE 56th Annual Conference on, pages 4765–4770. IEEE, 2017. 20 M. M Hamdaoui and P. Ramanathan. A dynamic priority assignment technique for streams with (m, k)-ﬁrm deadlines. In IEEE Transactions on Computers, 1995. 21 Tsutomu Mita. Optimal digital feedback control systems counting computation time of control laws. In Decision and Control, 1984. The 23rd IEEE Conference on, volume 23, pages 520–525. IEEE, 1984. 22 Marieke Posthumus-cloosterman, Cover Design, Gerda Cloosterman, and Paul Verspaget. Control over communication networks: Modelling, analysis and synthesis. PhD thesis, Uni-"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "versity of Eindhoven, 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "versity of Eindhoven, 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": null,
+            "rawText": "10:22 Beyond the Weakly Hard Model",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "10:22 Beyond the Weakly Hard Model"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "23 Sophie Quinton, Matthias Hanke, and Rolf Ernst. Formal analysis of sporadic overload in real-time systems. In Proceedings of the Conference on Design, Automation and Test in",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "23 Sophie Quinton, Matthias Hanke, and Rolf Ernst. Formal analysis of sporadic overload in real-time systems. In Proceedings of the Conference on Design, Automation and Test in"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": null,
+            "rawText": "Europe, pages 515–520. EDA Consortium, 2012. 24 Parameswaran Ramanathan. Overload management in real-time control applications using (m, k)-ﬁrm guarantee. IEEE Transactions on Parallel and Distributed Systems, 10(6):549–",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Europe, pages 515–520. EDA Consortium, 2012. 24 Parameswaran Ramanathan. Overload management in real-time control applications using (m, k)-ﬁrm guarantee. IEEE Transactions on Parallel and Distributed Systems, 10(6):549–"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": null,
+            "rawText": "559, 1999. 25 Kang G Shin and Hagbae Kim. Derivation and application of hard deadlines for real-time control systems. IEEE Transactions on Systems, Man, and Cybernetics, 22(6):1403–1413,",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "559, 1999. 25 Kang G Shin and Hagbae Kim. Derivation and application of hard deadlines for real-time control systems. IEEE Transactions on Systems, Man, and Cybernetics, 22(6):1403–1413,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "1992",
+            "rawText": "26 Damoon Soudbakhsh, Linh TX Phan, Anuradha M Annaswamy, and Oleg Sokolsky. Codesign of arbitrated network control systems with overrun strategies. IEEE Transactions on Control of Network Systems, 2016. 27 Damoon Soudbakhsh, Linh TX Phan, Oleg Sokolsky, Insup Lee, and Anuradha Annaswamy. Co-design of control and platform with dropped signals. In Cyber-Physical Systems (ICCPS), 2013 ACM/IEEE International Conference on, pages 129–140, 2013. 28 Martin Törngren. Fundamentals of implementing real-time control applications in distributed computer systems. In Real-Time Systems In Mechatronic Applications, pages 3–35. Springer, 1998. 29 Eelco P van Horssen, AR Baghban Behrouzian, Dip Goswami, Duarte Antunes, Twan Basten, and WPMH Heemels. Performance analysis and controller improvement for linear systems with (m, k)-ﬁrm data losses. In Control Conference (ECC), 2016 European, pages 2571–2577. IEEE, 2016. 30 Wenbo Xu, Zain AH Hammadeh, Alexander Kröller, Rolf Ernst, and Sophie Quinton. Improved deadline miss models for real-time systems using typical worst-case analysis. In Real-Time Systems (ECRTS), 2015 27th Euromicro Conference on, pages 247–256. IEEE,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "26 Damoon Soudbakhsh, Linh TX Phan, Anuradha M Annaswamy, and Oleg Sokolsky. Codesign of arbitrated network control systems with overrun strategies. IEEE Transactions on Control of Network Systems, 2016. 27 Damoon Soudbakhsh, Linh TX Phan, Oleg Sokolsky, Insup Lee, and Anuradha Annaswamy. Co-design of control and platform with dropped signals. In Cyber-Physical Systems (ICCPS), 2013 ACM/IEEE International Conference on, pages 129–140, 2013. 28 Martin Törngren. Fundamentals of implementing real-time control applications in distributed computer systems. In Real-Time Systems In Mechatronic Applications, pages 3–35. Springer, 1998. 29 Eelco P van Horssen, AR Baghban Behrouzian, Dip Goswami, Duarte Antunes, Twan Basten, and WPMH Heemels. Performance analysis and controller improvement for linear systems with (m, k)-ﬁrm data losses. In Control Conference (ECC), 2016 European, pages 2571–2577. IEEE, 2016. 30 Wenbo Xu, Zain AH Hammadeh, Alexander Kröller, Rolf Ernst, and Sophie Quinton. Improved deadline miss models for real-time systems using typical worst-case analysis. In Real-Time Systems (ECRTS), 2015 27th Euromicro Conference on, pages 247–256. IEEE,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "2015",
+            "rawText": "31 Yang Xu, Karl-Erik Årzén, Enrico Bini, and Anton Cervin. Response time driven design of control systems. IFAC Proceedings Volumes, 47(3):6098–6104, 2014. 32 Yang Xu, Karl-Erik Årzén, Anton Cervin, Enrico Bini, and Bogdan Tanasa. Exploiting job response-time information in the co-design of real-time control systems. In Embedded and Real-Time Computing Systems and Applications (RTCSA), 2015 IEEE 21st International Conference on, pages 247–256, 2015. 33 Tatsuya Yoshimoto and Toshimitsu Ushio. Optimal arbitration of control tasks by job skipping in cyber-physical systems. In Proceedings of the 2011 IEEE/ACM Second International Conference on Cyber-Physical Systems, pages 55–64. IEEE Computer Society,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "31 Yang Xu, Karl-Erik Årzén, Enrico Bini, and Anton Cervin. Response time driven design of control systems. IFAC Proceedings Volumes, 47(3):6098–6104, 2014. 32 Yang Xu, Karl-Erik Årzén, Anton Cervin, Enrico Bini, and Bogdan Tanasa. Exploiting job response-time information in the co-design of real-time control systems. In Embedded and Real-Time Computing Systems and Applications (RTCSA), 2015 IEEE 21st International Conference on, pages 247–256, 2015. 33 Tatsuya Yoshimoto and Toshimitsu Ushio. Optimal arbitration of control tasks by job skipping in cyber-physical systems. In Proceedings of the 2011 IEEE/ACM Second International Conference on Cyber-Physical Systems, pages 55–64. IEEE Computer Society,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "2011",
+            "rawText": "34 S. Youcheng and M. Di Natale. Weakly hard schedulability analysis for ﬁxed priority scheduling of periodic real-time tasks. In EMSOFT Conference, Seoul, Korea. IEEE, October, 13-17, 2017. 35 Qiang Yu and Xudong Zhao. Stability analysis of discrete-time switched linear systems with unstable subsystems. Applied Mathematics and Computation, 273:718–725, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "34 S. Youcheng and M. Di Natale. Weakly hard schedulability analysis for ﬁxed priority scheduling of periodic real-time tasks. In EMSOFT Conference, Seoul, Korea. IEEE, October, 13-17, 2017. 35 Qiang Yu and Xudong Zhao. Stability analysis of discrete-time switched linear systems with unstable subsystems. Applied Mathematics and Computation, 273:718–725, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2018.10:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 23,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.4230/lipics.ecrts.2018.10->doi:10.1109/rtss.2014.28@papers-LET-Pazzaglia2018.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2018.10",
+      "target": "doi:10.1109/rtss.2014.28",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Pazzaglia2018.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Pazzaglia2018",
+      "paperId": "doi:10.4230/lipics.ecrts.2018.10",
+      "metadata": {
+        "fileName": "Pazzaglia2018.pdf",
+        "sourcePath": "papers/LET/Pazzaglia2018.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.562651+00:00",
+  "papers": [
+    {
+      "key": "Slagel2024",
+      "paper": {
+        "id": "doi:10.1007/978-3-031-60698-4_19",
+        "citationKey": "Slagel2024",
+        "title": "A Formal Verification Framework for Runtime Assurance",
+        "authors": [
+          "J Tanner Slagel",
+          "Lauren M. White",
+          "Aaron Dutle",
+          "C\\'esar A. Mu\\ noz",
+          "Nicolas Crespo"
+        ],
+        "year": 2024,
+        "venue": "NASA Formal Methods (NFM 2024)",
+        "type": "inproceedings",
+        "doi": "10.1007/978-3-031-60698-4_19",
+        "arxivId": "",
+        "url": "https://shemesh.larc.nasa.gov/fm/papers/NFM2024-draft.pdf",
+        "abstract": "",
+        "keywords": [
+          "primary-research",
+          "runtime-assurance"
+        ],
+        "topics": [],
+        "tags": [
+          "report:Automotive_Programming_and_Modeling_Scientific_Report",
+          "report:Engineering_Transportation_Software_outline"
+        ],
+        "notes": "Author-hosted manuscript examined; archival identity confirmed by NASA's publication list. Accessed 2026-09-13. Model-level guarantee, not industrial deployment validation.",
+        "bibtexFields": {
+          "author": "Slagel, J Tanner and White, Lauren M. and Dutle, Aaron and Mu{\\~n}oz, C{\\'e}sar A. and Crespo, Nicolas",
+          "title": "A Formal Verification Framework for Runtime Assurance",
+          "booktitle": "NASA Formal Methods (NFM 2024)",
+          "series": "Lecture Notes in Computer Science",
+          "volume": "14627",
+          "pages": "322--328",
+          "publisher": "Springer",
+          "year": "2024",
+          "doi": "10.1007/978-3-031-60698-4_19",
+          "url": "https://shemesh.larc.nasa.gov/fm/papers/NFM2024-draft.pdf",
+          "note": "Author-hosted manuscript examined; archival identity confirmed by NASA's publication list.\n    Accessed 2026-09-13. Model-level guarantee, not industrial deployment validation.",
+          "keywords": "primary-research, runtime-assurance"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.173304+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "19_CR1",
+            "rawText": "ASTM International: Standard practice for methods to safely bound behavior of aircraft systems containing complex functions using run-time assurance, ASTM F3269-21 (2021). https://doi.org/10.1520/F3269-21",
+            "doi": "10.1520/f3269-21",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR1",
+              "doi-asserted-by": "publisher",
+              "unstructured": "ASTM International: Standard practice for methods to safely bound behavior of aircraft systems containing complex functions using run-time assurance, ASTM F3269-21 (2021). https://doi.org/10.1520/F3269-21",
+              "DOI": "10.1520/F3269-21"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1520/f3269-21",
+                "doi": "10.1520/f3269-21",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1520/f3269-21"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "19_CR2",
+            "rawText": "Brat, G., Pai, G.: Runtime assurance of aeronautical products: preliminary recommendations. Technical Memorandum (2023). https://ntrs.nasa.gov/citations/20220015734",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR2",
+              "unstructured": "Brat, G., Pai, G.: Runtime assurance of aeronautical products: preliminary recommendations. Technical Memorandum (2023). https://ntrs.nasa.gov/citations/20220015734"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:19_CR2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "19_CR3",
+            "rawText": "Goodloe, A.: Challenges in high-assurance runtime verification. In: Margaria, T., Steffen, B. (eds.) ISoLA 2016. LNCS, vol. 9952, pp. 446–460. Springer, Cham (2016). https://doi.org/10.1007/978-3-319-47166-2_31",
+            "doi": "10.1007/978-3-319-47166-2_31",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR3",
+              "series-title": "Lecture Notes in Computer Science",
+              "doi-asserted-by": "publisher",
+              "first-page": "446",
+              "DOI": "10.1007/978-3-319-47166-2_31",
+              "volume-title": "Leveraging Applications of Formal Methods, Verification and Validation: Foundational Techniques",
+              "author": "A Goodloe",
+              "year": "2016",
+              "unstructured": "Goodloe, A.: Challenges in high-assurance runtime verification. In: Margaria, T., Steffen, B. (eds.) ISoLA 2016. LNCS, vol. 9952, pp. 446–460. Springer, Cham (2016). https://doi.org/10.1007/978-3-319-47166-2_31"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-47166-2_31",
+                "doi": "10.1007/978-3-319-47166-2_31",
+                "title": "Lecture Notes in Computer Science",
+                "authors": [
+                  "A Goodloe"
+                ],
+                "year": 2016,
+                "venue": "Lecture Notes in Computer Science",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-319-47166-2_31"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "19_CR4",
+            "rawText": "Havelund, K.: Using runtime analysis to guide model checking of java programs. In: Havelund, K., Penix, J., Visser, W. (eds.) SPIN 2000. LNCS, vol. 1885, pp. 245–264. Springer, Heidelberg (2000). https://doi.org/10.1007/10722468_15",
+            "doi": "10.1007/10722468_15",
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR4",
+              "series-title": "Lecture Notes in Computer Science",
+              "doi-asserted-by": "publisher",
+              "first-page": "245",
+              "DOI": "10.1007/10722468_15",
+              "volume-title": "SPIN Model Checking and Software Verification",
+              "author": "K Havelund",
+              "year": "2000",
+              "unstructured": "Havelund, K.: Using runtime analysis to guide model checking of java programs. In: Havelund, K., Penix, J., Visser, W. (eds.) SPIN 2000. LNCS, vol. 1885, pp. 245–264. Springer, Heidelberg (2000). https://doi.org/10.1007/10722468_15"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/10722468_15",
+                "doi": "10.1007/10722468_15",
+                "title": "Lecture Notes in Computer Science",
+                "authors": [
+                  "K Havelund"
+                ],
+                "year": 2000,
+                "venue": "Lecture Notes in Computer Science",
+                "type": "",
+                "url": "https://doi.org/10.1007/10722468_15"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "19_CR5",
+            "rawText": "Jeannin, J., et al.: A formally verified hybrid system for safe advisories in the next-generation airborne collision avoidance system. Int. J. Softw. Tools Technol. Transf. 19(6) (2017). https://doi.org/10.1007/978-3-662-46681-0_2",
+            "doi": "10.1007/978-3-662-46681-0_2",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR5",
+              "doi-asserted-by": "publisher",
+              "unstructured": "Jeannin, J., et al.: A formally verified hybrid system for safe advisories in the next-generation airborne collision avoidance system. Int. J. Softw. Tools Technol. Transf. 19(6) (2017). https://doi.org/10.1007/978-3-662-46681-0_2",
+              "DOI": "10.1007/978-3-662-46681-0_2"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-662-46681-0_2",
+                "doi": "10.1007/978-3-662-46681-0_2",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-662-46681-0_2"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "19_CR6",
+            "rawText": "Kim, M., Viswanathan, M., Ben-Abdallah, H., Kannan, S., Lee, I., Sokolsky, O.: Formally specified monitoring of temporal properties. In: Euromicro Conference on Real-Time Systems. Euromicro RTS. IEEE (1999). https://doi.org/10.1109/EMRTS.1999.777457",
+            "doi": "10.1109/emrts.1999.777457",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR6",
+              "doi-asserted-by": "publisher",
+              "unstructured": "Kim, M., Viswanathan, M., Ben-Abdallah, H., Kannan, S., Lee, I., Sokolsky, O.: Formally specified monitoring of temporal properties. In: Euromicro Conference on Real-Time Systems. Euromicro RTS. IEEE (1999). https://doi.org/10.1109/EMRTS.1999.777457",
+              "DOI": "10.1109/EMRTS.1999.777457"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/emrts.1999.777457",
+                "doi": "10.1109/emrts.1999.777457",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/emrts.1999.777457"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "19_CR7",
+            "rawText": "Owre, S., Rushby, J.M., Shankar, N.: PVS: a prototype verification system. In: Kapur, D. (ed.) CADE 1992. LNCS, vol. 607, pp. 748–752. Springer, Heidelberg (1992). https://doi.org/10.1007/3-540-55602-8_217",
+            "doi": "10.1007/3-540-55602-8_217",
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR7",
+              "series-title": "Lecture Notes in Computer Science",
+              "doi-asserted-by": "publisher",
+              "first-page": "748",
+              "DOI": "10.1007/3-540-55602-8_217",
+              "volume-title": "Automated Deduction—CADE-11",
+              "author": "S Owre",
+              "year": "1992",
+              "unstructured": "Owre, S., Rushby, J.M., Shankar, N.: PVS: a prototype verification system. In: Kapur, D. (ed.) CADE 1992. LNCS, vol. 607, pp. 748–752. Springer, Heidelberg (1992). https://doi.org/10.1007/3-540-55602-8_217"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-55602-8_217",
+                "doi": "10.1007/3-540-55602-8_217",
+                "title": "Lecture Notes in Computer Science",
+                "authors": [
+                  "S Owre"
+                ],
+                "year": 1992,
+                "venue": "Lecture Notes in Computer Science",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-55602-8_217"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "19_CR8",
+            "rawText": "Platzer, A.: Differential dynamic logic for hybrid systems. J. Autom. Reason. 41(2) (2008). https://doi.org/10.1007/s10817-008-9103-8",
+            "doi": "10.1007/s10817-008-9103-8",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR8",
+              "doi-asserted-by": "publisher",
+              "unstructured": "Platzer, A.: Differential dynamic logic for hybrid systems. J. Autom. Reason. 41(2) (2008). https://doi.org/10.1007/s10817-008-9103-8",
+              "DOI": "10.1007/s10817-008-9103-8"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s10817-008-9103-8",
+                "doi": "10.1007/s10817-008-9103-8",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s10817-008-9103-8"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "19_CR9",
+            "rawText": "Seto, D., Krogh, B., Sha, L., Chutinan, A.: The simplex architecture for safe online control system upgrades. In: Proceedings of the 1998 American Control Conference. ACC, vol. 6, pp. 3504–3508 (1998). https://doi.org/10.1109/ACC.1998.703255",
+            "doi": "10.1109/acc.1998.703255",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR9",
+              "doi-asserted-by": "publisher",
+              "unstructured": "Seto, D., Krogh, B., Sha, L., Chutinan, A.: The simplex architecture for safe online control system upgrades. In: Proceedings of the 1998 American Control Conference. ACC, vol. 6, pp. 3504–3508 (1998). https://doi.org/10.1109/ACC.1998.703255",
+              "DOI": "10.1109/ACC.1998.703255"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/acc.1998.703255",
+                "doi": "10.1109/acc.1998.703255",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ACC.1998.703255"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "19_CR10",
+            "rawText": "Slagel, J.T., Moscato, M.M., White, L., Muñoz, C., Balachandran, S., Dutle, A.: Embedding differential dynamic logic in PVS. In: International Conference on Logical and Semantic Frameworks, with Applications. LSFA (2023). https://ntrs.nasa.gov/citations/20220019093",
+            "doi": "10.4204/eptcs.402.7",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR10",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Slagel, J.T., Moscato, M.M., White, L., Muñoz, C., Balachandran, S., Dutle, A.: Embedding differential dynamic logic in PVS. In: International Conference on Logical and Semantic Frameworks, with Applications. LSFA (2023). https://ntrs.nasa.gov/citations/20220019093",
+              "DOI": "10.4204/EPTCS.402.7"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.4204/eptcs.402.7",
+                "doi": "10.4204/eptcs.402.7",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.4204/eptcs.402.7"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "19_CR11",
+            "rawText": "White, L., Titolo, L., Slagel, J.T., Muñoz, C.: A temporal differential dynamic logic formal embedding. In: ACM SIGPLAN International Conference on Certified Programs and Proofs. CPP (2024). https://doi.org/10.1145/3636501.3636943",
+            "doi": "10.1145/3636501.3636943",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19_CR11",
+              "doi-asserted-by": "publisher",
+              "unstructured": "White, L., Titolo, L., Slagel, J.T., Muñoz, C.: A temporal differential dynamic logic formal embedding. In: ACM SIGPLAN International Conference on Certified Programs and Proofs. CPP (2024). https://doi.org/10.1145/3636501.3636943",
+              "DOI": "10.1145/3636501.3636943"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3636501.3636943",
+                "doi": "10.1145/3636501.3636943",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3636501.3636943"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/978-3-031-60698-4_19",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 11,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/978-3-031-60698-4_19",
+          "crossrefReferenceCount": 11
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/978-3-031-60698-4_19->doi:10.1109/acc.1998.703255@papers-transportation-software-Slagel2024.pdf",
+      "source": "doi:10.1007/978-3-031-60698-4_19",
+      "target": "doi:10.1109/acc.1998.703255",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/transportation-software/Slagel2024.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Slagel2024",
+      "paperId": "doi:10.1007/978-3-031-60698-4_19",
+      "metadata": {
+        "fileName": "Slagel2024.pdf",
+        "sourcePath": "papers/transportation-software/Slagel2024.pdf"
+      }
+    }
+  ]
+}

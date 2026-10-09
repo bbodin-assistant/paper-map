@@ -1,0 +1,699 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.155377+00:00",
+  "papers": [
+    {
+      "key": "Henzinger2005",
+      "paper": {
+        "id": "doi:10.1145/1065910.1065914",
+        "citationKey": "Henzinger2005",
+        "title": "Composable code generation for distributed giotto",
+        "authors": [
+          "Thomas A. Henzinger",
+          "Christoph M. Kirsch",
+          "Slobodan Matic"
+        ],
+        "year": 2005,
+        "venue": "Proceedings of the 2005 ACM SIGPLAN/SIGBED conference on Languages, compilers, and tools for embedded systems",
+        "type": "inproceedings",
+        "doi": "10.1145/1065910.1065914",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/1065910.1065914",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Henzinger, Thomas A. and Kirsch, Christoph M. and Matic, Slobodan",
+          "title": "{Composable code generation for distributed giotto}",
+          "year": "2005",
+          "booktitle": "Proceedings of the 2005 ACM SIGPLAN/SIGBED conference on Languages, compilers, and tools for embedded systems",
+          "publisher": "ACM",
+          "pages": "21--30",
+          "doi": "10.1145/1065910.1065914",
+          "url": "https://doi.org/10.1145/1065910.1065914"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.072287+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_1_1_1",
+            "rawText": "H. Kopetz . Real-Time Systems: Design Principles for Distributed Embedded Applications . Kluwer , 1997 . H. Kopetz. Real-Time Systems: Design Principles for Distributed Embedded Applications. Kluwer, 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_1_1",
+              "volume-title": "Real-Time Systems: Design Principles for Distributed Embedded Applications",
+              "author": "Kopetz H.",
+              "year": "1997",
+              "unstructured": "H. Kopetz . Real-Time Systems: Design Principles for Distributed Embedded Applications . Kluwer , 1997 . H. Kopetz. Real-Time Systems: Design Principles for Distributed Embedded Applications. Kluwer, 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_1_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kopetz H."
+                ],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_1_2_1",
+            "rawText": "http://www.flexray-group.com; http://www.autosar.org.  http://www.flexray-group.com; http://www.autosar.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_2_1",
+              "unstructured": "http://www.flexray-group.com; http://www.autosar.org.  http://www.flexray-group.com; http://www.autosar.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_1_3_1",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805825",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805825"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_1_4_1",
+            "rawText": "T.A. Henzinger , C.M. Kirsch , and S. Matic . Schedule-carrying code . In Proc. EMSOFT, LNCS 2855 , pp. 241 -- 256 , Springer , 2003 . T.A. Henzinger, C.M. Kirsch, and S. Matic. Schedule-carrying code. In Proc. EMSOFT, LNCS 2855, pp. 241--256, Springer, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_4_1",
+              "first-page": "241",
+              "volume-title": "Proc. EMSOFT, LNCS 2855",
+              "author": "Henzinger T.A.",
+              "year": "2003",
+              "unstructured": "T.A. Henzinger , C.M. Kirsch , and S. Matic . Schedule-carrying code . In Proc. EMSOFT, LNCS 2855 , pp. 241 -- 256 , Springer , 2003 . T.A. Henzinger, C.M. Kirsch, and S. Matic. Schedule-carrying code. In Proc. EMSOFT, LNCS 2855, pp. 241--256, Springer, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_4_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Henzinger T.A."
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_1_5_1",
+            "rawText": "https://doi.org/10.1145/512529.512567",
+            "doi": "10.1145/512529.512567",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/512529.512567"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/512529.512567",
+                "doi": "10.1145/512529.512567",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/512529.512567"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_1_6_1",
+            "rawText": "https://doi.org/10.1145/1064979.1064986",
+            "doi": "10.1145/1064979.1064986",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1064979.1064986"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1064979.1064986",
+                "doi": "10.1145/1064979.1064986",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1064979.1064986"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_1_7_1",
+            "rawText": "C.M. Kirsch , M.A.A. Sanvido , T.A. Henzinger , and W. Pree . A Giotto-based helicopter control system . In Proc. EMSOFT, LNCS 2491 , pp. 46 -- 60 , Springer , 2002 . C.M. Kirsch, M.A.A. Sanvido, T.A. Henzinger, and W. Pree. A Giotto-based helicopter control system. In Proc. EMSOFT, LNCS 2491, pp. 46--60, Springer, 2002.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_7_1",
+              "first-page": "46",
+              "volume-title": "Proc. EMSOFT, LNCS 2491",
+              "author": "Kirsch C.M.",
+              "year": "2002",
+              "unstructured": "C.M. Kirsch , M.A.A. Sanvido , T.A. Henzinger , and W. Pree . A Giotto-based helicopter control system . In Proc. EMSOFT, LNCS 2491 , pp. 46 -- 60 , Springer , 2002 . C.M. Kirsch, M.A.A. Sanvido, T.A. Henzinger, and W. Pree. A Giotto-based helicopter control system. In Proc. EMSOFT, LNCS 2491, pp. 46--60, Springer, 2002."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_7_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kirsch C.M."
+                ],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_1_8_1",
+            "rawText": "https://doi.org/10.5555/530328",
+            "doi": "10.5555/530328",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/530328"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/530328",
+                "doi": "10.5555/530328",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/530328"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_1_9_1",
+            "rawText": "A. Benveniste , L.P. Carloni , P. Caspi , and A.L. Sangiovanni-Vincentelli . Heterogeneous reactive systems modeling and correct-by-construction deployment . In Proc. EMSOFT, LNCS 2855 , pp. 35 -- 50 , Springer , 2003 . A. Benveniste, L.P. Carloni, P. Caspi, and A.L. Sangiovanni-Vincentelli. Heterogeneous reactive systems modeling and correct-by-construction deployment. In Proc. EMSOFT, LNCS 2855, pp.35--50, Springer, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_9_1",
+              "first-page": "35",
+              "volume-title": "Proc. EMSOFT, LNCS 2855",
+              "author": "Benveniste A.",
+              "year": "2003",
+              "unstructured": "A. Benveniste , L.P. Carloni , P. Caspi , and A.L. Sangiovanni-Vincentelli . Heterogeneous reactive systems modeling and correct-by-construction deployment . In Proc. EMSOFT, LNCS 2855 , pp. 35 -- 50 , Springer , 2003 . A. Benveniste, L.P. Carloni, P. Caspi, and A.L. Sangiovanni-Vincentelli. Heterogeneous reactive systems modeling and correct-by-construction deployment. In Proc. EMSOFT, LNCS 2855, pp.35--50, Springer, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_9_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Benveniste A."
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_1_10_1",
+            "rawText": "T.A. Henzinger , C.M. Kirsch , R. Majumdar , and S. Matic . Time-safety checking for embedded programs . In Proc. EMSOFT, LNCS 2491 , pp. 76 -- 90 , Springer , 2002 . T.A. Henzinger, C.M. Kirsch, R. Majumdar, and S. Matic. Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS 2491, pp. 76--90, Springer, 2002.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_10_1",
+              "first-page": "76",
+              "volume-title": "Proc. EMSOFT, LNCS 2491",
+              "author": "Henzinger T.A.",
+              "year": "2002",
+              "unstructured": "T.A. Henzinger , C.M. Kirsch , R. Majumdar , and S. Matic . Time-safety checking for embedded programs . In Proc. EMSOFT, LNCS 2491 , pp. 76 -- 90 , Springer , 2002 . T.A. Henzinger, C.M. Kirsch, R. Majumdar, and S. Matic. Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS 2491, pp. 76--90, Springer, 2002."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_10_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Henzinger T.A."
+                ],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_1_11_1",
+            "rawText": "https://doi.org/10.1145/780732.780754",
+            "doi": "10.1145/780732.780754",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_11_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/780732.780754"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/780732.780754",
+                "doi": "10.1145/780732.780754",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/780732.780754"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_3_2_1_12_1",
+            "rawText": "A. Mok and X. Feng . Real-time virtual resource: a timely abstraction for embedded systems . In Proc. EMSOFT, LNCS 2491 , pp. 182 -- 196 , Springer , 2002 . A. Mok and X. Feng. Real-time virtual resource: a timely abstraction for embedded systems. In Proc. EMSOFT, LNCS 2491, pp. 182--196, Springer, 2002.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_12_1",
+              "first-page": "182",
+              "volume-title": "Proc. EMSOFT, LNCS 2491",
+              "author": "Mok A.",
+              "year": "2002",
+              "unstructured": "A. Mok and X. Feng . Real-time virtual resource: a timely abstraction for embedded systems . In Proc. EMSOFT, LNCS 2491 , pp. 182 -- 196 , Springer , 2002 . A. Mok and X. Feng. Real-time virtual resource: a timely abstraction for embedded systems. In Proc. EMSOFT, LNCS 2491, pp. 182--196, Springer, 2002."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_12_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Mok A."
+                ],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_3_2_1_13_1",
+            "rawText": "I. Shin and I. Lee . Periodic resource model for compositional real-time guarantees . In Proc. RTSS , pp. 2 -- 13 , IEEE, 2003 . I. Shin and I. Lee. Periodic resource model for compositional real-time guarantees. In Proc. RTSS, pp. 2--13, IEEE, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_13_1",
+              "first-page": "2",
+              "volume-title": "Proc. RTSS",
+              "author": "Shin I.",
+              "year": "2003",
+              "unstructured": "I. Shin and I. Lee . Periodic resource model for compositional real-time guarantees . In Proc. RTSS , pp. 2 -- 13 , IEEE, 2003 . I. Shin and I. Lee. Periodic resource model for compositional real-time guarantees. In Proc. RTSS, pp. 2--13, IEEE, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_13_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Shin I."
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_3_2_1_14_1",
+            "rawText": "H. Kopetz and N. Suri . Compositional design of real-time systems: a conceptual basis for the specification of linking interfaces . In Proc. ISORC , pp. 51 -- 60 , 2003 . H. Kopetz and N. Suri. Compositional design of real-time systems: a conceptual basis for the specification of linking interfaces. In Proc. ISORC, pp. 51--60, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_14_1",
+              "first-page": "51",
+              "volume-title": "Proc. ISORC",
+              "author": "Kopetz H.",
+              "year": "2003",
+              "unstructured": "H. Kopetz and N. Suri . Compositional design of real-time systems: a conceptual basis for the specification of linking interfaces . In Proc. ISORC , pp. 51 -- 60 , 2003 . H. Kopetz and N. Suri. Compositional design of real-time systems: a conceptual basis for the specification of linking interfaces. In Proc. ISORC, pp. 51--60, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_14_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kopetz H."
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_3_2_1_16_1",
+            "rawText": "https://doi.org/10.1145/1017753.1017787",
+            "doi": "10.1145/1017753.1017787",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_16_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1017753.1017787"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1017753.1017787",
+                "doi": "10.1145/1017753.1017787",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1017753.1017787"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_3_2_1_17_1",
+            "rawText": "https://doi.org/10.2307/3680062",
+            "doi": "10.2307/3680062",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_17_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2307/3680062"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.2307/3680062",
+                "doi": "10.2307/3680062",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.2307/3680062"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_3_2_1_18_1",
+            "rawText": "V. Yodaiken . RTLinux Manifesto. In Proc. LinuxExpo , 1999 . V. Yodaiken. RTLinux Manifesto. In Proc. LinuxExpo, 1999.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_18_1",
+              "volume-title": "RTLinux Manifesto. In Proc. LinuxExpo",
+              "author": "Yodaiken V.",
+              "year": "1999",
+              "unstructured": "V. Yodaiken . RTLinux Manifesto. In Proc. LinuxExpo , 1999 . V. Yodaiken. RTLinux Manifesto. In Proc. LinuxExpo, 1999."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_18_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Yodaiken V."
+                ],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_3_2_1_19_1",
+            "rawText": "https://doi.org/10.5555/863631.880527",
+            "doi": "10.5555/863631.880527",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_19_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/863631.880527"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/863631.880527",
+                "doi": "10.5555/863631.880527",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/863631.880527"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_3_2_1_21_1",
+            "rawText": "S. Shigero , M. Takashi , and H. Kei . On the schedulability conditions on partial time slots . In Proc. RTCSA , pp. 166 -- 173 , IEEE, 1999 . S. Shigero, M. Takashi, and H. Kei. On the schedulability conditions on partial time slots. In Proc. RTCSA, pp. 166--173, IEEE, 1999.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_21_1",
+              "first-page": "166",
+              "volume-title": "Proc. RTCSA",
+              "author": "Shigero S.",
+              "year": "1999",
+              "unstructured": "S. Shigero , M. Takashi , and H. Kei . On the schedulability conditions on partial time slots . In Proc. RTCSA , pp. 166 -- 173 , IEEE, 1999 . S. Shigero, M. Takashi, and H. Kei. On the schedulability conditions on partial time slots. In Proc. RTCSA, pp. 166--173, IEEE, 1999."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_21_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Shigero S."
+                ],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/1065910.1065914",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 3,
+          "extractedReferenceCount": 19,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/1065910.1065914",
+          "crossrefReferenceCount": 19
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/1065910.1065914->doi:10.1109/jproc.2002.805825@papers-LET-Henzinger2005.pdf",
+      "source": "doi:10.1145/1065910.1065914",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2005.pdf"
+    },
+    {
+      "id": "doi:10.1145/1065910.1065914->doi:10.1145/512529.512567@papers-LET-Henzinger2005.pdf",
+      "source": "doi:10.1145/1065910.1065914",
+      "target": "doi:10.1145/512529.512567",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2005.pdf"
+    },
+    {
+      "id": "doi:10.1145/1065910.1065914->doi:10.1145/1064979.1064986@papers-LET-Henzinger2005.pdf",
+      "source": "doi:10.1145/1065910.1065914",
+      "target": "doi:10.1145/1064979.1064986",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2005.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Henzinger2005",
+      "paperId": "doi:10.1145/1065910.1065914",
+      "metadata": {
+        "fileName": "Henzinger2005.pdf",
+        "sourcePath": "papers/LET/Henzinger2005.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1388 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.567026+00:00",
+  "papers": [
+    {
+      "key": "Davis2007CAN",
+      "paper": {
+        "id": "doi:10.1007/s11241-007-9012-7",
+        "citationKey": "Davis2007CAN",
+        "title": "Controller Area Network (CAN) Schedulability Analysis: Refuted, Revisited and Revised",
+        "authors": [
+          "Robert I. Davis",
+          "Alan Burns",
+          "Reinder J. Bril",
+          "Johan J. Lukkien"
+        ],
+        "year": 2007,
+        "venue": "Real-Time Systems",
+        "type": "article",
+        "doi": "10.1007/s11241-007-9012-7",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [
+          "primary-research",
+          "CAN",
+          "response-time-analysis"
+        ],
+        "topics": [],
+        "tags": [
+          "report:Engineering_Transportation_Software_outline"
+        ],
+        "notes": "Open-access primary paper checked 2026-09-20. Sections 3.1 and 3.4, especially Equations (5), (7), (16) and (17), are used for non-preemptive CAN blocking and the corrected sufficient timing bound.",
+        "bibtexFields": {
+          "author": "Davis, Robert I. and Burns, Alan and Bril, Reinder J. and Lukkien, Johan J.",
+          "title": "Controller Area Network (CAN) Schedulability Analysis: Refuted, Revisited and Revised",
+          "journal": "Real-Time Systems",
+          "volume": "35",
+          "number": "3",
+          "pages": "239--272",
+          "year": "2007",
+          "doi": "10.1007/s11241-007-9012-7",
+          "url": "https://doi.org/10.1007/s11241-007-9012-7",
+          "note": "Open-access primary paper checked 2026-09-20. Sections 3.1 and 3.4, especially Equations (5), (7),\n    (16) and (17), are used for non-preemptive CAN blocking and the corrected sufficient timing bound.",
+          "keywords": "primary-research, CAN, response-time-analysis"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.255006+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "9012_CR1",
+            "rawText": "Audsley NC (1991) Optimal priority assignment and feasibility of static priority tasks with arbitrary start times. Technical Report YCS 164, Dept. Computer Science, University of York, UK",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR1",
+              "volume-title": "Optimal priority assignment and feasibility of static priority tasks with arbitrary start times. Technical Report YCS 164",
+              "author": "NC Audsley",
+              "year": "1991",
+              "unstructured": "Audsley NC (1991) Optimal priority assignment and feasibility of static priority tasks with arbitrary start times. Technical Report YCS 164, Dept. Computer Science, University of York, UK"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "NC Audsley"
+                ],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "9012_CR2",
+            "rawText": "Bosch (1991) CAN Specification version 2.0. Robert Bosch GmbH, Postfach 30 02 40, D-70442 Stuttgart",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR2",
+              "unstructured": "Bosch (1991) CAN Specification version 2.0. Robert Bosch GmbH, Postfach 30 02 40, D-70442 Stuttgart"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "9012_CR3",
+            "rawText": "Bril RJ (2006) Existing worst-case response time analysis of real-time tasks under fixed-priority scheduling with deferred pre-emption is too optimistic. CS-Report 06-05, Technische Universiteit Eindhoven (TU/e), The Netherlands",
+            "doi": "10.1109/ecrts.2007.38",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR3",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Bril RJ (2006) Existing worst-case response time analysis of real-time tasks under fixed-priority scheduling with deferred pre-emption is too optimistic. CS-Report 06-05, Technische Universiteit Eindhoven (TU/e), The Netherlands",
+              "DOI": "10.1109/ECRTS.2007.38"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2007.38",
+                "doi": "10.1109/ecrts.2007.38",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2007.38"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "9012_CR4",
+            "rawText": "Bril RJ (2006) Existing worst-case response time analysis of real-time tasks under fixed-priority scheduling with deferred pre-emption is too optimistic. CS-Report 06-05, Technische Universiteit Eindhoven (TU/e), The Netherlands",
+            "doi": "10.1109/ecrts.2007.38",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR4",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Bril RJ (2006) Existing worst-case response time analysis of real-time tasks under fixed-priority scheduling with deferred pre-emption is too optimistic. CS-Report 06-05, Technische Universiteit Eindhoven (TU/e), The Netherlands",
+              "DOI": "10.1109/ECRTS.2007.38"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2007.38",
+                "doi": "10.1109/ecrts.2007.38",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2007.38"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "9012_CR5",
+            "rawText": "Bril RJ, Lukkien JJ, Davis RI, and Burns A (2006a) Message response time analysis for ideal Controller Area Network (CAN) refuted. CS-Report 06-19, Technische Universiteit Eindhoven (TU/e), The Netherlands.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR5",
+              "unstructured": "Bril RJ, Lukkien JJ, Davis RI, and Burns A (2006a) Message response time analysis for ideal Controller Area Network (CAN) refuted. CS-Report 06-19, Technische Universiteit Eindhoven (TU/e), The Netherlands."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR5",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "9012_CR6",
+            "rawText": "Bril RJ, Lukkien JJ, Davis RI, Burns A (2006b) Message response time analysis for ideal Controller Area Network (CAN) refuted. In: Proceedings of the 5th International Workshop on Real-Time Networks (RTN’06)",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR6",
+              "unstructured": "Bril RJ, Lukkien JJ, Davis RI, Burns A (2006b) Message response time analysis for ideal Controller Area Network (CAN) refuted. In: Proceedings of the 5th International Workshop on Real-Time Networks (RTN’06)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR6",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "9012_CR7",
+            "rawText": "Bril RJ, Lukkien JJ, Verhaegh WFJ (2006c) Worst-case response time analysis of real-time tasks under fixed priority scheduling with deferred preemption revisited. CS Report 06-34, Technische Universiteit Eindhoven (TU/e), The Netherlands",
+            "doi": "10.1109/ecrts.2007.38",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR7",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Bril RJ, Lukkien JJ, Verhaegh WFJ (2006c) Worst-case response time analysis of real-time tasks under fixed priority scheduling with deferred preemption revisited. CS Report 06-34, Technische Universiteit Eindhoven (TU/e), The Netherlands",
+              "DOI": "10.1109/ECRTS.2007.38"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2007.38",
+                "doi": "10.1109/ecrts.2007.38",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2007.38"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "9012_CR8",
+            "rawText": "Broster I (2003) Flexibility in dependable communication. PhD Thesis, Department of Computer Science, University of York, UK",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR8",
+              "unstructured": "Broster I (2003) Flexibility in dependable communication. PhD Thesis, Department of Computer Science, University of York, UK"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR8",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9012_CR9",
+            "rawText": "Broster I, Burns A, Rodríguez-Navas G (2002) Probabilistic analysis of CAN with Faults. In: Proceedings of the 23rd IEEE real-time systems symposium (RTSS’02), pp 269–278",
+            "doi": "10.1109/real.2002.1181581",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR9",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Broster I, Burns A, Rodríguez-Navas G (2002) Probabilistic analysis of CAN with Faults. In: Proceedings of the 23rd IEEE real-time systems symposium (RTSS’02), pp 269–278",
+              "DOI": "10.1109/REAL.2002.1181581"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.2002.1181581",
+                "doi": "10.1109/real.2002.1181581",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.2002.1181581"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "9012_CR10",
+            "rawText": "Broster I, Burns A (2003) An analysable bus-guardian for event-triggered communication. In: Proceedings of the 24th real-time systems symposium. IEEE Computer Society Press, pp 410–419",
+            "doi": "10.1109/real.2003.1253288",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR10",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Broster I, Burns A (2003) An analysable bus-guardian for event-triggered communication. In: Proceedings of the 24th real-time systems symposium. IEEE Computer Society Press, pp 410–419",
+              "DOI": "10.1109/REAL.2003.1253288"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.2003.1253288",
+                "doi": "10.1109/real.2003.1253288",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.2003.1253288"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "9012_CR11",
+            "rawText": "Broster I, Burns A, Rodriguez-Navas G (2005) Timing analysis of real-time communication under electromagnetic interference. Real-Time Systems 30(1–2):55–81",
+            "doi": "10.1007/s11241-005-0504-z",
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1–2",
+              "key": "9012_CR11",
+              "doi-asserted-by": "publisher",
+              "first-page": "55",
+              "DOI": "10.1007/s11241-005-0504-z",
+              "volume": "30",
+              "author": "I Broster",
+              "year": "2005",
+              "unstructured": "Broster I, Burns A, Rodriguez-Navas G (2005) Timing analysis of real-time communication under electromagnetic interference. Real-Time Systems 30(1–2):55–81",
+              "journal-title": "Real-Time Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-005-0504-z",
+                "doi": "10.1007/s11241-005-0504-z",
+                "title": "",
+                "authors": [
+                  "I Broster"
+                ],
+                "year": 2005,
+                "venue": "Real-Time Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-005-0504-z"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "9012_CR12",
+            "rawText": "Burns A (1994) Pre-emptive priority based scheduling: An appropriate engineering approach. In: S. Son (ed), Advances in Real-Time Systems, Prentice-Hall, pp 225–248",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR12",
+              "unstructured": "Burns A (1994) Pre-emptive priority based scheduling: An appropriate engineering approach. In: S. Son (ed), Advances in Real-Time Systems, Prentice-Hall, pp 225–248"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR12",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "9012_CR13",
+            "rawText": "Casparsson L, Rajnak A, Tindell K, Malmberg P (1998/1) Volcano—a revolution in on-board communications. Volvo Technology Report",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR13",
+              "unstructured": "Casparsson L, Rajnak A, Tindell K, Malmberg P (1998/1) Volcano—a revolution in on-board communications. Volvo Technology Report"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR13",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "9012_CR14",
+            "rawText": "DeMeis R (2005) Cars sag under weighty wiring. Electronic Times, 10/24/2005",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR14",
+              "unstructured": "DeMeis R (2005) Cars sag under weighty wiring. Electronic Times, 10/24/2005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR14",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "9012_CR15",
+            "rawText": "Ferreira J, Oliveira A, Fonseca P, Fonseca JA (2004) An experiment to assess bit error rate in CAN. In: Proceedings of 3rd international workshop of real-time networks (RTN2004). Cantania, Italy, pp 15–18",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR15",
+              "unstructured": "Ferreira J, Oliveira A, Fonseca P, Fonseca JA (2004) An experiment to assess bit error rate in CAN. In: Proceedings of 3rd international workshop of real-time networks (RTN2004). Cantania, Italy, pp 15–18"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR15",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "9012_CR16",
+            "rawText": "Frischkorn H-G (2005) Automotive architecture requirements. In: Proceedings of the summer school on architectural paradigms for dependable embedded systems. Vienna, Austria,. Vienna University of Technology, pp 45–74",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR16",
+              "unstructured": "Frischkorn H-G (2005) Automotive architecture requirements. In: Proceedings of the summer school on architectural paradigms for dependable embedded systems. Vienna, Austria,. Vienna University of Technology, pp 45–74"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR16",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "9012_CR17",
+            "rawText": "George L, Rivierre N, Spuri M (1996) Pre-emptive and non-pre-emptive real-time uni-processor scheduling. Technical Report 2966, Institut National de Recherche et Informatique et en Automatique (INRIA), France",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR17",
+              "unstructured": "George L, Rivierre N, Spuri M (1996) Pre-emptive and non-pre-emptive real-time uni-processor scheduling. Technical Report 2966, Institut National de Recherche et Informatique et en Automatique (INRIA), France"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR17",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "9012_CR18",
+            "rawText": "Hansson H, Nolte T, Norstrom C, Punnekkat S (2002) Integrating reliability and timing analysis of CAN-based Systems. IEEE Transactions on Industrial Electronics 49(6):1240–1250",
+            "doi": "10.1109/tie.2002.804970",
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "6",
+              "key": "9012_CR18",
+              "doi-asserted-by": "crossref",
+              "first-page": "1240",
+              "DOI": "10.1109/TIE.2002.804970",
+              "volume": "49",
+              "author": "H Hansson",
+              "year": "2002",
+              "unstructured": "Hansson H, Nolte T, Norstrom C, Punnekkat S (2002) Integrating reliability and timing analysis of CAN-based Systems. IEEE Transactions on Industrial Electronics 49(6):1240–1250",
+              "journal-title": "IEEE Transactions on Industrial Electronics"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tie.2002.804970",
+                "doi": "10.1109/tie.2002.804970",
+                "title": "",
+                "authors": [
+                  "H Hansson"
+                ],
+                "year": 2002,
+                "venue": "IEEE Transactions on Industrial Electronics",
+                "type": "",
+                "url": "https://doi.org/10.1109/tie.2002.804970"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "9012_CR19",
+            "rawText": "Harbour MG, Klein MH, Lehoczky JP (1991) Fixed priority scheduling of periodic tasks with varying execution priority. In: Proceedings 12th IEEE real-time systems symposium. IEEE Computer Society Press, pp 116–128",
+            "doi": "10.1109/real.1991.160365",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR19",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Harbour MG, Klein MH, Lehoczky JP (1991) Fixed priority scheduling of periodic tasks with varying execution priority. In: Proceedings 12th IEEE real-time systems symposium. IEEE Computer Society Press, pp 116–128",
+              "DOI": "10.1109/REAL.1991.160365"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1991.160365",
+                "doi": "10.1109/real.1991.160365",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1991.160365"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "9012_CR20",
+            "rawText": "Horvath I (2006) Private communication with the authors",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR20",
+              "unstructured": "Horvath I (2006) Private communication with the authors"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR20",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "9012_CR21",
+            "rawText": "ISO 11898-1 (1993) Road Vehicles—interchange of digital information—controller area network (CAN) for high-speed communication. ISO Standard-11898, International Standards Organisation (ISO)",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR21",
+              "unstructured": "ISO 11898-1 (1993) Road Vehicles—interchange of digital information—controller area network (CAN) for high-speed communication. ISO Standard-11898, International Standards Organisation (ISO)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR21",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "9012_CR22",
+            "rawText": "Lehoczky J (1990) Fixed priority scheduling of periodic task sets with arbitrary deadlines. In: Proceedings 11th IEEE real-time systems symposium. IEEE Computer Society Press, pp 201–209",
+            "doi": "10.1109/real.1990.128748",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR22",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Lehoczky J (1990) Fixed priority scheduling of periodic task sets with arbitrary deadlines. In: Proceedings 11th IEEE real-time systems symposium. IEEE Computer Society Press, pp 201–209",
+              "DOI": "10.1109/REAL.1990.128748"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1990.128748",
+                "doi": "10.1109/real.1990.128748",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1990.128748"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "9012_CR23",
+            "rawText": "Leohold J (2004) Communication requirements for automotive systems. Keynote speech 5th IEEE international workshop on factory communication systems, Vienna, Austria, Vienna University of Technology",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR23",
+              "unstructured": "Leohold J (2004) Communication requirements for automotive systems. Keynote speech 5th IEEE international workshop on factory communication systems, Vienna, Austria, Vienna University of Technology"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR23",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "9012_CR24",
+            "rawText": "Leohold J (2005) Automotive system architecture. In: Proceedings of the summer school on architectural paradigms for dependable embedded systems. Vienna, Austria, Vienna University of Technology, pp 545–591",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR24",
+              "unstructured": "Leohold J (2005) Automotive system architecture. In: Proceedings of the summer school on architectural paradigms for dependable embedded systems. Vienna, Austria, Vienna University of Technology, pp 545–591"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR24",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "9012_CR25",
+            "rawText": "Leung JY-T, Whitehead J (1982) On the complexity of fixed-priority scheduling of periodic real-time tasks. Performance Evaluation 2(4):237–250",
+            "doi": "10.1016/0166-5316(82)90024-4",
+            "arxivId": null,
+            "year": 1982,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "9012_CR25",
+              "doi-asserted-by": "publisher",
+              "first-page": "237",
+              "DOI": "10.1016/0166-5316(82)90024-4",
+              "volume": "2",
+              "author": "JY-T Leung",
+              "year": "1982",
+              "unstructured": "Leung JY-T, Whitehead J (1982) On the complexity of fixed-priority scheduling of periodic real-time tasks. Performance Evaluation 2(4):237–250",
+              "journal-title": "Performance Evaluation"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0166-5316(82)90024-4",
+                "doi": "10.1016/0166-5316(82)90024-4",
+                "title": "",
+                "authors": [
+                  "JY-T Leung"
+                ],
+                "year": 1982,
+                "venue": "Performance Evaluation",
+                "type": "",
+                "url": "https://doi.org/10.1016/0166-5316(82)90024-4"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "9012_CR26",
+            "rawText": "LIN Consortium (2003) LIN Protocol Specification, Revision 2.0. September. www.lin-subbus.org",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR26",
+              "unstructured": "LIN Consortium (2003) LIN Protocol Specification, Revision 2.0. September. www.lin-subbus.org"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR26",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "9012_CR27",
+            "rawText": "Liu CL, Layland JW (1973) Scheduling algorithms for multiprogramming in a hard-real-time environment. Journal of the ACM 20(1):46–61",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "9012_CR27",
+              "doi-asserted-by": "publisher",
+              "first-page": "46",
+              "DOI": "10.1145/321738.321743",
+              "volume": "20",
+              "author": "CL Liu",
+              "year": "1973",
+              "unstructured": "Liu CL, Layland JW (1973) Scheduling algorithms for multiprogramming in a hard-real-time environment. Journal of the ACM 20(1):46–61",
+              "journal-title": "Journal of the ACM"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "title": "",
+                "authors": [
+                  "CL Liu"
+                ],
+                "year": 1973,
+                "venue": "Journal of the ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "9012_CR28",
+            "rawText": "Motorola Inc (1998) MSCAN Block Guide V03.01 Document No. SV12MSCANV3/D. FreeScale Semiconductor Inc. (Revised July 2004)",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR28",
+              "unstructured": "Motorola Inc (1998) MSCAN Block Guide V03.01 Document No. SV12MSCANV3/D. FreeScale Semiconductor Inc. (Revised July 2004)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR28",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "9012_CR29",
+            "rawText": "Nolte T, Hansson H, Norstrom C (2002) Minimizing CAN response-time analysis jitter by message manipulation. In: Proceedings 8th IEEE real-time and embedded technology and applications symposium (RTAS’02), pp 197–206",
+            "doi": "10.1109/rttas.2002.1137394",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR29",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Nolte T, Hansson H, Norstrom C (2002) Minimizing CAN response-time analysis jitter by message manipulation. In: Proceedings 8th IEEE real-time and embedded technology and applications symposium (RTAS’02), pp 197–206",
+              "DOI": "10.1109/RTTAS.2002.1137394"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rttas.2002.1137394",
+                "doi": "10.1109/rttas.2002.1137394",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rttas.2002.1137394"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "9012_CR30",
+            "rawText": "Nolte T, Hansson H, Norstrom C (2003) Probabilistic worst-case response-time analysis for the Controller Area Network. In: Proceedings of the 9th IEEE real-time and embedded technology and applications symposium (RTAS’03), pp 200–207",
+            "doi": "10.1109/rttas.2003.1203052",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR30",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Nolte T, Hansson H, Norstrom C (2003) Probabilistic worst-case response-time analysis for the Controller Area Network. In: Proceedings of the 9th IEEE real-time and embedded technology and applications symposium (RTAS’03), pp 200–207",
+              "DOI": "10.1109/RTTAS.2003.1203052"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rttas.2003.1203052",
+                "doi": "10.1109/rttas.2003.1203052",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rttas.2003.1203052"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "9012_CR31",
+            "rawText": "Nolte T (2006) Share-driven scheduling of embedded networks. PhD Thesis, Malardalen University Press",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR31",
+              "unstructured": "Nolte T (2006) Share-driven scheduling of embedded networks. PhD Thesis, Malardalen University Press"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR31",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "9012_CR32",
+            "rawText": "Oswald M (2004) Efficient automotive electronics. Automotive Engineer",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR32",
+              "unstructured": "Oswald M (2004) Efficient automotive electronics. Automotive Engineer"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR32",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "9012_CR33",
+            "rawText": "Punnekkat S, Hansson H, Norstrom C (2000) Response time analysis under errors for CAN. In: Proceedings 6th real-time technology and applications symposium. IEEE Computer Society Press, pp 258–265",
+            "doi": "10.1109/rttas.2000.852470",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR33",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Punnekkat S, Hansson H, Norstrom C (2000) Response time analysis under errors for CAN. In: Proceedings 6th real-time technology and applications symposium. IEEE Computer Society Press, pp 258–265",
+              "DOI": "10.1109/RTTAS.2000.852470"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rttas.2000.852470",
+                "doi": "10.1109/rttas.2000.852470",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rttas.2000.852470"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "9012_CR34",
+            "rawText": "Regehr J (2002) Scheduling tasks with mixed pre-emption relations for robustness to timing faults. In: Proceedings 23rd real-time systems symposium. IEEE Computer Society Press, pp 315–326",
+            "doi": "10.1109/real.2002.1181585",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR34",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Regehr J (2002) Scheduling tasks with mixed pre-emption relations for robustness to timing faults. In: Proceedings 23rd real-time systems symposium. IEEE Computer Society Press, pp 315–326",
+              "DOI": "10.1109/REAL.2002.1181585"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.2002.1181585",
+                "doi": "10.1109/real.2002.1181585",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.2002.1181585"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "9012_CR35",
+            "rawText": "Rufino J, Verissimo P, Arroz G, Almeida C Rodrigues L (1998) Fault-tolerant broadcasts in CAN. In Digest of Papers, The 28th IEEE international symposium on fault-tolerant computing (FTCS’98), pp 150–159",
+            "doi": "10.1109/ftcs.1998.689464",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR35",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Rufino J, Verissimo P, Arroz G, Almeida C Rodrigues L (1998) Fault-tolerant broadcasts in CAN. In Digest of Papers, The 28th IEEE international symposium on fault-tolerant computing (FTCS’98), pp 150–159",
+              "DOI": "10.1109/FTCS.1998.689464"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ftcs.1998.689464",
+                "doi": "10.1109/ftcs.1998.689464",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ftcs.1998.689464"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "9012_CR36",
+            "rawText": "Rufino J (2002) Computational system for real-time distributed control. PhD-Thesis, Technical University of Lisbon, Instituto Superior",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR36",
+              "unstructured": "Rufino J (2002) Computational system for real-time distributed control. PhD-Thesis, Technical University of Lisbon, Instituto Superior"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR36",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "9012_CR37",
+            "rawText": "Society of Automotive Engineers (1993) Class C application requirement considerations, recommended practice, SAE Technical Report J2056/1",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR37",
+              "unstructured": "Society of Automotive Engineers (1993) Class C application requirement considerations, recommended practice, SAE Technical Report J2056/1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR37",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "9012_CR38",
+            "rawText": "Tindell KW, Burns A (1994) Guaranteeing message latencies on Controller Area Network (CAN). In: Proceedings of 1st international CAN conference, pp 1–11",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR38",
+              "unstructured": "Tindell KW, Burns A (1994) Guaranteeing message latencies on Controller Area Network (CAN). In: Proceedings of 1st international CAN conference, pp 1–11"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR38",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "9012_CR39",
+            "rawText": "Tindell KW, Burns A, Wellings AJ (1994a) An extendible approach for analysing fixed priority hard real-time systems. Journal of Real-Time Systems 6(2):133–152",
+            "doi": "10.1007/bf01088593",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "9012_CR39",
+              "doi-asserted-by": "crossref",
+              "first-page": "133",
+              "DOI": "10.1007/BF01088593",
+              "volume": "6",
+              "author": "KW Tindell",
+              "year": "1994a",
+              "unstructured": "Tindell KW, Burns A, Wellings AJ (1994a) An extendible approach for analysing fixed priority hard real-time systems. Journal of Real-Time Systems 6(2):133–152",
+              "journal-title": "Journal of Real-Time Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf01088593",
+                "doi": "10.1007/bf01088593",
+                "title": "",
+                "authors": [
+                  "KW Tindell"
+                ],
+                "year": null,
+                "venue": "Journal of Real-Time Systems",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf01088593"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "9012_CR40",
+            "rawText": "Tindell KW, Hansson H, Wellings AJ (1994b) Analysing real-time communications: Controller area network (CAN). In: Proceedings 15th real-time systems symposium (RTSS’94). IEEE Computer Society Press, pp 259–263",
+            "doi": "10.1109/real.1994.342710",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR40",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Tindell KW, Hansson H, Wellings AJ (1994b) Analysing real-time communications: Controller area network (CAN). In: Proceedings 15th real-time systems symposium (RTSS’94). IEEE Computer Society Press, pp 259–263",
+              "DOI": "10.1109/REAL.1994.342710"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1994.342710",
+                "doi": "10.1109/real.1994.342710",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1994.342710"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "9012_CR41",
+            "rawText": "Tindell KW, Burns A, Wellings AJ (1995) Calculating Controller area network (CAN) message response times. Control Engineering Practice 3(8):1163–1169",
+            "doi": "10.1016/0967-0661(95)00112-8",
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "8",
+              "key": "9012_CR41",
+              "doi-asserted-by": "publisher",
+              "first-page": "1163",
+              "DOI": "10.1016/0967-0661(95)00112-8",
+              "volume": "3",
+              "author": "KW Tindell",
+              "year": "1995",
+              "unstructured": "Tindell KW, Burns A, Wellings AJ (1995) Calculating Controller area network (CAN) message response times. Control Engineering Practice 3(8):1163–1169",
+              "journal-title": "Control Engineering Practice"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0967-0661(95)00112-8",
+                "doi": "10.1016/0967-0661(95)00112-8",
+                "title": "",
+                "authors": [
+                  "KW Tindell"
+                ],
+                "year": 1995,
+                "venue": "Control Engineering Practice",
+                "type": "",
+                "url": "https://doi.org/10.1016/0967-0661(95)00112-8"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "9012_CR42",
+            "rawText": "Wang Y, Saksena M (1999) Scheduling fixed priority tasks with pre-emption threshold. In: Proceedings of the 6th international workshop on real-time computing systems and applications (RTCSA’99), pp 328–335",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR42",
+              "unstructured": "Wang Y, Saksena M (1999) Scheduling fixed priority tasks with pre-emption threshold. In: Proceedings of the 6th international workshop on real-time computing systems and applications (RTCSA’99), pp 328–335"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR42",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "9012_CR43",
+            "rawText": "Zuhily A (2006) Optimality of (D-J)-monotonic priority assignment. Technical Report YCS404. Dept. of Computer Science, University of York, UK",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9012_CR43",
+              "unstructured": "Zuhily A (2006) Optimality of (D-J)-monotonic priority assignment. Technical Report YCS404. Dept. of Computer Science, University of York, UK"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9012_CR43",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/s11241-007-9012-7",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 43,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/s11241-007-9012-7",
+          "crossrefReferenceCount": 43
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/s11241-007-9012-7->doi:10.1145/321738.321743@papers-transportation-software-Davis2007CAN.pdf",
+      "source": "doi:10.1007/s11241-007-9012-7",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/transportation-software/Davis2007CAN.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Davis2007CAN",
+      "paperId": "doi:10.1007/s11241-007-9012-7",
+      "metadata": {
+        "fileName": "Davis2007CAN.pdf",
+        "sourcePath": "papers/transportation-software/Davis2007CAN.pdf"
+      }
+    }
+  ]
+}

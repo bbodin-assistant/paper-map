@@ -1,0 +1,1804 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.459140+00:00",
+  "papers": [
+    {
+      "key": "Geilen2019",
+      "paper": {
+        "id": "doi:10.1007/978-3-030-20343-6_8",
+        "citationKey": "Geilen2019",
+        "title": "Scenarios in Dataflow Modeling and Analysis",
+        "authors": [
+          "Marc C. W. Geilen",
+          "Mladen Skelin",
+          "J. Reinier van Kampenhout",
+          "Hadi Alizadeh Ara",
+          "Twan Basten",
+          "Sander Stuijk",
+          "Kees G. W. Goossens"
+        ],
+        "year": 2019,
+        "venue": "System-Scenario-based Design Principles and Applications",
+        "type": "incollection",
+        "doi": "10.1007/978-3-030-20343-6_8",
+        "arxivId": "",
+        "url": "https://doi.org/10.1007/978-3-030-20343-6_8",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation",
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Geilen, Marc C. W. and Skelin, Mladen and van Kampenhout, J. Reinier and Ara, Hadi Alizadeh\n    and Basten, Twan and Stuijk, Sander and Goossens, Kees G. W.",
+          "title": "Scenarios in Dataflow Modeling and Analysis",
+          "booktitle": "System-Scenario-based Design Principles and Applications",
+          "year": "2019",
+          "doi": "10.1007/978-3-030-20343-6_8",
+          "url": "https://doi.org/10.1007/978-3-030-20343-6_8",
+          "howpublished": "System-Scenario-based Design Principles and Applications"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.167522+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "8_CR1",
+            "rawText": "H.A. Ara, A. Behrouzian, M. Hendriks, M. Geilen, D. Goswami, T. Basten, Scalable analysis of multi-scale dataflow models. ACM Trans. Embed. Comput. Syst. 16(4), 80:1–80:26 (2018)",
+            "doi": "10.1145/3233183",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "H.A. Ara, A. Behrouzian, M. Hendriks, M. Geilen, D. Goswami, T. Basten, Scalable analysis of multi-scale dataflow models. ACM Trans. Embed. Comput. Syst. 16(4), 80:1–80:26 (2018)",
+              "DOI": "10.1145/3233183"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3233183",
+                "doi": "10.1145/3233183",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3233183"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "8_CR2",
+            "rawText": "F. Baccelli, G. Cohen, G., G. Olsder, J.P. Quadrat, Synchronization and Linearity (Wiley, London, 1992)",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR2",
+              "unstructured": "F. Baccelli, G. Cohen, G., G. Olsder, J.P. Quadrat, Synchronization and Linearity (Wiley, London, 1992)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "8_CR3",
+            "rawText": "S.S. Battacharyya, E.A. Lee, P.K. Murthy, Software Synthesis from Dataflow Graphs (Kluwer Academic Publishers, Norwell, 1996)",
+            "doi": "10.1007/978-1-4613-1389-2",
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-1-4613-1389-2",
+              "volume-title": "Software Synthesis from Dataflow Graphs",
+              "author": "SS Battacharyya",
+              "year": "1996",
+              "unstructured": "S.S. Battacharyya, E.A. Lee, P.K. Murthy, Software Synthesis from Dataflow Graphs (Kluwer Academic Publishers, Norwell, 1996)"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/978-1-4613-1389-2",
+                "doi": "10.1007/978-1-4613-1389-2",
+                "title": "",
+                "authors": [
+                  "SS Battacharyya"
+                ],
+                "year": 1996,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-4613-1389-2"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "8_CR4",
+            "rawText": "T. Bijlsma, M. Bekooij, G. Smit, Circular buffers with multiple overlapping windows for cyclic task graphs, in ed. by P. Stenström. Transactions on High-Performance Embedded Architectures and Compilers III. Lecture Notes in Computer Science (Springer, Berlin, 2011). https://doi.org/10.1007/978-3-642-19447-4",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR4",
+              "unstructured": "T. Bijlsma, M. Bekooij, G. Smit, Circular buffers with multiple overlapping windows for cyclic task graphs, in ed. by P. Stenström. Transactions on High-Performance Embedded Architectures and Compilers III. Lecture Notes in Computer Science (Springer, Berlin, 2011). https://doi.org/10.1007/978-3-642-19447-4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR4",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "8_CR5",
+            "rawText": "J.T. Buck, Scheduling dynamic dataflow graphs with bounded memory using the token flow model. Ph.D. thesis, EECS Department, University of California, Berkeley, 1993",
+            "doi": "10.1109/icassp.1993.319147",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR5",
+              "doi-asserted-by": "crossref",
+              "unstructured": "J.T. Buck, Scheduling dynamic dataflow graphs with bounded memory using the token flow model. Ph.D. thesis, EECS Department, University of California, Berkeley, 1993",
+              "DOI": "10.1109/ICASSP.1993.319147"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1993.319147",
+                "doi": "10.1109/icassp.1993.319147",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1993.319147"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "8_CR6",
+            "rawText": "A.P. Chandrakasan, S. Sheng, R.W. Brodersen, Low-power CMOS digital design. IEEE J. Solid State Circuits 27(4), 473–484 (1992). https://doi.org/10.1109/4.126534",
+            "doi": "10.1109/4.126534",
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "8_CR6",
+              "doi-asserted-by": "publisher",
+              "first-page": "473",
+              "DOI": "10.1109/4.126534",
+              "volume": "27",
+              "author": "AP Chandrakasan",
+              "year": "1992",
+              "unstructured": "A.P. Chandrakasan, S. Sheng, R.W. Brodersen, Low-power CMOS digital design. IEEE J. Solid State Circuits 27(4), 473–484 (1992). https://doi.org/10.1109/4.126534",
+              "journal-title": "IEEE J. Solid State Circuits"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/4.126534",
+                "doi": "10.1109/4.126534",
+                "title": "",
+                "authors": [
+                  "AP Chandrakasan"
+                ],
+                "year": 1992,
+                "venue": "IEEE J. Solid State Circuits",
+                "type": "",
+                "url": "https://doi.org/10.1109/4.126534"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "8_CR7",
+            "rawText": "J. Cochet-Terrasson, G. Cohen, S. Gaubert, M. Gettrick, J.P. Quadrat, Numerical computation of spectral elements in max-plus algebra, in Proceedings of the IFAC Conference on System Structure and Control (Nantes, 1998)",
+            "doi": "10.1016/s1474-6670(17)42067-2",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR7",
+              "doi-asserted-by": "crossref",
+              "unstructured": "J. Cochet-Terrasson, G. Cohen, S. Gaubert, M. Gettrick, J.P. Quadrat, Numerical computation of spectral elements in max-plus algebra, in Proceedings of the IFAC Conference on System Structure and Control (Nantes, 1998)",
+              "DOI": "10.1016/S1474-6670(17)42067-2"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/s1474-6670(17)42067-2",
+                "doi": "10.1016/s1474-6670(17)42067-2",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/s1474-6670(17)42067-2"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8_CR8",
+            "rawText": "M. Damavandpeyma, S. Stuijk, M. Geilen, T. Basten, H. Corporaal, Parametric throughput analysis of scenario-aware dataflow graphs, in 2012 IEEE 30th International Conference on Computer Design (ICCD), pp. 219–226 (IEEE, Piscataway, 2012). https://doi.org/10.1109/ICCD.2012.6378644",
+            "doi": "10.1109/iccd.2012.6378644",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR8",
+              "doi-asserted-by": "publisher",
+              "unstructured": "M. Damavandpeyma, S. Stuijk, M. Geilen, T. Basten, H. Corporaal, Parametric throughput analysis of scenario-aware dataflow graphs, in 2012 IEEE 30th International Conference on Computer Design (ICCD), pp. 219–226 (IEEE, Piscataway, 2012). https://doi.org/10.1109/ICCD.2012.6378644",
+              "DOI": "10.1109/ICCD.2012.6378644"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iccd.2012.6378644",
+                "doi": "10.1109/iccd.2012.6378644",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iccd.2012.6378644"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "8_CR9",
+            "rawText": "M. Damavandpeyma, S. Stuijk, T. Basten, M. Geilen, H. Corporaal, Throughput-constrained DVFs for scenario-aware dataflow graphs, in, 2013 IEEE 19th Real-Time and Embedded Technology and Applications Symposium (RTAS) (IEEE, Piscataway, 2013), pp. 175–184. https://doi.org/10.1109/RTAS.2013.6531090",
+            "doi": "10.1109/rtas.2013.6531090",
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR9",
+              "doi-asserted-by": "publisher",
+              "first-page": "175",
+              "DOI": "10.1109/RTAS.2013.6531090",
+              "volume-title": "Throughput-constrained DVFs for scenario-aware dataflow graphs, in, 2013 IEEE 19th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+              "author": "M Damavandpeyma",
+              "year": "2013",
+              "unstructured": "M. Damavandpeyma, S. Stuijk, T. Basten, M. Geilen, H. Corporaal, Throughput-constrained DVFs for scenario-aware dataflow graphs, in, 2013 IEEE 19th Real-Time and Embedded Technology and Applications Symposium (RTAS) (IEEE, Piscataway, 2013), pp. 175–184. https://doi.org/10.1109/RTAS.2013.6531090"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtas.2013.6531090",
+                "doi": "10.1109/rtas.2013.6531090",
+                "title": "",
+                "authors": [
+                  "M Damavandpeyma"
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/RTAS.2013.6531090"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "8_CR10",
+            "rawText": "A. Dasdan, R.K. Gupta, Faster maximum and minimum mean cycle algorithms for system-performance analysis. IEEE Trans. Comput. Aided Des. Integr. Circuits Syst. 17(10), 889–899 (1998). https://doi.org/10.1109/43.728912",
+            "doi": "10.1109/43.728912",
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "10",
+              "key": "8_CR10",
+              "doi-asserted-by": "publisher",
+              "first-page": "889",
+              "DOI": "10.1109/43.728912",
+              "volume": "17",
+              "author": "A Dasdan",
+              "year": "1998",
+              "unstructured": "A. Dasdan, R.K. Gupta, Faster maximum and minimum mean cycle algorithms for system-performance analysis. IEEE Trans. Comput. Aided Des. Integr. Circuits Syst. 17(10), 889–899 (1998). https://doi.org/10.1109/43.728912",
+              "journal-title": "IEEE Trans. Comput. Aided Des. Integr. Circuits Syst."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/43.728912",
+                "doi": "10.1109/43.728912",
+                "title": "",
+                "authors": [
+                  "A Dasdan"
+                ],
+                "year": 1998,
+                "venue": "IEEE Trans. Comput. Aided Des. Integr. Circuits Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1109/43.728912"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "8_CR11",
+            "rawText": "V. Dhingra, S. Gaubert, How to solve large scale deterministic games with mean payoff by policy iteration, in Proceedings of the 1st International Conference on Performance Evaluation Methodologies and Tools, Valuetools ’06 (ACM, New York, 2006). https://doi.org/10.1145/1190095.1190110",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR11",
+              "volume-title": "How to solve large scale deterministic games with mean payoff by policy iteration, in Proceedings of the 1st International Conference on Performance Evaluation Methodologies and Tools, Valuetools ’06",
+              "author": "V Dhingra",
+              "year": "2006",
+              "unstructured": "V. Dhingra, S. Gaubert, How to solve large scale deterministic games with mean payoff by policy iteration, in Proceedings of the 1st International Conference on Performance Evaluation Methodologies and Tools, Valuetools ’06 (ACM, New York, 2006). https://doi.org/10.1145/1190095.1190110"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR11",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "V Dhingra"
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "8_CR12",
+            "rawText": "S. Gaubert, Performance evaluation of (max, + ) automata. IEEE Trans. Autom. Control 40(12), 2014–2025 (1995)",
+            "doi": "10.1109/9.478227",
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "12",
+              "key": "8_CR12",
+              "doi-asserted-by": "publisher",
+              "first-page": "2014",
+              "DOI": "10.1109/9.478227",
+              "volume": "40",
+              "author": "S Gaubert",
+              "year": "1995",
+              "unstructured": "S. Gaubert, Performance evaluation of (max, + ) automata. IEEE Trans. Autom. Control 40(12), 2014–2025 (1995)",
+              "journal-title": "IEEE Trans. Autom. Control"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/9.478227",
+                "doi": "10.1109/9.478227",
+                "title": "",
+                "authors": [
+                  "S Gaubert"
+                ],
+                "year": 1995,
+                "venue": "IEEE Trans. Autom. Control",
+                "type": "",
+                "url": "https://doi.org/10.1109/9.478227"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "8_CR13",
+            "rawText": "M. Geilen, If we could go back in time…on the use of ‘unnatural’ time and ordering in dataflow models, in ed. by M. Lohstroh, P. Derler, M. Sirjani. Principles of Modeling: Essays Dedicated to Edward A. Lee on the Occasion of His 60th Birthday (Springer International Publishing, Cham, 2018), pp. 267–286. https://doi.org/10.1007/978-3-319-95246-8_16",
+            "doi": "10.1007/978-3-319-95246-8_16",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR13",
+              "doi-asserted-by": "crossref",
+              "unstructured": "M. Geilen, If we could go back in time…on the use of ‘unnatural’ time and ordering in dataflow models, in ed. by M. Lohstroh, P. Derler, M. Sirjani. Principles of Modeling: Essays Dedicated to Edward A. Lee on the Occasion of His 60th Birthday (Springer International Publishing, Cham, 2018), pp. 267–286. https://doi.org/10.1007/978-3-319-95246-8_16",
+              "DOI": "10.1007/978-3-319-95246-8_16"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-95246-8_16",
+                "doi": "10.1007/978-3-319-95246-8_16",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-319-95246-8_16"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "8_CR14",
+            "rawText": "M. Geilen, T. Basten, Requirements on the execution of Kahn process networks, in ed. by P. Degano. Proceedings of the 12th European Symposium on Programming, ESOP 2003. Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2003, Warsaw, Poland, April 7–11, 2003. Lecture Notes in Computer Science, vol. 2618 (Springer, Berlin, 2003)",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR14",
+              "unstructured": "M. Geilen, T. Basten, Requirements on the execution of Kahn process networks, in ed. by P. Degano. Proceedings of the 12th European Symposium on Programming, ESOP 2003. Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2003, Warsaw, Poland, April 7–11, 2003. Lecture Notes in Computer Science, vol. 2618 (Springer, Berlin, 2003)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR14",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "8_CR15",
+            "rawText": "M. Geilen, S. Stuijk, Worst-case performance analysis of synchronous dataflow scenarios, in Proceedings of the Eighth IEEE/ACM/IFIP International Conference on Hardware/Software Codesign and System Synthesis (ACM, New York, 2010), pp. 125–134",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR15",
+              "first-page": "125",
+              "volume-title": "Worst-case performance analysis of synchronous dataflow scenarios, in Proceedings of the Eighth IEEE/ACM/IFIP International Conference on Hardware/Software Codesign and System Synthesis",
+              "author": "M Geilen",
+              "year": "2010",
+              "unstructured": "M. Geilen, S. Stuijk, Worst-case performance analysis of synchronous dataflow scenarios, in Proceedings of the Eighth IEEE/ACM/IFIP International Conference on Hardware/Software Codesign and System Synthesis (ACM, New York, 2010), pp. 125–134"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR15",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "M Geilen"
+                ],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "8_CR16",
+            "rawText": "M. Geilen, S. Tripakis, M. Wiggers, The earlier the better: A theory of timed actor interfaces, in Proceedings of the 14th International Conference on Hybrid Systems: Computation and Control, HSCC ’11 (ACM, New York, 2011), pp. 23–32",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR16",
+              "first-page": "23",
+              "volume-title": "The earlier the better: A theory of timed actor interfaces, in Proceedings of the 14th International Conference on Hybrid Systems: Computation and Control, HSCC ’11",
+              "author": "M Geilen",
+              "year": "2011",
+              "unstructured": "M. Geilen, S. Tripakis, M. Wiggers, The earlier the better: A theory of timed actor interfaces, in Proceedings of the 14th International Conference on Hybrid Systems: Computation and Control, HSCC ’11 (ACM, New York, 2011), pp. 23–32"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR16",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "M Geilen"
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "8_CR17",
+            "rawText": "M. Geilen, J. Falk, C. Haubelt, T. Basten, B. Theelen, S. Stuijk, Performance analysis of weakly-consistent scenario-aware dataflow graphs. J. Signal Process. Syst. 87(1), 157–175 (2017). https://doi.org/10.1007/s11265-016-1193-7",
+            "doi": "10.1007/s11265-016-1193-7",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "8_CR17",
+              "doi-asserted-by": "publisher",
+              "first-page": "157",
+              "DOI": "10.1007/s11265-016-1193-7",
+              "volume": "87",
+              "author": "M Geilen",
+              "year": "2017",
+              "unstructured": "M. Geilen, J. Falk, C. Haubelt, T. Basten, B. Theelen, S. Stuijk, Performance analysis of weakly-consistent scenario-aware dataflow graphs. J. Signal Process. Syst. 87(1), 157–175 (2017). https://doi.org/10.1007/s11265-016-1193-7",
+              "journal-title": "J. Signal Process. Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11265-016-1193-7",
+                "doi": "10.1007/s11265-016-1193-7",
+                "title": "",
+                "authors": [
+                  "M Geilen"
+                ],
+                "year": 2017,
+                "venue": "J. Signal Process. Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11265-016-1193-7"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "8_CR18",
+            "rawText": "A.H. Ghamarian, M.C.W. Geilen, T. Basten, S. Stuijk, Parametric throughput analysis of synchronous data flow graphs, in 2008 Design, Automation and Test in Europe (IEEE, Piscataway, 2008), pp. 116–121. https://doi.org/10.1109/DATE.2008.4484672",
+            "doi": "10.1109/date.2008.4484672",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR18",
+              "doi-asserted-by": "publisher",
+              "first-page": "116",
+              "DOI": "10.1109/DATE.2008.4484672",
+              "volume-title": "Parametric throughput analysis of synchronous data flow graphs, in 2008 Design, Automation and Test in Europe",
+              "author": "AH Ghamarian",
+              "year": "2008",
+              "unstructured": "A.H. Ghamarian, M.C.W. Geilen, T. Basten, S. Stuijk, Parametric throughput analysis of synchronous data flow graphs, in 2008 Design, Automation and Test in Europe (IEEE, Piscataway, 2008), pp. 116–121. https://doi.org/10.1109/DATE.2008.4484672"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/date.2008.4484672",
+                "doi": "10.1109/date.2008.4484672",
+                "title": "",
+                "authors": [
+                  "AH Ghamarian"
+                ],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/DATE.2008.4484672"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "8_CR19",
+            "rawText": "K. Goossens, A. Azevedo, K. Chandrasekar, M.D. Gomony, S. Goossens, M. Koedam, Y. Li, D. Mirzoyan, A. Molnos, A.B. Nejad, A. Nelson, S. Sinha, Virtual execution platforms for mixed-time-criticality systems: the CompSOC architecture and design flow. SIGBED Rev. 10(3), 23–34 (2013). https://doi.org/10.1145/2544350.2544353",
+            "doi": "10.1145/2544350.2544353",
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "8_CR19",
+              "doi-asserted-by": "publisher",
+              "first-page": "23",
+              "DOI": "10.1145/2544350.2544353",
+              "volume": "10",
+              "author": "K Goossens",
+              "year": "2013",
+              "unstructured": "K. Goossens, A. Azevedo, K. Chandrasekar, M.D. Gomony, S. Goossens, M. Koedam, Y. Li, D. Mirzoyan, A. Molnos, A.B. Nejad, A. Nelson, S. Sinha, Virtual execution platforms for mixed-time-criticality systems: the CompSOC architecture and design flow. SIGBED Rev. 10(3), 23–34 (2013). https://doi.org/10.1145/2544350.2544353",
+              "journal-title": "SIGBED Rev."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2544350.2544353",
+                "doi": "10.1145/2544350.2544353",
+                "title": "",
+                "authors": [
+                  "K Goossens"
+                ],
+                "year": 2013,
+                "venue": "SIGBED Rev.",
+                "type": "",
+                "url": "https://doi.org/10.1145/2544350.2544353"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "8_CR20",
+            "rawText": "R. Gu, J.W. Janneck, M. Raulet, S.S. Bhattacharyya, Exploiting statically schedulable regions in dataflow programs. J. Signal Process. Syst. 63(1), 129–142 (2011). https://doi.org/10.1007/s11265-009-0445-1",
+            "doi": "10.1007/s11265-009-0445-1",
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "8_CR20",
+              "doi-asserted-by": "publisher",
+              "first-page": "129",
+              "DOI": "10.1007/s11265-009-0445-1",
+              "volume": "63",
+              "author": "R Gu",
+              "year": "2011",
+              "unstructured": "R. Gu, J.W. Janneck, M. Raulet, S.S. Bhattacharyya, Exploiting statically schedulable regions in dataflow programs. J. Signal Process. Syst. 63(1), 129–142 (2011). https://doi.org/10.1007/s11265-009-0445-1",
+              "journal-title": "J. Signal Process. Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11265-009-0445-1",
+                "doi": "10.1007/s11265-009-0445-1",
+                "title": "",
+                "authors": [
+                  "R Gu"
+                ],
+                "year": 2011,
+                "venue": "J. Signal Process. Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11265-009-0445-1"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "8_CR21",
+            "rawText": "B. Heidergott, G.J. Olsder, J. van der Woude, Max Plus at Work (Princeton University Press, Princeton, 2006)",
+            "doi": "10.1515/9781400865239",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR21",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1515/9781400865239",
+              "volume-title": "Max Plus at Work",
+              "author": "B Heidergott",
+              "year": "2006",
+              "unstructured": "B. Heidergott, G.J. Olsder, J. van der Woude, Max Plus at Work (Princeton University Press, Princeton, 2006)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1515/9781400865239",
+                "doi": "10.1515/9781400865239",
+                "title": "",
+                "authors": [
+                  "B Heidergott"
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1515/9781400865239"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "8_CR22",
+            "rawText": "C.A.R. Hoare, Communicating sequential processes. Commun. ACM 21(8), 666–677 (1978) https://doi.org/10.1145/359576.359585",
+            "doi": "10.1145/359576.359585",
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "8",
+              "key": "8_CR22",
+              "doi-asserted-by": "publisher",
+              "first-page": "666",
+              "DOI": "10.1145/359576.359585",
+              "volume": "21",
+              "author": "CAR Hoare",
+              "year": "1978",
+              "unstructured": "C.A.R. Hoare, Communicating sequential processes. Commun. ACM 21(8), 666–677 (1978) https://doi.org/10.1145/359576.359585",
+              "journal-title": "Commun. ACM"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/359576.359585",
+                "doi": "10.1145/359576.359585",
+                "title": "",
+                "authors": [
+                  "CAR Hoare"
+                ],
+                "year": 1978,
+                "venue": "Commun. ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/359576.359585"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "8_CR23",
+            "rawText": "A. Jantsch, Modeling Embedded Systems and SoC’s: Concurrency and Time in Models of Computation (Morgan Kaufmann Publishers, San Francisco, 2003)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR23",
+              "volume-title": "Modeling Embedded Systems and SoC’s: Concurrency and Time in Models of Computation",
+              "author": "A Jantsch",
+              "year": "2003",
+              "unstructured": "A. Jantsch, Modeling Embedded Systems and SoC’s: Concurrency and Time in Models of Computation (Morgan Kaufmann Publishers, San Francisco, 2003)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR23",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "A Jantsch"
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "8_CR24",
+            "rawText": "G. Kahn, The semantics of a simple language for parallel programming, in ed. by J. Rosenfeld. Information Processing 74: Proceedings of the IFIP Congress, vol. 74, Stockholm, Sweden, August 1974 (North-Holland, Amsterdam, 1974), pp. 471–475",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR24",
+              "unstructured": "G. Kahn, The semantics of a simple language for parallel programming, in ed. by J. Rosenfeld. Information Processing 74: Proceedings of the IFIP Congress, vol. 74, Stockholm, Sweden, August 1974 (North-Holland, Amsterdam, 1974), pp. 471–475"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR24",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "8_CR25",
+            "rawText": "E. Lee, D. Messerschmitt, Static scheduling of synchronous data flow programs for digital signal processing. IEEE Trans. Comput. C-36(1), 24–35 (1987). https://doi.org/10.1109/TC.1987.5009446",
+            "doi": "10.1109/tc.1987.5009446",
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "8_CR25",
+              "doi-asserted-by": "publisher",
+              "first-page": "24",
+              "DOI": "10.1109/TC.1987.5009446",
+              "volume": "C-36",
+              "author": "E Lee",
+              "year": "1987",
+              "unstructured": "E. Lee, D. Messerschmitt, Static scheduling of synchronous data flow programs for digital signal processing. IEEE Trans. Comput. C-36(1), 24–35 (1987). https://doi.org/10.1109/TC.1987.5009446",
+              "journal-title": "IEEE Trans. Comput."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tc.1987.5009446",
+                "doi": "10.1109/tc.1987.5009446",
+                "title": "",
+                "authors": [
+                  "E Lee"
+                ],
+                "year": 1987,
+                "venue": "IEEE Trans. Comput.",
+                "type": "",
+                "url": "https://doi.org/10.1109/TC.1987.5009446"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "8_CR26",
+            "rawText": "T. Lundqvist, P. Stenström, Timing anomalies in dynamically scheduled microprocessors, in Proceedings of the 20th IEEE Real-Time Systems Symposium, RTSS ’99 (IEEE Computer Society, Washington, 1999), pp. 12. http://dl.acm.org/citation.cfm?id=827271.829103",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR26",
+              "unstructured": "T. Lundqvist, P. Stenström, Timing anomalies in dynamically scheduled microprocessors, in Proceedings of the 20th IEEE Real-Time Systems Symposium, RTSS ’99 (IEEE Computer Society, Washington, 1999), pp. 12. http://dl.acm.org/citation.cfm?id=827271.829103"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR26",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "8_CR27",
+            "rawText": "A. Moonen, M. Bekooij, R. van den Berg, J.L. van Meerbergen, Practical and accurate throughput analysis with the cyclo static dataflow model, in 15th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2007) (IEEE, Piscataway, 2007), pp. 238–245. http://dx.doi.org/10.1109/MASCOTS.2007.52",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR27",
+              "first-page": "238",
+              "volume-title": "Practical and accurate throughput analysis with the cyclo static dataflow model, in 15th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2007)",
+              "author": "A Moonen",
+              "year": "2007",
+              "unstructured": "A. Moonen, M. Bekooij, R. van den Berg, J.L. van Meerbergen, Practical and accurate throughput analysis with the cyclo static dataflow model, in 15th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS 2007) (IEEE, Piscataway, 2007), pp. 238–245. http://dx.doi.org/10.1109/MASCOTS.2007.52"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR27",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "A Moonen"
+                ],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "8_CR28",
+            "rawText": "O. Moreira, Temporal analysis and scheduling of hard real-time radios running on a multi-processor. Ph.D. thesis, Eindhoven University of Technology, 2012",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR28",
+              "unstructured": "O. Moreira, Temporal analysis and scheduling of hard real-time radios running on a multi-processor. Ph.D. thesis, Eindhoven University of Technology, 2012"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR28",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "8_CR29",
+            "rawText": "O. Moreira, H. Corporaal, Scheduling Real-Time Streaming Applications onto an Embedded Multiprocessor (Springer, Berlin, 2014)",
+            "doi": "10.1007/978-3-319-01246-9",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR29",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-319-01246-9",
+              "volume-title": "Scheduling Real-Time Streaming Applications onto an Embedded Multiprocessor",
+              "author": "O Moreira",
+              "year": "2014",
+              "unstructured": "O. Moreira, H. Corporaal, Scheduling Real-Time Streaming Applications onto an Embedded Multiprocessor (Springer, Berlin, 2014)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-01246-9",
+                "doi": "10.1007/978-3-319-01246-9",
+                "title": "",
+                "authors": [
+                  "O Moreira"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-319-01246-9"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "8_CR30",
+            "rawText": "O. Moreira, T. Basten, M. Geilen, S. Stuijk, Buffer sizing for rate-optimal single-rate data-flow scheduling revisited. IEEE Trans. Comput. 59(2), 188–201 (2010). https://doi.org/10.1109/TC.2009.155 . Cited By 24",
+            "doi": "10.1109/tc.2009.155",
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "8_CR30",
+              "doi-asserted-by": "publisher",
+              "first-page": "188",
+              "DOI": "10.1109/TC.2009.155",
+              "volume": "59",
+              "author": "O Moreira",
+              "year": "2010",
+              "unstructured": "O. Moreira, T. Basten, M. Geilen, S. Stuijk, Buffer sizing for rate-optimal single-rate data-flow scheduling revisited. IEEE Trans. Comput. 59(2), 188–201 (2010). https://doi.org/10.1109/TC.2009.155 . Cited By 24",
+              "journal-title": "IEEE Trans. Comput."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tc.2009.155",
+                "doi": "10.1109/tc.2009.155",
+                "title": "",
+                "authors": [
+                  "O Moreira"
+                ],
+                "year": 2010,
+                "venue": "IEEE Trans. Comput.",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.2009.155"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "8_CR31",
+            "rawText": "S. Neuendorffer, E. Lee, Hierarchical reconfiguration of dataflow models, in Proceedings. Second ACM and IEEE International Conference on Formal Methods and Models for Co-Design, 2004. MEMOCODE ’04 (IEEE, Piscataway, 2004), pp. 179–188. https://doi.org/10.1109/MEMCOD.2004.1459852",
+            "doi": "10.1109/memcod.2004.1459852",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR31",
+              "doi-asserted-by": "publisher",
+              "unstructured": "S. Neuendorffer, E. Lee, Hierarchical reconfiguration of dataflow models, in Proceedings. Second ACM and IEEE International Conference on Formal Methods and Models for Co-Design, 2004. MEMOCODE ’04 (IEEE, Piscataway, 2004), pp. 179–188. https://doi.org/10.1109/MEMCOD.2004.1459852",
+              "DOI": "10.1109/MEMCOD.2004.1459852"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/memcod.2004.1459852",
+                "doi": "10.1109/memcod.2004.1459852",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/memcod.2004.1459852"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "8_CR32",
+            "rawText": "T. Parks, Bounded Scheduling of Process Networks. Ph.D. thesis, University of California, EECS Dept., Berkeley, CA, 1995",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR32",
+              "unstructured": "T. Parks, Bounded Scheduling of Process Networks. Ph.D. thesis, University of California, EECS Dept., Berkeley, CA, 1995"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR32",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "8_CR33",
+            "rawText": "F. Siyoum, M. Geilen, J. Eker, C. von Platen, H. Corporaal, Automated extraction of scenario sequences from disciplined dataflow networks, in 2013 Eleventh IEEE/ACM International Conference on Formal Methods and Models for Codesign (MEMOCODE) (IEEE, Piscataway, 2013), pp. 47–56",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR33",
+              "first-page": "47",
+              "volume-title": "Automated extraction of scenario sequences from disciplined dataflow networks, in 2013 Eleventh IEEE/ACM International Conference on Formal Methods and Models for Codesign (MEMOCODE)",
+              "author": "F Siyoum",
+              "year": "2013",
+              "unstructured": "F. Siyoum, M. Geilen, J. Eker, C. von Platen, H. Corporaal, Automated extraction of scenario sequences from disciplined dataflow networks, in 2013 Eleventh IEEE/ACM International Conference on Formal Methods and Models for Codesign (MEMOCODE) (IEEE, Piscataway, 2013), pp. 47–56"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR33",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "F Siyoum"
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "8_CR34",
+            "rawText": "M. Skelin, Worst-case performance analysis of scenario-aware real-time streaming applications. Ph.D. thesis, Norwegian University of Science and Technology (NTNU), 2016",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR34",
+              "unstructured": "M. Skelin, Worst-case performance analysis of scenario-aware real-time streaming applications. Ph.D. thesis, Norwegian University of Science and Technology (NTNU), 2016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR34",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "8_CR35",
+            "rawText": "M. Skelin, M. Geilen, Compositionality in scenario-aware dataflow: a rendezvous perspective, in Proceedings of the 19th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems (Association for Computing Machinery, New York, 2018), pp. 55–64",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR35",
+              "first-page": "55",
+              "volume-title": "Compositionality in scenario-aware dataflow: a rendezvous perspective, in Proceedings of the 19th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems",
+              "author": "M Skelin",
+              "year": "2018",
+              "unstructured": "M. Skelin, M. Geilen, Compositionality in scenario-aware dataflow: a rendezvous perspective, in Proceedings of the 19th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems (Association for Computing Machinery, New York, 2018), pp. 55–64"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR35",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "M Skelin"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "8_CR36",
+            "rawText": "M. Skelin, M. Geilen, F. Catthoor, S. Hendseth, Parameterized dataflow scenarios. IEEE Trans. Comput. Aided Des. Integr. Circuits Syst. 36(4), 669–682 (2017). https://doi.org/10.1109/TCAD.2016.2597223",
+            "doi": "10.1109/tcad.2016.2597223",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "8_CR36",
+              "doi-asserted-by": "publisher",
+              "first-page": "669",
+              "DOI": "10.1109/TCAD.2016.2597223",
+              "volume": "36",
+              "author": "M Skelin",
+              "year": "2017",
+              "unstructured": "M. Skelin, M. Geilen, F. Catthoor, S. Hendseth, Parameterized dataflow scenarios. IEEE Trans. Comput. Aided Des. Integr. Circuits Syst. 36(4), 669–682 (2017). https://doi.org/10.1109/TCAD.2016.2597223",
+              "journal-title": "IEEE Trans. Comput. Aided Des. Integr. Circuits Syst."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tcad.2016.2597223",
+                "doi": "10.1109/tcad.2016.2597223",
+                "title": "",
+                "authors": [
+                  "M Skelin"
+                ],
+                "year": 2017,
+                "venue": "IEEE Trans. Comput. Aided Des. Integr. Circuits Syst.",
+                "type": "",
+                "url": "https://pure.tue.nl/ws/files/54179918/bare_jrnl_red_final_full.pdf"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "8_CR37",
+            "rawText": "M. Skelin, M. Geilen, F. Catthoor, S. Hendseth, Worst-case performance analysis of sdf-based parameterized dataflow. Microprocess. Microsyst. 52, 439–460 (2017). https://doi.org/10.1016/j.micpro.2016.12.004",
+            "doi": "10.1016/j.micpro.2016.12.004",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR37",
+              "doi-asserted-by": "publisher",
+              "first-page": "439",
+              "DOI": "10.1016/j.micpro.2016.12.004",
+              "volume": "52",
+              "author": "M Skelin",
+              "year": "2017",
+              "unstructured": "M. Skelin, M. Geilen, F. Catthoor, S. Hendseth, Worst-case performance analysis of sdf-based parameterized dataflow. Microprocess. Microsyst. 52, 439–460 (2017). https://doi.org/10.1016/j.micpro.2016.12.004",
+              "journal-title": "Microprocess. Microsyst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.micpro.2016.12.004",
+                "doi": "10.1016/j.micpro.2016.12.004",
+                "title": "",
+                "authors": [
+                  "M Skelin"
+                ],
+                "year": 2017,
+                "venue": "Microprocess. Microsyst.",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.micpro.2016.12.004"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "8_CR38",
+            "rawText": "S. Sriram, S.S. Bhattacharyya, Embedded Multiprocessors: Scheduling and Synchronization, 2nd edn. (CRC Press, Boca Raton, 2009)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR38",
+              "volume-title": "Embedded Multiprocessors: Scheduling and Synchronization",
+              "author": "S Sriram",
+              "year": "2009",
+              "unstructured": "S. Sriram, S.S. Bhattacharyya, Embedded Multiprocessors: Scheduling and Synchronization, 2nd edn. (CRC Press, Boca Raton, 2009)",
+              "edition": "2"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR38",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "S Sriram"
+                ],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "8_CR39",
+            "rawText": "S. Stuijk, M. Geilen, T. Basten, SDF3: SDF for free, in Proceedings of the 6th International Conference on Application of Concurrency to System Design, ACSD 2006 (IEEE Computer Society Press, Los Alamitos, 2006), pp. 276–278. http://www.es.ele.tue.nl/sdf3",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR39",
+              "first-page": "276",
+              "volume-title": "SDF3: SDF for free, in Proceedings of the 6th International Conference on Application of Concurrency to System Design, ACSD 2006",
+              "author": "S Stuijk",
+              "year": "2006",
+              "unstructured": "S. Stuijk, M. Geilen, T. Basten, SDF3: SDF for free, in Proceedings of the 6th International Conference on Application of Concurrency to System Design, ACSD 2006 (IEEE Computer Society Press, Los Alamitos, 2006), pp. 276–278. http://www.es.ele.tue.nl/sdf3"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR39",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "S Stuijk"
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "8_CR40",
+            "rawText": "S. Stuijk, M. Geilen, T. Basten, Throughput-buffering trade-off exploration for cyclo-static and synchronous dataflow graphs. IEEE Trans. Comput. 57(10), 1331–1345 (2008). http://dx.doi.org/10.1109/TC.2008.58",
+            "doi": "10.1109/tc.2008.58",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "10",
+              "key": "8_CR40",
+              "doi-asserted-by": "publisher",
+              "first-page": "1331",
+              "DOI": "10.1109/TC.2008.58",
+              "volume": "57",
+              "author": "S Stuijk",
+              "year": "2008",
+              "unstructured": "S. Stuijk, M. Geilen, T. Basten, Throughput-buffering trade-off exploration for cyclo-static and synchronous dataflow graphs. IEEE Trans. Comput. 57(10), 1331–1345 (2008). http://dx.doi.org/10.1109/TC.2008.58",
+              "journal-title": "IEEE Trans. Comput."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tc.2008.58",
+                "doi": "10.1109/tc.2008.58",
+                "title": "",
+                "authors": [
+                  "S Stuijk"
+                ],
+                "year": 2008,
+                "venue": "IEEE Trans. Comput.",
+                "type": "",
+                "url": "https://doi.org/10.1109/TC.2008.58"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "8_CR41",
+            "rawText": "S. Stuijk, M. Geilen, T. Basten, A predictable multiprocessor design flow for streaming applications with dynamic behaviour, in 2010 13th Euromicro Conference on Digital System Design: Architectures, Methods and Tools (IEEE, Piscataway, 2010), pp. 548–555. https://doi.org/10.1109/DSD.2010.31",
+            "doi": "10.1109/dsd.2010.31",
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR41",
+              "doi-asserted-by": "publisher",
+              "first-page": "548",
+              "DOI": "10.1109/DSD.2010.31",
+              "volume-title": "A predictable multiprocessor design flow for streaming applications with dynamic behaviour, in 2010 13th Euromicro Conference on Digital System Design: Architectures, Methods and Tools",
+              "author": "S Stuijk",
+              "year": "2010",
+              "unstructured": "S. Stuijk, M. Geilen, T. Basten, A predictable multiprocessor design flow for streaming applications with dynamic behaviour, in 2010 13th Euromicro Conference on Digital System Design: Architectures, Methods and Tools (IEEE, Piscataway, 2010), pp. 548–555. https://doi.org/10.1109/DSD.2010.31"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/dsd.2010.31",
+                "doi": "10.1109/dsd.2010.31",
+                "title": "",
+                "authors": [
+                  "S Stuijk"
+                ],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/dsd.2010.31"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "8_CR42",
+            "rawText": "S. Stuijk, M. Geilen, B. Theelen, T. Basten, Scenario-aware dataflow: modeling, analysis and implementation of dynamic applications, in 2011 International Conference on Embedded Computer Systems (SAMOS) (IEEE, Piscataway, 2011), pp. 404–411. https://doi.org/10.1109/SAMOS.2011.6045491",
+            "doi": "10.1109/samos.2011.6045491",
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR42",
+              "doi-asserted-by": "publisher",
+              "first-page": "404",
+              "DOI": "10.1109/SAMOS.2011.6045491",
+              "volume-title": "Scenario-aware dataflow: modeling, analysis and implementation of dynamic applications, in 2011 International Conference on Embedded Computer Systems (SAMOS)",
+              "author": "S Stuijk",
+              "year": "2011",
+              "unstructured": "S. Stuijk, M. Geilen, B. Theelen, T. Basten, Scenario-aware dataflow: modeling, analysis and implementation of dynamic applications, in 2011 International Conference on Embedded Computer Systems (SAMOS) (IEEE, Piscataway, 2011), pp. 404–411. https://doi.org/10.1109/SAMOS.2011.6045491"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/samos.2011.6045491",
+                "doi": "10.1109/samos.2011.6045491",
+                "title": "",
+                "authors": [
+                  "S Stuijk"
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/SAMOS.2011.6045491"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "8_CR43",
+            "rawText": "B. Theelen, M. Geilen, T. Basten, J. Voeten, S. Gheorghita, S. Stuijk, A scenario-aware data flow model for combined long-run average and worst-case performance analysis, In: Proceedings of the Fourth ACM and IEEE International Conference on Formal Methods and Models for Co-Design, 2006. MEMOCODE ’06 (IEEE, Piscataway, 2006), pp. 185–194. https://doi.org/10.1109/MEMCOD.2006.1695924",
+            "doi": "10.1109/memcod.2006.1695924",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR43",
+              "doi-asserted-by": "publisher",
+              "unstructured": "B. Theelen, M. Geilen, T. Basten, J. Voeten, S. Gheorghita, S. Stuijk, A scenario-aware data flow model for combined long-run average and worst-case performance analysis, In: Proceedings of the Fourth ACM and IEEE International Conference on Formal Methods and Models for Co-Design, 2006. MEMOCODE ’06 (IEEE, Piscataway, 2006), pp. 185–194. https://doi.org/10.1109/MEMCOD.2006.1695924",
+              "DOI": "10.1109/MEMCOD.2006.1695924"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/memcod.2006.1695924",
+                "doi": "10.1109/memcod.2006.1695924",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/memcod.2006.1695924"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "8_CR44",
+            "rawText": "T. van den Boom, B. De Schutter, Modelling and control of discrete event systems using switching max-plus-linear systems. Control. Eng. Pract. 14(10), 1199–1211 (2006). https://doi.org/10.1016/j.conengprac.2006.02.006",
+            "doi": "10.1016/j.conengprac.2006.02.006",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "10",
+              "key": "8_CR44",
+              "doi-asserted-by": "publisher",
+              "first-page": "1199",
+              "DOI": "10.1016/j.conengprac.2006.02.006",
+              "volume": "14",
+              "author": "T Boom van den",
+              "year": "2006",
+              "unstructured": "T. van den Boom, B. De Schutter, Modelling and control of discrete event systems using switching max-plus-linear systems. Control. Eng. Pract. 14(10), 1199–1211 (2006). https://doi.org/10.1016/j.conengprac.2006.02.006",
+              "journal-title": "Control. Eng. Pract."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.conengprac.2006.02.006",
+                "doi": "10.1016/j.conengprac.2006.02.006",
+                "title": "",
+                "authors": [
+                  "T Boom van den"
+                ],
+                "year": 2006,
+                "venue": "Control. Eng. Pract.",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.conengprac.2006.02.006"
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "8_CR45",
+            "rawText": "B. van der Sanden, Performance analysis and optimization of supervisory controllers. Ph.D. thesis, Eindhoven University of Technology, 2018",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR45",
+              "unstructured": "B. van der Sanden, Performance analysis and optimization of supervisory controllers. Ph.D. thesis, Eindhoven University of Technology, 2018"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR45",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "8_CR46",
+            "rawText": "B. van der Sanden, J. Bastos, J. Voeten, M. Geilen, M.A. Reniers, T. Basten, J. Jacobs, R.R.H. Schiffelers, Compositional specification of functionality and timing of manufacturing systems, in 2016 Forum on Specification and Design Languages, FDL 2016, (IEEE, Piscataway, 2016), pp. 1–8. https://doi.org/10.1109/FDL.2016.7880372",
+            "doi": "10.1109/fdl.2016.7880372",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR46",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "DOI": "10.1109/FDL.2016.7880372",
+              "volume-title": "Compositional specification of functionality and timing of manufacturing systems, in 2016 Forum on Specification and Design Languages, FDL 2016,",
+              "author": "B Sanden van der",
+              "year": "2016",
+              "unstructured": "B. van der Sanden, J. Bastos, J. Voeten, M. Geilen, M.A. Reniers, T. Basten, J. Jacobs, R.R.H. Schiffelers, Compositional specification of functionality and timing of manufacturing systems, in 2016 Forum on Specification and Design Languages, FDL 2016, (IEEE, Piscataway, 2016), pp. 1–8. https://doi.org/10.1109/FDL.2016.7880372"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/fdl.2016.7880372",
+                "doi": "10.1109/fdl.2016.7880372",
+                "title": "",
+                "authors": [
+                  "B Sanden van der"
+                ],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/fdl.2016.7880372"
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "8_CR47",
+            "rawText": "R. van Kampenhout, S. Stuijk, K. Goossens, A scenario-aware dataflow programming model, in 2015 Euromicro Conference on Digital System Design (DSD) (IEEE, Piscataway, 2015), pp. 25–32. https://doi.org/10.1109/DSD.2015.28",
+            "doi": "10.1109/dsd.2015.28",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR47",
+              "doi-asserted-by": "publisher",
+              "first-page": "25",
+              "DOI": "10.1109/DSD.2015.28",
+              "volume-title": "A scenario-aware dataflow programming model, in 2015 Euromicro Conference on Digital System Design (DSD)",
+              "author": "R Kampenhout van",
+              "year": "2015",
+              "unstructured": "R. van Kampenhout, S. Stuijk, K. Goossens, A scenario-aware dataflow programming model, in 2015 Euromicro Conference on Digital System Design (DSD) (IEEE, Piscataway, 2015), pp. 25–32. https://doi.org/10.1109/DSD.2015.28"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/dsd.2015.28",
+                "doi": "10.1109/dsd.2015.28",
+                "title": "",
+                "authors": [
+                  "R Kampenhout van"
+                ],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/dsd.2015.28"
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "8_CR48",
+            "rawText": "R. van Kampenhout, S. Stuijk, K. Goossens, Programming and analysing scenario-aware dataflow on a multi-processor platform, in Proceedings of the Design, Automation and Test in Europe Conference and Exhibition (DATE) (IEEE, Piscataway, 2017)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR48",
+              "volume-title": "Programming and analysing scenario-aware dataflow on a multi-processor platform, in Proceedings of the Design, Automation and Test in Europe Conference and Exhibition (DATE)",
+              "author": "R Kampenhout van",
+              "year": "2017",
+              "unstructured": "R. van Kampenhout, S. Stuijk, K. Goossens, Programming and analysing scenario-aware dataflow on a multi-processor platform, in Proceedings of the Design, Automation and Test in Europe Conference and Exhibition (DATE) (IEEE, Piscataway, 2017)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8_CR48",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "R Kampenhout van"
+                ],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "8_CR49",
+            "rawText": "Y. Yang, M. Geilen, T. Basten, S. Stuijk, H. Corporaal, Playing games with scenario- and resource-aware SDF graphs through policy iteration, in 2012 Design, Automation Test in Europe Conference Exhibition (DATE) (2012), pp. 194–199. https://doi.org/10.1109/DATE.2012.6176462",
+            "doi": "10.1109/date.2012.6176462",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8_CR49",
+              "doi-asserted-by": "publisher",
+              "unstructured": "Y. Yang, M. Geilen, T. Basten, S. Stuijk, H. Corporaal, Playing games with scenario- and resource-aware SDF graphs through policy iteration, in 2012 Design, Automation Test in Europe Conference Exhibition (DATE) (2012), pp. 194–199. https://doi.org/10.1109/DATE.2012.6176462",
+              "DOI": "10.1109/DATE.2012.6176462"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/date.2012.6176462",
+                "doi": "10.1109/date.2012.6176462",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/date.2012.6176462"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/978-3-030-20343-6_8",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 10,
+          "extractedReferenceCount": 49,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/978-3-030-20343-6_8",
+          "crossrefReferenceCount": 49
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1145/3233183@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1145/3233183",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1007/978-1-4613-1389-2@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1007/978-1-4613-1389-2",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1109/rtas.2013.6531090@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1109/rtas.2013.6531090",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1109/43.728912@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1109/43.728912",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1109/9.478227@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1109/9.478227",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1109/date.2008.4484672@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1109/date.2008.4484672",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1109/tc.1987.5009446@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1109/tc.1987.5009446",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1109/tcad.2016.2597223@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1109/tcad.2016.2597223",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1109/tc.2008.58@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1109/tc.2008.58",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-030-20343-6_8->doi:10.1109/samos.2011.6045491@papers-mixed-event-time-triggered-Geilen2019.pdf",
+      "source": "doi:10.1007/978-3-030-20343-6_8",
+      "target": "doi:10.1109/samos.2011.6045491",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Geilen2019",
+      "paperId": "doi:10.1007/978-3-030-20343-6_8",
+      "metadata": {
+        "fileName": "Geilen2019.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Geilen2019.pdf"
+      }
+    }
+  ]
+}

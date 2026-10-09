@@ -1,0 +1,988 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.711287+00:00",
+  "papers": [
+    {
+      "key": "Durr2019",
+      "paper": {
+        "id": "doi:10.1145/3358181",
+        "citationKey": "Durr2019",
+        "title": "End-to-End Timing Analysis of Sporadic Cause-Effect Chains in Distributed Systems",
+        "authors": [
+          "Marco D\\\"urr",
+          "Georg Von Der Br\\\"uggen",
+          "Kuan-Hsun Chen",
+          "Jian-Jia Chen"
+        ],
+        "year": 2019,
+        "venue": "ACM Transactions on Embedded Computing Systems",
+        "type": "article",
+        "doi": "10.1145/3358181",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/3358181",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models",
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "D{\\\"u}rr, Marco and Br{\\\"u}ggen, Georg Von Der and Chen, Kuan-Hsun and Chen, Jian-Jia",
+          "title": "{End-to-End Timing Analysis of Sporadic Cause-Effect Chains in Distributed Systems}",
+          "year": "2019",
+          "journal": "ACM Transactions on Embedded Computing Systems",
+          "publisher": "Association for Computing Machinery (ACM)",
+          "volume": "18",
+          "number": "5s",
+          "pages": "1--24",
+          "doi": "10.1145/3358181",
+          "url": "https://doi.org/10.1145/3358181",
+          "articleno": "58"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.062163+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_2_1_1_1",
+            "rawText": "AUTOSAR. 2017 . Specification of Timing Extensions , Release 4 . 3 . 1 . (Aug. 2017). AUTOSAR. 2017. Specification of Timing Extensions, Release 4.3.1. (Aug. 2017).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "e_1_2_1_1_1",
+              "first-page": "1",
+              "article-title": "Specification of Timing Extensions",
+              "volume": "4",
+              "author": "AUTOSAR.",
+              "year": "2017",
+              "unstructured": "AUTOSAR. 2017 . Specification of Timing Extensions , Release 4 . 3 . 1 . (Aug. 2017). AUTOSAR. 2017. Specification of Timing Extensions, Release 4.3.1. (Aug. 2017).",
+              "journal-title": "Release"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_1_1",
+                "doi": "",
+                "title": "Specification of Timing Extensions",
+                "authors": [
+                  "AUTOSAR."
+                ],
+                "year": 2017,
+                "venue": "Release",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_2_1_2_1",
+            "rawText": "M. Becker , D. Dasari , S. Mubeen , M. Behnam , and T. Nolte . 2016. Mechaniser-a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies . In 7th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS). M. Becker, D. Dasari, S. Mubeen, M. Behnam, and T. Nolte. 2016. Mechaniser-a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies. In 7th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_2_1",
+              "volume-title": "7th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS).",
+              "author": "Becker M.",
+              "unstructured": "M. Becker , D. Dasari , S. Mubeen , M. Behnam , and T. Nolte . 2016. Mechaniser-a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies . In 7th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS). M. Becker, D. Dasari, S. Mubeen, M. Behnam, and T. Nolte. 2016. Mechaniser-a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies. In 7th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Becker M."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_2_1_3_1",
+            "rawText": "M. Becker , D. Dasari , S. Mubeen , M. Behnam , and T. Nolte . 2016. Synthesizing job-level dependencies for automotive multi-rate effect chains . In 22nd IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA 2016 , Daegu, South Korea, August 17--19 , 2016 . 159--169. DOI:https://doi.org/10.1109/RTCSA.2016.41 M. Becker, D. Dasari, S. Mubeen, M. Behnam, and T. Nolte. 2016. Synthesizing job-level dependencies for automotive multi-rate effect chains. In 22nd IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA 2016, Daegu, South Korea, August 17--19, 2016. 159--169. DOI:https://doi.org/10.1109/RTCSA.2016.41",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_3_1",
+              "volume-title": "22nd IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA 2016",
+              "author": "Becker M.",
+              "year": "2016",
+              "unstructured": "M. Becker , D. Dasari , S. Mubeen , M. Behnam , and T. Nolte . 2016. Synthesizing job-level dependencies for automotive multi-rate effect chains . In 22nd IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA 2016 , Daegu, South Korea, August 17--19 , 2016 . 159--169. DOI:https://doi.org/10.1109/RTCSA.2016.41 M. Becker, D. Dasari, S. Mubeen, M. Behnam, and T. Nolte. 2016. Synthesizing job-level dependencies for automotive multi-rate effect chains. In 22nd IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA 2016, Daegu, South Korea, August 17--19, 2016. 159--169. DOI:https://doi.org/10.1109/RTCSA.2016.41"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_3_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Becker M."
+                ],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_2_1_4_1",
+            "rawText": "M. Becker , S. Mubeen , D. Dasari , M. Behnam , and T. Nolte . 2017. A generic framework facilitating early analysis of data propagation delays in multi-rate systems (Invited paper) . In IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA. 1--11 . DOI:https://doi.org/10.1109/RTCSA. 2017 .8046323 M. Becker, S. Mubeen, D. Dasari, M. Behnam, and T. Nolte. 2017. A generic framework facilitating early analysis of data propagation delays in multi-rate systems (Invited paper). In IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA. 1--11. DOI:https://doi.org/10.1109/RTCSA.2017.8046323",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_4_1",
+              "volume-title": "IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA. 1--11",
+              "author": "Becker M.",
+              "year": "2017",
+              "unstructured": "M. Becker , S. Mubeen , D. Dasari , M. Behnam , and T. Nolte . 2017. A generic framework facilitating early analysis of data propagation delays in multi-rate systems (Invited paper) . In IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA. 1--11 . DOI:https://doi.org/10.1109/RTCSA. 2017 .8046323 M. Becker, S. Mubeen, D. Dasari, M. Behnam, and T. Nolte. 2017. A generic framework facilitating early analysis of data propagation delays in multi-rate systems (Invited paper). In IEEE International Conference on Embedded and Real-Time Computing Systems and Applications, RTCSA. 1--11. DOI:https://doi.org/10.1109/RTCSA.2017.8046323"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_4_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Becker M."
+                ],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_2_1_5_1",
+            "rawText": "A. Benveniste , P. Caspi , P. L. Guernic , H. Marchand , J.-P. Talpin , and S. Tripaki . 2002. A protocol for loosely time-triggered architectures. In Embedded Software , Second International Conference, EMSOFT. 252--265 . DOI:https://doi.org/10.1007/3-540-45828-X_19 A. Benveniste, P. Caspi, P. L. Guernic, H. Marchand, J.-P. Talpin, and S. Tripaki. 2002. A protocol for loosely time-triggered architectures. In Embedded Software, Second International Conference, EMSOFT. 252--265. DOI:https://doi.org/10.1007/3-540-45828-X_19",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_5_1",
+              "volume-title": "Second International Conference, EMSOFT. 252--265",
+              "author": "Benveniste A.",
+              "unstructured": "A. Benveniste , P. Caspi , P. L. Guernic , H. Marchand , J.-P. Talpin , and S. Tripaki . 2002. A protocol for loosely time-triggered architectures. In Embedded Software , Second International Conference, EMSOFT. 252--265 . DOI:https://doi.org/10.1007/3-540-45828-X_19 A. Benveniste, P. Caspi, P. L. Guernic, H. Marchand, J.-P. Talpin, and S. Tripaki. 2002. A protocol for loosely time-triggered architectures. In Embedded Software, Second International Conference, EMSOFT. 252--265. DOI:https://doi.org/10.1007/3-540-45828-X_19"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_5_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Benveniste A."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_2_1_6_1",
+            "rawText": "https://doi.org/10.1007/s11241-005-0507-9",
+            "doi": "10.1007/s11241-005-0507-9",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-005-0507-9"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-005-0507-9",
+                "doi": "10.1007/s11241-005-0507-9",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-005-0507-9"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_2_1_7_1",
+            "rawText": "Bosch. 1991. Controller Area Network Specification 2.0.  Bosch. 1991. Controller Area Network Specification 2.0.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_7_1",
+              "unstructured": "Bosch. 1991. Controller Area Network Specification 2.0.  Bosch. 1991. Controller Area Network Specification 2.0."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_7_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_2_1_8_1",
+            "rawText": "A. Burns . 1994. Preemptive priority-based scheduling: An appropriate engineering approach . In Advances in Real-Time Systems , chapter 10. Prentice Hall , 225--248. A. Burns. 1994. Preemptive priority-based scheduling: An appropriate engineering approach. In Advances in Real-Time Systems, chapter 10. Prentice Hall, 225--248.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_8_1",
+              "volume-title": "Advances in Real-Time Systems",
+              "author": "Burns A.",
+              "unstructured": "A. Burns . 1994. Preemptive priority-based scheduling: An appropriate engineering approach . In Advances in Real-Time Systems , chapter 10. Prentice Hall , 225--248. A. Burns. 1994. Preemptive priority-based scheduling: An appropriate engineering approach. In Advances in Real-Time Systems, chapter 10. Prentice Hall, 225--248."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_8_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Burns A."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_2_1_9_1",
+            "rawText": "A. Davare , Q. Zhu , M. D. Natale , C. Pinello , S. Kanajan , and A. L. Sangiovanni-Vincentelli . 2007 . Period optimization for hard real-time distributed automotive systems . In Design Automation Conference, DAC. 278--283. DOI:https://doi.org/10. 1145/1278480 . 1278553 A. Davare, Q. Zhu, M. D. Natale, C. Pinello, S. Kanajan, and A. L. Sangiovanni-Vincentelli. 2007. Period optimization for hard real-time distributed automotive systems. In Design Automation Conference, DAC. 278--283. DOI:https://doi.org/10.1145/1278480.1278553",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_9_1",
+              "first-page": "1278553",
+              "article-title": "Period optimization for hard real-time distributed automotive systems",
+              "volume": "1145",
+              "author": "Davare A.",
+              "year": "2007",
+              "unstructured": "A. Davare , Q. Zhu , M. D. Natale , C. Pinello , S. Kanajan , and A. L. Sangiovanni-Vincentelli . 2007 . Period optimization for hard real-time distributed automotive systems . In Design Automation Conference, DAC. 278--283. DOI:https://doi.org/10. 1145/1278480 . 1278553 A. Davare, Q. Zhu, M. D. Natale, C. Pinello, S. Kanajan, and A. L. Sangiovanni-Vincentelli. 2007. Period optimization for hard real-time distributed automotive systems. In Design Automation Conference, DAC. 278--283. DOI:https://doi.org/10.1145/1278480.1278553",
+              "journal-title": "Design Automation Conference, DAC. 278--283. DOI:https://doi.org/10."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_9_1",
+                "doi": "",
+                "title": "Period optimization for hard real-time distributed automotive systems",
+                "authors": [
+                  "Davare A."
+                ],
+                "year": 2007,
+                "venue": "Design Automation Conference, DAC. 278--283. DOI:https://doi.org/10.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_2_1_10_1",
+            "rawText": "P. Emberson , R. Stafford , and R. I. Davis . 2010. Techniques for the synthesis of multiprocessor tasksets . In International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS 2010 ). 6--11. P. Emberson, R. Stafford, and R. I. Davis. 2010. Techniques for the synthesis of multiprocessor tasksets. In International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS 2010). 6--11.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_10_1",
+              "volume-title": "International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS",
+              "author": "Emberson P.",
+              "year": "2010",
+              "unstructured": "P. Emberson , R. Stafford , and R. I. Davis . 2010. Techniques for the synthesis of multiprocessor tasksets . In International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS 2010 ). 6--11. P. Emberson, R. Stafford, and R. I. Davis. 2010. Techniques for the synthesis of multiprocessor tasksets. In International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS 2010). 6--11."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_10_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Emberson P."
+                ],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_2_1_11_1",
+            "rawText": "N. Feiertag , K. Richter , J. Nordlander , and J. Jonsson . 2009. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics . In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems. N. Feiertag, K. Richter, J. Nordlander, and J. Jonsson. 2009. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_11_1",
+              "volume-title": "Workshop on Compositional Theory and Technology for Real-Time Embedded Systems.",
+              "author": "Feiertag N.",
+              "unstructured": "N. Feiertag , K. Richter , J. Nordlander , and J. Jonsson . 2009. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics . In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems. N. Feiertag, K. Richter, J. Nordlander, and J. Jonsson. 2009. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_11_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Feiertag N."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_2_1_12_1",
+            "rawText": "J. Forget , F. Boniol , and C. Pagetti . 2017. Verifying end-to-end real-time constraints on multi-periodic models . In 22nd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 1--8. DOI:https://doi.org/10 .1109/ETFA. 2017 .8247612 J. Forget, F. Boniol, and C. Pagetti. 2017. Verifying end-to-end real-time constraints on multi-periodic models. In 22nd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 1--8. DOI:https://doi.org/10.1109/ETFA.2017.8247612",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_12_1",
+              "volume-title": "22nd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 1--8. DOI:https://doi.org/10",
+              "author": "Forget J.",
+              "year": "2017",
+              "unstructured": "J. Forget , F. Boniol , and C. Pagetti . 2017. Verifying end-to-end real-time constraints on multi-periodic models . In 22nd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 1--8. DOI:https://doi.org/10 .1109/ETFA. 2017 .8247612 J. Forget, F. Boniol, and C. Pagetti. 2017. Verifying end-to-end real-time constraints on multi-periodic models. In 22nd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 1--8. DOI:https://doi.org/10.1109/ETFA.2017.8247612"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_12_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Forget J."
+                ],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_2_1_13_1",
+            "rawText": "https://doi.org/10.1109/tcad.2018.2861016",
+            "doi": "10.1109/tcad.2018.2861016",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TCAD.2018.2861016"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tcad.2018.2861016",
+                "doi": "10.1109/tcad.2018.2861016",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tcad.2018.2861016"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_2_1_14_1",
+            "rawText": "A. Hamann , D. Dasari , S. Kramer , M. Pressler , and F. Wurst . 2017 . Communication centric design in complex automotive embedded systems. In Euromicro Conference on Real-Time Systems , ECRTS. 10 : 1 -- 10 :20. A. Hamann, D. Dasari, S. Kramer, M. Pressler, and F. Wurst. 2017. Communication centric design in complex automotive embedded systems. In Euromicro Conference on Real-Time Systems, ECRTS. 10:1--10:20.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_14_1",
+              "first-page": "1",
+              "article-title": "Communication centric design in complex automotive embedded systems. In Euromicro Conference on Real-Time Systems",
+              "volume": "10",
+              "author": "Hamann A.",
+              "year": "2017",
+              "unstructured": "A. Hamann , D. Dasari , S. Kramer , M. Pressler , and F. Wurst . 2017 . Communication centric design in complex automotive embedded systems. In Euromicro Conference on Real-Time Systems , ECRTS. 10 : 1 -- 10 :20. A. Hamann, D. Dasari, S. Kramer, M. Pressler, and F. Wurst. 2017. Communication centric design in complex automotive embedded systems. In Euromicro Conference on Real-Time Systems, ECRTS. 10:1--10:20.",
+              "journal-title": "ECRTS."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_14_1",
+                "doi": "",
+                "title": "Communication centric design in complex automotive embedded systems. In Euromicro Conference on Real-Time Systems",
+                "authors": [
+                  "Hamann A."
+                ],
+                "year": 2017,
+                "venue": "ECRTS.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_2_1_15_1",
+            "rawText": "T. Klaus , F. Franzmann , M. Becker , and P. Ulbrich . 2018. Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies . In Proceedings of the 26th International Conference on Real-Time Networks and Systems. ACM, 93--103 . T. Klaus, F. Franzmann, M. Becker, and P. Ulbrich. 2018. Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies. In Proceedings of the 26th International Conference on Real-Time Networks and Systems. ACM, 93--103.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_15_1",
+              "volume-title": "Proceedings of the 26th International Conference on Real-Time Networks and Systems. ACM, 93--103",
+              "author": "Klaus T.",
+              "unstructured": "T. Klaus , F. Franzmann , M. Becker , and P. Ulbrich . 2018. Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies . In Proceedings of the 26th International Conference on Real-Time Networks and Systems. ACM, 93--103 . T. Klaus, F. Franzmann, M. Becker, and P. Ulbrich. 2018. Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies. In Proceedings of the 26th International Conference on Real-Time Networks and Systems. ACM, 93--103."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_15_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Klaus T."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_2_1_16_1",
+            "rawText": "T. Kloda , A. Bertout , and Y. Sorel . 2018. Latency analysis for data chains of real-time periodic tasks . In 23rd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 360--367 . DOI:https://doi.org/10.1109/ETFA. 2018 .8502498 T. Kloda, A. Bertout, and Y. Sorel. 2018. Latency analysis for data chains of real-time periodic tasks. In 23rd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 360--367. DOI:https://doi.org/10.1109/ETFA.2018.8502498",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_16_1",
+              "volume-title": "23rd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 360--367",
+              "author": "Kloda T.",
+              "year": "2018",
+              "unstructured": "T. Kloda , A. Bertout , and Y. Sorel . 2018. Latency analysis for data chains of real-time periodic tasks . In 23rd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 360--367 . DOI:https://doi.org/10.1109/ETFA. 2018 .8502498 T. Kloda, A. Bertout, and Y. Sorel. 2018. Latency analysis for data chains of real-time periodic tasks. In 23rd IEEE International Conference on Emerging Technologies and Factory Automation, ETFA. 360--367. DOI:https://doi.org/10.1109/ETFA.2018.8502498"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_16_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kloda T."
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_2_1_17_1",
+            "rawText": "H. Kopetz . 2011. Real-Time Systems - Design Principles for Distributed Embedded Applications . Springer . DOI:https://doi.org/10.1007/978-1-4419-8237-7 H. Kopetz. 2011. Real-Time Systems - Design Principles for Distributed Embedded Applications. Springer. DOI:https://doi.org/10.1007/978-1-4419-8237-7",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_17_1",
+              "volume-title": "Real-Time Systems - Design Principles for Distributed Embedded Applications",
+              "author": "Kopetz H.",
+              "unstructured": "H. Kopetz . 2011. Real-Time Systems - Design Principles for Distributed Embedded Applications . Springer . DOI:https://doi.org/10.1007/978-1-4419-8237-7 H. Kopetz. 2011. Real-Time Systems - Design Principles for Distributed Embedded Applications. Springer. DOI:https://doi.org/10.1007/978-1-4419-8237-7"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_17_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kopetz H."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_2_1_18_1",
+            "rawText": "S. Kramer , D. Ziegenbein , and A. Hamann . 2015. Real world automotive benchmark for free . In 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS). S. Kramer, D. Ziegenbein, and A. Hamann. 2015. Real world automotive benchmark for free. In 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_18_1",
+              "volume-title": "6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS).",
+              "author": "Kramer S.",
+              "unstructured": "S. Kramer , D. Ziegenbein , and A. Hamann . 2015. Real world automotive benchmark for free . In 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS). S. Kramer, D. Ziegenbein, and A. Hamann. 2015. Real world automotive benchmark for free. In 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_18_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kramer S."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_2_1_19_1",
+            "rawText": "J. P. Lehoczky , L. Sha , and Y. Ding . 1989. The rate monotonic scheduling algorithm: Exact characterization and average case behavior . In IEEE Real-Time Systems Symposium’89 . 166--171. DOI:https://doi.org/10.1109/REAL. 1989 .63567 J. P. Lehoczky, L. Sha, and Y. Ding. 1989. The rate monotonic scheduling algorithm: Exact characterization and average case behavior. In IEEE Real-Time Systems Symposium’89. 166--171. DOI:https://doi.org/10.1109/REAL.1989.63567",
+            "doi": null,
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_19_1",
+              "volume-title": "IEEE Real-Time Systems Symposium’89",
+              "author": "Lehoczky J. P.",
+              "year": "1989",
+              "unstructured": "J. P. Lehoczky , L. Sha , and Y. Ding . 1989. The rate monotonic scheduling algorithm: Exact characterization and average case behavior . In IEEE Real-Time Systems Symposium’89 . 166--171. DOI:https://doi.org/10.1109/REAL. 1989 .63567 J. P. Lehoczky, L. Sha, and Y. Ding. 1989. The rate monotonic scheduling algorithm: Exact characterization and average case behavior. In IEEE Real-Time Systems Symposium’89. 166--171. DOI:https://doi.org/10.1109/REAL.1989.63567"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_19_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Lehoczky J. P."
+                ],
+                "year": 1989,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_2_1_20_1",
+            "rawText": "https://doi.org/10.1145/321738.321743",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_20_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/321738.321743"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_2_1_22_1",
+            "rawText": "S. Mubeen , J. Mäki-Turja , and M. Sjödin . 2012. Implementation of end-to-end latency analysis for component-based multi-rate real-time systems in Rubus-ICE . In Factory Communication Systems (WFCS), 2012 9th IEEE International Workshop on. IEEE, 165--168 . S. Mubeen, J. Mäki-Turja, and M. Sjödin. 2012. Implementation of end-to-end latency analysis for component-based multi-rate real-time systems in Rubus-ICE. In Factory Communication Systems (WFCS), 2012 9th IEEE International Workshop on. IEEE, 165--168.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_22_1",
+              "volume-title": "Factory Communication Systems (WFCS), 2012 9th IEEE International Workshop on. IEEE, 165--168",
+              "author": "Mubeen S.",
+              "unstructured": "S. Mubeen , J. Mäki-Turja , and M. Sjödin . 2012. Implementation of end-to-end latency analysis for component-based multi-rate real-time systems in Rubus-ICE . In Factory Communication Systems (WFCS), 2012 9th IEEE International Workshop on. IEEE, 165--168 . S. Mubeen, J. Mäki-Turja, and M. Sjödin. 2012. Implementation of end-to-end latency analysis for component-based multi-rate real-time systems in Rubus-ICE. In Factory Communication Systems (WFCS), 2012 9th IEEE International Workshop on. IEEE, 165--168."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_22_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Mubeen S."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_2_1_23_1",
+            "rawText": "https://doi.org/10.1145/2452537.2452539",
+            "doi": "10.1145/2452537.2452539",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_23_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2452537.2452539"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2452537.2452539",
+                "doi": "10.1145/2452537.2452539",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2452537.2452539"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_2_1_24_1",
+            "rawText": "A. Rajeev , S. Mohalik , M. G. Dixit , D. B. Chokshi , and S. Ramesh . 2010. Schedulability and end-to-end latency in distributed ecu networks: Formal modeling and precise estimation . In Proceedings of the Tenth ACM International Conference on Embedded Software. ACM, 129--138 . A. Rajeev, S. Mohalik, M. G. Dixit, D. B. Chokshi, and S. Ramesh. 2010. Schedulability and end-to-end latency in distributed ecu networks: Formal modeling and precise estimation. In Proceedings of the Tenth ACM International Conference on Embedded Software. ACM, 129--138.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_24_1",
+              "volume-title": "Proceedings of the Tenth ACM International Conference on Embedded Software. ACM, 129--138",
+              "author": "Rajeev A.",
+              "unstructured": "A. Rajeev , S. Mohalik , M. G. Dixit , D. B. Chokshi , and S. Ramesh . 2010. Schedulability and end-to-end latency in distributed ecu networks: Formal modeling and precise estimation . In Proceedings of the Tenth ACM International Conference on Embedded Software. ACM, 129--138 . A. Rajeev, S. Mohalik, M. G. Dixit, D. B. Chokshi, and S. Ramesh. 2010. Schedulability and end-to-end latency in distributed ecu networks: Formal modeling and precise estimation. In Proceedings of the Tenth ACM International Conference on Embedded Software. ACM, 129--138."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_24_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Rajeev A."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_2_1_25_1",
+            "rawText": "J. Schlatow and R. Ernst .. 2016. Response-time analysis for task chains in communicating threads . In IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). 245--254 . DOI:https://doi.org/10.1109/RTAS. 2016 .7461359 J. Schlatow and R. Ernst.. 2016. Response-time analysis for task chains in communicating threads. In IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). 245--254. DOI:https://doi.org/10.1109/RTAS.2016.7461359",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_25_1",
+              "volume-title": "IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). 245--254",
+              "author": "Schlatow J.",
+              "year": "2016",
+              "unstructured": "J. Schlatow and R. Ernst .. 2016. Response-time analysis for task chains in communicating threads . In IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). 245--254 . DOI:https://doi.org/10.1109/RTAS. 2016 .7461359 J. Schlatow and R. Ernst.. 2016. Response-time analysis for task chains in communicating threads. In IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). 245--254. DOI:https://doi.org/10.1109/RTAS.2016.7461359"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_25_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Schlatow J."
+                ],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_2_1_26_1",
+            "rawText": "Symtavision. &lsqb;n.d.&rsqb;. SymTA/S Toolbox. http://www.symtavision.com/symtas.html  Symtavision. &lsqb;n.d.&rsqb;. SymTA/S Toolbox. http://www.symtavision.com/symtas.html",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_26_1",
+              "unstructured": "Symtavision. &lsqb;n.d.&rsqb;. SymTA/S Toolbox. http://www.symtavision.com/symtas.html  Symtavision. &lsqb;n.d.&rsqb;. SymTA/S Toolbox. http://www.symtavision.com/symtas.html"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_26_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_2_1_27_1",
+            "rawText": "https://doi.org/10.1016/0165-6074(94)90080-9",
+            "doi": "10.1016/0165-6074(94)90080-9",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_27_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0165-6074(94)90080-9"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0165-6074(94)90080-9",
+                "doi": "10.1016/0165-6074(94)90080-9",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0165-6074(94)90080-9"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_2_1_28_1",
+            "rawText": "https://doi.org/10.1109/ecrts.2015.16",
+            "doi": "10.1109/ecrts.2015.16",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_28_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ECRTS.2015.16"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2015.16",
+                "doi": "10.1109/ecrts.2015.16",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2015.16"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_2_1_29_1",
+            "rawText": "G. von der Brüggen , N. Ueter , J. Chen , and M. Freier . 2017. Parametric utilization bounds for implicit-deadline periodic tasks in automotive systems . In Proceedings of the 25th International Conference on Real-Time Networks and Systems, RTNS. 108--117 . G. von der Brüggen, N. Ueter, J. Chen, and M. Freier. 2017. Parametric utilization bounds for implicit-deadline periodic tasks in automotive systems. In Proceedings of the 25th International Conference on Real-Time Networks and Systems, RTNS. 108--117.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_29_1",
+              "volume-title": "Proceedings of the 25th International Conference on Real-Time Networks and Systems, RTNS. 108--117",
+              "author": "von der Brüggen G.",
+              "unstructured": "G. von der Brüggen , N. Ueter , J. Chen , and M. Freier . 2017. Parametric utilization bounds for implicit-deadline periodic tasks in automotive systems . In Proceedings of the 25th International Conference on Real-Time Networks and Systems, RTNS. 108--117 . G. von der Brüggen, N. Ueter, J. Chen, and M. Freier. 2017. Parametric utilization bounds for implicit-deadline periodic tasks in automotive systems. In Proceedings of the 25th International Conference on Real-Time Networks and Systems, RTNS. 108--117."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_29_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "von der Brüggen G."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/3358181",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 28,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/3358181",
+          "crossrefReferenceCount": 28
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/3358181->doi:10.1109/tcad.2018.2861016@papers-LET-Durr2019.pdf",
+      "source": "doi:10.1145/3358181",
+      "target": "doi:10.1109/tcad.2018.2861016",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Durr2019.pdf"
+    },
+    {
+      "id": "doi:10.1145/3358181->doi:10.1145/321738.321743@papers-LET-Durr2019.pdf",
+      "source": "doi:10.1145/3358181",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Durr2019.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Durr2019",
+      "paperId": "doi:10.1145/3358181",
+      "metadata": {
+        "fileName": "Durr2019.pdf",
+        "sourcePath": "papers/LET/Durr2019.pdf"
+      }
+    }
+  ]
+}

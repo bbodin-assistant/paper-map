@@ -1,0 +1,1013 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.609534+00:00",
+  "papers": [
+    {
+      "key": "Theelen2006",
+      "paper": {
+        "id": "doi:10.1109/memcod.2006.1695916",
+        "citationKey": "Theelen2006",
+        "title": "A Scenario-Aware Data Flow Model",
+        "authors": [
+          "Bart D. Theelen",
+          "others"
+        ],
+        "year": 2006,
+        "venue": "MEMOCODE",
+        "type": "inproceedings",
+        "doi": "10.1109/MEMCOD.2006.1695916",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/MEMCOD.2006.1695916",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Theelen, Bart D. and others",
+          "title": "A Scenario-Aware Data Flow Model",
+          "booktitle": "MEMOCODE",
+          "year": "2006",
+          "doi": "10.1109/MEMCOD.2006.1695916",
+          "url": "https://doi.org/10.1109/MEMCOD.2006.1695916"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.103401+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "19",
+            "rawText": "https://doi.org/10.1016/j.entcs.2007.01.057",
+            "doi": "10.1016/j.entcs.2007.01.057",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.entcs.2007.01.057"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.entcs.2007.01.057",
+                "doi": "10.1016/j.entcs.2007.01.057",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.entcs.2007.01.057"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "17",
+            "rawText": "larsen. UPPAAL in a nutshell. 1997. Intern J on Software Tools for Tech Transfer. https://doi.org/10.1007/s100090050010",
+            "doi": "10.1007/s100090050010",
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "17",
+              "doi-asserted-by": "crossref",
+              "first-page": "134",
+              "DOI": "10.1007/s100090050010",
+              "article-title": "UPPAAL in a nutshell",
+              "volume": "1",
+              "author": "larsen",
+              "year": "1997",
+              "journal-title": "Intern J on Software Tools for Tech Transfer"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/s100090050010",
+                "doi": "10.1007/s100090050010",
+                "title": "UPPAAL in a nutshell",
+                "authors": [
+                  "larsen"
+                ],
+                "year": 1997,
+                "venue": "Intern J on Software Tools for Tech Transfer",
+                "type": "",
+                "url": "https://uppaal.org/texts/lpw-sttt97.pdf"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "18",
+            "rawText": "lim. 2006. Translating timed I/O automata specifications for theorem proving in PVS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "18",
+              "author": "lim",
+              "year": "2006",
+              "journal-title": "Translating timed I/O automata specifications for theorem proving in PVS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:18",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "lim"
+                ],
+                "year": 2006,
+                "venue": "Translating timed I/O automata specifications for theorem proving in PVS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "15",
+            "rawText": "kaynar. A mathematical framework for modeling and analyzing real-time systems. 2003. IEEE Intl Real-Time Systems Symposium (RTSS). https://doi.org/10.1109/real.2003.1253264",
+            "doi": "10.1109/real.2003.1253264",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "15",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1109/REAL.2003.1253264",
+              "article-title": "A mathematical framework for modeling and analyzing real-time systems",
+              "author": "kaynar",
+              "year": "2003",
+              "journal-title": "IEEE Intl Real-Time Systems Symposium (RTSS)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.2003.1253264",
+                "doi": "10.1109/real.2003.1253264",
+                "title": "A mathematical framework for modeling and analyzing real-time systems",
+                "authors": [
+                  "kaynar"
+                ],
+                "year": 2003,
+                "venue": "IEEE Intl Real-Time Systems Symposium (RTSS)",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.2003.1253264"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "16",
+            "rawText": "kaynar. 2005. The Theory of Timed I/O Automata",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "16",
+              "author": "kaynar",
+              "year": "2005",
+              "journal-title": "The Theory of Timed I/O Automata"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:16",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "kaynar"
+                ],
+                "year": 2005,
+                "venue": "The Theory of Timed I/O Automata",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "13",
+            "rawText": "griffeth. Experimental method for testing networks. 2005. Software Engineering Research and Practice",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "13",
+              "first-page": "935",
+              "article-title": "Experimental method for testing networks",
+              "author": "griffeth",
+              "year": "2005",
+              "journal-title": "Software Engineering Research and Practice"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:13",
+                "doi": "",
+                "title": "Experimental method for testing networks",
+                "authors": [
+                  "griffeth"
+                ],
+                "year": 2005,
+                "venue": "Software Engineering Research and Practice",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "14",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "14",
+              "year": "0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:14",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "11",
+            "rawText": "garland. IOA User Guide and Reference Manual. 2004",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "11",
+              "article-title": "IOA User Guide and Reference Manual",
+              "author": "garland",
+              "year": "2004"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:11",
+                "doi": "",
+                "title": "IOA User Guide and Reference Manual",
+                "authors": [
+                  "garland"
+                ],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "12",
+            "rawText": "https://doi.org/10.1109/sefm.2005.42",
+            "doi": "10.1109/sefm.2005.42",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SEFM.2005.42"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/sefm.2005.42",
+                "doi": "10.1109/sefm.2005.42",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sefm.2005.42"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "21",
+            "rawText": "luchangco. 1996",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "key": "21",
+              "author": "luchangco",
+              "year": "1996"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:21",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "luchangco"
+                ],
+                "year": 1996,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "20",
+            "rawText": "https://doi.org/10.1007/11603009_3",
+            "doi": "10.1007/11603009_3",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "20",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/11603009_3"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/11603009_3",
+                "doi": "10.1007/11603009_3",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/11603009_3"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "22",
+            "rawText": "lynch. An introduction to Input/Output automata. 1989. CWI-Quarterly",
+            "doi": null,
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22",
+              "first-page": "219",
+              "article-title": "An introduction to Input/Output automata",
+              "volume": "2",
+              "author": "lynch",
+              "year": "1989",
+              "journal-title": "CWI-Quarterly"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:22",
+                "doi": "",
+                "title": "An introduction to Input/Output automata",
+                "authors": [
+                  "lynch"
+                ],
+                "year": 1989,
+                "venue": "CWI-Quarterly",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "23",
+            "rawText": "https://doi.org/10.1006/inco.1996.0060",
+            "doi": "10.1006/inco.1996.0060",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "23",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1006/inco.1996.0060"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1006/inco.1996.0060",
+                "doi": "10.1006/inco.1996.0060",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1006/inco.1996.0060"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "24",
+            "rawText": "lynch. 1996. Distributed Algorithms",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24",
+              "author": "lynch",
+              "year": "1996",
+              "journal-title": "Distributed Algorithms"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:24",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "lynch"
+                ],
+                "year": 1996,
+                "venue": "Distributed Algorithms",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "25",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "25",
+              "year": "0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:25",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "26",
+            "rawText": "https://doi.org/10.1016/j.entcs.2005.01.005",
+            "doi": "10.1016/j.entcs.2005.01.005",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "26",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.entcs.2005.01.005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.entcs.2005.01.005",
+                "doi": "10.1016/j.entcs.2005.01.005",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.entcs.2005.01.005"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "27",
+            "rawText": "paulson. Isabelle: A Generic Theorem Prover. 1994. Lect Notes in Comp Sci",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "27",
+              "article-title": "Isabelle: A Generic Theorem Prover",
+              "volume": "828",
+              "author": "paulson",
+              "year": "1994",
+              "journal-title": "Lect Notes in Comp Sci"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:27",
+                "doi": "",
+                "title": "Isabelle: A Generic Theorem Prover",
+                "authors": [
+                  "paulson"
+                ],
+                "year": 1994,
+                "venue": "Lect Notes in Comp Sci",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "28",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "28",
+              "year": "0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:28",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "29",
+            "rawText": "https://doi.org/10.1007/11813040_5",
+            "doi": "10.1007/11813040_5",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "29",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/11813040_5"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/11813040_5",
+                "doi": "10.1007/11813040_5",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/11813040_5"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "3",
+            "rawText": "https://doi.org/10.1023/a:1018913028597",
+            "doi": "10.1023/a:1018913028597",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1018913028597"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/a:1018913028597",
+                "doi": "10.1023/a:1018913028597",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/a:1018913028597"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "2",
+            "rawText": "https://doi.org/10.1016/0304-3975(94)90010-8",
+            "doi": "10.1016/0304-3975(94)90010-8",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0304-3975(94)90010-8"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0304-3975(94)90010-8",
+                "doi": "10.1016/0304-3975(94)90010-8",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0304-3975(94)90010-8"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "10",
+            "rawText": "garland. A guide to LP, the Larch prover. 1991",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10",
+              "article-title": "A guide to LP, the Larch prover",
+              "author": "garland",
+              "year": "1991"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10",
+                "doi": "",
+                "title": "A guide to LP, the Larch prover",
+                "authors": [
+                  "garland"
+                ],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "1",
+            "rawText": "alur. Timed automata. 1999. Proc 11th Intern Conf on Computer Aided Verif (CAV '99) volume 1633 of Lect Notes in Comp Sci",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1",
+              "first-page": "8",
+              "article-title": "Timed automata",
+              "author": "alur",
+              "year": "1999",
+              "journal-title": "Proc 11th Intern Conf on Computer Aided Verif (CAV '99) volume 1633 of Lect Notes in Comp Sci"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:1",
+                "doi": "",
+                "title": "Timed automata",
+                "authors": [
+                  "alur"
+                ],
+                "year": 1999,
+                "venue": "Proc 11th Intern Conf on Computer Aided Verif (CAV '99) volume 1633 of Lect Notes in Comp Sci",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "30",
+            "rawText": "win. 2003. Theorem-proving distributed algorithms with dynamic analysis",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "30",
+              "author": "win",
+              "year": "2003",
+              "journal-title": "Theorem-proving distributed algorithms with dynamic analysis"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:30",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "win"
+                ],
+                "year": 2003,
+                "venue": "Theorem-proving distributed algorithms with dynamic analysis",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "7",
+            "rawText": "devillers. Translating IOA automata to PVS. 1999",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "7",
+              "article-title": "Translating IOA automata to PVS",
+              "author": "devillers",
+              "year": "1999"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:7",
+                "doi": "",
+                "title": "Translating IOA automata to PVS",
+                "authors": [
+                  "devillers"
+                ],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "6",
+            "rawText": "https://doi.org/10.1007/3-540-36135-9_24",
+            "doi": "10.1007/3-540-36135-9_24",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/3-540-36135-9_24"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-36135-9_24",
+                "doi": "10.1007/3-540-36135-9_24",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-36135-9_24"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "5",
+            "rawText": "https://doi.org/10.1109/memcod.2006.1695916",
+            "doi": "10.1109/memcod.2006.1695916",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MEMCOD.2006.1695916"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/memcod.2006.1695916",
+                "doi": "10.1109/memcod.2006.1695916",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/MEMCOD.2006.1695916"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "4",
+            "rawText": "archer. Basing a modeling environment on a general purpose theorem prover. 2004. Proc Monterey Wkshp on Soft Eng Tools Compat and Integr",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "4",
+              "article-title": "Basing a modeling environment on a general purpose theorem prover",
+              "author": "archer",
+              "year": "2004",
+              "journal-title": "Proc Monterey Wkshp on Soft Eng Tools Compat and Integr"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:4",
+                "doi": "",
+                "title": "Basing a modeling environment on a general purpose theorem prover",
+                "authors": [
+                  "archer"
+                ],
+                "year": 2004,
+                "venue": "Proc Monterey Wkshp on Soft Eng Tools Compat and Integr",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "9",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9",
+              "year": "0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "8",
+            "rawText": "dowek. Abstract model of the SATS concept of operations: Initial results and recommendations. 2004",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8",
+              "article-title": "Abstract model of the SATS concept of operations: Initial results and recommendations",
+              "author": "dowek",
+              "year": "2004"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:8",
+                "doi": "",
+                "title": "Abstract model of the SATS concept of operations: Initial results and recommendations",
+                "authors": [
+                  "dowek"
+                ],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/memcod.2006.1695916",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 30,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/memcod.2006.1695916",
+          "crossrefReferenceCount": 30
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/memcod.2006.1695916->doi:10.1007/s100090050010@papers-dataflow-Theelen2006.pdf",
+      "source": "doi:10.1109/memcod.2006.1695916",
+      "target": "doi:10.1007/s100090050010",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Theelen2006.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Theelen2006",
+      "paperId": "doi:10.1109/memcod.2006.1695916",
+      "metadata": {
+        "fileName": "Theelen2006.pdf",
+        "sourcePath": "papers/dataflow/Theelen2006.pdf"
+      }
+    }
+  ]
+}

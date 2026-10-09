@@ -1,0 +1,1440 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.472238+00:00",
+  "papers": [
+    {
+      "key": "Becker2017",
+      "paper": {
+        "id": "doi:10.1016/j.sysarc.2017.09.004",
+        "citationKey": "Becker2017",
+        "title": "End-to-end timing analysis of cause-effect chains in automotive embedded systems",
+        "authors": [
+          "Matthias Becker",
+          "Dakshina Dasari",
+          "Saad Mubeen",
+          "Moris Behnam",
+          "Thomas Nolte"
+        ],
+        "year": 2017,
+        "venue": "Journal of Systems Architecture",
+        "type": "article",
+        "doi": "10.1016/j.sysarc.2017.09.004",
+        "arxivId": "",
+        "url": "https://doi.org/10.1016/j.sysarc.2017.09.004",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Becker, Matthias and Dasari, Dakshina and Mubeen, Saad and Behnam, Moris and Nolte, Thomas",
+          "title": "{End-to-end timing analysis of cause-effect chains in automotive embedded systems}",
+          "year": "2017",
+          "journal": "Journal of Systems Architecture",
+          "publisher": "Elsevier BV",
+          "volume": "80",
+          "pages": "104--113",
+          "doi": "10.1016/j.sysarc.2017.09.004",
+          "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.058155+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0001",
+            "rawText": "Broy. Challenges in automotive software engineering. 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0001",
+              "series-title": "the 28th ICSE",
+              "first-page": "33",
+              "article-title": "Challenges in automotive software engineering",
+              "author": "Broy",
+              "year": "2006"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0001",
+                "doi": "",
+                "title": "Challenges in automotive software engineering",
+                "authors": [
+                  "Broy"
+                ],
+                "year": 2006,
+                "venue": "the 28th ICSE",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0002",
+            "rawText": "AUTOSAR, 2016. last access October, Available at www.autosar.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0002",
+              "unstructured": "AUTOSAR, 2016. last access October, Available at www.autosar.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0002",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0003",
+            "rawText": "AUTOSAR - spec. of timing extensions, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0003",
+              "unstructured": "AUTOSAR - spec. of timing extensions, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0003",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0004",
+            "rawText": "Timing Augmented Description Language (TADL) syntax, semantics, metamodel. Ver. 2, Deliverable 11, Technical Report, 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0004",
+              "unstructured": "Timing Augmented Description Language (TADL) syntax, semantics, metamodel. Ver. 2, Deliverable 11, Technical Report, 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0004",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0005",
+            "rawText": "EAST-ADL - domain model specification, 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0005",
+              "unstructured": "EAST-ADL - domain model specification, 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0005",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0006",
+            "rawText": "Mubeen. Support for end-to-end response-time and delay analysis in the industrial tool suite: issues, experiences and a case study. 2013. Comput. Sci. Inf. Syst.. https://doi.org/10.2298/csis120614011m",
+            "doi": "10.2298/csis120614011m",
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "10.1016/j.sysarc.2017.09.004_bib0006",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.2298/CSIS120614011M",
+              "article-title": "Support for end-to-end response-time and delay analysis in the industrial tool suite: issues, experiences and a case study",
+              "volume": "10",
+              "author": "Mubeen",
+              "year": "2013",
+              "journal-title": "Comput. Sci. Inf. Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.2298/csis120614011m",
+                "doi": "10.2298/csis120614011m",
+                "title": "Support for end-to-end response-time and delay analysis in the industrial tool suite: issues, experiences and a case study",
+                "authors": [
+                  "Mubeen"
+                ],
+                "year": 2013,
+                "venue": "Comput. Sci. Inf. Syst.",
+                "type": "",
+                "url": "https://doi.org/10.2298/csis120614011m"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0007",
+            "rawText": "Mubeen. Supporting timing analysis of vehicular embedded systems through the refinement of timing constraints. 2017. Softw. Syst. Model.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0007",
+              "first-page": "1",
+              "article-title": "Supporting timing analysis of vehicular embedded systems through the refinement of timing constraints",
+              "author": "Mubeen",
+              "year": "2017",
+              "journal-title": "Softw. Syst. Model."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0007",
+                "doi": "",
+                "title": "Supporting timing analysis of vehicular embedded systems through the refinement of timing constraints",
+                "authors": [
+                  "Mubeen"
+                ],
+                "year": 2017,
+                "venue": "Softw. Syst. Model.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0008",
+            "rawText": "Feiertag. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0008",
+              "series-title": "the 1st CRTS",
+              "article-title": "A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics",
+              "author": "Feiertag",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+                "doi": "",
+                "title": "A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics",
+                "authors": [
+                  "Feiertag"
+                ],
+                "year": 2008,
+                "venue": "the 1st CRTS",
+                "type": "",
+                "url": "https://research.chalmers.se/en/publication/139048"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0009",
+            "rawText": "Becker. Synthesizing job-level dependencies for automotive multi-rate effect chains. 2016",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0009",
+              "series-title": "the 22th RTCSA",
+              "first-page": "159",
+              "article-title": "Synthesizing job-level dependencies for automotive multi-rate effect chains",
+              "author": "Becker",
+              "year": "2016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0009",
+                "doi": "",
+                "title": "Synthesizing job-level dependencies for automotive multi-rate effect chains",
+                "authors": [
+                  "Becker"
+                ],
+                "year": 2016,
+                "venue": "the 22th RTCSA",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0010",
+            "rawText": "F. Stappert, J. Jonsson, J. Mottok, R. Johansson, A design framework for end-to-end timing constrained automotive applications, in: the 2nd ERTS.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0010",
+              "unstructured": "F. Stappert, J. Jonsson, J. Mottok, R. Johansson, A design framework for end-to-end timing constrained automotive applications, in: the 2nd ERTS."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0010",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0011",
+            "rawText": "Gutierrez. On the schedulability analysis for distributed hard real-time systems. 1997",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0011",
+              "series-title": "Proceedings 9th Euromicro Workshop on Real Time Systems",
+              "first-page": "136",
+              "article-title": "On the schedulability analysis for distributed hard real-time systems",
+              "author": "Gutierrez",
+              "year": "1997"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0011",
+                "doi": "",
+                "title": "On the schedulability analysis for distributed hard real-time systems",
+                "authors": [
+                  "Gutierrez"
+                ],
+                "year": 1997,
+                "venue": "Proceedings 9th Euromicro Workshop on Real Time Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0012",
+            "rawText": "Rajeev. Schedulability and end-to-end latency in distributed ecu networks: formal modeling and precise estimation. 2010",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0012",
+              "series-title": "the 10th EMSOFT",
+              "first-page": "129",
+              "article-title": "Schedulability and end-to-end latency in distributed ecu networks: formal modeling and precise estimation",
+              "author": "Rajeev",
+              "year": "2010"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0012",
+                "doi": "",
+                "title": "Schedulability and end-to-end latency in distributed ecu networks: formal modeling and precise estimation",
+                "authors": [
+                  "Rajeev"
+                ],
+                "year": 2010,
+                "venue": "the 10th EMSOFT",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0013",
+            "rawText": "Schmidt. An overview of the real-time corba specification. 2000. Computer. https://doi.org/10.1109/2.846319",
+            "doi": "10.1109/2.846319",
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "6",
+              "key": "10.1016/j.sysarc.2017.09.004_bib0013",
+              "doi-asserted-by": "crossref",
+              "first-page": "56",
+              "DOI": "10.1109/2.846319",
+              "article-title": "An overview of the real-time corba specification",
+              "volume": "33",
+              "author": "Schmidt",
+              "year": "2000",
+              "journal-title": "Computer"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/2.846319",
+                "doi": "10.1109/2.846319",
+                "title": "An overview of the real-time corba specification",
+                "authors": [
+                  "Schmidt"
+                ],
+                "year": 2000,
+                "venue": "Computer",
+                "type": "",
+                "url": "https://doi.org/10.1109/2.846319"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0014",
+            "rawText": "Schliecker. A recursive approach to end-to-end path latency computation in heterogeneous multiprocessor systems. 2009",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0014",
+              "series-title": "the 7th CODES",
+              "first-page": "433",
+              "article-title": "A recursive approach to end-to-end path latency computation in heterogeneous multiprocessor systems",
+              "author": "Schliecker",
+              "year": "2009"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0014",
+                "doi": "",
+                "title": "A recursive approach to end-to-end path latency computation in heterogeneous multiprocessor systems",
+                "authors": [
+                  "Schliecker"
+                ],
+                "year": 2009,
+                "venue": "the 7th CODES",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0015",
+            "rawText": "Ashjaei. End-to-end resource reservations in distributed embedded systems. 2016",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0015",
+              "series-title": "the 22th RTCSA",
+              "first-page": "1",
+              "article-title": "End-to-end resource reservations in distributed embedded systems",
+              "author": "Ashjaei",
+              "year": "2016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0015",
+                "doi": "",
+                "title": "End-to-end resource reservations in distributed embedded systems",
+                "authors": [
+                  "Ashjaei"
+                ],
+                "year": 2016,
+                "venue": "the 22th RTCSA",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0016",
+            "rawText": "Symtavision GmbH, SymTA/S and TraceAnalyzer for ECUs, [Online] https://www.symtavision.com/products/ecu-timing/, last visited 25.10.2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0016",
+              "unstructured": "Symtavision GmbH, SymTA/S and TraceAnalyzer for ECUs, [Online] https://www.symtavision.com/products/ecu-timing/, last visited 25.10.2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0016",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0017",
+            "rawText": "Henia. System level performance analysis - the symta/s approach. 2005. Comput. Digital Tech.. https://doi.org/10.1049/ip-cdt:20045088",
+            "doi": "10.1049/ip-cdt:20045088",
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "10.1016/j.sysarc.2017.09.004_bib0017",
+              "doi-asserted-by": "crossref",
+              "first-page": "148",
+              "DOI": "10.1049/ip-cdt:20045088",
+              "article-title": "System level performance analysis - the symta/s approach",
+              "volume": "152",
+              "author": "Henia",
+              "year": "2005",
+              "journal-title": "Comput. Digital Tech."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1049/ip-cdt:20045088",
+                "doi": "10.1049/ip-cdt:20045088",
+                "title": "System level performance analysis - the symta/s approach",
+                "authors": [
+                  "Henia"
+                ],
+                "year": 2005,
+                "venue": "Comput. Digital Tech.",
+                "type": "",
+                "url": "https://doi.org/10.1049/ip-cdt:20045088"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0018",
+            "rawText": "Arcticus Systems, Rubus ICE, [Online] https://www.arcticus-systems.com/products/, last visited 25.10.2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0018",
+              "unstructured": "Arcticus Systems, Rubus ICE, [Online] https://www.arcticus-systems.com/products/, last visited 25.10.2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0018",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0019",
+            "rawText": "Timing Architects, Timing architects inspector, [Online] https://www.timing-architects.com/ta-tool-suite/inspector/, last visited 25.10.2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0019",
+              "unstructured": "Timing Architects, Timing architects inspector, [Online] https://www.timing-architects.com/ta-tool-suite/inspector/, last visited 25.10.2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0019",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0020",
+            "rawText": "Forget. A real-time architecture design language for multi-rate embedded control systems. 2010",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0020",
+              "series-title": "ACM Symposium on Applied Computing",
+              "first-page": "527",
+              "article-title": "A real-time architecture design language for multi-rate embedded control systems",
+              "author": "Forget",
+              "year": "2010"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0020",
+                "doi": "",
+                "title": "A real-time architecture design language for multi-rate embedded control systems",
+                "authors": [
+                  "Forget"
+                ],
+                "year": 2010,
+                "venue": "ACM Symposium on Applied Computing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0021",
+            "rawText": "Halbwachs. The synchronous data flow programming language LUSTRE. 1991. Proc. IEEE. https://doi.org/10.1109/5.97300",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "9",
+              "key": "10.1016/j.sysarc.2017.09.004_bib0021",
+              "doi-asserted-by": "crossref",
+              "first-page": "1305",
+              "DOI": "10.1109/5.97300",
+              "article-title": "The synchronous data flow programming language LUSTRE",
+              "volume": "79",
+              "author": "Halbwachs",
+              "year": "1991",
+              "journal-title": "Proc. IEEE"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "title": "The synchronous data flow programming language LUSTRE",
+                "authors": [
+                  "Halbwachs"
+                ],
+                "year": 1991,
+                "venue": "Proc. IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0022",
+            "rawText": "Forget. Scheduling dependent periodic tasks without synchronization mechanisms. 2010",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0022",
+              "series-title": "16th IEEE Real-Time and Embedded Technology and Applications Symposium",
+              "first-page": "301",
+              "article-title": "Scheduling dependent periodic tasks without synchronization mechanisms",
+              "author": "Forget",
+              "year": "2010"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1109/rtas.2010.26",
+                "doi": "",
+                "title": "Scheduling dependent periodic tasks without synchronization mechanisms",
+                "authors": [
+                  "Forget"
+                ],
+                "year": 2010,
+                "venue": "16th IEEE Real-Time and Embedded Technology and Applications Symposium",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2010.26"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0023",
+            "rawText": "Audsley. Fixed priority pre-emptive scheduling: an historic perspective. 1995. Real-Time Systems. https://doi.org/10.1007/bf01094342",
+            "doi": "10.1007/bf01094342",
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2/3",
+              "key": "10.1016/j.sysarc.2017.09.004_bib0023",
+              "doi-asserted-by": "crossref",
+              "first-page": "173",
+              "DOI": "10.1007/BF01094342",
+              "article-title": "Fixed priority pre-emptive scheduling: an historic perspective",
+              "volume": "8",
+              "author": "Audsley",
+              "year": "1995",
+              "journal-title": "Real-Time Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf01094342",
+                "doi": "10.1007/bf01094342",
+                "title": "Fixed priority pre-emptive scheduling: an historic perspective",
+                "authors": [
+                  "Audsley"
+                ],
+                "year": 1995,
+                "venue": "Real-Time Systems",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf01094342"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0024",
+            "rawText": "Pagetti. Multi-task implementation of multi-periodic synchronous programs. 2011. Discrete Event Dyn. Syst.. https://doi.org/10.1007/s10626-011-0107-x",
+            "doi": "10.1007/s10626-011-0107-x",
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "10.1016/j.sysarc.2017.09.004_bib0024",
+              "doi-asserted-by": "crossref",
+              "first-page": "307",
+              "DOI": "10.1007/s10626-011-0107-x",
+              "article-title": "Multi-task implementation of multi-periodic synchronous programs",
+              "volume": "21",
+              "author": "Pagetti",
+              "year": "2011",
+              "journal-title": "Discrete Event Dyn. Syst."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/s10626-011-0107-x",
+                "doi": "10.1007/s10626-011-0107-x",
+                "title": "Multi-task implementation of multi-periodic synchronous programs",
+                "authors": [
+                  "Pagetti"
+                ],
+                "year": 2011,
+                "venue": "Discrete Event Dyn. Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1007/s10626-011-0107-x"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0025",
+            "rawText": "Puffitsch. Mapping a multi-rate synchronous language to a many-core processor. 2013",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0025",
+              "series-title": "19th IEEE Real-Time and Embedded Technology and Appl. Symposium",
+              "first-page": "293",
+              "article-title": "Mapping a multi-rate synchronous language to a many-core processor",
+              "author": "Puffitsch",
+              "year": "2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0025",
+                "doi": "",
+                "title": "Mapping a multi-rate synchronous language to a many-core processor",
+                "authors": [
+                  "Puffitsch"
+                ],
+                "year": 2013,
+                "venue": "19th IEEE Real-Time and Embedded Technology and Appl. Symposium",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0026",
+            "rawText": "Puffitsch. Off-line mapping of multi-rate dependent task sets to many-core platforms. 2015. Real-Time Syst.. https://doi.org/10.1007/s11241-015-9232-1",
+            "doi": "10.1007/s11241-015-9232-1",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "5",
+              "key": "10.1016/j.sysarc.2017.09.004_bib0026",
+              "doi-asserted-by": "crossref",
+              "first-page": "526",
+              "DOI": "10.1007/s11241-015-9232-1",
+              "article-title": "Off-line mapping of multi-rate dependent task sets to many-core platforms",
+              "volume": "51",
+              "author": "Puffitsch",
+              "year": "2015",
+              "journal-title": "Real-Time Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-015-9232-1",
+                "doi": "10.1007/s11241-015-9232-1",
+                "title": "Off-line mapping of multi-rate dependent task sets to many-core platforms",
+                "authors": [
+                  "Puffitsch"
+                ],
+                "year": 2015,
+                "venue": "Real-Time Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-015-9232-1"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0027",
+            "rawText": "Henzinger. Giotto: a time-triggered language for embedded programming. 2003. Proc. IEEE. https://doi.org/10.1109/jproc.2002.805825",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "10.1016/j.sysarc.2017.09.004_bib0027",
+              "doi-asserted-by": "crossref",
+              "first-page": "84",
+              "DOI": "10.1109/JPROC.2002.805825",
+              "article-title": "Giotto: a time-triggered language for embedded programming",
+              "volume": "91",
+              "author": "Henzinger",
+              "year": "2003",
+              "journal-title": "Proc. IEEE"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "Giotto: a time-triggered language for embedded programming",
+                "authors": [
+                  "Henzinger"
+                ],
+                "year": 2003,
+                "venue": "Proc. IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0028",
+            "rawText": "C.M. Kirsch, A. Sokolova, The Logical Execution Time Paradigm, Springer Berlin Heidelberg, Berlin, Heidelberg, pp. 103–120.",
+            "doi": "10.1007/978-3-642-24349-3_5",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0028",
+              "doi-asserted-by": "crossref",
+              "unstructured": "C.M. Kirsch, A. Sokolova, The Logical Execution Time Paradigm, Springer Berlin Heidelberg, Berlin, Heidelberg, pp. 103–120.",
+              "DOI": "10.1007/978-3-642-24349-3_5"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-3_5",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0029",
+            "rawText": "Bensalem. Time-predictable and composable architectures for dependable embedded systems. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0029",
+              "series-title": "9th ACM International Conference on Embedded Software (EMSOFT)",
+              "first-page": "351",
+              "article-title": "Time-predictable and composable architectures for dependable embedded systems",
+              "author": "Bensalem",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0029",
+                "doi": "",
+                "title": "Time-predictable and composable architectures for dependable embedded systems",
+                "authors": [
+                  "Bensalem"
+                ],
+                "year": 2011,
+                "venue": "9th ACM International Conference on Embedded Software (EMSOFT)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0030",
+            "rawText": "Hennig. Towards parallelizing legacy embedded control software using the LET programming paradigm. 2016",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0030",
+              "series-title": "RTAS WiP",
+              "article-title": "Towards parallelizing legacy embedded control software using the LET programming paradigm",
+              "author": "Hennig",
+              "year": "2016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0030",
+                "doi": "",
+                "title": "Towards parallelizing legacy embedded control software using the LET programming paradigm",
+                "authors": [
+                  "Hennig"
+                ],
+                "year": 2016,
+                "venue": "RTAS WiP",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0031",
+            "rawText": "Becker. Analyzing end-to-end delays in automotive systems at various levels of timing information. 2016",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0031",
+              "series-title": "IEEE 4th Int. Workshop on Real-Time Computing and Distributed systems in Emerging Applications (REACTION)",
+              "article-title": "Analyzing end-to-end delays in automotive systems at various levels of timing information",
+              "author": "Becker",
+              "year": "2016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0031",
+                "doi": "",
+                "title": "Analyzing end-to-end delays in automotive systems at various levels of timing information",
+                "authors": [
+                  "Becker"
+                ],
+                "year": 2016,
+                "venue": "IEEE 4th Int. Workshop on Real-Time Computing and Distributed systems in Emerging Applications (REACTION)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0032",
+            "rawText": "AUTOSAR - specification of RTE, 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0032",
+              "unstructured": "AUTOSAR - specification of RTE, 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0032",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0033",
+            "rawText": "Iec 61131-3, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0033",
+              "unstructured": "Iec 61131-3, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0033",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0034",
+            "rawText": "Kramer. Real world automotive benchmarks for free. 2015",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0034",
+              "series-title": "the 6th WATERS",
+              "article-title": "Real world automotive benchmarks for free",
+              "author": "Kramer",
+              "year": "2015"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:real world automotive benchmarks for free:2015",
+                "doi": "",
+                "title": "Real world automotive benchmarks for free",
+                "authors": [
+                  "Kramer"
+                ],
+                "year": 2015,
+                "venue": "the 6th WATERS",
+                "type": "",
+                "url": "https://www.ecrts.org/archives/fileadmin/WebsitesArchiv/ecrts2015/waters2015/WATERS2015.pdf"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0035",
+            "rawText": "Bini. Measuring the performance of schedulability tests. 2005. Real-Time Syst. J.. https://doi.org/10.1007/s11241-005-0507-9",
+            "doi": "10.1007/s11241-005-0507-9",
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1-2",
+              "key": "10.1016/j.sysarc.2017.09.004_bib0035",
+              "doi-asserted-by": "crossref",
+              "first-page": "129",
+              "DOI": "10.1007/s11241-005-0507-9",
+              "article-title": "Measuring the performance of schedulability tests",
+              "volume": "30",
+              "author": "Bini",
+              "year": "2005",
+              "journal-title": "Real-Time Syst. J."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-005-0507-9",
+                "doi": "10.1007/s11241-005-0507-9",
+                "title": "Measuring the performance of schedulability tests",
+                "authors": [
+                  "Bini"
+                ],
+                "year": 2005,
+                "venue": "Real-Time Syst. J.",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-005-0507-9"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0036",
+            "rawText": "Liu. Scheduling algorithms for multiprogramming in a hard-real-time environment. 1973. J. ACM. https://doi.org/10.1145/321738.321743",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0036",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1145/321738.321743",
+              "article-title": "Scheduling algorithms for multiprogramming in a hard-real-time environment",
+              "author": "Liu",
+              "year": "1973",
+              "journal-title": "J. ACM"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "title": "Scheduling algorithms for multiprogramming in a hard-real-time environment",
+                "authors": [
+                  "Liu"
+                ],
+                "year": 1973,
+                "venue": "J. ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0037",
+            "rawText": "Joseph. Finding response times in a real-time system. 1986. Comput. J.. https://doi.org/10.1093/comjnl/29.5.390",
+            "doi": "10.1093/comjnl/29.5.390",
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0037",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1093/comjnl/29.5.390",
+              "article-title": "Finding response times in a real-time system",
+              "author": "Joseph",
+              "year": "1986",
+              "journal-title": "Comput. J."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1093/comjnl/29.5.390",
+                "doi": "10.1093/comjnl/29.5.390",
+                "title": "Finding response times in a real-time system",
+                "authors": [
+                  "Joseph"
+                ],
+                "year": 1986,
+                "venue": "Comput. J.",
+                "type": "",
+                "url": "https://doi.org/10.1093/comjnl/29.5.390"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0038",
+            "rawText": "Hänninen et.al.. The rubus component model for resource constrained real-time systems. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0038",
+              "series-title": "3rd IEEE International Symposium on Industrial Embedded Systems",
+              "article-title": "The rubus component model for resource constrained real-time systems",
+              "author": "Hänninen et.al.",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0038",
+                "doi": "",
+                "title": "The rubus component model for resource constrained real-time systems",
+                "authors": [
+                  "Hänninen et.al."
+                ],
+                "year": 2008,
+                "venue": "3rd IEEE International Symposium on Industrial Embedded Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "10.1016/j.sysarc.2017.09.004_bib0039",
+            "rawText": "ISO 11898-1, Road vehicles interchange of digital information controller area network (CAN) for high-speed communication, ISO standard-11898, nov. 1993..",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2017.09.004_bib0039",
+              "unstructured": "ISO 11898-1, Road vehicles interchange of digital information controller area network (CAN) for high-speed communication, ISO standard-11898, nov. 1993.."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2017.09.004_bib0039",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1016/j.sysarc.2017.09.004",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 9,
+          "extractedReferenceCount": 39,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1016/j.sysarc.2017.09.004",
+          "crossrefReferenceCount": 39
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1016/j.sysarc.2017.09.004->title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008@papers-LET-Becker2017.pdf",
+      "source": "doi:10.1016/j.sysarc.2017.09.004",
+      "target": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Becker2017.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2017.09.004->doi:10.1109/5.97300@papers-LET-Becker2017.pdf",
+      "source": "doi:10.1016/j.sysarc.2017.09.004",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Becker2017.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2017.09.004->doi:10.1109/rtas.2010.26@papers-LET-Becker2017.pdf",
+      "source": "doi:10.1016/j.sysarc.2017.09.004",
+      "target": "doi:10.1109/rtas.2010.26",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Becker2017.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2017.09.004->doi:10.1007/s10626-011-0107-x@papers-LET-Becker2017.pdf",
+      "source": "doi:10.1016/j.sysarc.2017.09.004",
+      "target": "doi:10.1007/s10626-011-0107-x",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Becker2017.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2017.09.004->doi:10.1109/jproc.2002.805825@papers-LET-Becker2017.pdf",
+      "source": "doi:10.1016/j.sysarc.2017.09.004",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Becker2017.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2017.09.004->doi:10.1007/978-3-642-24349-3_5@papers-LET-Becker2017.pdf",
+      "source": "doi:10.1016/j.sysarc.2017.09.004",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Becker2017.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2017.09.004->title:real world automotive benchmarks for free:2015@papers-LET-Becker2017.pdf",
+      "source": "doi:10.1016/j.sysarc.2017.09.004",
+      "target": "title:real world automotive benchmarks for free:2015",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Becker2017.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2017.09.004->doi:10.1145/321738.321743@papers-LET-Becker2017.pdf",
+      "source": "doi:10.1016/j.sysarc.2017.09.004",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Becker2017.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2017.09.004->doi:10.1093/comjnl/29.5.390@papers-LET-Becker2017.pdf",
+      "source": "doi:10.1016/j.sysarc.2017.09.004",
+      "target": "doi:10.1093/comjnl/29.5.390",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Becker2017.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Becker2017",
+      "paperId": "doi:10.1016/j.sysarc.2017.09.004",
+      "metadata": {
+        "fileName": "Becker2017.pdf",
+        "sourcePath": "papers/LET/Becker2017.pdf"
+      }
+    }
+  ]
+}

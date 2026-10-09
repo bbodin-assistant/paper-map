@@ -1,0 +1,1917 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.964224+00:00",
+  "papers": [
+    {
+      "key": "BenNun2019",
+      "paper": {
+        "id": "doi:10.1145/3295500.3356173",
+        "citationKey": "BenNun2019",
+        "title": "Stateful Dataflow Multigraphs: A Data-Centric Model for Performance Portability on Heterogeneous Architectures",
+        "authors": [
+          "Tal Ben-Nun",
+          "Johannes de Fine Licht",
+          "Alexandros Nikolaos Ziogas",
+          "Timo Schneider",
+          "Torsten Hoefler"
+        ],
+        "year": 2019,
+        "venue": "SC",
+        "type": "inproceedings",
+        "doi": "10.1145/3295500.3356173",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/3295500.3356173",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Ben-Nun, Tal and de Fine Licht, Johannes and Ziogas, Alexandros Nikolaos and Schneider, Timo and Hoefler, Torsten",
+          "title": "Stateful Dataflow Multigraphs: A Data-Centric Model for Performance Portability on Heterogeneous Architectures",
+          "booktitle": "SC",
+          "year": "2019",
+          "doi": "10.1145/3295500.3356173",
+          "url": "https://doi.org/10.1145/3295500.3356173"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.122355+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_1_1_1",
+            "rawText": "Abadi Martín. 2016",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_1_1",
+              "volume-title": "Proceedings of the 12th USENIX Conference on Operating Systems Design and Implementation (OSDI'16)",
+              "author": "Abadi Martín",
+              "year": "2016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_1_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Abadi Martín"
+                ],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_1_2_1",
+            "rawText": "An Ping. 2003",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_2_1",
+              "volume-title": "STAPL: An Adaptive, Generic Parallel C++ Library",
+              "author": "An Ping",
+              "year": "2003"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "An Ping"
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_1_3_1",
+            "rawText": "https://doi.org/10.1109/pact.2015.17",
+            "doi": "10.1109/pact.2015.17",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PACT.2015.17"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/pact.2015.17",
+                "doi": "10.1109/pact.2015.17",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/pact.2015.17"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_1_4_1",
+            "rawText": "Riyadh Baghdadi Jessica Ray Malek Ben Romdhane Emanuele Del Sozzo Patricia Suriana Shoaib Kamil and Saman P. Amarasinghe. 2018. Tiramisu: A Code Optimization Framework for High Performance Systems. CoRR abs/1804.10694 (2018). arXiv:1804.10694 http://arxiv.org/abs/1804.10694  Riyadh Baghdadi Jessica Ray Malek Ben Romdhane Emanuele Del Sozzo Patricia Suriana Shoaib Kamil and Saman P. Amarasinghe. 2018. Tiramisu: A Code Optimization Framework for High Performance Systems. CoRR abs/1804.10694 (2018). arXiv:1804.10694 http://arxiv.org/abs/1804.10694",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_4_1",
+              "unstructured": "Riyadh Baghdadi Jessica Ray Malek Ben Romdhane Emanuele Del Sozzo Patricia Suriana Shoaib Kamil and Saman P. Amarasinghe. 2018. Tiramisu: A Code Optimization Framework for High Performance Systems. CoRR abs/1804.10694 (2018). arXiv:1804.10694 http://arxiv.org/abs/1804.10694  Riyadh Baghdadi Jessica Ray Malek Ben Romdhane Emanuele Del Sozzo Patricia Suriana Shoaib Kamil and Saman P. Amarasinghe. 2018. Tiramisu: A Code Optimization Framework for High Performance Systems. CoRR abs/1804.10694 (2018). arXiv:1804.10694 http://arxiv.org/abs/1804.10694"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_4_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_1_5_1",
+            "rawText": "https://doi.org/10.5555/2388996.2389086",
+            "doi": "10.5555/2388996.2389086",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/2388996.2389086"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/2388996.2389086",
+                "doi": "10.5555/2388996.2389086",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/2388996.2389086"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_1_6_1",
+            "rawText": "Tobias Becker Oskar Mencer and Georgi Gaydadjiev. 2016. Spatial Programming with OpenSPL. Springer International Publishing Cham 81--95.  Tobias Becker Oskar Mencer and Georgi Gaydadjiev. 2016. Spatial Programming with OpenSPL. Springer International Publishing Cham 81--95.",
+            "doi": "10.1007/978-3-319-26408-0_5",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_6_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Tobias Becker Oskar Mencer and Georgi Gaydadjiev. 2016. Spatial Programming with OpenSPL. Springer International Publishing Cham 81--95.  Tobias Becker Oskar Mencer and Georgi Gaydadjiev. 2016. Spatial Programming with OpenSPL. Springer International Publishing Cham 81--95.",
+              "DOI": "10.1007/978-3-319-26408-0_5"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-26408-0_5",
+                "doi": "10.1007/978-3-319-26408-0_5",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-319-26408-0_5"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_1_7_1",
+            "rawText": "https://doi.org/10.1145/2807591.2807611",
+            "doi": "10.1145/2807591.2807611",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_7_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2807591.2807611"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2807591.2807611",
+                "doi": "10.1145/2807591.2807611",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2807591.2807611"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_1_8_1",
+            "rawText": "https://doi.org/10.1145/3078597.3078616",
+            "doi": "10.1145/3078597.3078616",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3078597.3078616"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3078597.3078616",
+                "doi": "10.1145/3078597.3078616",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3078597.3078616"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_1_9_1",
+            "rawText": "Bondhugula Uday",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_9_1",
+              "volume-title": "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI).",
+              "author": "Bondhugula Uday"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_9_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Bondhugula Uday"
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_1_10_1",
+            "rawText": "https://doi.org/10.1155/2010/521797",
+            "doi": "10.1155/2010/521797",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_10_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1155/2010/521797"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1155/2010/521797",
+                "doi": "10.1155/2010/521797",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1155/2010/521797"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_1_11_1",
+            "rawText": "https://doi.org/10.1177/1094342007078442",
+            "doi": "10.1177/1094342007078442",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_11_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/1094342007078442"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1177/1094342007078442",
+                "doi": "10.1177/1094342007078442",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1177/1094342007078442"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_3_2_1_13_1",
+            "rawText": "https://doi.org/10.1109/tpami.2004.75",
+            "doi": "10.1109/tpami.2004.75",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TPAMI.2004.75"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tpami.2004.75",
+                "doi": "10.1109/tpami.2004.75",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tpami.2004.75"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_3_2_1_14_1",
+            "rawText": "CUB 2019. CUB Library Documentation. http://nvlabs.github.io/cub/.  CUB 2019. CUB Library Documentation. http://nvlabs.github.io/cub/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_14_1",
+              "unstructured": "CUB 2019. CUB Library Documentation. http://nvlabs.github.io/cub/.  CUB 2019. CUB Library Documentation. http://nvlabs.github.io/cub/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_14_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_3_2_1_15_1",
+            "rawText": "https://doi.org/10.1109/fpl.2012.6339272",
+            "doi": "10.1109/fpl.2012.6339272",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_15_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/FPL.2012.6339272"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/fpl.2012.6339272",
+                "doi": "10.1109/fpl.2012.6339272",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/fpl.2012.6339272"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_3_2_1_16_1",
+            "rawText": "https://doi.org/10.1109/99.660313",
+            "doi": "10.1109/99.660313",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_16_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/99.660313"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/99.660313",
+                "doi": "10.1109/99.660313",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/99.660313"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_3_2_1_17_1",
+            "rawText": "https://doi.org/10.1145/3192366.3192404",
+            "doi": "10.1145/3192366.3192404",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_17_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3192366.3192404"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3192366.3192404",
+                "doi": "10.1145/3192366.3192404",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3192366.3192404"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_3_2_1_18_1",
+            "rawText": "NumPy Developers. 2019. NumPy Scientific Computing Package. http://www.numpy.org  NumPy Developers. 2019. NumPy Scientific Computing Package. http://www.numpy.org",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_18_1",
+              "unstructured": "NumPy Developers. 2019. NumPy Scientific Computing Package. http://www.numpy.org  NumPy Developers. 2019. NumPy Scientific Computing Package. http://www.numpy.org"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_18_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_3_2_1_19_1",
+            "rawText": "https://doi.org/10.1016/j.jpdc.2014.07.003",
+            "doi": "10.1016/j.jpdc.2014.07.003",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_19_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.jpdc.2014.07.003"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.jpdc.2014.07.003",
+                "doi": "10.1016/j.jpdc.2014.07.003",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.jpdc.2014.07.003"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_3_2_1_20_1",
+            "rawText": "https://doi.org/10.1145/1188455.1188543",
+            "doi": "10.1145/1188455.1188543",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_20_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1188455.1188543"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1188455.1188543",
+                "doi": "10.1145/1188455.1188543",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1188455.1188543"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_3_2_1_21_1",
+            "rawText": "https://doi.org/10.1145/24039.24041",
+            "doi": "10.1145/24039.24041",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_21_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/24039.24041"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/24039.24041",
+                "doi": "10.1145/24039.24041",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/24039.24041"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_3_2_1_22_1",
+            "rawText": "Python Software Foundation. 2019. The Python Programming Language. https://www.python.org  Python Software Foundation. 2019. The Python Programming Language. https://www.python.org",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_22_1",
+              "unstructured": "Python Software Foundation. 2019. The Python Programming Language. https://www.python.org  Python Software Foundation. 2019. The Python Programming Language. https://www.python.org"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_22_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_3_2_1_23_1",
+            "rawText": "Franchetti Franz. 2018",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_23_1",
+              "volume-title": "Proceedings of the IEEE, special issue on \"From High Level Specification to High Performance Code\" 106",
+              "author": "Franchetti Franz",
+              "year": "2018"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_23_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Franchetti Franz"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_3_2_1_24_1",
+            "rawText": "Gajinov V.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_24_1",
+              "volume-title": "2012 21st International Conference on Parallel Architectures and Compilation Techniques (PACT). 435--436",
+              "author": "Gajinov V."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_24_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Gajinov V."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_3_2_1_25_1",
+            "rawText": "https://doi.org/10.1145/1356052.1356053",
+            "doi": "10.1145/1356052.1356053",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_25_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1356052.1356053"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1356052.1356053",
+                "doi": "10.1145/1356052.1356053",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1356052.1356053"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_3_2_1_26_1",
+            "rawText": "https://doi.org/10.1142/s0129626412500107",
+            "doi": "10.1142/s0129626412500107",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_26_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1142/S0129626412500107"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1142/s0129626412500107",
+                "doi": "10.1142/s0129626412500107",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1142/s0129626412500107"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_3_2_1_27_1",
+            "rawText": "Khronos Group. 2019. OpenCL. https://www.khronos.org/opencl  Khronos Group. 2019. OpenCL. https://www.khronos.org/opencl",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_27_1",
+              "unstructured": "Khronos Group. 2019. OpenCL. https://www.khronos.org/opencl  Khronos Group. 2019. OpenCL. https://www.khronos.org/opencl"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_27_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_3_2_1_28_1",
+            "rawText": "Khronos Group. 2019. OpenVX. https://www.khronos.org/openvx  Khronos Group. 2019. OpenVX. https://www.khronos.org/openvx",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_28_1",
+              "unstructured": "Khronos Group. 2019. OpenVX. https://www.khronos.org/openvx  Khronos Group. 2019. OpenVX. https://www.khronos.org/openvx"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_28_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_3_2_1_29_1",
+            "rawText": "Khronos Group. 2019. SYCL. https://www.khronos.org/sycl  Khronos Group. 2019. SYCL. https://www.khronos.org/sycl",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_29_1",
+              "unstructured": "Khronos Group. 2019. SYCL. https://www.khronos.org/sycl  Khronos Group. 2019. SYCL. https://www.khronos.org/sycl"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_29_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_3_2_1_30_1",
+            "rawText": "Intel. 2019. Math Kernel Library (MKL). https://software.intel.com/en-us/mkl  Intel. 2019. Math Kernel Library (MKL). https://software.intel.com/en-us/mkl",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_30_1",
+              "unstructured": "Intel. 2019. Math Kernel Library (MKL). https://software.intel.com/en-us/mkl  Intel. 2019. Math Kernel Library (MKL). https://software.intel.com/en-us/mkl"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_30_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_3_2_1_31_1",
+            "rawText": "https://doi.org/10.1145/1272996.1273005",
+            "doi": "10.1145/1272996.1273005",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_31_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1272996.1273005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1272996.1273005",
+                "doi": "10.1145/1272996.1273005",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1272996.1273005"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "e_1_3_2_1_32_1",
+            "rawText": "https://doi.org/10.1145/1013208.1013209",
+            "doi": "10.1145/1013208.1013209",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_32_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1013208.1013209"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1013208.1013209",
+                "doi": "10.1145/1013208.1013209",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1013208.1013209"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "e_1_3_2_1_33_1",
+            "rawText": "https://doi.org/10.1145/2676870.2676883",
+            "doi": "10.1145/2676870.2676883",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_33_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2676870.2676883"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2676870.2676883",
+                "doi": "10.1145/2676870.2676883",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2676870.2676883"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "e_1_3_2_1_34_1",
+            "rawText": "https://doi.org/10.1145/165854.165874",
+            "doi": "10.1145/165854.165874",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_34_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/165854.165874"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/165854.165874",
+                "doi": "10.1145/165854.165874",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/165854.165874"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "e_1_3_2_1_35_1",
+            "rawText": "https://doi.org/10.1145/3192366.3192379",
+            "doi": "10.1145/3192366.3192379",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_35_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3192366.3192379"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3192366.3192379",
+                "doi": "10.1145/3192366.3192379",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3192366.3192379"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "e_1_3_2_1_36_1",
+            "rawText": "https://doi.org/10.1109/sc.2016.38",
+            "doi": "10.1109/sc.2016.38",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_36_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SC.2016.38"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/sc.2016.38",
+                "doi": "10.1109/sc.2016.38",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sc.2016.38"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "e_1_3_2_1_37_1",
+            "rawText": "https://doi.org/10.1145/3178487.3178493",
+            "doi": "10.1145/3178487.3178493",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_37_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3178487.3178493"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3178487.3178493",
+                "doi": "10.1145/3178487.3178493",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3178487.3178493"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "e_1_3_2_1_38_1",
+            "rawText": "Lattner Chris. 2004",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_38_1",
+              "volume-title": "LLVM: A Compilation Framework for Lifelong Program Analysis and Transformation. In CGO.",
+              "author": "Lattner Chris",
+              "year": "2004"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_38_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Lattner Chris"
+                ],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "e_1_3_2_1_39_1",
+            "rawText": "https://doi.org/10.1109/ipdps.2016.28",
+            "doi": "10.1109/ipdps.2016.28",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_39_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/IPDPS.2016.28"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ipdps.2016.28",
+                "doi": "10.1109/ipdps.2016.28",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ipdps.2016.28"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "e_1_3_2_1_40_1",
+            "rawText": "LLNL. 2019. RAJA Performance Portability Layer. https://github.com/LLNL/RAJA  LLNL. 2019. RAJA Performance Portability Layer. https://github.com/LLNL/RAJA",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_40_1",
+              "unstructured": "LLNL. 2019. RAJA Performance Portability Layer. https://github.com/LLNL/RAJA  LLNL. 2019. RAJA Performance Portability Layer. https://github.com/LLNL/RAJA"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_40_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "e_1_3_2_1_41_1",
+            "rawText": "https://doi.org/10.1103/physrevb.74.205323",
+            "doi": "10.1103/physrevb.74.205323",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_41_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1103/PhysRevB.74.205323"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1103/physrevb.74.205323",
+                "doi": "10.1103/physrevb.74.205323",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1103/physrevb.74.205323"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "e_1_3_2_1_42_1",
+            "rawText": "https://doi.org/10.1145/2786763.2694364",
+            "doi": "10.1145/2786763.2694364",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_42_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2786763.2694364"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2786763.2694364",
+                "doi": "10.1145/2786763.2694364",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2786763.2694364"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "e_1_3_2_1_43_1",
+            "rawText": "https://doi.org/10.1145/2517349.2522738",
+            "doi": "10.1145/2517349.2522738",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_43_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2517349.2522738"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2517349.2522738",
+                "doi": "10.1145/2517349.2522738",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2517349.2522738"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "e_1_3_2_1_44_1",
+            "rawText": "https://doi.org/10.1145/2517349.2522739",
+            "doi": "10.1145/2517349.2522739",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_44_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2517349.2522739"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2517349.2522739",
+                "doi": "10.1145/2517349.2522739",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2517349.2522739"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "e_1_3_2_1_45_1",
+            "rawText": "NVIDIA. 2019. CUBLAS Library Documentation. http://docs.nvidia.com/cuda/cublas.  NVIDIA. 2019. CUBLAS Library Documentation. http://docs.nvidia.com/cuda/cublas.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_45_1",
+              "unstructured": "NVIDIA. 2019. CUBLAS Library Documentation. http://docs.nvidia.com/cuda/cublas.  NVIDIA. 2019. CUBLAS Library Documentation. http://docs.nvidia.com/cuda/cublas."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_45_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "e_1_3_2_1_46_1",
+            "rawText": "NVIDIA. 2019. CUSPARSE Library Documentation. http://docs.nvidia.com/cuda/cusparse.  NVIDIA. 2019. CUSPARSE Library Documentation. http://docs.nvidia.com/cuda/cusparse.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_46_1",
+              "unstructured": "NVIDIA. 2019. CUSPARSE Library Documentation. http://docs.nvidia.com/cuda/cusparse.  NVIDIA. 2019. CUSPARSE Library Documentation. http://docs.nvidia.com/cuda/cusparse."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_46_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "e_1_3_2_1_47_1",
+            "rawText": "Patrick McCormick. 2019. Yin & Yang: Hardware Heterogeneity & Software Productivity. Talk at SOS23 meeting Asheville NC.  Patrick McCormick. 2019. Yin & Yang: Hardware Heterogeneity & Software Productivity. Talk at SOS23 meeting Asheville NC.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_47_1",
+              "unstructured": "Patrick McCormick. 2019. Yin & Yang: Hardware Heterogeneity & Software Productivity. Talk at SOS23 meeting Asheville NC.  Patrick McCormick. 2019. Yin & Yang: Hardware Heterogeneity & Software Productivity. Talk at SOS23 meeting Asheville NC."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_47_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "e_1_3_2_1_48_1",
+            "rawText": "L. N. Pouchet. 2016. PolyBench: The Polyhedral Benchmark suite. https://sourceforge.net/projects/polybench  L. N. Pouchet. 2016. PolyBench: The Polyhedral Benchmark suite. https://sourceforge.net/projects/polybench",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_48_1",
+              "unstructured": "L. N. Pouchet. 2016. PolyBench: The Polyhedral Benchmark suite. https://sourceforge.net/projects/polybench  L. N. Pouchet. 2016. PolyBench: The Polyhedral Benchmark suite. https://sourceforge.net/projects/polybench"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_48_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "e_1_3_2_1_49_1",
+            "rawText": "https://doi.org/10.1145/2491956.2462176",
+            "doi": "10.1145/2491956.2462176",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_49_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2491956.2462176"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2491956.2462176",
+                "doi": "10.1145/2491956.2462176",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2491956.2462176"
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "e_1_3_2_1_50_1",
+            "rawText": "Gabe Rudy Malik Murtaza Khan Mary Hall Chun Chen and Jacqueline Chame. 2011. A Programming Language Interface to Describe Transformations and Code Generation. In Languages and Compilers for Parallel Computing Keith Cooper John Mellor-Crummey and Vivek Sarkar (Eds.). Springer Berlin Heidelberg Berlin Heidelberg 136--150.  Gabe Rudy Malik Murtaza Khan Mary Hall Chun Chen and Jacqueline Chame. 2011. A Programming Language Interface to Describe Transformations and Code Generation. In Languages and Compilers for Parallel Computing Keith Cooper John Mellor-Crummey and Vivek Sarkar (Eds.). Springer Berlin Heidelberg Berlin Heidelberg 136--150.",
+            "doi": "10.1007/978-3-642-19595-2_10",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_50_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Gabe Rudy Malik Murtaza Khan Mary Hall Chun Chen and Jacqueline Chame. 2011. A Programming Language Interface to Describe Transformations and Code Generation. In Languages and Compilers for Parallel Computing Keith Cooper John Mellor-Crummey and Vivek Sarkar (Eds.). Springer Berlin Heidelberg Berlin Heidelberg 136--150.  Gabe Rudy Malik Murtaza Khan Mary Hall Chun Chen and Jacqueline Chame. 2011. A Programming Language Interface to Describe Transformations and Code Generation. In Languages and Compilers for Parallel Computing Keith Cooper John Mellor-Crummey and Vivek Sarkar (Eds.). Springer Berlin Heidelberg Berlin Heidelberg 136--150.",
+              "DOI": "10.1007/978-3-642-19595-2_10"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-19595-2_10",
+                "doi": "10.1007/978-3-642-19595-2_10",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-19595-2_10"
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "e_1_3_2_1_51_1",
+            "rawText": "https://doi.org/10.1007/978-3-319-29778-1_4",
+            "doi": "10.1007/978-3-319-29778-1_4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_51_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-319-29778-1_4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-29778-1_4",
+                "doi": "10.1007/978-3-319-29778-1_4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-319-29778-1_4"
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "e_1_3_2_1_52_1",
+            "rawText": "https://doi.org/10.1109/asap.2018.8445108",
+            "doi": "10.1109/asap.2018.8445108",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_52_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ASAP.2018.8445108"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/asap.2018.8445108",
+                "doi": "10.1109/asap.2018.8445108",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/asap.2018.8445108"
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "e_1_3_2_1_53_1",
+            "rawText": "https://doi.org/10.1145/2784731.2784754",
+            "doi": "10.1145/2784731.2784754",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_53_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2784731.2784754"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2784731.2784754",
+                "doi": "10.1145/2784731.2784754",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2784731.2784754"
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "e_1_3_2_1_54_1",
+            "rawText": "SymPy Development Team. 2019. SymPy Symbolic Math Library. http://www.sympy.org  SymPy Development Team. 2019. SymPy Symbolic Math Library. http://www.sympy.org",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_54_1",
+              "unstructured": "SymPy Development Team. 2019. SymPy Symbolic Math Library. http://www.sympy.org  SymPy Development Team. 2019. SymPy Symbolic Math Library. http://www.sympy.org"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_54_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "e_1_3_2_1_55_1",
+            "rawText": "Thies William",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_55_1",
+              "volume-title": "Proceedings of the 11th International Conference on Compiler Construction (CC '02)",
+              "author": "Thies William"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_55_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Thies William"
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "e_1_3_2_1_56_1",
+            "rawText": "https://doi.org/10.1109/tpds.2017.2703149",
+            "doi": "10.1109/tpds.2017.2703149",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_56_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TPDS.2017.2703149"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tpds.2017.2703149",
+                "doi": "10.1109/tpds.2017.2703149",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tpds.2017.2703149"
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "e_1_3_2_1_57_1",
+            "rawText": "US Department of Energy. 2019. Definition - Performance Portability. https://performanceportability.org/perfport/definition/.  US Department of Energy. 2019. Definition - Performance Portability. https://performanceportability.org/perfport/definition/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_57_1",
+              "unstructured": "US Department of Energy. 2019. Definition - Performance Portability. https://performanceportability.org/perfport/definition/.  US Department of Energy. 2019. Definition - Performance Portability. https://performanceportability.org/perfport/definition/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_57_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "e_1_3_2_1_58_1",
+            "rawText": "https://doi.org/10.1145/2400682.2400713",
+            "doi": "10.1145/2400682.2400713",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_58_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2400682.2400713"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2400682.2400713",
+                "doi": "10.1145/2400682.2400713",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2400682.2400713"
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "e_1_3_2_1_59_1",
+            "rawText": "https://doi.org/10.2172/1473756",
+            "doi": "10.2172/1473756",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_59_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2172/1473756"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.2172/1473756",
+                "doi": "10.2172/1473756",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.2172/1473756"
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "e_1_3_2_1_60_1",
+            "rawText": "https://doi.org/10.1109/sc.2014.21",
+            "doi": "10.1109/sc.2014.21",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_60_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SC.2014.21"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/sc.2014.21",
+                "doi": "10.1109/sc.2014.21",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sc.2014.21"
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "e_1_3_2_1_61_1",
+            "rawText": "Xilinx. 2019. SDAccel. https://www.xilinx.com/products/design-tools/software-zone/sdaccel.html  Xilinx. 2019. SDAccel. https://www.xilinx.com/products/design-tools/software-zone/sdaccel.html",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_61_1",
+              "unstructured": "Xilinx. 2019. SDAccel. https://www.xilinx.com/products/design-tools/software-zone/sdaccel.html  Xilinx. 2019. SDAccel. https://www.xilinx.com/products/design-tools/software-zone/sdaccel.html"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_61_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "e_1_3_2_1_62_1",
+            "rawText": "Xilinx. 2019. Vivado HLS. https://www.xilinx.com/products/design-tools/vivado  Xilinx. 2019. Vivado HLS. https://www.xilinx.com/products/design-tools/vivado",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_62_1",
+              "unstructured": "Xilinx. 2019. Vivado HLS. https://www.xilinx.com/products/design-tools/vivado  Xilinx. 2019. Vivado HLS. https://www.xilinx.com/products/design-tools/vivado"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_62_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "e_1_3_2_1_63_1",
+            "rawText": "https://doi.org/10.1145/1809028.1806640",
+            "doi": "10.1145/1809028.1806640",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_63_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1809028.1806640"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1809028.1806640",
+                "doi": "10.1145/1809028.1806640",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1809028.1806640"
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "e_1_3_2_1_64_1",
+            "rawText": "Ziogas A. N.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_64_1",
+              "volume-title": "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC '19)",
+              "author": "Ziogas A. N."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_64_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Ziogas A. N."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/3295500.3356173",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 63,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/3295500.3356173",
+          "crossrefReferenceCount": 63
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/3295500.3356173->doi:10.1145/1013208.1013209@papers-dataflow-BenNun2019.pdf",
+      "source": "doi:10.1145/3295500.3356173",
+      "target": "doi:10.1145/1013208.1013209",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/BenNun2019.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "BenNun2019",
+      "paperId": "doi:10.1145/3295500.3356173",
+      "metadata": {
+        "fileName": "BenNun2019.pdf",
+        "sourcePath": "papers/dataflow/BenNun2019.pdf"
+      }
+    }
+  ]
+}

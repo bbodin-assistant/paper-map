@@ -1,0 +1,323 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.105506+00:00",
+  "papers": [
+    {
+      "key": "Henzinger2002b",
+      "paper": {
+        "id": "doi:10.1007/3-540-45828-x_7",
+        "citationKey": "Henzinger2002b",
+        "title": "Time-Safety Checking for Embedded Programs",
+        "authors": [
+          "Thomas A. Henzinger",
+          "Christoph M. Kirsch",
+          "Rupak Majumdar",
+          "Slobodan Matic"
+        ],
+        "year": 2002,
+        "venue": "Embedded Software",
+        "type": "incollection",
+        "doi": "10.1007/3-540-45828-x_7",
+        "arxivId": "",
+        "url": "https://doi.org/10.1007/3-540-45828-x_7",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Henzinger, Thomas A. and Kirsch, Christoph M. and Majumdar, Rupak and Matic, Slobodan",
+          "title": "{Time-Safety Checking for Embedded Programs}",
+          "year": "2002",
+          "booktitle": "Embedded Software",
+          "publisher": "Springer Berlin Heidelberg",
+          "series": "Lecture Notes in Computer Science",
+          "pages": "76--92",
+          "doi": "10.1007/3-540-45828-x_7",
+          "url": "https://doi.org/10.1007/3-540-45828-x_7"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.070751+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "7_CR1",
+            "rawText": "K. Altisen, G. Gössler, A. Pnueli, J. Sifakis, S. Tripakis, and S. Yovine. A framework for scheduler synthesis. In Proc. Real-Time Systems Symp., pp. 154–163. IEEE Computer Society, 1999.",
+            "doi": "10.1109/real.1999.818838",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "7_CR1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "K. Altisen, G. Gössler, A. Pnueli, J. Sifakis, S. Tripakis, and S. Yovine. A framework for scheduler synthesis. In Proc. Real-Time Systems Symp., pp. 154–163. IEEE Computer Society, 1999.",
+              "DOI": "10.1109/REAL.1999.818838"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1999.818838",
+                "doi": "10.1109/real.1999.818838",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1999.818838"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "7_CR2",
+            "rawText": "J.R. Büchi and L.H. Landweber. Solving sequential conditions by finite-state strategies. Trans. AMS, 138:295–311, 1969.",
+            "doi": "10.2307/1994916",
+            "arxivId": null,
+            "year": 1969,
+            "reviewed": false,
+            "referenceData": {
+              "key": "7_CR2",
+              "doi-asserted-by": "publisher",
+              "first-page": "295",
+              "DOI": "10.2307/1994916",
+              "volume": "138",
+              "author": "J.R. Büchi",
+              "year": "1969",
+              "unstructured": "J.R. Büchi and L.H. Landweber. Solving sequential conditions by finite-state strategies. Trans. AMS, 138:295–311, 1969.",
+              "journal-title": "Trans. AMS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.2307/1994916",
+                "doi": "10.2307/1994916",
+                "title": "",
+                "authors": [
+                  "J.R. Büchi"
+                ],
+                "year": 1969,
+                "venue": "Trans. AMS",
+                "type": "",
+                "url": "https://doi.org/10.2307/1994916"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "7_CR3",
+            "rawText": "N. Halbwachs. Synchronous Programming of Reactive Systems. Kluwer, 1993.",
+            "doi": "10.1007/978-1-4757-2231-4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "7_CR3",
+              "doi-asserted-by": "crossref",
+              "unstructured": "N. Halbwachs. Synchronous Programming of Reactive Systems. Kluwer, 1993.",
+              "DOI": "10.1007/978-1-4757-2231-4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-1-4757-2231-4",
+                "doi": "10.1007/978-1-4757-2231-4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-4757-2231-4"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "7_CR4",
+            "rawText": "T.A. Henzinger, B. Horowitz, and C.M. Kirsch. Giotto: a time-triggered language for embedded programming. In Proc. Embedded Software, LNCS 2211, pp. 166–184. Springer, 2001.",
+            "doi": "10.1007/3-540-45449-7_12",
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "7_CR4",
+              "series-title": "Lect Notes Comput Sci",
+              "doi-asserted-by": "publisher",
+              "first-page": "166",
+              "DOI": "10.1007/3-540-45449-7_12",
+              "volume-title": "Proc. Embedded Software",
+              "author": "T.A. Henzinger",
+              "year": "2001",
+              "unstructured": "T.A. Henzinger, B. Horowitz, and C.M. Kirsch. Giotto: a time-triggered language for embedded programming. In Proc. Embedded Software, LNCS 2211, pp. 166–184. Springer, 2001."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/3-540-45449-7_12",
+                "doi": "10.1007/3-540-45449-7_12",
+                "title": "Lect Notes Comput Sci",
+                "authors": [
+                  "T.A. Henzinger"
+                ],
+                "year": 2001,
+                "venue": "Lect Notes Comput Sci",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45449-7_12"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "7_CR5",
+            "rawText": "T.A. Henzinger and C.M. Kirsch. The embedded machine: predictable, portable real-time code. In Proc. Conf. Programming Languages Design and Implementation, pp. 315–326. ACM, 2002.",
+            "doi": "10.1145/543552.512567",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "7_CR5",
+              "doi-asserted-by": "crossref",
+              "unstructured": "T.A. Henzinger and C.M. Kirsch. The embedded machine: predictable, portable real-time code. In Proc. Conf. Programming Languages Design and Implementation, pp. 315–326. ACM, 2002.",
+              "DOI": "10.1145/543552.512567"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/543552.512567",
+                "doi": "10.1145/543552.512567",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/543552.512567"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "7_CR6",
+            "rawText": "C. Liu and J. Layland. Scheduling algorithms for multiprogramming in a hard-realtime environment. J. A CM, 20:46–61, 1973.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "key": "7_CR6",
+              "first-page": "46",
+              "volume": "20",
+              "author": "C. Liu",
+              "year": "1973",
+              "unstructured": "C. Liu and J. Layland. Scheduling algorithms for multiprogramming in a hard-realtime environment. J. A CM, 20:46–61, 1973.",
+              "journal-title": "J. A CM"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:7_CR6",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "C. Liu"
+                ],
+                "year": 1973,
+                "venue": "J. A CM",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7_CR7",
+            "rawText": "J.W. Thatcher and J.B. Wright. Generalized finite-automata theory with an application to a decision problem in second-order logic. Mathematical Systems Theory, 2:57–81, 1968.",
+            "doi": "10.1007/bf01691346",
+            "arxivId": null,
+            "year": 1968,
+            "reviewed": false,
+            "referenceData": {
+              "key": "7_CR7",
+              "doi-asserted-by": "publisher",
+              "first-page": "57",
+              "DOI": "10.1007/BF01691346",
+              "volume": "2",
+              "author": "J.W. Thatcher",
+              "year": "1968",
+              "unstructured": "J.W. Thatcher and J.B. Wright. Generalized finite-automata theory with an application to a decision problem in second-order logic. Mathematical Systems Theory, 2:57–81, 1968.",
+              "journal-title": "Mathematical Systems Theory"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf01691346",
+                "doi": "10.1007/bf01691346",
+                "title": "",
+                "authors": [
+                  "J.W. Thatcher"
+                ],
+                "year": 1968,
+                "venue": "Mathematical Systems Theory",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf01691346"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/3-540-45828-x_7",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 7,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/3-540-45828-x_7",
+          "crossrefReferenceCount": 7
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/3-540-45828-x_7->doi:10.1007/3-540-45449-7_12@papers-LET-Henzinger2002b.pdf",
+      "source": "doi:10.1007/3-540-45828-x_7",
+      "target": "doi:10.1007/3-540-45449-7_12",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2002b.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Henzinger2002b",
+      "paperId": "doi:10.1007/3-540-45828-x_7",
+      "metadata": {
+        "fileName": "Henzinger2002b.pdf",
+        "sourcePath": "papers/LET/Henzinger2002b.pdf"
+      }
+    }
+  ]
+}

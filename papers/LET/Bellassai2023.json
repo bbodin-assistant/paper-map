@@ -1,0 +1,1203 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.485480+00:00",
+  "papers": [
+    {
+      "key": "Bellassai2023",
+      "paper": {
+        "id": "doi:10.1016/j.sysarc.2023.102987",
+        "citationKey": "Bellassai2023",
+        "title": "Supporting logical execution time in multi-core POSIX systems",
+        "authors": [
+          "Davide Bellassai",
+          "Alessandro Biondi",
+          "Alessandro Biasci",
+          "Bruno Morelli"
+        ],
+        "year": 2023,
+        "venue": "Journal of Systems Architecture",
+        "type": "article",
+        "doi": "10.1016/j.sysarc.2023.102987",
+        "arxivId": "",
+        "url": "https://doi.org/10.1016/j.sysarc.2023.102987",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Bellassai, Davide and Biondi, Alessandro and Biasci, Alessandro and Morelli, Bruno",
+          "title": "{Supporting logical execution time in multi-core POSIX systems}",
+          "year": "2023",
+          "journal": "Journal of Systems Architecture",
+          "publisher": "Elsevier BV",
+          "volume": "144",
+          "pages": "102987",
+          "doi": "10.1016/j.sysarc.2023.102987",
+          "url": "https://doi.org/10.1016/j.sysarc.2023.102987"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.058441+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "10.1016/j.sysarc.2023.102987_b1",
+            "rawText": "Henzinger. Giotto: A time-triggered language for embedded programming. 2001",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b1",
+              "series-title": "Embedded Software: First International Workshop, EMSOFT 2001 Tahoe City, CA, USA, October 8–10, 2001 Proceedings 1",
+              "first-page": "166",
+              "article-title": "Giotto: A time-triggered language for embedded programming",
+              "author": "Henzinger",
+              "year": "2001"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1007/3-540-45449-7_12",
+                "doi": "",
+                "title": "Giotto: A time-triggered language for embedded programming",
+                "authors": [
+                  "Henzinger"
+                ],
+                "year": 2001,
+                "venue": "Embedded Software: First International Workshop, EMSOFT 2001 Tahoe City, CA, USA, October 8–10, 2001 Proceedings 1",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45449-7_12"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "10.1016/j.sysarc.2023.102987_b2",
+            "rawText": "Biondi. Achieving predictable multicore execution of automotive applications using the LET paradigm. 2018",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b2",
+              "series-title": "2018 IEEE Real-Time and Embedded Technology and Applications Symposium",
+              "first-page": "240",
+              "article-title": "Achieving predictable multicore execution of automotive applications using the LET paradigm",
+              "author": "Biondi",
+              "year": "2018"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1109/rtas.2018.00032",
+                "doi": "",
+                "title": "Achieving predictable multicore execution of automotive applications using the LET paradigm",
+                "authors": [
+                  "Biondi"
+                ],
+                "year": 2018,
+                "venue": "2018 IEEE Real-Time and Embedded Technology and Applications Symposium",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2018.00032"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "10.1016/j.sysarc.2023.102987_b3",
+            "rawText": "Gemlau. System-level logical execution time: Augmenting the logical execution time paradigm for distributed real-time automotive software. 2021. ACM Trans. Cyber-Phys. Syst.. https://doi.org/10.1145/3381847",
+            "doi": "10.1145/3381847",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "10.1016/j.sysarc.2023.102987_b3",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1145/3381847",
+              "article-title": "System-level logical execution time: Augmenting the logical execution time paradigm for distributed real-time automotive software",
+              "volume": "5",
+              "author": "Gemlau",
+              "year": "2021",
+              "journal-title": "ACM Trans. Cyber-Phys. Syst."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3381847",
+                "doi": "10.1145/3381847",
+                "title": "System-level logical execution time: Augmenting the logical execution time paradigm for distributed real-time automotive software",
+                "authors": [
+                  "Gemlau"
+                ],
+                "year": 2021,
+                "venue": "ACM Trans. Cyber-Phys. Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1145/3381847"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "10.1016/j.sysarc.2023.102987_b4",
+            "rawText": ". AUTOSAR, The AUTOSAR standard, version 4.3. [Online]. Available: http://www.autosar.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b4",
+              "unstructured": ". AUTOSAR, The AUTOSAR standard, version 4.3. [Online]. Available: http://www.autosar.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b4",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "10.1016/j.sysarc.2023.102987_b5",
+            "rawText": ". AUTOSAR, Autosar classic. [Online]. Available: https://www.autosar.org/standards/classic-platform.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b5",
+              "unstructured": ". AUTOSAR, Autosar classic. [Online]. Available: https://www.autosar.org/standards/classic-platform."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b5",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "10.1016/j.sysarc.2023.102987_b6",
+            "rawText": ". AUTOSAR, Specification of timing extensions. [Online]. Available: https://www.autosar.org/fileadmin/standards/R22-11/CP/AUTOSAR_TPS_TimingExtensions.pdf.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b6",
+              "unstructured": ". AUTOSAR, Specification of timing extensions. [Online]. Available: https://www.autosar.org/fileadmin/standards/R22-11/CP/AUTOSAR_TPS_TimingExtensions.pdf."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b6",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "10.1016/j.sysarc.2023.102987_b7",
+            "rawText": ". AUTOSAR, Autosar adaptive. [Online]. Available: https://www.autosar.org/standards/adaptive-platform.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b7",
+              "unstructured": ". AUTOSAR, Autosar adaptive. [Online]. Available: https://www.autosar.org/standards/adaptive-platform."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b7",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "10.1016/j.sysarc.2023.102987_b8",
+            "rawText": "Scordino. Hardware acceleration of data distribution service (DDS) for automotive communication and computing. 2022. IEEE Access. https://doi.org/10.1109/access.2022.3213664",
+            "doi": "10.1109/access.2022.3213664",
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b8",
+              "doi-asserted-by": "crossref",
+              "first-page": "109626",
+              "DOI": "10.1109/ACCESS.2022.3213664",
+              "article-title": "Hardware acceleration of data distribution service (DDS) for automotive communication and computing",
+              "volume": "10",
+              "author": "Scordino",
+              "year": "2022",
+              "journal-title": "IEEE Access"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/access.2022.3213664",
+                "doi": "10.1109/access.2022.3213664",
+                "title": "Hardware acceleration of data distribution service (DDS) for automotive communication and computing",
+                "authors": [
+                  "Scordino"
+                ],
+                "year": 2022,
+                "venue": "IEEE Access",
+                "type": "",
+                "url": "https://doi.org/10.1109/access.2022.3213664"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "10.1016/j.sysarc.2023.102987_b9",
+            "rawText": ". IEEE, “Std 1003.13-2003 Standardized Application Environment Profile (AEP) - POSIX(TM) Realtime and Embedded Application Support”. [Online]. Available: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1342418.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b9",
+              "unstructured": ". IEEE, “Std 1003.13-2003 Standardized Application Environment Profile (AEP) - POSIX(TM) Realtime and Embedded Application Support”. [Online]. Available: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1342418."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b9",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10.1016/j.sysarc.2023.102987_b10",
+            "rawText": "A. Hamann, D. Dasari, S. Kramer, M. Pressler, F. Wurst, D. Ziegenbein, WATERS industrial challenge 2017. [Online]. Available: https://waters2017.inria.fr/challenge/#Challenge17.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b10",
+              "unstructured": "A. Hamann, D. Dasari, S. Kramer, M. Pressler, F. Wurst, D. Ziegenbein, WATERS industrial challenge 2017. [Online]. Available: https://waters2017.inria.fr/challenge/#Challenge17."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b10",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "10.1016/j.sysarc.2023.102987_b11",
+            "rawText": "Köhler. Robust cause-effect chains with bounded execution time and system-level logical execution time. 2022. ACM Trans. Embedded Comput. Syst.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b11",
+              "article-title": "Robust cause-effect chains with bounded execution time and system-level logical execution time",
+              "author": "Köhler",
+              "year": "2022",
+              "journal-title": "ACM Trans. Embedded Comput. Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b11",
+                "doi": "",
+                "title": "Robust cause-effect chains with bounded execution time and system-level logical execution time",
+                "authors": [
+                  "Köhler"
+                ],
+                "year": 2022,
+                "venue": "ACM Trans. Embedded Comput. Syst.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "10.1016/j.sysarc.2023.102987_b12",
+            "rawText": "Cervin. Jitterbug and truetime: Analysis tools for real-time control systems. 2002",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b12",
+              "series-title": "Proceedings of the 2nd Workshop on Real-Time Tools",
+              "article-title": "Jitterbug and truetime: Analysis tools for real-time control systems",
+              "author": "Cervin",
+              "year": "2002"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b12",
+                "doi": "",
+                "title": "Jitterbug and truetime: Analysis tools for real-time control systems",
+                "authors": [
+                  "Cervin"
+                ],
+                "year": 2002,
+                "venue": "Proceedings of the 2nd Workshop on Real-Time Tools",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "10.1016/j.sysarc.2023.102987_b13",
+            "rawText": "Liu. Scheduling algorithms for multiprogramming in a hard-real-time environment. 1973. J. ACM. https://doi.org/10.1145/321738.321743",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "10.1016/j.sysarc.2023.102987_b13",
+              "doi-asserted-by": "crossref",
+              "first-page": "46",
+              "DOI": "10.1145/321738.321743",
+              "article-title": "Scheduling algorithms for multiprogramming in a hard-real-time environment",
+              "volume": "20",
+              "author": "Liu",
+              "year": "1973",
+              "journal-title": "J. ACM"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "title": "Scheduling algorithms for multiprogramming in a hard-real-time environment",
+                "authors": [
+                  "Liu"
+                ],
+                "year": 1973,
+                "venue": "J. ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "10.1016/j.sysarc.2023.102987_b14",
+            "rawText": "Henzinger. From control models to real-time code using Giotto. 2003. IEEE Control Syst. Mag.. https://doi.org/10.1109/mcs.2003.1172829",
+            "doi": "10.1109/mcs.2003.1172829",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "10.1016/j.sysarc.2023.102987_b14",
+              "doi-asserted-by": "crossref",
+              "first-page": "50",
+              "DOI": "10.1109/MCS.2003.1172829",
+              "article-title": "From control models to real-time code using Giotto",
+              "volume": "23",
+              "author": "Henzinger",
+              "year": "2003",
+              "journal-title": "IEEE Control Syst. Mag."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/mcs.2003.1172829",
+                "doi": "10.1109/mcs.2003.1172829",
+                "title": "From control models to real-time code using Giotto",
+                "authors": [
+                  "Henzinger"
+                ],
+                "year": 2003,
+                "venue": "IEEE Control Syst. Mag.",
+                "type": "",
+                "url": "https://doi.org/10.1109/mcs.2003.1172829"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "10.1016/j.sysarc.2023.102987_b15",
+            "rawText": "Kirsch. The logical execution time paradigm. 2012. Adv. Real-Time Syst.. https://doi.org/10.1007/978-3-642-24349-3_5",
+            "doi": "10.1007/978-3-642-24349-3_5",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b15",
+              "doi-asserted-by": "crossref",
+              "first-page": "103",
+              "DOI": "10.1007/978-3-642-24349-3_5",
+              "article-title": "The logical execution time paradigm",
+              "author": "Kirsch",
+              "year": "2012",
+              "journal-title": "Adv. Real-Time Syst."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-3_5",
+                "title": "The logical execution time paradigm",
+                "authors": [
+                  "Kirsch"
+                ],
+                "year": 2012,
+                "venue": "Adv. Real-Time Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "10.1016/j.sysarc.2023.102987_b16",
+            "rawText": "A. Davare, Q. Zhu, M. Di Natale, C. Pinello, S. Kanajan, A. Sangiovanni-Vincentelli, Period optimization for hard real-time distributed automotive systems, in: Proceedings of the 44th Annual Design Automation Conference, 2007, pp. 278–283.",
+            "doi": "10.1109/dac.2007.375172",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b16",
+              "doi-asserted-by": "crossref",
+              "unstructured": "A. Davare, Q. Zhu, M. Di Natale, C. Pinello, S. Kanajan, A. Sangiovanni-Vincentelli, Period optimization for hard real-time distributed automotive systems, in: Proceedings of the 44th Annual Design Automation Conference, 2007, pp. 278–283.",
+              "DOI": "10.1109/DAC.2007.375172"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/dac.2007.375172",
+                "doi": "10.1109/dac.2007.375172",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/dac.2007.375172"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "10.1016/j.sysarc.2023.102987_b17",
+            "rawText": "Beckert. Zero-time communication for automotive multi-core systems under SPP scheduling. 2016",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b17",
+              "series-title": "2016 IEEE 21st International Conference on Emerging Technologies and Factory Automation",
+              "first-page": "1",
+              "article-title": "Zero-time communication for automotive multi-core systems under SPP scheduling",
+              "author": "Beckert",
+              "year": "2016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b17",
+                "doi": "",
+                "title": "Zero-time communication for automotive multi-core systems under SPP scheduling",
+                "authors": [
+                  "Beckert"
+                ],
+                "year": 2016,
+                "venue": "2016 IEEE 21st International Conference on Emerging Technologies and Factory Automation",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "10.1016/j.sysarc.2023.102987_b18",
+            "rawText": "Resmerita. Applying real-time programming to legacy embedded control software. 2015",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b18",
+              "series-title": "2015 IEEE 18th International Symposium on Real-Time Distributed Computing",
+              "first-page": "1",
+              "article-title": "Applying real-time programming to legacy embedded control software",
+              "author": "Resmerita",
+              "year": "2015"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b18",
+                "doi": "",
+                "title": "Applying real-time programming to legacy embedded control software",
+                "authors": [
+                  "Resmerita"
+                ],
+                "year": 2015,
+                "venue": "2015 IEEE 18th International Symposium on Real-Time Distributed Computing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "10.1016/j.sysarc.2023.102987_b19",
+            "rawText": "Hennig. Towards parallelizing legacy embedded control software using the let programming paradigm, in 2016 IEEE real-time and embedded technology and applications symposium (RTAS). 2016. IEEE Comput. Soc.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b19",
+              "first-page": "1",
+              "article-title": "Towards parallelizing legacy embedded control software using the let programming paradigm, in 2016 IEEE real-time and embedded technology and applications symposium (RTAS)",
+              "author": "Hennig",
+              "year": "2016",
+              "journal-title": "IEEE Comput. Soc."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b19",
+                "doi": "",
+                "title": "Towards parallelizing legacy embedded control software using the let programming paradigm, in 2016 IEEE real-time and embedded technology and applications symposium (RTAS)",
+                "authors": [
+                  "Hennig"
+                ],
+                "year": 2016,
+                "venue": "IEEE Comput. Soc.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "10.1016/j.sysarc.2023.102987_b20",
+            "rawText": "Zmaranda. Producer-consumer paradigm in real-time applications. 2009. J. Comput. Sci. Control Syst.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "10.1016/j.sysarc.2023.102987_b20",
+              "first-page": "83",
+              "article-title": "Producer-consumer paradigm in real-time applications",
+              "author": "Zmaranda",
+              "year": "2009",
+              "journal-title": "J. Comput. Sci. Control Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b20",
+                "doi": "",
+                "title": "Producer-consumer paradigm in real-time applications",
+                "authors": [
+                  "Zmaranda"
+                ],
+                "year": 2009,
+                "venue": "J. Comput. Sci. Control Syst.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "10.1016/j.sysarc.2023.102987_b21",
+            "rawText": "Eugster. The many faces of publish/subscribe. 2003. ACM Comput. Surv. (CSUR). https://doi.org/10.1145/857076.857078",
+            "doi": "10.1145/857076.857078",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "10.1016/j.sysarc.2023.102987_b21",
+              "doi-asserted-by": "crossref",
+              "first-page": "114",
+              "DOI": "10.1145/857076.857078",
+              "article-title": "The many faces of publish/subscribe",
+              "volume": "35",
+              "author": "Eugster",
+              "year": "2003",
+              "journal-title": "ACM Comput. Surv. (CSUR)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/857076.857078",
+                "doi": "10.1145/857076.857078",
+                "title": "The many faces of publish/subscribe",
+                "authors": [
+                  "Eugster"
+                ],
+                "year": 2003,
+                "venue": "ACM Comput. Surv. (CSUR)",
+                "type": "",
+                "url": "https://doi.org/10.1145/857076.857078"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "10.1016/j.sysarc.2023.102987_b22",
+            "rawText": "R. Banakar, S. Steinke, B.-S. Lee, M. Balakrishnan, P. Marwedel, Scratchpad memory: Design alternative for cache on-chip memory in embedded systems, in: Proceedings of the Tenth International Symposium on Hardware/Software Codesign, 2002, pp. 73–78.",
+            "doi": "10.1109/codes.2002.1003604",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b22",
+              "doi-asserted-by": "crossref",
+              "unstructured": "R. Banakar, S. Steinke, B.-S. Lee, M. Balakrishnan, P. Marwedel, Scratchpad memory: Design alternative for cache on-chip memory in embedded systems, in: Proceedings of the Tenth International Symposium on Hardware/Software Codesign, 2002, pp. 73–78.",
+              "DOI": "10.1109/CODES.2002.1003604"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/codes.2002.1003604",
+                "doi": "10.1109/codes.2002.1003604",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/codes.2002.1003604"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "10.1016/j.sysarc.2023.102987_b23",
+            "rawText": "M. Beckert, R. Ernst, The IDA LET machine—An efficient and streamlined open source implementation of the logical execution time paradigm, in: International Workshop on New Platforms for Future Cars, NPCar At DATE 2018, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b23",
+              "unstructured": "M. Beckert, R. Ernst, The IDA LET machine—An efficient and streamlined open source implementation of the logical execution time paradigm, in: International Workshop on New Platforms for Future Cars, NPCar At DATE 2018, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b23",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "10.1016/j.sysarc.2023.102987_b24",
+            "rawText": "Baruah. Generalized multiframe tasks. 1999. Real-Time Syst.. https://doi.org/10.1023/a:1008030427220",
+            "doi": "10.1023/a:1008030427220",
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b24",
+              "doi-asserted-by": "crossref",
+              "first-page": "5",
+              "DOI": "10.1023/A:1008030427220",
+              "article-title": "Generalized multiframe tasks",
+              "volume": "17",
+              "author": "Baruah",
+              "year": "1999",
+              "journal-title": "Real-Time Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/a:1008030427220",
+                "doi": "10.1023/a:1008030427220",
+                "title": "Generalized multiframe tasks",
+                "authors": [
+                  "Baruah"
+                ],
+                "year": 1999,
+                "venue": "Real-Time Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1023/a:1008030427220"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "10.1016/j.sysarc.2023.102987_b25",
+            "rawText": "[Online]. Available: https://retis.santannapisa.it/~a.biondi/LET/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b25",
+              "unstructured": "[Online]. Available: https://retis.santannapisa.it/~a.biondi/LET/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b25",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "10.1016/j.sysarc.2023.102987_b26",
+            "rawText": "Menard. Achieving determinism in adaptive AUTOSAR. 2020",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b26",
+              "series-title": "2020 Design, Automation & Test in Europe Conference & Exhibition",
+              "first-page": "822",
+              "article-title": "Achieving determinism in adaptive AUTOSAR",
+              "author": "Menard",
+              "year": "2020"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b26",
+                "doi": "",
+                "title": "Achieving determinism in adaptive AUTOSAR",
+                "authors": [
+                  "Menard"
+                ],
+                "year": 2020,
+                "venue": "2020 Design, Automation & Test in Europe Conference & Exhibition",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "10.1016/j.sysarc.2023.102987_b27",
+            "rawText": "Lohstroh. Toward a lingua franca for deterministic concurrent systems. 2021. ACM Trans. Embedded Comput. Syst. (TECS). https://doi.org/10.1145/3448128",
+            "doi": "10.1145/3448128",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "10.1016/j.sysarc.2023.102987_b27",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1145/3448128",
+              "article-title": "Toward a lingua franca for deterministic concurrent systems",
+              "volume": "20",
+              "author": "Lohstroh",
+              "year": "2021",
+              "journal-title": "ACM Trans. Embedded Comput. Syst. (TECS)"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3448128",
+                "doi": "10.1145/3448128",
+                "title": "Toward a lingua franca for deterministic concurrent systems",
+                "authors": [
+                  "Lohstroh"
+                ],
+                "year": 2021,
+                "venue": "ACM Trans. Embedded Comput. Syst. (TECS)",
+                "type": "",
+                "url": "https://doi.org/10.1145/3448128"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "10.1016/j.sysarc.2023.102987_b28",
+            "rawText": "Yano. Contention-free scheduling algorithm using LET paradigm for clustered many-core processor. 2021",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b28",
+              "series-title": "2021 IEEE/ACM 25th International Symposium on Distributed Simulation and Real Time Applications",
+              "first-page": "1",
+              "article-title": "Contention-free scheduling algorithm using LET paradigm for clustered many-core processor",
+              "author": "Yano",
+              "year": "2021"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b28",
+                "doi": "",
+                "title": "Contention-free scheduling algorithm using LET paradigm for clustered many-core processor",
+                "authors": [
+                  "Yano"
+                ],
+                "year": 2021,
+                "venue": "2021 IEEE/ACM 25th International Symposium on Distributed Simulation and Real Time Applications",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "10.1016/j.sysarc.2023.102987_b29",
+            "rawText": "Yano. LET paradigm scheduling algorithm considering parallel processing on clustered many-core processor. 2022. J. Inf. Process.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b29",
+              "first-page": "646",
+              "article-title": "LET paradigm scheduling algorithm considering parallel processing on clustered many-core processor",
+              "volume": "30",
+              "author": "Yano",
+              "year": "2022",
+              "journal-title": "J. Inf. Process."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b29",
+                "doi": "",
+                "title": "LET paradigm scheduling algorithm considering parallel processing on clustered many-core processor",
+                "authors": [
+                  "Yano"
+                ],
+                "year": 2022,
+                "venue": "J. Inf. Process.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "10.1016/j.sysarc.2023.102987_b30",
+            "rawText": "Kluge. Support for the logical execution time model on a time-predictable multicore processor. 2016. ACM SIGBED Rev.. https://doi.org/10.1145/3015037.3015047",
+            "doi": "10.1145/3015037.3015047",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "10.1016/j.sysarc.2023.102987_b30",
+              "doi-asserted-by": "crossref",
+              "first-page": "61",
+              "DOI": "10.1145/3015037.3015047",
+              "article-title": "Support for the logical execution time model on a time-predictable multicore processor",
+              "volume": "13",
+              "author": "Kluge",
+              "year": "2016",
+              "journal-title": "ACM SIGBED Rev."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3015037.3015047",
+                "doi": "10.1145/3015037.3015047",
+                "title": "Support for the logical execution time model on a time-predictable multicore processor",
+                "authors": [
+                  "Kluge"
+                ],
+                "year": 2016,
+                "venue": "ACM SIGBED Rev.",
+                "type": "",
+                "url": "https://doi.org/10.1145/3015037.3015047"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "10.1016/j.sysarc.2023.102987_b31",
+            "rawText": "Kluge. An operating system for safety-critical applications on manycore processors. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2023.102987_b31",
+              "series-title": "2014 IEEE 17th International Symposium on Object/Component/Service-Oriented Real-Time Distributed Computing",
+              "first-page": "238",
+              "article-title": "An operating system for safety-critical applications on manycore processors",
+              "author": "Kluge",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2023.102987_b31",
+                "doi": "",
+                "title": "An operating system for safety-critical applications on manycore processors",
+                "authors": [
+                  "Kluge"
+                ],
+                "year": 2014,
+                "venue": "2014 IEEE 17th International Symposium on Object/Component/Service-Oriented Real-Time Distributed Computing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "10.1016/j.sysarc.2023.102987_b32",
+            "rawText": "Wentzlaff. Factored operating systems (fos) the case for a scalable operating system for multicores. 2009. Oper. Syst. Rev.. https://doi.org/10.1145/1531793.1531805",
+            "doi": "10.1145/1531793.1531805",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "10.1016/j.sysarc.2023.102987_b32",
+              "doi-asserted-by": "crossref",
+              "first-page": "76",
+              "DOI": "10.1145/1531793.1531805",
+              "article-title": "Factored operating systems (fos) the case for a scalable operating system for multicores",
+              "volume": "43",
+              "author": "Wentzlaff",
+              "year": "2009",
+              "journal-title": "Oper. Syst. Rev."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1531793.1531805",
+                "doi": "10.1145/1531793.1531805",
+                "title": "Factored operating systems (fos) the case for a scalable operating system for multicores",
+                "authors": [
+                  "Wentzlaff"
+                ],
+                "year": 2009,
+                "venue": "Oper. Syst. Rev.",
+                "type": "",
+                "url": "https://doi.org/10.1145/1531793.1531805"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1016/j.sysarc.2023.102987",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 7,
+          "extractedReferenceCount": 32,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1016/j.sysarc.2023.102987",
+          "crossrefReferenceCount": 32
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1016/j.sysarc.2023.102987->doi:10.1007/3-540-45449-7_12@papers-LET-Bellassai2023.pdf",
+      "source": "doi:10.1016/j.sysarc.2023.102987",
+      "target": "doi:10.1007/3-540-45449-7_12",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Bellassai2023.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2023.102987->doi:10.1109/rtas.2018.00032@papers-LET-Bellassai2023.pdf",
+      "source": "doi:10.1016/j.sysarc.2023.102987",
+      "target": "doi:10.1109/rtas.2018.00032",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Bellassai2023.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2023.102987->doi:10.1145/3381847@papers-LET-Bellassai2023.pdf",
+      "source": "doi:10.1016/j.sysarc.2023.102987",
+      "target": "doi:10.1145/3381847",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Bellassai2023.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2023.102987->doi:10.1145/321738.321743@papers-LET-Bellassai2023.pdf",
+      "source": "doi:10.1016/j.sysarc.2023.102987",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Bellassai2023.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2023.102987->doi:10.1109/mcs.2003.1172829@papers-LET-Bellassai2023.pdf",
+      "source": "doi:10.1016/j.sysarc.2023.102987",
+      "target": "doi:10.1109/mcs.2003.1172829",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Bellassai2023.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2023.102987->doi:10.1007/978-3-642-24349-3_5@papers-LET-Bellassai2023.pdf",
+      "source": "doi:10.1016/j.sysarc.2023.102987",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Bellassai2023.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2023.102987->doi:10.1145/3448128@papers-LET-Bellassai2023.pdf",
+      "source": "doi:10.1016/j.sysarc.2023.102987",
+      "target": "doi:10.1145/3448128",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Bellassai2023.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Bellassai2023",
+      "paperId": "doi:10.1016/j.sysarc.2023.102987",
+      "metadata": {
+        "fileName": "Bellassai2023.pdf",
+        "sourcePath": "papers/LET/Bellassai2023.pdf"
+      }
+    }
+  ]
+}

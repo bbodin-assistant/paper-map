@@ -1,0 +1,1369 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.936617+00:00",
+  "papers": [
+    {
+      "key": "Gemlau2021",
+      "paper": {
+        "id": "doi:10.1145/3381847",
+        "citationKey": "Gemlau2021",
+        "title": "System-level Logical Execution Time: Augmenting the Logical Execution Time Paradigm for Distributed Real-time Automotive Software",
+        "authors": [
+          "Kai-Bj\\\"orn Gemlau",
+          "Leonie K\\\"OHLER",
+          "Rolf Ernst",
+          "Sophie Quinton"
+        ],
+        "year": 2021,
+        "venue": "ACM Transactions on Cyber-Physical Systems",
+        "type": "article",
+        "doi": "10.1145/3381847",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/3381847",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Gemlau, Kai-Bj{\\\"o}rn and K{\\\"O}HLER, Leonie and Ernst, Rolf and Quinton, Sophie",
+          "title": "{System-level Logical Execution Time: Augmenting the Logical Execution Time Paradigm for Distributed Real-time Automotive Software}",
+          "year": "2021",
+          "journal": "ACM Transactions on Cyber-Physical Systems",
+          "publisher": "Association for Computing Machinery (ACM)",
+          "volume": "5",
+          "number": "2",
+          "pages": "1--27",
+          "doi": "10.1145/3381847",
+          "url": "https://doi.org/10.1145/3381847"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.065470+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_2_1_1_1",
+            "rawText": "https://doi.org/10.1145/2560033",
+            "doi": "10.1145/2560033",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_1_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2560033"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2560033",
+                "doi": "10.1145/2560033",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2560033"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_2_1_2_1",
+            "rawText": "https://doi.org/10.1016/j.sysarc.2017.09.004",
+            "doi": "10.1016/j.sysarc.2017.09.004",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_2_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.sysarc.2017.09.004"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2017.09.004",
+                "doi": "10.1016/j.sysarc.2017.09.004",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_2_1_3_1",
+            "rawText": "Matthias Beckert and Rolf Ernst . 2018 . The IDA LET machine—An efficient and streamlined open source implementation of the logical execution time paradigm . In Proceedings of the International Workshop on New Platforms for Future Cars (NPCar at DATE’18) . Matthias Beckert and Rolf Ernst. 2018. The IDA LET machine—An efficient and streamlined open source implementation of the logical execution time paradigm. In Proceedings of the International Workshop on New Platforms for Future Cars (NPCar at DATE’18).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_3_1",
+              "volume-title": "Proceedings of the International Workshop on New Platforms for Future Cars (NPCar at DATE’18)",
+              "author": "Beckert Matthias",
+              "year": "2018",
+              "unstructured": "Matthias Beckert and Rolf Ernst . 2018 . The IDA LET machine—An efficient and streamlined open source implementation of the logical execution time paradigm . In Proceedings of the International Workshop on New Platforms for Future Cars (NPCar at DATE’18) . Matthias Beckert and Rolf Ernst. 2018. The IDA LET machine—An efficient and streamlined open source implementation of the logical execution time paradigm. In Proceedings of the International Workshop on New Platforms for Future Cars (NPCar at DATE’18)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_3_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Beckert Matthias"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_2_1_4_1",
+            "rawText": "https://doi.org/10.5555/1870926.1870931",
+            "doi": "10.5555/1870926.1870931",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_4_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/1870926.1870931"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/1870926.1870931",
+                "doi": "10.5555/1870926.1870931",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/1870926.1870931"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_2_1_5_1",
+            "rawText": "https://doi.org/10.1016/b978-155860702-6/50013-2",
+            "doi": "10.1016/b978-155860702-6/50013-2",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/B978-155860702-6/50013-2"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/b978-155860702-6/50013-2",
+                "doi": "10.1016/b978-155860702-6/50013-2",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/b978-155860702-6/50013-2"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_2_1_6_1",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805826",
+            "doi": "10.1109/jproc.2002.805826",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805826"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805826",
+                "doi": "10.1109/jproc.2002.805826",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805826"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_2_1_7_1",
+            "rawText": "https://doi.org/10.1109/rtas.2018.00032",
+            "doi": "10.1109/rtas.2018.00032",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_7_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2018.00032"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtas.2018.00032",
+                "doi": "10.1109/rtas.2018.00032",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2018.00032"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_2_1_8_1",
+            "rawText": "Alessandro Biondi , Paolo Pazzaglia , Alessio Balsini , and Marco Di Natale . 2017 . Logical execution time implementation and memory optimization issues in AUTOSAR applications for multicores . In International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS'17) . Alessandro Biondi, Paolo Pazzaglia, Alessio Balsini, and Marco Di Natale. 2017. Logical execution time implementation and memory optimization issues in AUTOSAR applications for multicores. In International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS'17).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_8_1",
+              "volume-title": "International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS'17)",
+              "author": "Biondi Alessandro",
+              "year": "2017",
+              "unstructured": "Alessandro Biondi , Paolo Pazzaglia , Alessio Balsini , and Marco Di Natale . 2017 . Logical execution time implementation and memory optimization issues in AUTOSAR applications for multicores . In International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS'17) . Alessandro Biondi, Paolo Pazzaglia, Alessio Balsini, and Marco Di Natale. 2017. Logical execution time implementation and memory optimization issues in AUTOSAR applications for multicores. In International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS'17)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_8_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Biondi Alessandro"
+                ],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_2_1_9_1",
+            "rawText": "AUTOSAR consortium. 2018. AUTOSAR standards. Retrieved from https://www.autosar.org/standards/.  AUTOSAR consortium. 2018. AUTOSAR standards. Retrieved from https://www.autosar.org/standards/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_9_1",
+              "unstructured": "AUTOSAR consortium. 2018. AUTOSAR standards. Retrieved from https://www.autosar.org/standards/.  AUTOSAR consortium. 2018. AUTOSAR standards. Retrieved from https://www.autosar.org/standards/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_9_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_2_1_10_1",
+            "rawText": "AUTOSAR consortium. 2018. AUTOSAR_RS_TimingExtensions Specification of timing extensions. Retrieved from https://www.autosar.org/fileadmin/Releases_TEMP/Classic_Platform_4.4.0/MethodologyAndTemplates.zip.  AUTOSAR consortium. 2018. AUTOSAR_RS_TimingExtensions Specification of timing extensions. Retrieved from https://www.autosar.org/fileadmin/Releases_TEMP/Classic_Platform_4.4.0/MethodologyAndTemplates.zip.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_10_1",
+              "unstructured": "AUTOSAR consortium. 2018. AUTOSAR_RS_TimingExtensions Specification of timing extensions. Retrieved from https://www.autosar.org/fileadmin/Releases_TEMP/Classic_Platform_4.4.0/MethodologyAndTemplates.zip.  AUTOSAR consortium. 2018. AUTOSAR_RS_TimingExtensions Specification of timing extensions. Retrieved from https://www.autosar.org/fileadmin/Releases_TEMP/Classic_Platform_4.4.0/MethodologyAndTemplates.zip."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_10_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_2_1_11_1",
+            "rawText": "https://doi.org/10.1109/sies.2009.5196213",
+            "doi": "10.1109/sies.2009.5196213",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_11_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SIES.2009.5196213"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/sies.2009.5196213",
+                "doi": "10.1109/sies.2009.5196213",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/SIES.2009.5196213"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_2_1_12_1",
+            "rawText": "https://doi.org/10.1109/jproc.2009.2039550",
+            "doi": "10.1109/jproc.2009.2039550",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_12_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2009.2039550"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2009.2039550",
+                "doi": "10.1109/jproc.2009.2039550",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2009.2039550"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_2_1_13_1",
+            "rawText": "Adam Dunkels. Accessed: 2019-05-01. lwIP—A Lightweight TCP/IP stack. Retrieved from https://savannah.nongnu.org/projects/lwip/.  Adam Dunkels. Accessed: 2019-05-01. lwIP—A Lightweight TCP/IP stack. Retrieved from https://savannah.nongnu.org/projects/lwip/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_13_1",
+              "unstructured": "Adam Dunkels. Accessed: 2019-05-01. lwIP—A Lightweight TCP/IP stack. Retrieved from https://savannah.nongnu.org/projects/lwip/.  Adam Dunkels. Accessed: 2019-05-01. lwIP—A Lightweight TCP/IP stack. Retrieved from https://savannah.nongnu.org/projects/lwip/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_13_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_2_1_14_1",
+            "rawText": "https://doi.org/10.1109/iecon.2018.8591550",
+            "doi": "10.1109/iecon.2018.8591550",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_14_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/IECON.2018.8591550"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/iecon.2018.8591550",
+                "doi": "10.1109/iecon.2018.8591550",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iecon.2018.8591550"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_2_1_16_1",
+            "rawText": "Rolf Ernst Stefan Kuntz Sophie Quinton and Martin Simons. 2018. Dagstuhl Seminar 18092—The Logical Execution Time Paradigm: New Perspectives for Multicore Systems. Retrieved from http://drops.dagstuhl.de/opus/volltexte/2018/9293/pdf/dagrep_v008_i002_p122_18092.pdf.  Rolf Ernst Stefan Kuntz Sophie Quinton and Martin Simons. 2018. Dagstuhl Seminar 18092—The Logical Execution Time Paradigm: New Perspectives for Multicore Systems. Retrieved from http://drops.dagstuhl.de/opus/volltexte/2018/9293/pdf/dagrep_v008_i002_p122_18092.pdf.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_16_1",
+              "unstructured": "Rolf Ernst Stefan Kuntz Sophie Quinton and Martin Simons. 2018. Dagstuhl Seminar 18092—The Logical Execution Time Paradigm: New Perspectives for Multicore Systems. Retrieved from http://drops.dagstuhl.de/opus/volltexte/2018/9293/pdf/dagrep_v008_i002_p122_18092.pdf.  Rolf Ernst Stefan Kuntz Sophie Quinton and Martin Simons. 2018. Dagstuhl Seminar 18092—The Logical Execution Time Paradigm: New Perspectives for Multicore Systems. Retrieved from http://drops.dagstuhl.de/opus/volltexte/2018/9293/pdf/dagrep_v008_i002_p122_18092.pdf."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_16_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_2_1_17_1",
+            "rawText": "Claudiu Farcas and Wolfgang Pree . 2007 . A deterministic infrastructure for real-time distributed systems . In Proceedings of the Workshop on Operating Systems Platforms for Embedded Real-Time Applications (OSPERT’07) . Claudiu Farcas and Wolfgang Pree. 2007. A deterministic infrastructure for real-time distributed systems. In Proceedings of the Workshop on Operating Systems Platforms for Embedded Real-Time Applications (OSPERT’07).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_17_1",
+              "volume-title": "Proceedings of the Workshop on Operating Systems Platforms for Embedded Real-Time Applications (OSPERT’07)",
+              "author": "Farcas Claudiu",
+              "year": "2007",
+              "unstructured": "Claudiu Farcas and Wolfgang Pree . 2007 . A deterministic infrastructure for real-time distributed systems . In Proceedings of the Workshop on Operating Systems Platforms for Embedded Real-Time Applications (OSPERT’07) . Claudiu Farcas and Wolfgang Pree. 2007. A deterministic infrastructure for real-time distributed systems. In Proceedings of the Workshop on Operating Systems Platforms for Embedded Real-Time Applications (OSPERT’07)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_17_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Farcas Claudiu"
+                ],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_2_1_18_1",
+            "rawText": "https://doi.org/10.1145/1065910.1065915",
+            "doi": "10.1145/1065910.1065915",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_18_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1065910.1065915"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1065910.1065915",
+                "doi": "10.1145/1065910.1065915",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1065910.1065915"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_2_1_19_1",
+            "rawText": "Nico Feiertag , Kai Richter , Johan Nordlander , and Jan Jonsson . 2009 . A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics . In Proceedings of the IEEE Real-Time Systems Symposium. IEEE Communications Society. Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. 2009. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Proceedings of the IEEE Real-Time Systems Symposium. IEEE Communications Society.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_19_1",
+              "volume-title": "Proceedings of the IEEE Real-Time Systems Symposium. IEEE Communications Society.",
+              "author": "Feiertag Nico",
+              "year": "2009",
+              "unstructured": "Nico Feiertag , Kai Richter , Johan Nordlander , and Jan Jonsson . 2009 . A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics . In Proceedings of the IEEE Real-Time Systems Symposium. IEEE Communications Society. Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. 2009. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Proceedings of the IEEE Real-Time Systems Symposium. IEEE Communications Society."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_19_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Feiertag Nico"
+                ],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_2_1_20_1",
+            "rawText": "https://doi.org/10.1109/rtss.2014.28",
+            "doi": "10.1109/rtss.2014.28",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_20_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2014.28"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtss.2014.28",
+                "doi": "10.1109/rtss.2014.28",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2014.28"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_2_1_21_1",
+            "rawText": "https://doi.org/10.1109/rtas.2016.7461355",
+            "doi": "10.1109/rtas.2016.7461355",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_21_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2016.7461355"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2016.7461355",
+                "doi": "10.1109/rtas.2016.7461355",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2016.7461355"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_2_1_22_1",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805825",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_22_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805825"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_2_1_23_1",
+            "rawText": "https://doi.org/10.1145/1286821.1286824",
+            "doi": "10.1145/1286821.1286824",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_23_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1286821.1286824"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1286821.1286824",
+                "doi": "10.1145/1286821.1286824",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1286821.1286824"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_2_1_24_1",
+            "rawText": "https://doi.org/10.1109/rtss.2009.9",
+            "doi": "10.1109/rtss.2009.9",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_24_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2009.9"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtss.2009.9",
+                "doi": "10.1109/rtss.2009.9",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2009.9"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_2_1_25_1",
+            "rawText": "IDA. 2019. SL-LET implementation download. Retrieved from https://www.ida.ing.tu-bs.de/∼artifacts.  IDA. 2019. SL-LET implementation download. Retrieved from https://www.ida.ing.tu-bs.de/∼artifacts.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_25_1",
+              "unstructured": "IDA. 2019. SL-LET implementation download. Retrieved from https://www.ida.ing.tu-bs.de/∼artifacts.  IDA. 2019. SL-LET implementation download. Retrieved from https://www.ida.ing.tu-bs.de/∼artifacts."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_25_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_2_1_26_1",
+            "rawText": "IEEE. 2019. IEEE 1588-2008-IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems. Retrieved from https://standards.ieee.org/standard/1588-2008.html.  IEEE. 2019. IEEE 1588-2008-IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems. Retrieved from https://standards.ieee.org/standard/1588-2008.html.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_26_1",
+              "unstructured": "IEEE. 2019. IEEE 1588-2008-IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems. Retrieved from https://standards.ieee.org/standard/1588-2008.html.  IEEE. 2019. IEEE 1588-2008-IEEE Standard for a Precision Clock Synchronization Protocol for Networked Measurement and Control Systems. Retrieved from https://standards.ieee.org/standard/1588-2008.html."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_26_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_2_1_27_1",
+            "rawText": "Infineon. 2019. 32-bit TriCore Aurix—TC2xx. Retrieved from https://www.infineon.com/cms/de/product/microcontroller/32-bit-tricore-microcontroller/32-bit-tricore-aurix-tc2xx/.  Infineon. 2019. 32-bit TriCore Aurix—TC2xx. Retrieved from https://www.infineon.com/cms/de/product/microcontroller/32-bit-tricore-microcontroller/32-bit-tricore-aurix-tc2xx/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_27_1",
+              "unstructured": "Infineon. 2019. 32-bit TriCore Aurix—TC2xx. Retrieved from https://www.infineon.com/cms/de/product/microcontroller/32-bit-tricore-microcontroller/32-bit-tricore-aurix-tc2xx/.  Infineon. 2019. 32-bit TriCore Aurix—TC2xx. Retrieved from https://www.infineon.com/cms/de/product/microcontroller/32-bit-tricore-microcontroller/32-bit-tricore-aurix-tc2xx/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_27_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_2_1_28_1",
+            "rawText": "Christoph M. Kirsch and Ana Sokolova . 2012 . The logical execution time paradigm. In Advances in Real-Time Systems. Springer , 103--120. DOI:https://doi.org/10.1007/978-3-642-24349-3_5 10.1007/978-3-642-24349-3_5 Christoph M. Kirsch and Ana Sokolova. 2012. The logical execution time paradigm. In Advances in Real-Time Systems. Springer, 103--120. DOI:https://doi.org/10.1007/978-3-642-24349-3_5",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_28_1",
+              "volume-title": "Kirsch and Ana Sokolova",
+              "author": "Christoph",
+              "year": "2012",
+              "unstructured": "Christoph M. Kirsch and Ana Sokolova . 2012 . The logical execution time paradigm. In Advances in Real-Time Systems. Springer , 103--120. DOI:https://doi.org/10.1007/978-3-642-24349-3_5 10.1007/978-3-642-24349-3_5 Christoph M. Kirsch and Ana Sokolova. 2012. The logical execution time paradigm. In Advances in Real-Time Systems. Springer, 103--120. DOI:https://doi.org/10.1007/978-3-642-24349-3_5"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_28_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Christoph"
+                ],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_2_1_29_1",
+            "rawText": "Tomasz Kloda , Bruno D’Ausbourg , and Luca Santinelli . 2014 . Towards a more flexible timing definition language . In Proceedings of the 12th International Workshop Quantitative Aspects of Programming Languages and Systems (ETAPS’14) . Tomasz Kloda, Bruno D’Ausbourg, and Luca Santinelli. 2014. Towards a more flexible timing definition language. In Proceedings of the 12th International Workshop Quantitative Aspects of Programming Languages and Systems (ETAPS’14).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_29_1",
+              "volume-title": "Proceedings of the 12th International Workshop Quantitative Aspects of Programming Languages and Systems (ETAPS’14)",
+              "author": "Kloda Tomasz",
+              "year": "2014",
+              "unstructured": "Tomasz Kloda , Bruno D’Ausbourg , and Luca Santinelli . 2014 . Towards a more flexible timing definition language . In Proceedings of the 12th International Workshop Quantitative Aspects of Programming Languages and Systems (ETAPS’14) . Tomasz Kloda, Bruno D’Ausbourg, and Luca Santinelli. 2014. Towards a more flexible timing definition language. In Proceedings of the 12th International Workshop Quantitative Aspects of Programming Languages and Systems (ETAPS’14)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_29_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kloda Tomasz"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_2_1_30_1",
+            "rawText": "https://doi.org/10.1016/s1367-5788(03)00002-6",
+            "doi": "10.1016/s1367-5788(03)00002-6",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_30_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/S1367-5788(03)00002-6"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/s1367-5788(03)00002-6",
+                "doi": "10.1016/s1367-5788(03)00002-6",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/s1367-5788(03)00002-6"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_2_1_31_1",
+            "rawText": "Stefan Kuntz. 2018. Multicore and logical execution time industry’s perspective. Retrieved from http://materials.dagstuhl.de/index.php?semnr=18092.  Stefan Kuntz. 2018. Multicore and logical execution time industry’s perspective. Retrieved from http://materials.dagstuhl.de/index.php?semnr=18092.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_31_1",
+              "unstructured": "Stefan Kuntz. 2018. Multicore and logical execution time industry’s perspective. Retrieved from http://materials.dagstuhl.de/index.php?semnr=18092.  Stefan Kuntz. 2018. Multicore and logical execution time industry’s perspective. Retrieved from http://materials.dagstuhl.de/index.php?semnr=18092."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_31_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "e_1_2_1_32_1",
+            "rawText": "Ralph Mader. 2018. Implementation of logical execution time—In an AUTOSAR based embedded automotive multi-core application. Retrieved from http://materials.dagstuhl.de/index.php?semnr=18092.  Ralph Mader. 2018. Implementation of logical execution time—In an AUTOSAR based embedded automotive multi-core application. Retrieved from http://materials.dagstuhl.de/index.php?semnr=18092.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_32_1",
+              "unstructured": "Ralph Mader. 2018. Implementation of logical execution time—In an AUTOSAR based embedded automotive multi-core application. Retrieved from http://materials.dagstuhl.de/index.php?semnr=18092.  Ralph Mader. 2018. Implementation of logical execution time—In an AUTOSAR based embedded automotive multi-core application. Retrieved from http://materials.dagstuhl.de/index.php?semnr=18092."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_32_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "e_1_2_1_33_1",
+            "rawText": "Micrium. Accessed: 2019-05-01. Real-Time Kernels: µC/OS-II and µC/OS-III. Retrieved from https://www.micrium.com/rtos/kernels/.  Micrium. Accessed: 2019-05-01. Real-Time Kernels: µC/OS-II and µC/OS-III. Retrieved from https://www.micrium.com/rtos/kernels/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_33_1",
+              "unstructured": "Micrium. Accessed: 2019-05-01. Real-Time Kernels: µC/OS-II and µC/OS-III. Retrieved from https://www.micrium.com/rtos/kernels/.  Micrium. Accessed: 2019-05-01. Real-Time Kernels: µC/OS-II and µC/OS-III. Retrieved from https://www.micrium.com/rtos/kernels/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_33_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "e_1_2_1_34_1",
+            "rawText": "https://doi.org/10.1109/seas.2007.8",
+            "doi": "10.1109/seas.2007.8",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_34_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SEAS.2007.8"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/seas.2007.8",
+                "doi": "10.1109/seas.2007.8",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/seas.2007.8"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "e_1_2_1_35_1",
+            "rawText": "https://doi.org/10.1007/s10626-011-0107-x",
+            "doi": "10.1007/s10626-011-0107-x",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_35_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s10626-011-0107-x"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/s10626-011-0107-x",
+                "doi": "10.1007/s10626-011-0107-x",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s10626-011-0107-x"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "e_1_2_1_36_1",
+            "rawText": "Wolfgang Pree and Josef Templ . 2006 . Modeling with the timing definition language (TDL) . In Proceedings of the 2nd Automotive Software Workshop on Model-Driven Development of Reliable Automotive Services (ASWSD’06) . 133--144. DOI:https://doi.org/10.1007/978-3-540-70930-5_9 10.1007/978-3-540-70930-5_9 Wolfgang Pree and Josef Templ. 2006. Modeling with the timing definition language (TDL). In Proceedings of the 2nd Automotive Software Workshop on Model-Driven Development of Reliable Automotive Services (ASWSD’06). 133--144. DOI:https://doi.org/10.1007/978-3-540-70930-5_9",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_36_1",
+              "volume-title": "Proceedings of the 2nd Automotive Software Workshop on Model-Driven Development of Reliable Automotive Services (ASWSD’06)",
+              "author": "Pree Wolfgang",
+              "year": "2006",
+              "unstructured": "Wolfgang Pree and Josef Templ . 2006 . Modeling with the timing definition language (TDL) . In Proceedings of the 2nd Automotive Software Workshop on Model-Driven Development of Reliable Automotive Services (ASWSD’06) . 133--144. DOI:https://doi.org/10.1007/978-3-540-70930-5_9 10.1007/978-3-540-70930-5_9 Wolfgang Pree and Josef Templ. 2006. Modeling with the timing definition language (TDL). In Proceedings of the 2nd Automotive Software Workshop on Model-Driven Development of Reliable Automotive Services (ASWSD’06). 133--144. DOI:https://doi.org/10.1007/978-3-540-70930-5_9"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_36_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Pree Wolfgang"
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "e_1_2_1_37_1",
+            "rawText": "https://doi.org/10.1109/isorc.2015.36",
+            "doi": "10.1109/isorc.2015.36",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_37_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISORC.2015.36"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isorc.2015.36",
+                "doi": "10.1109/isorc.2015.36",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isorc.2015.36"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "e_1_2_1_38_1",
+            "rawText": "Alberto Sangiovanni-Vincentelli and Marco Di Natale . 2007. Embedded system design for automotive applications. Computer 40, 10 ( 2007 ). Alberto Sangiovanni-Vincentelli and Marco Di Natale. 2007. Embedded system design for automotive applications. Computer 40, 10 (2007).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_38_1",
+              "volume-title": "Embedded system design for automotive applications. Computer 40, 10",
+              "author": "Sangiovanni-Vincentelli Alberto",
+              "year": "2007",
+              "unstructured": "Alberto Sangiovanni-Vincentelli and Marco Di Natale . 2007. Embedded system design for automotive applications. Computer 40, 10 ( 2007 ). Alberto Sangiovanni-Vincentelli and Marco Di Natale. 2007. Embedded system design for automotive applications. Computer 40, 10 (2007)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_38_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Sangiovanni-Vincentelli Alberto"
+                ],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "e_1_2_1_39_1",
+            "rawText": "https://doi.org/10.1109/tc.2008.81",
+            "doi": "10.1109/tc.2008.81",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_39_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.2008.81"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tc.2008.81",
+                "doi": "10.1109/tc.2008.81",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.2008.81"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "e_1_2_1_40_1",
+            "rawText": "Franz Walkembach. 2016. Model-driven Development for Safety-critical Software Components. White paper. Retrieved from http://events.windriver.com/wrcd01/wrcm/2016/08/WP-model-driven-development-for-safety-critical-software-components.pdf.  Franz Walkembach. 2016. Model-driven Development for Safety-critical Software Components. White paper. Retrieved from http://events.windriver.com/wrcd01/wrcm/2016/08/WP-model-driven-development-for-safety-critical-software-components.pdf.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_40_1",
+              "unstructured": "Franz Walkembach. 2016. Model-driven Development for Safety-critical Software Components. White paper. Retrieved from http://events.windriver.com/wrcd01/wrcm/2016/08/WP-model-driven-development-for-safety-critical-software-components.pdf.  Franz Walkembach. 2016. Model-driven Development for Safety-critical Software Components. White paper. Retrieved from http://events.windriver.com/wrcd01/wrcm/2016/08/WP-model-driven-development-for-safety-critical-software-components.pdf."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_40_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "e_1_2_1_41_1",
+            "rawText": "Xilinx. 2019. Xilinx Zynq Ultrascale+ Device—Technical Reference manual. Retrieved from https://www.xilinx.com/support/documentation/user_guides/ug1085-zynq-ultrascale-trm.pdf.  Xilinx. 2019. Xilinx Zynq Ultrascale+ Device—Technical Reference manual. Retrieved from https://www.xilinx.com/support/documentation/user_guides/ug1085-zynq-ultrascale-trm.pdf.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_41_1",
+              "unstructured": "Xilinx. 2019. Xilinx Zynq Ultrascale+ Device—Technical Reference manual. Retrieved from https://www.xilinx.com/support/documentation/user_guides/ug1085-zynq-ultrascale-trm.pdf.  Xilinx. 2019. Xilinx Zynq Ultrascale+ Device—Technical Reference manual. Retrieved from https://www.xilinx.com/support/documentation/user_guides/ug1085-zynq-ultrascale-trm.pdf."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_41_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "e_1_2_1_42_1",
+            "rawText": "https://doi.org/10.1145/2744769.2747947",
+            "doi": "10.1145/2744769.2747947",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_42_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2744769.2747947"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/2744769.2747947",
+                "doi": "10.1145/2744769.2747947",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2744769.2747947"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/3381847",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 10,
+          "extractedReferenceCount": 41,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/3381847",
+          "crossrefReferenceCount": 41
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/3381847->doi:10.1016/j.sysarc.2017.09.004@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1016/j.sysarc.2017.09.004",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    },
+    {
+      "id": "doi:10.1145/3381847->doi:10.1109/rtas.2018.00032@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1109/rtas.2018.00032",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    },
+    {
+      "id": "doi:10.1145/3381847->doi:10.1109/sies.2009.5196213@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1109/sies.2009.5196213",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    },
+    {
+      "id": "doi:10.1145/3381847->doi:10.1109/iecon.2018.8591550@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1109/iecon.2018.8591550",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    },
+    {
+      "id": "doi:10.1145/3381847->doi:10.1109/rtss.2014.28@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1109/rtss.2014.28",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    },
+    {
+      "id": "doi:10.1145/3381847->doi:10.1109/jproc.2002.805825@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    },
+    {
+      "id": "doi:10.1145/3381847->doi:10.1145/1286821.1286824@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1145/1286821.1286824",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    },
+    {
+      "id": "doi:10.1145/3381847->doi:10.1109/rtss.2009.9@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1109/rtss.2009.9",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    },
+    {
+      "id": "doi:10.1145/3381847->doi:10.1007/s10626-011-0107-x@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1007/s10626-011-0107-x",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    },
+    {
+      "id": "doi:10.1145/3381847->doi:10.1145/2744769.2747947@papers-LET-Gemlau2021.pdf",
+      "source": "doi:10.1145/3381847",
+      "target": "doi:10.1145/2744769.2747947",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gemlau2021.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Gemlau2021",
+      "paperId": "doi:10.1145/3381847",
+      "metadata": {
+        "fileName": "Gemlau2021.pdf",
+        "sourcePath": "papers/LET/Gemlau2021.pdf"
+      }
+    }
+  ]
+}

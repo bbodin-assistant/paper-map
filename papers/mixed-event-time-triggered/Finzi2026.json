@@ -1,0 +1,2394 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.734587+00:00",
+  "papers": [
+    {
+      "key": "Finzi2026",
+      "paper": {
+        "id": "doi:10.4230/lipics.ecrts.2026.20",
+        "citationKey": "Finzi2026",
+        "title": "Multi-Core Integration of Sporadic Events in Time-Triggered Systems",
+        "authors": [
+          "Anais Finzi",
+          "Silviu S. Craciunas"
+        ],
+        "year": 2026,
+        "venue": "ECRTS, LIPIcs 375:20",
+        "type": "misc",
+        "doi": "10.4230/LIPIcs.ECRTS.2026.20",
+        "arxivId": "",
+        "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2026.20",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Anais Finzi and Silviu S. Craciunas",
+          "title": "{Multi-Core Integration of Sporadic Events in Time-Triggered Systems}",
+          "year": "2026",
+          "howpublished": "ECRTS, LIPIcs 375:20",
+          "doi": "10.4230/LIPIcs.ECRTS.2026.20",
+          "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2026.20"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.299952+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "1 Luis Almeida and Paulo Pedreiras. Scheduling within temporal partitions: Response-time analysis and server design. In Proc. EMSOFT, 2004. doi:10.1145/1017753.1017772. 2 Björn Andersson and Jan Jonsson. Some insights on fixed-priority preemptive non-partitioned multiprocessor scheduling. In Proc. RTSS, 2000. 3 Theodore P. Baker and Michele Cirinei. A necessary and sometimes sufficient condition for the feasibility of sets of sporadic hard-deadline tasks. In Proc. RTSS, 2006. doi:10.1109/",
+            "doi": "10.1145/1017753.1017772",
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Luis Almeida and Paulo Pedreiras. Scheduling within temporal partitions: Response-time analysis and server design. In Proc. EMSOFT, 2004. doi:10.1145/1017753.1017772. 2 Björn Andersson and Jan Jonsson. Some insights on fixed-priority preemptive non-partitioned multiprocessor scheduling. In Proc. RTSS, 2000. 3 Theodore P. Baker and Michele Cirinei. A necessary and sometimes sufficient condition for the feasibility of sets of sporadic hard-deadline tasks. In Proc. RTSS, 2006. doi:10.1109/"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1145/1017753.1017772",
+                "doi": "10.1145/1017753.1017772",
+                "arxivId": "",
+                "title": "Scheduling within temporal partitions: Response-time analysis and server design",
+                "authors": [
+                  "Luis Almeida",
+                  "Paulo Pedreiras"
+                ],
+                "year": 2004,
+                "venue": "EMSOFT",
+                "type": "misc",
+                "url": "https://dl.acm.org/doi/10.1145/1017753.1017772"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": null,
+            "rawText": "RTSS.2006.7. 4 Sanjoy Baruah. Techniques for multiprocessor global schedulability analysis. In Proc. RTSS,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "RTSS.2006.7. 4 Sanjoy Baruah. Techniques for multiprocessor global schedulability analysis. In Proc. RTSS,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "2007",
+            "rawText": "doi:10.1109/RTSS.2007.35. 5 Sanjoy K. Baruah, Louis E. Rosier, and Rodney R. Howell. Algorithms and complexity concerning the preemptive scheduling of periodic, real-time tasks on one processor. Real-Time Syst., 2(4), 1990. doi:10.1007/BF01995675. 6 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Endto-end timing analysis of cause-effect chains in automotive embedded systems. Journal of Systems Architecture, 80(C), 2017. doi:10.1016/j.sysarc.2017.09.004. 7 Marko Bertogna and Michele Cirinei. Response-time analysis for globally scheduled symmetric multiprocessor platforms. In Proc. RTSS, pages 149–160. IEEE, 2007. doi:10.1109/RTSS.",
+            "doi": "10.1016/j.sysarc.2017.09.004",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1109/RTSS.2007.35. 5 Sanjoy K. Baruah, Louis E. Rosier, and Rodney R. Howell. Algorithms and complexity concerning the preemptive scheduling of periodic, real-time tasks on one processor. Real-Time Syst., 2(4), 1990. doi:10.1007/BF01995675. 6 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Endto-end timing analysis of cause-effect chains in automotive embedded systems. Journal of Systems Architecture, 80(C), 2017. doi:10.1016/j.sysarc.2017.09.004. 7 Marko Bertogna and Michele Cirinei. Response-time analysis for globally scheduled symmetric multiprocessor platforms. In Proc. RTSS, pages 149–160. IEEE, 2007. doi:10.1109/RTSS."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2017.09.004",
+                "doi": "10.1016/j.sysarc.2017.09.004",
+                "arxivId": "",
+                "title": "End-to-end timing analysis of cause-effect chains in automotive embedded systems",
+                "authors": [
+                  "Matthias Becker",
+                  "Dakshina Dasari",
+                  "Saad Mubeen",
+                  "Moris Behnam",
+                  "Thomas Nolte"
+                ],
+                "year": 2007,
+                "venue": "Journal of Systems Architecture",
+                "type": "article",
+                "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "2007",
+            "rawText": "31. 8 Enrico Bini, Giorgio Buttazzo, and Marko Bertogna. The multi supply function abstraction for multiprocessors. In Proc. RTCSA, 2009. doi:10.1109/RTCSA.2009.39.",
+            "doi": "10.1109/rtcsa.2009.39",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "31. 8 Enrico Bini, Giorgio Buttazzo, and Marko Bertogna. The multi supply function abstraction for multiprocessors. In Proc. RTCSA, 2009. doi:10.1109/RTCSA.2009.39."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2009.39",
+                "doi": "10.1109/rtcsa.2009.39",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2009.39"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": null,
+            "rawText": "A. Finzi and S. S. Craciunas 20:21",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Finzi and S. S. Craciunas 20:21"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "9 Anne Bouillard, Marc Boyer, and Euriell Le Corronc. Deterministic Network Calculus – From theory to practical implementation. Wiley, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "9 Anne Bouillard, Marc Boyer, and Euriell Le Corronc. Deterministic Network Calculus – From theory to practical implementation. Wiley, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": null,
+            "rawText": "10 Anne Bouillard, Laurent Jouhet, and Eric Thierry. Service curves in Network Calculus: dos and don’ts. PhD thesis, INRIA, 2009.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "10 Anne Bouillard, Laurent Jouhet, and Eric Thierry. Service curves in Network Calculus: dos and don’ts. PhD thesis, INRIA, 2009."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": null,
+            "rawText": "11 Marc Boyer, Pierre Roux, Hugo Daigmorte, and David Puechmaille. A residual service curve of rate-latency server used by sporadic flows computable in quadratic time for network calculus.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "11 Marc Boyer, Pierre Roux, Hugo Daigmorte, and David Puechmaille. A residual service curve of rate-latency server used by sporadic flows computable in quadratic time for network calculus."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "In Proc. ECRTS, 2021. doi:10.4230/LIPIcs.ECRTS.2021.14.",
+            "doi": "10.4230/lipics.ecrts.2021.14",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "In Proc. ECRTS, 2021. doi:10.4230/LIPIcs.ECRTS.2021.14."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2021.14",
+                "doi": "10.4230/lipics.ecrts.2021.14",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.4230/lipics.ecrts.2021.14"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": null,
+            "rawText": "12 Artem Burmyakov and Borislav Nikolić. An exact comparison of global, partitioned, and semipartitioned fixed-priority real-time multiprocessor schedulers. Journal of Systems Architecture, 121:102313, 2021. doi:10.1016/j.sysarc.2021.102313.",
+            "doi": "10.1016/j.sysarc.2021.102313",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "12 Artem Burmyakov and Borislav Nikolić. An exact comparison of global, partitioned, and semipartitioned fixed-priority real-time multiprocessor schedulers. Journal of Systems Architecture, 121:102313, 2021. doi:10.1016/j.sysarc.2021.102313."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2021.102313",
+                "doi": "10.1016/j.sysarc.2021.102313",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sysarc.2021.102313"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "13 Samarjit Chakraborty, Simon Künzli, and Lothar Thiele. A general framework for analysing system properties in platform-based embedded system designs. In Proc. DATE, 2003. doi:",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "13 Samarjit Chakraborty, Simon Künzli, and Lothar Thiele. A general framework for analysing system properties in platform-based embedded system designs. In Proc. DATE, 2003. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "10",
+            "rawText": "1109/DATE.2003.1253607.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1109/DATE.2003.1253607."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": null,
+            "rawText": "14 Jian-Jia Chen, Georg von der Brüggen, and Niklas Ueter. Push Forward: Global FixedPriority Scheduling of Arbitrary-Deadline Sporadic Task Systems. In Sebastian Altmeyer, editor, 30th Euromicro Conference on Real-Time Systems (ECRTS 2018), volume 106 of Leibniz",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "14 Jian-Jia Chen, Georg von der Brüggen, and Niklas Ueter. Push Forward: Global FixedPriority Scheduling of Arbitrary-Deadline Sporadic Task Systems. In Sebastian Altmeyer, editor, 30th Euromicro Conference on Real-Time Systems (ECRTS 2018), volume 106 of Leibniz"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": null,
+            "rawText": "International Proceedings in Informatics (LIPIcs), pages 8:1–8:24, Dagstuhl, Germany, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "International Proceedings in Informatics (LIPIcs), pages 8:1–8:24, Dagstuhl, Germany, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": null,
+            "rawText": "Schloss Dagstuhl – Leibniz-Zentrum für Informatik. doi:10.4230/LIPIcs.ECRTS.2018.8.",
+            "doi": "10.4230/lipics.ecrts.2018.8",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Schloss Dagstuhl – Leibniz-Zentrum für Informatik. doi:10.4230/LIPIcs.ECRTS.2018.8."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2018.8",
+                "doi": "10.4230/lipics.ecrts.2018.8",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.4230/lipics.ecrts.2018.8"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "15 Devesh B Chokshi and Purandar Bhaduri. Modeling fixed priority non-preemptive scheduling with real-time calculus. In Proc. RTCSA, pages 387–392. IEEE, 2008. doi:10.1109/RTCSA.",
+            "doi": "10.1109/rtcsa",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "15 Devesh B Chokshi and Purandar Bhaduri. Modeling fixed priority non-preemptive scheduling with real-time calculus. In Proc. RTCSA, pages 387–392. IEEE, 2008. doi:10.1109/RTCSA."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa",
+                "doi": "10.1109/rtcsa",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": null,
+            "rawText": "16 Silviu S. Craciunas, Ramon Serna Oliver, and Valentin Ecker. Optimal static scheduling of real-time tasks on distributed time-triggered networked systems. In Proc. ETFA. IEEE, 2014. doi:10.1109/ETFA.2014.7005128.",
+            "doi": "10.1109/etfa.2014.7005128",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "16 Silviu S. Craciunas, Ramon Serna Oliver, and Valentin Ecker. Optimal static scheduling of real-time tasks on distributed time-triggered networked systems. In Proc. ETFA. IEEE, 2014. doi:10.1109/ETFA.2014.7005128."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/etfa.2014.7005128",
+                "doi": "10.1109/etfa.2014.7005128",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2014.7005128"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "17 Calvin Deutschbein, Tom Fleming, Alan Burns, and Sanjoy K. Baruah. Multi-core cyclic executives for safety-critical systems. Science of Computer Programming, 172:102–116, 2019. doi:10.1016/j.scico.2018.11.004.",
+            "doi": "10.1016/j.scico.2018.11.004",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "17 Calvin Deutschbein, Tom Fleming, Alan Burns, and Sanjoy K. Baruah. Multi-core cyclic executives for safety-critical systems. Science of Computer Programming, 172:102–116, 2019. doi:10.1016/j.scico.2018.11.004."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1016/j.scico.2018.11.004",
+                "doi": "10.1016/j.scico.2018.11.004",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.scico.2018.11.004"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": null,
+            "rawText": "18 Anaïs Finzi, Silviu S. Craciunas, and Marc Boyer. A real-time calculus approach for integrating sporadic events in time-triggered systems. CoRR, abs/2204.10264, 2022. preprint. doi:",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "18 Anaïs Finzi, Silviu S. Craciunas, and Marc Boyer. A real-time calculus approach for integrating sporadic events in time-triggered systems. CoRR, abs/2204.10264, 2022. preprint. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "10",
+            "rawText": "48550/arXiv.2204.10264.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "48550/arXiv.2204.10264."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": null,
+            "rawText": "19 Anais Finzi, Silviu S. Craciunas, and Marc Boyer. Integrating sporadic events in time-triggered systems via affine envelope approximations. In Proc. RTAS, 2024. doi:10.1109/RTAS61025.",
+            "doi": "10.1109/rtas61025",
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "19 Anais Finzi, Silviu S. Craciunas, and Marc Boyer. Integrating sporadic events in time-triggered systems via affine envelope approximations. In Proc. RTAS, 2024. doi:10.1109/RTAS61025."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas61025.2024.00010",
+                "doi": "10.1109/rtas61025",
+                "arxivId": "",
+                "title": "Integrating Sporadic Events in Time-triggered Systems via Affine Envelope Approximations",
+                "authors": [
+                  "Anais Finzi",
+                  "Silviu S. Craciunas",
+                  "Marc Boyer"
+                ],
+                "year": 2024,
+                "venue": "RTAS",
+                "type": "misc",
+                "url": "https://cs.uni-salzburg.at/ scraciunas/pdf/conferences/finzi_rtas24.pdf"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": null,
+            "rawText": "20 Anaïs Finzi and Ahlem Mifdaoui. Worst-case timing analysis of AFDX networks with multiple",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "20 Anaïs Finzi and Ahlem Mifdaoui. Worst-case timing analysis of AFDX networks with multiple"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": null,
+            "rawText": "TSN/BLS shapers. IEEE Access, 8:106765–106784, 2020. doi:10.1109/ACCESS.2020.3000326.",
+            "doi": "10.1109/access.2020.3000326",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "TSN/BLS shapers. IEEE Access, 8:106765–106784, 2020. doi:10.1109/ACCESS.2020.3000326."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/access.2020.3000326",
+                "doi": "10.1109/access.2020.3000326",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/access.2020.3000326"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "21 Anaïs Finzi, Ahlem Mifdaoui, Fabrice Frances, and Emmanuel Lochin. Incorporating TSN/BLS in AFDX for mixed-criticality applications: Model and timing analysis. In Proc. WFCS, 2018. doi:10.1109/WFCS.2018.8402346.",
+            "doi": "10.1109/wfcs.2018.8402346",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "21 Anaïs Finzi, Ahlem Mifdaoui, Fabrice Frances, and Emmanuel Lochin. Incorporating TSN/BLS in AFDX for mixed-criticality applications: Model and timing analysis. In Proc. WFCS, 2018. doi:10.1109/WFCS.2018.8402346."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/wfcs.2018.8402346",
+                "doi": "10.1109/wfcs.2018.8402346",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/wfcs.2018.8402346"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": null,
+            "rawText": "22 Tom Fleming and Alan Burns. Investigating mixed criticality cyclic executive schedule generation. In Proc. WMC, 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "22 Tom Fleming and Alan Burns. Investigating mixed criticality cyclic executive schedule generation. In Proc. WMC, 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": null,
+            "rawText": "23 Gerhard Fohler. Joint scheduling of distributed complex periodic and hard aperiodic tasks in statically scheduled systems. In Proc. RTSS, 1995. doi:10.1109/REAL.1995.495205.",
+            "doi": "10.1109/real.1995.495205",
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "23 Gerhard Fohler. Joint scheduling of distributed complex periodic and hard aperiodic tasks in statically scheduled systems. In Proc. RTSS, 1995. doi:10.1109/REAL.1995.495205."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/real.1995.495205",
+                "doi": "10.1109/real.1995.495205",
+                "arxivId": "",
+                "title": "Joint scheduling of distributed complex periodic and hard aperiodic tasks in statically scheduled systems",
+                "authors": [
+                  "Gerhard Fohler"
+                ],
+                "year": 1995,
+                "venue": "RTSS",
+                "type": "misc",
+                "url": "https://www.es.mdu.se/publications/242-Joint_Scheduling_of_Distributed_Complex_Periodic_and_Hard_Aperiodic_Tasks_in_Statically_Scheduled_Systems"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": null,
+            "rawText": "24 J. Forrest. CBC: COIN-OR Branch and Cut solver. Available from http://www.coin-or.org/,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "24 J. Forrest. CBC: COIN-OR Branch and Cut solver. Available from http://www.coin-or.org/,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "2004",
+            "rawText": "Open-source mixed-integer programming solver, led by John Forrest at COIN-OR.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Open-source mixed-integer programming solver, led by John Forrest at COIN-OR."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": null,
+            "rawText": "25 Franz-Josef Gotz. Traffic Shaper for Control Data Traffic (CDT). IEEE 802 AVB Meeting, available at https://www.ieee802.org/1/files/public/docs2012/ new-goetz-CtrDataScheduler-0712-v1.pdf, Accessed on 26.01.2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "25 Franz-Josef Gotz. Traffic Shaper for Control Data Traffic (CDT). IEEE 802 AVB Meeting, available at https://www.ieee802.org/1/files/public/docs2012/ new-goetz-CtrDataScheduler-0712-v1.pdf, Accessed on 26.01.2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": null,
+            "rawText": "26 Nan Guan. New Techniques for Building Timing-Predictable Embedded Systems. Phd dissertation, Uppsala University, 2013. URL: https://urn.kb.se/resolve?urn=urn:nbn:se:uu: diva-209623.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "26 Nan Guan. New Techniques for Building Timing-Predictable Embedded Systems. Phd dissertation, Uppsala University, 2013. URL: https://urn.kb.se/resolve?urn=urn:nbn:se:uu: diva-209623."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": null,
+            "rawText": "20:22 Multi-Core Integration of Sporadic Events in Time-Triggered Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "20:22 Multi-Core Integration of Sporadic Events in Time-Triggered Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": null,
+            "rawText": "27 Nan Guan, Martin Stigge, Wang Yi, and Ge Yu. New response time bounds for fixed priority multiprocessor scheduling. In Proc. RTSS, pages 387–397. IEEE, 2009. doi:10.1109/RTSS.",
+            "doi": "10.1109/rtss",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "27 Nan Guan, Martin Stigge, Wang Yi, and Ge Yu. New response time bounds for fixed priority multiprocessor scheduling. In Proc. RTSS, pages 387–397. IEEE, 2009. doi:10.1109/RTSS."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtss",
+                "doi": "10.1109/rtss",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": null,
+            "rawText": "28 Nan Guan and Wang Yi. Fixed-priority multiprocessor scheduling: Critical instant, response time and utilization bound. In Proc IPDPSW, 2012. doi:10.1109/IPDPSW.2012.305.",
+            "doi": "10.1109/ipdpsw.2012.305",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "28 Nan Guan and Wang Yi. Fixed-priority multiprocessor scheduling: Critical instant, response time and utilization bound. In Proc IPDPSW, 2012. doi:10.1109/IPDPSW.2012.305."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/ipdpsw.2012.305",
+                "doi": "10.1109/ipdpsw.2012.305",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ipdpsw.2012.305"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": null,
+            "rawText": "29 Damir Isović and Gerhard Fohler. Handling sporadic tasks in off-line scheduled distributed real-time systems. In Proc. ECRTS, pages 60–67, 1999. doi:10.1109/EMRTS.1999.777451.",
+            "doi": "10.1109/emrts.1999.777451",
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "29 Damir Isović and Gerhard Fohler. Handling sporadic tasks in off-line scheduled distributed real-time systems. In Proc. ECRTS, pages 60–67, 1999. doi:10.1109/EMRTS.1999.777451."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/emrts.1999.777451",
+                "doi": "10.1109/emrts.1999.777451",
+                "arxivId": "",
+                "title": "Handling sporadic tasks in off-line scheduled distributed real-time systems",
+                "authors": [
+                  "Damir Isovic",
+                  "Gerhard Fohler"
+                ],
+                "year": 1999,
+                "venue": "ECRTS",
+                "type": "misc",
+                "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2026.20"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": null,
+            "rawText": "30 Damir Isović and Gerhard Fohler. Efficient scheduling of sporadic, aperiodic, and periodic tasks with complex constraints. In Proc. RTSS, 2000. doi:10.1109/REAL.2000.896010.",
+            "doi": "10.1109/real.2000.896010",
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "30 Damir Isović and Gerhard Fohler. Efficient scheduling of sporadic, aperiodic, and periodic tasks with complex constraints. In Proc. RTSS, 2000. doi:10.1109/REAL.2000.896010."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/real.2000.896010",
+                "doi": "10.1109/real.2000.896010",
+                "arxivId": "",
+                "title": "Efficient scheduling of sporadic, aperiodic, and periodic tasks with complex constraints",
+                "authors": [
+                  "Damir Isovic",
+                  "Gerhard Fohler"
+                ],
+                "year": 2000,
+                "venue": "RTSS",
+                "type": "misc",
+                "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2026.20"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": null,
+            "rawText": "31 Damir Isović and Gerhard Fohler. Handling mixed sets of tasks in combined offline and online scheduled real-time systems. Real-Time Syst., 43(3), 2009. doi:10.1007/s11241-009-9088-3.",
+            "doi": "10.1007/s11241-009-9088-3",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "31 Damir Isović and Gerhard Fohler. Handling mixed sets of tasks in combined offline and online scheduled real-time systems. Real-Time Syst., 43(3), 2009. doi:10.1007/s11241-009-9088-3."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/s11241-009-9088-3",
+                "doi": "10.1007/s11241-009-9088-3",
+                "arxivId": "",
+                "title": "Handling mixed sets of tasks in combined offline and online scheduled real-time systems",
+                "authors": [
+                  "Damir Isovic",
+                  "Gerhard Fohler"
+                ],
+                "year": 2009,
+                "venue": "Real-Time Systems",
+                "type": "misc",
+                "url": "https://link.springer.com/article/10.1007/s11241-009-9088-3"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": null,
+            "rawText": "32 Philipp Ittershagen, Philipp A. Hartmann, Kim Grüttner, and Achim Rettberg. Hierarchical real-time scheduling in the multi-core era — an overview.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "32 Philipp Ittershagen, Philipp A. Hartmann, Kim Grüttner, and Achim Rettberg. Hierarchical real-time scheduling in the multi-core era — an overview."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": null,
+            "rawText": "In Proc. ISORC, 2013. doi:",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "In Proc. ISORC, 2013. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "10",
+            "rawText": "1109/ISORC.2013.6913241.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1109/ISORC.2013.6913241."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:39",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": null,
+            "rawText": "33 David S Johnson. Fast algorithms for bin packing. Journal of Computer and System Sciences, 8(3):272–314, 1974. doi:10.1016/S0022-0000(74)80026-7.",
+            "doi": "10.1016/s0022-0000(74)80026-7",
+            "arxivId": null,
+            "year": 1974,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "33 David S Johnson. Fast algorithms for bin packing. Journal of Computer and System Sciences, 8(3):272–314, 1974. doi:10.1016/S0022-0000(74)80026-7."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1016/s0022-0000(74)80026-7",
+                "doi": "10.1016/s0022-0000(74)80026-7",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1974,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/s0022-0000(74)80026-7"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": null,
+            "rawText": "34 Mathai Joseph and Paritosh Pandya. Finding response times in a real-time system. The",
+            "doi": "10.1093/comjnl/29.5.390",
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "34 Mathai Joseph and Paritosh Pandya. Finding response times in a real-time system. The"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1093/comjnl/29.5.390",
+                "doi": "10.1093/comjnl/29.5.390",
+                "arxivId": "",
+                "title": "Finding Response Times in a Real-Time System",
+                "authors": [
+                  "M. Joseph"
+                ],
+                "year": 1986,
+                "venue": "The Computer Journal",
+                "type": "article",
+                "url": "https://doi.org/10.1093/comjnl/29.5.390"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": null,
+            "rawText": "Computer Journal, 29(5):390–395, 1986. doi:10.1093/COMJNL/29.5.390.",
+            "doi": "10.1093/comjnl/29.5.390",
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Computer Journal, 29(5):390–395, 1986. doi:10.1093/COMJNL/29.5.390."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1093/comjnl/29.5.390",
+                "doi": "10.1093/comjnl/29.5.390",
+                "arxivId": "",
+                "title": "Finding Response Times in a Real-Time System",
+                "authors": [
+                  "M. Joseph"
+                ],
+                "year": 1986,
+                "venue": "The Computer Journal",
+                "type": "article",
+                "url": "https://doi.org/10.1093/comjnl/29.5.390"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": null,
+            "rawText": "35 Herman Kopetz. Sparse time versus dense time in distributed real-time systems. In Proc.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "35 Herman Kopetz. Sparse time versus dense time in distributed real-time systems. In Proc."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": null,
+            "rawText": "ICDCS, 1992. doi:10.1109/ICDCS.1992.235008.",
+            "doi": "10.1109/icdcs.1992.235008",
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "ICDCS, 1992. doi:10.1109/ICDCS.1992.235008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/icdcs.1992.235008",
+                "doi": "10.1109/icdcs.1992.235008",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icdcs.1992.235008"
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": null,
+            "rawText": "36 Jean-Yves Le Boudec and Patrick Thiran. Network Calculus: A Theory of Deterministic",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "36 Jean-Yves Le Boudec and Patrick Thiran. Network Calculus: A Theory of Deterministic"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": null,
+            "rawText": "Queuing Systems for the Internet. Springer-Verlag, 2001.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Queuing Systems for the Internet. Springer-Verlag, 2001."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": null,
+            "rawText": "37 Jinkyu Lee and Insik Shin. Demand-based schedulability analysis for real-time multi-core scheduling. Journal of Systems and Software, 89:99–108, 2014. doi:10.1016/j.jss.2013.09.",
+            "doi": "10.1016/j.jss.2013.09",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "37 Jinkyu Lee and Insik Shin. Demand-based schedulability analysis for real-time multi-core scheduling. Journal of Systems and Software, 89:99–108, 2014. doi:10.1016/j.jss.2013.09."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1016/j.jss.2013.09",
+                "doi": "10.1016/j.jss.2013.09",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.jss.2013.09"
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": null,
+            "rawText": "38 Hennadiy Leontyev and James H. Anderson. A hierarchical multiprocessor bandwidth reservation scheme with timing guarantees. In Proc. ECRTS, 2008. doi:10.1109/ECRTS.2008.22.",
+            "doi": "10.1109/ecrts.2008.22",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "38 Hennadiy Leontyev and James H. Anderson. A hierarchical multiprocessor bandwidth reservation scheme with timing guarantees. In Proc. ECRTS, 2008. doi:10.1109/ECRTS.2008.22."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2008.22",
+                "doi": "10.1109/ecrts.2008.22",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2008.22"
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": null,
+            "rawText": "39 Hennadiy Leontyev, Samarjit Chakraborty, and James H Anderson. Multiprocessor extensions to real-time calculus.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "39 Hennadiy Leontyev, Samarjit Chakraborty, and James H Anderson. Multiprocessor extensions to real-time calculus."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:49",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": null,
+            "rawText": "Real-Time Systems, 47:562–617, 2011. doi:10.1007/ S11241-011-9135-8.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Real-Time Systems, 47:562–617, 2011. doi:10.1007/ S11241-011-9135-8."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:50",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": null,
+            "rawText": "40 Joseph Y.T. Leung. A new algorithm for scheduling periodic, real-time tasks. Algorithmica, 4(1):209–219, 1989. doi:10.1007/BF01553887.",
+            "doi": "10.1007/bf01553887",
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "40 Joseph Y.T. Leung. A new algorithm for scheduling periodic, real-time tasks. Algorithmica, 4(1):209–219, 1989. doi:10.1007/BF01553887."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/bf01553887",
+                "doi": "10.1007/bf01553887",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1989,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf01553887"
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": null,
+            "rawText": "41 Jeff T. Linderoth and Ted K. Ralphs. Noncommercial software for mixed-integer linear programming. Technical report 04t-023, Department of Industrial and Systems Engineering,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "41 Jeff T. Linderoth and Ted K. Ralphs. Noncommercial software for mixed-integer linear programming. Technical report 04t-023, Department of Industrial and Systems Engineering,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:52",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": null,
+            "rawText": "Lehigh University, December 2004. Technical Report, published on Optimization Online. URL: https://optimization-online.org/2004/12/1028/.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lehigh University, December 2004. Technical Report, published on Optimization Online. URL: https://optimization-online.org/2004/12/1028/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:53",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": null,
+            "rawText": "42 Giuseppe Lipari and Enrico Bini. A framework for hierarchical scheduling on multiprocessors:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "42 Giuseppe Lipari and Enrico Bini. A framework for hierarchical scheduling on multiprocessors:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:54",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": null,
+            "rawText": "From application requirements to run-time allocation. In Proc. RTSS, 2010. doi:10.1109/",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "From application requirements to run-time allocation. In Proc. RTSS, 2010. doi:10.1109/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:55",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": null,
+            "rawText": "43 Martin Lukasiewycz, Reinhard Schneider, Dip Goswami, and Samarjit Chakraborty. Modular scheduling of distributed heterogeneous time-triggered automotive systems. In Proc. ASP-DAC,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "43 Martin Lukasiewycz, Reinhard Schneider, Dip Goswami, and Samarjit Chakraborty. Modular scheduling of distributed heterogeneous time-triggered automotive systems. In Proc. ASP-DAC,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:56",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "2012",
+            "rawText": "doi:10.1109/ASPDAC.2012.6165039.",
+            "doi": "10.1109/aspdac.2012.6165039",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1109/ASPDAC.2012.6165039."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/aspdac.2012.6165039",
+                "doi": "10.1109/aspdac.2012.6165039",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/aspdac.2012.6165039"
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": null,
+            "rawText": "44 Shane D. McLean, Silviu S. Craciunas, Emil A. Juul Hansen, and Paul Pop. Mapping and scheduling automotive applications on ADAS platforms using metaheuristics. In Proc. ETFA.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "44 Shane D. McLean, Silviu S. Craciunas, Emil A. Juul Hansen, and Paul Pop. Mapping and scheduling automotive applications on ADAS platforms using metaheuristics. In Proc. ETFA."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:58",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": null,
+            "rawText": "IEEE, 2020. doi:10.1109/ETFA46521.2020.9212029.",
+            "doi": "10.1109/etfa46521.2020.9212029",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IEEE, 2020. doi:10.1109/ETFA46521.2020.9212029."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/etfa46521.2020.9212029",
+                "doi": "10.1109/etfa46521.2020.9212029",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa46521.2020.9212029"
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": null,
+            "rawText": "45 Shane D. McLean, Emil A. Juul Hansen, Paul Pop, and Silviu S. Craciunas. Configuring ADAS platforms for automotive applications using metaheuristics. Frontiers in Robotics and",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "45 Shane D. McLean, Emil A. Juul Hansen, Paul Pop, and Silviu S. Craciunas. Configuring ADAS platforms for automotive applications using metaheuristics. Frontiers in Robotics and"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:60",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": null,
+            "rawText": "AI, 8:353, 2022. doi:10.3389/frobt.2021.762227.",
+            "doi": "10.3389/frobt.2021.762227",
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "AI, 8:353, 2022. doi:10.3389/frobt.2021.762227."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.3389/frobt.2021.762227",
+                "doi": "10.3389/frobt.2021.762227",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.3389/frobt.2021.762227"
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": null,
+            "rawText": "46 Ayhan Mehmed, Wilfried Steiner, and Maximilian Rosenblattl. A time-triggered middleware for safety-critical automotive applications. In Proc. AEiC, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "46 Ayhan Mehmed, Wilfried Steiner, and Maximilian Rosenblattl. A time-triggered middleware for safety-critical automotive applications. In Proc. AEiC, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:62",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": null,
+            "rawText": "A. Finzi and S. S. Craciunas 20:23",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Finzi and S. S. Craciunas 20:23"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:63",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": null,
+            "rawText": "47 Carlo Meroni, Silviu S. Craciunas, Anaïs Finzi, and Paul Pop. Mapping and integration of eventand time-triggered real-time tasks on partitioned multi-core systems. In Proc. ETFA.",
+            "doi": "10.1109/ETFA54631.2023.10275547",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "47 Carlo Meroni, Silviu S. Craciunas, Anaïs Finzi, and Paul Pop. Mapping and integration of eventand time-triggered real-time tasks on partitioned multi-core systems. In Proc. ETFA."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/etfa54631.2023.10275547",
+                "doi": "10.1109/ETFA54631.2023.10275547",
+                "arxivId": "",
+                "title": "Mapping and Integration of Event- and Time-triggered Real-time Tasks on Partitioned Multi-core Systems",
+                "authors": [
+                  "Carlo Meroni",
+                  "Silviu S. Craciunas",
+                  "Anais Finzi",
+                  "Paul Pop"
+                ],
+                "year": 2023,
+                "venue": "ETFA",
+                "type": "misc",
+                "url": "https://www.cs.uni-salzburg.at/ scraciunas/pdf/conferences/meroni_etfa23.pdf"
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": null,
+            "rawText": "IEEE, 2023. doi:10.1109/ETFA54631.2023.10275547. 48 Matthieu Moy and Karine Altisen. Arrival curves for real-time calculus: the causality problem and its solutions. In Proc. TACAS, 2010. doi:10.1007/978-3-642-12002-2_31. 49 Pascal Muoka, Daniel Onwuchekwa, and Roman Obermaisser. Adaptive scheduling for timetriggered network-on-chip-based multi-core architecture using genetic algorithm. Electronics, 11(1), 2022. doi:10.3390/electronics11010049. 50 Traian Pop. Scheduling and Optimisation of Heterogeneous Time/Event-Triggered Distributed",
+            "doi": "10.1007/978-3-642-12002-2_31",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IEEE, 2023. doi:10.1109/ETFA54631.2023.10275547. 48 Matthieu Moy and Karine Altisen. Arrival curves for real-time calculus: the causality problem and its solutions. In Proc. TACAS, 2010. doi:10.1007/978-3-642-12002-2_31. 49 Pascal Muoka, Daniel Onwuchekwa, and Roman Obermaisser. Adaptive scheduling for timetriggered network-on-chip-based multi-core architecture using genetic algorithm. Electronics, 11(1), 2022. doi:10.3390/electronics11010049. 50 Traian Pop. Scheduling and Optimisation of Heterogeneous Time/Event-Triggered Distributed"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/etfa54631.2023.10275547",
+                "doi": "10.1007/978-3-642-12002-2_31",
+                "arxivId": "",
+                "title": "Mapping and Integration of Event- and Time-triggered Real-time Tasks on Partitioned Multi-core Systems",
+                "authors": [
+                  "Carlo Meroni",
+                  "Silviu S. Craciunas",
+                  "Anais Finzi",
+                  "Paul Pop"
+                ],
+                "year": 2023,
+                "venue": "ETFA",
+                "type": "misc",
+                "url": "https://www.cs.uni-salzburg.at/ scraciunas/pdf/conferences/meroni_etfa23.pdf"
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": null,
+            "rawText": "Embedded Systems. PhD thesis, Linkóping University, 2003. 51 Traian Pop, Petru Eles, and Zebo Peng. Holistic scheduling and analysis of mixed time/eventtriggered distributed embedded systems. In Proc. CODES. ACM, 2002. doi:10.1145/774789.",
+            "doi": "10.1145/774789",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Embedded Systems. PhD thesis, Linkóping University, 2003. 51 Traian Pop, Petru Eles, and Zebo Peng. Holistic scheduling and analysis of mixed time/eventtriggered distributed embedded systems. In Proc. CODES. ACM, 2002. doi:10.1145/774789."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/774789",
+                "doi": "10.1145/774789",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/774789"
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": "774828",
+            "rawText": "52 Traian Pop, Petru Eles, and Zebo Peng. Schedulability analysis for distributed heterogeneous time/event triggered real-time systems. In Proc. ECRTS, 2003. doi:10.1109/EMRTS.2003.",
+            "doi": "10.1109/emrts.2003",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "52 Traian Pop, Petru Eles, and Zebo Peng. Schedulability analysis for distributed heterogeneous time/event triggered real-time systems. In Proc. ECRTS, 2003. doi:10.1109/EMRTS.2003."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/emrts.2003.1212751",
+                "doi": "10.1109/emrts.2003",
+                "arxivId": "",
+                "title": "Schedulability Analysis for Distributed Heterogeneous Time/Event-Triggered Real-Time Systems",
+                "authors": [
+                  "Traian Pop",
+                  "Petru Eles",
+                  "Zebo Peng"
+                ],
+                "year": 2003,
+                "venue": "ECRTS",
+                "type": "misc",
+                "url": "https://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A243645"
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": "1212751",
+            "rawText": "53 Pierre Roux, Sophie Quinton, and Marc Boyer. A formal link between response time analysis and network calculus. In Proc. ECRTS. Schloss Dagstuhl – Leibniz-Zentrum für Informatik,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "53 Pierre Roux, Sophie Quinton, and Marc Boyer. A formal link between response time analysis and network calculus. In Proc. ECRTS. Schloss Dagstuhl – Leibniz-Zentrum für Informatik,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.20:68",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": "2022",
+            "rawText": "doi:10.4230/LIPIcs.ECRTS.2022.5. 54 Saowanee Saewong, Ragunathan Raj Rajkumar, John P. Lehoczky, and Mark H. Klein. Analysis of hierarchical fixed-priority scheduling. In Proc. ECRTS, 2002. doi:10.1109/EMRTS.",
+            "doi": "10.1109/emrts",
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.4230/LIPIcs.ECRTS.2022.5. 54 Saowanee Saewong, Ragunathan Raj Rajkumar, John P. Lehoczky, and Mark H. Klein. Analysis of hierarchical fixed-priority scheduling. In Proc. ECRTS, 2002. doi:10.1109/EMRTS."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/emrts",
+                "doi": "10.1109/emrts",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/emrts"
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": "2002",
+            "rawText": "1019197. 55 Florian Sagstetter, Sidharta Andalam, Peter Waszecki, Martin Lukasiewycz, Hauke Stähle, Samarjit Chakraborty, and Alois Knoll. Schedule integration framework for time-triggered automotive architectures. In Proc. DAC, 2014. doi:10.1145/2593069.2593211. 56 Insik Shin, Arvind Easwaran, and Insup Lee. Hierarchical scheduling framework for virtual clustering of multiprocessors. In Proc. ECRTS, 2008. doi:10.1109/ECRTS.2008.28. 57 Insik Shin and Insup Lee. Periodic resource model for compositional real-time guarantees. In Proc. RTSS. IEEE, 2003. doi:10.1109/REAL.2003.1253249. 58 Insik Shin and Insup Lee. Compositional real-time scheduling framework with periodic model. ACM Trans. Embed. Comput. Syst., 7(3), 2008. doi:10.1145/1347375.1347383. 59 Deepak Vedha Raj Sudhakar, Karsten Albers, and Frank Slomka. Generalized and scalable offset-based response time analysis of fixed priority systems. Journal of Systems Architecture, 112:101856, 2021. doi:10.1016/j.sysarc.2020.101856. 60 Youcheng Sun, Giuseppe Lipari, Nan Guan, and Wang Yi. Improving the response time analysis of global fixed-priority multiprocessor scheduling. In 2014 IEEE 20th International Conference on Embedded and Real-Time Computing Systems and Applications, pages 1–9, 2014.",
+            "doi": "10.1145/1347375.1347383",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1019197. 55 Florian Sagstetter, Sidharta Andalam, Peter Waszecki, Martin Lukasiewycz, Hauke Stähle, Samarjit Chakraborty, and Alois Knoll. Schedule integration framework for time-triggered automotive architectures. In Proc. DAC, 2014. doi:10.1145/2593069.2593211. 56 Insik Shin, Arvind Easwaran, and Insup Lee. Hierarchical scheduling framework for virtual clustering of multiprocessors. In Proc. ECRTS, 2008. doi:10.1109/ECRTS.2008.28. 57 Insik Shin and Insup Lee. Periodic resource model for compositional real-time guarantees. In Proc. RTSS. IEEE, 2003. doi:10.1109/REAL.2003.1253249. 58 Insik Shin and Insup Lee. Compositional real-time scheduling framework with periodic model. ACM Trans. Embed. Comput. Syst., 7(3), 2008. doi:10.1145/1347375.1347383. 59 Deepak Vedha Raj Sudhakar, Karsten Albers, and Frank Slomka. Generalized and scalable offset-based response time analysis of fixed priority systems. Journal of Systems Architecture, 112:101856, 2021. doi:10.1016/j.sysarc.2020.101856. 60 Youcheng Sun, Giuseppe Lipari, Nan Guan, and Wang Yi. Improving the response time analysis of global fixed-priority multiprocessor scheduling. In 2014 IEEE 20th International Conference on Embedded and Real-Time Computing Systems and Applications, pages 1–9, 2014."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/real.2003.1253249",
+                "doi": "10.1145/1347375.1347383",
+                "arxivId": "",
+                "title": "Periodic Resource Model for Compositional Real-Time Guarantees",
+                "authors": [
+                  "Insik Shin",
+                  "Insup Lee"
+                ],
+                "year": 2014,
+                "venue": "24th IEEE Real-Time Systems Symposium",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/REAL.2003.1253249"
+              }
+            }
+          },
+          {
+            "index": 71,
+            "label": null,
+            "rawText": "doi:10.1109/RTCSA.2014.6910543. 61 Yue Tang, Yuming Jiang, Xu Jiang, and Nan Guan. Pay-burst-only-once in real-time calculus.",
+            "doi": "10.1109/rtcsa.2014.6910543",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1109/RTCSA.2014.6910543. 61 Yue Tang, Yuming Jiang, Xu Jiang, and Nan Guan. Pay-burst-only-once in real-time calculus."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2014.6910543",
+                "doi": "10.1109/rtcsa.2014.6910543",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2014.6910543"
+              }
+            }
+          },
+          {
+            "index": 72,
+            "label": null,
+            "rawText": "In Proc. RTCSA, 2019. doi:10.1109/RTCSA.2019.8864582. 62 Sivakumar Thangamuthu, Nicola Concer, Pieter J. L. Cuijpers, and Johan J. Lukkien. Analysis of ethernet-switch traffic shapers for in-vehicle networking applications. In Proc. DATE, 2015. doi:10.7873/DATE.2015.0045. 63 Lothar Thiele, Samarjit Chakraborty, and Martin Naedele. Real-time calculus for scheduling hard real-time systems. In Proc. ISCAS, volume 4, 2000. doi:10.1109/ISCAS.2000.858698. 64 Jia Xu and David Lorge Parnas. Priority scheduling versus pre-run-time scheduling. Real-Time",
+            "doi": "10.1109/iscas.2000.858698",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "In Proc. RTCSA, 2019. doi:10.1109/RTCSA.2019.8864582. 62 Sivakumar Thangamuthu, Nicola Concer, Pieter J. L. Cuijpers, and Johan J. Lukkien. Analysis of ethernet-switch traffic shapers for in-vehicle networking applications. In Proc. DATE, 2015. doi:10.7873/DATE.2015.0045. 63 Lothar Thiele, Samarjit Chakraborty, and Martin Naedele. Real-time calculus for scheduling hard real-time systems. In Proc. ISCAS, volume 4, 2000. doi:10.1109/ISCAS.2000.858698. 64 Jia Xu and David Lorge Parnas. Priority scheduling versus pre-run-time scheduling. Real-Time"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/iscas.2000.858698",
+                "doi": "10.1109/iscas.2000.858698",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iscas.2000.858698"
+              }
+            }
+          },
+          {
+            "index": 73,
+            "label": null,
+            "rawText": "Syst., 18(1):7–23, 2000. doi:10.1023/A:1008198310125. 65 Jianguo Yao, Xin Xu, and Xue Liu. Mixcps: Mixed time/event-triggered architecture of cyber–physical systems. Proceedings of the IEEE, 104(5):923–937, 2016. doi:10.1109/JPROC.",
+            "doi": "10.1023/a:1008198310125",
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Syst., 18(1):7–23, 2000. doi:10.1023/A:1008198310125. 65 Jianguo Yao, Xin Xu, and Xue Liu. Mixcps: Mixed time/event-triggered architecture of cyber–physical systems. Proceedings of the IEEE, 104(5):923–937, 2016. doi:10.1109/JPROC."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1023/a:1008198310125",
+                "doi": "10.1023/a:1008198310125",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/a:1008198310125"
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 11,
+          "extractedReferenceCount": 73,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1145/1017753.1017772@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1145/1017753.1017772",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1016/j.sysarc.2017.09.004@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1016/j.sysarc.2017.09.004",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1109/rtas61025.2024.00010@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1109/rtas61025.2024.00010",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1109/real.1995.495205@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1109/real.1995.495205",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1109/emrts.1999.777451@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1109/emrts.1999.777451",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1109/real.2000.896010@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1109/real.2000.896010",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1007/s11241-009-9088-3@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1007/s11241-009-9088-3",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1093/comjnl/29.5.390@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1093/comjnl/29.5.390",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1109/etfa54631.2023.10275547@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1109/etfa54631.2023.10275547",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1109/emrts.2003.1212751@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1109/emrts.2003.1212751",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.20->doi:10.1109/real.2003.1253249@papers-mixed-event-time-triggered-Finzi2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.20",
+      "target": "doi:10.1109/real.2003.1253249",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Finzi2026",
+      "paperId": "doi:10.4230/lipics.ecrts.2026.20",
+      "metadata": {
+        "fileName": "Finzi2026.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Finzi2026.pdf"
+      }
+    }
+  ]
+}

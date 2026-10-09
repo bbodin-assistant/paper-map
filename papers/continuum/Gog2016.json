@@ -1,0 +1,1185 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.798120+00:00",
+  "papers": [
+    {
+      "key": "Gog2016",
+      "paper": {
+        "id": "title:firmament fast centralized cluster scheduling at scale:2016",
+        "citationKey": "Gog2016",
+        "title": "Firmament: Fast, Centralized Cluster Scheduling at Scale",
+        "authors": [
+          "Ionel Gog",
+          "Malte Schwarzkopf",
+          "Adam Gleave",
+          "Robert N. M. Watson",
+          "Steven Hand"
+        ],
+        "year": 2016,
+        "venue": "12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www.usenix.org/conference/osdi16/technical-sessions/presentation/gog",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:embedded-edge-cloud-orchestration"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Ionel Gog and Malte Schwarzkopf and Adam Gleave and Robert N. M. Watson and Steven Hand",
+          "title": "{Firmament: Fast, Centralized Cluster Scheduling at Scale}",
+          "year": "2016",
+          "booktitle": "12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)",
+          "publisher": "USENIX Association",
+          "pages": "99--115",
+          "url": "https://www.usenix.org/conference/osdi16/technical-sessions/presentation/gog"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.194217+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Mart´ın Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, et al. “TensorFlow: A system for large-scale machine learning”. In: Proceedings of the 12th USENIX Symposium on Operating Systems Design and Implementation (OSDI). Savannah, Georgia, USA, Nov. 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Mart´ın Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, et al. “TensorFlow: A system for large-scale machine learning”. In: Proceedings of the 12th USENIX Symposium on Operating Systems Design and Implementation (OSDI). Savannah, Georgia, USA, Nov. 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "Ravindra K. Ahuja, Thomas L. Magnanti, and James B. Orlin. Network ﬂows: theory, algorithms, and applications. Prentice Hall, 1993.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Ravindra K. Ahuja, Thomas L. Magnanti, and James B. Orlin. Network ﬂows: theory, algorithms, and applications. Prentice Hall, 1993."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "Luiz Andr´e Barroso, Jimmy Clidaras, and Urs H¨olzle. “The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines, Second edition”. In: Synthesis Lectures on Computer Architecture 8.3 (July 2013), pp. 1–154.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Luiz Andr´e Barroso, Jimmy Clidaras, and Urs H¨olzle. “The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines, Second edition”. In: Synthesis Lectures on Computer Architecture 8.3 (July 2013), pp. 1–154."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "Dimitri P. Bertsekas and Paul Tseng. “Relaxation Methods for Minimum Cost Ordinary and Generalized Network Flow Problems”. In: Operations Research 36.1 (Feb. 1988), pp. 93–114.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Dimitri P. Bertsekas and Paul Tseng. “Relaxation Methods for Minimum Cost Ordinary and Generalized Network Flow Problems”. In: Operations Research 36.1 (Feb. 1988), pp. 93–114."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1988,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "Dimitri P. Bertsekas and Paul Tseng. “The Relax codes for linear minimum cost network ﬂow problems”. In: Annals of Operations Research 13.1 (Dec. 1988), pp. 125–190.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Dimitri P. Bertsekas and Paul Tseng. “The Relax codes for linear minimum cost network ﬂow problems”. In: Annals of Operations Research 13.1 (Dec. 1988), pp. 125–190."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1988,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "Arka A. Bhattacharya, David Culler, Eric Friedman, Ali Ghodsi, Scott Shenker, and Ion Stoica. “Hierarchical Scheduling for Diverse Datacenter Workloads”. In: Proceedings of the 4th Annual Symposium on Cloud Computing (SoCC). Santa Clara, California, Oct. 2013, 4:1–4:15.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Arka A. Bhattacharya, David Culler, Eric Friedman, Ali Ghodsi, Scott Shenker, and Ion Stoica. “Hierarchical Scheduling for Diverse Datacenter Workloads”. In: Proceedings of the 4th Annual Symposium on Cloud Computing (SoCC). Santa Clara, California, Oct. 2013, 4:1–4:15."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Eric Boutin, Jaliya Ekanayake, Wei Lin, Bing Shi, Jingren Zhou, Zhengping Qian, Ming Wu, et al. “Apollo: Scalable and Coordinated Scheduling for Cloud-Scale Computing”. In: Proceedings of the 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI). Broomﬁeld, Colorado, USA, Oct. 2014, pp. 285–300.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Eric Boutin, Jaliya Ekanayake, Wei Lin, Bing Shi, Jingren Zhou, Zhengping Qian, Ming Wu, et al. “Apollo: Scalable and Coordinated Scheduling for Cloud-Scale Computing”. In: Proceedings of the 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI). Broomﬁeld, Colorado, USA, Oct. 2014, pp. 285–300."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "Yanpei Chen, Sara Alspaugh, and Randy Katz. “Interactive Analytical Processing in Big Data Systems: A Cross-industry Study of MapReduce Workloads”. In: Proceedings of the VLDB Endowment 5.12 (Aug. 2012), pp. 1802–1813.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Yanpei Chen, Sara Alspaugh, and Randy Katz. “Interactive Analytical Processing in Big Data Systems: A Cross-industry Study of MapReduce Workloads”. In: Proceedings of the VLDB Endowment 5.12 (Aug. 2012), pp. 1802–1813."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Pamela Delgado, Diego Didona, Florin Dinu, and Willy Zwaenepoel. “Job-Aware Scheduling in Eagle: Divide and Stick to Your Probes”. In: Proceedings of the 7th ACM Symposium on Cloud Computing (SoCC). Santa Clara, California, USA, Oct. 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Pamela Delgado, Diego Didona, Florin Dinu, and Willy Zwaenepoel. “Job-Aware Scheduling in Eagle: Divide and Stick to Your Probes”. In: Proceedings of the 7th ACM Symposium on Cloud Computing (SoCC). Santa Clara, California, USA, Oct. 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "Pamela Delgado, Florin Dinu, Anne-Marie Kermarrec, and Willy Zwaenepoel. “Hawk: Hybrid Datacenter Scheduling”. In: Proceedings of the USENIX Annual Technical Conference. Santa Clara, California, USA, July 2015, pp. 499–510.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Pamela Delgado, Florin Dinu, Anne-Marie Kermarrec, and Willy Zwaenepoel. “Hawk: Hybrid Datacenter Scheduling”. In: Proceedings of the USENIX Annual Technical Conference. Santa Clara, California, USA, July 2015, pp. 499–510."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "Christina Delimitrou and Christos Kozyrakis. “Paragon: QoS-aware Scheduling for Heterogeneous Datacenters”. In: Proceedings of the 18th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS). Houston, Texas, USA, Mar. 2013, pp. 77–88.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Christina Delimitrou and Christos Kozyrakis. “Paragon: QoS-aware Scheduling for Heterogeneous Datacenters”. In: Proceedings of the 18th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS). Houston, Texas, USA, Mar. 2013, pp. 77–88."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Christina Delimitrou and Christos Kozyrakis. “Quasar: Resource-Efﬁcient and QoS-Aware Cluster Management”. In: Proceedings of the 18th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS). Salt Lake City, Utah, USA, Mar. 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Christina Delimitrou and Christos Kozyrakis. “Quasar: Resource-Efﬁcient and QoS-Aware Cluster Management”. In: Proceedings of the 18th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS). Salt Lake City, Utah, USA, Mar. 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "Christina Delimitrou, Daniel Sanchez, and Christos Kozyrakis. “Tarcil: Reconciling Scheduling Speed and Quality in Large Shared Clusters”. In: Proceedings of the 6th ACM Symposium on Cloud Computing (SoCC). Kohala Coast, Hawaii, USA, Aug. 2015, pp. 97–110.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Christina Delimitrou, Daniel Sanchez, and Christos Kozyrakis. “Tarcil: Reconciling Scheduling Speed and Quality in Large Shared Clusters”. In: Proceedings of the 6th ACM Symposium on Cloud Computing (SoCC). Kohala Coast, Hawaii, USA, Aug. 2015, pp. 97–110."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "Cloud Native Computing Foundation. Kubernetes. http://k8s.io; accessed 14/11/2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Cloud Native Computing Foundation. Kubernetes. http://k8s.io; accessed 14/11/2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "Antonio Frangioni and Antonio Manca. “A Computational Study of Cost Reoptimization for MinCost Flow Problems”. In: INFORMS Journal on Computing 18.1 (2006), pp. 61–70.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Antonio Frangioni and Antonio Manca. “A Computational Study of Cost Reoptimization for MinCost Flow Problems”. In: INFORMS Journal on Computing 18.1 (2006), pp. 61–70."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "Andrey Goder, Alexey Spiridonov, and Yin Wang. “Bistro: Scheduling Data-Parallel Jobs Against Live Production Systems”. In: Proceedings of the USENIX Annual Technical Conference. Santa Clara, California, USA, July 2015, pp. 459–471.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Andrey Goder, Alexey Spiridonov, and Yin Wang. “Bistro: Scheduling Data-Parallel Jobs Against Live Production Systems”. In: Proceedings of the USENIX Annual Technical Conference. Santa Clara, California, USA, July 2015, pp. 459–471."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "Andrew V. Goldberg. “An Efﬁcient Implementation of a Scaling Minimum-Cost Flow Algorithm”. In: Journal of Algorithms 22.1 (1997), pp. 1–29.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Andrew V. Goldberg. “An Efﬁcient Implementation of a Scaling Minimum-Cost Flow Algorithm”. In: Journal of Algorithms 22.1 (1997), pp. 1–29."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "Andrew V. Goldberg and Michael Kharitonov. “On Implementing Scaling Push-Relabel Algorithms for the Minimum-Cost Flow Problem”. In: Network Flows and Matching: First DIMACS Implementation Challenge. Ed. by D.S. Johnson and C.C. McGeoch. DIMACS series in discrete mathematics and theoretical computer science. American Mathematical Society, 1993.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Andrew V. Goldberg and Michael Kharitonov. “On Implementing Scaling Push-Relabel Algorithms for the Minimum-Cost Flow Problem”. In: Network Flows and Matching: First DIMACS Implementation Challenge. Ed. by D.S. Johnson and C.C. McGeoch. DIMACS series in discrete mathematics and theoretical computer science. American Mathematical Society, 1993."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "Andrew V. Goldberg and Robert E. Tarjan. “Finding Minimum-Cost Circulations by Successive Approximation”. In: Mathematics of Operations Research 15.3 (Aug. 1990), pp. 430–466. USENIX Association 12th USENIX Symposium on Operating Systems Design and Implementation 113",
+            "doi": null,
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Andrew V. Goldberg and Robert E. Tarjan. “Finding Minimum-Cost Circulations by Successive Approximation”. In: Mathematics of Operations Research 15.3 (Aug. 1990), pp. 430–466. USENIX Association 12th USENIX Symposium on Operating Systems Design and Implementation 113"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1990,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "Matthew P. Grosvenor, Malte Schwarzkopf, Ionel Gog, Robert N. M. Watson, Andrew W. Moore, Steven Hand, and Jon Crowcroft. “Queues don’t matter when you can JUMP them!” In: Proceedings of the 12th USENIX Symposium on Networked Systems Design and Implementation (NSDI). Oakland, California, USA, May 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Matthew P. Grosvenor, Malte Schwarzkopf, Ionel Gog, Robert N. M. Watson, Andrew W. Moore, Steven Hand, and Jon Crowcroft. “Queues don’t matter when you can JUMP them!” In: Proceedings of the 12th USENIX Symposium on Networked Systems Design and Implementation (NSDI). Oakland, California, USA, May 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "Benjamin Hindman, Andy Konwinski, Matei Zaharia, Ali Ghodsi, Anthony D. Joseph, Randy Katz, Scott Shenker, et al. “Mesos: A platform for ﬁne-grained resource sharing in the data center”. In: Proceedings of the 8th USENIX Conference on Networked Systems Design and Implementation (NSDI). Boston, Massachusetts, USA, Mar. 2011, pp. 295–308.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Benjamin Hindman, Andy Konwinski, Matei Zaharia, Ali Ghodsi, Anthony D. Joseph, Randy Katz, Scott Shenker, et al. “Mesos: A platform for ﬁne-grained resource sharing in the data center”. In: Proceedings of the 8th USENIX Conference on Networked Systems Design and Implementation (NSDI). Boston, Massachusetts, USA, Mar. 2011, pp. 295–308."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:mesos a platform for fine grained resource sharing in the data center:2011",
+                "doi": "",
+                "arxivId": "",
+                "title": "Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center",
+                "authors": [
+                  "Benjamin Hindman",
+                  "Andy Konwinski",
+                  "Matei Zaharia",
+                  "Ali Ghodsi",
+                  "Anthony D. Joseph",
+                  "Randy Katz",
+                  "Scott Shenker",
+                  "Ion Stoica"
+                ],
+                "year": 2011,
+                "venue": "8th USENIX Symposium on Networked Systems Design and Implementation (NSDI 11)",
+                "type": "inproceedings",
+                "url": "https://www.usenix.org/conference/nsdi11/mesos-platform-fine-grained-resource-sharing-data-center"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "Michael Isard, Vijayan Prabhakaran, Jon Currey, Udi Wieder, Kunal Talwar, and Andrew Goldberg. “Quincy: fair scheduling for distributed computing clusters”. In: Proceedings of the 22nd ACM Symposium on Operating Systems Principles (SOSP). Big Sky, Montana, USA, Oct. 2009, pp. 261–276.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Michael Isard, Vijayan Prabhakaran, Jon Currey, Udi Wieder, Kunal Talwar, and Andrew Goldberg. “Quincy: fair scheduling for distributed computing clusters”. In: Proceedings of the 22nd ACM Symposium on Operating Systems Principles (SOSP). Big Sky, Montana, USA, Oct. 2009, pp. 261–276."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "Konstantinos Karanasos, Sriram Rao, Carlo Curino, Chris Douglas, Kishore Chaliparambil, Giovanni Matteo Fumarola, Solom Heddaya, et al. “Mercury: Hybrid Centralized and Distributed Scheduling in Large Shared Clusters”. In: Proceedings of the USENIX Annual Technical Conference. Santa Clara, California, USA, July 2015, pp. 485–497.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Konstantinos Karanasos, Sriram Rao, Carlo Curino, Chris Douglas, Kishore Chaliparambil, Giovanni Matteo Fumarola, Solom Heddaya, et al. “Mercury: Hybrid Centralized and Distributed Scheduling in Large Shared Clusters”. In: Proceedings of the USENIX Annual Technical Conference. Santa Clara, California, USA, July 2015, pp. 485–497."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "Zolt´an Kir´aly and P. Kov´acs. “Efﬁcient implementations of minimum-cost ﬂow algorithms”. In: CoRR abs/1207.6381 (2012).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Zolt´an Kir´aly and P. Kov´acs. “Efﬁcient implementations of minimum-cost ﬂow algorithms”. In: CoRR abs/1207.6381 (2012)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "Morton Klein. “A Primal Method for Minimal Cost Flows with Applications to the Assignment and Transportation Problems”. In: Management Science 14.3 (1967), pp. 205–220.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1967,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Morton Klein. “A Primal Method for Minimal Cost Flows with Applications to the Assignment and Transportation Problems”. In: Management Science 14.3 (1967), pp. 205–220."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1967,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "Andreas L¨obel. Solving Large-Scale Real-World Minimum-Cost Flow Problems by a Network Simplex Method. Tech. rep. SC-96-07. Zentrum f¨ur Informationstechnik Berlin (ZIB), Feb. 1996.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Andreas L¨obel. Solving Large-Scale Real-World Minimum-Cost Flow Problems by a Network Simplex Method. Tech. rep. SC-96-07. Zentrum f¨ur Informationstechnik Berlin (ZIB), Feb. 1996."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1996,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "27",
+            "rawText": "Kay Ousterhout, Aurojit Panda, Joshua Rosen, Shivaram Venkataraman, Reynold Xin, Sylvia Ratnasamy, Scott Shenker, et al. “The case for tiny tasks in compute clusters”. In: Proceedings of the 14th USENIX Workshop on Hot Topics in Operating Systems (HotOS). Santa Ana Pueblo, New Mexico, USA, May 2013.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Kay Ousterhout, Aurojit Panda, Joshua Rosen, Shivaram Venkataraman, Reynold Xin, Sylvia Ratnasamy, Scott Shenker, et al. “The case for tiny tasks in compute clusters”. In: Proceedings of the 14th USENIX Workshop on Hot Topics in Operating Systems (HotOS). Santa Ana Pueblo, New Mexico, USA, May 2013."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "28",
+            "rawText": "Kay Ousterhout, Patrick Wendell, Matei Zaharia, and Ion Stoica. “Sparrow: Distributed, Low Latency Scheduling”. In: Proceedings of the 24th ACM Symposium on Operating Systems Principles (SOSP). Nemacolin Woodlands, Pennsylvania, USA, Nov. 2013, pp. 69–84.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Kay Ousterhout, Patrick Wendell, Matei Zaharia, and Ion Stoica. “Sparrow: Distributed, Low Latency Scheduling”. In: Proceedings of the 24th ACM Symposium on Operating Systems Principles (SOSP). Nemacolin Woodlands, Pennsylvania, USA, Nov. 2013, pp. 69–84."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "29",
+            "rawText": "Jeff Rasley, Konstantinos Karanasos, Srikanth Kandula, Rodrigo Fonseca, Milan Vojnovic, and Sriram Rao. “Efﬁcient Queue Management for Cluster Scheduling”. In: Proceedings of the 11th ACM European Conference on Computer Systems (EuroSys). London, United Kingdom, Apr. 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Jeff Rasley, Konstantinos Karanasos, Srikanth Kandula, Rodrigo Fonseca, Milan Vojnovic, and Sriram Rao. “Efﬁcient Queue Management for Cluster Scheduling”. In: Proceedings of the 11th ACM European Conference on Computer Systems (EuroSys). London, United Kingdom, Apr. 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "30",
+            "rawText": "Charles Reiss, Alexey Tumanov, Gregory R. Ganger, Randy H. Katz, and Michael A. Kozuch. “Heterogeneity and dynamicity of clouds at scale: Google trace analysis”. In: Proceedings of the 3rd ACM Symposium on Cloud Computing (SoCC). San Jose, California, Oct. 2012, 7:1–7:13.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Charles Reiss, Alexey Tumanov, Gregory R. Ganger, Randy H. Katz, and Michael A. Kozuch. “Heterogeneity and dynamicity of clouds at scale: Google trace analysis”. In: Proceedings of the 3rd ACM Symposium on Cloud Computing (SoCC). San Jose, California, Oct. 2012, 7:1–7:13."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "31",
+            "rawText": "Malte Schwarzkopf. “Operating system support for warehouse-scale computing”. PhD thesis. University of Cambridge Computer Laboratory, Oct. 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Malte Schwarzkopf. “Operating system support for warehouse-scale computing”. PhD thesis. University of Cambridge Computer Laboratory, Oct. 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "32",
+            "rawText": "Malte Schwarzkopf, Andy Konwinski, Michael Abd-El-Malek, and John Wilkes. “Omega: ﬂexible, scalable schedulers for large compute clusters”. In: Proceedings of the 8th ACM European Conference on Computer Systems (EuroSys). Prague, Czech Republic, Apr. 2013, pp. 351–364.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Malte Schwarzkopf, Andy Konwinski, Michael Abd-El-Malek, and John Wilkes. “Omega: ﬂexible, scalable schedulers for large compute clusters”. In: Proceedings of the 8th ACM European Conference on Computer Systems (EuroSys). Prague, Czech Republic, Apr. 2013, pp. 351–364."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:omega flexible scalable schedulers for large compute clusters:2013",
+                "doi": "",
+                "arxivId": "",
+                "title": "Omega: flexible, scalable schedulers for large compute clusters",
+                "authors": [
+                  "Malte Schwarzkopf",
+                  "Andy Konwinski",
+                  "Michael Abd-El-Malek",
+                  "John Wilkes"
+                ],
+                "year": 2013,
+                "venue": "Proceedings of EuroSys",
+                "type": "inproceedings",
+                "url": "https://research.google/pubs/omega-flexible-scalable-schedulers-for-large-compute-clusters/"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "33",
+            "rawText": "Alexey Tumanov, Timothy Zhu, Jun Woo Park, Michael A. Kozuch, Mor Harchol-Balter, and Gregory R. Ganger. “TetriSched: global rescheduling with adaptive plan-ahead in dynamic heterogeneous clusters”. In: Proceedings of the 11th ACM European Conference on Computer Systems (EuroSys). London, England, United Kingdom, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Alexey Tumanov, Timothy Zhu, Jun Woo Park, Michael A. Kozuch, Mor Harchol-Balter, and Gregory R. Ganger. “TetriSched: global rescheduling with adaptive plan-ahead in dynamic heterogeneous clusters”. In: Proceedings of the 11th ACM European Conference on Computer Systems (EuroSys). London, England, United Kingdom, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "34",
+            "rawText": "Vinod Kumar Vavilapalli, Arun C. Murthy, Chris Douglas, Sharad Agarwal, Mahadev Konar, Robert Evans, Thomas Graves, et al. “Apache Hadoop YARN: Yet Another Resource Negotiator”. In: Proceedings of the 4th Annual Symposium on Cloud Computing (SoCC). Santa Clara, California, Oct. 2013, 5:1–5:16.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Vinod Kumar Vavilapalli, Arun C. Murthy, Chris Douglas, Sharad Agarwal, Mahadev Konar, Robert Evans, Thomas Graves, et al. “Apache Hadoop YARN: Yet Another Resource Negotiator”. In: Proceedings of the 4th Annual Symposium on Cloud Computing (SoCC). Santa Clara, California, Oct. 2013, 5:1–5:16."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "35",
+            "rawText": "Abhishek Verma, Luis David Pedrosa, Madhukar Korupolu, David Oppenheimer, and John Wilkes. “Large scale cluster management at Google”. In: Proceedings of the 10th ACM European Conference on Computer Systems (EuroSys). Bordeaux, France, Apr. 2015. 114 12th USENIX Symposium on Operating Systems Design and Implementation USENIX Association",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Abhishek Verma, Luis David Pedrosa, Madhukar Korupolu, David Oppenheimer, and John Wilkes. “Large scale cluster management at Google”. In: Proceedings of the 10th ACM European Conference on Computer Systems (EuroSys). Bordeaux, France, Apr. 2015. 114 12th USENIX Symposium on Operating Systems Design and Implementation USENIX Association"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "36",
+            "rawText": "Xiao Zhang, Eric Tune, Robert Hagmann, Rohit Jnagal, Vrigo Gokhale, and John Wilkes. “CPI2: CPU Performance Isolation for Shared Compute Clusters”. In: Proceedings of the 8th ACM European Conference on Computer Systems (EuroSys). Prague, Czech Republic, Apr. 2013, pp. 379–391. USENIX Association 12th USENIX Symposium on Operating Systems Design and Implementation 115",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Xiao Zhang, Eric Tune, Robert Hagmann, Rohit Jnagal, Vrigo Gokhale, and John Wilkes. “CPI2: CPU Performance Isolation for Shared Compute Clusters”. In: Proceedings of the 8th ACM European Conference on Computer Systems (EuroSys). Prague, Czech Republic, Apr. 2013, pp. 379–391. USENIX Association 12th USENIX Symposium on Operating Systems Design and Implementation 115"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:firmament fast centralized cluster scheduling at scale:2016:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 36,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:firmament fast centralized cluster scheduling at scale:2016->title:mesos a platform for fine grained resource sharing in the data center:2011@papers-continuum-Gog2016.pdf",
+      "source": "title:firmament fast centralized cluster scheduling at scale:2016",
+      "target": "title:mesos a platform for fine grained resource sharing in the data center:2011",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/continuum/Gog2016.pdf"
+    },
+    {
+      "id": "title:firmament fast centralized cluster scheduling at scale:2016->title:omega flexible scalable schedulers for large compute clusters:2013@papers-continuum-Gog2016.pdf",
+      "source": "title:firmament fast centralized cluster scheduling at scale:2016",
+      "target": "title:omega flexible scalable schedulers for large compute clusters:2013",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/continuum/Gog2016.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Gog2016",
+      "paperId": "title:firmament fast centralized cluster scheduling at scale:2016",
+      "metadata": {
+        "fileName": "Gog2016.pdf",
+        "sourcePath": "papers/continuum/Gog2016.pdf"
+      }
+    }
+  ]
+}

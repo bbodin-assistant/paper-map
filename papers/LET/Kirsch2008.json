@@ -1,0 +1,499 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.293825+00:00",
+  "papers": [
+    {
+      "key": "Kirsch2008",
+      "paper": {
+        "id": "title:semantics preserving and incremental runtime patching of real time programs:2008",
+        "citationKey": "Kirsch2008",
+        "title": "Semantics-Preserving and Incremental Runtime Patching of Real-Time Programs",
+        "authors": [
+          "Christoph M. Kirsch",
+          "Lu\\'is Lopes",
+          "Eduardo R. B. Marques"
+        ],
+        "year": 2008,
+        "venue": "Workshop on Adaptive and Reconfigurable Embedded Systems (APRES)",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://ckirsch.github.io/publications/conferences/APRES08-RuntimePatching.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Kirsch, Christoph M. and Lopes, Lu{\\'i}s and Marques, Eduardo R. B.",
+          "title": "{Semantics-Preserving and Incremental Runtime Patching of Real-Time Programs}",
+          "year": "2008",
+          "booktitle": "Workshop on Adaptive and Reconfigurable Embedded Systems (APRES)",
+          "url": "https://ckirsch.github.io/publications/conferences/APRES08-RuntimePatching.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.074989+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "J. Auerbach, D. Bacon, D. Iercan, C. Kirsch, V. Rajan, H. R¨ock, and R. Trummer. Java takes ﬂight: Time-portable real-time programming with Exotasks. In Proc. LCTES, 2007.",
+            "doi": "10.1145/1254766.1254775",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Auerbach, D. Bacon, D. Iercan, C. Kirsch, V. Rajan, H. R¨ock, and R. Trummer. Java takes ﬂight: Time-portable real-time programming with Exotasks. In Proc. LCTES, 2007."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/1254766.1254775",
+                "doi": "10.1145/1254766.1254775",
+                "arxivId": "",
+                "title": "Java takes flight: time-portable real-time programming with exotasks",
+                "authors": [
+                  "Joshua Auerbach",
+                  "David F. Bacon",
+                  "Daniel T. Iercan",
+                  "Christoph M. Kirsch",
+                  "V. T. Rajan",
+                  "Harald Roeck",
+                  "Rainer Trummer"
+                ],
+                "year": 2007,
+                "venue": "Proceedings of the 2007 ACM SIGPLAN/SIGBED conference on Languages, compilers, and tools for embedded systems",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1145/1254766.1254775"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "P. Caspi, N. Scaife, C. Sofronis, and S. Tripakis. Semanticspreserving multitask implementation of synchronous programs. ACM TECS, February 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P. Caspi, N. Scaife, C. Sofronis, and S. Tripakis. Semanticspreserving multitask implementation of synchronous programs. ACM TECS, February 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:semantics preserving and incremental runtime patching of real time programs:2008:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "K. Chatterjee, A. Ghosal, D. Iercan, C. Kirsch, T. Henzinger, C. Pinello, and A. Sangiovanni-Vincentelli. Logical reliability of interacting real-time tasks. In Proc. DATE, 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "K. Chatterjee, A. Ghosal, D. Iercan, C. Kirsch, T. Henzinger, C. Pinello, and A. Sangiovanni-Vincentelli. Logical reliability of interacting real-time tasks. In Proc. DATE, 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:semantics preserving and incremental runtime patching of real time programs:2008:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "S. Craciunas, C. Kirsch, H. R¨ock, and R. Trummer. The JAviator: A high-payload quadrotor UAV with high-level programming capabilities. In Proc. AIAA GNC, 2008.",
+            "doi": "10.2514/6.2008-7413",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Craciunas, C. Kirsch, H. R¨ock, and R. Trummer. The JAviator: A high-payload quadrotor UAV with high-level programming capabilities. In Proc. AIAA GNC, 2008."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.2514/6.2008-7413",
+                "doi": "10.2514/6.2008-7413",
+                "arxivId": "",
+                "title": "The JAviator: A High-Payload Quadrotor UAV with High-Level Programming Capabilities",
+                "authors": [
+                  "Rainer Trummer",
+                  "Harald Roeck",
+                  "Silviu Craciunas",
+                  "Christoph Kirsch"
+                ],
+                "year": 2008,
+                "venue": "AIAA Guidance, Navigation and Control Conference and Exhibit",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.2514/6.2008-7413"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "A. Easwaran, I. Shin, O. Sokolsky, and I. Lee. Incremental schedulability analysis of hierarchical real-time components. In Proc. EMSOFT, 2006.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Easwaran, I. Shin, O. Sokolsky, and I. Lee. Incremental schedulability analysis of hierarchical real-time components. In Proc. EMSOFT, 2006."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:semantics preserving and incremental runtime patching of real time programs:2008:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "S. Fischmeister and K. Winkler. Non-blocking deterministic replacement of functionality, timing, and data-ﬂow for hard real-time systems at runtime. In Proc. ECRTS, July 2005.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Fischmeister and K. Winkler. Non-blocking deterministic replacement of functionality, timing, and data-ﬂow for hard real-time systems at runtime. In Proc. ECRTS, July 2005."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:semantics preserving and incremental runtime patching of real time programs:2008:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "A. Ghosal, T. Henzinger, D. Iercan, C. Kirsch, and A. Sangiovanni-Vincentelli. A hierarchical coordination language for interacting real-time tasks. In Proc. EMSOFT, 2006.",
+            "doi": "10.1145/1176887.1176907",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Ghosal, T. Henzinger, D. Iercan, C. Kirsch, and A. Sangiovanni-Vincentelli. A hierarchical coordination language for interacting real-time tasks. In Proc. EMSOFT, 2006."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176907",
+                "doi": "10.1145/1176887.1176907",
+                "arxivId": "",
+                "title": "A hierarchical coordination language for interacting real-time tasks",
+                "authors": [
+                  "Arkadeb Ghosal",
+                  "Alberto Sangiovanni-Vincentelli",
+                  "Christoph M. Kirsch",
+                  "Thomas A. Henzinger",
+                  "Daniel Iercan"
+                ],
+                "year": 2006,
+                "venue": "Proceedings of the 6th ACM \\& IEEE International conference on Embedded software - EMSOFT '06",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1145/1176887.1176907"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "A. Ghosal, D. Iercan, C. Kirsch, T. Henzinger, and A. Sangiovanni-Vincentelli. Separate compilation of hierarchical real-time programs into linear-bounded embedded machine code. In Online Proc. APGES, 2007.",
+            "doi": "10.1016/j.scico.2010.06.004",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Ghosal, D. Iercan, C. Kirsch, T. Henzinger, and A. Sangiovanni-Vincentelli. Separate compilation of hierarchical real-time programs into linear-bounded embedded machine code. In Online Proc. APGES, 2007."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1016/j.scico.2010.06.004",
+                "doi": "10.1016/j.scico.2010.06.004",
+                "arxivId": "",
+                "title": "Separate compilation of hierarchical real-time programs into linear-bounded Embedded Machine code",
+                "authors": [
+                  "Arkadeb Ghosal",
+                  "Daniel Iercan",
+                  "Christoph M. Kirsch",
+                  "Thomas A. Henzinger",
+                  "Alberto Sangiovanni-Vincentelli"
+                ],
+                "year": 2007,
+                "venue": "Science of Computer Programming",
+                "type": "article",
+                "url": "https://doi.org/10.1016/j.scico.2010.06.004"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "T. Henzinger, B. Horowitz, and C. Kirsch. Giotto: A timetriggered language for embedded programming. Proc. of the IEEE, January 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Henzinger, B. Horowitz, and C. Kirsch. Giotto: A timetriggered language for embedded programming. Proc. of the IEEE, January 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:semantics preserving and incremental runtime patching of real time programs:2008:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "T. Henzinger and C. Kirsch. The Embedded Machine: predictable, portable real-time code. In Proc. PLDI, 2002.",
+            "doi": "10.1145/512529.512567",
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Henzinger and C. Kirsch. The Embedded Machine: predictable, portable real-time code. In Proc. PLDI, 2002."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/512529.512567",
+                "doi": "10.1145/512529.512567",
+                "arxivId": "",
+                "title": "The embedded machine: predictable, portable real-time code",
+                "authors": [
+                  "Thomas A. Henzinger",
+                  "Christoph M. Kirsch"
+                ],
+                "year": 2002,
+                "venue": "Proceedings of the ACM SIGPLAN 2002 conference on Programming language design and implementation",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1145/512529.512567"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "J. Real and A. Crespo. Mode change protocols for real-time systems: A survey and a new proposal. RTS, Springer, 2004.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Real and A. Crespo. Mode change protocols for real-time systems: A survey and a new proposal. RTS, Springer, 2004."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:semantics preserving and incremental runtime patching of real time programs:2008:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Seascout LAUV. http://whale.fe.up.pt/seascout.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Seascout LAUV. http://whale.fe.up.pt/seascout."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:semantics preserving and incremental runtime patching of real time programs:2008:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 5,
+          "extractedReferenceCount": 12,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:semantics preserving and incremental runtime patching of real time programs:2008->doi:10.1145/1254766.1254775@papers-LET-Kirsch2008.pdf",
+      "source": "title:semantics preserving and incremental runtime patching of real time programs:2008",
+      "target": "doi:10.1145/1254766.1254775",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kirsch2008.pdf"
+    },
+    {
+      "id": "title:semantics preserving and incremental runtime patching of real time programs:2008->doi:10.2514/6.2008-7413@papers-LET-Kirsch2008.pdf",
+      "source": "title:semantics preserving and incremental runtime patching of real time programs:2008",
+      "target": "doi:10.2514/6.2008-7413",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kirsch2008.pdf"
+    },
+    {
+      "id": "title:semantics preserving and incremental runtime patching of real time programs:2008->doi:10.1145/1176887.1176907@papers-LET-Kirsch2008.pdf",
+      "source": "title:semantics preserving and incremental runtime patching of real time programs:2008",
+      "target": "doi:10.1145/1176887.1176907",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kirsch2008.pdf"
+    },
+    {
+      "id": "title:semantics preserving and incremental runtime patching of real time programs:2008->doi:10.1016/j.scico.2010.06.004@papers-LET-Kirsch2008.pdf",
+      "source": "title:semantics preserving and incremental runtime patching of real time programs:2008",
+      "target": "doi:10.1016/j.scico.2010.06.004",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kirsch2008.pdf"
+    },
+    {
+      "id": "title:semantics preserving and incremental runtime patching of real time programs:2008->doi:10.1145/512529.512567@papers-LET-Kirsch2008.pdf",
+      "source": "title:semantics preserving and incremental runtime patching of real time programs:2008",
+      "target": "doi:10.1145/512529.512567",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kirsch2008.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Kirsch2008",
+      "paperId": "title:semantics preserving and incremental runtime patching of real time programs:2008",
+      "metadata": {
+        "fileName": "Kirsch2008.pdf",
+        "sourcePath": "papers/LET/Kirsch2008.pdf"
+      }
+    }
+  ]
+}

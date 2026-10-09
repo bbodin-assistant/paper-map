@@ -1,0 +1,1456 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.665137+00:00",
+  "papers": [
+    {
+      "key": "Bosboom2014",
+      "paper": {
+        "id": "doi:10.1145/2714064.2660236",
+        "citationKey": "Bosboom2014",
+        "title": "StreamJIT: A Commensal Compiler for High-Performance Stream Programming",
+        "authors": [
+          "Jeffrey Bosboom",
+          "Sumanaruban Rajadurai",
+          "Weng-Fai Wong",
+          "Saman Amarasinghe"
+        ],
+        "year": 2014,
+        "venue": "OOPSLA",
+        "type": "inproceedings",
+        "doi": "10.1145/2714064.2660236",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/2714064.2660236",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Bosboom, Jeffrey and Rajadurai, Sumanaruban and Wong, Weng-Fai and Amarasinghe, Saman",
+          "title": "StreamJIT: A Commensal Compiler for High-Performance Stream Programming",
+          "booktitle": "OOPSLA",
+          "pages": "177--195",
+          "year": "2014",
+          "doi": "10.1145/2714064.2660236",
+          "url": "https://doi.org/10.1145/2714064.2660236"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.106469+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_2_1_1_1",
+            "rawText": "Expression Trees. URL http://msdn.microsoft.com/en-us/library/bb397951%28v=vs.110%29.aspx.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_1_1",
+              "unstructured": "Expression Trees. URL http://msdn.microsoft.com/en-us/library/bb397951%28v=vs.110%29.aspx."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_1_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_2_1_2_1",
+            "rawText": "Emitting Dynamic Methods and Assemblies. URL http://msdn.microsoft.com/en-us/library/8ffc3x75%28v=vs.110%29.aspx.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_2_1",
+              "unstructured": "Emitting Dynamic Methods and Assemblies. URL http://msdn.microsoft.com/en-us/library/8ffc3x75%28v=vs.110%29.aspx."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_2_1_3_1",
+            "rawText": "https://doi.org/10.5555/323215",
+            "doi": "10.5555/323215",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/323215"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/323215",
+                "doi": "10.5555/323215",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/323215"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_2_1_4_1",
+            "rawText": "https://doi.org/10.1145/1542476.1542481",
+            "doi": "10.1145/1542476.1542481",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_4_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1542476.1542481"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1542476.1542481",
+                "doi": "10.1145/1542476.1542481",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1542476.1542481"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_2_1_5_1",
+            "rawText": "https://doi.org/10.1145/2380403.2380425",
+            "doi": "10.1145/2380403.2380425",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2380403.2380425"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2380403.2380425",
+                "doi": "10.1145/2380403.2380425",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2380403.2380425"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_2_1_6_1",
+            "rawText": "J. Ansel, S. Kamil, K. Veeramachaneni, U.-M. O'Reilly, and S. Amarasinghe. OpenTuner: An Extensible Framework for Program Autotuning. 2013. URL http://hdl.handle.net/1721.1/81958.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_6_1",
+              "volume-title": "OpenTuner: An Extensible Framework for Program Autotuning",
+              "author": "Ansel J.",
+              "year": "2013",
+              "unstructured": "J. Ansel, S. Kamil, K. Veeramachaneni, U.-M. O'Reilly, and S. Amarasinghe. OpenTuner: An Extensible Framework for Program Autotuning. 2013. URL http://hdl.handle.net/1721.1/81958."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_6_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Ansel J."
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_2_1_7_1",
+            "rawText": "ASM. ASM bytecode transformation library. http://asm.ow2.org/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_7_1",
+              "unstructured": "ASM. ASM bytecode transformation library. http://asm.ow2.org/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_7_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_2_1_8_1",
+            "rawText": "https://doi.org/10.1145/1869459.1869469",
+            "doi": "10.1145/1869459.1869469",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1869459.1869469"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1869459.1869469",
+                "doi": "10.1145/1869459.1869469",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1869459.1869469"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_2_1_9_1",
+            "rawText": "https://doi.org/10.1145/2228360.2228411",
+            "doi": "10.1145/2228360.2228411",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_9_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2228360.2228411"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2228360.2228411",
+                "doi": "10.1145/2228360.2228411",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2228360.2228411"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_2_1_10_1",
+            "rawText": "https://doi.org/10.1109/memcod.2010.5558637",
+            "doi": "10.1109/memcod.2010.5558637",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_10_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MEMCOD.2010.5558637"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/memcod.2010.5558637",
+                "doi": "10.1109/memcod.2010.5558637",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/memcod.2010.5558637"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_2_1_11_1",
+            "rawText": "S. Bharadwaj. invokedynamic and Jython. In JVM Language Summit 2011, JVMLS 2011, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_11_1",
+              "volume-title": "JVMLS 2011",
+              "author": "Bharadwaj S.",
+              "year": "2011",
+              "unstructured": "S. Bharadwaj. invokedynamic and Jython. In JVM Language Summit 2011, JVMLS 2011, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_11_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Bharadwaj S."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_2_1_12_1",
+            "rawText": "https://doi.org/10.1109/pact.2011.15",
+            "doi": "10.1109/pact.2011.15",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_12_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PACT.2011.15"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/pact.2011.15",
+                "doi": "10.1109/pact.2011.15",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/pact.2011.15"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_2_1_13_1",
+            "rawText": "https://doi.org/10.1145/1985793.1985889",
+            "doi": "10.1145/1985793.1985889",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1985793.1985889"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1985793.1985889",
+                "doi": "10.1145/1985793.1985889",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1985793.1985889"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_2_1_14_1",
+            "rawText": "https://doi.org/10.1109/icassp.1998.681704",
+            "doi": "10.1109/icassp.1998.681704",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_14_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1998.681704"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1998.681704",
+                "doi": "10.1109/icassp.1998.681704",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1998.681704"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_2_1_15_1",
+            "rawText": "M. Garcia. Runtime metaprogramming via java.lang.invoke.MethodHandle. May 2012. URL http://lamp.epfl.ch/~magarcia/ScalaCompilerCornerReloaded/2012Q2/RuntimeMP.pdf.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_15_1",
+              "volume-title": "Runtime metaprogramming via java.lang.invoke.MethodHandle",
+              "author": "Garcia M.",
+              "year": "2012",
+              "unstructured": "M. Garcia. Runtime metaprogramming via java.lang.invoke.MethodHandle. May 2012. URL http://lamp.epfl.ch/~magarcia/ScalaCompilerCornerReloaded/2012Q2/RuntimeMP.pdf."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_15_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Garcia M."
+                ],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_2_1_16_1",
+            "rawText": "https://doi.org/10.5555/2048965",
+            "doi": "10.5555/2048965",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_16_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/2048965"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/2048965",
+                "doi": "10.5555/2048965",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/2048965"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_2_1_17_1",
+            "rawText": "D. Heidinga. MethodHandle Implementation Tips and Tricks. In JVM Language Summit 2011, JVMLS 2011, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_17_1",
+              "volume-title": "JVMLS 2011",
+              "author": "Heidinga D.",
+              "year": "2011",
+              "unstructured": "D. Heidinga. MethodHandle Implementation Tips and Tricks. In JVM Language Summit 2011, JVMLS 2011, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_17_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Heidinga D."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_2_1_18_1",
+            "rawText": "ImageMagick. ImageMagick. URL http://www.imagemagick.org/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_18_1",
+              "unstructured": "ImageMagick. ImageMagick. URL http://www.imagemagick.org/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_18_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_2_1_19_1",
+            "rawText": "https://doi.org/10.1145/1272996.1273005",
+            "doi": "10.1145/1272996.1273005",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_19_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1272996.1273005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1272996.1273005",
+                "doi": "10.1145/1272996.1273005",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1272996.1273005"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_2_1_20_1",
+            "rawText": "M. Karczmarek. Constrained and Phased Scheduling of Synchronous Data Flow Graphs for StreamIt Language. PhD thesis Massachusetts Institute of Technology 2002.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_20_1",
+              "unstructured": "M. Karczmarek. Constrained and Phased Scheduling of Synchronous Data Flow Graphs for StreamIt Language. PhD thesis Massachusetts Institute of Technology 2002."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_20_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_2_1_21_1",
+            "rawText": "https://doi.org/10.1145/2505351.2505355",
+            "doi": "10.1145/2505351.2505355",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_21_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2505351.2505355"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2505351.2505355",
+                "doi": "10.1145/2505351.2505355",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2505351.2505355"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_2_1_22_1",
+            "rawText": "https://doi.org/10.1145/1142473.1142552",
+            "doi": "10.1145/1142473.1142552",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_22_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1142473.1142552"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1142473.1142552",
+                "doi": "10.1145/1142473.1142552",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1142473.1142552"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_2_1_23_1",
+            "rawText": "C. Nutter. Adding invokedynamic Support to JRuby. In JVM Language Summit 2011, JVMLS 2011, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_23_1",
+              "volume-title": "JVMLS 2011",
+              "author": "Nutter C.",
+              "year": "2011",
+              "unstructured": "C. Nutter. Adding invokedynamic Support to JRuby. In JVM Language Summit 2011, JVMLS 2011, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_23_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Nutter C."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_2_1_24_1",
+            "rawText": "https://doi.org/10.1109/icse-companion.2009.5071011",
+            "doi": "10.1109/icse-companion.2009.5071011",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_24_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICSE-COMPANION.2009.5071011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icse-companion.2009.5071011",
+                "doi": "10.1109/icse-companion.2009.5071011",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icse-companion.2009.5071011"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_2_1_25_1",
+            "rawText": "https://doi.org/10.1007/978-3-642-03869-3n_81",
+            "doi": "10.1007/978-3-642-03869-3n_81",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_25_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-642-03869-3n_81"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-03869-3n_81",
+                "doi": "10.1007/978-3-642-03869-3n_81",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-03869-3n_81"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_2_1_26_1",
+            "rawText": "F. Otto C. Schaefer M. Dempe and W. Tichy. A Language-Based Tuning Mechanism for Task and Pipeline Parallelism. In P. DAmbra M. Guarracino and D. Talia editors Euro-Par 2010 - Parallel Processing volume 6272 of Lecture Notes in Computer Science pages 328--340. Springer Berlin Heidelberg 2010. ISBN 978-3-642-15290-0. doi: 10.1007/978-3-642-15291-7n_30.",
+            "doi": "10.1007/978-3-642-15291-7n_30",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_26_1",
+              "doi-asserted-by": "publisher",
+              "unstructured": "F. Otto C. Schaefer M. Dempe and W. Tichy. A Language-Based Tuning Mechanism for Task and Pipeline Parallelism. In P. DAmbra M. Guarracino and D. Talia editors Euro-Par 2010 - Parallel Processing volume 6272 of Lecture Notes in Computer Science pages 328--340. Springer Berlin Heidelberg 2010. ISBN 978-3-642-15290-0. doi: 10.1007/978-3-642-15291-7n_30.",
+              "DOI": "10.1007/978-3-642-15291-7n_30"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-15291-7n_30",
+                "doi": "10.1007/978-3-642-15291-7n_30",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-15291-7n_30"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_2_1_27_1",
+            "rawText": "J. Ponge and F. L. Mouël. JooFlux: Hijacking Java 7 InvokeDynamic To Support Live Code Modifications. CoRR, abs/1210.1039, 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_27_1",
+              "volume-title": "JooFlux: Hijacking Java 7 InvokeDynamic To Support Live Code Modifications. CoRR, abs/1210.1039",
+              "author": "Ponge J.",
+              "year": "2012",
+              "unstructured": "J. Ponge and F. L. Mouël. JooFlux: Hijacking Java 7 InvokeDynamic To Support Live Code Modifications. CoRR, abs/1210.1039, 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_27_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Ponge J."
+                ],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_2_1_28_1",
+            "rawText": "https://doi.org/10.1145/2491956.2462176",
+            "doi": "10.1145/2491956.2462176",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_28_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2491956.2462176"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2491956.2462176",
+                "doi": "10.1145/2491956.2462176",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2491956.2462176"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_2_1_29_1",
+            "rawText": "https://doi.org/10.5555/800075.802449",
+            "doi": "10.5555/800075.802449",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_29_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/800075.802449"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/800075.802449",
+                "doi": "10.5555/800075.802449",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/800075.802449"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_2_1_30_1",
+            "rawText": "https://doi.org/10.1145/1868294.1868314",
+            "doi": "10.1145/1868294.1868314",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_30_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1868294.1868314"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1868294.1868314",
+                "doi": "10.1145/1868294.1868314",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1868294.1868314"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "e_1_2_1_31_1",
+            "rawText": "https://doi.org/10.1145/1711506.1711508",
+            "doi": "10.1145/1711506.1711508",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_31_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1711506.1711508"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1711506.1711508",
+                "doi": "10.1145/1711506.1711508",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1711506.1711508"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "e_1_2_1_32_1",
+            "rawText": "https://doi.org/10.1145/1297027.1297043",
+            "doi": "10.1145/1297027.1297043",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_32_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1297027.1297043"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1297027.1297043",
+                "doi": "10.1145/1297027.1297043",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1297027.1297043"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "e_1_2_1_33_1",
+            "rawText": "https://doi.org/10.1145/2517208.2517220",
+            "doi": "10.1145/2517208.2517220",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_33_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2517208.2517220"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2517208.2517220",
+                "doi": "10.1145/2517208.2517220",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2517208.2517220"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "e_1_2_1_34_1",
+            "rawText": "https://doi.org/10.1145/1852761.1852763",
+            "doi": "10.1145/1852761.1852763",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_34_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1852761.1852763"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1852761.1852763",
+                "doi": "10.1145/1852761.1852763",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1852761.1852763"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "e_1_2_1_35_1",
+            "rawText": "The Java Tutorials. Aggregate Operations. URL http://docs.oracle.com/javase/tutorial/collections/streams/index.html.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_35_1",
+              "unstructured": "The Java Tutorials. Aggregate Operations. URL http://docs.oracle.com/javase/tutorial/collections/streams/index.html."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_35_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "e_1_2_1_36_1",
+            "rawText": "The Java Tutorials. Type Annotations and Pluggable Type Systems. URL http://docs.oracle.com/javase/tutorial/java/annotations/type_annotations.html.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_36_1",
+              "unstructured": "The Java Tutorials. Type Annotations and Pluggable Type Systems. URL http://docs.oracle.com/javase/tutorial/java/annotations/type_annotations.html."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_36_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "e_1_2_1_37_1",
+            "rawText": "https://doi.org/10.5555/1713832",
+            "doi": "10.5555/1713832",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_37_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/1713832"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/1713832",
+                "doi": "10.5555/1713832",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/1713832"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "e_1_2_1_38_1",
+            "rawText": "https://doi.org/10.1145/1854273.1854319",
+            "doi": "10.1145/1854273.1854319",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_38_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1854273.1854319"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1854273.1854319",
+                "doi": "10.1145/1854273.1854319",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1854273.1854319"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "e_1_2_1_39_1",
+            "rawText": "https://doi.org/10.1109/ipdps.2009.5161054",
+            "doi": "10.1109/ipdps.2009.5161054",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_39_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/IPDPS.2009.5161054"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ipdps.2009.5161054",
+                "doi": "10.1109/ipdps.2009.5161054",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ipdps.2009.5161054"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "e_1_2_1_40_1",
+            "rawText": "TypeToken. TypeToken. URL https://code.google.com/p/guava-libraries/wiki/ReflectionExplained#TypeToken.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_40_1",
+              "unstructured": "TypeToken. TypeToken. URL https://code.google.com/p/guava-libraries/wiki/ReflectionExplained#TypeToken."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_40_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "e_1_2_1_41_1",
+            "rawText": "https://doi.org/10.1145/2512436",
+            "doi": "10.1145/2512436",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_41_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2512436"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2512436",
+                "doi": "10.1145/2512436",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2512436"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "e_1_2_1_42_1",
+            "rawText": "https://doi.org/10.5555/509058.509096",
+            "doi": "10.5555/509058.509096",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_42_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/509058.509096"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/509058.509096",
+                "doi": "10.5555/509058.509096",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/509058.509096"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "e_1_2_1_43_1",
+            "rawText": "https://doi.org/10.1145/2384716.2384723",
+            "doi": "10.1145/2384716.2384723",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_43_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2384716.2384723"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2384716.2384723",
+                "doi": "10.1145/2384716.2384723",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2384716.2384723"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "e_1_2_1_44_1",
+            "rawText": "https://doi.org/10.1145/2048147.2048168",
+            "doi": "10.1145/2048147.2048168",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_44_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2048147.2048168"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2048147.2048168",
+                "doi": "10.1145/2048147.2048168",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2048147.2048168"
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "e_1_2_1_45_1",
+            "rawText": "https://doi.org/10.1145/378795.378860",
+            "doi": "10.1145/378795.378860",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_45_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/378795.378860"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/378795.378860",
+                "doi": "10.1145/378795.378860",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/378795.378860"
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "e_1_2_1_46_1",
+            "rawText": "https://doi.org/10.5555/1855741.1855742",
+            "doi": "10.5555/1855741.1855742",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_46_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/1855741.1855742"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/1855741.1855742",
+                "doi": "10.5555/1855741.1855742",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/1855741.1855742"
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "e_1_2_1_47_1",
+            "rawText": "https://doi.org/10.5555/1863103.1863113",
+            "doi": "10.5555/1863103.1863113",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_47_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/1863103.1863113"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/1863103.1863113",
+                "doi": "10.5555/1863103.1863113",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/1863103.1863113"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/2714064.2660236",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 47,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/2714064.2660236",
+          "crossrefReferenceCount": 47
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Bosboom2014",
+      "paperId": "doi:10.1145/2714064.2660236",
+      "metadata": {
+        "fileName": "Bosboom2014.pdf",
+        "sourcePath": "papers/dataflow/Bosboom2014.pdf"
+      }
+    }
+  ]
+}

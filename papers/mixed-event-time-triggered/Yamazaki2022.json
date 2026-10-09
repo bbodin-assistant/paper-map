@@ -1,0 +1,775 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.475154+00:00",
+  "papers": [
+    {
+      "key": "Yamazaki2022",
+      "paper": {
+        "id": "title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022",
+        "citationKey": "Yamazaki2022",
+        "title": "Chain-Aware Scheduling for Mixed Timer-Driven and Event-Driven DAG Tasks",
+        "authors": [
+          "Daichi Yamazaki",
+          "Takuya Azumi"
+        ],
+        "year": 2022,
+        "venue": "Asia Pacific Conference on Robot IoT System Development and Platform",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://ipsj.ixsq.nii.ac.jp/record/222952/files/IPSJ-APRIS2022010.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation",
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Yamazaki, Daichi and Azumi, Takuya",
+          "title": "Chain-Aware Scheduling for Mixed Timer-Driven and Event-Driven DAG Tasks",
+          "booktitle": "Asia Pacific Conference on Robot IoT System Development and Platform",
+          "year": "2022",
+          "url": "https://ipsj.ixsq.nii.ac.jp/record/222952/files/IPSJ-APRIS2022010.pdf",
+          "howpublished": "APRIS"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.167991+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Senapati, D., Sarkar, A. and Karfa, C.: HMDS : A Makespan Minimizing DAG Scheduler for Heterogeneous Distributed Systems, TECS, Vol. 20, No. 5s, pp. 1–26 (2021).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Senapati, D., Sarkar, A. and Karfa, C.: HMDS : A Makespan Minimizing DAG Scheduler for Heterogeneous Distributed Systems, TECS, Vol. 20, No. 5s, pp. 1–26 (2021)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "Baruah, S.: Scheduling DAGs When Processor Assignments Are Specified, in Proc. of RTNS (2020).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Baruah, S.: Scheduling DAGs When Processor Assignments Are Specified, in Proc. of RTNS (2020)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "Igarashi, S., Kitagawa, Y., Ishigooka, T., Horiguchi, T. and Azumi, T.: Multi-rate DAG Scheduling Considering Communication Contention for NoC-based Embedded Many-core Processor, in Proc. of DS-RT (2019).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Igarashi, S., Kitagawa, Y., Ishigooka, T., Horiguchi, T. and Azumi, T.: Multi-rate DAG Scheduling Considering Communication Contention for NoC-based Embedded Many-core Processor, in Proc. of DS-RT (2019)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "Bittencourt, L. F., Sakellariou, R. and Madeira, E. R.: DAG Scheduling Using a Lookahead Variant of the Heterogeneous Earliest Finish Time Algorithm, in Proc. of PDP (2010).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Bittencourt, L. F., Sakellariou, R. and Madeira, E. R.: DAG Scheduling Using a Lookahead Variant of the Heterogeneous Earliest Finish Time Algorithm, in Proc. of PDP (2010)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "Jiang, X., Guan, N., Long, X., Tang, Y. and He, Q.: Real-time scheduling of parallel tasks with tight deadlines, Journal of Systems Architecture, Vol. 108, p. 101742 (2020).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Jiang, X., Guan, N., Long, X., Tang, Y. and He, Q.: Real-time scheduling of parallel tasks with tight deadlines, Journal of Systems Architecture, Vol. 108, p. 101742 (2020)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "Igarashi, S., Ishigooka, T., Horiguchi, T., Koike, R. and Azumi, T.: Heuristic Contention-Free Scheduling Algorithm for Multi-core Processor using LET Model, in Proc. of DS-RT (2020).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Igarashi, S., Ishigooka, T., Horiguchi, T., Koike, R. and Azumi, T.: Heuristic Contention-Free Scheduling Algorithm for Multi-core Processor using LET Model, in Proc. of DS-RT (2020)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Kato, S., Tokunaga, S., Maruyama, Y., Maeda, S., Hirabayashi, M., Kitsukawa, Y., Monrroy, A., Ando, T., Fujii, Y. and Azumi, T.: Autoware on Board: Enabling Autonomous Vehicles with Embedded systems, in Proc. of ICCPS (2018).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Kato, S., Tokunaga, S., Maruyama, Y., Maeda, S., Hirabayashi, M., Kitsukawa, Y., Monrroy, A., Ando, T., Fujii, Y. and Azumi, T.: Autoware on Board: Enabling Autonomous Vehicles with Embedded systems, in Proc. of ICCPS (2018)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "Igarashi, S., Fukunaga, T. and Azumi, T.: Accurate Contention-aware Scheduling Method on Clustered Many-core Platform, Journal of Information Processing, Vol. 29, pp. 216–226 (2021).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Igarashi, S., Fukunaga, T. and Azumi, T.: Accurate Contention-aware Scheduling Method on Clustered Many-core Platform, Journal of Information Processing, Vol. 29, pp. 216–226 (2021)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Choi, H., Karimi, M. and Kim, H.: Chain-Based Fixed-Priority Scheduling of Loosely-Dependent Tasks, in Proc. of ICCD (2020).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Choi, H., Karimi, M. and Kim, H.: Chain-Based Fixed-Priority Scheduling of Loosely-Dependent Tasks, in Proc. of ICCD (2020)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "Bhuiyan, A., Guo, Z., Saifullah, A., Guan, N. and Xiong, H.: EnergyEfficient Real-Time Scheduling of DAG Tasks, TECS, Vol. 17, No. 5, pp. 1–25 (2018).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Bhuiyan, A., Guo, Z., Saifullah, A., Guan, N. and Xiong, H.: EnergyEfficient Real-Time Scheduling of DAG Tasks, TECS, Vol. 17, No. 5, pp. 1–25 (2018)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "Medina, R., Borde, E. and Pautet, L.: Scheduling Multi-periodic Mixed-Criticality DAGs on Multi-core Architectures, in Proc. of RTSS (2018).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Medina, R., Borde, E. and Pautet, L.: Scheduling Multi-periodic Mixed-Criticality DAGs on Multi-core Architectures, in Proc. of RTSS (2018)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Liu, S., Yu, B., Guan, N., Dong, Z. and Akesson, B.: Industry Challenge, in Proc. of RTSS (2021).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Liu, S., Yu, B., Guan, N., Dong, Z. and Akesson, B.: Industry Challenge, in Proc. of RTSS (2021)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "Becker, M., Dasari, D., Mubeen, S., Behnam, M. and Nolte, T.: Endto-end timing analysis of cause-effect chains in automotive embedded systems, Journal of Systems Architecture, Vol. 80, pp. 104–113 (2017).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Becker, M., Dasari, D., Mubeen, S., Behnam, M. and Nolte, T.: Endto-end timing analysis of cause-effect chains in automotive embedded systems, Journal of Systems Architecture, Vol. 80, pp. 104–113 (2017)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "Saidi, S. E., Pernet, N. and Sorel, Y.: Automatic Parallelization of Multi-rate Fmi-based Co-simulation on Multi-core, in Proc. of TMS/DEVS (2017).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Saidi, S. E., Pernet, N. and Sorel, Y.: Automatic Parallelization of Multi-rate Fmi-based Co-simulation on Multi-core, in Proc. of TMS/DEVS (2017)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "Azumi-Lab: RD-Gen, https://github.com/azu-lab/RD-Gen.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Azumi-Lab: RD-Gen, https://github.com/azu-lab/RD-Gen."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "Choi, H., Xiang, Y. and Kim, H.: PiCAS: New Design of PriorityDriven Chain-Aware Scheduling for ROS2, in Proc. of RTAS (2021).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Choi, H., Xiang, Y. and Kim, H.: PiCAS: New Design of PriorityDriven Chain-Aware Scheduling for ROS2, in Proc. of RTAS (2021)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "Casini, D., Blaß, T., L¨utkebohle, I. and Brandenburg, B.: ResponseTime Analysis of ROS 2 Processing Chains under Reservation-Based Scheduling, in Proc. of ECRTS (2019).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Casini, D., Blaß, T., L¨utkebohle, I. and Brandenburg, B.: ResponseTime Analysis of ROS 2 Processing Chains under Reservation-Based Scheduling, in Proc. of ECRTS (2019)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "Klaus, T., Becker, M., Schr¨oder-Preikschat, W. and Ulbrich, P.: Constrained Data-Age with Job-Level Dependencies: How to Reconcile Tight Bounds and Overheads, in Proc. of RTAS (2021).",
+            "doi": "10.1109/rtas52030.2021.00014",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Klaus, T., Becker, M., Schr¨oder-Preikschat, W. and Ulbrich, P.: Constrained Data-Age with Job-Level Dependencies: How to Reconcile Tight Bounds and Overheads, in Proc. of RTAS (2021)."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00014",
+                "doi": "10.1109/rtas52030.2021.00014",
+                "arxivId": "",
+                "title": "Constrained Data-Age with Job-Level Dependencies: How to Reconcile Tight Bounds and Overheads",
+                "authors": [
+                  "Tobias Klaus",
+                  "Matthias Becker",
+                  "Wolfgang Schroder-Preikschat",
+                  "Peter Ulbrich"
+                ],
+                "year": 2021,
+                "venue": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00014"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "Verucchi, M., Theile, M., Caccamo, M. and Bertogna, M.: LatencyAware Generation of Single-Rate DAGs from Multi-Rate Task Sets, in Proc. of RTAS (2020).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Verucchi, M., Theile, M., Caccamo, M. and Bertogna, M.: LatencyAware Generation of Single-Rate DAGs from Multi-Rate Task Sets, in Proc. of RTAS (2020)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "Baruah, S., Bonifaci, V., Marchetti-Spaccamela, A., Stougie, L. and Wiese, A.: A Generalized Parallel Task Model for Recurrent Realtime Processes, in Proc. of RTSS (2012).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Baruah, S., Bonifaci, V., Marchetti-Spaccamela, A., Stougie, L. and Wiese, A.: A Generalized Parallel Task Model for Recurrent Realtime Processes, in Proc. of RTSS (2012)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "Kordon, A. and Tang, N.: Evaluation of the Age Latency of a RealTime Communicating System using the LET paradigm, in Proc. of ECRTS (2020).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Kordon, A. and Tang, N.: Evaluation of the Age Latency of a RealTime Communicating System using the LET paradigm, in Proc. of ECRTS (2020)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "Pathan, R., Voudouris, P. and Stenstr¨om, P.: Scheduling Parallel RealTime Recurrent Tasks on Multicore Platforms, TPDS, Vol. 29, No. 4, pp. 915–928 (2017).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Pathan, R., Voudouris, P. and Stenstr¨om, P.: Scheduling Parallel RealTime Recurrent Tasks on Multicore Platforms, TPDS, Vol. 29, No. 4, pp. 915–928 (2017)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "Maruyama, Y., Kato, S. and Azumi, T.: Exploring the Performance of ROS2, in Proc. of EMSOFT (2016). ⓒ 2022 Information Processing Society of Japan 49",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Maruyama, Y., Kato, S. and Azumi, T.: Exploring the Performance of ROS2, in Proc. of EMSOFT (2016). ⓒ 2022 Information Processing Society of Japan 49"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 23,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022->doi:10.1109/rtas52030.2021.00014@papers-mixed-event-time-triggered-Yamazaki2022.pdf",
+      "source": "title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022",
+      "target": "doi:10.1109/rtas52030.2021.00014",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Yamazaki2022.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Yamazaki2022",
+      "paperId": "title:chain aware scheduling for mixed timer driven and event driven dag tasks:2022",
+      "metadata": {
+        "fileName": "Yamazaki2022.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Yamazaki2022.pdf"
+      }
+    }
+  ]
+}

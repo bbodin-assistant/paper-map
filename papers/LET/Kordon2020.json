@@ -1,0 +1,338 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.360192+00:00",
+  "papers": [
+    {
+      "key": "Kordon2020",
+      "paper": {
+        "id": "doi:10.4230/lipics.ecrts.2020.20",
+        "citationKey": "Kordon2020",
+        "title": "Evaluation of the Age Latency of a Real-Time Communicating System Using the LET Paradigm",
+        "authors": [
+          "Alix Munier Kordon",
+          "Ning Tang"
+        ],
+        "year": 2020,
+        "venue": "32nd Euromicro Conference on Real-Time Systems (ECRTS 2020)",
+        "type": "inproceedings",
+        "doi": "10.4230/LIPIcs.ECRTS.2020.20",
+        "arxivId": "",
+        "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2020.20",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models",
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Kordon, Alix Munier and Tang, Ning",
+          "title": "{Evaluation of the Age Latency of a Real-Time Communicating System Using the LET Paradigm}",
+          "year": "2020",
+          "booktitle": "32nd Euromicro Conference on Real-Time Systems (ECRTS 2020)",
+          "publisher": "Schloss Dagstuhl -- Leibniz-Zentrum f{\\\"u}r Informatik",
+          "series": "Leibniz International Proceedings in Informatics (LIPIcs)",
+          "volume": "165",
+          "pages": "20:1--20:20",
+          "doi": "10.4230/LIPIcs.ECRTS.2020.20",
+          "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2020.20"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.076511+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "1 Autosar. URL: https://www.autosar.org. 547 2 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Syn548 thesizing job-level dependencies for automotive multi-rate eﬀect chains. In 2016 IEEE 22nd 549 International Conference on Embedded and Real-Time Computing Systems and Applications 550 (RTCSA), pages 159–169, Aug 2016. doi:10.1109/RTCSA.2016.41. 551 3 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. End552 to-end timing analysis of cause-eﬀect chains in automotive embedded systems. Journal of 553",
+            "doi": "10.1109/rtcsa.2016.41",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Autosar. URL: https://www.autosar.org. 547 2 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Syn548 thesizing job-level dependencies for automotive multi-rate eﬀect chains. In 2016 IEEE 22nd 549 International Conference on Embedded and Real-Time Computing Systems and Applications 550 (RTCSA), pages 159–169, Aug 2016. doi:10.1109/RTCSA.2016.41. 551 3 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. End552 to-end timing analysis of cause-eﬀect chains in automotive embedded systems. Journal of 553"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2016.41",
+                "doi": "10.1109/rtcsa.2016.41",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2016.41"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": null,
+            "rawText": "Systems Architecture, 80:104 – 113, 2017. 554 4 Alessandro Biondi and Marco Di Natale. Achieving predictable multicore execution of auto555 motive applications using the LET paradigm. In IEEE Real-Time and Embedded Technology 556 and Applications Symposium, RTAS 2018, 11-13 April 2018, Porto, Portugal, pages 240–250, 557",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Systems Architecture, 80:104 – 113, 2017. 554 4 Alessandro Biondi and Marco Di Natale. Achieving predictable multicore execution of auto555 motive applications using the LET paradigm. In IEEE Real-Time and Embedded Technology 556 and Applications Symposium, RTAS 2018, 11-13 April 2018, Porto, Portugal, pages 240–250, 557"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2020.20:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "2018",
+            "rawText": "URL: https://doi.org/10.1109/RTAS.2018.00032, doi:10.1109/RTAS.2018.00032. 558 5 Bruno Bodin, Alix Munier Kordon, and Benoît Dupont de Dinechin. K-periodic schedules for 559 evaluating the maximum throughput of a synchronous dataﬂow graph. In 2012 International 560 Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation, SAMOS 561 XII, Samos, Greece, July 16-19, 2012, pages 152–159, 2012. 562 6 Bruno Bodin, Alix Munier Kordon, and Benoît Dupont de Dinechin. Optimal and fast 563 throughput evaluation of CSDF. In Proceedings of the 53rd Annual Design Automation 564 Conference, DAC 2016, Austin, TX, USA, June 5-9, 2016, pages 160:1–160:6, 2016. 565 7 Robert de Groote. On the analysis of synchronous dataﬂow graphs: a system-theoretic 566 perspective. PhD thesis, University of Twente, 2016. 567 8 Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. A compositional framework 568 for end-to-end path delay calculation of automotive systems under diﬀerent path semantics. 569",
+            "doi": "10.1109/rtas.2018.00032",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "URL: https://doi.org/10.1109/RTAS.2018.00032, doi:10.1109/RTAS.2018.00032. 558 5 Bruno Bodin, Alix Munier Kordon, and Benoît Dupont de Dinechin. K-periodic schedules for 559 evaluating the maximum throughput of a synchronous dataﬂow graph. In 2012 International 560 Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation, SAMOS 561 XII, Samos, Greece, July 16-19, 2012, pages 152–159, 2012. 562 6 Bruno Bodin, Alix Munier Kordon, and Benoît Dupont de Dinechin. Optimal and fast 563 throughput evaluation of CSDF. In Proceedings of the 53rd Annual Design Automation 564 Conference, DAC 2016, Austin, TX, USA, June 5-9, 2016, pages 160:1–160:6, 2016. 565 7 Robert de Groote. On the analysis of synchronous dataﬂow graphs: a system-theoretic 566 perspective. PhD thesis, University of Twente, 2016. 567 8 Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. A compositional framework 568 for end-to-end path delay calculation of automotive systems under diﬀerent path semantics. 569"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2018.00032",
+                "doi": "10.1109/rtas.2018.00032",
+                "arxivId": "",
+                "title": "Achieving Predictable Multicore Execution of Automotive Applications Using the LET Paradigm",
+                "authors": [
+                  "Alessandro Biondi",
+                  "Marco Di Natale"
+                ],
+                "year": 2018,
+                "venue": "2018 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas.2018.00032"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "20:20 Evaluation of the Age Latency",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "20:20 Evaluation of the Age Latency"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2020.20:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": null,
+            "rawText": "In IEEE Real-Time Systems Symposium, November 30-December 3. IEEE Communications 570",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "In IEEE Real-Time Systems Symposium, November 30-December 3. IEEE Communications 570"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2020.20:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "Society, 2009. 571 9 Julien Forget, Frédéric Boniol, and Claire Pagetti. Verifying end-to-end real-time constraints 572 on multi-periodic models. In 22nd IEEE International Conference on Emerging Technologies 573 and Factory Automation, ETFA 2017, Limassol, Cyprus, September 12-15, 2017, pages 1–8, 574",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Society, 2009. 571 9 Julien Forget, Frédéric Boniol, and Claire Pagetti. Verifying end-to-end real-time constraints 572 on multi-periodic models. In 22nd IEEE International Conference on Emerging Technologies 573 and Factory Automation, ETFA 2017, Limassol, Cyprus, September 12-15, 2017, pages 1–8, 574"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2020.20:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "2017",
+            "rawText": "575 10 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, and Falk Wurst. Communic576 ation centric design in complex automotive embedded systems. In 29th Euromicro Conference 577 on Real-Time Systems, ECRTS 2017, June 27-30, 2017, Dubrovnik, Croatia, pages 10:1–10:20, 578",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "575 10 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, and Falk Wurst. Communic576 ation centric design in complex automotive embedded systems. In 29th Euromicro Conference 577 on Real-Time Systems, ECRTS 2017, June 27-30, 2017, Dubrovnik, Croatia, pages 10:1–10:20, 578"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2020.20:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "2017",
+            "rawText": "579 11 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, Falk Wurst, and Dirk Zie580 genbein. Waters industrial challenge 2017. URL: https://waters2017.inria.fr/challenge/ 581 #Challenge17. 582 12 Thomas A. Henzinger, Benjamin Horowitz, and Christoph M. Kirsch. Giotto: a time-triggered 583 language for embedded programming. Proceedings of the IEEE, 91(1):84–99, 2003. 584 13 Thomas A. Henzinger, Christoph M. Kirsch, Marco A.A Sanvido, and Wolfgang Pree. From 585 control models to real-time code using Giotto. IEEE Control Systems Magazine, 23(1):50–64, 586 Feb 2003. 587 14 Jad Khatib, Alix Munier Kordon, Enagnon Cédric Klikpo, and Kods Trabelsi-Colibet. Com588 puting latency of a real-time system modeled by synchronous dataﬂow graph. In Proceedings 589 of the 24th International Conference on Real-Time Networks and Systems, RTNS 2016, Brest, 590 France, October 19-21, 2016, pages 87–96, 2016. 591 15 Christoph M. Kirsch and Ana Sokolova. The logical execution time paradigm. In Samarjit 592 Chakraborty and Jörg Eberspächer, editors, Advances in Real-Time Systems, pages 103–120. 593 Springer Berlin Heidelberg, Berlin, Heidelberg, 2012. 594 16 Simon Kramer, Dirk Ziegenbein, and Arne Hamann. Real world automotive benchmarks for 595 free. 2015. URL: https://www.ecrts.org/forum/viewtopic.php?f=20&t=23. 596 17 Edward A. Lee and David G. Messerschmitt. Synchronous data ﬂow. Proceeding of the IEEE, 597 vol. 75(no. 9):pp. 1235–1245, 1987. 598 18 Qing Li and Caroline Yao. Real-time concepts for embedded systems. Taylor and Francis, 599 Hoboken, NJ, 2014. URL: http://cds.cern.ch/record/1990357. 600 19 C. L. Liu and James W. Layland. Scheduling algorithms for multiprogramming in a hard-real601 time environment. J. ACM, 20(1):46–61, 1973. 602 20 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. Analytical characterization of end-to603 end communication delays with logical execution time. IEEE Transactions on Computer-Aided 604 Design of Integrated Circuits and Systems, 37(11):2244–2254, Nov 2018. 605 21 Claire Pagetti, Julien Forget, Frédéric Boniol, Mikel Cordovilla, and David Lesens. Multi-task 606 implementation of multi-periodic synchronous programs. Discrete Event Dynamic Systems, 607 21(3):307–338, 2011. 608 22 Claire Pagetti, David Saussié, Romain Gratia, Eric Noulard, and Pierre Siron. The ROSACE 609 case study: from simulink speciﬁcation to multi/many-core execution. In 2014 IEEE 19th 610 Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 309–318, 611 April 2014. 612 23 Rémy Wyss, Frédéric Boniol, Claire Pagetti, and Julien Forget. End-to-end latency computation 613 in a multi-periodic design. In 28th Symposium On Applied Computing (SAC’13), pages 1682– 614 1687, Coimbra, Portugal, April 2013. 615",
+            "doi": "10.1007/978-3-642-24349-3_5",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "579 11 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, Falk Wurst, and Dirk Zie580 genbein. Waters industrial challenge 2017. URL: https://waters2017.inria.fr/challenge/ 581 #Challenge17. 582 12 Thomas A. Henzinger, Benjamin Horowitz, and Christoph M. Kirsch. Giotto: a time-triggered 583 language for embedded programming. Proceedings of the IEEE, 91(1):84–99, 2003. 584 13 Thomas A. Henzinger, Christoph M. Kirsch, Marco A.A Sanvido, and Wolfgang Pree. From 585 control models to real-time code using Giotto. IEEE Control Systems Magazine, 23(1):50–64, 586 Feb 2003. 587 14 Jad Khatib, Alix Munier Kordon, Enagnon Cédric Klikpo, and Kods Trabelsi-Colibet. Com588 puting latency of a real-time system modeled by synchronous dataﬂow graph. In Proceedings 589 of the 24th International Conference on Real-Time Networks and Systems, RTNS 2016, Brest, 590 France, October 19-21, 2016, pages 87–96, 2016. 591 15 Christoph M. Kirsch and Ana Sokolova. The logical execution time paradigm. In Samarjit 592 Chakraborty and Jörg Eberspächer, editors, Advances in Real-Time Systems, pages 103–120. 593 Springer Berlin Heidelberg, Berlin, Heidelberg, 2012. 594 16 Simon Kramer, Dirk Ziegenbein, and Arne Hamann. Real world automotive benchmarks for 595 free. 2015. URL: https://www.ecrts.org/forum/viewtopic.php?f=20&t=23. 596 17 Edward A. Lee and David G. Messerschmitt. Synchronous data ﬂow. Proceeding of the IEEE, 597 vol. 75(no. 9):pp. 1235–1245, 1987. 598 18 Qing Li and Caroline Yao. Real-time concepts for embedded systems. Taylor and Francis, 599 Hoboken, NJ, 2014. URL: http://cds.cern.ch/record/1990357. 600 19 C. L. Liu and James W. Layland. Scheduling algorithms for multiprogramming in a hard-real601 time environment. J. ACM, 20(1):46–61, 1973. 602 20 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. Analytical characterization of end-to603 end communication delays with logical execution time. IEEE Transactions on Computer-Aided 604 Design of Integrated Circuits and Systems, 37(11):2244–2254, Nov 2018. 605 21 Claire Pagetti, Julien Forget, Frédéric Boniol, Mikel Cordovilla, and David Lesens. Multi-task 606 implementation of multi-periodic synchronous programs. Discrete Event Dynamic Systems, 607 21(3):307–338, 2011. 608 22 Claire Pagetti, David Saussié, Romain Gratia, Eric Noulard, and Pierre Siron. The ROSACE 609 case study: from simulink speciﬁcation to multi/many-core execution. In 2014 IEEE 19th 610 Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 309–318, 611 April 2014. 612 23 Rémy Wyss, Frédéric Boniol, Claire Pagetti, and Julien Forget. End-to-end latency computation 613 in a multi-periodic design. In 28th Symposium On Applied Computing (SAC’13), pages 1682– 614 1687, Coimbra, Portugal, April 2013. 615"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-3_5",
+                "arxivId": "",
+                "title": "The Logical Execution Time Paradigm",
+                "authors": [
+                  "Christoph M. Kirsch",
+                  "Ana Sokolova"
+                ],
+                "year": 2017,
+                "venue": "Advances in Real-Time Systems",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 8,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.4230/lipics.ecrts.2020.20->doi:10.1109/rtas.2018.00032@papers-LET-Kordon2020.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2020.20",
+      "target": "doi:10.1109/rtas.2018.00032",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kordon2020.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2020.20->doi:10.1007/978-3-642-24349-3_5@papers-LET-Kordon2020.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2020.20",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kordon2020.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Kordon2020",
+      "paperId": "doi:10.4230/lipics.ecrts.2020.20",
+      "metadata": {
+        "fileName": "Kordon2020.pdf",
+        "sourcePath": "papers/LET/Kordon2020.pdf"
+      }
+    }
+  ]
+}

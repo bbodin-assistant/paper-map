@@ -1,0 +1,1367 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.217135+00:00",
+  "papers": [
+    {
+      "key": "Issolah2026",
+      "paper": {
+        "id": "title:comparison of logical execution time programming languages:2026",
+        "citationKey": "Issolah2026",
+        "title": "Comparison of Logical Execution Time Programming Languages",
+        "authors": [
+          "Sid Ahmed Issolah",
+          "Marc Boyer",
+          "Damien Chabrol",
+          "Guillaume Phavorin"
+        ],
+        "year": 2026,
+        "venue": "13th European Congress of Embedded Real Time Systems (ERTS 2026)",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://hal.science/hal-05513534",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Issolah, Sid Ahmed and Boyer, Marc and Chabrol, Damien and Phavorin, Guillaume",
+          "title": "{Comparison of Logical Execution Time Programming Languages}",
+          "year": "2026",
+          "booktitle": "13th European Congress of Embedded Real Time Systems (ERTS 2026)",
+          "url": "https://hal.science/hal-05513534"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.073526+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "H. Kopetz and W. Steiner, Real-Time Systems: Design Principles for Distributed Embedded Applications. Springer Nature, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Kopetz and W. Steiner, Real-Time Systems: Design Principles for Distributed Embedded Applications. Springer Nature, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "J.-L. Bergerand, ‘LUSTRE: un langage déclaratif pour le temps réel’, Institut National Polytechnique de GrenobleINPG, 1986.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J.-L. Bergerand, ‘LUSTRE: un langage déclaratif pour le temps réel’, Institut National Polytechnique de GrenobleINPG, 1986."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1986,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "N. Halbwachs, ‘Synchronous Programming of Reactive Systems’.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "N. Halbwachs, ‘Synchronous Programming of Reactive Systems’."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "K.-B. Gemlau, L. Köhler, R. Ernst, and S. Quinton, ‘System-level Logical Execution Time: Augmenting the Logical Execution Time Paradigm for Distributed Realtime Automotive Software’, ACM Trans. Cyber-Phys. Syst., vol. 5, no. 2, pp. 1–27, Apr. 2021, doi: 10.1145/3381847.",
+            "doi": "10.1145/3381847",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "K.-B. Gemlau, L. Köhler, R. Ernst, and S. Quinton, ‘System-level Logical Execution Time: Augmenting the Logical Execution Time Paradigm for Distributed Realtime Automotive Software’, ACM Trans. Cyber-Phys. Syst., vol. 5, no. 2, pp. 1–27, Apr. 2021, doi: 10.1145/3381847."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1145/3381847",
+                "doi": "10.1145/3381847",
+                "arxivId": "",
+                "title": "System-level Logical Execution Time: Augmenting the Logical Execution Time Paradigm for Distributed Real-time Automotive Software",
+                "authors": [
+                  "Kai-Bj\\\"orn Gemlau",
+                  "Leonie K\\\"OHLER",
+                  "Rolf Ernst",
+                  "Sophie Quinton"
+                ],
+                "year": 2021,
+                "venue": "ACM Transactions on Cyber-Physical Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3381847"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "C. M. Kirsch and A. Sokolova, ‘The Logical Execution Time Paradigm’, in Advances in Real-Time Systems, S. Chakraborty and J. Eberspächer, Eds., Berlin, Heidelberg: Springer Berlin Heidelberg, 2012, pp. 103–120. doi: 10.1007/978-3-642-24349-3_5.",
+            "doi": "10.1007/978-3-642-24349-3_5",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. M. Kirsch and A. Sokolova, ‘The Logical Execution Time Paradigm’, in Advances in Real-Time Systems, S. Chakraborty and J. Eberspächer, Eds., Berlin, Heidelberg: Springer Berlin Heidelberg, 2012, pp. 103–120. doi: 10.1007/978-3-642-24349-3_5."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-3_5",
+                "arxivId": "",
+                "title": "The Logical Execution Time Paradigm",
+                "authors": [
+                  "Christoph M. Kirsch",
+                  "Ana Sokolova"
+                ],
+                "year": 2012,
+                "venue": "Advances in Real-Time Systems",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "V. David, J. Delcoigne, E. Leret, A. Ourghanlian, P. Hilsenkopf, and P. Paris, ‘Safety Properties Ensured by the OASIS Model for Safety Critical Real-Time Systems’, in Computer Safety, Reliability and Security, vol. 1516, W. Ehrenberger, Ed., in Lecture Notes in Computer Science, vol. 1516. , Berlin, Heidelberg: Springer Berlin Heidelberg, 1998, pp. 45–59. doi: 10.1007/3-540-49646-7_4.",
+            "doi": "10.1007/3-540-49646-7_4",
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "V. David, J. Delcoigne, E. Leret, A. Ourghanlian, P. Hilsenkopf, and P. Paris, ‘Safety Properties Ensured by the OASIS Model for Safety Critical Real-Time Systems’, in Computer Safety, Reliability and Security, vol. 1516, W. Ehrenberger, Ed., in Lecture Notes in Computer Science, vol. 1516. , Berlin, Heidelberg: Springer Berlin Heidelberg, 1998, pp. 45–59. doi: 10.1007/3-540-49646-7_4."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/3-540-49646-7_4",
+                "doi": "10.1007/3-540-49646-7_4",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-49646-7_4"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch, ‘Giotto: a time-triggered language for embedded programming’, Proc. IEEE, vol. 91, no. 1, pp. 84–99, Jan. 2003, doi: 10.1109/JPROC.2002.805825.",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch, ‘Giotto: a time-triggered language for embedded programming’, Proc. IEEE, vol. 91, no. 1, pp. 84–99, Jan. 2003, doi: 10.1109/JPROC.2002.805825."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "arxivId": "",
+                "title": "Giotto: a time-triggered language for embedded programming",
+                "authors": [
+                  "T.A. Henzinger",
+                  "B. Horowitz",
+                  "C.M. Kirsch"
+                ],
+                "year": 2003,
+                "venue": "Proceedings of the IEEE",
+                "type": "article",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "E. Farcas, C. Farcas, W. Pree, and J. Templ, ‘Transparent Distribution of Real-Time Components Based on Logical Execution Time’, Proceedings of the 2005 ACM SIGPLAN/SIGBED conference on Languages, Compilers, and Tools for Embedded Systems, pp. 31–39, 2005.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. Farcas, C. Farcas, W. Pree, and J. Templ, ‘Transparent Distribution of Real-Time Components Based on Logical Execution Time’, Proceedings of the 2005 ACM SIGPLAN/SIGBED conference on Languages, Compilers, and Tools for Embedded Systems, pp. 31–39, 2005."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "S. Wang et al., ‘Optimizing Logical Execution Time Model for Both Determinism and Low Latency’, Mar. 07, 2024, arXiv: arXiv:2310.19699. doi: 10.48550/arXiv.2310.19699.",
+            "doi": "10.48550/arxiv.2310.19699",
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Wang et al., ‘Optimizing Logical Execution Time Model for Both Determinism and Low Latency’, Mar. 07, 2024, arXiv: arXiv:2310.19699. doi: 10.48550/arXiv.2310.19699."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas61025.2024.00019",
+                "doi": "10.48550/arxiv.2310.19699",
+                "arxivId": "",
+                "title": "Optimizing Logical Execution Time Model for Both Determinism and Low Latency",
+                "authors": [
+                  "Sen Wang",
+                  "Dong Li",
+                  "Ashrarul H. Sifat",
+                  "Shao-Yu Huang",
+                  "Xuanliang Deng",
+                  "Changhee Jung",
+                  "Ryan Williams",
+                  "Haibo Zeng"
+                ],
+                "year": 2024,
+                "venue": "2024 IEEE 30th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas61025.2024.00019"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "A. Biondi, P. Pazzaglia, A. Balsini, and M. Di Natale, ‘Logical execution time implementation and memory optimization issues in autosar applications for multicores’, in International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Biondi, P. Pazzaglia, A. Balsini, and M. Di Natale, ‘Logical execution time implementation and memory optimization issues in autosar applications for multicores’, in International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch, ‘Embedded Control Systems Development with Giotto∗’, Proceedings of the ACM SIGPLAN workshop on Languages, compilers and tools for embedded systems, pp. 64--72, 2001.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch, ‘Embedded Control Systems Development with Giotto∗’, Proceedings of the ACM SIGPLAN workshop on Languages, compilers and tools for embedded systems, pp. 64--72, 2001."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "M. A. Sanvido, A. Ghosal, and T. A. Henzinger, XGIOTTO language report. Computer Science Division, University of California, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. A. Sanvido, A. Ghosal, and T. A. Henzinger, XGIOTTO language report. Computer Science Division, University of California, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "I. D. Iercan, ‘CONTRIBUTIONS TO THE DEVELOPMENT OF REAL-TIME PROGRAMMING TECHNIQUES AND TECHNOLOGIES’, Timişoara: Editura Politehnica, 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "I. D. Iercan, ‘CONTRIBUTIONS TO THE DEVELOPMENT OF REAL-TIME PROGRAMMING TECHNIQUES AND TECHNOLOGIES’, Timişoara: Editura Politehnica, 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "A. Ghosal, A. Sangiovanni-Vincentelli, C. M. Kirsch, T. A. Henzinger, and D. Iercan, ‘A hierarchical coordination language for interacting real-time tasks’, in Proceedings of the 6th ACM & IEEE International conference on Embedded software - EMSOFT ’06, Seoul, Korea: ACM Press, 2006, p. 132. doi: 10.1145/1176887.1176907.",
+            "doi": "10.1145/1176887.1176907",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Ghosal, A. Sangiovanni-Vincentelli, C. M. Kirsch, T. A. Henzinger, and D. Iercan, ‘A hierarchical coordination language for interacting real-time tasks’, in Proceedings of the 6th ACM & IEEE International conference on Embedded software - EMSOFT ’06, Seoul, Korea: ACM Press, 2006, p. 132. doi: 10.1145/1176887.1176907."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176907",
+                "doi": "10.1145/1176887.1176907",
+                "arxivId": "",
+                "title": "A hierarchical coordination language for interacting real-time tasks",
+                "authors": [
+                  "Arkadeb Ghosal",
+                  "Alberto Sangiovanni-Vincentelli",
+                  "Christoph M. Kirsch",
+                  "Thomas A. Henzinger",
+                  "Daniel Iercan"
+                ],
+                "year": 2006,
+                "venue": "Proceedings of the 6th ACM \\& IEEE International conference on Embedded software - EMSOFT '06",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1145/1176887.1176907"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "A. Ghosal, D. Iercan, C. M. Kirsch, T. A. Henzinger, and A. Sangiovanni-Vincentelli, ‘Separate compilation of hierarchical real-time programs into linear-bounded Embedded Machine code’, Science of Computer Programming, vol. 77, no. 2, pp. 96–112, Feb. 2012, doi: 10.1016/j.scico.2010.06.004.",
+            "doi": "10.1016/j.scico.2010.06.004",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Ghosal, D. Iercan, C. M. Kirsch, T. A. Henzinger, and A. Sangiovanni-Vincentelli, ‘Separate compilation of hierarchical real-time programs into linear-bounded Embedded Machine code’, Science of Computer Programming, vol. 77, no. 2, pp. 96–112, Feb. 2012, doi: 10.1016/j.scico.2010.06.004."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1016/j.scico.2010.06.004",
+                "doi": "10.1016/j.scico.2010.06.004",
+                "arxivId": "",
+                "title": "Separate compilation of hierarchical real-time programs into linear-bounded Embedded Machine code",
+                "authors": [
+                  "Arkadeb Ghosal",
+                  "Daniel Iercan",
+                  "Christoph M. Kirsch",
+                  "Thomas A. Henzinger",
+                  "Alberto Sangiovanni-Vincentelli"
+                ],
+                "year": 2012,
+                "venue": "Science of Computer Programming",
+                "type": "article",
+                "url": "https://doi.org/10.1016/j.scico.2010.06.004"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "J. Templ, ‘TDL Speciﬁcation and Report’.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Templ, ‘TDL Speciﬁcation and Report’."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "W. Pree and J. Templ, ‘Modeling with the Timing Definition Language (TDL)’, in Model-Driven Development of Reliable Automotive Services, vol. 4922, M. Broy, I. H. Krüger, and M. Meisinger, Eds., in Lecture Notes in Computer Science, vol. 4922. , Berlin, Heidelberg: Springer Berlin Heidelberg, 2008, pp. 133– 144. doi: 10.1007/978-3-540-70930-5_9.",
+            "doi": "10.1007/978-3-540-70930-5_9",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Pree and J. Templ, ‘Modeling with the Timing Definition Language (TDL)’, in Model-Driven Development of Reliable Automotive Services, vol. 4922, M. Broy, I. H. Krüger, and M. Meisinger, Eds., in Lecture Notes in Computer Science, vol. 4922. , Berlin, Heidelberg: Springer Berlin Heidelberg, 2008, pp. 133– 144. doi: 10.1007/978-3-540-70930-5_9."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/978-3-540-70930-5_9",
+                "doi": "10.1007/978-3-540-70930-5_9",
+                "arxivId": "",
+                "title": "Modeling with the Timing Definition Language (TDL)",
+                "authors": [
+                  "Wolfgang Pree",
+                  "Josef Templ"
+                ],
+                "year": 2008,
+                "venue": "Model-Driven Development of Reliable Automotive Services",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-540-70930-5_9"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "S. Resmerita, P. Derler, and W. Pree, ‘Timing Deﬁnition Language (TDL) Modeling in Ptolemy II’, Department of Computer Science, University of Salzburg, Tech. Rep, 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Resmerita, P. Derler, and W. Pree, ‘Timing Deﬁnition Language (TDL) Modeling in Ptolemy II’, Department of Computer Science, University of Salzburg, Tech. Rep, 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "T. Kloda, ‘Towards a More Flexible Timing Definition Language’, 12th International Workshop Quantitative Aspects of Programming Languages and Systems-at ETAPS 2014, 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Kloda, ‘Towards a More Flexible Timing Definition Language’, 12th International Workshop Quantitative Aspects of Programming Languages and Systems-at ETAPS 2014, 2014."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:towards a more flexible timing definition language:2014",
+                "doi": "",
+                "arxivId": "",
+                "title": "Towards a More Flexible Timing Definition Language",
+                "authors": [
+                  "Tomasz Kloda",
+                  "Bruno d'Ausbourg",
+                  "Luca Santinelli"
+                ],
+                "year": 2014,
+                "venue": "12th International Workshop on Quantitative Aspects of Programming Languages and Systems (QAPL 2014)",
+                "type": "misc",
+                "url": "https://hal.science/hal-01082730"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "T. Kloda, B. d’Ausbourg, and L. Santinelli, ‘EDF schedulability analysis for an extended Timing Definition Language’, in Proceedings of the 9th IEEE International Symposium on Industrial Embedded Systems (SIES 2014), Pisa: IEEE, Jun. 2014, pp. 30–40. doi: 10.1109/SIES.2014.6871183.",
+            "doi": "10.1109/sies.2014.6871183",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Kloda, B. d’Ausbourg, and L. Santinelli, ‘EDF schedulability analysis for an extended Timing Definition Language’, in Proceedings of the 9th IEEE International Symposium on Industrial Embedded Systems (SIES 2014), Pisa: IEEE, Jun. 2014, pp. 30–40. doi: 10.1109/SIES.2014.6871183."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/sies.2014.6871183",
+                "doi": "10.1109/sies.2014.6871183",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sies.2014.6871183"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "M. Lohstroh, C. Menard, S. Bateni, and E. A. Lee, ‘Toward a Lingua Franca for Deterministic Concurrent Systems’, ACM Trans. Embed. Comput. Syst., vol. 20, no. 4, pp. 1–27, Jul. 2021, doi: 10.1145/3448128.",
+            "doi": "10.1145/3448128",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Lohstroh, C. Menard, S. Bateni, and E. A. Lee, ‘Toward a Lingua Franca for Deterministic Concurrent Systems’, ACM Trans. Embed. Comput. Syst., vol. 20, no. 4, pp. 1–27, Jul. 2021, doi: 10.1145/3448128."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1145/3448128",
+                "doi": "10.1145/3448128",
+                "arxivId": "",
+                "title": "Toward a Lingua Franca for Deterministic Concurrent Systems",
+                "authors": [
+                  "Marten Lohstroh",
+                  "Christian Menard",
+                  "Soroush Bateni",
+                  "Edward A. Lee"
+                ],
+                "year": 2021,
+                "venue": "ACM Transactions on Embedded Computing Systems",
+                "type": "misc",
+                "url": "https://doi.org/10.1145/3448128"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "H. M. F. Lohstroh, ‘Reactors: A Deterministic Model of Concurrent Computation for Reactive Systems’, University of California, Berkeley, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. M. F. Lohstroh, ‘Reactors: A Deterministic Model of Concurrent Computation for Reactive Systems’, University of California, Berkeley, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "A. Schulz-Rosengarten, R. Von Hanxleden, M. Lohstroh, E. A. Lee, and S. Bateni, ‘Polyglot Modal Models through European Congress of Embedded Real Time Systems, ISSN 2680-0918, 2026 9 Comparison of Logical Execution Time Programming Languages Lingua Franca’, in Proceedings of Cyber-Physical Systems and Internet of Things Week 2023, San Antonio TX USA: ACM, May 2023, pp. 337–342. doi: 10.1145/3576914.3587498.",
+            "doi": "10.1145/3576914.3587498",
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Schulz-Rosengarten, R. Von Hanxleden, M. Lohstroh, E. A. Lee, and S. Bateni, ‘Polyglot Modal Models through European Congress of Embedded Real Time Systems, ISSN 2680-0918, 2026 9 Comparison of Logical Execution Time Programming Languages Lingua Franca’, in Proceedings of Cyber-Physical Systems and Internet of Things Week 2023, San Antonio TX USA: ACM, May 2023, pp. 337–342. doi: 10.1145/3576914.3587498."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3576914.3587498",
+                "doi": "10.1145/3576914.3587498",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3576914.3587498"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "E. A. Lee and M. Lohstroh, ‘Generalizing Logical Execution Time’, in Principles of Systems Design, vol. 13660, J.-F. Raskin, K. Chatterjee, L. Doyen, and R. Majumdar, Eds., in Lecture Notes in Computer Science, vol. 13660. , Cham: Springer Nature Switzerland, 2022, pp. 160–181. doi: 10.1007/978-3-031-22337-2_8.",
+            "doi": "10.1007/978-3-031-22337-2_8",
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. A. Lee and M. Lohstroh, ‘Generalizing Logical Execution Time’, in Principles of Systems Design, vol. 13660, J.-F. Raskin, K. Chatterjee, L. Doyen, and R. Majumdar, Eds., in Lecture Notes in Computer Science, vol. 13660. , Cham: Springer Nature Switzerland, 2022, pp. 160–181. doi: 10.1007/978-3-031-22337-2_8."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/978-3-031-22337-2_8",
+                "doi": "10.1007/978-3-031-22337-2_8",
+                "arxivId": "",
+                "title": "Generalizing Logical Execution Time",
+                "authors": [
+                  "Edward A. Lee",
+                  "Marten Lohstroh"
+                ],
+                "year": 2022,
+                "venue": "Principles of Systems Design",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-031-22337-2_8"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "‘Introduction | Lingua Franca’. Accessed: Nov. 28, 2025. [Online]. Available: https://www.lf-lang.org/docs/",
+            "doi": null,
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "‘Introduction | Lingua Franca’. Accessed: Nov. 28, 2025. [Online]. Available: https://www.lf-lang.org/docs/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "A. Benveniste and G. Berry, ‘The synchronous approach to reactive and real-time systems’, Proc. IEEE, vol. 79, no. 9, pp. 1270–1282, Sep. 1991, doi: 10.1109/5.97297.",
+            "doi": "10.1109/5.97297",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Benveniste and G. Berry, ‘The synchronous approach to reactive and real-time systems’, Proc. IEEE, vol. 79, no. 9, pp. 1270–1282, Sep. 1991, doi: 10.1109/5.97297."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/5.97297",
+                "doi": "10.1109/5.97297",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97297"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "27",
+            "rawText": "F. Siron and D. Potop-Butucaru, ‘Formal Semantics of the PsyC language’, Inria-Sophia Antipolis, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "F. Siron and D. Potop-Butucaru, ‘Formal Semantics of the PsyC language’, Inria-Sophia Antipolis, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "28",
+            "rawText": "D. Chabrol et al., ‘Separation of functional and time interference concerns for efficient AMC 20-193 compliance’, ERTS2024., 2024.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Chabrol et al., ‘Separation of functional and time interference concerns for efficient AMC 20-193 compliance’, ERTS2024., 2024."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2024,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "29",
+            "rawText": "D. Chabrol, ‘Etude, conception et mise en oeuvre d’un protocole de communication synchrone tolérant aux fautes et prédictible sur des composants réseaux standards’, Paris 11, 2006.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Chabrol, ‘Etude, conception et mise en oeuvre d’un protocole de communication synchrone tolérant aux fautes et prédictible sur des composants réseaux standards’, Paris 11, 2006."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "30",
+            "rawText": "F. Siron and D. Potop-Butucaru, ‘The synchronous Logical Execution Time paradigm’.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "F. Siron and D. Potop-Butucaru, ‘The synchronous Logical Execution Time paradigm’."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:the synchronous logical execution time paradigm:2022",
+                "doi": "",
+                "arxivId": "",
+                "title": "The synchronous Logical Execution Time paradigm",
+                "authors": [
+                  "Fabien Siron",
+                  "Dumitru Potop-Butucaru",
+                  "Robert de Simone",
+                  "Damien Chabrol",
+                  "Amira Methni"
+                ],
+                "year": 2022,
+                "venue": "ERTS 2022 – Embedded Real Time Systems",
+                "type": "inproceedings",
+                "url": "https://hal.science/hal-03694950"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "31",
+            "rawText": "F. Siron, ‘Méthodologie de vérification formelle de propriétés temporelles pour les applications temps-réel critiques basées sur le concept de temps logique’.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "F. Siron, ‘Méthodologie de vérification formelle de propriétés temporelles pour les applications temps-réel critiques basées sur le concept de temps logique’."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "32",
+            "rawText": "J. Chapuis, C. Eck, M. Kottmann, M. Sanvido, and O. Tanner, ‘Control of Helicopters’, in Control of Complex Systems, K. Åström, P. Albertos, M. Blanke, A. Isidori, W. Schaufelberger, and R. Sanz, Eds., London: Springer London, 2001, pp. 359–392. doi: 10.1007/978-1-44710349-3_16.",
+            "doi": "10.1007/978-1-44710349-3_16",
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Chapuis, C. Eck, M. Kottmann, M. Sanvido, and O. Tanner, ‘Control of Helicopters’, in Control of Complex Systems, K. Åström, P. Albertos, M. Blanke, A. Isidori, W. Schaufelberger, and R. Sanz, Eds., London: Springer London, 2001, pp. 359–392. doi: 10.1007/978-1-44710349-3_16."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/978-1-44710349-3_16",
+                "doi": "10.1007/978-1-44710349-3_16",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-44710349-3_16"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "33",
+            "rawText": "C. M. Kirsch, M. A. A. Sanvido, T. A. Henzinger, and W. Pree, ‘A Giotto-Based Helicopter Control System’, in Embedded Software, vol. 2491, A. SangiovanniVincentelli and J. Sifakis, Eds., in Lecture Notes in Computer Science, vol. 2491. , Berlin, Heidelberg: Springer Berlin Heidelberg, 2002, pp. 46–60. doi: 10.1007/3-540-45828-X_5.",
+            "doi": "10.1007/3-540-45828-x_5",
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. M. Kirsch, M. A. A. Sanvido, T. A. Henzinger, and W. Pree, ‘A Giotto-Based Helicopter Control System’, in Embedded Software, vol. 2491, A. SangiovanniVincentelli and J. Sifakis, Eds., in Lecture Notes in Computer Science, vol. 2491. , Berlin, Heidelberg: Springer Berlin Heidelberg, 2002, pp. 46–60. doi: 10.1007/3-540-45828-X_5."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/3-540-45828-x_5",
+                "doi": "10.1007/3-540-45828-x_5",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45828-x_5"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "34",
+            "rawText": "T. A. Henzinger, C. M. Kirsch, E. R. B. Marques, and A. Sokolova, ‘Distributed, Modular HTL’, in 2009 30th IEEE Real-Time Systems Symposium, Washington DC, USA: IEEE, Dec. 2009, pp. 171–180. doi: 10.1109/RTSS.2009.9.",
+            "doi": "10.1109/rtss.2009.9",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. A. Henzinger, C. M. Kirsch, E. R. B. Marques, and A. Sokolova, ‘Distributed, Modular HTL’, in 2009 30th IEEE Real-Time Systems Symposium, Washington DC, USA: IEEE, Dec. 2009, pp. 171–180. doi: 10.1109/RTSS.2009.9."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2009.9",
+                "doi": "10.1109/rtss.2009.9",
+                "arxivId": "",
+                "title": "Distributed, Modular HTL",
+                "authors": [
+                  "Thomas A. Henzinger",
+                  "Christoph M. Kirsch",
+                  "Eduardo R. B. Marques",
+                  "Ana Sokolova"
+                ],
+                "year": 2009,
+                "venue": "2009 30th IEEE Real-Time Systems Symposium",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtss.2009.9"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "35",
+            "rawText": "R. Von Hanxleden et al., ‘Pragmatics Twelve Years Later: A Report on Lingua Franca’, in Leveraging Applications of Formal Methods, Verification and Validation. Software Engineering, vol. 13702, T. Margaria and B. Steffen, Eds., in Lecture Notes in Computer Science, vol. 13702. , Cham: Springer Nature Switzerland, 2022, pp. 60–89. doi: 10.1007/978-3-03119756-7_5.",
+            "doi": "10.1007/978-3-03119756-7_5",
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Von Hanxleden et al., ‘Pragmatics Twelve Years Later: A Report on Lingua Franca’, in Leveraging Applications of Formal Methods, Verification and Validation. Software Engineering, vol. 13702, T. Margaria and B. Steffen, Eds., in Lecture Notes in Computer Science, vol. 13702. , Cham: Springer Nature Switzerland, 2022, pp. 60–89. doi: 10.1007/978-3-03119756-7_5."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/978-3-03119756-7_5",
+                "doi": "10.1007/978-3-03119756-7_5",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-03119756-7_5"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "36",
+            "rawText": "C. Menard et al., ‘High-performance Deterministic Concurrency Using LINGUA FRANCA’, ACM Trans. Archit. Code Optim., vol. 20, no. 4, pp. 1–29, Dec. 2023, doi: 10.1145/3617687.",
+            "doi": "10.1145/3617687",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. Menard et al., ‘High-performance Deterministic Concurrency Using LINGUA FRANCA’, ACM Trans. Archit. Code Optim., vol. 20, no. 4, pp. 1–29, Dec. 2023, doi: 10.1145/3617687."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3617687",
+                "doi": "10.1145/3617687",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3617687"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "37",
+            "rawText": "H. Austad and G. Mathisen, ‘Bounding the End-to-End Execution Time in Distributed Real-Time Systems: Arguing the case for Deterministic Networks in Lingua Franca’, in Proceedings of Cyber-Physical Systems and Internet of Things Week 2023, San Antonio TX USA: ACM, May 2023, pp. 343–348. doi: 10.1145/3576914.3587499.",
+            "doi": "10.1145/3576914.3587499",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Austad and G. Mathisen, ‘Bounding the End-to-End Execution Time in Distributed Real-Time Systems: Arguing the case for Deterministic Networks in Lingua Franca’, in Proceedings of Cyber-Physical Systems and Internet of Things Week 2023, San Antonio TX USA: ACM, May 2023, pp. 343–348. doi: 10.1145/3576914.3587499."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3576914.3587499",
+                "doi": "10.1145/3576914.3587499",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3576914.3587499"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "38",
+            "rawText": "A. Methni, E. Ohayon, and F. Thurieau, ‘ASTERIOS Checker: A Verification Tool for Certifying Airborne Software’. European Congress of Embedded Real Time Systems, ISSN 2680-0918, 2026 10",
+            "doi": null,
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Methni, E. Ohayon, and F. Thurieau, ‘ASTERIOS Checker: A Verification Tool for Certifying Airborne Software’. European Congress of Embedded Real Time Systems, ISSN 2680-0918, 2026 10"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:comparison of logical execution time programming languages:2026:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 12,
+          "extractedReferenceCount": 38,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1145/3381847@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1145/3381847",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1007/978-3-642-24349-3_5@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1109/jproc.2002.805825@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1109/rtas61025.2024.00019@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1109/rtas61025.2024.00019",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1145/1176887.1176907@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1145/1176887.1176907",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1016/j.scico.2010.06.004@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1016/j.scico.2010.06.004",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1007/978-3-540-70930-5_9@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1007/978-3-540-70930-5_9",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->title:towards a more flexible timing definition language:2014@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "title:towards a more flexible timing definition language:2014",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1145/3448128@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1145/3448128",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1007/978-3-031-22337-2_8@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1007/978-3-031-22337-2_8",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->title:the synchronous logical execution time paradigm:2022@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "title:the synchronous logical execution time paradigm:2022",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    },
+    {
+      "id": "title:comparison of logical execution time programming languages:2026->doi:10.1109/rtss.2009.9@papers-LET-Issolah2026.pdf",
+      "source": "title:comparison of logical execution time programming languages:2026",
+      "target": "doi:10.1109/rtss.2009.9",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Issolah2026.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Issolah2026",
+      "paperId": "title:comparison of logical execution time programming languages:2026",
+      "metadata": {
+        "fileName": "Issolah2026.pdf",
+        "sourcePath": "papers/LET/Issolah2026.pdf"
+      }
+    }
+  ]
+}

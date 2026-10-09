@@ -1,0 +1,164 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.552152+00:00",
+  "papers": [
+    {
+      "key": "Prostep2025",
+      "paper": {
+        "id": "title:smartse recommendation part f virtual electronic control units:2025",
+        "citationKey": "Prostep2025",
+        "title": "SmartSE Recommendation: Part F–-Virtual Electronic Control Units",
+        "authors": [
+          "prostep ivip Association"
+        ],
+        "year": 2025,
+        "venue": "",
+        "type": "manual",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www.prostep.org/fileadmin/prod-pay-download-8c1d/PSI_11_V4_SmartSE_Part_F_VECU.pdf",
+        "abstract": "",
+        "keywords": [
+          "engineering-guidance",
+          "virtual-validation"
+        ],
+        "topics": [],
+        "tags": [
+          "report:Automotive_Programming_and_Modeling_Scientific_Report"
+        ],
+        "notes": "Full Part F examined for V-ECU contents and use-case limitations. Accessed 2026-09-13.",
+        "bibtexFields": {
+          "author": "{prostep ivip Association}",
+          "title": "{SmartSE Recommendation: Part F---Virtual Electronic Control Units}",
+          "number": "PSI 11",
+          "edition": "4.0",
+          "year": "2025",
+          "url": "https://www.prostep.org/fileadmin/prod-pay-download-8c1d/PSI_11_V4_SmartSE_Part_F_VECU.pdf",
+          "note": "Full Part F examined for V-ECU contents and use-case limitations. Accessed 2026-09-13.",
+          "keywords": "engineering-guidance, virtual-validation"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.171304+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "4",
+            "rawText": ". Basically, an FMU is a compressed file that contains an XML description and source code or precompiled binaries. Source code enables easy adaptation of the FMU and allows it to be delivered independent of the simulation platform. Pre-compiled binaries, on the other hand, offer IP protection and can be provided for different platforms (32-bit/64-bit, Linux/Windows) within the framework of the standard. In addition to the step size for execution by a simulator, the XML description also specifies inputs/outputs and parameters. The current version of the FMI standard (version 2.0) is limited to mapping scalar data types such as Boolean, Integer, String and Real. Without a user-specific and non-standardized implementation, FMI 2.0 does not provide an efficient way to exchange larger amounts of data. The representation of complex structures or even large binary data is not covered by FMI 2.0. Explored approaches to exchange corresponding address pointers with the previous means of the standard via the standard data types can only provide a limited remedy",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". Basically, an FMU is a compressed file that contains an XML description and source code or precompiled binaries. Source code enables easy adaptation of the FMU and allows it to be delivered independent of the simulation platform. Pre-compiled binaries, on the other hand, offer IP protection and can be provided for different platforms (32-bit/64-bit, Linux/Windows) within the framework of the standard. In addition to the step size for execution by a simulator, the XML description also specifies inputs/outputs and parameters. The current version of the FMI standard (version 2.0) is limited to mapping scalar data types such as Boolean, Integer, String and Real. Without a user-specific and non-standardized implementation, FMI 2.0 does not provide an efficient way to exchange larger amounts of data. The representation of complex structures or even large binary data is not covered by FMI 2.0. Explored approaches to exchange corresponding address pointers with the previous means of the standard via the standard data types can only provide a limited remedy"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:smartse recommendation part f virtual electronic control units:2025:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "4",
+            "rawText": ". By explicitly accessing the memory of the execution platform, the ideas of the standard are circumvented and, in particular, platform independence may be violated. When using complex scheduling such as multiple cycle times or events, the limitations of the standard also necessitate an application-specific solution within the FMU implemented for co-simulation. The limitations of the current version FMI 2.0 have already been identified and addressed in part by the upcoming version 3.0. Nevertheless, two key points involving the representation of complex virtual ECUs using FMI 3.0 remain open: addressing bus communication such as CAN, FlexRay or Ethernet, and the fact that there is currently no concrete release date for version 3.0",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". By explicitly accessing the memory of the execution platform, the ideas of the standard are circumvented and, in particular, platform independence may be violated. When using complex scheduling such as multiple cycle times or events, the limitations of the standard also necessitate an application-specific solution within the FMU implemented for co-simulation. The limitations of the current version FMI 2.0 have already been identified and addressed in part by the upcoming version 3.0. Nevertheless, two key points involving the representation of complex virtual ECUs using FMI 3.0 remain open: addressing bus communication such as CAN, FlexRay or Ethernet, and the fact that there is currently no concrete release date for version 3.0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:smartse recommendation part f virtual electronic control units:2025:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "6",
+            "rawText": ". AUTOSAR AUTOSAR (AUTomotive Open System ARchitecture) is a worldwide development partnership of vehicle manufacturers, suppliers, service providers and companies from the automotive electronics, semiconductor and software industry. AUTOSAR aims to improve complexity management of integrated E/E architectures through increased reuse and PSI 11 © prostep ivip Association – All rights reserved 10 PART F VIRTUAL ELECTRONIC CONTROL UNITS exchangeability of software modules between OEMs and suppliers. AUTOSAR standardizes the software architecture of electronic control units (ECUs) and is an active committee with regular releases and defined processes. Compared to the FMI, AUTOSAR does not standardize a container that can be executed directly in a simulator, but rather an ECU software architecture. In principle, this can also be used to define interfaces between the code contained in the V-ECU and the simulation platform. This is possible in particular due to the fact that AUTOSAR defines a clear interface between the hardware-dependent and the hardware-independent part of the ECU code. In the AUTOSAR software architecture, the operating system (OS) and the microcontroller abstraction layer (MCAL) is the natural interface to the simulation of the ECU hardware and communication. The OS and MCAL modules could be used as a basis for a V-ECU standard by defining additional interfaces specifically for a simulator and a container format. Technical Solution Approaches This chapter describes a possible technical approach for developing a V-ECU standard. Section 0 first lists requirements for a technical V-ECU standard. These are based on the previous chapters and in particular on the use cases. This is followed by the description of a possible approach to a standard. This approach includes the technical interface between VECU and simulator (section 0), and a concept for a container format for exchanging V-ECUs as artifacts rather than multiple files (section 0). Requirements for a V-ECU standard A V-ECU standard must meet a number of requirements if it is to support the abovementioned use cases and thus also gain wide acceptance. These requirements are described in this section. Requirement 1: It must be possible to exchange V-ECUs between tools from different vendors, i.e., the tools must be able to understand V-ECUs from other vendors. Reason: It should be possible to exchange V-ECUs between OEMs and suppliers without have to use the same tool vendor. Requirement 2: All V-ECUs on the different levels must be supported. Communication between the V-ECU and the outside world must be possible via buses, network and signals. Reason: Important use cases exist for all levels of V-ECUs. Requirement 3: It must be possible to exchange V-ECUs with IP-protected parts, e.g. by compiling the C code before the V-ECUs are exchanged. Reason: Exchanging V-ECUs between different partners is often only possible with IP protection. Requirement 4: It must be possible to apply the standard to different simulation platforms (e.g. real-time platforms like HIL systems or non-real-time SIL platforms (e.g. standard PCs or cloud systems). Reason: There are use cases involving the use of V-ECUs on different simulation platforms. Requirement 5: It must be possible to run a concrete V-ECU on different simulators. In the case of IP-protection, this means that several compilates may be included. PSI 11 © prostep ivip Association – All rights reserved 11 PART F VIRTUAL ELECTRONIC CONTROL UNITS Reason: A V-ECU from one partner that is provided to another partner can be used for different use cases on different platforms. Requirement 6: It must be possible to use the standard for both AUTOSAR (Classic and Adaptive) and non-AUTOSAR ECUs. Reason: The standard should be valid for all ECU projects. Requirement 7: It must be possible to integrate an XCP service in the V-ECU. Reason: It must be possible to access measurements and calibration during the simulation. Requirement 8: The standard must describe how bus and network simulation can be implemented. The V-ECUs should have special “bus ports” to describe the connection between V-ECUs via bus or network. Reason: It must be possible to simulate a complete V-ECU network and communication between multiple V-ECUs has to be done in a way that is as similar as possible to the behavior of the real bus/network. Requirement 9: The standardization committee must ensure that clear statements regarding the roadmap are made and that the standardization of V-ECUs can be implemented in the short-term. Reason: There is enormous time pressure when it comes to implementing the standardized exchange of V-ECUs. Standardized API for V-ECU Code This section describes possible approaches to a standardized API for V-ECU implementation. AUTOSAR and FMI are viewed as possible standards for V-ECUs or as the basis for a V-ECU standard. In the case of AUTOSAR, the Microcontroller Abstraction Layer (MCAL) could be used as the part of the software with direct hardware accesses, and the upper layers of the AUTOSAR architecture could be used as the API for V-ECU implementation. In addition, interfaces for signal-based communication and for controlling the simulation would have to be created. One disadvantage of this approach is that this interface is relatively complex and is only used by AUTOSAR ECUs. Although the creation of V-ECUs for AUTOSAR ECUs would therefore be relatively easy, the creation of V-ECUs for non-AUTOSAR V-ECUs would be complex, since all interfaces would have to be mapped to the AUTOSAR interfaces. FMI, on the other hand, offers a much simpler interface. A simpler interface has the advantage that it makes it easier for simulator vendors to support the standard, which should lead to a higher level of acceptance. Generally speaking, FMI is a good approach to creating a V-ECU standard, in particular with the feature set that will be offered by FMI 3.0. FMUs are easy to create using the standardized and easy-to-use C API. But FMI does not provide a comprehensive solution for implementing level 2 and level 3 V-ECUs due to the limitations when it comes to exchanging complex data, e.g., bus and network communication. FMI is therefore a good choice for representing level 0 and level 1 V-ECUs. But due to its limitations when it comes to representing complex virtual ECUs, especially with basic software components and realistic bus behavior, the FMI 3.0 standard is not comprehensive enough to be used directly as V-ECU standard. In view of the relevant use cases and derived requirements, a bus interface that allows for realistic bus simulation between V-ECUs from different parties is essential. An extension of or supplement to the FMI standard could therefore be one option for implementing a V-ECU PSI 11 © prostep ivip Association – All rights reserved 12 PART F VIRTUAL ELECTRONIC CONTROL UNITS standard. It would however need to define a bus interface, for which technical concepts would have to be developed. A standard could therefore define a V-ECU API based on FMI 3.0 (or a later FMI version). This approach involves a number of issues that need to be taken into consideration. This FMI version would have to be released in time. The definition of the V-ECU API would also have to be pursued in a committee that would work on it together with appropriate experts and could guarantee timely implementation. Finally, the definition of the V-ECU standard may reveal additional requirements that would have to be implemented in the FMI standard in a timely manner. Container Format for V-ECUs An API for the V-ECU is one part of a standard. The other part is a container format that can be used to exchange the V-ECUs, and which can be understood by supporting tools. The container format should also be standardized by the same committee that standardizes the API interface. This section lists a few aspects that need to be taken into consideration. The container format should include the source code for the V-ECU, either as plain code or, for IP protection reasons, in a form compiled for a dedicated simulator platform. It should be possible to have several compilations of the V-ECU code in one container, so that the VECU can be executed on several platforms. The container should also contain an A2L file for the measurement and calibration of variables during the simulation. Additional information, e.g., meta information or initial data for NvRAM, might also be needed. PSI 11 © prostep ivip Association – All rights reserved 13 prostep ivip Association Heinrich-Hertz-Straße 3-7 64295 Darmstadt Germany ISBN 978-3-948988-44-9 PSI 11 2025-05/Version 4.0 Phone +49-6151-9287336 psev@prostep.com www.prostep.org",
+            "doi": null,
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". AUTOSAR AUTOSAR (AUTomotive Open System ARchitecture) is a worldwide development partnership of vehicle manufacturers, suppliers, service providers and companies from the automotive electronics, semiconductor and software industry. AUTOSAR aims to improve complexity management of integrated E/E architectures through increased reuse and PSI 11 © prostep ivip Association – All rights reserved 10 PART F VIRTUAL ELECTRONIC CONTROL UNITS exchangeability of software modules between OEMs and suppliers. AUTOSAR standardizes the software architecture of electronic control units (ECUs) and is an active committee with regular releases and defined processes. Compared to the FMI, AUTOSAR does not standardize a container that can be executed directly in a simulator, but rather an ECU software architecture. In principle, this can also be used to define interfaces between the code contained in the V-ECU and the simulation platform. This is possible in particular due to the fact that AUTOSAR defines a clear interface between the hardware-dependent and the hardware-independent part of the ECU code. In the AUTOSAR software architecture, the operating system (OS) and the microcontroller abstraction layer (MCAL) is the natural interface to the simulation of the ECU hardware and communication. The OS and MCAL modules could be used as a basis for a V-ECU standard by defining additional interfaces specifically for a simulator and a container format. Technical Solution Approaches This chapter describes a possible technical approach for developing a V-ECU standard. Section 0 first lists requirements for a technical V-ECU standard. These are based on the previous chapters and in particular on the use cases. This is followed by the description of a possible approach to a standard. This approach includes the technical interface between VECU and simulator (section 0), and a concept for a container format for exchanging V-ECUs as artifacts rather than multiple files (section 0). Requirements for a V-ECU standard A V-ECU standard must meet a number of requirements if it is to support the abovementioned use cases and thus also gain wide acceptance. These requirements are described in this section. Requirement 1: It must be possible to exchange V-ECUs between tools from different vendors, i.e., the tools must be able to understand V-ECUs from other vendors. Reason: It should be possible to exchange V-ECUs between OEMs and suppliers without have to use the same tool vendor. Requirement 2: All V-ECUs on the different levels must be supported. Communication between the V-ECU and the outside world must be possible via buses, network and signals. Reason: Important use cases exist for all levels of V-ECUs. Requirement 3: It must be possible to exchange V-ECUs with IP-protected parts, e.g. by compiling the C code before the V-ECUs are exchanged. Reason: Exchanging V-ECUs between different partners is often only possible with IP protection. Requirement 4: It must be possible to apply the standard to different simulation platforms (e.g. real-time platforms like HIL systems or non-real-time SIL platforms (e.g. standard PCs or cloud systems). Reason: There are use cases involving the use of V-ECUs on different simulation platforms. Requirement 5: It must be possible to run a concrete V-ECU on different simulators. In the case of IP-protection, this means that several compilates may be included. PSI 11 © prostep ivip Association – All rights reserved 11 PART F VIRTUAL ELECTRONIC CONTROL UNITS Reason: A V-ECU from one partner that is provided to another partner can be used for different use cases on different platforms. Requirement 6: It must be possible to use the standard for both AUTOSAR (Classic and Adaptive) and non-AUTOSAR ECUs. Reason: The standard should be valid for all ECU projects. Requirement 7: It must be possible to integrate an XCP service in the V-ECU. Reason: It must be possible to access measurements and calibration during the simulation. Requirement 8: The standard must describe how bus and network simulation can be implemented. The V-ECUs should have special “bus ports” to describe the connection between V-ECUs via bus or network. Reason: It must be possible to simulate a complete V-ECU network and communication between multiple V-ECUs has to be done in a way that is as similar as possible to the behavior of the real bus/network. Requirement 9: The standardization committee must ensure that clear statements regarding the roadmap are made and that the standardization of V-ECUs can be implemented in the short-term. Reason: There is enormous time pressure when it comes to implementing the standardized exchange of V-ECUs. Standardized API for V-ECU Code This section describes possible approaches to a standardized API for V-ECU implementation. AUTOSAR and FMI are viewed as possible standards for V-ECUs or as the basis for a V-ECU standard. In the case of AUTOSAR, the Microcontroller Abstraction Layer (MCAL) could be used as the part of the software with direct hardware accesses, and the upper layers of the AUTOSAR architecture could be used as the API for V-ECU implementation. In addition, interfaces for signal-based communication and for controlling the simulation would have to be created. One disadvantage of this approach is that this interface is relatively complex and is only used by AUTOSAR ECUs. Although the creation of V-ECUs for AUTOSAR ECUs would therefore be relatively easy, the creation of V-ECUs for non-AUTOSAR V-ECUs would be complex, since all interfaces would have to be mapped to the AUTOSAR interfaces. FMI, on the other hand, offers a much simpler interface. A simpler interface has the advantage that it makes it easier for simulator vendors to support the standard, which should lead to a higher level of acceptance. Generally speaking, FMI is a good approach to creating a V-ECU standard, in particular with the feature set that will be offered by FMI 3.0. FMUs are easy to create using the standardized and easy-to-use C API. But FMI does not provide a comprehensive solution for implementing level 2 and level 3 V-ECUs due to the limitations when it comes to exchanging complex data, e.g., bus and network communication. FMI is therefore a good choice for representing level 0 and level 1 V-ECUs. But due to its limitations when it comes to representing complex virtual ECUs, especially with basic software components and realistic bus behavior, the FMI 3.0 standard is not comprehensive enough to be used directly as V-ECU standard. In view of the relevant use cases and derived requirements, a bus interface that allows for realistic bus simulation between V-ECUs from different parties is essential. An extension of or supplement to the FMI standard could therefore be one option for implementing a V-ECU PSI 11 © prostep ivip Association – All rights reserved 12 PART F VIRTUAL ELECTRONIC CONTROL UNITS standard. It would however need to define a bus interface, for which technical concepts would have to be developed. A standard could therefore define a V-ECU API based on FMI 3.0 (or a later FMI version). This approach involves a number of issues that need to be taken into consideration. This FMI version would have to be released in time. The definition of the V-ECU API would also have to be pursued in a committee that would work on it together with appropriate experts and could guarantee timely implementation. Finally, the definition of the V-ECU standard may reveal additional requirements that would have to be implemented in the FMI standard in a timely manner. Container Format for V-ECUs An API for the V-ECU is one part of a standard. The other part is a container format that can be used to exchange the V-ECUs, and which can be understood by supporting tools. The container format should also be standardized by the same committee that standardizes the API interface. This section lists a few aspects that need to be taken into consideration. The container format should include the source code for the V-ECU, either as plain code or, for IP protection reasons, in a form compiled for a dedicated simulator platform. It should be possible to have several compilations of the V-ECU code in one container, so that the VECU can be executed on several platforms. The container should also contain an A2L file for the measurement and calibration of variables during the simulation. Additional information, e.g., meta information or initial data for NvRAM, might also be needed. PSI 11 © prostep ivip Association – All rights reserved 13 prostep ivip Association Heinrich-Hertz-Straße 3-7 64295 Darmstadt Germany ISBN 978-3-948988-44-9 PSI 11 2025-05/Version 4.0 Phone +49-6151-9287336 psev@prostep.com www.prostep.org"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:smartse recommendation part f virtual electronic control units:2025:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 3,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Prostep2025",
+      "paperId": "title:smartse recommendation part f virtual electronic control units:2025",
+      "metadata": {
+        "fileName": "Prostep2025.pdf",
+        "sourcePath": "papers/automotive/Prostep2025.pdf"
+      }
+    }
+  ]
+}

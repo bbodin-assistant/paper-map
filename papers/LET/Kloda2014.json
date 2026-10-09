@@ -1,0 +1,481 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.329175+00:00",
+  "papers": [
+    {
+      "key": "Kloda2014",
+      "paper": {
+        "id": "title:towards a more flexible timing definition language:2014",
+        "citationKey": "Kloda2014",
+        "title": "Towards a More Flexible Timing Definition Language",
+        "authors": [
+          "Tomasz Kloda",
+          "Bruno d'Ausbourg",
+          "Luca Santinelli"
+        ],
+        "year": 2014,
+        "venue": "12th International Workshop on Quantitative Aspects of Programming Languages and Systems (QAPL 2014)",
+        "type": "misc",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://hal.science/hal-01082730/document",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "Workshop paper; HAL record hal-01082730",
+        "bibtexFields": {
+          "author": "Kloda, Tomasz and d'Ausbourg, Bruno and Santinelli, Luca",
+          "title": "{Towards a More Flexible Timing Definition Language}",
+          "year": "2014",
+          "howpublished": "12th International Workshop on Quantitative Aspects of Programming Languages and Systems (QAPL 2014)",
+          "url": "https://hal.science/hal-01082730",
+          "note": "Workshop paper; HAL record hal-01082730"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.075930+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Giotto. Available at http://embedded.eecs.berkeley.edu/giotto/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Giotto. Available at http://embedded.eecs.berkeley.edu/giotto/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:towards a more flexible timing definition language:2014:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "Sanjoy K. Baruah, Rodney R. Howell & Louis Rosier (1990): Algorithms and Complexity Concerning the Preemptive Scheduling of Periodic, Real-Time Tasks on One Processor. Real-Time Systems 2, pp. 301–324.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Sanjoy K. Baruah, Rodney R. Howell & Louis Rosier (1990): Algorithms and Complexity Concerning the Preemptive Scheduling of Periodic, Real-Time Tasks on One Processor. Real-Time Systems 2, pp. 301–324."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:towards a more flexible timing definition language:2014:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1990,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "Emilia Farcas (2006): Scheduling Multi-Mode Real-Time Distributed Components. Ph.D. thesis, Department of Computer Science, University of Salzburg.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Emilia Farcas (2006): Scheduling Multi-Mode Real-Time Distributed Components. Ph.D. thesis, Department of Computer Science, University of Salzburg."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:towards a more flexible timing definition language:2014:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "Arkadeb Ghosal, Thomas A. Henzinger, Christoph M. Kirsch & Marco A. A. Sanvido (2004): Event-Driven Programming with Logical Execution Times. In: Hybrid Systems Computation and Control, Lecture Notes in Computer Science 2993, Springer, pp. 357–371.",
+            "doi": "10.1007/978-3-540-24743-2_24",
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Arkadeb Ghosal, Thomas A. Henzinger, Christoph M. Kirsch & Marco A. A. Sanvido (2004): Event-Driven Programming with Logical Execution Times. In: Hybrid Systems Computation and Control, Lecture Notes in Computer Science 2993, Springer, pp. 357–371."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/978-3-540-24743-2_24",
+                "doi": "10.1007/978-3-540-24743-2_24",
+                "arxivId": "",
+                "title": "Event-Driven Programming with Logical Execution Times",
+                "authors": [
+                  "Arkadeb Ghosal",
+                  "Thomas A. Henzinger",
+                  "Christoph M. Kirsch",
+                  "Marco A. A. Sanvido"
+                ],
+                "year": 2004,
+                "venue": "Hybrid Systems: Computation and Control",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-540-24743-2_24"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "Arkadeb Ghosal, Alberto L. Sangiovanni-Vincentelli, Christoph M. Kirsch, Thomas A. Henzinger & Daniel T. Iercan (2006): A Hierarchical Coordination Language for Interacting Real-Time Tasks. In: Proceedings of the 6th ACM & IEEE International conference on Embedded software (EMSOFT), pp. 132–141.",
+            "doi": "10.1145/1176887.1176907",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Arkadeb Ghosal, Alberto L. Sangiovanni-Vincentelli, Christoph M. Kirsch, Thomas A. Henzinger & Daniel T. Iercan (2006): A Hierarchical Coordination Language for Interacting Real-Time Tasks. In: Proceedings of the 6th ACM & IEEE International conference on Embedded software (EMSOFT), pp. 132–141."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176907",
+                "doi": "10.1145/1176887.1176907",
+                "arxivId": "",
+                "title": "A hierarchical coordination language for interacting real-time tasks",
+                "authors": [
+                  "Arkadeb Ghosal",
+                  "Alberto Sangiovanni-Vincentelli",
+                  "Christoph M. Kirsch",
+                  "Thomas A. Henzinger",
+                  "Daniel Iercan"
+                ],
+                "year": 2006,
+                "venue": "Proceedings of the 6th ACM \\& IEEE International conference on Embedded software - EMSOFT '06",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1145/1176887.1176907"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "Thomas A. Henzinger, Benjamin Horowitz & Christoph M. Kirsch (2000): Giotto: A Time-triggered Language for Embedded Programming. In: Proceedings of the IEEE, Springer-Verlag, pp. 166–184.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Thomas A. Henzinger, Benjamin Horowitz & Christoph M. Kirsch (2000): Giotto: A Time-triggered Language for Embedded Programming. In: Proceedings of the IEEE, Springer-Verlag, pp. 166–184."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:towards a more flexible timing definition language:2014:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Christoph M. Kirsch & Ana Sokolova (2012): The Logical Execution Time Paradigm. In: Advances in Real-Time Systems, pp. 103–120.",
+            "doi": "10.1007/978-3-642-24349-3_5",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Christoph M. Kirsch & Ana Sokolova (2012): The Logical Execution Time Paradigm. In: Advances in Real-Time Systems, pp. 103–120."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-3_5",
+                "arxivId": "",
+                "title": "The Logical Execution Time Paradigm",
+                "authors": [
+                  "Christoph M. Kirsch",
+                  "Ana Sokolova"
+                ],
+                "year": 2012,
+                "venue": "Advances in Real-Time Systems",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "C. L. Liu & James W. Layland (1973): Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment. Journal of the Association for Computing Machinery 20(1), pp. 46–61.",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. L. Liu & James W. Layland (1973): Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment. Journal of the Association for Computing Machinery 20(1), pp. 46–61."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "arxivId": "",
+                "title": "Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment",
+                "authors": [
+                  "C. L. Liu",
+                  "James W. Layland"
+                ],
+                "year": 1973,
+                "venue": "Journal of the ACM",
+                "type": "article",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Norbert Felix Martinek & Werner Pohlmann: Mode Switching in GIA An Ada based Real-Time Framework. Department of Scientiﬁc Computing, University of Salzburg, Austria.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Norbert Felix Martinek & Werner Pohlmann: Mode Switching in GIA An Ada based Real-Time Framework. Department of Scientiﬁc Computing, University of Salzburg, Austria."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:towards a more flexible timing definition language:2014:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "Wolfgang Pree, Josef Templ, Peter Hintenaus, Andreas Naderlinger & Johannes Pletzer (2011): TDL - Steps Beyond Giotto: A Case for Automated Software Construction. Int. J. Software and Informatics 5(1-2), pp. 335–354.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Wolfgang Pree, Josef Templ, Peter Hintenaus, Andreas Naderlinger & Johannes Pletzer (2011): TDL - Steps Beyond Giotto: A Case for Automated Software Construction. Int. J. Software and Informatics 5(1-2), pp. 335–354."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:towards a more flexible timing definition language:2014:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "Nikolay Stoimenov, Simon Perathoner & Lothar Thiele (2009): Reliable Mode Changes in Real-Time Systems with Fixed Priority or EDF Scheduling. In: Proceedings of Design, Automation and Test in Europe, 2009 (DATE 09), IEEE, Nice, France, pp. 99–104.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Nikolay Stoimenov, Simon Perathoner & Lothar Thiele (2009): Reliable Mode Changes in Real-Time Systems with Fixed Priority or EDF Scheduling. In: Proceedings of Design, Automation and Test in Europe, 2009 (DATE 09), IEEE, Nice, France, pp. 99–104."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:towards a more flexible timing definition language:2014:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Josef Templ (2008): Timing Deﬁnition Language (TDL) Speciﬁcation 1.5. Technical Report T024, Department of Computer Science, University of Salzburg, Austria. Available at http://www.uni-salzburg.at/ fileadmin/multimedia/SRC/docs/publications/T024.pdf.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Josef Templ (2008): Timing Deﬁnition Language (TDL) Speciﬁcation 1.5. Technical Report T024, Department of Computer Science, University of Salzburg, Austria. Available at http://www.uni-salzburg.at/ fileadmin/multimedia/SRC/docs/publications/T024.pdf."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:towards a more flexible timing definition language:2014:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 4,
+          "extractedReferenceCount": 12,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:towards a more flexible timing definition language:2014->doi:10.1007/978-3-540-24743-2_24@papers-LET-Kloda2014.pdf",
+      "source": "title:towards a more flexible timing definition language:2014",
+      "target": "doi:10.1007/978-3-540-24743-2_24",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kloda2014.pdf"
+    },
+    {
+      "id": "title:towards a more flexible timing definition language:2014->doi:10.1145/1176887.1176907@papers-LET-Kloda2014.pdf",
+      "source": "title:towards a more flexible timing definition language:2014",
+      "target": "doi:10.1145/1176887.1176907",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kloda2014.pdf"
+    },
+    {
+      "id": "title:towards a more flexible timing definition language:2014->doi:10.1007/978-3-642-24349-3_5@papers-LET-Kloda2014.pdf",
+      "source": "title:towards a more flexible timing definition language:2014",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kloda2014.pdf"
+    },
+    {
+      "id": "title:towards a more flexible timing definition language:2014->doi:10.1145/321738.321743@papers-LET-Kloda2014.pdf",
+      "source": "title:towards a more flexible timing definition language:2014",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kloda2014.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Kloda2014",
+      "paperId": "title:towards a more flexible timing definition language:2014",
+      "metadata": {
+        "fileName": "Kloda2014.pdf",
+        "sourcePath": "papers/LET/Kloda2014.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2211 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.664456+00:00",
+  "papers": [
+    {
+      "key": "Denzinger2026",
+      "paper": {
+        "id": "doi:10.4230/lipics.ecrts.2026.19",
+        "citationKey": "Denzinger2026",
+        "title": "From Timing Budgets to WCETs: Robust SIL- and BSW-Aware Clustering and Allocation for Iterative Automotive Software Development",
+        "authors": [
+          "Tobias Denzinger",
+          "Matthias Becker",
+          "Peter Ulbrich"
+        ],
+        "year": 2026,
+        "venue": "38th European Conference on Real-Time Systems (ECRTS 2026)",
+        "type": "inproceedings",
+        "doi": "10.4230/LIPIcs.ECRTS.2026.19",
+        "arxivId": "",
+        "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2026.19",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Denzinger, Tobias and Becker, Matthias and Ulbrich, Peter",
+          "title": "{From Timing Budgets to WCETs: Robust SIL- and BSW-Aware Clustering and Allocation for Iterative Automotive Software Development}",
+          "year": "2026",
+          "booktitle": "38th European Conference on Real-Time Systems (ECRTS 2026)",
+          "publisher": "Schloss Dagstuhl -- Leibniz-Zentrum f{\\\"u}r Informatik",
+          "series": "Leibniz International Proceedings in Informatics (LIPIcs)",
+          "pages": "19:1--19:27",
+          "doi": "10.4230/LIPIcs.ECRTS.2026.19",
+          "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2026.19"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.061201+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "1 AUTOSAR. Specification of Timing Extensions. R22-11, https://www.autosar.org/ fileadmin/standards/R22-11/CP/AUTOSAR_TPS_TimingExtensions.pdf, 2022. 2 AUTOSAR. Specification of RTE Software. R24-11, https://www.autosar.org/fileadmin/ standards/R24-11/CP/AUTOSAR_CP_SWS_RTE.pdf, 2024. 3 I. Bate and P. Emberson. Incorporating scenarios and heuristics to improve flexibility in realtime embedded systems. In Proceedings of the 12th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2006), pages 221–230, 2006. doi:10.1109/RTAS.2006.21. 4 Matthias Becker. Meeting job-level dependencies by task merging. In Proceedings of the 29th",
+            "doi": "10.1109/rtas.2006.21",
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 AUTOSAR. Specification of Timing Extensions. R22-11, https://www.autosar.org/ fileadmin/standards/R22-11/CP/AUTOSAR_TPS_TimingExtensions.pdf, 2022. 2 AUTOSAR. Specification of RTE Software. R24-11, https://www.autosar.org/fileadmin/ standards/R24-11/CP/AUTOSAR_CP_SWS_RTE.pdf, 2024. 3 I. Bate and P. Emberson. Incorporating scenarios and heuristics to improve flexibility in realtime embedded systems. In Proceedings of the 12th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2006), pages 221–230, 2006. doi:10.1109/RTAS.2006.21. 4 Matthias Becker. Meeting job-level dependencies by task merging. In Proceedings of the 29th"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2006.21",
+                "doi": "10.1109/rtas.2006.21",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2006.21"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": null,
+            "rawText": "Asia and South Pacific Design Automation Conference (ASP-DAC 2024), ASPDAC ’24, pages 792–798. IEEE Press, 2024. doi:10.1109/ASP-DAC58780.2024.10473901. 5 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Synthesizing job-level dependencies for automotive multi-rate effect chains. In Proceedings of the 22nd IEEE International Conference on Embedded and Real-Time Computing Systems and",
+            "doi": "10.1109/asp-dac58780.2024.10473901",
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Asia and South Pacific Design Automation Conference (ASP-DAC 2024), ASPDAC ’24, pages 792–798. IEEE Press, 2024. doi:10.1109/ASP-DAC58780.2024.10473901. 5 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Synthesizing job-level dependencies for automotive multi-rate effect chains. In Proceedings of the 22nd IEEE International Conference on Embedded and Real-Time Computing Systems and"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/asp-dac58780.2024.10473901",
+                "doi": "10.1109/asp-dac58780.2024.10473901",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2024,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/asp-dac58780.2024.10473901"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": null,
+            "rawText": "Applications (RTCSA 2016), pages 159–169, 2016. doi:10.1109/RTCSA.2016.41. 6 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Endto-end timing analysis of cause-effect chains in automotive embedded systems. Journal of",
+            "doi": "10.1109/rtcsa.2016.41",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Applications (RTCSA 2016), pages 159–169, 2016. doi:10.1109/RTCSA.2016.41. 6 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Endto-end timing analysis of cause-effect chains in automotive embedded systems. Journal of"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2016.41",
+                "doi": "10.1109/rtcsa.2016.41",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2016.41"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "Systems Architecture, 80:104–113, October 2017. doi:10.1016/j.sysarc.2017.09.004. 7 Matthias Becker, Saad Mubeen, Dakshina Dasari, Moris Behnam, and Thomas Nolte. A generic framework facilitating early analysis of data propagation delays in multi-rate systems (invited paper). In Proceedings of the 23rd IEEE International Conference on Embedded and",
+            "doi": "10.1016/j.sysarc.2017.09.004",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Systems Architecture, 80:104–113, October 2017. doi:10.1016/j.sysarc.2017.09.004. 7 Matthias Becker, Saad Mubeen, Dakshina Dasari, Moris Behnam, and Thomas Nolte. A generic framework facilitating early analysis of data propagation delays in multi-rate systems (invited paper). In Proceedings of the 23rd IEEE International Conference on Embedded and"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2017.09.004",
+                "doi": "10.1016/j.sysarc.2017.09.004",
+                "arxivId": "",
+                "title": "End-to-end timing analysis of cause-effect chains in automotive embedded systems",
+                "authors": [
+                  "Matthias Becker",
+                  "Dakshina Dasari",
+                  "Saad Mubeen",
+                  "Moris Behnam",
+                  "Thomas Nolte"
+                ],
+                "year": 2017,
+                "venue": "Journal of Systems Architecture",
+                "type": "article",
+                "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": null,
+            "rawText": "Real-Time Computing Systems and Applications (RTCSA 2017), pages 1–11. IEEE Computer",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Real-Time Computing Systems and Applications (RTCSA 2017), pages 1–11. IEEE Computer"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "Society, 2017. doi:10.1109/RTCSA.2017.8046323. 8 Alwin Berger, Simon Schuster, Peter Wägemann, and Peter Ulbrich. Dynamic Fuzzing-Based Whole-System Timing Analysis. In Proceedings of the 46th IEEE Real-Time Systems Symposium (RTSS 2025), pages 420–433, December 2025. doi:10.1109/RTSS66672.2025.00041. 9 Anand Bhat, Soheil Samii, and Ragunathan Rajkumar. Practical task allocation for software fault-tolerance and its implementation in embedded automotive systems. Real-Time Systems, 55(4):889–924, October 2019. doi:10.1007/s11241-019-09339-7. 10 Alan Burns and Robert Davis. Mixed criticality systems - a review : (13th edition, february",
+            "doi": "10.1007/s11241-019-09339-7",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Society, 2017. doi:10.1109/RTCSA.2017.8046323. 8 Alwin Berger, Simon Schuster, Peter Wägemann, and Peter Ulbrich. Dynamic Fuzzing-Based Whole-System Timing Analysis. In Proceedings of the 46th IEEE Real-Time Systems Symposium (RTSS 2025), pages 420–433, December 2025. doi:10.1109/RTSS66672.2025.00041. 9 Anand Bhat, Soheil Samii, and Ragunathan Rajkumar. Practical task allocation for software fault-tolerance and its implementation in embedded automotive systems. Real-Time Systems, 55(4):889–924, October 2019. doi:10.1007/s11241-019-09339-7. 10 Alan Burns and Robert Davis. Mixed criticality systems - a review : (13th edition, february"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/s11241-019-09339-7",
+                "doi": "10.1007/s11241-019-09339-7",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-019-09339-7"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "2022",
+            "rawText": ". Technical report, University of York, February 2022. Scholarly edition, 97 pages.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". Technical report, University of York, February 2022. Scholarly edition, 97 pages."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": null,
+            "rawText": "T. Denzinger, M. Becker, and P. Ulbrich 19:25",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Denzinger, M. Becker, and P. Ulbrich 19:25"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "11 Abhijit Davare, Qi Zhu, Marco Di Natale, Claudio Pinello, Sri Kanajan, and Alberto Sangiovanni-Vincentelli. Period optimization for hard real-time distributed automotive systems. In Proceedings of the 44th Annual Design Automation Conference (DAC 2007),",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "11 Abhijit Davare, Qi Zhu, Marco Di Natale, Claudio Pinello, Sri Kanajan, and Alberto Sangiovanni-Vincentelli. Period optimization for hard real-time distributed automotive systems. In Proceedings of the 44th Annual Design Automation Conference (DAC 2007),"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": null,
+            "rawText": "DAC ’07, pages 278–283, New York, NY, USA, 2007. Association for Computing Machinery. doi:10.1145/1278480.1278553.",
+            "doi": "10.1145/1278480.1278553",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "DAC ’07, pages 278–283, New York, NY, USA, 2007. Association for Computing Machinery. doi:10.1145/1278480.1278553."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/1278480.1278553",
+                "doi": "10.1145/1278480.1278553",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1278480.1278553"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "12 R. Davis. A survey of hard real-time scheduling for multiprocessor systems. ACM Computing",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "12 R. Davis. A survey of hard real-time scheduling for multiprocessor systems. ACM Computing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": null,
+            "rawText": "Surveys, 43, October 2011. doi:10.1145/1978802.1978814.",
+            "doi": "10.1145/1978802.1978814",
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Surveys, 43, October 2011. doi:10.1145/1978802.1978814."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/1978802.1978814",
+                "doi": "10.1145/1978802.1978814",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1978802.1978814"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": null,
+            "rawText": "13 Robert Davis, Liliana Cucu-Grosjean, Marko Bertogna, and Alan Burns. A review of priority assignment in real-time systems.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "13 Robert Davis, Liliana Cucu-Grosjean, Marko Bertogna, and Alan Burns. A review of priority assignment in real-time systems."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": null,
+            "rawText": "Journal of Systems Architecture, 65, April 2016. doi:",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Journal of Systems Architecture, 65, April 2016. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "10",
+            "rawText": "1016/j.sysarc.2016.04.002.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1016/j.sysarc.2016.04.002."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "14 Tobias Denzinger, Matthias Becker, and Peter Ulbrich. Driverator: Generating Realistic Automotive Real-Time Task Sets with SIL and BSW Effects, 2026. doi:10.17877/ TUDODATA-2026-MOR12ARE.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "14 Tobias Denzinger, Matthias Becker, and Peter Ulbrich. Driverator: Generating Realistic Automotive Real-Time Task Sets with SIL and BSW Effects, 2026. doi:10.17877/ TUDODATA-2026-MOR12ARE."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": null,
+            "rawText": "15 Tobias Denzinger, Matthias Becker, and Peter Ulbrich. Shedding light onto safety integrity level and basic software constraints in a real-world automotive application: Case study with driverator framework, 2026. arXiv:2605.04837.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "15 Tobias Denzinger, Matthias Becker, and Peter Ulbrich. Shedding light onto safety integrity level and basic software constraints in a real-world automotive application: Case study with driverator framework, 2026. arXiv:2605.04837."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "16 Christian Dietrich, Peter Wägemann, Peter Ulbrich, and Daniel Lohmann. Syswcet: Wholesystem response-time analysis for fixed-priority real-time systems (outstanding paper). In Gabriel Parmer, editor, Proceedings of the 23rd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2017), pages 37–48. IEEE Computer Society, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "16 Christian Dietrich, Peter Wägemann, Peter Ulbrich, and Daniel Lohmann. Syswcet: Wholesystem response-time analysis for fixed-priority real-time systems (outstanding paper). In Gabriel Parmer, editor, Proceedings of the 23rd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2017), pages 37–48. IEEE Computer Society, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": null,
+            "rawText": "doi:10.1109/RTAS.2017.37.",
+            "doi": "10.1109/rtas.2017.37",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1109/RTAS.2017.37."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2017.37",
+                "doi": "10.1109/rtas.2017.37",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2017.37"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": null,
+            "rawText": "17 Alessandro Druetto, Enrico Bini, Andrea Grosso, Stefano Puri, Silvio Bacci, Marco Di Natale, and Francesco Paladino. Task and memory mapping of large size embedded applications over NUMA architecture. In Proceedings of the 31st International Conference on Real-Time",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "17 Alessandro Druetto, Enrico Bini, Andrea Grosso, Stefano Puri, Silvio Bacci, Marco Di Natale, and Francesco Paladino. Task and memory mapping of large size embedded applications over NUMA architecture. In Proceedings of the 31st International Conference on Real-Time"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": null,
+            "rawText": "Networks and Systems (RTNS 2023), RTNS ’23, pages 166–176, Dortmund, Germany, 2023. Association for Computing Machinery. doi:10.1145/3575757.3593650.",
+            "doi": "10.1145/3575757.3593650",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Networks and Systems (RTNS 2023), RTNS ’23, pages 166–176, Dortmund, Germany, 2023. Association for Computing Machinery. doi:10.1145/3575757.3593650."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3575757.3593650",
+                "doi": "10.1145/3575757.3593650",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3575757.3593650"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": null,
+            "rawText": "18 Christian Eichler, Tobias Distler, Peter Ulbrich, Peter Wägemann, and Wolfgang SchröderPreikschat. TASKers: A Whole-System Generator for Benchmarking Real-Time-System Analyses. In Florian Brandner, editor, Proceedings of the 18th International Workshop on Worst-Case Execution Time Analysis (WCET 2018), volume 63 of OpenAccess Series in",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "18 Christian Eichler, Tobias Distler, Peter Ulbrich, Peter Wägemann, and Wolfgang SchröderPreikschat. TASKers: A Whole-System Generator for Benchmarking Real-Time-System Analyses. In Florian Brandner, editor, Proceedings of the 18th International Workshop on Worst-Case Execution Time Analysis (WCET 2018), volume 63 of OpenAccess Series in"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": null,
+            "rawText": "Informatics (OASIcs), pages 6:1–6:12, Dagstuhl, Germany, 2018. Schloss Dagstuhl – Leibniz-",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Informatics (OASIcs), pages 6:1–6:12, Dagstuhl, Germany, 2018. Schloss Dagstuhl – Leibniz-"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "Zentrum für Informatik. doi:10.4230/OASIcs.WCET.2018.6.",
+            "doi": "10.4230/oasics.wcet.2018.6",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Zentrum für Informatik. doi:10.4230/OASIcs.WCET.2018.6."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.4230/oasics.wcet.2018.6",
+                "doi": "10.4230/oasics.wcet.2018.6",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.4230/oasics.wcet.2018.6"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": null,
+            "rawText": "19 Paul Emberson. Searching for flexible solutions to task allocation problems. PhD thesis,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "19 Paul Emberson. Searching for flexible solutions to task allocation problems. PhD thesis,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": null,
+            "rawText": "University of York, 2009.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "University of York, 2009."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": null,
+            "rawText": "20 Rolf Ernst, Stefan Kuntz, Sophie Quinton, and Martin Simons. The Logical Execution Time Paradigm: New Perspectives for Multicore Systems (Dagstuhl Seminar 18092). Dagstuhl",
+            "doi": "10.4230/DagRep.8.2.122",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "20 Rolf Ernst, Stefan Kuntz, Sophie Quinton, and Martin Simons. The Logical Execution Time Paradigm: New Perspectives for Multicore Systems (Dagstuhl Seminar 18092). Dagstuhl"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.4230/dagrep.8.2.122",
+                "doi": "10.4230/DagRep.8.2.122",
+                "arxivId": "",
+                "title": "The Logical Execution Time Paradigm: New Perspectives for Multicore Systems (Dagstuhl Seminar 18092)",
+                "authors": [
+                  "Rolf Ernst",
+                  "Stefan Kuntz",
+                  "Sophie Quinton",
+                  "Martin Simons"
+                ],
+                "year": 2018,
+                "venue": "Dagstuhl Reports",
+                "type": "article",
+                "url": "https://doi.org/10.4230/DagRep.8.2.122"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": null,
+            "rawText": "Reports, 8:122–149, 2018. doi:10.4230/DagRep.8.2.122.",
+            "doi": "10.4230/dagrep.8.2.122",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Reports, 8:122–149, 2018. doi:10.4230/DagRep.8.2.122."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.4230/dagrep.8.2.122",
+                "doi": "10.4230/dagrep.8.2.122",
+                "arxivId": "",
+                "title": "The Logical Execution Time Paradigm: New Perspectives for Multicore Systems (Dagstuhl Seminar 18092)",
+                "authors": [
+                  "Rolf Ernst",
+                  "Stefan Kuntz",
+                  "Sophie Quinton",
+                  "Martin Simons"
+                ],
+                "year": 2018,
+                "venue": "Dagstuhl Reports",
+                "type": "article",
+                "url": "https://doi.org/10.4230/DagRep.8.2.122"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": null,
+            "rawText": "21 Nico Feiertag, Kai Richter, J. Eric Nordlander, and Jan Åke Jönsson. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Proceedings of the IEEE Real-Time Systems Symposium Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (RTSS Workshop 2008).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "21 Nico Feiertag, Kai Richter, J. Eric Nordlander, and Jan Åke Jönsson. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Proceedings of the IEEE Real-Time Systems Symposium Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (RTSS Workshop 2008)."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+                "doi": "",
+                "arxivId": "",
+                "title": "A Compositional Framework for End-to-End Path Delay Calculation of Automotive Systems under Different Path Semantics",
+                "authors": [
+                  "Nico Feiertag",
+                  "Kai Richter",
+                  "Johan Nordlander",
+                  "Jan Jonsson"
+                ],
+                "year": 2008,
+                "venue": "Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS)",
+                "type": "inproceedings",
+                "url": "https://research.chalmers.se/en/publication/139048"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": null,
+            "rawText": "22 Julien Forget, Frédéric Boniol, David Lesens, and Claire Pagetti. A real-time architecture design language for multi-rate embedded control systems. In Proceedings of the 2010 ACM",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "22 Julien Forget, Frédéric Boniol, David Lesens, and Claire Pagetti. A real-time architecture design language for multi-rate embedded control systems. In Proceedings of the 2010 ACM"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": null,
+            "rawText": "Symposium on Applied Computing (SAC 2010), SAC ’10, Sierre, Switzerland, 2010. doi:",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Symposium on Applied Computing (SAC 2010), SAC ’10, Sierre, Switzerland, 2010. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "10",
+            "rawText": "1145/1774088.1774196.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1145/1774088.1774196."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": null,
+            "rawText": "23 Julien Forget, Frédéric Boniol, Emmanuel Grolleau, David Lesens, and Claire Pagetti. Scheduling dependent periodic tasks without synchronization mechanisms. In Proceedings of the 16th",
+            "doi": "10.1109/rtas.2010.26",
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "23 Julien Forget, Frédéric Boniol, Emmanuel Grolleau, David Lesens, and Claire Pagetti. Scheduling dependent periodic tasks without synchronization mechanisms. In Proceedings of the 16th"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2010.26",
+                "doi": "10.1109/rtas.2010.26",
+                "arxivId": "",
+                "title": "Scheduling Dependent Periodic Tasks without Synchronization Mechanisms",
+                "authors": [
+                  "Julien Forget",
+                  "Fr\\'ed\\'eric Boniol",
+                  "Emmanuel Grolleau",
+                  "David Lesens",
+                  "Claire Pagetti"
+                ],
+                "year": 2010,
+                "venue": "2010 16th IEEE Real-Time and Embedded Technology and Applications Symposium",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas.2010.26"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": null,
+            "rawText": "IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2010), pages 301–310, 2010. doi:10.1109/RTAS.2010.26.",
+            "doi": "10.1109/rtas.2010.26",
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2010), pages 301–310, 2010. doi:10.1109/RTAS.2010.26."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2010.26",
+                "doi": "10.1109/rtas.2010.26",
+                "arxivId": "",
+                "title": "Scheduling Dependent Periodic Tasks without Synchronization Mechanisms",
+                "authors": [
+                  "Julien Forget",
+                  "Fr\\'ed\\'eric Boniol",
+                  "Emmanuel Grolleau",
+                  "David Lesens",
+                  "Claire Pagetti"
+                ],
+                "year": 2010,
+                "venue": "2010 16th IEEE Real-Time and Embedded Technology and Applications Symposium",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas.2010.26"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": null,
+            "rawText": "19:26 SILand BSW-Aware Clustering and Allocation for Automotive Real-Time Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "19:26 SILand BSW-Aware Clustering and Allocation for Automotive Real-Time Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": null,
+            "rawText": "24 Florian Franzmann, Tobias Klaus, Peter Ulbrich, Patrick Deinhardt, Benjamin Steffes, Fabian Scheler, and Wolfgang Schröder-Preikschat. From intent to effect: Tool-based generation of time-triggered real-time systems on multi-core processors. In Proceedings of the 19th IEEE International Symposium on Real-Time Distributed Computing (ISORC 2016), pages 134–141,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "24 Florian Franzmann, Tobias Klaus, Peter Ulbrich, Patrick Deinhardt, Benjamin Steffes, Fabian Scheler, and Wolfgang Schröder-Preikschat. From intent to effect: Tool-based generation of time-triggered real-time systems on multi-core processors. In Proceedings of the 19th IEEE International Symposium on Real-Time Distributed Computing (ISORC 2016), pages 134–141,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": null,
+            "rawText": "Washington, DC, USA, May 2016. IEEE. doi:10.1109/ISORC.2016.27.",
+            "doi": "10.1109/isorc.2016.27",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Washington, DC, USA, May 2016. IEEE. doi:10.1109/ISORC.2016.27."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/isorc.2016.27",
+                "doi": "10.1109/isorc.2016.27",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isorc.2016.27"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": null,
+            "rawText": "25 Kai-Björn Gemlau, Leonie Köhler, Rolf Ernst, and Sophie Quinton. System-level logical execution time: Augmenting the logical execution time paradigm for distributed real-time automotive software. ACM Trans. Cyber-Phys. Syst., 5(2), January 2021. doi:10.1145/",
+            "doi": "10.1145/3381847",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "25 Kai-Björn Gemlau, Leonie Köhler, Rolf Ernst, and Sophie Quinton. System-level logical execution time: Augmenting the logical execution time paradigm for distributed real-time automotive software. ACM Trans. Cyber-Phys. Syst., 5(2), January 2021. doi:10.1145/"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/3381847",
+                "doi": "10.1145/3381847",
+                "arxivId": "",
+                "title": "System-level Logical Execution Time: Augmenting the Logical Execution Time Paradigm for Distributed Real-time Automotive Software",
+                "authors": [
+                  "Kai-Bj\\\"orn Gemlau",
+                  "Leonie K\\\"OHLER",
+                  "Rolf Ernst",
+                  "Sophie Quinton"
+                ],
+                "year": 2021,
+                "venue": "ACM Transactions on Cyber-Physical Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3381847"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": null,
+            "rawText": "26 Mario Günzel and Matthias Becker. Optimal task phasing for end-to-end latency in harmonic and semi-harmonic automotive systems. In Proceedings of the 31st IEEE Real-Time and",
+            "doi": "10.1109/rtas65571.2025.00026",
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "26 Mario Günzel and Matthias Becker. Optimal task phasing for end-to-end latency in harmonic and semi-harmonic automotive systems. In Proceedings of the 31st IEEE Real-Time and"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas65571.2025.00026",
+                "doi": "10.1109/rtas65571.2025.00026",
+                "arxivId": "",
+                "title": "Optimal Task Phasing for End-To-End Latency in Harmonic and Semi-Harmonic Automotive Systems",
+                "authors": [
+                  "Mario G\\\"unzel",
+                  "Matthias Becker"
+                ],
+                "year": 2025,
+                "venue": "2025 IEEE 31st Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas65571.2025.00026"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": null,
+            "rawText": "Embedded Technology and Applications Symposium (RTAS 2025), pages 164–176. IEEE, 2025. doi:10.1109/RTAS65571.2025.00026.",
+            "doi": "10.1109/rtas65571.2025.00026",
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Embedded Technology and Applications Symposium (RTAS 2025), pages 164–176. IEEE, 2025. doi:10.1109/RTAS65571.2025.00026."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/rtas65571.2025.00026",
+                "doi": "10.1109/rtas65571.2025.00026",
+                "arxivId": "",
+                "title": "Optimal Task Phasing for End-To-End Latency in Harmonic and Semi-Harmonic Automotive Systems",
+                "authors": [
+                  "Mario G\\\"unzel",
+                  "Matthias Becker"
+                ],
+                "year": 2025,
+                "venue": "2025 IEEE 31st Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas65571.2025.00026"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": null,
+            "rawText": "27 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, and Falk Wurst. Communication centric design in complex automotive embedded systems. In Proceedings of the 29th Euromicro Conference on Real-Time Systems (ECRTS 2017), volume 76 of Leibniz International Proceedings in Informatics (LIPIcs), pages 10:1–10:20. Schloss Dagstuhl –",
+            "doi": "10.4230/LIPIcs.ECRTS.2017.10",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "27 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, and Falk Wurst. Communication centric design in complex automotive embedded systems. In Proceedings of the 29th Euromicro Conference on Real-Time Systems (ECRTS 2017), volume 76 of Leibniz International Proceedings in Informatics (LIPIcs), pages 10:1–10:20. Schloss Dagstuhl –"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2017.10",
+                "doi": "10.4230/LIPIcs.ECRTS.2017.10",
+                "arxivId": "",
+                "title": "Communication Centric Design in Complex Automotive Embedded Systems",
+                "authors": [
+                  "Arne Hamann",
+                  "Dakshina Dasari",
+                  "Simon Kramer",
+                  "Michael Pressler",
+                  "Falk Wurst"
+                ],
+                "year": 2017,
+                "venue": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2017.10"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": null,
+            "rawText": "Leibniz-Zentrum für Informatik, 2017. doi:10.4230/LIPIcs.ECRTS.2017.10.",
+            "doi": "10.4230/lipics.ecrts.2017.10",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Leibniz-Zentrum für Informatik, 2017. doi:10.4230/LIPIcs.ECRTS.2017.10."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2017.10",
+                "doi": "10.4230/lipics.ecrts.2017.10",
+                "arxivId": "",
+                "title": "Communication Centric Design in Complex Automotive Embedded Systems",
+                "authors": [
+                  "Arne Hamann",
+                  "Dakshina Dasari",
+                  "Simon Kramer",
+                  "Michael Pressler",
+                  "Falk Wurst"
+                ],
+                "year": 2017,
+                "venue": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2017.10"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": null,
+            "rawText": "28 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, Falk Wurst, and Dirk",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "28 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, Falk Wurst, and Dirk"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": null,
+            "rawText": "Ziegenbein. Waters industrial challenge 2017. In Proceedings of the 8th International Workshop on Analysis Tools and Methodologies for Embedded and Real-Time Systems (WATERS 2017),",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Ziegenbein. Waters industrial challenge 2017. In Proceedings of the 8th International Workshop on Analysis Tools and Methodologies for Embedded and Real-Time Systems (WATERS 2017),"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": null,
+            "rawText": "29 Rafik Henia, Arne Hamann, Marek Jersak, Razvan Racu, Kai Richter, and Rolf Ernst. System level performance analysis–the symta/s approach. IEE Proceedings-Computers and Digital",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "29 Rafik Henia, Arne Hamann, Marek Jersak, Razvan Racu, Kai Richter, and Rolf Ernst. System level performance analysis–the symta/s approach. IEE Proceedings-Computers and Digital"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": null,
+            "rawText": "Techniques, 152(2):148–166, 2005. doi:10.1049/ip-cdt:20045088.",
+            "doi": "10.1049/ip-cdt:20045088",
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Techniques, 152(2):148–166, 2005. doi:10.1049/ip-cdt:20045088."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1049/ip-cdt:20045088",
+                "doi": "10.1049/ip-cdt:20045088",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1049/ip-cdt:20045088"
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": null,
+            "rawText": "30 INCHRON AG. chronsuite. https://www.inchron.com/chronsuite/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "30 INCHRON AG. chronsuite. https://www.inchron.com/chronsuite/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:47",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": null,
+            "rawText": "31 International Organization for Standardization. ISO 26262-1:2018 Road vehicles – Functional safety – Part 1: Vocabulary. https://www.iso.org/standard/68383.html, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "31 International Organization for Standardization. ISO 26262-1:2018 Road vehicles – Functional safety – Part 1: Vocabulary. https://www.iso.org/standard/68383.html, 2018."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:iso 26262 1 2018 road vehicles functional safety part 1 vocabulary:2018",
+                "doi": "",
+                "arxivId": "",
+                "title": "ISO 26262-1:2018 Road Vehicles – Functional Safety – Part 1: Vocabulary",
+                "authors": [
+                  "ISO"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "manual",
+                "url": "https://www.iso.org/standard/68383.html"
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": null,
+            "rawText": "32 Fouad Khenfri, Khaled Chaaban, and Maryline Chetto. Efficient mapping of runnables to tasks for embedded autosar applications. Journal of Systems Architecture, 110:101800, 2020. doi:10.1016/j.sysarc.2020.101800.",
+            "doi": "10.1016/j.sysarc.2020.101800",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "32 Fouad Khenfri, Khaled Chaaban, and Maryline Chetto. Efficient mapping of runnables to tasks for embedded autosar applications. Journal of Systems Architecture, 110:101800, 2020. doi:10.1016/j.sysarc.2020.101800."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2020.101800",
+                "doi": "10.1016/j.sysarc.2020.101800",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sysarc.2020.101800"
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": null,
+            "rawText": "33 Tobias Klaus, Matthias Becker, Wolfgang Schroder-Preikschat, and Peter Ulbrich. Constrained data-age with job-level dependencies: How to reconcile tight bounds and overheads. In Proceedings of the 27th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2021), pages 66–79, May 2021. doi:10.1109/RTAS52030.2021.00014.",
+            "doi": "10.1109/rtas52030.2021.00014",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "33 Tobias Klaus, Matthias Becker, Wolfgang Schroder-Preikschat, and Peter Ulbrich. Constrained data-age with job-level dependencies: How to reconcile tight bounds and overheads. In Proceedings of the 27th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2021), pages 66–79, May 2021. doi:10.1109/RTAS52030.2021.00014."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00014",
+                "doi": "10.1109/rtas52030.2021.00014",
+                "arxivId": "",
+                "title": "Constrained Data-Age with Job-Level Dependencies: How to Reconcile Tight Bounds and Overheads",
+                "authors": [
+                  "Tobias Klaus",
+                  "Matthias Becker",
+                  "Wolfgang Schroder-Preikschat",
+                  "Peter Ulbrich"
+                ],
+                "year": 2021,
+                "venue": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00014"
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": null,
+            "rawText": "34 Tobias Klaus, Florian Franzmann, Matthias Becker, and Peter Ulbrich. Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies. In Proceedings of the 26th International Conference on Real-Time Networks and Systems (RTNS 2018), pages",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "34 Tobias Klaus, Florian Franzmann, Matthias Becker, and Peter Ulbrich. Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies. In Proceedings of the 26th International Conference on Real-Time Networks and Systems (RTNS 2018), pages"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:51",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": null,
+            "rawText": "93–103, 2018. doi:10.1145/3273905.3273923.",
+            "doi": "10.1145/3273905.3273923",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "93–103, 2018. doi:10.1145/3273905.3273923."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3273905.3273923",
+                "doi": "10.1145/3273905.3273923",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3273905.3273923"
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": null,
+            "rawText": "35 Simon Kramer, Dirk Ziegenbein, and Arne Hamann. Real world automotive benchmarks for free. In Proceedings of the 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-Time Systems (WATERS 2015), volume 130, 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "35 Simon Kramer, Dirk Ziegenbein, and Arne Hamann. Real world automotive benchmarks for free. In Proceedings of the 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-Time Systems (WATERS 2015), volume 130, 2015."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:real world automotive benchmarks for free:2015",
+                "doi": "",
+                "arxivId": "",
+                "title": "Real World Automotive Benchmarks for Free",
+                "authors": [
+                  "Simon Kramer",
+                  "Dirk Ziegenbein",
+                  "Arne Hamann"
+                ],
+                "year": 2015,
+                "venue": "Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+                "type": "inproceedings",
+                "url": "https://www.ecrts.org/archives/fileadmin/WebsitesArchiv/ecrts2015/waters2015/WATERS2015.pdf"
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": null,
+            "rawText": "36 Jose M. López, M. García, Jose L. Díaz, and Daniel F. García. Utilization bounds for multiprocessor rate-monotonic scheduling. Real-Time Systems, 24:5–28, 2003. doi:10.1023/A:",
+            "doi": "10.1023/a:",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "36 Jose M. López, M. García, Jose L. Díaz, and Daniel F. García. Utilization bounds for multiprocessor rate-monotonic scheduling. Real-Time Systems, 24:5–28, 2003. doi:10.1023/A:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1023/a:",
+                "doi": "10.1023/a:",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/a:"
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": null,
+            "rawText": "37 Luiz Maia and Gerhard Fohler. Reducing End-to-End Latencies of Multi-Rate Cause-Effect Chains in Safety Critical Embedded Systems. In Proceedings of the 12th European Congress on Embedded Real Time Software and Systems (ERTS 2024), Toulouse, France, June 2024.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "37 Luiz Maia and Gerhard Fohler. Reducing End-to-End Latencies of Multi-Rate Cause-Effect Chains in Safety Critical Embedded Systems. In Proceedings of the 12th European Congress on Embedded Real Time Software and Systems (ERTS 2024), Toulouse, France, June 2024."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:55",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2024,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": null,
+            "rawText": "38 Claire Maiza, Hamza Rihani, Juan Rivas, Joël Goossens, Sebastian Altmeyer, and Robert Davis. A survey of timing verification techniques for multi-core real-time systems. ACM",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "38 Claire Maiza, Hamza Rihani, Juan Rivas, Joël Goossens, Sebastian Altmeyer, and Robert Davis. A survey of timing verification techniques for multi-core real-time systems. ACM"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:56",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": null,
+            "rawText": "Computing Surveys, 52:1–38, June 2019. doi:10.1145/3323212.",
+            "doi": "10.1145/3323212",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Computing Surveys, 52:1–38, June 2019. doi:10.1145/3323212."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3323212",
+                "doi": "10.1145/3323212",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3323212"
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": null,
+            "rawText": "T. Denzinger, M. Becker, and P. Ulbrich 19:27",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Denzinger, M. Becker, and P. Ulbrich 19:27"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2026.19:58",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": null,
+            "rawText": "39 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. End-to-end latency characterization of task communication models for automotive systems. Real-Time Systems, 56:315–347, 2020. doi:10.1007/s11241-020-09350-3. 40 Roberto Medina, Etienne Borde, and Laurent Pautet. Generalized mixed-criticality static scheduling for periodic directed acyclic graphs on multi-core processors. IEEE Transactions on Computers, 70(3):457–470, March 2021. doi:10.1109/TC.2020.2990229. 41 Roberto Medina, Étienne Borde, and Laurent Pautet. Scheduling multi-periodic mixedcriticality dags on multi-core architectures. In Proceedings of the 39th IEEE Real-Time Systems",
+            "doi": "10.1109/tc.2020.2990229",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "39 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. End-to-end latency characterization of task communication models for automotive systems. Real-Time Systems, 56:315–347, 2020. doi:10.1007/s11241-020-09350-3. 40 Roberto Medina, Etienne Borde, and Laurent Pautet. Generalized mixed-criticality static scheduling for periodic directed acyclic graphs on multi-core processors. IEEE Transactions on Computers, 70(3):457–470, March 2021. doi:10.1109/TC.2020.2990229. 41 Roberto Medina, Étienne Borde, and Laurent Pautet. Scheduling multi-periodic mixedcriticality dags on multi-core architectures. In Proceedings of the 39th IEEE Real-Time Systems"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/s11241-020-09350-3",
+                "doi": "10.1109/tc.2020.2990229",
+                "arxivId": "",
+                "title": "End-to-end latency characterization of task communication models for automotive systems",
+                "authors": [
+                  "Jorge Martinez",
+                  "Ignacio Sa\\ nudo",
+                  "Marko Bertogna"
+                ],
+                "year": 2020,
+                "venue": "Real-Time Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1007/s11241-020-09350-3"
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": null,
+            "rawText": "Symposium (RTSS 2018), pages 254–264, December 2018. doi:10.1109/RTSS.2018.00042. 42 A.K. Mok and D. Chen. A multiframe model for real-time tasks. In Proceedings of the 17th",
+            "doi": "10.1109/rtss.2018.00042",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Symposium (RTSS 2018), pages 254–264, December 2018. doi:10.1109/RTSS.2018.00042. 42 A.K. Mok and D. Chen. A multiframe model for real-time tasks. In Proceedings of the 17th"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2018.00042",
+                "doi": "10.1109/rtss.2018.00042",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2018.00042"
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": null,
+            "rawText": "IEEE Real-Time Systems Symposium (RTSS 1996), pages 22–29, 1996. doi:10.1109/REAL.",
+            "doi": "10.1109/real",
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IEEE Real-Time Systems Symposium (RTSS 1996), pages 22–29, 1996. doi:10.1109/REAL."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/real",
+                "doi": "10.1109/real",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1996,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real"
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "1996",
+            "rawText": "563696. 43 Aurélien Monot, Nicolas Navet, Bernard Bavoux, and Françoise Simonot-Lion. Multisource software on multicore automotive ecus—combining runnable sequencing with task scheduling. IEEE Transactions on Industrial Electronics, 59(10):3934–3942, 2012. doi:10.1109/TIE.2012.",
+            "doi": "10.1109/tie.2012",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "563696. 43 Aurélien Monot, Nicolas Navet, Bernard Bavoux, and Françoise Simonot-Lion. Multisource software on multicore automotive ecus—combining runnable sequencing with task scheduling. IEEE Transactions on Industrial Electronics, 59(10):3934–3942, 2012. doi:10.1109/TIE.2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/tie.2012",
+                "doi": "10.1109/tie.2012",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tie.2012"
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "2185913",
+            "rawText": "44 Johannes Schlatow, Mischa Mostl, Sebastian Tobuschat, Tasuku Ishigooka, and Rolf Ernst. Data-age analysis and optimisation for cause-effect chains in automotive control systems. In Proceedings of the 13th IEEE International Symposium on Industrial Embedded Systems (SIES",
+            "doi": "10.1109/sies.2018.8442077",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "44 Johannes Schlatow, Mischa Mostl, Sebastian Tobuschat, Tasuku Ishigooka, and Rolf Ernst. Data-age analysis and optimisation for cause-effect chains in automotive control systems. In Proceedings of the 13th IEEE International Symposium on Industrial Embedded Systems (SIES"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/sies.2018.8442077",
+                "doi": "10.1109/sies.2018.8442077",
+                "arxivId": "",
+                "title": "Data-Age Analysis and Optimisation for Cause-Effect Chains in Automotive Control Systems",
+                "authors": [
+                  "Johannes Schlatow",
+                  "Mischa Mostl",
+                  "Sebastian Tobuschat",
+                  "Tasuku Ishigooka",
+                  "Rolf Ernst"
+                ],
+                "year": 2018,
+                "venue": "2018 IEEE 13th International Symposium on Industrial Embedded Systems (SIES)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/sies.2018.8442077"
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": "2018",
+            "rawText": ", pages 1–9, 2018. doi:10.1109/SIES.2018.8442077. 45 Dario Socci. Scheduling of certifiable mixed-criticality systems. Theses, Université Grenoble Alpes, March 2016. 46 Dario Socci, Peter Poplavko, Saddek Bensalem, and Marius Bozga. Multiprocessor scheduling of precedence-constrained mixed-critical jobs. In Proceedings of the 18th IEEE International Symposium on Real-Time Distributed Computing (ISORC 2015), pages 198–207, April 2015. doi:10.1109/ISORC.2015.18. 47 Yue Tang, Xu Jiang, Nan Guan, Dong Ji, Xiantong Luo, and Wang Yi. Comparing communication paradigms in cause-effect chains. IEEE Transactions on Computers, 72(1):82–96, 2023. doi:10.1109/TC.2022.3197082. 48 Vector Informatik GmbH. Ta tool suite. https://www.vector.com/int/en/products/ products-a-z/software/ta-tool-suite/. 49 Alexander Wieder and Björn B. Brandenburg. Efficient partitioning of sporadic real-time tasks with shared resources and spin locks. In Proceedings of the 8th IEEE Int. Symp. on Industrial Embedded Systems (SIES 2013), pages 49–58, 2013. doi:10.1109/SIES.2013.6601470. 50 Risheng Xu, Marvin Kühl, Hermann Von Hasseln, and Dirk Nowotka. Reducing overall path latency in automotive logical execution time scheduling via reinforcement learning. In Proceedings of the 31st International Conference on Real-Time Networks and Systems (RTNS",
+            "doi": "10.1109/sies.2018.8442077",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ", pages 1–9, 2018. doi:10.1109/SIES.2018.8442077. 45 Dario Socci. Scheduling of certifiable mixed-criticality systems. Theses, Université Grenoble Alpes, March 2016. 46 Dario Socci, Peter Poplavko, Saddek Bensalem, and Marius Bozga. Multiprocessor scheduling of precedence-constrained mixed-critical jobs. In Proceedings of the 18th IEEE International Symposium on Real-Time Distributed Computing (ISORC 2015), pages 198–207, April 2015. doi:10.1109/ISORC.2015.18. 47 Yue Tang, Xu Jiang, Nan Guan, Dong Ji, Xiantong Luo, and Wang Yi. Comparing communication paradigms in cause-effect chains. IEEE Transactions on Computers, 72(1):82–96, 2023. doi:10.1109/TC.2022.3197082. 48 Vector Informatik GmbH. Ta tool suite. https://www.vector.com/int/en/products/ products-a-z/software/ta-tool-suite/. 49 Alexander Wieder and Björn B. Brandenburg. Efficient partitioning of sporadic real-time tasks with shared resources and spin locks. In Proceedings of the 8th IEEE Int. Symp. on Industrial Embedded Systems (SIES 2013), pages 49–58, 2013. doi:10.1109/SIES.2013.6601470. 50 Risheng Xu, Marvin Kühl, Hermann Von Hasseln, and Dirk Nowotka. Reducing overall path latency in automotive logical execution time scheduling via reinforcement learning. In Proceedings of the 31st International Conference on Real-Time Networks and Systems (RTNS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/sies.2018.8442077",
+                "doi": "10.1109/sies.2018.8442077",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sies.2018.8442077"
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": "2023",
+            "rawText": ", RTNS ’23, pages 212–223, Dortmund, Germany, 2023. doi:10.1145/3575757.3593658. 51 Wei Zheng, Qi Zhu, Marco Di Natale, and Alberto Sangiovanni Vincentelli. Definition of task allocation and priority assignment in hard real-time distributed systems. In Proceedings of the 28th IEEE International Real-Time Systems Symposium (RTSS 2007), pages 161–170, 2007. doi:10.1109/RTSS.2007.40. 52 Qi Zhu, Haibo Zeng, Wei Zheng, Marco DI Natale, and Alberto Sangiovanni-Vincentelli. Optimization of task allocation and priority assignment in hard real-time distributed systems. ACM Transactions on Embedded Computing Systems, 11(4), January 2013. doi:10.1145/",
+            "doi": "10.1145/3575757.3593658",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ", RTNS ’23, pages 212–223, Dortmund, Germany, 2023. doi:10.1145/3575757.3593658. 51 Wei Zheng, Qi Zhu, Marco Di Natale, and Alberto Sangiovanni Vincentelli. Definition of task allocation and priority assignment in hard real-time distributed systems. In Proceedings of the 28th IEEE International Real-Time Systems Symposium (RTSS 2007), pages 161–170, 2007. doi:10.1109/RTSS.2007.40. 52 Qi Zhu, Haibo Zeng, Wei Zheng, Marco DI Natale, and Alberto Sangiovanni-Vincentelli. Optimization of task allocation and priority assignment in hard real-time distributed systems. ACM Transactions on Embedded Computing Systems, 11(4), January 2013. doi:10.1145/"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1145/3575757.3593658",
+                "doi": "10.1145/3575757.3593658",
+                "arxivId": "",
+                "title": "Reducing Overall Path Latency in Automotive Logical Execution Time Scheduling via Reinforcement Learning",
+                "authors": [
+                  "Risheng Xu",
+                  "Marvin K\\\"uhl",
+                  "Hermann Von Hasseln",
+                  "Dirk Nowotka"
+                ],
+                "year": 2023,
+                "venue": "The 31st International Conference on Real-Time Networks and Systems",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1145/3575757.3593658"
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 13,
+          "extractedReferenceCount": 65,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.1016/j.sysarc.2017.09.004@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.1016/j.sysarc.2017.09.004",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.4230/dagrep.8.2.122@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.4230/dagrep.8.2.122",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.1109/rtas.2010.26@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.1109/rtas.2010.26",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.1145/3381847@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.1145/3381847",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.1109/rtas65571.2025.00026@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.1109/rtas65571.2025.00026",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.4230/lipics.ecrts.2017.10@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.4230/lipics.ecrts.2017.10",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->title:iso 26262 1 2018 road vehicles functional safety part 1 vocabulary:2018@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "title:iso 26262 1 2018 road vehicles functional safety part 1 vocabulary:2018",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.1109/rtas52030.2021.00014@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.1109/rtas52030.2021.00014",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->title:real world automotive benchmarks for free:2015@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "title:real world automotive benchmarks for free:2015",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.1007/s11241-020-09350-3@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.1007/s11241-020-09350-3",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.1109/sies.2018.8442077@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.1109/sies.2018.8442077",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2026.19->doi:10.1145/3575757.3593658@papers-LET-Denzinger2026.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2026.19",
+      "target": "doi:10.1145/3575757.3593658",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Denzinger2026.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Denzinger2026",
+      "paperId": "doi:10.4230/lipics.ecrts.2026.19",
+      "metadata": {
+        "fileName": "Denzinger2026.pdf",
+        "sourcePath": "papers/LET/Denzinger2026.pdf"
+      }
+    }
+  ]
+}

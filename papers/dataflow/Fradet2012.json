@@ -1,0 +1,462 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.601032+00:00",
+  "papers": [
+    {
+      "key": "Fradet2012",
+      "paper": {
+        "id": "doi:10.1109/date.2012.6176572",
+        "citationKey": "Fradet2012",
+        "title": "SPDF: A Schedulable Parametric Data-Flow MoC",
+        "authors": [
+          "Pascal Fradet",
+          "Alain Girault",
+          "Peter Poplavko"
+        ],
+        "year": 2012,
+        "venue": "Design, Automation and Test in Europe (DATE)",
+        "type": "inproceedings",
+        "doi": "10.1109/DATE.2012.6176572",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Fradet, Pascal and Girault, Alain and Poplavko, Peter",
+          "title": "{SPDF}: A Schedulable Parametric Data-Flow {MoC}",
+          "booktitle": "Design, Automation and Test in Europe (DATE)",
+          "pages": "769--774",
+          "year": "2012",
+          "doi": "10.1109/DATE.2012.6176572",
+          "url": "https://doi.org/10.1109/DATE.2012.6176572"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.103095+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "S. S. Bhattacharyya, G. Brebner, J. W. Janneck, J. Eker, C. von Platen, M. Mattavelli, and M. Raulet, “OpenDF: a dataﬂow toolset for reconﬁgurable hardware and multicore systems,” SIGARCH Comput. Archit. News, vol. 36, pp. 29–35, Jun. 2009.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. S. Bhattacharyya, G. Brebner, J. W. Janneck, J. Eker, C. von Platen, M. Mattavelli, and M. Raulet, “OpenDF: a dataﬂow toolset for reconﬁgurable hardware and multicore systems,” SIGARCH Comput. Archit. News, vol. 36, pp. 29–35, Jun. 2009."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1109/date.2012.6176572:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "G. Kahn, “The semantics of a simple language for parallel programming,” in Information processing. North Holland, 1974, pp. 471–475.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1974,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "G. Kahn, “The semantics of a simple language for parallel programming,” in Information processing. North Holland, 1974, pp. 471–475."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:the semantics of a simple language for parallel programming:1974",
+                "doi": "",
+                "arxivId": "",
+                "title": "The Semantics of a Simple Language for Parallel Programming",
+                "authors": [
+                  "Gilles Kahn"
+                ],
+                "year": 1974,
+                "venue": "Information Processing 74: Proceedings of the IFIP Congress 74",
+                "type": "inproceedings",
+                "url": "https://inria.hal.science/hal-04716357"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "B. Bhattacharya and S. S. Bhattacharyya, “Parameterized dataﬂow modeling of DSP systems,” in ICASSP’00. IEEE, 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "B. Bhattacharya and S. S. Bhattacharyya, “Parameterized dataﬂow modeling of DSP systems,” in ICASSP’00. IEEE, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1109/date.2012.6176572:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "E. Lee and D. Messerschmitt, “Static scheduling of synchronous data ﬂow programs for digital signal processing,” IEEE Trans. Comput., vol. 36, no. 1, pp. 24–35, Jan. 1987.",
+            "doi": "10.1109/TC.1987.5009446",
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. Lee and D. Messerschmitt, “Static scheduling of synchronous data ﬂow programs for digital signal processing,” IEEE Trans. Comput., vol. 36, no. 1, pp. 24–35, Jan. 1987."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/tc.1987.5009446",
+                "doi": "10.1109/TC.1987.5009446",
+                "arxivId": "",
+                "title": "Static Scheduling of Synchronous Data Flow Programs for Digital Signal Processing",
+                "authors": [
+                  "Edward A. Lee",
+                  "David G. Messerschmitt"
+                ],
+                "year": 1987,
+                "venue": "IEEE Transactions on Computers",
+                "type": "article",
+                "url": "https://doi.org/10.1109/TC.1987.5009446"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "S. S. Bhattacharyya, P. K. Murthy, and E. A. Lee, Software Synthesis from Dataﬂow Graphs. Kluwer Academic Press, 1996.",
+            "doi": "10.1007/978-1-4613-1389-2",
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. S. Bhattacharyya, P. K. Murthy, and E. A. Lee, Software Synthesis from Dataﬂow Graphs. Kluwer Academic Press, 1996."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/978-1-4613-1389-2",
+                "doi": "10.1007/978-1-4613-1389-2",
+                "arxivId": "",
+                "title": "Software Synthesis from Dataflow Graphs",
+                "authors": [
+                  "Shuvra S. Bhattacharyya",
+                  "Praveen K. Murthy",
+                  "Edward A. Lee"
+                ],
+                "year": 1996,
+                "venue": "Kluwer Academic Publishers",
+                "type": "book",
+                "url": "https://doi.org/10.1007/978-1-4613-1389-2"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "P. Fradet, A. Girault, and P. Poplavko, “Spdf: A schedulable parametric dataﬂow graph model (ext. version),” INRIA, Tech. Rep. 7828, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P. Fradet, A. Girault, and P. Poplavko, “Spdf: A schedulable parametric dataﬂow graph model (ext. version),” INRIA, Tech. Rep. 7828, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1109/date.2012.6176572:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "J. Buck and E. Lee, “Scheduling dynamic data-ﬂow graphs with bounded memory using the token ﬂow model,” in ICASSP’93, vol. I. Minneapolis (MN), USA: IEEE, Apr. 1993, pp. 429–432.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Buck and E. Lee, “Scheduling dynamic data-ﬂow graphs with bounded memory using the token ﬂow model,” in ICASSP’93, vol. I. Minneapolis (MN), USA: IEEE, Apr. 1993, pp. 429–432."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1109/date.2012.6176572:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "T. M. Parks, “Bounded scheduling of process networks,” Ph.D. dissertation, University of California, Berkeley, 1995.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. M. Parks, “Bounded scheduling of process networks,” Ph.D. dissertation, University of California, Berkeley, 1995."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:bounded scheduling of process networks:1995",
+                "doi": "",
+                "arxivId": "",
+                "title": "Bounded Scheduling of Process Networks",
+                "authors": [
+                  "Thomas M. Parks"
+                ],
+                "year": 1995,
+                "venue": "",
+                "type": "phdthesis",
+                "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1995/2926.html"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "S. Neuendorffer and E. Lee, “Hierarchical reconﬁguration of dataﬂow models,” in MEMOCODE’04. IEEE, 2004, pp. 179–188.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Neuendorffer and E. Lee, “Hierarchical reconﬁguration of dataﬂow models,” in MEMOCODE’04. IEEE, 2004, pp. 179–188."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1109/date.2012.6176572:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "S. Stuijk, M. Geilen, B. Theelen, and T. Basten, “Scenario-aware dataﬂow: Modeling, analysis and implementation of dynamic applications,” in IC-SAMOS’11. IEEE, 2011, pp. 404–411.",
+            "doi": "10.1109/SAMOS.2011.6045491",
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Stuijk, M. Geilen, B. Theelen, and T. Basten, “Scenario-aware dataﬂow: Modeling, analysis and implementation of dynamic applications,” in IC-SAMOS’11. IEEE, 2011, pp. 404–411."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/samos.2011.6045491",
+                "doi": "10.1109/SAMOS.2011.6045491",
+                "arxivId": "",
+                "title": "Scenario-Aware Dataflow: Modeling, Analysis and Implementation of Dynamic Applications",
+                "authors": [
+                  "Sander Stuijk",
+                  "Marc C. W. Geilen",
+                  "Bart D. Theelen",
+                  "Twan Basten"
+                ],
+                "year": 2011,
+                "venue": "International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/SAMOS.2011.6045491"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "M. Wiggers, M. Bekooij, and G. Smit, “Buffer capacity computation for throughput constrained streaming applications with data-dependent inter-task communication,” in RTAS’08. IEEE, 2008, pp. 183–194.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Wiggers, M. Bekooij, and G. Smit, “Buffer capacity computation for throughput constrained streaming applications with data-dependent inter-task communication,” in RTAS’08. IEEE, 2008, pp. 183–194."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1109/date.2012.6176572:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/date.2012.6176572",
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 5,
+          "extractedReferenceCount": 11,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/date.2012.6176572",
+          "crossrefReferenceCount": 0
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/date.2012.6176572->title:the semantics of a simple language for parallel programming:1974@papers-dataflow-Fradet2012.pdf",
+      "source": "doi:10.1109/date.2012.6176572",
+      "target": "title:the semantics of a simple language for parallel programming:1974",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/dataflow/Fradet2012.pdf"
+    },
+    {
+      "id": "doi:10.1109/date.2012.6176572->doi:10.1109/tc.1987.5009446@papers-dataflow-Fradet2012.pdf",
+      "source": "doi:10.1109/date.2012.6176572",
+      "target": "doi:10.1109/tc.1987.5009446",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/dataflow/Fradet2012.pdf"
+    },
+    {
+      "id": "doi:10.1109/date.2012.6176572->doi:10.1007/978-1-4613-1389-2@papers-dataflow-Fradet2012.pdf",
+      "source": "doi:10.1109/date.2012.6176572",
+      "target": "doi:10.1007/978-1-4613-1389-2",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/dataflow/Fradet2012.pdf"
+    },
+    {
+      "id": "doi:10.1109/date.2012.6176572->title:bounded scheduling of process networks:1995@papers-dataflow-Fradet2012.pdf",
+      "source": "doi:10.1109/date.2012.6176572",
+      "target": "title:bounded scheduling of process networks:1995",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/dataflow/Fradet2012.pdf"
+    },
+    {
+      "id": "doi:10.1109/date.2012.6176572->doi:10.1109/samos.2011.6045491@papers-dataflow-Fradet2012.pdf",
+      "source": "doi:10.1109/date.2012.6176572",
+      "target": "doi:10.1109/samos.2011.6045491",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/dataflow/Fradet2012.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Fradet2012",
+      "paperId": "doi:10.1109/date.2012.6176572",
+      "metadata": {
+        "fileName": "Fradet2012.pdf",
+        "sourcePath": "papers/dataflow/Fradet2012.pdf"
+      }
+    }
+  ]
+}

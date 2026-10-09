@@ -1,0 +1,622 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.006169+00:00",
+  "papers": [
+    {
+      "key": "Girault2018",
+      "paper": {
+        "id": "doi:10.1109/tcad.2018.2861016",
+        "citationKey": "Girault2018",
+        "title": "Improving and Estimating the Precision of Bounds on the Worst-Case Latency of Task Chains",
+        "authors": [
+          "Alain Girault",
+          "Christophe Pr\\'evot",
+          "Sophie Quinton",
+          "Rafik Henia",
+          "Nicolas Sordon"
+        ],
+        "year": 2018,
+        "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+        "type": "article",
+        "doi": "10.1109/tcad.2018.2861016",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/tcad.2018.2861016",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Girault, Alain and Pr{\\'e}vot, Christophe and Quinton, Sophie and Henia, Rafik and Sordon, Nicolas",
+          "title": "{Improving and Estimating the Precision of Bounds on the Worst-Case Latency of Task Chains}",
+          "year": "2018",
+          "journal": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "volume": "37",
+          "number": "11",
+          "pages": "2578--2589",
+          "doi": "10.1109/tcad.2018.2861016",
+          "url": "https://doi.org/10.1109/tcad.2018.2861016"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.067520+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref10",
+            "rawText": "kramer. Real world automotive benchmarks for free. 2015. Proc 1st Int Workshop Anal Tools Methodol Embedded Real Time Syst (WATERS)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "article-title": "Real world automotive benchmarks for free",
+              "author": "kramer",
+              "year": "2015",
+              "journal-title": "Proc 1st Int Workshop Anal Tools Methodol Embedded Real Time Syst (WATERS)"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:real world automotive benchmarks for free:2015",
+                "doi": "",
+                "title": "Real world automotive benchmarks for free",
+                "authors": [
+                  "kramer"
+                ],
+                "year": 2015,
+                "venue": "Proc 1st Int Workshop Anal Tools Methodol Embedded Real Time Syst (WATERS)",
+                "type": "",
+                "url": "https://www.ecrts.org/archives/fileadmin/WebsitesArchiv/ecrts2015/waters2015/WATERS2015.pdf"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1109/rtss.2010.42",
+            "doi": "10.1109/rtss.2010.42",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2010.42"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2010.42",
+                "doi": "10.1109/rtss.2010.42",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2010.42"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1109/real.1990.128748",
+            "doi": "10.1109/real.1990.128748",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/REAL.1990.128748"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1990.128748",
+                "doi": "10.1109/real.1990.128748",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1990.128748"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref13",
+            "rawText": "https://doi.org/10.1109/real.1998.739728",
+            "doi": "10.1109/real.1998.739728",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/REAL.1998.739728"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/real.1998.739728",
+                "doi": "10.1109/real.1998.739728",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/REAL.1998.739728"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref14",
+            "rawText": "https://doi.org/10.1109/rtss.2011.27",
+            "doi": "10.1109/rtss.2011.27",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2011.27"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2011.27",
+                "doi": "10.1109/rtss.2011.27",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2011.27"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1109/rtas.2016.7461359",
+            "doi": "10.1109/rtas.2016.7461359",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2016.7461359"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2016.7461359",
+                "doi": "10.1109/rtas.2016.7461359",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2016.7461359"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref16",
+            "rawText": "schliecker. Performance analysis of multiprocessor real-time systems with shared resources. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "article-title": "Performance analysis of multiprocessor real-time systems with shared resources",
+              "author": "schliecker",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref16",
+                "doi": "",
+                "title": "Performance analysis of multiprocessor real-time systems with shared resources",
+                "authors": [
+                  "schliecker"
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref17",
+            "rawText": "tindell. Adding time-offsets to schedulability analysis. 1994",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "first-page": "28",
+              "article-title": "Adding time-offsets to schedulability analysis",
+              "author": "tindell",
+              "year": "1994"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:adding time offsets to schedulability analysis:1994",
+                "doi": "",
+                "title": "Adding time-offsets to schedulability analysis",
+                "authors": [
+                  "tindell"
+                ],
+                "year": 1994,
+                "venue": "",
+                "type": "",
+                "url": "https://www.cs.york.ac.uk/rts/static/papers/R:Ken:1994.pdf"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref4",
+            "rawText": "https://doi.org/10.1109/rtss.2012.59",
+            "doi": "10.1109/rtss.2012.59",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2012.59"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2012.59",
+                "doi": "10.1109/rtss.2012.59",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2012.59"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref3",
+            "rawText": "2010",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "year": "2010"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref3",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1007/s11241-005-0507-9",
+            "doi": "10.1007/s11241-005-0507-9",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-005-0507-9"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-005-0507-9",
+                "doi": "10.1007/s11241-005-0507-9",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-005-0507-9"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.1016/j.sysarc.2017.09.004",
+            "doi": "10.1016/j.sysarc.2017.09.004",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.sysarc.2017.09.004"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2017.09.004",
+                "doi": "10.1016/j.sysarc.2017.09.004",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1109/real.1991.160365",
+            "doi": "10.1109/real.1991.160365",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/REAL.1991.160365"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1991.160365",
+                "doi": "10.1109/real.1991.160365",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1991.160365"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref7",
+            "rawText": "https://doi.org/10.1007/s11241-007-9012-7",
+            "doi": "10.1007/s11241-007-9012-7",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-007-9012-7"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/s11241-007-9012-7",
+                "doi": "10.1007/s11241-007-9012-7",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-007-9012-7"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref2",
+            "rawText": "2009",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "year": "2009"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref1",
+            "rawText": "2003",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "year": "2003"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1049/ip-cdt:20045088",
+            "doi": "10.1049/ip-cdt:20045088",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1049/ip-cdt:20045088"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1049/ip-cdt:20045088",
+                "doi": "10.1049/ip-cdt:20045088",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1049/ip-cdt:20045088"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/tcad.2018.2861016",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 5,
+          "extractedReferenceCount": 17,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/tcad.2018.2861016",
+          "crossrefReferenceCount": 17
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/tcad.2018.2861016->title:real world automotive benchmarks for free:2015@papers-LET-Girault2018.pdf",
+      "source": "doi:10.1109/tcad.2018.2861016",
+      "target": "title:real world automotive benchmarks for free:2015",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Girault2018.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2018.2861016->doi:10.1109/real.1998.739728@papers-LET-Girault2018.pdf",
+      "source": "doi:10.1109/tcad.2018.2861016",
+      "target": "doi:10.1109/real.1998.739728",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Girault2018.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2018.2861016->title:adding time offsets to schedulability analysis:1994@papers-LET-Girault2018.pdf",
+      "source": "doi:10.1109/tcad.2018.2861016",
+      "target": "title:adding time offsets to schedulability analysis:1994",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Girault2018.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2018.2861016->doi:10.1016/j.sysarc.2017.09.004@papers-LET-Girault2018.pdf",
+      "source": "doi:10.1109/tcad.2018.2861016",
+      "target": "doi:10.1016/j.sysarc.2017.09.004",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Girault2018.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2018.2861016->doi:10.1007/s11241-007-9012-7@papers-LET-Girault2018.pdf",
+      "source": "doi:10.1109/tcad.2018.2861016",
+      "target": "doi:10.1007/s11241-007-9012-7",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Girault2018.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Girault2018",
+      "paperId": "doi:10.1109/tcad.2018.2861016",
+      "metadata": {
+        "fileName": "Girault2018.pdf",
+        "sourcePath": "papers/LET/Girault2018.pdf"
+      }
+    }
+  ]
+}

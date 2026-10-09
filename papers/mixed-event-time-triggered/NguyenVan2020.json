@@ -1,0 +1,944 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.788612+00:00",
+  "papers": [
+    {
+      "key": "NguyenVan2020",
+      "paper": {
+        "id": "doi:10.4230/lipics.time.2020.15",
+        "citationKey": "NguyenVan2020",
+        "title": "TESL: A Model with Metric Time for Modeling and Simulation",
+        "authors": [
+          "Hai Nguyen Van",
+          "Frederic Boulanger",
+          "Burkhart Wolff"
+        ],
+        "year": 2020,
+        "venue": "TIME",
+        "type": "misc",
+        "doi": "10.4230/LIPIcs.TIME.2020.15",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Hai Nguyen Van and Frederic Boulanger and Burkhart Wolff",
+          "title": "{TESL: A Model with Metric Time for Modeling and Simulation}",
+          "year": "2020",
+          "howpublished": "TIME",
+          "doi": "10.4230/LIPIcs.TIME.2020.15",
+          "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.TIME.2020.15"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.304945+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "1 Rajeev Alur. Timed automata. In Nicolas Halbwachs and Doron Peled, editors, Computer",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Rajeev Alur. Timed automata. In Nicolas Halbwachs and Doron Peled, editors, Computer"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": null,
+            "rawText": "Aided Veriﬁcation, pages 8–22, Berlin, Heidelberg, 1999. Springer Berlin Heidelberg. 2 Rajeev Alur and David L. Dill. A theory of timed automata. Theoretical Computer Science, 126(2):183–235, 1994. doi:10.1016/0304-3975(94)90010-8. 3 A. Benveniste, P. Caspi, S. A. Edwards, N. Halbwachs, P. Le Guernic, and R. de Simone. The synchronous languages 12 years later. Proceedings of the IEEE, 91(1):64–83, 2003. 4 Béatrice Bérard, Michel Bidoit, Alain Finkel, François Laroussinie, Antoine Petit, Laure Petrucci, Philippe Schnoebelen, and Pierre McKenzie. Systems and Software Veriﬁcation.",
+            "doi": "10.1016/0304-3975(94)90010-8",
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Aided Veriﬁcation, pages 8–22, Berlin, Heidelberg, 1999. Springer Berlin Heidelberg. 2 Rajeev Alur and David L. Dill. A theory of timed automata. Theoretical Computer Science, 126(2):183–235, 1994. doi:10.1016/0304-3975(94)90010-8. 3 A. Benveniste, P. Caspi, S. A. Edwards, N. Halbwachs, P. Le Guernic, and R. de Simone. The synchronous languages 12 years later. Proceedings of the IEEE, 91(1):64–83, 2003. 4 Béatrice Bérard, Michel Bidoit, Alain Finkel, François Laroussinie, Antoine Petit, Laure Petrucci, Philippe Schnoebelen, and Pierre McKenzie. Systems and Software Veriﬁcation."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1016/0304-3975(94)90010-8",
+                "doi": "10.1016/0304-3975(94)90010-8",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0304-3975(94)90010-8"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": null,
+            "rawText": "Springer Berlin Heidelberg, 2001. doi:10.1007/978-3-662-04558-9. 5",
+            "doi": "10.1007/978-3-662-04558-9",
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Springer Berlin Heidelberg, 2001. doi:10.1007/978-3-662-04558-9. 5"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/978-3-662-04558-9",
+                "doi": "10.1007/978-3-662-04558-9",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-662-04558-9"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "G. Berry. The constructive semantics of pure Esterel, 1996. 6 Gérard Berry. The foundations of Esterel. In Gordon Plotkin, Colin Stirling, and Mads Tofte, editors, Proof, Language, and Interaction, pages 425–454. MIT Press, Cambridge, MA, USA,",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "G. Berry. The constructive semantics of pure Esterel, 1996. 6 Gérard Berry. The foundations of Esterel. In Gordon Plotkin, Colin Stirling, and Mads Tofte, editors, Proof, Language, and Interaction, pages 425–454. MIT Press, Cambridge, MA, USA,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1996,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "2000",
+            "rawText": "7 Gérard Berry. SCADE: Synchronous design and validation of embedded control software. In S. Ramesh and Prahladavaradan Sampath, editors, Next Generation Design and Veriﬁcation Methodologies for Distributed Embedded Control Systems, pages 19–33, Dordrecht, 2007.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "7 Gérard Berry. SCADE: Synchronous design and validation of embedded control software. In S. Ramesh and Prahladavaradan Sampath, editors, Next Generation Design and Veriﬁcation Methodologies for Distributed Embedded Control Systems, pages 19–33, Dordrecht, 2007."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "Springer Netherlands. 8 Frédéric Boulanger, Christophe Jacquet, Cécile Hardebolle, and Iuliana Prodan. TESL: a language for reconciling heterogeneous execution traces. In Twelfth ACM/IEEE International Conference on Formal Methods and Models for Codesign (MEMOCODE 2014), pages 114–123,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Springer Netherlands. 8 Frédéric Boulanger, Christophe Jacquet, Cécile Hardebolle, and Iuliana Prodan. TESL: a language for reconciling heterogeneous execution traces. In Twelfth ACM/IEEE International Conference on Formal Methods and Models for Codesign (MEMOCODE 2014), pages 114–123,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": null,
+            "rawText": "Lausanne, Switzerland, October 2014. doi:10.1109/MEMCOD.2014.6961849. 9 Timothy Bourke and Marc Pouzet. Zélus: A synchronous language with odes. In Proceedings of the 16th International Conference on Hybrid Systems: Computation and Control, HSCC ’13, page 113–118, New York, NY, USA, 2013. Association for Computing Machinery. doi:",
+            "doi": "10.1109/memcod.2014.6961849",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lausanne, Switzerland, October 2014. doi:10.1109/MEMCOD.2014.6961849. 9 Timothy Bourke and Marc Pouzet. Zélus: A synchronous language with odes. In Proceedings of the 16th International Conference on Hybrid Systems: Computation and Control, HSCC ’13, page 113–118, New York, NY, USA, 2013. Association for Computing Machinery. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/memcod.2014.6961849",
+                "doi": "10.1109/memcod.2014.6961849",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/memcod.2014.6961849"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "10",
+            "rawText": "1145/2461328.2461348. 10 Benoit Combemale, Betty H.C. Cheng, Robert B. France, Jean-Marc Jezequel, and Bernhard Rumpe. Globalizing Domain-Speciﬁc Languages, volume 9400 of LNCS, Programming and Software Engineering. Springer International Publishing, 2015. 11 Julien Deantoni, Charles André, and Régis Gascon. CCSL denotational semantics. Research Report RR-8628, Inria, November 2014. URL: https://hal.inria.fr/hal-01082274. 12 Julien DeAntoni and Frédéric Mallet. Timesquare: Treat your models with logical time. In Carlo A. Furia and Sebastian Nanz, editors, Objects, Models, Components, Patterns - 50th International Conference, TOOLS 2012, Prague, Czech Republic, May 29-31, 2012. Proceedings, volume 7304 of Lecture Notes in Computer Science, pages 34–41. Springer, 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1145/2461328.2461348. 10 Benoit Combemale, Betty H.C. Cheng, Robert B. France, Jean-Marc Jezequel, and Bernhard Rumpe. Globalizing Domain-Speciﬁc Languages, volume 9400 of LNCS, Programming and Software Engineering. Springer International Publishing, 2015. 11 Julien Deantoni, Charles André, and Régis Gascon. CCSL denotational semantics. Research Report RR-8628, Inria, November 2014. URL: https://hal.inria.fr/hal-01082274. 12 Julien DeAntoni and Frédéric Mallet. Timesquare: Treat your models with logical time. In Carlo A. Furia and Sebastian Nanz, editors, Objects, Models, Components, Patterns - 50th International Conference, TOOLS 2012, Prague, Czech Republic, May 29-31, 2012. Proceedings, volume 7304 of Lecture Notes in Computer Science, pages 34–41. Springer, 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "doi:10.1007/978-3-642-30561-0_4. 13 J. Eker, J. W. Janneck, E. A. Lee, Jie Liu, Xiaojun Liu, J. Ludvig, S. Neuendorﬀer, S. Sachs, and Yuhong Xiong. Taming heterogeneity - the ptolemy approach. Proceedings of the IEEE, 91(1):127–144, 2003. 14",
+            "doi": "10.1007/978-3-642-30561-0_4",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1007/978-3-642-30561-0_4. 13 J. Eker, J. W. Janneck, E. A. Lee, Jie Liu, Xiaojun Liu, J. Ludvig, S. Neuendorﬀer, S. Sachs, and Yuhong Xiong. Taming heterogeneity - the ptolemy approach. Proceedings of the IEEE, 91(1):127–144, 2003. 14"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805829",
+                "doi": "10.1007/978-3-642-30561-0_4",
+                "arxivId": "",
+                "title": "Taming Heterogeneity–-The Ptolemy Approach",
+                "authors": [
+                  "Johan Eker",
+                  "J\\\"orn W. Janneck",
+                  "Edward A. Lee",
+                  "Jie Liu",
+                  "Xiaojun Liu",
+                  "Jozsef Ludvig",
+                  "Stephen Neuendorffer",
+                  "Sonia Sachs",
+                  "Yuhong Xiong"
+                ],
+                "year": 2003,
+                "venue": "Proceedings of the IEEE",
+                "type": "article",
+                "url": "https://doi.org/10.1109/JPROC.2002.805829"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": null,
+            "rawText": "K. Erciyes. Distributed Real-Time Systems. Springer International Publishing, 2019. doi:",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "K. Erciyes. Distributed Real-Time Systems. Springer International Publishing, 2019. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "10",
+            "rawText": "1007/978-3-030-22570-4. 15 Sulaymon Eshkabilov. MATLAB®/Simulink® Essentials: MATLAB®/Simulink® for Engineering Problem Solving and Numerical Analysis. Lulu Publishing Services, November",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1007/978-3-030-22570-4. 15 Sulaymon Eshkabilov. MATLAB®/Simulink® Essentials: MATLAB®/Simulink® for Engineering Problem Solving and Numerical Analysis. Lulu Publishing Services, November"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "2016",
+            "rawText": "16 Kelly Garcés, Julien Deantoni, and Frédéric Mallet. A Model-Based Approach for Reconciliation of Polychronous Execution Traces. In SEAA 2011 - 37th EUROMICRO Conference on Software Engineering and Advanced Applications, Oulu, Finland, August 2011. IEEE. URL: https://hal.inria.fr/inria-00597981. 17 P. Le Guernic, A. Benveniste, P. Bournai, and T. Gautier. Synchronous data ﬂow programming with the language SIGNAL. IFAC Proceedings Volumes, 20(2):359–364, 1987. 2nd IFAC Workshop on Adaptive Systems in Control and Signal Processing 1986, Lund, Sweden, 30 June-2 July 1986.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "16 Kelly Garcés, Julien Deantoni, and Frédéric Mallet. A Model-Based Approach for Reconciliation of Polychronous Execution Traces. In SEAA 2011 - 37th EUROMICRO Conference on Software Engineering and Advanced Applications, Oulu, Finland, August 2011. IEEE. URL: https://hal.inria.fr/inria-00597981. 17 P. Le Guernic, A. Benveniste, P. Bournai, and T. Gautier. Synchronous data ﬂow programming with the language SIGNAL. IFAC Proceedings Volumes, 20(2):359–364, 1987. 2nd IFAC Workshop on Adaptive Systems in Control and Signal Processing 1986, Lund, Sweden, 30 June-2 July 1986."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": null,
+            "rawText": "15:14 TESL: A Model with Metric Time for Modeling and Simulation",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "15:14 TESL: A Model with Metric Time for Modeling and Simulation"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": null,
+            "rawText": "18 N. Halbwachs, P. Caspi, P. Raymond, and D. Pilaud. The synchronous dataﬂow programming language Lustre. Proceedings of the IEEE, 79(9):1305–1320, September 1991. 19 Michael J W Hall. Concepts in special relativity. In General Relativity: An Introduction to Black Holes, Gravitational Waves, and Cosmology, 2053-2571, pages 1–1 to 1–11. Morgan &",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "18 N. Halbwachs, P. Caspi, P. Raymond, and D. Pilaud. The synchronous dataﬂow programming language Lustre. Proceedings of the IEEE, 79(9):1305–1320, September 1991. 19 Michael J W Hall. Concepts in special relativity. In General Relativity: An Introduction to Black Holes, Gravitational Waves, and Cosmology, 2053-2571, pages 1–1 to 1–11. Morgan &"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": null,
+            "rawText": "Claypool Publishers, 2018. doi:10.1088/978-1-6817-4885-6ch1. 20 Cécile Hardebolle and Frédéric Boulanger. Exploring multi-paradigm modeling techniques. SIMULATION: Transactions of The Society for Modeling and Simulation International, 85(11/12):688–708, November/December 2009. doi:10.1177/0037549709105240. 21 Yannick Hildenbrand. Ed-247 (vistas) gateway for hybrid test systems. In Aerospace Systems and Technology Conference. SAE International, October 2018. doi:10.4271/2018-01-1949. 22 Leslie Lamport. What good is temporal logic? Information Processing 83, R. E. A. Mason, ed., Elsevier Publishers, 83:657–668, May 1983. URL: https://www.microsoft.com/en-us/",
+            "doi": "10.1088/978-1-6817-4885-6ch1",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Claypool Publishers, 2018. doi:10.1088/978-1-6817-4885-6ch1. 20 Cécile Hardebolle and Frédéric Boulanger. Exploring multi-paradigm modeling techniques. SIMULATION: Transactions of The Society for Modeling and Simulation International, 85(11/12):688–708, November/December 2009. doi:10.1177/0037549709105240. 21 Yannick Hildenbrand. Ed-247 (vistas) gateway for hybrid test systems. In Aerospace Systems and Technology Conference. SAE International, October 2018. doi:10.4271/2018-01-1949. 22 Leslie Lamport. What good is temporal logic? Information Processing 83, R. E. A. Mason, ed., Elsevier Publishers, 83:657–668, May 1983. URL: https://www.microsoft.com/en-us/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1088/978-1-6817-4885-6ch1",
+                "doi": "10.1088/978-1-6817-4885-6ch1",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1088/978-1-6817-4885-6ch1"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "research/publication/good-temporal-logic/. 23 Paul Le Guernic, Thierry Gautier, Jean-Pierre Talpin, and Loïc Besnard. Polychronous automata. In TASE 2015, 9th International Symposium on Theoretical Aspects of Software",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "research/publication/good-temporal-logic/. 23 Paul Le Guernic, Thierry Gautier, Jean-Pierre Talpin, and Loïc Besnard. Polychronous automata. In TASE 2015, 9th International Symposium on Theoretical Aspects of Software"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": null,
+            "rawText": "Engineering, pages 95–102, Nanjing, China, September 2015. IEEE Computer Society. 24 E. A. Lee and D. G. Messerschmitt. Synchronous data ﬂow. Proceedings of the IEEE, 75(9):1235–1245, 1987. 25 Edward A. Lee and Alberto Sangiovanni-Vincentelli. A framework for comparing models of computation. IEEE Trans. CAD, 17(12), 1998. 26 Frédéric Mallet, Julien Deantoni, Charles André, and Robert De Simone. The Clock Constraint Speciﬁcation Language for building timed causality models. Innovations in Systems and",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Engineering, pages 95–102, Nanjing, China, September 2015. IEEE Computer Society. 24 E. A. Lee and D. G. Messerschmitt. Synchronous data ﬂow. Proceedings of the IEEE, 75(9):1235–1245, 1987. 25 Edward A. Lee and Alberto Sangiovanni-Vincentelli. A framework for comparing models of computation. IEEE Trans. CAD, 17(12), 1998. 26 Frédéric Mallet, Julien Deantoni, Charles André, and Robert De Simone. The Clock Constraint Speciﬁcation Language for building timed causality models. Innovations in Systems and"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "Software Engineering, 6(1-2):99–106, March 2010. 27 Frédéric Mallet and Robert de Simone. Correctness issues on MARTE/CCSL constraints.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Software Engineering, 6(1-2):99–106, March 2010. 27 Frédéric Mallet and Robert de Simone. Correctness issues on MARTE/CCSL constraints."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": null,
+            "rawText": "Science of Computer Programming, 106:78–92, 2015. Special Issue: Architecture-Driven",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Science of Computer Programming, 106:78–92, 2015. Special Issue: Architecture-Driven"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": null,
+            "rawText": "Semantic Analysis of Embedded Systems. doi:10.1016/j.scico.2015.03.001. 28 Mathieu Montin and Marc Pantel. Mechanizing the denotational semantics of the clock constraint speciﬁcation language. In El Hassan Abdelwahed, Ladjel Bellatreche, Mattéo Golfarelli, Dominique Méry, and Carlos Ordonez, editors, Model and Data Engineering, pages 385–400, Cham, 2018. Springer International Publishing. 29 Hai Nguyen Van, Thibaut Balabonski, Frédéric Boulanger, Chantal Keller, Benoît Valiron, and Burkhart Wolﬀ. A symbolic operational semantics for TESL. In Alessandro Abate and Gilles Geeraerts, editors, Formal Modeling and Analysis of Timed Systems, pages 318–334,",
+            "doi": "10.1016/j.scico.2015.03.001",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Semantic Analysis of Embedded Systems. doi:10.1016/j.scico.2015.03.001. 28 Mathieu Montin and Marc Pantel. Mechanizing the denotational semantics of the clock constraint speciﬁcation language. In El Hassan Abdelwahed, Ladjel Bellatreche, Mattéo Golfarelli, Dominique Méry, and Carlos Ordonez, editors, Model and Data Engineering, pages 385–400, Cham, 2018. Springer International Publishing. 29 Hai Nguyen Van, Thibaut Balabonski, Frédéric Boulanger, Chantal Keller, Benoît Valiron, and Burkhart Wolﬀ. A symbolic operational semantics for TESL. In Alessandro Abate and Gilles Geeraerts, editors, Formal Modeling and Analysis of Timed Systems, pages 318–334,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1016/j.scico.2015.03.001",
+                "doi": "10.1016/j.scico.2015.03.001",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.scico.2015.03.001"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": null,
+            "rawText": "Cham, 2017. Springer International Publishing. 30 Tobias Nipkow and Gerwin Klein. Concrete Semantics: With Isabelle/HOL. Springer Publishing Company, Incorporated, 2014. 31 Tobias Nipkow, Lawrence C. Paulson, and Markus Wenzel. Isabelle/HOL — A Proof Assistant for Higher-Order Logic, volume 2283 of LNCS. Springer, 2002. 32 Claire Pagetti, Julien Forget, Frédéric Boniol, Mikel Cordovilla, and David Lesens. Multi-task implementation of multi-periodic synchronous programs. Discrete Event Dynamic Systems, 21(3):307–338, 2011. URL: https://hal.inria.fr/inria-00638936. 33 Kirill Rozhdestvensky, Vladimir Ryzhov, Tatiana Fedorova, Kirill Safronov, Nikita Tryaskin, Shaharin Anwar Sulaiman, Mark Ovinis, and Suhaimi Hassan. Description of the Wolfram SystemModeler, pages 23–87.",
+            "doi": "10.1007/s10626-011-0107-x",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Cham, 2017. Springer International Publishing. 30 Tobias Nipkow and Gerwin Klein. Concrete Semantics: With Isabelle/HOL. Springer Publishing Company, Incorporated, 2014. 31 Tobias Nipkow, Lawrence C. Paulson, and Markus Wenzel. Isabelle/HOL — A Proof Assistant for Higher-Order Logic, volume 2283 of LNCS. Springer, 2002. 32 Claire Pagetti, Julien Forget, Frédéric Boniol, Mikel Cordovilla, and David Lesens. Multi-task implementation of multi-periodic synchronous programs. Discrete Event Dynamic Systems, 21(3):307–338, 2011. URL: https://hal.inria.fr/inria-00638936. 33 Kirill Rozhdestvensky, Vladimir Ryzhov, Tatiana Fedorova, Kirill Safronov, Nikita Tryaskin, Shaharin Anwar Sulaiman, Mark Ovinis, and Suhaimi Hassan. Description of the Wolfram SystemModeler, pages 23–87."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/s10626-011-0107-x",
+                "doi": "10.1007/s10626-011-0107-x",
+                "arxivId": "",
+                "title": "Multi-task Implementation of Multi-periodic Synchronous Programs",
+                "authors": [
+                  "Claire Pagetti",
+                  "Julien Forget",
+                  "Fr\\'ed\\'eric Boniol",
+                  "Mikel Cordovilla",
+                  "David Lesens"
+                ],
+                "year": 2017,
+                "venue": "Discrete Event Dynamic Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1007/s10626-011-0107-x"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": null,
+            "rawText": "Springer Singapore, Singapore, 2020. doi:",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Springer Singapore, Singapore, 2020. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "10",
+            "rawText": "1007/978-981-15-2803-3_2. 34 Werner Schutz. The Testability of Distributed Real-Time Systems. Kluwer Academic Publishers, USA, 1993. 35 J. A. Stankovic. Misconceptions about real-time computing: a serious problem for nextgeneration systems. Computer, 21(10):10–19, 1988. 36 Stephen Weeks. Whole-program compilation in mlton. In Proceedings of the 2006 Workshop on ML, ML ’06, page 1, New York, NY, USA, 2006. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1007/978-981-15-2803-3_2. 34 Werner Schutz. The Testability of Distributed Real-Time Systems. Kluwer Academic Publishers, USA, 1993. 35 J. A. Stankovic. Misconceptions about real-time computing: a serious problem for nextgeneration systems. Computer, 21(10):10–19, 1988. 36 Stephen Weeks. Whole-program compilation in mlton. In Proceedings of the 2006 Workshop on ML, ML ’06, page 1, New York, NY, USA, 2006. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "doi:10.1145/1159876.1159877.",
+            "doi": "10.1145/1159876.1159877",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1145/1159876.1159877."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/1159876.1159877",
+                "doi": "10.1145/1159876.1159877",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1159876.1159877"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": null,
+            "rawText": "H. Nguyen Van, F. Boulanger, and B. Wolﬀ 15:15",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Nguyen Van, F. Boulanger, and B. Wolﬀ 15:15"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": null,
+            "rawText": "37 Sam Westrick, Rohan Yadav, Matthew Fluet, and Umut A. Acar. Disentanglement in nested-parallel programs.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "37 Sam Westrick, Rohan Yadav, Matthew Fluet, and Umut A. Acar. Disentanglement in nested-parallel programs."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": null,
+            "rawText": "Proc. ACM Program. Lang., 4(POPL), December 2019. doi:",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Proc. ACM Program. Lang., 4(POPL), December 2019. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "10",
+            "rawText": "1145/3371115. 38 M. Zhang and F. Mallet. An executable semantics of Clock Constraint Speciﬁcation Language and its applications. In Formal Techniques for Safety-Critical Systems: 4th International Workshop, FTSCS 2015, pages 37–51, Cham, 2016. Springer. 39 Karl Johan Åström and Richard M. Murray. Feedback Systems. Princeton University Press, Princeton, 2010. URL: https://www.degruyter.com/view/title/563028.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1145/3371115. 38 M. Zhang and F. Mallet. An executable semantics of Clock Constraint Speciﬁcation Language and its applications. In Formal Techniques for Safety-Critical Systems: 4th International Workshop, FTSCS 2015, pages 37–51, Cham, 2016. Springer. 39 Karl Johan Åström and Richard M. Murray. Feedback Systems. Princeton University Press, Princeton, 2010. URL: https://www.degruyter.com/view/title/563028."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.time.2020.15:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 28,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.4230/lipics.time.2020.15->doi:10.1109/jproc.2002.805829@papers-mixed-event-time-triggered-NguyenVan2020.pdf",
+      "source": "doi:10.4230/lipics.time.2020.15",
+      "target": "doi:10.1109/jproc.2002.805829",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/NguyenVan2020.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.time.2020.15->doi:10.1007/s10626-011-0107-x@papers-mixed-event-time-triggered-NguyenVan2020.pdf",
+      "source": "doi:10.4230/lipics.time.2020.15",
+      "target": "doi:10.1007/s10626-011-0107-x",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/NguyenVan2020.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "NguyenVan2020",
+      "paperId": "doi:10.4230/lipics.time.2020.15",
+      "metadata": {
+        "fileName": "NguyenVan2020.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/NguyenVan2020.pdf"
+      }
+    }
+  ]
+}

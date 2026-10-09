@@ -1,0 +1,824 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.569047+00:00",
+  "papers": [
+    {
+      "key": "Biondi2018",
+      "paper": {
+        "id": "doi:10.1109/rtas.2018.00032",
+        "citationKey": "Biondi2018",
+        "title": "Achieving Predictable Multicore Execution of Automotive Applications Using the LET Paradigm",
+        "authors": [
+          "Alessandro Biondi",
+          "Marco Di Natale"
+        ],
+        "year": 2018,
+        "venue": "2018 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+        "type": "inproceedings",
+        "doi": "10.1109/rtas.2018.00032",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/rtas.2018.00032",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Biondi, Alessandro and Di Natale, Marco",
+          "title": "{Achieving Predictable Multicore Execution of Automotive Applications Using the LET Paradigm}",
+          "year": "2018",
+          "booktitle": "2018 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+          "publisher": "IEEE",
+          "pages": "240--250",
+          "doi": "10.1109/rtas.2018.00032",
+          "url": "https://doi.org/10.1109/rtas.2018.00032"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.059579+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref10",
+            "rawText": "AURIX TC27x D-Step - User's Manual V2 2 2014-12",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "year": "0",
+              "journal-title": "AURIX TC27x D-Step - User's Manual V2 2 2014-12"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "AURIX TC27x D-Step - User's Manual V2 2 2014-12",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1109/rtss.2013.13",
+            "doi": "10.1109/rtss.2013.13",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2013.13"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2013.13",
+                "doi": "10.1109/rtss.2013.13",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2013.13"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1109/ecrts.2016.30",
+            "doi": "10.1109/ecrts.2016.30",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ECRTS.2016.30"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2016.30",
+                "doi": "10.1109/ecrts.2016.30",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2016.30"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref13",
+            "rawText": "https://doi.org/10.1007/s11241-015-9234-z",
+            "doi": "10.1007/s11241-015-9234-z",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-015-9234-z"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-015-9234-z",
+                "doi": "10.1007/s11241-015-9234-z",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-015-9234-z"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref14",
+            "rawText": "hamann. Commu-nication Centric Design in Complex Automotive Embedded Systems. 2017. 29th Euromicro Conference on Real-Time Systems (ECRTS 2017)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "article-title": "Commu-nication Centric Design in Complex Automotive Embedded Systems",
+              "volume": "76",
+              "author": "hamann",
+              "year": "2017",
+              "journal-title": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref14",
+                "doi": "",
+                "title": "Commu-nication Centric Design in Complex Automotive Embedded Systems",
+                "authors": [
+                  "hamann"
+                ],
+                "year": 2017,
+                "venue": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1145/1176887.1176892",
+            "doi": "10.1145/1176887.1176892",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1176887.1176892"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176892",
+                "doi": "10.1145/1176887.1176892",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1176887.1176892"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1109/tii.2009.2026745",
+            "doi": "10.1109/tii.2009.2026745",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TII.2009.2026745"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tii.2009.2026745",
+                "doi": "10.1109/tii.2009.2026745",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tii.2009.2026745"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref17",
+            "rawText": "https://doi.org/10.1109/sies.2011.5953656",
+            "doi": "10.1109/sies.2011.5953656",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SIES.2011.5953656"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/sies.2011.5953656",
+                "doi": "10.1109/sies.2011.5953656",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sies.2011.5953656"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref18",
+            "rawText": "https://doi.org/10.1109/rtas.2016.7461321",
+            "doi": "10.1109/rtas.2016.7461321",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2016.7461321"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2016.7461321",
+                "doi": "10.1109/rtas.2016.7461321",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2016.7461321"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref19",
+            "rawText": "https://doi.org/10.1109/rtas.2011.33",
+            "doi": "10.1109/rtas.2011.33",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2011.33"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtas.2011.33",
+                "doi": "10.1109/rtas.2011.33",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/RTAS.2011.33"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref4",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805825",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805825"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref3",
+            "rawText": "AUTOSAR standard",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "year": "0",
+              "journal-title": "AUTOSAR standard"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref3",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "AUTOSAR standard",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1109/rtas.2014.6925999",
+            "doi": "10.1109/rtas.2014.6925999",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2014.6925999"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2014.6925999",
+                "doi": "10.1109/rtas.2014.6925999",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2014.6925999"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref5",
+            "rawText": "yun. Memguard: Memory bandwidth reservation system for efficient performance isolation in multi -core platforms. 2013. Proc IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "first-page": "55",
+              "article-title": "Memguard: Memory bandwidth reservation system for efficient performance isolation in multi -core platforms",
+              "author": "yun",
+              "year": "2013",
+              "journal-title": "Proc IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref5",
+                "doi": "",
+                "title": "Memguard: Memory bandwidth reservation system for efficient performance isolation in multi -core platforms",
+                "authors": [
+                  "yun"
+                ],
+                "year": 2013,
+                "venue": "Proc IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref8",
+            "rawText": "ERIKA Enterprise-Open Source RTOS OSEK/VDX Kernel",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "year": "0",
+              "journal-title": "ERIKA Enterprise-Open Source RTOS OSEK/VDX Kernel"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref8",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "ERIKA Enterprise-Open Source RTOS OSEK/VDX Kernel",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref7",
+            "rawText": "https://doi.org/10.1023/a:1008030427220",
+            "doi": "10.1023/a:1008030427220",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1008030427220"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/a:1008030427220",
+                "doi": "10.1023/a:1008030427220",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/a:1008030427220"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref2",
+            "rawText": "hamann. 2017. WATERS Industrial Challenge",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "author": "hamann",
+              "year": "2017",
+              "journal-title": "WATERS Industrial Challenge"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "hamann"
+                ],
+                "year": 2017,
+                "venue": "WATERS Industrial Challenge",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref1",
+            "rawText": "henzinger. From control models to real-time code using giotto. 2003. Control Systems Magazine IEEE",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "article-title": "From control models to real-time code using giotto",
+              "author": "henzinger",
+              "year": "2003",
+              "journal-title": "Control Systems Magazine IEEE"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1109/mcs.2003.1172829",
+                "doi": "",
+                "title": "From control models to real-time code using giotto",
+                "authors": [
+                  "henzinger"
+                ],
+                "year": 2003,
+                "venue": "Control Systems Magazine IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/mcs.2003.1172829"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref9",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "year": "0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref9",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref20",
+            "rawText": "https://doi.org/10.1007/s11241-012-9158-9",
+            "doi": "10.1007/s11241-012-9158-9",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-012-9158-9"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-012-9158-9",
+                "doi": "10.1007/s11241-012-9158-9",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-012-9158-9"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref22",
+            "rawText": "https://doi.org/10.1145/2830555",
+            "doi": "10.1145/2830555",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2830555"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2830555",
+                "doi": "10.1145/2830555",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2830555"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref21",
+            "rawText": "https://doi.org/10.1007/s11241-016-9248-1",
+            "doi": "10.1007/s11241-016-9248-1",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-016-9248-1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-016-9248-1",
+                "doi": "10.1007/s11241-016-9248-1",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-016-9248-1"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref24",
+            "rawText": "davis. An extensible framework for multicore response time analysis. 2017. Real-Time Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref24",
+              "article-title": "An extensible framework for multicore response time analysis",
+              "author": "davis",
+              "year": "2017",
+              "journal-title": "Real-Time Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref24",
+                "doi": "",
+                "title": "An extensible framework for multicore response time analysis",
+                "authors": [
+                  "davis"
+                ],
+                "year": 2017,
+                "venue": "Real-Time Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "ref23",
+            "rawText": "https://doi.org/10.1109/ecrts.2015.23",
+            "doi": "10.1109/ecrts.2015.23",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ECRTS.2015.23"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2015.23",
+                "doi": "10.1109/ecrts.2015.23",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2015.23"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/rtas.2018.00032",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 4,
+          "extractedReferenceCount": 24,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/rtas.2018.00032",
+          "crossrefReferenceCount": 24
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/rtas.2018.00032->doi:10.1145/1176887.1176892@papers-LET-Biondi2018.pdf",
+      "source": "doi:10.1109/rtas.2018.00032",
+      "target": "doi:10.1145/1176887.1176892",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Biondi2018.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas.2018.00032->doi:10.1109/rtas.2011.33@papers-LET-Biondi2018.pdf",
+      "source": "doi:10.1109/rtas.2018.00032",
+      "target": "doi:10.1109/rtas.2011.33",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Biondi2018.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas.2018.00032->doi:10.1109/jproc.2002.805825@papers-LET-Biondi2018.pdf",
+      "source": "doi:10.1109/rtas.2018.00032",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Biondi2018.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas.2018.00032->doi:10.1109/mcs.2003.1172829@papers-LET-Biondi2018.pdf",
+      "source": "doi:10.1109/rtas.2018.00032",
+      "target": "doi:10.1109/mcs.2003.1172829",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Biondi2018.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Biondi2018",
+      "paperId": "doi:10.1109/rtas.2018.00032",
+      "metadata": {
+        "fileName": "Biondi2018.pdf",
+        "sourcePath": "papers/LET/Biondi2018.pdf"
+      }
+    }
+  ]
+}

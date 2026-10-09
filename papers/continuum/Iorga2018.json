@@ -1,0 +1,1553 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:46.241273+00:00",
+  "papers": [
+    {
+      "key": "Iorga2018",
+      "paper": {
+        "id": "doi:10.6028/nist.sp.500-325",
+        "citationKey": "Iorga2018",
+        "title": "Fog Computing Conceptual Model",
+        "authors": [
+          "Michaela Iorga",
+          "Larry Feldman",
+          "Robert Barton",
+          "Michael J. Martin",
+          "Nedim Goren",
+          "Charif Mahmoudi"
+        ],
+        "year": 2018,
+        "venue": "",
+        "type": "techreport",
+        "doi": "10.6028/NIST.SP.500-325",
+        "arxivId": "",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.500-325.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:embedded-edge-cloud-orchestration"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Michaela Iorga and Larry Feldman and Robert Barton and Michael J. Martin and Nedim Goren and Charif Mahmoudi",
+          "title": "{Fog Computing Conceptual Model}",
+          "year": "2018",
+          "institution": "National Institute of Standards and Technology",
+          "number": "SP 500-325",
+          "doi": "10.6028/NIST.SP.500-325",
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.500-325.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.218171+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": ", at cluster or cluster-of-clusters level, supporting elastic compute, resource pooling, data-load changes, and network condition variations, to list a few of the supported adaptive functions.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ", at cluster or cluster-of-clusters level, supporting elastic compute, resource pooling, data-load changes, and network condition variations, to list a few of the supported adaptive functions."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "4 Additional Characteristics Often Associated with Fog Computing",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "4 Additional Characteristics Often Associated with Fog Computing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": null,
+            "rawText": "Predominance of wireless access. Although fog computing is used in wired environments, the large scale of wireless sensors in IoT demand distributed analytics and compute. For this reason, fog computing is very well suited to wireless IoT access networks.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Predominance of wireless access. Although fog computing is used in wired environments, the large scale of wireless sensors in IoT demand distributed analytics and compute. For this reason, fog computing is very well suited to wireless IoT access networks."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "Support for mobility. It is essential for many fog computing applications to communicate directly with mobile devices, and therefore support mobility techniques, such as the Locator/ID Separation Protocol (LISP)10, that decouple host identity from location identity, and require a distributed directory system.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Support for mobility. It is essential for many fog computing applications to communicate directly with mobile devices, and therefore support mobility techniques, such as the Locator/ID Separation Protocol (LISP)10, that decouple host identity from location identity, and require a distributed directory system."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": null,
+            "rawText": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325",
+            "doi": "10.6028/nist.sp.500-325",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.6028/nist.sp.500-325",
+                "doi": "10.6028/nist.sp.500-325",
+                "arxivId": "",
+                "title": "Fog Computing Conceptual Model",
+                "authors": [
+                  "Michaela Iorga",
+                  "Larry Feldman",
+                  "Robert Barton",
+                  "Michael J. Martin",
+                  "Nedim Goren",
+                  "Charif Mahmoudi"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "techreport",
+                "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.500-325.pdf"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "2",
+            "rawText": "5 Fog Node Attributes",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "5 Fog Node Attributes"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": null,
+            "rawText": "To facilitate the deployment of a fog computing capability that exhibits the six essential characteristics described in Section 2.3, fog nodes need to support one or more of the following attributes:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "To facilitate the deployment of a fog computing capability that exhibits the six essential characteristics described in Section 2.3, fog nodes need to support one or more of the following attributes:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": null,
+            "rawText": "Autonomy. Fog nodes can operate independently, making local decisions, at the node or cluster-of-nodes level.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Autonomy. Fog nodes can operate independently, making local decisions, at the node or cluster-of-nodes level."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "Heterogeneity. Fog nodes come in different form factors, and can be deployed in a wide variety of environments.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Heterogeneity. Fog nodes come in different form factors, and can be deployed in a wide variety of environments."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": null,
+            "rawText": "Hierarchical clustering. Fog nodes support hierarchical structures, with different layers providing different subsets of service functions while working together as a continuum.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Hierarchical clustering. Fog nodes support hierarchical structures, with different layers providing different subsets of service functions while working together as a continuum."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "Manageability. Fog nodes are managed and orchestrated by complex systems that can perform most routine operations automatically.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Manageability. Fog nodes are managed and orchestrated by complex systems that can perform most routine operations automatically."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": null,
+            "rawText": "Programmability. Fog nodes are inherently programmable at multiple levels, by multiple stakeholders - such as network operators, domain experts, equipment providers, or end users.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Programmability. Fog nodes are inherently programmable at multiple levels, by multiple stakeholders - such as network operators, domain experts, equipment providers, or end users."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "2",
+            "rawText": "6 Fog Node Architectural Service Models",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6 Fog Node Architectural Service Models"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": null,
+            "rawText": "Fog computing, similar to the traditional cloud computing model, offers implementations of the architecture in multiple layers of the network’s topology. Similar to the cloud computing service models defined in NIST Special Publication (SP) 800-145, the following types of service models can be implemented:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Fog computing, similar to the traditional cloud computing model, offers implementations of the architecture in multiple layers of the network’s topology. Similar to the cloud computing service models defined in NIST Special Publication (SP) 800-145, the following types of service models can be implemented:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": null,
+            "rawText": "10 Locator/ID Separation Protocol (LISP): is a network architecture and set of protocols that implements a new semantic for IP addressing. LISP creates two namespaces and uses two IP addresses: Endpoint Identifiers (EIDs), which are assigned to endhosts, and Routing Locators (RLOCs), which are assigned to devices (primarily routers) that make up the global routing system. See http://lisp.cisco.com/lisp_over.html for more information",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "10 Locator/ID Separation Protocol (LISP): is a network architecture and set of protocols that implements a new semantic for IP addressing. LISP creates two namespaces and uses two IP addresses: Endpoint Identifiers (EIDs), which are assigned to endhosts, and Routing Locators (RLOCs), which are assigned to devices (primarily routers) that make up the global routing system. See http://lisp.cisco.com/lisp_over.html for more information"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "FOG COMPUTING CONCEPTUAL MODEL",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "FOG COMPUTING CONCEPTUAL MODEL"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": null,
+            "rawText": "Software as a Service (SaaS). The capability provided to the fog service customer is to use the fog provider’s applications running on a cluster of federated fog nodes managed by the provider. This type of service is similar to the cloud computing Software as a Service (SaaS) and implies that the end-device or smart thing accesses the fog node’s applications through a thin client interface or a program interface. The end-user does not manage or control the underlying fog node’s infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Software as a Service (SaaS). The capability provided to the fog service customer is to use the fog provider’s applications running on a cluster of federated fog nodes managed by the provider. This type of service is similar to the cloud computing Software as a Service (SaaS) and implies that the end-device or smart thing accesses the fog node’s applications through a thin client interface or a program interface. The end-user does not manage or control the underlying fog node’s infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "Platform as a Service (PaaS). The capability provided to the fog service customer is similar to the cloud computing Platform as a Service (PaaS) and allows deployment onto the platforms of federated fog nodes forming a cluster, of customer-created or acquired applications created using programming languages, libraries, services, and tools supported by the fog service provider. The fog service customer does not manage or control the underlying fog platform(s) and infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Platform as a Service (PaaS). The capability provided to the fog service customer is similar to the cloud computing Platform as a Service (PaaS) and allows deployment onto the platforms of federated fog nodes forming a cluster, of customer-created or acquired applications created using programming languages, libraries, services, and tools supported by the fog service provider. The fog service customer does not manage or control the underlying fog platform(s) and infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": null,
+            "rawText": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325",
+            "doi": "10.6028/nist.sp.500-325",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.6028/nist.sp.500-325",
+                "doi": "10.6028/nist.sp.500-325",
+                "arxivId": "",
+                "title": "Fog Computing Conceptual Model",
+                "authors": [
+                  "Michaela Iorga",
+                  "Larry Feldman",
+                  "Robert Barton",
+                  "Michael J. Martin",
+                  "Nedim Goren",
+                  "Charif Mahmoudi"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "techreport",
+                "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.500-325.pdf"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": null,
+            "rawText": "Infrastructure as a Service (IaaS). The capability provided to the fog service customer is to provision processing, storage, networks, and other fundamental computing resources leveraging the infrastructure of the fog nodes forming a federated cluster. Similar to cloud computing Infrastructure as a Service (IaaS) services, the customer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying infrastructure of the fog nodes cluster but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls) .",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Infrastructure as a Service (IaaS). The capability provided to the fog service customer is to provision processing, storage, networks, and other fundamental computing resources leveraging the infrastructure of the fog nodes forming a federated cluster. Similar to cloud computing Infrastructure as a Service (IaaS) services, the customer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying infrastructure of the fog nodes cluster but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls) ."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "2",
+            "rawText": "7 Fog Node Deployment Models",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "7 Fog Node Deployment Models"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": null,
+            "rawText": "Since fog computing is identified and defined as an extension of the traditional cloud-based computing model, the following deployment models are also supported:",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Since fog computing is identified and defined as an extension of the traditional cloud-based computing model, the following deployment models are also supported:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": null,
+            "rawText": "Private fog node. A fog node that is provisioned for exclusive use by a single organization comprising multiple consumers (e.g., business units.) It may be owned, managed, and operated by the organization, a third party, or some combination of them, and it may exist on or off premises.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Private fog node. A fog node that is provisioned for exclusive use by a single organization comprising multiple consumers (e.g., business units.) It may be owned, managed, and operated by the organization, a third party, or some combination of them, and it may exist on or off premises."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "Community fog node. A fog node that is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns (e.g., mission, security requirements, policy, and compliance considerations.) It may be owned, managed, and operated by one or more of the organizations in the community, a third party, or some combination of them, and it may exist on or off premises.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Community fog node. A fog node that is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns (e.g., mission, security requirements, policy, and compliance considerations.) It may be owned, managed, and operated by one or more of the organizations in the community, a third party, or some combination of them, and it may exist on or off premises."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": null,
+            "rawText": "Public fog node. A fog node that is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organization, or some combination of them. It exists on the premises of the fog provider.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Public fog node. A fog node that is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organization, or some combination of them. It exists on the premises of the fog provider."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": null,
+            "rawText": "Hybrid fog node. A complex fog node that is a composition of two or more distinct fog nodes (private, community, or public) that remain unique entities, but are bound together by",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Hybrid fog node. A complex fog node that is a composition of two or more distinct fog nodes (private, community, or public) that remain unique entities, but are bound together by"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": null,
+            "rawText": "FOG COMPUTING CONCEPTUAL MODEL",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "FOG COMPUTING CONCEPTUAL MODEL"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": null,
+            "rawText": "standardized or proprietary technology that enables data and application portability (e.g., fog bursting for load balancing between these fog nodes.)",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "standardized or proprietary technology that enables data and application portability (e.g., fog bursting for load balancing between these fog nodes.)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "2",
+            "rawText": "8 Mist Computing as Lightweight Fog Layer",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "8 Mist Computing as Lightweight Fog Layer"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": null,
+            "rawText": "Fog computing solutions are adopted by many industries, and efforts to develop distributed applications and analytics tools exist and continue to develop. The need for geographically dispersed, low-latency computational resources triggered the technological evolution of fog computing promoting development of more specialized, dedicated nodes that exhibit low computational resources. These nodes referred to as mist nodes, are perceived as lightweight fog nodes. These mist nodes that form the mist computing layer are placed even closer to the peripheral devices than the more powerful fog nodes they collaborate with, often sharing the same locality with the smart end-devices they service.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Fog computing solutions are adopted by many industries, and efforts to develop distributed applications and analytics tools exist and continue to develop. The need for geographically dispersed, low-latency computational resources triggered the technological evolution of fog computing promoting development of more specialized, dedicated nodes that exhibit low computational resources. These nodes referred to as mist nodes, are perceived as lightweight fog nodes. These mist nodes that form the mist computing layer are placed even closer to the peripheral devices than the more powerful fog nodes they collaborate with, often sharing the same locality with the smart end-devices they service."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": null,
+            "rawText": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325",
+            "doi": "10.6028/nist.sp.500-325",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.6028/nist.sp.500-325",
+                "doi": "10.6028/nist.sp.500-325",
+                "arxivId": "",
+                "title": "Fog Computing Conceptual Model",
+                "authors": [
+                  "Michaela Iorga",
+                  "Larry Feldman",
+                  "Robert Barton",
+                  "Michael J. Martin",
+                  "Nedim Goren",
+                  "Charif Mahmoudi"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "techreport",
+                "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.500-325.pdf"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": null,
+            "rawText": "Mist computing is a lightweight and rudimentary form of fog computing that resides directly within the network fabric11 at the edge of the network fabric, bringing the fog computing layer closer to the smart end-devices. Mist computing uses microcomputers and microcontrollers to feed into fog computing nodes and potentially onward towards the centralized (cloud) computing services.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Mist computing is a lightweight and rudimentary form of fog computing that resides directly within the network fabric11 at the edge of the network fabric, bringing the fog computing layer closer to the smart end-devices. Mist computing uses microcomputers and microcontrollers to feed into fog computing nodes and potentially onward towards the centralized (cloud) computing services."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": null,
+            "rawText": "The mist computing layer is not viewed as a mandatory layer of fog computing. When implemented, mist nodes can leverage the deployment models described in Section 2.5 and the service types described in Section 2.4.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The mist computing layer is not viewed as a mandatory layer of fog computing. When implemented, mist nodes can leverage the deployment models described in Section 2.5 and the service types described in Section 2.4."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": null,
+            "rawText": "11 Network fabric is an industry term that describes a network topology in which components pass data to each other through interconnecting switches.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "11 Network fabric is an industry term that describes a network topology in which components pass data to each other through interconnecting switches."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": null,
+            "rawText": "FOG COMPUTING CONCEPTUAL MODEL",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "FOG COMPUTING CONCEPTUAL MODEL"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": null,
+            "rawText": "Annex A—Fog Computing vs. Edge Computing",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Annex A—Fog Computing vs. Edge Computing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": null,
+            "rawText": "For the purpose of this document, the Edge computing is the network layer encompassing the enddevices and their users, to provide, for example, local computing capability on a sensor, metering or some other devices that are network-accessible. This peripheral layer is also often referred to as IoT network.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "For the purpose of this document, the Edge computing is the network layer encompassing the enddevices and their users, to provide, for example, local computing capability on a sensor, metering or some other devices that are network-accessible. This peripheral layer is also often referred to as IoT network."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": null,
+            "rawText": "Fog computing is often erroneously confused with edge computing, but there are key differences12 between the two concepts. Fog computing runs applications in a multi-layer architecture that decouples and meshes the hardware and software functions, allowing for dynamic reconfigurations for different applications while performing intelligent computing and transmission services. Edge computing runs specific applications in a fixed logic location and provides a direct transmission service. Fog computing is hierarchical, where edge computing tends to be limited to a small number of peripheral devices. Moreover, in addition to computation, and networking, fog computing also addresses storage, control and data-processing acceleration.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Fog computing is often erroneously confused with edge computing, but there are key differences12 between the two concepts. Fog computing runs applications in a multi-layer architecture that decouples and meshes the hardware and software functions, allowing for dynamic reconfigurations for different applications while performing intelligent computing and transmission services. Edge computing runs specific applications in a fixed logic location and provides a direct transmission service. Fog computing is hierarchical, where edge computing tends to be limited to a small number of peripheral devices. Moreover, in addition to computation, and networking, fog computing also addresses storage, control and data-processing acceleration."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": null,
+            "rawText": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325",
+            "doi": "10.6028/nist.sp.500-325",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.6028/nist.sp.500-325",
+                "doi": "10.6028/nist.sp.500-325",
+                "arxivId": "",
+                "title": "Fog Computing Conceptual Model",
+                "authors": [
+                  "Michaela Iorga",
+                  "Larry Feldman",
+                  "Robert Barton",
+                  "Michael J. Martin",
+                  "Nedim Goren",
+                  "Charif Mahmoudi"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "techreport",
+                "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.500-325.pdf"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": null,
+            "rawText": "12 See OpenFog Consortium’s whitepaper: https://www.nebbiolo.tech/wp-content/uploads/whitepaper-fog-vs-edge.pdf",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "12 See OpenFog Consortium’s whitepaper: https://www.nebbiolo.tech/wp-content/uploads/whitepaper-fog-vs-edge.pdf"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:40",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": null,
+            "rawText": "FOG COMPUTING CONCEPTUAL MODEL",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "FOG COMPUTING CONCEPTUAL MODEL"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:41",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": null,
+            "rawText": "Selected acronyms and abbreviations used in this paper are defined below.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Selected acronyms and abbreviations used in this paper are defined below."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:42",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": null,
+            "rawText": "IaaS Infrastructure as a Service",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IaaS Infrastructure as a Service"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": null,
+            "rawText": "IoT Internet of Things",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IoT Internet of Things"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": null,
+            "rawText": "PaaS Platform as a Service",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "PaaS Platform as a Service"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": null,
+            "rawText": "SaaS Software as a Service",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "SaaS Software as a Service"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": null,
+            "rawText": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325",
+            "doi": "10.6028/nist.sp.500-325",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.500-325"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.6028/nist.sp.500-325",
+                "doi": "10.6028/nist.sp.500-325",
+                "arxivId": "",
+                "title": "Fog Computing Conceptual Model",
+                "authors": [
+                  "Michaela Iorga",
+                  "Larry Feldman",
+                  "Robert Barton",
+                  "Michael J. Martin",
+                  "Nedim Goren",
+                  "Charif Mahmoudi"
+                ],
+                "year": 2018,
+                "venue": "",
+                "type": "techreport",
+                "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.500-325.pdf"
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": null,
+            "rawText": "LISP Locator/ID Separation Protocol",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "LISP Locator/ID Separation Protocol"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.6028/nist.sp.500-325:48",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.6028/nist.sp.500-325",
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 48,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.6028/nist.sp.500-325",
+          "crossrefReferenceCount": 0
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Iorga2018",
+      "paperId": "doi:10.6028/nist.sp.500-325",
+      "metadata": {
+        "fileName": "Iorga2018.pdf",
+        "sourcePath": "papers/continuum/Iorga2018.pdf"
+      }
+    }
+  ]
+}

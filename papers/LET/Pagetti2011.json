@@ -1,0 +1,1382 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.520082+00:00",
+  "papers": [
+    {
+      "key": "Pagetti2011",
+      "paper": {
+        "id": "doi:10.1007/s10626-011-0107-x",
+        "citationKey": "Pagetti2011",
+        "title": "Multi-task Implementation of Multi-periodic Synchronous Programs",
+        "authors": [
+          "Claire Pagetti",
+          "Julien Forget",
+          "Fr\\'ed\\'eric Boniol",
+          "Mikel Cordovilla",
+          "David Lesens"
+        ],
+        "year": 2011,
+        "venue": "Discrete Event Dynamic Systems",
+        "type": "article",
+        "doi": "10.1007/s10626-011-0107-x",
+        "arxivId": "",
+        "url": "https://doi.org/10.1007/s10626-011-0107-x",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Pagetti, Claire and Forget, Julien and Boniol, Fr{\\'e}d{\\'e}ric and Cordovilla, Mikel and Lesens, David",
+          "title": "{Multi-task Implementation of Multi-periodic Synchronous Programs}",
+          "year": "2011",
+          "journal": "Discrete Event Dynamic Systems",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "21",
+          "number": "3",
+          "pages": "307--338",
+          "doi": "10.1007/s10626-011-0107-x",
+          "url": "https://doi.org/10.1007/s10626-011-0107-x"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.080246+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "107_CR1",
+            "rawText": "ARINC (2005) ARINC specification 653: avionics application software standard interface. Aeronautical Radio INC",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR1",
+              "unstructured": "ARINC (2005) ARINC specification 653: avionics application software standard interface. Aeronautical Radio INC"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "107_CR2",
+            "rawText": "Aubry P, Le Guernic P, Machard S (1996) Synchronous distribution of signal programs. In: Proceedings of the 29th Hawaii international conference on system sciences (HICSS’96) volume 1: software technology and architecture, pp 656–665",
+            "doi": "10.1109/hicss.1996.495517",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR2",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Aubry P, Le Guernic P, Machard S (1996) Synchronous distribution of signal programs. In: Proceedings of the 29th Hawaii international conference on system sciences (HICSS’96) volume 1: software technology and architecture, pp 656–665",
+              "DOI": "10.1109/HICSS.1996.495517"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/hicss.1996.495517",
+                "doi": "10.1109/hicss.1996.495517",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/hicss.1996.495517"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "107_CR3",
+            "rawText": "Baruah SK, Burns A (2006) Sustainable scheduling analysis. In: Proceedings of the 27th IEEE international real-time systems symposium (RTSS’06). IEEE Computer Society, pp 159–168",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR3",
+              "unstructured": "Baruah SK, Burns A (2006) Sustainable scheduling analysis. In: Proceedings of the 27th IEEE international real-time systems symposium (RTSS’06). IEEE Computer Society, pp 159–168"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR3",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "107_CR4",
+            "rawText": "Benveniste A, Le Guernic P, Jacquemot C (1991) Synchronous programming with events and relations: the signal language and its semantics. Sci Comput Program 16(2):103–149",
+            "doi": "10.1016/0167-6423(91)90001-e",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "107_CR4",
+              "doi-asserted-by": "crossref",
+              "first-page": "103",
+              "DOI": "10.1016/0167-6423(91)90001-E",
+              "volume": "16",
+              "author": "A Benveniste",
+              "year": "1991",
+              "unstructured": "Benveniste A, Le Guernic P, Jacquemot C (1991) Synchronous programming with events and relations: the signal language and its semantics. Sci Comput Program 16(2):103–149",
+              "journal-title": "Sci Comput Program"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/0167-6423(91)90001-e",
+                "doi": "10.1016/0167-6423(91)90001-e",
+                "title": "",
+                "authors": [
+                  "A Benveniste"
+                ],
+                "year": 1991,
+                "venue": "Sci Comput Program",
+                "type": "",
+                "url": "https://doi.org/10.1016/0167-6423(91)90001-E"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "107_CR5",
+            "rawText": "Benveniste A, Caspi P, Edwards SA, Halbwachs N, Le Guernic P, de Simone R (2003) The synchronous languages 12 years later. Proc IEEE 91(1):64–83",
+            "doi": "10.1109/jproc.2002.805826",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "107_CR5",
+              "doi-asserted-by": "crossref",
+              "first-page": "64",
+              "DOI": "10.1109/JPROC.2002.805826",
+              "volume": "91",
+              "author": "A Benveniste",
+              "year": "2003",
+              "unstructured": "Benveniste A, Caspi P, Edwards SA, Halbwachs N, Le Guernic P, de Simone R (2003) The synchronous languages 12 years later. Proc IEEE 91(1):64–83",
+              "journal-title": "Proc IEEE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805826",
+                "doi": "10.1109/jproc.2002.805826",
+                "title": "",
+                "authors": [
+                  "A Benveniste"
+                ],
+                "year": 2003,
+                "venue": "Proc IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805826"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "107_CR6",
+            "rawText": "Boniol F, Hladik PE, Pagetti C, Aspro F, Jégu V (2008) A framework for distributing real-time functions. In: Proceedings of the 6th international conference on formal modeling and analysis of timed systems (FORMATS’08). Lecture notes in computer science, vol 5215. Springer, pp 155–169",
+            "doi": "10.1007/978-3-540-85778-5_12",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR6",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Boniol F, Hladik PE, Pagetti C, Aspro F, Jégu V (2008) A framework for distributing real-time functions. In: Proceedings of the 6th international conference on formal modeling and analysis of timed systems (FORMATS’08). Lecture notes in computer science, vol 5215. Springer, pp 155–169",
+              "DOI": "10.1007/978-3-540-85778-5_12"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-540-85778-5_12",
+                "doi": "10.1007/978-3-540-85778-5_12",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-540-85778-5_12"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "107_CR7",
+            "rawText": "Cervin A (2003) Integrated control and real-time scheduling. PhD thesis, Department of Automatic Control, Lund University, Sweden",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR7",
+              "unstructured": "Cervin A (2003) Integrated control and real-time scheduling. PhD thesis, Department of Automatic Control, Lund University, Sweden"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR7",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "107_CR8",
+            "rawText": "Chetto H, Silly M, Bouchentouf T (1990) Dynamic scheduling of real-time tasks under precedence constraints. Real-Time Syst 2(3):181–194",
+            "doi": "10.1007/bf00365326",
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "107_CR8",
+              "doi-asserted-by": "crossref",
+              "first-page": "181",
+              "DOI": "10.1007/BF00365326",
+              "volume": "2",
+              "author": "H Chetto",
+              "year": "1990",
+              "unstructured": "Chetto H, Silly M, Bouchentouf T (1990) Dynamic scheduling of real-time tasks under precedence constraints. Real-Time Syst 2(3):181–194",
+              "journal-title": "Real-Time Syst"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf00365326",
+                "doi": "10.1007/bf00365326",
+                "title": "",
+                "authors": [
+                  "H Chetto"
+                ],
+                "year": 1990,
+                "venue": "Real-Time Syst",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf00365326"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "107_CR9",
+            "rawText": "Cohen A, Duranton M, Eisenbeis C, Pagetti C, Plateau F, Pouzet M (2006) N-synchronous Kahn networks: a relaxed model of synchrony for real-time systems. In: ACM international conference on principles of programming languages (POPL’06), Charleston, USA",
+            "doi": "10.1145/1111037.1111054",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR9",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Cohen A, Duranton M, Eisenbeis C, Pagetti C, Plateau F, Pouzet M (2006) N-synchronous Kahn networks: a relaxed model of synchrony for real-time systems. In: ACM international conference on principles of programming languages (POPL’06), Charleston, USA",
+              "DOI": "10.1145/1111037.1111054"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1111037.1111054",
+                "doi": "10.1145/1111037.1111054",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1111037.1111054"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "107_CR10",
+            "rawText": "Colaço JL, Pouzet M (2003) Clocks as first class abstract types. In: Proceedings of the 3rd International Conference on Embedded Software (EMSOFT’03), Philadelphia, USA. Lecture Notes in Computer Science, vol 2855, pp 134–155",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR10",
+              "unstructured": "Colaço JL, Pouzet M (2003) Clocks as first class abstract types. In: Proceedings of the 3rd International Conference on Embedded Software (EMSOFT’03), Philadelphia, USA. Lecture Notes in Computer Science, vol 2855, pp 134–155"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR10",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "107_CR11",
+            "rawText": "Cottet F, Delacroix J, Kaiser C, Mammeri Z (2002) Scheduling in real-time systems. Wiley",
+            "doi": "10.1002/0470856343",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR11",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Cottet F, Delacroix J, Kaiser C, Mammeri Z (2002) Scheduling in real-time systems. Wiley",
+              "DOI": "10.1002/0470856343"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1002/0470856343",
+                "doi": "10.1002/0470856343",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1002/0470856343"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "107_CR12",
+            "rawText": "Curic A (2005) Implementing Lustre programs on distributed platforms with real-time constraints. PhD thesis, Université Joseph Fourier, Grenoble",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR12",
+              "unstructured": "Curic A (2005) Implementing Lustre programs on distributed platforms with real-time constraints. PhD thesis, Université Joseph Fourier, Grenoble"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR12",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "107_CR13",
+            "rawText": "Faucou S, Déplanche AM, Trinquet Y (2004) An ADL centric approach for the formal design of real-time systems. In: Architecture description language workshop at IFIP World Computer Congress (WADL’04), vol 176, pp 67–82",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR13",
+              "unstructured": "Faucou S, Déplanche AM, Trinquet Y (2004) An ADL centric approach for the formal design of real-time systems. In: Architecture description language workshop at IFIP World Computer Congress (WADL’04), vol 176, pp 67–82"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR13",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "107_CR14",
+            "rawText": "Feiler PH, Gluch DP, Hudak JJ (2006) The architecture analysis & design language (AADL): an introduction. Tech. Rep. CMU/SEI-2006-TN-011, Carnegie Mellon University",
+            "doi": "10.21236/ada455842",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR14",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Feiler PH, Gluch DP, Hudak JJ (2006) The architecture analysis & design language (AADL): an introduction. Tech. Rep. CMU/SEI-2006-TN-011, Carnegie Mellon University",
+              "DOI": "10.21236/ADA455842"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.21236/ada455842",
+                "doi": "10.21236/ada455842",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.21236/ada455842"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "107_CR15",
+            "rawText": "Forget J (2009) A synchronous language for critical embedded systems with multiple real-time constraints. PhD thesis, Université de Toulouse - ISAE/ONERA, Toulouse, France",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR15",
+              "unstructured": "Forget J (2009) A synchronous language for critical embedded systems with multiple real-time constraints. PhD thesis, Université de Toulouse - ISAE/ONERA, Toulouse, France"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR15",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "107_CR16",
+            "rawText": "Forget J, Boniol F, Lesens D, Pagetti C (2008) A multi-periodic synchronous data-flow language. In: Proceedings of the 11th IEEE high assurance systems engineering symposium (HASE’08). IEEE Computer Society, Nanjing, China, pp 251–260",
+            "doi": "10.1109/hase.2008.47",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR16",
+              "doi-asserted-by": "crossref",
+              "first-page": "251",
+              "DOI": "10.1109/HASE.2008.47",
+              "volume-title": "Proceedings of the 11th IEEE high assurance systems engineering symposium (HASE’08)",
+              "author": "J Forget",
+              "year": "2008",
+              "unstructured": "Forget J, Boniol F, Lesens D, Pagetti C (2008) A multi-periodic synchronous data-flow language. In: Proceedings of the 11th IEEE high assurance systems engineering symposium (HASE’08). IEEE Computer Society, Nanjing, China, pp 251–260"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/hase.2008.47",
+                "doi": "10.1109/hase.2008.47",
+                "title": "",
+                "authors": [
+                  "J Forget"
+                ],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/hase.2008.47"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "107_CR17",
+            "rawText": "Forget J, Boniol F, Grolleau E, Lesens D, Pagetti C (2010) Scheduling dependent periodic tasks without synchronization mechanisms (submitted). In: Proceedings of the 16th IEEE real-time and embedded technology and applications symposium (RTAS’10), Stockholm, Sweden, pp 301–310",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR17",
+              "unstructured": "Forget J, Boniol F, Grolleau E, Lesens D, Pagetti C (2010) Scheduling dependent periodic tasks without synchronization mechanisms (submitted). In: Proceedings of the 16th IEEE real-time and embedded technology and applications symposium (RTAS’10), Stockholm, Sweden, pp 301–310"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR17",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "107_CR18",
+            "rawText": "Girault A, Nicollin X (2003) Clock-driven automatic distribution of Lustre programs. In: Proceedings of the 3rd international conference on embedded software (EMSOFT’03), Philadelphia, USA. Lecture notes in computer science, vol 2855, pp 206–222",
+            "doi": "10.1007/978-3-540-45212-6_14",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR18",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Girault A, Nicollin X (2003) Clock-driven automatic distribution of Lustre programs. In: Proceedings of the 3rd international conference on embedded software (EMSOFT’03), Philadelphia, USA. Lecture notes in computer science, vol 2855, pp 206–222",
+              "DOI": "10.1007/978-3-540-45212-6_14"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-540-45212-6_14",
+                "doi": "10.1007/978-3-540-45212-6_14",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-540-45212-6_14"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "107_CR19",
+            "rawText": "Girault A, Nicollin X, Pouzet M (2006) Automatic rate desynchronization of embedded reactive programs. ACM Trans Embedded Comput Syst 5(3):687–717",
+            "doi": "10.1145/1165780.1165786",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "107_CR19",
+              "doi-asserted-by": "crossref",
+              "first-page": "687",
+              "DOI": "10.1145/1165780.1165786",
+              "volume": "5",
+              "author": "A Girault",
+              "year": "2006",
+              "unstructured": "Girault A, Nicollin X, Pouzet M (2006) Automatic rate desynchronization of embedded reactive programs. ACM Trans Embedded Comput Syst 5(3):687–717",
+              "journal-title": "ACM Trans Embedded Comput Syst"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1165780.1165786",
+                "doi": "10.1145/1165780.1165786",
+                "title": "",
+                "authors": [
+                  "A Girault"
+                ],
+                "year": 2006,
+                "venue": "ACM Trans Embedded Comput Syst",
+                "type": "",
+                "url": "https://doi.org/10.1145/1165780.1165786"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "107_CR20",
+            "rawText": "Graham RL (1969) Bounds on multiprocessing timing anomalies. SIAM J Appl Math 17(2):416–429",
+            "doi": "10.1137/0117039",
+            "arxivId": null,
+            "year": 1969,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "107_CR20",
+              "doi-asserted-by": "crossref",
+              "first-page": "416",
+              "DOI": "10.1137/0117039",
+              "volume": "17",
+              "author": "RL Graham",
+              "year": "1969",
+              "unstructured": "Graham RL (1969) Bounds on multiprocessing timing anomalies. SIAM J Appl Math 17(2):416–429",
+              "journal-title": "SIAM J Appl Math"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1137/0117039",
+                "doi": "10.1137/0117039",
+                "title": "",
+                "authors": [
+                  "RL Graham"
+                ],
+                "year": 1969,
+                "venue": "SIAM J Appl Math",
+                "type": "",
+                "url": "https://doi.org/10.1137/0117039"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "107_CR21",
+            "rawText": "Halbwachs N (1993) Synchronous programming of reactive systems. Kluwer Academic Publisher",
+            "doi": "10.1007/978-1-4757-2231-4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR21",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Halbwachs N (1993) Synchronous programming of reactive systems. Kluwer Academic Publisher",
+              "DOI": "10.1007/978-1-4757-2231-4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-1-4757-2231-4",
+                "doi": "10.1007/978-1-4757-2231-4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-4757-2231-4"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "107_CR22",
+            "rawText": "Halbwachs N, Caspi P, Raymond P, Pilaud D (1991a) The synchronous data-flow programming language LUSTRE. Proc IEEE 79(9):1305–1320",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "9",
+              "key": "107_CR22",
+              "doi-asserted-by": "crossref",
+              "first-page": "1305",
+              "DOI": "10.1109/5.97300",
+              "volume": "79",
+              "author": "N Halbwachs",
+              "year": "1991",
+              "unstructured": "Halbwachs N, Caspi P, Raymond P, Pilaud D (1991a) The synchronous data-flow programming language LUSTRE. Proc IEEE 79(9):1305–1320",
+              "journal-title": "Proc IEEE"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "title": "",
+                "authors": [
+                  "N Halbwachs"
+                ],
+                "year": 1991,
+                "venue": "Proc IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "107_CR23",
+            "rawText": "Halbwachs N, Raymond P, Ratel C (1991b) Generating efficient code from data-flow programs. In: Proceedings of the 3rd international symposium on programming language implementation and logic programming (PLILP ’91), Passau, Germany, pp 207–218",
+            "doi": "10.1007/3-540-54444-5_100",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR23",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Halbwachs N, Raymond P, Ratel C (1991b) Generating efficient code from data-flow programs. In: Proceedings of the 3rd international symposium on programming language implementation and logic programming (PLILP ’91), Passau, Germany, pp 207–218",
+              "DOI": "10.1007/3-540-54444-5_100"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-54444-5_100",
+                "doi": "10.1007/3-540-54444-5_100",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-54444-5_100"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "107_CR24",
+            "rawText": "Henzinger TA, Horowitz B, Kirsch CM (2003) Giotto: a time-triggered language for embedded programming. Proc IEEE 91(1):84–99",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "107_CR24",
+              "doi-asserted-by": "crossref",
+              "first-page": "84",
+              "DOI": "10.1109/JPROC.2002.805825",
+              "volume": "91",
+              "author": "TA Henzinger",
+              "year": "2003",
+              "unstructured": "Henzinger TA, Horowitz B, Kirsch CM (2003) Giotto: a time-triggered language for embedded programming. Proc IEEE 91(1):84–99",
+              "journal-title": "Proc IEEE"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [
+                  "TA Henzinger"
+                ],
+                "year": 2003,
+                "venue": "Proc IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "107_CR25",
+            "rawText": "Kahn G (1974) The semantics of simple language for parallel programming. In: Proceedings of the international federation for information processing (IFIP’74) Congress, New York, USA, pp 471–475",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR25",
+              "unstructured": "Kahn G (1974) The semantics of simple language for parallel programming. In: Proceedings of the international federation for information processing (IFIP’74) Congress, New York, USA, pp 471–475"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR25",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "107_CR26",
+            "rawText": "Lee EA, Sangiovanni-Vincentelli AL (1996) Comparing models of computation. In: Proceedings of the 1996 IEEE/ACM international conference on computer-aided design (ICCAD’96). IEEE Computer Society, San Jose, USA, pp 234–241",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR26",
+              "first-page": "234",
+              "volume-title": "Proceedings of the 1996 IEEE/ACM international conference on computer-aided design (ICCAD’96)",
+              "author": "EA Lee",
+              "year": "1996",
+              "unstructured": "Lee EA, Sangiovanni-Vincentelli AL (1996) Comparing models of computation. In: Proceedings of the 1996 IEEE/ACM international conference on computer-aided design (ICCAD’96). IEEE Computer Society, San Jose, USA, pp 234–241"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR26",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "EA Lee"
+                ],
+                "year": 1996,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "107_CR27",
+            "rawText": "Leroy X (2006) The objective Caml system release 3.09, documentation and user’s manual. INRIA",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR27",
+              "unstructured": "Leroy X (2006) The objective Caml system release 3.09, documentation and user’s manual. INRIA"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR27",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "107_CR28",
+            "rawText": "Liu CL, Layland JW (1973) Scheduling algorithms for multiprogramming in a hard-real-time environment. J ACM 20(1):46–61",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "107_CR28",
+              "doi-asserted-by": "crossref",
+              "first-page": "46",
+              "DOI": "10.1145/321738.321743",
+              "volume": "20",
+              "author": "CL Liu",
+              "year": "1973",
+              "unstructured": "Liu CL, Layland JW (1973) Scheduling algorithms for multiprogramming in a hard-real-time environment. J ACM 20(1):46–61",
+              "journal-title": "J ACM"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "title": "",
+                "authors": [
+                  "CL Liu"
+                ],
+                "year": 1973,
+                "venue": "J ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "107_CR29",
+            "rawText": "OSEK (2003) OSEX/VDX operating system specification 2.2.1. OSEK Group. www.osek-vdx.org",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR29",
+              "unstructured": "OSEK (2003) OSEX/VDX operating system specification 2.2.1. OSEK Group. www.osek-vdx.org"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR29",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "107_CR30",
+            "rawText": "Pierce BC (2002) Types and programming languages. MIT Press, Cambridge, USA",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR30",
+              "volume-title": "Types and programming languages",
+              "author": "BC Pierce",
+              "year": "2002",
+              "unstructured": "Pierce BC (2002) Types and programming languages. MIT Press, Cambridge, USA"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR30",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "BC Pierce"
+                ],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "107_CR31",
+            "rawText": "POSIX13 (1998) IEEE Std. 1003.13-1998. POSIX realtime application support (AEP). The Institute of Electrical and Electronics Engineers",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR31",
+              "unstructured": "POSIX13 (1998) IEEE Std. 1003.13-1998. POSIX realtime application support (AEP). The Institute of Electrical and Electronics Engineers"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR31",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "107_CR32",
+            "rawText": "Pouzet M (2006) Lucid synchrone, version 3. Tutorial and reference manual. Université Paris-Sud, LRI",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR32",
+              "unstructured": "Pouzet M (2006) Lucid synchrone, version 3. Tutorial and reference manual. Université Paris-Sud, LRI"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR32",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "107_CR33",
+            "rawText": "Reynolds JC (1998) Theories of programming languages. Cambridge University Press",
+            "doi": "10.1017/cbo9780511626364",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR33",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Reynolds JC (1998) Theories of programming languages. Cambridge University Press",
+              "DOI": "10.1017/CBO9780511626364"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1017/cbo9780511626364",
+                "doi": "10.1017/cbo9780511626364",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1017/cbo9780511626364"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "107_CR34",
+            "rawText": "Rivas MA, Harbour MG (2002) POSIX-compatible application-defined scheduling in MaRTE OS. In: Proceedings of the 14th Euromicro conference on real-time systems (ECRTS’02), Washington, USA, pp 67–75",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR34",
+              "unstructured": "Rivas MA, Harbour MG (2002) POSIX-compatible application-defined scheduling in MaRTE OS. In: Proceedings of the 14th Euromicro conference on real-time systems (ECRTS’02), Washington, USA, pp 67–75"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR34",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "107_CR35",
+            "rawText": "Sename O, Simon D, Ben Gaïd MEM (2008) A LPV approach to control and real-time scheduling codesign: application to a robot-arm control. In: Proceedings of the 47th IEEE conference on decision and control (CDC’08), Cancun Mexique, pp 4891–4897",
+            "doi": "10.1109/cdc.2008.4738778",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR35",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Sename O, Simon D, Ben Gaïd MEM (2008) A LPV approach to control and real-time scheduling codesign: application to a robot-arm control. In: Proceedings of the 47th IEEE conference on decision and control (CDC’08), Cancun Mexique, pp 4891–4897",
+              "DOI": "10.1109/CDC.2008.4738778"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cdc.2008.4738778",
+                "doi": "10.1109/cdc.2008.4738778",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cdc.2008.4738778"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "107_CR36",
+            "rawText": "Singhoff F, Legrand J, Nana L, Marcé L (2004) Cheddar: a flexible real time scheduling framework. Ada Lett XXIV(4):1–8",
+            "doi": "10.1145/1046191.1032298",
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "107_CR36",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1145/1046191.1032298",
+              "volume": "XXIV",
+              "author": "F Singhoff",
+              "year": "2004",
+              "unstructured": "Singhoff F, Legrand J, Nana L, Marcé L (2004) Cheddar: a flexible real time scheduling framework. Ada Lett XXIV(4):1–8",
+              "journal-title": "Ada Lett"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1046191.1032298",
+                "doi": "10.1145/1046191.1032298",
+                "title": "",
+                "authors": [
+                  "F Singhoff"
+                ],
+                "year": 2004,
+                "venue": "Ada Lett",
+                "type": "",
+                "url": "https://doi.org/10.1145/1046191.1032298"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "107_CR37",
+            "rawText": "Smarandache I, Le Guernic P (1997) A canonical form for affine relations in signal. Tech. Rep. RR-3097, INRIA",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR37",
+              "unstructured": "Smarandache I, Le Guernic P (1997) A canonical form for affine relations in signal. Tech. Rep. RR-3097, INRIA"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR37",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "107_CR38",
+            "rawText": "Sofronis C, Tripakis S, Caspi P (2006) A memory-optimal buffering protocol for preservation of synchronous semantics under preemptive scheduling. In: Proceedings of the 6th international conference on embedded software (EMSOFT’06), Seoul, South Korea, pp 21–33",
+            "doi": "10.1145/1176887.1176892",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR38",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Sofronis C, Tripakis S, Caspi P (2006) A memory-optimal buffering protocol for preservation of synchronous semantics under preemptive scheduling. In: Proceedings of the 6th international conference on embedded software (EMSOFT’06), Seoul, South Korea, pp 21–33",
+              "DOI": "10.1145/1176887.1176892"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176892",
+                "doi": "10.1145/1176887.1176892",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1176887.1176892"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "107_CR39",
+            "rawText": "The Mathworks (2009) Simulink: user’s guide. The Mathworks",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "107_CR39",
+              "unstructured": "The Mathworks (2009) Simulink: user’s guide. The Mathworks"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:107_CR39",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "107_CR40",
+            "rawText": "Tripakis S, Sofronis C, Caspi P, Curic A (2005) Translating discrete-time Simulink to Lustre. ACM Trans Embed Comput Syst 4(4):779–818",
+            "doi": "10.1145/1113830.1113834",
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "107_CR40",
+              "doi-asserted-by": "crossref",
+              "first-page": "779",
+              "DOI": "10.1145/1113830.1113834",
+              "volume": "4",
+              "author": "S Tripakis",
+              "year": "2005",
+              "unstructured": "Tripakis S, Sofronis C, Caspi P, Curic A (2005) Translating discrete-time Simulink to Lustre. ACM Trans Embed Comput Syst 4(4):779–818",
+              "journal-title": "ACM Trans Embed Comput Syst"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1113830.1113834",
+                "doi": "10.1145/1113830.1113834",
+                "title": "",
+                "authors": [
+                  "S Tripakis"
+                ],
+                "year": 2005,
+                "venue": "ACM Trans Embed Comput Syst",
+                "type": "",
+                "url": "https://doi.org/10.1145/1113830.1113834"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/s10626-011-0107-x",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 5,
+          "extractedReferenceCount": 40,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/s10626-011-0107-x",
+          "crossrefReferenceCount": 40
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/s10626-011-0107-x->doi:10.1016/0167-6423(91)90001-e@papers-LET-Pagetti2011.pdf",
+      "source": "doi:10.1007/s10626-011-0107-x",
+      "target": "doi:10.1016/0167-6423(91)90001-e",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Pagetti2011.pdf"
+    },
+    {
+      "id": "doi:10.1007/s10626-011-0107-x->doi:10.1109/5.97300@papers-LET-Pagetti2011.pdf",
+      "source": "doi:10.1007/s10626-011-0107-x",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Pagetti2011.pdf"
+    },
+    {
+      "id": "doi:10.1007/s10626-011-0107-x->doi:10.1109/jproc.2002.805825@papers-LET-Pagetti2011.pdf",
+      "source": "doi:10.1007/s10626-011-0107-x",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Pagetti2011.pdf"
+    },
+    {
+      "id": "doi:10.1007/s10626-011-0107-x->doi:10.1145/321738.321743@papers-LET-Pagetti2011.pdf",
+      "source": "doi:10.1007/s10626-011-0107-x",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Pagetti2011.pdf"
+    },
+    {
+      "id": "doi:10.1007/s10626-011-0107-x->doi:10.1145/1176887.1176892@papers-LET-Pagetti2011.pdf",
+      "source": "doi:10.1007/s10626-011-0107-x",
+      "target": "doi:10.1145/1176887.1176892",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Pagetti2011.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Pagetti2011",
+      "paperId": "doi:10.1007/s10626-011-0107-x",
+      "metadata": {
+        "fileName": "Pagetti2011.pdf",
+        "sourcePath": "papers/LET/Pagetti2011.pdf"
+      }
+    }
+  ]
+}

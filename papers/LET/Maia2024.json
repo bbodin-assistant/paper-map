@@ -1,0 +1,1009 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.497905+00:00",
+  "papers": [
+    {
+      "key": "Maia2024",
+      "paper": {
+        "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+        "citationKey": "Maia2024",
+        "title": "Reducing End-to-End Latencies of Multi-Rate Cause-Effect Chains for the LET Model",
+        "authors": [
+          "Luiz Maia",
+          "Gerhard Fohler"
+        ],
+        "year": 2024,
+        "venue": "ERTS 2024 – Embedded Real Time Systems",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://hal.science/hal-04617092",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Maia, Luiz and Fohler, Gerhard",
+          "title": "{Reducing End-to-End Latencies of Multi-Rate Cause-Effect Chains for the LET Model}",
+          "year": "2024",
+          "booktitle": "ERTS 2024 -- Embedded Real Time Systems",
+          "url": "https://hal.science/hal-04617092"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.079015+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "S. Matic and T. A. Henzinger, “Trading end-to-end latency for composability,” in 26th IEEE International Real-Time Systems Symposium (RTSS’05). IEEE, 2005, pp. 12–pp.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Matic and T. A. Henzinger, “Trading end-to-end latency for composability,” in 26th IEEE International Real-Time Systems Symposium (RTSS’05). IEEE, 2005, pp. 12–pp."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "A. Hamann, D. Dasari, S. Kramer, M. Pressler, and F. Wurst, “Communication centric design in complex automotive embedded systems,” in 29th Euromicro Conference on Real-Time Systems (ECRTS 2017). Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik, 2017.",
+            "doi": "10.4230/LIPIcs.ECRTS.2017.10",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Hamann, D. Dasari, S. Kramer, M. Pressler, and F. Wurst, “Communication centric design in complex automotive embedded systems,” in 29th Euromicro Conference on Real-Time Systems (ECRTS 2017). Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik, 2017."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2017.10",
+                "doi": "10.4230/LIPIcs.ECRTS.2017.10",
+                "arxivId": "",
+                "title": "Communication Centric Design in Complex Automotive Embedded Systems",
+                "authors": [
+                  "Arne Hamann",
+                  "Dakshina Dasari",
+                  "Simon Kramer",
+                  "Michael Pressler",
+                  "Falk Wurst"
+                ],
+                "year": 2017,
+                "venue": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2017.10"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "M. Verucchi, M. Theile, M. Caccamo, and M. Bertogna, “Latency-aware generation of single-rate dags from multi-rate task sets,” in 2020 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). IEEE, 2020, pp. 226–238.",
+            "doi": "10.1109/rtas48715.2020.000-4",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Verucchi, M. Theile, M. Caccamo, and M. Bertogna, “Latency-aware generation of single-rate dags from multi-rate task sets,” in 2020 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). IEEE, 2020, pp. 226–238."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas48715.2020.000-4",
+                "doi": "10.1109/rtas48715.2020.000-4",
+                "arxivId": "",
+                "title": "Latency-Aware Generation of Single-Rate DAGs from Multi-Rate Task Sets",
+                "authors": [
+                  "Micaela Verucchi",
+                  "Mirco Theile",
+                  "Marco Caccamo",
+                  "Marko Bertogna"
+                ],
+                "year": 2020,
+                "venue": "2020 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas48715.2020.000-4"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch, “Giotto: A timetriggered language for embedded programming,” in International Workshop on Embedded Software. Springer, 2001, pp. 166–184.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch, “Giotto: A timetriggered language for embedded programming,” in International Workshop on Embedded Software. Springer, 2001, pp. 166–184."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "J. Martinez, I. Sanudo, P. Burgio, and M. Bertogna, “End-to-end latency characterization of implicit and let communication models,” in International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), Dubrovnik, Croatia, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Martinez, I. Sanudo, P. Burgio, and M. Bertogna, “End-to-end latency characterization of implicit and let communication models,” in International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), Dubrovnik, Croatia, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "J. Martinez, I. Sa˜nudo, and M. Bertogna, “Analytical characterization of end-to-end communication delays with logical execution time,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 37, no. 11, pp. 2244–2254, 2018.",
+            "doi": "10.1109/tcad.2018.2857398",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Martinez, I. Sa˜nudo, and M. Bertogna, “Analytical characterization of end-to-end communication delays with logical execution time,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 37, no. 11, pp. 2244–2254, 2018."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/tcad.2018.2857398",
+                "doi": "10.1109/tcad.2018.2857398",
+                "arxivId": "",
+                "title": "Analytical Characterization of End-to-End Communication Delays With Logical Execution Time",
+                "authors": [
+                  "Jorge Martinez",
+                  "Ignacio Sa\\ nudo",
+                  "Marko Bertogna"
+                ],
+                "year": 2018,
+                "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1109/tcad.2018.2857398"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "C. Bradatsch, F. Kluge, and T. Ungerer, “Data age diminution in the logical execution time model,” in International conference on Architecture of computing systems. Springer, 2016, pp. 173–184.",
+            "doi": "10.1007/978-3-319-30695-7_13",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. Bradatsch, F. Kluge, and T. Ungerer, “Data age diminution in the logical execution time model,” in International conference on Architecture of computing systems. Springer, 2016, pp. 173–184."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-30695-7_13",
+                "doi": "10.1007/978-3-319-30695-7_13",
+                "arxivId": "",
+                "title": "Data Age Diminution in the Logical Execution Time Model",
+                "authors": [
+                  "Christian Bradatsch",
+                  "Florian Kluge",
+                  "Theo Ungerer"
+                ],
+                "year": 2016,
+                "venue": "Architecture of Computing Systems – ARCS 2016",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-319-30695-7_13"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "S. Kramer, D. Ziegenbein, and A. Hamann, “Real world automotive benchmarks for free,” in 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), vol. 130, 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Kramer, D. Ziegenbein, and A. Hamann, “Real world automotive benchmarks for free,” in 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), vol. 130, 2015."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:real world automotive benchmarks for free:2015",
+                "doi": "",
+                "arxivId": "",
+                "title": "Real World Automotive Benchmarks for Free",
+                "authors": [
+                  "Simon Kramer",
+                  "Dirk Ziegenbein",
+                  "Arne Hamann"
+                ],
+                "year": 2015,
+                "venue": "Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+                "type": "inproceedings",
+                "url": "https://www.ecrts.org/archives/fileadmin/WebsitesArchiv/ecrts2015/waters2015/WATERS2015.pdf"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "N. Feiertag, K. Richter, J. Nordlander, and J. Jonsson, “A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics,” in IEEE Real-Time Systems Symposium: 30/11/2009-03/12/2009. IEEE Communications Society, 2009.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "N. Feiertag, K. Richter, J. Nordlander, and J. Jonsson, “A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics,” in IEEE Real-Time Systems Symposium: 30/11/2009-03/12/2009. IEEE Communications Society, 2009."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+                "doi": "",
+                "arxivId": "",
+                "title": "A Compositional Framework for End-to-End Path Delay Calculation of Automotive Systems under Different Path Semantics",
+                "authors": [
+                  "Nico Feiertag",
+                  "Kai Richter",
+                  "Johan Nordlander",
+                  "Jan Jonsson"
+                ],
+                "year": 2009,
+                "venue": "Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS)",
+                "type": "inproceedings",
+                "url": "https://research.chalmers.se/en/publication/139048"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "M. G¨unzel, H. Teper, K.-H. Chen, G. von der Br¨uggen, and J.-J. Chen, “On the equivalence of maximum reaction time and maximum data age for cause-effect chains,” in 35th Euromicro Conference on RealTime Systems (ECRTS 2023). Schloss Dagstuhl-Leibniz-Zentrum f¨ur Informatik, 2023.",
+            "doi": "10.4230/LIPIcs.ECRTS.2023.10",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. G¨unzel, H. Teper, K.-H. Chen, G. von der Br¨uggen, and J.-J. Chen, “On the equivalence of maximum reaction time and maximum data age for cause-effect chains,” in 35th Euromicro Conference on RealTime Systems (ECRTS 2023). Schloss Dagstuhl-Leibniz-Zentrum f¨ur Informatik, 2023."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2023.10",
+                "doi": "10.4230/LIPIcs.ECRTS.2023.10",
+                "arxivId": "",
+                "title": "On the Equivalence of Maximum Reaction Time and Maximum Data Age for Cause-Effect Chains",
+                "authors": [
+                  "Mario G\\\"unzel",
+                  "Harun Teper",
+                  "Kuan-Hsun Chen",
+                  "Georg von der Br\\\"uggen",
+                  "Jian-Jia Chen"
+                ],
+                "year": 2023,
+                "venue": "35th Euromicro Conference on Real-Time Systems (ECRTS 2023)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2023.10"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "T. Klaus, F. Franzmann, M. Becker, and P. Ulbrich, “Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies,” in Proceedings of the 26th International Conference on RealTime Networks and Systems, 2018, pp. 93–103.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Klaus, F. Franzmann, M. Becker, and P. Ulbrich, “Data propagation delay constraints in multi-rate systems: Deadlines vs. job-level dependencies,” in Proceedings of the 26th International Conference on RealTime Networks and Systems, 2018, pp. 93–103."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "J. Forget, F. Boniol, and C. Pagetti, “Verifying end-to-end real-time constraints on multi-periodic models,” in 2017 22nd IEEE International Conference on Emerging Technologies and Factory Automation (ETFA). IEEE, 2017, pp. 1–8.",
+            "doi": "10.1109/etfa.2017.8247612",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Forget, F. Boniol, and C. Pagetti, “Verifying end-to-end real-time constraints on multi-periodic models,” in 2017 22nd IEEE International Conference on Emerging Technologies and Factory Automation (ETFA). IEEE, 2017, pp. 1–8."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/etfa.2017.8247612",
+                "doi": "10.1109/etfa.2017.8247612",
+                "arxivId": "",
+                "title": "Verifying end-to-end real-time constraints on multi-periodic models",
+                "authors": [
+                  "Julien Forget",
+                  "Frederic Boniol",
+                  "Claire Pagetti"
+                ],
+                "year": 2017,
+                "venue": "2017 22nd IEEE International Conference on Emerging Technologies and Factory Automation (ETFA)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/etfa.2017.8247612"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "M. Becker, D. Dasari, S. Mubeen, M. Behnam, and T. Nolte, “Synthesizing job-level dependencies for automotive multi-rate effect chains,” in 2016 IEEE 22nd International Conference on Embedded and RealTime Computing Systems and Applications (RTCSA). IEEE, 2016, pp. 159–169.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Becker, D. Dasari, S. Mubeen, M. Behnam, and T. Nolte, “Synthesizing job-level dependencies for automotive multi-rate effect chains,” in 2016 IEEE 22nd International Conference on Embedded and RealTime Computing Systems and Applications (RTCSA). IEEE, 2016, pp. 159–169."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "M. D¨urr, G. V. D. Br¨uggen, K.-H. Chen, and J.-J. Chen, “End-to-end timing analysis of sporadic cause-effect chains in distributed systems,” ACM Transactions on Embedded Computing Systems (TECS), vol. 18, no. 5s, pp. 1–24, 2019.",
+            "doi": "10.1145/3358181",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. D¨urr, G. V. D. Br¨uggen, K.-H. Chen, and J.-J. Chen, “End-to-end timing analysis of sporadic cause-effect chains in distributed systems,” ACM Transactions on Embedded Computing Systems (TECS), vol. 18, no. 5s, pp. 1–24, 2019."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/3358181",
+                "doi": "10.1145/3358181",
+                "arxivId": "",
+                "title": "End-to-End Timing Analysis of Sporadic Cause-Effect Chains in Distributed Systems",
+                "authors": [
+                  "Marco D\\\"urr",
+                  "Georg Von Der Br\\\"uggen",
+                  "Kuan-Hsun Chen",
+                  "Jian-Jia Chen"
+                ],
+                "year": 2019,
+                "venue": "ACM Transactions on Embedded Computing Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3358181"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "J. Schlatow, M. Mostl, S. Tobuschat, T. Ishigooka, and R. Ernst, “Dataage analysis and optimisation for cause-effect chains in automotive control systems,” in 2018 IEEE 13th international symposium on industrial embedded systems (SIES). IEEE, 2018, pp. 1–9.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Schlatow, M. Mostl, S. Tobuschat, T. Ishigooka, and R. Ernst, “Dataage analysis and optimisation for cause-effect chains in automotive control systems,” in 2018 IEEE 13th international symposium on industrial embedded systems (SIES). IEEE, 2018, pp. 1–9."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "M. G¨unzel, K.-H. Chen, N. Ueter, G. von der Br¨uggen, M. D¨urr, and J.-J. Chen, “Timing analysis of asynchronized distributed cause-effect chains,” in 2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS). IEEE, 2021, pp. 40–52.",
+            "doi": "10.1109/rtas52030.2021.00012",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. G¨unzel, K.-H. Chen, N. Ueter, G. von der Br¨uggen, M. D¨urr, and J.-J. Chen, “Timing analysis of asynchronized distributed cause-effect chains,” in 2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS). IEEE, 2021, pp. 40–52."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00012",
+                "doi": "10.1109/rtas52030.2021.00012",
+                "arxivId": "",
+                "title": "Timing Analysis of Asynchronized Distributed Cause-Effect Chains",
+                "authors": [
+                  "Mario Gunzel",
+                  "Kuan-Hsun Chen",
+                  "Niklas Ueter",
+                  "Georg von der Bruggen",
+                  "Marco Durr",
+                  "Jian-Jia Chen"
+                ],
+                "year": 2021,
+                "venue": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00012"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "A. Biondi, P. Pazzaglia, A. Balsini, and M. Di Natale, “Logical execution time implementation and memory optimization issues in autosar applications for multicores,” in International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Biondi, P. Pazzaglia, A. Balsini, and M. Di Natale, “Logical execution time implementation and memory optimization issues in autosar applications for multicores,” in International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "P. Pazzaglia, A. Biondi, and M. Di Natale, “Optimizing the functional deployment on multicore platforms with logical execution time,” in 2019 IEEE Real-Time Systems Symposium (RTSS). IEEE, 2019, pp. 207–219.",
+            "doi": "10.1109/rtss46320.2019.00028",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P. Pazzaglia, A. Biondi, and M. Di Natale, “Optimizing the functional deployment on multicore platforms with logical execution time,” in 2019 IEEE Real-Time Systems Symposium (RTSS). IEEE, 2019, pp. 207–219."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtss46320.2019.00028",
+                "doi": "10.1109/rtss46320.2019.00028",
+                "arxivId": "",
+                "title": "Optimizing the Functional Deployment on Multicore Platforms with Logical Execution Time",
+                "authors": [
+                  "Paolo Pazzaglia",
+                  "Alessandro Biondi",
+                  "Marco Di Natale"
+                ],
+                "year": 2019,
+                "venue": "2019 IEEE Real-Time Systems Symposium (RTSS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtss46320.2019.00028"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "T. Kloda, B. d’Ausbourg, and L. Santinelli, “Towards a more ﬂexible timing deﬁnition language,” in 12th International Workshop Quantitative Aspects of Programming Languages and Systems-at ETAPS 2014, 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Kloda, B. d’Ausbourg, and L. Santinelli, “Towards a more ﬂexible timing deﬁnition language,” in 12th International Workshop Quantitative Aspects of Programming Languages and Systems-at ETAPS 2014, 2014."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:towards a more flexible timing definition language:2014",
+                "doi": "",
+                "arxivId": "",
+                "title": "Towards a More Flexible Timing Definition Language",
+                "authors": [
+                  "Tomasz Kloda",
+                  "Bruno d'Ausbourg",
+                  "Luca Santinelli"
+                ],
+                "year": 2014,
+                "venue": "12th International Workshop on Quantitative Aspects of Programming Languages and Systems (QAPL 2014)",
+                "type": "misc",
+                "url": "https://hal.science/hal-01082730"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "W. Pree, J. Templ, P. Hintenaus, A. Naderlinger, and J. Pletzer, “Tdlsteps beyond giotto: A case for automated software construction.” Int. J. Softw. Informatics, vol. 5, no. 1-2, pp. 335–354, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Pree, J. Templ, P. Hintenaus, A. Naderlinger, and J. Pletzer, “Tdlsteps beyond giotto: A case for automated software construction.” Int. J. Softw. Informatics, vol. 5, no. 1-2, pp. 335–354, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "M. Becker, D. Dasari, S. Mubeen, M. Behnam, and T. Nolte, “Endto-end timing analysis of cause-effect chains in automotive embedded systems,” Journal of Systems Architecture, vol. 80, pp. 104–113, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Becker, D. Dasari, S. Mubeen, M. Behnam, and T. Nolte, “Endto-end timing analysis of cause-effect chains in automotive embedded systems,” Journal of Systems Architecture, vol. 80, pp. 104–113, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "A. Kordon and N. Tang, “Evaluation of the age latency of a real-time communicating system using the let paradigm,” in ECRTS 2020, vol. 165. Schloss Dagstuhl–Leibniz-Zentrum fuer Informatik, 2020.",
+            "doi": "10.4230/LIPIcs.ECRTS.2020.20",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Kordon and N. Tang, “Evaluation of the age latency of a real-time communicating system using the let paradigm,” in ECRTS 2020, vol. 165. Schloss Dagstuhl–Leibniz-Zentrum fuer Informatik, 2020."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2020.20",
+                "doi": "10.4230/LIPIcs.ECRTS.2020.20",
+                "arxivId": "",
+                "title": "Evaluation of the Age Latency of a Real-Time Communicating System Using the LET Paradigm",
+                "authors": [
+                  "Alix Munier Kordon",
+                  "Ning Tang"
+                ],
+                "year": 2020,
+                "venue": "32nd Euromicro Conference on Real-Time Systems (ECRTS 2020)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2020.20"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "J. Y.-T. Leung, Merrill, and ML, “A note on preemptive scheduling of periodic, real-time tasks,” Information processing letters, vol. 11, no. 3, pp. 115–118, 1980.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1980,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Y.-T. Leung, Merrill, and ML, “A note on preemptive scheduling of periodic, real-time tasks,” Information processing letters, vol. 11, no. 3, pp. 115–118, 1980."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:reducing end to end latencies of multi rate cause effect chains for the let model:2024:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1980,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "K.-B. Gemlau, L. K¨ohler, R. Ernst, and S. Quinton, “System-level logical execution time: Augmenting the logical execution time paradigm for distributed real-time automotive software,” ACM Transactions on CyberPhysical Systems, vol. 5, no. 2, pp. 1–27, 2021.",
+            "doi": "10.1145/3381847",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "K.-B. Gemlau, L. K¨ohler, R. Ernst, and S. Quinton, “System-level logical execution time: Augmenting the logical execution time paradigm for distributed real-time automotive software,” ACM Transactions on CyberPhysical Systems, vol. 5, no. 2, pp. 1–27, 2021."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/3381847",
+                "doi": "10.1145/3381847",
+                "arxivId": "",
+                "title": "System-level Logical Execution Time: Augmenting the Logical Execution Time Paradigm for Distributed Real-time Automotive Software",
+                "authors": [
+                  "Kai-Bj\\\"orn Gemlau",
+                  "Leonie K\\\"OHLER",
+                  "Rolf Ernst",
+                  "Sophie Quinton"
+                ],
+                "year": 2021,
+                "venue": "ACM Transactions on Cyber-Physical Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3381847"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "A. Biondi and M. Di Natale, “Achieving predictable multicore execution of automotive applications using the let paradigm,” in 2018 IEEE RealTime and Embedded Technology and Applications Symposium (RTAS). IEEE, 2018, pp. 240–250.",
+            "doi": "10.1109/rtas.2018.00032",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Biondi and M. Di Natale, “Achieving predictable multicore execution of automotive applications using the let paradigm,” in 2018 IEEE RealTime and Embedded Technology and Applications Symposium (RTAS). IEEE, 2018, pp. 240–250."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2018.00032",
+                "doi": "10.1109/rtas.2018.00032",
+                "arxivId": "",
+                "title": "Achieving Predictable Multicore Execution of Automotive Applications Using the LET Paradigm",
+                "authors": [
+                  "Alessandro Biondi",
+                  "Marco Di Natale"
+                ],
+                "year": 2018,
+                "venue": "2018 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas.2018.00032"
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 15,
+          "extractedReferenceCount": 25,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.4230/lipics.ecrts.2017.10@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.4230/lipics.ecrts.2017.10",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.1109/rtas48715.2020.000-4@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.1109/rtas48715.2020.000-4",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.1109/tcad.2018.2857398@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.1109/tcad.2018.2857398",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.1007/978-3-319-30695-7_13@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.1007/978-3-319-30695-7_13",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->title:real world automotive benchmarks for free:2015@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "title:real world automotive benchmarks for free:2015",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.4230/lipics.ecrts.2023.10@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.4230/lipics.ecrts.2023.10",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.1109/etfa.2017.8247612@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.1109/etfa.2017.8247612",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.1145/3358181@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.1145/3358181",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.1109/rtas52030.2021.00012@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.1109/rtas52030.2021.00012",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.1109/rtss46320.2019.00028@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.1109/rtss46320.2019.00028",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->title:towards a more flexible timing definition language:2014@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "title:towards a more flexible timing definition language:2014",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.4230/lipics.ecrts.2020.20@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.4230/lipics.ecrts.2020.20",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.1145/3381847@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.1145/3381847",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    },
+    {
+      "id": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024->doi:10.1109/rtas.2018.00032@papers-LET-Maia2024.pdf",
+      "source": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "target": "doi:10.1109/rtas.2018.00032",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Maia2024.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Maia2024",
+      "paperId": "title:reducing end to end latencies of multi rate cause effect chains for the let model:2024",
+      "metadata": {
+        "fileName": "Maia2024.pdf",
+        "sourcePath": "papers/LET/Maia2024.pdf"
+      }
+    }
+  ]
+}

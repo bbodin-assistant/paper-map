@@ -1,0 +1,352 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.365871+00:00",
+  "papers": [
+    {
+      "key": "Kramer2015",
+      "paper": {
+        "id": "title:real world automotive benchmarks for free:2015",
+        "citationKey": "Kramer2015",
+        "title": "Real World Automotive Benchmarks for Free",
+        "authors": [
+          "Simon Kramer",
+          "Dirk Ziegenbein",
+          "Arne Hamann"
+        ],
+        "year": 2015,
+        "venue": "Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www.ecrts.org/archives/fileadmin/WebsitesArchiv/ecrts2015/waters2015/WATERS2015.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Kramer, Simon and Ziegenbein, Dirk and Hamann, Arne",
+          "title": "{Real World Automotive Benchmarks for Free}",
+          "year": "2015",
+          "booktitle": "Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+          "url": "https://www.ecrts.org/archives/fileadmin/WebsitesArchiv/ecrts2015/waters2015/WATERS2015.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.076809+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "C. L. Liu and J. W. Layland, “Scheduling algorithms for multiprogramming in a hard real-time environment,” in Journal of the ACM, vol. 20(1), 1973, pp. 46–61.",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. L. Liu and J. W. Layland, “Scheduling algorithms for multiprogramming in a hard real-time environment,” in Journal of the ACM, vol. 20(1), 1973, pp. 46–61."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "arxivId": "",
+                "title": "Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment",
+                "authors": [
+                  "C. L. Liu",
+                  "James W. Layland"
+                ],
+                "year": 1973,
+                "venue": "Journal of the ACM",
+                "type": "article",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "J. M. L. Dertouzos, “Control robotics: the procedural control of physical processes,” in Proceedings of the IFIP Congress, 1974, pp. 807–813.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1974,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. M. L. Dertouzos, “Control robotics: the procedural control of physical processes,” in Proceedings of the IFIP Congress, 1974, pp. 807–813."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:real world automotive benchmarks for free:2015:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1974,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "L. Sha, T. Abdelzaher, K.-E. Årzén, A. Cervin, T. Baker, A. Burns, G. Buttazzo, M. Caccamo, J. Lehoczky, and A. K. Mok, “Real time scheduling theory: A historical perspective,” Real-Time Systems, vol. 28, no. 2-3, pp. 101–155, Nov. 2004.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "L. Sha, T. Abdelzaher, K.-E. Årzén, A. Cervin, T. Baker, A. Burns, G. Buttazzo, M. Caccamo, J. Lehoczky, and A. K. Mok, “Real time scheduling theory: A historical perspective,” Real-Time Systems, vol. 28, no. 2-3, pp. 101–155, Nov. 2004."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:real world automotive benchmarks for free:2015:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "J. P. Lehoczky, “Fixed priority scheduling of periodic task sets with arbitrary deadlines,” in Proceedings of IEEE Real-Time Symposium (RTSS), 1990, pp. 201–209.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. P. Lehoczky, “Fixed priority scheduling of periodic task sets with arbitrary deadlines,” in Proceedings of IEEE Real-Time Symposium (RTSS), 1990, pp. 201–209."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:real world automotive benchmarks for free:2015:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1990,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "H. Mackamul, “AMALTHEA - An Open Tool Platform for Embedded Multicore Systems”, EclipseCon Europe 2013, Ludwigsburg, Germany, Oct 2013.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Mackamul, “AMALTHEA - An Open Tool Platform for Embedded Multicore Systems”, EclipseCon Europe 2013, Ludwigsburg, Germany, Oct 2013."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:real world automotive benchmarks for free:2015:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "OSEK VDX, “Open systems and the corresponding interfaces for automotive electronics,” http://www.osek-vdx.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "OSEK VDX, “Open systems and the corresponding interfaces for automotive electronics,” http://www.osek-vdx.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:real world automotive benchmarks for free:2015:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "AUTOSAR, “Automotive Open System Architecture”, http:// www.autosar.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "AUTOSAR, “Automotive Open System Architecture”, http:// www.autosar.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:real world automotive benchmarks for free:2015:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "R.P. Dick and W. Wolf. “TGFF: Task Graphs for Free”, International Workshop on Hardware/Software Codesign (CODES/CASHE), 1998, pp. 97-101.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R.P. Dick and W. Wolf. “TGFF: Task Graphs for Free”, International Workshop on Hardware/Software Codesign (CODES/CASHE), 1998, pp. 97-101."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:real world automotive benchmarks for free:2015:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "M. Neukirchner, S. Stein, and R. Ernst. „SMFF: System Models for Free”, 2nd International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Neukirchner, S. Stein, and R. Ernst. „SMFF: System Models for Free”, 2nd International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS), 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:real world automotive benchmarks for free:2015:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 9,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:real world automotive benchmarks for free:2015->doi:10.1145/321738.321743@papers-LET-Kramer2015.pdf",
+      "source": "title:real world automotive benchmarks for free:2015",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Kramer2015.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Kramer2015",
+      "paperId": "title:real world automotive benchmarks for free:2015",
+      "metadata": {
+        "fileName": "Kramer2015.pdf",
+        "sourcePath": "papers/LET/Kramer2015.pdf"
+      }
+    }
+  ]
+}

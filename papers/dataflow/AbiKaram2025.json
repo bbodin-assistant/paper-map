@@ -1,0 +1,793 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.296408+00:00",
+  "papers": [
+    {
+      "key": "AbiKaram2025",
+      "paper": {
+        "id": "doi:10.48550/arxiv.2510.20981",
+        "citationKey": "AbiKaram2025",
+        "title": "FIFOAdvisor: A DSE Framework for Automated FIFO Sizing of High-Level Synthesis Designs",
+        "authors": [
+          "Stefan Abi-Karam",
+          "Rishov Sarkar",
+          "Suhail Basalama",
+          "Jason Cong",
+          "Callie Hao"
+        ],
+        "year": 2025,
+        "venue": "",
+        "type": "misc",
+        "doi": "10.48550/arXiv.2510.20981",
+        "arxivId": "2510.20981",
+        "url": "https://arxiv.org/abs/2510.20981",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "Preprint; reports acceptance to ASP-DAC 2026.",
+        "bibtexFields": {
+          "author": "Abi-Karam, Stefan and Sarkar, Rishov and Basalama, Suhail and Cong, Jason and Hao, Callie",
+          "title": "{FIFOAdvisor}: A {DSE} Framework for Automated {FIFO} Sizing of High-Level Synthesis Designs",
+          "year": "2025",
+          "eprint": "2510.20981",
+          "archiveprefix": "arXiv",
+          "doi": "10.48550/arXiv.2510.20981",
+          "url": "https://arxiv.org/abs/2510.20981",
+          "note": "Preprint; reports acceptance to ASP-DAC 2026."
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.149568+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "L. Guo, Y. Chi, J. Lau, L. Song, X. Tian, M. Khatti, W. Qiao, J. Wang, E. Ustun, Z. Fang, Z. Zhang, and J. Cong, “TAPA: A scalable task-parallel dataflow programming framework for modern FPGAs with co-optimization of HLS and physical design,” ACM Trans. Reconfigurable Technol. Syst., vol. 16, no. 4, pp. 63:1–63:31, Dec. 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "L. Guo, Y. Chi, J. Lau, L. Song, X. Tian, M. Khatti, W. Qiao, J. Wang, E. Ustun, Z. Fang, Z. Zhang, and J. Cong, “TAPA: A scalable task-parallel dataflow programming framework for modern FPGAs with co-optimization of HLS and physical design,” ACM Trans. Reconfigurable Technol. Syst., vol. 16, no. 4, pp. 63:1–63:31, Dec. 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "S. Abi-Karam, R. Sarkar, D. Xu, Z. Fan, Z. Wang, and C. Hao, “Inr-arch: A dataflow architecture and compiler for arbitrary-order gradient computations in implicit neural representation processing,” in 2023 IEEE/ACM International Conference on Computer Aided Design (ICCAD). IEEE, 2023, pp. 1–9.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Abi-Karam, R. Sarkar, D. Xu, Z. Fan, Z. Wang, and C. Hao, “Inr-arch: A dataflow architecture and compiler for arbitrary-order gradient computations in implicit neural representation processing,” in 2023 IEEE/ACM International Conference on Computer Aided Design (ICCAD). IEEE, 2023, pp. 1–9."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "A. Lerner and G. Alonso, “Data flow architectures for data processing on modern hardware,” in 2024 IEEE 40th International Conference on Data Engineering (ICDE). IEEE, 2024, pp. 5511–5522.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Lerner and G. Alonso, “Data flow architectures for data processing on modern hardware,” in 2024 IEEE 40th International Conference on Data Engineering (ICDE). IEEE, 2024, pp. 5511–5522."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2024,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "S. Basalama and J. Cong, “Stream-hls: Towards automatic dataflow acceleration,” in Proceedings of the 2025 ACM/SIGDA International Symposium on Field Programmable Gate Arrays, 2025, pp. 103–114.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Basalama and J. Cong, “Stream-hls: Towards automatic dataflow acceleration,” in Proceedings of the 2025 ACM/SIGDA International Symposium on Field Programmable Gate Arrays, 2025, pp. 103–114."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "T. Nowatzki, V. Gangadhar, N. Ardalani, and K. Sankaralingam, “Stream-dataflow acceleration,” in Proceedings of the 44th Annual International Symposium on Computer Architecture, 2017, pp. 416–429.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Nowatzki, V. Gangadhar, N. Ardalani, and K. Sankaralingam, “Stream-dataflow acceleration,” in Proceedings of the 44th Annual International Symposium on Computer Architecture, 2017, pp. 416–429."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "Y. Kim, S. Jadhav, and C. S. Gloster, “Dataflow to hardware synthesis framework on fpgas,” in 2016 International Symposium on Computer Architecture and High Performance Computing Workshops (SBAC-PADW). IEEE, 2016, pp. 91–96.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Y. Kim, S. Jadhav, and C. S. Gloster, “Dataflow to hardware synthesis framework on fpgas,” in 2016 International Symposium on Computer Architecture and High Performance Computing Workshops (SBAC-PADW). IEEE, 2016, pp. 91–96."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "R. Sarkar, S. Abi-Karam, Y. He, L. Sathidevi, and C. Hao, “Flowgnn: A dataflow architecture for real-time workload-agnostic graph neural network inference,” in 2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA). IEEE, 2023, pp. 1099–1112.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Sarkar, S. Abi-Karam, Y. He, L. Sathidevi, and C. Hao, “Flowgnn: A dataflow architecture for real-time workload-agnostic graph neural network inference,” in 2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA). IEEE, 2023, pp. 1099–1112."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "X. Wei, C. H. Yu, P. Zhang, Y. Chen, Y. Wang, H. Hu, Y. Liang, and J. Cong, “Automated Systolic Array Architecture Synthesis for High Throughput CNN Inference on FPGAs,” in Proceedings of the 54th Annual Design Automation Conference 2017, ser. DAC ’17. New York, NY, USA: Association for Computing Machinery, Jun. 2017, pp. 1–6.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "X. Wei, C. H. Yu, P. Zhang, Y. Chen, Y. Wang, H. Hu, Y. Liang, and J. Cong, “Automated Systolic Array Architecture Synthesis for High Throughput CNN Inference on FPGAs,” in Proceedings of the 54th Annual Design Automation Conference 2017, ser. DAC ’17. New York, NY, USA: Association for Computing Machinery, Jun. 2017, pp. 1–6."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "S. Basalama, J. Wang, and J. Cong, “A Comprehensive Automated Exploration Framework for Systolic Array Designs,” in 2023 60th ACM/IEEE Design Automation Conference (DAC), Jul. 2023, pp. 1–6.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Basalama, J. Wang, and J. Cong, “A Comprehensive Automated Exploration Framework for Systolic Array Designs,” in 2023 60th ACM/IEEE Design Automation Conference (DAC), Jul. 2023, pp. 1–6."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "S. Basalama, A. Sohrabizadeh, J. Wang, and J. Cong, “A Versatile Systolic Array for Transposed and Dilated Convolution on FPGA,” in 2022 IEEE 30th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM), May 2022, pp. 1–2.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Basalama, A. Sohrabizadeh, J. Wang, and J. Cong, “A Versatile Systolic Array for Transposed and Dilated Convolution on FPGA,” in 2022 IEEE 30th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM), May 2022, pp. 1–2."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "J. Wang and J. Cong, “Search for Optimal Systolic Arrays: A Comprehensive Automated Exploration Framework and Lessons Learned,” Nov. 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Wang and J. Cong, “Search for Optimal Systolic Arrays: A Comprehensive Automated Exploration Framework and Lessons Learned,” Nov. 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "J. Cong and J. Wang, “PolySA: Polyhedral-Based Systolic Array Auto-Compilation,” in 2018 IEEE/ACM International Conference on Computer-Aided Design (ICCAD), Nov. 2018, pp. 1–8.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Cong and J. Wang, “PolySA: Polyhedral-Based Systolic Array Auto-Compilation,” in 2018 IEEE/ACM International Conference on Computer-Aided Design (ICCAD), Nov. 2018, pp. 1–8."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "J. Wang, L. Guo, and J. Cong, “AutoSA: A Polyhedral Compiler for HighPerformance Systolic Arrays on FPGA,” in The 2021 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays, ser. FPGA ’21. New York, NY, USA: Association for Computing Machinery, Feb. 2021, pp. 93–104.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Wang, L. Guo, and J. Cong, “AutoSA: A Polyhedral Compiler for HighPerformance Systolic Arrays on FPGA,” in The 2021 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays, ser. FPGA ’21. New York, NY, USA: Association for Computing Machinery, Feb. 2021, pp. 93–104."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "Y.-H. Lai, H. Rong, S. Zheng, W. Zhang, X. Cui, Y. Jia, J. Wang, B. Sullivan, Z. Zhang, Y. Liang, Y. Zhang, J. Cong, N. George, J. Alvarez, C. Hughes, and P. Dubey, “SuSy: A programming model for productive construction of high-performance systolic arrays on FPGAs,” in Proceedings of the 39th International Conference on Computer-Aided Design, ser. ICCAD ’20. New York, NY, USA: Association for Computing Machinery, Dec. 2020, pp. 1–9.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Y.-H. Lai, H. Rong, S. Zheng, W. Zhang, X. Cui, Y. Jia, J. Wang, B. Sullivan, Z. Zhang, Y. Liang, Y. Zhang, J. Cong, N. George, J. Alvarez, C. Hughes, and P. Dubey, “SuSy: A programming model for productive construction of high-performance systolic arrays on FPGAs,” in Proceedings of the 39th International Conference on Computer-Aided Design, ser. ICCAD ’20. New York, NY, USA: Association for Computing Machinery, Dec. 2020, pp. 1–9."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "J. Cong, M. Huang, and P. Zhang, “Combining computation and communication optimizations in system synthesis for streaming applications,” in Proceedings of the 2014 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays, ser. FPGA ’14. New York, NY, USA: Association for Computing Machinery, 2014, p. 213–222. [Online]. Available: https://doi.org/10.1145/2554688.2554771",
+            "doi": "10.1145/2554688.2554771",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Cong, M. Huang, and P. Zhang, “Combining computation and communication optimizations in system synthesis for streaming applications,” in Proceedings of the 2014 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays, ser. FPGA ’14. New York, NY, USA: Association for Computing Machinery, 2014, p. 213–222. [Online]. Available: https://doi.org/10.1145/2554688.2554771"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/2554688.2554771",
+                "doi": "10.1145/2554688.2554771",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2554688.2554771"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "L. Josipovi´c, S. Sheikhha, A. Guerrieri, P. Ienne, and J. Cortadella, “Buffer placement and sizing for high-performance dataflow circuits,” ACM Trans. Reconfigurable Technol. Syst., vol. 15, no. 1, Nov. 2021. [Online]. Available: https://doi.org/10.1145/3477053",
+            "doi": "10.1145/3477053",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "L. Josipovi´c, S. Sheikhha, A. Guerrieri, P. Ienne, and J. Cortadella, “Buffer placement and sizing for high-performance dataflow circuits,” ACM Trans. Reconfigurable Technol. Syst., vol. 15, no. 1, Nov. 2021. [Online]. Available: https://doi.org/10.1145/3477053"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1145/3477053",
+                "doi": "10.1145/3477053",
+                "arxivId": "",
+                "title": "Buffer Placement and Sizing for High-Performance Dataflow Circuits",
+                "authors": [
+                  "Lana Josipovi\\'c",
+                  "Shabnam Sheikhha",
+                  "Andrea Guerrieri",
+                  "Paolo Ienne",
+                  "Jordi Cortadella"
+                ],
+                "year": 2021,
+                "venue": "ACM Transactions on Reconfigurable Technology and Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3477053"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "S. Ha and H. Oh, “Decidable signal processing dataflow graphs,” in Handbook of Signal Processing Systems, S. S. Bhattacharyya, E. F. Deprettere, R. Leupers, and J. Takala, Eds. Cham: Springer International Publishing, 2019, pp. 907–937.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Ha and H. Oh, “Decidable signal processing dataflow graphs,” in Handbook of Signal Processing Systems, S. S. Bhattacharyya, E. F. Deprettere, R. Leupers, and J. Takala, Eds. Cham: Springer International Publishing, 2019, pp. 907–937."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "S. Basalama and J. Cong, “Stream-HLS: Towards automatic dataflow acceleration,” in Proceedings of the 2025 ACM/SIGDA International Symposium on Field Programmable Gate Arrays, ser. FPGA ’25. New York, NY, USA: Association for Computing Machinery, Feb. 2025, pp. 103–114.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Basalama and J. Cong, “Stream-HLS: Towards automatic dataflow acceleration,” in Proceedings of the 2025 ACM/SIGDA International Symposium on Field Programmable Gate Arrays, ser. FPGA ’25. New York, NY, USA: Association for Computing Machinery, Feb. 2025, pp. 103–114."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "R. Sarkar and C. Hao, “LightningSim: Fast and accurate trace-based simulation for high-level synthesis,” in 2023 IEEE 31st Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). Marina Del Rey, CA, USA: IEEE, May 2023, pp. 1–11.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Sarkar and C. Hao, “LightningSim: Fast and accurate trace-based simulation for high-level synthesis,” in 2023 IEEE 31st Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). Marina Del Rey, CA, USA: IEEE, May 2023, pp. 1–11."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "J. Zhao, L. Feng, S. Sinha, W. Zhang, Y. Liang, and B. He, “COMBA: a comprehensive model-based analysis framework for high level synthesis of real applications,” in 2017 IEEE/ACM International Conference on Computer-Aided Design (ICCAD). Irvine, CA: IEEE, Nov. 2017, pp. 430–437. [Online]. Available: http://ieeexplore.ieee.org/document/8203809/",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Zhao, L. Feng, S. Sinha, W. Zhang, Y. Liang, and B. He, “COMBA: a comprehensive model-based analysis framework for high level synthesis of real applications,” in 2017 IEEE/ACM International Conference on Computer-Aided Design (ICCAD). Irvine, CA: IEEE, Nov. 2017, pp. 430–437. [Online]. Available: http://ieeexplore.ieee.org/document/8203809/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "A. Honorat, M. Dardaillon, H. Miomandre, and J.-F. Nezan, “Automated buffer sizing of dataflow applications in a high-level synthesis workflow,” ACM Transactions on Reconfigurable Technology and Systems, vol. 17, no. 1, pp. 1–26, Mar. 2024.",
+            "doi": "10.1145/3626103",
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Honorat, M. Dardaillon, H. Miomandre, and J.-F. Nezan, “Automated buffer sizing of dataflow applications in a high-level synthesis workflow,” ACM Transactions on Reconfigurable Technology and Systems, vol. 17, no. 1, pp. 1–26, Mar. 2024."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/3626103",
+                "doi": "10.1145/3626103",
+                "arxivId": "",
+                "title": "Automated Buffer Sizing of Dataflow Applications in a High-Level Synthesis Workflow",
+                "authors": [
+                  "Alexandre Honorat",
+                  "Micka\\\"el Dardaillon",
+                  "Hugo Miomandre",
+                  "Jean-Francois Nezan"
+                ],
+                "year": 2024,
+                "venue": "ACM Transactions on Reconfigurable Technology and Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3626103"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "S. Abi-Karam, R. Sarkar, D. Xu, Z. Fan, Z. Wang, and C. Hao, “INR-Arch: A dataflow architecture and compiler for arbitrary-order gradient computations in implicit neural representation processing,” in Proceedings of the 42nd IEEE/ACM International Conference on Computer-Aided Design, ser. ICCAD ’23. San Francisco, CA, USA: Association for Computing Machinery, Nov. 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Abi-Karam, R. Sarkar, D. Xu, Z. Fan, Z. Wang, and C. Hao, “INR-Arch: A dataflow architecture and compiler for arbitrary-order gradient computations in implicit neural representation processing,” in Proceedings of the 42nd IEEE/ACM International Conference on Computer-Aided Design, ser. ICCAD ’23. San Francisco, CA, USA: Association for Computing Machinery, Nov. 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "R. Sarkar, R. Paul, and C. Hao, “LightningSimV2: Faster and scalable simulation for high-level synthesis via graph compilation and optimization,” in 2024 IEEE 32nd Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). Orlando, FL, USA: IEEE, May 2024, pp. 104–114.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Sarkar, R. Paul, and C. Hao, “LightningSimV2: Faster and scalable simulation for high-level synthesis via graph compilation and optimization,” in 2024 IEEE 32nd Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM). Orlando, FL, USA: IEEE, May 2024, pp. 104–114."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2510.20981:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2024,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 23,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.48550/arxiv.2510.20981->doi:10.1145/3477053@papers-dataflow-AbiKaram2025.pdf",
+      "source": "doi:10.48550/arxiv.2510.20981",
+      "target": "doi:10.1145/3477053",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/dataflow/AbiKaram2025.pdf"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2510.20981->doi:10.1145/3626103@papers-dataflow-AbiKaram2025.pdf",
+      "source": "doi:10.48550/arxiv.2510.20981",
+      "target": "doi:10.1145/3626103",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/dataflow/AbiKaram2025.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "AbiKaram2025",
+      "paperId": "doi:10.48550/arxiv.2510.20981",
+      "metadata": {
+        "fileName": "AbiKaram2025.pdf",
+        "sourcePath": "papers/dataflow/AbiKaram2025.pdf"
+      }
+    }
+  ]
+}

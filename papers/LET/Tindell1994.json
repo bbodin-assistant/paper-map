@@ -1,0 +1,1011 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.725329+00:00",
+  "papers": [
+    {
+      "key": "Tindell1994",
+      "paper": {
+        "id": "title:adding time offsets to schedulability analysis:1994",
+        "citationKey": "Tindell1994",
+        "title": "Adding Time-Offsets to Schedulability Analysis",
+        "authors": [
+          "Ken Tindell"
+        ],
+        "year": 1994,
+        "venue": "",
+        "type": "techreport",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www.cs.york.ac.uk/rts/static/papers/R:Ken:1994.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Tindell, Ken",
+          "title": "{Adding Time-Offsets to Schedulability Analysis}",
+          "year": "1994",
+          "institution": "Department of Computer Science, University of York",
+          "number": "YCS 221",
+          "url": "https://www.cs.york.ac.uk/rts/static/papers/R:Ken:1994.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.087565+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "21",
+            "rawText": ", except that tasks are grouped as transactions and have offset relationships. Tasks are assumed to be scheduled with a tick scheduler where Ttick is 1ms, CQL is 74µs, CQS is 54µs, and Ctick is 40µs. Transaction trans2 is a sporadic transaction (i.e. arrives sporadically) and all member tasks thus inherit a release jitter of Ttick. All other transactions are periodic with periods that are multiples of Ttick and thus have no release jitter. The table below shows the transactions in the system, and attributes of the member tasks: transaction T task e C O J D trans1 193000 task1 1 3000 0 0 5000 trans2 23000 task2 1 700 0 1000 5000 task3 2 1400 12000 1000 12000 trans3 39000 task4 1 1000 0 0 40000 trans4 49000 task5 2 3000 0 0 50000 task6 1 5000 25000 0 50000 trans5 59000 task7 2 8000 0 0 59000 trans6 71000 task8 1 9000 40000 0 80000 task9 2 2000 0 0 100000 trans7 93000 task10 1 5000 0 0 115000 trans8 130000 task11 1 1000 0 0 200000 task12 2 3000 50000 0 200000 task13 3 1000 100000 0 200000 task14 2 1000 110000 0 200000 task15 1 3000 129000 0 200000 trans9 970000 task16 1 1000 0 0 1000000 task17 2 1000 500000 0 1000000 The semaphore locking pattern of the tasks is shown in the table below. From this information the blocking factor Bi for each task i can be found: 17 time held sem2 task9 300 sem4 task9 300 sem1 task9 900 sem2 task15 1350 sem3 task10 400 sem3 task6 400 sem4 task3 100 sem5 task11 750 sem5 task15 750 semaphore locking locked task The following table gives the priority ordering of the tasks (the highest priority task is listed first), and the computed worst-case response time according to equation 5. Further, the worst-case response time according to the earlier analysis of Tindell",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ", except that tasks are grouped as transactions and have offset relationships. Tasks are assumed to be scheduled with a tick scheduler where Ttick is 1ms, CQL is 74µs, CQS is 54µs, and Ctick is 40µs. Transaction trans2 is a sporadic transaction (i.e. arrives sporadically) and all member tasks thus inherit a release jitter of Ttick. All other transactions are periodic with periods that are multiples of Ttick and thus have no release jitter. The table below shows the transactions in the system, and attributes of the member tasks: transaction T task e C O J D trans1 193000 task1 1 3000 0 0 5000 trans2 23000 task2 1 700 0 1000 5000 task3 2 1400 12000 1000 12000 trans3 39000 task4 1 1000 0 0 40000 trans4 49000 task5 2 3000 0 0 50000 task6 1 5000 25000 0 50000 trans5 59000 task7 2 8000 0 0 59000 trans6 71000 task8 1 9000 40000 0 80000 task9 2 2000 0 0 100000 trans7 93000 task10 1 5000 0 0 115000 trans8 130000 task11 1 1000 0 0 200000 task12 2 3000 50000 0 200000 task13 3 1000 100000 0 200000 task14 2 1000 110000 0 200000 task15 1 3000 129000 0 200000 trans9 970000 task16 1 1000 0 0 1000000 task17 2 1000 500000 0 1000000 The semaphore locking pattern of the tasks is shown in the table below. From this information the blocking factor Bi for each task i can be found: 17 time held sem2 task9 300 sem4 task9 300 sem1 task9 900 sem2 task15 1350 sem3 task10 400 sem3 task6 400 sem4 task3 100 sem5 task11 750 sem5 task15 750 semaphore locking locked task The following table gives the priority ordering of the tasks (the highest priority task is listed first), and the computed worst-case response time according to equation 5. Further, the worst-case response time according to the earlier analysis of Tindell"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "21",
+            "rawText": "is also presented (in the column headed r(old)); this earlier analysis takes no account of offset information. Finally, the blocking time, B, of each task is computed and shown in the table. transaction task B D r r(old) trans2 task2 0 5000 2360 2738 trans1 task1 0 5000 4540 4918 trans9 task17 0 1000000 5600 5978 task16 0 1000000 5600 7098 trans2 task3 300 12000 7660 9858 trans8 task15 750 200000 11144 12548 task14 750 200000 8176 13608 task13 750 200000 8176 14668 task12 750 200000 11070 17828 task11 300 200000 10694 18418 trans7 task10 400 115000 16994 24532 trans6 task9 400 100000 19114 26612 task8 400 80000 28396 35972 trans4 task6 0 50000 36464 40846 trans3 task4 0 40000 37505 41886 trans4 task5 0 50000 41738 48414 trans5 task7 0 59000 58666 62048 Notice how some tasks (e.g. task13 and task14) have identical worst-case response times. This is because they cause no computational interference on each other (due to offsets being sufficiently large) and they have adjacent priorities. Note also how much better the worst-case response times are when offset information is taken into account. 18 Appendix D describes the program used to compute the results shown here. The observant reader will notice how task 11 cannot block task 15 because of the offset values, and therefore there is no need to guard with a semaphore (sem5 in the above example) resources shared exclusively between these tasks. We now address this point in more detail. 8. EXCLUSION AND PRECEDENCE CONSTRAINTS Transaction start re-arrival Task A (higher) Tt Task B (lower) rB OB Figure 3: tasks A and B execute in exclusion 19 Xu and Parnas",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "is also presented (in the column headed r(old)); this earlier analysis takes no account of offset information. Finally, the blocking time, B, of each task is computed and shown in the table. transaction task B D r r(old) trans2 task2 0 5000 2360 2738 trans1 task1 0 5000 4540 4918 trans9 task17 0 1000000 5600 5978 task16 0 1000000 5600 7098 trans2 task3 300 12000 7660 9858 trans8 task15 750 200000 11144 12548 task14 750 200000 8176 13608 task13 750 200000 8176 14668 task12 750 200000 11070 17828 task11 300 200000 10694 18418 trans7 task10 400 115000 16994 24532 trans6 task9 400 100000 19114 26612 task8 400 80000 28396 35972 trans4 task6 0 50000 36464 40846 trans3 task4 0 40000 37505 41886 trans4 task5 0 50000 41738 48414 trans5 task7 0 59000 58666 62048 Notice how some tasks (e.g. task13 and task14) have identical worst-case response times. This is because they cause no computational interference on each other (due to offsets being sufficiently large) and they have adjacent priorities. Note also how much better the worst-case response times are when offset information is taken into account. 18 Appendix D describes the program used to compute the results shown here. The observant reader will notice how task 11 cannot block task 15 because of the offset values, and therefore there is no need to guard with a semaphore (sem5 in the above example) resources shared exclusively between these tasks. We now address this point in more detail. 8. EXCLUSION AND PRECEDENCE CONSTRAINTS Transaction start re-arrival Task A (higher) Tt Task B (lower) rB OB Figure 3: tasks A and B execute in exclusion 19 Xu and Parnas"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "24",
+            "rawText": "identify the exclusion constraint problem as one to be addressed by any scheduling approach. This constraint prohibits any two tasks that operate under an exclusion constraint being active concurrently (i.e. neither task can be permitted to preempt the other), and is used as a means of concurrency control for access to shared resources when building a static cyclic scheduling. With a fixed priority approach exclusion constraints can be achieved by guarding access with semaphores locked according to the priority ceiling protocol. However, if it can be shown that two tasks execute in exclusion then any resources shared exclusively between these tasks need not be guarded by semaphores — the tasks are guaranteed never to access the shared resource concurrently. Of more use in fixed priority systems is a different form of exclusion constraint between a pair of tasks — the precedence constraint: one of them must complete execution before the other can be permitted to commence. The above two constraints for any pair of tasks which are members of the same transaction can be met by using time offsets and the behaviour of the priority scheduling mechanism. We first address exclusion constraints. Consider figure 3. JA OA JA OA release windows Transaction JB Figure 3 shows the release window for task A and the active window for task B. The release window is the window in time in which task A can be released. The active window for task B is the time during which task B may be executing. Clearly, if these two windows do not overlap then task B can never be pre-empted by task A and therefore tasks A and B would always execute in exclusion. Now, in general task A can arrive in any one of the transaction arrivals, as depicted in figure 3 by multiple release windows for task A (although task A cannot then re-arrive until a further eA transaction arrivals later). From the figure it can thus be seen that the two windows can never overlap if: O J O O r O T A A B B B A t + ≤ ∧ + < + (25) where Tt is the period of transaction t (of which both tasks A and B are members). Another common scheduling constraint is the precedence constraint. With this constraint we say that for two tasks C and D that are members of the same transaction, task C must complete before task D is run. We have two priority situations: task C is of higher priority, or task D is of higher priority. In the first case we can use a similar argument to that used for the exclusion constraint: task D (of lower priority) will not execute if task C has been released before task D and has remaining computation. From this it can be seen that the condition for the precedence constraint to be met is (from equation 25) : O J O C C D + ≤ (26) Note that we have dropped the second part of equation 25, since it does not matter if task D is pre-empted by a subsequent invocation of task C 4. In the second case, where task D is of higher priority, we cannot use the priority mechanism to ensure precedence, and must rely on offsets. Therefore, for the precedence relation to hold, the latest finish time of task C must be before the earliest release time of task D, i.e.: O r O C C D + < (27) Hence we have derived conditions for both exclusion and precedence constraints. We can now return to our example task set to illustrate the meeting of these constraints: the following table lists the precedence and exclusion constraints placed upon tasks, including the results of applying the analysis of equations 25, 26, and 27. 4Here we choose to interpret precedence constraints to hold only between tasks that are running as part of the same transaction invocation; different semantics mihght, however, be attached to precedence. 20 constraint result task2 precedes task3 ü exclusion between task8 and task9 ü As can be seen, the constraints are met. 9. TRANSACTIONS AND STATIC CYCLIC SCHEDULING So far we have shown how transactions of tasks with time offset relationships can be analysed: the worst-case response time of any given task can be bounded, and precedence and exclusion constraints can be checked. We now discuss some of the ramifications of this analysis. Unrelated strictly periodic tasks sharing the same period can be incorporated into a single periodic transaction, with offsets between the tasks. Tasks with similar, but different, periods can be transformed into tasks sharing the same period by choosing a common period that is smaller than the original periods. Tasks with periods which are exact divisors of a given transaction period can also be incorporated into the transaction by adding multiple instances of the same task with offsets between them. The offset approach is more general than this, however, since it allows any instance to have different attributes (e.g. priority). This generality can be used to increase the schedulability (for example, if just one instance of a task were unschedulable the priority of just that instance could be increased). The above description of constructing transactions will be familiar: it is exactly the procedure that is adopted in finding static cyclic schedules. We can take this further and argue that any system that can be feasibly scheduled using a static cyclic scheduling approach can also be feasibly scheduled using fixed priority scheduling and offsets. This section applies the analysis of this report to the problem task sets discussed by Xu and Parnas",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "identify the exclusion constraint problem as one to be addressed by any scheduling approach. This constraint prohibits any two tasks that operate under an exclusion constraint being active concurrently (i.e. neither task can be permitted to preempt the other), and is used as a means of concurrency control for access to shared resources when building a static cyclic scheduling. With a fixed priority approach exclusion constraints can be achieved by guarding access with semaphores locked according to the priority ceiling protocol. However, if it can be shown that two tasks execute in exclusion then any resources shared exclusively between these tasks need not be guarded by semaphores — the tasks are guaranteed never to access the shared resource concurrently. Of more use in fixed priority systems is a different form of exclusion constraint between a pair of tasks — the precedence constraint: one of them must complete execution before the other can be permitted to commence. The above two constraints for any pair of tasks which are members of the same transaction can be met by using time offsets and the behaviour of the priority scheduling mechanism. We first address exclusion constraints. Consider figure 3. JA OA JA OA release windows Transaction JB Figure 3 shows the release window for task A and the active window for task B. The release window is the window in time in which task A can be released. The active window for task B is the time during which task B may be executing. Clearly, if these two windows do not overlap then task B can never be pre-empted by task A and therefore tasks A and B would always execute in exclusion. Now, in general task A can arrive in any one of the transaction arrivals, as depicted in figure 3 by multiple release windows for task A (although task A cannot then re-arrive until a further eA transaction arrivals later). From the figure it can thus be seen that the two windows can never overlap if: O J O O r O T A A B B B A t + ≤ ∧ + < + (25) where Tt is the period of transaction t (of which both tasks A and B are members). Another common scheduling constraint is the precedence constraint. With this constraint we say that for two tasks C and D that are members of the same transaction, task C must complete before task D is run. We have two priority situations: task C is of higher priority, or task D is of higher priority. In the first case we can use a similar argument to that used for the exclusion constraint: task D (of lower priority) will not execute if task C has been released before task D and has remaining computation. From this it can be seen that the condition for the precedence constraint to be met is (from equation 25) : O J O C C D + ≤ (26) Note that we have dropped the second part of equation 25, since it does not matter if task D is pre-empted by a subsequent invocation of task C 4. In the second case, where task D is of higher priority, we cannot use the priority mechanism to ensure precedence, and must rely on offsets. Therefore, for the precedence relation to hold, the latest finish time of task C must be before the earliest release time of task D, i.e.: O r O C C D + < (27) Hence we have derived conditions for both exclusion and precedence constraints. We can now return to our example task set to illustrate the meeting of these constraints: the following table lists the precedence and exclusion constraints placed upon tasks, including the results of applying the analysis of equations 25, 26, and 27. 4Here we choose to interpret precedence constraints to hold only between tasks that are running as part of the same transaction invocation; different semantics mihght, however, be attached to precedence. 20 constraint result task2 precedes task3 ü exclusion between task8 and task9 ü As can be seen, the constraints are met. 9. TRANSACTIONS AND STATIC CYCLIC SCHEDULING So far we have shown how transactions of tasks with time offset relationships can be analysed: the worst-case response time of any given task can be bounded, and precedence and exclusion constraints can be checked. We now discuss some of the ramifications of this analysis. Unrelated strictly periodic tasks sharing the same period can be incorporated into a single periodic transaction, with offsets between the tasks. Tasks with similar, but different, periods can be transformed into tasks sharing the same period by choosing a common period that is smaller than the original periods. Tasks with periods which are exact divisors of a given transaction period can also be incorporated into the transaction by adding multiple instances of the same task with offsets between them. The offset approach is more general than this, however, since it allows any instance to have different attributes (e.g. priority). This generality can be used to increase the schedulability (for example, if just one instance of a task were unschedulable the priority of just that instance could be increased). The above description of constructing transactions will be familiar: it is exactly the procedure that is adopted in finding static cyclic schedules. We can take this further and argue that any system that can be feasibly scheduled using a static cyclic scheduling approach can also be feasibly scheduled using fixed priority scheduling and offsets. This section applies the analysis of this report to the problem task sets discussed by Xu and Parnas"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "24",
+            "rawText": "(example 1), and Audsley",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "(example 1), and Audsley"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "2",
+            "rawText": "(example 2). EXAMPLE 1 In this example we take the task set given by Xu and Parnas and apply the analysis of this report. The problem is an interesting one for several reasons. Firstly, it has precedence and exclusion constraints, as described earlier. Secondly, all tasks are of the same period, and can be incorporated into a single transaction — for a single transaction the tractable offset analysis is equivalent to the exact offset analysis, and thus the results are exact. Thirdly, Xu and Parnas use the example to assert that no fixed priority scheduling approach can schedule such a system, because of the ‘inserted idle time’ problem: “Static priority-driven schemes are only capable of producing a very limited subset of the possible schedules for a given set of processes. This severely restricts the capability 21 of priority-driven schemes to satisfy timing and resource sharing constraints at runtime” They go on to say: “An example is shown where it is assumed that process segment B is not allowed to preempt process segment A. The timing constraints then require that the processor must be left idle between time 0 and 11, even though A’s release time is 0; if A starts it would cause B to miss its deadline. Note that in this example, some segments are preemptable, bit others are not. In most real situations, there will be process segments that cannot be pre-empted because a critical sectio has been enetered. Thus this example illustrates a very common situation. Neither static nor ‘dynamic’ priority-driven schemes can deal properly with such situations.” The following table gives the task set and the timing requirements, using the notation of Xu and Parnas: d r C A 161 0 30 B 51 11 30 C 90 60 30 D 100 41 10 E 140 90 50 where d is the deadline of the task, relative to the start of the transaction, r is the minimum release time of the task, relative to the start of the transaction, and C is the worst-case execution time of the task. All tasks are periodic with period 161. There are three precedence and exclusion constraints on the task set: 1. Task B must finish before task D starts executing 2. Task A cannot be pre-empted by task D (and vice versa) 3. Task A cannot be pre-empted by task B (and vice versa) We can transform the above task set into a form that the tractable offset analysis can be applied to: D O C pri A 110 51 30 5 B 40 11 30 1 C 30 60 30 3 D 59 41 10 2 E 50 90 50 4 22 All the tasks are members of a single transaction of period 161. The deadline of a task is obtained from the value of d in the earlier table by subtracting the offset value. The priority ordering given can be found using the optimal priority ordering algorithm of Audsley",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "(example 2). EXAMPLE 1 In this example we take the task set given by Xu and Parnas and apply the analysis of this report. The problem is an interesting one for several reasons. Firstly, it has precedence and exclusion constraints, as described earlier. Secondly, all tasks are of the same period, and can be incorporated into a single transaction — for a single transaction the tractable offset analysis is equivalent to the exact offset analysis, and thus the results are exact. Thirdly, Xu and Parnas use the example to assert that no fixed priority scheduling approach can schedule such a system, because of the ‘inserted idle time’ problem: “Static priority-driven schemes are only capable of producing a very limited subset of the possible schedules for a given set of processes. This severely restricts the capability 21 of priority-driven schemes to satisfy timing and resource sharing constraints at runtime” They go on to say: “An example is shown where it is assumed that process segment B is not allowed to preempt process segment A. The timing constraints then require that the processor must be left idle between time 0 and 11, even though A’s release time is 0; if A starts it would cause B to miss its deadline. Note that in this example, some segments are preemptable, bit others are not. In most real situations, there will be process segments that cannot be pre-empted because a critical sectio has been enetered. Thus this example illustrates a very common situation. Neither static nor ‘dynamic’ priority-driven schemes can deal properly with such situations.” The following table gives the task set and the timing requirements, using the notation of Xu and Parnas: d r C A 161 0 30 B 51 11 30 C 90 60 30 D 100 41 10 E 140 90 50 where d is the deadline of the task, relative to the start of the transaction, r is the minimum release time of the task, relative to the start of the transaction, and C is the worst-case execution time of the task. All tasks are periodic with period 161. There are three precedence and exclusion constraints on the task set: 1. Task B must finish before task D starts executing 2. Task A cannot be pre-empted by task D (and vice versa) 3. Task A cannot be pre-empted by task B (and vice versa) We can transform the above task set into a form that the tractable offset analysis can be applied to: D O C pri A 110 51 30 5 B 40 11 30 1 C 30 60 30 3 D 59 41 10 2 E 50 90 50 4 22 All the tasks are members of a single transaction of period 161. The deadline of a task is obtained from the value of d in the earlier table by subtracting the offset value. The priority ordering given can be found using the optimal priority ordering algorithm of Audsley"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "2",
+            "rawText": ". Furthermore, all tasks have a release jitter and a blocking factor of zero. Note that the offset value for task A (OA = 51) is obtained from the schedule constructed by Xu and Parnas instead of from the specification of the original task set. Applying the tractable offset analysis to the above transaction we get the following results: D O r r' pri A 110 51 110 150 5 B 40 11 30 30 1 C 30 60 30 70 3 D 59 41 10 40 2 E 50 90 50 120 4 The column marked r' is the result of applying the simple analysis of Tindell et al",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". Furthermore, all tasks have a release jitter and a blocking factor of zero. Note that the offset value for task A (OA = 51) is obtained from the schedule constructed by Xu and Parnas instead of from the specification of the original task set. Applying the tractable offset analysis to the above transaction we get the following results: D O r r' pri A 110 51 110 150 5 B 40 11 30 30 1 C 30 60 30 70 3 D 59 41 10 40 2 E 50 90 50 120 4 The column marked r' is the result of applying the simple analysis of Tindell et al"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "21",
+            "rawText": "; we can see how pessimistic the simple analysis is, since it fails to guarantee the timing constraints of the task set, whereas the offset analysis clearly succeeds. Finally, we simply state the precedence and exclusion constraints are met (i.e. the conditions for precedence and exclusion given earlier are met). Figure 4 is a STRESS",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "; we can see how pessimistic the simple analysis is, since it fails to guarantee the timing constraints of the task set, whereas the offset analysis clearly succeeds. Finally, we simply state the precedence and exclusion constraints are met (i.e. the conditions for precedence and exclusion given earlier are met). Figure 4 is a STRESS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "3",
+            "rawText": "diagram showing the results of simulating the execution of this task set for 161 time ticks. 23 A B C D E idle 0 50 100 150 Figure 4: A single invocation of the five-task transaction Clearly from the simulation results the task set is schedulable and the precedence and exclusion constraints met. Notice how there is inserted idle time for the first 11 ticks. EXAMPLE 2 In this example we take the task set given by Audsley",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "diagram showing the results of simulating the execution of this task set for 161 time ticks. 23 A B C D E idle 0 50 100 150 Figure 4: A single invocation of the five-task transaction Clearly from the simulation results the task set is schedulable and the precedence and exclusion constraints met. Notice how there is inserted idle time for the first 11 ticks. EXAMPLE 2 In this example we take the task set given by Audsley"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "2",
+            "rawText": "and apply the analysis. This task set is interesting because it illustrates the technique of merging tasks with different periods into the same transaction. The following table details the task set: 24 task O C D T pri A 4 1 1 10 1 B 5 1 2 10 4 C 0 5 6 20 2 D 7 8 9 40 3 E 27 8 14 40 6 F 0 6 30 40 5 The priority ordering (where smaller numbers indicate higher priorities) can be found using the optimal priority ordering algorithm. We can create three transactions, of periods 10, 20, and 40, and place each task in the transaction sharing the period of the task. This gives the following results: task r D A 1 1 B 15 2 C 6 6 D 15 9 E 40 14 F 30 30 As can be seen, most tasks miss their deadlines with this approach. Instead of three transactions, we can create a single transaction of period 40, and incorporate other tasks of shorter period into this transaction. Tasks with period 10 are given four instances in the transaction; tasks with period 20 are given two, etc. The following table shows the results: task O r D A 4 1 1 14 1 24 1 34 1 B 5 2 2 15 2 25 2 35 1 C 0 6 6 20 6 D 7 9 9 E 27 13 14 F 0 30 30 25 There are four instances of tasks A and B, and two of task C. As can be seen from the table, all tasks are schedulable. Figure 5 illustrates the execution of two invocations of the above transaction. task_a task_c task_d task_b task_f task_e idle 0 20 40 60 Figure 5: A STRESS diagram illustrating the execution of the example transaction 10.DISCUSSION AND CONCLUSIONS We have derived a piece of analysis that can be feasibly evaluated for sensible task sets, and applied it to an example task set. In this section we discuss how this analysis provides the foundation for future work addressing other real-time problems. 26 One of the uses of offsets is the reduction of pessimism in the original arbitrary deadline analysis. This is achieved by ‘spreading out’ the computation of tasks so that all the tasks are not released together. This has been illustrated in the three examples given earlier. Further, the ability to schedule any task set schedulable by static means has been demonstrated Thus, if for no other reason, offsets are useful in increasing the schedulability of a given task set. However, the main motivation for offsets has been to permit the direct expression of certain timing constraints. Although this report has not directly addressed the issue of distributed systems, we firmly believe that offsets provide the means of scheduling distributed systems, member tasks of a transaction can be located on different processors, with message passing between such tasks. The use of offsets can reduce input and output jitter, which may have dramatic impact on schedulability. We have provided analysis to determine if precedence and exclusion constraints hold. Further, as has been illustrated, time offsets can be used to reduce input and output jitter. This latter reduction is very important when building distributed transactions. 11.REFERENCES",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "and apply the analysis. This task set is interesting because it illustrates the technique of merging tasks with different periods into the same transaction. The following table details the task set: 24 task O C D T pri A 4 1 1 10 1 B 5 1 2 10 4 C 0 5 6 20 2 D 7 8 9 40 3 E 27 8 14 40 6 F 0 6 30 40 5 The priority ordering (where smaller numbers indicate higher priorities) can be found using the optimal priority ordering algorithm. We can create three transactions, of periods 10, 20, and 40, and place each task in the transaction sharing the period of the task. This gives the following results: task r D A 1 1 B 15 2 C 6 6 D 15 9 E 40 14 F 30 30 As can be seen, most tasks miss their deadlines with this approach. Instead of three transactions, we can create a single transaction of period 40, and incorporate other tasks of shorter period into this transaction. Tasks with period 10 are given four instances in the transaction; tasks with period 20 are given two, etc. The following table shows the results: task O r D A 4 1 1 14 1 24 1 34 1 B 5 2 2 15 2 25 2 35 1 C 0 6 6 20 6 D 7 9 9 E 27 13 14 F 0 30 30 25 There are four instances of tasks A and B, and two of task C. As can be seen from the table, all tasks are schedulable. Figure 5 illustrates the execution of two invocations of the above transaction. task_a task_c task_d task_b task_f task_e idle 0 20 40 60 Figure 5: A STRESS diagram illustrating the execution of the example transaction 10.DISCUSSION AND CONCLUSIONS We have derived a piece of analysis that can be feasibly evaluated for sensible task sets, and applied it to an example task set. In this section we discuss how this analysis provides the foundation for future work addressing other real-time problems. 26 One of the uses of offsets is the reduction of pessimism in the original arbitrary deadline analysis. This is achieved by ‘spreading out’ the computation of tasks so that all the tasks are not released together. This has been illustrated in the three examples given earlier. Further, the ability to schedule any task set schedulable by static means has been demonstrated Thus, if for no other reason, offsets are useful in increasing the schedulability of a given task set. However, the main motivation for offsets has been to permit the direct expression of certain timing constraints. Although this report has not directly addressed the issue of distributed systems, we firmly believe that offsets provide the means of scheduling distributed systems, member tasks of a transaction can be located on different processors, with message passing between such tasks. The use of offsets can reduce input and output jitter, which may have dramatic impact on schedulability. We have provided analysis to determine if precedence and exclusion constraints hold. Further, as has been illustrated, time offsets can be used to reduce input and output jitter. This latter reduction is very important when building distributed transactions. 11.REFERENCES"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "1",
+            "rawText": "Audsley, N. C., “Flexible Scheduling of Hard Real-Time Systems,” DPhil. Thesis, Dept. Computer Science, University of York, UK. (August 1993).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Audsley, N. C., “Flexible Scheduling of Hard Real-Time Systems,” DPhil. Thesis, Dept. Computer Science, University of York, UK. (August 1993)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "2",
+            "rawText": "Audsley, N. C., “Optimal Priority Assignment and Feasibility of Static Priority Tasks With Arbitrary Start Times,” YCS164, Dept. Computer Science, University of York (1991).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Audsley, N. C., “Optimal Priority Assignment and Feasibility of Static Priority Tasks With Arbitrary Start Times,” YCS164, Dept. Computer Science, University of York (1991)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "3",
+            "rawText": "Audsley, N. C., Burns, A., Richardson, M. F., and Wellings, A. J., “STRESS: A Simulator For Hard Real-Time System,” RTRG/91/106, Real-Time Research Group, Department of Computer Science, University of York (October 1991).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Audsley, N. C., Burns, A., Richardson, M. F., and Wellings, A. J., “STRESS: A Simulator For Hard Real-Time System,” RTRG/91/106, Real-Time Research Group, Department of Computer Science, University of York (October 1991)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "4",
+            "rawText": "Burns, A., Wellings, A. J., and Hutcheon, A. D., “The Impact of an Ada Runtime System's Performance Characteristics on Scheduling Models,” in Ada sans frontieres, Proceedings of the 12th Ada-Europe Conference, SpringerVerlag LNCS 688 (1993).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Burns, A., Wellings, A. J., and Hutcheon, A. D., “The Impact of an Ada Runtime System's Performance Characteristics on Scheduling Models,” in Ada sans frontieres, Proceedings of the 12th Ada-Europe Conference, SpringerVerlag LNCS 688 (1993)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "5",
+            "rawText": "Burns, A., Wellings, A.J., C.M. Bailey and E. Fyfe, “The Olympus Attitude and Orbital Control System: A Case Study in Hard Real-time System Design and Implementation,” YCS 190, Department of Computer Science, University of York (1993).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Burns, A., Wellings, A.J., C.M. Bailey and E. Fyfe, “The Olympus Attitude and Orbital Control System: A Case Study in Hard Real-time System Design and Implementation,” YCS 190, Department of Computer Science, University of York (1993)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "6",
+            "rawText": "Damm, A., Reisinger, W., Schwabl, W., Kopetz, H., “The Real-Time Operating System of MARS”, ACM Operating Systems Review, 23(3) (Special Issue), pp. 141-151, 1989",
+            "doi": null,
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Damm, A., Reisinger, W., Schwabl, W., Kopetz, H., “The Real-Time Operating System of MARS”, ACM Operating Systems Review, 23(3) (Special Issue), pp. 141-151, 1989"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1989,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "7",
+            "rawText": "Dhall, S. K. and Liu, C. L., “On a Real-Time Scheduling Problem,” Operations Research 26(1) (February 1978) pp.127-140.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Dhall, S. K. and Liu, C. L., “On a Real-Time Scheduling Problem,” Operations Research 26(1) (February 1978) pp.127-140."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1978,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "8",
+            "rawText": "Hutcheon, A. D., “Timings of Run-time Operations in Modified York Ada,” Task 8 Volume C, Deliverable on ESTEC Contract 9198/90/NL/SF, York Software Engineering Limited, University of York (July 1992).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Hutcheon, A. D., “Timings of Run-time Operations in Modified York Ada,” Task 8 Volume C, Deliverable on ESTEC Contract 9198/90/NL/SF, York Software Engineering Limited, University of York (July 1992)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "9",
+            "rawText": "Lehoczky, J. P., “Fixed Priority Scheduling of Periodic Task Sets With Arbitrary Deadlines,” Proceedings 11th IEEE Real-Time Systems Symposium (5-7 Decmeber 1990) pp.201-209. 27",
+            "doi": null,
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lehoczky, J. P., “Fixed Priority Scheduling of Periodic Task Sets With Arbitrary Deadlines,” Proceedings 11th IEEE Real-Time Systems Symposium (5-7 Decmeber 1990) pp.201-209. 27"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1990,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "10",
+            "rawText": "Lehoczky, J., Sha, L. and Ding, Y., “The Rate Monotonic Scheduling Algorithm: Exact Characterisation and Average Case Behaviour,” Proceedings of the Real-Time Systems Symposium (1989).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lehoczky, J., Sha, L. and Ding, Y., “The Rate Monotonic Scheduling Algorithm: Exact Characterisation and Average Case Behaviour,” Proceedings of the Real-Time Systems Symposium (1989)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1989,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "11",
+            "rawText": "Liu, C. L. and Layland, J. W., “Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment,” Journal of the ACM 20(1) (1973) pp.4661.",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Liu, C. L. and Layland, J. W., “Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment,” Journal of the ACM 20(1) (1973) pp.4661."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "arxivId": "",
+                "title": "Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment",
+                "authors": [
+                  "C. L. Liu",
+                  "James W. Layland"
+                ],
+                "year": 1973,
+                "venue": "Journal of the ACM",
+                "type": "article",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "12",
+            "rawText": "Locke, C.D., “Software architecture for hard real-time applications: cyclic executives vs. fixed priority executives,” Real-Time Systems 4(1) (March 1992) pp.37-53. Real-Time Syst. (Netherlands).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Locke, C.D., “Software architecture for hard real-time applications: cyclic executives vs. fixed priority executives,” Real-Time Systems 4(1) (March 1992) pp.37-53. Real-Time Syst. (Netherlands)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "13",
+            "rawText": "Sha, L., Rajkumar, R. and Lehoczky, J., “Priority Inheritance Protocols: An Approach to Real-Time Synchronisation,” IEEE Transactions on Computers 39(9) (September 1990) pp.1175-1185.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Sha, L., Rajkumar, R. and Lehoczky, J., “Priority Inheritance Protocols: An Approach to Real-Time Synchronisation,” IEEE Transactions on Computers 39(9) (September 1990) pp.1175-1185."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1990,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "15",
+            "rawText": "Tindell, K. and Clark, J., “Holistic Schedulability Analysis for Distributed Hard Real-Time Systems,”, to appear in Euromicro Journal (Special Issue on Parallel Embedded Real-Time Systems), February 1994",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tindell, K. and Clark, J., “Holistic Schedulability Analysis for Distributed Hard Real-Time Systems,”, to appear in Euromicro Journal (Special Issue on Parallel Embedded Real-Time Systems), February 1994"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1994,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "16",
+            "rawText": "Tindell, K. W., Burns, A. and Wellings, A. J., “Guaranteeing Hard Real Time End-to-End Communications Deadlines,” RTRG/91/107, Department of Computer Science, University of York (1991).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tindell, K. W., Burns, A. and Wellings, A. J., “Guaranteeing Hard Real Time End-to-End Communications Deadlines,” RTRG/91/107, Department of Computer Science, University of York (1991)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "18",
+            "rawText": "Tindell, K., “Holistic Schedulability Analysis for Distributed Hard Real-Time Systems,” YCS197, Department of Computer Science, University of York (1993).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tindell, K., “Holistic Schedulability Analysis for Distributed Hard Real-Time Systems,” YCS197, Department of Computer Science, University of York (1993)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "19",
+            "rawText": "Tindell, K., “Using Offset Information to Analyse Static Priority Pre-emptively Scheduled Task Sets,” YCS 182, Department of Computer Science, University of York (1992).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tindell, K., “Using Offset Information to Analyse Static Priority Pre-emptively Scheduled Task Sets,” YCS 182, Department of Computer Science, University of York (1992)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "20",
+            "rawText": "Tindell, K., Burns, A. and Wellings, A., “Allocating Real-Time Tasks (An NPHard Problem Made Easy),” Real Time Systems 4(2) (June 1992) pp.145-165.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tindell, K., Burns, A. and Wellings, A., “Allocating Real-Time Tasks (An NPHard Problem Made Easy),” Real Time Systems 4(2) (June 1992) pp.145-165."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "21",
+            "rawText": "Tindell, K., Burns, A. and Wellings, A., “An Extendible Approach for Analysing Fixed Priority Hard Real-Time Tasks,” YCS 189, Department of Computer Science, University of York (1992).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tindell, K., Burns, A. and Wellings, A., “An Extendible Approach for Analysing Fixed Priority Hard Real-Time Tasks,” YCS 189, Department of Computer Science, University of York (1992)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "22",
+            "rawText": "Tindell, K., Burns, A. and Wellings, A., “Mode Changes in Priority Preemptively Scheduled Systems,” Proceedings of the Real Time Systems Symposium, Phoenix, Arizona (1992).",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tindell, K., Burns, A. and Wellings, A., “Mode Changes in Priority Preemptively Scheduled Systems,” Proceedings of the Real Time Systems Symposium, Phoenix, Arizona (1992)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "23",
+            "rawText": "Tindell, K., Burns, A., Wellings, A., “An Extendible Approach for Analysing Fixed Priority Hard Real-Time Tasks,” Real-Time Systems 6(2) pp. 133-151.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tindell, K., Burns, A., Wellings, A., “An Extendible Approach for Analysing Fixed Priority Hard Real-Time Tasks,” Real-Time Systems 6(2) pp. 133-151."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "24",
+            "rawText": "Xu, J. and Parnas, D. L., “On Satisfying Timing Constraints in Hard Real-Time Systems,”, Proceedings ACM SIGSOFT '91 Conference on Software for Critical Systems (December 4-6 1991). 12.ACKNOWLEDGEMENTS The author would like to thank Robert Davis for helpful comments on an earlier draft of this report. 28",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Xu, J. and Parnas, D. L., “On Satisfying Timing Constraints in Hard Real-Time Systems,”, Proceedings ACM SIGSOFT '91 Conference on Software for Critical Systems (December 4-6 1991). 12.ACKNOWLEDGEMENTS The author would like to thank Robert Davis for helpful comments on an earlier draft of this report. 28"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:adding time offsets to schedulability analysis:1994:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 31,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:adding time offsets to schedulability analysis:1994->doi:10.1145/321738.321743@papers-LET-Tindell1994.pdf",
+      "source": "title:adding time offsets to schedulability analysis:1994",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Tindell1994.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Tindell1994",
+      "paperId": "title:adding time offsets to schedulability analysis:1994",
+      "metadata": {
+        "fileName": "Tindell1994.pdf",
+        "sourcePath": "papers/LET/Tindell1994.pdf"
+      }
+    }
+  ]
+}

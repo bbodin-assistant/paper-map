@@ -1,0 +1,780 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.908282+00:00",
+  "papers": [
+    {
+      "key": "Frehse2014",
+      "paper": {
+        "id": "doi:10.1109/rtss.2014.28",
+        "citationKey": "Frehse2014",
+        "title": "Formal Analysis of Timing Effects on Closed-Loop Properties of Control Software",
+        "authors": [
+          "Goran Frehse",
+          "Arne Hamann",
+          "Sophie Quinton",
+          "Matthias Woehrle"
+        ],
+        "year": 2014,
+        "venue": "2014 IEEE Real-Time Systems Symposium",
+        "type": "inproceedings",
+        "doi": "10.1109/rtss.2014.28",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/rtss.2014.28",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Frehse, Goran and Hamann, Arne and Quinton, Sophie and Woehrle, Matthias",
+          "title": "{Formal Analysis of Timing Effects on Closed-Loop Properties of Control Software}",
+          "year": "2014",
+          "booktitle": "2014 IEEE Real-Time Systems Symposium",
+          "publisher": "IEEE",
+          "pages": "53--62",
+          "doi": "10.1109/rtss.2014.28",
+          "url": "https://doi.org/10.1109/rtss.2014.28"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.065140+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref10",
+            "rawText": "donzé. Modular, hierarchical models of control systems in spaceex. 2013. Proc Eur Control Conf (ECC'13)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "article-title": "Modular, hierarchical models of control systems in spaceex",
+              "author": "donzé",
+              "year": "2013",
+              "journal-title": "Proc Eur Control Conf (ECC'13)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "Modular, hierarchical models of control systems in spaceex",
+                "authors": [
+                  "donzé"
+                ],
+                "year": 2013,
+                "venue": "Proc Eur Control Conf (ECC'13)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1145/1629335.1629351",
+            "doi": "10.1145/1629335.1629351",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1629335.1629351"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1629335.1629351",
+                "doi": "10.1145/1629335.1629351",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1629335.1629351"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1007/s10009-012-0257-7",
+            "doi": "10.1007/s10009-012-0257-7",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s10009-012-0257-7"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s10009-012-0257-7",
+                "doi": "10.1007/s10009-012-0257-7",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s10009-012-0257-7"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref13",
+            "rawText": "https://doi.org/10.1007/s10617-010-9055-1",
+            "doi": "10.1007/s10617-010-9055-1",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s10617-010-9055-1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s10617-010-9055-1",
+                "doi": "10.1007/s10617-010-9055-1",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s10617-010-9055-1"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref14",
+            "rawText": "frehse. SpaceEx: Scalable verification of hybrid systems. 2011. CAV Ser LNCS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "first-page": "379",
+              "article-title": "SpaceEx: Scalable verification of hybrid systems",
+              "volume": "6806",
+              "author": "frehse",
+              "year": "2011",
+              "journal-title": "CAV Ser LNCS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref14",
+                "doi": "",
+                "title": "SpaceEx: Scalable verification of hybrid systems",
+                "authors": [
+                  "frehse"
+                ],
+                "year": 2011,
+                "venue": "CAV Ser LNCS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1145/2461328.2461361",
+            "doi": "10.1145/2461328.2461361",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2461328.2461361"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2461328.2461361",
+                "doi": "10.1145/2461328.2461361",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2461328.2461361"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1145/321738.321743",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/321738.321743"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref17",
+            "rawText": "dertouzos. Control robotics: the procedural control of physical processes. 1974. Proceedings of the IFIP Congress",
+            "doi": null,
+            "arxivId": null,
+            "year": 1974,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "first-page": "807",
+              "article-title": "Control robotics: the procedural control of physical processes",
+              "author": "dertouzos",
+              "year": "1974",
+              "journal-title": "Proceedings of the IFIP Congress"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref17",
+                "doi": "",
+                "title": "Control robotics: the procedural control of physical processes",
+                "authors": [
+                  "dertouzos"
+                ],
+                "year": 1974,
+                "venue": "Proceedings of the IFIP Congress",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref18",
+            "rawText": "https://doi.org/10.1023/b:time.0000045315.61234.1e",
+            "doi": "10.1023/b:time.0000045315.61234.1e",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/B:TIME.0000045315.61234.1e"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/b:time.0000045315.61234.1e",
+                "doi": "10.1023/b:time.0000045315.61234.1e",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/b:time.0000045315.61234.1e"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref19",
+            "rawText": "https://doi.org/10.1109/mcs.2003.1200240",
+            "doi": "10.1109/mcs.2003.1200240",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MCS.2003.1200240"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mcs.2003.1200240",
+                "doi": "10.1109/mcs.2003.1200240",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mcs.2003.1200240"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref4",
+            "rawText": "https://doi.org/10.1109/12.919277",
+            "doi": "10.1109/12.919277",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/12.919277"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/12.919277",
+                "doi": "10.1109/12.919277",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/12.919277"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805825",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805825"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1109/real.1990.128748",
+            "doi": "10.1109/real.1990.128748",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/REAL.1990.128748"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1990.128748",
+                "doi": "10.1109/real.1990.128748",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1990.128748"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.7873/date.2013.163",
+            "doi": "10.7873/date.2013.163",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.7873/DATE.2013.163"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.7873/date.2013.163",
+                "doi": "10.7873/date.2013.163",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.7873/date.2013.163"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref8",
+            "rawText": "blind. On the stabilizability of continuous-time systems over a packet based communication system with loss and delay. 2014. International Federation of Automatic Control (IFAC) World Congress",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "article-title": "On the stabilizability of continuous-time systems over a packet based communication system with loss and delay",
+              "author": "blind",
+              "year": "2014",
+              "journal-title": "International Federation of Automatic Control (IFAC) World Congress"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref8",
+                "doi": "",
+                "title": "On the stabilizability of continuous-time systems over a packet based communication system with loss and delay",
+                "authors": [
+                  "blind"
+                ],
+                "year": 2014,
+                "venue": "International Federation of Automatic Control (IFAC) World Congress",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref7",
+            "rawText": "https://doi.org/10.1109/jproc.2006.887306",
+            "doi": "10.1109/jproc.2006.887306",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2006.887306"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2006.887306",
+                "doi": "10.1109/jproc.2006.887306",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2006.887306"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref2",
+            "rawText": "https://doi.org/10.1109/date.2012.6176523",
+            "doi": "10.1109/date.2012.6176523",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/DATE.2012.6176523"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/date.2012.6176523",
+                "doi": "10.1109/date.2012.6176523",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/date.2012.6176523"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref1",
+            "rawText": "Open Systems and the Corresponding Interfaces for Automotive Electronics",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "year": "0",
+              "journal-title": "Open Systems and the Corresponding Interfaces for Automotive Electronics"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "Open Systems and the Corresponding Interfaces for Automotive Electronics",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1016/0304-3975(94)00202-t",
+            "doi": "10.1016/0304-3975(94)00202-t",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0304-3975(94)00202-T"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0304-3975(94)00202-t",
+                "doi": "10.1016/0304-3975(94)00202-t",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0304-3975(94)00202-t"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref20",
+            "rawText": "https://doi.org/10.1109/cdc.2002.1184698",
+            "doi": "10.1109/cdc.2002.1184698",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CDC.2002.1184698"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cdc.2002.1184698",
+                "doi": "10.1109/cdc.2002.1184698",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cdc.2002.1184698"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref22",
+            "rawText": "https://doi.org/10.1109/rtas.2008.13",
+            "doi": "10.1109/rtas.2008.13",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2008.13"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2008.13",
+                "doi": "10.1109/rtas.2008.13",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2008.13"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref21",
+            "rawText": "https://doi.org/10.1145/2228360.2228484",
+            "doi": "10.1145/2228360.2228484",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2228360.2228484"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2228360.2228484",
+                "doi": "10.1145/2228360.2228484",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2228360.2228484"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref23",
+            "rawText": "https://doi.org/10.1145/2502524.2502540",
+            "doi": "10.1145/2502524.2502540",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2502524.2502540"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2502524.2502540",
+                "doi": "10.1145/2502524.2502540",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2502524.2502540"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/rtss.2014.28",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 23,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/rtss.2014.28",
+          "crossrefReferenceCount": 23
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/rtss.2014.28->doi:10.1145/321738.321743@papers-LET-Frehse2014.pdf",
+      "source": "doi:10.1109/rtss.2014.28",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Frehse2014.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss.2014.28->doi:10.1109/jproc.2002.805825@papers-LET-Frehse2014.pdf",
+      "source": "doi:10.1109/rtss.2014.28",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Frehse2014.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Frehse2014",
+      "paperId": "doi:10.1109/rtss.2014.28",
+      "metadata": {
+        "fileName": "Frehse2014.pdf",
+        "sourcePath": "papers/LET/Frehse2014.pdf"
+      }
+    }
+  ]
+}

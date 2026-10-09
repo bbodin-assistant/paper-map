@@ -1,0 +1,568 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.272290+00:00",
+  "papers": [
+    {
+      "key": "Jiang2023",
+      "paper": {
+        "id": "doi:10.23919/date56975.2023.10137138",
+        "citationKey": "Jiang2023",
+        "title": "Analysis and Optimization of Worst-Case Time Disparity in Cause-Effect Chains",
+        "authors": [
+          "Xu Jiang",
+          "Xiantong Luo",
+          "Nan Guan",
+          "Zheng Dong",
+          "Shaoshan Liu",
+          "Wang Yi"
+        ],
+        "year": 2023,
+        "venue": "2023 Design, Automation \\& Test in Europe Conference \\& Exhibition (DATE)",
+        "type": "inproceedings",
+        "doi": "10.23919/DATE56975.2023.10137138",
+        "arxivId": "",
+        "url": "https://doi.org/10.23919/DATE56975.2023.10137138",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Jiang, Xu and Luo, Xiantong and Guan, Nan and Dong, Zheng and Liu, Shaoshan and Yi, Wang",
+          "title": "{Analysis and Optimization of Worst-Case Time Disparity in Cause-Effect Chains}",
+          "year": "2023",
+          "booktitle": "2023 Design, Automation \\& Test in Europe Conference \\& Exhibition (DATE)",
+          "publisher": "IEEE",
+          "pages": "1--6",
+          "doi": "10.23919/DATE56975.2023.10137138",
+          "url": "https://doi.org/10.23919/DATE56975.2023.10137138"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.073888+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref13",
+            "rawText": "bruggen. Schedulability and optimization analysis for non-preemptive static priority scheduling based on task utilization and blocking factors. 2015. RTS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "article-title": "Schedulability and optimization analysis for non-preemptive static priority scheduling based on task utilization and blocking factors",
+              "author": "bruggen",
+              "year": "2015",
+              "journal-title": "RTS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref13",
+                "doi": "",
+                "title": "Schedulability and optimization analysis for non-preemptive static priority scheduling based on task utilization and blocking factors",
+                "authors": [
+                  "bruggen"
+                ],
+                "year": 2015,
+                "venue": "RTS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1109/rtss.2009.11",
+            "doi": "10.1109/rtss.2009.11",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2009.11"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2009.11",
+                "doi": "10.1109/rtss.2009.11",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2009.11"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref15",
+            "rawText": "kordon. Evaluation of the Age Latency of a Real- Time Communicating System Using the LET Paradigm. 2020. ECRTS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "article-title": "Evaluation of the Age Latency of a Real- Time Communicating System Using the LET Paradigm",
+              "author": "kordon",
+              "year": "2020",
+              "journal-title": "ECRTS"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2020.20",
+                "doi": "",
+                "title": "Evaluation of the Age Latency of a Real- Time Communicating System Using the LET Paradigm",
+                "authors": [
+                  "kordon"
+                ],
+                "year": 2020,
+                "venue": "ECRTS",
+                "type": "",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2020.20"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref14",
+            "rawText": "kramer. Real world automotive benchmark for free. 2015. Watershed",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "article-title": "Real world automotive benchmark for free",
+              "author": "kramer",
+              "year": "2015",
+              "journal-title": "Watershed"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref14",
+                "doi": "",
+                "title": "Real world automotive benchmark for free",
+                "authors": [
+                  "kramer"
+                ],
+                "year": 2015,
+                "venue": "Watershed",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref11",
+            "rawText": "hamann. 2017. Commu-nication centric design in complex automotive embedded systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "journal-title": "Commu-nication centric design in complex automotive embedded systems",
+              "year": "2017",
+              "author": "hamann",
+              "key": "ref11"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref11",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "hamann"
+                ],
+                "year": 2017,
+                "venue": "Commu-nication centric design in complex automotive embedded systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref10",
+            "rawText": "1991. Bosch controller area network specification 2 0",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "journal-title": "Bosch controller area network specification 2 0",
+              "year": "1991",
+              "key": "ref10"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "Bosch controller area network specification 2 0",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref2",
+            "rawText": "becker. Analyzing end-to-end delays in automotive systems at various levels of timing information. 2016. reactions",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "article-title": "Analyzing end-to-end delays in automotive systems at various levels of timing information",
+              "author": "becker",
+              "year": "2016",
+              "journal-title": "reactions"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "Analyzing end-to-end delays in automotive systems at various levels of timing information",
+                "authors": [
+                  "becker"
+                ],
+                "year": 2016,
+                "venue": "reactions",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref1",
+            "rawText": "https://doi.org/10.1016/j.sysarc.2017.09.004",
+            "doi": "10.1016/j.sysarc.2017.09.004",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.sysarc.2017.09.004"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2017.09.004",
+                "doi": "10.1016/j.sysarc.2017.09.004",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1109/date.2010.5457184",
+            "doi": "10.1109/date.2010.5457184",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/DATE.2010.5457184"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/date.2010.5457184",
+                "doi": "10.1109/date.2010.5457184",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/date.2010.5457184"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref7",
+            "rawText": "2020",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "year": "2020",
+              "key": "ref7"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref7",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1109/tcad.2018.2857380",
+            "doi": "10.1109/tcad.2018.2857380",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TCAD.2018.2857380"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tcad.2018.2857380",
+                "doi": "10.1109/tcad.2018.2857380",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tcad.2018.2857380"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref4",
+            "rawText": "kordon. Evaluation of the age latency of a real-time communicating system using the let paradigm. 2020. ECRTS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "article-title": "Evaluation of the age latency of a real-time communicating system using the let paradigm",
+              "author": "kordon",
+              "year": "2020",
+              "journal-title": "ECRTS"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2020.20",
+                "doi": "",
+                "title": "Evaluation of the age latency of a real-time communicating system using the let paradigm",
+                "authors": [
+                  "kordon"
+                ],
+                "year": 2020,
+                "venue": "ECRTS",
+                "type": "",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2020.20"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.1109/rtas52030.2021.00012",
+            "doi": "10.1109/rtas52030.2021.00012",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS52030.2021.00012"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00012",
+                "doi": "10.1109/rtas52030.2021.00012",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00012"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref6",
+            "rawText": "2021",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "year": "2021",
+              "key": "ref6"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref6",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.1145/3358181",
+            "doi": "10.1145/3358181",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3358181"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3358181",
+                "doi": "10.1145/3358181",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3358181"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.23919/date56975.2023.10137138",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 4,
+          "extractedReferenceCount": 15,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.23919/date56975.2023.10137138",
+          "crossrefReferenceCount": 15
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.23919/date56975.2023.10137138->doi:10.4230/lipics.ecrts.2020.20@papers-LET-Jiang2023.pdf",
+      "source": "doi:10.23919/date56975.2023.10137138",
+      "target": "doi:10.4230/lipics.ecrts.2020.20",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Jiang2023.pdf"
+    },
+    {
+      "id": "doi:10.23919/date56975.2023.10137138->doi:10.1016/j.sysarc.2017.09.004@papers-LET-Jiang2023.pdf",
+      "source": "doi:10.23919/date56975.2023.10137138",
+      "target": "doi:10.1016/j.sysarc.2017.09.004",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Jiang2023.pdf"
+    },
+    {
+      "id": "doi:10.23919/date56975.2023.10137138->doi:10.1109/rtas52030.2021.00012@papers-LET-Jiang2023.pdf",
+      "source": "doi:10.23919/date56975.2023.10137138",
+      "target": "doi:10.1109/rtas52030.2021.00012",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Jiang2023.pdf"
+    },
+    {
+      "id": "doi:10.23919/date56975.2023.10137138->doi:10.1145/3358181@papers-LET-Jiang2023.pdf",
+      "source": "doi:10.23919/date56975.2023.10137138",
+      "target": "doi:10.1145/3358181",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Jiang2023.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Jiang2023",
+      "paperId": "doi:10.23919/date56975.2023.10137138",
+      "metadata": {
+        "fileName": "Jiang2023.pdf",
+        "sourcePath": "papers/LET/Jiang2023.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2920 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.241446+00:00",
+  "papers": [
+    {
+      "key": "Honorat2025",
+      "paper": {
+        "id": "doi:10.1145/3615586",
+        "citationKey": "Honorat2025",
+        "title": "Real-Time Fixed Priority Scheduling Synthesis Using Affine DataFlow Graphs: From Theory to Practice",
+        "authors": [
+          "Alexandre Honorat",
+          "Hai Nam Tran",
+          "Thierry Gautier",
+          "Lo\\\"ic Besnard",
+          "Shuvra S. Bhattacharyya",
+          "Jean-Pierre Talpin"
+        ],
+        "year": 2025,
+        "venue": "ACM Transactions on Embedded Computing Systems",
+        "type": "article",
+        "doi": "10.1145/3615586",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Honorat, Alexandre and Tran, Hai Nam and Gautier, Thierry and Besnard, Lo{\\\"i}c and Bhattacharyya, Shuvra S. and Talpin, Jean-Pierre",
+          "title": "Real-Time Fixed Priority Scheduling Synthesis Using Affine DataFlow Graphs: From Theory to Practice",
+          "journal": "ACM Transactions on Embedded Computing Systems",
+          "volume": "24",
+          "number": "3",
+          "pages": "1--31",
+          "year": "2025",
+          "doi": "10.1145/3615586",
+          "url": "https://doi.org/10.1145/3615586"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.145988+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_2_2",
+            "rawText": "H. Andrade, J. Correll, A. Ekbal, A. Ghosal, D. Kim, J. Kornerup, R. Limaye, A. Prasad, K. Ravindran, T. N. Tran, M. Trimborn, G. Wang, I. Wong, and G. Yang. 2012. From streaming models to FPGA implementations. In Proceedings of the International Conference on Engineering of Reconfigurable Systems and Algorithms (ERSA’12). WORLDCOMP’12, 1.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_2",
+              "first-page": "1",
+              "volume-title": "Proceedings of the International Conference on Engineering of Reconfigurable Systems and Algorithms (ERSA’12)",
+              "author": "Andrade H.",
+              "year": "2012",
+              "unstructured": "H. Andrade, J. Correll, A. Ekbal, A. Ghosal, D. Kim, J. Kornerup, R. Limaye, A. Prasad, K. Ravindran, T. N. Tran, M. Trimborn, G. Wang, I. Wong, and G. Yang. 2012. From streaming models to FPGA implementations. In Proceedings of the International Conference on Engineering of Reconfigurable Systems and Algorithms (ERSA’12). WORLDCOMP’12, 1."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Andrade H."
+                ],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_3_2",
+            "rawText": "N. Audsley, A. Burns, M. Richardson, K. Tindell, and A. J. Wellings. 1993. Applying new scheduling theory to static priority pre-emptive scheduling. Softw. Eng. J. 8 (1993), 284–292.",
+            "doi": "10.1049/sej.1993.0034",
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_3_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "284",
+              "DOI": "10.1049/sej.1993.0034",
+              "article-title": "Applying new scheduling theory to static priority pre-emptive scheduling",
+              "volume": "8",
+              "author": "Audsley N.",
+              "year": "1993",
+              "unstructured": "N. Audsley, A. Burns, M. Richardson, K. Tindell, and A. J. Wellings. 1993. Applying new scheduling theory to static priority pre-emptive scheduling. Softw. Eng. J. 8 (1993), 284–292.",
+              "journal-title": "Softw. Eng. J."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1049/sej.1993.0034",
+                "doi": "10.1049/sej.1993.0034",
+                "title": "Applying new scheduling theory to static priority pre-emptive scheduling",
+                "authors": [
+                  "Audsley N."
+                ],
+                "year": 1993,
+                "venue": "Softw. Eng. J.",
+                "type": "",
+                "url": "https://doi.org/10.1049/sej.1993.0034"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_4_2",
+            "rawText": "M. Bamakhrama and T. Stefanov. 2011. Hard-real-time scheduling of data-dependent tasks in embedded streaming applications. In International Conference on Embedded Software (EMSOFT’11).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_4_2",
+              "volume-title": "International Conference on Embedded Software (EMSOFT’11)",
+              "author": "Bamakhrama M.",
+              "year": "2011",
+              "unstructured": "M. Bamakhrama and T. Stefanov. 2011. Hard-real-time scheduling of data-dependent tasks in embedded streaming applications. In International Conference on Embedded Software (EMSOFT’11)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_4_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Bamakhrama M."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_5_2",
+            "rawText": "https://doi.org/10.1109/tac.2012.2191871",
+            "doi": "10.1109/tac.2012.2191871",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_5_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TAC.2012.2191871"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tac.2012.2191871",
+                "doi": "10.1109/tac.2012.2191871",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tac.2012.2191871"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_6_2",
+            "rawText": "M. Benazouz, O. Marchetti, A. Munier-Kordon, and T. Michel. 2010. A new method for minimizing buffer sizes for cyclo-static dataflow graphs. In 8th IEEE Workshop on Embedded Systems for Real-time Multimedia.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_6_2",
+              "volume-title": "8th IEEE Workshop on Embedded Systems for Real-time Multimedia",
+              "author": "Benazouz M.",
+              "year": "2010",
+              "unstructured": "M. Benazouz, O. Marchetti, A. Munier-Kordon, and T. Michel. 2010. A new method for minimizing buffer sizes for cyclo-static dataflow graphs. In 8th IEEE Workshop on Embedded Systems for Real-time Multimedia."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_6_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Benazouz M."
+                ],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_7_2",
+            "rawText": "https://doi.org/10.1109/rtss.2007.31",
+            "doi": "10.1109/rtss.2007.31",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_7_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2007.31"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2007.31",
+                "doi": "10.1109/rtss.2007.31",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2007.31"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_8_2",
+            "rawText": "https://doi.org/10.1016/j.scico.2014.05.014",
+            "doi": "10.1016/j.scico.2014.05.014",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_8_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.scico.2014.05.014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.scico.2014.05.014",
+                "doi": "10.1016/j.scico.2014.05.014",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.scico.2014.05.014"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_9_2",
+            "rawText": "S. S. Bhattacharyya, E. A. Lee, and P. K. Murthy. 1996. Software Synthesis from Dataflow Graphs. Kluwer Academic Publishers, Norwell, MA.",
+            "doi": "10.1007/978-1-4613-1389-2",
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_9_2",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1007/978-1-4613-1389-2",
+              "volume-title": "Software Synthesis from Dataflow Graphs",
+              "author": "Bhattacharyya S. S.",
+              "year": "1996",
+              "unstructured": "S. S. Bhattacharyya, E. A. Lee, and P. K. Murthy. 1996. Software Synthesis from Dataflow Graphs. Kluwer Academic Publishers, Norwell, MA."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/978-1-4613-1389-2",
+                "doi": "10.1007/978-1-4613-1389-2",
+                "title": "",
+                "authors": [
+                  "Bhattacharyya S. S."
+                ],
+                "year": 1996,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-4613-1389-2"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_10_2",
+            "rawText": "https://doi.org/10.1109/78.485935",
+            "doi": "10.1109/78.485935",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_10_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/78.485935"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/78.485935",
+                "doi": "10.1109/78.485935",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/78.485935"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_11_2",
+            "rawText": "https://doi.org/10.1109/tc.2008.167",
+            "doi": "10.1109/tc.2008.167",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_11_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.2008.167"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tc.2008.167",
+                "doi": "10.1109/tc.2008.167",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.2008.167"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_12_2",
+            "rawText": "Gedare Bloom, Joel Sherrill, Tingting Hu, and Ivan Cibrario Bertolotti. 2020. Real-time Systems Development with RTEMs and Multicore Processors. CRC Press.",
+            "doi": "10.1201/9781351255790",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_12_2",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1201/9781351255790",
+              "volume-title": "Real-time Systems Development with RTEMs and Multicore Processors",
+              "author": "Bloom Gedare",
+              "year": "2020",
+              "unstructured": "Gedare Bloom, Joel Sherrill, Tingting Hu, and Ivan Cibrario Bertolotti. 2020. Real-time Systems Development with RTEMs and Multicore Processors. CRC Press."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1201/9781351255790",
+                "doi": "10.1201/9781351255790",
+                "title": "",
+                "authors": [
+                  "Bloom Gedare"
+                ],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1201/9781351255790"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_3_2_13_2",
+            "rawText": "https://doi.org/10.1109/estimedia.2013.6704509",
+            "doi": "10.1109/estimedia.2013.6704509",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_13_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ESTIMedia.2013.6704509"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/estimedia.2013.6704509",
+                "doi": "10.1109/estimedia.2013.6704509",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ESTIMedia.2013.6704509"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_3_2_14_2",
+            "rawText": "https://doi.org/10.1109/mascots.2016.35",
+            "doi": "10.1109/mascots.2016.35",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_14_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MASCOTS.2016.35"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mascots.2016.35",
+                "doi": "10.1109/mascots.2016.35",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mascots.2016.35"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_3_2_15_2",
+            "rawText": "Adnan Bouakaz. 2013. Real-time Scheduling of Dataflow Graphs. Theses. Université Rennes 1.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_15_2",
+              "volume-title": "Real-time Scheduling of Dataflow Graphs",
+              "author": "Bouakaz Adnan",
+              "year": "2013",
+              "unstructured": "Adnan Bouakaz. 2013. Real-time Scheduling of Dataflow Graphs. Theses. Université Rennes 1."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_15_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Bouakaz Adnan"
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_3_2_16_2",
+            "rawText": "A. Bouakaz and T. Gautier. 2014. An abstraction-refinement framework for priority-driven scheduling of static dataflow graphs. In 2014 12th ACM/IEEE Conference on Formal Methods and Models for Codesign (MEMOCODE’14). 2–11. 10.1109/MEMCOD.2014.6961838",
+            "doi": "10.1109/memcod.2014.6961838",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_16_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "2",
+              "DOI": "10.1109/MEMCOD.2014.6961838",
+              "volume-title": "2014 12th ACM/IEEE Conference on Formal Methods and Models for Codesign (MEMOCODE’14)",
+              "author": "Bouakaz A.",
+              "year": "2014",
+              "unstructured": "A. Bouakaz and T. Gautier. 2014. An abstraction-refinement framework for priority-driven scheduling of static dataflow graphs. In 2014 12th ACM/IEEE Conference on Formal Methods and Models for Codesign (MEMOCODE’14). 2–11. 10.1109/MEMCOD.2014.6961838"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/memcod.2014.6961838",
+                "doi": "10.1109/memcod.2014.6961838",
+                "title": "",
+                "authors": [
+                  "Bouakaz A."
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/memcod.2014.6961838"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_3_2_17_2",
+            "rawText": "https://doi.org/10.1109/sips.2014.6986102",
+            "doi": "10.1109/sips.2014.6986102",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_17_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SiPS.2014.6986102"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/sips.2014.6986102",
+                "doi": "10.1109/sips.2014.6986102",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sips.2014.6986102"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_3_2_18_2",
+            "rawText": "Adnan Bouakaz and Jean-Pierre Talpin. 2013. Buffer minimization in earliest-deadline first scheduling of dataflow graphs. In Proceedings of the 14th ACM SIGPLAN/SIGBED Conference on Languages, Compilers and Tools for Embedded Systems (LCTES’13). ACM, New York, NY, 133–142. 10.1145/2465554.2465558",
+            "doi": "10.1145/2491899.2465558",
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_18_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "133",
+              "DOI": "10.1145/2491899.2465558",
+              "volume-title": "Proceedings of the 14th ACM SIGPLAN/SIGBED Conference on Languages, Compilers and Tools for Embedded Systems (LCTES’13)",
+              "author": "Bouakaz Adnan",
+              "year": "2013",
+              "unstructured": "Adnan Bouakaz and Jean-Pierre Talpin. 2013. Buffer minimization in earliest-deadline first scheduling of dataflow graphs. In Proceedings of the 14th ACM SIGPLAN/SIGBED Conference on Languages, Compilers and Tools for Embedded Systems (LCTES’13). ACM, New York, NY, 133–142. 10.1145/2465554.2465558"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2491899.2465558",
+                "doi": "10.1145/2491899.2465558",
+                "title": "",
+                "authors": [
+                  "Bouakaz Adnan"
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2491899.2465558"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_3_2_19_2",
+            "rawText": "https://doi.org/10.1145/2463596.2463600",
+            "doi": "10.1145/2463596.2463600",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_19_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2463596.2463600"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2463596.2463600",
+                "doi": "10.1145/2463596.2463600",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2463596.2463600"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_3_2_20_2",
+            "rawText": "A. Bouakaz, J.-P. Talpin, and J. Vitek. 2012. Affine data-flow graphs for the synthesis of hard real-time applications. In Proceedings of the 2012 12th International Conference on Application of Concurrency to System Design. ACM, 183–192. 10.1109/ACSD.2012.16",
+            "doi": "10.1109/acsd.2012.16",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_20_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "183",
+              "DOI": "10.1109/ACSD.2012.16",
+              "volume-title": "Proceedings of the 2012 12th International Conference on Application of Concurrency to System Design",
+              "author": "Bouakaz A.",
+              "year": "2012",
+              "unstructured": "A. Bouakaz, J.-P. Talpin, and J. Vitek. 2012. Affine data-flow graphs for the synthesis of hard real-time applications. In Proceedings of the 2012 12th International Conference on Application of Concurrency to System Design. ACM, 183–192. 10.1109/ACSD.2012.16"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/acsd.2012.16",
+                "doi": "10.1109/acsd.2012.16",
+                "title": "",
+                "authors": [
+                  "Bouakaz A."
+                ],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/acsd.2012.16"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_3_2_21_2",
+            "rawText": "Giorgio C. Buttazzo. 2005. Rate monotonic vs. EDF: Judgment day. Real-time Syst. 29, 1 (2005), 5–26.",
+            "doi": "10.1023/b:time.0000048932.30002.d9",
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "e_1_3_2_21_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "5",
+              "DOI": "10.1023/B:TIME.0000048932.30002.d9",
+              "article-title": "Rate monotonic vs. EDF: Judgment day",
+              "volume": "29",
+              "author": "Buttazzo Giorgio C.",
+              "year": "2005",
+              "unstructured": "Giorgio C. Buttazzo. 2005. Rate monotonic vs. EDF: Judgment day. Real-time Syst. 29, 1 (2005), 5–26.",
+              "journal-title": "Real-time Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/b:time.0000048932.30002.d9",
+                "doi": "10.1023/b:time.0000048932.30002.d9",
+                "title": "Rate monotonic vs. EDF: Judgment day",
+                "authors": [
+                  "Buttazzo Giorgio C."
+                ],
+                "year": 2005,
+                "venue": "Real-time Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1023/b:time.0000048932.30002.d9"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_3_2_22_2",
+            "rawText": "https://doi.org/10.1109/tii.2011.2173941",
+            "doi": "10.1109/tii.2011.2173941",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_22_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TII.2011.2173941"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tii.2011.2173941",
+                "doi": "10.1109/tii.2011.2173941",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tii.2011.2173941"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_3_2_23_2",
+            "rawText": "L. Cucu and J. Goossens. 2006. Feasibility intervals for fixed-priority real-time scheduling on uniform multiprocessors. In IEEE Conference on Emerging Technologies and Factory Automation, 2006.397–404.",
+            "doi": "10.1109/etfa.2006.355388",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_23_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "397",
+              "DOI": "10.1109/ETFA.2006.355388",
+              "volume-title": "IEEE Conference on Emerging Technologies and Factory Automation, 2006.",
+              "author": "Cucu L.",
+              "year": "2006",
+              "unstructured": "L. Cucu and J. Goossens. 2006. Feasibility intervals for fixed-priority real-time scheduling on uniform multiprocessors. In IEEE Conference on Emerging Technologies and Factory Automation, 2006.397–404."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa.2006.355388",
+                "doi": "10.1109/etfa.2006.355388",
+                "title": "",
+                "authors": [
+                  "Cucu L."
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2006.355388"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_3_2_24_2",
+            "rawText": "R. I. Davis and A. Burns. 2007. Robust priority assignment for fixed priority real-time systems. In Proceedings of the 28th IEEE International Real-time Systems Symposium (RTSS’07). 3–14.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_24_2",
+              "first-page": "3",
+              "volume-title": "Proceedings of the 28th IEEE International Real-time Systems Symposium (RTSS’07)",
+              "author": "Davis R. I.",
+              "year": "2007",
+              "unstructured": "R. I. Davis and A. Burns. 2007. Robust priority assignment for fixed priority real-time systems. In Proceedings of the 28th IEEE International Real-time Systems Symposium (RTSS’07). 3–14."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_24_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Davis R. I."
+                ],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_3_2_25_2",
+            "rawText": "R. I. Davis, L. Cucu-Grosjean, M. Bertogna, and A. Burns. 2016. A review of priority assignment in real-time systems. J. Syst. Archit. 65 (2016), 64–82.",
+            "doi": "10.1016/j.sysarc.2016.04.002",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_25_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "64",
+              "DOI": "10.1016/j.sysarc.2016.04.002",
+              "article-title": "A review of priority assignment in real-time systems",
+              "volume": "65",
+              "author": "Davis R. I.",
+              "year": "2016",
+              "unstructured": "R. I. Davis, L. Cucu-Grosjean, M. Bertogna, and A. Burns. 2016. A review of priority assignment in real-time systems. J. Syst. Archit. 65 (2016), 64–82.",
+              "journal-title": "J. Syst. Archit."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2016.04.002",
+                "doi": "10.1016/j.sysarc.2016.04.002",
+                "title": "A review of priority assignment in real-time systems",
+                "authors": [
+                  "Davis R. I."
+                ],
+                "year": 2016,
+                "venue": "J. Syst. Archit.",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sysarc.2016.04.002"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_3_2_26_2",
+            "rawText": "R. de Groote, J. Kuper, H. Broersma, and G. J. M. Smit. 2012. Max-plus algebraic throughput analysis of synchronous dataflow graphs. In 2012 38th Euromicro Conference on Software Engineering and Advanced Applications. 29–38. 10.1109/SEAA.2012.20",
+            "doi": "10.1109/seaa.2012.20",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_26_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "29",
+              "DOI": "10.1109/SEAA.2012.20",
+              "volume-title": "2012 38th Euromicro Conference on Software Engineering and Advanced Applications",
+              "author": "Groote R. de",
+              "year": "2012",
+              "unstructured": "R. de Groote, J. Kuper, H. Broersma, and G. J. M. Smit. 2012. Max-plus algebraic throughput analysis of synchronous dataflow graphs. In 2012 38th Euromicro Conference on Software Engineering and Advanced Applications. 29–38. 10.1109/SEAA.2012.20"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/seaa.2012.20",
+                "doi": "10.1109/seaa.2012.20",
+                "title": "",
+                "authors": [
+                  "Groote R. de"
+                ],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/SEAA.2012.20"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_3_2_27_2",
+            "rawText": "https://doi.org/10.1145/2871744",
+            "doi": "10.1145/2871744",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_27_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2871744"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2871744",
+                "doi": "10.1145/2871744",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2871744"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_3_2_28_2",
+            "rawText": "Sudarshan K. Dhall and C. L. Liu. 1978. On a real-time scheduling problem. Oper. Res. 26, 1 (1978), 127–140.",
+            "doi": "10.1287/opre.26.1.127",
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "e_1_3_2_28_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "127",
+              "DOI": "10.1287/opre.26.1.127",
+              "article-title": "On a real-time scheduling problem",
+              "volume": "26",
+              "author": "Dhall Sudarshan K.",
+              "year": "1978",
+              "unstructured": "Sudarshan K. Dhall and C. L. Liu. 1978. On a real-time scheduling problem. Oper. Res. 26, 1 (1978), 127–140.",
+              "journal-title": "Oper. Res."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1287/opre.26.1.127",
+                "doi": "10.1287/opre.26.1.127",
+                "title": "On a real-time scheduling problem",
+                "authors": [
+                  "Dhall Sudarshan K."
+                ],
+                "year": 1978,
+                "venue": "Oper. Res.",
+                "type": "",
+                "url": "https://doi.org/10.1287/opre.26.1.127"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_3_2_29_2",
+            "rawText": "A. Dkhil, X. Do, P. Dubrulle, S. Louise, and C. Rochange. 2014. Self-timed periodic scheduling for a cyclo-static DataFlow model. In Procedia Computer Science, Vol. 29.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_29_2",
+              "volume-title": "Procedia Computer Science",
+              "author": "Dkhil A.",
+              "year": "2014",
+              "unstructured": "A. Dkhil, X. Do, P. Dubrulle, S. Louise, and C. Rochange. 2014. Self-timed periodic scheduling for a cyclo-static DataFlow model. In Procedia Computer Science, Vol. 29."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_29_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Dkhil A."
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_3_2_30_2",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805829",
+            "doi": "10.1109/jproc.2002.805829",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_30_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805829"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805829",
+                "doi": "10.1109/jproc.2002.805829",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/JPROC.2002.805829"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_3_2_31_2",
+            "rawText": "N. Fisher, S. Baruah, and T. P. Baker. 2006. The partitioned scheduling of sporadic tasks according to static-priorities. In Proceedings of the 18th Euromicro Conference on Real-Time Systems (ECRTS’06). IEEE Computer Society, Washington, DC, 118–127. 10.1109/ECRTS.2006.30",
+            "doi": "10.1109/ecrts.2006.30",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_31_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "118",
+              "DOI": "10.1109/ECRTS.2006.30",
+              "volume-title": "Proceedings of the 18th Euromicro Conference on Real-Time Systems (ECRTS’06)",
+              "author": "Fisher N.",
+              "year": "2006",
+              "unstructured": "N. Fisher, S. Baruah, and T. P. Baker. 2006. The partitioned scheduling of sporadic tasks according to static-priorities. In Proceedings of the 18th Euromicro Conference on Real-Time Systems (ECRTS’06). IEEE Computer Society, Washington, DC, 118–127. 10.1109/ECRTS.2006.30"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2006.30",
+                "doi": "10.1109/ecrts.2006.30",
+                "title": "",
+                "authors": [
+                  "Fisher N."
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2006.30"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "e_1_3_2_32_2",
+            "rawText": "https://doi.org/10.1145/2043662.2043663",
+            "doi": "10.1145/2043662.2043663",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_32_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2043662.2043663"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2043662.2043663",
+                "doi": "10.1145/2043662.2043663",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2043662.2043663"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "e_1_3_2_33_2",
+            "rawText": "https://doi.org/10.1007/s11704-017-6134-5",
+            "doi": "10.1007/s11704-017-6134-5",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_33_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11704-017-6134-5"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11704-017-6134-5",
+                "doi": "10.1007/s11704-017-6134-5",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11704-017-6134-5"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "e_1_3_2_34_2",
+            "rawText": "A. H. Ghamarian, M. C. W. Geilen, S. Stuijk, T. Basten, B. D. Theelen, M. R. Mousavi, A. J. M. Moonen, and M. J. G. Bekooij. 2006. Throughput analysis of synchronous data flow graphs. In Proceedings of the 6th International Conference on Application of Concurrency to System Design (ACSD’06). IEEE Computer Society, Washington, DC, 25–36. 10.1109/ACSD.2006.33",
+            "doi": "10.1109/acsd.2006.33",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_34_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "25",
+              "DOI": "10.1109/ACSD.2006.33",
+              "volume-title": "Proceedings of the 6th International Conference on Application of Concurrency to System Design (ACSD’06)",
+              "author": "Ghamarian A. H.",
+              "year": "2006",
+              "unstructured": "A. H. Ghamarian, M. C. W. Geilen, S. Stuijk, T. Basten, B. D. Theelen, M. R. Mousavi, A. J. M. Moonen, and M. J. G. Bekooij. 2006. Throughput analysis of synchronous data flow graphs. In Proceedings of the 6th International Conference on Application of Concurrency to System Design (ACSD’06). IEEE Computer Society, Washington, DC, 25–36. 10.1109/ACSD.2006.33"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/acsd.2006.33",
+                "doi": "10.1109/acsd.2006.33",
+                "title": "",
+                "authors": [
+                  "Ghamarian A. H."
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ACSD.2006.33"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "e_1_3_2_35_2",
+            "rawText": "A. H. Ghamarian, S. Stuijk, T. Basten, M. C. W. Geilen, and B. D. Theelen. 2007. Latency minimization for synchronous data flow graphs. In 10th Euromicro Conference on Digital System Design Architectures, Methods and Tools (DSD’07). 189–196. 10.1109/DSD.2007.4341468",
+            "doi": "10.1109/dsd.2007.4341468",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_35_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "189",
+              "DOI": "10.1109/DSD.2007.4341468",
+              "volume-title": "10th Euromicro Conference on Digital System Design Architectures, Methods and Tools (DSD’07)",
+              "author": "Ghamarian A. H.",
+              "year": "2007",
+              "unstructured": "A. H. Ghamarian, S. Stuijk, T. Basten, M. C. W. Geilen, and B. D. Theelen. 2007. Latency minimization for synchronous data flow graphs. In 10th Euromicro Conference on Digital System Design Architectures, Methods and Tools (DSD’07). 189–196. 10.1109/DSD.2007.4341468"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/dsd.2007.4341468",
+                "doi": "10.1109/dsd.2007.4341468",
+                "title": "",
+                "authors": [
+                  "Ghamarian A. H."
+                ],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/DSD.2007.4341468"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "e_1_3_2_36_2",
+            "rawText": "https://doi.org/10.1023/a:1015452903532",
+            "doi": "10.1023/a:1015452903532",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_36_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1015452903532"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1023/a:1015452903532",
+                "doi": "10.1023/a:1015452903532",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://link.springer.com/article/10.1023/A:1015452903532"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "e_1_3_2_37_2",
+            "rawText": "L. Guo, Q. Zhu, P. Nuzzo, R. Passerone, A. Sangiovanni-Vincentelli, and E. A. Lee. 2014. Metronomy: A function-architecture co-simulation framework for timing verification of cyber-physical systems. In 2014 International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS’14). 1–10. 10.1145/2656075.2656093",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_37_2",
+              "first-page": "1",
+              "volume-title": "2014 International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS’14)",
+              "author": "Guo L.",
+              "year": "2014",
+              "unstructured": "L. Guo, Q. Zhu, P. Nuzzo, R. Passerone, A. Sangiovanni-Vincentelli, and E. A. Lee. 2014. Metronomy: A function-architecture co-simulation framework for timing verification of cyber-physical systems. In 2014 International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS’14). 1–10. 10.1145/2656075.2656093"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_37_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Guo L."
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "e_1_3_2_38_2",
+            "rawText": "https://doi.org/10.1145/1255456.1255461",
+            "doi": "10.1145/1255456.1255461",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_38_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1255456.1255461"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1255456.1255461",
+                "doi": "10.1145/1255456.1255461",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1255456.1255461"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "e_1_3_2_39_2",
+            "rawText": "https://doi.org/10.4230/oasics.wcet.2017.8",
+            "doi": "10.4230/oasics.wcet.2017.8",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_39_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.4230/OASIcs.WCET.2017.8"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.4230/oasics.wcet.2017.8",
+                "doi": "10.4230/oasics.wcet.2017.8",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.4230/oasics.wcet.2017.8"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "e_1_3_2_40_2",
+            "rawText": "J. P. H. M. Hausmans S. J. Geuns M. Wiggers and M. Bekooij. 2014. Temporal analysis flow based on an enabling rate characterization for multi-rate applications executed on mpsocs with non-starvation-free schedulers. In Proceedings of the 17th International Workshop on Software and Compilers for Embedded Systems (SCOPES’14) Sankt Goar Germany Association for Computing Machinery New York NY 108–117. 10.1145/2609248.2609262",
+            "doi": "10.1145/2609248.2609262",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_40_2",
+              "doi-asserted-by": "publisher",
+              "unstructured": "J. P. H. M. Hausmans S. J. Geuns M. Wiggers and M. Bekooij. 2014. Temporal analysis flow based on an enabling rate characterization for multi-rate applications executed on mpsocs with non-starvation-free schedulers. In Proceedings of the 17th International Workshop on Software and Compilers for Embedded Systems (SCOPES’14) Sankt Goar Germany Association for Computing Machinery New York NY 108–117. 10.1145/2609248.2609262",
+              "DOI": "10.1145/2609248.2609262"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2609248.2609262",
+                "doi": "10.1145/2609248.2609262",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2609248.2609262"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "e_1_3_2_41_2",
+            "rawText": "A. Honorat, H. N. Tran, L. Besnard, T. Gautier, J.-P. Talpin, and A. Bouakaz. 2017. ADFG: A scheduling synthesis tool for dataflow graphs in real-time systems. In International Conference on Real-time Networks and Systems. 1–10. 10.1145/3139258.3139267",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_41_2",
+              "first-page": "1",
+              "volume-title": "International Conference on Real-time Networks and Systems",
+              "author": "Honorat A.",
+              "year": "2017",
+              "unstructured": "A. Honorat, H. N. Tran, L. Besnard, T. Gautier, J.-P. Talpin, and A. Bouakaz. 2017. ADFG: A scheduling synthesis tool for dataflow graphs in real-time systems. In International Conference on Real-time Networks and Systems. 1–10. 10.1145/3139258.3139267"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_41_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Honorat A."
+                ],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "e_1_3_2_42_2",
+            "rawText": "https://doi.org/10.1002/nav.3800210113",
+            "doi": "10.1002/nav.3800210113",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_42_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1002/nav.3800210113"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1002/nav.3800210113",
+                "doi": "10.1002/nav.3800210113",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1002/nav.3800210113"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "e_1_3_2_43_2",
+            "rawText": "J. Hugues, B. Zalila, L. Pautet, and F. Kordon. 2008. From the prototype to the final embedded system using the ocarina AADL tool suite. ACM Trans. Embed. Comput. Syst. 7, 4 (2008), 42.",
+            "doi": "10.1145/1376804.1376810",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "e_1_3_2_43_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "42",
+              "DOI": "10.1145/1376804.1376810",
+              "article-title": "From the prototype to the final embedded system using the ocarina AADL tool suite",
+              "volume": "7",
+              "author": "Hugues J.",
+              "year": "2008",
+              "unstructured": "J. Hugues, B. Zalila, L. Pautet, and F. Kordon. 2008. From the prototype to the final embedded system using the ocarina AADL tool suite. ACM Trans. Embed. Comput. Syst. 7, 4 (2008), 42.",
+              "journal-title": "ACM Trans. Embed. Comput. Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1376804.1376810",
+                "doi": "10.1145/1376804.1376810",
+                "title": "From the prototype to the final embedded system using the ocarina AADL tool suite",
+                "authors": [
+                  "Hugues J."
+                ],
+                "year": 2008,
+                "venue": "ACM Trans. Embed. Comput. Syst.",
+                "type": "",
+                "url": "https://doi.org/10.1145/1376804.1376810"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "e_1_3_2_44_2",
+            "rawText": "https://doi.org/10.1093/comjnl/29.5.390",
+            "doi": "10.1093/comjnl/29.5.390",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_44_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1093/comjnl/29.5.390"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1093/comjnl/29.5.390",
+                "doi": "10.1093/comjnl/29.5.390",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1093/comjnl/29.5.390"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "e_1_3_2_45_2",
+            "rawText": "https://doi.org/10.1145/2997465.2997479",
+            "doi": "10.1145/2997465.2997479",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_45_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2997465.2997479"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/2997465.2997479",
+                "doi": "10.1145/2997465.2997479",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2997465.2997479"
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "e_1_3_2_46_2",
+            "rawText": "https://doi.org/10.1145/2997465.2997474",
+            "doi": "10.1145/2997465.2997474",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_46_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2997465.2997474"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2997465.2997474",
+                "doi": "10.1145/2997465.2997474",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2997465.2997474"
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "e_1_3_2_47_2",
+            "rawText": "Hee-Hwan Kwak, Insup Lee, Anna Philippou, Jin-Young Choi, and Oleg Sokolsky. 1998. Symbolic schedulability analysis of real-time systems. In Proceedings of the 19th IEEE Real-time Systems Symposium, 1998. IEEE, 409–418.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_47_2",
+              "first-page": "409",
+              "volume-title": "Proceedings of the 19th IEEE Real-time Systems Symposium, 1998.",
+              "author": "Kwak Hee-Hwan",
+              "year": "1998",
+              "unstructured": "Hee-Hwan Kwak, Insup Lee, Anna Philippou, Jin-Young Choi, and Oleg Sokolsky. 1998. Symbolic schedulability analysis of real-time systems. In Proceedings of the 19th IEEE Real-time Systems Symposium, 1998. IEEE, 409–418."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_47_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kwak Hee-Hwan"
+                ],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "e_1_3_2_48_2",
+            "rawText": "https://doi.org/10.1145/344588.344618",
+            "doi": "10.1145/344588.344618",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_48_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/344588.344618"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/344588.344618",
+                "doi": "10.1145/344588.344618",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/344588.344618"
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "e_1_3_2_49_2",
+            "rawText": "https://doi.org/10.1109/proc.1987.13876",
+            "doi": "10.1109/proc.1987.13876",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_49_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PROC.1987.13876"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/proc.1987.13876",
+                "doi": "10.1109/proc.1987.13876",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/PROC.1987.13876"
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "e_1_3_2_50_2",
+            "rawText": "https://doi.org/10.1109/5.381846",
+            "doi": "10.1109/5.381846",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_50_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/5.381846"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.381846",
+                "doi": "10.1109/5.381846",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.381846"
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "e_1_3_2_51_2",
+            "rawText": "https://doi.org/10.1007/bf01759032",
+            "doi": "10.1007/bf01759032",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_51_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/BF01759032"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf01759032",
+                "doi": "10.1007/bf01759032",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf01759032"
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "e_1_3_2_52_2",
+            "rawText": "Joseph Y.-T. Leung and Jennifer Whitehead. 1982. On the complexity of fixed-priority scheduling of periodic, real-time tasks. Perform. Eval. 2, 4 (1982), 237–250.",
+            "doi": "10.1016/0166-5316(82)90024-4",
+            "arxivId": null,
+            "year": 1982,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "e_1_3_2_52_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "237",
+              "DOI": "10.1016/0166-5316(82)90024-4",
+              "article-title": "On the complexity of fixed-priority scheduling of periodic, real-time tasks",
+              "volume": "2",
+              "author": "Leung Joseph Y.-T.",
+              "year": "1982",
+              "unstructured": "Joseph Y.-T. Leung and Jennifer Whitehead. 1982. On the complexity of fixed-priority scheduling of periodic, real-time tasks. Perform. Eval. 2, 4 (1982), 237–250.",
+              "journal-title": "Perform. Eval."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0166-5316(82)90024-4",
+                "doi": "10.1016/0166-5316(82)90024-4",
+                "title": "On the complexity of fixed-priority scheduling of periodic, real-time tasks",
+                "authors": [
+                  "Leung Joseph Y.-T."
+                ],
+                "year": 1982,
+                "venue": "Perform. Eval.",
+                "type": "",
+                "url": "https://doi.org/10.1016/0166-5316(82)90024-4"
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "e_1_3_2_53_2",
+            "rawText": "S. Lin Y. Liu K. Lee L. Li W. Plishker and S. S. Bhattacharyya. 2017. The DSPCAD framework for modeling and synthesis of signal processing systems. In Handbook of Hardware/Software Codesign Soonhoi Ha and Jürgen Teich (Eds.). Springer Netherlands 1185–1219. 10.1007/978-94-017-7267-9_36",
+            "doi": "10.1007/978-94-017-7267-9_36",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_53_2",
+              "doi-asserted-by": "publisher",
+              "unstructured": "S. Lin Y. Liu K. Lee L. Li W. Plishker and S. S. Bhattacharyya. 2017. The DSPCAD framework for modeling and synthesis of signal processing systems. In Handbook of Hardware/Software Codesign Soonhoi Ha and Jürgen Teich (Eds.). Springer Netherlands 1185–1219. 10.1007/978-94-017-7267-9_36",
+              "DOI": "10.1007/978-94-017-7267-9_36"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-94-017-7267-9_36",
+                "doi": "10.1007/978-94-017-7267-9_36",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-94-017-7267-9_36"
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "e_1_3_2_54_2",
+            "rawText": "S. Lin, J. Wu, and S. S. Bhattacharyya. 2018. Memory-constrained vectorization and scheduling of dataflow graphs for hybrid CPU-GPU platforms. ACM Trans. Embed. Comput. Syst. 17, 2 (Jan.2018), 50:1–50:25.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "e_1_3_2_54_2",
+              "first-page": "50:1–50:25",
+              "article-title": "Memory-constrained vectorization and scheduling of dataflow graphs for hybrid CPU-GPU platforms",
+              "volume": "17",
+              "author": "Lin S.",
+              "year": "2018",
+              "unstructured": "S. Lin, J. Wu, and S. S. Bhattacharyya. 2018. Memory-constrained vectorization and scheduling of dataflow graphs for hybrid CPU-GPU platforms. ACM Trans. Embed. Comput. Syst. 17, 2 (Jan.2018), 50:1–50:25.",
+              "journal-title": "ACM Trans. Embed. Comput. Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_54_2",
+                "doi": "",
+                "title": "Memory-constrained vectorization and scheduling of dataflow graphs for hybrid CPU-GPU platforms",
+                "authors": [
+                  "Lin S."
+                ],
+                "year": 2018,
+                "venue": "ACM Trans. Embed. Comput. Syst.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "e_1_3_2_55_2",
+            "rawText": "Chung Laung Liu and James W. Layland. 1973. Scheduling algorithms for multiprogramming in a hard-real-time environment. J. ACM 20, 1 (1973), 46–61.",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "e_1_3_2_55_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "46",
+              "DOI": "10.1145/321738.321743",
+              "article-title": "Scheduling algorithms for multiprogramming in a hard-real-time environment",
+              "volume": "20",
+              "author": "Liu Chung Laung",
+              "year": "1973",
+              "unstructured": "Chung Laung Liu and James W. Layland. 1973. Scheduling algorithms for multiprogramming in a hard-real-time environment. J. ACM 20, 1 (1973), 46–61.",
+              "journal-title": "J. ACM"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "title": "Scheduling algorithms for multiprogramming in a hard-real-time environment",
+                "authors": [
+                  "Liu Chung Laung"
+                ],
+                "year": 1973,
+                "venue": "J. ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "e_1_3_2_56_2",
+            "rawText": "https://doi.org/10.1023/b:time.0000033378.56741.14",
+            "doi": "10.1023/b:time.0000033378.56741.14",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_56_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/B:TIME.0000033378.56741.14"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/b:time.0000033378.56741.14",
+                "doi": "10.1023/b:time.0000033378.56741.14",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/b:time.0000033378.56741.14"
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "e_1_3_2_57_2",
+            "rawText": "https://doi.org/10.1016/j.jss.2006.03.023",
+            "doi": "10.1016/j.jss.2006.03.023",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_57_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.jss.2006.03.023"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.jss.2006.03.023",
+                "doi": "10.1016/j.jss.2006.03.023",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.jss.2006.03.023"
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "e_1_3_2_58_2",
+            "rawText": "https://doi.org/10.1016/j.ejor.2008.07.037",
+            "doi": "10.1016/j.ejor.2008.07.037",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_58_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.ejor.2008.07.037"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.ejor.2008.07.037",
+                "doi": "10.1016/j.ejor.2008.07.037",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.ejor.2008.07.037"
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "e_1_3_2_59_2",
+            "rawText": "https://doi.org/10.1109/32.637146",
+            "doi": "10.1109/32.637146",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_59_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/32.637146"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/32.637146",
+                "doi": "10.1109/32.637146",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/32.637146"
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "e_1_3_2_60_2",
+            "rawText": "https://doi.org/10.1109/date.2008.4484696",
+            "doi": "10.1109/date.2008.4484696",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_60_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/DATE.2008.4484696"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/date.2008.4484696",
+                "doi": "10.1109/date.2008.4484696",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/date.2008.4484696"
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "e_1_3_2_61_2",
+            "rawText": "https://doi.org/10.1155/2007/83710",
+            "doi": "10.1155/2007/83710",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_61_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1155/2007/83710"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1155/2007/83710",
+                "doi": "10.1155/2007/83710",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1155/2007/83710"
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "e_1_3_2_62_2",
+            "rawText": "Saad Mubeen, Jukka Mäki-Turja, and Mikael Sjödin. 2011. Implementation of holistic response-time analysis in rubus-ICE. InProceedings of the 32nd IEEE Real-time Systems Symposium (RTSS’11), WIP Session.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_62_2",
+              "article-title": "Implementation of holistic response-time analysis in rubus-ICE",
+              "author": "Mubeen Saad",
+              "year": "2011",
+              "unstructured": "Saad Mubeen, Jukka Mäki-Turja, and Mikael Sjödin. 2011. Implementation of holistic response-time analysis in rubus-ICE. InProceedings of the 32nd IEEE Real-time Systems Symposium (RTSS’11), WIP Session.",
+              "journal-title": "Proceedings of the 32nd IEEE Real-time Systems Symposium (RTSS’11), WIP Session"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_62_2",
+                "doi": "",
+                "title": "Implementation of holistic response-time analysis in rubus-ICE",
+                "authors": [
+                  "Mubeen Saad"
+                ],
+                "year": 2011,
+                "venue": "Proceedings of the 32nd IEEE Real-time Systems Symposium (RTSS’11), WIP Session",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "e_1_3_2_63_2",
+            "rawText": "https://doi.org/10.1145/566225.513834",
+            "doi": "10.1145/566225.513834",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_63_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/566225.513834"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/566225.513834",
+                "doi": "10.1145/566225.513834",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/566225.513834"
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "e_1_3_2_64_2",
+            "rawText": "José Carlos Palencia and M. González Harbour. 1998. Schedulability analysis for tasks with static and dynamic offsets. In Proceedings of the 19th IEEE Real-time Systems Symposium, 1998. IEEE, 26–37.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_64_2",
+              "first-page": "26",
+              "volume-title": "Proceedings of the 19th IEEE Real-time Systems Symposium, 1998.",
+              "author": "Palencia José Carlos",
+              "year": "1998",
+              "unstructured": "José Carlos Palencia and M. González Harbour. 1998. Schedulability analysis for tasks with static and dynamic offsets. In Proceedings of the 19th IEEE Real-time Systems Symposium, 1998. IEEE, 26–37."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_64_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Palencia José Carlos"
+                ],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": "e_1_3_2_65_2",
+            "rawText": "Keshab K. Parhi. 2007. VLSI Digital Signal Processing Systems: Design and Implementation. John Wiley & Sons.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_65_2",
+              "volume-title": "VLSI Digital Signal Processing Systems: Design and Implementation",
+              "author": "Parhi Keshab K.",
+              "year": "2007",
+              "unstructured": "Keshab K. Parhi. 2007. VLSI Digital Signal Processing Systems: Design and Implementation. John Wiley & Sons."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_65_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Parhi Keshab K."
+                ],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": "e_1_3_2_66_2",
+            "rawText": "https://doi.org/10.1109/12.73588",
+            "doi": "10.1109/12.73588",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_66_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/12.73588"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/12.73588",
+                "doi": "10.1109/12.73588",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/12.73588"
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": "e_1_3_2_67_2",
+            "rawText": "T. M. Parks, J. L. Pino, and E. A. Lee. 1995. A comparison of synchronous and cycle-static dataflow. In 1995 Conference Record of the 29th Asilomar Conference on Signals, Systems and Computers, 1995, Vol. 1. IEEE, 204–210.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_67_2",
+              "first-page": "204",
+              "volume-title": "1995 Conference Record of the 29th Asilomar Conference on Signals, Systems and Computers, 1995",
+              "volume": "1",
+              "author": "Parks T. M.",
+              "year": "1995",
+              "unstructured": "T. M. Parks, J. L. Pino, and E. A. Lee. 1995. A comparison of synchronous and cycle-static dataflow. In 1995 Conference Record of the 29th Asilomar Conference on Signals, Systems and Computers, 1995, Vol. 1. IEEE, 204–210."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_67_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Parks T. M."
+                ],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": "e_1_3_2_68_2",
+            "rawText": "M. Pelcat, K. Desnos, J. Heulot, C. Guy, J.-F. Nezan, and S. Aridhi. 2014. Preesm: A dataflow-based rapid prototyping framework for simplifying multicore DSP programming. In 2014 6th European Embedded Design in Education and Research Conference (EDERC’14). 36–40. 10.1109/EDERC.2014.6924354",
+            "doi": "10.1109/ederc.2014.6924354",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_68_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "36",
+              "DOI": "10.1109/EDERC.2014.6924354",
+              "volume-title": "2014 6th European Embedded Design in Education and Research Conference (EDERC’14)",
+              "author": "Pelcat M.",
+              "year": "2014",
+              "unstructured": "M. Pelcat, K. Desnos, J. Heulot, C. Guy, J.-F. Nezan, and S. Aridhi. 2014. Preesm: A dataflow-based rapid prototyping framework for simplifying multicore DSP programming. In 2014 6th European Embedded Design in Education and Research Conference (EDERC’14). 36–40. 10.1109/EDERC.2014.6924354"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/ederc.2014.6924354",
+                "doi": "10.1109/ederc.2014.6924354",
+                "title": "",
+                "authors": [
+                  "Pelcat M."
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/EDERC.2014.6924354"
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": "e_1_3_2_69_2",
+            "rawText": "https://doi.org/10.1201/b11644-15",
+            "doi": "10.1201/b11644-15",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_69_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1201/b11644-15"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1201/b11644-15",
+                "doi": "10.1201/b11644-15",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1201/b11644-15"
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": "e_1_3_2_70_2",
+            "rawText": "R. Pellizzoni, P. Meredith, M.-Y. Nam, M. Sun, M. Caccamo, and L. Sha. 2009. Handling mixed-criticality in SoC-based real-time embedded systems. In Proceedings of the 7th ACM International Conference on Embedded Software (EMSOFT’09). ACM, New York, NY, 235–244. 10.1145/1629335.1629367",
+            "doi": "10.1145/1629335.1629367",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_70_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "235",
+              "DOI": "10.1145/1629335.1629367",
+              "volume-title": "Proceedings of the 7th ACM International Conference on Embedded Software (EMSOFT’09)",
+              "author": "Pellizzoni R.",
+              "year": "2009",
+              "unstructured": "R. Pellizzoni, P. Meredith, M.-Y. Nam, M. Sun, M. Caccamo, and L. Sha. 2009. Handling mixed-criticality in SoC-based real-time embedded systems. In Proceedings of the 7th ACM International Conference on Embedded Software (EMSOFT’09). ACM, New York, NY, 235–244. 10.1145/1629335.1629367"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1629335.1629367",
+                "doi": "10.1145/1629335.1629367",
+                "title": "",
+                "authors": [
+                  "Pellizzoni R."
+                ],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1629335.1629367"
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": "e_1_3_2_71_2",
+            "rawText": "Frank Singhoff, Jérôme Legrand, Laurent Nana, and Lionel Marcé. 2004. Cheddar: A flexible real time scheduling framework. In ACM SIGAda Ada Letters, Vol. 24. ACM, 1–8.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_71_2",
+              "first-page": "1",
+              "volume-title": "ACM SIGAda Ada Letters",
+              "author": "Singhoff Frank",
+              "year": "2004",
+              "unstructured": "Frank Singhoff, Jérôme Legrand, Laurent Nana, and Lionel Marcé. 2004. Cheddar: A flexible real time scheduling framework. In ACM SIGAda Ada Letters, Vol. 24. ACM, 1–8."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_71_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Singhoff Frank"
+                ],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 71,
+            "label": "e_1_3_2_72_2",
+            "rawText": "M. Sjödin and H. Hansson. 1998. Improved response-time analysis calculations. In Proceedings 19th IEEE Real-time Systems Symposium (Cat. No.98CB36279). 399–408. 10.1109/REAL.1998.739773",
+            "doi": "10.1109/real.1998.739773",
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_72_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "399",
+              "DOI": "10.1109/REAL.1998.739773",
+              "volume-title": "Proceedings 19th IEEE Real-time Systems Symposium (Cat. No.98CB36279)",
+              "author": "Sjödin M.",
+              "year": "1998",
+              "unstructured": "M. Sjödin and H. Hansson. 1998. Improved response-time analysis calculations. In Proceedings 19th IEEE Real-time Systems Symposium (Cat. No.98CB36279). 399–408. 10.1109/REAL.1998.739773"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1998.739773",
+                "doi": "10.1109/real.1998.739773",
+                "title": "",
+                "authors": [
+                  "Sjödin M."
+                ],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1998.739773"
+              }
+            }
+          },
+          {
+            "index": 72,
+            "label": "e_1_3_2_73_2",
+            "rawText": "https://doi.org/10.1007/3-540-48118-4_22",
+            "doi": "10.1007/3-540-48118-4_22",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_73_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/3-540-48118-4_22"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-48118-4_22",
+                "doi": "10.1007/3-540-48118-4_22",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-48118-4_22"
+              }
+            }
+          },
+          {
+            "index": 73,
+            "label": "e_1_3_2_74_2",
+            "rawText": "S. Stuijk, M. Geilen, and T. Basten. 2006. Exploring trade-offs in buffer requirements and throughput constraints for synchronous dataflow graphs. In 2006 43rd ACM/IEEE Design Automation Conference. 899–904. 10.1145/1146909.1147138",
+            "doi": "10.1145/1146909.1147138",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_74_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "899",
+              "DOI": "10.1145/1146909.1147138",
+              "volume-title": "2006 43rd ACM/IEEE Design Automation Conference",
+              "author": "Stuijk S.",
+              "year": "2006",
+              "unstructured": "S. Stuijk, M. Geilen, and T. Basten. 2006. Exploring trade-offs in buffer requirements and throughput constraints for synchronous dataflow graphs. In 2006 43rd ACM/IEEE Design Automation Conference. 899–904. 10.1145/1146909.1147138"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1146909.1147138",
+                "doi": "10.1145/1146909.1147138",
+                "title": "",
+                "authors": [
+                  "Stuijk S."
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1146909.1147138"
+              }
+            }
+          },
+          {
+            "index": 74,
+            "label": "e_1_3_2_75_2",
+            "rawText": "S. Stuijk, M. C. W. Geilen, and T. Basten. 2006. SDF \\(^3\\) : SDF for free. In 6th International Conference on Application of Concurrency to System Design (ACSD’06).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_75_2",
+              "volume-title": "6th International Conference on Application of Concurrency to System Design (ACSD’06)",
+              "author": "Stuijk S.",
+              "year": "2006",
+              "unstructured": "S. Stuijk, M. C. W. Geilen, and T. Basten. 2006. SDF \\(^3\\) : SDF for free. In 6th International Conference on Application of Concurrency to System Design (ACSD’06)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_75_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Stuijk S."
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 75,
+            "label": "e_1_3_2_76_2",
+            "rawText": "https://doi.org/10.1109/tc.2008.58",
+            "doi": "10.1109/tc.2008.58",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_76_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.2008.58"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tc.2008.58",
+                "doi": "10.1109/tc.2008.58",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/TC.2008.58"
+              }
+            }
+          },
+          {
+            "index": 76,
+            "label": "e_1_3_2_77_2",
+            "rawText": "Youcheng Sun Étienne André and Giuseppe Lipari. 2015. Verification of two real-time systems using parametric timed automata. In Waters 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems. http://waters2015.inria.fr/program/",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_77_2",
+              "unstructured": "Youcheng Sun Étienne André and Giuseppe Lipari. 2015. Verification of two real-time systems using parametric timed automata. In Waters 6th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems. http://waters2015.inria.fr/program/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_77_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 77,
+            "label": "e_1_3_2_78_2",
+            "rawText": "W. Thies, M. Karczmarek, and S. P. Amarasinghe. 2002. StreamIt: A language for streaming applications. In Proceedings of the 11th International Conference on Compiler Construction (CC’02). Springer-Verlag, 179–196.",
+            "doi": "10.1007/3-540-45937-5_14",
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_78_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "179",
+              "DOI": "10.1007/3-540-45937-5_14",
+              "volume-title": "Proceedings of the 11th International Conference on Compiler Construction (CC’02)",
+              "author": "Thies W.",
+              "year": "2002",
+              "unstructured": "W. Thies, M. Karczmarek, and S. P. Amarasinghe. 2002. StreamIt: A language for streaming applications. In Proceedings of the 11th International Conference on Compiler Construction (CC’02). Springer-Verlag, 179–196."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/3-540-45937-5_14",
+                "doi": "10.1007/3-540-45937-5_14",
+                "title": "",
+                "authors": [
+                  "Thies W."
+                ],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45937-5_14"
+              }
+            }
+          },
+          {
+            "index": 78,
+            "label": "e_1_3_2_79_2",
+            "rawText": "Ken Tindell and John Clark. 1994. Holistic schedulability analysis for distributed hard real-time systems. Microprocess. Microprogram. 40, 2–3 (1994), 117–134.",
+            "doi": "10.1016/0165-6074(94)90080-9",
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "e_1_3_2_79_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "117",
+              "DOI": "10.1016/0165-6074(94)90080-9",
+              "article-title": "Holistic schedulability analysis for distributed hard real-time systems",
+              "volume": "40",
+              "author": "Tindell Ken",
+              "year": "1994",
+              "unstructured": "Ken Tindell and John Clark. 1994. Holistic schedulability analysis for distributed hard real-time systems. Microprocess. Microprogram. 40, 2–3 (1994), 117–134.",
+              "journal-title": "Microprocess. Microprogram."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0165-6074(94)90080-9",
+                "doi": "10.1016/0165-6074(94)90080-9",
+                "title": "Holistic schedulability analysis for distributed hard real-time systems",
+                "authors": [
+                  "Tindell Ken"
+                ],
+                "year": 1994,
+                "venue": "Microprocess. Microprogram.",
+                "type": "",
+                "url": "https://doi.org/10.1016/0165-6074(94)90080-9"
+              }
+            }
+          },
+          {
+            "index": 79,
+            "label": "e_1_3_2_80_2",
+            "rawText": "Hai Nam Tran, Alexandre Honorat, Shuvra S. Bhattacharyya, Jean-Pierre Talpin, Thierry Gautier, and Loïc Besnard. 2021. A framework for fixed priority periodic scheduling synthesis from synchronous data-flow graphs. In 21th International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation (SAMOS’21).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_80_2",
+              "volume-title": "21th International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation (SAMOS’21)",
+              "author": "Tran Hai Nam",
+              "year": "2021",
+              "unstructured": "Hai Nam Tran, Alexandre Honorat, Shuvra S. Bhattacharyya, Jean-Pierre Talpin, Thierry Gautier, and Loïc Besnard. 2021. A framework for fixed priority periodic scheduling synthesis from synchronous data-flow graphs. In 21th International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation (SAMOS’21)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_80_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Tran Hai Nam"
+                ],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 80,
+            "label": "e_1_3_2_81_2",
+            "rawText": "W. F. J. Verhaegh, E. H. L. Aarts, P. C. N. van Gorp, and P. E. R. Lippens. 2001. A two-stage solution approach to multidimensional periodic scheduling. In IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, Vol. 20.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_81_2",
+              "volume-title": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+              "author": "Verhaegh W. F. J.",
+              "year": "2001",
+              "unstructured": "W. F. J. Verhaegh, E. H. L. Aarts, P. C. N. van Gorp, and P. E. R. Lippens. 2001. A two-stage solution approach to multidimensional periodic scheduling. In IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, Vol. 20."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_81_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Verhaegh W. F. J."
+                ],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 81,
+            "label": "e_1_3_2_82_2",
+            "rawText": "https://doi.org/10.1016/j.compeleceng.2014.05.002",
+            "doi": "10.1016/j.compeleceng.2014.05.002",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_82_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.compeleceng.2014.05.002"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.compeleceng.2014.05.002",
+                "doi": "10.1016/j.compeleceng.2014.05.002",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.compeleceng.2014.05.002"
+              }
+            }
+          },
+          {
+            "index": 82,
+            "label": "e_1_3_2_83_2",
+            "rawText": "Yun Wang and Manas Saksena. 1999. Scheduling fixed-priority tasks with preemption threshold. In 6th IEEE International Conference on Real-time Computing Systems and Applications (RTCSA’99). 328–335.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_83_2",
+              "first-page": "328",
+              "volume-title": "6th IEEE International Conference on Real-time Computing Systems and Applications (RTCSA’99)",
+              "author": "Wang Yun",
+              "year": "1999",
+              "unstructured": "Yun Wang and Manas Saksena. 1999. Scheduling fixed-priority tasks with preemption threshold. In 6th IEEE International Conference on Real-time Computing Systems and Applications (RTCSA’99). 328–335."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_83_2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Wang Yun"
+                ],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 83,
+            "label": "e_1_3_2_84_2",
+            "rawText": "M. H. Wiggers, M. J. G. Bekooij, and G. J. M. Smit. 2007. Efficient computation of buffer capacities for cyclo-static dataflow graphs. In 2007 44th ACM/IEEE Design Automation Conference. 658–663.",
+            "doi": "10.1145/1278480.1278647",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_84_2",
+              "doi-asserted-by": "crossref",
+              "first-page": "658",
+              "DOI": "10.1145/1278480.1278647",
+              "volume-title": "2007 44th ACM/IEEE Design Automation Conference",
+              "author": "Wiggers M. H.",
+              "year": "2007",
+              "unstructured": "M. H. Wiggers, M. J. G. Bekooij, and G. J. M. Smit. 2007. Efficient computation of buffer capacities for cyclo-static dataflow graphs. In 2007 44th ACM/IEEE Design Automation Conference. 658–663."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1278480.1278647",
+                "doi": "10.1145/1278480.1278647",
+                "title": "",
+                "authors": [
+                  "Wiggers M. H."
+                ],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1278480.1278647"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/3615586",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 19,
+          "extractedReferenceCount": 83,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/3615586",
+          "crossrefReferenceCount": 83
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/3615586->doi:10.1049/sej.1993.0034@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1049/sej.1993.0034",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1007/978-1-4613-1389-2@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1007/978-1-4613-1389-2",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/78.485935@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/78.485935",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/estimedia.2013.6704509@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/estimedia.2013.6704509",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/seaa.2012.20@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/seaa.2012.20",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/jproc.2002.805829@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/jproc.2002.805829",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/acsd.2006.33@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/acsd.2006.33",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/dsd.2007.4341468@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/dsd.2007.4341468",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1023/a:1015452903532@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1023/a:1015452903532",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1093/comjnl/29.5.390@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1093/comjnl/29.5.390",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1145/2997465.2997479@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1145/2997465.2997479",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/proc.1987.13876@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/proc.1987.13876",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/5.381846@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/5.381846",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1145/321738.321743@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/12.73588@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/12.73588",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/ederc.2014.6924354@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/ederc.2014.6924354",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1109/tc.2008.58@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1109/tc.2008.58",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1007/3-540-45937-5_14@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1007/3-540-45937-5_14",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3615586->doi:10.1145/1278480.1278647@papers-dataflow-Honorat2025.pdf",
+      "source": "doi:10.1145/3615586",
+      "target": "doi:10.1145/1278480.1278647",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Honorat2025.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Honorat2025",
+      "paperId": "doi:10.1145/3615586",
+      "metadata": {
+        "fileName": "Honorat2025.pdf",
+        "sourcePath": "papers/dataflow/Honorat2025.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2435 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.619165+00:00",
+  "papers": [
+    {
+      "key": "Wei2024ACCESS",
+      "paper": {
+        "id": "doi:10.1016/j.jss.2024.112034",
+        "citationKey": "Wei2024ACCESS",
+        "title": "ACCESS: Assurance Case Centric Engineering of Safety-Critical Systems",
+        "authors": [
+          "Ran Wei",
+          "Simon Foster",
+          "Haitao Mei",
+          "Fang Yan",
+          "Ruizhe Yang",
+          "Ibrahim Habli",
+          "Colin O'Halloran",
+          "Nick Tudor",
+          "Tim Kelly",
+          "Yakoub Nemouchi"
+        ],
+        "year": 2024,
+        "venue": "Journal of Systems and Software",
+        "type": "article",
+        "doi": "10.1016/j.jss.2024.112034",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [
+          "primary-research",
+          "assurance-case",
+          "model-based",
+          "continuous-assurance"
+        ],
+        "topics": [],
+        "tags": [
+          "report:Engineering_Transportation_Software_outline"
+        ],
+        "notes": "Primary method paper for evolving model-based assurance cases, engineering-artifact traceability, automated development/runtime evaluation, and an AUV case study.",
+        "bibtexFields": {
+          "author": "Wei, Ran and Foster, Simon and Mei, Haitao and Yan, Fang and Yang, Ruizhe and Habli, Ibrahim\n    and O'Halloran, Colin and Tudor, Nick and Kelly, Tim and Nemouchi, Yakoub",
+          "title": "{ACCESS}: Assurance Case Centric Engineering of Safety-Critical Systems",
+          "journal": "Journal of Systems and Software",
+          "volume": "213",
+          "pages": "112034",
+          "year": "2024",
+          "doi": "10.1016/j.jss.2024.112034",
+          "url": "https://doi.org/10.1016/j.jss.2024.112034",
+          "note": "Primary method paper for evolving model-based assurance cases, engineering-artifact traceability,\n    automated development/runtime evaluation, and an AUV case study.",
+          "keywords": "primary-research, assurance-case, model-based, continuous-assurance"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.285849+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "10.1016/j.jss.2024.112034_b1",
+            "rawText": "Alkassar. The Verisoft approach to systems verification. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b1",
+              "series-title": "VSTTE 2008",
+              "first-page": "209",
+              "article-title": "The Verisoft approach to systems verification",
+              "volume": "vol. 5295",
+              "author": "Alkassar",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b1",
+                "doi": "",
+                "title": "The Verisoft approach to systems verification",
+                "authors": [
+                  "Alkassar"
+                ],
+                "year": 2008,
+                "venue": "VSTTE 2008",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "10.1016/j.jss.2024.112034_b2",
+            "rawText": "AS5506. Architecture analysis and design language (AADL). 2004. Embed. Comput. Syst. Comm. SAE",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b2",
+              "article-title": "Architecture analysis and design language (AADL)",
+              "author": "AS5506",
+              "year": "2004",
+              "journal-title": "Embed. Comput. Syst. Comm. SAE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b2",
+                "doi": "",
+                "title": "Architecture analysis and design language (AADL)",
+                "authors": [
+                  "AS5506"
+                ],
+                "year": 2004,
+                "venue": "Embed. Comput. Syst. Comm. SAE",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "10.1016/j.jss.2024.112034_b3",
+            "rawText": "Barmpis, K., Kolovos, D., 2013. Hawk: Towards a scalable model indexing architecture. In: Proceedings of the Workshop on Scalability in Model Driven Engineering. pp. 1–9.",
+            "doi": "10.1145/2487766.2487771",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b3",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Barmpis, K., Kolovos, D., 2013. Hawk: Towards a scalable model indexing architecture. In: Proceedings of the Workshop on Scalability in Model Driven Engineering. pp. 1–9.",
+              "DOI": "10.1145/2487766.2487771"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2487766.2487771",
+                "doi": "10.1145/2487766.2487771",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2487766.2487771"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "10.1016/j.jss.2024.112034_b4",
+            "rawText": "Barry. CertWare: A workbench for safety case production and analysis. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b4",
+              "series-title": "Aerospace Conference, 2011 IEEE",
+              "first-page": "1",
+              "article-title": "CertWare: A workbench for safety case production and analysis",
+              "author": "Barry",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b4",
+                "doi": "",
+                "title": "CertWare: A workbench for safety case production and analysis",
+                "authors": [
+                  "Barry"
+                ],
+                "year": 2011,
+                "venue": "Aerospace Conference, 2011 IEEE",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "10.1016/j.jss.2024.112034_b5",
+            "rawText": "Bishop. A methodology for safety case development. 2000",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b5",
+              "series-title": "Safety and Reliability",
+              "first-page": "34",
+              "article-title": "A methodology for safety case development",
+              "volume": "volume 20",
+              "author": "Bishop",
+              "year": "2000"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b5",
+                "doi": "",
+                "title": "A methodology for safety case development",
+                "authors": [
+                  "Bishop"
+                ],
+                "year": 2000,
+                "venue": "Safety and Reliability",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "10.1016/j.jss.2024.112034_b6",
+            "rawText": "Blanchette. Automatic proof and disproof in Isabelle/HOL. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b6",
+              "series-title": "FroCoS",
+              "first-page": "12",
+              "article-title": "Automatic proof and disproof in Isabelle/HOL",
+              "volume": "vol. 6989",
+              "author": "Blanchette",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b6",
+                "doi": "",
+                "title": "Automatic proof and disproof in Isabelle/HOL",
+                "authors": [
+                  "Blanchette"
+                ],
+                "year": 2011,
+                "venue": "FroCoS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "10.1016/j.jss.2024.112034_b7",
+            "rawText": "Brambilla. Model-driven software engineering in practice. 2017. Synth. Lect. Softw. Eng.. https://doi.org/10.1007/978-3-031-02549-5",
+            "doi": "10.1007/978-3-031-02549-5",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "10.1016/j.jss.2024.112034_b7",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1007/978-3-031-02549-5",
+              "article-title": "Model-driven software engineering in practice",
+              "volume": "3",
+              "author": "Brambilla",
+              "year": "2017",
+              "journal-title": "Synth. Lect. Softw. Eng."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-031-02549-5",
+                "doi": "10.1007/978-3-031-02549-5",
+                "title": "Model-driven software engineering in practice",
+                "authors": [
+                  "Brambilla"
+                ],
+                "year": 2017,
+                "venue": "Synth. Lect. Softw. Eng.",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-031-02549-5"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "10.1016/j.jss.2024.112034_b8",
+            "rawText": "Brookes. A theory of communicating sequential processes. 1984. J. ACM. https://doi.org/10.1145/828.833",
+            "doi": "10.1145/828.833",
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "10.1016/j.jss.2024.112034_b8",
+              "doi-asserted-by": "crossref",
+              "first-page": "560",
+              "DOI": "10.1145/828.833",
+              "article-title": "A theory of communicating sequential processes",
+              "volume": "31",
+              "author": "Brookes",
+              "year": "1984",
+              "journal-title": "J. ACM"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/828.833",
+                "doi": "10.1145/828.833",
+                "title": "A theory of communicating sequential processes",
+                "authors": [
+                  "Brookes"
+                ],
+                "year": 1984,
+                "venue": "J. ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/828.833"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "10.1016/j.jss.2024.112034_b9",
+            "rawText": "Brucker. Using ontologies in formal developments targeting certification. 2019",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b9",
+              "series-title": "Integrated Formal Methods",
+              "first-page": "65",
+              "article-title": "Using ontologies in formal developments targeting certification",
+              "volume": "vol. 11918",
+              "author": "Brucker",
+              "year": "2019"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b9",
+                "doi": "",
+                "title": "Using ontologies in formal developments targeting certification",
+                "authors": [
+                  "Brucker"
+                ],
+                "year": 2019,
+                "venue": "Integrated Formal Methods",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10.1016/j.jss.2024.112034_b10",
+            "rawText": "Calinescu. Engineering trustworthy self-adaptive software with dynamic assurance cases. 2018. IEEE Trans. Softw. Eng.. https://doi.org/10.1109/tse.2017.2738640",
+            "doi": "10.1109/tse.2017.2738640",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "11",
+              "key": "10.1016/j.jss.2024.112034_b10",
+              "doi-asserted-by": "crossref",
+              "first-page": "1039",
+              "DOI": "10.1109/TSE.2017.2738640",
+              "article-title": "Engineering trustworthy self-adaptive software with dynamic assurance cases",
+              "volume": "44",
+              "author": "Calinescu",
+              "year": "2018",
+              "journal-title": "IEEE Trans. Softw. Eng."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tse.2017.2738640",
+                "doi": "10.1109/tse.2017.2738640",
+                "title": "Engineering trustworthy self-adaptive software with dynamic assurance cases",
+                "authors": [
+                  "Calinescu"
+                ],
+                "year": 2018,
+                "venue": "IEEE Trans. Softw. Eng.",
+                "type": "",
+                "url": "https://doi.org/10.1109/tse.2017.2738640"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "10.1016/j.jss.2024.112034_b11",
+            "rawText": "Cruanes. Tool integration with the evidential tool bus. 2013",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b11",
+              "series-title": "VMCAI",
+              "first-page": "275",
+              "article-title": "Tool integration with the evidential tool bus",
+              "volume": "vol. 7737",
+              "author": "Cruanes",
+              "year": "2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b11",
+                "doi": "",
+                "title": "Tool integration with the evidential tool bus",
+                "authors": [
+                  "Cruanes"
+                ],
+                "year": 2013,
+                "venue": "VMCAI",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "10.1016/j.jss.2024.112034_b12",
+            "rawText": "Del Fabro. Weaving models with the eclipse AMW plugin. 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b12",
+              "series-title": "Eclipse Modeling Symposium, Eclipse Summit Europe",
+              "first-page": "37",
+              "article-title": "Weaving models with the eclipse AMW plugin",
+              "volume": "volume 2006",
+              "author": "Del Fabro",
+              "year": "2006"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b12",
+                "doi": "",
+                "title": "Weaving models with the eclipse AMW plugin",
+                "authors": [
+                  "Del Fabro"
+                ],
+                "year": 2006,
+                "venue": "Eclipse Modeling Symposium, Eclipse Summit Europe",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "10.1016/j.jss.2024.112034_b13",
+            "rawText": "Denney. Tool support for assurance case development. 2017. Autom. Softw. Eng.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b13",
+              "first-page": "1",
+              "article-title": "Tool support for assurance case development",
+              "author": "Denney",
+              "year": "2017",
+              "journal-title": "Autom. Softw. Eng."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b13",
+                "doi": "",
+                "title": "Tool support for assurance case development",
+                "authors": [
+                  "Denney"
+                ],
+                "year": 2017,
+                "venue": "Autom. Softw. Eng.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "10.1016/j.jss.2024.112034_b14",
+            "rawText": "Denney. Dynamic safety cases for through-life safety assurance. 2015",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b14",
+              "series-title": "2015 IEEE/ACM 37th IEEE International Conference on Software Engineering",
+              "first-page": "587",
+              "article-title": "Dynamic safety cases for through-life safety assurance",
+              "volume": "volume 2",
+              "author": "Denney",
+              "year": "2015"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b14",
+                "doi": "",
+                "title": "Dynamic safety cases for through-life safety assurance",
+                "authors": [
+                  "Denney"
+                ],
+                "year": 2015,
+                "venue": "2015 IEEE/ACM 37th IEEE International Conference on Software Engineering",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "10.1016/j.jss.2024.112034_b15",
+            "rawText": "Denney. A software safety certification tool for automatically generated guidance, navigation and control code. 2008. IEEE Aerosp. Conf. Proc.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b15",
+              "article-title": "A software safety certification tool for automatically generated guidance, navigation and control code",
+              "author": "Denney",
+              "year": "2008",
+              "journal-title": "IEEE Aerosp. Conf. Proc."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b15",
+                "doi": "",
+                "title": "A software safety certification tool for automatically generated guidance, navigation and control code",
+                "authors": [
+                  "Denney"
+                ],
+                "year": 2008,
+                "venue": "IEEE Aerosp. Conf. Proc.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "10.1016/j.jss.2024.112034_b16",
+            "rawText": "Eclipse Foundation, ., 2003. Eclipse modelling framework (GMF). https://www.eclipse.org/modeling/gmp/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b16",
+              "unstructured": "Eclipse Foundation, ., 2003. Eclipse modelling framework (GMF). https://www.eclipse.org/modeling/gmp/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b16",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "10.1016/j.jss.2024.112034_b17",
+            "rawText": "European Organisation for the Safety of Air Navigation (EUROCONTROL). Safety case development manual. 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b17",
+              "series-title": "Safety case development manual",
+              "author": "European Organisation for the Safety of Air Navigation (EUROCONTROL)",
+              "year": "2006"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b17",
+                "doi": "",
+                "title": "Safety case development manual",
+                "authors": [
+                  "European Organisation for the Safety of Air Navigation (EUROCONTROL)"
+                ],
+                "year": 2006,
+                "venue": "Safety case development manual",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "10.1016/j.jss.2024.112034_b18",
+            "rawText": "Foster. Automating verification of state machines with reactive designs and Isabelle/UTP. 2018",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b18",
+              "series-title": "Proc. 15th. Intl. Conf. on Formal Aspects of Component Software",
+              "article-title": "Automating verification of state machines with reactive designs and Isabelle/UTP",
+              "volume": "vol. 11222",
+              "author": "Foster",
+              "year": "2018"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b18",
+                "doi": "",
+                "title": "Automating verification of state machines with reactive designs and Isabelle/UTP",
+                "authors": [
+                  "Foster"
+                ],
+                "year": 2018,
+                "venue": "Proc. 15th. Intl. Conf. on Formal Aspects of Component Software",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "10.1016/j.jss.2024.112034_b19",
+            "rawText": "Foster. Isabelle/SACM: Computer-assisted assurance cases with integrated formal methods. 2019",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b19",
+              "series-title": "IFM",
+              "first-page": "379",
+              "article-title": "Isabelle/SACM: Computer-assisted assurance cases with integrated formal methods",
+              "author": "Foster",
+              "year": "2019"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b19",
+                "doi": "",
+                "title": "Isabelle/SACM: Computer-assisted assurance cases with integrated formal methods",
+                "authors": [
+                  "Foster"
+                ],
+                "year": 2019,
+                "venue": "IFM",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "10.1016/j.jss.2024.112034_b20",
+            "rawText": "Foster. Integration of formal proof into unified assurance cases with Isabelle/SACM. 2021. Form. Asp. Comput.. https://doi.org/10.1007/s00165-021-00537-4",
+            "doi": "10.1007/s00165-021-00537-4",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b20",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1007/s00165-021-00537-4",
+              "article-title": "Integration of formal proof into unified assurance cases with Isabelle/SACM",
+              "author": "Foster",
+              "year": "2021",
+              "journal-title": "Form. Asp. Comput."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s00165-021-00537-4",
+                "doi": "10.1007/s00165-021-00537-4",
+                "title": "Integration of formal proof into unified assurance cases with Isabelle/SACM",
+                "authors": [
+                  "Foster"
+                ],
+                "year": 2021,
+                "venue": "Form. Asp. Comput.",
+                "type": "",
+                "url": "https://doi.org/10.1007/s00165-021-00537-4"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "10.1016/j.jss.2024.112034_b21",
+            "rawText": "Foster. Formal model-based assurance cases in Isabelle/SACM: An autonomous underwater vehicle case study. 2020",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b21",
+              "series-title": "Formal Methods in Software Engineering (FormaliSE 2020): Proceedings of the 8th International Conference",
+              "article-title": "Formal model-based assurance cases in Isabelle/SACM: An autonomous underwater vehicle case study",
+              "author": "Foster",
+              "year": "2020"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b21",
+                "doi": "",
+                "title": "Formal model-based assurance cases in Isabelle/SACM: An autonomous underwater vehicle case study",
+                "authors": [
+                  "Foster"
+                ],
+                "year": 2020,
+                "venue": "Formal Methods in Software Engineering (FormaliSE 2020): Proceedings of the 8th International Conference",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "10.1016/j.jss.2024.112034_b22",
+            "rawText": "Gacek. Resolute: an assurance case language for architecture models. 2014. ACM SIGAda Ada Lett.. https://doi.org/10.1145/2692956.2663177",
+            "doi": "10.1145/2692956.2663177",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "10.1016/j.jss.2024.112034_b22",
+              "doi-asserted-by": "crossref",
+              "first-page": "19",
+              "DOI": "10.1145/2692956.2663177",
+              "article-title": "Resolute: an assurance case language for architecture models",
+              "volume": "34",
+              "author": "Gacek",
+              "year": "2014",
+              "journal-title": "ACM SIGAda Ada Lett."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2692956.2663177",
+                "doi": "10.1145/2692956.2663177",
+                "title": "Resolute: an assurance case language for architecture models",
+                "authors": [
+                  "Gacek"
+                ],
+                "year": 2014,
+                "venue": "ACM SIGAda Ada Lett.",
+                "type": "",
+                "url": "https://doi.org/10.1145/2692956.2663177"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "10.1016/j.jss.2024.112034_b23",
+            "rawText": "Gleirscher. Evolution of formal model-based assurance cases for autonomous robots. 2019",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b23",
+              "series-title": "International Conference on Software Engineering and Formal Methods",
+              "first-page": "87",
+              "article-title": "Evolution of formal model-based assurance cases for autonomous robots",
+              "author": "Gleirscher",
+              "year": "2019"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b23",
+                "doi": "",
+                "title": "Evolution of formal model-based assurance cases for autonomous robots",
+                "authors": [
+                  "Gleirscher"
+                ],
+                "year": 2019,
+                "venue": "International Conference on Software Engineering and Formal Methods",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "10.1016/j.jss.2024.112034_b24",
+            "rawText": "Gleirscher. New opportunities for integrated formal methods. 2019. ACM Comput. Surv.. https://doi.org/10.1145/3357231",
+            "doi": "10.1145/3357231",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "6",
+              "key": "10.1016/j.jss.2024.112034_b24",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1145/3357231",
+              "article-title": "New opportunities for integrated formal methods",
+              "volume": "52",
+              "author": "Gleirscher",
+              "year": "2019",
+              "journal-title": "ACM Comput. Surv."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3357231",
+                "doi": "10.1145/3357231",
+                "title": "New opportunities for integrated formal methods",
+                "authors": [
+                  "Gleirscher"
+                ],
+                "year": 2019,
+                "venue": "ACM Comput. Surv.",
+                "type": "",
+                "url": "https://doi.org/10.1145/3357231"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "10.1016/j.jss.2024.112034_b25",
+            "rawText": "Greenwell. A taxonomy of fallacies in system safety arguments. 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b25",
+              "series-title": "A taxonomy of fallacies in system safety arguments",
+              "author": "Greenwell",
+              "year": "2006"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b25",
+                "doi": "",
+                "title": "A taxonomy of fallacies in system safety arguments",
+                "authors": [
+                  "Greenwell"
+                ],
+                "year": 2006,
+                "venue": "A taxonomy of fallacies in system safety arguments",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "10.1016/j.jss.2024.112034_b26",
+            "rawText": "Habli. What is the safety case for health IT? A study of assurance practices in England. 2018. Saf. Sci.. https://doi.org/10.1016/j.ssci.2018.09.001",
+            "doi": "10.1016/j.ssci.2018.09.001",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b26",
+              "doi-asserted-by": "crossref",
+              "first-page": "324",
+              "DOI": "10.1016/j.ssci.2018.09.001",
+              "article-title": "What is the safety case for health IT? A study of assurance practices in England",
+              "volume": "110",
+              "author": "Habli",
+              "year": "2018",
+              "journal-title": "Saf. Sci."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.ssci.2018.09.001",
+                "doi": "10.1016/j.ssci.2018.09.001",
+                "title": "What is the safety case for health IT? A study of assurance practices in England",
+                "authors": [
+                  "Habli"
+                ],
+                "year": 2018,
+                "venue": "Saf. Sci.",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.ssci.2018.09.001"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "10.1016/j.jss.2024.112034_b27",
+            "rawText": "Hawkins. Weaving an assurance case from design: a model-based approach. 2015",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b27",
+              "series-title": "High Assurance Systems Engineering (HASE), 2015 IEEE 16th International Symposium on",
+              "first-page": "110",
+              "article-title": "Weaving an assurance case from design: a model-based approach",
+              "author": "Hawkins",
+              "year": "2015"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b27",
+                "doi": "",
+                "title": "Weaving an assurance case from design: a model-based approach",
+                "authors": [
+                  "Hawkins"
+                ],
+                "year": 2015,
+                "venue": "High Assurance Systems Engineering (HASE), 2015 IEEE 16th International Symposium on",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "10.1016/j.jss.2024.112034_b28",
+            "rawText": "International Atomic Energy Agency (IAEA). IAEA safety glossary: Terminology used in nuclear safety and radiation protection. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b28",
+              "series-title": "IAEA safety glossary: Terminology used in nuclear safety and radiation protection",
+              "author": "International Atomic Energy Agency (IAEA)",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b28",
+                "doi": "",
+                "title": "IAEA safety glossary: Terminology used in nuclear safety and radiation protection",
+                "authors": [
+                  "International Atomic Energy Agency (IAEA)"
+                ],
+                "year": 2008,
+                "venue": "IAEA safety glossary: Terminology used in nuclear safety and radiation protection",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "10.1016/j.jss.2024.112034_b29",
+            "rawText": "International Organization for Standardization (ISO). ISO 26262: Road vehicles - functional safety. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b29",
+              "series-title": "ISO 26262: Road vehicles - functional safety",
+              "author": "International Organization for Standardization (ISO)",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b29",
+                "doi": "",
+                "title": "ISO 26262: Road vehicles - functional safety",
+                "authors": [
+                  "International Organization for Standardization (ISO)"
+                ],
+                "year": 2011,
+                "venue": "ISO 26262: Road vehicles - functional safety",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "10.1016/j.jss.2024.112034_b30",
+            "rawText": "Jaaksi. Developing mobile browsers in a product line. 2002. IEEE Softw.. https://doi.org/10.1109/ms.2002.1020290",
+            "doi": "10.1109/ms.2002.1020290",
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "10.1016/j.jss.2024.112034_b30",
+              "doi-asserted-by": "crossref",
+              "first-page": "73",
+              "DOI": "10.1109/MS.2002.1020290",
+              "article-title": "Developing mobile browsers in a product line",
+              "volume": "19",
+              "author": "Jaaksi",
+              "year": "2002",
+              "journal-title": "IEEE Softw."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ms.2002.1020290",
+                "doi": "10.1109/ms.2002.1020290",
+                "title": "Developing mobile browsers in a product line",
+                "authors": [
+                  "Jaaksi"
+                ],
+                "year": 2002,
+                "venue": "IEEE Softw.",
+                "type": "",
+                "url": "https://doi.org/10.1109/ms.2002.1020290"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "10.1016/j.jss.2024.112034_b31",
+            "rawText": "Kärnä. Evaluating the use of domain-specific modeling in practice. 2009",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b31",
+              "series-title": "Proceedings of the 9th OOPSLA Workshop on Domain-Specific Modeling",
+              "article-title": "Evaluating the use of domain-specific modeling in practice",
+              "author": "Kärnä",
+              "year": "2009"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b31",
+                "doi": "",
+                "title": "Evaluating the use of domain-specific modeling in practice",
+                "authors": [
+                  "Kärnä"
+                ],
+                "year": 2009,
+                "venue": "Proceedings of the 9th OOPSLA Workshop on Domain-Specific Modeling",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "10.1016/j.jss.2024.112034_b32",
+            "rawText": "Kelly. Arguing Safety: a Systematic Approach to Managing Safety Cases. 1999",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b32",
+              "series-title": "Arguing Safety: a Systematic Approach to Managing Safety Cases",
+              "author": "Kelly",
+              "year": "1999"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b32",
+                "doi": "",
+                "title": "Arguing Safety: a Systematic Approach to Managing Safety Cases",
+                "authors": [
+                  "Kelly"
+                ],
+                "year": 1999,
+                "venue": "Arguing Safety: a Systematic Approach to Managing Safety Cases",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "10.1016/j.jss.2024.112034_b33",
+            "rawText": "Kelly. The goal structuring notation–a safety argument notation. 2004",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b33",
+              "series-title": "Proceedings of the Dependable Systems and Networks 2004 Workshop on Assurance Cases",
+              "first-page": "6",
+              "article-title": "The goal structuring notation–a safety argument notation",
+              "author": "Kelly",
+              "year": "2004"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b33",
+                "doi": "",
+                "title": "The goal structuring notation–a safety argument notation",
+                "authors": [
+                  "Kelly"
+                ],
+                "year": 2004,
+                "venue": "Proceedings of the Dependable Systems and Networks 2004 Workshop on Assurance Cases",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "10.1016/j.jss.2024.112034_b34",
+            "rawText": "Kolovos. The epsilon object language (EOL). 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b34",
+              "series-title": "European Conference on Model Driven Architecture-Foundations and Applications",
+              "first-page": "128",
+              "article-title": "The epsilon object language (EOL)",
+              "author": "Kolovos",
+              "year": "2006"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b34",
+                "doi": "",
+                "title": "The epsilon object language (EOL)",
+                "authors": [
+                  "Kolovos"
+                ],
+                "year": 2006,
+                "venue": "European Conference on Model Driven Architecture-Foundations and Applications",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "10.1016/j.jss.2024.112034_b35",
+            "rawText": "Kolovos. The epsilon transformation language. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b35",
+              "series-title": "International Conference on Theory and Practice of Model Transformations",
+              "first-page": "46",
+              "article-title": "The epsilon transformation language",
+              "author": "Kolovos",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b35",
+                "doi": "",
+                "title": "The epsilon transformation language",
+                "authors": [
+                  "Kolovos"
+                ],
+                "year": 2008,
+                "venue": "International Conference on Theory and Practice of Model Transformations",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "10.1016/j.jss.2024.112034_b36",
+            "rawText": "Larrucea. Supporting the management of reusable automotive software. 2017. IEEE Softw.. https://doi.org/10.1109/ms.2017.68",
+            "doi": "10.1109/ms.2017.68",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "10.1016/j.jss.2024.112034_b36",
+              "doi-asserted-by": "crossref",
+              "first-page": "40",
+              "DOI": "10.1109/MS.2017.68",
+              "article-title": "Supporting the management of reusable automotive software",
+              "author": "Larrucea",
+              "year": "2017",
+              "journal-title": "IEEE Softw."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ms.2017.68",
+                "doi": "10.1109/ms.2017.68",
+                "title": "Supporting the management of reusable automotive software",
+                "authors": [
+                  "Larrucea"
+                ],
+                "year": 2017,
+                "venue": "IEEE Softw.",
+                "type": "",
+                "url": "https://doi.org/10.1109/ms.2017.68"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "10.1016/j.jss.2024.112034_b37",
+            "rawText": "Lee. What good are models?. 2018",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b37",
+              "series-title": "FACS",
+              "article-title": "What good are models?",
+              "volume": "vol. 11222",
+              "author": "Lee",
+              "year": "2018"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b37",
+                "doi": "",
+                "title": "What good are models?",
+                "authors": [
+                  "Lee"
+                ],
+                "year": 2018,
+                "venue": "FACS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "10.1016/j.jss.2024.112034_b38",
+            "rawText": "Lin. A framework to support generation and maintenance of an assurance case. 2016",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b38",
+              "series-title": "2016 IEEE International Symposium on Software Reliability Engineering Workshops",
+              "first-page": "21",
+              "article-title": "A framework to support generation and maintenance of an assurance case",
+              "author": "Lin",
+              "year": "2016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b38",
+                "doi": "",
+                "title": "A framework to support generation and maintenance of an assurance case",
+                "authors": [
+                  "Lin"
+                ],
+                "year": 2016,
+                "venue": "2016 IEEE International Symposium on Software Reliability Engineering Workshops",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "10.1016/j.jss.2024.112034_b39",
+            "rawText": "Machin. SMOF: A safety monitoring framework for autonomous systems. 2018. IEEE Trans. Syst. Man Cybern.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "5",
+              "key": "10.1016/j.jss.2024.112034_b39",
+              "article-title": "SMOF: A safety monitoring framework for autonomous systems",
+              "volume": "48",
+              "author": "Machin",
+              "year": "2018",
+              "journal-title": "IEEE Trans. Syst. Man Cybern."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b39",
+                "doi": "",
+                "title": "SMOF: A safety monitoring framework for autonomous systems",
+                "authors": [
+                  "Machin"
+                ],
+                "year": 2018,
+                "venue": "IEEE Trans. Syst. Man Cybern.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "10.1016/j.jss.2024.112034_b40",
+            "rawText": "Mathworks. Simulink. 2020",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b40",
+              "series-title": "Simulink",
+              "author": "Mathworks",
+              "year": "2020"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b40",
+                "doi": "",
+                "title": "Simulink",
+                "authors": [
+                  "Mathworks"
+                ],
+                "year": 2020,
+                "venue": "Simulink",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "10.1016/j.jss.2024.112034_b41",
+            "rawText": "Matsuno. A dependability case editor with pattern library. 2010",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b41",
+              "series-title": "High-Assurance Systems Engineering (HASE), 2010 IEEE 12th International Symposium on",
+              "first-page": "170",
+              "article-title": "A dependability case editor with pattern library",
+              "author": "Matsuno",
+              "year": "2010"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b41",
+                "doi": "",
+                "title": "A dependability case editor with pattern library",
+                "authors": [
+                  "Matsuno"
+                ],
+                "year": 2010,
+                "venue": "High-Assurance Systems Engineering (HASE), 2010 IEEE 12th International Symposium on",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "10.1016/j.jss.2024.112034_b42",
+            "rawText": "McDermid. Software safety: where’s the evidence?. 2001",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b42",
+              "series-title": "Proceedings of the Sixth Australian Workshop on Safety Critical Systems and Software-Volume 3",
+              "first-page": "1",
+              "article-title": "Software safety: where’s the evidence?",
+              "author": "McDermid",
+              "year": "2001"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b42",
+                "doi": "",
+                "title": "Software safety: where’s the evidence?",
+                "authors": [
+                  "McDermid"
+                ],
+                "year": 2001,
+                "venue": "Proceedings of the Sixth Australian Workshop on Safety Critical Systems and Software-Volume 3",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "10.1016/j.jss.2024.112034_b43",
+            "rawText": "Miyazawa. RoboChart: modelling and verification of the functional behaviour of robotic applications. 2019. Softw. Syst. Model.. https://doi.org/10.1007/s10270-018-00710-z",
+            "doi": "10.1007/s10270-018-00710-z",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b43",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1007/s10270-018-00710-z",
+              "article-title": "RoboChart: modelling and verification of the functional behaviour of robotic applications",
+              "author": "Miyazawa",
+              "year": "2019",
+              "journal-title": "Softw. Syst. Model."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s10270-018-00710-z",
+                "doi": "10.1007/s10270-018-00710-z",
+                "title": "RoboChart: modelling and verification of the functional behaviour of robotic applications",
+                "authors": [
+                  "Miyazawa"
+                ],
+                "year": 2019,
+                "venue": "Softw. Syst. Model.",
+                "type": "",
+                "url": "https://doi.org/10.1007/s10270-018-00710-z"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "10.1016/j.jss.2024.112034_b44",
+            "rawText": "Nair. Evidence management for compliance of critical systems with safety standards: A survey on the state of practice. 2015. Inf. Softw. Technol.. https://doi.org/10.1016/j.infsof.2014.12.002",
+            "doi": "10.1016/j.infsof.2014.12.002",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b44",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1016/j.infsof.2014.12.002",
+              "article-title": "Evidence management for compliance of critical systems with safety standards: A survey on the state of practice",
+              "volume": "60",
+              "author": "Nair",
+              "year": "2015",
+              "journal-title": "Inf. Softw. Technol."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.infsof.2014.12.002",
+                "doi": "10.1016/j.infsof.2014.12.002",
+                "title": "Evidence management for compliance of critical systems with safety standards: A survey on the state of practice",
+                "authors": [
+                  "Nair"
+                ],
+                "year": 2015,
+                "venue": "Inf. Softw. Technol.",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.infsof.2014.12.002"
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "10.1016/j.jss.2024.112034_b45",
+            "rawText": "Netkachova. Tool support for assurance case building blocks. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b45",
+              "series-title": "International Conference on Computer Safety, Reliability, and Security",
+              "first-page": "62",
+              "article-title": "Tool support for assurance case building blocks",
+              "author": "Netkachova",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b45",
+                "doi": "",
+                "title": "Tool support for assurance case building blocks",
+                "authors": [
+                  "Netkachova"
+                ],
+                "year": 2014,
+                "venue": "International Conference on Computer Safety, Reliability, and Security",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "10.1016/j.jss.2024.112034_b46",
+            "rawText": "Nipkow. Concrete Semantics with Isabelle/HOL. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b46",
+              "series-title": "Concrete Semantics with Isabelle/HOL",
+              "author": "Nipkow",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b46",
+                "doi": "",
+                "title": "Concrete Semantics with Isabelle/HOL",
+                "authors": [
+                  "Nipkow"
+                ],
+                "year": 2014,
+                "venue": "Concrete Semantics with Isabelle/HOL",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "10.1016/j.jss.2024.112034_b47",
+            "rawText": "Nipkow. Isabelle/HOL: A proof assistant for higher-order logic. 2002",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b47",
+              "article-title": "Isabelle/HOL: A proof assistant for higher-order logic",
+              "volume": "vol. 2283",
+              "author": "Nipkow",
+              "year": "2002"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b47",
+                "doi": "",
+                "title": "Isabelle/HOL: A proof assistant for higher-order logic",
+                "authors": [
+                  "Nipkow"
+                ],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "10.1016/j.jss.2024.112034_b48",
+            "rawText": "Object Management Group. Structured assurance case metamodel. 2020",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b48",
+              "series-title": "Structured assurance case metamodel",
+              "author": "Object Management Group",
+              "year": "2020"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b48",
+                "doi": "",
+                "title": "Structured assurance case metamodel",
+                "authors": [
+                  "Object Management Group"
+                ],
+                "year": 2020,
+                "venue": "Structured assurance case metamodel",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "10.1016/j.jss.2024.112034_b49",
+            "rawText": "Paige. A meta-method for formal method integration. 1997",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b49",
+              "series-title": "International Symposium of Formal Methods Europe",
+              "first-page": "473",
+              "article-title": "A meta-method for formal method integration",
+              "author": "Paige",
+              "year": "1997"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b49",
+                "doi": "",
+                "title": "A meta-method for formal method integration",
+                "authors": [
+                  "Paige"
+                ],
+                "year": 1997,
+                "venue": "International Symposium of Formal Methods Europe",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "10.1016/j.jss.2024.112034_b50",
+            "rawText": "Prokhorova. Facilitating construction of safety cases from formal models in event-B. 2015. Inf. Softw. Technol.. https://doi.org/10.1016/j.infsof.2015.01.001",
+            "doi": "10.1016/j.infsof.2015.01.001",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b50",
+              "doi-asserted-by": "crossref",
+              "first-page": "51",
+              "DOI": "10.1016/j.infsof.2015.01.001",
+              "article-title": "Facilitating construction of safety cases from formal models in event-B",
+              "volume": "60",
+              "author": "Prokhorova",
+              "year": "2015",
+              "journal-title": "Inf. Softw. Technol."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.infsof.2015.01.001",
+                "doi": "10.1016/j.infsof.2015.01.001",
+                "title": "Facilitating construction of safety cases from formal models in event-B",
+                "authors": [
+                  "Prokhorova"
+                ],
+                "year": 2015,
+                "venue": "Inf. Softw. Technol.",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.infsof.2015.01.001"
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "10.1016/j.jss.2024.112034_b51",
+            "rawText": "Rose. The epsilon generation language. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b51",
+              "series-title": "European Conference on Model Driven Architecture-Foundations and Applications",
+              "first-page": "1",
+              "article-title": "The epsilon generation language",
+              "author": "Rose",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b51",
+                "doi": "",
+                "title": "The epsilon generation language",
+                "authors": [
+                  "Rose"
+                ],
+                "year": 2008,
+                "venue": "European Conference on Model Driven Architecture-Foundations and Applications",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "10.1016/j.jss.2024.112034_b52",
+            "rawText": "Rushby. An evidential tool bus. 2005",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b52",
+              "series-title": "Formal Methods and Software Engineering",
+              "article-title": "An evidential tool bus",
+              "volume": "vol. 3785",
+              "author": "Rushby",
+              "year": "2005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b52",
+                "doi": "",
+                "title": "An evidential tool bus",
+                "authors": [
+                  "Rushby"
+                ],
+                "year": 2005,
+                "venue": "Formal Methods and Software Engineering",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "10.1016/j.jss.2024.112034_b53",
+            "rawText": "Shah. A framework to benchmark NoSQL data stores for large-scale model persistence. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b53",
+              "series-title": "International Conference on Model Driven Engineering Languages and Systems",
+              "first-page": "586",
+              "article-title": "A framework to benchmark NoSQL data stores for large-scale model persistence",
+              "author": "Shah",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b53",
+                "doi": "",
+                "title": "A framework to benchmark NoSQL data stores for large-scale model persistence",
+                "authors": [
+                  "Shah"
+                ],
+                "year": 2014,
+                "venue": "International Conference on Model Driven Engineering Languages and Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "10.1016/j.jss.2024.112034_b54",
+            "rawText": "Steinberg. EMF: Eclipse Modeling Framework. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b54",
+              "series-title": "EMF: Eclipse Modeling Framework",
+              "author": "Steinberg",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b54",
+                "doi": "",
+                "title": "EMF: Eclipse Modeling Framework",
+                "authors": [
+                  "Steinberg"
+                ],
+                "year": 2008,
+                "venue": "EMF: Eclipse Modeling Framework",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "10.1016/j.jss.2024.112034_b55",
+            "rawText": "Trapp. A safety roadmap to cyber-physical systems. 2013",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b55",
+              "series-title": "Perspectives on the Future of Software Engineering",
+              "first-page": "81",
+              "article-title": "A safety roadmap to cyber-physical systems",
+              "author": "Trapp",
+              "year": "2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b55",
+                "doi": "",
+                "title": "A safety roadmap to cyber-physical systems",
+                "authors": [
+                  "Trapp"
+                ],
+                "year": 2013,
+                "venue": "Perspectives on the Future of Software Engineering",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "10.1016/j.jss.2024.112034_b56",
+            "rawText": "Tuong. Deeply integrating C11 code support into Isabelle/PIDE. 2019",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b56",
+              "series-title": "Formal Integrated Development Environment (F-IDE)",
+              "first-page": "13",
+              "article-title": "Deeply integrating C11 code support into Isabelle/PIDE",
+              "volume": "vol. 310",
+              "author": "Tuong",
+              "year": "2019"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b56",
+                "doi": "",
+                "title": "Deeply integrating C11 code support into Isabelle/PIDE",
+                "authors": [
+                  "Tuong"
+                ],
+                "year": 2019,
+                "venue": "Formal Integrated Development Environment (F-IDE)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "10.1016/j.jss.2024.112034_b57",
+            "rawText": "U.K. Ministry of Defence (MOD). JSP 430 - ship safety management system handbook. 1996",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b57",
+              "series-title": "JSP 430 - ship safety management system handbook",
+              "author": "U.K. Ministry of Defence (MOD)",
+              "year": "1996"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b57",
+                "doi": "",
+                "title": "JSP 430 - ship safety management system handbook",
+                "authors": [
+                  "U.K. Ministry of Defence (MOD)"
+                ],
+                "year": 1996,
+                "venue": "JSP 430 - ship safety management system handbook",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "10.1016/j.jss.2024.112034_b58",
+            "rawText": "U.K. Ministry of Defence (MOD). 00-55 Requirements of safety related software in defence equipment. 1997",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b58",
+              "series-title": "00-55 Requirements of safety related software in defence equipment",
+              "author": "U.K. Ministry of Defence (MOD)",
+              "year": "1997"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b58",
+                "doi": "",
+                "title": "00-55 Requirements of safety related software in defence equipment",
+                "authors": [
+                  "U.K. Ministry of Defence (MOD)"
+                ],
+                "year": 1997,
+                "venue": "00-55 Requirements of safety related software in defence equipment",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "10.1016/j.jss.2024.112034_b59",
+            "rawText": "U.K. Ministry of Defence (MOD). Safety management requirements for defence systems. 2007",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b59",
+              "series-title": "Safety management requirements for defence systems",
+              "author": "U.K. Ministry of Defence (MOD)",
+              "year": "2007"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b59",
+                "doi": "",
+                "title": "Safety management requirements for defence systems",
+                "authors": [
+                  "U.K. Ministry of Defence (MOD)"
+                ],
+                "year": 2007,
+                "venue": "Safety management requirements for defence systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "10.1016/j.jss.2024.112034_b60",
+            "rawText": "U.K. Rail Safety Standards Board. Engineering safety management issue 4. 2007",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b60",
+              "series-title": "Engineering safety management issue 4",
+              "author": "U.K. Rail Safety Standards Board",
+              "year": "2007"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b60",
+                "doi": "",
+                "title": "Engineering safety management issue 4",
+                "authors": [
+                  "U.K. Rail Safety Standards Board"
+                ],
+                "year": 2007,
+                "venue": "Engineering safety management issue 4",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "10.1016/j.jss.2024.112034_b61",
+            "rawText": "Utsunomiya. A tool to create assurance case through models. 2018. Trans. Mach. Learn. Artif. Intell.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "10.1016/j.jss.2024.112034_b61",
+              "first-page": "46",
+              "article-title": "A tool to create assurance case through models",
+              "volume": "6",
+              "author": "Utsunomiya",
+              "year": "2018",
+              "journal-title": "Trans. Mach. Learn. Artif. Intell."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b61",
+                "doi": "",
+                "title": "A tool to create assurance case through models",
+                "authors": [
+                  "Utsunomiya"
+                ],
+                "year": 2018,
+                "venue": "Trans. Mach. Learn. Artif. Intell.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "10.1016/j.jss.2024.112034_b62",
+            "rawText": "Wei, R., Jiang, Z., Guo, X., Mei, H., Zolotas, A., Kelly, T., 2022. Designing critical systems with iterative automated safety analysis. In: Proceedings of the 59th ACM/IEEE Design Automation Conference. pp. 181–186.",
+            "doi": "10.1145/3489517.3530434",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b62",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Wei, R., Jiang, Z., Guo, X., Mei, H., Zolotas, A., Kelly, T., 2022. Designing critical systems with iterative automated safety analysis. In: Proceedings of the 59th ACM/IEEE Design Automation Conference. pp. 181–186.",
+              "DOI": "10.1145/3489517.3530434"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3489517.3530434",
+                "doi": "10.1145/3489517.3530434",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3489517.3530434"
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "10.1016/j.jss.2024.112034_b63",
+            "rawText": "Wei. DECISIVE: Designing critical systems with iterative automated safety analysis. 2023. IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b63",
+              "article-title": "DECISIVE: Designing critical systems with iterative automated safety analysis",
+              "author": "Wei",
+              "year": "2023",
+              "journal-title": "IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b63",
+                "doi": "",
+                "title": "DECISIVE: Designing critical systems with iterative automated safety analysis",
+                "authors": [
+                  "Wei"
+                ],
+                "year": 2023,
+                "venue": "IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": "10.1016/j.jss.2024.112034_b64",
+            "rawText": "Wei. Automated model based assurance case management using constrained natural language. 2023. IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b64",
+              "article-title": "Automated model based assurance case management using constrained natural language",
+              "author": "Wei",
+              "year": "2023",
+              "journal-title": "IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b64",
+                "doi": "",
+                "title": "Automated model based assurance case management using constrained natural language",
+                "authors": [
+                  "Wei"
+                ],
+                "year": 2023,
+                "venue": "IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": "10.1016/j.jss.2024.112034_b65",
+            "rawText": "Wei. Model based system assurance using the structured assurance case metamodel. 2019. J. Syst. Softw.. https://doi.org/10.1016/j.jss.2019.05.013",
+            "doi": "10.1016/j.jss.2019.05.013",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b65",
+              "doi-asserted-by": "crossref",
+              "first-page": "211",
+              "DOI": "10.1016/j.jss.2019.05.013",
+              "article-title": "Model based system assurance using the structured assurance case metamodel",
+              "volume": "154",
+              "author": "Wei",
+              "year": "2019",
+              "journal-title": "J. Syst. Softw."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.jss.2019.05.013",
+                "doi": "10.1016/j.jss.2019.05.013",
+                "title": "Model based system assurance using the structured assurance case metamodel",
+                "authors": [
+                  "Wei"
+                ],
+                "year": 2019,
+                "venue": "J. Syst. Softw.",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.jss.2019.05.013"
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": "10.1016/j.jss.2024.112034_b66",
+            "rawText": "Wei, R., Kolovos, D.S., Garcia-Dominguez, A., Barmpis, K., Paige, R.F., 2016. Partial loading of XMI models. In: Proceedings of the ACM/IEEE 19th International Conference on Model Driven Engineering Languages and Systems. pp. 329–339.",
+            "doi": "10.1145/2976767.2976787",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b66",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Wei, R., Kolovos, D.S., Garcia-Dominguez, A., Barmpis, K., Paige, R.F., 2016. Partial loading of XMI models. In: Proceedings of the ACM/IEEE 19th International Conference on Model Driven Engineering Languages and Systems. pp. 329–339.",
+              "DOI": "10.1145/2976767.2976787"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2976767.2976787",
+                "doi": "10.1145/2976767.2976787",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2976767.2976787"
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": "10.1016/j.jss.2024.112034_b67",
+            "rawText": "Wei. On the transition from design time to runtime model-based assurance cases. 2018",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b67",
+              "series-title": "13th International Workshop on Models@Runtime, ACM/IEEE 21th International Conference on Model Driven Engineering Languages and Systems (MoDELS 2018)",
+              "article-title": "On the transition from design time to runtime model-based assurance cases",
+              "author": "Wei",
+              "year": "2018"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b67",
+                "doi": "",
+                "title": "On the transition from design time to runtime model-based assurance cases",
+                "authors": [
+                  "Wei"
+                ],
+                "year": 2018,
+                "venue": "13th International Workshop on Models@Runtime, ACM/IEEE 21th International Conference on Model Driven Engineering Languages and Systems (MoDELS 2018)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": "10.1016/j.jss.2024.112034_b68",
+            "rawText": "Wenzel. Interaction with formal mathematical documents in Isabelle/PIDE. 2019",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b68",
+              "series-title": "CICM",
+              "first-page": "1",
+              "article-title": "Interaction with formal mathematical documents in Isabelle/PIDE",
+              "author": "Wenzel",
+              "year": "2019"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b68",
+                "doi": "",
+                "title": "Interaction with formal mathematical documents in Isabelle/PIDE",
+                "authors": [
+                  "Wenzel"
+                ],
+                "year": 2019,
+                "venue": "CICM",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": "10.1016/j.jss.2024.112034_b69",
+            "rawText": "Wenzel. Building formal method tools in the Isabelle/Isar framework. 2007",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.jss.2024.112034_b69",
+              "series-title": "TPHOLs",
+              "article-title": "Building formal method tools in the Isabelle/Isar framework",
+              "volume": "vol. 4732",
+              "author": "Wenzel",
+              "year": "2007"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.jss.2024.112034_b69",
+                "doi": "",
+                "title": "Building formal method tools in the Isabelle/Isar framework",
+                "authors": [
+                  "Wenzel"
+                ],
+                "year": 2007,
+                "venue": "TPHOLs",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1016/j.jss.2024.112034",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 69,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1016/j.jss.2024.112034",
+          "crossrefReferenceCount": 69
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Wei2024ACCESS",
+      "paperId": "doi:10.1016/j.jss.2024.112034",
+      "metadata": {
+        "fileName": "Wei2024ACCESS.pdf",
+        "sourcePath": "papers/transportation-software/Wei2024ACCESS.pdf"
+      }
+    }
+  ]
+}

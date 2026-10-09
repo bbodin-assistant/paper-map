@@ -1,0 +1,648 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.877667+00:00",
+  "papers": [
+    {
+      "key": "Forget2010",
+      "paper": {
+        "id": "doi:10.1109/rtas.2010.26",
+        "citationKey": "Forget2010",
+        "title": "Scheduling Dependent Periodic Tasks without Synchronization Mechanisms",
+        "authors": [
+          "Julien Forget",
+          "Fr\\'ed\\'eric Boniol",
+          "Emmanuel Grolleau",
+          "David Lesens",
+          "Claire Pagetti"
+        ],
+        "year": 2010,
+        "venue": "2010 16th IEEE Real-Time and Embedded Technology and Applications Symposium",
+        "type": "inproceedings",
+        "doi": "10.1109/rtas.2010.26",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/rtas.2010.26",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Forget, Julien and Boniol, Fr{\\'e}d{\\'e}ric and Grolleau, Emmanuel and Lesens, David and Pagetti, Claire",
+          "title": "{Scheduling Dependent Periodic Tasks without Synchronization Mechanisms}",
+          "year": "2010",
+          "booktitle": "2010 16th IEEE Real-Time and Embedded Technology and Applications Symposium",
+          "publisher": "IEEE",
+          "pages": "301--310",
+          "doi": "10.1109/rtas.2010.26",
+          "url": "https://doi.org/10.1109/rtas.2010.26"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.064491+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref10",
+            "rawText": "richard. Contraintes de precedences et ordonnancement mono-processeur. 2002. Real-time and embedded systems (RTS'02)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "article-title": "Contraintes de precedences et ordonnancement mono-processeur",
+              "author": "richard",
+              "year": "2002",
+              "journal-title": "Real-time and embedded systems (RTS'02)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "Contraintes de precedences et ordonnancement mono-processeur",
+                "authors": [
+                  "richard"
+                ],
+                "year": 2002,
+                "venue": "Real-time and embedded systems (RTS'02)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1007/bf00365326",
+            "doi": "10.1007/bf00365326",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/BF00365326"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf00365326",
+                "doi": "10.1007/bf00365326",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf00365326"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref12",
+            "rawText": "richard. Validation temporelle d'un logiciel temps reel: application un laminoir industriel. 2001. Journal Europeen des Systemes Automatises",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "article-title": "Validation temporelle d'un logiciel temps reel: application un laminoir industriel",
+              "volume": "35",
+              "author": "richard",
+              "year": "2001",
+              "journal-title": "Journal Europeen des Systemes Automatises"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref12",
+                "doi": "",
+                "title": "Validation temporelle d'un logiciel temps reel: application un laminoir industriel",
+                "authors": [
+                  "richard"
+                ],
+                "year": 2001,
+                "venue": "Journal Europeen des Systemes Automatises",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref13",
+            "rawText": "https://doi.org/10.1137/0117039",
+            "doi": "10.1137/0117039",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1137/0117039"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1137/0117039",
+                "doi": "10.1137/0117039",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1137/0117039"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref14",
+            "rawText": "1992. Software Considerations in Airborne Systems and Equipment Certification",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "year": "1992",
+              "journal-title": "Software Considerations in Airborne Systems and Equipment Certification"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref14",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "Software Considerations in Airborne Systems and Equipment Certification",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1016/0166-5316(82)90024-4",
+            "doi": "10.1016/0166-5316(82)90024-4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0166-5316(82)90024-4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0166-5316(82)90024-4",
+                "doi": "10.1016/0166-5316(82)90024-4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0166-5316(82)90024-4"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1093/comjnl/29.5.390",
+            "doi": "10.1093/comjnl/29.5.390",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1093/comjnl/29.5.390"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1093/comjnl/29.5.390",
+                "doi": "10.1093/comjnl/29.5.390",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1093/comjnl/29.5.390"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref17",
+            "rawText": "singhoff. Cheddar: a flexible real time scheduling framework. 2004. Ada Lett. https://doi.org/10.1145/1046191.1032298",
+            "doi": "10.1145/1046191.1032298",
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1145/1046191.1032298",
+              "article-title": "Cheddar: a flexible real time scheduling framework",
+              "volume": "xxiv",
+              "author": "singhoff",
+              "year": "2004",
+              "journal-title": "Ada Lett"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1046191.1032298",
+                "doi": "10.1145/1046191.1032298",
+                "title": "Cheddar: a flexible real time scheduling framework",
+                "authors": [
+                  "singhoff"
+                ],
+                "year": 2004,
+                "venue": "Ada Lett",
+                "type": "",
+                "url": "https://doi.org/10.1145/1046191.1032298"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref18",
+            "rawText": "audsley. Optimal priority assignment and feasibility of static priority tasks with arbitrary start times. 1991. University of York Dept of Computer Science Tech Rep",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "article-title": "Optimal priority assignment and feasibility of static priority tasks with arbitrary start times",
+              "author": "audsley",
+              "year": "1991",
+              "journal-title": "University of York Dept of Computer Science Tech Rep"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref18",
+                "doi": "",
+                "title": "Optimal priority assignment and feasibility of static priority tasks with arbitrary start times",
+                "authors": [
+                  "audsley"
+                ],
+                "year": 1991,
+                "venue": "University of York Dept of Computer Science Tech Rep",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref4",
+            "rawText": "2006. VxWorks 653 - DO-178B Certified ARINC 653 Real-Time Operating System",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "year": "2006",
+              "journal-title": "VxWorks 653 - DO-178B Certified ARINC 653 Real-Time Operating System"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref4",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "VxWorks 653 - DO-178B Certified ARINC 653 Real-Time Operating System",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref3",
+            "rawText": "2005. ARINC Specification 653 Avionics Application Software Standard Interface",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "year": "2005",
+              "journal-title": "ARINC Specification 653 Avionics Application Software Standard Interface"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref3",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "ARINC Specification 653 Avionics Application Software Standard Interface",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.3166/jesa.43.741-755",
+            "doi": "10.3166/jesa.43.741-755",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.3166/jesa.43.741-755"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.3166/jesa.43.741-755",
+                "doi": "10.3166/jesa.43.741-755",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.3166/jesa.43.741-755"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.1145/1176887.1176892",
+            "doi": "10.1145/1176887.1176892",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1176887.1176892"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176892",
+                "doi": "10.1145/1176887.1176892",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1176887.1176892"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1145/321738.321743",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/321738.321743"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref7",
+            "rawText": "forget. A synchronous language for critical embedded systems with multiple real-time constraints. 2009",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "article-title": "A synchronous language for critical embedded systems with multiple real-time constraints",
+              "author": "forget",
+              "year": "2009"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref7",
+                "doi": "",
+                "title": "A synchronous language for critical embedded systems with multiple real-time constraints",
+                "authors": [
+                  "forget"
+                ],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref2",
+            "rawText": "2009. RTEMS C User's Guide",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "year": "2009",
+              "journal-title": "RTEMS C User's Guide"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "RTEMS C User's Guide",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref1",
+            "rawText": "2003. OSEK/VDX Operating System Specification 2 2 1",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "year": "2003",
+              "journal-title": "OSEK/VDX Operating System Specification 2 2 1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "OSEK/VDX Operating System Specification 2 2 1",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1109/real.1991.160365",
+            "doi": "10.1109/real.1991.160365",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/REAL.1991.160365"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1991.160365",
+                "doi": "10.1109/real.1991.160365",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1991.160365"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/rtas.2010.26",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 3,
+          "extractedReferenceCount": 18,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/rtas.2010.26",
+          "crossrefReferenceCount": 18
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/rtas.2010.26->doi:10.1093/comjnl/29.5.390@papers-LET-Forget2010.pdf",
+      "source": "doi:10.1109/rtas.2010.26",
+      "target": "doi:10.1093/comjnl/29.5.390",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Forget2010.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas.2010.26->doi:10.1145/1176887.1176892@papers-LET-Forget2010.pdf",
+      "source": "doi:10.1109/rtas.2010.26",
+      "target": "doi:10.1145/1176887.1176892",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Forget2010.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas.2010.26->doi:10.1145/321738.321743@papers-LET-Forget2010.pdf",
+      "source": "doi:10.1109/rtas.2010.26",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Forget2010.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Forget2010",
+      "paperId": "doi:10.1109/rtas.2010.26",
+      "metadata": {
+        "fileName": "Forget2010.pdf",
+        "sourcePath": "papers/LET/Forget2010.pdf"
+      }
+    }
+  ]
+}

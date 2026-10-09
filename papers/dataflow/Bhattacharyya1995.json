@@ -1,0 +1,873 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.791829+00:00",
+  "papers": [
+    {
+      "key": "Bhattacharyya1995",
+      "paper": {
+        "id": "doi:10.1109/81.376876",
+        "citationKey": "Bhattacharyya1995",
+        "title": "Generating Compact Code from Dataflow Specifications of Multirate Signal Processing Algorithms",
+        "authors": [
+          "Shuvra S. Bhattacharyya",
+          "Joseph T. Buck",
+          "Soonhoi Ha",
+          "Edward A. Lee"
+        ],
+        "year": 1995,
+        "venue": "IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications",
+        "type": "article",
+        "doi": "10.1109/81.376876",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/81.376876",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Bhattacharyya, Shuvra S. and Buck, Joseph T. and Ha, Soonhoi and Lee, Edward A.",
+          "title": "Generating Compact Code from Dataflow Specifications of Multirate Signal Processing Algorithms",
+          "journal": "IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications",
+          "volume": "42",
+          "number": "3",
+          "pages": "138--150",
+          "month": "mar",
+          "year": "1995",
+          "doi": "10.1109/81.376876",
+          "url": "https://doi.org/10.1109/81.376876"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.109477+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref10",
+            "rawText": "1989. Silage reference manual draft release 2 0",
+            "doi": null,
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "year": "1989",
+              "journal-title": "Silage reference manual draft release 2 0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 1989,
+                "venue": "Silage reference manual draft release 2 0",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref11",
+            "rawText": "ho. 1988. VLSI Signal Processing III",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "author": "ho",
+              "year": "1988",
+              "journal-title": "VLSI Signal Processing III"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref11",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "ho"
+                ],
+                "year": 1988,
+                "venue": "VLSI Signal Processing III",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref12",
+            "rawText": "how. 1994. Code generation for multirate DSP systems in gabriel",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "author": "how",
+              "year": "1994",
+              "journal-title": "Code generation for multirate DSP systems in gabriel"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref12",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "how"
+                ],
+                "year": 1994,
+                "venue": "Code generation for multirate DSP systems in gabriel",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref13",
+            "rawText": "lee. 1991. Advanced Topics in Dataflow Computing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "author": "lee",
+              "year": "1991",
+              "journal-title": "Advanced Topics in Dataflow Computing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref13",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "lee"
+                ],
+                "year": 1991,
+                "venue": "Advanced Topics in Dataflow Computing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref14",
+            "rawText": "https://doi.org/10.1109/tc.1987.5009446",
+            "doi": "10.1109/tc.1987.5009446",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.1987.5009446"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tc.1987.5009446",
+                "doi": "10.1109/tc.1987.5009446",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/TC.1987.5009446"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1109/proc.1987.13876",
+            "doi": "10.1109/proc.1987.13876",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PROC.1987.13876"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/proc.1987.13876",
+                "doi": "10.1109/proc.1987.13876",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/PROC.1987.13876"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref16",
+            "rawText": "1983. SISAL Streams and iteration in a single assignment language",
+            "doi": null,
+            "arxivId": null,
+            "year": 1983,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "year": "1983",
+              "journal-title": "SISAL Streams and iteration in a single assignment language"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref16",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 1983,
+                "venue": "SISAL Streams and iteration in a single assignment language",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref17",
+            "rawText": "https://doi.org/10.1109/dmcc.1991.633117",
+            "doi": "10.1109/dmcc.1991.633117",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/DMCC.1991.633117"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/dmcc.1991.633117",
+                "doi": "10.1109/dmcc.1991.633117",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/dmcc.1991.633117"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref18",
+            "rawText": "pino. Software synthesis for DSP using ptolemy. 1995. J VLSI Signal Process. https://doi.org/10.1007/bf02406468",
+            "doi": "10.1007/bf02406468",
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "crossref",
+              "first-page": "7",
+              "DOI": "10.1007/BF02406468",
+              "article-title": "Software synthesis for DSP using ptolemy",
+              "volume": "9",
+              "author": "pino",
+              "year": "1995",
+              "journal-title": "J VLSI Signal Process"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf02406468",
+                "doi": "10.1007/bf02406468",
+                "title": "Software synthesis for DSP using ptolemy",
+                "authors": [
+                  "pino"
+                ],
+                "year": 1995,
+                "venue": "J VLSI Signal Process",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf02406468"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref19",
+            "rawText": "https://doi.org/10.1109/icassp.1992.226560",
+            "doi": "10.1109/icassp.1992.226560",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1992.226560"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1992.226560",
+                "doi": "10.1109/icassp.1992.226560",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1992.226560"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref4",
+            "rawText": "bhattacharyya. 1993. Looped schedules for dataflow descriptions of multirate DSP algorithms",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "author": "bhattacharyya",
+              "year": "1993",
+              "journal-title": "Looped schedules for dataflow descriptions of multirate DSP algorithms"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref4",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "bhattacharyya"
+                ],
+                "year": 1993,
+                "venue": "Looped schedules for dataflow descriptions of multirate DSP algorithms",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref3",
+            "rawText": "bhattacharyya. 1994. Compiling Dataflow Programs for Digital Signal Processing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "author": "bhattacharyya",
+              "year": "1994",
+              "journal-title": "Compiling Dataflow Programs for Digital Signal Processing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref3",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "bhattacharyya"
+                ],
+                "year": 1994,
+                "venue": "Compiling Dataflow Programs for Digital Signal Processing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref6",
+            "rawText": "dennis. 1975. First version of a dataflow procedure language",
+            "doi": null,
+            "arxivId": null,
+            "year": 1975,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "author": "dennis",
+              "year": "1975",
+              "journal-title": "First version of a dataflow procedure language"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref6",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "dennis"
+                ],
+                "year": 1975,
+                "venue": "First version of a dataflow procedure language",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.1007/bf01608539",
+            "doi": "10.1007/bf01608539",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/BF01608539"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf01608539",
+                "doi": "10.1007/bf01608539",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf01608539"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1109/icassp.1992.226558",
+            "doi": "10.1109/icassp.1992.226558",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1992.226558"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1992.226558",
+                "doi": "10.1109/icassp.1992.226558",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1992.226558"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref7",
+            "rawText": "dennis. 1992. Stream data types for signal processing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "author": "dennis",
+              "year": "1992",
+              "journal-title": "Stream data types for signal processing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref7",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "dennis"
+                ],
+                "year": 1992,
+                "venue": "Stream data types for signal processing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref2",
+            "rawText": "bic. 1991. Advanced Topics in Data-Flow Computing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "author": "bic",
+              "year": "1991",
+              "journal-title": "Advanced Topics in Data-Flow Computing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "bic"
+                ],
+                "year": 1991,
+                "venue": "Advanced Topics in Data-Flow Computing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref1",
+            "rawText": "aho. 1974. The Design and Analysis of Computer Algorithms",
+            "doi": null,
+            "arxivId": null,
+            "year": 1974,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "author": "aho",
+              "year": "1974",
+              "journal-title": "The Design and Analysis of Computer Algorithms"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "aho"
+                ],
+                "year": 1974,
+                "venue": "The Design and Analysis of Computer Algorithms",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1109/iscas.1989.100415",
+            "doi": "10.1109/iscas.1989.100415",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISCAS.1989.100415"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iscas.1989.100415",
+                "doi": "10.1109/iscas.1989.100415",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iscas.1989.100415"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref20",
+            "rawText": "printz. 1991. Automatic mapping of large signal processing systems to a parallel machine",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "author": "printz",
+              "year": "1991",
+              "journal-title": "Automatic mapping of large signal processing systems to a parallel machine"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref20",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "printz"
+                ],
+                "year": 1991,
+                "venue": "Automatic mapping of large signal processing systems to a parallel machine",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref22",
+            "rawText": "https://doi.org/10.1109/asap.1993.397152",
+            "doi": "10.1109/asap.1993.397152",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ASAP.1993.397152"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/asap.1993.397152",
+                "doi": "10.1109/asap.1993.397152",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ASAP.1993.397152"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref21",
+            "rawText": "https://doi.org/10.1109/asap.1992.218536",
+            "doi": "10.1109/asap.1992.218536",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ASAP.1992.218536"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/asap.1992.218536",
+                "doi": "10.1109/asap.1992.218536",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/asap.1992.218536"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref24",
+            "rawText": "https://doi.org/10.1137/0201010",
+            "doi": "10.1137/0201010",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref24",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1137/0201010"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1137/0201010",
+                "doi": "10.1137/0201010",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1137/0201010"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "ref23",
+            "rawText": "sih. 1991. Multiprocessor scheduling to account for interprocessor communication",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23",
+              "author": "sih",
+              "year": "1991",
+              "journal-title": "Multiprocessor scheduling to account for interprocessor communication"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref23",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "sih"
+                ],
+                "year": 1991,
+                "venue": "Multiprocessor scheduling to account for interprocessor communication",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "ref25",
+            "rawText": "wadge. 1985. Lucid the Dataflow Language",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref25",
+              "author": "wadge",
+              "year": "1985",
+              "journal-title": "Lucid the Dataflow Language"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref25",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "wadge"
+                ],
+                "year": 1985,
+                "venue": "Lucid the Dataflow Language",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/81.376876",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 3,
+          "extractedReferenceCount": 25,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/81.376876",
+          "crossrefReferenceCount": 25
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/81.376876->doi:10.1109/tc.1987.5009446@papers-dataflow-Bhattacharyya1995.pdf",
+      "source": "doi:10.1109/81.376876",
+      "target": "doi:10.1109/tc.1987.5009446",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Bhattacharyya1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/81.376876->doi:10.1109/proc.1987.13876@papers-dataflow-Bhattacharyya1995.pdf",
+      "source": "doi:10.1109/81.376876",
+      "target": "doi:10.1109/proc.1987.13876",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Bhattacharyya1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/81.376876->doi:10.1109/asap.1993.397152@papers-dataflow-Bhattacharyya1995.pdf",
+      "source": "doi:10.1109/81.376876",
+      "target": "doi:10.1109/asap.1993.397152",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Bhattacharyya1995.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Bhattacharyya1995",
+      "paperId": "doi:10.1109/81.376876",
+      "metadata": {
+        "fileName": "Bhattacharyya1995.pdf",
+        "sourcePath": "papers/dataflow/Bhattacharyya1995.pdf"
+      }
+    }
+  ]
+}

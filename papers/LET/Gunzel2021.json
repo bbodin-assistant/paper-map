@@ -1,0 +1,861 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.016038+00:00",
+  "papers": [
+    {
+      "key": "Gunzel2021",
+      "paper": {
+        "id": "doi:10.1109/rtas52030.2021.00012",
+        "citationKey": "Gunzel2021",
+        "title": "Timing Analysis of Asynchronized Distributed Cause-Effect Chains",
+        "authors": [
+          "Mario Gunzel",
+          "Kuan-Hsun Chen",
+          "Niklas Ueter",
+          "Georg von der Bruggen",
+          "Marco Durr",
+          "Jian-Jia Chen"
+        ],
+        "year": 2021,
+        "venue": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+        "type": "inproceedings",
+        "doi": "10.1109/rtas52030.2021.00012",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/rtas52030.2021.00012",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Gunzel, Mario and Chen, Kuan-Hsun and Ueter, Niklas and Bruggen, Georg von der and Durr, Marco and Chen, Jian-Jia",
+          "title": "{Timing Analysis of Asynchronized Distributed Cause-Effect Chains}",
+          "year": "2021",
+          "booktitle": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+          "publisher": "IEEE",
+          "pages": "40--52",
+          "doi": "10.1109/rtas52030.2021.00012",
+          "url": "https://doi.org/10.1109/rtas52030.2021.00012"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.067913+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref10",
+            "rawText": "dürr. Endto-end timing analysis of sporadic cause-effect chains in distributed systems. 2019. ACM Trans Embedded Comput Syst (Special Issue for CASES)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "first-page": "58:1",
+              "article-title": "Endto-end timing analysis of sporadic cause-effect chains in distributed systems",
+              "volume": "18",
+              "author": "dürr",
+              "year": "2019",
+              "journal-title": "ACM Trans Embedded Comput Syst (Special Issue for CASES)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "Endto-end timing analysis of sporadic cause-effect chains in distributed systems",
+                "authors": [
+                  "dürr"
+                ],
+                "year": 2019,
+                "venue": "ACM Trans Embedded Comput Syst (Special Issue for CASES)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1109/iecon.2018.8591550",
+            "doi": "10.1109/iecon.2018.8591550",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/IECON.2018.8591550"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/iecon.2018.8591550",
+                "doi": "10.1109/iecon.2018.8591550",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iecon.2018.8591550"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref12",
+            "rawText": "feiertag. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. 2009. Workshop on Compositional Theory and Technology for Real-Time Embedded Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "article-title": "A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics",
+              "author": "feiertag",
+              "year": "2009",
+              "journal-title": "Workshop on Compositional Theory and Technology for Real-Time Embedded Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref12",
+                "doi": "",
+                "title": "A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics",
+                "authors": [
+                  "feiertag"
+                ],
+                "year": 2009,
+                "venue": "Workshop on Compositional Theory and Technology for Real-Time Embedded Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref13",
+            "rawText": "2005. FlexRay Communications System-Protocol Specification",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "year": "2005",
+              "journal-title": "FlexRay Communications System-Protocol Specification"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref13",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "FlexRay Communications System-Protocol Specification",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref14",
+            "rawText": "https://doi.org/10.1109/etfa.2017.8247612",
+            "doi": "10.1109/etfa.2017.8247612",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA.2017.8247612"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/etfa.2017.8247612",
+                "doi": "10.1109/etfa.2017.8247612",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2017.8247612"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1109/tcad.2018.2861016",
+            "doi": "10.1109/tcad.2018.2861016",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TCAD.2018.2861016"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tcad.2018.2861016",
+                "doi": "10.1109/tcad.2018.2861016",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tcad.2018.2861016"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1007/978-3-642-24349-3_5",
+            "doi": "10.1007/978-3-642-24349-3_5",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-642-24349-3_5"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-3_5",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref17",
+            "rawText": "https://doi.org/10.1109/etfa.2018.8502498",
+            "doi": "10.1109/etfa.2018.8502498",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA.2018.8502498"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa.2018.8502498",
+                "doi": "10.1109/etfa.2018.8502498",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2018.8502498"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref18",
+            "rawText": "kordon. Evaluation of the age latency of a real-time communicating system using the LET paradigm. 2020. ECRTS volume 165 of LIPIcs",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "first-page": "20:1",
+              "article-title": "Evaluation of the age latency of a real-time communicating system using the LET paradigm",
+              "author": "kordon",
+              "year": "2020",
+              "journal-title": "ECRTS volume 165 of LIPIcs"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2020.20",
+                "doi": "",
+                "title": "Evaluation of the age latency of a real-time communicating system using the LET paradigm",
+                "authors": [
+                  "kordon"
+                ],
+                "year": 2020,
+                "venue": "ECRTS volume 165 of LIPIcs",
+                "type": "",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2020.20"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref19",
+            "rawText": "kramer. Real world automotive benchmark for free. 2015. International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "article-title": "Real world automotive benchmark for free",
+              "author": "kramer",
+              "year": "2015",
+              "journal-title": "International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref19",
+                "doi": "",
+                "title": "Real world automotive benchmark for free",
+                "authors": [
+                  "kramer"
+                ],
+                "year": 2015,
+                "venue": "International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref4",
+            "rawText": "becker. A generic framework facilitating early analysis of data propagation delays in multirate systems. 2017. International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "first-page": "1",
+              "article-title": "A generic framework facilitating early analysis of data propagation delays in multirate systems",
+              "author": "becker",
+              "year": "2017",
+              "journal-title": "International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref4",
+                "doi": "",
+                "title": "A generic framework facilitating early analysis of data propagation delays in multirate systems",
+                "authors": [
+                  "becker"
+                ],
+                "year": 2017,
+                "venue": "International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.1109/rtcsa.2016.41",
+            "doi": "10.1109/rtcsa.2016.41",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTCSA.2016.41"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2016.41",
+                "doi": "10.1109/rtcsa.2016.41",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2016.41"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1007/s11241-005-0507-9",
+            "doi": "10.1007/s11241-005-0507-9",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-005-0507-9"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-005-0507-9",
+                "doi": "10.1007/s11241-005-0507-9",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-005-0507-9"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.1007/3-540-45828-x_19",
+            "doi": "10.1007/3-540-45828-x_19",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/3-540-45828-X_19"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-45828-x_19",
+                "doi": "10.1007/3-540-45828-x_19",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45828-x_19"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref8",
+            "rawText": "choi. Chain-based fixed-priority scheduling of loosely-dependent tasks. 2020. International Conference on Computer Design (ICCD)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "article-title": "Chain-based fixed-priority scheduling of loosely-dependent tasks",
+              "author": "choi",
+              "year": "2020",
+              "journal-title": "International Conference on Computer Design (ICCD)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref8",
+                "doi": "",
+                "title": "Chain-based fixed-priority scheduling of loosely-dependent tasks",
+                "authors": [
+                  "choi"
+                ],
+                "year": 2020,
+                "venue": "International Conference on Computer Design (ICCD)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref7",
+            "rawText": "bosch. 1991. Controller Area Network Specification",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "author": "bosch",
+              "year": "1991",
+              "journal-title": "Controller Area Network Specification"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref7",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "bosch"
+                ],
+                "year": 1991,
+                "venue": "Controller Area Network Specification",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref2",
+            "rawText": "becker. Mechaniser-a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies. 2016. Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "article-title": "Mechaniser-a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies",
+              "author": "becker",
+              "year": "2016",
+              "journal-title": "Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "Mechaniser-a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies",
+                "authors": [
+                  "becker"
+                ],
+                "year": 2016,
+                "venue": "Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref1",
+            "rawText": "2017. Specification of Timing Extensions",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "year": "2017",
+              "journal-title": "Specification of Timing Extensions"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "Specification of Timing Extensions",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref9",
+            "rawText": "davare. Period optimization for hard real-time distributed automotive systems. 2007. Design Automation Conference DAC",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "first-page": "278",
+              "article-title": "Period optimization for hard real-time distributed automotive systems",
+              "author": "davare",
+              "year": "2007",
+              "journal-title": "Design Automation Conference DAC"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref9",
+                "doi": "",
+                "title": "Period optimization for hard real-time distributed automotive systems",
+                "authors": [
+                  "davare"
+                ],
+                "year": 2007,
+                "venue": "Design Automation Conference DAC",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref20",
+            "rawText": "https://doi.org/10.1016/0166-5316(82)90024-4",
+            "doi": "10.1016/0166-5316(82)90024-4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0166-5316(82)90024-4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0166-5316(82)90024-4",
+                "doi": "10.1016/0166-5316(82)90024-4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0166-5316(82)90024-4"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref22",
+            "rawText": "https://doi.org/10.1109/rtas.2016.7461359",
+            "doi": "10.1109/rtas.2016.7461359",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2016.7461359"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2016.7461359",
+                "doi": "10.1109/rtas.2016.7461359",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2016.7461359"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref21",
+            "rawText": "https://doi.org/10.1145/1879021.1879039",
+            "doi": "10.1145/1879021.1879039",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1879021.1879039"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1879021.1879039",
+                "doi": "10.1145/1879021.1879039",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1879021.1879039"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref24",
+            "rawText": "2021. End-to-end timing analysis",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref24",
+              "year": "2021",
+              "journal-title": "End-to-end timing analysis"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref24",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "End-to-end timing analysis",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "ref23",
+            "rawText": "schlatow. Dataage analysis and optimisation for cause-effect chains in automotive control systems. 2018. Intl Symp on Industrial Embedded Systems (SIES)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23",
+              "first-page": "1",
+              "article-title": "Dataage analysis and optimisation for cause-effect chains in automotive control systems",
+              "author": "schlatow",
+              "year": "2018",
+              "journal-title": "Intl Symp on Industrial Embedded Systems (SIES)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref23",
+                "doi": "",
+                "title": "Dataage analysis and optimisation for cause-effect chains in automotive control systems",
+                "authors": [
+                  "schlatow"
+                ],
+                "year": 2018,
+                "venue": "Intl Symp on Industrial Embedded Systems (SIES)",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/rtas52030.2021.00012",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 5,
+          "extractedReferenceCount": 24,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/rtas52030.2021.00012",
+          "crossrefReferenceCount": 24
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/rtas52030.2021.00012->doi:10.1109/iecon.2018.8591550@papers-LET-Gunzel2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00012",
+      "target": "doi:10.1109/iecon.2018.8591550",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gunzel2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00012->doi:10.1109/etfa.2017.8247612@papers-LET-Gunzel2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00012",
+      "target": "doi:10.1109/etfa.2017.8247612",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gunzel2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00012->doi:10.1109/tcad.2018.2861016@papers-LET-Gunzel2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00012",
+      "target": "doi:10.1109/tcad.2018.2861016",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gunzel2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00012->doi:10.1007/978-3-642-24349-3_5@papers-LET-Gunzel2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00012",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gunzel2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtas52030.2021.00012->doi:10.4230/lipics.ecrts.2020.20@papers-LET-Gunzel2021.pdf",
+      "source": "doi:10.1109/rtas52030.2021.00012",
+      "target": "doi:10.4230/lipics.ecrts.2020.20",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Gunzel2021.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Gunzel2021",
+      "paperId": "doi:10.1109/rtas52030.2021.00012",
+      "metadata": {
+        "fileName": "Gunzel2021.pdf",
+        "sourcePath": "papers/LET/Gunzel2021.pdf"
+      }
+    }
+  ]
+}

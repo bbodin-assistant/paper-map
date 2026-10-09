@@ -1,0 +1,776 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.887432+00:00",
+  "papers": [
+    {
+      "key": "Elahi2023",
+      "paper": {
+        "id": "doi:10.1109/tcad.2023.3239538",
+        "citationKey": "Elahi2023",
+        "title": "Efficient Computation of the Max-Plus Semantics of Synchronous Dataflow Graphs",
+        "authors": [
+          "Hossein Elahi",
+          "Marc Geilen",
+          "Twan Basten"
+        ],
+        "year": 2023,
+        "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+        "type": "article",
+        "doi": "10.1109/TCAD.2023.3239538",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/TCAD.2023.3239538",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Elahi, Hossein and Geilen, Marc and Basten, Twan",
+          "title": "Efficient Computation of the Max-Plus Semantics of Synchronous Dataflow Graphs",
+          "journal": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+          "volume": "42",
+          "number": "10",
+          "pages": "3412--3425",
+          "year": "2023",
+          "doi": "10.1109/TCAD.2023.3239538",
+          "url": "https://doi.org/10.1109/TCAD.2023.3239538"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.117031+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref13",
+            "rawText": "https://doi.org/10.1016/j.disopt.2016.01.005",
+            "doi": "10.1016/j.disopt.2016.01.005",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.disopt.2016.01.005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.disopt.2016.01.005",
+                "doi": "10.1016/j.disopt.2016.01.005",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.disopt.2016.01.005"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1016/j.ifacol.2021.04.006",
+            "doi": "10.1016/j.ifacol.2021.04.006",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.ifacol.2021.04.006"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.ifacol.2021.04.006",
+                "doi": "10.1016/j.ifacol.2021.04.006",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.ifacol.2021.04.006"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1109/seaa.2012.20",
+            "doi": "10.1109/seaa.2012.20",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SEAA.2012.20"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/seaa.2012.20",
+                "doi": "10.1109/seaa.2012.20",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/SEAA.2012.20"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref14",
+            "rawText": "buluç. Recent advances in graph partitioning. 2016. Algorithm Engineering. https://doi.org/10.1007/978-3-319-49487-6_4",
+            "doi": "10.1007/978-3-319-49487-6_4",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "crossref",
+              "first-page": "117",
+              "DOI": "10.1007/978-3-319-49487-6_4",
+              "article-title": "Recent advances in graph partitioning",
+              "author": "buluç",
+              "year": "2016",
+              "journal-title": "Algorithm Engineering"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-49487-6_4",
+                "doi": "10.1007/978-3-319-49487-6_4",
+                "title": "Recent advances in graph partitioning",
+                "authors": [
+                  "buluç"
+                ],
+                "year": 2016,
+                "venue": "Algorithm Engineering",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-319-49487-6_4"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref20",
+            "rawText": "https://doi.org/10.1109/acsd.2006.23",
+            "doi": "10.1109/acsd.2006.23",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ACSD.2006.23"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/acsd.2006.23",
+                "doi": "10.1109/acsd.2006.23",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/acsd.2006.23"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1145/1880050.1880052",
+            "doi": "10.1145/1880050.1880052",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1880050.1880052"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1880050.1880052",
+                "doi": "10.1145/1880050.1880052",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1880050.1880052"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref10",
+            "rawText": "https://doi.org/10.1007/978-3-030-20343-6_8",
+            "doi": "10.1007/978-3-030-20343-6_8",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-030-20343-6_8"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/978-3-030-20343-6_8",
+                "doi": "10.1007/978-3-030-20343-6_8",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-030-20343-6_8"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref21",
+            "rawText": "https://doi.org/10.1023/b:visi.0000029664.99615.94",
+            "doi": "10.1023/b:visi.0000029664.99615.94",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/B:VISI.0000029664.99615.94"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/b:visi.0000029664.99615.94",
+                "doi": "10.1023/b:visi.0000029664.99615.94",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/b:visi.0000029664.99615.94"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref2",
+            "rawText": "https://doi.org/10.1007/3-540-45937-5_14",
+            "doi": "10.1007/3-540-45937-5_14",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/3-540-45937-5_14"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/3-540-45937-5_14",
+                "doi": "10.1007/3-540-45937-5_14",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45937-5_14"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref1",
+            "rawText": "https://doi.org/10.1145/3310273.3323437",
+            "doi": "10.1145/3310273.3323437",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3310273.3323437"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3310273.3323437",
+                "doi": "10.1145/3310273.3323437",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3310273.3323437"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref17",
+            "rawText": "haines. The effects of video compression on acceptability of images for monitoring life sciences experiments. 1992",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "article-title": "The effects of video compression on acceptability of images for monitoring life sciences experiments",
+              "volume": "92",
+              "author": "haines",
+              "year": "1992"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref17",
+                "doi": "",
+                "title": "The effects of video compression on acceptability of images for monitoring life sciences experiments",
+                "authors": [
+                  "haines"
+                ],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1109/tc.1987.5009446",
+            "doi": "10.1109/tc.1987.5009446",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.1987.5009446"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tc.1987.5009446",
+                "doi": "10.1109/tc.1987.5009446",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/TC.1987.5009446"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref19",
+            "rawText": "baccelli. 1993. Synchronization and Linearity An Algebra for Discrete Event Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "journal-title": "Synchronization and Linearity An Algebra for Discrete Event Systems",
+              "year": "1993",
+              "author": "baccelli",
+              "key": "ref19"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref19",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "baccelli"
+                ],
+                "year": 1993,
+                "venue": "Synchronization and Linearity An Algebra for Discrete Event Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref18",
+            "rawText": "https://doi.org/10.1109/asap.1991.238909",
+            "doi": "10.1109/asap.1991.238909",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ASAP.1991.238909"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/asap.1991.238909",
+                "doi": "10.1109/asap.1991.238909",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/asap.1991.238909"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1145/2897937.2898056",
+            "doi": "10.1145/2897937.2898056",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2897937.2898056"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/2897937.2898056",
+                "doi": "10.1145/2897937.2898056",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2897937.2898056"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref7",
+            "rawText": "https://doi.org/10.1007/1-4020-3454-7_4",
+            "doi": "10.1007/1-4020-3454-7_4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/1-4020-3454-7_4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/1-4020-3454-7_4",
+                "doi": "10.1007/1-4020-3454-7_4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/1-4020-3454-7_4"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1109/acsd.2006.33",
+            "doi": "10.1109/acsd.2006.33",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ACSD.2006.33"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/acsd.2006.33",
+                "doi": "10.1109/acsd.2006.33",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ACSD.2006.33"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref4",
+            "rawText": "https://doi.org/10.1109/proc.1987.13876",
+            "doi": "10.1109/proc.1987.13876",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PROC.1987.13876"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/proc.1987.13876",
+                "doi": "10.1109/proc.1987.13876",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/PROC.1987.13876"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.1016/b978-012385251-9/50014-1",
+            "doi": "10.1016/b978-012385251-9/50014-1",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/B978-012385251-9/50014-1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/b978-012385251-9/50014-1",
+                "doi": "10.1016/b978-012385251-9/50014-1",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/b978-012385251-9/50014-1"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1109/samos.2011.6045491",
+            "doi": "10.1109/samos.2011.6045491",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/SAMOS.2011.6045491"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/samos.2011.6045491",
+                "doi": "10.1109/samos.2011.6045491",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/SAMOS.2011.6045491"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref5",
+            "rawText": "sriram. 2000. Embedded Multiprocessors Scheduling and Synchronization",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "journal-title": "Embedded Multiprocessors Scheduling and Synchronization",
+              "year": "2000",
+              "author": "sriram",
+              "key": "ref5"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref5",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "sriram"
+                ],
+                "year": 2000,
+                "venue": "Embedded Multiprocessors Scheduling and Synchronization",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/tcad.2023.3239538",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 9,
+          "extractedReferenceCount": 21,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/tcad.2023.3239538",
+          "crossrefReferenceCount": 21
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/tcad.2023.3239538->doi:10.1109/seaa.2012.20@papers-dataflow-Elahi2023.pdf",
+      "source": "doi:10.1109/tcad.2023.3239538",
+      "target": "doi:10.1109/seaa.2012.20",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Elahi2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2023.3239538->doi:10.1145/1880050.1880052@papers-dataflow-Elahi2023.pdf",
+      "source": "doi:10.1109/tcad.2023.3239538",
+      "target": "doi:10.1145/1880050.1880052",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Elahi2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2023.3239538->doi:10.1007/978-3-030-20343-6_8@papers-dataflow-Elahi2023.pdf",
+      "source": "doi:10.1109/tcad.2023.3239538",
+      "target": "doi:10.1007/978-3-030-20343-6_8",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Elahi2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2023.3239538->doi:10.1007/3-540-45937-5_14@papers-dataflow-Elahi2023.pdf",
+      "source": "doi:10.1109/tcad.2023.3239538",
+      "target": "doi:10.1007/3-540-45937-5_14",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Elahi2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2023.3239538->doi:10.1109/tc.1987.5009446@papers-dataflow-Elahi2023.pdf",
+      "source": "doi:10.1109/tcad.2023.3239538",
+      "target": "doi:10.1109/tc.1987.5009446",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Elahi2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2023.3239538->doi:10.1145/2897937.2898056@papers-dataflow-Elahi2023.pdf",
+      "source": "doi:10.1109/tcad.2023.3239538",
+      "target": "doi:10.1145/2897937.2898056",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Elahi2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2023.3239538->doi:10.1109/acsd.2006.33@papers-dataflow-Elahi2023.pdf",
+      "source": "doi:10.1109/tcad.2023.3239538",
+      "target": "doi:10.1109/acsd.2006.33",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Elahi2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2023.3239538->doi:10.1109/proc.1987.13876@papers-dataflow-Elahi2023.pdf",
+      "source": "doi:10.1109/tcad.2023.3239538",
+      "target": "doi:10.1109/proc.1987.13876",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Elahi2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/tcad.2023.3239538->doi:10.1109/samos.2011.6045491@papers-dataflow-Elahi2023.pdf",
+      "source": "doi:10.1109/tcad.2023.3239538",
+      "target": "doi:10.1109/samos.2011.6045491",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Elahi2023.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Elahi2023",
+      "paperId": "doi:10.1109/tcad.2023.3239538",
+      "metadata": {
+        "fileName": "Elahi2023.pdf",
+        "sourcePath": "papers/dataflow/Elahi2023.pdf"
+      }
+    }
+  ]
+}

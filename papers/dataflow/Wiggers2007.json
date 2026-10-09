@@ -1,0 +1,435 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.814668+00:00",
+  "papers": [
+    {
+      "key": "Wiggers2007",
+      "paper": {
+        "id": "doi:10.1145/1278480.1278647",
+        "citationKey": "Wiggers2007",
+        "title": "Efficient Computation of Buffer Capacities for Cyclo-Static Dataflow Graphs",
+        "authors": [
+          "Maarten Wiggers",
+          "Marco Bekooij",
+          "Gerard J. M. Smit"
+        ],
+        "year": 2007,
+        "venue": "DAC",
+        "type": "inproceedings",
+        "doi": "10.1145/1278480.1278647",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/1278480.1278647",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Wiggers, Maarten and Bekooij, Marco and Smit, Gerard J. M.",
+          "title": "Efficient Computation of Buffer Capacities for Cyclo-Static Dataflow Graphs",
+          "booktitle": "DAC",
+          "pages": "658--663",
+          "year": "2007",
+          "doi": "10.1145/1278480.1278647",
+          "url": "https://doi.org/10.1145/1278480.1278647"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.110632+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "M. J. G. Bekooij et al. Dataﬂow Analysis for Real-Time Embedded Multiprocessor System Design, chapter 15. Dynamic and Robust Streaming Between Connected CE Devices. Kluwer Academic Publishers, 2005.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. J. G. Bekooij et al. Dataﬂow Analysis for Real-Time Embedded Multiprocessor System Design, chapter 15. Dynamic and Robust Streaming Between Connected CE Devices. Kluwer Academic Publishers, 2005."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "D. Bertsimas and J. N. Tsitsiklis. Introduction to Linear Optimization. Athena Scientiﬁc, 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Bertsimas and J. N. Tsitsiklis. Introduction to Linear Optimization. Athena Scientiﬁc, 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "G. Bilsen et al. Cyclo-static dataﬂow. IEEE Transactions on Signal Processing, 44(2):397–408, February 1996.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "G. Bilsen et al. Cyclo-static dataﬂow. IEEE Transactions on Signal Processing, 44(2):397–408, February 1996."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1996,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "A. Dasdan. Experimental analysis of the fastest optimum cycle ratio and mean algorithms. ACM Transactions on Design Automation of Electronic Systems, 9(4):385–418, October 2004.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Dasdan. Experimental analysis of the fastest optimum cycle ratio and mean algorithms. ACM Transactions on Design Automation of Electronic Systems, 9(4):385–418, October 2004."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "R. Govindarajan et al. Minimizing buffer requirement under rate-optimal schedules in regular dataﬂow networks. Journal of VLSI Signal Processing, 31(3), 2002.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Govindarajan et al. Minimizing buffer requirement under rate-optimal schedules in regular dataﬂow networks. Journal of VLSI Signal Processing, 31(3), 2002."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "E. A. Lee and D. G. Messerschmitt. Synchronous dataﬂow. Proceedings of the IEEE, 75(9):1235–1245, September 1987.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. A. Lee and D. G. Messerschmitt. Synchronous dataﬂow. Proceedings of the IEEE, 75(9):1235–1245, September 1987."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1987,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "C. W. Mercer et al. Processor capacity reserves: Operating system support for multimedia applications. In Proceedings IEEE International Conference of Multimedia Computing and Systems, pages 90–99, 1994.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. W. Mercer et al. Processor capacity reserves: Operating system support for multimedia applications. In Proceedings IEEE International Conference of Multimedia Computing and Systems, pages 90–99, 1994."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1994,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "T. M. Parks et al. A comparison of synchronous and cyclo-static dataﬂow. In Proceedings IEEE Asilomar Conference on Signals, Systems and Computers, pages 204–210, October 1995.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. M. Parks et al. A comparison of synchronous and cyclo-static dataﬂow. In Proceedings IEEE Asilomar Conference on Signals, Systems and Computers, pages 204–210, October 1995."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "J. L. Pino and E. A. Lee. Hierarchical static scheduling of dataﬂow graphs onto multiple processors. In Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing, May 1995.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. L. Pino and E. A. Lee. Hierarchical static scheduling of dataﬂow graphs onto multiple processors. In Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing, May 1995."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "S. Sriram and S.S. Bhattacharyya. Embedded Multiprocessors: Scheduling and Synchronization. Marcel Dekker Inc., 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Sriram and S.S. Bhattacharyya. Embedded Multiprocessors: Scheduling and Synchronization. Marcel Dekker Inc., 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "S. Stuijk et al. Exploring trade-offs in buffer requirements and throughput constraints for synchronous dataﬂow graphs. In Proceedings of Design Automation Conference, pages 889–904, July 2006.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Stuijk et al. Exploring trade-offs in buffer requirements and throughput constraints for synchronous dataﬂow graphs. In Proceedings of Design Automation Conference, pages 889–904, July 2006."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "M. H. Wiggers et al. Efﬁcient computation of buffer capacities for multi-rate real-time systems with back-pressure. In Proceedings of CODES+ISSS’06, October 2006.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. H. Wiggers et al. Efﬁcient computation of buffer capacities for multi-rate real-time systems with back-pressure. In Proceedings of CODES+ISSS’06, October 2006."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.1145/1278480.1278647:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/1278480.1278647",
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 12,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/1278480.1278647",
+          "crossrefReferenceCount": 0
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Wiggers2007",
+      "paperId": "doi:10.1145/1278480.1278647",
+      "metadata": {
+        "fileName": "Wiggers2007.pdf",
+        "sourcePath": "papers/dataflow/Wiggers2007.pdf"
+      }
+    }
+  ]
+}

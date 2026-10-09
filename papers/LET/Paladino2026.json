@@ -1,0 +1,1090 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.553107+00:00",
+  "papers": [
+    {
+      "key": "Paladino2026",
+      "paper": {
+        "id": "doi:10.48550/arxiv.2601.21146",
+        "citationKey": "Paladino2026",
+        "title": "Maxwait: A Generalized Mechanism for Distributed Time-Sensitive Systems",
+        "authors": [
+          "Francesco Paladino",
+          "Shulu Li",
+          "Edward A. Lee"
+        ],
+        "year": 2026,
+        "venue": "arXiv:2601.21146",
+        "type": "misc",
+        "doi": "10.48550/arXiv.2601.21146",
+        "arxivId": "2601.21146",
+        "url": "https://arxiv.org/abs/2601.21146",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "Preprint",
+        "bibtexFields": {
+          "author": "Paladino, Francesco and Li, Shulu and Lee, Edward A.",
+          "title": "{Maxwait: A Generalized Mechanism for Distributed Time-Sensitive Systems}",
+          "year": "2026",
+          "howpublished": "arXiv:2601.21146",
+          "eprint": "2601.21146",
+          "archiveprefix": "arXiv",
+          "doi": "10.48550/arXiv.2601.21146",
+          "url": "https://arxiv.org/abs/2601.21146",
+          "note": "Preprint"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.081015+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Gul Agha. ACTORS: A Model of Concurrent Computation in Distributed Systems. The MIT Press Series in Artificial Intelligence. MIT Press, Cambridge, MA, 1986.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Gul Agha. ACTORS: A Model of Concurrent Computation in Distributed Systems. The MIT Press Series in Artificial Intelligence. MIT Press, Cambridge, MA, 1986."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1986,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "F. Baccelli, G. Cohen, G. J. Olster, and J. P. Quadrat. Synchronization and Linearity, An Algebra for Discrete Event Systems. Wiley, New York, 1992.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "F. Baccelli, G. Cohen, G. J. Olster, and J. P. Quadrat. Synchronization and Linearity, An Algebra for Discrete Event Systems. Wiley, New York, 1992."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:synchronization and linearity an algebra for discrete event systems:1992",
+                "doi": "",
+                "arxivId": "",
+                "title": "Synchronization and Linearity: An Algebra for Discrete Event Systems",
+                "authors": [
+                  "Francois Baccelli",
+                  "Guy Cohen",
+                  "Geert Jan Olsder",
+                  "Jean-Pierre Quadrat"
+                ],
+                "year": 1992,
+                "venue": "Wiley",
+                "type": "book",
+                "url": "https://www.rocq.inria.fr/metalau/cohen/SED/book-online.html"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "Soroush Bateni, Marten Lohstroh, Hou Seng Wong, Hokeun Kim, Shaokai Lin, Christian Menard, and Edward A. Lee. Risk and mitigation of nondeterminism in distributed cyber-physical systems. In ACM-IEEE International Conference on Formal Methods and Models for System Design (MEMOCODE), 2023. doi:10.1145/3610579.3613219.",
+            "doi": "10.1145/3610579.3613219",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Soroush Bateni, Marten Lohstroh, Hou Seng Wong, Hokeun Kim, Shaokai Lin, Christian Menard, and Edward A. Lee. Risk and mitigation of nondeterminism in distributed cyber-physical systems. In ACM-IEEE International Conference on Formal Methods and Models for System Design (MEMOCODE), 2023. doi:10.1145/3610579.3613219."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3610579.3613219",
+                "doi": "10.1145/3610579.3613219",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3610579.3613219"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "Albert Benveniste and G´erard Berry. The synchronous approach to reactive and real-time systems. Proceedings of the IEEE, 79(9):1270– 1282, 1991. doi:10.1109/5.97297.",
+            "doi": "10.1109/5.97297",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Albert Benveniste and G´erard Berry. The synchronous approach to reactive and real-time systems. Proceedings of the IEEE, 79(9):1270– 1282, 1991. doi:10.1109/5.97297."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/5.97297",
+                "doi": "10.1109/5.97297",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97297"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "Eric Brewer. Spanner, TrueTime & the CAP theorem. Report, Google, Februrary 14 2017. URL: https://storage.googleapis.com/ pub-tools-public-publication-data/pdf/45855.pdf.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Eric Brewer. Spanner, TrueTime & the CAP theorem. Report, Google, Februrary 14 2017. URL: https://storage.googleapis.com/ pub-tools-public-publication-data/pdf/45855.pdf."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "K. Mani Chandy and Jayadev Misra. Parallel Program Design: A Foundation. Addison Wesley, 1988.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "K. Mani Chandy and Jayadev Misra. Parallel Program Design: A Foundation. Addison Wesley, 1988."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1988,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Dominik Charousset, Raphael Hiesgen, and Thomas C. Schmidt. CAF - the C++ actor framework for scalable and resource-efficient applications. In International Workshop on Programming based on Actors Agents and Decentralized Control (AGERE), pages 15–28. ACM, 2014. doi: 10.1145/2687357.2687363.",
+            "doi": "10.1145/2687357.2687363",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Dominik Charousset, Raphael Hiesgen, and Thomas C. Schmidt. CAF - the C++ actor framework for scalable and resource-efficient applications. In International Workshop on Programming based on Actors Agents and Decentralized Control (AGERE), pages 15–28. ACM, 2014. doi: 10.1145/2687357.2687363."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/2687357.2687363",
+                "doi": "10.1145/2687357.2687363",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2687357.2687363"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes, Christopher Frost, JJ Furman, Sanjay Ghemawat, Andrey Gubarev, Christopher Heiser, Peter Hochschild, Wilson Hsieh, Sebastian Kanthak, Eugene Kogan, Hongyi Li, Alexander Lloyd, Sergey Melnik, David Mwaura, David Nagle, Sean Quinlan, Rajesh Rao, Lindsay Rolig, Yasushi Saito, Michal Szymaniak, Christopher Taylor, Ruth Wang, and Dale Woodford. Spanner: Google’s globally-distributed database. In OSDI, 2012. doi:10.1145/2491245.",
+            "doi": "10.1145/2491245",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes, Christopher Frost, JJ Furman, Sanjay Ghemawat, Andrey Gubarev, Christopher Heiser, Peter Hochschild, Wilson Hsieh, Sebastian Kanthak, Eugene Kogan, Hongyi Li, Alexander Lloyd, Sergey Melnik, David Mwaura, David Nagle, Sean Quinlan, Rajesh Rao, Lindsay Rolig, Yasushi Saito, Michal Szymaniak, Christopher Taylor, Ruth Wang, and Dale Woodford. Spanner: Google’s globally-distributed database. In OSDI, 2012. doi:10.1145/2491245."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/2491245",
+                "doi": "10.1145/2491245",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2491245"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Peter Donovan, Erling Jellum, Byeonggil Jun, Hokeun Kim, Edward A. Lee, Shaokai Lin, Marten Lohstroh, and Anirudh Rengarajan. Zerodelay cycles in distributed discrete-event systems using Lingua Franca. ACM Transactions on Modeling and Computer Simulation, 36(1), 2025. doi:10.1145/3767727.",
+            "doi": "10.1145/3767727",
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Peter Donovan, Erling Jellum, Byeonggil Jun, Hokeun Kim, Edward A. Lee, Shaokai Lin, Marten Lohstroh, and Anirudh Rengarajan. Zerodelay cycles in distributed discrete-event systems using Lingua Franca. ACM Transactions on Modeling and Computer Simulation, 36(1), 2025. doi:10.1145/3767727."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3767727",
+                "doi": "10.1145/3767727",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3767727"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "John C. Eidson. Measurement, Control, and Communication Using IEEE 1588. Springer, 2006.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "John C. Eidson. Measurement, Control, and Communication Using IEEE 1588. Springer, 2006."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "John C. Eidson and Kevin B Stanton. Timing in cyber-physical systems: the last inch problem. In IEEE International Symposium on Precision Clock Synchronization for Measurement, Control, and Communication (ISPCS), pages 19–24. IEEE, 2015. doi:10.1109/ISPCS.2015. 7324674.",
+            "doi": "10.1109/ispcs.2015",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "John C. Eidson and Kevin B Stanton. Timing in cyber-physical systems: the last inch problem. In IEEE International Symposium on Precision Clock Synchronization for Measurement, Control, and Communication (ISPCS), pages 19–24. IEEE, 2015. doi:10.1109/ISPCS.2015. 7324674."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/ispcs.2015",
+                "doi": "10.1109/ispcs.2015",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ispcs.2015"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Kai-Bj¨orn Gemlau, Leonie K¨ohler, Rolf Ernst, and Sophie Quinton. System-level logical execution time: Augmenting the logical execution time paradigm for distributed real-time automotive software. ACM Transactions on Cyber-Physical Systems, 5(2):1–27, 2021. doi:10. 1145/3381847.",
+            "doi": "10.1145/3381847",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Kai-Bj¨orn Gemlau, Leonie K¨ohler, Rolf Ernst, and Sophie Quinton. System-level logical execution time: Augmenting the logical execution time paradigm for distributed real-time automotive software. ACM Transactions on Cyber-Physical Systems, 5(2):1–27, 2021. doi:10. 1145/3381847."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/3381847",
+                "doi": "10.1145/3381847",
+                "arxivId": "",
+                "title": "System-level Logical Execution Time: Augmenting the Logical Execution Time Paradigm for Distributed Real-time Automotive Software",
+                "authors": [
+                  "Kai-Bj\\\"orn Gemlau",
+                  "Leonie K\\\"OHLER",
+                  "Rolf Ernst",
+                  "Sophie Quinton"
+                ],
+                "year": 2021,
+                "venue": "ACM Transactions on Cyber-Physical Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3381847"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "Yilong Geng, Shiyu Liu, Zi Yin, Ashish Naik, Balaji Prabhakar, Mendel Rosenblum, and Amin Vahdat. Exploiting a natural network effect for scalable, fine-grained clock synchronization. In USENIX Symposium on Networked Systems Design and Implementation (NSDI), 2018. URL: https://www.usenix.org/conference/nsdi18/presentation/geng.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Yilong Geng, Shiyu Liu, Zi Yin, Ashish Naik, Balaji Prabhakar, Mendel Rosenblum, and Amin Vahdat. Exploiting a natural network effect for scalable, fine-grained clock synchronization. In USENIX Symposium on Networked Systems Design and Implementation (NSDI), 2018. URL: https://www.usenix.org/conference/nsdi18/presentation/geng."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "Pat Helland. Don’t get stuck in the “con” game: Consistency, convergence and confluence are not the same! Queue, 19(330):16–35, 2021. doi:10.1145/3475965.3480470.",
+            "doi": "10.1145/3475965.3480470",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Pat Helland. Don’t get stuck in the “con” game: Consistency, convergence and confluence are not the same! Queue, 19(330):16–35, 2021. doi:10.1145/3475965.3480470."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3475965.3480470",
+                "doi": "10.1145/3475965.3480470",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3475965.3480470"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "Pat Helland and Dave Campbell. Building on quicksand. arXiv, 0909.1788 [cs.DC], 2009. Presented at: Conference on Innovative Data Systems Research (CIDR), Asilomar, CA, USA. doi:10.48550/ arXiv.0909.1788.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Pat Helland and Dave Campbell. Building on quicksand. arXiv, 0909.1788 [cs.DC], 2009. Presented at: Conference on Innovative Data Systems Research (CIDR), Asilomar, CA, USA. doi:10.48550/ arXiv.0909.1788."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch. Giotto: A timetriggered language for embedded programming. In EMSOFT 2001, volume LNCS 2211, pages 166–184. Springer-Verlag, 2001. doi: 10.1007/3-540-45449-7_12.",
+            "doi": "10.1007/3-540-45449-7_12",
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch. Giotto: A timetriggered language for embedded programming. In EMSOFT 2001, volume LNCS 2211, pages 166–184. Springer-Verlag, 2001. doi: 10.1007/3-540-45449-7_12."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/3-540-45449-7_12",
+                "doi": "10.1007/3-540-45449-7_12",
+                "arxivId": "",
+                "title": "Giotto: A Time-Triggered Language for Embedded Programming",
+                "authors": [
+                  "Thomas A. Henzinger",
+                  "Benjamin Horowitz",
+                  "Christoph Meyer Kirsch"
+                ],
+                "year": 2001,
+                "venue": "Embedded Software",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/3-540-45449-7_12"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "D. Jefferson. Virtual time. ACM Trans. Programming Languages and Systems, 7(3):404–425, 1985. doi:10.1145/3916.3988.",
+            "doi": "10.1145/3916.3988",
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Jefferson. Virtual time. ACM Trans. Programming Languages and Systems, 7(3):404–425, 1985. doi:10.1145/3916.3988."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3916.3988",
+                "doi": "10.1145/3916.3988",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1985,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3916.3988"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "Christoph M. Kirsch and Ana Sokolova. The Logical Execution Time Paradigm, pages 103–120. Springer-Verlag, Berlin Heidelberg, 2012. doi:10.1007/978-3-642-24349-35,.",
+            "doi": "10.1007/978-3-642-24349-35",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Christoph M. Kirsch and Ana Sokolova. The Logical Execution Time Paradigm, pages 103–120. Springer-Verlag, Berlin Heidelberg, 2012. doi:10.1007/978-3-642-24349-35,."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-35",
+                "arxivId": "",
+                "title": "The Logical Execution Time Paradigm",
+                "authors": [
+                  "Christoph M. Kirsch",
+                  "Ana Sokolova"
+                ],
+                "year": 2012,
+                "venue": "Advances in Real-Time Systems",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "Leonie K¨ohler, Phil Hertha, Matthias Beckert, Alex Bendrick, and Rolf Ernst. Robust cause-effect chains with bounded execution time and system-level logical execution time. ACM Transactions on Embedded Computing Systems, 22(3):1–28, 2023. doi:10.1145/3573388.",
+            "doi": "10.1145/3573388",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Leonie K¨ohler, Phil Hertha, Matthias Beckert, Alex Bendrick, and Rolf Ernst. Robust cause-effect chains with bounded execution time and system-level logical execution time. ACM Transactions on Embedded Computing Systems, 22(3):1–28, 2023. doi:10.1145/3573388."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3573388",
+                "doi": "10.1145/3573388",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3573388"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "Leslie Lamport. Time, clocks, and the ordering of events in a distributed system. Communications of the ACM, 21(7):558–565, 1978. doi: 10.1145/359545.359563.",
+            "doi": "10.1145/359545.359563",
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Leslie Lamport. Time, clocks, and the ordering of events in a distributed system. Communications of the ACM, 21(7):558–565, 1978. doi: 10.1145/359545.359563."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/359545.359563",
+                "doi": "10.1145/359545.359563",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1978,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/359545.359563"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "Leslie Lamport. Using time instead of timeout for fault-tolerant distributed systems. ACM Transactions on Programming Languages and Systems, 6(2):254–280, 1984. doi:10.1145/2993.2994.",
+            "doi": "10.1145/2993.2994",
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Leslie Lamport. Using time instead of timeout for fault-tolerant distributed systems. ACM Transactions on Programming Languages and Systems, 6(2):254–280, 1984. doi:10.1145/2993.2994."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/2993.2994",
+                "doi": "10.1145/2993.2994",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1984,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2993.2994"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "Edward A. Lee. Logical Time in Actor Systems, volume LNCS 16120, book section 16, pages 371–392. Springer, 2025. doi:10.1007/ 978-3-032-05291-9_16.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Edward A. Lee. Logical Time in Actor Systems, volume LNCS 16120, book section 16, pages 371–392. Springer, 2025. doi:10.1007/ 978-3-032-05291-9_16."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "Edward A. Lee, Ravi Akella, Soroush Bateni, Shaokai Lin, Marten Lohstroh, and Christian Menard. Consistency vs. availability in distributed cyber-physical systems. ACM Transactions on Embedded Computing Systems (TECS), 22(5s):1–24, 2023. Presented at EMSOFT, September 17-22, 2023, Hamburg, Germany. doi:10.1145/ 3609119.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Edward A. Lee, Ravi Akella, Soroush Bateni, Shaokai Lin, Marten Lohstroh, and Christian Menard. Consistency vs. availability in distributed cyber-physical systems. ACM Transactions on Embedded Computing Systems (TECS), 22(5s):1–24, 2023. Presented at EMSOFT, September 17-22, 2023, Hamburg, Germany. doi:10.1145/ 3609119."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "Edward A. Lee and Marten Lohstroh. Generalizing logical execution time. In J.-F. Raskin and K. Chatterjee, editors, Principles of Systems Design: Essays Dedicated to Thomas A. Henzinger on the Occasion of His 60th Birthday, volume LNCS 13660, pages 1–22. Springer Nature, 2022. doi:10.1007/978-3-031-22337-2_8.",
+            "doi": "10.1007/978-3-031-22337-2_8",
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Edward A. Lee and Marten Lohstroh. Generalizing logical execution time. In J.-F. Raskin and K. Chatterjee, editors, Principles of Systems Design: Essays Dedicated to Thomas A. Henzinger on the Occasion of His 60th Birthday, volume LNCS 13660, pages 1–22. Springer Nature, 2022. doi:10.1007/978-3-031-22337-2_8."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/978-3-031-22337-2_8",
+                "doi": "10.1007/978-3-031-22337-2_8",
+                "arxivId": "",
+                "title": "Generalizing Logical Execution Time",
+                "authors": [
+                  "Edward A. Lee",
+                  "Marten Lohstroh"
+                ],
+                "year": 2022,
+                "venue": "Principles of Systems Design",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-031-22337-2_8"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "Shulu Li and Edward A. Lee. A preliminary model of coordinationfree consistency. arXiv, 2504.01141 [cs.DC], 2025. doi:10.48550/ arXiv.2504.01141.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Shulu Li and Edward A. Lee. A preliminary model of coordinationfree consistency. arXiv, 2504.01141 [cs.DC], 2025. doi:10.48550/ arXiv.2504.01141."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "Shaokai Lin and Edward A. Lee. Verify Engineering Models, Not Scientific Models, volume LNCS 15560, pages 195–211. Springer, Cham., 2025. doi:10.1007/978-3-031-85134-6_9.",
+            "doi": "10.1007/978-3-031-85134-6_9",
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Shaokai Lin and Edward A. Lee. Verify Engineering Models, Not Scientific Models, volume LNCS 15560, pages 195–211. Springer, Cham., 2025. doi:10.1007/978-3-031-85134-6_9."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/978-3-031-85134-6_9",
+                "doi": "10.1007/978-3-031-85134-6_9",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-031-85134-6_9"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "27",
+            "rawText": "Marten Lohstroh, Christian Menard, Soroush Bateni, and Edward A. Lee. Toward a lingua franca for deterministic concurrent systems. ACM Transactions on Embedded Computing Systems (TECS), 20(4):Article 36, 2021. doi:10.1145/3448128.",
+            "doi": "10.1145/3448128",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Marten Lohstroh, Christian Menard, Soroush Bateni, and Edward A. Lee. Toward a lingua franca for deterministic concurrent systems. ACM Transactions on Embedded Computing Systems (TECS), 20(4):Article 36, 2021. doi:10.1145/3448128."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1145/3448128",
+                "doi": "10.1145/3448128",
+                "arxivId": "",
+                "title": "Toward a Lingua Franca for Deterministic Concurrent Systems",
+                "authors": [
+                  "Marten Lohstroh",
+                  "Christian Menard",
+                  "Soroush Bateni",
+                  "Edward A. Lee"
+                ],
+                "year": 2021,
+                "venue": "ACM Transactions on Embedded Computing Systems",
+                "type": "misc",
+                "url": "https://doi.org/10.1145/3448128"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "28",
+            "rawText": "David L. Mills. Computer Network Time Synchronization — The Network Time Protocol. CRC Press, Boca Raton, FL, 2006.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "David L. Mills. Computer Network Time Synchronization — The Network Time Protocol. CRC Press, Boca Raton, FL, 2006."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "29",
+            "rawText": "Raymond Roestenburg, Rob Bakker, and Rob Williams. Akka in Action. Manning Publications, 2nd edition, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Raymond Roestenburg, Rob Bakker, and Rob Williams. Akka in Action. Manning Publications, 2nd edition, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "30",
+            "rawText": "Marc Shapiro, Nuno Preguic¸a, Carlos Baquero, and Marek Zawirski. Conflict-free replicated data types. Report, INRIA, 2011. URL: https: //pages.lip6.fr/Marc.Shapiro/papers/RR-7687.pdf.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Marc Shapiro, Nuno Preguic¸a, Carlos Baquero, and Marek Zawirski. Conflict-free replicated data types. Report, INRIA, 2011. URL: https: //pages.lip6.fr/Marc.Shapiro/papers/RR-7687.pdf."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2601.21146:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "31",
+            "rawText": "Yang Zhao, Edward A. Lee, and Jie Liu. A programming model for timesynchronized distributed real-time systems. In Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 259 – 268. IEEE, 2007. doi:10.1109/RTAS.2007.5.",
+            "doi": "10.1109/rtas.2007.5",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Yang Zhao, Edward A. Lee, and Jie Liu. A programming model for timesynchronized distributed real-time systems. In Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 259 – 268. IEEE, 2007. doi:10.1109/RTAS.2007.5."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2007.5",
+                "doi": "10.1109/rtas.2007.5",
+                "arxivId": "",
+                "title": "A Programming Model for Time-Synchronized Distributed Real-Time Systems",
+                "authors": [
+                  "Yang Zhao",
+                  "Jie Liu",
+                  "Edward A. Lee"
+                ],
+                "year": 2007,
+                "venue": "13th IEEE Real Time and Embedded Technology and Applications Symposium (RTAS'07)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas.2007.5"
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 7,
+          "extractedReferenceCount": 31,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.48550/arxiv.2601.21146->title:synchronization and linearity an algebra for discrete event systems:1992@papers-LET-Paladino2026.pdf",
+      "source": "doi:10.48550/arxiv.2601.21146",
+      "target": "title:synchronization and linearity an algebra for discrete event systems:1992",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2026.pdf"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2601.21146->doi:10.1145/3381847@papers-LET-Paladino2026.pdf",
+      "source": "doi:10.48550/arxiv.2601.21146",
+      "target": "doi:10.1145/3381847",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2026.pdf"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2601.21146->doi:10.1007/3-540-45449-7_12@papers-LET-Paladino2026.pdf",
+      "source": "doi:10.48550/arxiv.2601.21146",
+      "target": "doi:10.1007/3-540-45449-7_12",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2026.pdf"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2601.21146->doi:10.1007/978-3-642-24349-3_5@papers-LET-Paladino2026.pdf",
+      "source": "doi:10.48550/arxiv.2601.21146",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2026.pdf"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2601.21146->doi:10.1007/978-3-031-22337-2_8@papers-LET-Paladino2026.pdf",
+      "source": "doi:10.48550/arxiv.2601.21146",
+      "target": "doi:10.1007/978-3-031-22337-2_8",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2026.pdf"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2601.21146->doi:10.1145/3448128@papers-LET-Paladino2026.pdf",
+      "source": "doi:10.48550/arxiv.2601.21146",
+      "target": "doi:10.1145/3448128",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2026.pdf"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2601.21146->doi:10.1109/rtas.2007.5@papers-LET-Paladino2026.pdf",
+      "source": "doi:10.48550/arxiv.2601.21146",
+      "target": "doi:10.1109/rtas.2007.5",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2026.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Paladino2026",
+      "paperId": "doi:10.48550/arxiv.2601.21146",
+      "metadata": {
+        "fileName": "Paladino2026.pdf",
+        "sourcePath": "papers/LET/Paladino2026.pdf"
+      }
+    }
+  ]
+}

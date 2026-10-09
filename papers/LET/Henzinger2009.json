@@ -1,0 +1,1106 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.172963+00:00",
+  "papers": [
+    {
+      "key": "Henzinger2009",
+      "paper": {
+        "id": "doi:10.1109/rtss.2009.9",
+        "citationKey": "Henzinger2009",
+        "title": "Distributed, Modular HTL",
+        "authors": [
+          "Thomas A. Henzinger",
+          "Christoph M. Kirsch",
+          "Eduardo R. B. Marques",
+          "Ana Sokolova"
+        ],
+        "year": 2009,
+        "venue": "2009 30th IEEE Real-Time Systems Symposium",
+        "type": "inproceedings",
+        "doi": "10.1109/rtss.2009.9",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/rtss.2009.9",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Henzinger, Thomas A. and Kirsch, Christoph M. and Marques, Eduardo R. B. and Sokolova, Ana",
+          "title": "{Distributed, Modular HTL}",
+          "year": "2009",
+          "booktitle": "2009 30th IEEE Real-Time Systems Symposium",
+          "publisher": "IEEE",
+          "pages": "171--180",
+          "doi": "10.1109/rtss.2009.9",
+          "url": "https://doi.org/10.1109/rtss.2009.9"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.072901+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "19",
+            "rawText": "https://doi.org/10.1109/tc.2007.70747",
+            "doi": "10.1109/tc.2007.70747",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "19",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.2007.70747"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tc.2007.70747",
+                "doi": "10.1109/tc.2007.70747",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.2007.70747"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "17",
+            "rawText": "leung. 1980. A note on preemptive scheduling of periodic real-time tasks",
+            "doi": null,
+            "arxivId": null,
+            "year": 1980,
+            "reviewed": false,
+            "referenceData": {
+              "key": "17",
+              "author": "leung",
+              "year": "1980",
+              "journal-title": "A note on preemptive scheduling of periodic real-time tasks"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:17",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "leung"
+                ],
+                "year": 1980,
+                "venue": "A note on preemptive scheduling of periodic real-time tasks",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "18",
+            "rawText": "https://doi.org/10.1145/1065910.1065914",
+            "doi": "10.1145/1065910.1065914",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1065910.1065914"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1065910.1065914",
+                "doi": "10.1145/1065910.1065914",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1065910.1065914"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "15",
+            "rawText": "baruah. Sustainable scheduling analysis. 2006. Proc RTSS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "15",
+              "article-title": "Sustainable scheduling analysis",
+              "author": "baruah",
+              "year": "2006",
+              "journal-title": "Proc RTSS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:15",
+                "doi": "",
+                "title": "Sustainable scheduling analysis",
+                "authors": [
+                  "baruah"
+                ],
+                "year": 2006,
+                "venue": "Proc RTSS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "16",
+            "rawText": "buttazzo. 1997. Hard Real-Time Computing Systems Predictable Scheduling Algorithms and Applications",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "16",
+              "author": "buttazzo",
+              "year": "1997",
+              "journal-title": "Hard Real-Time Computing Systems Predictable Scheduling Algorithms and Applications"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:16",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "buttazzo"
+                ],
+                "year": 1997,
+                "venue": "Hard Real-Time Computing Systems Predictable Scheduling Algorithms and Applications",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "13",
+            "rawText": "https://doi.org/10.1109/tie.2002.804967",
+            "doi": "10.1109/tie.2002.804967",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TIE.2002.804967"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tie.2002.804967",
+                "doi": "10.1109/tie.2002.804967",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/TIE.2002.804967"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "14",
+            "rawText": "https://doi.org/10.1145/1375657.1375666",
+            "doi": "10.1145/1375657.1375666",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1375657.1375666"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1375657.1375666",
+                "doi": "10.1145/1375657.1375666",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1375657.1375666"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "11",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805829",
+            "doi": "10.1109/jproc.2002.805829",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805829"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805829",
+                "doi": "10.1109/jproc.2002.805829",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/JPROC.2002.805829"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "12",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12",
+              "year": "0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:12",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "21",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805821",
+            "doi": "10.1109/jproc.2002.805821",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805821"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805821",
+                "doi": "10.1109/jproc.2002.805821",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805821"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "20",
+            "rawText": "https://doi.org/10.1109/tc.2008.81",
+            "doi": "10.1109/tc.2008.81",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "20",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.2008.81"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tc.2008.81",
+                "doi": "10.1109/tc.2008.81",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.2008.81"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "22",
+            "rawText": "https://doi.org/10.1145/780732.780754",
+            "doi": "10.1145/780732.780754",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/780732.780754"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/780732.780754",
+                "doi": "10.1145/780732.780754",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/780732.780754"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "23",
+            "rawText": "https://doi.org/10.1109/rtss.2007.36",
+            "doi": "10.1109/rtss.2007.36",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "23",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2007.36"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2007.36",
+                "doi": "10.1109/rtss.2007.36",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2007.36"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "24",
+            "rawText": "https://doi.org/10.1145/1176887.1176894",
+            "doi": "10.1145/1176887.1176894",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1176887.1176894"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176894",
+                "doi": "10.1145/1176887.1176894",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1176887.1176894"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "25",
+            "rawText": "https://doi.org/10.1145/1450058.1450080",
+            "doi": "10.1145/1450058.1450080",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "25",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1450058.1450080"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1450058.1450080",
+                "doi": "10.1145/1450058.1450080",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1450058.1450080"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "26",
+            "rawText": "https://doi.org/10.1109/rtas.2006.11",
+            "doi": "10.1109/rtas.2006.11",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "26",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2006.11"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2006.11",
+                "doi": "10.1109/rtas.2006.11",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2006.11"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "27",
+            "rawText": "https://doi.org/10.1049/iet-sen.2009.0011",
+            "doi": "10.1049/iet-sen.2009.0011",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "27",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1049/iet-sen.2009.0011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1049/iet-sen.2009.0011",
+                "doi": "10.1049/iet-sen.2009.0011",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1049/iet-sen.2009.0011"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "28",
+            "rawText": "chkouri. Translating AADL into BIP-application to the verification of real-time systems. 2008. Proc MoDELS Workshops",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "28",
+              "article-title": "Translating AADL into BIP-application to the verification of real-time systems",
+              "author": "chkouri",
+              "year": "2008",
+              "journal-title": "Proc MoDELS Workshops"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:28",
+                "doi": "",
+                "title": "Translating AADL into BIP-application to the verification of real-time systems",
+                "authors": [
+                  "chkouri"
+                ],
+                "year": 2008,
+                "venue": "Proc MoDELS Workshops",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "29",
+            "rawText": "https://doi.org/10.1145/1629335.1629347",
+            "doi": "10.1145/1629335.1629347",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "29",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1629335.1629347"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1629335.1629347",
+                "doi": "10.1145/1629335.1629347",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1629335.1629347"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "3",
+            "rawText": "https://doi.org/10.1016/j.scico.2010.06.004",
+            "doi": "10.1016/j.scico.2010.06.004",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.scico.2010.06.004"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/j.scico.2010.06.004",
+                "doi": "10.1016/j.scico.2010.06.004",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.scico.2010.06.004"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "2",
+            "rawText": "https://doi.org/10.1145/1403375.1403595",
+            "doi": "10.1145/1403375.1403595",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1403375.1403595"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1403375.1403595",
+                "doi": "10.1145/1403375.1403595",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1403375.1403595"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "10",
+            "rawText": "lublinerman. Modular code generation from synchronous block diagrams - modularity vs. code size. 2009. Proc POPL",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10",
+              "article-title": "Modular code generation from synchronous block diagrams - modularity vs. code size",
+              "author": "lublinerman",
+              "year": "2009",
+              "journal-title": "Proc POPL"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10",
+                "doi": "",
+                "title": "Modular code generation from synchronous block diagrams - modularity vs. code size",
+                "authors": [
+                  "lublinerman"
+                ],
+                "year": 2009,
+                "venue": "Proc POPL",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "1",
+            "rawText": "https://doi.org/10.1145/1176887.1176907",
+            "doi": "10.1145/1176887.1176907",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1176887.1176907"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176907",
+                "doi": "10.1145/1176887.1176907",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1176887.1176907"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "30",
+            "rawText": "https://doi.org/10.1145/1347375.1347382",
+            "doi": "10.1145/1347375.1347382",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "30",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1347375.1347382"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1347375.1347382",
+                "doi": "10.1145/1347375.1347382",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1347375.1347382"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "7",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805825",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805825"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "6",
+            "rawText": "https://doi.org/10.1109/32.637390",
+            "doi": "10.1109/32.637390",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/32.637390"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/32.637390",
+                "doi": "10.1109/32.637390",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/32.637390"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "32",
+            "rawText": "de alfaro. Interface theories for component-based design. 2001. Proc EMSOFT",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "32",
+              "article-title": "Interface theories for component-based design",
+              "author": "de alfaro",
+              "year": "2001",
+              "journal-title": "Proc EMSOFT"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:32",
+                "doi": "",
+                "title": "Interface theories for component-based design",
+                "authors": [
+                  "de alfaro"
+                ],
+                "year": 2001,
+                "venue": "Proc EMSOFT",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "5",
+            "rawText": "iercan. Contributions to the development of real-time programming techniques and technologies. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "5",
+              "article-title": "Contributions to the development of real-time programming techniques and technologies",
+              "author": "iercan",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:5",
+                "doi": "",
+                "title": "Contributions to the development of real-time programming techniques and technologies",
+                "authors": [
+                  "iercan"
+                ],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "31",
+            "rawText": "https://doi.org/10.1145/1629335.1629346",
+            "doi": "10.1145/1629335.1629346",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "31",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1629335.1629346"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1629335.1629346",
+                "doi": "10.1145/1629335.1629346",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1629335.1629346"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "4",
+            "rawText": "kirsch. Semantics-preserving and incremental runtime patching of real-time programs. 2008. Proc APRES",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "4",
+              "article-title": "Semantics-preserving and incremental runtime patching of real-time programs",
+              "author": "kirsch",
+              "year": "2008",
+              "journal-title": "Proc APRES"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:semantics preserving and incremental runtime patching of real time programs:2008",
+                "doi": "",
+                "title": "Semantics-preserving and incremental runtime patching of real-time programs",
+                "authors": [
+                  "kirsch"
+                ],
+                "year": 2008,
+                "venue": "Proc APRES",
+                "type": "",
+                "url": "https://ckirsch.github.io/publications/conferences/APRES08-RuntimePatching.pdf"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "9",
+            "rawText": "https://doi.org/10.1145/512529.512567",
+            "doi": "10.1145/512529.512567",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/512529.512567"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/512529.512567",
+                "doi": "10.1145/512529.512567",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/512529.512567"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "8",
+            "rawText": "https://doi.org/10.1145/1457255.1457262",
+            "doi": "10.1145/1457255.1457262",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1457255.1457262"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1457255.1457262",
+                "doi": "10.1145/1457255.1457262",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1457255.1457262"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/rtss.2009.9",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 9,
+          "extractedReferenceCount": 32,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/rtss.2009.9",
+          "crossrefReferenceCount": 32
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/rtss.2009.9->doi:10.1145/1065910.1065914@papers-LET-Henzinger2009.pdf",
+      "source": "doi:10.1109/rtss.2009.9",
+      "target": "doi:10.1145/1065910.1065914",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2009.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss.2009.9->doi:10.1109/tie.2002.804967@papers-LET-Henzinger2009.pdf",
+      "source": "doi:10.1109/rtss.2009.9",
+      "target": "doi:10.1109/tie.2002.804967",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2009.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss.2009.9->doi:10.1109/jproc.2002.805829@papers-LET-Henzinger2009.pdf",
+      "source": "doi:10.1109/rtss.2009.9",
+      "target": "doi:10.1109/jproc.2002.805829",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2009.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss.2009.9->doi:10.1016/j.scico.2010.06.004@papers-LET-Henzinger2009.pdf",
+      "source": "doi:10.1109/rtss.2009.9",
+      "target": "doi:10.1016/j.scico.2010.06.004",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2009.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss.2009.9->doi:10.1145/1176887.1176907@papers-LET-Henzinger2009.pdf",
+      "source": "doi:10.1109/rtss.2009.9",
+      "target": "doi:10.1145/1176887.1176907",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2009.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss.2009.9->doi:10.1109/jproc.2002.805825@papers-LET-Henzinger2009.pdf",
+      "source": "doi:10.1109/rtss.2009.9",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2009.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss.2009.9->title:semantics preserving and incremental runtime patching of real time programs:2008@papers-LET-Henzinger2009.pdf",
+      "source": "doi:10.1109/rtss.2009.9",
+      "target": "title:semantics preserving and incremental runtime patching of real time programs:2008",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2009.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss.2009.9->doi:10.1145/512529.512567@papers-LET-Henzinger2009.pdf",
+      "source": "doi:10.1109/rtss.2009.9",
+      "target": "doi:10.1145/512529.512567",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2009.pdf"
+    },
+    {
+      "id": "doi:10.1109/rtss.2009.9->doi:10.1145/1457255.1457262@papers-LET-Henzinger2009.pdf",
+      "source": "doi:10.1109/rtss.2009.9",
+      "target": "doi:10.1145/1457255.1457262",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2009.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Henzinger2009",
+      "paperId": "doi:10.1109/rtss.2009.9",
+      "metadata": {
+        "fileName": "Henzinger2009.pdf",
+        "sourcePath": "papers/LET/Henzinger2009.pdf"
+      }
+    }
+  ]
+}

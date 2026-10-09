@@ -1,0 +1,597 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.595376+00:00",
+  "papers": [
+    {
+      "key": "Pazzaglia2021",
+      "paper": {
+        "id": "doi:10.1109/dac18074.2021.9586200",
+        "citationKey": "Pazzaglia2021",
+        "title": "Optimal Memory Allocation and Scheduling for DMA Data Transfers under the LET Paradigm",
+        "authors": [
+          "Paolo Pazzaglia",
+          "Daniel Casini",
+          "Alessandro Biondi",
+          "Marco Di Natale"
+        ],
+        "year": 2021,
+        "venue": "2021 58th ACM/IEEE Design Automation Conference (DAC)",
+        "type": "inproceedings",
+        "doi": "10.1109/dac18074.2021.9586200",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/dac18074.2021.9586200",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Pazzaglia, Paolo and Casini, Daniel and Biondi, Alessandro and Natale, Marco Di",
+          "title": "{Optimal Memory Allocation and Scheduling for DMA Data Transfers under the LET Paradigm}",
+          "year": "2021",
+          "booktitle": "2021 58th ACM/IEEE Design Automation Conference (DAC)",
+          "publisher": "IEEE",
+          "pages": "1171--1176",
+          "doi": "10.1109/dac18074.2021.9586200",
+          "url": "https://doi.org/10.1109/dac18074.2021.9586200"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.082466+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref10",
+            "rawText": "https://doi.org/10.1109/ecrts.2007.18",
+            "doi": "10.1109/ecrts.2007.18",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ECRTS.2007.18"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2007.18",
+                "doi": "10.1109/ecrts.2007.18",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2007.18"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1109/rtss.2018.00047",
+            "doi": "10.1109/rtss.2018.00047",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2018.00047"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2018.00047",
+                "doi": "10.1109/rtss.2018.00047",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2018.00047"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1109/date.2007.364510",
+            "doi": "10.1109/date.2007.364510",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/DATE.2007.364510"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/date.2007.364510",
+                "doi": "10.1109/date.2007.364510",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/date.2007.364510"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref13",
+            "rawText": "https://doi.org/10.1145/1629335.1629371",
+            "doi": "10.1145/1629335.1629371",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1629335.1629371"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1629335.1629371",
+                "doi": "10.1145/1629335.1629371",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1629335.1629371"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref14",
+            "rawText": "chen. Many suspensions, many problems: a review of self-suspending tasks in real-time systems. 2018. Real-Time Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "article-title": "Many suspensions, many problems: a review of self-suspending tasks in real-time systems",
+              "author": "chen",
+              "year": "2018",
+              "journal-title": "Real-Time Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref14",
+                "doi": "",
+                "title": "Many suspensions, many problems: a review of self-suspending tasks in real-time systems",
+                "authors": [
+                  "chen"
+                ],
+                "year": 2018,
+                "venue": "Real-Time Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref15",
+            "rawText": "hamann. 2019. WATERS Industrial Challenge",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "journal-title": "WATERS Industrial Challenge",
+              "year": "2019",
+              "author": "hamann",
+              "key": "ref15"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref15",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "hamann"
+                ],
+                "year": 2019,
+                "venue": "WATERS Industrial Challenge",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref16",
+            "rawText": "casini. Addressing analysis and partitioning issues for the Waters 2019 challenge. 2019. 10th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS 2019)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "article-title": "Addressing analysis and partitioning issues for the Waters 2019 challenge",
+              "author": "casini",
+              "year": "2019",
+              "journal-title": "10th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS 2019)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref16",
+                "doi": "",
+                "title": "Addressing analysis and partitioning issues for the Waters 2019 challenge",
+                "authors": [
+                  "casini"
+                ],
+                "year": 2019,
+                "venue": "10th International Workshop on Analysis Tools and Methodologies for Embedded and Real-time Systems (WATERS 2019)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref4",
+            "rawText": "AURIX 32-bit microcontrollers for automotive and industrial applications Highly integrated and performance optimized",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "year": "0",
+              "key": "ref4",
+              "article-title": "AURIX 32-bit microcontrollers for automotive and industrial applications Highly integrated and performance optimized"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref4",
+                "doi": "",
+                "title": "AURIX 32-bit microcontrollers for automotive and industrial applications Highly integrated and performance optimized",
+                "authors": [],
+                "year": 0,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.1109/rtas.2018.00032",
+            "doi": "10.1109/rtas.2018.00032",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2018.00032"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtas.2018.00032",
+                "doi": "10.1109/rtas.2018.00032",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2018.00032"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1109/rtas.2014.6925992",
+            "doi": "10.1109/rtas.2014.6925992",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2014.6925992"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2014.6925992",
+                "doi": "10.1109/rtas.2014.6925992",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2014.6925992"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.1109/rtss46320.2019.00028",
+            "doi": "10.1109/rtss46320.2019.00028",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS46320.2019.00028"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtss46320.2019.00028",
+                "doi": "10.1109/rtss46320.2019.00028",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss46320.2019.00028"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1007/s11241-019-09340-0",
+            "doi": "10.1007/s11241-019-09340-0",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-019-09340-0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-019-09340-0",
+                "doi": "10.1007/s11241-019-09340-0",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-019-09340-0"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref7",
+            "rawText": "casini. Predictable memory-cpu co-scheduling with support for latency-sensitive tasks. 2020. 57th Design Automation Conference (DAC)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "article-title": "Predictable memory-cpu co-scheduling with support for latency-sensitive tasks",
+              "author": "casini",
+              "year": "2020",
+              "journal-title": "57th Design Automation Conference (DAC)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref7",
+                "doi": "",
+                "title": "Predictable memory-cpu co-scheduling with support for latency-sensitive tasks",
+                "authors": [
+                  "casini"
+                ],
+                "year": 2020,
+                "venue": "57th Design Automation Conference (DAC)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref2",
+            "rawText": "hamann. Communication Centric Design in Complex Automotive Embedded Systems. 2017. 29th Euromicro Conference on Real-Time Systems (ECRTS 2017)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "article-title": "Communication Centric Design in Complex Automotive Embedded Systems",
+              "author": "hamann",
+              "year": "2017",
+              "journal-title": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017)"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2017.10",
+                "doi": "",
+                "title": "Communication Centric Design in Complex Automotive Embedded Systems",
+                "authors": [
+                  "hamann"
+                ],
+                "year": 2017,
+                "venue": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017)",
+                "type": "",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2017.10"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref1",
+            "rawText": "https://doi.org/10.1007/3-540-45449-7_12",
+            "doi": "10.1007/3-540-45449-7_12",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/3-540-45449-7_12"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/3-540-45449-7_12",
+                "doi": "10.1007/3-540-45449-7_12",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45449-7_12"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref9",
+            "rawText": "rouxel. Hiding communication delays in contention-free execution for spm-based multi-core architectures. 2019. Euromicro Conference on Real-Time Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "article-title": "Hiding communication delays in contention-free execution for spm-based multi-core architectures",
+              "author": "rouxel",
+              "year": "2019",
+              "journal-title": "Euromicro Conference on Real-Time Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref9",
+                "doi": "",
+                "title": "Hiding communication delays in contention-free execution for spm-based multi-core architectures",
+                "authors": [
+                  "rouxel"
+                ],
+                "year": 2019,
+                "venue": "Euromicro Conference on Real-Time Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/dac18074.2021.9586200",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 4,
+          "extractedReferenceCount": 16,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/dac18074.2021.9586200",
+          "crossrefReferenceCount": 16
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/dac18074.2021.9586200->doi:10.1109/rtas.2018.00032@papers-LET-Pazzaglia2021.pdf",
+      "source": "doi:10.1109/dac18074.2021.9586200",
+      "target": "doi:10.1109/rtas.2018.00032",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Pazzaglia2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/dac18074.2021.9586200->doi:10.1109/rtss46320.2019.00028@papers-LET-Pazzaglia2021.pdf",
+      "source": "doi:10.1109/dac18074.2021.9586200",
+      "target": "doi:10.1109/rtss46320.2019.00028",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Pazzaglia2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/dac18074.2021.9586200->doi:10.4230/lipics.ecrts.2017.10@papers-LET-Pazzaglia2021.pdf",
+      "source": "doi:10.1109/dac18074.2021.9586200",
+      "target": "doi:10.4230/lipics.ecrts.2017.10",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Pazzaglia2021.pdf"
+    },
+    {
+      "id": "doi:10.1109/dac18074.2021.9586200->doi:10.1007/3-540-45449-7_12@papers-LET-Pazzaglia2021.pdf",
+      "source": "doi:10.1109/dac18074.2021.9586200",
+      "target": "doi:10.1007/3-540-45449-7_12",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Pazzaglia2021.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Pazzaglia2021",
+      "paperId": "doi:10.1109/dac18074.2021.9586200",
+      "metadata": {
+        "fileName": "Pazzaglia2021.pdf",
+        "sourcePath": "papers/LET/Pazzaglia2021.pdf"
+      }
+    }
+  ]
+}

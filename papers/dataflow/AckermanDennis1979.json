@@ -1,0 +1,110 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-30T06:55:20.759022+00:00",
+  "papers": [
+    {
+      "key": "AckermanDennis1979",
+      "paper": {
+        "id": "title:val a value oriented algorithmic language preliminary reference manual:1979",
+        "citationKey": "AckermanDennis1979",
+        "title": "VAL–-A Value-Oriented Algorithmic Language: Preliminary Reference Manual",
+        "authors": [
+          "William B. Ackerman",
+          "Jack B. Dennis"
+        ],
+        "year": 1979,
+        "venue": "",
+        "type": "techreport",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://publications.csail.mit.edu/lcs/pubs/pdf/MIT-LCS-TR-218.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Ackerman, William B. and Dennis, Jack B.",
+          "title": "{VAL}---A Value-Oriented Algorithmic Language: Preliminary Reference Manual",
+          "institution": "Massachusetts Institute of Technology, Laboratory for Computer Science",
+          "number": "MIT-LCS-TR-218",
+          "month": "jun",
+          "year": "1979",
+          "url": "https://publications.csail.mit.edu/lcs/pubs/pdf/MIT-LCS-TR-218.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.098462+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "[1]",
+            "rawText": "Liskov, B. H., et. al., \"CLU Reference Manual\", Computation Structures Group (Memo 161), Laboratory for Computer Science, MIT, Cambridge, Massachusetts, July 1978.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1978,
+            "pageStart": 8,
+            "pageEnd": 8,
+            "reviewed": true,
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library"
+            }
+          },
+          {
+            "index": 2,
+            "label": "[2]",
+            "rawText": "Liskov, B. H., et. al., \"Abstraction Mechanisms in CLU\", Communications of the ACM 20, 8(August 1977), 564-576.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1977,
+            "pageStart": 8,
+            "pageEnd": 8,
+            "reviewed": true,
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library"
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "completed",
+          "method": "manual-verified-bibliography",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 2,
+          "extractionWarnings": [],
+          "verification": {
+            "citationKey": "AckermanDennis1979",
+            "sourceUrl": "https://publications.csail.mit.edu/lcs/pubs/pdf/MIT-LCS-TR-218.pdf",
+            "verifiedAt": "2026-09-30",
+            "printedPage": "5",
+            "pdfPage": 8,
+            "transcriptionConvention": "Printed wording and bibliographic details retained; line wraps normalized. Memo number 161 corroborated by the MIT CSG archive. No identifiers inferred.",
+            "corroboratingUrl": "https://csg.csail.mit.edu/CSGArchives/memos.html"
+          }
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "AckermanDennis1979",
+      "paperId": "title:val a value oriented algorithmic language preliminary reference manual:1979",
+      "metadata": {
+        "fileName": "AckermanDennis1979.pdf",
+        "sourcePath": "papers/dataflow/AckermanDennis1979.pdf"
+      }
+    }
+  ]
+}

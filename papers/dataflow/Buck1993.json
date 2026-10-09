@@ -1,0 +1,365 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.700712+00:00",
+  "papers": [
+    {
+      "key": "Buck1993",
+      "paper": {
+        "id": "title:scheduling dynamic dataflow graphs with bounded memory using the token flow model:1993",
+        "citationKey": "Buck1993",
+        "title": "Scheduling Dynamic Dataflow Graphs with Bounded Memory Using the Token Flow Model",
+        "authors": [
+          "Joseph T. Buck",
+          "Edward A. Lee"
+        ],
+        "year": 1993,
+        "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1993/2429.html",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Buck, Joseph T. and Lee, Edward A.",
+          "title": "Scheduling Dynamic Dataflow Graphs with Bounded Memory Using the Token Flow Model",
+          "booktitle": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+          "volume": "1",
+          "pages": "429--432",
+          "year": "1993",
+          "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1993/2429.html"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.107139+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref4",
+            "rawText": "dennis. 1975. First version data flow procedure language",
+            "doi": null,
+            "arxivId": null,
+            "year": 1975,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "author": "dennis",
+              "year": "1975",
+              "journal-title": "First version data flow procedure language"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref4",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "dennis"
+                ],
+                "year": 1975,
+                "venue": "First version data flow procedure language",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.1109/proc.1987.13876",
+            "doi": "10.1109/proc.1987.13876",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PROC.1987.13876"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/proc.1987.13876",
+                "doi": "10.1109/proc.1987.13876",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/PROC.1987.13876"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref6",
+            "rawText": "sih. 1991. Multiprocessor Scheduling to Account for Inter- processor Communication",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "author": "sih",
+              "year": "1991",
+              "journal-title": "Multiprocessor Scheduling to Account for Inter- processor Communication"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref6",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "sih"
+                ],
+                "year": 1991,
+                "venue": "Multiprocessor Scheduling to Account for Inter- processor Communication",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref5",
+            "rawText": "buck. Ptolemy: a Framework for Simulating and Prototyping Heterogeneous Systems. Int J Computer Simulation",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "article-title": "Ptolemy: a Framework for Simulating and Prototyping Heterogeneous Systems",
+              "author": "buck",
+              "year": "0",
+              "journal-title": "Int J Computer Simulation"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:ptolemy a framework for simulating and prototyping heterogeneous systems:1994",
+                "doi": "",
+                "title": "Ptolemy: a Framework for Simulating and Prototyping Heterogeneous Systems",
+                "authors": [
+                  "buck"
+                ],
+                "year": 0,
+                "venue": "Int J Computer Simulation",
+                "type": "",
+                "url": "https://ptolemy.berkeley.edu/publications/papers/94/JEurSim/"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1109/icassp.1993.319147",
+            "doi": "10.1109/icassp.1993.319147",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1993.319147"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1993.319147",
+                "doi": "10.1109/icassp.1993.319147",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1993.319147"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref7",
+            "rawText": "https://doi.org/10.1109/40.60524",
+            "doi": "10.1109/40.60524",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/40.60524"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/40.60524",
+                "doi": "10.1109/40.60524",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/40.60524"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref2",
+            "rawText": "https://doi.org/10.1109/icassp.1992.226558",
+            "doi": "10.1109/icassp.1992.226558",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1992.226558"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1992.226558",
+                "doi": "10.1109/icassp.1992.226558",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1992.226558"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref9",
+            "rawText": "ha. 1992. \"Compile-Time Scheduling of Dataflow Program Graphs with Dynamic Constructs \"",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "author": "ha",
+              "year": "1992",
+              "journal-title": "\"Compile-Time Scheduling of Dataflow Program Graphs with Dynamic Constructs \""
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref9",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "ha"
+                ],
+                "year": 1992,
+                "venue": "\"Compile-Time Scheduling of Dataflow Program Graphs with Dynamic Constructs \"",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref1",
+            "rawText": "https://doi.org/10.1109/71.89067",
+            "doi": "10.1109/71.89067",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/71.89067"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/71.89067",
+                "doi": "10.1109/71.89067",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/71.89067"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/icassp.1993.319147",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 9,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/icassp.1993.319147",
+          "crossrefReferenceCount": 9
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:scheduling dynamic dataflow graphs with bounded memory using the token flow model:1993->doi:10.1109/proc.1987.13876@papers-dataflow-Buck1993.pdf",
+      "source": "title:scheduling dynamic dataflow graphs with bounded memory using the token flow model:1993",
+      "target": "doi:10.1109/proc.1987.13876",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Buck1993.pdf"
+    },
+    {
+      "id": "title:scheduling dynamic dataflow graphs with bounded memory using the token flow model:1993->title:ptolemy a framework for simulating and prototyping heterogeneous systems:1994@papers-dataflow-Buck1993.pdf",
+      "source": "title:scheduling dynamic dataflow graphs with bounded memory using the token flow model:1993",
+      "target": "title:ptolemy a framework for simulating and prototyping heterogeneous systems:1994",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Buck1993.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Buck1993",
+      "paperId": "title:scheduling dynamic dataflow graphs with bounded memory using the token flow model:1993",
+      "metadata": {
+        "fileName": "Buck1993.pdf",
+        "sourcePath": "papers/dataflow/Buck1993.pdf"
+      }
+    }
+  ]
+}

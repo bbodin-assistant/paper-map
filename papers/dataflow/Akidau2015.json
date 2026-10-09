@@ -1,0 +1,1083 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.070355+00:00",
+  "papers": [
+    {
+      "key": "Akidau2015",
+      "paper": {
+        "id": "doi:10.14778/2824032.2824076",
+        "citationKey": "Akidau2015",
+        "title": "The Dataflow Model: A Practical Approach to Balancing Correctness, Latency, and Cost in Massive-Scale, Unbounded, Out-of-Order Data Processing",
+        "authors": [
+          "Tyler Akidau",
+          "Robert Bradshaw",
+          "Craig Chambers",
+          "Slava Chernyak",
+          "Rafael J. Fern\\'andez-Moctezuma",
+          "Reuven Lax",
+          "Sam McVeety",
+          "Daniel Mills",
+          "Frances Perry",
+          "Eric Schmidt",
+          "Sam Whittle"
+        ],
+        "year": 2015,
+        "venue": "Proceedings of the VLDB Endowment",
+        "type": "article",
+        "doi": "10.14778/2824032.2824076",
+        "arxivId": "",
+        "url": "https://doi.org/10.14778/2824032.2824076",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Akidau, Tyler and Bradshaw, Robert and Chambers, Craig and Chernyak, Slava and Fern{\\'a}ndez-Moctezuma, Rafael J. and\n    Lax, Reuven and McVeety, Sam and Mills, Daniel and Perry, Frances and Schmidt, Eric and Whittle, Sam",
+          "title": "The Dataflow Model: A Practical Approach to Balancing Correctness, Latency, and Cost in Massive-Scale, Unbounded, Out-of-Order Data Processing",
+          "journal": "Proceedings of the VLDB Endowment",
+          "volume": "8",
+          "pages": "1792--1803",
+          "year": "2015",
+          "doi": "10.14778/2824032.2824076",
+          "url": "https://doi.org/10.14778/2824032.2824076"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.131105+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_2_1_1_1",
+            "rawText": "https://doi.org/10.1007/s00778-003-0095-z",
+            "doi": "10.1007/s00778-003-0095-z",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_1_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s00778-003-0095-z"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s00778-003-0095-z",
+                "doi": "10.1007/s00778-003-0095-z",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s00778-003-0095-z"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_2_1_2_1",
+            "rawText": "Akidau T.. 2013",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_2_1",
+              "volume-title": "Proc. of the 39th Int. Conf. on Very Large Data Bases (VLDB)",
+              "author": "Akidau T.",
+              "year": "2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Akidau T."
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_2_1_3_1",
+            "rawText": "https://doi.org/10.1007/s00778-014-0357-y",
+            "doi": "10.1007/s00778-014-0357-y",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s00778-014-0357-y"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s00778-014-0357-y",
+                "doi": "10.1007/s00778-014-0357-y",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s00778-014-0357-y"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_2_1_4_1",
+            "rawText": "Apache. Apache Hadoop. http://hadoop.apache.org 2012.  Apache. Apache Hadoop. http://hadoop.apache.org 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_4_1",
+              "unstructured": "Apache. Apache Hadoop. http://hadoop.apache.org 2012.  Apache. Apache Hadoop. http://hadoop.apache.org 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_4_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_2_1_5_1",
+            "rawText": "Apache. Apache Storm. http://storm.apache.org 2013.  Apache. Apache Storm. http://storm.apache.org 2013.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_5_1",
+              "unstructured": "Apache. Apache Storm. http://storm.apache.org 2013.  Apache. Apache Storm. http://storm.apache.org 2013."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_5_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_2_1_6_1",
+            "rawText": "Apache. Apache Flink. http://flink.apache.org/ 2014.  Apache. Apache Flink. http://flink.apache.org/ 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_6_1",
+              "unstructured": "Apache. Apache Flink. http://flink.apache.org/ 2014.  Apache. Apache Flink. http://flink.apache.org/ 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_6_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_2_1_7_1",
+            "rawText": "Apache. Apache Samza. http://samza.apache.org 2014.  Apache. Apache Samza. http://samza.apache.org 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_7_1",
+              "unstructured": "Apache. Apache Samza. http://samza.apache.org 2014.  Apache. Apache Samza. http://samza.apache.org 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_7_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_2_1_8_1",
+            "rawText": "Barga R. S.. 2007",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_8_1",
+              "first-page": "363",
+              "volume-title": "Proc. of the Third Biennial Conf. on Innovative Data Systems Research (CIDR)",
+              "author": "Barga R. S.",
+              "year": "2007"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_8_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Barga R. S."
+                ],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_2_1_9_1",
+            "rawText": "https://doi.org/10.14778/1920841.1920874",
+            "doi": "10.14778/1920841.1920874",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_9_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/1920841.1920874"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.14778/1920841.1920874",
+                "doi": "10.14778/1920841.1920874",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.14778/1920841.1920874"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_2_1_10_1",
+            "rawText": "https://doi.org/10.14778/2733004.2733016",
+            "doi": "10.14778/2733004.2733016",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_10_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/2733004.2733016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.14778/2733004.2733016",
+                "doi": "10.14778/2733004.2733016",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.14778/2733004.2733016"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_2_1_11_1",
+            "rawText": "Cask. Tigon. http://tigon.io/ 2015.  Cask. Tigon. http://tigon.io/ 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_11_1",
+              "unstructured": "Cask. Tigon. http://tigon.io/ 2015.  Cask. Tigon. http://tigon.io/ 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_11_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_2_1_12_1",
+            "rawText": "Chambers C.. 2010",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_12_1",
+              "first-page": "363",
+              "volume-title": "Efficient Data-Parallel Pipelines. In Proc. of the 2010 ACM SIGPLAN Conf. on Programming Language Design and Implementation (PLDI)",
+              "author": "Chambers C.",
+              "year": "2010"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_12_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Chambers C."
+                ],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_2_1_13_1",
+            "rawText": "Chandramouli B.. 2015",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_13_1",
+              "volume-title": "Trill: A High-Performance Incremental Query Processor for Diverse Analytics. In Proc. of the 41st Int. Conf. on Very Large Data Bases (VLDB)",
+              "author": "Chandramouli B.",
+              "year": "2015"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_13_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Chandramouli B."
+                ],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_2_1_14_1",
+            "rawText": "Chandrasekaran S.. 2003. https://doi.org/10.1145/872757.872857",
+            "doi": "10.1145/872757.872857",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_14_1",
+              "doi-asserted-by": "crossref",
+              "first-page": "668",
+              "DOI": "10.1145/872757.872857",
+              "volume-title": "TelegraphCQ: Continuous Dataflow Processing. In Proc. of the 2003 ACM SIGMOD Int. Conf. on Management of Data (SIGMOD), SIGMOD '03",
+              "author": "Chandrasekaran S.",
+              "year": "2003"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/872757.872857",
+                "doi": "10.1145/872757.872857",
+                "title": "",
+                "authors": [
+                  "Chandrasekaran S."
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/872757.872857"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_2_1_15_1",
+            "rawText": "Chen J.. 2000",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_15_1",
+              "first-page": "379",
+              "volume-title": "NiagaraCQ: A Scalable Continuous Query System for Internet Databases. In Proc. of the 2000 ACM SIGMOD Int. Conf. on Management of Data (SIGMOD)",
+              "author": "Chen J.",
+              "year": "2000"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_15_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Chen J."
+                ],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_2_1_16_1",
+            "rawText": "Dean J.. 2004",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_16_1",
+              "volume-title": "Proc. of the Sixth Symposium on Operating System Design and Implementation (OSDI)",
+              "author": "Dean J.",
+              "year": "2004"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_16_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Dean J."
+                ],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_2_1_17_1",
+            "rawText": "EsperTech. Esper. http://www.espertech.com/esper/ 2006.  EsperTech. Esper. http://www.espertech.com/esper/ 2006.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_17_1",
+              "unstructured": "EsperTech. Esper. http://www.espertech.com/esper/ 2006.  EsperTech. Esper. http://www.espertech.com/esper/ 2006."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_17_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_2_1_18_1",
+            "rawText": "https://doi.org/10.14778/1687553.1687568",
+            "doi": "10.14778/1687553.1687568",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_18_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/1687553.1687568"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.14778/1687553.1687568",
+                "doi": "10.14778/1687553.1687568",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.14778/1687553.1687568"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_2_1_19_1",
+            "rawText": "Google. Dataflow SDK. https://github.com/GoogleCloudPlatform/DataflowJavaSDK 2015.  Google. Dataflow SDK. https://github.com/GoogleCloudPlatform/DataflowJavaSDK 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_19_1",
+              "unstructured": "Google. Dataflow SDK. https://github.com/GoogleCloudPlatform/DataflowJavaSDK 2015.  Google. Dataflow SDK. https://github.com/GoogleCloudPlatform/DataflowJavaSDK 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_19_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_2_1_20_1",
+            "rawText": "Google. Google Cloud Dataflow. https://cloud.google.com/dataflow/ 2015.  Google. Google Cloud Dataflow. https://cloud.google.com/dataflow/ 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_20_1",
+              "unstructured": "Google. Google Cloud Dataflow. https://cloud.google.com/dataflow/ 2015.  Google. Google Cloud Dataflow. https://cloud.google.com/dataflow/ 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_20_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_2_1_21_1",
+            "rawText": "Johnson T.. 2005",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_21_1",
+              "first-page": "1079",
+              "volume-title": "Proc. of the 31st Int. Conf. on Very Large Data Bases (VLDB)",
+              "author": "Johnson T.",
+              "year": "2005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_21_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Johnson T."
+                ],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_2_1_22_1",
+            "rawText": "Li J.. 2005",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_22_1",
+              "first-page": "311",
+              "volume-title": "Proceedings og the ACM SIGMOD Int. Conf. on Management of Data (SIGMOD)",
+              "author": "Li J.",
+              "year": "2005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_22_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Li J."
+                ],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_2_1_23_1",
+            "rawText": "https://doi.org/10.14778/1453856.1453890",
+            "doi": "10.14778/1453856.1453890",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_23_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/1453856.1453890"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.14778/1453856.1453890",
+                "doi": "10.14778/1453856.1453890",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.14778/1453856.1453890"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_2_1_24_1",
+            "rawText": "Maier D.. 2005",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_24_1",
+              "first-page": "37",
+              "volume-title": "Proc. of the 10th Int. Conf. on Database Theory (ICDT)",
+              "author": "Maier D.",
+              "year": "2005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_24_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Maier D."
+                ],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_2_1_25_1",
+            "rawText": "N. Marz. How to beat the CAP theorem. http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html 2011.  N. Marz. How to beat the CAP theorem. http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_25_1",
+              "unstructured": "N. Marz. How to beat the CAP theorem. http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html 2011.  N. Marz. How to beat the CAP theorem. http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_25_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_2_1_26_1",
+            "rawText": "S. Murthy etal Pulsar -- Real-Time Analytics at Scale. Technical report eBay 2015.  S. Murthy et al. Pulsar -- Real-Time Analytics at Scale. Technical report eBay 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_26_1",
+              "unstructured": "S. Murthy etal Pulsar -- Real-Time Analytics at Scale. Technical report eBay 2015.  S. Murthy et al. Pulsar -- Real-Time Analytics at Scale. Technical report eBay 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_26_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_2_1_27_1",
+            "rawText": "SQLStream. http://sqlstream.com/ 2015.  SQLStream. http://sqlstream.com/ 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_27_1",
+              "unstructured": "SQLStream. http://sqlstream.com/ 2015.  SQLStream. http://sqlstream.com/ 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_27_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_2_1_28_1",
+            "rawText": "Srivastava U.. 2004",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_28_1",
+              "first-page": "263",
+              "volume-title": "Proc. of the 23rd ACM SIGMOD-SIGACT-SIGART Symp. on Princ. of Database Systems",
+              "author": "Srivastava U.",
+              "year": "2004"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_28_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Srivastava U."
+                ],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_2_1_29_1",
+            "rawText": "https://doi.org/10.14778/1687553.1687609",
+            "doi": "10.14778/1687553.1687609",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_29_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/1687553.1687609"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.14778/1687553.1687609",
+                "doi": "10.14778/1687553.1687609",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.14778/1687553.1687609"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_2_1_30_1",
+            "rawText": "https://doi.org/10.1109/tkde.2003.1198390",
+            "doi": "10.1109/tkde.2003.1198390",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_30_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TKDE.2003.1198390"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tkde.2003.1198390",
+                "doi": "10.1109/tkde.2003.1198390",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tkde.2003.1198390"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "e_1_2_1_31_1",
+            "rawText": "Whiteneck J.. 1878",
+            "doi": null,
+            "arxivId": null,
+            "year": 1878,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_31_1",
+              "volume-title": "Proc. of the ACM SIGSPATIAL Int. Workshop on GeoStreaming (IWGS), 2010",
+              "author": "Whiteneck J.",
+              "year": "1878"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_31_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Whiteneck J."
+                ],
+                "year": 1878,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "e_1_2_1_33_1",
+            "rawText": "Zaharia M.. 2012",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_33_1",
+              "first-page": "15",
+              "volume-title": "Proc. of the 9th USENIX Conf. on Networked Systems Design and Implementation (NSDI)",
+              "author": "Zaharia M.",
+              "year": "2012"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_33_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zaharia M."
+                ],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "e_1_2_1_34_1",
+            "rawText": "Zaharia M.. 2013",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_34_1",
+              "volume-title": "Proc. of the 24th ACM Symp. on Operating Systems Principles",
+              "author": "Zaharia M.",
+              "year": "2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_34_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zaharia M."
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.14778/2824032.2824076",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 33,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.14778/2824032.2824076",
+          "crossrefReferenceCount": 33
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Akidau2015",
+      "paperId": "doi:10.14778/2824032.2824076",
+      "metadata": {
+        "fileName": "Akidau2015.pdf",
+        "sourcePath": "papers/dataflow/Akidau2015.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1780 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.867096+00:00",
+  "papers": [
+    {
+      "key": "Barzegaran2022",
+      "paper": {
+        "id": "doi:10.1145/3534879.3534921",
+        "citationKey": "Barzegaran2022",
+        "title": "Real-Time Traffic Guarantees in Heterogeneous Time-sensitive Networks",
+        "authors": [
+          "Mohammadreza Barzegaran",
+          "Niklas Reusch",
+          "Luxi Zhao",
+          "Silviu S. Craciunas",
+          "Paul Pop"
+        ],
+        "year": 2022,
+        "venue": "RTNS",
+        "type": "misc",
+        "doi": "10.1145/3534879.3534921",
+        "arxivId": "",
+        "url": "https://barzegaran.xyz/papers/Realtimeguarantees.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Mohammadreza Barzegaran and Niklas Reusch and Luxi Zhao and Silviu S. Craciunas and Paul Pop",
+          "title": "{Real-Time Traffic Guarantees in Heterogeneous Time-sensitive Networks}",
+          "year": "2022",
+          "howpublished": "RTNS",
+          "doi": "10.1145/3534879.3534921",
+          "url": "https://barzegaran.xyz/papers/Realtimeguarantees.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.315999+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_1_1_1",
+            "rawText": "Mohammad Ashjaei , Lucia Lo Bello , Masoud Daneshtalab , Gaetano Patti , Sergio Saponara , and Saad Mubeen . 2021 . Time-Sensitive Networking in automotive embedded systems: State of the art and research opportunities . JSA 117 (2021), 102137 . https://doi.org/10.1016/j.sysarc.2021.102137 10.1016/j.sysarc.2021.102137 Mohammad Ashjaei, Lucia Lo Bello, Masoud Daneshtalab, Gaetano Patti, Sergio Saponara, and Saad Mubeen. 2021. Time-Sensitive Networking in automotive embedded systems: State of the art and research opportunities. JSA 117(2021), 102137. https://doi.org/10.1016/j.sysarc.2021.102137",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_1_1",
+              "first-page": "102137",
+              "article-title": "Time-Sensitive Networking in automotive embedded systems: State of the art and research opportunities",
+              "volume": "117",
+              "author": "Ashjaei Mohammad",
+              "year": "2021",
+              "unstructured": "Mohammad Ashjaei , Lucia Lo Bello , Masoud Daneshtalab , Gaetano Patti , Sergio Saponara , and Saad Mubeen . 2021 . Time-Sensitive Networking in automotive embedded systems: State of the art and research opportunities . JSA 117 (2021), 102137 . https://doi.org/10.1016/j.sysarc.2021.102137 10.1016/j.sysarc.2021.102137 Mohammad Ashjaei, Lucia Lo Bello, Masoud Daneshtalab, Gaetano Patti, Sergio Saponara, and Saad Mubeen. 2021. Time-Sensitive Networking in automotive embedded systems: State of the art and research opportunities. JSA 117(2021), 102137. https://doi.org/10.1016/j.sysarc.2021.102137",
+              "journal-title": "JSA"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_1_1",
+                "doi": "",
+                "title": "Time-Sensitive Networking in automotive embedded systems: State of the art and research opportunities",
+                "authors": [
+                  "Ashjaei Mohammad"
+                ],
+                "year": 2021,
+                "venue": "JSA",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_1_2_1",
+            "rawText": "Mohammadreza Barzegaran Niklas Reusch Luxi Zhao Silviu S. Craciunas and Paul Pop. 2021. Real-Time Guarantees for Critical Traffic in IEEE 802.1Qbv TSN Networks with Unscheduled and Unsynchronized End-Systems. CoRR abs/2105.01641(2021). https://arxiv.org/pdf/2105.01641.  Mohammadreza Barzegaran Niklas Reusch Luxi Zhao Silviu S. Craciunas and Paul Pop. 2021. Real-Time Guarantees for Critical Traffic in IEEE 802.1Qbv TSN Networks with Unscheduled and Unsynchronized End-Systems. CoRR abs/2105.01641(2021). https://arxiv.org/pdf/2105.01641.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_2_1",
+              "unstructured": "Mohammadreza Barzegaran Niklas Reusch Luxi Zhao Silviu S. Craciunas and Paul Pop. 2021. Real-Time Guarantees for Critical Traffic in IEEE 802.1Qbv TSN Networks with Unscheduled and Unsynchronized End-Systems. CoRR abs/2105.01641(2021). https://arxiv.org/pdf/2105.01641.  Mohammadreza Barzegaran Niklas Reusch Luxi Zhao Silviu S. Craciunas and Paul Pop. 2021. Real-Time Guarantees for Critical Traffic in IEEE 802.1Qbv TSN Networks with Unscheduled and Unsynchronized End-Systems. CoRR abs/2105.01641(2021). https://arxiv.org/pdf/2105.01641."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_1_3_1",
+            "rawText": "Mohammadreza Barzegaran , Bahram Zarrin , and Paul Pop . 2020 . Quality-of-control-aware scheduling of communication in TSN-based fog computing platforms using constraint programming . In 2nd Workshop on Fog Computing and the IoT (Fog-IoT 2020). Schloss Dagstuhl-Leibniz-Zentrum für Informatik. Mohammadreza Barzegaran, Bahram Zarrin, and Paul Pop. 2020. Quality-of-control-aware scheduling of communication in TSN-based fog computing platforms using constraint programming. In 2nd Workshop on Fog Computing and the IoT (Fog-IoT 2020). Schloss Dagstuhl-Leibniz-Zentrum für Informatik.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_3_1",
+              "volume-title": "2nd Workshop on Fog Computing and the IoT (Fog-IoT",
+              "author": "Barzegaran Mohammadreza",
+              "year": "2020",
+              "unstructured": "Mohammadreza Barzegaran , Bahram Zarrin , and Paul Pop . 2020 . Quality-of-control-aware scheduling of communication in TSN-based fog computing platforms using constraint programming . In 2nd Workshop on Fog Computing and the IoT (Fog-IoT 2020). Schloss Dagstuhl-Leibniz-Zentrum für Informatik. Mohammadreza Barzegaran, Bahram Zarrin, and Paul Pop. 2020. Quality-of-control-aware scheduling of communication in TSN-based fog computing platforms using constraint programming. In 2nd Workshop on Fog Computing and the IoT (Fog-IoT 2020). Schloss Dagstuhl-Leibniz-Zentrum für Informatik."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_3_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Barzegaran Mohammadreza"
+                ],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_1_4_1",
+            "rawText": "M. Boyer , H. Daigmorte , N. Navet , and J. Migge . 2016. Performance impact of the interactions between time-triggered and rate-constrained transmissions in TTEthernet . In Proc. ERTS. M. Boyer, H. Daigmorte, N. Navet, and J. Migge. 2016. Performance impact of the interactions between time-triggered and rate-constrained transmissions in TTEthernet. In Proc. ERTS.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_4_1",
+              "volume-title": "Proc. ERTS.",
+              "author": "Boyer M.",
+              "unstructured": "M. Boyer , H. Daigmorte , N. Navet , and J. Migge . 2016. Performance impact of the interactions between time-triggered and rate-constrained transmissions in TTEthernet . In Proc. ERTS. M. Boyer, H. Daigmorte, N. Navet, and J. Migge. 2016. Performance impact of the interactions between time-triggered and rate-constrained transmissions in TTEthernet. In Proc. ERTS."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_4_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Boyer M."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_1_5_1",
+            "rawText": "E.  K. Burke , G. Kendall , 2005. Search methodologies . Springer . E. K. Burke, G. Kendall, 2005. Search methodologies. Springer.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_5_1",
+              "volume-title": "Search methodologies",
+              "author": "Burke K.",
+              "unstructured": "E.  K. Burke , G. Kendall , 2005. Search methodologies . Springer . E. K. Burke, G. Kendall, 2005. Search methodologies. Springer."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_5_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Burke K."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_1_6_1",
+            "rawText": "Martin Böhm and Diederich Wermser . 2021. Multi-Domain Time-Sensitive Networks—Control Plane Mechanisms for Dynamic Inter-Domain Stream Configuration. Electronics 10, 20 ( 2021 ). https://doi.org/10.3390/electronics10202477 10.3390/electronics10202477 Martin Böhm and Diederich Wermser. 2021. Multi-Domain Time-Sensitive Networks—Control Plane Mechanisms for Dynamic Inter-Domain Stream Configuration. Electronics 10, 20 (2021). https://doi.org/10.3390/electronics10202477",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_6_1",
+              "volume-title": "Multi-Domain Time-Sensitive Networks—Control Plane Mechanisms for Dynamic Inter-Domain Stream Configuration. Electronics 10, 20",
+              "author": "Böhm Martin",
+              "year": "2021",
+              "unstructured": "Martin Böhm and Diederich Wermser . 2021. Multi-Domain Time-Sensitive Networks—Control Plane Mechanisms for Dynamic Inter-Domain Stream Configuration. Electronics 10, 20 ( 2021 ). https://doi.org/10.3390/electronics10202477 10.3390/electronics10202477 Martin Böhm and Diederich Wermser. 2021. Multi-Domain Time-Sensitive Networks—Control Plane Mechanisms for Dynamic Inter-Domain Stream Configuration. Electronics 10, 20 (2021). https://doi.org/10.3390/electronics10202477"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_6_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Böhm Martin"
+                ],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_1_7_1",
+            "rawText": "https://doi.org/10.1007/s11241-015-9244-x",
+            "doi": "10.1007/s11241-015-9244-x",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_7_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-015-9244-x"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-015-9244-x",
+                "doi": "10.1007/s11241-015-9244-x",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-015-9244-x"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_1_8_1",
+            "rawText": "S. S. Craciunas and R. Serna Oliver. 2017. An Overview of Scheduling Mechanisms for Time-sensitive Networks. Technical report Real-time summer school L’École d’Été Temps Réel (ETR).  S. S. Craciunas and R. Serna Oliver. 2017. An Overview of Scheduling Mechanisms for Time-sensitive Networks. Technical report Real-time summer school L’École d’Été Temps Réel (ETR).",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_8_1",
+              "unstructured": "S. S. Craciunas and R. Serna Oliver. 2017. An Overview of Scheduling Mechanisms for Time-sensitive Networks. Technical report Real-time summer school L’École d’Été Temps Réel (ETR).  S. S. Craciunas and R. Serna Oliver. 2017. An Overview of Scheduling Mechanisms for Time-sensitive Networks. Technical report Real-time summer school L’École d’Été Temps Réel (ETR)."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_8_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_1_9_1",
+            "rawText": "S.  S. Craciunas , R. Serna Oliver , M. Chmelik , and W. Steiner . 2016. Scheduling Real-Time Communication in IEEE 802.1Qbv Time Sensitive Networks . In Proc. RTNS. 183–192 . S. S. Craciunas, R. Serna Oliver, M. Chmelik, and W. Steiner. 2016. Scheduling Real-Time Communication in IEEE 802.1Qbv Time Sensitive Networks. In Proc. RTNS. 183–192.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_9_1",
+              "volume-title": "Proc. RTNS. 183–192",
+              "author": "Craciunas S.",
+              "unstructured": "S.  S. Craciunas , R. Serna Oliver , M. Chmelik , and W. Steiner . 2016. Scheduling Real-Time Communication in IEEE 802.1Qbv Time Sensitive Networks . In Proc. RTNS. 183–192 . S. S. Craciunas, R. Serna Oliver, M. Chmelik, and W. Steiner. 2016. Scheduling Real-Time Communication in IEEE 802.1Qbv Time Sensitive Networks. In Proc. RTNS. 183–192."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_9_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Craciunas S."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_1_10_1",
+            "rawText": "J. A.  R. De Azua and M. Boyer . 2014. Complete Modelling of AVB in Network Calculus Framework . In Proc. RTNS. 55–64 . J. A. R. De Azua and M. Boyer. 2014. Complete Modelling of AVB in Network Calculus Framework. In Proc. RTNS. 55–64.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_10_1",
+              "volume-title": "Proc. RTNS. 55–64",
+              "author": "De Azua R.",
+              "unstructured": "J. A.  R. De Azua and M. Boyer . 2014. Complete Modelling of AVB in Network Calculus Framework . In Proc. RTNS. 55–64 . J. A. R. De Azua and M. Boyer. 2014. Complete Modelling of AVB in Network Calculus Framework. In Proc. RTNS. 55–64."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_10_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "De Azua R."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_1_11_1",
+            "rawText": "J. Diemer , D. Thiele , and R. Ernst . 2012. Formal worst-case timing analysis of Ethernet topologies with strict-priority and AVB switching . In Proc. SIES. 1–10 . J. Diemer, D. Thiele, and R. Ernst. 2012. Formal worst-case timing analysis of Ethernet topologies with strict-priority and AVB switching. In Proc. SIES. 1–10.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_11_1",
+              "volume-title": "Proc. SIES. 1–10",
+              "author": "Diemer J.",
+              "unstructured": "J. Diemer , D. Thiele , and R. Ernst . 2012. Formal worst-case timing analysis of Ethernet topologies with strict-priority and AVB switching . In Proc. SIES. 1–10 . J. Diemer, D. Thiele, and R. Ernst. 2012. Formal worst-case timing analysis of Ethernet topologies with strict-priority and AVB switching. In Proc. SIES. 1–10."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_11_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Diemer J."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_3_2_1_12_1",
+            "rawText": "https://doi.org/10.23919/fmcad.2019.8894249",
+            "doi": "10.23919/fmcad.2019.8894249",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_12_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.23919/FMCAD.2019.8894249"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.23919/fmcad.2019.8894249",
+                "doi": "10.23919/fmcad.2019.8894249",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.23919/fmcad.2019.8894249"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_3_2_1_13_1",
+            "rawText": "https://doi.org/10.1145/2997465.2997494",
+            "doi": "10.1145/2997465.2997494",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2997465.2997494"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2997465.2997494",
+                "doi": "10.1145/2997465.2997494",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2997465.2997494"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_3_2_1_14_1",
+            "rawText": "https://doi.org/10.1109/rtcsa.2018.00025",
+            "doi": "10.1109/rtcsa.2018.00025",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_14_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTCSA.2018.00025"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2018.00025",
+                "doi": "10.1109/rtcsa.2018.00025",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2018.00025"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_3_2_1_15_1",
+            "rawText": "J. Falk , D. Hellmanns , B. Carabelli , N. Nayak , F. Dürr , S. Kehrer , and K. Rothermel . 2019. NeSTiNg: Simulating IEEE Time-sensitive Networking (TSN) in OMNeT++ . In Proc. NetSys. 1–8. J. Falk, D. Hellmanns, B. Carabelli, N. Nayak, F. Dürr, S. Kehrer, and K. Rothermel. 2019. NeSTiNg: Simulating IEEE Time-sensitive Networking (TSN) in OMNeT++. In Proc. NetSys. 1–8.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_15_1",
+              "volume-title": "Proc. NetSys. 1–8.",
+              "author": "Falk J.",
+              "unstructured": "J. Falk , D. Hellmanns , B. Carabelli , N. Nayak , F. Dürr , S. Kehrer , and K. Rothermel . 2019. NeSTiNg: Simulating IEEE Time-sensitive Networking (TSN) in OMNeT++ . In Proc. NetSys. 1–8. J. Falk, D. Hellmanns, B. Carabelli, N. Nayak, F. Dürr, S. Kehrer, and K. Rothermel. 2019. NeSTiNg: Simulating IEEE Time-sensitive Networking (TSN) in OMNeT++. In Proc. NetSys. 1–8."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_15_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Falk J."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_3_2_1_16_1",
+            "rawText": "V. Gavrilut , B. Zarrin , P. Pop , and S. Samii . 2017. Fault-Tolerant Topology and Routing Synthesis for IEEE Time-Sensitive Networking . In Proc. RTNS. ACM. V. Gavrilut, B. Zarrin, P. Pop, and S. Samii. 2017. Fault-Tolerant Topology and Routing Synthesis for IEEE Time-Sensitive Networking. In Proc. RTNS. ACM.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_16_1",
+              "volume-title": "Proc. RTNS. ACM.",
+              "author": "Gavrilut V.",
+              "unstructured": "V. Gavrilut , B. Zarrin , P. Pop , and S. Samii . 2017. Fault-Tolerant Topology and Routing Synthesis for IEEE Time-Sensitive Networking . In Proc. RTNS. ACM. V. Gavrilut, B. Zarrin, P. Pop, and S. Samii. 2017. Fault-Tolerant Topology and Routing Synthesis for IEEE Time-Sensitive Networking. In Proc. RTNS. ACM."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_16_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Gavrilut V."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_3_2_1_17_1",
+            "rawText": "Google. Accessed on Oct 2020 . Google OR-Tools . https://developers.google.com/optimization. Google. Accessed on Oct 2020. Google OR-Tools. https://developers.google.com/optimization.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_17_1",
+              "volume-title": "Accessed on",
+              "year": "2020",
+              "unstructured": "Google. Accessed on Oct 2020 . Google OR-Tools . https://developers.google.com/optimization. Google. Accessed on Oct 2020. Google OR-Tools. https://developers.google.com/optimization."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_17_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_3_2_1_18_1",
+            "rawText": "https://doi.org/10.1145/3314206.3314207",
+            "doi": "10.1145/3314206.3314207",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_18_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3314206.3314207"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3314206.3314207",
+                "doi": "10.1145/3314206.3314207",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3314206.3314207"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_3_2_1_19_1",
+            "rawText": "D. Hellmanns , J. Falk , A. Glavackij , R. Hummen , S. Kehrer , and F. Dürr . 2020. On the Performance of Stream-based, Class-based Time-aware Shaping and Frame Preemption in TSN . In Proc. ICIT. 298–303 . D. Hellmanns, J. Falk, A. Glavackij, R. Hummen, S. Kehrer, and F. Dürr. 2020. On the Performance of Stream-based, Class-based Time-aware Shaping and Frame Preemption in TSN. In Proc. ICIT. 298–303.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_19_1",
+              "volume-title": "Proc. ICIT. 298–303",
+              "author": "Hellmanns D.",
+              "unstructured": "D. Hellmanns , J. Falk , A. Glavackij , R. Hummen , S. Kehrer , and F. Dürr . 2020. On the Performance of Stream-based, Class-based Time-aware Shaping and Frame Preemption in TSN . In Proc. ICIT. 298–303 . D. Hellmanns, J. Falk, A. Glavackij, R. Hummen, S. Kehrer, and F. Dürr. 2020. On the Performance of Stream-based, Class-based Time-aware Shaping and Frame Preemption in TSN. In Proc. ICIT. 298–303."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_19_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Hellmanns D."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_3_2_1_20_1",
+            "rawText": "D. Hellmanns , A. Glavackij , J. Falk , F. Duerr , R. Hummen , and S. Kehrer . 2020. Scaling TSN Scheduling for Factory Automation Networks . In Proc. WFCS. 1–8. D. Hellmanns, A. Glavackij, J. Falk, F. Duerr, R. Hummen, and S. Kehrer. 2020. Scaling TSN Scheduling for Factory Automation Networks. In Proc. WFCS. 1–8.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_20_1",
+              "volume-title": "Proc. WFCS. 1–8.",
+              "author": "Hellmanns D.",
+              "unstructured": "D. Hellmanns , A. Glavackij , J. Falk , F. Duerr , R. Hummen , and S. Kehrer . 2020. Scaling TSN Scheduling for Factory Automation Networks . In Proc. WFCS. 1–8. D. Hellmanns, A. Glavackij, J. Falk, F. Duerr, R. Hummen, and S. Kehrer. 2020. Scaling TSN Scheduling for Factory Automation Networks. In Proc. WFCS. 1–8."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_20_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Hellmanns D."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_3_2_1_21_1",
+            "rawText": "Institute of Electrical and Electronics Engineers, Inc. 2011 . 802.1BA—Audio Video Bridging (AVB) Systems. http://www:ieee802:org/1/pages/802:1ba:html . Accessed : 23 . 10 .2020. Institute of Electrical and Electronics Engineers, Inc. 2011. 802.1BA—Audio Video Bridging (AVB) Systems. http://www:ieee802:org/1/pages/802:1ba:html. Accessed: 23.10.2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_21_1",
+              "first-page": "10",
+              "article-title": "802.1BA—Audio Video Bridging (AVB) Systems. http://www:ieee802:org/1/pages/802:1ba:html",
+              "volume": "23",
+              "author": "Institute of Electrical and Electronics Engineers, Inc.",
+              "year": "2011",
+              "unstructured": "Institute of Electrical and Electronics Engineers, Inc. 2011 . 802.1BA—Audio Video Bridging (AVB) Systems. http://www:ieee802:org/1/pages/802:1ba:html . Accessed : 23 . 10 .2020. Institute of Electrical and Electronics Engineers, Inc. 2011. 802.1BA—Audio Video Bridging (AVB) Systems. http://www:ieee802:org/1/pages/802:1ba:html. Accessed: 23.10.2020.",
+              "journal-title": "Accessed"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_21_1",
+                "doi": "",
+                "title": "802.1BA—Audio Video Bridging (AVB) Systems. http://www:ieee802:org/1/pages/802:1ba:html",
+                "authors": [
+                  "Institute of Electrical and Electronics Engineers, Inc."
+                ],
+                "year": 2011,
+                "venue": "Accessed",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_3_2_1_22_1",
+            "rawText": "Institute of Electrical and Electronics Engineers Inc. 2016. 802.1Qbv - Enhancements for Scheduled Traffic. http://www.ieee802.org/1/pages/802.1bv.html. Draft 3.1 Accessed: 23.10.2020.  Institute of Electrical and Electronics Engineers Inc. 2016. 802.1Qbv - Enhancements for Scheduled Traffic. http://www.ieee802.org/1/pages/802.1bv.html. Draft 3.1 Accessed: 23.10.2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_22_1",
+              "unstructured": "Institute of Electrical and Electronics Engineers Inc. 2016. 802.1Qbv - Enhancements for Scheduled Traffic. http://www.ieee802.org/1/pages/802.1bv.html. Draft 3.1 Accessed: 23.10.2020.  Institute of Electrical and Electronics Engineers Inc. 2016. 802.1Qbv - Enhancements for Scheduled Traffic. http://www.ieee802.org/1/pages/802.1bv.html. Draft 3.1 Accessed: 23.10.2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_22_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_3_2_1_23_1",
+            "rawText": "Institute of Electrical and Electronics Engineers, Inc. 2016 . Official Website of the 802.1 Time-Sensitive Networking Task Group. http://www.ieee802.org/1/pages/tsn.html . Accessed : 23 . 10 .2020. Institute of Electrical and Electronics Engineers, Inc. 2016. Official Website of the 802.1 Time-Sensitive Networking Task Group. http://www.ieee802.org/1/pages/tsn.html. Accessed: 23.10.2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_23_1",
+              "first-page": "10",
+              "article-title": "Official Website of the 802.1 Time-Sensitive Networking Task Group. http://www.ieee802.org/1/pages/tsn.html",
+              "volume": "23",
+              "author": "Institute of Electrical and Electronics Engineers, Inc.",
+              "year": "2016",
+              "unstructured": "Institute of Electrical and Electronics Engineers, Inc. 2016 . Official Website of the 802.1 Time-Sensitive Networking Task Group. http://www.ieee802.org/1/pages/tsn.html . Accessed : 23 . 10 .2020. Institute of Electrical and Electronics Engineers, Inc. 2016. Official Website of the 802.1 Time-Sensitive Networking Task Group. http://www.ieee802.org/1/pages/tsn.html. Accessed: 23.10.2020.",
+              "journal-title": "Accessed"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_23_1",
+                "doi": "",
+                "title": "Official Website of the 802.1 Time-Sensitive Networking Task Group. http://www.ieee802.org/1/pages/tsn.html",
+                "authors": [
+                  "Institute of Electrical and Electronics Engineers, Inc."
+                ],
+                "year": 2016,
+                "venue": "Accessed",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_3_2_1_24_1",
+            "rawText": "Institute of Electrical and Electronics Engineers, Inc. 2017 . 802.1AS-Rev - Timing and Synchronization for Time-Sensitive Applications. http://www.ieee802.org/1/pages/802.1AS-rev.html . Accessed : 23 . 10 .2020. Institute of Electrical and Electronics Engineers, Inc. 2017. 802.1AS-Rev - Timing and Synchronization for Time-Sensitive Applications. http://www.ieee802.org/1/pages/802.1AS-rev.html. Accessed: 23.10.2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_24_1",
+              "first-page": "10",
+              "article-title": "802.1AS-Rev - Timing and Synchronization for Time-Sensitive Applications. http://www.ieee802.org/1/pages/802.1AS-rev.html",
+              "volume": "23",
+              "author": "Institute of Electrical and Electronics Engineers, Inc.",
+              "year": "2017",
+              "unstructured": "Institute of Electrical and Electronics Engineers, Inc. 2017 . 802.1AS-Rev - Timing and Synchronization for Time-Sensitive Applications. http://www.ieee802.org/1/pages/802.1AS-rev.html . Accessed : 23 . 10 .2020. Institute of Electrical and Electronics Engineers, Inc. 2017. 802.1AS-Rev - Timing and Synchronization for Time-Sensitive Applications. http://www.ieee802.org/1/pages/802.1AS-rev.html. Accessed: 23.10.2020.",
+              "journal-title": "Accessed"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_24_1",
+                "doi": "",
+                "title": "802.1AS-Rev - Timing and Synchronization for Time-Sensitive Applications. http://www.ieee802.org/1/pages/802.1AS-rev.html",
+                "authors": [
+                  "Institute of Electrical and Electronics Engineers, Inc."
+                ],
+                "year": 2017,
+                "venue": "Accessed",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_3_2_1_25_1",
+            "rawText": "Issuing Committee : As-2d2 Deterministic Ethernet And Unified Networking . 2011 . SAE AS6802 Time-Triggered Ethernet. http://standards.sae.org/as6802/ . Accessed : 23 . 10 .2020. Issuing Committee: As-2d2 Deterministic Ethernet And Unified Networking. 2011. SAE AS6802 Time-Triggered Ethernet. http://standards.sae.org/as6802/. Accessed: 23.10.2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_25_1",
+              "first-page": "10",
+              "article-title": "SAE AS6802 Time-Triggered Ethernet. http://standards.sae.org/as6802/",
+              "volume": "23",
+              "author": "Issuing Committee",
+              "year": "2011",
+              "unstructured": "Issuing Committee : As-2d2 Deterministic Ethernet And Unified Networking . 2011 . SAE AS6802 Time-Triggered Ethernet. http://standards.sae.org/as6802/ . Accessed : 23 . 10 .2020. Issuing Committee: As-2d2 Deterministic Ethernet And Unified Networking. 2011. SAE AS6802 Time-Triggered Ethernet. http://standards.sae.org/as6802/. Accessed: 23.10.2020.",
+              "journal-title": "Accessed"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_25_1",
+                "doi": "",
+                "title": "SAE AS6802 Time-Triggered Ethernet. http://standards.sae.org/as6802/",
+                "authors": [
+                  "Issuing Committee"
+                ],
+                "year": 2011,
+                "venue": "Accessed",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_3_2_1_26_1",
+            "rawText": "D.  D. Khanh and A. Mifdaoui . 2014. Timing Analysis of TDMA-based Networks using Network Calculus and Integer Linear Programming . In Proc. MASCOTS. 21–30 . D. D. Khanh and A. Mifdaoui. 2014. Timing Analysis of TDMA-based Networks using Network Calculus and Integer Linear Programming. In Proc. MASCOTS. 21–30.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_26_1",
+              "volume-title": "Proc. MASCOTS. 21–30",
+              "author": "Khanh D.",
+              "unstructured": "D.  D. Khanh and A. Mifdaoui . 2014. Timing Analysis of TDMA-based Networks using Network Calculus and Integer Linear Programming . In Proc. MASCOTS. 21–30 . D. D. Khanh and A. Mifdaoui. 2014. Timing Analysis of TDMA-based Networks using Network Calculus and Integer Linear Programming. In Proc. MASCOTS. 21–30."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_26_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Khanh D."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_3_2_1_27_1",
+            "rawText": "https://doi.org/10.1109/etfa46521.2020.9212141",
+            "doi": "10.1109/etfa46521.2020.9212141",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_27_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA46521.2020.9212141"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa46521.2020.9212141",
+                "doi": "10.1109/etfa46521.2020.9212141",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa46521.2020.9212141"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_3_2_1_28_1",
+            "rawText": "https://doi.org/10.23919/date.2018.8342096",
+            "doi": "10.23919/date.2018.8342096",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_28_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.23919/DATE.2018.8342096"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.23919/date.2018.8342096",
+                "doi": "10.23919/date.2018.8342096",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.23919/date.2018.8342096"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_3_2_1_29_1",
+            "rawText": "https://doi.org/10.1109/etfa45728.2021.9613637",
+            "doi": "10.1109/etfa45728.2021.9613637",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_29_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA45728.2021.9613637"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa45728.2021.9613637",
+                "doi": "10.1109/etfa45728.2021.9613637",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa45728.2021.9613637"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_3_2_1_30_1",
+            "rawText": "N.  G. Nayak , F. Dürr , and K. Rothermel . 2018 . Incremental Flow Scheduling and Routing in Time-Sensitive Software-Defined Networks . IEEE Trans Industr Inform 14 , 5 (2018). N. G. Nayak, F. Dürr, and K. Rothermel. 2018. Incremental Flow Scheduling and Routing in Time-Sensitive Software-Defined Networks. IEEE Trans Industr Inform 14, 5 (2018).",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_30_1",
+              "article-title": "Incremental Flow Scheduling and Routing in Time-Sensitive Software-Defined Networks",
+              "volume": "14",
+              "author": "Nayak G.",
+              "year": "2018",
+              "unstructured": "N.  G. Nayak , F. Dürr , and K. Rothermel . 2018 . Incremental Flow Scheduling and Routing in Time-Sensitive Software-Defined Networks . IEEE Trans Industr Inform 14 , 5 (2018). N. G. Nayak, F. Dürr, and K. Rothermel. 2018. Incremental Flow Scheduling and Routing in Time-Sensitive Software-Defined Networks. IEEE Trans Industr Inform 14, 5 (2018).",
+              "journal-title": "IEEE Trans Industr Inform"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_30_1",
+                "doi": "",
+                "title": "Incremental Flow Scheduling and Routing in Time-Sensitive Software-Defined Networks",
+                "authors": [
+                  "Nayak G."
+                ],
+                "year": 2018,
+                "venue": "IEEE Trans Industr Inform",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "e_1_3_2_1_31_1",
+            "rawText": "https://doi.org/10.1109/etfa.2018.8502515",
+            "doi": "10.1109/etfa.2018.8502515",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_31_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA.2018.8502515"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa.2018.8502515",
+                "doi": "10.1109/etfa.2018.8502515",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2018.8502515"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "e_1_3_2_1_32_1",
+            "rawText": "https://doi.org/10.1145/3314206.3314208",
+            "doi": "10.1145/3314206.3314208",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_32_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3314206.3314208"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3314206.3314208",
+                "doi": "10.1145/3314206.3314208",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3314206.3314208"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "e_1_3_2_1_33_1",
+            "rawText": "https://doi.org/10.1049/iet-cps.2016.0021",
+            "doi": "10.1049/iet-cps.2016.0021",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_33_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1049/iet-cps.2016.0021"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1049/iet-cps.2016.0021",
+                "doi": "10.1049/iet-cps.2016.0021",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1049/iet-cps.2016.0021"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "e_1_3_2_1_34_1",
+            "rawText": "N. Reusch , L. Zhao , S.  S. Craciunas , and P. Pop . 2020. Window-Based Schedule Synthesis for Industrial IEEE 802.1Qbv TSN Networks . In Proc. WFCS. N. Reusch, L. Zhao, S. S. Craciunas, and P. Pop. 2020. Window-Based Schedule Synthesis for Industrial IEEE 802.1Qbv TSN Networks. In Proc. WFCS.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_34_1",
+              "volume-title": "Proc. WFCS.",
+              "author": "Reusch N.",
+              "unstructured": "N. Reusch , L. Zhao , S.  S. Craciunas , and P. Pop . 2020. Window-Based Schedule Synthesis for Industrial IEEE 802.1Qbv TSN Networks . In Proc. WFCS. N. Reusch, L. Zhao, S. S. Craciunas, and P. Pop. 2020. Window-Based Schedule Synthesis for Industrial IEEE 802.1Qbv TSN Networks. In Proc. WFCS."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_34_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Reusch N."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "e_1_3_2_1_35_1",
+            "rawText": "J. Schmitt , P. Hurley , M. Hollick , and R. Steinmetz . 2003. Per-flow guarantees under class-based priority queueing . In IEEE Global Telecommunications Conference. 4169–4174 . J. Schmitt, P. Hurley, M. Hollick, and R. Steinmetz. 2003. Per-flow guarantees under class-based priority queueing. In IEEE Global Telecommunications Conference. 4169–4174.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_35_1",
+              "volume-title": "IEEE Global Telecommunications Conference. 4169–4174",
+              "author": "Schmitt J.",
+              "unstructured": "J. Schmitt , P. Hurley , M. Hollick , and R. Steinmetz . 2003. Per-flow guarantees under class-based priority queueing . In IEEE Global Telecommunications Conference. 4169–4174 . J. Schmitt, P. Hurley, M. Hollick, and R. Steinmetz. 2003. Per-flow guarantees under class-based priority queueing. In IEEE Global Telecommunications Conference. 4169–4174."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_35_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Schmitt J."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "e_1_3_2_1_36_1",
+            "rawText": "https://doi.org/10.1109/wfcs.2018.8402356",
+            "doi": "10.1109/wfcs.2018.8402356",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_36_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/WFCS.2018.8402356"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/wfcs.2018.8402356",
+                "doi": "10.1109/wfcs.2018.8402356",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/wfcs.2018.8402356"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "e_1_3_2_1_37_1",
+            "rawText": "R. Serna Oliver , S.  S. Craciunas , and W. Steiner . 2018. IEEE 802.1Qbv Gate Control List Synthesis using Array Theory Encoding . In Proc. RTAS. R. Serna Oliver, S. S. Craciunas, and W. Steiner. 2018. IEEE 802.1Qbv Gate Control List Synthesis using Array Theory Encoding. In Proc. RTAS.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_37_1",
+              "volume-title": "Proc. RTAS.",
+              "author": "Serna Oliver R.",
+              "unstructured": "R. Serna Oliver , S.  S. Craciunas , and W. Steiner . 2018. IEEE 802.1Qbv Gate Control List Synthesis using Array Theory Encoding . In Proc. RTAS. R. Serna Oliver, S. S. Craciunas, and W. Steiner. 2018. IEEE 802.1Qbv Gate Control List Synthesis using Array Theory Encoding. In Proc. RTAS."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_37_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Serna Oliver R."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "e_1_3_2_1_38_1",
+            "rawText": "https://doi.org/10.3390/app11093896",
+            "doi": "10.3390/app11093896",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_38_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.3390/app11093896"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.3390/app11093896",
+                "doi": "10.3390/app11093896",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.3390/app11093896"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "e_1_3_2_1_39_1",
+            "rawText": "O. Sinnen . 2007. Task scheduling for parallel systems. Vol. 60 . John Wiley & Sons . O. Sinnen. 2007. Task scheduling for parallel systems. Vol. 60. John Wiley & Sons.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_39_1",
+              "volume-title": "Task scheduling for parallel systems. Vol. 60",
+              "author": "Sinnen O.",
+              "unstructured": "O. Sinnen . 2007. Task scheduling for parallel systems. Vol. 60 . John Wiley & Sons . O. Sinnen. 2007. Task scheduling for parallel systems. Vol. 60. John Wiley & Sons."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_39_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Sinnen O."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "e_1_3_2_1_40_1",
+            "rawText": "https://doi.org/10.1109/rtss.2010.25",
+            "doi": "10.1109/rtss.2010.25",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_40_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2010.25"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2010.25",
+                "doi": "10.1109/rtss.2010.25",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2010.25"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "e_1_3_2_1_41_1",
+            "rawText": "W. Steiner G. Bauer B. Hall and M. Paulitsch. 2011. TTEthernet: Time-Triggered Ethernet. In Time-Triggered Communication Roman Obermaisser (Ed.). CRC Press.  W. Steiner G. Bauer B. Hall and M. Paulitsch. 2011. TTEthernet: Time-Triggered Ethernet. In Time-Triggered Communication Roman Obermaisser (Ed.). CRC Press.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_41_1",
+              "unstructured": "W. Steiner G. Bauer B. Hall and M. Paulitsch. 2011. TTEthernet: Time-Triggered Ethernet. In Time-Triggered Communication Roman Obermaisser (Ed.). CRC Press.  W. Steiner G. Bauer B. Hall and M. Paulitsch. 2011. TTEthernet: Time-Triggered Ethernet. In Time-Triggered Communication Roman Obermaisser (Ed.). CRC Press."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_41_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "e_1_3_2_1_42_1",
+            "rawText": "https://doi.org/10.1016/j.cor.2021.105512",
+            "doi": "10.1016/j.cor.2021.105512",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_42_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.cor.2021.105512"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.cor.2021.105512",
+                "doi": "10.1016/j.cor.2021.105512",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.cor.2021.105512"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "e_1_3_2_1_43_1",
+            "rawText": "https://doi.org/10.1109/tcomm.2020.3014105",
+            "doi": "10.1109/tcomm.2020.3014105",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_43_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TCOMM.2020.3014105"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tcomm.2020.3014105",
+                "doi": "10.1109/tcomm.2020.3014105",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tcomm.2020.3014105"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "e_1_3_2_1_44_1",
+            "rawText": "https://doi.org/10.1016/j.cie.2021.107317",
+            "doi": "10.1016/j.cie.2021.107317",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_44_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.cie.2021.107317"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.cie.2021.107317",
+                "doi": "10.1016/j.cie.2021.107317",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.cie.2021.107317"
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "e_1_3_2_1_45_1",
+            "rawText": "https://doi.org/10.1109/etfa46521.2020.9212057",
+            "doi": "10.1109/etfa46521.2020.9212057",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_45_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA46521.2020.9212057"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa46521.2020.9212057",
+                "doi": "10.1109/etfa46521.2020.9212057",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa46521.2020.9212057"
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "e_1_3_2_1_46_1",
+            "rawText": "E. Wandeler. 2006. Modular performance analysis and interface-based design for embedded real-time systems. Shaker.  E. Wandeler. 2006. Modular performance analysis and interface-based design for embedded real-time systems. Shaker.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_46_1",
+              "unstructured": "E. Wandeler. 2006. Modular performance analysis and interface-based design for embedded real-time systems. Shaker.  E. Wandeler. 2006. Modular performance analysis and interface-based design for embedded real-time systems. Shaker."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_46_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "e_1_3_2_1_47_1",
+            "rawText": "E. Wandeler and L. Thiele . 2006. Optimal TDMA time slot and cycle length allocation for hard real-time systems . In Proc. ASP-DAC. E. Wandeler and L. Thiele. 2006. Optimal TDMA time slot and cycle length allocation for hard real-time systems. In Proc. ASP-DAC.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_47_1",
+              "volume-title": "Proc. ASP-DAC.",
+              "author": "Wandeler E.",
+              "unstructured": "E. Wandeler and L. Thiele . 2006. Optimal TDMA time slot and cycle length allocation for hard real-time systems . In Proc. ASP-DAC. E. Wandeler and L. Thiele. 2006. Optimal TDMA time slot and cycle length allocation for hard real-time systems. In Proc. ASP-DAC."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_47_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Wandeler E."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "e_1_3_2_1_48_1",
+            "rawText": "E. Wandeler and L. Thiele. 2006. Real-Time Calculus (RTC) Toolbox. http://www.mpa.ethz.ch/Rtctoolbox. http://www.mpa.ethz.ch/Rtctoolbox Accessed: 23.10.2020.  E. Wandeler and L. Thiele. 2006. Real-Time Calculus (RTC) Toolbox. http://www.mpa.ethz.ch/Rtctoolbox. http://www.mpa.ethz.ch/Rtctoolbox Accessed: 23.10.2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_48_1",
+              "unstructured": "E. Wandeler and L. Thiele. 2006. Real-Time Calculus (RTC) Toolbox. http://www.mpa.ethz.ch/Rtctoolbox. http://www.mpa.ethz.ch/Rtctoolbox Accessed: 23.10.2020.  E. Wandeler and L. Thiele. 2006. Real-Time Calculus (RTC) Toolbox. http://www.mpa.ethz.ch/Rtctoolbox. http://www.mpa.ethz.ch/Rtctoolbox Accessed: 23.10.2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_48_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "e_1_3_2_1_49_1",
+            "rawText": "https://doi.org/10.1109/access.2018.2858767",
+            "doi": "10.1109/access.2018.2858767",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_49_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ACCESS.2018.2858767"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/access.2018.2858767",
+                "doi": "10.1109/access.2018.2858767",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://orbit.dtu.dk/en/publications/worst-case-latency-analysis-for-ieee-8021qbv-time-sensitive-netwo/"
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "e_1_3_2_1_50_1",
+            "rawText": "L. Zhao , P. Pop , Z.  J. Gong , and B.  W. Fang . 2020 , Early Access Article. Improving Latency Analysis for Flexible Window-Based GCL Scheduling in TSN Networks by Integration of Consecutive Nodes Offsets . IEEE Internet of Things( 2020 , Early Access Article) . https://doi.org/10.1109/JIOT.2020.3031932 10.1109/JIOT.2020.3031932 L. Zhao, P. Pop, Z. J. Gong, and B. W. Fang. 2020, Early Access Article. Improving Latency Analysis for Flexible Window-Based GCL Scheduling in TSN Networks by Integration of Consecutive Nodes Offsets. IEEE Internet of Things(2020, Early Access Article). https://doi.org/10.1109/JIOT.2020.3031932",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_50_1",
+              "volume-title": "Early Access Article. Improving Latency Analysis for Flexible Window-Based GCL Scheduling in TSN Networks by Integration of Consecutive Nodes Offsets",
+              "author": "Zhao L.",
+              "year": "2020",
+              "unstructured": "L. Zhao , P. Pop , Z.  J. Gong , and B.  W. Fang . 2020 , Early Access Article. Improving Latency Analysis for Flexible Window-Based GCL Scheduling in TSN Networks by Integration of Consecutive Nodes Offsets . IEEE Internet of Things( 2020 , Early Access Article) . https://doi.org/10.1109/JIOT.2020.3031932 10.1109/JIOT.2020.3031932 L. Zhao, P. Pop, Z. J. Gong, and B. W. Fang. 2020, Early Access Article. Improving Latency Analysis for Flexible Window-Based GCL Scheduling in TSN Networks by Integration of Consecutive Nodes Offsets. IEEE Internet of Things(2020, Early Access Article). https://doi.org/10.1109/JIOT.2020.3031932"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_50_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zhao L."
+                ],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "e_1_3_2_1_51_1",
+            "rawText": "https://doi.org/10.1007/s11241-016-9265-0",
+            "doi": "10.1007/s11241-016-9265-0",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_51_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11241-016-9265-0"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/s11241-016-9265-0",
+                "doi": "10.1007/s11241-016-9265-0",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://link.springer.com/article/10.1007/s11241-016-9265-0"
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "e_1_3_2_1_52_1",
+            "rawText": "Luxi Zhao Paul Pop and Sebastian Steinhorst. 2017. Quantitative Performance Comparison of Various Traffic Shapers in Time-Sensitive Networking. CoRR abs/2103.13424(2017). arxiv:2103.13424https://arxiv.org/abs/2103.13424.  Luxi Zhao Paul Pop and Sebastian Steinhorst. 2017. Quantitative Performance Comparison of Various Traffic Shapers in Time-Sensitive Networking. CoRR abs/2103.13424(2017). arxiv:2103.13424https://arxiv.org/abs/2103.13424.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_52_1",
+              "unstructured": "Luxi Zhao Paul Pop and Sebastian Steinhorst. 2017. Quantitative Performance Comparison of Various Traffic Shapers in Time-Sensitive Networking. CoRR abs/2103.13424(2017). arxiv:2103.13424https://arxiv.org/abs/2103.13424.  Luxi Zhao Paul Pop and Sebastian Steinhorst. 2017. Quantitative Performance Comparison of Various Traffic Shapers in Time-Sensitive Networking. CoRR abs/2103.13424(2017). arxiv:2103.13424https://arxiv.org/abs/2103.13424."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_52_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "e_1_3_2_1_53_1",
+            "rawText": "https://doi.org/10.1109/lcomm.2014.2358233",
+            "doi": "10.1109/lcomm.2014.2358233",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_53_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/LCOMM.2014.2358233"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/lcomm.2014.2358233",
+                "doi": "10.1109/lcomm.2014.2358233",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/lcomm.2014.2358233"
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "e_1_3_2_1_54_1",
+            "rawText": "https://doi.org/10.1109/rtas52030.2021.00023",
+            "doi": "10.1109/rtas52030.2021.00023",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_54_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS52030.2021.00023"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00023",
+                "doi": "10.1109/rtas52030.2021.00023",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00023"
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "e_1_3_2_1_55_1",
+            "rawText": "https://doi.org/10.1145/3458768",
+            "doi": "10.1145/3458768",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_55_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3458768"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3458768",
+                "doi": "10.1145/3458768",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3458768"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/3534879.3534921",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 55,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/3534879.3534921",
+          "crossrefReferenceCount": 55
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/3534879.3534921->doi:10.1109/access.2018.2858767@papers-mixed-event-time-triggered-Barzegaran2022.pdf",
+      "source": "doi:10.1145/3534879.3534921",
+      "target": "doi:10.1109/access.2018.2858767",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Barzegaran2022.pdf"
+    },
+    {
+      "id": "doi:10.1145/3534879.3534921->doi:10.1007/s11241-016-9265-0@papers-mixed-event-time-triggered-Barzegaran2022.pdf",
+      "source": "doi:10.1145/3534879.3534921",
+      "target": "doi:10.1007/s11241-016-9265-0",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Barzegaran2022.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Barzegaran2022",
+      "paperId": "doi:10.1145/3534879.3534921",
+      "metadata": {
+        "fileName": "Barzegaran2022.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Barzegaran2022.pdf"
+      }
+    }
+  ]
+}

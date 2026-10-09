@@ -1,0 +1,703 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.093412+00:00",
+  "papers": [
+    {
+      "key": "Henzinger2001",
+      "paper": {
+        "id": "doi:10.1007/3-540-45449-7_12",
+        "citationKey": "Henzinger2001",
+        "title": "Giotto: A Time-Triggered Language for Embedded Programming",
+        "authors": [
+          "Thomas A. Henzinger",
+          "Benjamin Horowitz",
+          "Christoph Meyer Kirsch"
+        ],
+        "year": 2001,
+        "venue": "Embedded Software",
+        "type": "incollection",
+        "doi": "10.1007/3-540-45449-7_12",
+        "arxivId": "",
+        "url": "https://doi.org/10.1007/3-540-45449-7_12",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "Distinct publication version: EMSOFT 2001 conference paper; the same-title Proceedings of the IEEE 2003 journal article is retained as Henzinger2003b",
+        "bibtexFields": {
+          "author": "Henzinger, Thomas A. and Horowitz, Benjamin and Kirsch, Christoph Meyer",
+          "title": "{Giotto: A Time-Triggered Language for Embedded Programming}",
+          "year": "2001",
+          "booktitle": "Embedded Software",
+          "publisher": "Springer Berlin Heidelberg",
+          "series": "Lecture Notes in Computer Science",
+          "pages": "166--184",
+          "doi": "10.1007/3-540-45449-7_12",
+          "url": "https://doi.org/10.1007/3-540-45449-7_12",
+          "note": "Distinct publication version: EMSOFT 2001 conference paper; the same-title Proceedings of the IEEE 2003 journal article is retained as Henzinger2003b"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.070185+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "12_CR1",
+            "rawText": "G. Berry. The foundations of Esterel. In G. Plotkin, C. Stirling, and M. Tofte, editors, Proof, Language and Interaction: Essays in Honour of Robin Milner, pp. 425–454. MIT Press, 2000.",
+            "doi": "10.7551/mitpress/5641.003.0021",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "G. Berry. The foundations of Esterel. In G. Plotkin, C. Stirling, and M. Tofte, editors, Proof, Language and Interaction: Essays in Honour of Robin Milner, pp. 425–454. MIT Press, 2000.",
+              "DOI": "10.7551/mitpress/5641.003.0021"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.7551/mitpress/5641.003.0021",
+                "doi": "10.7551/mitpress/5641.003.0021",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.7551/mitpress/5641.003.0021"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "12_CR2",
+            "rawText": "A. Benveniste, P. Le Guernic, and C. Jacquemot. Synchronous programming with events and relations: The Signal language and its semantics. Science of Computer Programming, 16:103–149, 1991.",
+            "doi": "10.1016/0167-6423(91)90001-e",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR2",
+              "doi-asserted-by": "publisher",
+              "first-page": "103",
+              "DOI": "10.1016/0167-6423(91)90001-E",
+              "volume": "16",
+              "author": "B. A",
+              "year": "1991",
+              "unstructured": "A. Benveniste, P. Le Guernic, and C. Jacquemot. Synchronous programming with events and relations: The Signal language and its semantics. Science of Computer Programming, 16:103–149, 1991.",
+              "journal-title": "Science of Computer Programming"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/0167-6423(91)90001-e",
+                "doi": "10.1016/0167-6423(91)90001-e",
+                "title": "",
+                "authors": [
+                  "B. A"
+                ],
+                "year": 1991,
+                "venue": "Science of Computer Programming",
+                "type": "",
+                "url": "https://doi.org/10.1016/0167-6423(91)90001-E"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "12_CR3",
+            "rawText": "P. Clements. A survey of architecture description languages. In Proc. 8thInternational Workshop on Software Specification and Design, pp. 16–25. IEEE Computer Society Press, 1996.",
+            "doi": "10.1109/iwssd.1996.501143",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR3",
+              "doi-asserted-by": "crossref",
+              "unstructured": "P. Clements. A survey of architecture description languages. In Proc. 8thInternational Workshop on Software Specification and Design, pp. 16–25. IEEE Computer Society Press, 1996.",
+              "DOI": "10.1109/IWSSD.1996.501143"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iwssd.1996.501143",
+                "doi": "10.1109/iwssd.1996.501143",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iwssd.1996.501143"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "12_CR4",
+            "rawText": "R. P. G. Collinson. Fly-by-wire flight control. Computing &Control Engineering, 10:141–152, 1999.",
+            "doi": "10.1049/cce:19990403",
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR4",
+              "doi-asserted-by": "publisher",
+              "first-page": "141",
+              "DOI": "10.1049/cce:19990403",
+              "volume": "10",
+              "author": "R. P. G Collinson",
+              "year": "1999",
+              "unstructured": "R. P. G. Collinson. Fly-by-wire flight control. Computing &Control Engineering, 10:141–152, 1999.",
+              "journal-title": "Computing &Control Engineering"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1049/cce:19990403",
+                "doi": "10.1049/cce:19990403",
+                "title": "",
+                "authors": [
+                  "R. P. G Collinson"
+                ],
+                "year": 1999,
+                "venue": "Computing &Control Engineering",
+                "type": "",
+                "url": "https://doi.org/10.1049/cce:19990403"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "12_CR5",
+            "rawText": "J. Davis, M. Goel, C. Hylands, B. Kienhuis, E. A. Lee, J. Liu, X. Liu, L. Muliadi, S. Neuendorffer, J. Reekie, N. Smyth, J. Tsay, and Y. Xiong. Ptolemy II: Heterogeneous Concurrent Modeling and Design in Java. Technical Report UCB/ERLM99/ 44, University of California, Berkeley, 1999.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR5",
+              "unstructured": "J. Davis, M. Goel, C. Hylands, B. Kienhuis, E. A. Lee, J. Liu, X. Liu, L. Muliadi, S. Neuendorffer, J. Reekie, N. Smyth, J. Tsay, and Y. Xiong. Ptolemy II: Heterogeneous Concurrent Modeling and Design in Java. Technical Report UCB/ERLM99/ 44, University of California, Berkeley, 1999."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:12_CR5",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "12_CR6",
+            "rawText": "P. Eles, K. Kuchcinski, Z. Peng, A. Doboli, and P. Pop. Process scheduling for performance estimation and synthesis of hardware/software systems. In Proc. 24thEUR OMICRO Conference, pp. 168–175, 1998.",
+            "doi": "10.1109/eurmic.1998.711792",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR6",
+              "doi-asserted-by": "crossref",
+              "unstructured": "P. Eles, K. Kuchcinski, Z. Peng, A. Doboli, and P. Pop. Process scheduling for performance estimation and synthesis of hardware/software systems. In Proc. 24thEUR OMICRO Conference, pp. 168–175, 1998.",
+              "DOI": "10.1109/EURMIC.1998.711792"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/eurmic.1998.711792",
+                "doi": "10.1109/eurmic.1998.711792",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/eurmic.1998.711792"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "12_CR7",
+            "rawText": "N. Halbwachs. Synchronous Programming of Reactive Systems. Kluwer, 1993.",
+            "doi": "10.1007/978-1-4757-2231-4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR7",
+              "doi-asserted-by": "crossref",
+              "unstructured": "N. Halbwachs. Synchronous Programming of Reactive Systems. Kluwer, 1993.",
+              "DOI": "10.1007/978-1-4757-2231-4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-1-4757-2231-4",
+                "doi": "10.1007/978-1-4757-2231-4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-4757-2231-4"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "12_CR8",
+            "rawText": "N. Halbwachs, P. Caspi, P. Raymond, and D. Pilaud. The synchronous dataflow programming language Lustre. Proc. IEEE, 79:1305–1320, 1991.",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR8",
+              "doi-asserted-by": "publisher",
+              "first-page": "1305",
+              "DOI": "10.1109/5.97300",
+              "volume": "79",
+              "author": "H. N",
+              "year": "1991",
+              "unstructured": "N. Halbwachs, P. Caspi, P. Raymond, and D. Pilaud. The synchronous dataflow programming language Lustre. Proc. IEEE, 79:1305–1320, 1991.",
+              "journal-title": "Proc. IEEE"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "title": "",
+                "authors": [
+                  "H. N"
+                ],
+                "year": 1991,
+                "venue": "Proc. IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "12_CR9",
+            "rawText": "T. A. Henzinger. Masaccio: A formal model for embedded components. In Proc. First IFIP International Conference on Theoretical Computer Science, LNCS 1872, pp. 549–563. Springer-Verlag, 2000.",
+            "doi": "10.1007/3-540-44929-9_38",
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR9",
+              "series-title": "Lect Notes Comput Sci",
+              "doi-asserted-by": "crossref",
+              "first-page": "549",
+              "DOI": "10.1007/3-540-44929-9_38",
+              "volume-title": "Proc. First IFIP International Conference on Theoretical Computer Science",
+              "author": "T. A. Henzinger",
+              "year": "2000",
+              "unstructured": "T. A. Henzinger. Masaccio: A formal model for embedded components. In Proc. First IFIP International Conference on Theoretical Computer Science, LNCS 1872, pp. 549–563. Springer-Verlag, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-44929-9_38",
+                "doi": "10.1007/3-540-44929-9_38",
+                "title": "Lect Notes Comput Sci",
+                "authors": [
+                  "T. A. Henzinger"
+                ],
+                "year": 2000,
+                "venue": "Lect Notes Comput Sci",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-44929-9_38"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "12_CR10",
+            "rawText": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch. Embedded control systems development with Giotto. In Proc. SIGPLAN Workshop on Languages, Compilers, and Tools for Embedded Systems, ACM Press, 2001.",
+            "doi": "10.1145/384197.384208",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR10",
+              "doi-asserted-by": "crossref",
+              "unstructured": "T. A. Henzinger, B. Horowitz, and C. M. Kirsch. Embedded control systems development with Giotto. In Proc. SIGPLAN Workshop on Languages, Compilers, and Tools for Embedded Systems, ACM Press, 2001.",
+              "DOI": "10.1145/384197.384208"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/384197.384208",
+                "doi": "10.1145/384197.384208",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/384197.384208"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "12_CR11",
+            "rawText": "C. M. Kirsch. The Embedded Machine. Technical Report UCB/CSD-01-1137, University of California, Berkeley, 2001.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR11",
+              "series-title": "Technical Report",
+              "volume-title": "The Embedded Machine",
+              "author": "C. M. Kirsch",
+              "year": "2001",
+              "unstructured": "C. M. Kirsch. The Embedded Machine. Technical Report UCB/CSD-01-1137, University of California, Berkeley, 2001."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:12_CR11",
+                "doi": "",
+                "title": "Technical Report",
+                "authors": [
+                  "C. M. Kirsch"
+                ],
+                "year": 2001,
+                "venue": "Technical Report",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12_CR12",
+            "rawText": "H. Kopetz. Real-time Systems: Design Principles for Distributed Embedded Applications. Kluwer, 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR12",
+              "unstructured": "H. Kopetz. Real-time Systems: Design Principles for Distributed Embedded Applications. Kluwer, 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:12_CR12",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "12_CR13",
+            "rawText": "H. Kopetz, R. Zainlinger, G. Fohler, H. Kantz, P. Puschner, and W. Schütz. The design of real-time systems: From specification to implementation and verification. IEE/BCS Software Engineering Journal, 6:72–82, 1991.",
+            "doi": "10.1049/sej.1991.0011",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR13",
+              "doi-asserted-by": "publisher",
+              "first-page": "72",
+              "DOI": "10.1049/sej.1991.0011",
+              "volume": "6",
+              "author": "K. H",
+              "year": "1991",
+              "unstructured": "H. Kopetz, R. Zainlinger, G. Fohler, H. Kantz, P. Puschner, and W. Schütz. The design of real-time systems: From specification to implementation and verification. IEE/BCS Software Engineering Journal, 6:72–82, 1991.",
+              "journal-title": "IEE/BCS Software Engineering Journal"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1049/sej.1991.0011",
+                "doi": "10.1049/sej.1991.0011",
+                "title": "",
+                "authors": [
+                  "K. H"
+                ],
+                "year": 1991,
+                "venue": "IEE/BCS Software Engineering Journal",
+                "type": "",
+                "url": "https://doi.org/10.1049/sej.1991.0011"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "12_CR14",
+            "rawText": "D. Langer, J. Rauch, and M. Rößler. Real-time Systems: Engineering and Applications, chapter 14, pp. 369–395. Kluwer, 1992.",
+            "doi": "10.1007/978-0-585-32314-5_14",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR14",
+              "doi-asserted-by": "crossref",
+              "unstructured": "D. Langer, J. Rauch, and M. Rößler. Real-time Systems: Engineering and Applications, chapter 14, pp. 369–395. Kluwer, 1992.",
+              "DOI": "10.1007/978-0-585-32314-5_14"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-0-585-32314-5_14",
+                "doi": "10.1007/978-0-585-32314-5_14",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-0-585-32314-5_14"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "12_CR15",
+            "rawText": "M. Sanvido. A Computer System for Model Helicopter Flight Control; Technical Memo 3: The Software Core. Technical Report 317, Institute of Computer Systems, ETH Zürich, 1999.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR15",
+              "unstructured": "M. Sanvido. A Computer System for Model Helicopter Flight Control; Technical Memo 3: The Software Core. Technical Report 317, Institute of Computer Systems, ETH Zürich, 1999."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:12_CR15",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "12_CR16",
+            "rawText": "K. Tindell and J. Clark. Holistic schedulability for distributed hard real-time systems. Microprocessing and Microprogramming, 40:117–134, 1994.",
+            "doi": "10.1016/0165-6074(94)90080-9",
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR16",
+              "doi-asserted-by": "publisher",
+              "first-page": "117",
+              "DOI": "10.1016/0165-6074(94)90080-9",
+              "volume": "40",
+              "author": "T. K",
+              "year": "1994",
+              "unstructured": "K. Tindell and J. Clark. Holistic schedulability for distributed hard real-time systems. Microprocessing and Microprogramming, 40:117–134, 1994.",
+              "journal-title": "Microprocessing and Microprogramming"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0165-6074(94)90080-9",
+                "doi": "10.1016/0165-6074(94)90080-9",
+                "title": "",
+                "authors": [
+                  "T. K"
+                ],
+                "year": 1994,
+                "venue": "Microprocessing and Microprogramming",
+                "type": "",
+                "url": "https://doi.org/10.1016/0165-6074(94)90080-9"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "12_CR17",
+            "rawText": "S. Vestal and P. Binns. Scheduling and communication in MetaH. In Proc. 14thA nnual Real-Time Systems Symposium. IEEE Computer Society Press, 1993.",
+            "doi": "10.1109/real.1993.393500",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR17",
+              "doi-asserted-by": "crossref",
+              "unstructured": "S. Vestal and P. Binns. Scheduling and communication in MetaH. In Proc. 14thA nnual Real-Time Systems Symposium. IEEE Computer Society Press, 1993.",
+              "DOI": "10.1109/REAL.1993.393500"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1993.393500",
+                "doi": "10.1109/real.1993.393500",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1993.393500"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "12_CR18",
+            "rawText": "S. Vestal. MetaH support for real-time multi-processor avionics. In Proc. Fifth International Workshop on Parallel and Distributed Real-Time Systems, pp. 11–21. IEEE Computer Society Press, 1997.",
+            "doi": "10.1109/wpdrts.1997.637858",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR18",
+              "doi-asserted-by": "crossref",
+              "unstructured": "S. Vestal. MetaH support for real-time multi-processor avionics. In Proc. Fifth International Workshop on Parallel and Distributed Real-Time Systems, pp. 11–21. IEEE Computer Society Press, 1997.",
+              "DOI": "10.1109/WPDRTS.1997.637858"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/wpdrts.1997.637858",
+                "doi": "10.1109/wpdrts.1997.637858",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/wpdrts.1997.637858"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "12_CR19",
+            "rawText": "N. Wirth. A Computer System for Model Helicopter Flight Control; Technical Memo 2: The Programming Language Oberon SA, second edition. Technical Report 285, Institute of Computer Systems, ETH Zürich, 1999.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "12_CR19",
+              "unstructured": "N. Wirth. A Computer System for Model Helicopter Flight Control; Technical Memo 2: The Programming Language Oberon SA, second edition. Technical Report 285, Institute of Computer Systems, ETH Zürich, 1999."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:12_CR19",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/3-540-45449-7_12",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 19,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/3-540-45449-7_12",
+          "crossrefReferenceCount": 19
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/3-540-45449-7_12->doi:10.1016/0167-6423(91)90001-e@papers-LET-Henzinger2001.pdf",
+      "source": "doi:10.1007/3-540-45449-7_12",
+      "target": "doi:10.1016/0167-6423(91)90001-e",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2001.pdf"
+    },
+    {
+      "id": "doi:10.1007/3-540-45449-7_12->doi:10.1109/5.97300@papers-LET-Henzinger2001.pdf",
+      "source": "doi:10.1007/3-540-45449-7_12",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2001.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Henzinger2001",
+      "paperId": "doi:10.1007/3-540-45449-7_12",
+      "metadata": {
+        "fileName": "Henzinger2001.pdf",
+        "sourcePath": "papers/LET/Henzinger2001.pdf"
+      }
+    }
+  ]
+}

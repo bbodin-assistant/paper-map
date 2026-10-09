@@ -1,0 +1,1353 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.540474+00:00",
+  "papers": [
+    {
+      "key": "Paladino2024",
+      "paper": {
+        "id": "doi:10.4230/lipics.ecrts.2024.6",
+        "citationKey": "Paladino2024",
+        "title": "Optimizing Per-Core Priorities to Minimize End-To-End Latencies",
+        "authors": [
+          "Francesco Paladino",
+          "Alessandro Biondi",
+          "Enrico Bini",
+          "Paolo Pazzaglia"
+        ],
+        "year": 2024,
+        "venue": "36th Euromicro Conference on Real-Time Systems (ECRTS 2024)",
+        "type": "inproceedings",
+        "doi": "10.4230/LIPIcs.ECRTS.2024.6",
+        "arxivId": "",
+        "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2024.6",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Paladino, Francesco and Biondi, Alessandro and Bini, Enrico and Pazzaglia, Paolo",
+          "title": "{Optimizing Per-Core Priorities to Minimize End-To-End Latencies}",
+          "year": "2024",
+          "booktitle": "36th Euromicro Conference on Real-Time Systems (ECRTS 2024)",
+          "publisher": "Schloss Dagstuhl -- Leibniz-Zentrum f{\\\"u}r Informatik",
+          "series": "Leibniz International Proceedings in Informatics (LIPIcs)",
+          "volume": "298",
+          "pages": "6:1--6:25",
+          "doi": "10.4230/LIPIcs.ECRTS.2024.6",
+          "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2024.6"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.080573+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "1 Neil C Audsley. On priority assignment in fixed priority scheduling. Information Processing",
+            "doi": "10.1016/s0020-0190(00)00165-4",
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Neil C Audsley. On priority assignment in fixed priority scheduling. Information Processing"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1016/s0020-0190(00)00165-4",
+                "doi": "10.1016/s0020-0190(00)00165-4",
+                "arxivId": "",
+                "title": "On priority assignment in fixed priority scheduling",
+                "authors": [
+                  "N.C. Audsley"
+                ],
+                "year": 2001,
+                "venue": "Information Processing Letters",
+                "type": "article",
+                "url": "https://doi.org/10.1016/s0020-0190(00)00165-4"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": null,
+            "rawText": "Letters, 79(1):39–44, 2001. doi:10.1016/S0020-0190(00)00165-4.",
+            "doi": "10.1016/s0020-0190(00)00165-4",
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Letters, 79(1):39–44, 2001. doi:10.1016/S0020-0190(00)00165-4."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1016/s0020-0190(00)00165-4",
+                "doi": "10.1016/s0020-0190(00)00165-4",
+                "arxivId": "",
+                "title": "On priority assignment in fixed priority scheduling",
+                "authors": [
+                  "N.C. Audsley"
+                ],
+                "year": 2001,
+                "venue": "Information Processing Letters",
+                "type": "article",
+                "url": "https://doi.org/10.1016/s0020-0190(00)00165-4"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": null,
+            "rawText": "2 Neil C. Audsley, Alan Burns, Mike Richardson, Ken W. Tindell, and Andy J. Wellings. Applying new scheduling theory to static priority pre-emptive scheduling. Software Engineering Journal, 8(5):284–292, September 1993. doi:10.1049/sej.1993.0034.",
+            "doi": "10.1049/sej.1993.0034",
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2 Neil C. Audsley, Alan Burns, Mike Richardson, Ken W. Tindell, and Andy J. Wellings. Applying new scheduling theory to static priority pre-emptive scheduling. Software Engineering Journal, 8(5):284–292, September 1993. doi:10.1049/sej.1993.0034."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1049/sej.1993.0034",
+                "doi": "10.1049/sej.1993.0034",
+                "arxivId": "",
+                "title": "Applying New Scheduling Theory to Static Priority Pre-emptive Scheduling",
+                "authors": [
+                  "Neil C. Audsley",
+                  "Alan Burns",
+                  "Mike M. Richardson",
+                  "Ken Tindell",
+                  "Andy J. Wellings"
+                ],
+                "year": 1993,
+                "venue": "Software Engineering Journal",
+                "type": "article",
+                "url": "https://doi.org/10.1049/sej.1993.0034"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "6:22 Optimizing Per-Core Priorities to Minimize End-To-End Latencies",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6:22 Optimizing Per-Core Priorities to Minimize End-To-End Latencies"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": null,
+            "rawText": "3 Yunhao Bai, Zejiang Wang, Xiaorui Wang, and Junmin Wang. Autoe2e: end-to-end real-time middleware for autonomous driving control. In 2020 IEEE 40th International Conference on Distributed Computing Systems (ICDCS), pages 1101–1111. IEEE, 2020. doi:10.1109/",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "3 Yunhao Bai, Zejiang Wang, Xiaorui Wang, and Junmin Wang. Autoe2e: end-to-end real-time middleware for autonomous driving control. In 2020 IEEE 40th International Conference on Distributed Computing Systems (ICDCS), pages 1101–1111. IEEE, 2020. doi:10.1109/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "ICDCS47774.2020.00092. 4 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Synthesizing job-level dependencies for automotive multi-rate effect chains. In 2016 IEEE 22nd International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), pages 159–169. IEEE, 2016. doi:10.1109/RTCSA.2016.41. 5 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Endto-end timing analysis of cause-effect chains in automotive embedded systems. Journal of",
+            "doi": "10.1109/rtcsa.2016.41",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "ICDCS47774.2020.00092. 4 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Synthesizing job-level dependencies for automotive multi-rate effect chains. In 2016 IEEE 22nd International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), pages 159–169. IEEE, 2016. doi:10.1109/RTCSA.2016.41. 5 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Endto-end timing analysis of cause-effect chains in automotive embedded systems. Journal of"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2016.41",
+                "doi": "10.1109/rtcsa.2016.41",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2016.41"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": null,
+            "rawText": "Systems Architecture, 80:104–113, 2017. doi:10.1016/j.sysarc.2017.09.004. 6 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Analyzing end-to-end delays in automotive systems at various levels of timing information. ACM",
+            "doi": "10.1016/j.sysarc.2017.09.004",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Systems Architecture, 80:104–113, 2017. doi:10.1016/j.sysarc.2017.09.004. 6 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Analyzing end-to-end delays in automotive systems at various levels of timing information. ACM"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2017.09.004",
+                "doi": "10.1016/j.sysarc.2017.09.004",
+                "arxivId": "",
+                "title": "End-to-end timing analysis of cause-effect chains in automotive embedded systems",
+                "authors": [
+                  "Matthias Becker",
+                  "Dakshina Dasari",
+                  "Saad Mubeen",
+                  "Moris Behnam",
+                  "Thomas Nolte"
+                ],
+                "year": 2017,
+                "venue": "Journal of Systems Architecture",
+                "type": "article",
+                "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": null,
+            "rawText": "SIGBED Review, 14(4):8–13, 2018. doi:10.1145/3177803.3177805. 7 Albert Benveniste, Paul Le Guernic, Yves Sorel, and Michel Sorine. A denotational theory of synchronous reactive systems. Information and Computation, 99(2):192–230, 1992. doi:",
+            "doi": "10.1145/3177803.3177805",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "SIGBED Review, 14(4):8–13, 2018. doi:10.1145/3177803.3177805. 7 Albert Benveniste, Paul Le Guernic, Yves Sorel, and Michel Sorine. A denotational theory of synchronous reactive systems. Information and Computation, 99(2):192–230, 1992. doi:"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1145/3177803.3177805",
+                "doi": "10.1145/3177803.3177805",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3177803.3177805"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "10",
+            "rawText": "1016/0890-5401(92)90030-J. 8 Gérard Berry and Georges Gonthier. The Esterel synchronous programming language: Design, semantics, implementation. Science of computer programming, 19(2):87–152, 1992. doi:",
+            "doi": "10.1016/0167-6423(92)90005-v",
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1016/0890-5401(92)90030-J. 8 Gérard Berry and Georges Gonthier. The Esterel synchronous programming language: Design, semantics, implementation. Science of computer programming, 19(2):87–152, 1992. doi:"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1016/0167-6423(92)90005-v",
+                "doi": "10.1016/0167-6423(92)90005-v",
+                "arxivId": "",
+                "title": "The Esterel synchronous programming language: design, semantics, implementation",
+                "authors": [
+                  "G\\'erard Berry",
+                  "Georges Gonthier"
+                ],
+                "year": 1992,
+                "venue": "Science of Computer Programming",
+                "type": "article",
+                "url": "https://doi.org/10.1016/0167-6423(92)90005-v"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "1016/0167-6423(92)90005-V. 9 Enrico Bini and Giorgio Buttazzo. Biasing effects in schedulability measures. In 16th Euromicro Conference on Real-Time Systems (ECRTS 2004), 30 June - 2 July 1004, Catania, Italy,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1016/0167-6423(92)90005-V. 9 Enrico Bini and Giorgio Buttazzo. Biasing effects in schedulability measures. In 16th Euromicro Conference on Real-Time Systems (ECRTS 2004), 30 June - 2 July 1004, Catania, Italy,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "Proceedings, pages 196–203, 2004. doi:10.1109/ECRTS.2004.7. 10 Enrico Bini, Thi Huyen Châu Nguyen, Pascal Richard, and Sanjoy K. Baruah. A response-time bound in fixed-priority scheduling with arbitrary deadlines. IEEE Transactions on Computers, 58(2):279–286, February 2009. doi:10.1109/TC.2008.167. 11 Enrico Bini, Andrea Parri, and Giacomo Dossena. A quadratic-time response time upper bound with a tightness property. In 2015 IEEE Real-Time Systems Symposium, pages 13–22.",
+            "doi": "10.1109/tc.2008.167",
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Proceedings, pages 196–203, 2004. doi:10.1109/ECRTS.2004.7. 10 Enrico Bini, Thi Huyen Châu Nguyen, Pascal Richard, and Sanjoy K. Baruah. A response-time bound in fixed-priority scheduling with arbitrary deadlines. IEEE Transactions on Computers, 58(2):279–286, February 2009. doi:10.1109/TC.2008.167. 11 Enrico Bini, Andrea Parri, and Giacomo Dossena. A quadratic-time response time upper bound with a tightness property. In 2015 IEEE Real-Time Systems Symposium, pages 13–22."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/tc.2008.167",
+                "doi": "10.1109/tc.2008.167",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.2008.167"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": null,
+            "rawText": "IEEE, 2015. doi:10.1109/RTSS.2015.9. 12 Enrico Bini, Paolo Pazzaglia, and Martina Maggio. Zero-jitter chains of periodic LET tasks via algebraic rings. IEEE Transactions on Computers, 72(11):3057–3071, 2023. doi:",
+            "doi": "10.1109/rtss.2015.9",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IEEE, 2015. doi:10.1109/RTSS.2015.9. 12 Enrico Bini, Paolo Pazzaglia, and Martina Maggio. Zero-jitter chains of periodic LET tasks via algebraic rings. IEEE Transactions on Computers, 72(11):3057–3071, 2023. doi:"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/tc.2023.3283707",
+                "doi": "10.1109/rtss.2015.9",
+                "arxivId": "",
+                "title": "Zero-Jitter Chains of Periodic LET Tasks via Algebraic Rings",
+                "authors": [
+                  "Enrico Bini",
+                  "Paolo Pazzaglia",
+                  "Martina Maggio"
+                ],
+                "year": 2015,
+                "venue": "IEEE Transactions on Computers",
+                "type": "article",
+                "url": "https://doi.org/10.1109/tc.2023.3283707"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "10",
+            "rawText": "1109/TC.2023.3283707. 13 Alessandro Biondi and Marco Di Natale. Achieving predictable multicore execution of automotive applications using the LET paradigm. In IEEE Real-Time and Embedded Technology and Applications Symposium, RTAS 2018, 11-13 April 2018, Porto, Portugal, pages 240–250,",
+            "doi": "10.1109/rtas.2018.00032",
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1109/TC.2023.3283707. 13 Alessandro Biondi and Marco Di Natale. Achieving predictable multicore execution of automotive applications using the LET paradigm. In IEEE Real-Time and Embedded Technology and Applications Symposium, RTAS 2018, 11-13 April 2018, Porto, Portugal, pages 240–250,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2018.00032",
+                "doi": "10.1109/rtas.2018.00032",
+                "arxivId": "",
+                "title": "Achieving Predictable Multicore Execution of Automotive Applications Using the LET Paradigm",
+                "authors": [
+                  "Alessandro Biondi",
+                  "Marco Di Natale"
+                ],
+                "year": 2023,
+                "venue": "2018 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas.2018.00032"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "2018",
+            "rawText": "doi:10.1109/RTAS.2018.00032. 14 Daniel Casini and Alessandro Biondi. Placement of chains of real-time tasks on heterogeneous platforms under EDF scheduling. In 2022 25th Euromicro Conference on Digital System Design (DSD), pages 149–156, 2022. doi:10.1109/DSD57027.2022.00029. 15 Jian-Jia Chen, Wen-Hung Huang, and Cong Liu. k2Q: A quadratic-form response time and schedulability analysis framework for utilization-based analysis. In 2016 IEEE Real-Time Systems Symposium (RTSS), pages 351–362. IEEE, 2016. doi:10.1109/RTSS.2016.041. 16 Hyunjong Choi, Mohsen Karimi, and Hyoseung Kim. Chain-based fixed-priority scheduling of loosely-dependent tasks. In 2020 IEEE 38th International Conference on Computer Design (ICCD), pages 631–639, 2020. doi:10.1109/ICCD50377.2020.00109. 17 Hyunjong Choi, Yecheng Xiang, and Hyoseung Kim. PiCAS: New design of priority-driven chain-aware scheduling for ROS2. In 2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 251–263, 2021. doi:10.1109/RTAS52030.2021.00028. 18 Abhijit Davare, Qi Zhu, Marco Di Natale, Claudio Pinello, Sri Kanajan, and Alberto Sangiovanni-Vincentelli. Period optimization for hard real-time distributed automotive systems. In Proceedings of the 44th annual Design Automation Conference, pages 278–283, 2007. doi:10.1145/1278480.1278553.",
+            "doi": "10.1109/iccd50377.2020.00109",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1109/RTAS.2018.00032. 14 Daniel Casini and Alessandro Biondi. Placement of chains of real-time tasks on heterogeneous platforms under EDF scheduling. In 2022 25th Euromicro Conference on Digital System Design (DSD), pages 149–156, 2022. doi:10.1109/DSD57027.2022.00029. 15 Jian-Jia Chen, Wen-Hung Huang, and Cong Liu. k2Q: A quadratic-form response time and schedulability analysis framework for utilization-based analysis. In 2016 IEEE Real-Time Systems Symposium (RTSS), pages 351–362. IEEE, 2016. doi:10.1109/RTSS.2016.041. 16 Hyunjong Choi, Mohsen Karimi, and Hyoseung Kim. Chain-based fixed-priority scheduling of loosely-dependent tasks. In 2020 IEEE 38th International Conference on Computer Design (ICCD), pages 631–639, 2020. doi:10.1109/ICCD50377.2020.00109. 17 Hyunjong Choi, Yecheng Xiang, and Hyoseung Kim. PiCAS: New design of priority-driven chain-aware scheduling for ROS2. In 2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 251–263, 2021. doi:10.1109/RTAS52030.2021.00028. 18 Abhijit Davare, Qi Zhu, Marco Di Natale, Claudio Pinello, Sri Kanajan, and Alberto Sangiovanni-Vincentelli. Period optimization for hard real-time distributed automotive systems. In Proceedings of the 44th annual Design Automation Conference, pages 278–283, 2007. doi:10.1145/1278480.1278553."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2018.00032",
+                "doi": "10.1109/iccd50377.2020.00109",
+                "arxivId": "",
+                "title": "Achieving Predictable Multicore Execution of Automotive Applications Using the LET Paradigm",
+                "authors": [
+                  "Alessandro Biondi",
+                  "Marco Di Natale"
+                ],
+                "year": 2018,
+                "venue": "2018 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas.2018.00032"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": null,
+            "rawText": "F. Paladino, A. Biondi, E. Bini, and P. Pazzaglia 6:23",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "F. Paladino, A. Biondi, E. Bini, and P. Pazzaglia 6:23"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "19 Robert I. Davis, Liliana Cucu-Grosjean, Marko Bertogna, and Alan Burns. A review of priority assignment in real-time systems. Journal of Systems Architecture, 65:64–82, 2016. doi:10.1016/j.sysarc.2016.04.002. 20 Marco Dürr, Georg Von Der Brüggen, Kuan-Hsun Chen, and Jian-Jia Chen. End-to-end timing analysis of sporadic cause-effect chains in distributed systems. ACM Transactions on",
+            "doi": "10.1016/j.sysarc.2016.04.002",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "19 Robert I. Davis, Liliana Cucu-Grosjean, Marko Bertogna, and Alan Burns. A review of priority assignment in real-time systems. Journal of Systems Architecture, 65:64–82, 2016. doi:10.1016/j.sysarc.2016.04.002. 20 Marco Dürr, Georg Von Der Brüggen, Kuan-Hsun Chen, and Jian-Jia Chen. End-to-end timing analysis of sporadic cause-effect chains in distributed systems. ACM Transactions on"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/3358181",
+                "doi": "10.1016/j.sysarc.2016.04.002",
+                "arxivId": "",
+                "title": "End-to-End Timing Analysis of Sporadic Cause-Effect Chains in Distributed Systems",
+                "authors": [
+                  "Marco D\\\"urr",
+                  "Georg Von Der Br\\\"uggen",
+                  "Kuan-Hsun Chen",
+                  "Jian-Jia Chen"
+                ],
+                "year": 2016,
+                "venue": "ACM Transactions on Embedded Computing Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3358181"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": null,
+            "rawText": "Embedded Computing Systems (TECS), 18(5s):1–24, 2019. doi:10.1145/3358181. 21 Rolf Ernst, Leonie Ahrendts, and Kai-Björn Gemlau. System level LET: Mastering cause-effect chains in distributed systems. In IECON 2018 - 44th Annual Conference of the IEEE Industrial",
+            "doi": "10.1145/3358181",
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Embedded Computing Systems (TECS), 18(5s):1–24, 2019. doi:10.1145/3358181. 21 Rolf Ernst, Leonie Ahrendts, and Kai-Björn Gemlau. System level LET: Mastering cause-effect chains in distributed systems. In IECON 2018 - 44th Annual Conference of the IEEE Industrial"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1145/3358181",
+                "doi": "10.1145/3358181",
+                "arxivId": "",
+                "title": "End-to-End Timing Analysis of Sporadic Cause-Effect Chains in Distributed Systems",
+                "authors": [
+                  "Marco D\\\"urr",
+                  "Georg Von Der Br\\\"uggen",
+                  "Kuan-Hsun Chen",
+                  "Jian-Jia Chen"
+                ],
+                "year": 2019,
+                "venue": "ACM Transactions on Embedded Computing Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3358181"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "Electronics Society, pages 4084–4089, 2018. doi:10.1109/IECON.2018.8591550. 22 Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS),",
+            "doi": "10.1109/iecon.2018.8591550",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Electronics Society, pages 4084–4089, 2018. doi:10.1109/IECON.2018.8591550. 22 Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS),"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/iecon.2018.8591550",
+                "doi": "10.1109/iecon.2018.8591550",
+                "arxivId": "",
+                "title": "System Level LET: Mastering Cause-Effect Chains in Distributed Systems",
+                "authors": [
+                  "Rolf Ernst",
+                  "Leonie Ahrendts",
+                  "Kai-Bjorn Gemlau"
+                ],
+                "year": 2018,
+                "venue": "IECON 2018 - 44th Annual Conference of the IEEE Industrial Electronics Society",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/iecon.2018.8591550"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "2008",
+            "rawText": "23 Julien Forget, Frédéric Boniol, and Claire Pagetti. Verifying end-to-end real-time constraints on multi-periodic models. In 2017 22nd IEEE International Conference on Emerging Technologies and Factory Automation (ETFA), pages 1–8. IEEE, 2017. doi:10.1109/ETFA.2017.8247612. 24 Goran Frehse, Arne Hamann, Sophie Quinton, and Matthias Woehrle. Formal analysis of timing effects on closed-loop properties of control software. In 2014 IEEE Real-Time Systems Symposium, pages 53–62. IEEE, 2014. doi:10.1109/RTSS.2014.28. 25 Max J Friese, Thorsten Ehlers, and Dirk Nowotka. Estimating latencies of task sequences in multi-core automotive ecus. In 2018 IEEE 13th International Symposium on Industrial Embedded Systems (SIES), pages 1–10. IEEE, 2018. doi:10.1109/SIES.2018.8442095. 26 Alain Girault, Christophe Prévot, Sophie Quinton, Rafik Henia, and Nicolas Sordon. Improving and estimating the precision of bounds on the worst-case latency of task chains. IEEE transactions on computer-aided design of integrated circuits and systems, 37(11):2578–2589,",
+            "doi": "10.1109/sies.2018.8442095",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "23 Julien Forget, Frédéric Boniol, and Claire Pagetti. Verifying end-to-end real-time constraints on multi-periodic models. In 2017 22nd IEEE International Conference on Emerging Technologies and Factory Automation (ETFA), pages 1–8. IEEE, 2017. doi:10.1109/ETFA.2017.8247612. 24 Goran Frehse, Arne Hamann, Sophie Quinton, and Matthias Woehrle. Formal analysis of timing effects on closed-loop properties of control software. In 2014 IEEE Real-Time Systems Symposium, pages 53–62. IEEE, 2014. doi:10.1109/RTSS.2014.28. 25 Max J Friese, Thorsten Ehlers, and Dirk Nowotka. Estimating latencies of task sequences in multi-core automotive ecus. In 2018 IEEE 13th International Symposium on Industrial Embedded Systems (SIES), pages 1–10. IEEE, 2018. doi:10.1109/SIES.2018.8442095. 26 Alain Girault, Christophe Prévot, Sophie Quinton, Rafik Henia, and Nicolas Sordon. Improving and estimating the precision of bounds on the worst-case latency of task chains. IEEE transactions on computer-aided design of integrated circuits and systems, 37(11):2578–2589,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/sies.2018.8442095",
+                "doi": "10.1109/sies.2018.8442095",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sies.2018.8442095"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "2018",
+            "rawText": "doi:10.1109/TCAD.2018.2861016. 27 Mario Günzel, Kuan-Hsun Chen, Niklas Ueter, Georg von der Brüggen, Marco Dürr, and Jian-Jia Chen. Compositional timing analysis of asynchronized distributed cause-effect chains. ACM Trans. Embed. Comput. Syst., March 2023. doi:10.1145/3587036. 28 Mario Günzel, Kuan-Hsun Chen, Niklas Ueter, Georg von der Brüggen, Marco Dürr, and Jian-Jia Chen. Timing analysis of asynchronized distributed cause-effect chains. In 27th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 40–52. IEEE, 2021. doi:10.1109/RTAS52030.2021.00012. 29 Nicholas Halbwachs, Paul Caspi, Pascal Raymond, and Daniel Pilaud. The synchronous data flow programming language LUSTRE. Proceedings of the IEEE, 79(9):1305–1320, 1991. doi:10.1109/5.97300. 30 Taeho Han and Kanghee Kim. Minimizing probabilistic end-to-end latencies of autonomous driving systems. In IEEE 29th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 27–39, 2023. doi:10.1109/RTAS58335.2023.00010. 31 David Harel and Amir Pnueli. On the development of reactive systems. In Logics and Models of Concurrent Systems - Conference proceedings, Colle-sur-Loup (near Nice), France, 8-19 October 1984, volume 13, pages 477–498. Springer, 1984. doi:10.1007/978-3-642-82453-1_17. 32 Thomas A. Henzinger, Benjamin Horowitz, and Christoph M. Kirsch. Giotto: A timetriggered language for embedded programming. Proceedings of the IEEE, 91(1):84–99, 2003. doi:10.1109/JPROC.2002.805825. 33 Praveen Jayachandran and Tarek Abdelzaher. Delay composition in preemptive and nonpreemptive real-time pipelines. Real-Time Systems, 40(3):290–320, 2008. doi:10.1007/ s11241-008-9056-3. 34 Mathai Joseph and Paritosh K. Pandya. Finding response times in a real-time system. The Computer Journal, 29(5):390–395, October 1986. doi:10.1093/comjnl/29.5.390. 35 Christoph M. Kirsch and Ana Sokolova. The logical execution time paradigm. Advances in Real-Time Systems, pages 103–120, 2012. doi:10.1007/978-3-642-24349-3_5.",
+            "doi": "10.1093/comjnl/29.5.390",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1109/TCAD.2018.2861016. 27 Mario Günzel, Kuan-Hsun Chen, Niklas Ueter, Georg von der Brüggen, Marco Dürr, and Jian-Jia Chen. Compositional timing analysis of asynchronized distributed cause-effect chains. ACM Trans. Embed. Comput. Syst., March 2023. doi:10.1145/3587036. 28 Mario Günzel, Kuan-Hsun Chen, Niklas Ueter, Georg von der Brüggen, Marco Dürr, and Jian-Jia Chen. Timing analysis of asynchronized distributed cause-effect chains. In 27th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 40–52. IEEE, 2021. doi:10.1109/RTAS52030.2021.00012. 29 Nicholas Halbwachs, Paul Caspi, Pascal Raymond, and Daniel Pilaud. The synchronous data flow programming language LUSTRE. Proceedings of the IEEE, 79(9):1305–1320, 1991. doi:10.1109/5.97300. 30 Taeho Han and Kanghee Kim. Minimizing probabilistic end-to-end latencies of autonomous driving systems. In IEEE 29th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 27–39, 2023. doi:10.1109/RTAS58335.2023.00010. 31 David Harel and Amir Pnueli. On the development of reactive systems. In Logics and Models of Concurrent Systems - Conference proceedings, Colle-sur-Loup (near Nice), France, 8-19 October 1984, volume 13, pages 477–498. Springer, 1984. doi:10.1007/978-3-642-82453-1_17. 32 Thomas A. Henzinger, Benjamin Horowitz, and Christoph M. Kirsch. Giotto: A timetriggered language for embedded programming. Proceedings of the IEEE, 91(1):84–99, 2003. doi:10.1109/JPROC.2002.805825. 33 Praveen Jayachandran and Tarek Abdelzaher. Delay composition in preemptive and nonpreemptive real-time pipelines. Real-Time Systems, 40(3):290–320, 2008. doi:10.1007/ s11241-008-9056-3. 34 Mathai Joseph and Paritosh K. Pandya. Finding response times in a real-time system. The Computer Journal, 29(5):390–395, October 1986. doi:10.1093/comjnl/29.5.390. 35 Christoph M. Kirsch and Ana Sokolova. The logical execution time paradigm. Advances in Real-Time Systems, pages 103–120, 2012. doi:10.1007/978-3-642-24349-3_5."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1093/comjnl/29.5.390",
+                "doi": "10.1093/comjnl/29.5.390",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1093/comjnl/29.5.390"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": null,
+            "rawText": "6:24 Optimizing Per-Core Priorities to Minimize End-To-End Latencies",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6:24 Optimizing Per-Core Priorities to Minimize End-To-End Latencies"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": null,
+            "rawText": "36 Tobias Klaus, Matthias Becker, Wolfgang Schröder-Preikschat, and Peter Ulbrich. Constrained data-age with job-level dependencies: How to reconcile tight bounds and overheads. In IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 66–79.",
+            "doi": "10.1109/rtas52030.2021.00014",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "36 Tobias Klaus, Matthias Becker, Wolfgang Schröder-Preikschat, and Peter Ulbrich. Constrained data-age with job-level dependencies: How to reconcile tight bounds and overheads. In IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 66–79."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00014",
+                "doi": "10.1109/rtas52030.2021.00014",
+                "arxivId": "",
+                "title": "Constrained Data-Age with Job-Level Dependencies: How to Reconcile Tight Bounds and Overheads",
+                "authors": [
+                  "Tobias Klaus",
+                  "Matthias Becker",
+                  "Wolfgang Schroder-Preikschat",
+                  "Peter Ulbrich"
+                ],
+                "year": 2021,
+                "venue": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00014"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": null,
+            "rawText": "IEEE, 2021. doi:10.1109/RTAS52030.2021.00014. 37 Tomasz Kloda, Antoine Bertout, and Yves Sorel. Latency upper bound for data chains of real-time periodic tasks. Journal of Systems Architecture, 109:101824, 2020. doi:10.1016/j. sysarc.2020.101824. 38 Simon Kramer, Dirk Ziegenbein, and Arne Hamann. Real world automotive benchmarks for free. In International Workshop on Analysis Tools and Methodologies for Embedded and",
+            "doi": "10.1016/j",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IEEE, 2021. doi:10.1109/RTAS52030.2021.00014. 37 Tomasz Kloda, Antoine Bertout, and Yves Sorel. Latency upper bound for data chains of real-time periodic tasks. Journal of Systems Architecture, 109:101824, 2020. doi:10.1016/j. sysarc.2020.101824. 38 Simon Kramer, Dirk Ziegenbein, and Arne Hamann. Real world automotive benchmarks for free. In International Workshop on Analysis Tools and Methodologies for Embedded and"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/rtas52030.2021.00014",
+                "doi": "10.1016/j",
+                "arxivId": "",
+                "title": "Constrained Data-Age with Job-Level Dependencies: How to Reconcile Tight Bounds and Overheads",
+                "authors": [
+                  "Tobias Klaus",
+                  "Matthias Becker",
+                  "Wolfgang Schroder-Preikschat",
+                  "Peter Ulbrich"
+                ],
+                "year": 2021,
+                "venue": "2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas52030.2021.00014"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "Real-time Systems (WATERS), 2015. 39 John P. Lehoczky. Fixed priority scheduling of periodic task sets with arbitrary deadlines. In",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Real-time Systems (WATERS), 2015. 39 John P. Lehoczky. Fixed priority scheduling of periodic task sets with arbitrary deadlines. In"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "1990",
+            "rawText": "Proceedings 11th Real-Time Systems Symposium, pages 201–209, 1990. doi:10.1109/ REAL.1990.128748. 40 C. L. Liu and James W. Layland. Scheduling algorithms for multiprogramming in a hard-realtime environment. J. ACM, 20(1):46–61, January 1973. doi:10.1145/321738.321743. 41 José L. Lorente, Giuseppe Lipari, and Enrico Bini. A hierarchical scheduling model for component-based real-time systems. In 20th International Parallel and Distributed Processing Symposium (IPDPS 2006), Proceedings, 25-29 April 2006, Rhodes Island, Greece, pages 8–pp. IEEE, 2006. doi:10.1109/IPDPS.2006.1639405. 42 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. Analytical characterization of end-toend communication delays with logical execution time. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 37(11):2244–2254, 2018. doi:10.1109/TCAD.2018.",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Proceedings 11th Real-Time Systems Symposium, pages 201–209, 1990. doi:10.1109/ REAL.1990.128748. 40 C. L. Liu and James W. Layland. Scheduling algorithms for multiprogramming in a hard-realtime environment. J. ACM, 20(1):46–61, January 1973. doi:10.1145/321738.321743. 41 José L. Lorente, Giuseppe Lipari, and Enrico Bini. A hierarchical scheduling model for component-based real-time systems. In 20th International Parallel and Distributed Processing Symposium (IPDPS 2006), Proceedings, 25-29 April 2006, Rhodes Island, Greece, pages 8–pp. IEEE, 2006. doi:10.1109/IPDPS.2006.1639405. 42 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. Analytical characterization of end-toend communication delays with logical execution time. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 37(11):2244–2254, 2018. doi:10.1109/TCAD.2018."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "arxivId": "",
+                "title": "Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment",
+                "authors": [
+                  "C. L. Liu",
+                  "James W. Layland"
+                ],
+                "year": 1990,
+                "venue": "Journal of the ACM",
+                "type": "article",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "2857398",
+            "rawText": "43 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. End-to-end latency characterization of task communication models for automotive systems. Real-Time Systems, 56:315–347, 2020. doi:10.1007/s11241-020-09350-3. 44 José Carlos Palencia and Michael Gonzalez Harbour. Exploiting precedence relations in the schedulability analysis of distributed real-time systems. In Proceedings of the 20th IEEE Real-Time Systems Symposium, Phoenix, AZ, USA, December 1-3, 1999, pages 328–339. IEEE,",
+            "doi": "10.1007/s11241-020-09350-3",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "43 Jorge Martinez, Ignacio Sañudo, and Marko Bertogna. End-to-end latency characterization of task communication models for automotive systems. Real-Time Systems, 56:315–347, 2020. doi:10.1007/s11241-020-09350-3. 44 José Carlos Palencia and Michael Gonzalez Harbour. Exploiting precedence relations in the schedulability analysis of distributed real-time systems. In Proceedings of the 20th IEEE Real-Time Systems Symposium, Phoenix, AZ, USA, December 1-3, 1999, pages 328–339. IEEE,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1007/s11241-020-09350-3",
+                "doi": "10.1007/s11241-020-09350-3",
+                "arxivId": "",
+                "title": "End-to-end latency characterization of task communication models for automotive systems",
+                "authors": [
+                  "Jorge Martinez",
+                  "Ignacio Sa\\ nudo",
+                  "Marko Bertogna"
+                ],
+                "year": 2020,
+                "venue": "Real-Time Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1007/s11241-020-09350-3"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "1999",
+            "rawText": "doi:10.1109/REAL.1999.818860. 45 Paolo Pazzaglia, Alessandro Biondi, and Marco Di Natale. Optimizing the functional deployment on multicore platforms with logical execution time. In 2019 IEEE Real-Time Systems Symposium (RTSS), pages 207–219, 2019. doi:10.1109/RTSS46320.2019.00028. 46 Paolo Pazzaglia and Martina Maggio. Characterizing the effect of deadline misses on timetriggered task chains. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 41(11):3957–3968, 2022. doi:10.1109/TCAD.2022.3199146. 47 Paolo Pazzaglia, Luigi Pannocchi, Alessandro Biondi, and Marco Di Natale. Beyond the weakly hard model: Measuring the performance cost of deadline misses. In 30th Euromicro Conference on Real-Time Systems, ECRTS 2018, July 3-6, 2018, Barcelona, Spain, volume",
+            "doi": "10.1109/real.1999.818860",
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "doi:10.1109/REAL.1999.818860. 45 Paolo Pazzaglia, Alessandro Biondi, and Marco Di Natale. Optimizing the functional deployment on multicore platforms with logical execution time. In 2019 IEEE Real-Time Systems Symposium (RTSS), pages 207–219, 2019. doi:10.1109/RTSS46320.2019.00028. 46 Paolo Pazzaglia and Martina Maggio. Characterizing the effect of deadline misses on timetriggered task chains. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 41(11):3957–3968, 2022. doi:10.1109/TCAD.2022.3199146. 47 Paolo Pazzaglia, Luigi Pannocchi, Alessandro Biondi, and Marco Di Natale. Beyond the weakly hard model: Measuring the performance cost of deadline misses. In 30th Euromicro Conference on Real-Time Systems, ECRTS 2018, July 3-6, 2018, Barcelona, Spain, volume"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/real.1999.818860",
+                "doi": "10.1109/real.1999.818860",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1999.818860"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": null,
+            "rawText": "106, pages 10:1–10:22. Schloss-Dagstuhl-Leibniz Zentrum für Informatik, 2018. doi:10.4230/",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "106, pages 10:1–10:22. Schloss-Dagstuhl-Leibniz Zentrum für Informatik, 2018. doi:10.4230/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": null,
+            "rawText": "LIPIcs.ECRTS.2018.10. 48 Rodolfo Pellizzoni and Giuseppe Lipari. Improved schedulability analysis of real-time transactions with earliest deadline scheduling. In 11th IEEE Real Time and Embedded Technology and Applications Symposium, pages 66–75. IEEE, 2005. doi:10.1109/RTAS.2005.28. 49 Johannes Schlatow, Mischa Mostl, Sebastian Tobuschat, Tasuku Ishigooka, and Rolf Ernst. Data-age analysis and optimisation for cause-effect chains in automotive control systems.",
+            "doi": "10.1109/rtas.2005.28",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "LIPIcs.ECRTS.2018.10. 48 Rodolfo Pellizzoni and Giuseppe Lipari. Improved schedulability analysis of real-time transactions with earliest deadline scheduling. In 11th IEEE Real Time and Embedded Technology and Applications Symposium, pages 66–75. IEEE, 2005. doi:10.1109/RTAS.2005.28. 49 Johannes Schlatow, Mischa Mostl, Sebastian Tobuschat, Tasuku Ishigooka, and Rolf Ernst. Data-age analysis and optimisation for cause-effect chains in automotive control systems."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/sies.2018.8442077",
+                "doi": "10.1109/rtas.2005.28",
+                "arxivId": "",
+                "title": "Data-Age Analysis and Optimisation for Cause-Effect Chains in Automotive Control Systems",
+                "authors": [
+                  "Johannes Schlatow",
+                  "Mischa Mostl",
+                  "Sebastian Tobuschat",
+                  "Tasuku Ishigooka",
+                  "Rolf Ernst"
+                ],
+                "year": 2018,
+                "venue": "2018 IEEE 13th International Symposium on Industrial Embedded Systems (SIES)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/sies.2018.8442077"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": null,
+            "rawText": "In 13th IEEE International Symposium on Industrial Embedded Systems, SIES 2018, Graz,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "In 13th IEEE International Symposium on Industrial Embedded Systems, SIES 2018, Graz,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": null,
+            "rawText": "Austria, June 6-8, 2018, pages 1–9. IEEE, 2018. doi:10.1109/SIES.2018.8442077. 50 Simon Schliecker and Rolf Ernst. A recursive approach to end-to-end path latency computation in heterogeneous multiprocessor systems. In Proceedings of the 7th IEEE/ACM international conference on Hardware/software codesign and system synthesis, pages 433–442, 2009. doi:",
+            "doi": "10.1109/sies.2018.8442077",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Austria, June 6-8, 2018, pages 1–9. IEEE, 2018. doi:10.1109/SIES.2018.8442077. 50 Simon Schliecker and Rolf Ernst. A recursive approach to end-to-end path latency computation in heterogeneous multiprocessor systems. In Proceedings of the 7th IEEE/ACM international conference on Hardware/software codesign and system synthesis, pages 433–442, 2009. doi:"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/sies.2018.8442077",
+                "doi": "10.1109/sies.2018.8442077",
+                "arxivId": "",
+                "title": "Data-Age Analysis and Optimisation for Cause-Effect Chains in Automotive Control Systems",
+                "authors": [
+                  "Johannes Schlatow",
+                  "Mischa Mostl",
+                  "Sebastian Tobuschat",
+                  "Tasuku Ishigooka",
+                  "Rolf Ernst"
+                ],
+                "year": 2018,
+                "venue": "2018 IEEE 13th International Symposium on Industrial Embedded Systems (SIES)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/sies.2018.8442077"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "10",
+            "rawText": "1145/1629435.1629494.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1145/1629435.1629494."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": null,
+            "rawText": "F. Paladino, A. Biondi, E. Bini, and P. Pazzaglia 6:25",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "F. Paladino, A. Biondi, E. Bini, and P. Pazzaglia 6:25"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": null,
+            "rawText": "51 Soham Sinha and Richard West. End-to-end scheduling of real-time task pipelines on multiprocessors. Journal of Systems Research, 2(1), 2022. doi:10.5070/sr32158647. 52 Jinghao Sun, Kailu Duan, Xisheng Li, Nan Guan, Zhishan Guo, Qingxu Deng, and Guozhen Tan. Real-time scheduling of autonomous driving system with guaranteed timing correctness. In IEEE 29th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 185–197, 2023. doi:10.1109/RTAS58335.2023.00022. 53 Yue Tang, Xu Jiang, Nan Guan, Dong Ji, Xiantong Luo, and Wang Yi. Comparing communication paradigms in cause-effect chains. IEEE Transactions on Computers, 72(1):82–96, 2022. doi:10.1109/TC.2022.3197082. 54 Ken Tindell and John Clark. Holistic schedulability analysis for distributed hard real-time systems.",
+            "doi": "10.1109/rtas58335.2023.00022",
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "51 Soham Sinha and Richard West. End-to-end scheduling of real-time task pipelines on multiprocessors. Journal of Systems Research, 2(1), 2022. doi:10.5070/sr32158647. 52 Jinghao Sun, Kailu Duan, Xisheng Li, Nan Guan, Zhishan Guo, Qingxu Deng, and Guozhen Tan. Real-time scheduling of autonomous driving system with guaranteed timing correctness. In IEEE 29th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 185–197, 2023. doi:10.1109/RTAS58335.2023.00022. 53 Yue Tang, Xu Jiang, Nan Guan, Dong Ji, Xiantong Luo, and Wang Yi. Comparing communication paradigms in cause-effect chains. IEEE Transactions on Computers, 72(1):82–96, 2022. doi:10.1109/TC.2022.3197082. 54 Ken Tindell and John Clark. Holistic schedulability analysis for distributed hard real-time systems."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "doi-exact",
+              "confidence": 0.99,
+              "canonical": {
+                "id": "doi:10.1109/tc.2022.3197082",
+                "doi": "10.1109/rtas58335.2023.00022",
+                "arxivId": "",
+                "title": "Comparing Communication Paradigms in Cause-Effect Chains",
+                "authors": [
+                  "Yue Tang",
+                  "Xu Jiang",
+                  "Nan Guan",
+                  "Dong Ji",
+                  "Xiantong Luo",
+                  "Wang Yi"
+                ],
+                "year": 2022,
+                "venue": "IEEE Transactions on Computers",
+                "type": "article",
+                "url": "https://doi.org/10.1109/tc.2022.3197082"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": null,
+            "rawText": "Microprocessing and microprogramming, 40(2-3):117–134, 1994. doi:10.1016/ 0165-6074(94)90080-9. 55 Micaela Verucchi, Mirco Theile, Marco Caccamo, and Marko Bertogna. Latency-aware generation of single-rate DAGs from multi-rate task sets. In 2020 IEEE Real-Time and",
+            "doi": "10.1109/rtas48715.2020.000-4",
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Microprocessing and microprogramming, 40(2-3):117–134, 1994. doi:10.1016/ 0165-6074(94)90080-9. 55 Micaela Verucchi, Mirco Theile, Marco Caccamo, and Marko Bertogna. Latency-aware generation of single-rate DAGs from multi-rate task sets. In 2020 IEEE Real-Time and"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas48715.2020.000-4",
+                "doi": "10.1109/rtas48715.2020.000-4",
+                "arxivId": "",
+                "title": "Latency-Aware Generation of Single-Rate DAGs from Multi-Rate Task Sets",
+                "authors": [
+                  "Micaela Verucchi",
+                  "Mirco Theile",
+                  "Marco Caccamo",
+                  "Marko Bertogna"
+                ],
+                "year": 1994,
+                "venue": "2020 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas48715.2020.000-4"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": null,
+            "rawText": "Embedded Technology and Applications Symposium (RTAS), pages 226–238, 2020. doi:10. 1109/RTAS48715.2020.000-4.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Embedded Technology and Applications Symposium (RTAS), pages 226–238, 2020. doi:10. 1109/RTAS48715.2020.000-4."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2024.6:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 14,
+          "extractedReferenceCount": 36,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1016/s0020-0190(00)00165-4@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1016/s0020-0190(00)00165-4",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1049/sej.1993.0034@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1049/sej.1993.0034",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1016/j.sysarc.2017.09.004@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1016/j.sysarc.2017.09.004",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1016/0167-6423(92)90005-v@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1016/0167-6423(92)90005-v",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1109/tc.2023.3283707@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1109/tc.2023.3283707",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1109/rtas.2018.00032@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1109/rtas.2018.00032",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1145/3358181@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1145/3358181",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1109/iecon.2018.8591550@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1109/iecon.2018.8591550",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1109/rtas52030.2021.00014@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1109/rtas52030.2021.00014",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1145/321738.321743@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1007/s11241-020-09350-3@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1007/s11241-020-09350-3",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1109/sies.2018.8442077@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1109/sies.2018.8442077",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1109/tc.2022.3197082@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1109/tc.2022.3197082",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2024.6->doi:10.1109/rtas48715.2020.000-4@papers-LET-Paladino2024.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2024.6",
+      "target": "doi:10.1109/rtas48715.2020.000-4",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Paladino2024.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Paladino2024",
+      "paperId": "doi:10.4230/lipics.ecrts.2024.6",
+      "metadata": {
+        "fileName": "Paladino2024.pdf",
+        "sourcePath": "papers/LET/Paladino2024.pdf"
+      }
+    }
+  ]
+}

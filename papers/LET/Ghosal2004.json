@@ -1,0 +1,822 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.957990+00:00",
+  "papers": [
+    {
+      "key": "Ghosal2004",
+      "paper": {
+        "id": "doi:10.1007/978-3-540-24743-2_24",
+        "citationKey": "Ghosal2004",
+        "title": "Event-Driven Programming with Logical Execution Times",
+        "authors": [
+          "Arkadeb Ghosal",
+          "Thomas A. Henzinger",
+          "Christoph M. Kirsch",
+          "Marco A. A. Sanvido"
+        ],
+        "year": 2004,
+        "venue": "Hybrid Systems: Computation and Control",
+        "type": "incollection",
+        "doi": "10.1007/978-3-540-24743-2_24",
+        "arxivId": "",
+        "url": "https://doi.org/10.1007/978-3-540-24743-2_24",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models",
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Ghosal, Arkadeb and Henzinger, Thomas A. and Kirsch, Christoph M. and Sanvido, Marco A. A.",
+          "title": "{Event-Driven Programming with Logical Execution Times}",
+          "year": "2004",
+          "booktitle": "Hybrid Systems: Computation and Control",
+          "publisher": "Springer Berlin Heidelberg",
+          "series": "Lecture Notes in Computer Science",
+          "pages": "357--371",
+          "doi": "10.1007/978-3-540-24743-2_24",
+          "url": "https://doi.org/10.1007/978-3-540-24743-2_24",
+          "howpublished": "HSCC"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.066462+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "24_CR1",
+            "rawText": "Burns, A., Wellings, A.: Real-Time Systems and Programming Languages. Addison-Wesley, Reading (2001)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR1",
+              "volume-title": "Real-Time Systems and Programming Languages",
+              "author": "A. Burns",
+              "year": "2001",
+              "unstructured": "Burns, A., Wellings, A.: Real-Time Systems and Programming Languages. Addison-Wesley, Reading (2001)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:24_CR1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "A. Burns"
+                ],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "24_CR2",
+            "rawText": "Buttazzo, G.: Hard Real-Time Computing Systems. Kluwer, Dordrecht (1997)",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR2",
+              "volume-title": "Hard Real-Time Computing Systems",
+              "author": "G. Buttazzo",
+              "year": "1997",
+              "unstructured": "Buttazzo, G.: Hard Real-Time Computing Systems. Kluwer, Dordrecht (1997)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:24_CR2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "G. Buttazzo"
+                ],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "24_CR3",
+            "rawText": "Halbwachs, N.: Synchronous Programming of Reactive Systems. Kluwer, Dordrecht (1993)",
+            "doi": "10.1007/978-1-4757-2231-4",
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR3",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1007/978-1-4757-2231-4",
+              "volume-title": "Synchronous Programming of Reactive Systems",
+              "author": "N. Halbwachs",
+              "year": "1993",
+              "unstructured": "Halbwachs, N.: Synchronous Programming of Reactive Systems. Kluwer, Dordrecht (1993)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-1-4757-2231-4",
+                "doi": "10.1007/978-1-4757-2231-4",
+                "title": "",
+                "authors": [
+                  "N. Halbwachs"
+                ],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-4757-2231-4"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "24_CR4",
+            "rawText": "Girault, A., Ménier, C.: Automatic production of globally asynchronous, locally synchronous systems. In: Sangiovanni-Vincentelli, A.L., Sifakis, J. (eds.) EMSOFT 2002. LNCS, vol. 2491, pp. 266–281. Springer, Heidelberg (2002)",
+            "doi": "10.1007/3-540-45828-x_20",
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR4",
+              "series-title": "Lecture Notes in Computer Science",
+              "doi-asserted-by": "publisher",
+              "first-page": "266",
+              "DOI": "10.1007/3-540-45828-X_20",
+              "volume-title": "Embedded Software",
+              "author": "A. Girault",
+              "year": "2002",
+              "unstructured": "Girault, A., Ménier, C.: Automatic production of globally asynchronous, locally synchronous systems. In: Sangiovanni-Vincentelli, A.L., Sifakis, J. (eds.) EMSOFT 2002. LNCS, vol. 2491, pp. 266–281. Springer, Heidelberg (2002)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-45828-x_20",
+                "doi": "10.1007/3-540-45828-x_20",
+                "title": "Lecture Notes in Computer Science",
+                "authors": [
+                  "A. Girault"
+                ],
+                "year": 2002,
+                "venue": "Lecture Notes in Computer Science",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45828-x_20"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "24_CR5",
+            "rawText": "Girault, A., Nicollin, X.: Clock-driven automatic distribution of Lustre programs. In: Alur, R., Lee, I. (eds.) EMSOFT 2003. LNCS, vol. 2855, pp. 206–222. Springer, Heidelberg (2003)",
+            "doi": "10.1007/978-3-540-45212-6_14",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR5",
+              "series-title": "Lecture Notes in Computer Science",
+              "doi-asserted-by": "publisher",
+              "first-page": "206",
+              "DOI": "10.1007/978-3-540-45212-6_14",
+              "volume-title": "Embedded Software",
+              "author": "A. Girault",
+              "year": "2003",
+              "unstructured": "Girault, A., Nicollin, X.: Clock-driven automatic distribution of Lustre programs. In: Alur, R., Lee, I. (eds.) EMSOFT 2003. LNCS, vol. 2855, pp. 206–222. Springer, Heidelberg (2003)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-540-45212-6_14",
+                "doi": "10.1007/978-3-540-45212-6_14",
+                "title": "Lecture Notes in Computer Science",
+                "authors": [
+                  "A. Girault"
+                ],
+                "year": 2003,
+                "venue": "Lecture Notes in Computer Science",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-540-45212-6_14"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "24_CR6",
+            "rawText": "Henzinger, T.A., Kirsch, C.M., Sanvido, M.A.A., Pree, W.: From control models to real-time code using GIOTTO. IEEE Control Systems Magazine 23, 50–64 (2003)",
+            "doi": "10.1109/mcs.2003.1172829",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR6",
+              "doi-asserted-by": "publisher",
+              "first-page": "50",
+              "DOI": "10.1109/MCS.2003.1172829",
+              "volume": "23",
+              "author": "T.A. Henzinger",
+              "year": "2003",
+              "unstructured": "Henzinger, T.A., Kirsch, C.M., Sanvido, M.A.A., Pree, W.: From control models to real-time code using GIOTTO. IEEE Control Systems Magazine 23, 50–64 (2003)",
+              "journal-title": "IEEE Control Systems Magazine"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/mcs.2003.1172829",
+                "doi": "10.1109/mcs.2003.1172829",
+                "title": "",
+                "authors": [
+                  "T.A. Henzinger"
+                ],
+                "year": 2003,
+                "venue": "IEEE Control Systems Magazine",
+                "type": "",
+                "url": "https://doi.org/10.1109/mcs.2003.1172829"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "24_CR7",
+            "rawText": "Henzinger, T.A., Horowitz, B., Kirsch, C.M.: GIOTTO: a time-triggered language for embedded programming. Proc. IEEE 91, 84–99 (2003)",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR7",
+              "doi-asserted-by": "publisher",
+              "first-page": "84",
+              "DOI": "10.1109/JPROC.2002.805825",
+              "volume": "91",
+              "author": "T.A. Henzinger",
+              "year": "2003",
+              "unstructured": "Henzinger, T.A., Horowitz, B., Kirsch, C.M.: GIOTTO: a time-triggered language for embedded programming. Proc. IEEE 91, 84–99 (2003)",
+              "journal-title": "Proc. IEEE"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [
+                  "T.A. Henzinger"
+                ],
+                "year": 2003,
+                "venue": "Proc. IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "24_CR8",
+            "rawText": "Sanvido, M.A.A., Ghosal, A., Henzinger, T.A.: xGIOTTO language report. Technical Report UCB//CSD-03-1261, UC Berkeley (2003)",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR8",
+              "unstructured": "Sanvido, M.A.A., Ghosal, A., Henzinger, T.A.: xGIOTTO language report. Technical Report UCB//CSD-03-1261, UC Berkeley (2003)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:24_CR8",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "24_CR9",
+            "rawText": "Henzinger, T.A., Kirsch, C.M.: The Embedded Machine: predictable, portable real-time code. In: Proc. Programming Language Design and Implementation, pp. 315–326. ACM, New York (2002)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR9",
+              "first-page": "315",
+              "volume-title": "Proc. Programming Language Design and Implementation",
+              "author": "T.A. Henzinger",
+              "year": "2002",
+              "unstructured": "Henzinger, T.A., Kirsch, C.M.: The Embedded Machine: predictable, portable real-time code. In: Proc. Programming Language Design and Implementation, pp. 315–326. ACM, New York (2002)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:24_CR9",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "T.A. Henzinger"
+                ],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "24_CR10",
+            "rawText": "Henzinger, T.A., Kirsch, C.M., Majumdar, R., Matic, S.: Time-safety checking for embedded programs. In: Sangiovanni-Vincentelli, A.L., Sifakis, J. (eds.) EMSOFT 2002. LNCS, vol. 2491, pp. 76–92. Springer, Heidelberg (2002)",
+            "doi": "10.1007/3-540-45828-x_7",
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR10",
+              "series-title": "Lecture Notes in Computer Science",
+              "doi-asserted-by": "publisher",
+              "first-page": "76",
+              "DOI": "10.1007/3-540-45828-X_7",
+              "volume-title": "Embedded Software",
+              "author": "T.A. Henzinger",
+              "year": "2002",
+              "unstructured": "Henzinger, T.A., Kirsch, C.M., Majumdar, R., Matic, S.: Time-safety checking for embedded programs. In: Sangiovanni-Vincentelli, A.L., Sifakis, J. (eds.) EMSOFT 2002. LNCS, vol. 2491, pp. 76–92. Springer, Heidelberg (2002)"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/3-540-45828-x_7",
+                "doi": "10.1007/3-540-45828-x_7",
+                "title": "Lecture Notes in Computer Science",
+                "authors": [
+                  "T.A. Henzinger"
+                ],
+                "year": 2002,
+                "venue": "Lecture Notes in Computer Science",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45828-x_7"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "24_CR11",
+            "rawText": "Kirsch, C.M., Henzinger, T.A., Sanvido, M.A.A.: A programmable microkernel for real-time systems. Technical Report UCB/CSD-03-1250, UC Berkeley (2003)",
+            "doi": "10.21236/ada603329",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR11",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Kirsch, C.M., Henzinger, T.A., Sanvido, M.A.A.: A programmable microkernel for real-time systems. Technical Report UCB/CSD-03-1250, UC Berkeley (2003)",
+              "DOI": "10.21236/ADA603329"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.21236/ada603329",
+                "doi": "10.21236/ada603329",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.21236/ada603329"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "24_CR12",
+            "rawText": "Liu, J., Lee, E.A.: Timed multitasking for real-time embedded software. IEEE Control Systems Magazine 23, 65–75 (2003)",
+            "doi": "10.1109/mcs.2003.1172830",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR12",
+              "doi-asserted-by": "publisher",
+              "first-page": "65",
+              "DOI": "10.1109/MCS.2003.1172830",
+              "volume": "23",
+              "author": "J. Liu",
+              "year": "2003",
+              "unstructured": "Liu, J., Lee, E.A.: Timed multitasking for real-time embedded software. IEEE Control Systems Magazine 23, 65–75 (2003)",
+              "journal-title": "IEEE Control Systems Magazine"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/mcs.2003.1172830",
+                "doi": "10.1109/mcs.2003.1172830",
+                "title": "",
+                "authors": [
+                  "J. Liu"
+                ],
+                "year": 2003,
+                "venue": "IEEE Control Systems Magazine",
+                "type": "",
+                "url": "https://doi.org/10.1109/MCS.2003.1172830"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "24_CR13",
+            "rawText": "Boussinot, F., de Simone, R.: The Esterel language. Proc. IEEE 79, 1293–1304 (1991)",
+            "doi": "10.1109/5.97299",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR13",
+              "doi-asserted-by": "publisher",
+              "first-page": "1293",
+              "DOI": "10.1109/5.97299",
+              "volume": "79",
+              "author": "F. Boussinot",
+              "year": "1991",
+              "unstructured": "Boussinot, F., de Simone, R.: The Esterel language. Proc. IEEE 79, 1293–1304 (1991)",
+              "journal-title": "Proc. IEEE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/5.97299",
+                "doi": "10.1109/5.97299",
+                "title": "",
+                "authors": [
+                  "F. Boussinot"
+                ],
+                "year": 1991,
+                "venue": "Proc. IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97299"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "24_CR14",
+            "rawText": "Halbwachs, N., Caspi, P., Raymond, P., Pilaud, D.: The synchronous data-flow programming language Lustre. Proc. IEEE 79, 1305–1320 (1991)",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR14",
+              "doi-asserted-by": "publisher",
+              "first-page": "1305",
+              "DOI": "10.1109/5.97300",
+              "volume": "79",
+              "author": "N. Halbwachs",
+              "year": "1991",
+              "unstructured": "Halbwachs, N., Caspi, P., Raymond, P., Pilaud, D.: The synchronous data-flow programming language Lustre. Proc. IEEE 79, 1305–1320 (1991)",
+              "journal-title": "Proc. IEEE"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "title": "",
+                "authors": [
+                  "N. Halbwachs"
+                ],
+                "year": 1991,
+                "venue": "Proc. IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "24_CR15",
+            "rawText": "Bertin, V., Closse, E., Poize, M., Pulou, J., Sifakis, J., Venier, P., Weil, D., Yovine, S.: Taxys = Esterel + Kronos. A tool for verifying real-time properties of embedded systems. Proc. Decision and Control 3, 2875–2880 (2001)",
+            "doi": "10.1109/cdc.2001.980712",
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR15",
+              "doi-asserted-by": "crossref",
+              "first-page": "2875",
+              "DOI": "10.1109/CDC.2001.980712",
+              "volume": "3",
+              "author": "V. Bertin",
+              "year": "2001",
+              "unstructured": "Bertin, V., Closse, E., Poize, M., Pulou, J., Sifakis, J., Venier, P., Weil, D., Yovine, S.: Taxys = Esterel + Kronos. A tool for verifying real-time properties of embedded systems. Proc. Decision and Control 3, 2875–2880 (2001)",
+              "journal-title": "Proc. Decision and Control"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cdc.2001.980712",
+                "doi": "10.1109/cdc.2001.980712",
+                "title": "",
+                "authors": [
+                  "V. Bertin"
+                ],
+                "year": 2001,
+                "venue": "Proc. Decision and Control",
+                "type": "",
+                "url": "https://doi.org/10.1109/cdc.2001.980712"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "24_CR16",
+            "rawText": "Caspi, P., Curic, A., Maignan, A., Sofronis, C., Tripakis, S., Niebert, P.: From Simulink to Scade/Lustre to TTA: a layered approach for distributed embedded applications. In: Proc. Languages, Compilers, and Tools for Embedded Systems, pp. 153–162. ACM, New York (2003)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR16",
+              "first-page": "153",
+              "volume-title": "Proc. Languages, Compilers, and Tools for Embedded Systems",
+              "author": "P. Caspi",
+              "year": "2003",
+              "unstructured": "Caspi, P., Curic, A., Maignan, A., Sofronis, C., Tripakis, S., Niebert, P.: From Simulink to Scade/Lustre to TTA: a layered approach for distributed embedded applications. In: Proc. Languages, Compilers, and Tools for Embedded Systems, pp. 153–162. ACM, New York (2003)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:24_CR16",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "P. Caspi"
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "24_CR17",
+            "rawText": "Gay, D., Levis, P., von Behren, R., Welsh, M., Brewer, E., Culler, D.: The nesC language: a holistic approach to networked embedded systems. In: Proc. Programming Languages Design and Implementation, pp. 1–11. ACM, New York (2003)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR17",
+              "first-page": "1",
+              "volume-title": "Proc. Programming Languages Design and Implementation",
+              "author": "D. Gay",
+              "year": "2003",
+              "unstructured": "Gay, D., Levis, P., von Behren, R., Welsh, M., Brewer, E., Culler, D.: The nesC language: a holistic approach to networked embedded systems. In: Proc. Programming Languages Design and Implementation, pp. 1–11. ACM, New York (2003)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:24_CR17",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "D. Gay"
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "24_CR18",
+            "rawText": "Armstrong, J., Virding, R., Wikström, C., Williams, M.: Concurrent Programming in Erlang. Prentice-Hall, Englewood Cliffs (1992)",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR18",
+              "volume-title": "Concurrent Programming in Erlang",
+              "author": "J. Armstrong",
+              "year": "1992",
+              "unstructured": "Armstrong, J., Virding, R., Wikström, C., Williams, M.: Concurrent Programming in Erlang. Prentice-Hall, Englewood Cliffs (1992)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:24_CR18",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "J. Armstrong"
+                ],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "24_CR19",
+            "rawText": "Kligerman, E., Stoyenko, A.: Real-time Euclid: a language for reliable real-time systems. IEEE Trans. Software Engineering 12, 941–949 (1986)",
+            "doi": "10.1109/tse.1986.6313049",
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR19",
+              "doi-asserted-by": "crossref",
+              "first-page": "941",
+              "DOI": "10.1109/TSE.1986.6313049",
+              "volume": "12",
+              "author": "E. Kligerman",
+              "year": "1986",
+              "unstructured": "Kligerman, E., Stoyenko, A.: Real-time Euclid: a language for reliable real-time systems. IEEE Trans. Software Engineering 12, 941–949 (1986)",
+              "journal-title": "IEEE Trans. Software Engineering"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tse.1986.6313049",
+                "doi": "10.1109/tse.1986.6313049",
+                "title": "",
+                "authors": [
+                  "E. Kligerman"
+                ],
+                "year": 1986,
+                "venue": "IEEE Trans. Software Engineering",
+                "type": "",
+                "url": "https://doi.org/10.1109/tse.1986.6313049"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "24_CR20",
+            "rawText": "Kenny, K., Lin, K.J.: Building flexible real-time systems using the Flex language. IEEE Computer 24, 70–78 (1991)",
+            "doi": "10.1109/2.76288",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "24_CR20",
+              "doi-asserted-by": "crossref",
+              "first-page": "70",
+              "DOI": "10.1109/2.76288",
+              "volume": "24",
+              "author": "K. Kenny",
+              "year": "1991",
+              "unstructured": "Kenny, K., Lin, K.J.: Building flexible real-time systems using the Flex language. IEEE Computer 24, 70–78 (1991)",
+              "journal-title": "IEEE Computer"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/2.76288",
+                "doi": "10.1109/2.76288",
+                "title": "",
+                "authors": [
+                  "K. Kenny"
+                ],
+                "year": 1991,
+                "venue": "IEEE Computer",
+                "type": "",
+                "url": "https://doi.org/10.1109/2.76288"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/978-3-540-24743-2_24",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 5,
+          "extractedReferenceCount": 20,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/978-3-540-24743-2_24",
+          "crossrefReferenceCount": 20
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/978-3-540-24743-2_24->doi:10.1109/mcs.2003.1172829@papers-LET-Ghosal2004.pdf",
+      "source": "doi:10.1007/978-3-540-24743-2_24",
+      "target": "doi:10.1109/mcs.2003.1172829",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2004.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-540-24743-2_24->doi:10.1109/jproc.2002.805825@papers-LET-Ghosal2004.pdf",
+      "source": "doi:10.1007/978-3-540-24743-2_24",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2004.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-540-24743-2_24->doi:10.1007/3-540-45828-x_7@papers-LET-Ghosal2004.pdf",
+      "source": "doi:10.1007/978-3-540-24743-2_24",
+      "target": "doi:10.1007/3-540-45828-x_7",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2004.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-540-24743-2_24->doi:10.1109/mcs.2003.1172830@papers-LET-Ghosal2004.pdf",
+      "source": "doi:10.1007/978-3-540-24743-2_24",
+      "target": "doi:10.1109/mcs.2003.1172830",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2004.pdf"
+    },
+    {
+      "id": "doi:10.1007/978-3-540-24743-2_24->doi:10.1109/5.97300@papers-LET-Ghosal2004.pdf",
+      "source": "doi:10.1007/978-3-540-24743-2_24",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2004.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Ghosal2004",
+      "paperId": "doi:10.1007/978-3-540-24743-2_24",
+      "metadata": {
+        "fileName": "Ghosal2004.pdf",
+        "sourcePath": "papers/LET/Ghosal2004.pdf"
+      }
+    }
+  ]
+}

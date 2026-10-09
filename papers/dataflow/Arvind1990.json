@@ -1,0 +1,1603 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.406776+00:00",
+  "papers": [
+    {
+      "key": "Arvind1990",
+      "paper": {
+        "id": "doi:10.1109/12.48862",
+        "citationKey": "Arvind1990",
+        "title": "Executing a Program on the MIT Tagged-Token Dataflow Architecture",
+        "authors": [
+          "Arvind",
+          "Rishiyur S. Nikhil"
+        ],
+        "year": 1990,
+        "venue": "IEEE Transactions on Computers",
+        "type": "article",
+        "doi": "10.1109/12.48862",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/12.48862",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "{Arvind} and Nikhil, Rishiyur S.",
+          "title": "Executing a Program on the {MIT} Tagged-Token Dataflow Architecture",
+          "journal": "IEEE Transactions on Computers",
+          "volume": "39",
+          "number": "3",
+          "pages": "300--318",
+          "month": "mar",
+          "year": "1990",
+          "doi": "10.1109/12.48862",
+          "url": "https://doi.org/10.1109/12.48862"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.097758+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref39",
+            "rawText": "smith. A pipelined, shared resource MIMD computer. 1978. Proc 1978 Int Conf Parallel Processing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref39",
+              "first-page": "6",
+              "article-title": "A pipelined, shared resource MIMD computer",
+              "author": "smith",
+              "year": "1978",
+              "journal-title": "Proc 1978 Int Conf Parallel Processing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref39",
+                "doi": "",
+                "title": "A pipelined, shared resource MIMD computer",
+                "authors": [
+                  "smith"
+                ],
+                "year": 1978,
+                "venue": "Proc 1978 Int Conf Parallel Processing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref38",
+            "rawText": "https://doi.org/10.1145/319838.319863",
+            "doi": "10.1145/319838.319863",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref38",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/319838.319863"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/319838.319863",
+                "doi": "10.1145/319838.319863",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/319838.319863"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref33",
+            "rawText": "nikhil. 1987. Id World rcfcrence manual",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref33",
+              "author": "nikhil",
+              "year": "1987",
+              "journal-title": "Id World rcfcrence manual"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref33",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "nikhil"
+                ],
+                "year": 1987,
+                "venue": "Id World rcfcrence manual",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref32",
+            "rawText": "1985. Advanced Product Information User's Manual ?PD7281",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref32",
+              "year": "1985",
+              "journal-title": "Advanced Product Information User's Manual ?PD7281"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref32",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 1985,
+                "venue": "Advanced Product Information User's Manual ?PD7281",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref31",
+            "rawText": "https://doi.org/10.1145/800055.802035",
+            "doi": "10.1145/800055.802035",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref31",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/800055.802035"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/800055.802035",
+                "doi": "10.1145/800055.802035",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/800055.802035"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref30",
+            "rawText": "mcgraw. 1984. Sisal reference manual",
+            "doi": null,
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref30",
+              "author": "mcgraw",
+              "year": "1984",
+              "journal-title": "Sisal reference manual"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref30",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "mcgraw"
+                ],
+                "year": 1984,
+                "venue": "Sisal reference manual",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref37",
+            "rawText": "peyton-jones. GRIP?A high performance architecture for parallel graph reduction. 1987. Proc 3rd Int Conf Functional Programming Comput Architecture. https://doi.org/10.1007/3-540-18317-5_7",
+            "doi": "10.1007/3-540-18317-5_7",
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref37",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1007/3-540-18317-5_7",
+              "article-title": "GRIP?A high performance architecture for parallel graph reduction",
+              "author": "peyton-jones",
+              "year": "1987",
+              "journal-title": "Proc 3rd Int Conf Functional Programming Comput Architecture"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-18317-5_7",
+                "doi": "10.1007/3-540-18317-5_7",
+                "title": "GRIP?A high performance architecture for parallel graph reduction",
+                "authors": [
+                  "peyton-jones"
+                ],
+                "year": 1987,
+                "venue": "Proc 3rd Int Conf Functional Programming Comput Architecture",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-18317-5_7"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref36",
+            "rawText": "papadopoulos. 1988. Implementation of a General-Purpose Dataflow Multiprocessor",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref36",
+              "author": "papadopoulos",
+              "year": "1988",
+              "journal-title": "Implementation of a General-Purpose Dataflow Multiprocessor"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref36",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "papadopoulos"
+                ],
+                "year": 1988,
+                "venue": "Implementation of a General-Purpose Dataflow Multiprocessor",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref35",
+            "rawText": "https://doi.org/10.1145/7902.7904",
+            "doi": "10.1145/7902.7904",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref35",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/7902.7904"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/7902.7904",
+                "doi": "10.1145/7902.7904",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/7902.7904"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref34",
+            "rawText": "1988. Id (Version 88 1) Reference Manual",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref34",
+              "year": "1988",
+              "journal-title": "Id (Version 88 1) Reference Manual"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref34",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 1988,
+                "venue": "Id (Version 88 1) Reference Manual",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref10",
+            "rawText": "gostelow. 1978. An asynchronous programming language and computing machine",
+            "doi": null,
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "author": "gostelow",
+              "year": "1978",
+              "journal-title": "An asynchronous programming language and computing machine"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "gostelow"
+                ],
+                "year": 1978,
+                "venue": "An asynchronous programming language and computing machine",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref40",
+            "rawText": "takahashi. A dataflow processor array system: Design and analysis. 1983. Proc Int Symp Computer Architecture. https://doi.org/10.1145/1067651.801662",
+            "doi": "10.1145/1067651.801662",
+            "arxivId": null,
+            "year": 1983,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref40",
+              "doi-asserted-by": "crossref",
+              "first-page": "243",
+              "DOI": "10.1145/1067651.801662",
+              "article-title": "A dataflow processor array system: Design and analysis",
+              "author": "takahashi",
+              "year": "1983",
+              "journal-title": "Proc Int Symp Computer Architecture"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1067651.801662",
+                "doi": "10.1145/1067651.801662",
+                "title": "A dataflow processor array system: Design and analysis",
+                "authors": [
+                  "takahashi"
+                ],
+                "year": 1983,
+                "venue": "Proc Int Symp Computer Architecture",
+                "type": "",
+                "url": "https://doi.org/10.1145/1067651.801662"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref11",
+            "rawText": "arvind. Two fundamental issues in multiprocessing. 1987. Proc DFVLR?Conf 1987 Parallel Processing Sci Eng",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "article-title": "Two fundamental issues in multiprocessing",
+              "author": "arvind",
+              "year": "1987",
+              "journal-title": "Proc DFVLR?Conf 1987 Parallel Processing Sci Eng"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref11",
+                "doi": "",
+                "title": "Two fundamental issues in multiprocessing",
+                "authors": [
+                  "arvind"
+                ],
+                "year": 1987,
+                "venue": "Proc DFVLR?Conf 1987 Parallel Processing Sci Eng",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref12",
+            "rawText": "arvind. I-Structures: Data structures for parallel computing. 1986. Proc Workshop on Graph Reduction",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "article-title": "I-Structures: Data structures for parallel computing",
+              "volume": "279",
+              "author": "arvind",
+              "year": "1986",
+              "journal-title": "Proc Workshop on Graph Reduction"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref12",
+                "doi": "",
+                "title": "I-Structures: Data structures for parallel computing",
+                "authors": [
+                  "arvind"
+                ],
+                "year": 1986,
+                "venue": "Proc Workshop on Graph Reduction",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref13",
+            "rawText": "arvind. 1987. Id Nouveau reference manual Part II Semantics",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "author": "arvind",
+              "year": "1987",
+              "journal-title": "Id Nouveau reference manual Part II Semantics"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref13",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "arvind"
+                ],
+                "year": 1987,
+                "venue": "Id Nouveau reference manual Part II Semantics",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref14",
+            "rawText": "arvind. 1980. I-structures An Efficient Data Type for Parallel Machines",
+            "doi": null,
+            "arxivId": null,
+            "year": 1980,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "author": "arvind",
+              "year": "1980",
+              "journal-title": "I-structures An Efficient Data Type for Parallel Machines"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref14",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "arvind"
+                ],
+                "year": 1980,
+                "venue": "I-structures An Efficient Data Type for Parallel Machines",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref15",
+            "rawText": "augustsson. 1988. Lazy ML User's Manual",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "author": "augustsson",
+              "year": "1988",
+              "journal-title": "Lazy ML User's Manual"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref15",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "augustsson"
+                ],
+                "year": 1988,
+                "venue": "Lazy ML User's Manual",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref16",
+            "rawText": "culler. 1985. Resource management for the tagged token dataflow architecture",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "author": "culler",
+              "year": "1985",
+              "journal-title": "Resource management for the tagged token dataflow architecture"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref16",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "culler"
+                ],
+                "year": 1985,
+                "venue": "Resource management for the tagged token dataflow architecture",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref17",
+            "rawText": "1989. Effective dataflow execution of scientific applications",
+            "doi": null,
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "year": "1989",
+              "journal-title": "Effective dataflow execution of scientific applications"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref17",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 1989,
+                "venue": "Effective dataflow execution of scientific applications",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref18",
+            "rawText": "dennis. First version of a data flow procedure language. 1974. Proc Programming Symp. https://doi.org/10.1007/3-540-06859-7_145",
+            "doi": "10.1007/3-540-06859-7_145",
+            "arxivId": null,
+            "year": 1974,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1007/3-540-06859-7_145",
+              "article-title": "First version of a data flow procedure language",
+              "volume": "19",
+              "author": "dennis",
+              "year": "1974",
+              "journal-title": "Proc Programming Symp"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-06859-7_145",
+                "doi": "10.1007/3-540-06859-7_145",
+                "title": "First version of a data flow procedure language",
+                "authors": [
+                  "dennis"
+                ],
+                "year": 1974,
+                "venue": "Proc Programming Symp",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-06859-7_145"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref19",
+            "rawText": "fairbairn. TIM: A simple abstract machine for executing supercombinators. 1987. Proc 1987 Functional Programming Comput Architecture Conf",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "article-title": "TIM: A simple abstract machine for executing supercombinators",
+              "author": "fairbairn",
+              "year": "1987",
+              "journal-title": "Proc 1987 Functional Programming Comput Architecture Conf"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref19",
+                "doi": "",
+                "title": "TIM: A simple abstract machine for executing supercombinators",
+                "authors": [
+                  "fairbairn"
+                ],
+                "year": 1987,
+                "venue": "Proc 1987 Functional Programming Comput Architecture Conf",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref28",
+            "rawText": "https://doi.org/10.1145/567532.567555",
+            "doi": "10.1145/567532.567555",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref28",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/567532.567555"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/567532.567555",
+                "doi": "10.1145/567532.567555",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/567532.567555"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref4",
+            "rawText": "https://doi.org/10.1016/0743-7315(84)90008-x",
+            "doi": "10.1016/0743-7315(84)90008-x",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0743-7315(84)90008-X"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0743-7315(84)90008-x",
+                "doi": "10.1016/0743-7315(84)90008-x",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0743-7315(84)90008-x"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "ref27",
+            "rawText": "Lambda lifting: Transforming programs to recursive equations. 1985. Proc ACM Symp Functional Programming Languages and Computer Architecture",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref27",
+              "article-title": "Lambda lifting: Transforming programs to recursive equations",
+              "volume": "201",
+              "year": "1985",
+              "journal-title": "Proc ACM Symp Functional Programming Languages and Computer Architecture"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref27",
+                "doi": "",
+                "title": "Lambda lifting: Transforming programs to recursive equations",
+                "authors": [],
+                "year": 1985,
+                "venue": "Proc ACM Symp Functional Programming Languages and Computer Architecture",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "ref3",
+            "rawText": "amamiya. A list-oriented data flow machine. 1982. Proc Nat Comput Conf",
+            "doi": null,
+            "arxivId": null,
+            "year": 1982,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "first-page": "143",
+              "article-title": "A list-oriented data flow machine",
+              "author": "amamiya",
+              "year": "1982",
+              "journal-title": "Proc Nat Comput Conf"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref3",
+                "doi": "",
+                "title": "A list-oriented data flow machine",
+                "authors": [
+                  "amamiya"
+                ],
+                "year": 1982,
+                "venue": "Proc Nat Comput Conf",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "ref6",
+            "rawText": "arvind. 1986. Fifth Generation Computer Architectures 1986",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "first-page": "103",
+              "author": "arvind",
+              "year": "1986",
+              "journal-title": "Fifth Generation Computer Architectures 1986"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref6",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "arvind"
+                ],
+                "year": 1986,
+                "venue": "Fifth Generation Computer Architectures 1986",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "ref29",
+            "rawText": "kuck. 1983. The architecture and programming of the Cedar System",
+            "doi": null,
+            "arxivId": null,
+            "year": 1983,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref29",
+              "author": "kuck",
+              "year": "1983",
+              "journal-title": "The architecture and programming of the Cedar System"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref29",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "kuck"
+                ],
+                "year": 1983,
+                "venue": "The architecture and programming of the Cedar System",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "ref5",
+            "rawText": "arvind. 1986. Annual reviews in computer science. https://doi.org/10.1146/annurev.cs.01.060186.001301",
+            "doi": "10.1146/annurev.cs.01.060186.001301",
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "crossref",
+              "first-page": "225",
+              "DOI": "10.1146/annurev.cs.01.060186.001301",
+              "volume": "1",
+              "author": "arvind",
+              "year": "1986",
+              "journal-title": "Annual reviews in computer science"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1146/annurev.cs.01.060186.001301",
+                "doi": "10.1146/annurev.cs.01.060186.001301",
+                "title": "",
+                "authors": [
+                  "arvind"
+                ],
+                "year": 1986,
+                "venue": "Annual reviews in computer science",
+                "type": "",
+                "url": "https://doi.org/10.1146/annurev.cs.01.060186.001301"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1016/0743-7315(88)90009-3",
+            "doi": "10.1016/0743-7315(88)90009-3",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0743-7315(88)90009-3"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0743-7315(88)90009-3",
+                "doi": "10.1016/0743-7315(88)90009-3",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0743-7315(88)90009-3"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "ref7",
+            "rawText": "https://doi.org/10.1177/109434208800200303",
+            "doi": "10.1177/109434208800200303",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/109434208800200303"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1177/109434208800200303",
+                "doi": "10.1177/109434208800200303",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1177/109434208800200303"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "ref2",
+            "rawText": "allen. 1982. PFC A Program to Convert Fortran to Parallel Form",
+            "doi": null,
+            "arxivId": null,
+            "year": 1982,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "author": "allen",
+              "year": "1982",
+              "journal-title": "PFC A Program to Convert Fortran to Parallel Form"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "allen"
+                ],
+                "year": 1982,
+                "venue": "PFC A Program to Convert Fortran to Parallel Form",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1109/mc.1982.1653940",
+            "doi": "10.1109/mc.1982.1653940",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MC.1982.1653940"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mc.1982.1653940",
+                "doi": "10.1109/mc.1982.1653940",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mc.1982.1653940"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "ref1",
+            "rawText": "ackerman. 1979. VAL?A value-oriented algorithmic language Preliminary reference manual",
+            "doi": null,
+            "arxivId": null,
+            "year": 1979,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "author": "ackerman",
+              "year": "1979",
+              "journal-title": "VAL?A value-oriented algorithmic language Preliminary reference manual"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "ackerman"
+                ],
+                "year": 1979,
+                "venue": "VAL?A value-oriented algorithmic language Preliminary reference manual",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "ref46",
+            "rawText": "Miranda, A non-strict functional language with polymorphic types. 1985. Proc ACM Symp Functional Programming Languages and Computer Architecture. https://doi.org/10.1007/3-540-15975-4_26",
+            "doi": "10.1007/3-540-15975-4_26",
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref46",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "DOI": "10.1007/3-540-15975-4_26",
+              "article-title": "Miranda, A non-strict functional language with polymorphic types",
+              "volume": "201",
+              "year": "1985",
+              "journal-title": "Proc ACM Symp Functional Programming Languages and Computer Architecture"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-15975-4_26",
+                "doi": "10.1007/3-540-15975-4_26",
+                "title": "Miranda, A non-strict functional language with polymorphic types",
+                "authors": [],
+                "year": 1985,
+                "venue": "Proc ACM Symp Functional Programming Languages and Computer Architecture",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-15975-4_26"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "ref20",
+            "rawText": "goldberg. 1986. Alfalfa Distributed graph reduction on a hypercube multiprocessor",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "author": "goldberg",
+              "year": "1986",
+              "journal-title": "Alfalfa Distributed graph reduction on a hypercube multiprocessor"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref20",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "goldberg"
+                ],
+                "year": 1986,
+                "venue": "Alfalfa Distributed graph reduction on a hypercube multiprocessor",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "ref45",
+            "rawText": "https://doi.org/10.1002/spe.4380090105",
+            "doi": "10.1002/spe.4380090105",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref45",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1002/spe.4380090105"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1002/spe.4380090105",
+                "doi": "10.1002/spe.4380090105",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1002/spe.4380090105"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "ref48",
+            "rawText": "yuba. 1984. Sigma-1 a dataflow computer for scientific computation",
+            "doi": null,
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref48",
+              "author": "yuba",
+              "year": "1984",
+              "journal-title": "Sigma-1 a dataflow computer for scientific computation"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref48",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "yuba"
+                ],
+                "year": 1984,
+                "venue": "Sigma-1 a dataflow computer for scientific computation",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "ref22",
+            "rawText": "https://doi.org/10.1145/2465.2468",
+            "doi": "10.1145/2465.2468",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2465.2468"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/2465.2468",
+                "doi": "10.1145/2465.2468",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2465.2468"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "ref47",
+            "rawText": "wadge. 1985. Lucid the Dataflow Programming Language",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref47",
+              "author": "wadge",
+              "year": "1985",
+              "journal-title": "Lucid the Dataflow Programming Language"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref47",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "wadge"
+                ],
+                "year": 1985,
+                "venue": "Lucid the Dataflow Programming Language",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "ref21",
+            "rawText": "https://doi.org/10.1109/tc.1983.1676201",
+            "doi": "10.1109/tc.1983.1676201",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.1983.1676201"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tc.1983.1676201",
+                "doi": "10.1109/tc.1983.1676201",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.1983.1676201"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "ref42",
+            "rawText": "temma. Dataflow processor for image processing. 1980. Proc 15th Int Symp Mini and Microcomputers",
+            "doi": null,
+            "arxivId": null,
+            "year": 1980,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref42",
+              "first-page": "52",
+              "article-title": "Dataflow processor for image processing",
+              "author": "temma",
+              "year": "1980",
+              "journal-title": "Proc 15th Int Symp Mini and Microcomputers"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref42",
+                "doi": "",
+                "title": "Dataflow processor for image processing",
+                "authors": [
+                  "temma"
+                ],
+                "year": 1980,
+                "venue": "Proc 15th Int Symp Mini and Microcomputers",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "ref24",
+            "rawText": "hudak. Serial combinators: \"Optimal\" grains o� parallelism. 1985. Proc Functional Programming Languages Architures. https://doi.org/10.1007/3-540-15975-4_49",
+            "doi": "10.1007/3-540-15975-4_49",
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref24",
+              "doi-asserted-by": "crossref",
+              "first-page": "382",
+              "DOI": "10.1007/3-540-15975-4_49",
+              "article-title": "Serial combinators: \"Optimal\" grains o� parallelism",
+              "volume": "201",
+              "author": "hudak",
+              "year": "1985",
+              "journal-title": "Proc Functional Programming Languages Architures"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-15975-4_49",
+                "doi": "10.1007/3-540-15975-4_49",
+                "title": "Serial combinators: \"Optimal\" grains o� parallelism",
+                "authors": [
+                  "hudak"
+                ],
+                "year": 1985,
+                "venue": "Proc Functional Programming Languages Architures",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-15975-4_49"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "ref41",
+            "rawText": "tang. 1984. An implementation of Cedar synchronization primitives",
+            "doi": null,
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref41",
+              "author": "tang",
+              "year": "1984",
+              "journal-title": "An implementation of Cedar synchronization primitives"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref41",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "tang"
+                ],
+                "year": 1984,
+                "venue": "An implementation of Cedar synchronization primitives",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "ref23",
+            "rawText": "hiraki. 1987. System architecture of a dataflow supercomputer",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23",
+              "author": "hiraki",
+              "year": "1987",
+              "journal-title": "System architecture of a dataflow supercomputer"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref23",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "hiraki"
+                ],
+                "year": 1987,
+                "venue": "System architecture of a dataflow supercomputer",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "ref44",
+            "rawText": "1988. Sequential implementation of non-strict languages",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref44",
+              "year": "1988",
+              "journal-title": "Sequential implementation of non-strict languages"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref44",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 1988,
+                "venue": "Sequential implementation of non-strict languages",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "ref26",
+            "rawText": "https://doi.org/10.1145/502949.502880",
+            "doi": "10.1145/502949.502880",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref26",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/502949.502880"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/502949.502880",
+                "doi": "10.1145/502949.502880",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/502949.502880"
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "ref43",
+            "rawText": "traub. 1986. A Compiler for the MIT Tagged-token Dataflow Architecture",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref43",
+              "author": "traub",
+              "year": "1986",
+              "journal-title": "A Compiler for the MIT Tagged-token Dataflow Architecture"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref43",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "traub"
+                ],
+                "year": 1986,
+                "venue": "A Compiler for the MIT Tagged-token Dataflow Architecture",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "ref25",
+            "rawText": "https://doi.org/10.1109/isca.1988.5222",
+            "doi": "10.1109/isca.1988.5222",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref25",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISCA.1988.5222"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isca.1988.5222",
+                "doi": "10.1109/isca.1988.5222",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isca.1988.5222"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/12.48862",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 48,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/12.48862",
+          "crossrefReferenceCount": 48
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/12.48862->doi:10.1145/2465.2468@papers-dataflow-Arvind1990.pdf",
+      "source": "doi:10.1109/12.48862",
+      "target": "doi:10.1145/2465.2468",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Arvind1990.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Arvind1990",
+      "paperId": "doi:10.1109/12.48862",
+      "metadata": {
+        "fileName": "Arvind1990.pdf",
+        "sourcePath": "papers/dataflow/Arvind1990.pdf"
+      }
+    }
+  ]
+}

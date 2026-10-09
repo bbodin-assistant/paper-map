@@ -1,0 +1,1584 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:48.034915+00:00",
+  "papers": [
+    {
+      "key": "Wang2021",
+      "paper": {
+        "id": "doi:10.48550/arxiv.2105.02200",
+        "citationKey": "Wang2021",
+        "title": "Distributed Time- and Event-Triggered Observers for Linear Systems: Non-Pathological Sampling and Inter-Event Dynamics",
+        "authors": [
+          "Shimin Wang",
+          "Zhan Shu",
+          "Tongwen Chen"
+        ],
+        "year": 2021,
+        "venue": "Preprint",
+        "type": "misc",
+        "doi": "10.48550/arXiv.2105.02200",
+        "arxivId": "",
+        "url": "https://arxiv.org/abs/2105.02200",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Shimin Wang and Zhan Shu and Tongwen Chen",
+          "title": "{Distributed Time- and Event-Triggered Observers for Linear Systems: Non-Pathological Sampling and Inter-Event Dynamics}",
+          "year": "2021",
+          "howpublished": "Preprint",
+          "doi": "10.48550/arXiv.2105.02200",
+          "url": "https://arxiv.org/abs/2105.02200"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.320738+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "A. V. Proskurnikov and M. Cao, “Synchronization of pulse-coupled oscillators and clocks under minimal connectivity assumptions,” IEEE Transactions on Automatic Control, vol. 62, no. 11, pp. 5873–5879, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. V. Proskurnikov and M. Cao, “Synchronization of pulse-coupled oscillators and clocks under minimal connectivity assumptions,” IEEE Transactions on Automatic Control, vol. 62, no. 11, pp. 5873–5879, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "J. I. Poveda and A. R. Teel, “Hybrid mechanisms for robust synchronization and coordination of multi-agent The matrix (45) is the upper triangular matrix, provided that JH and JS are the Jordan form. Thus all the eigenvalues of F (µ) are in the main diagonal, which completes the proof. □ 15 0 eJSτdτ. (45) networked sampled-data systems,” Automatica, vol. 99, pp. 41–53, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. I. Poveda and A. R. Teel, “Hybrid mechanisms for robust synchronization and coordination of multi-agent The matrix (45) is the upper triangular matrix, provided that JH and JS are the Jordan form. Thus all the eigenvalues of F (µ) are in the main diagonal, which completes the proof. □ 15 0 eJSτdτ. (45) networked sampled-data systems,” Automatica, vol. 99, pp. 41–53, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "W. Ren and R. W. Beard, “Consensus seeking in multiagent systems under dynamically changing interaction topologies,” IEEE Transactions on Automatic Control, vol. 50, no. 5, pp. 655–661, 2005.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Ren and R. W. Beard, “Consensus seeking in multiagent systems under dynamically changing interaction topologies,” IEEE Transactions on Automatic Control, vol. 50, no. 5, pp. 655–661, 2005."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "F. D. Priscoli, A. Isidori, L. Marconi, and A. Pietrabissa, “Leader-following coordination of nonlinear agents under time-varying communication topologies,” IEEE Transactions on Control of Network Systems, vol. 2, no. 4, pp. 393–405, 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "F. D. Priscoli, A. Isidori, L. Marconi, and A. Pietrabissa, “Leader-following coordination of nonlinear agents under time-varying communication topologies,” IEEE Transactions on Control of Network Systems, vol. 2, no. 4, pp. 393–405, 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "S. Mou, M. Cao, and A. S. Morse, “Target-point formation control,” Automatica, vol. 61, pp. 113–118, 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Mou, M. Cao, and A. S. Morse, “Target-point formation control,” Automatica, vol. 61, pp. 113–118, 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "R. Vidal, O. Shakernia, and S. Sastry, “Formation control of nonholonomic mobile robots with omnidirectional visual servoing and motion segmentation,” in 2003 IEEE International Conference on Robotics and Automation, vol. 1. IEEE, 2003, pp. 584–589.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Vidal, O. Shakernia, and S. Sastry, “Formation control of nonholonomic mobile robots with omnidirectional visual servoing and motion segmentation,” in 2003 IEEE International Conference on Robotics and Automation, vol. 1. IEEE, 2003, pp. 584–589."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Y. Wu, A. Isidori, and R. Lu, “On the design of distributed observers for nonlinear systems,” IEEE Transactions on Automatic Control, vol. 67, no. 7, pp. 3229– 3242, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Y. Wu, A. Isidori, and R. Lu, “On the design of distributed observers for nonlinear systems,” IEEE Transactions on Automatic Control, vol. 67, no. 7, pp. 3229– 3242, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "R. Olfati-Saber, “Distributed kalman ﬁltering for sensor networks,” in 2007 46th IEEE Conference on Decision and Control. IEEE, 2007, pp. 5492–5498.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Olfati-Saber, “Distributed kalman ﬁltering for sensor networks,” in 2007 46th IEEE Conference on Decision and Control. IEEE, 2007, pp. 5492–5498."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Y. Su and J. Huang, “Cooperative output regulation of linear multi-agent systems,” IEEE Transactions on Automatic Control, vol. 57, no. 4, pp. 1062–1066, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Y. Su and J. Huang, “Cooperative output regulation of linear multi-agent systems,” IEEE Transactions on Automatic Control, vol. 57, no. 4, pp. 1062–1066, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "L. Wang and A. S. Morse, “A distributed observer for a time-invariant linear system,” IEEE Transactions on Automatic Control, vol. 63, no. 7, pp. 2123–2130, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "L. Wang and A. S. Morse, “A distributed observer for a time-invariant linear system,” IEEE Transactions on Automatic Control, vol. 63, no. 7, pp. 2123–2130, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "A. Mitra and S. Sundaram, “Distributed observers for lti systems,” IEEE Transactions on Automatic Control, vol. 63, no. 11, pp. 3689–3704, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Mitra and S. Sundaram, “Distributed observers for lti systems,” IEEE Transactions on Automatic Control, vol. 63, no. 11, pp. 3689–3704, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "W. Han, H. L. Trentelman, Z. Wang, and Y. Shen, “A simple approach to distributed observer design for linear systems,” IEEE Transactions on Automatic Control, vol. 64, no. 1, pp. 329–336, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Han, H. L. Trentelman, Z. Wang, and Y. Shen, “A simple approach to distributed observer design for linear systems,” IEEE Transactions on Automatic Control, vol. 64, no. 1, pp. 329–336, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "T. Kim, C. Lee, and H. Shim, “Completely decentralized design of distributed observer for linear systems,” IEEE Transactions on Automatic Control, vol. 65, no. 11, pp. 4664–4678, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Kim, C. Lee, and H. Shim, “Completely decentralized design of distributed observer for linear systems,” IEEE Transactions on Automatic Control, vol. 65, no. 11, pp. 4664–4678, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "T. Liu and J. Huang, “Cooperative robust output regulation for a class of nonlinear multi-agent systems subject to a nonlinear leader system,” Automatica, vol. 108, p. 108501, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Liu and J. Huang, “Cooperative robust output regulation for a class of nonlinear multi-agent systems subject to a nonlinear leader system,” Automatica, vol. 108, p. 108501, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "T. Chen and B. A. Francis, Optimal sampled-data control systems. London U.K.: Springer Science & Business Media, 1995.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Chen and B. A. Francis, Optimal sampled-data control systems. London U.K.: Springer Science & Business Media, 1995."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "——, “H2-optimal sampled-data control,” IEEE Transactions on Automatic Control, vol. 36, no. 4, pp. 387–397, 1991.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "——, “H2-optimal sampled-data control,” IEEE Transactions on Automatic Control, vol. 36, no. 4, pp. 387–397, 1991."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "K. J. Astrom and B. M. Bernhardsson, “Comparison of Riemann and Lebesgue sampling for ﬁrst order stochastic systems,” in Proceedings of the 41st IEEE Conference on Decision and Control, 2002., vol. 2. IEEE, 2002, pp. 2011–2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "K. J. Astrom and B. M. Bernhardsson, “Comparison of Riemann and Lebesgue sampling for ﬁrst order stochastic systems,” in Proceedings of the 41st IEEE Conference on Decision and Control, 2002., vol. 2. IEEE, 2002, pp. 2011–2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "X. Meng and T. Chen, “Optimal sampling and performance comparison of periodic and event based impulse control,” IEEE Transactions on Automatic Control, vol. 57, no. 12, pp. 3252–3259, 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "X. Meng and T. Chen, “Optimal sampling and performance comparison of periodic and event based impulse control,” IEEE Transactions on Automatic Control, vol. 57, no. 12, pp. 3252–3259, 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "D. P. Borgers and W. M. H. Heemels, “Event-separation properties of event-triggered control systems,” IEEE Transactions on Automatic Control, vol. 59, no. 10, pp. 2644–2656, 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. P. Borgers and W. M. H. Heemels, “Event-separation properties of event-triggered control systems,” IEEE Transactions on Automatic Control, vol. 59, no. 10, pp. 2644–2656, 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "H. Yu and T. Chen, “On zeno behavior in eventtriggered ﬁnite-time consensus of multi-agent systems,” IEEE Transactions on Automatic Control, vol. 66, no. 10, pp. 4700 – 4714, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Yu and T. Chen, “On zeno behavior in eventtriggered ﬁnite-time consensus of multi-agent systems,” IEEE Transactions on Automatic Control, vol. 66, no. 10, pp. 4700 – 4714, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "W. Liu and J. Huang, “Event-triggered cooperative robust practical output regulation for a class of linear multiagent systems,” Automatica, vol. 85, pp. 158–164, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Liu and J. Huang, “Event-triggered cooperative robust practical output regulation for a class of linear multiagent systems,” Automatica, vol. 85, pp. 158–164, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "——, “Cooperative global robust output regulation for a class of nonlinear multi-agent systems by distributed event-triggered control,” Automatica, vol. 93, pp. 138– 148, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "——, “Cooperative global robust output regulation for a class of nonlinear multi-agent systems by distributed event-triggered control,” Automatica, vol. 93, pp. 138– 148, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "W. Hu, L. Liu, and G. Feng, “Cooperative output regulation of linear multi-agent systems by intermittent communication: A uniﬁed framework of timeand eventtriggering strategies,” IEEE Transactions on Automatic Control, vol. 63, no. 2, pp. 548–555, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Hu, L. Liu, and G. Feng, “Cooperative output regulation of linear multi-agent systems by intermittent communication: A uniﬁed framework of timeand eventtriggering strategies,” IEEE Transactions on Automatic Control, vol. 63, no. 2, pp. 548–555, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "——, “Event-triggered cooperative output regulation of linear multi-agent systems under jointly connected topologies,” IEEE Transactions on Automatic Control, vol. 64, no. 3, pp. 1317–1322, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "——, “Event-triggered cooperative output regulation of linear multi-agent systems under jointly connected topologies,” IEEE Transactions on Automatic Control, vol. 64, no. 3, pp. 1317–1322, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "C. Deng, C. Wen, J. Huang, X.-M. Zhang, and Y. Zou, “Distributed observer-based cooperative control approach for uncertain nonlinear mass under event-triggered communication,” IEEE Transactions on Automatic Control, vol. 67, no. 5, pp. 2669–2676, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. Deng, C. Wen, J. Huang, X.-M. Zhang, and Y. Zou, “Distributed observer-based cooperative control approach for uncertain nonlinear mass under event-triggered communication,” IEEE Transactions on Automatic Control, vol. 67, no. 5, pp. 2669–2676, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "X. Meng and T. Chen, “Event based agreement protocols for multi-agent networks,” Automatica, vol. 49, no. 7, pp. 2125–2132, 2013.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "X. Meng and T. Chen, “Event based agreement protocols for multi-agent networks,” Automatica, vol. 49, no. 7, pp. 2125–2132, 2013."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "27",
+            "rawText": "T. Liu, M. Cao, C. De Persis, and J. M. Hendrickx, “Distributed event-triggered control for asymptotic synchronization of dynamical networks,” Automatica, vol. 86, pp. 199–204, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Liu, M. Cao, C. De Persis, and J. M. Hendrickx, “Distributed event-triggered control for asymptotic synchronization of dynamical networks,” Automatica, vol. 86, pp. 199–204, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "28",
+            "rawText": "T.-H. Cheng, Z. Kan, J. R. Klotz, J. M. Shea, and W. E. Dixon, “Event-triggered control of multiagent systems for ﬁxed and time-varying network topologies,” IEEE Transactions on Automatic Control, vol. 62, no. 10, pp. 5365–5371, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T.-H. Cheng, Z. Kan, J. R. Klotz, J. M. Shea, and W. E. Dixon, “Event-triggered control of multiagent systems for ﬁxed and time-varying network topologies,” IEEE Transactions on Automatic Control, vol. 62, no. 10, pp. 5365–5371, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "29",
+            "rawText": "X. Meng, L. Xie, and Y. C. Soh, “Event-triggered output regulation of heterogeneous multiagent networks,” IEEE Transactions on Automatic Control, vol. 63, no. 12, pp. 4429–4434, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "X. Meng, L. Xie, and Y. C. Soh, “Event-triggered output regulation of heterogeneous multiagent networks,” IEEE Transactions on Automatic Control, vol. 63, no. 12, pp. 4429–4434, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "30",
+            "rawText": "B. Cheng and Z. Li, “Coordinated tracking control with asynchronous edge-based event-triggered communications,” IEEE Transactions on Automatic Control, vol. 64, no. 10, pp. 4321–4328, 2019. 16",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "B. Cheng and Z. Li, “Coordinated tracking control with asynchronous edge-based event-triggered communications,” IEEE Transactions on Automatic Control, vol. 64, no. 10, pp. 4321–4328, 2019. 16"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "31",
+            "rawText": "W. H. Heemels, M. Donkers, and A. R. Teel, “Periodic event-triggered control for linear systems,” IEEE Transactions on Automatic Control, vol. 58, no. 4, pp. 847– 861, 2012.",
+            "doi": "10.1109/TAC.2012.2220443",
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. H. Heemels, M. Donkers, and A. R. Teel, “Periodic event-triggered control for linear systems,” IEEE Transactions on Automatic Control, vol. 58, no. 4, pp. 847– 861, 2012."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/tac.2012.2220443",
+                "doi": "10.1109/TAC.2012.2220443",
+                "arxivId": "",
+                "title": "Periodic Event-Triggered Control for Linear Systems",
+                "authors": [
+                  "W. P. M. H. Heemels",
+                  "M. C. F. Donkers",
+                  "Andrew R. Teel"
+                ],
+                "year": 2012,
+                "venue": "IEEE Transactions on Automatic Control",
+                "type": "misc",
+                "url": "https://heemels.tue.nl/content/papers/HeeDon_TAC13a.pdf"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "32",
+            "rawText": "G. Guo, L. Ding, and Q.-L. Han, “A distributed eventtriggered transmission strategy for sampled-data consensus of multi-agent systems,” Automatica, vol. 50, no. 5, pp. 1489–1496, 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "G. Guo, L. Ding, and Q.-L. Han, “A distributed eventtriggered transmission strategy for sampled-data consensus of multi-agent systems,” Automatica, vol. 50, no. 5, pp. 1489–1496, 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "33",
+            "rawText": "E. Garcia, Y. Cao, and D. W. Casbeer, “Periodic eventtriggered synchronization of linear multi-agent systems with communication delays,” IEEE Transactions on Automatic Control, vol. 62, no. 1, pp. 366–371, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. Garcia, Y. Cao, and D. W. Casbeer, “Periodic eventtriggered synchronization of linear multi-agent systems with communication delays,” IEEE Transactions on Automatic Control, vol. 62, no. 1, pp. 366–371, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "34",
+            "rawText": "S. Zheng, P. Shi, R. K. Agarwal, and C. P. Lim, “Periodic event-triggered output regulation for linear multi-agent systems,” Automatica, vol. 122, p. 109223, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Zheng, P. Shi, R. K. Agarwal, and C. P. Lim, “Periodic event-triggered output regulation for linear multi-agent systems,” Automatica, vol. 122, p. 109223, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "35",
+            "rawText": "T. Liu and Z.-P. Jiang, “Event-based control of nonlinear systems with partial state and output feedback,” Automatica, vol. 53, pp. 10–22, 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Liu and Z.-P. Jiang, “Event-based control of nonlinear systems with partial state and output feedback,” Automatica, vol. 53, pp. 10–22, 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "36",
+            "rawText": "R. Middleton and J. Xie, “Non-pathological sampling for high order generalised sampled-data hold functions,” in Proceedings of 1995 American Control ConferenceACC’95, vol. 2. IEEE, 1995, pp. 1498–1502.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Middleton and J. Xie, “Non-pathological sampling for high order generalised sampled-data hold functions,” in Proceedings of 1995 American Control ConferenceACC’95, vol. 2. IEEE, 1995, pp. 1498–1502."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "37",
+            "rawText": "R. H. Middleton and G. C. Goodwin, Digital Control and Estimation: A Uniﬁed Approach. Prentice Hall Professional Technical Reference, 1990.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. H. Middleton and G. C. Goodwin, Digital Control and Estimation: A Uniﬁed Approach. Prentice Hall Professional Technical Reference, 1990."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1990,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "38",
+            "rawText": "B. Castillo, S. Di Gennaro, S. Monaco, and D. NormandCyrot, “On regulation under sampling,” IEEE Transactions on Automatic Control, vol. 42, no. 6, pp. 864–868, 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "B. Castillo, S. Di Gennaro, S. Monaco, and D. NormandCyrot, “On regulation under sampling,” IEEE Transactions on Automatic Control, vol. 42, no. 6, pp. 864–868, 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "39",
+            "rawText": "D. A. Lawrence and E. A. Medina, “Output regulation for linear systems with sampled measurements,” in Proceedings of the 2001 American Control Conference.(Cat. No. 01CH37148), vol. 3. IEEE, 2001, pp. 2044–2049.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. A. Lawrence and E. A. Medina, “Output regulation for linear systems with sampled measurements,” in Proceedings of the 2001 American Control Conference.(Cat. No. 01CH37148), vol. 3. IEEE, 2001, pp. 2044–2049."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:39",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "40",
+            "rawText": "L. Wang, L. Marconi, and C. M. Kellett, “Robust implementable regulator design of linear systems with non-vanishing measurements,” Automatica, vol. 143, p. 110418, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "L. Wang, L. Marconi, and C. M. Kellett, “Robust implementable regulator design of linear systems with non-vanishing measurements,” Automatica, vol. 143, p. 110418, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:40",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "41",
+            "rawText": "W. Yu, W. X. Zheng, G. Chen, W. Ren, and J. Cao, “Second-order consensus in multi-agent dynamical systems with sampled position data,” Automatica, vol. 47, no. 7, pp. 1496–1503, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Yu, W. X. Zheng, G. Chen, W. Ren, and J. Cao, “Second-order consensus in multi-agent dynamical systems with sampled position data,” Automatica, vol. 47, no. 7, pp. 1496–1503, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:41",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "42",
+            "rawText": "N. Huang, Z. Duan, and G. R. Chen, “Some necessary and sufﬁcient conditions for consensus of second-order multi-agent systems with sampled position data,” Automatica, vol. 63, pp. 148–155, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "N. Huang, Z. Duan, and G. R. Chen, “Some necessary and sufﬁcient conditions for consensus of second-order multi-agent systems with sampled position data,” Automatica, vol. 63, pp. 148–155, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:42",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "43",
+            "rawText": "W. Liu and J. Huang, “Leader-following consensus for linear multiagent systems via asynchronous sampleddata control,” IEEE Transactions on Automatic Control, vol. 65, no. 7, pp. 3215–3222, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Liu and J. Huang, “Leader-following consensus for linear multiagent systems via asynchronous sampleddata control,” IEEE Transactions on Automatic Control, vol. 65, no. 7, pp. 3215–3222, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "44",
+            "rawText": "R. Postoyan, R. G. Sanfelice, and W. M. H. Heemels, “Inter-event times analysis for planar linear eventtriggered controlled systems,” in 2019 IEEE 58th Conference on Decision and Control (CDC). IEEE, 2019, pp. 1662–1667.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Postoyan, R. G. Sanfelice, and W. M. H. Heemels, “Inter-event times analysis for planar linear eventtriggered controlled systems,” in 2019 IEEE 58th Conference on Decision and Control (CDC). IEEE, 2019, pp. 1662–1667."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "45",
+            "rawText": "F. Yan, G. Gu, and X. Chen, “A new approach to cooperative output regulation for heterogeneous multi-agent systems,” SIAM Journal on Control and Optimization, vol. 56, no. 3, pp. 2074–2094, 2018. 17",
+            "doi": null,
+            "arxivId": null,
+            "year": 2074,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "F. Yan, G. Gu, and X. Chen, “A new approach to cooperative output regulation for heterogeneous multi-agent systems,” SIAM Journal on Control and Optimization, vol. 56, no. 3, pp. 2074–2094, 2018. 17"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2074,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "46",
+            "rawText": "C. Godsil and G. F. Royle, Algebraic graph theory. Springer Science & Business Media, 2013, vol. 207.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. Godsil and G. F. Royle, Algebraic graph theory. Springer Science & Business Media, 2013, vol. 207."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "47",
+            "rawText": "J. Huang, “The cooperative output regulation problem of discrete-time linear multi-agent systems by the adaptive distributed observer,” IEEE Transactions on Automatic Control, vol. 62, no. 4, pp. 1979–1984, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1979,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Huang, “The cooperative output regulation problem of discrete-time linear multi-agent systems by the adaptive distributed observer,” IEEE Transactions on Automatic Control, vol. 62, no. 4, pp. 1979–1984, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:47",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1979,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "48",
+            "rawText": "M. Cao, F. Xiao, and L. Wang, “Event-based secondorder consensus control for multi-agent systems via synchronous periodic event detection,” IEEE Transactions on Automatic Control, vol. 60, no. 9, pp. 2452–2457, 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Cao, F. Xiao, and L. Wang, “Event-based secondorder consensus control for multi-agent systems via synchronous periodic event detection,” IEEE Transactions on Automatic Control, vol. 60, no. 9, pp. 2452–2457, 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:48",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "49",
+            "rawText": "S. Wang, H. Zhang, and Z. Chen, “Adaptive cooperative tracking and parameter estimation of an uncertain leader over general directed graphs,” IEEE Transactions on Automatic Control, DOI: 10.1109/TAC.2020.3046215, 2022.",
+            "doi": "10.1109/tac.2020.3046215",
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Wang, H. Zhang, and Z. Chen, “Adaptive cooperative tracking and parameter estimation of an uncertain leader over general directed graphs,” IEEE Transactions on Automatic Control, DOI: 10.1109/TAC.2020.3046215, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1109/tac.2020.3046215",
+                "doi": "10.1109/tac.2020.3046215",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tac.2020.3046215"
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "50",
+            "rawText": "Y. Yan and J. Huang, “Cooperative output regulation of discrete-time linear time-delay multi-agent systems under switching network,” Neurocomputing, vol. 241, pp. 108– 114, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Y. Yan and J. Huang, “Cooperative output regulation of discrete-time linear time-delay multi-agent systems under switching network,” Neurocomputing, vol. 241, pp. 108– 114, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2105.02200:50",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 50,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.48550/arxiv.2105.02200->doi:10.1109/tac.2012.2220443@papers-mixed-event-time-triggered-Wang2021.pdf",
+      "source": "doi:10.48550/arxiv.2105.02200",
+      "target": "doi:10.1109/tac.2012.2220443",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Wang2021.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Wang2021",
+      "paperId": "doi:10.48550/arxiv.2105.02200",
+      "metadata": {
+        "fileName": "Wang2021.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Wang2021.pdf"
+      }
+    }
+  ]
+}

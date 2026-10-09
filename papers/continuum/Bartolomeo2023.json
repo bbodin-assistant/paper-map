@@ -1,0 +1,2391 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.986883+00:00",
+  "papers": [
+    {
+      "key": "Bartolomeo2023",
+      "paper": {
+        "id": "title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023",
+        "citationKey": "Bartolomeo2023",
+        "title": "Oakestra: A Lightweight Hierarchical Orchestration Framework for Edge Computing",
+        "authors": [
+          "Giovanni Bartolomeo",
+          "Mehdi Yosofie",
+          "Simon B\\\"aurle",
+          "Oliver Haluszczynski",
+          "Nitinder Mohan",
+          "J\\\"org Ott"
+        ],
+        "year": 2023,
+        "venue": "2023 USENIX Annual Technical Conference (USENIX ATC 23)",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www.usenix.org/conference/atc23/presentation/bartolomeo",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:embedded-edge-cloud-orchestration"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Giovanni Bartolomeo and Mehdi Yosofie and Simon B{\\\"a}urle and Oliver Haluszczynski and Nitinder Mohan and J{\\\"o}rg Ott",
+          "title": "{Oakestra: A Lightweight Hierarchical Orchestration Framework for Edge Computing}",
+          "year": "2023",
+          "booktitle": "2023 USENIX Annual Technical Conference (USENIX ATC 23)",
+          "publisher": "USENIX Association",
+          "pages": "215--231",
+          "url": "https://www.usenix.org/conference/atc23/presentation/bartolomeo"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.198551+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Celery - distributed task queue. https://docs. celeryq.dev/en/stable/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Celery - distributed task queue. https://docs. celeryq.dev/en/stable/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "Containerd - an industry-standard container runtime with an emphasis on simplicity, robustness and portability. https://containerd.io.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Containerd - an industry-standard container runtime with an emphasis on simplicity, robustness and portability. https://containerd.io."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "Istio - simplify observability, traffic management, security, and policy with the leading service mesh. https: //istio.io.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Istio - simplify observability, traffic management, security, and policy with the leading service mesh. https: //istio.io."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "Jwt tokens. https://jwt.io. 226 2023 USENIX Annual Technical Conference USENIX Association",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Jwt tokens. https://jwt.io. 226 2023 USENIX Annual Technical Conference USENIX Association"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "Mongodb documentation. https://www.mongodb. com/docs/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Mongodb documentation. https://www.mongodb. com/docs/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "Mosquitto mqtt broker. https://mosquitto.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Mosquitto mqtt broker. https://mosquitto.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Openapi initiative. https://www.openapis.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Openapi initiative. https://www.openapis.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "Qemu - a generic and open source machine emulator and virtualizer. https://www.qemu.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Qemu - a generic and open source machine emulator and virtualizer. https://www.qemu.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Submariner - a tool built to connect overlay networks of different kubernetes clusters. https://github.com/ submariner-io/submariner.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Submariner - a tool built to connect overlay networks of different kubernetes clusters. https://github.com/ submariner-io/submariner."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "Kubernetes components, Mar 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Kubernetes components, Mar 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "Alexandru Agache, Marc Brooker, Alexandra Iordache, Anthony Liguori, Rolf Neugebauer, Phil Piwonka, and Diana-Maria Popa. Firecracker: Lightweight virtualization for serverless applications. In 17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20), pages 419–434, Santa Clara, CA, February 2020. USENIX Association.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Alexandru Agache, Marc Brooker, Alexandra Iordache, Anthony Liguori, Rolf Neugebauer, Phil Piwonka, and Diana-Maria Popa. Firecracker: Lightweight virtualization for serverless applications. In 17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20), pages 419–434, Santa Clara, CA, February 2020. USENIX Association."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:firecracker lightweight virtualization for serverless applications:2020",
+                "doi": "",
+                "arxivId": "",
+                "title": "Firecracker: Lightweight Virtualization for Serverless Applications",
+                "authors": [
+                  "Alexandru Agache",
+                  "Marc Brooker",
+                  "Andreea Florescu",
+                  "Alexandra Iordache",
+                  "Anthony Liguori",
+                  "Rolf Neugebauer",
+                  "Phil Piwonka",
+                  "Diana-Maria Popa"
+                ],
+                "year": 2020,
+                "venue": "17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20)",
+                "type": "inproceedings",
+                "url": "https://www.usenix.org/conference/nsdi20/presentation/agache"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Maha Aljarah, Mohammad Shurman, and Sharhabeel H Alnabelsi. Cooperative hierarchical based edgecomputing approach for resources allocation of distributed mobile and iot applications. International Journal of Electrical and Computer Engineering (IJECE), 10(1):296–307, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Maha Aljarah, Mohammad Shurman, and Sharhabeel H Alnabelsi. Cooperative hierarchical based edgecomputing approach for resources allocation of distributed mobile and iot applications. International Journal of Electrical and Computer Engineering (IJECE), 10(1):296–307, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "Simon Bäurle and Nitinder Mohan. Comb: A flexible, application-oriented benchmark for edge computing. In Proceedings of the 5th International Workshop on Edge Systems, Analytics and Networking, EdgeSys ’22, page 19–24, New York, NY, USA, 2022. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Simon Bäurle and Nitinder Mohan. Comb: A flexible, application-oriented benchmark for edge computing. In Proceedings of the 5th International Workshop on Edge Systems, Analytics and Networking, EdgeSys ’22, page 19–24, New York, NY, USA, 2022. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "Romil Bhardwaj, Zhengxu Xia, Ganesh Ananthanarayanan, Junchen Jiang, Yuanchao Shu, Nikolaos Karianakis, Kevin Hsieh, Paramvir Bahl, and Ion Stoica. Ekya: Continuous learning of video analytics models on edge compute servers. In 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22), pages 119–135, Renton, WA, April 2022. USENIX Association.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Romil Bhardwaj, Zhengxu Xia, Ganesh Ananthanarayanan, Junchen Jiang, Yuanchao Shu, Nikolaos Karianakis, Kevin Hsieh, Paramvir Bahl, and Ion Stoica. Ekya: Continuous learning of video analytics models on edge compute servers. In 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22), pages 119–135, Renton, WA, April 2022. USENIX Association."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:ekya continuous learning of video analytics models on edge compute servers:2022",
+                "doi": "",
+                "arxivId": "",
+                "title": "Ekya: Continuous Learning of Video Analytics Models on Edge Compute Servers",
+                "authors": [
+                  "Romil Bhardwaj",
+                  "Zhengxu Xia",
+                  "Ganesh Ananthanarayanan",
+                  "Junchen Jiang",
+                  "Yuanchao Shu",
+                  "Nikolaos Karianakis",
+                  "Kevin Hsieh",
+                  "Paramvir Bahl",
+                  "Ion Stoica"
+                ],
+                "year": 2022,
+                "venue": "19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22)",
+                "type": "inproceedings",
+                "url": "https://www.usenix.org/conference/nsdi22/presentation/bhardwaj"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "Sebastian Böhm and Guido Wirtz. Profiling lightweight container platforms: Microk8s and k3s in comparison to kubernetes. In ZEUS, pages 65–73, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Sebastian Böhm and Guido Wirtz. Profiling lightweight container platforms: Microk8s and k3s in comparison to kubernetes. In ZEUS, pages 65–73, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "Antonio Brogi, Stefano Forti, Carlos Guerrero, and Isaac Lera. How to place your apps in the fog: State of the art and open challenges. Software: Practice and Experience, 50(5):719–740, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Antonio Brogi, Stefano Forti, Carlos Guerrero, and Isaac Lera. How to place your apps in the fog: State of the art and open challenges. Software: Practice and Experience, 50(5):719–740, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "Tatjana Chavdarova, Pierre Baque, Stephane Bouquet, Andrii Maksai, Cijo Jose, Timur Bagautdinov, Louis Lettry, Pascal Fua, Luc Van Gool, and Francois Fleuret. WILDTRACK: A Multi-camera HD Dataset for Dense Unscripted Pedestrian Detection. In 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 5030–5039, Salt Lake City, UT, June 2018. IEEE.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tatjana Chavdarova, Pierre Baque, Stephane Bouquet, Andrii Maksai, Cijo Jose, Timur Bagautdinov, Louis Lettry, Pascal Fua, Luc Van Gool, and Francois Fleuret. WILDTRACK: A Multi-camera HD Dataset for Dense Unscripted Pedestrian Detection. In 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 5030–5039, Salt Lake City, UT, June 2018. IEEE."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "Claudio Cicconetti, Marco Conti, and Andrea Passarella. A decentralized framework for serverless edge computing in the internet of things. IEEE Transactions on Network and Service Management, 18(2):2166–2180, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Claudio Cicconetti, Marco Conti, and Andrea Passarella. A decentralized framework for serverless edge computing in the internet of things. IEEE Transactions on Network and Service Management, 18(2):2166–2180, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "Cloud Native Computing Foundation (CNCF). Kubeedge. https://github.com/kubeedge/ kubeedge, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Cloud Native Computing Foundation (CNCF). Kubeedge. https://github.com/kubeedge/ kubeedge, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "Google Coral. Coral edge. https://coral.ai/ products, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Google Coral. Coral edge. https://coral.ai/ products, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "Lorenzo Corneo, Maximilian Eder, Nitinder Mohan, Aleksandr Zavodovski, Suzan Bayhan, Walter Wong, Per Gunningberg, Jussi Kangasharju, and Jörg Ott. Surrounded by the clouds: A comprehensive cloud reachability study. In Proceedings of the Web Conference 2021, WWW ’21, page 295–304, New York, NY, USA, 2021. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lorenzo Corneo, Maximilian Eder, Nitinder Mohan, Aleksandr Zavodovski, Suzan Bayhan, Walter Wong, Per Gunningberg, Jussi Kangasharju, and Jörg Ott. Surrounded by the clouds: A comprehensive cloud reachability study. In Proceedings of the Web Conference 2021, WWW ’21, page 295–304, New York, NY, USA, 2021. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "Lorenzo Corneo, Nitinder Mohan, Aleksandr Zavodovski, Walter Wong, Christian Rohner, Per Gunningberg, and Jussi Kangasharju. (how much) can edge computing change network latency? In 2021 IFIP Networking Conference (IFIP Networking), pages 1–9, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lorenzo Corneo, Nitinder Mohan, Aleksandr Zavodovski, Walter Wong, Christian Rohner, Per Gunningberg, and Jussi Kangasharju. (how much) can edge computing change network latency? In 2021 IFIP Networking Conference (IFIP Networking), pages 1–9, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "Michael Cote. Why large organizations trust kubernetes. https://tanzu.vmware.com/content/blog/ why-large-organizations-trust-kubernetes, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Michael Cote. Why large organizations trust kubernetes. https://tanzu.vmware.com/content/blog/ why-large-organizations-trust-kubernetes, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "Vittorio Cozzolino, Leonardo Tonetto, Nitinder Mohan, Aaron Yi Ding, and Jorg Ott. Nimbus: Towards latencyenergy efficient task offloading for ar services. IEEE Transactions on Cloud Computing, pages 1–1, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Vittorio Cozzolino, Leonardo Tonetto, Nitinder Mohan, Aaron Yi Ding, and Jorg Ott. Nimbus: Towards latencyenergy efficient task offloading for ar services. IEEE Transactions on Cloud Computing, pages 1–1, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "Frank Dabek, Russ Cox, Frans Kaashoek, and Robert Morris. Vivaldi: A decentralized network coordinate system. SIGCOMM Comput. Commun. Rev., 34(4):15–26, aug 2004.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Frank Dabek, Russ Cox, Frans Kaashoek, and Robert Morris. Vivaldi: A decentralized network coordinate system. SIGCOMM Comput. Commun. Rev., 34(4):15–26, aug 2004."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "The Khang Dang, Nitinder Mohan, Lorenzo Corneo, Aleksandr Zavodovski, Jörg Ott, and Jussi Kangasharju. Cloudy with a chance of short rtts: Analyzing cloud connectivity in the internet. In Proceedings of the 21st ACM Internet Measurement Conference, IMC ’21, page 62–79, New York, NY, USA, 2021. Association for Computing Machinery. USENIX Association 2023 USENIX Annual Technical Conference 227",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Khang Dang, Nitinder Mohan, Lorenzo Corneo, Aleksandr Zavodovski, Jörg Ott, and Jussi Kangasharju. Cloudy with a chance of short rtts: Analyzing cloud connectivity in the internet. In Proceedings of the 21st ACM Internet Measurement Conference, IMC ’21, page 62–79, New York, NY, USA, 2021. Association for Computing Machinery. USENIX Association 2023 USENIX Annual Technical Conference 227"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "27",
+            "rawText": "Jason A. Donenfeld. WireGuard. https://www. wireguard.com/, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Jason A. Donenfeld. WireGuard. https://www. wireguard.com/, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "28",
+            "rawText": "Janick Edinger, Martin Breitbach, Niklas Gabrisch, Dominik Schäfer, Christian Becker, and Amr Rizk. Decentralized low-latency task scheduling for ad-hoc computing. In 2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS), pages 776– 785, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Janick Edinger, Martin Breitbach, Niklas Gabrisch, Dominik Schäfer, Christian Becker, and Amr Rizk. Decentralized low-latency task scheduling for ad-hoc computing. In 2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS), pages 776– 785, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "29",
+            "rawText": "Cloud Native Computing Foundation. Lightweight kubernetes | k3s. https://k3s.io, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Cloud Native Computing Foundation. Lightweight kubernetes | k3s. https://k3s.io, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "30",
+            "rawText": "Eclipse Foundation. Eclipse fog05. https://fog05. io/, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Eclipse Foundation. Eclipse fog05. https://fog05. io/, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "31",
+            "rawText": "Eclipse Foundation. Eclipse iofog. https://iofog. org/, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Eclipse Foundation. Eclipse iofog. https://iofog. org/, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "32",
+            "rawText": "Linux Foundation. Scheduling and eviction | kubernetes. https://kubernetes.io/docs/concepts/ scheduling-eviction/, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Linux Foundation. Scheduling and eviction | kubernetes. https://kubernetes.io/docs/concepts/ scheduling-eviction/, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "33",
+            "rawText": "Raspberry Pi Foundation. Raspberry pi 4. https://www.raspberrypi.org/products/ raspberry-pi-4-model-b/specifications/, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Raspberry Pi Foundation. Raspberry pi 4. https://www.raspberrypi.org/products/ raspberry-pi-4-model-b/specifications/, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "34",
+            "rawText": "The Linux Foundation. Kubernetes, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Linux Foundation. Kubernetes, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "35",
+            "rawText": "The Linux Foundation. Kubernetes cluster federation | kubefed. https://github.com/kubernetes-sigs/ kubefed, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The Linux Foundation. Kubernetes cluster federation | kubefed. https://github.com/kubernetes-sigs/ kubefed, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "36",
+            "rawText": "Intel. Intel nuc. https://www.intel.com/content/ www/us/en/products/details/nuc/boards.html, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Intel. Intel nuc. https://www.intel.com/content/ www/us/en/products/details/nuc/boards.html, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "37",
+            "rawText": "Andrew Jeffery, Heidi Howard, and Richard Mortier. Rearchitecting kubernetes for the edge. In Proceedings of the 4th International Workshop on Edge Systems, Analytics and Networking, EdgeSys ’21, page 7–12, New York, NY, USA, 2021. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Andrew Jeffery, Heidi Howard, and Richard Mortier. Rearchitecting kubernetes for the edge. In Proceedings of the 4th International Workshop on Edge Systems, Analytics and Networking, EdgeSys ’21, page 7–12, New York, NY, USA, 2021. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "38",
+            "rawText": "Youngjin Kim, Chiwon Song, Hyuck Han, Hyungsoo Jung, and Sooyong Kang. Collaborative task scheduling for iot-assisted edge computing. IEEE Access, 8:216593– 216606, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Youngjin Kim, Chiwon Song, Hyuck Han, Hyungsoo Jung, and Sooyong Kang. Collaborative task scheduling for iot-assisted edge computing. IEEE Access, 8:216593– 216606, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "39",
+            "rawText": "Daniel King and Adrian Farrel. A Survey of Semantic Internet Routing Techniques. Internet-Draft draft-kingirtf-semantic-routing-survey-03, Internet Engineering Task Force, November 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Daniel King and Adrian Farrel. A Survey of Semantic Internet Routing Techniques. Internet-Draft draft-kingirtf-semantic-routing-survey-03, Internet Engineering Task Force, November 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:39",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "40",
+            "rawText": "Simon Kuenzer, Vlad-Andrei B˘adoiu, Hugo Lefeuvre, Sharan Santhanam, Alexander Jung, Gaulthier Gain, Cyril Soldani, Costin Lupu, ¸Stefan Teodorescu, Costi R˘aducanu, Cristian Banu, Laurent Mathy, R˘azvan Deaconescu, Costin Raiciu, and Felipe Huici. Unikraft: Fast, specialized unikernels the easy way. In Proceedings of the Sixteenth European Conference on Computer Systems, EuroSys ’21, page 376–394, New York, NY, USA, 2021. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Simon Kuenzer, Vlad-Andrei B˘adoiu, Hugo Lefeuvre, Sharan Santhanam, Alexander Jung, Gaulthier Gain, Cyril Soldani, Costin Lupu, ¸Stefan Teodorescu, Costi R˘aducanu, Cristian Banu, Laurent Mathy, R˘azvan Deaconescu, Costin Raiciu, and Felipe Huici. Unikraft: Fast, specialized unikernels the easy way. In Proceedings of the Sixteenth European Conference on Computer Systems, EuroSys ’21, page 376–394, New York, NY, USA, 2021. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:40",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "41",
+            "rawText": "Juan Liu, Yuyi Mao, Jun Zhang, and Khaled B. Letaief. Delay-optimal computation task scheduling for mobileedge computing systems. In 2016 IEEE International Symposium on Information Theory (ISIT), pages 1451– 1455, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Juan Liu, Yuyi Mao, Jun Zhang, and Khaled B. Letaief. Delay-optimal computation task scheduling for mobileedge computing systems. In 2016 IEEE International Symposium on Information Theory (ISIT), pages 1451– 1455, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:41",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "42",
+            "rawText": "Qiang Liu and Tao Han. Virtualedge: Multi-domain resource orchestration and virtualization in cellular edge computing. In 2019 IEEE 39th International Conference on Distributed Computing Systems (ICDCS), pages 1051–1060, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Qiang Liu and Tao Han. Virtualedge: Multi-domain resource orchestration and virtualization in cellular edge computing. In 2019 IEEE 39th International Conference on Distributed Computing Systems (ICDCS), pages 1051–1060, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:42",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "43",
+            "rawText": "Canonical Ltd. Lightweight kubernetes | microk8s. https://microk8s.io, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Canonical Ltd. Lightweight kubernetes | microk8s. https://microk8s.io, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "44",
+            "rawText": "Anil Madhavapeddy and David J. Scott. Unikernels: The rise of the virtual library operating system. Commun. ACM, 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Anil Madhavapeddy and David J. Scott. Unikernels: The rise of the virtual library operating system. Commun. ACM, 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "45",
+            "rawText": "Karim Manaouil and Adrien Lebre. Kubernetes and the Edge? PhD thesis, Inria Rennes-Bretagne Atlantique, 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Karim Manaouil and Adrien Lebre. Kubernetes and the Edge? PhD thesis, Inria Rennes-Bretagne Atlantique, 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "46",
+            "rawText": "Nitinder Mohan, Lorenzo Corneo, Aleksandr Zavodovski, Suzan Bayhan, Walter Wong, and Jussi Kangasharju. Pruning edge research with latency shears. HotNets ’20, page 182–189, New York, NY, USA, 2020. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Nitinder Mohan, Lorenzo Corneo, Aleksandr Zavodovski, Suzan Bayhan, Walter Wong, and Jussi Kangasharju. Pruning edge research with latency shears. HotNets ’20, page 182–189, New York, NY, USA, 2020. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "47",
+            "rawText": "Nitinder Mohan and Jussi Kangasharju. Edge-fog cloud: A distributed cloud for internet of things computations. In 2016 Cloudification of the Internet of Things (CIoT), pages 1–6, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Nitinder Mohan and Jussi Kangasharju. Edge-fog cloud: A distributed cloud for internet of things computations. In 2016 Cloudification of the Internet of Things (CIoT), pages 1–6, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:47",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "48",
+            "rawText": "Seyed Hossein Mortazavi, Mohammad Salehe, Carolina Simoes Gomes, Caleb Phillips, and Eyal de Lara. Cloudpath: A multi-tier cloud computing framework. In Proceedings of the Second ACM/IEEE Symposium on Edge Computing, SEC ’17, New York, NY, USA, 2017. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Seyed Hossein Mortazavi, Mohammad Salehe, Carolina Simoes Gomes, Caleb Phillips, and Eyal de Lara. Cloudpath: A multi-tier cloud computing framework. In Proceedings of the Second ACM/IEEE Symposium on Edge Computing, SEC ’17, New York, NY, USA, 2017. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:48",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "49",
+            "rawText": "Shadi A. Noghabi, Landon Cox, Sharad Agarwal, and Ganesh Ananthanarayanan. The emerging landscape of edge computing. GetMobile: Mobile Comp. and Comm., 23(4):11–20, may 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Shadi A. Noghabi, Landon Cox, Sharad Agarwal, and Ganesh Ananthanarayanan. The emerging landscape of edge computing. GetMobile: Mobile Comp. and Comm., 23(4):11–20, may 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:49",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "50",
+            "rawText": "Nvidia. Jetson agx xavier. https://www. nvidia.com/en-us/autonomous-machines/ jetson-agx-xavier/, 2022. 228 2023 USENIX Annual Technical Conference USENIX Association",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Nvidia. Jetson agx xavier. https://www. nvidia.com/en-us/autonomous-machines/ jetson-agx-xavier/, 2022. 228 2023 USENIX Annual Technical Conference USENIX Association"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:50",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "51",
+            "rawText": "Oakestra. Oakestra - discord. https://discord.gg/ 7F8EhYCJDf, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Oakestra. Oakestra - discord. https://discord.gg/ 7F8EhYCJDf, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:51",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "52",
+            "rawText": "Oakestra. Oakestra - github. https://github.com/ oakestra, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Oakestra. Oakestra - github. https://github.com/ oakestra, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:52",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "53",
+            "rawText": "Oakestra. Oakestra artifacts - experiments. https://github.com/oakestra/ USENIX-ATC23-Oakestra-Artifacts/tree/main/ Experiments, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Oakestra. Oakestra artifacts - experiments. https://github.com/oakestra/ USENIX-ATC23-Oakestra-Artifacts/tree/main/ Experiments, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:53",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "54",
+            "rawText": "Oakestra. Oakestra artifacts - main. https://github.com/oakestra/ USENIX-ATC23-Oakestra-Artifacts, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Oakestra. Oakestra artifacts - main. https://github.com/oakestra/ USENIX-ATC23-Oakestra-Artifacts, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:54",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "55",
+            "rawText": "Oakestra. Oakestra artifacts - network. https://github.com/oakestra/ USENIX-ATC23-Oakestra-net-Artifacts, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Oakestra. Oakestra artifacts - network. https://github.com/oakestra/ USENIX-ATC23-Oakestra-net-Artifacts, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:55",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "56",
+            "rawText": "Oakestra. Oakestra wiki. https://www.oakestra. io/docs/, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Oakestra. Oakestra wiki. https://www.oakestra. io/docs/, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:56",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "57",
+            "rawText": "M. Krochmal S. Cheshire. Rfc 6762 - multicast dns. 2013.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Krochmal S. Cheshire. Rfc 6762 - multicast dns. 2013."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:57",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "58",
+            "rawText": "Hooman Peiro Sajjad, Ken Danniswara, Ahmad AlShishtawy, and Vladimir Vlassov. Spanedge: Towards unifying stream processing over central and near-theedge data centers. In 2016 IEEE/ACM Symposium on Edge Computing (SEC), pages 168–178, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Hooman Peiro Sajjad, Ken Danniswara, Ahmad AlShishtawy, and Vladimir Vlassov. Spanedge: Towards unifying stream processing over central and near-theedge data centers. In 2016 IEEE/ACM Symposium on Edge Computing (SEC), pages 168–178, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:58",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "59",
+            "rawText": "Farah Aït Salaht, Frédéric Desprez, and Adrien Lebre. An overview of service placement problem in fog and edge computing. ACM Comput. Surv., 53(3), jun 2020.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Farah Aït Salaht, Frédéric Desprez, and Adrien Lebre. An overview of service placement problem in fog and edge computing. ACM Comput. Surv., 53(3), jun 2020."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:59",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "60",
+            "rawText": "Enrique Saurez, Harshit Gupta, Alexandros Daglis, and Umakishore Ramachandran. Oneedge: An efficient control plane for geo-distributed infrastructures. In Proceedings of the ACM Symposium on Cloud Computing, SoCC ’21, page 182–196, New York, NY, USA, 2021. Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Enrique Saurez, Harshit Gupta, Alexandros Daglis, and Umakishore Ramachandran. Oneedge: An efficient control plane for geo-distributed infrastructures. In Proceedings of the ACM Symposium on Cloud Computing, SoCC ’21, page 182–196, New York, NY, USA, 2021. Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:60",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "61",
+            "rawText": "W. Shi and S. Dustdar. The promise of edge computing. Computer, 49(5):78–81, 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. Shi and S. Dustdar. The promise of edge computing. Computer, 49(5):78–81, 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:61",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "62",
+            "rawText": "Tanya Shreedhar, Sanjit K. Kaul, and Roy D. Yates. An age control transport protocol for delivering fresh updates in the internet-of-things. In 2019 IEEE 20th International Symposium on \"A World of Wireless, Mobile and Multimedia Networks\" (WoWMoM), pages 1–7, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Tanya Shreedhar, Sanjit K. Kaul, and Roy D. Yates. An age control transport protocol for delivering fresh updates in the internet-of-things. In 2019 IEEE 20th International Symposium on \"A World of Wireless, Mobile and Multimedia Networks\" (WoWMoM), pages 1–7, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:62",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "63",
+            "rawText": "Manoel C Silva Filho, Claudio C Monteiro, Pedro RM Inácio, and Mário M Freire. Approaches for optimizing virtual machine placement and migration in cloud environments: A survey. Journal of Parallel and Distributed Computing, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Manoel C Silva Filho, Claudio C Monteiro, Pedro RM Inácio, and Mário M Freire. Approaches for optimizing virtual machine placement and migration in cloud environments: A survey. Journal of Parallel and Distributed Computing, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:63",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": "64",
+            "rawText": "SuperMicro. Outdoor edge systems. https://www. supermicro.com/en/products/outdoor-edge, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "SuperMicro. Outdoor edge systems. https://www. supermicro.com/en/products/outdoor-edge, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:64",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": "65",
+            "rawText": "Dianomic Systems. Foglamp – simplifying iiot data management from sensors to clouds. https:// dianomic.com/platform/foglamp/, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Dianomic Systems. Foglamp – simplifying iiot data management from sensors to clouds. https:// dianomic.com/platform/foglamp/, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:65",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": "66",
+            "rawText": "Li Tianze, Wu Muqing, Zhao Min, and Liao Wenxing. An overhead-optimizing task scheduling strategy for ad-hoc based mobile edge computing. IEEE Access, 5:5609–5622, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Li Tianze, Wu Muqing, Zhao Min, and Liao Wenxing. An overhead-optimizing task scheduling strategy for ad-hoc based mobile edge computing. IEEE Access, 5:5609–5622, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:66",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": "67",
+            "rawText": "Shanhe Yi, Zijiang Hao, Qingyang Zhang, Quan Zhang, Weisong Shi, and Qun Li. Lavea: Latency-aware video analytics on edge computing platform. In Proceedings of the Second ACM/IEEE Symposium on Edge Computing, SEC ’17, New York, NY, USA, 2017. ACM.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Shanhe Yi, Zijiang Hao, Qingyang Zhang, Quan Zhang, Weisong Shi, and Qun Li. Lavea: Latency-aware video analytics on edge computing platform. In Proceedings of the Second ACM/IEEE Symposium on Edge Computing, SEC ’17, New York, NY, USA, 2017. ACM."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:67",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": "68",
+            "rawText": "Ashkan Yousefpour, Caleb Fung, Tam Nguyen, Krishna Kadiyala, Fatemeh Jalali, Amirreza Niakanlahiji, Jian Kong, and Jason P. Jue. All one needs to know about fog computing and related edge computing paradigms: A complete survey. Journal of Systems Architecture, 98:289–330, 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Ashkan Yousefpour, Caleb Fung, Tam Nguyen, Krishna Kadiyala, Fatemeh Jalali, Amirreza Niakanlahiji, Jian Kong, and Jason P. Jue. All one needs to know about fog computing and related edge computing paradigms: A complete survey. Journal of Systems Architecture, 98:289–330, 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:68",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": "69",
+            "rawText": "Wuyang Zhang, Sugang Li, Luyang Liu, Zhenhua Jia, Yanyong Zhang, and Dipankar Raychaudhuri. Heteroedge: Orchestration of real-time vision applications on heterogeneous edge clouds. In IEEE INFOCOM 2019 - IEEE Conference on Computer Communications, pages 1270–1278, 2019. A Oakestra Frontend Oakestra also provides a front-end application that can be used by the developers to create applications and describe the services composing them graphically. A developer can generate the SLA of each microservice through a form. Then, the services connections can be specified using the connection graph (fig. 13a). This graph allows developers to interconnect the services and specify their latency requirements. Once the connection graph is complete, the developer can ask the infrastructure to schedule the desired application. Via the interface, the developer can check each service instance’s status and position (fig. 13b); they can also scale the services up, down, or terminate them. B Artifact Appendix Abstract Oakestra is an open-source project with all components publicly available on GitHub at https://github.com/ oakestra. To ensure the reproducibility of the experiments USENIX Association 2023 USENIX Annual Technical Conference 229 (a) Service connection graph (b) Deployment monitoring interface Figure 13: Oakestra web-based front-end application conducted within this paper, we fork our project repositories at",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Wuyang Zhang, Sugang Li, Luyang Liu, Zhenhua Jia, Yanyong Zhang, and Dipankar Raychaudhuri. Heteroedge: Orchestration of real-time vision applications on heterogeneous edge clouds. In IEEE INFOCOM 2019 - IEEE Conference on Computer Communications, pages 1270–1278, 2019. A Oakestra Frontend Oakestra also provides a front-end application that can be used by the developers to create applications and describe the services composing them graphically. A developer can generate the SLA of each microservice through a form. Then, the services connections can be specified using the connection graph (fig. 13a). This graph allows developers to interconnect the services and specify their latency requirements. Once the connection graph is complete, the developer can ask the infrastructure to schedule the desired application. Via the interface, the developer can check each service instance’s status and position (fig. 13b); they can also scale the services up, down, or terminate them. B Artifact Appendix Abstract Oakestra is an open-source project with all components publicly available on GitHub at https://github.com/ oakestra. To ensure the reproducibility of the experiments USENIX Association 2023 USENIX Annual Technical Conference 229 (a) Service connection graph (b) Deployment monitoring interface Figure 13: Oakestra web-based front-end application conducted within this paper, we fork our project repositories at"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:69",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": "55",
+            "rawText": ". Additionally, we also provide a comprehensive README, which includes a get-started guide, that can be used for recreating our setup, experiments and familiarizing with the Oakestra platform",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". Additionally, we also provide a comprehensive README, which includes a get-started guide, that can be used for recreating our setup, experiments and familiarizing with the Oakestra platform"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:70",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 71,
+            "label": "53",
+            "rawText": ". Scope The proposed artifacts represents a snapshot of the project that aligns with the paper. The proposed artifacts enable replicating the performance results of Oakestra as shown in section §5. However, if the reader is planning to use the latest version of the platform and utilize Oakestra’s latest functionalities, we recommend exploring the official website and repository instead. Contents Figure 14 shows how the components introduced in §3 can be related to the github repositories. Specifically, the source code, the release binaries and container images are split into the repositories as follows: • oakestra/oakestra",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". Scope The proposed artifacts represents a snapshot of the project that aligns with the paper. The proposed artifacts enable replicating the performance results of Oakestra as shown in section §5. However, if the reader is planning to use the latest version of the platform and utilize Oakestra’s latest functionalities, we recommend exploring the official website and repository instead. Contents Figure 14 shows how the components introduced in §3 can be related to the github repositories. Specifically, the source code, the release binaries and container images are split into the repositories as follows: • oakestra/oakestra"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:71",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 72,
+            "label": "54",
+            "rawText": ": This repository contains the Root & Cluster orchestrators folders, as well (optional) oakestra/oakestra-net oakestra/oakestra oakestra/dashboard Root Orchestrator Root Scheduler System Manager Root Database Service Manager Web Frontend Cluster Orchestrator Cluster Scheduler Service Manager Cluster 1 Cluster Manager Cluster Database Worker 1 Execution Net Manager Node Engine Runtime amd64 Figure 14: Summary of how the components are split across the repositories as the Node Engine source code for the worker node. Inside the root orchestrator folder, the folders system-manager-python/ and cloud_scheduler/ contain the System Manager and the Cloud Scheduler source code, respectively. Similarly, the Cluster Orchestrator folder includes the source of the cluster-manager/ and the cluster-scheduler/. Finally, go-node-engine/ contains the implementation of the Node Engine. • oakestra/oakestra-net",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ": This repository contains the Root & Cluster orchestrators folders, as well (optional) oakestra/oakestra-net oakestra/oakestra oakestra/dashboard Root Orchestrator Root Scheduler System Manager Root Database Service Manager Web Frontend Cluster Orchestrator Cluster Scheduler Service Manager Cluster 1 Cluster Manager Cluster Database Worker 1 Execution Net Manager Node Engine Runtime amd64 Figure 14: Summary of how the components are split across the repositories as the Node Engine source code for the worker node. Inside the root orchestrator folder, the folders system-manager-python/ and cloud_scheduler/ contain the System Manager and the Cloud Scheduler source code, respectively. Similarly, the Cluster Orchestrator folder includes the source of the cluster-manager/ and the cluster-scheduler/. Finally, go-node-engine/ contains the implementation of the Node Engine. • oakestra/oakestra-net"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:72",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 73,
+            "label": "55",
+            "rawText": ": This repository contains the Root, Cluster, and Worker network components. Note that the networking stack is not mandatory in Oakestra. Without oakestra-net, the developer can deploy applications on the infrastructure, but the applications will not be able able to carry out network-related tasks. Since our experiments utilize network-capable applications, our experiment’s README provides detailed instructions regarding the installation of these components. • experiments",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ": This repository contains the Root, Cluster, and Worker network components. Note that the networking stack is not mandatory in Oakestra. Without oakestra-net, the developer can deploy applications on the infrastructure, but the applications will not be able able to carry out network-related tasks. Since our experiments utilize network-capable applications, our experiment’s README provides detailed instructions regarding the installation of these components. • experiments"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:73",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 74,
+            "label": "53",
+            "rawText": ": To replicate the experiments, we provide an Experiments/ folder that includes the setup instructions to create your first Oakestra infrastructure and a set of scripts to automate the results collection procedure once the infrastructure is set up as shown in Table 1. Requirements We recommend the following minimum requirements for each Oakestra component. 1. Root Orchestrator: 2GB of RAM, 2 Core CPU, ARM64 or AMD64 architecture, 10GB disk, docker compose installed. Tested OS: Ubuntu 20.20, Windows 10, MacOS Monterey. 230 2023 USENIX Annual Technical Conference USENIX Association Folder Description Test 1 Deployment overhead calculation (figs. 5 and 7) Test 2 Network overhead measurements (fig. 8) Test 3 Bandwidth measurements (fig. 12) Test 4 Control message measurements (fig. 11) Test 5 Scalability stress test experiments (fig. 6) Test 6 AR pipeline experiments (fig. 9) Table 1: Experiments test folders 2. Cluster Orchestrator: 2GB of RAM, 2 Core CPU, ARM64 or AMD64 architecture, 5GB disk. Tested OS: Ubuntu 20.20, Windows 10, MacOS Monterey. 3. Worker Node: Linux Machine, 1 Core CPU, ARM64 or AMD64 architecture, 2GB disk, iptables utility. Beyond the Paper The AE repository only contains the performance evaluation of Oakestra. In addition to this appendix and the repo, the Oakestra project provides extensive documentation",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ": To replicate the experiments, we provide an Experiments/ folder that includes the setup instructions to create your first Oakestra infrastructure and a set of scripts to automate the results collection procedure once the infrastructure is set up as shown in Table 1. Requirements We recommend the following minimum requirements for each Oakestra component. 1. Root Orchestrator: 2GB of RAM, 2 Core CPU, ARM64 or AMD64 architecture, 10GB disk, docker compose installed. Tested OS: Ubuntu 20.20, Windows 10, MacOS Monterey. 230 2023 USENIX Annual Technical Conference USENIX Association Folder Description Test 1 Deployment overhead calculation (figs. 5 and 7) Test 2 Network overhead measurements (fig. 8) Test 3 Bandwidth measurements (fig. 12) Test 4 Control message measurements (fig. 11) Test 5 Scalability stress test experiments (fig. 6) Test 6 AR pipeline experiments (fig. 9) Table 1: Experiments test folders 2. Cluster Orchestrator: 2GB of RAM, 2 Core CPU, ARM64 or AMD64 architecture, 5GB disk. Tested OS: Ubuntu 20.20, Windows 10, MacOS Monterey. 3. Worker Node: Linux Machine, 1 Core CPU, ARM64 or AMD64 architecture, 2GB disk, iptables utility. Beyond the Paper The AE repository only contains the performance evaluation of Oakestra. In addition to this appendix and the repo, the Oakestra project provides extensive documentation"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:74",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 75,
+            "label": "56",
+            "rawText": "on how to use Oakestra in a variety of infrastructure configurations and applications. In addition, interested researchers are welcome to join the community via GitHub",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "on how to use Oakestra in a variety of infrastructure configurations and applications. In addition, interested researchers are welcome to join the community via GitHub"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:75",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 76,
+            "label": "51",
+            "rawText": ". USENIX Association 2023 USENIX Annual Technical Conference 231",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". USENIX Association 2023 USENIX Annual Technical Conference 231"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023:76",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 76,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023->title:firecracker lightweight virtualization for serverless applications:2020@papers-continuum-Bartolomeo2023.pdf",
+      "source": "title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023",
+      "target": "title:firecracker lightweight virtualization for serverless applications:2020",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/continuum/Bartolomeo2023.pdf"
+    },
+    {
+      "id": "title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023->title:ekya continuous learning of video analytics models on edge compute servers:2022@papers-continuum-Bartolomeo2023.pdf",
+      "source": "title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023",
+      "target": "title:ekya continuous learning of video analytics models on edge compute servers:2022",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/continuum/Bartolomeo2023.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Bartolomeo2023",
+      "paperId": "title:oakestra a lightweight hierarchical orchestration framework for edge computing:2023",
+      "metadata": {
+        "fileName": "Bartolomeo2023.pdf",
+        "sourcePath": "papers/continuum/Bartolomeo2023.pdf"
+      }
+    }
+  ]
+}

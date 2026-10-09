@@ -1,0 +1,979 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.663580+00:00",
+  "papers": [
+    {
+      "key": "Meroni2023",
+      "paper": {
+        "id": "doi:10.1109/etfa54631.2023.10275547",
+        "citationKey": "Meroni2023",
+        "title": "Mapping and Integration of Event- and Time-triggered Real-time Tasks on Partitioned Multi-core Systems",
+        "authors": [
+          "Carlo Meroni",
+          "Silviu S. Craciunas",
+          "Anais Finzi",
+          "Paul Pop"
+        ],
+        "year": 2023,
+        "venue": "ETFA",
+        "type": "misc",
+        "doi": "10.1109/ETFA54631.2023.10275547",
+        "arxivId": "",
+        "url": "https://www.cs.uni-salzburg.at/ scraciunas/pdf/conferences/meroni_etfa23.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Carlo Meroni and Silviu S. Craciunas and Anais Finzi and Paul Pop",
+          "title": "{Mapping and Integration of Event- and Time-triggered Real-time Tasks on Partitioned Multi-core Systems}",
+          "year": "2023",
+          "howpublished": "ETFA",
+          "doi": "10.1109/ETFA54631.2023.10275547",
+          "url": "https://www.cs.uni-salzburg.at/~scraciunas/pdf/conferences/meroni_etfa23.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.298246+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref13",
+            "rawText": "https://doi.org/10.1109/rtss.2016.019",
+            "doi": "10.1109/rtss.2016.019",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2016.019"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2016.019",
+                "doi": "10.1109/rtss.2016.019",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2016.019"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref12",
+            "rawText": "isovi?. Handling mixed sets of tasks in combined offline and online scheduled real-time systems. 2009. Real-Time Syst",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "article-title": "Handling mixed sets of tasks in combined offline and online scheduled real-time systems",
+              "volume": "43",
+              "author": "isovi?",
+              "year": "2009",
+              "journal-title": "Real-Time Syst"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref12",
+                "doi": "",
+                "title": "Handling mixed sets of tasks in combined offline and online scheduled real-time systems",
+                "authors": [
+                  "isovi?"
+                ],
+                "year": 2009,
+                "venue": "Real-Time Syst",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref15",
+            "rawText": "shin. Periodic resource model for compositional real-time guarantees. 2003. Proc RTSS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "article-title": "Periodic resource model for compositional real-time guarantees",
+              "author": "shin",
+              "year": "2003",
+              "journal-title": "Proc RTSS"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1109/real.2003.1253249",
+                "doi": "",
+                "title": "Periodic resource model for compositional real-time guarantees",
+                "authors": [
+                  "shin"
+                ],
+                "year": 2003,
+                "venue": "Proc RTSS",
+                "type": "",
+                "url": "https://doi.org/10.1109/REAL.2003.1253249"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref14",
+            "rawText": "https://doi.org/10.1145/1017753.1017772",
+            "doi": "10.1145/1017753.1017772",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1017753.1017772"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1017753.1017772",
+                "doi": "10.1145/1017753.1017772",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://dl.acm.org/doi/10.1145/1017753.1017772"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1109/emrts.2003.1212751",
+            "doi": "10.1109/emrts.2003.1212751",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/EMRTS.2003.1212751"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/emrts.2003.1212751",
+                "doi": "10.1109/emrts.2003.1212751",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A243645"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref10",
+            "rawText": "https://doi.org/10.1016/j.sysarc.2017.09.004",
+            "doi": "10.1016/j.sysarc.2017.09.004",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.sysarc.2017.09.004"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/j.sysarc.2017.09.004",
+                "doi": "10.1016/j.sysarc.2017.09.004",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sysarc.2017.09.004"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref2",
+            "rawText": "https://doi.org/10.1023/a:1008198310125",
+            "doi": "10.1023/a:1008198310125",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1008198310125"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/a:1008198310125",
+                "doi": "10.1023/a:1008198310125",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/a:1008198310125"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref1",
+            "rawText": "https://doi.org/10.3389/frobt.2021.762227",
+            "doi": "10.3389/frobt.2021.762227",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.3389/frobt.2021.762227"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.3389/frobt.2021.762227",
+                "doi": "10.3389/frobt.2021.762227",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.3389/frobt.2021.762227"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref17",
+            "rawText": "https://doi.org/10.1109/emrts.2003.1212738",
+            "doi": "10.1109/emrts.2003.1212738",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/EMRTS.2003.1212738"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/emrts.2003.1212738",
+                "doi": "10.1109/emrts.2003.1212738",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/emrts.2003.1212738"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1109/real.2004.15",
+            "doi": "10.1109/real.2004.15",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/REAL.2004.15"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.2004.15",
+                "doi": "10.1109/real.2004.15",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.2004.15"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref19",
+            "rawText": "isovi?. Efficient scheduling of sporadic, aperiodic, and periodic tasks with complex constraints. 2000. Proc RTSS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "article-title": "Efficient scheduling of sporadic, aperiodic, and periodic tasks with complex constraints",
+              "author": "isovi?",
+              "year": "2000",
+              "journal-title": "Proc RTSS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref19",
+                "doi": "",
+                "title": "Efficient scheduling of sporadic, aperiodic, and periodic tasks with complex constraints",
+                "authors": [
+                  "isovi?"
+                ],
+                "year": 2000,
+                "venue": "Proc RTSS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref18",
+            "rawText": "https://doi.org/10.1109/rtss.2007.36",
+            "doi": "10.1109/rtss.2007.36",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2007.36"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2007.36",
+                "doi": "10.1109/rtss.2007.36",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2007.36"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref24",
+            "rawText": "https://doi.org/10.1109/etfa46521.2020.9212029",
+            "doi": "10.1109/etfa46521.2020.9212029",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref24",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA46521.2020.9212029"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa46521.2020.9212029",
+                "doi": "10.1109/etfa46521.2020.9212029",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa46521.2020.9212029"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref23",
+            "rawText": "https://doi.org/10.1109/real.1989.63567",
+            "doi": "10.1109/real.1989.63567",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/REAL.1989.63567"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1989.63567",
+                "doi": "10.1109/real.1989.63567",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1989.63567"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref26",
+            "rawText": "https://doi.org/10.1109/ecrts.2014.31",
+            "doi": "10.1109/ecrts.2014.31",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref26",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ECRTS.2014.31"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2014.31",
+                "doi": "10.1109/ecrts.2014.31",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2014.31"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref25",
+            "rawText": "https://doi.org/10.1109/etfa.2014.7005128",
+            "doi": "10.1109/etfa.2014.7005128",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref25",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA.2014.7005128"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa.2014.7005128",
+                "doi": "10.1109/etfa.2014.7005128",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa.2014.7005128"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref20",
+            "rawText": "skalistis. Dynamic interference-sensitive run-time adaptation of time-triggered schedules. 2020. Proc ECRTS",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "article-title": "Dynamic interference-sensitive run-time adaptation of time-triggered schedules",
+              "author": "skalistis",
+              "year": "2020",
+              "journal-title": "Proc ECRTS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref20",
+                "doi": "",
+                "title": "Dynamic interference-sensitive run-time adaptation of time-triggered schedules",
+                "authors": [
+                  "skalistis"
+                ],
+                "year": 2020,
+                "venue": "Proc ECRTS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref22",
+            "rawText": "https://doi.org/10.1109/rtss.2013.37",
+            "doi": "10.1109/rtss.2013.37",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2013.37"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2013.37",
+                "doi": "10.1109/rtss.2013.37",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2013.37"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref21",
+            "rawText": "https://doi.org/10.1023/a:1009804226473",
+            "doi": "10.1023/a:1009804226473",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1009804226473"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/a:1009804226473",
+                "doi": "10.1023/a:1009804226473",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/a:1009804226473"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref28",
+            "rawText": "https://doi.org/10.1016/b978-0-08-050684-5.50008-2",
+            "doi": "10.1016/b978-0-08-050684-5.50008-2",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref28",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/B978-0-08-050684-5.50008-2"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/b978-0-08-050684-5.50008-2",
+                "doi": "10.1016/b978-0-08-050684-5.50008-2",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/b978-0-08-050684-5.50008-2"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref27",
+            "rawText": "https://doi.org/10.1109/ecrts.2015.21",
+            "doi": "10.1109/ecrts.2015.21",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref27",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ECRTS.2015.21"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2015.21",
+                "doi": "10.1109/ecrts.2015.21",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2015.21"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref29",
+            "rawText": "isovi?. Handling sporadic tasks in off-line scheduled distributed real-time systems. 1999. Proc ECRTS",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref29",
+              "first-page": "60",
+              "article-title": "Handling sporadic tasks in off-line scheduled distributed real-time systems",
+              "author": "isovi?",
+              "year": "1999",
+              "journal-title": "Proc ECRTS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref29",
+                "doi": "",
+                "title": "Handling sporadic tasks in off-line scheduled distributed real-time systems",
+                "authors": [
+                  "isovi?"
+                ],
+                "year": 1999,
+                "venue": "Proc ECRTS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1016/j.scico.2018.11.004",
+            "doi": "10.1016/j.scico.2018.11.004",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.scico.2018.11.004"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.scico.2018.11.004",
+                "doi": "10.1016/j.scico.2018.11.004",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.scico.2018.11.004"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "ref7",
+            "rawText": "https://doi.org/10.1145/2997465.2997492",
+            "doi": "10.1145/2997465.2997492",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2997465.2997492"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2997465.2997492",
+                "doi": "10.1145/2997465.2997492",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2997465.2997492"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "ref9",
+            "rawText": "fleming. Investigating mixed criticality cyclic executive schedule generation. 2015. proc WMC",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "article-title": "Investigating mixed criticality cyclic executive schedule generation",
+              "author": "fleming",
+              "year": "2015",
+              "journal-title": "proc WMC"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref9",
+                "doi": "",
+                "title": "Investigating mixed criticality cyclic executive schedule generation",
+                "authors": [
+                  "fleming"
+                ],
+                "year": 2015,
+                "venue": "proc WMC",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "ref4",
+            "rawText": "https://doi.org/10.1145/2593069.2593211",
+            "doi": "10.1145/2593069.2593211",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2593069.2593211"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2593069.2593211",
+                "doi": "10.1145/2593069.2593211",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2593069.2593211"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.3182/20020721-6-es-1901.00951",
+            "doi": "10.3182/20020721-6-es-1901.00951",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.3182/20020721-6-ES-1901.00951"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.3182/20020721-6-es-1901.00951",
+                "doi": "10.3182/20020721-6-es-1901.00951",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.3182/20020721-6-es-1901.00951"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "ref6",
+            "rawText": "mehmed. A time-triggered middleware for safety-critical automotive applications. 2017. Proc AEiC",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "article-title": "A time-triggered middleware for safety-critical automotive applications",
+              "author": "mehmed",
+              "year": "2017",
+              "journal-title": "Proc AEiC"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref6",
+                "doi": "",
+                "title": "A time-triggered middleware for safety-critical automotive applications",
+                "authors": [
+                  "mehmed"
+                ],
+                "year": 2017,
+                "venue": "Proc AEiC",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "ref5",
+            "rawText": "https://doi.org/10.1109/aspdac.2012.6165039",
+            "doi": "10.1109/aspdac.2012.6165039",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ASPDAC.2012.6165039"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/aspdac.2012.6165039",
+                "doi": "10.1109/aspdac.2012.6165039",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/aspdac.2012.6165039"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/etfa54631.2023.10275547",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 4,
+          "extractedReferenceCount": 29,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/etfa54631.2023.10275547",
+          "crossrefReferenceCount": 29
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/etfa54631.2023.10275547->doi:10.1109/real.2003.1253249@papers-mixed-event-time-triggered-Meroni2023.pdf",
+      "source": "doi:10.1109/etfa54631.2023.10275547",
+      "target": "doi:10.1109/real.2003.1253249",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Meroni2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/etfa54631.2023.10275547->doi:10.1145/1017753.1017772@papers-mixed-event-time-triggered-Meroni2023.pdf",
+      "source": "doi:10.1109/etfa54631.2023.10275547",
+      "target": "doi:10.1145/1017753.1017772",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Meroni2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/etfa54631.2023.10275547->doi:10.1109/emrts.2003.1212751@papers-mixed-event-time-triggered-Meroni2023.pdf",
+      "source": "doi:10.1109/etfa54631.2023.10275547",
+      "target": "doi:10.1109/emrts.2003.1212751",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Meroni2023.pdf"
+    },
+    {
+      "id": "doi:10.1109/etfa54631.2023.10275547->doi:10.1016/j.sysarc.2017.09.004@papers-mixed-event-time-triggered-Meroni2023.pdf",
+      "source": "doi:10.1109/etfa54631.2023.10275547",
+      "target": "doi:10.1016/j.sysarc.2017.09.004",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Meroni2023.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Meroni2023",
+      "paperId": "doi:10.1109/etfa54631.2023.10275547",
+      "metadata": {
+        "fileName": "Meroni2023.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Meroni2023.pdf"
+      }
+    }
+  ]
+}

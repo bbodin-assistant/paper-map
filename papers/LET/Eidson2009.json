@@ -1,0 +1,918 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.737593+00:00",
+  "papers": [
+    {
+      "key": "Eidson2009",
+      "paper": {
+        "id": "title:time centric models for designing embedded cyber physical systems:2009",
+        "citationKey": "Eidson2009",
+        "title": "Time-centric Models for Designing Embedded Cyber-physical Systems",
+        "authors": [
+          "John C. Eidson",
+          "Edward A. Lee",
+          "Slobodan Matic",
+          "Sanjit A. Seshia",
+          "Jia Zou"
+        ],
+        "year": 2009,
+        "venue": "",
+        "type": "techreport",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-135.html",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Eidson, John C. and Lee, Edward A. and Matic, Slobodan and Seshia, Sanjit A. and Zou, Jia",
+          "title": "{Time-centric Models for Designing Embedded Cyber-physical Systems}",
+          "year": "2009",
+          "institution": "EECS Department, University of California, Berkeley",
+          "number": "UCB/EECS-2009-135",
+          "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-135.html"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.062453+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "F. Baccelli, G. Cohen, G. J. Olster, and J. P. Quadrat. Synchronization and Linearity, An Algebra for Discrete Event Systems. Wiley, New York, 1992.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "F. Baccelli, G. Cohen, G. J. Olster, and J. P. Quadrat. Synchronization and Linearity, An Algebra for Discrete Event Systems. Wiley, New York, 1992."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:synchronization and linearity an algebra for discrete event systems:1992",
+                "doi": "",
+                "arxivId": "",
+                "title": "Synchronization and Linearity: An Algebra for Discrete Event Systems",
+                "authors": [
+                  "Francois Baccelli",
+                  "Guy Cohen",
+                  "Geert Jan Olsder",
+                  "Jean-Pierre Quadrat"
+                ],
+                "year": 1992,
+                "venue": "Wiley",
+                "type": "book",
+                "url": "https://www.rocq.inria.fr/metalau/cohen/SED/book-online.html"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "C. G. Cassandras. Discrete Event Systems, Modeling and Performance Analysis. Irwin, 1993.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. G. Cassandras. Discrete Event Systems, Modeling and Performance Analysis. Irwin, 1993."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "K. M. Chandy and J. Misra. Distributed simulation: A case study in design and veriﬁcation of distributed programs. IEEE Transaction on Software Engineering, 5(5), 1979.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1979,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "K. M. Chandy and J. Misra. Distributed simulation: A case study in design and veriﬁcation of distributed programs. IEEE Transaction on Software Engineering, 5(5), 1979."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1979,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "P. Derler, E. Lee, and S. Matic. Simulation and implementation of the ptides programming model. In International Symposium on Distributed Simulation and Real Time Applications (DS-RT), Vancouver, Canada, 2008. IEEE.",
+            "doi": "10.1109/DS-RT.2008.51",
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P. Derler, E. Lee, and S. Matic. Simulation and implementation of the ptides programming model. In International Symposium on Distributed Simulation and Real Time Applications (DS-RT), Vancouver, Canada, 2008. IEEE."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/ds-rt.2008.51",
+                "doi": "10.1109/DS-RT.2008.51",
+                "arxivId": "",
+                "title": "Simulation and Implementation of the PTIDES Programming Model",
+                "authors": [
+                  "Patricia Derler",
+                  "Edward A. Lee",
+                  "Slobodan Matic"
+                ],
+                "year": 2008,
+                "venue": "2008 12th IEEE/ACM International Symposium on Distributed Simulation and Real-Time Applications",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/DS-RT.2008.51"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "J. C. Eidson. Measurement, Control, and Communication Using IEEE 1588, pages 194–200. Springer, London, 2006.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. C. Eidson. Measurement, Control, and Communication Using IEEE 1588, pages 194–200. Springer, London, 2006."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "J. Eker, J. W. Janneck, E. A. Lee, J. Liu, X. Liu, J. Ludvig, S. Neuendorffer, S. Sachs, and Y. Xiong. Taming heterogeneity—the ptolemy approach. Proceedings of the IEEE, 91(2):127–144, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Eker, J. W. Janneck, E. A. Lee, J. Liu, X. Liu, J. Ludvig, S. Neuendorffer, S. Sachs, and Y. Xiong. Taming heterogeneity—the ptolemy approach. Proceedings of the IEEE, 91(2):127–144, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "D. Harel. Statecharts: A visual formalism for complex systems. Science of Computer Programming, 8:231–274, 1987.",
+            "doi": "10.1016/0167-6423(87)90035-9",
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Harel. Statecharts: A visual formalism for complex systems. Science of Computer Programming, 8:231–274, 1987."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1016/0167-6423(87)90035-9",
+                "doi": "10.1016/0167-6423(87)90035-9",
+                "arxivId": "",
+                "title": "Statecharts: A Visual Formalism for Complex Systems",
+                "authors": [
+                  "David Harel"
+                ],
+                "year": 1987,
+                "venue": "Science of Computer Programming",
+                "type": "article",
+                "url": "https://doi.org/10.1016/0167-6423(87)90035-9"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "IEEE Instrumentation and Measurement Society. 1588: IEEE standard for a precision clock synchronization protocol for networked measurement and control systems. Standard speciﬁcation, IEEE, July 24 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IEEE Instrumentation and Measurement Society. 1588: IEEE standard for a precision clock synchronization protocol for networked measurement and control systems. Standard speciﬁcation, IEEE, July 24 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "S. Johannessen. Time synchronization in a local area network. IEEE Control Systems Magazine, pages 61–69, 2004.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Johannessen. Time synchronization in a local area network. IEEE Control Systems Magazine, pages 61–69, 2004."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "H. Kopetz and G. Bauer. The time-triggered architecture. Proceedings of the IEEE, 91(1):112–126, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Kopetz and G. Bauer. The time-triggered architecture. Proceedings of the IEEE, 91(1):112–126, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "E. Lee, S. Matic, S. Seshia, and J. Zou. The case for timing-centric distributed software. In International Workshop on Cyber-Physical Systems, Montreal, Canada, 2009. IEEE.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. Lee, S. Matic, S. Seshia, and J. Zou. The case for timing-centric distributed software. In International Workshop on Cyber-Physical Systems, Montreal, Canada, 2009. IEEE."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "E. A. Lee. Modeling concurrent real-time processes using discrete events. Annals of Software Engineering, 7:25–45, 1999. 23",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. A. Lee. Modeling concurrent real-time processes using discrete events. Annals of Software Engineering, 7:25–45, 1999. 23"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "E. A. Lee and A. Sangiovanni-Vincentelli. A framework for comparing models of computation. IEEE Transactions on Computer-Aided Design of Circuits and Systems, 17(12):1217–1229, 1998.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. A. Lee and A. Sangiovanni-Vincentelli. A framework for comparing models of computation. IEEE Transactions on Computer-Aided Design of Circuits and Systems, 17(12):1217–1229, 1998."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "E. A. Lee and H. Zheng. Leveraging synchronous language principles for heterogeneous modeling and design of embedded systems. In EMSOFT, Salzburg, Austria, 2007. ACM.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. A. Lee and H. Zheng. Leveraging synchronous language principles for heterogeneous modeling and design of embedded systems. In EMSOFT, Salzburg, Austria, 2007. ACM."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "X. Liu and E. A. Lee. CPO semantics of timed interactive actor networks. Theoretical Computer Science, 409(1):110–125, 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "X. Liu and E. A. Lee. CPO semantics of timed interactive actor networks. Theoretical Computer Science, 409(1):110–125, 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "O. Maler, Z. Manna, and A. Pnueli. From timed to hybrid systems. In Real-Time: Theory and Practice, REX Workshop, pages 447–484. Springer-Verlag, 1992.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "O. Maler, Z. Manna, and A. Pnueli. From timed to hybrid systems. In Real-Time: Theory and Practice, REX Workshop, pages 447–484. Springer-Verlag, 1992."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "Z. Manna and A. Pnueli. Verifying hybrid systems. Hybrid Systems, pages 4–35, 1992.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Z. Manna and A. Pnueli. Verifying hybrid systems. Hybrid Systems, pages 4–35, 1992."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "R. Olfati-Saber, J. A. Fax, and R. M. Murray. Consensus and cooperation in networked multi-agent systems. Proceedings of the IEEE, 95(1):215–233, 2007.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "R. Olfati-Saber, J. A. Fax, and R. M. Murray. Consensus and cooperation in networked multi-agent systems. Proceedings of the IEEE, 95(1):215–233, 2007."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "O.M.G. U.m.l. speciﬁcation Version 1.3. Object Management Group, 1999.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "O.M.G. U.m.l. speciﬁcation Version 1.3. Object Management Group, 1999."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "P. Ramadge and W. Wonham. The control of discrete event systems. Proceedings of the IEEE, 77(1):81–98, 1989.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "P. Ramadge and W. Wonham. The control of discrete event systems. Proceedings of the IEEE, 77(1):81–98, 1989."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1989,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "D. Rosselot. Simple, accurate time synchronization in an ethernet physical layer device. In ISPCS: International IEEE Symposium on Precision Clock Synchronization for Measurement, Control and Communication. Vienna, 2007.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Rosselot. Simple, accurate time synchronization in an ethernet physical layer device. In ISPCS: International IEEE Symposium on Precision Clock Synchronization for Measurement, Control and Communication. Vienna, 2007."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "B. P. Zeigler, H. Praehofer, and T. G. Kim. Theory of Modeling and Simulation. Academic Press, 2nd edition, 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "B. P. Zeigler, H. Praehofer, and T. G. Kim. Theory of Modeling and Simulation. Academic Press, 2nd edition, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "Y. Zhao, E. A. Lee, and J. Liu. A programming model for time-synchronized distributed real-time systems. In Real-Time and Embedded Technology and Applications Symposium (RTAS), Bellevue, WA, USA, 2007. IEEE.",
+            "doi": "10.1109/rtas.2007.5",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Y. Zhao, E. A. Lee, and J. Liu. A programming model for time-synchronized distributed real-time systems. In Real-Time and Embedded Technology and Applications Symposium (RTAS), Bellevue, WA, USA, 2007. IEEE."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2007.5",
+                "doi": "10.1109/rtas.2007.5",
+                "arxivId": "",
+                "title": "A Programming Model for Time-Synchronized Distributed Real-Time Systems",
+                "authors": [
+                  "Yang Zhao",
+                  "Jie Liu",
+                  "Edward A. Lee"
+                ],
+                "year": 2007,
+                "venue": "13th IEEE Real Time and Embedded Technology and Applications Symposium (RTAS'07)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas.2007.5"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "Y. Zhou and E. A. Lee. Causality interfaces for actor networks. ACM Transactions on Embedded Computing Systems (TECS), 7(3):1–35, 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Y. Zhou and E. A. Lee. Causality interfaces for actor networks. ACM Transactions on Embedded Computing Systems (TECS), 7(3):1–35, 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "J. Zou, J. Auerbach, D. Bacon, and E. Lee. Ptides on ﬂexible task graph: Real-time embedded system building from theory to practice. In Conference on Languages, Compilers, and Tools for Embedded Systems (LCTES), Dublin, Ireland, 2009. ACM.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Zou, J. Auerbach, D. Bacon, and E. Lee. Ptides on ﬂexible task graph: Real-time embedded system building from theory to practice. In Conference on Languages, Compilers, and Tools for Embedded Systems (LCTES), Dublin, Ireland, 2009. ACM."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:time centric models for designing embedded cyber physical systems:2009:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "J. Zou, S. Matic, E. Lee, T. Feng, and P. Derler. Execution strategies for ptides, a programming model for distributed embedded systems. In Real-Time and Embedded Technology and Applications Symposium (RTAS), San Francisco, CA, USA, 2009. IEEE. 24",
+            "doi": "10.1109/RTAS.2009.39",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Zou, S. Matic, E. Lee, T. Feng, and P. Derler. Execution strategies for ptides, a programming model for distributed embedded systems. In Real-Time and Embedded Technology and Applications Symposium (RTAS), San Francisco, CA, USA, 2009. IEEE. 24"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2009.39",
+                "doi": "10.1109/RTAS.2009.39",
+                "arxivId": "",
+                "title": "Execution Strategies for PTIDES, a Programming Model for Distributed Embedded Systems",
+                "authors": [
+                  "Jia Zou",
+                  "Slobodan Matic",
+                  "Edward A. Lee",
+                  "Thomas Huining Feng",
+                  "Patricia Derler"
+                ],
+                "year": 2009,
+                "venue": "2009 15th IEEE Real-Time and Embedded Technology and Applications Symposium",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/RTAS.2009.39"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.21236/ada538747",
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 5,
+          "extractedReferenceCount": 26,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.21236/ada538747",
+          "crossrefReferenceCount": 0
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:time centric models for designing embedded cyber physical systems:2009->title:synchronization and linearity an algebra for discrete event systems:1992@papers-LET-Eidson2009.pdf",
+      "source": "title:time centric models for designing embedded cyber physical systems:2009",
+      "target": "title:synchronization and linearity an algebra for discrete event systems:1992",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Eidson2009.pdf"
+    },
+    {
+      "id": "title:time centric models for designing embedded cyber physical systems:2009->doi:10.1109/ds-rt.2008.51@papers-LET-Eidson2009.pdf",
+      "source": "title:time centric models for designing embedded cyber physical systems:2009",
+      "target": "doi:10.1109/ds-rt.2008.51",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Eidson2009.pdf"
+    },
+    {
+      "id": "title:time centric models for designing embedded cyber physical systems:2009->doi:10.1016/0167-6423(87)90035-9@papers-LET-Eidson2009.pdf",
+      "source": "title:time centric models for designing embedded cyber physical systems:2009",
+      "target": "doi:10.1016/0167-6423(87)90035-9",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Eidson2009.pdf"
+    },
+    {
+      "id": "title:time centric models for designing embedded cyber physical systems:2009->doi:10.1109/rtas.2007.5@papers-LET-Eidson2009.pdf",
+      "source": "title:time centric models for designing embedded cyber physical systems:2009",
+      "target": "doi:10.1109/rtas.2007.5",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Eidson2009.pdf"
+    },
+    {
+      "id": "title:time centric models for designing embedded cyber physical systems:2009->doi:10.1109/rtas.2009.39@papers-LET-Eidson2009.pdf",
+      "source": "title:time centric models for designing embedded cyber physical systems:2009",
+      "target": "doi:10.1109/rtas.2009.39",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Eidson2009.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Eidson2009",
+      "paperId": "title:time centric models for designing embedded cyber physical systems:2009",
+      "metadata": {
+        "fileName": "Eidson2009.pdf",
+        "sourcePath": "papers/LET/Eidson2009.pdf"
+      }
+    }
+  ]
+}

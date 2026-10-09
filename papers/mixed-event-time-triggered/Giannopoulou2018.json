@@ -1,0 +1,2228 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.760948+00:00",
+  "papers": [
+    {
+      "key": "Giannopoulou2018",
+      "paper": {
+        "id": "doi:10.1007/s10617-018-9206-3",
+        "citationKey": "Giannopoulou2018",
+        "title": "DOL-BIP-Critical: a tool chain for rigorous design and implementation of mixed-criticality multi-core systems",
+        "authors": [
+          "Georgia Giannopoulou",
+          "Peter Poplavko",
+          "Dario Socci",
+          "Pengcheng Huang",
+          "Nikolay Stoimenov",
+          "Paraskevas Bourgos",
+          "Lothar Thiele",
+          "Marius Bozga",
+          "Saddek Bensalem",
+          "Sylvain Girbal",
+          "Madeleine Faugere",
+          "Romain Soulat",
+          "Benoit Dupont de Dinechin"
+        ],
+        "year": 2018,
+        "venue": "Design Automation for Embedded Systems",
+        "type": "misc",
+        "doi": "10.1007/s10617-018-9206-3",
+        "arxivId": "",
+        "url": "https://www.verimag.fr/IMG/pdf/cty_jrn_tik-report-363_2016.pdf",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Georgia Giannopoulou and Peter Poplavko and Dario Socci and Pengcheng Huang and Nikolay Stoimenov and Paraskevas Bourgos and Lothar Thiele and Marius Bozga and Saddek Bensalem and Sylvain Girbal and Madeleine Faugere and Romain Soulat and Benoit Dupont de Dinechin",
+          "title": "{DOL-BIP-Critical: a tool chain for rigorous design and implementation of mixed-criticality multi-core systems}",
+          "year": "2018",
+          "howpublished": "Design Automation for Embedded Systems",
+          "doi": "10.1007/s10617-018-9206-3",
+          "url": "https://www.verimag.fr/IMG/pdf/cty_jrn_tik-report-363_2016.pdf"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.304347+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "9206_CR1",
+            "rawText": "Abdellatif T, Combaz J, Sifakis J (2010) Model-based implementation of real-time applications. In: EMSOFT ’10",
+            "doi": "10.1145/1879021.1879052",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Abdellatif T, Combaz J, Sifakis J (2010) Model-based implementation of real-time applications. In: EMSOFT ’10",
+              "DOI": "10.1145/1879021.1879052"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1879021.1879052",
+                "doi": "10.1145/1879021.1879052",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1879021.1879052"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "9206_CR2",
+            "rawText": "AbsInt (2015) aiT worst-case execution time analyzers. \n                    https://www.absint.com/ait/",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR2",
+              "unstructured": "AbsInt (2015) aiT worst-case execution time analyzers. \n                    https://www.absint.com/ait/"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "9206_CR3",
+            "rawText": "Alur R, Dill DL (1990) Automata for modeling real-time systems. In: Paterson M (ed) Proceedings of the 17th international colloquium on automata, languages and programming (ICALP), LNCS, vol 443, Springer, pp 322–335",
+            "doi": "10.1007/bfb0032042",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR3",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Alur R, Dill DL (1990) Automata for modeling real-time systems. In: Paterson M (ed) Proceedings of the 17th international colloquium on automata, languages and programming (ICALP), LNCS, vol 443, Springer, pp 322–335",
+              "DOI": "10.1007/BFb0032042"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bfb0032042",
+                "doi": "10.1007/bfb0032042",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/bfb0032042"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "9206_CR4",
+            "rawText": "Amnell T, Fersman E, Mokrushin L, Pettersson P, Yi W (2002) TIMES—a tool for modelling and implementation of embedded systems. In: Proceedings of tools and algorithms for the construction and analysis of systems, Springer, pp 460–464",
+            "doi": "10.1007/3-540-46002-0_32",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR4",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Amnell T, Fersman E, Mokrushin L, Pettersson P, Yi W (2002) TIMES—a tool for modelling and implementation of embedded systems. In: Proceedings of tools and algorithms for the construction and analysis of systems, Springer, pp 460–464",
+              "DOI": "10.1007/3-540-46002-0_32"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-46002-0_32",
+                "doi": "10.1007/3-540-46002-0_32",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-46002-0_32"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "9206_CR5",
+            "rawText": "Anderson J, Baruah S, Brandenburg B (2009) Multicore operating-system support for mixed criticality. In: Workshop on mixed criticality: roadmap to evolving UAV certification",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR5",
+              "unstructured": "Anderson J, Baruah S, Brandenburg B (2009) Multicore operating-system support for mixed criticality. In: Workshop on mixed criticality: roadmap to evolving UAV certification"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR5",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "9206_CR6",
+            "rawText": "ARINC. ARINC 653-1 Avionics application software standard interface. Technical report",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR6",
+              "unstructured": "ARINC. ARINC 653-1 Avionics application software standard interface. Technical report"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR6",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "9206_CR7",
+            "rawText": "Barhorst J, Belote T, Binns P, Hoffman J, Paunicka J, Sarathy P, Stanfill J, Stuart D, Urzi R (2009) White paper: a research agenda for mixed-criticality systems, CPS Week 2009. \n                    http://www.cse.wustl.edu/~cdgill/CPSWEEK09_MCAR",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR7",
+              "unstructured": "Barhorst J, Belote T, Binns P, Hoffman J, Paunicka J, Sarathy P, Stanfill J, Stuart D, Urzi R (2009) White paper: a research agenda for mixed-criticality systems, CPS Week 2009. \n                    http://www.cse.wustl.edu/~cdgill/CPSWEEK09_MCAR"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR7",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "9206_CR8",
+            "rawText": "Baruah S, Chattopadhyay B, Li H, Shin I (2014) Mixed-criticality scheduling on multiprocessors. Real Time Syst 50:142–177",
+            "doi": "10.1007/s11241-013-9184-2",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR8",
+              "doi-asserted-by": "publisher",
+              "first-page": "142",
+              "DOI": "10.1007/s11241-013-9184-2",
+              "volume": "50",
+              "author": "S Baruah",
+              "year": "2014",
+              "unstructured": "Baruah S, Chattopadhyay B, Li H, Shin I (2014) Mixed-criticality scheduling on multiprocessors. Real Time Syst 50:142–177",
+              "journal-title": "Real Time Syst"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-013-9184-2",
+                "doi": "10.1007/s11241-013-9184-2",
+                "title": "",
+                "authors": [
+                  "S Baruah"
+                ],
+                "year": 2014,
+                "venue": "Real Time Syst",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-013-9184-2"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9206_CR9",
+            "rawText": "Bourgos P, Basu A, Bozga M, Bensalem S, Sifakis J, Huang K (2011) Rigorous system level modeling and analysis of mixed HW/SW systems. In: Proceedings of international conference on formal methods and models for codesign, MEMOCODE 2011, pp 11–20",
+            "doi": "10.1109/memcod.2011.5970506",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR9",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Bourgos P, Basu A, Bozga M, Bensalem S, Sifakis J, Huang K (2011) Rigorous system level modeling and analysis of mixed HW/SW systems. In: Proceedings of international conference on formal methods and models for codesign, MEMOCODE 2011, pp 11–20",
+              "DOI": "10.1109/MEMCOD.2011.5970506"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/memcod.2011.5970506",
+                "doi": "10.1109/memcod.2011.5970506",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/memcod.2011.5970506"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "9206_CR10",
+            "rawText": "Burns A, Baruah S (2013) Towards a more practical model for mixed criticality systems. Workshop on mixed criticality, pp 1–6",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR10",
+              "unstructured": "Burns A, Baruah S (2013) Towards a more practical model for mixed criticality systems. Workshop on mixed criticality, pp 1–6"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR10",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "9206_CR11",
+            "rawText": "Burns A, Davis R (2015) Mixed criticality systems: a review. \n                    https://www-users.cs.york.ac.uk/burns/review.pdf",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR11",
+              "unstructured": "Burns A, Davis R (2015) Mixed criticality systems: a review. \n                    https://www-users.cs.york.ac.uk/burns/review.pdf"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR11",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "9206_CR12",
+            "rawText": "Burns A, Fleming T, Baruah S (2015) Cyclic executives, multi-core platforms and mixed criticality applications. In: Euromicro conference on real-time systems (ECRTS), pp 3–12",
+            "doi": "10.1109/ecrts.2015.8",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR12",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Burns A, Fleming T, Baruah S (2015) Cyclic executives, multi-core platforms and mixed criticality applications. In: Euromicro conference on real-time systems (ECRTS), pp 3–12",
+              "DOI": "10.1109/ECRTS.2015.8"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2015.8",
+                "doi": "10.1109/ecrts.2015.8",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2015.8"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "9206_CR13",
+            "rawText": "Calandrino J, Leontyev H, Block A, Devi U, Anderson J (2006) LITMUS RT: a testbed for empirically comparing real-time multiprocessor schedulers. In: RTSS, pp 111–126",
+            "doi": "10.1109/rtss.2006.27",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR13",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Calandrino J, Leontyev H, Block A, Devi U, Anderson J (2006) LITMUS RT: a testbed for empirically comparing real-time multiprocessor schedulers. In: RTSS, pp 111–126",
+              "DOI": "10.1109/RTSS.2006.27"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2006.27",
+                "doi": "10.1109/rtss.2006.27",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2006.27"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "9206_CR14",
+            "rawText": "de Dinechin B D, van Amstel D, Poulhiès M, Lager G (2014) Time-critical computing on a single-chip massively parallel processor. In: DATE’14, EDAA",
+            "doi": "10.7873/date.2014.110",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR14",
+              "doi-asserted-by": "crossref",
+              "unstructured": "de Dinechin B D, van Amstel D, Poulhiès M, Lager G (2014) Time-critical computing on a single-chip massively parallel processor. In: DATE’14, EDAA",
+              "DOI": "10.7873/DATE.2014.110"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.7873/date.2014.110",
+                "doi": "10.7873/date.2014.110",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.7873/date.2014.110"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "9206_CR15",
+            "rawText": "de Niz D, Phan LTX (2014) Partitioned scheduling of multi-modal mixed-criticality real-time systems on multiprocessor platforms. In: RTAS, pp 111–122",
+            "doi": "10.1109/rtas.2014.6925995",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR15",
+              "doi-asserted-by": "crossref",
+              "unstructured": "de Niz D, Phan LTX (2014) Partitioned scheduling of multi-modal mixed-criticality real-time systems on multiprocessor platforms. In: RTAS, pp 111–122",
+              "DOI": "10.1109/RTAS.2014.6925995"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2014.6925995",
+                "doi": "10.1109/rtas.2014.6925995",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2014.6925995"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "9206_CR16",
+            "rawText": "DO-178C. RTCA/DO-178C, Software considerations in airborne systems and equipment certification (2012)",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR16",
+              "unstructured": "DO-178C. RTCA/DO-178C, Software considerations in airborne systems and equipment certification (2012)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR16",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "9206_CR17",
+            "rawText": "DOL-Critical (2014) Distributed operation layer for mixed-criticality applications. \n                    http://www.tik.ee.ethz.ch/~certainty/dolc.html",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR17",
+              "unstructured": "DOL-Critical (2014) Distributed operation layer for mixed-criticality applications. \n                    http://www.tik.ee.ethz.ch/~certainty/dolc.html"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR17",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "9206_CR18",
+            "rawText": "Durrieu G, Faugère M, Girbal S, G. Pérez D, Pagetti C, Puffitsch W (2014) Predictable flight management system implementation on a multicore processor. In: ERTSS’14",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR18",
+              "unstructured": "Durrieu G, Faugère M, Girbal S, G. Pérez D, Pagetti C, Puffitsch W (2014) Predictable flight management system implementation on a multicore processor. In: ERTSS’14"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR18",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "9206_CR19",
+            "rawText": "Easwaran A (2013) Demand-based scheduling of mixed-criticality sporadic tasks on one processor. In: RTSS’13",
+            "doi": "10.1109/rtss.2013.16",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR19",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Easwaran A (2013) Demand-based scheduling of mixed-criticality sporadic tasks on one processor. In: RTSS’13",
+              "DOI": "10.1109/RTSS.2013.16"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2013.16",
+                "doi": "10.1109/rtss.2013.16",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2013.16"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "9206_CR20",
+            "rawText": "Ekberg P, Yi W (2012) Bounding and shaping the demand of mixed-criticality sporadic tasks. In: ECRTS’12",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR20",
+              "unstructured": "Ekberg P, Yi W (2012) Bounding and shaping the demand of mixed-criticality sporadic tasks. In: ECRTS’12"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR20",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "9206_CR21",
+            "rawText": "Fersman E, Krcál P, Pettersson P, Yi W (2007) Task automata: schedulability, decidability and undecidability. Inf Comput 205(8):1149–1172",
+            "doi": "10.1016/j.ic.2007.01.009",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "8",
+              "key": "9206_CR21",
+              "doi-asserted-by": "publisher",
+              "first-page": "1149",
+              "DOI": "10.1016/j.ic.2007.01.009",
+              "volume": "205",
+              "author": "E Fersman",
+              "year": "2007",
+              "unstructured": "Fersman E, Krcál P, Pettersson P, Yi W (2007) Task automata: schedulability, decidability and undecidability. Inf Comput 205(8):1149–1172",
+              "journal-title": "Inf Comput"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.ic.2007.01.009",
+                "doi": "10.1016/j.ic.2007.01.009",
+                "title": "",
+                "authors": [
+                  "E Fersman"
+                ],
+                "year": 2007,
+                "venue": "Inf Comput",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.ic.2007.01.009"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "9206_CR22",
+            "rawText": "Flodin J, Lampka K, Yi W (2014) Dynamic budgeting for settling DRAM contention of co-running hard and soft real-time tasks. In: 2014 9th IEEE international symposium on Industrial embedded systems (SIES), pp 151–159",
+            "doi": "10.1109/sies.2014.6871199",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR22",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Flodin J, Lampka K, Yi W (2014) Dynamic budgeting for settling DRAM contention of co-running hard and soft real-time tasks. In: 2014 9th IEEE international symposium on Industrial embedded systems (SIES), pp 151–159",
+              "DOI": "10.1109/SIES.2014.6871199"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/sies.2014.6871199",
+                "doi": "10.1109/sies.2014.6871199",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/sies.2014.6871199"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "9206_CR23",
+            "rawText": "Giannopoulou G, Lampka K, Stoimenov N, Thiele L (2012) Timed model checking with abstractions: towards worst-case response time analysis in resource-sharing manycore systems. In: EMSOFT’12",
+            "doi": "10.1145/2380356.2380372",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR23",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Giannopoulou G, Lampka K, Stoimenov N, Thiele L (2012) Timed model checking with abstractions: towards worst-case response time analysis in resource-sharing manycore systems. In: EMSOFT’12",
+              "DOI": "10.1145/2380356.2380372"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2380356.2380372",
+                "doi": "10.1145/2380356.2380372",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2380356.2380372"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "9206_CR24",
+            "rawText": "Giannopoulou G, Stoimenov N, Huang P, Thiele L (2013) Scheduling of mixed-criticality applications on resource-sharing multicore systems. In: EMSOFT’13",
+            "doi": "10.1109/emsoft.2013.6658595",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR24",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Giannopoulou G, Stoimenov N, Huang P, Thiele L (2013) Scheduling of mixed-criticality applications on resource-sharing multicore systems. In: EMSOFT’13",
+              "DOI": "10.1109/EMSOFT.2013.6658595"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/emsoft.2013.6658595",
+                "doi": "10.1109/emsoft.2013.6658595",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/emsoft.2013.6658595"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "9206_CR25",
+            "rawText": "Giannopoulou G, Stoimenov N, Huang P, Thiele L, de Dinechin B (2015) Mixed-criticality scheduling on cluster-based manycores with shared communication and storage resources. Real Time Syst 51:1–51",
+            "doi": "10.1007/s11241-014-9214-8",
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR25",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "DOI": "10.1007/s11241-014-9214-8",
+              "volume": "51",
+              "author": "G Giannopoulou",
+              "year": "2015",
+              "unstructured": "Giannopoulou G, Stoimenov N, Huang P, Thiele L, de Dinechin B (2015) Mixed-criticality scheduling on cluster-based manycores with shared communication and storage resources. Real Time Syst 51:1–51",
+              "journal-title": "Real Time Syst"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11241-014-9214-8",
+                "doi": "10.1007/s11241-014-9214-8",
+                "title": "",
+                "authors": [
+                  "G Giannopoulou"
+                ],
+                "year": 2015,
+                "venue": "Real Time Syst",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11241-014-9214-8"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "9206_CR26",
+            "rawText": "Goossens S, Akesson B, Goossens K (2013) Conservative open-page policy for mixed time-criticality memory controllers. In: DATE’13",
+            "doi": "10.7873/date.2013.118",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR26",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Goossens S, Akesson B, Goossens K (2013) Conservative open-page policy for mixed time-criticality memory controllers. In: DATE’13",
+              "DOI": "10.7873/DATE.2013.118"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.7873/date.2013.118",
+                "doi": "10.7873/date.2013.118",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.7873/date.2013.118"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "9206_CR27",
+            "rawText": "Hansson A, Goossens K, Bekooij M, Huisken J (2009) CompSoC: a template for composable and predictable multi-processor system on chips. ACM Trans Des Autom Electron Syst (TODAES) 14(1):2",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "9206_CR27",
+              "first-page": "2",
+              "volume": "14",
+              "author": "A Hansson",
+              "year": "2009",
+              "unstructured": "Hansson A, Goossens K, Bekooij M, Huisken J (2009) CompSoC: a template for composable and predictable multi-processor system on chips. ACM Trans Des Autom Electron Syst (TODAES) 14(1):2",
+              "journal-title": "ACM Trans Des Autom Electron Syst (TODAES)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR27",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "A Hansson"
+                ],
+                "year": 2009,
+                "venue": "ACM Trans Des Autom Electron Syst (TODAES)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "9206_CR28",
+            "rawText": "Hassan M, Patel H, Pellizzoni R (2015) A framework for scheduling DRAM memory accesses for multi-core mixed-time critical systems. In: RTAS, pp 307–316",
+            "doi": "10.1109/rtas.2015.7108454",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR28",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Hassan M, Patel H, Pellizzoni R (2015) A framework for scheduling DRAM memory accesses for multi-core mixed-time critical systems. In: RTAS, pp 307–316",
+              "DOI": "10.1109/RTAS.2015.7108454"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2015.7108454",
+                "doi": "10.1109/rtas.2015.7108454",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2015.7108454"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "9206_CR29",
+            "rawText": "Herman J, Kenna C, Mollison M, Anderson J, Johnson D (2012) RTOS support for multicore mixed-criticality systems. In: RTAS, pp 197–208",
+            "doi": "10.1109/rtas.2012.24",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR29",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Herman J, Kenna C, Mollison M, Anderson J, Johnson D (2012) RTOS support for multicore mixed-criticality systems. In: RTAS, pp 197–208",
+              "DOI": "10.1109/RTAS.2012.24"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2012.24",
+                "doi": "10.1109/rtas.2012.24",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2012.24"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "9206_CR30",
+            "rawText": "Huang H-M, Gill C, Lu C (2014) Implementation and evaluation of mixed-criticality scheduling approaches for sporadic tasks. ACM Trans Embed Comput Syst 13(4s):126:1–126:25",
+            "doi": "10.1145/2584612",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4s",
+              "key": "9206_CR30",
+              "doi-asserted-by": "publisher",
+              "first-page": "126:1",
+              "DOI": "10.1145/2584612",
+              "volume": "13",
+              "author": "H-M Huang",
+              "year": "2014",
+              "unstructured": "Huang H-M, Gill C, Lu C (2014) Implementation and evaluation of mixed-criticality scheduling approaches for sporadic tasks. ACM Trans Embed Comput Syst 13(4s):126:1–126:25",
+              "journal-title": "ACM Trans Embed Comput Syst"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2584612",
+                "doi": "10.1145/2584612",
+                "title": "",
+                "authors": [
+                  "H-M Huang"
+                ],
+                "year": 2014,
+                "venue": "ACM Trans Embed Comput Syst",
+                "type": "",
+                "url": "https://doi.org/10.1145/2584612"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "9206_CR31",
+            "rawText": "Huang K, Haid W, Bacivarov I, Keller M, Thiele L (2012) Embedding formal performance analysis into the design cycle of MPSoCs for real-time streaming applications. ACM Trans Embed Comput Syst (TECS) 11(1):8",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "9206_CR31",
+              "first-page": "8",
+              "volume": "11",
+              "author": "K Huang",
+              "year": "2012",
+              "unstructured": "Huang K, Haid W, Bacivarov I, Keller M, Thiele L (2012) Embedding formal performance analysis into the design cycle of MPSoCs for real-time streaming applications. ACM Trans Embed Comput Syst (TECS) 11(1):8",
+              "journal-title": "ACM Trans Embed Comput Syst (TECS)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR31",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "K Huang"
+                ],
+                "year": 2012,
+                "venue": "ACM Trans Embed Comput Syst (TECS)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "9206_CR32",
+            "rawText": "Huang P, Giannopoulou G, Ahmed R, Bartolini DB, Thiele L (2015) An isolation scheduling model for multicores. In: RTSS, San Antonio, TX, USA",
+            "doi": "10.1109/rtss.2015.21",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR32",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Huang P, Giannopoulou G, Ahmed R, Bartolini DB, Thiele L (2015) An isolation scheduling model for multicores. In: RTSS, San Antonio, TX, USA",
+              "DOI": "10.1109/RTSS.2015.21"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2015.21",
+                "doi": "10.1109/rtss.2015.21",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2015.21"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "9206_CR33",
+            "rawText": "Huang P, Giannopoulou G, Stoimenov N, Thiele L (2014) Service adaptions for mixed-criticality systems. In: ASP-DAC’14",
+            "doi": "10.1109/aspdac.2014.6742877",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR33",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Huang P, Giannopoulou G, Stoimenov N, Thiele L (2014) Service adaptions for mixed-criticality systems. In: ASP-DAC’14",
+              "DOI": "10.1109/ASPDAC.2014.6742877"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/aspdac.2014.6742877",
+                "doi": "10.1109/aspdac.2014.6742877",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/aspdac.2014.6742877"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "9206_CR34",
+            "rawText": "ISO 26262 (2011) Road vehicles—functional safety. \n                    https://www.iso.org/standard/43464.html",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR34",
+              "unstructured": "ISO 26262 (2011) Road vehicles—functional safety. \n                    https://www.iso.org/standard/43464.html"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR34",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "9206_CR35",
+            "rawText": "Kahn G (1974) The semantics of a simple language for parallel programming. In: Proceedings of IFIP congress on information processing, vol 74, pp 471–475",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR35",
+              "unstructured": "Kahn G (1974) The semantics of a simple language for parallel programming. In: Proceedings of IFIP congress on information processing, vol 74, pp 471–475"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR35",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "9206_CR36",
+            "rawText": "Kienhuis B, Deprettere E, Vissers K, van der Wolf P (1997) An approach for quantitative analysis of application-specific dataflow architectures. In: Internatioanl coference on application-specific systems, architectures and processors (ASAP), pp 338–349",
+            "doi": "10.1109/asap.1997.606839",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR36",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Kienhuis B, Deprettere E, Vissers K, van der Wolf P (1997) An approach for quantitative analysis of application-specific dataflow architectures. In: Internatioanl coference on application-specific systems, architectures and processors (ASAP), pp 338–349",
+              "DOI": "10.1109/ASAP.1997.606839"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/asap.1997.606839",
+                "doi": "10.1109/asap.1997.606839",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/asap.1997.606839"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "9206_CR37",
+            "rawText": "Kim N, Ward BC, Chisholm M, Fu CY et al (2016) Attacking the one-out-of-m multicore problem by combining hardware management with mixed-criticality provisioning. In: RTAS",
+            "doi": "10.1109/rtas.2016.7461323",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR37",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Kim N, Ward BC, Chisholm M, Fu CY et al (2016) Attacking the one-out-of-m multicore problem by combining hardware management with mixed-criticality provisioning. In: RTAS",
+              "DOI": "10.1109/RTAS.2016.7461323"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2016.7461323",
+                "doi": "10.1109/rtas.2016.7461323",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2016.7461323"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "9206_CR38",
+            "rawText": "Kirkpatrick S, Gelatt CD, Vecchi MP (1983) Optimization by simulated annealing. Science 220:671–680",
+            "doi": "10.1126/science.220.4598.671",
+            "arxivId": null,
+            "year": 1983,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR38",
+              "doi-asserted-by": "publisher",
+              "first-page": "671",
+              "DOI": "10.1126/science.220.4598.671",
+              "volume": "220",
+              "author": "S Kirkpatrick",
+              "year": "1983",
+              "unstructured": "Kirkpatrick S, Gelatt CD, Vecchi MP (1983) Optimization by simulated annealing. Science 220:671–680",
+              "journal-title": "Science"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1126/science.220.4598.671",
+                "doi": "10.1126/science.220.4598.671",
+                "title": "",
+                "authors": [
+                  "S Kirkpatrick"
+                ],
+                "year": 1983,
+                "venue": "Science",
+                "type": "",
+                "url": "https://doi.org/10.1126/science.220.4598.671"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "9206_CR39",
+            "rawText": "Kotaba O, Nowotsch J, Paulitsch M, Petters SM, Theiling H (2014) Multicore in real-time systems–temporal isolation challenges due to shared resources. In: Workshop on industry-driven approaches for cost-effective certification of safety-critical, mixed-criticality systems",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR39",
+              "unstructured": "Kotaba O, Nowotsch J, Paulitsch M, Petters SM, Theiling H (2014) Multicore in real-time systems–temporal isolation challenges due to shared resources. In: Workshop on industry-driven approaches for cost-effective certification of safety-critical, mixed-criticality systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR39",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "9206_CR40",
+            "rawText": "Lee J, Phan K-M, Gu X, Lee J, Easwaran A, Shin I, Lee I (2014) MC-fluid: fluid model-based mixed-criticality scheduling on multiprocessors. In: RTSS, pp 41–52",
+            "doi": "10.1109/rtss.2014.32",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR40",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Lee J, Phan K-M, Gu X, Lee J, Easwaran A, Shin I, Lee I (2014) MC-fluid: fluid model-based mixed-criticality scheduling on multiprocessors. In: RTSS, pp 41–52",
+              "DOI": "10.1109/RTSS.2014.32"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2014.32",
+                "doi": "10.1109/rtss.2014.32",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2014.32"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "9206_CR41",
+            "rawText": "Li H, Baruah S (2010) Load-based schedulability analysis of certifiable mixed-criticality systems. In: International conference on embedded software, EMSOFT’10",
+            "doi": "10.1145/1879021.1879035",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR41",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Li H, Baruah S (2010) Load-based schedulability analysis of certifiable mixed-criticality systems. In: International conference on embedded software, EMSOFT’10",
+              "DOI": "10.1145/1879021.1879035"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1879021.1879035",
+                "doi": "10.1145/1879021.1879035",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1879021.1879035"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "9206_CR42",
+            "rawText": "Melpignano D, Benini L, Flamand E, Jego B, Lepley T, Haugou G, Clermidy F, Dutoit D (2012) Platform 2012, a many-core computing accelerator for embedded SoCs: performance evaluation of visual analytics applications. In: DAC’12",
+            "doi": "10.1145/2228360.2228568",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR42",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Melpignano D, Benini L, Flamand E, Jego B, Lepley T, Haugou G, Clermidy F, Dutoit D (2012) Platform 2012, a many-core computing accelerator for embedded SoCs: performance evaluation of visual analytics applications. In: DAC’12",
+              "DOI": "10.1145/2228360.2228568"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2228360.2228568",
+                "doi": "10.1145/2228360.2228568",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2228360.2228568"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "9206_CR43",
+            "rawText": "Michael RG, David SJ (1979) Computers and intractability: a guide to the theory of NP-completeness. WH Freeman & Co., San Francisco",
+            "doi": null,
+            "arxivId": null,
+            "year": 1979,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR43",
+              "volume-title": "Computers and intractability: a guide to the theory of NP-completeness",
+              "author": "RG Michael",
+              "year": "1979",
+              "unstructured": "Michael RG, David SJ (1979) Computers and intractability: a guide to the theory of NP-completeness. WH Freeman & Co., San Francisco"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR43",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "RG Michael"
+                ],
+                "year": 1979,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "9206_CR44",
+            "rawText": "Mollison MS, Erickson JP, Anderson JH, Baruah SK, Scoredos JA (2010) Mixed-criticality real-time scheduling for multicore systems. In: International conference on computer and information technology, CIT’10, IEEE, pp 1864–1871",
+            "doi": "10.1109/cit.2010.320",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR44",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Mollison MS, Erickson JP, Anderson JH, Baruah SK, Scoredos JA (2010) Mixed-criticality real-time scheduling for multicore systems. In: International conference on computer and information technology, CIT’10, IEEE, pp 1864–1871",
+              "DOI": "10.1109/CIT.2010.320"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cit.2010.320",
+                "doi": "10.1109/cit.2010.320",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cit.2010.320"
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "9206_CR45",
+            "rawText": "Paolieri M, Quiñones E, Cazorla FJ, Bernat G, Valero M (2009) Hardware support for WCET analysis of hard real-time multicore systems. In: ISCA, pp 57–68",
+            "doi": "10.1145/1555754.1555764",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR45",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Paolieri M, Quiñones E, Cazorla FJ, Bernat G, Valero M (2009) Hardware support for WCET analysis of hard real-time multicore systems. In: ISCA, pp 57–68",
+              "DOI": "10.1145/1555754.1555764"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1555754.1555764",
+                "doi": "10.1145/1555754.1555764",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1555754.1555764"
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "9206_CR46",
+            "rawText": "Pathan R (2012) Schedulability analysis of mixed-criticality systems on multiprocessors. In: ECRTS’12",
+            "doi": "10.1109/ecrts.2012.29",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR46",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Pathan R (2012) Schedulability analysis of mixed-criticality systems on multiprocessors. In: ECRTS’12",
+              "DOI": "10.1109/ECRTS.2012.29"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2012.29",
+                "doi": "10.1109/ecrts.2012.29",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2012.29"
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "9206_CR47",
+            "rawText": "Pellizzoni R, Bui BD, Caccamo M, Sha L (2008) Coscheduling of CPU and I/O transactions in COTS-based embedded systems. In: RTSS’08",
+            "doi": "10.1109/rtss.2008.42",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR47",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Pellizzoni R, Bui BD, Caccamo M, Sha L (2008) Coscheduling of CPU and I/O transactions in COTS-based embedded systems. In: RTSS’08",
+              "DOI": "10.1109/RTSS.2008.42"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2008.42",
+                "doi": "10.1109/rtss.2008.42",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2008.42"
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "9206_CR48",
+            "rawText": "Perrotin M, Conquet E, Dissaux P, Tsiodras T, Hugues J (2010) The TASTE Toolset: turning human designed heterogeneous systems into computer built homogeneous software. In: Proceedings of embedded real-time software and systems conference",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR48",
+              "unstructured": "Perrotin M, Conquet E, Dissaux P, Tsiodras T, Hugues J (2010) The TASTE Toolset: turning human designed heterogeneous systems into computer built homogeneous software. In: Proceedings of embedded real-time software and systems conference"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR48",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "9206_CR49",
+            "rawText": "Poplavko P, Bourgos P, Socci D, Bensalem S, Bozga M (2015) Multicore code generation for time-critical applications (Tool). \n                    http://www-verimag.imag.fr/Multicore-Time-Critical-Code,470.html",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR49",
+              "unstructured": "Poplavko P, Bourgos P, Socci D, Bensalem S, Bozga M (2015) Multicore code generation for time-critical applications (Tool). \n                    http://www-verimag.imag.fr/Multicore-Time-Critical-Code,470.html"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR49",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "9206_CR50",
+            "rawText": "Poplavko P, Socci D, Bourgos P, Bensalem S, Bozga M (2015) Models for deterministic execution of real-time multiprocessor applications. In: DATE",
+            "doi": "10.7873/date.2015.0302",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR50",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Poplavko P, Socci D, Bourgos P, Bensalem S, Bozga M (2015) Models for deterministic execution of real-time multiprocessor applications. In: DATE",
+              "DOI": "10.7873/DATE.2015.0302"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.7873/date.2015.0302",
+                "doi": "10.7873/date.2015.0302",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.7873/date.2015.0302"
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "9206_CR51",
+            "rawText": "Reineke J, Liu I, Patel HD, Kim S, Lee EA (2011) PRET DRAM controller: bank privatization for predictability and temporal isolation. In: Proceedings of the seventh IEEE/ACM/IFIP international conference on Hardware/software codesign and system synthesis, pp 99–108",
+            "doi": "10.1145/2039370.2039388",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR51",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Reineke J, Liu I, Patel HD, Kim S, Lee EA (2011) PRET DRAM controller: bank privatization for predictability and temporal isolation. In: Proceedings of the seventh IEEE/ACM/IFIP international conference on Hardware/software codesign and system synthesis, pp 99–108",
+              "DOI": "10.1145/2039370.2039388"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2039370.2039388",
+                "doi": "10.1145/2039370.2039388",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2039370.2039388"
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "9206_CR52",
+            "rawText": "Santy F, George L, Thierry P, Goossens J (2012) Relaxing mixed-criticality scheduling strictness for task sets scheduled with FP. In: ECRTS, IEEE, pp 155–165",
+            "doi": "10.1109/ecrts.2012.39",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR52",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Santy F, George L, Thierry P, Goossens J (2012) Relaxing mixed-criticality scheduling strictness for task sets scheduled with FP. In: ECRTS, IEEE, pp 155–165",
+              "DOI": "10.1109/ECRTS.2012.39"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2012.39",
+                "doi": "10.1109/ecrts.2012.39",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2012.39"
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "9206_CR53",
+            "rawText": "Sha L, Caccamo M, Mancuso R, Kim J-E, Yoon M-K, Pellizzoni R, Yun H et al (2014) Single core equivalent virtual machines for hard real-time computing on multicore processors. Technical report, University of Illinois at Urbana-Champaign",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR53",
+              "unstructured": "Sha L, Caccamo M, Mancuso R, Kim J-E, Yoon M-K, Pellizzoni R, Yun H et al (2014) Single core equivalent virtual machines for hard real-time computing on multicore processors. Technical report, University of Illinois at Urbana-Champaign"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR53",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "9206_CR54",
+            "rawText": "Sigrist L, Giannopoulou G, Huang P, Gomez A, Thiele L (2015) Mixed-criticality runtime mechanisms and evaluation on multicores. In: RTAS’15",
+            "doi": "10.1109/rtas.2015.7108442",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR54",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Sigrist L, Giannopoulou G, Huang P, Gomez A, Thiele L (2015) Mixed-criticality runtime mechanisms and evaluation on multicores. In: RTAS’15",
+              "DOI": "10.1109/RTAS.2015.7108442"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2015.7108442",
+                "doi": "10.1109/rtas.2015.7108442",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2015.7108442"
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "9206_CR55",
+            "rawText": "Socci D, Poplavko P, Bensalem S, Bozga M (2013) Modeling mixed-critical systems in real-time BIP. In: ReTiMiCs’2013",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR55",
+              "unstructured": "Socci D, Poplavko P, Bensalem S, Bozga M (2013) Modeling mixed-critical systems in real-time BIP. In: ReTiMiCs’2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR55",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "9206_CR56",
+            "rawText": "Socci D, Poplavko P, Bourgos P, Bensalem S, Bozga M (2015) A timed-automata based middleware for time-critical multicore applications. In: Extended version of SEUS’15 workshop paper. Report TR-2015-12, Verimag",
+            "doi": "10.1109/isorcw.2015.55",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR56",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Socci D, Poplavko P, Bourgos P, Bensalem S, Bozga M (2015) A timed-automata based middleware for time-critical multicore applications. In: Extended version of SEUS’15 workshop paper. Report TR-2015-12, Verimag",
+              "DOI": "10.1109/ISORCW.2015.55"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isorcw.2015.55",
+                "doi": "10.1109/isorcw.2015.55",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isorcw.2015.55"
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "9206_CR57",
+            "rawText": "Sriram S, Bhattacharyya S (2009) Embedded multiprocessors: scheduling and synchronization. Signal processing and communications, 2nd edn. Taylor & Francis, Abington",
+            "doi": "10.1201/9781420048025",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR57",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1201/9781420048025",
+              "volume-title": "Embedded multiprocessors: scheduling and synchronization. Signal processing and communications",
+              "author": "S Sriram",
+              "year": "2009",
+              "unstructured": "Sriram S, Bhattacharyya S (2009) Embedded multiprocessors: scheduling and synchronization. Signal processing and communications, 2nd edn. Taylor & Francis, Abington",
+              "edition": "2"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1201/9781420048025",
+                "doi": "10.1201/9781420048025",
+                "title": "",
+                "authors": [
+                  "S Sriram"
+                ],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1201/9781420048025"
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "9206_CR58",
+            "rawText": "Su H, Zhu D (2013) An elastic mixed-criticality task model and its scheduling algorithm. In: DATE, pp 147–152",
+            "doi": "10.7873/date.2013.043",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR58",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Su H, Zhu D (2013) An elastic mixed-criticality task model and its scheduling algorithm. In: DATE, pp 147–152",
+              "DOI": "10.7873/DATE.2013.043"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.7873/date.2013.043",
+                "doi": "10.7873/date.2013.043",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.7873/date.2013.043"
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "9206_CR59",
+            "rawText": "Tamas-Selicean D, Pop P (2011) Design optimization of mixed-criticality real-time applications on cost-constrained partitioned architectures. In: RTSS’11",
+            "doi": "10.1109/rtss.2011.11",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR59",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Tamas-Selicean D, Pop P (2011) Design optimization of mixed-criticality real-time applications on cost-constrained partitioned architectures. In: RTSS’11",
+              "DOI": "10.1109/RTSS.2011.11"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2011.11",
+                "doi": "10.1109/rtss.2011.11",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2011.11"
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "9206_CR60",
+            "rawText": "Thiele L, Bacivarov I, Haid W, Huang K (2007) Mapping applications to tiled multiprocessor embedded systems. In: ACSD’07",
+            "doi": "10.1109/acsd.2007.53",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR60",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Thiele L, Bacivarov I, Haid W, Huang K (2007) Mapping applications to tiled multiprocessor embedded systems. In: ACSD’07",
+              "DOI": "10.1109/ACSD.2007.53"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/acsd.2007.53",
+                "doi": "10.1109/acsd.2007.53",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/acsd.2007.53"
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "9206_CR61",
+            "rawText": "Thiele L, Chakraborty S, Naedele M (2000) Real-time calculus for scheduling hard real-time systems. In: ISCAS",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR61",
+              "unstructured": "Thiele L, Chakraborty S, Naedele M (2000) Real-time calculus for scheduling hard real-time systems. In: ISCAS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR61",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "9206_CR62",
+            "rawText": "Tobuschat S, Axer P, Ernst R, Diemer J (2013) IDAMC: a NoC for mixed criticality systems. In: RTCSA, pp 149–156",
+            "doi": "10.1109/rtcsa.2013.6732214",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR62",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Tobuschat S, Axer P, Ernst R, Diemer J (2013) IDAMC: a NoC for mixed criticality systems. In: RTCSA, pp 149–156",
+              "DOI": "10.1109/RTCSA.2013.6732214"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtcsa.2013.6732214",
+                "doi": "10.1109/rtcsa.2013.6732214",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtcsa.2013.6732214"
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "9206_CR63",
+            "rawText": "Triki A, Combaz J, Bensalem S, Sifakis J (2013) Model-based implementation of parallel real-time systems. In: FASE’13, Springer",
+            "doi": "10.1007/978-3-642-37057-1_18",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR63",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Triki A, Combaz J, Bensalem S, Sifakis J (2013) Model-based implementation of parallel real-time systems. In: FASE’13, Springer",
+              "DOI": "10.1007/978-3-642-37057-1_18"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-37057-1_18",
+                "doi": "10.1007/978-3-642-37057-1_18",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-37057-1_18"
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": "9206_CR64",
+            "rawText": "Vestal S (2007) Preemptive scheduling of multi-criticality systems with varying degrees of execution time assurance. In: RTSS’07",
+            "doi": "10.1109/rtss.2007.47",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR64",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Vestal S (2007) Preemptive scheduling of multi-criticality systems with varying degrees of execution time assurance. In: RTSS’07",
+              "DOI": "10.1109/RTSS.2007.47"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtss.2007.47",
+                "doi": "10.1109/rtss.2007.47",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/RTSS.2007.47"
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": "9206_CR65",
+            "rawText": "Waez MTB, Dingel J, Rudie K (2013) A survey of timed automata for the development of real-time systems. Comput Sci Rev 9:1–26",
+            "doi": "10.1016/j.cosrev.2013.05.001",
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR65",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "DOI": "10.1016/j.cosrev.2013.05.001",
+              "volume": "9",
+              "author": "MTB Waez",
+              "year": "2013",
+              "unstructured": "Waez MTB, Dingel J, Rudie K (2013) A survey of timed automata for the development of real-time systems. Comput Sci Rev 9:1–26",
+              "journal-title": "Comput Sci Rev"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.cosrev.2013.05.001",
+                "doi": "10.1016/j.cosrev.2013.05.001",
+                "title": "",
+                "authors": [
+                  "MTB Waez"
+                ],
+                "year": 2013,
+                "venue": "Comput Sci Rev",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.cosrev.2013.05.001"
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": "9206_CR66",
+            "rawText": "Wilhelm R, Grund D, Reineke J, Schlickling M, Pister M, Ferdinand C (2009) Memory hierarchies, pipelines, and buses for future architectures in time-critical embedded systems. IEEE Trans Comput Aid Des Integr Circuits Syst 28(7):966–978",
+            "doi": "10.1109/tcad.2009.2013287",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "7",
+              "key": "9206_CR66",
+              "doi-asserted-by": "publisher",
+              "first-page": "966",
+              "DOI": "10.1109/TCAD.2009.2013287",
+              "volume": "28",
+              "author": "R Wilhelm",
+              "year": "2009",
+              "unstructured": "Wilhelm R, Grund D, Reineke J, Schlickling M, Pister M, Ferdinand C (2009) Memory hierarchies, pipelines, and buses for future architectures in time-critical embedded systems. IEEE Trans Comput Aid Des Integr Circuits Syst 28(7):966–978",
+              "journal-title": "IEEE Trans Comput Aid Des Integr Circuits Syst"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tcad.2009.2013287",
+                "doi": "10.1109/tcad.2009.2013287",
+                "title": "",
+                "authors": [
+                  "R Wilhelm"
+                ],
+                "year": 2009,
+                "venue": "IEEE Trans Comput Aid Des Integr Circuits Syst",
+                "type": "",
+                "url": "https://doi.org/10.1109/tcad.2009.2013287"
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": "9206_CR67",
+            "rawText": "Wu ZP, Krish Y, Pellizzoni R (2013) Worst case analysis of DRAM latency in multi-requestor systems. In: RTSS, pp 372–383",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR67",
+              "unstructured": "Wu ZP, Krish Y, Pellizzoni R (2013) Worst case analysis of DRAM latency in multi-requestor systems. In: RTSS, pp 372–383"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:9206_CR67",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": "9206_CR68",
+            "rawText": "Yan G, Zhu X, Yan R, Li G (2014) Formal throughput and response time analysis of MARTE models. In: Proceedings of formal methods and software engineering, pp 430–445",
+            "doi": "10.1007/978-3-319-11737-9_28",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR68",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Yan G, Zhu X, Yan R, Li G (2014) Formal throughput and response time analysis of MARTE models. In: Proceedings of formal methods and software engineering, pp 430–445",
+              "DOI": "10.1007/978-3-319-11737-9_28"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-11737-9_28",
+                "doi": "10.1007/978-3-319-11737-9_28",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-319-11737-9_28"
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": "9206_CR69",
+            "rawText": "Yun H, Mancuso R, Wu Z-P, Pellizzoni R (2014) PALLOC: DRAM bank-aware memory allocator for performance isolation on multicore platforms. In: 2014 IEEE 20th, real-time and embedded technology and applications symposium (RTAS), pp 155–166",
+            "doi": "10.1109/rtas.2014.6925999",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR69",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Yun H, Mancuso R, Wu Z-P, Pellizzoni R (2014) PALLOC: DRAM bank-aware memory allocator for performance isolation on multicore platforms. In: 2014 IEEE 20th, real-time and embedded technology and applications symposium (RTAS), pp 155–166",
+              "DOI": "10.1109/RTAS.2014.6925999"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2014.6925999",
+                "doi": "10.1109/rtas.2014.6925999",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2014.6925999"
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": "9206_CR70",
+            "rawText": "Yun H, Yao G, Pellizzoni R, Caccamo M, Sha L (2012) Memory access control in multiprocessor for real-time systems with mixed criticality. In: ECRTS’12",
+            "doi": "10.1109/ecrts.2012.32",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "9206_CR70",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Yun H, Yao G, Pellizzoni R, Caccamo M, Sha L (2012) Memory access control in multiprocessor for real-time systems with mixed criticality. In: ECRTS’12",
+              "DOI": "10.1109/ECRTS.2012.32"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ecrts.2012.32",
+                "doi": "10.1109/ecrts.2012.32",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ecrts.2012.32"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1007/s10617-018-9206-3",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 70,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1007/s10617-018-9206-3",
+          "crossrefReferenceCount": 70
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1007/s10617-018-9206-3->doi:10.1109/rtss.2007.47@papers-mixed-event-time-triggered-Giannopoulou2018.pdf",
+      "source": "doi:10.1007/s10617-018-9206-3",
+      "target": "doi:10.1109/rtss.2007.47",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/mixed-event-time-triggered/Giannopoulou2018.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Giannopoulou2018",
+      "paperId": "doi:10.1007/s10617-018-9206-3",
+      "metadata": {
+        "fileName": "Giannopoulou2018.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Giannopoulou2018.pdf"
+      }
+    }
+  ]
+}

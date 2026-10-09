@@ -1,0 +1,1147 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.586400+00:00",
+  "papers": [
+    {
+      "key": "Bourke2023",
+      "paper": {
+        "id": "doi:10.4230/lipics.ecrts.2023.1",
+        "citationKey": "Bourke2023",
+        "title": "Scheduling and Compiling Rate-Synchronous Programs with End-To-End Latency Constraints",
+        "authors": [
+          "Timothy Bourke",
+          "Vincent Bregeon",
+          "Marc Pouzet"
+        ],
+        "year": 2023,
+        "venue": "35th Euromicro Conference on Real-Time Systems (ECRTS 2023)",
+        "type": "inproceedings",
+        "doi": "10.4230/LIPIcs.ECRTS.2023.1",
+        "arxivId": "",
+        "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2023.1",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Bourke, Timothy and Bregeon, Vincent and Pouzet, Marc",
+          "title": "{Scheduling and Compiling Rate-Synchronous Programs with End-To-End Latency Constraints}",
+          "year": "2023",
+          "booktitle": "35th Euromicro Conference on Real-Time Systems (ECRTS 2023)",
+          "publisher": "Schloss Dagstuhl -- Leibniz-Zentrum f{\\\"u}r Informatik",
+          "series": "Leibniz International Proceedings in Informatics (LIPIcs)",
+          "volume": "262",
+          "pages": "1:1--1:22",
+          "doi": "10.4230/LIPIcs.ECRTS.2023.1",
+          "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2023.1"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.059875+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "1 Ardupilot website. URL: https://ardupilot.org. 2 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. MECHAniSer - a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies. In 7th Int. Workshop on Analysis Tools and Methodologies for Embedded and",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Ardupilot website. URL: https://ardupilot.org. 2 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. MECHAniSer - a timing analysis and synthesis tool for multi-rate effect chains with job-level dependencies. In 7th Int. Workshop on Analysis Tools and Methodologies for Embedded and"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": null,
+            "rawText": "Real-time Systems (WATERS 2016), July 2016. 3 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Synthesizing job-level dependencies for automotive multi-rate effect chains. In Proc. of the 22nd IEEE Int. Conf. on Embedded and Real-Time Computing Systems and Applications (RTCSA",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Real-time Systems (WATERS 2016), July 2016. 3 Matthias Becker, Dakshina Dasari, Saad Mubeen, Moris Behnam, and Thomas Nolte. Synthesizing job-level dependencies for automotive multi-rate effect chains. In Proc. of the 22nd IEEE Int. Conf. on Embedded and Real-Time Computing Systems and Applications (RTCSA"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "2016",
+            "rawText": ", pages 159–169. IEEE, August 2016. 4 Dariusz Biernacki, Jean-Louis Colaço, Gregoire Hamon, and Marc Pouzet. Clock-directed modular code generation for synchronous data-flow languages. In Proc. of the 9th ACM SIGPLAN Conf. on Languages, Compilers, and Tools for Embedded Systems (LCTES 2008), pages 121–130. ACM Press, June 2008. 5 Pascal Brisset, Antoine Drouin, Michel Gorraz, Pierre-Selim Huard, and Jeremy Tyler. The Paparazzi solution. In 2nd US-European Competition and Workshop on Micro Air Vehicles (MAV 2006), October 2006. 6 Giorgio C. Buttazzo. Predictable Scheduling Algorithms and Applications. Real-Time Systems Series. Springer, 3ed. edition, 2011. 7 Paul Caspi and Marc Pouzet. Synchronous Kahn networks. In Proc. of the 1996 ACM SIGPLAN Int. Conf. on Functional Programming (ICFP’96), pages 226–238. ACM Press, May 1996. 8 Paul Caspi, Norman Scaife, Christos Sofronis, and Stavros Tripakis. Semantics-preserving multitask implementation of synchronous programs. ACM Transactions on Embedded Computing Systems, 7(2):15:1–15:40, January 2009. 9 Houssine Chetto, Maryline Silly, and Bouchentouf Toumi. Dynamic scheduling of real-time tasks under precedence constraints. Real-Time Systems, 2:181–194, September 1990. 10 Albert Cohen, Marc Duranton, Christine Eisenbeis, Claire Pagetti, Florence Plateau, and Marc Pouzet. N-synchronous Kahn networks: a relaxed model of synchrony for real-time systems. In Proc. of the 33rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL 2006), pages 180–193. ACM Press, January 2006. 11 Albert Cohen, Louis Mandel, Florence Plateau, and Marc Pouzet. Abstraction of clocks in synchronous data-flow systems. In Proc. of the 6th Asian Symposium on Programming Languages and Systems (APLAS 2008), volume 5356 of Lecture Notes in Computer Science, pages 237–254. Springer, December 2008. 12 Jean-Louis Colaço, Bruno Pagano, and Marc Pouzet. A conservative extension of synchronous data-flow with state machines. In Proc. of the 5th ACM Int. Conf. on Embedded Software (EMSOFT 2005), pages 173–182. ACM Press, September 2005. 13 Jean-Louis Colaço, Bruno Pagano, and Marc Pouzet. Scade 6: A formal language for embedded critical software development. In Proc. of the 11th Int. Symposium on Theoretical Aspects of Software Engineering (TASE 2017), pages 4–15. IEEE Computer Society, September 2017. 14 Jean-Louis Colaço and Marc Pouzet. Clocks as first class abstract types. In Proc. of the 3rd Int. Workshop on Embedded Software (EMSOFT 2003), volume 2855 of Lecture Notes in Computer Science, pages 134–155. Springer, October 2003. 15 Adrian Curic. Implementing Lustre Programs on Distributed Platforms with Real-Time Constraints. PhD thesis, Université Joseph Fourier, September 2005. 16 Abhijit Davare, Qi Zhu, Marco Di Natale, Claudio Pinello, Sri Kanajan, and Alberto Sangiovanni-Vincentelli. Period optimization for hard real-time distributed automotive systems. In 44th Design Automation Conf., pages 278–283. ACM/IEEE, June 2008. 17 Marco Dürr, Georg von der Brüggen, Kuan-Hsun Chen, and Jian-Jia Chen. End-to-end timing analysis of sporadic cause-effect chains in distributed systems. ACM Transactions on Embedded Computing Systems, 18(5s):article no. 58, October 2019.",
+            "doi": "10.1145/3358181",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ", pages 159–169. IEEE, August 2016. 4 Dariusz Biernacki, Jean-Louis Colaço, Gregoire Hamon, and Marc Pouzet. Clock-directed modular code generation for synchronous data-flow languages. In Proc. of the 9th ACM SIGPLAN Conf. on Languages, Compilers, and Tools for Embedded Systems (LCTES 2008), pages 121–130. ACM Press, June 2008. 5 Pascal Brisset, Antoine Drouin, Michel Gorraz, Pierre-Selim Huard, and Jeremy Tyler. The Paparazzi solution. In 2nd US-European Competition and Workshop on Micro Air Vehicles (MAV 2006), October 2006. 6 Giorgio C. Buttazzo. Predictable Scheduling Algorithms and Applications. Real-Time Systems Series. Springer, 3ed. edition, 2011. 7 Paul Caspi and Marc Pouzet. Synchronous Kahn networks. In Proc. of the 1996 ACM SIGPLAN Int. Conf. on Functional Programming (ICFP’96), pages 226–238. ACM Press, May 1996. 8 Paul Caspi, Norman Scaife, Christos Sofronis, and Stavros Tripakis. Semantics-preserving multitask implementation of synchronous programs. ACM Transactions on Embedded Computing Systems, 7(2):15:1–15:40, January 2009. 9 Houssine Chetto, Maryline Silly, and Bouchentouf Toumi. Dynamic scheduling of real-time tasks under precedence constraints. Real-Time Systems, 2:181–194, September 1990. 10 Albert Cohen, Marc Duranton, Christine Eisenbeis, Claire Pagetti, Florence Plateau, and Marc Pouzet. N-synchronous Kahn networks: a relaxed model of synchrony for real-time systems. In Proc. of the 33rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL 2006), pages 180–193. ACM Press, January 2006. 11 Albert Cohen, Louis Mandel, Florence Plateau, and Marc Pouzet. Abstraction of clocks in synchronous data-flow systems. In Proc. of the 6th Asian Symposium on Programming Languages and Systems (APLAS 2008), volume 5356 of Lecture Notes in Computer Science, pages 237–254. Springer, December 2008. 12 Jean-Louis Colaço, Bruno Pagano, and Marc Pouzet. A conservative extension of synchronous data-flow with state machines. In Proc. of the 5th ACM Int. Conf. on Embedded Software (EMSOFT 2005), pages 173–182. ACM Press, September 2005. 13 Jean-Louis Colaço, Bruno Pagano, and Marc Pouzet. Scade 6: A formal language for embedded critical software development. In Proc. of the 11th Int. Symposium on Theoretical Aspects of Software Engineering (TASE 2017), pages 4–15. IEEE Computer Society, September 2017. 14 Jean-Louis Colaço and Marc Pouzet. Clocks as first class abstract types. In Proc. of the 3rd Int. Workshop on Embedded Software (EMSOFT 2003), volume 2855 of Lecture Notes in Computer Science, pages 134–155. Springer, October 2003. 15 Adrian Curic. Implementing Lustre Programs on Distributed Platforms with Real-Time Constraints. PhD thesis, Université Joseph Fourier, September 2005. 16 Abhijit Davare, Qi Zhu, Marco Di Natale, Claudio Pinello, Sri Kanajan, and Alberto Sangiovanni-Vincentelli. Period optimization for hard real-time distributed automotive systems. In 44th Design Automation Conf., pages 278–283. ACM/IEEE, June 2008. 17 Marco Dürr, Georg von der Brüggen, Kuan-Hsun Chen, and Jian-Jia Chen. End-to-end timing analysis of sporadic cause-effect chains in distributed systems. ACM Transactions on Embedded Computing Systems, 18(5s):article no. 58, October 2019."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/3358181",
+                "doi": "10.1145/3358181",
+                "arxivId": "",
+                "title": "End-to-End Timing Analysis of Sporadic Cause-Effect Chains in Distributed Systems",
+                "authors": [
+                  "Marco D\\\"urr",
+                  "Georg Von Der Br\\\"uggen",
+                  "Kuan-Hsun Chen",
+                  "Jian-Jia Chen"
+                ],
+                "year": 2016,
+                "venue": "ACM Transactions on Embedded Computing Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1145/3358181"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "1:20 Scheduling & Compiling Rate-Synchronous Programs with End-To-End Latency",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1:20 Scheduling & Compiling Rate-Synchronous Programs with End-To-End Latency"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": null,
+            "rawText": "18 Peter Eades and Xuemin Lin. A heuristic for the feedback arc set problem. Australasian",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "18 Peter Eades and Xuemin Lin. A heuristic for the feedback arc set problem. Australasian"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "Journal of Combinatorics, 12:15–25, September 1995. 19 Peter Eades, Xuemin Lin, and W.F. Smyth. A fast & effective heuristic for the feedback arc set problem. Information Processing Letters, 47(6):319–323, October 1993. 20 Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Journal of Combinatorics, 12:15–25, September 1995. 19 Peter Eades, Xuemin Lin, and W.F. Smyth. A fast & effective heuristic for the feedback arc set problem. Information Processing Letters, 47(6):319–323, October 1993. 20 Nico Feiertag, Kai Richter, Johan Nordlander, and Jan Jonsson. A compositional framework for end-to-end path delay calculation of automotive systems under different path semantics. In Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+                "doi": "",
+                "arxivId": "",
+                "title": "A Compositional Framework for End-to-End Path Delay Calculation of Automotive Systems under Different Path Semantics",
+                "authors": [
+                  "Nico Feiertag",
+                  "Kai Richter",
+                  "Johan Nordlander",
+                  "Jan Jonsson"
+                ],
+                "year": 1995,
+                "venue": "Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS)",
+                "type": "inproceedings",
+                "url": "https://research.chalmers.se/en/publication/139048"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": null,
+            "rawText": "2008, co-located with RTSS 2008), November 2008. 21 Julien Forget. Un Langage Synchrone pour les Systèmes Embarqués Critiques Soumis à des",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "2008, co-located with RTSS 2008), November 2008. 21 Julien Forget. Un Langage Synchrone pour les Systèmes Embarqués Critiques Soumis à des"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": null,
+            "rawText": "Contraintes Temps Réel Multiples. PhD thesis, Université de Toulouse, November 2009. 22 Julien Forget, Frédéric Boniol, Emmanuel Grolleau, David Lesens, and Claire Pagetti. Scheduling dependent periodic tasks without synchronization mechanisms. In 16th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2010), pages 301–310. IEEE,",
+            "doi": "10.1109/rtas.2010.26",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Contraintes Temps Réel Multiples. PhD thesis, Université de Toulouse, November 2009. 22 Julien Forget, Frédéric Boniol, Emmanuel Grolleau, David Lesens, and Claire Pagetti. Scheduling dependent periodic tasks without synchronization mechanisms. In 16th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2010), pages 301–310. IEEE,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2010.26",
+                "doi": "10.1109/rtas.2010.26",
+                "arxivId": "",
+                "title": "Scheduling Dependent Periodic Tasks without Synchronization Mechanisms",
+                "authors": [
+                  "Julien Forget",
+                  "Fr\\'ed\\'eric Boniol",
+                  "Emmanuel Grolleau",
+                  "David Lesens",
+                  "Claire Pagetti"
+                ],
+                "year": 2009,
+                "venue": "2010 16th IEEE Real-Time and Embedded Technology and Applications Symposium",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/rtas.2010.26"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "April 2010. 23 Julien Forget, Frédéric Boniol, David Lesens, and Claire Pagetti. A multi-periodic synchronous data-flow language. In Proc. of the 11th IEEE High Assurance Systems Engineering Symposium (HASE 2008), pages 251–260. IEEE, December 2008. 24 Julien Forget, Frédéric Boniol, David Lesens, and Claire Pagetti. A real-time architecture design language for multi-rate embedded control systems. In Proc. of the 25th ACM Symposium on Applied Computing (SAC’10), pages 527–534. ACM, March 2010. 25 Julien Forget, Frédéric Boniol, and Claire Pagetti. Verifying end-to-end real-time constraints on multi-periodic models. In Proc. of the IEEE 22nd Int. Conf. on Emerging Technologies &",
+            "doi": "10.1109/etfa.2017.8247612",
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "April 2010. 23 Julien Forget, Frédéric Boniol, David Lesens, and Claire Pagetti. A multi-periodic synchronous data-flow language. In Proc. of the 11th IEEE High Assurance Systems Engineering Symposium (HASE 2008), pages 251–260. IEEE, December 2008. 24 Julien Forget, Frédéric Boniol, David Lesens, and Claire Pagetti. A real-time architecture design language for multi-rate embedded control systems. In Proc. of the 25th ACM Symposium on Applied Computing (SAC’10), pages 527–534. ACM, March 2010. 25 Julien Forget, Frédéric Boniol, and Claire Pagetti. Verifying end-to-end real-time constraints on multi-periodic models. In Proc. of the IEEE 22nd Int. Conf. on Emerging Technologies &"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/etfa.2017.8247612",
+                "doi": "10.1109/etfa.2017.8247612",
+                "arxivId": "",
+                "title": "Verifying end-to-end real-time constraints on multi-periodic models",
+                "authors": [
+                  "Julien Forget",
+                  "Frederic Boniol",
+                  "Claire Pagetti"
+                ],
+                "year": 2010,
+                "venue": "2017 22nd IEEE International Conference on Emerging Technologies and Factory Automation (ETFA)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/etfa.2017.8247612"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": null,
+            "rawText": "Factory Automation (ETFA 2017). IEEE Press, September 2017. 26 Julien Forget, Emmanuel Grolleau, Claire Pagetti, and Pascal Richard. Dynamic priority scheduling of periodic tasks with extended precedences. In Proc. of the IEEE 16th Int. Conf. on Emerging Technologies & Factory Automation (ETFA 2011). IEEE Press, September 2011. 27 Richard Gerber, Seongsoo Hong, and Manas Saksena. Guaranteeing end-to-end timing constraints by calibrating intermediate processes. IEEE Transactions on Software Engineering, 21(7):579–592, July 1995. 28 Alain Girault, Christophe Prévot, Sophie Quinton, Rafik Henia, and Nicolas Sordon. Improving and estimating the precision of bounds on the worst-case latency of task chains. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 37(11):2578–2589,",
+            "doi": "10.1109/tcad.2018.2861016",
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Factory Automation (ETFA 2017). IEEE Press, September 2017. 26 Julien Forget, Emmanuel Grolleau, Claire Pagetti, and Pascal Richard. Dynamic priority scheduling of periodic tasks with extended precedences. In Proc. of the IEEE 16th Int. Conf. on Emerging Technologies & Factory Automation (ETFA 2011). IEEE Press, September 2011. 27 Richard Gerber, Seongsoo Hong, and Manas Saksena. Guaranteeing end-to-end timing constraints by calibrating intermediate processes. IEEE Transactions on Software Engineering, 21(7):579–592, July 1995. 28 Alain Girault, Christophe Prévot, Sophie Quinton, Rafik Henia, and Nicolas Sordon. Improving and estimating the precision of bounds on the worst-case latency of task chains. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 37(11):2578–2589,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/tcad.2018.2861016",
+                "doi": "10.1109/tcad.2018.2861016",
+                "arxivId": "",
+                "title": "Improving and Estimating the Precision of Bounds on the Worst-Case Latency of Task Chains",
+                "authors": [
+                  "Alain Girault",
+                  "Christophe Pr\\'evot",
+                  "Sophie Quinton",
+                  "Rafik Henia",
+                  "Nicolas Sordon"
+                ],
+                "year": 2017,
+                "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1109/tcad.2018.2861016"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "November 2018. 29 Nicolas Halbwachs, Paul Caspi, Pascal Raymond, and Daniel Pilaud. The synchronous dataflow programming language LUSTRE. Proc. of the IEEE, 79(9):1305–1320, September 1991. 30 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, and Falk Wurst. Communication centric design in complex automotive embedded systems. In 29th Euromicro Conf. on Real-Time Systems (ECRTS 2017), volume 76 of Leibniz Int. Proc. in Informatics (LIPIcs),",
+            "doi": "10.4230/LIPIcs.ECRTS.2017.10",
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "November 2018. 29 Nicolas Halbwachs, Paul Caspi, Pascal Raymond, and Daniel Pilaud. The synchronous dataflow programming language LUSTRE. Proc. of the IEEE, 79(9):1305–1320, September 1991. 30 Arne Hamann, Dakshina Dasari, Simon Kramer, Michael Pressler, and Falk Wurst. Communication centric design in complex automotive embedded systems. In 29th Euromicro Conf. on Real-Time Systems (ECRTS 2017), volume 76 of Leibniz Int. Proc. in Informatics (LIPIcs),"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.4230/lipics.ecrts.2017.10",
+                "doi": "10.4230/LIPIcs.ECRTS.2017.10",
+                "arxivId": "",
+                "title": "Communication Centric Design in Complex Automotive Embedded Systems",
+                "authors": [
+                  "Arne Hamann",
+                  "Dakshina Dasari",
+                  "Simon Kramer",
+                  "Michael Pressler",
+                  "Falk Wurst"
+                ],
+                "year": 2018,
+                "venue": "29th Euromicro Conference on Real-Time Systems (ECRTS 2017)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.4230/LIPIcs.ECRTS.2017.10"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": null,
+            "rawText": "pages 10:1–10:20. Schloss Dagstuhl–Leibniz-Zentrum für Informatik, June 2017. 31 Thomas A. Henzinger, Benjamin Horowitz, and Christoph M. Kirsch. Giotto: A time-triggered language for embedded programming. Proc. of the IEEE, 91(1):84–99, January 2003. 32",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "pages 10:1–10:20. Schloss Dagstuhl–Leibniz-Zentrum für Informatik, June 2017. 31 Thomas A. Henzinger, Benjamin Horowitz, and Christoph M. Kirsch. Giotto: A time-triggered language for embedded programming. Proc. of the IEEE, 91(1):84–99, January 2003. 32"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": null,
+            "rawText": "IBM Corp. IBM ILOG CPLEX 20.1 User’s Manual, 2020. 33 Guillaume Iooss, Albert Cohen, Dumitru Potop-Butucaru, Marc Pouzet, Vincent Bregeon, Jean Souyris, and Philippe Baufreton. Polyhedral scheduling and relaxation of synchronous reactive systems. In 12th Int. Workshop on Polyhedral Compilation Techniques (IMPACT",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IBM Corp. IBM ILOG CPLEX 20.1 User’s Manual, 2020. 33 Guillaume Iooss, Albert Cohen, Dumitru Potop-Butucaru, Marc Pouzet, Vincent Bregeon, Jean Souyris, and Philippe Baufreton. Polyhedral scheduling and relaxation of synchronous reactive systems. In 12th Int. Workshop on Polyhedral Compilation Techniques (IMPACT"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "2022",
+            "rawText": ". HiPEAC, June 2022. 34 Gilles Kahn. The semantics of a simple language for parallel programming. In Proc. of the Int. Federation for Information Processing (IFIP) Congress 1974, pages 471–475. North-Holland, August 1974. 35 Richard M. Karp. Reducibility among combinatorial problems. In Complexity of Computer Computations, The IBM Research Symposia Series (IRSS), pages 85–103. Springer, 1972.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": ". HiPEAC, June 2022. 34 Gilles Kahn. The semantics of a simple language for parallel programming. In Proc. of the Int. Federation for Information Processing (IFIP) Congress 1974, pages 471–475. North-Holland, August 1974. 35 Richard M. Karp. Reducibility among combinatorial problems. In Complexity of Computer Computations, The IBM Research Symposia Series (IRSS), pages 85–103. Springer, 1972."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:the semantics of a simple language for parallel programming:1974",
+                "doi": "",
+                "arxivId": "",
+                "title": "The Semantics of a Simple Language for Parallel Programming",
+                "authors": [
+                  "Gilles Kahn"
+                ],
+                "year": 2022,
+                "venue": "Information Processing 74: Proceedings of the IFIP Congress 74",
+                "type": "inproceedings",
+                "url": "https://inria.hal.science/hal-04716357"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": null,
+            "rawText": "T. Bourke, V. Bregeon, and M. Pouzet 1:21",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Bourke, V. Bregeon, and M. Pouzet 1:21"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "36 Jad Khatib, Alix Munier-Kordon, Enagnon Cedric Klikpo, and Kods Trabelsi-Colibet. Computing latency of a real-time system modeled by Synchronous Dataflow Graph. In Proc. of the 24th Int. Conf. on Real-Time Networks and Systems (RTNS’16), pages 87–96. ACM Press,",
+            "doi": "10.1145/2997465.2997479",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "36 Jad Khatib, Alix Munier-Kordon, Enagnon Cedric Klikpo, and Kods Trabelsi-Colibet. Computing latency of a real-time system modeled by Synchronous Dataflow Graph. In Proc. of the 24th Int. Conf. on Real-Time Networks and Systems (RTNS’16), pages 87–96. ACM Press,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/2997465.2997479",
+                "doi": "10.1145/2997465.2997479",
+                "arxivId": "",
+                "title": "Computing Latency of a Real-Time System Modeled by Synchronous Dataflow Graph",
+                "authors": [
+                  "Jad Khatib",
+                  "Alix Munier-Kordon",
+                  "Enagnon Cedric Klikpo",
+                  "Kods Trabelsi-Colibet"
+                ],
+                "year": 2016,
+                "venue": "RTNS",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1145/2997465.2997479"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": null,
+            "rawText": "October 2016. 37 Christoph M. Kirsch and Ana Sokolova. The Logical Execution Time paradigm. In Advances in Real-Time Systems, pages 103–120. Springer, 2012. 38 Tobias Klaus, Florian Franzmann, Matthias Becker, and Peter Ulbrich. Data propagation delay constraints in multi-rate systems — deadlines vs. job-level dependencies. In Proc. of the 26th Int. Conf. on Real-Time Networks and Systems (RTNS’18), pages 93–103. ACM Press,",
+            "doi": "10.1007/978-3-642-24349-3_5",
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "October 2016. 37 Christoph M. Kirsch and Ana Sokolova. The Logical Execution Time paradigm. In Advances in Real-Time Systems, pages 103–120. Springer, 2012. 38 Tobias Klaus, Florian Franzmann, Matthias Becker, and Peter Ulbrich. Data propagation delay constraints in multi-rate systems — deadlines vs. job-level dependencies. In Proc. of the 26th Int. Conf. on Real-Time Networks and Systems (RTNS’18), pages 93–103. ACM Press,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-3_5",
+                "arxivId": "",
+                "title": "The Logical Execution Time Paradigm",
+                "authors": [
+                  "Christoph M. Kirsch",
+                  "Ana Sokolova"
+                ],
+                "year": 2016,
+                "venue": "Advances in Real-Time Systems",
+                "type": "incollection",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "October 2018. 39 Tomasz Kloda, Antoine Bertout, and Yves Sorel. Latency analysis for data chains of real-time periodic tasks. In Proc. of the IEEE 23rd Int. Conf. on Emerging Technologies & Factory",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "October 2018. 39 Tomasz Kloda, Antoine Bertout, and Yves Sorel. Latency analysis for data chains of real-time periodic tasks. In Proc. of the IEEE 23rd Int. Conf. on Emerging Technologies & Factory"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": null,
+            "rawText": "Automation (ETFA 2018), pages 360–367. IEEE Press, September 2018. 40 Michaël Lauer, Frédéric Boniol, Claire Pagetti, and Jérôme Ermont. End-to-end latency and temporal consistency analysis in networked real-time systems. Int. Journal of Critical",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Automation (ETFA 2018), pages 360–367. IEEE Press, September 2018. 40 Michaël Lauer, Frédéric Boniol, Claire Pagetti, and Jérôme Ermont. End-to-end latency and temporal consistency analysis in networked real-time systems. Int. Journal of Critical"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": null,
+            "rawText": "Computer-Based Systems, 5(3/4):172–196, 2014. 41 Paul Le Guernic, Thierry Gautier, Michel Le Borgne, and Claude Le Maire. Programming real-time applications with signal. Proc. of the IEEE, 79(9):1321–1336, September 1991. 42 Edward A. Lee and Alberto Sangiovanni-Vincentelli. A framework for comparing models of computation. IEEE Transactions on CAD, 17(12):1217–1229, December 1998. 43 Louis Mandel, Florence Plateau, and Marc Pouzet. Lucy-n: a n-Synchronous extension of Lustre. In Proc. of the 10th Int. Conf. on Mathematics of Program Construction (MPC 2010), volume 6120 of Lecture Notes in Computer Science, pages 288–309. Springer, June 2010. 44",
+            "doi": "10.1109/5.97301",
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Computer-Based Systems, 5(3/4):172–196, 2014. 41 Paul Le Guernic, Thierry Gautier, Michel Le Borgne, and Claude Le Maire. Programming real-time applications with signal. Proc. of the IEEE, 79(9):1321–1336, September 1991. 42 Edward A. Lee and Alberto Sangiovanni-Vincentelli. A framework for comparing models of computation. IEEE Transactions on CAD, 17(12):1217–1229, December 1998. 43 Louis Mandel, Florence Plateau, and Marc Pouzet. Lucy-n: a n-Synchronous extension of Lustre. In Proc. of the 10th Int. Conf. on Mathematics of Program Construction (MPC 2010), volume 6120 of Lecture Notes in Computer Science, pages 288–309. Springer, June 2010. 44"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/5.97301",
+                "doi": "10.1109/5.97301",
+                "arxivId": "",
+                "title": "Programming real-time applications with SIGNAL",
+                "authors": [
+                  "P. LeGuernic",
+                  "T. Gautier",
+                  "M. Le Borgne",
+                  "C. Le Maire"
+                ],
+                "year": 2014,
+                "venue": "Proceedings of the IEEE",
+                "type": "article",
+                "url": "https://doi.org/10.1109/5.97301"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": null,
+            "rawText": "The MathWorks. Simulink® Reference, March 2022. Release 2022a. 45",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The MathWorks. Simulink® Reference, March 2022. Release 2022a. 45"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": null,
+            "rawText": "The MathWorks. Simulink: User’s Guide, March 2022. Release 2022a. 46",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The MathWorks. Simulink: User’s Guide, March 2022. Release 2022a. 46"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": null,
+            "rawText": "The MathWorks. Simulink®Coder™User’s Guide, March 2022. Release 2022a. 47 Slobodan Matic and Thomas A. Henzinger. Trading end-to-end latency for composability. In Proc. of the 26th IEEE Real-Time Systems Symposium (RTSS 2005), pages 110–119. IEEE",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "The MathWorks. Simulink®Coder™User’s Guide, March 2022. Release 2022a. 47 Slobodan Matic and Thomas A. Henzinger. Trading end-to-end latency for composability. In Proc. of the 26th IEEE Real-Time Systems Symposium (RTSS 2005), pages 110–119. IEEE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "Computer Society, December 2005. 48 Swarup Mohalik, Devesh B. Chokshi, Manoj G. Dixit, A.C. Rajeev, and S. Ramesh. Scalable model-checking for precise end-to-end latency computation. In Proc. of the 2013 IEEE Conf. on Computer Aided Control System Design (CACSD), pages 19–24. IEEE, August 2013. 49 Saad Mubeen, Jukka Mäki-Turja, and Mikael Sjödin. Support for end-to-end response-time and delay analysis in the industrial tool suite: Issues, experiences and a case study. Computer",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Computer Society, December 2005. 48 Swarup Mohalik, Devesh B. Chokshi, Manoj G. Dixit, A.C. Rajeev, and S. Ramesh. Scalable model-checking for precise end-to-end latency computation. In Proc. of the 2013 IEEE Conf. on Computer Aided Control System Design (CACSD), pages 19–24. IEEE, August 2013. 49 Saad Mubeen, Jukka Mäki-Turja, and Mikael Sjödin. Support for end-to-end response-time and delay analysis in the industrial tool suite: Issues, experiences and a case study. Computer"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": null,
+            "rawText": "Science and Information Systems, 10(1):453–482, January 2013. 50 Claire Pagetti, Julien Forget, Frédéric Boniol, Mikel Cordovilla, and David Lesens. Multi-task implementation of multi-periodic synchronous programs. Discrete Event Dynamic Systems, 21(3):307–338, September 2011. 51 Claire Pagetti, David Saussié, Romain Gratia, Eric Noulard, and Pierre Siron. The ROSACE case study: From Simulink specification to multi/many-core execution. In 20th IEEE RealTime and Embedded Technology and Applications Symposium (RTAS 2014), pages 309–318.",
+            "doi": "10.1007/s10626-011-0107-x",
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Science and Information Systems, 10(1):453–482, January 2013. 50 Claire Pagetti, Julien Forget, Frédéric Boniol, Mikel Cordovilla, and David Lesens. Multi-task implementation of multi-periodic synchronous programs. Discrete Event Dynamic Systems, 21(3):307–338, September 2011. 51 Claire Pagetti, David Saussié, Romain Gratia, Eric Noulard, and Pierre Siron. The ROSACE case study: From Simulink specification to multi/many-core execution. In 20th IEEE RealTime and Embedded Technology and Applications Symposium (RTAS 2014), pages 309–318."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/s10626-011-0107-x",
+                "doi": "10.1007/s10626-011-0107-x",
+                "arxivId": "",
+                "title": "Multi-task Implementation of Multi-periodic Synchronous Programs",
+                "authors": [
+                  "Claire Pagetti",
+                  "Julien Forget",
+                  "Fr\\'ed\\'eric Boniol",
+                  "Mikel Cordovilla",
+                  "David Lesens"
+                ],
+                "year": 2013,
+                "venue": "Discrete Event Dynamic Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1007/s10626-011-0107-x"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": null,
+            "rawText": "IEEE, April 2014. 52 Florence Plateau. Modèle n-synchrone pour la programmation de réseaux de Kahn à mémoire borné. PhD thesis, Université Paris XI, January 2010. 53 Marc Pouzet. Lucid Synchrone, version 3. Tutorial and reference manual. Université Paris-Sud,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "IEEE, April 2014. 52 Florence Plateau. Modèle n-synchrone pour la programmation de réseaux de Kahn à mémoire borné. PhD thesis, Université Paris XI, January 2010. 53 Marc Pouzet. Lucid Synchrone, version 3. Tutorial and reference manual. Université Paris-Sud,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": null,
+            "rawText": "April 2006. 54 Johannes Schlatow and Rolf Ernst. Response-time analysis for task chains in communicating threads. In 22nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2016). IEEE, April 2016. 55 Irina Mădălina Smarandache, Thierry Gautier, and Paul Le Guernic. Validation of mixed Signal-Alpha real-time systems through affine calculus on clock synchronisation constraints. In Proc. of the World Congress on Formal Methods in the Development of Computing Systems (FM’99), volume 1709 of Lecture Notes in Computer Science, pages 1364–1383. Springer,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "April 2006. 54 Johannes Schlatow and Rolf Ernst. Response-time analysis for task chains in communicating threads. In 22nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2016). IEEE, April 2016. 55 Irina Mădălina Smarandache, Thierry Gautier, and Paul Le Guernic. Validation of mixed Signal-Alpha real-time systems through affine calculus on clock synchronisation constraints. In Proc. of the World Congress on Formal Methods in the Development of Computing Systems (FM’99), volume 1709 of Lecture Notes in Computer Science, pages 1364–1383. Springer,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": null,
+            "rawText": "1:22 Scheduling & Compiling Rate-Synchronous Programs with End-To-End Latency",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1:22 Scheduling & Compiling Rate-Synchronous Programs with End-To-End Latency"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": null,
+            "rawText": "56 Stavros Tripakis, Christos Sofronis, Paul Caspi, and Adrian Curic. Translating discrete-time Simulink to Lustre. ACM Transactions on Embedded Computing Systems, 4(4):779–818,",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "56 Stavros Tripakis, Christos Sofronis, Paul Caspi, and Adrian Curic. Translating discrete-time Simulink to Lustre. ACM Transactions on Embedded Computing Systems, 4(4):779–818,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": null,
+            "rawText": "November 2005. 57 Rémy Wyss, Frédéric Boniol, Julien Forget, and Claire Pagetti. A synchronous language with partial delay specification for real-time systems programming. In Proc. of the 10th Asian Symposium on Programming Languages and Systems (APLAS 2012), volume 7705 of Lecture",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "November 2005. 57 Rémy Wyss, Frédéric Boniol, Julien Forget, and Claire Pagetti. A synchronous language with partial delay specification for real-time systems programming. In Proc. of the 10th Asian Symposium on Programming Languages and Systems (APLAS 2012), volume 7705 of Lecture"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": null,
+            "rawText": "Notes in Computer Science, pages 223–238. Springer, December 2012. 58 Rémy Wyss, Frédéric Boniol, Julien Forget, and Claire Pagetti. End-to-end latency computation in a multi-periodic design. In Proc. of the 28th ACM Symposium on Applied Computing (SAC’13), pages 1682–1687. ACM, March 2013.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Notes in Computer Science, pages 223–238. Springer, December 2012. 58 Rémy Wyss, Frédéric Boniol, Julien Forget, and Claire Pagetti. End-to-end latency computation in a multi-periodic design. In Proc. of the 28th ACM Symposium on Applied Computing (SAC’13), pages 1682–1687. ACM, March 2013."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2023.1:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 11,
+          "extractedReferenceCount": 31,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->doi:10.1145/3358181@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "doi:10.1145/3358181",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "title:a compositional framework for end to end path delay calculation of automotive systems under different path semantics:2008",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->doi:10.1109/rtas.2010.26@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "doi:10.1109/rtas.2010.26",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->doi:10.1109/etfa.2017.8247612@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "doi:10.1109/etfa.2017.8247612",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->doi:10.1109/tcad.2018.2861016@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "doi:10.1109/tcad.2018.2861016",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->doi:10.4230/lipics.ecrts.2017.10@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "doi:10.4230/lipics.ecrts.2017.10",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->title:the semantics of a simple language for parallel programming:1974@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "title:the semantics of a simple language for parallel programming:1974",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->doi:10.1145/2997465.2997479@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "doi:10.1145/2997465.2997479",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->doi:10.1007/978-3-642-24349-3_5@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->doi:10.1109/5.97301@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "doi:10.1109/5.97301",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2023.1->doi:10.1007/s10626-011-0107-x@papers-LET-Bourke2023.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2023.1",
+      "target": "doi:10.1007/s10626-011-0107-x",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Bourke2023.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Bourke2023",
+      "paperId": "doi:10.4230/lipics.ecrts.2023.1",
+      "metadata": {
+        "fileName": "Bourke2023.pdf",
+        "sourcePath": "papers/LET/Bourke2023.pdf"
+      }
+    }
+  ]
+}

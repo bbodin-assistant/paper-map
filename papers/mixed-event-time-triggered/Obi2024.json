@@ -1,0 +1,669 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.812838+00:00",
+  "papers": [
+    {
+      "key": "Obi2024",
+      "paper": {
+        "id": "doi:10.1109/seaa64295.2024.00017",
+        "citationKey": "Obi2024",
+        "title": "Parallelized Code Generation from Simulink Models for Event-driven and Timer-driven ROS 2 Nodes",
+        "authors": [
+          "Kenshin Obi",
+          "Ryo Yoshinaka",
+          "Hiroshi Fujimoto",
+          "Takuya Azumi"
+        ],
+        "year": 2024,
+        "venue": "SEAA",
+        "type": "misc",
+        "doi": "10.1109/SEAA64295.2024.00017",
+        "arxivId": "2512.23605",
+        "url": "",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Kenshin Obi and Ryo Yoshinaka and Hiroshi Fujimoto and Takuya Azumi",
+          "title": "{Parallelized Code Generation from Simulink Models for Event-driven and Timer-driven ROS 2 Nodes}",
+          "year": "2024",
+          "howpublished": "SEAA",
+          "doi": "10.1109/SEAA64295.2024.00017",
+          "url": "https://arxiv.org/abs/2512.23605"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.307802+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref1",
+            "rawText": "https://doi.org/10.1109/iccps.2018.00035",
+            "doi": "10.1109/iccps.2018.00035",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICCPS.2018.00035"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iccps.2018.00035",
+                "doi": "10.1109/iccps.2018.00035",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iccps.2018.00035"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref2",
+            "rawText": "https://doi.org/10.1145/2968478.2968502",
+            "doi": "10.1145/2968478.2968502",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2968478.2968502"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2968478.2968502",
+                "doi": "10.1145/2968478.2968502",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2968478.2968502"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.1109/cpsna.2016.24",
+            "doi": "10.1109/cpsna.2016.24",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CPSNA.2016.24"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cpsna.2016.24",
+                "doi": "10.1109/cpsna.2016.24",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cpsna.2016.24"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref4",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "volume-title": "MATLAB/Simulink"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref4",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref5",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "volume-title": "Embedded coder"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref5",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1145/3356401.3356416",
+            "doi": "10.1145/3356401.3356416",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3356401.3356416"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3356401.3356416",
+                "doi": "10.1145/3356401.3356416",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3356401.3356416"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref7",
+            "rawText": "https://doi.org/10.1109/etfa46521.2020.9212016",
+            "doi": "10.1109/etfa46521.2020.9212016",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA46521.2020.9212016"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa46521.2020.9212016",
+                "doi": "10.1109/etfa46521.2020.9212016",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa46521.2020.9212016"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1109/etfa54631.2023.10275668",
+            "doi": "10.1109/etfa54631.2023.10275668",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ETFA54631.2023.10275668"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/etfa54631.2023.10275668",
+                "doi": "10.1109/etfa54631.2023.10275668",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/etfa54631.2023.10275668"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref9",
+            "rawText": "Chowdhury. SLEMI: Equivalence Modulo Input (EMI) Based Mutation of CPS Models for Finding Compiler Bugs in Simulink. 2020",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "first-page": "335",
+              "article-title": "SLEMI: Equivalence Modulo Input (EMI) Based Mutation of CPS Models for Finding Compiler Bugs in Simulink",
+              "volume-title": "Proc. of ICSE",
+              "author": "Chowdhury",
+              "year": "2020"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref9",
+                "doi": "",
+                "title": "SLEMI: Equivalence Modulo Input (EMI) Based Mutation of CPS Models for Finding Compiler Bugs in Simulink",
+                "authors": [
+                  "Chowdhury"
+                ],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref10",
+            "rawText": "https://doi.org/10.2514/1.i010749",
+            "doi": "10.2514/1.i010749",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2514/1.I010749"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.2514/1.i010749",
+                "doi": "10.2514/1.i010749",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.2514/1.i010749"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1145/3328799",
+            "doi": "10.1145/3328799",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3328799"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3328799",
+                "doi": "10.1145/3328799",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3328799"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref12",
+            "rawText": "Bourbouh. CoCoSim, a code generation framework for control/command applications An overview of CoCoSim for multi-periodic discrete Simulink models. 2020",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "article-title": "CoCoSim, a code generation framework for control/command applications An overview of CoCoSim for multi-periodic discrete Simulink models",
+              "volume-title": "Proc. of ERTS",
+              "author": "Bourbouh",
+              "year": "2020"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref12",
+                "doi": "",
+                "title": "CoCoSim, a code generation framework for control/command applications An overview of CoCoSim for multi-periodic discrete Simulink models",
+                "authors": [
+                  "Bourbouh"
+                ],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref13",
+            "rawText": "https://doi.org/10.1145/2950055",
+            "doi": "10.1145/2950055",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2950055"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2950055",
+                "doi": "10.1145/2950055",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2950055"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref14",
+            "rawText": "https://doi.org/10.1109/rtss.2018.00041",
+            "doi": "10.1109/rtss.2018.00041",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2018.00041"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtss.2018.00041",
+                "doi": "10.1109/rtss.2018.00041",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2018.00041"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1145/2695664.2695882",
+            "doi": "10.1145/2695664.2695882",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2695664.2695882"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2695664.2695882",
+                "doi": "10.1145/2695664.2695882",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2695664.2695882"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1109/isocc47750.2019.9078489",
+            "doi": "10.1109/isocc47750.2019.9078489",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISOCC47750.2019.9078489"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isocc47750.2019.9078489",
+                "doi": "10.1109/isocc47750.2019.9078489",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isocc47750.2019.9078489"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref17",
+            "rawText": "Bernstein. Modular Model-Based Design for Aerial Manipulation with Simulink and ROS. 2022. IFAC-PapersOnLine. https://doi.org/10.1016/j.ifacol.2023.01.146",
+            "doi": "10.1016/j.ifacol.2023.01.146",
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "38",
+              "key": "ref17",
+              "doi-asserted-by": "crossref",
+              "first-page": "138",
+              "DOI": "10.1016/j.ifacol.2023.01.146",
+              "article-title": "Modular Model-Based Design for Aerial Manipulation with Simulink and ROS",
+              "volume": "55",
+              "author": "Bernstein",
+              "year": "2022",
+              "journal-title": "IFAC-PapersOnLine"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.ifacol.2023.01.146",
+                "doi": "10.1016/j.ifacol.2023.01.146",
+                "title": "Modular Model-Based Design for Aerial Manipulation with Simulink and ROS",
+                "authors": [
+                  "Bernstein"
+                ],
+                "year": 2022,
+                "venue": "IFAC-PapersOnLine",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.ifacol.2023.01.146"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref18",
+            "rawText": "https://doi.org/10.1109/trustcom60117.2023.00352",
+            "doi": "10.1109/trustcom60117.2023.00352",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TrustCom60117.2023.00352"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/trustcom60117.2023.00352",
+                "doi": "10.1109/trustcom60117.2023.00352",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/trustcom60117.2023.00352"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref19",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "volume-title": "Scilab/Xcos"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref19",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref20",
+            "rawText": "",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "volume-title": "Ansys SCADE Suite"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref20",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/seaa64295.2024.00017",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 20,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/seaa64295.2024.00017",
+          "crossrefReferenceCount": 20
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Obi2024",
+      "paperId": "doi:10.1109/seaa64295.2024.00017",
+      "metadata": {
+        "fileName": "Obi2024.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Obi2024.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1732 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.989551+00:00",
+  "papers": [
+    {
+      "key": "Lin2026",
+      "paper": {
+        "id": "doi:10.1145/3808263",
+        "citationKey": "Lin2026",
+        "title": "Let It Flow: A Formally Verified Compilation Framework for Asynchronous Dataflow",
+        "authors": [
+          "Zhengyao Lin",
+          "Yi Cai",
+          "Milijana Surbatovich"
+        ],
+        "year": 2026,
+        "venue": "Proceedings of the ACM on Programming Languages",
+        "type": "article",
+        "doi": "10.1145/3808263",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/3808263",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Lin, Zhengyao and Cai, Yi and Surbatovich, Milijana",
+          "title": "Let It Flow: A Formally Verified Compilation Framework for Asynchronous Dataflow",
+          "journal": "Proceedings of the ACM on Programming Languages",
+          "volume": "10",
+          "number": "PLDI",
+          "articleno": "185",
+          "year": "2026",
+          "doi": "10.1145/3808263",
+          "url": "https://doi.org/10.1145/3808263"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.123659+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_2_2",
+            "rawText": "https://doi.org/10.1109/micro61859.2024.00089",
+            "doi": "10.1109/micro61859.2024.00089",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MICRO61859.2024.00089"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/micro61859.2024.00089",
+                "doi": "10.1109/micro61859.2024.00089",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/micro61859.2024.00089"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_3_2",
+            "rawText": "Alfred V. Aho and Jeffrey D. Ullman. 1977. Principles of Compiler Design (Addison-Wesley series in computer science and information processing). Addison-Wesley Longman Publishing Co. Inc. USA.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_3_2",
+              "unstructured": "Alfred V. Aho and Jeffrey D. Ullman. 1977. Principles of Compiler Design (Addison-Wesley series in computer science and information processing). Addison-Wesley Longman Publishing Co. Inc. USA."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_3_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_4_2",
+            "rawText": "https://doi.org/10.1145/278283.278285",
+            "doi": "10.1145/278283.278285",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_4_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/278283.278285"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/278283.278285",
+                "doi": "10.1145/278283.278285",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/278283.278285"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_5_2",
+            "rawText": "https://doi.org/10.1109/12.48862",
+            "doi": "10.1109/12.48862",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_5_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/12.48862"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/12.48862",
+                "doi": "10.1109/12.48862",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/12.48862"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_6_2",
+            "rawText": "https://doi.org/10.1145/3158093",
+            "doi": "10.1145/3158093",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_6_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3158093"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3158093",
+                "doi": "10.1145/3158093",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3158093"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_7_2",
+            "rawText": "https://doi.org/10.1145/3062341.3062358",
+            "doi": "10.1145/3062341.3062358",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_7_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3062341.3062358"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3062341.3062358",
+                "doi": "10.1145/3062341.3062358",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3062341.3062358"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_8_2",
+            "rawText": "https://doi.org/10.1145/3371112",
+            "doi": "10.1145/3371112",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_8_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3371112"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3371112",
+                "doi": "10.1145/3371112",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3371112"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_9_2",
+            "rawText": "https://doi.org/10.1007/978-3-642-36946-9_10",
+            "doi": "10.1007/978-3-642-36946-9_10",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_9_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-642-36946-9_10"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-36946-9_10",
+                "doi": "10.1007/978-3-642-36946-9_10",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-36946-9_10"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_10_2",
+            "rawText": "https://doi.org/10.1007/978-3-319-41540-6_29",
+            "doi": "10.1007/978-3-319-41540-6_29",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_10_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-319-41540-6_29"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-41540-6_29",
+                "doi": "10.1007/978-3-319-41540-6_29",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-319-41540-6_29"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_11_2",
+            "rawText": "https://doi.org/10.1145/3656434",
+            "doi": "10.1145/3656434",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_11_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3656434"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3656434",
+                "doi": "10.1145/3656434",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3656434"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_12_2",
+            "rawText": "https://doi.org/10.1145/3613424.3614246",
+            "doi": "10.1145/3613424.3614246",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_12_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3613424.3614246"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3613424.3614246",
+                "doi": "10.1145/3613424.3614246",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3613424.3614246"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_3_2_13_2",
+            "rawText": "https://doi.org/10.1145/3676641.3715993",
+            "doi": "10.1145/3676641.3715993",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_13_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3676641.3715993"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3676641.3715993",
+                "doi": "10.1145/3676641.3715993",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3676641.3715993"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_3_2_14_2",
+            "rawText": "https://doi.org/10.1145/258948.258973",
+            "doi": "10.1145/258948.258973",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_14_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/258948.258973"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/258948.258973",
+                "doi": "10.1145/258948.258973",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/258948.258973"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_3_2_15_2",
+            "rawText": "https://doi.org/10.1145/3729256",
+            "doi": "10.1145/3729256",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_15_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3729256"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3729256",
+                "doi": "10.1145/3729256",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3729256"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_3_2_16_2",
+            "rawText": "https://doi.org/10.1109/isca52012.2021.00084",
+            "doi": "10.1109/isca52012.2021.00084",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_16_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ISCA52012.2021.00084"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/isca52012.2021.00084",
+                "doi": "10.1109/isca52012.2021.00084",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/isca52012.2021.00084"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_3_2_17_2",
+            "rawText": "https://doi.org/10.1109/micro56248.2022.00046",
+            "doi": "10.1109/micro56248.2022.00046",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_17_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MICRO56248.2022.00046"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/micro56248.2022.00046",
+                "doi": "10.1109/micro56248.2022.00046",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/micro56248.2022.00046"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_3_2_18_2",
+            "rawText": "https://doi.org/10.1109/5.97300",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_18_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/5.97300"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_3_2_19_2",
+            "rawText": "https://doi.org/10.1145/3779212.3790166",
+            "doi": "10.1145/3779212.3790166",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_19_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3779212.3790166"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3779212.3790166",
+                "doi": "10.1145/3779212.3790166",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3779212.3790166"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_3_2_20_2",
+            "rawText": "https://doi.org/10.1145/3485494",
+            "doi": "10.1145/3485494",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_20_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3485494"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3485494",
+                "doi": "10.1145/3485494",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3485494"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_3_2_21_2",
+            "rawText": "https://doi.org/10.1145/3582016.3582051",
+            "doi": "10.1145/3582016.3582051",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_21_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3582016.3582051"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3582016.3582051",
+                "doi": "10.1145/3582016.3582051",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3582016.3582051"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_3_2_22_2",
+            "rawText": "https://doi.org/10.1145/3174243.3174264",
+            "doi": "10.1145/3174243.3174264",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_22_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3174243.3174264"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3174243.3174264",
+                "doi": "10.1145/3174243.3174264",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3174243.3174264"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_3_2_23_2",
+            "rawText": "https://doi.org/10.1145/2775051.2676980",
+            "doi": "10.1145/2775051.2676980",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_23_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2775051.2676980"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2775051.2676980",
+                "doi": "10.1145/2775051.2676980",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2775051.2676980"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_3_2_24_2",
+            "rawText": "https://doi.org/10.1145/3704845",
+            "doi": "10.1145/3704845",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_24_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3704845"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3704845",
+                "doi": "10.1145/3704845",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3704845"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_3_2_25_2",
+            "rawText": "https://doi.org/10.1145/3694715.3695952",
+            "doi": "10.1145/3694715.3695952",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_25_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3694715.3695952"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3694715.3695952",
+                "doi": "10.1145/3694715.3695952",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3694715.3695952"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_3_2_26_2",
+            "rawText": "https://doi.org/10.1145/3586037",
+            "doi": "10.1145/3586037",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_26_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3586037"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3586037",
+                "doi": "10.1145/3586037",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3586037"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_3_2_27_2",
+            "rawText": "https://doi.org/10.1145/3720432",
+            "doi": "10.1145/3720432",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_27_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3720432"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3720432",
+                "doi": "10.1145/3720432",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3720432"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_3_2_28_2",
+            "rawText": "https://doi.org/10.1109/proc.1987.13876",
+            "doi": "10.1109/proc.1987.13876",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_28_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PROC.1987.13876"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/proc.1987.13876",
+                "doi": "10.1109/proc.1987.13876",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/PROC.1987.13876"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_3_2_29_2",
+            "rawText": "https://doi.org/10.1145/1538788.1538814",
+            "doi": "10.1145/1538788.1538814",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_29_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1538788.1538814"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1538788.1538814",
+                "doi": "10.1145/1538788.1538814",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1538788.1538814"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_3_2_30_2",
+            "rawText": "https://doi.org/10.1145/3527313",
+            "doi": "10.1145/3527313",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_30_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3527313"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3527313",
+                "doi": "10.1145/3527313",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3527313"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_3_2_31_2",
+            "rawText": "Zhengyao Lin. 2026. CIRCT Issue 9807. https://github.com/llvm/circt/issues/9807.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_31_2",
+              "unstructured": "Zhengyao Lin. 2026. CIRCT Issue 9807. https://github.com/llvm/circt/issues/9807."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_31_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "e_1_3_2_32_2",
+            "rawText": "Zhengyao Lin. 2026. CIRCT PR 9587. https://github.com/llvm/circt/pull/9587.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_32_2",
+              "unstructured": "Zhengyao Lin. 2026. CIRCT PR 9587. https://github.com/llvm/circt/pull/9587."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_32_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "e_1_3_2_33_2",
+            "rawText": "Zhengyao Lin Yi Cai and Milijana Surbatovich. 2026. Let It Flow: A Formally Verified Compilation Framework for Asynchronous Dataflow. doi:10.5281/zenodo.19393250",
+            "doi": "10.5281/zenodo.19393250",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_33_2",
+              "doi-asserted-by": "publisher",
+              "unstructured": "Zhengyao Lin Yi Cai and Milijana Surbatovich. 2026. Let It Flow: A Formally Verified Compilation Framework for Asynchronous Dataflow. doi:10.5281/zenodo.19393250",
+              "DOI": "10.5281/zenodo.19393250"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5281/zenodo.19393250",
+                "doi": "10.5281/zenodo.19393250",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5281/zenodo.19393250"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "e_1_3_2_34_2",
+            "rawText": "Zhengyao Lin Yi Cai and Milijana Surbatovich. 2026. Supplementary Material. doi:10.1145/3808263",
+            "doi": "10.1145/3808263",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_34_2",
+              "doi-asserted-by": "publisher",
+              "unstructured": "Zhengyao Lin Yi Cai and Milijana Surbatovich. 2026. Supplementary Material. doi:10.1145/3808263",
+              "DOI": "10.1145/3808263"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3808263",
+                "doi": "10.1145/3808263",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3808263"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "e_1_3_2_35_2",
+            "rawText": "https://doi.org/10.1145/3689729",
+            "doi": "10.1145/3689729",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_35_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3689729"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3689729",
+                "doi": "10.1145/3689729",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3689729"
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "e_1_3_2_36_2",
+            "rawText": "https://doi.org/10.1145/3357375",
+            "doi": "10.1145/3357375",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_36_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3357375"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3357375",
+                "doi": "10.1145/3357375",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3357375"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "e_1_3_2_37_2",
+            "rawText": "LLVM. 2025. CIRCT: Circuit IR Compilers and Tools. https://circt.llvm.org/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_37_2",
+              "unstructured": "LLVM. 2025. CIRCT: Circuit IR Compilers and Tools. https://circt.llvm.org/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_37_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "e_1_3_2_38_2",
+            "rawText": "LLVM. 2026. CIRCT: ‘handshake’ dialect. https://circt.llvm.org/docs/Dialects/Handshake/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_38_2",
+              "unstructured": "LLVM. 2026. CIRCT: ‘handshake’ dialect. https://circt.llvm.org/docs/Dialects/Handshake/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_38_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "e_1_3_2_39_2",
+            "rawText": "LLVM. 2026. MLIR: ‘scf’ dialect. https://mlir.llvm.org/docs/Dialects/SCFDialect/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_39_2",
+              "unstructured": "LLVM. 2026. MLIR: ‘scf’ dialect. https://mlir.llvm.org/docs/Dialects/SCFDialect/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_39_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "e_1_3_2_40_2",
+            "rawText": "https://doi.org/10.1007/978-3-030-44914-8_15",
+            "doi": "10.1007/978-3-030-44914-8_15",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_40_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-030-44914-8_15"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-030-44914-8_15",
+                "doi": "10.1007/978-3-030-44914-8_15",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-030-44914-8_15"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "e_1_3_2_41_2",
+            "rawText": "https://doi.org/10.1007/978-3-030-79876-5_37",
+            "doi": "10.1007/978-3-030-79876-5_37",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_41_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-030-79876-5_37"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-030-79876-5_37",
+                "doi": "10.1007/978-3-030-79876-5_37",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-030-79876-5_37"
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "e_1_3_2_42_2",
+            "rawText": "https://doi.org/10.1145/3385412.3385974",
+            "doi": "10.1145/3385412.3385974",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_42_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3385412.3385974"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3385412.3385974",
+                "doi": "10.1145/3385412.3385974",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3385412.3385974"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "e_1_3_2_43_2",
+            "rawText": "https://doi.org/10.1145/3079856.3080256",
+            "doi": "10.1145/3079856.3080256",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_43_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3079856.3080256"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3079856.3080256",
+                "doi": "10.1145/3079856.3080256",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3079856.3080256"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "e_1_3_2_44_2",
+            "rawText": "https://doi.org/10.1017/cbo9780511777110",
+            "doi": "10.1017/cbo9780511777110",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_44_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1017/CBO9780511777110"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1017/cbo9780511777110",
+                "doi": "10.1017/cbo9780511777110",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1017/cbo9780511777110"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "e_1_3_2_45_2",
+            "rawText": "Lattice Semiconductor. 2026. Lattice ECP5 FPGA family. https://www.latticesemi.com/en/Products/FPGAandCPLD/ECP5.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_45_2",
+              "unstructured": "Lattice Semiconductor. 2026. Lattice ECP5 FPGA family. https://www.latticesemi.com/en/Products/FPGAandCPLD/ECP5."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_45_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "e_1_3_2_46_2",
+            "rawText": "https://doi.org/10.1145/3613424.3614283",
+            "doi": "10.1145/3613424.3614283",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_46_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3613424.3614283"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3613424.3614283",
+                "doi": "10.1145/3613424.3614283",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3613424.3614283"
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "e_1_3_2_47_2",
+            "rawText": "https://doi.org/10.1145/3371091",
+            "doi": "10.1145/3371091",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_47_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3371091"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3371091",
+                "doi": "10.1145/3371091",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3371091"
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "e_1_3_2_48_2",
+            "rawText": "https://doi.org/10.1145/2676726.2676985",
+            "doi": "10.1145/2676726.2676985",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_48_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2676726.2676985"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2676726.2676985",
+                "doi": "10.1145/2676726.2676985",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2676726.2676985"
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "e_1_3_2_49_2",
+            "rawText": "https://doi.org/10.1109/micro.2003.1253203",
+            "doi": "10.1109/micro.2003.1253203",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_49_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MICRO.2003.1253203"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/micro.2003.1253203",
+                "doi": "10.1109/micro.2003.1253203",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/micro.2003.1253203"
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "e_1_3_2_50_2",
+            "rawText": "The Rust team. 2026. Rust programming language. https://rust-lang.org/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_50_2",
+              "unstructured": "The Rust team. 2026. Rust programming language. https://rust-lang.org/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_50_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "e_1_3_2_51_2",
+            "rawText": "The Rocq Development Team. 2025. The Rocq Theorem Prover. https://rocq-prover.org/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_51_2",
+              "unstructured": "The Rocq Development Team. 2025. The Rocq Theorem Prover. https://rocq-prover.org/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_51_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "e_1_3_2_52_2",
+            "rawText": "Verilator. 2026. Verilator open-source SystemVerilog simulator and lint system. https://github.com/verilator/verilator.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_52_2",
+              "unstructured": "Verilator. 2026. Verilator open-source SystemVerilog simulator and lint system. https://github.com/verilator/verilator."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_52_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "e_1_3_2_53_2",
+            "rawText": "https://doi.org/10.1145/3371119",
+            "doi": "10.1145/3371119",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_53_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3371119"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3371119",
+                "doi": "10.1145/3371119",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3371119"
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "e_1_3_2_54_2",
+            "rawText": "https://doi.org/10.1109/tpds.2013.125",
+            "doi": "10.1109/tpds.2013.125",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_54_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TPDS.2013.125"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tpds.2013.125",
+                "doi": "10.1109/tpds.2013.125",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tpds.2013.125"
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "e_1_3_2_55_2",
+            "rawText": "Yosys. 2026. nextpnr portable FPGA place and route tool. https://github.com/YosysHQ/nextpnr.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_55_2",
+              "unstructured": "Yosys. 2026. nextpnr portable FPGA place and route tool. https://github.com/YosysHQ/nextpnr."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_55_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "e_1_3_2_56_2",
+            "rawText": "Yosys. 2026. Yosys Open SYnthesis Suite. https://github.com/YosysHQ/yosys.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_56_2",
+              "unstructured": "Yosys. 2026. Yosys Open SYnthesis Suite. https://github.com/YosysHQ/yosys."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_56_2",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "e_1_3_2_57_2",
+            "rawText": "https://doi.org/10.1145/3632914",
+            "doi": "10.1145/3632914",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_57_2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3632914"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3632914",
+                "doi": "10.1145/3632914",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3632914"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/3808263",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 5,
+          "extractedReferenceCount": 56,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/3808263",
+          "crossrefReferenceCount": 56
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/3808263->doi:10.1109/12.48862@papers-dataflow-Lin2026.pdf",
+      "source": "doi:10.1145/3808263",
+      "target": "doi:10.1109/12.48862",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lin2026.pdf"
+    },
+    {
+      "id": "doi:10.1145/3808263->doi:10.1145/3062341.3062358@papers-dataflow-Lin2026.pdf",
+      "source": "doi:10.1145/3808263",
+      "target": "doi:10.1145/3062341.3062358",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lin2026.pdf"
+    },
+    {
+      "id": "doi:10.1145/3808263->doi:10.1109/5.97300@papers-dataflow-Lin2026.pdf",
+      "source": "doi:10.1145/3808263",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lin2026.pdf"
+    },
+    {
+      "id": "doi:10.1145/3808263->doi:10.1145/3779212.3790166@papers-dataflow-Lin2026.pdf",
+      "source": "doi:10.1145/3808263",
+      "target": "doi:10.1145/3779212.3790166",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lin2026.pdf"
+    },
+    {
+      "id": "doi:10.1145/3808263->doi:10.1109/proc.1987.13876@papers-dataflow-Lin2026.pdf",
+      "source": "doi:10.1145/3808263",
+      "target": "doi:10.1109/proc.1987.13876",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lin2026.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Lin2026",
+      "paperId": "doi:10.1145/3808263",
+      "metadata": {
+        "fileName": "Lin2026.pdf",
+        "sourcePath": "papers/dataflow/Lin2026.pdf"
+      }
+    }
+  ]
+}

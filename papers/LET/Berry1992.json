@@ -1,0 +1,1530 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.554463+00:00",
+  "papers": [
+    {
+      "key": "Berry1992",
+      "paper": {
+        "id": "doi:10.1016/0167-6423(92)90005-v",
+        "citationKey": "Berry1992",
+        "title": "The Esterel synchronous programming language: design, semantics, implementation",
+        "authors": [
+          "G\\'erard Berry",
+          "Georges Gonthier"
+        ],
+        "year": 1992,
+        "venue": "Science of Computer Programming",
+        "type": "article",
+        "doi": "10.1016/0167-6423(92)90005-v",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models",
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Berry, G{\\'e}rard and Gonthier, Georges",
+          "title": "{The Esterel synchronous programming language: design, semantics, implementation}",
+          "year": "1992",
+          "journal": "Science of Computer Programming",
+          "publisher": "Elsevier BV",
+          "volume": "19",
+          "number": "2",
+          "pages": "87--152",
+          "doi": "10.1016/0167-6423(92)90005-v",
+          "url": "https://doi.org/10.1016/0167-6423(92)90005-v",
+          "month": "nov"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.059028+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "10.1016/0167-6423(92)90005-V_BIB1",
+            "rawText": "The Programming Language ADA Reference Manual. 1983",
+            "doi": null,
+            "arxivId": null,
+            "year": 1983,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB1",
+              "article-title": "The Programming Language ADA Reference Manual",
+              "volume": "155",
+              "year": "1983"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB1",
+                "doi": "",
+                "title": "The Programming Language ADA Reference Manual",
+                "authors": [],
+                "year": 1983,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "10.1016/0167-6423(92)90005-V_BIB2",
+            "rawText": "Arnold. Construction et analyse des systèmes de transitions: le système MEC. 1985. Actes du Colloque C3 d'Angoulème",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB2",
+              "article-title": "Construction et analyse des systèmes de transitions: le système MEC",
+              "author": "Arnold",
+              "year": "1985",
+              "journal-title": "Actes du Colloque C3 d'Angoulème"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB2",
+                "doi": "",
+                "title": "Construction et analyse des systèmes de transitions: le système MEC",
+                "authors": [
+                  "Arnold"
+                ],
+                "year": 1985,
+                "venue": "Actes du Colloque C3 d'Angoulème",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "10.1016/0167-6423(92)90005-V_BIB3",
+            "rawText": "Barendregt. The Lambda-Calculus: Its Syntax and Semantics. 1981",
+            "doi": null,
+            "arxivId": null,
+            "year": 1981,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB3",
+              "series-title": "The Lambda-Calculus: Its Syntax and Semantics",
+              "author": "Barendregt",
+              "year": "1981"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB3",
+                "doi": "",
+                "title": "The Lambda-Calculus: Its Syntax and Semantics",
+                "authors": [
+                  "Barendregt"
+                ],
+                "year": 1981,
+                "venue": "The Lambda-Calculus: Its Syntax and Semantics",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "10.1016/0167-6423(92)90005-V_BIB4",
+            "rawText": "Berry. ESTEREL: towards a synchronous and semantically sound high-level language for real-time applications. 1983. Proceedings IEEE Real-Time Systems Symposium",
+            "doi": null,
+            "arxivId": null,
+            "year": 1983,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB4",
+              "first-page": "30",
+              "article-title": "ESTEREL: towards a synchronous and semantically sound high-level language for real-time applications",
+              "author": "Berry",
+              "year": "1983",
+              "journal-title": "Proceedings IEEE Real-Time Systems Symposium"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB4",
+                "doi": "",
+                "title": "ESTEREL: towards a synchronous and semantically sound high-level language for real-time applications",
+                "authors": [
+                  "Berry"
+                ],
+                "year": 1983,
+                "venue": "Proceedings IEEE Real-Time Systems Symposium",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "10.1016/0167-6423(92)90005-V_BIB5",
+            "rawText": "Berry. The synchronous programming language ESTEREL and its mathematical semantics. 1984",
+            "doi": null,
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB5",
+              "article-title": "The synchronous programming language ESTEREL and its mathematical semantics",
+              "volume": "197",
+              "author": "Berry",
+              "year": "1984"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB5",
+                "doi": "",
+                "title": "The synchronous programming language ESTEREL and its mathematical semantics",
+                "authors": [
+                  "Berry"
+                ],
+                "year": 1984,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "10.1016/0167-6423(92)90005-V_BIB6",
+            "rawText": "Berry. Programmation synchrone des systèmes réactifs: le langage ESTEREL. 1987. Tech. Sci. Inform.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "10.1016/0167-6423(92)90005-V_BIB6",
+              "first-page": "305",
+              "article-title": "Programmation synchrone des systèmes réactifs: le langage ESTEREL",
+              "volume": "6",
+              "author": "Berry",
+              "year": "1987",
+              "journal-title": "Tech. Sci. Inform."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB6",
+                "doi": "",
+                "title": "Programmation synchrone des systèmes réactifs: le langage ESTEREL",
+                "authors": [
+                  "Berry"
+                ],
+                "year": 1987,
+                "venue": "Tech. Sci. Inform.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "10.1016/0167-6423(92)90005-V_BIB7",
+            "rawText": "Berry. Synchronous programming of reactive systems: an introduction to ESTEREL. 1987",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB7",
+              "series-title": "INRIA Rept. 647",
+              "article-title": "Synchronous programming of reactive systems: an introduction to ESTEREL",
+              "author": "Berry",
+              "year": "1987"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB7",
+                "doi": "",
+                "title": "Synchronous programming of reactive systems: an introduction to ESTEREL",
+                "authors": [
+                  "Berry"
+                ],
+                "year": 1987,
+                "venue": "INRIA Rept. 647",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "10.1016/0167-6423(92)90005-V_BIB8",
+            "rawText": "Berry. ESTEREL system manuals. 1986",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB8",
+              "series-title": "Collection of Technical Reports",
+              "article-title": "ESTEREL system manuals",
+              "author": "Berry",
+              "year": "1986"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB8",
+                "doi": "",
+                "title": "ESTEREL system manuals",
+                "authors": [
+                  "Berry"
+                ],
+                "year": 1986,
+                "venue": "Collection of Technical Reports",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "10.1016/0167-6423(92)90005-V_BIB9",
+            "rawText": "Berry. ESTEREL programming examples. 1986",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB9",
+              "series-title": "Collection of Technical Reports",
+              "article-title": "ESTEREL programming examples",
+              "author": "Berry",
+              "year": "1986"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB9",
+                "doi": "",
+                "title": "ESTEREL programming examples",
+                "authors": [
+                  "Berry"
+                ],
+                "year": 1986,
+                "venue": "Collection of Technical Reports",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10.1016/0167-6423(92)90005-V_BIB10",
+            "rawText": "Berry. From regular expressions to deterministic automata. 1987. Theor. Comput. Sci.. https://doi.org/10.1016/0304-3975(86)90088-5",
+            "doi": "10.1016/0304-3975(86)90088-5",
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB10",
+              "doi-asserted-by": "crossref",
+              "first-page": "117",
+              "DOI": "10.1016/0304-3975(86)90088-5",
+              "article-title": "From regular expressions to deterministic automata",
+              "volume": "48",
+              "author": "Berry",
+              "year": "1987",
+              "journal-title": "Theor. Comput. Sci."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0304-3975(86)90088-5",
+                "doi": "10.1016/0304-3975(86)90088-5",
+                "title": "From regular expressions to deterministic automata",
+                "authors": [
+                  "Berry"
+                ],
+                "year": 1987,
+                "venue": "Theor. Comput. Sci.",
+                "type": "",
+                "url": "https://doi.org/10.1016/0304-3975(86)90088-5"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "10.1016/0167-6423(92)90005-V_BIB11",
+            "rawText": "Blanchard. Comprendre, Maitriser et Appliquer le Grafcet. 1979",
+            "doi": null,
+            "arxivId": null,
+            "year": 1979,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB11",
+              "series-title": "Comprendre, Maitriser et Appliquer le Grafcet",
+              "author": "Blanchard",
+              "year": "1979"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB11",
+                "doi": "",
+                "title": "Comprendre, Maitriser et Appliquer le Grafcet",
+                "authors": [
+                  "Blanchard"
+                ],
+                "year": 1979,
+                "venue": "Comprendre, Maitriser et Appliquer le Grafcet",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "10.1016/0167-6423(92)90005-V_BIB12",
+            "rawText": "Borras. CENTAUR: the system. 1987",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB12",
+              "series-title": "INRIA Rept 777",
+              "article-title": "CENTAUR: the system",
+              "author": "Borras",
+              "year": "1987"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB12",
+                "doi": "",
+                "title": "CENTAUR: the system",
+                "authors": [
+                  "Borras"
+                ],
+                "year": 1987,
+                "venue": "INRIA Rept 777",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "10.1016/0167-6423(92)90005-V_BIB13",
+            "rawText": "Boudol. Communication is an abstraction. 1987",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB13",
+              "series-title": "Actes du Colloque C3 d'Angoulème",
+              "article-title": "Communication is an abstraction",
+              "author": "Boudol",
+              "year": "1987"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB13",
+                "doi": "",
+                "title": "Communication is an abstraction",
+                "authors": [
+                  "Boudol"
+                ],
+                "year": 1987,
+                "venue": "Actes du Colloque C3 d'Angoulème",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "10.1016/0167-6423(92)90005-V_BIB14",
+            "rawText": "Boundol. On the semantics of concurrency: partial orders and transition systems. 1987. Proceedings CAAP",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB14",
+              "article-title": "On the semantics of concurrency: partial orders and transition systems",
+              "author": "Boundol",
+              "year": "1987",
+              "journal-title": "Proceedings CAAP"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB14",
+                "doi": "",
+                "title": "On the semantics of concurrency: partial orders and transition systems",
+                "authors": [
+                  "Boundol"
+                ],
+                "year": 1987,
+                "venue": "Proceedings CAAP",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "10.1016/0167-6423(92)90005-V_BIB15",
+            "rawText": "Browne. SML: a high level language for the design and verification of finite state machines. 1985. Carnegie-Mellon University Rept. CMU-CS-85-179",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB15",
+              "article-title": "SML: a high level language for the design and verification of finite state machines",
+              "author": "Browne",
+              "year": "1985",
+              "journal-title": "Carnegie-Mellon University Rept. CMU-CS-85-179"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB15",
+                "doi": "",
+                "title": "SML: a high level language for the design and verification of finite state machines",
+                "authors": [
+                  "Browne"
+                ],
+                "year": 1985,
+                "venue": "Carnegie-Mellon University Rept. CMU-CS-85-179",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "10.1016/0167-6423(92)90005-V_BIB16",
+            "rawText": "Boussinot. Une sémantique du langage ESTEREL. 1986",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB16",
+              "series-title": "INRIA Rept 577",
+              "article-title": "Une sémantique du langage ESTEREL",
+              "author": "Boussinot",
+              "year": "1986"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB16",
+                "doi": "",
+                "title": "Une sémantique du langage ESTEREL",
+                "authors": [
+                  "Boussinot"
+                ],
+                "year": 1986,
+                "venue": "INRIA Rept 577",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "10.1016/0167-6423(92)90005-V_BIB17",
+            "rawText": "Brzozowski. Derivatives of regular expressions. 1964. J. ACM. https://doi.org/10.1145/321239.321249",
+            "doi": "10.1145/321239.321249",
+            "arxivId": null,
+            "year": 1964,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "10.1016/0167-6423(92)90005-V_BIB17",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1145/321239.321249",
+              "article-title": "Derivatives of regular expressions",
+              "volume": "11",
+              "author": "Brzozowski",
+              "year": "1964",
+              "journal-title": "J. ACM"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/321239.321249",
+                "doi": "10.1145/321239.321249",
+                "title": "Derivatives of regular expressions",
+                "authors": [
+                  "Brzozowski"
+                ],
+                "year": 1964,
+                "venue": "J. ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/321239.321249"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "10.1016/0167-6423(92)90005-V_BIB18",
+            "rawText": "Cardelli. SQUEAK, a language for communicating with Mice. 1985",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB18",
+              "series-title": "AT&T Bell Laboratories Report",
+              "article-title": "SQUEAK, a language for communicating with Mice",
+              "author": "Cardelli",
+              "year": "1985"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB18",
+                "doi": "",
+                "title": "SQUEAK, a language for communicating with Mice",
+                "authors": [
+                  "Cardelli"
+                ],
+                "year": 1985,
+                "venue": "AT&T Bell Laboratories Report",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "10.1016/0167-6423(92)90005-V_BIB19",
+            "rawText": "P. Caspi, D. Pilaud, N. Halbwachs and J. Plaice, LUSTRE, a declarative language for real-time programming, in: Proceedings Conference on Principles of Programming Languages, Munich, Germany.",
+            "doi": "10.1145/41625.41641",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB19",
+              "doi-asserted-by": "crossref",
+              "unstructured": "P. Caspi, D. Pilaud, N. Halbwachs and J. Plaice, LUSTRE, a declarative language for real-time programming, in: Proceedings Conference on Principles of Programming Languages, Munich, Germany.",
+              "DOI": "10.1145/41625.41641"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/41625.41641",
+                "doi": "10.1145/41625.41641",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/41625.41641"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "10.1016/0167-6423(92)90005-V_BIB20",
+            "rawText": "Chailloux. LeLisp v15.2: le manuel de référence. 1986",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB20",
+              "series-title": "INRIA Tech. Rept.",
+              "article-title": "LeLisp v15.2: le manuel de référence",
+              "author": "Chailloux",
+              "year": "1986"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB20",
+                "doi": "",
+                "title": "LeLisp v15.2: le manuel de référence",
+                "authors": [
+                  "Chailloux"
+                ],
+                "year": 1986,
+                "venue": "INRIA Tech. Rept.",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "10.1016/0167-6423(92)90005-V_BIB21",
+            "rawText": "Clarke. Automatic verification of finite state concurrent systems using temporal logic specifications: a practical approach. 1983",
+            "doi": null,
+            "arxivId": null,
+            "year": 1983,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB21",
+              "series-title": "Department of Computer Science Report",
+              "article-title": "Automatic verification of finite state concurrent systems using temporal logic specifications: a practical approach",
+              "author": "Clarke",
+              "year": "1983"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB21",
+                "doi": "",
+                "title": "Automatic verification of finite state concurrent systems using temporal logic specifications: a practical approach",
+                "authors": [
+                  "Clarke"
+                ],
+                "year": 1983,
+                "venue": "Department of Computer Science Report",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "10.1016/0167-6423(92)90005-V_BIB22",
+            "rawText": "Clément. Specifying the behavior of graphical objects using ESTEREL. 1988",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB22",
+              "series-title": "INRIA Rept. 836",
+              "article-title": "Specifying the behavior of graphical objects using ESTEREL",
+              "author": "Clément",
+              "year": "1988"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB22",
+                "doi": "",
+                "title": "Specifying the behavior of graphical objects using ESTEREL",
+                "authors": [
+                  "Clément"
+                ],
+                "year": 1988,
+                "venue": "INRIA Rept. 836",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "10.1016/0167-6423(92)90005-V_BIB23",
+            "rawText": "Cosserat. Sémantique opérationelle du langage synchrone ESTEREL. 1985",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB23",
+              "series-title": "Thèse de Docteur Ingénieur",
+              "article-title": "Sémantique opérationelle du langage synchrone ESTEREL",
+              "author": "Cosserat",
+              "year": "1985"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB23",
+                "doi": "",
+                "title": "Sémantique opérationelle du langage synchrone ESTEREL",
+                "authors": [
+                  "Cosserat"
+                ],
+                "year": 1985,
+                "venue": "Thèse de Docteur Ingénieur",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "10.1016/0167-6423(92)90005-V_BIB24",
+            "rawText": "Gonthier. Sémantiques et modèles d'exécution des langages réactifs synchrones; application à ESTEREL. 1988",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB24",
+              "series-title": "Thèse d'Informatique",
+              "article-title": "Sémantiques et modèles d'exécution des langages réactifs synchrones; application à ESTEREL",
+              "author": "Gonthier",
+              "year": "1988"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB24",
+                "doi": "",
+                "title": "Sémantiques et modèles d'exécution des langages réactifs synchrones; application à ESTEREL",
+                "authors": [
+                  "Gonthier"
+                ],
+                "year": 1988,
+                "venue": "Thèse d'Informatique",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "10.1016/0167-6423(92)90005-V_BIB25",
+            "rawText": "Le Guernic. SIGNAL: a data flow oriented language for signal processing. 1985",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB25",
+              "series-title": "IRISA Rept. 246",
+              "article-title": "SIGNAL: a data flow oriented language for signal processing",
+              "author": "Le Guernic",
+              "year": "1985"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB25",
+                "doi": "",
+                "title": "SIGNAL: a data flow oriented language for signal processing",
+                "authors": [
+                  "Le Guernic"
+                ],
+                "year": 1985,
+                "venue": "IRISA Rept. 246",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "10.1016/0167-6423(92)90005-V_BIB26",
+            "rawText": "Harel. Statecharts: a visual approach to complex systems. 1987. Sci. Comput. Programming. https://doi.org/10.1016/0167-6423(87)90035-9",
+            "doi": "10.1016/0167-6423(87)90035-9",
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "10.1016/0167-6423(92)90005-V_BIB26",
+              "doi-asserted-by": "crossref",
+              "first-page": "231",
+              "DOI": "10.1016/0167-6423(87)90035-9",
+              "article-title": "Statecharts: a visual approach to complex systems",
+              "volume": "8",
+              "author": "Harel",
+              "year": "1987",
+              "journal-title": "Sci. Comput. Programming"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/0167-6423(87)90035-9",
+                "doi": "10.1016/0167-6423(87)90035-9",
+                "title": "Statecharts: a visual approach to complex systems",
+                "authors": [
+                  "Harel"
+                ],
+                "year": 1987,
+                "venue": "Sci. Comput. Programming",
+                "type": "",
+                "url": "https://doi.org/10.1016/0167-6423(87)90035-9"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "10.1016/0167-6423(92)90005-V_BIB27",
+            "rawText": "Harel. On the development of reactive systems: logic and models of concurrent systems. 1985",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB27",
+              "first-page": "477",
+              "article-title": "On the development of reactive systems: logic and models of concurrent systems",
+              "volume": "13",
+              "author": "Harel",
+              "year": "1985"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB27",
+                "doi": "",
+                "title": "On the development of reactive systems: logic and models of concurrent systems",
+                "authors": [
+                  "Harel"
+                ],
+                "year": 1985,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "10.1016/0167-6423(92)90005-V_BIB28",
+            "rawText": "Harel. On the formal semantics of Statecharts. 1987. Proceedings Symposium on Logic in Computer Science",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB28",
+              "first-page": "54",
+              "article-title": "On the formal semantics of Statecharts",
+              "author": "Harel",
+              "year": "1987",
+              "journal-title": "Proceedings Symposium on Logic in Computer Science"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB28",
+                "doi": "",
+                "title": "On the formal semantics of Statecharts",
+                "authors": [
+                  "Harel"
+                ],
+                "year": 1987,
+                "venue": "Proceedings Symposium on Logic in Computer Science",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "10.1016/0167-6423(92)90005-V_BIB29",
+            "rawText": "Hoare. Communicating sequential processes. 1978. Comm. ACM. https://doi.org/10.1145/359576.359585",
+            "doi": "10.1145/359576.359585",
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "8",
+              "key": "10.1016/0167-6423(92)90005-V_BIB29",
+              "doi-asserted-by": "crossref",
+              "first-page": "666",
+              "DOI": "10.1145/359576.359585",
+              "article-title": "Communicating sequential processes",
+              "volume": "21",
+              "author": "Hoare",
+              "year": "1978",
+              "journal-title": "Comm. ACM"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/359576.359585",
+                "doi": "10.1145/359576.359585",
+                "title": "Communicating sequential processes",
+                "authors": [
+                  "Hoare"
+                ],
+                "year": 1978,
+                "venue": "Comm. ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/359576.359585"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "10.1016/0167-6423(92)90005-V_BIB30",
+            "rawText": "Huet. Confluent reductions: abstract properties and applications to term rewriting systems. 1980. J. ACM. https://doi.org/10.1145/322217.322230",
+            "doi": "10.1145/322217.322230",
+            "arxivId": null,
+            "year": 1980,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "10.1016/0167-6423(92)90005-V_BIB30",
+              "doi-asserted-by": "crossref",
+              "first-page": "797",
+              "DOI": "10.1145/322217.322230",
+              "article-title": "Confluent reductions: abstract properties and applications to term rewriting systems",
+              "volume": "27",
+              "author": "Huet",
+              "year": "1980",
+              "journal-title": "J. ACM"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/322217.322230",
+                "doi": "10.1145/322217.322230",
+                "title": "Confluent reductions: abstract properties and applications to term rewriting systems",
+                "authors": [
+                  "Huet"
+                ],
+                "year": 1980,
+                "venue": "J. ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/322217.322230"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "10.1016/0167-6423(92)90005-V_BIB31",
+            "rawText": "The Occam Programming Manual. 1984",
+            "doi": null,
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB31",
+              "series-title": "The Occam Programming Manual",
+              "year": "1984"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB31",
+                "doi": "",
+                "title": "The Occam Programming Manual",
+                "authors": [],
+                "year": 1984,
+                "venue": "The Occam Programming Manual",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "10.1016/0167-6423(92)90005-V_BIB32",
+            "rawText": "Johnson. YACC: yet another compiler. 1978",
+            "doi": null,
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB32",
+              "series-title": "YACC: yet another compiler",
+              "author": "Johnson",
+              "year": "1978"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB32",
+                "doi": "",
+                "title": "YACC: yet another compiler",
+                "authors": [
+                  "Johnson"
+                ],
+                "year": 1978,
+                "venue": "YACC: yet another compiler",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "10.1016/0167-6423(92)90005-V_BIB33",
+            "rawText": "Kahn. Coroutines and networks of parallel processes. 1977",
+            "doi": null,
+            "arxivId": null,
+            "year": 1977,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB33",
+              "series-title": "Proceedings IFIP 77",
+              "first-page": "993",
+              "article-title": "Coroutines and networks of parallel processes",
+              "author": "Kahn",
+              "year": "1977"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB33",
+                "doi": "",
+                "title": "Coroutines and networks of parallel processes",
+                "authors": [
+                  "Kahn"
+                ],
+                "year": 1977,
+                "venue": "Proceedings IFIP 77",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "10.1016/0167-6423(92)90005-V_BIB34",
+            "rawText": "Kahn. Natural semantics. 1987",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB34",
+              "article-title": "Natural semantics",
+              "volume": "247",
+              "author": "Kahn",
+              "year": "1987"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB34",
+                "doi": "",
+                "title": "Natural semantics",
+                "authors": [
+                  "Kahn"
+                ],
+                "year": 1987,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "10.1016/0167-6423(92)90005-V_BIB35",
+            "rawText": "Mac Queen. Modules for standard ML. 1985. Polymorphism",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "10.1016/0167-6423(92)90005-V_BIB35",
+              "article-title": "Modules for standard ML",
+              "volume": "2",
+              "author": "Mac Queen",
+              "year": "1985",
+              "journal-title": "Polymorphism"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB35",
+                "doi": "",
+                "title": "Modules for standard ML",
+                "authors": [
+                  "Mac Queen"
+                ],
+                "year": 1985,
+                "venue": "Polymorphism",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "10.1016/0167-6423(92)90005-V_BIB36",
+            "rawText": "Milner. Calculi for synchrony and asynchrony. 1983. Theor. Comput. Sci.. https://doi.org/10.1016/0304-3975(83)90114-7",
+            "doi": "10.1016/0304-3975(83)90114-7",
+            "arxivId": null,
+            "year": 1983,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "10.1016/0167-6423(92)90005-V_BIB36",
+              "doi-asserted-by": "crossref",
+              "first-page": "267",
+              "DOI": "10.1016/0304-3975(83)90114-7",
+              "article-title": "Calculi for synchrony and asynchrony",
+              "volume": "25",
+              "author": "Milner",
+              "year": "1983",
+              "journal-title": "Theor. Comput. Sci."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0304-3975(83)90114-7",
+                "doi": "10.1016/0304-3975(83)90114-7",
+                "title": "Calculi for synchrony and asynchrony",
+                "authors": [
+                  "Milner"
+                ],
+                "year": 1983,
+                "venue": "Theor. Comput. Sci.",
+                "type": "",
+                "url": "https://doi.org/10.1016/0304-3975(83)90114-7"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "10.1016/0167-6423(92)90005-V_BIB37",
+            "rawText": "Mitchell. The essence of ML. 1988. Proceedings ACM Conference on Principles of Programming Languages",
+            "doi": null,
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB37",
+              "article-title": "The essence of ML",
+              "author": "Mitchell",
+              "year": "1988",
+              "journal-title": "Proceedings ACM Conference on Principles of Programming Languages"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB37",
+                "doi": "",
+                "title": "The essence of ML",
+                "authors": [
+                  "Mitchell"
+                ],
+                "year": 1988,
+                "venue": "Proceedings ACM Conference on Principles of Programming Languages",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "10.1016/0167-6423(92)90005-V_BIB38",
+            "rawText": "Plotkin. A structural approach to operational semantics. 1981",
+            "doi": null,
+            "arxivId": null,
+            "year": 1981,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB38",
+              "series-title": "Lectures Notes",
+              "article-title": "A structural approach to operational semantics",
+              "author": "Plotkin",
+              "year": "1981"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB38",
+                "doi": "",
+                "title": "A structural approach to operational semantics",
+                "authors": [
+                  "Plotkin"
+                ],
+                "year": 1981,
+                "venue": "Lectures Notes",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "10.1016/0167-6423(92)90005-V_BIB39",
+            "rawText": "Queille. Specification and verification of concurrent systems in CESAR. 1982",
+            "doi": null,
+            "arxivId": null,
+            "year": 1982,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB39",
+              "article-title": "Specification and verification of concurrent systems in CESAR",
+              "volume": "137",
+              "author": "Queille",
+              "year": "1982"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB39",
+                "doi": "",
+                "title": "Specification and verification of concurrent systems in CESAR",
+                "authors": [
+                  "Queille"
+                ],
+                "year": 1982,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "10.1016/0167-6423(92)90005-V_BIB40",
+            "rawText": "Stroustrup. The C++ Programming Language. 1986",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB40",
+              "series-title": "The C++ Programming Language",
+              "author": "Stroustrup",
+              "year": "1986"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB40",
+                "doi": "",
+                "title": "The C++ Programming Language",
+                "authors": [
+                  "Stroustrup"
+                ],
+                "year": 1986,
+                "venue": "The C++ Programming Language",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "10.1016/0167-6423(92)90005-V_BIB41",
+            "rawText": "Tanzi. Traduction structurelle des programmes ESTEREL en automates. 1985",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB41",
+              "series-title": "Thèse de Troisième Cycle",
+              "article-title": "Traduction structurelle des programmes ESTEREL en automates",
+              "author": "Tanzi",
+              "year": "1985"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB41",
+                "doi": "",
+                "title": "Traduction structurelle des programmes ESTEREL en automates",
+                "authors": [
+                  "Tanzi"
+                ],
+                "year": 1985,
+                "venue": "Thèse de Troisième Cycle",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "10.1016/0167-6423(92)90005-V_BIB42",
+            "rawText": "Vergamini. Verification by means of observational equivalence on automata. 1986",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB42",
+              "series-title": "INRIA Rept. 501",
+              "article-title": "Verification by means of observational equivalence on automata",
+              "author": "Vergamini",
+              "year": "1986"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB42",
+                "doi": "",
+                "title": "Verification by means of observational equivalence on automata",
+                "authors": [
+                  "Vergamini"
+                ],
+                "year": 1986,
+                "venue": "INRIA Rept. 501",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "10.1016/0167-6423(92)90005-V_BIB43",
+            "rawText": "Vergamini. Vérification de réseaux d'automates finis par equivalences observationnelles: le système AUTO. 1987",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/0167-6423(92)90005-V_BIB43",
+              "series-title": "Thèse d'Informatique",
+              "article-title": "Vérification de réseaux d'automates finis par equivalences observationnelles: le système AUTO",
+              "author": "Vergamini",
+              "year": "1987"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/0167-6423(92)90005-V_BIB43",
+                "doi": "",
+                "title": "Vérification de réseaux d'automates finis par equivalences observationnelles: le système AUTO",
+                "authors": [
+                  "Vergamini"
+                ],
+                "year": 1987,
+                "venue": "Thèse d'Informatique",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1016/0167-6423(92)90005-v",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 43,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1016/0167-6423(92)90005-v",
+          "crossrefReferenceCount": 43
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1016/0167-6423(92)90005-v->doi:10.1016/0167-6423(87)90035-9@papers-LET-Berry1992.pdf",
+      "source": "doi:10.1016/0167-6423(92)90005-v",
+      "target": "doi:10.1016/0167-6423(87)90035-9",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Berry1992.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Berry1992",
+      "paperId": "doi:10.1016/0167-6423(92)90005-v",
+      "metadata": {
+        "fileName": "Berry1992.pdf",
+        "sourcePath": "papers/LET/Berry1992.pdf"
+      }
+    }
+  ]
+}

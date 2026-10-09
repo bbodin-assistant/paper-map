@@ -1,0 +1,1063 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.714521+00:00",
+  "papers": [
+    {
+      "key": "Teper2026",
+      "paper": {
+        "id": "doi:10.48550/arxiv.2606.09203",
+        "citationKey": "Teper2026",
+        "title": "Deterministic Execution of ROS 2 Applications via Lingua Franca",
+        "authors": [
+          "Harun Teper",
+          "Shaokai Lin",
+          "Shulu Li",
+          "Edward A. Lee",
+          "Jian-Jia Chen"
+        ],
+        "year": 2026,
+        "venue": "arXiv:2606.09203",
+        "type": "misc",
+        "doi": "10.48550/arXiv.2606.09203",
+        "arxivId": "2606.09203",
+        "url": "https://arxiv.org/abs/2606.09203",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "Preprint",
+        "bibtexFields": {
+          "author": "Teper, Harun and Lin, Shaokai and Li, Shulu and Lee, Edward A. and Chen, Jian-Jia",
+          "title": "{Deterministic Execution of ROS 2 Applications via Lingua Franca}",
+          "year": "2026",
+          "howpublished": "arXiv:2606.09203",
+          "eprint": "2606.09203",
+          "archiveprefix": "arXiv",
+          "doi": "10.48550/arXiv.2606.09203",
+          "url": "https://arxiv.org/abs/2606.09203",
+          "note": "Preprint"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.087235+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Autoware Foundation. Autoware reference system, 2026. https://github.com/ros-realtime/reference-system, Last Accessed: 2026-05-26.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Autoware Foundation. Autoware reference system, 2026. https://github.com/ros-realtime/reference-system, Last Accessed: 2026-05-26."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "S. Bateni, M. Lohstroh, H. S. Wong, H. Kim, S. Lin, C. Menard, and E. A. Lee. Risk and mitigation of nondeterminism in distributed cyber-physical systems. In 21st ACM/IEEE International Symposium on Formal Methods and Models for System Design (MEMOCODE), pages 1–11, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Bateni, M. Lohstroh, H. S. Wong, H. Kim, S. Lin, C. Menard, and E. A. Lee. Risk and mitigation of nondeterminism in distributed cyber-physical systems. In 21st ACM/IEEE International Symposium on Formal Methods and Models for System Design (MEMOCODE), pages 1–11, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "A. Benveniste, P. Caspi, S. Edwards, N. Halbwachs, P. Le Guernic, and R. de Simone. The synchronous languages 12 years later. Proceedings of the IEEE, 91(1):64–83, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. Benveniste, P. Caspi, S. Edwards, N. Halbwachs, P. Le Guernic, and R. de Simone. The synchronous languages 12 years later. Proceedings of the IEEE, 91(1):64–83, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "T. Blaß, D. Casini, S. Bozhko, and B. B. Brandenburg. A ROS 2 response-time analysis exploiting starvation freedom and execution-time variance. In 2021 IEEE Real-Time Systems Symposium (RTSS), pages 41–53, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Blaß, D. Casini, S. Bozhko, and B. B. Brandenburg. A ROS 2 response-time analysis exploiting starvation freedom and execution-time variance. In 2021 IEEE Real-Time Systems Symposium (RTSS), pages 41–53, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "T. Blaß, A. Hamann, R. Lange, D. Ziegenbein, and B. B. Brandenburg. Automatic latency management for ROS 2: Benefits, challenges, and open problems. In 27th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 264–277. IEEE, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "T. Blaß, A. Hamann, R. Lange, D. Ziegenbein, and B. B. Brandenburg. Automatic latency management for ROS 2: Benefits, challenges, and open problems. In 27th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 264–277. IEEE, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "D. Casini, T. Blaß, I. Lütkebohle, and B. B. Brandenburg. ResponseTime Analysis of ROS 2 Processing Chains Under Reservation-Based Scheduling. In S. Quinton, editor, 31st Euromicro Conference on RealTime Systems (ECRTS 2019), volume 133 of Leibniz International Proceedings in Informatics (LIPIcs), pages 6:1–6:23, Dagstuhl, Germany, 2019. Schloss Dagstuhl – Leibniz-Zentrum für Informatik.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Casini, T. Blaß, I. Lütkebohle, and B. B. Brandenburg. ResponseTime Analysis of ROS 2 Processing Chains Under Reservation-Based Scheduling. In S. Quinton, editor, 31st Euromicro Conference on RealTime Systems (ECRTS 2019), volume 133 of Leibniz International Proceedings in Informatics (LIPIcs), pages 6:1–6:23, Dagstuhl, Germany, 2019. Schloss Dagstuhl – Leibniz-Zentrum für Informatik."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "D. Casini, J.-J. Chen, J. Li, F. Reghenzani, and H. Teper. A Survey of Real-Time Support, Analysis, and Advancements in ROS 2. Leibniz Transactions on Embedded Systems, 11(1):1:1–1:37, 2026.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Casini, J.-J. Chen, J. Li, F. Reghenzani, and H. Teper. A Survey of Real-Time Support, Analysis, and Advancements in ROS 2. Leibniz Transactions on Embedded Systems, 11(1):1:1–1:37, 2026."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "H. Choi, Y. Xiang, and H. Kim. Picas: New design of priority-driven chain-aware scheduling for ros2. In 2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 251– 263. IEEE, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Choi, Y. Xiang, and H. Kim. Picas: New design of priority-driven chain-aware scheduling for ros2. In 2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 251– 263. IEEE, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "N. Halbwachs, P. Caspi, P. Raymond, and D. Pilaud. The synchronous data flow programming language lustre. Proceedings of the IEEE, 79(9):1305–1320, 1991.",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "N. Halbwachs, P. Caspi, P. Raymond, and D. Pilaud. The synchronous data flow programming language lustre. Proceedings of the IEEE, 79(9):1305–1320, 1991."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "arxivId": "",
+                "title": "The synchronous data flow programming language LUSTRE",
+                "authors": [
+                  "N. Halbwachs",
+                  "P. Caspi",
+                  "P. Raymond",
+                  "D. Pilaud"
+                ],
+                "year": 1991,
+                "venue": "Proceedings of the IEEE",
+                "type": "article",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "W. K. Huang, Y. Terazawa, Y. Matsubara, and A. Iwai. Software-defined vehicles: Challenges and orchestrating mixed-criticality services using Lingua Franca. IEEE Embedded Systems Letters, 2025.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "W. K. Huang, Y. Terazawa, Y. Matsubara, and A. Iwai. Software-defined vehicles: Challenges and orchestrating mixed-criticality services using Lingua Franca. IEEE Embedded Systems Letters, 2025."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "S. Kato, S. Tokunaga, Y. Maruyama, S. Maeda, M. Hirabayashi, Y. Kitsukawa, A. Monrroy, T. Ando, Y. Fujii, and T. Azumi. Autoware on board: Enabling autonomous vehicles with embedded systems. In 2018 ACM/IEEE 9th International Conference on Cyber-Physical Systems (ICCPS), pages 287–296. IEEE, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Kato, S. Tokunaga, Y. Maruyama, S. Maeda, M. Hirabayashi, Y. Kitsukawa, A. Monrroy, T. Ando, Y. Fujii, and T. Azumi. Autoware on board: Enabling autonomous vehicles with embedded systems. In 2018 ACM/IEEE 9th International Conference on Cyber-Physical Systems (ICCPS), pages 287–296. IEEE, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "J. Kwok, S. Li, M. Lohstroh, and E. A. Lee. HPRM: High-performance robotic middleware for intelligent autonomous systems. In IEEE International Conference on Robotics and Automation (ICRA), pages 8093–8099, 2025.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Kwok, S. Li, M. Lohstroh, and E. A. Lee. HPRM: High-performance robotic middleware for intelligent autonomous systems. In IEEE International Conference on Robotics and Automation (ICRA), pages 8093–8099, 2025."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "E. Lee and D. Messerschmitt. Synchronous data flow. Proceedings of the IEEE, 75(9):1235–1245, 1987.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. Lee and D. Messerschmitt. Synchronous data flow. Proceedings of the IEEE, 75(9):1235–1245, 1987."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1987,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "E. Lee and T. Parks. Dataflow process networks. Proceedings of the IEEE, 83(5):773–801, 05 1995.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. Lee and T. Parks. Dataflow process networks. Proceedings of the IEEE, 83(5):773–801, 05 1995."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "E. A. Lee, R. Akella, S. Bateni, S. Lin, M. Lohstroh, and C. Menard. Consistency vs. availability in distributed cyber-physical systems. ACM Trans. Embed. Comput. Syst., 22(5s):138:1–138:24, Sept. 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. A. Lee, R. Akella, S. Bateni, S. Lin, M. Lohstroh, and C. Menard. Consistency vs. availability in distributed cyber-physical systems. ACM Trans. Embed. Comput. Syst., 22(5s):138:1–138:24, Sept. 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "E. A. Lee, S. Bateni, S. Lin, M. Lohstroh, and C. Menard. Quantifying and generalizing the CAP theorem. arXiv, abs/2109.07771, 2021.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. A. Lee, S. Bateni, S. Lin, M. Lohstroh, and C. Menard. Quantifying and generalizing the CAP theorem. arXiv, abs/2109.07771, 2021."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "Lingua Franca Project. Lingua Franca coordination language, 2026. https://github.com/lf-lang/lingua-franca, Version 0.12.1, Last Accessed: 2026-05-26.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lingua Franca Project. Lingua Franca coordination language, 2026. https://github.com/lf-lang/lingua-franca, Version 0.12.1, Last Accessed: 2026-05-26."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "Lingua Franca Project. Playground for the Lingua Franca coordination language, 2026. https://github.com/lf-lang/playground-linguafranca, Last Accessed: 2026-05-26.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Lingua Franca Project. Playground for the Lingua Franca coordination language, 2026. https://github.com/lf-lang/playground-linguafranca, Last Accessed: 2026-05-26."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "S. Liu, X. Jiang, N. Guan, Z. Wang, M. Yu, and W. Yi. Rtex: An efficient and timing-predictable multithreaded executor for ROS 2. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 43(9):2578–2591, 2024.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Liu, X. Jiang, N. Guan, Z. Wang, M. Yu, and W. Yi. Rtex: An efficient and timing-predictable multithreaded executor for ROS 2. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 43(9):2578–2591, 2024."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2024,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "M. Lohstroh, C. Menard, S. Bateni, and E. A. Lee. Toward a lingua franca for deterministic concurrent systems. ACM Trans. Embed. Comput. Syst., 20(4):36:1–36:27, 2021.",
+            "doi": "10.1145/3448128",
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Lohstroh, C. Menard, S. Bateni, and E. A. Lee. Toward a lingua franca for deterministic concurrent systems. ACM Trans. Embed. Comput. Syst., 20(4):36:1–36:27, 2021."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1145/3448128",
+                "doi": "10.1145/3448128",
+                "arxivId": "",
+                "title": "Toward a Lingua Franca for Deterministic Concurrent Systems",
+                "authors": [
+                  "Marten Lohstroh",
+                  "Christian Menard",
+                  "Soroush Bateni",
+                  "Edward A. Lee"
+                ],
+                "year": 2021,
+                "venue": "ACM Transactions on Embedded Computing Systems",
+                "type": "misc",
+                "url": "https://doi.org/10.1145/3448128"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "M. Lohstroh, Í. Í. Romeo, A. Goens, P. Derler, J. Castrillón, E. A. Lee, and A. L. Sangiovanni-Vincentelli. Reactors: A deterministic model for composable reactive systems. In R. Chamberlain, M. Edin Grimheden, and W. Taha, editors, Cyber Physical Systems. Model-Based Design, pages 59–85, Cham, 2020. Springer International Publishing.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "M. Lohstroh, Í. Í. Romeo, A. Goens, P. Derler, J. Castrillón, E. A. Lee, and A. L. Sangiovanni-Vincentelli. Reactors: A deterministic model for composable reactive systems. In R. Chamberlain, M. Edin Grimheden, and W. Taha, editors, Cyber Physical Systems. Model-Based Design, pages 59–85, Cham, 2020. Springer International Publishing."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "S. Macenski, T. Foote, B. P. Gerkey, C. Lalancette, and W. Woodall. Robot Operating System 2: Design, architecture, and uses in the wild. Science Robotics, 7(66):eabm6074, 2022.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Macenski, T. Foote, B. P. Gerkey, C. Lalancette, and W. Woodall. Robot Operating System 2: Design, architecture, and uses in the wild. Science Robotics, 7(66):eabm6074, 2022."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "C. Menard, M. Lohstroh, S. Bateni, M. Chorlian, A. Deng, P. Donovan, C. Fournier, S. Lin, F. Suchert, T. Tanneberger, H. Kim, J. Castrillón, and E. A. Lee. High-performance deterministic concurrency using lingua franca. ACM Transactions on Architecture and Code Optimization, 20(4):48:1–48:29, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "C. Menard, M. Lohstroh, S. Bateni, M. Chorlian, A. Deng, P. Donovan, C. Fournier, S. Lin, F. Suchert, T. Tanneberger, H. Kim, J. Castrillón, and E. A. Lee. High-performance deterministic concurrency using lingua franca. ACM Transactions on Architecture and Code Optimization, 20(4):48:1–48:29, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "Object Management Group. Data distribution service (DDS) specification, version 1.4. Technical report, Object Management Group, 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Object Management Group. Data distribution service (DDS) specification, version 1.4. Technical report, Object Management Group, 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "Open Robotics. ROS 2: Robot operating system 2, 2026.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Open Robotics. ROS 2: Robot operating system 2, 2026."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "S. Sagmeister, M. Weinmann, P. Pitschi, and M. Lienkamp. RSLCPP – deterministic simulations using ROS 2, 2026. https://arxiv.org/abs/2601.07052.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2026,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Sagmeister, M. Weinmann, P. Pitschi, and M. Lienkamp. RSLCPP – deterministic simulations using ROS 2, 2026. https://arxiv.org/abs/2601.07052."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2026,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "27",
+            "rawText": "Y. Tang, N. Guan, X. Jiang, X. Luo, and W. Yi. Real-time performance analysis of processing systems on ros 2 executors. In 2023 IEEE 29th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 80–92. IEEE, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Y. Tang, N. Guan, X. Jiang, X. Luo, and W. Yi. Real-time performance analysis of processing systems on ros 2 executors. In 2023 IEEE 29th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 80–92. IEEE, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "28",
+            "rawText": "Y. Tang, X. Jiang, N. Guan, X. Luo, M. Yang, and W. Yi. Timing analysis of processing chains with data refreshing in ros 2. Journal of Systems Architecture, 155:103259, 2024.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Y. Tang, X. Jiang, N. Guan, X. Luo, M. Yang, and W. Yi. Timing analysis of processing chains with data refreshing in ros 2. Journal of Systems Architecture, 155:103259, 2024."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2024,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "29",
+            "rawText": "H. Teper, O. Bell, M. Günzel, C. Gill, and J.-J. Chen. Reconciling ROS 2 with classical real-time scheduling of periodic tasks. In 31st Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 177–189. IEEE, 2025.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2025,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Teper, O. Bell, M. Günzel, C. Gill, and J.-J. Chen. Reconciling ROS 2 with classical real-time scheduling of periodic tasks. In 31st Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 177–189. IEEE, 2025."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2025,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "30",
+            "rawText": "H. Teper, T. Betz, M. Günzel, D. Ebner, G. Von Der Brüggen, J. Betz, and J.-J. Chen. End-to-end timing analysis and optimization of multiexecutor ROS 2 systems. In 2024 IEEE 30th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 212–224, 2024.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2024,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Teper, T. Betz, M. Günzel, D. Ebner, G. Von Der Brüggen, J. Betz, and J.-J. Chen. End-to-end timing analysis and optimization of multiexecutor ROS 2 systems. In 2024 IEEE 30th Real-Time and Embedded Technology and Applications Symposium (RTAS), pages 212–224, 2024."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2024,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "31",
+            "rawText": "H. Teper, T. Betz, G. Von Der Brüggen, K.-H. Chen, J. Betz, and J.-J. Chen. Timing-aware ROS 2 architecture and system optimization. In 29th International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), pages 206–215. IEEE, 2023.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Teper, T. Betz, G. Von Der Brüggen, K.-H. Chen, J. Betz, and J.-J. Chen. Timing-aware ROS 2 architecture and system optimization. In 29th International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), pages 206–215. IEEE, 2023."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "32",
+            "rawText": "H. Teper, M. Günzel, N. Ueter, G. von der Brüggen, and J.-J. Chen. End-to-end timing analysis in ROS 2. In 2022 IEEE Real-Time Systems Symposium (RTSS), pages 53–65, 2022. 12",
+            "doi": null,
+            "arxivId": null,
+            "year": 2022,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "H. Teper, M. Günzel, N. Ueter, G. von der Brüggen, and J.-J. Chen. End-to-end timing analysis in ROS 2. In 2022 IEEE Real-Time Systems Symposium (RTSS), pages 53–65, 2022. 12"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.48550/arxiv.2606.09203:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2022,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 32,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.48550/arxiv.2606.09203->doi:10.1109/5.97300@papers-LET-Teper2026.pdf",
+      "source": "doi:10.48550/arxiv.2606.09203",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Teper2026.pdf"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2606.09203->doi:10.1145/3448128@papers-LET-Teper2026.pdf",
+      "source": "doi:10.48550/arxiv.2606.09203",
+      "target": "doi:10.1145/3448128",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/LET/Teper2026.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Teper2026",
+      "paperId": "doi:10.48550/arxiv.2606.09203",
+      "metadata": {
+        "fileName": "Teper2026.pdf",
+        "sourcePath": "papers/LET/Teper2026.pdf"
+      }
+    }
+  ]
+}

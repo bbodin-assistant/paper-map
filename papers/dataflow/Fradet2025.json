@@ -1,0 +1,884 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.128537+00:00",
+  "papers": [
+    {
+      "key": "Fradet2025",
+      "paper": {
+        "id": "doi:10.1145/3707206",
+        "citationKey": "Fradet2025",
+        "title": "Graph Transformations for Memory Peak Minimization by Scheduling",
+        "authors": [
+          "Pascal Fradet",
+          "Alain Girault",
+          "Alexandre Honorat"
+        ],
+        "year": 2025,
+        "venue": "ACM Transactions on Embedded Computing Systems",
+        "type": "article",
+        "doi": "10.1145/3707206",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Fradet, Pascal and Girault, Alain and Honorat, Alexandre",
+          "title": "Graph Transformations for Memory Peak Minimization by Scheduling",
+          "journal": "ACM Transactions on Embedded Computing Systems",
+          "year": "2025",
+          "doi": "10.1145/3707206",
+          "url": "https://doi.org/10.1145/3707206"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.137603+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_2_1_1_1",
+            "rawText": "https://doi.org/10.1137/0201008",
+            "doi": "10.1137/0201008",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_1_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1137/0201008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1137/0201008",
+                "doi": "10.1137/0201008",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1137/0201008"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_2_1_2_1",
+            "rawText": "Olivier Beaumont, Lionel Eyraud-Dubois, and Alena Shilova. 2021. Efficient Combination of Rematerialization and Offloading for Training DNNs. In Advances in Neural Information Processing Systems, M. Ranzato, A. Beygelzimer, Y. Dauphin, P.S. Liang, and J. Wortman Vaughan (Eds.), Vol.  34. Curran Associates, Inc., Virtual, 23844–23857. https://proceedings.neurips.cc/paper/2021/file/c8461bf13fca8a2b9912ab2eb1668e4b-Paper.pdf",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_2_1",
+              "volume-title": "Advances in Neural Information Processing Systems, M. Ranzato, A. Beygelzimer, Y. Dauphin, P.S. Liang, and J. Wortman Vaughan (Eds.), Vol.  34. Curran Associates",
+              "author": "Beaumont Olivier",
+              "year": "2021",
+              "unstructured": "Olivier Beaumont, Lionel Eyraud-Dubois, and Alena Shilova. 2021. Efficient Combination of Rematerialization and Offloading for Training DNNs. In Advances in Neural Information Processing Systems, M. Ranzato, A. Beygelzimer, Y. Dauphin, P.S. Liang, and J. Wortman Vaughan (Eds.), Vol.  34. Curran Associates, Inc., Virtual, 23844–23857. https://proceedings.neurips.cc/paper/2021/file/c8461bf13fca8a2b9912ab2eb1668e4b-Paper.pdf"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Beaumont Olivier"
+                ],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_2_1_3_1",
+            "rawText": "Olivier Beaumont, Lionel Eyraud-Dubois, and Alena Shilova. 2021. Pipelined Model Parallelism: Complexity Results and Memory Considerations. In 27th International European Conference on Parallel and Distributed Computing. Springer, Lisbon, Portugal, 183–198. https://hal.inria.fr/hal-02968802",
+            "doi": null,
+            "arxivId": null,
+            "year": 2021,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_3_1",
+              "volume-title": "Pipelined Model Parallelism: Complexity Results and Memory Considerations. In 27th International European Conference on Parallel and Distributed Computing. Springer",
+              "author": "Beaumont Olivier",
+              "year": "2021",
+              "unstructured": "Olivier Beaumont, Lionel Eyraud-Dubois, and Alena Shilova. 2021. Pipelined Model Parallelism: Complexity Results and Memory Considerations. In 27th International European Conference on Parallel and Distributed Computing. Springer, Lisbon, Portugal, 183–198. https://hal.inria.fr/hal-02968802"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_3_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Beaumont Olivier"
+                ],
+                "year": 2021,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_2_1_4_1",
+            "rawText": "Shuvra S. Bhattacharyya, Praveen K. Murthy, and Edward A. Lee. 1996. Software Synthesis from Dataflow Graphs. Kluwer Academic Pub., Hingham, MA.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "volume-title": "Software Synthesis from Dataflow Graphs",
+              "author": "Bhattacharyya S.",
+              "key": "e_1_2_1_4_1",
+              "unstructured": "Shuvra S. Bhattacharyya, Praveen K. Murthy, and Edward A. Lee. 1996. Software Synthesis from Dataflow Graphs. Kluwer Academic Pub., Hingham, MA."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_4_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Bhattacharyya S."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_2_1_5_1",
+            "rawText": "https://doi.org/10.1145/143103.143143",
+            "doi": "10.1145/143103.143143",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/143103.143143"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/143103.143143",
+                "doi": "10.1145/143103.143143",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/143103.143143"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_2_1_6_1",
+            "rawText": "Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel Ziegler, Jeffrey Wu, Clemens Winter, Chris Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei. 2020. Language Models are Few-Shot Learners. In Advances in Neural Information Processing Systems, H. Larochelle, M. Ranzato, R. Hadsell, M.F. Balcan, and H. Lin (Eds.), Vol.  33. Curran Associates, Inc., Virtual, 1877–1901. https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf",
+            "doi": null,
+            "arxivId": null,
+            "year": 2020,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_6_1",
+              "volume-title": "Inc.",
+              "author": "Brown Tom",
+              "year": "2020",
+              "unstructured": "Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel Ziegler, Jeffrey Wu, Clemens Winter, Chris Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei. 2020. Language Models are Few-Shot Learners. In Advances in Neural Information Processing Systems, H. Larochelle, M. Ranzato, R. Hadsell, M.F. Balcan, and H. Lin (Eds.), Vol.  33. Curran Associates, Inc., Virtual, 1877–1901. https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_6_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Brown Tom"
+                ],
+                "year": 2020,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_2_1_7_1",
+            "rawText": "https://doi.org/10.1109/tit.2005.850116",
+            "doi": "10.1109/tit.2005.850116",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_7_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TIT.2005.850116"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tit.2005.850116",
+                "doi": "10.1109/tit.2005.850116",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tit.2005.850116"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_2_1_8_1",
+            "rawText": "https://doi.org/10.1007/s11265-014-0952-6",
+            "doi": "10.1007/s11265-014-0952-6",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11265-014-0952-6"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11265-014-0952-6",
+                "doi": "10.1007/s11265-014-0952-6",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11265-014-0952-6"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_2_1_9_1",
+            "rawText": "Mathieu Faverge, Nathalie Furmento, Abdou Guermouche, Gwenolé Lucas, Raymond Namyst, Samuel Thibault, and Pierre-André Wacrenier. 2023. Programming Heterogeneous Architectures Using Hierarchical Tasks. In Euro-Par 2022: Parallel Processing Workshops. Springer Nature Switzerland, Cham, 97–108.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "volume-title": "Euro-Par 2022: Parallel Processing Workshops",
+              "author": "Faverge Mathieu",
+              "key": "e_1_2_1_9_1",
+              "unstructured": "Mathieu Faverge, Nathalie Furmento, Abdou Guermouche, Gwenolé Lucas, Raymond Namyst, Samuel Thibault, and Pierre-André Wacrenier. 2023. Programming Heterogeneous Architectures Using Hierarchical Tasks. In Euro-Par 2022: Parallel Processing Workshops. Springer Nature Switzerland, Cham, 97–108."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_9_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Faverge Mathieu"
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_2_1_10_1",
+            "rawText": "https://doi.org/10.1145/3589610.3596280",
+            "doi": "10.1145/3589610.3596280",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_10_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3589610.3596280"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/3589610.3596280",
+                "doi": "10.1145/3589610.3596280",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3589610.3596280"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_2_1_11_1",
+            "rawText": "https://doi.org/10.1145/1065579.1065796",
+            "doi": "10.1145/1065579.1065796",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_11_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1065579.1065796"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1065579.1065796",
+                "doi": "10.1145/1065579.1065796",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1065579.1065796"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_2_1_12_1",
+            "rawText": "Ce Jin Manish Purohit Zoya Svitkina Erik Vee and Joshua R. Wang. 2023. New Tools for Peak Memory Scheduling. arXiv 2312.13526. arxiv:2312.13526  [cs.DS]",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_12_1",
+              "unstructured": "Ce Jin Manish Purohit Zoya Svitkina Erik Vee and Joshua R. Wang. 2023. New Tools for Peak Memory Scheduling. arXiv 2312.13526. arxiv:2312.13526  [cs.DS]"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_12_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_2_1_13_1",
+            "rawText": "https://doi.org/10.1016/j.tcs.2017.09.037",
+            "doi": "10.1016/j.tcs.2017.09.037",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.tcs.2017.09.037"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.tcs.2017.09.037",
+                "doi": "10.1016/j.tcs.2017.09.037",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.tcs.2017.09.037"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_2_1_14_1",
+            "rawText": "https://doi.org/10.1109/proc.1987.13876",
+            "doi": "10.1109/proc.1987.13876",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_14_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PROC.1987.13876"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/proc.1987.13876",
+                "doi": "10.1109/proc.1987.13876",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/PROC.1987.13876"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_2_1_15_1",
+            "rawText": "https://doi.org/10.1137/0608031",
+            "doi": "10.1137/0608031",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_15_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1137/0608031"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1137/0608031",
+                "doi": "10.1137/0608031",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1137/0608031"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_2_1_16_1",
+            "rawText": "Svetlana Minakova, Erqian Tang, and Todor Stefanov. 2020. Combining Task- and Data-Level Parallelism for High-Throughput CNN Inference on Embedded CPUs-GPUs MPSoCs. In Embedded Computer Systems: Architectures, Modeling, and Simulation. Springer International Publishing, Cham, 18–35.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "volume-title": "Embedded Computer Systems: Architectures, Modeling, and Simulation",
+              "author": "Minakova Svetlana",
+              "key": "e_1_2_1_16_1",
+              "unstructured": "Svetlana Minakova, Erqian Tang, and Todor Stefanov. 2020. Combining Task- and Data-Level Parallelism for High-Throughput CNN Inference on Embedded CPUs-GPUs MPSoCs. In Embedded Computer Systems: Architectures, Modeling, and Simulation. Springer International Publishing, Cham, 18–35."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_16_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Minakova Svetlana"
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_2_1_17_1",
+            "rawText": "https://doi.org/10.1007/978-94-009-2639-4_4",
+            "doi": "10.1007/978-94-009-2639-4_4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_17_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-94-009-2639-4_4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-94-009-2639-4_4",
+                "doi": "10.1007/978-94-009-2639-4_4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-94-009-2639-4_4"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_2_1_18_1",
+            "rawText": "https://doi.org/10.1109/43.908427",
+            "doi": "10.1109/43.908427",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_18_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/43.908427"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/43.908427",
+                "doi": "10.1109/43.908427",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/43.908427"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_2_1_19_1",
+            "rawText": "https://doi.org/10.1109/icassp.1995.480106",
+            "doi": "10.1109/icassp.1995.480106",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_19_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1995.480106"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1995.480106",
+                "doi": "10.1109/icassp.1995.480106",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1995.480106"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_2_1_20_1",
+            "rawText": "https://doi.org/10.1145/800125.804049",
+            "doi": "10.1145/800125.804049",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_20_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/800125.804049"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/800125.804049",
+                "doi": "10.1145/800125.804049",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/800125.804049"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_2_1_21_1",
+            "rawText": "Tae-ho Shin, Hyunok Oh, and Soonhoi Ha. 2011. Minimizing Buffer Requirements forg Throughput Constrained Parallel Execution of Synchronous Dataflow Graph. In Proceedings of the 16th Asia South Pacific Design Automation Conference, ASP-DAC’11. IEEE, Yokohama, Japan, 165–170.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_21_1",
+              "volume-title": "Proceedings of the 16th Asia South Pacific Design Automation Conference, ASP-DAC’11",
+              "author": "Oh Hyunok",
+              "year": "2011",
+              "unstructured": "Tae-ho Shin, Hyunok Oh, and Soonhoi Ha. 2011. Minimizing Buffer Requirements forg Throughput Constrained Parallel Execution of Synchronous Dataflow Graph. In Proceedings of the 16th Asia South Pacific Design Automation Conference, ASP-DAC’11. IEEE, Yokohama, Japan, 165–170."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_21_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Oh Hyunok"
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_2_1_22_1",
+            "rawText": "https://doi.org/10.5555/293016.293043",
+            "doi": "10.5555/293016.293043",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_22_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/293016.293043"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/293016.293043",
+                "doi": "10.5555/293016.293043",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/293016.293043"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_2_1_23_1",
+            "rawText": "Krishnaiyan Thulasiraman and M.N. Shanmukha Swamy. 1992. Graphs - Theory and Algorithms. Wiley, Hoboken, NJ, USA.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "volume-title": "Graphs - Theory and Algorithms",
+              "author": "Thulasiraman Krishnaiyan",
+              "key": "e_1_2_1_23_1",
+              "unstructured": "Krishnaiyan Thulasiraman and M.N. Shanmukha Swamy. 1992. Graphs - Theory and Algorithms. Wiley, Hoboken, NJ, USA."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_23_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Thulasiraman Krishnaiyan"
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_2_1_24_1",
+            "rawText": "https://doi.org/10.1007/s11265-016-1107-8",
+            "doi": "10.1007/s11265-016-1107-8",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_24_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11265-016-1107-8"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11265-016-1107-8",
+                "doi": "10.1007/s11265-016-1107-8",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11265-016-1107-8"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_2_1_25_1",
+            "rawText": "Xunyi Zhao, Théotime Le Hellard, Lionel Eyraud-Dubois, Julia Gusak, and Olivier Beaumont. 2023. Rockmate: an Efficient, Fast, Automatic and Generic Tool for Re-materialization in PyTorch. In International Conference on Machine Learning, ICML’23(Proceedings of Machine Learning Research, Vol.  202). PMLR, Honolulu, HI, USA, 42018–42045. https://proceedings.mlr.press/v202/zhao23b.html",
+            "doi": null,
+            "arxivId": null,
+            "year": 2023,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_25_1",
+              "volume-title": "Automatic and Generic Tool for Re-materialization in PyTorch. In International Conference on Machine Learning, ICML’23(Proceedings of Machine Learning Research, Vol.  202)",
+              "author": "Zhao Xunyi",
+              "year": "2023",
+              "unstructured": "Xunyi Zhao, Théotime Le Hellard, Lionel Eyraud-Dubois, Julia Gusak, and Olivier Beaumont. 2023. Rockmate: an Efficient, Fast, Automatic and Generic Tool for Re-materialization in PyTorch. In International Conference on Machine Learning, ICML’23(Proceedings of Machine Learning Research, Vol.  202). PMLR, Honolulu, HI, USA, 42018–42045. https://proceedings.mlr.press/v202/zhao23b.html"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_25_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zhao Xunyi"
+                ],
+                "year": 2023,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_2_1_26_1",
+            "rawText": "https://doi.org/10.1109/tit.1978.1055934",
+            "doi": "10.1109/tit.1978.1055934",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_26_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TIT.1978.1055934"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tit.1978.1055934",
+                "doi": "10.1109/tit.1978.1055934",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tit.1978.1055934"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/3707206",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 3,
+          "extractedReferenceCount": 26,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/3707206",
+          "crossrefReferenceCount": 26
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/3707206->doi:10.1145/3589610.3596280@papers-dataflow-Fradet2025.pdf",
+      "source": "doi:10.1145/3707206",
+      "target": "doi:10.1145/3589610.3596280",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Fradet2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3707206->doi:10.1145/1065579.1065796@papers-dataflow-Fradet2025.pdf",
+      "source": "doi:10.1145/3707206",
+      "target": "doi:10.1145/1065579.1065796",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Fradet2025.pdf"
+    },
+    {
+      "id": "doi:10.1145/3707206->doi:10.1109/proc.1987.13876@papers-dataflow-Fradet2025.pdf",
+      "source": "doi:10.1145/3707206",
+      "target": "doi:10.1109/proc.1987.13876",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Fradet2025.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Fradet2025",
+      "paperId": "doi:10.1145/3707206",
+      "metadata": {
+        "fileName": "Fradet2025.pdf",
+        "sourcePath": "papers/dataflow/Fradet2025.pdf"
+      }
+    }
+  ]
+}

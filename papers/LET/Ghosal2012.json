@@ -1,0 +1,928 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.981640+00:00",
+  "papers": [
+    {
+      "key": "Ghosal2012",
+      "paper": {
+        "id": "doi:10.1016/j.scico.2010.06.004",
+        "citationKey": "Ghosal2012",
+        "title": "Separate compilation of hierarchical real-time programs into linear-bounded Embedded Machine code",
+        "authors": [
+          "Arkadeb Ghosal",
+          "Daniel Iercan",
+          "Christoph M. Kirsch",
+          "Thomas A. Henzinger",
+          "Alberto Sangiovanni-Vincentelli"
+        ],
+        "year": 2012,
+        "venue": "Science of Computer Programming",
+        "type": "article",
+        "doi": "10.1016/j.scico.2010.06.004",
+        "arxivId": "",
+        "url": "https://doi.org/10.1016/j.scico.2010.06.004",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Ghosal, Arkadeb and Iercan, Daniel and Kirsch, Christoph M. and Henzinger, Thomas A. and Sangiovanni-Vincentelli, Alberto",
+          "title": "{Separate compilation of hierarchical real-time programs into linear-bounded Embedded Machine code}",
+          "year": "2012",
+          "journal": "Science of Computer Programming",
+          "publisher": "Elsevier BV",
+          "volume": "77",
+          "number": "2",
+          "pages": "96--112",
+          "doi": "10.1016/j.scico.2010.06.004",
+          "url": "https://doi.org/10.1016/j.scico.2010.06.004"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.067203+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "10.1016/j.scico.2010.06.004_br000005",
+            "rawText": "Sangiovanni-Vincentelli. Benefits and challenges for platform-based design. 2004",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000005",
+              "series-title": "Proceedings of the 41st Annual Design Automation Conference",
+              "first-page": "409",
+              "article-title": "Benefits and challenges for platform-based design",
+              "author": "Sangiovanni-Vincentelli",
+              "year": "2004"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000005",
+                "doi": "",
+                "title": "Benefits and challenges for platform-based design",
+                "authors": [
+                  "Sangiovanni-Vincentelli"
+                ],
+                "year": 2004,
+                "venue": "Proceedings of the 41st Annual Design Automation Conference",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "10.1016/j.scico.2010.06.004_br000010",
+            "rawText": "AUTOSAR, http://www.autosar.org/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000010",
+              "unstructured": "AUTOSAR, http://www.autosar.org/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000010",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "10.1016/j.scico.2010.06.004_br000015",
+            "rawText": "FlexRay, http://www.flexray.com/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000015",
+              "unstructured": "FlexRay, http://www.flexray.com/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000015",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "10.1016/j.scico.2010.06.004_br000020",
+            "rawText": "Henzinger. Giotto: a time-triggered language for embedded programming. 2003",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000020",
+              "first-page": "84",
+              "article-title": "Giotto: a time-triggered language for embedded programming",
+              "volume": "vol. 91",
+              "author": "Henzinger",
+              "year": "2003"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "",
+                "title": "Giotto: a time-triggered language for embedded programming",
+                "authors": [
+                  "Henzinger"
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "10.1016/j.scico.2010.06.004_br000025",
+            "rawText": "Buttazzo. Hard Real-Time Computing Systems. 1997",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000025",
+              "series-title": "Hard Real-Time Computing Systems",
+              "author": "Buttazzo",
+              "year": "1997"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000025",
+                "doi": "",
+                "title": "Hard Real-Time Computing Systems",
+                "authors": [
+                  "Buttazzo"
+                ],
+                "year": 1997,
+                "venue": "Hard Real-Time Computing Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "10.1016/j.scico.2010.06.004_br000030",
+            "rawText": "Boussinot. The ESTEREL language. 1991",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000030",
+              "first-page": "1293",
+              "article-title": "The ESTEREL language",
+              "volume": "vol. 79",
+              "author": "Boussinot",
+              "year": "1991"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000030",
+                "doi": "",
+                "title": "The ESTEREL language",
+                "authors": [
+                  "Boussinot"
+                ],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "10.1016/j.scico.2010.06.004_br000035",
+            "rawText": "Halbwachs. The synchronous data-flow programming language LUSTRE. 1991",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000035",
+              "article-title": "The synchronous data-flow programming language LUSTRE",
+              "volume": "vol. 79",
+              "author": "Halbwachs",
+              "year": "1991"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "",
+                "title": "The synchronous data-flow programming language LUSTRE",
+                "authors": [
+                  "Halbwachs"
+                ],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "10.1016/j.scico.2010.06.004_br000040",
+            "rawText": "Ghosal. A hierarchical coordination language for interacting real-time tasks. 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000040",
+              "series-title": "Proceedings of the 6th ACM and IEEE International Conference on Embedded Software",
+              "first-page": "132",
+              "article-title": "A hierarchical coordination language for interacting real-time tasks",
+              "author": "Ghosal",
+              "year": "2006"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1145/1176887.1176907",
+                "doi": "",
+                "title": "A hierarchical coordination language for interacting real-time tasks",
+                "authors": [
+                  "Ghosal"
+                ],
+                "year": 2006,
+                "venue": "Proceedings of the 6th ACM and IEEE International Conference on Embedded Software",
+                "type": "",
+                "url": "https://doi.org/10.1145/1176887.1176907"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "10.1016/j.scico.2010.06.004_br000045",
+            "rawText": "A. Ghosal, A hierarchical coordination language for reliable real-time tasks, Ph.D. Thesis, University of California, Berkeley, Ph.D. Dissertation, 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000045",
+              "unstructured": "A. Ghosal, A hierarchical coordination language for reliable real-time tasks, Ph.D. Thesis, University of California, Berkeley, Ph.D. Dissertation, 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000045",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10.1016/j.scico.2010.06.004_br000050",
+            "rawText": "Henzinger. The Embedded Machine: predictable, portable real-time code. 2007. ACM Transactions on Programming Languages and Systems. https://doi.org/10.1145/1286821.1286824",
+            "doi": "10.1145/1286821.1286824",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000050",
+              "doi-asserted-by": "crossref",
+              "first-page": "33",
+              "DOI": "10.1145/1286821.1286824",
+              "article-title": "The Embedded Machine: predictable, portable real-time code",
+              "volume": "29",
+              "author": "Henzinger",
+              "year": "2007",
+              "journal-title": "ACM Transactions on Programming Languages and Systems"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1286821.1286824",
+                "doi": "10.1145/1286821.1286824",
+                "title": "The Embedded Machine: predictable, portable real-time code",
+                "authors": [
+                  "Henzinger"
+                ],
+                "year": 2007,
+                "venue": "ACM Transactions on Programming Languages and Systems",
+                "type": "",
+                "url": "https://doi.org/10.1145/1286821.1286824"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "10.1016/j.scico.2010.06.004_br000055",
+            "rawText": "Kirsch. A Giotto-based helicopter control system. 2002",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000055",
+              "series-title": "Proceedings of the Second International Conference on Embedded Software",
+              "first-page": "46",
+              "article-title": "A Giotto-based helicopter control system",
+              "volume": "vol. 2491",
+              "author": "Kirsch",
+              "year": "2002"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000055",
+                "doi": "",
+                "title": "A Giotto-based helicopter control system",
+                "authors": [
+                  "Kirsch"
+                ],
+                "year": 2002,
+                "venue": "Proceedings of the Second International Conference on Embedded Software",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "10.1016/j.scico.2010.06.004_br000060",
+            "rawText": "Kirsch. A programmable microkernel for real-time systems. 2005",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000060",
+              "series-title": "Proceedings of the 1st ACM/USENIX International Conference on Virtual Execution Environments",
+              "first-page": "35",
+              "article-title": "A programmable microkernel for real-time systems",
+              "author": "Kirsch",
+              "year": "2005"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1145/1064979.1064986",
+                "doi": "",
+                "title": "A programmable microkernel for real-time systems",
+                "authors": [
+                  "Kirsch"
+                ],
+                "year": 2005,
+                "venue": "Proceedings of the 1st ACM/USENIX International Conference on Virtual Execution Environments",
+                "type": "",
+                "url": "https://doi.org/10.1145/1064979.1064986"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "10.1016/j.scico.2010.06.004_br000065",
+            "rawText": "Farcas. Transparent distribution of real-time components based on logical execution time. 2005",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000065",
+              "series-title": "Proceedings of the 2005 ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems",
+              "first-page": "31",
+              "article-title": "Transparent distribution of real-time components based on logical execution time",
+              "author": "Farcas",
+              "year": "2005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000065",
+                "doi": "",
+                "title": "Transparent distribution of real-time components based on logical execution time",
+                "authors": [
+                  "Farcas"
+                ],
+                "year": 2005,
+                "venue": "Proceedings of the 2005 ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "10.1016/j.scico.2010.06.004_br000070",
+            "rawText": "Liu. Timed multitasking for real-time embedded software. 2003. IEEE Control Systems Magazine. https://doi.org/10.1109/mcs.2003.1172830",
+            "doi": "10.1109/mcs.2003.1172830",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000070",
+              "doi-asserted-by": "crossref",
+              "first-page": "65",
+              "DOI": "10.1109/MCS.2003.1172830",
+              "article-title": "Timed multitasking for real-time embedded software",
+              "volume": "23",
+              "author": "Liu",
+              "year": "2003",
+              "journal-title": "IEEE Control Systems Magazine"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/mcs.2003.1172830",
+                "doi": "10.1109/mcs.2003.1172830",
+                "title": "Timed multitasking for real-time embedded software",
+                "authors": [
+                  "Liu"
+                ],
+                "year": 2003,
+                "venue": "IEEE Control Systems Magazine",
+                "type": "",
+                "url": "https://doi.org/10.1109/MCS.2003.1172830"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "10.1016/j.scico.2010.06.004_br000075",
+            "rawText": "Caspi. From Simulink to SCADE/Lustre to TTA: a layered approach for distributed embedded applications. 2003",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000075",
+              "series-title": "Proceedings of the 2003 ACM SIGPLAN Conference on Language, Compiler, and Tool Support for Embedded Systems",
+              "first-page": "153",
+              "article-title": "From Simulink to SCADE/Lustre to TTA: a layered approach for distributed embedded applications",
+              "author": "Caspi",
+              "year": "2003"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000075",
+                "doi": "",
+                "title": "From Simulink to SCADE/Lustre to TTA: a layered approach for distributed embedded applications",
+                "authors": [
+                  "Caspi"
+                ],
+                "year": 2003,
+                "venue": "Proceedings of the 2003 ACM SIGPLAN Conference on Language, Compiler, and Tool Support for Embedded Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "10.1016/j.scico.2010.06.004_br000080",
+            "rawText": "Bertin. Taxys = Esterel + Kronos. A tool for verifying real-time properties of embedded systems. 2001",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000080",
+              "first-page": "2875",
+              "article-title": "Taxys = Esterel + Kronos. A tool for verifying real-time properties of embedded systems",
+              "volume": "vol. 3",
+              "author": "Bertin",
+              "year": "2001"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000080",
+                "doi": "",
+                "title": "Taxys = Esterel + Kronos. A tool for verifying real-time properties of embedded systems",
+                "authors": [
+                  "Bertin"
+                ],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "10.1016/j.scico.2010.06.004_br000085",
+            "rawText": "Lublinerman. Modular code generation from triggered and timed block diagrams. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000085",
+              "series-title": "Proceedings of the 2008 IEEE Real-Time and Embedded Technology and Applications Symposium",
+              "first-page": "147",
+              "article-title": "Modular code generation from triggered and timed block diagrams",
+              "author": "Lublinerman",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000085",
+                "doi": "",
+                "title": "Modular code generation from triggered and timed block diagrams",
+                "authors": [
+                  "Lublinerman"
+                ],
+                "year": 2008,
+                "venue": "Proceedings of the 2008 IEEE Real-Time and Embedded Technology and Applications Symposium",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "10.1016/j.scico.2010.06.004_br000090",
+            "rawText": "Lublinerman. Modular code generation from synchronous block diagrams: modularity vs. code size. 2009",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000090",
+              "series-title": "Proceedings of the 36th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+              "first-page": "78",
+              "article-title": "Modular code generation from synchronous block diagrams: modularity vs. code size",
+              "author": "Lublinerman",
+              "year": "2009"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000090",
+                "doi": "",
+                "title": "Modular code generation from synchronous block diagrams: modularity vs. code size",
+                "authors": [
+                  "Lublinerman"
+                ],
+                "year": 2009,
+                "venue": "Proceedings of the 36th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "10.1016/j.scico.2010.06.004_br000095",
+            "rawText": "D. Iercan, Contributions to the development of real-time programming techniques and technologies, Ph.D. Thesis, University “Politehnica” of Timisoara, Ph.D. Dissertation, 2008.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000095",
+              "unstructured": "D. Iercan, Contributions to the development of real-time programming techniques and technologies, Ph.D. Thesis, University “Politehnica” of Timisoara, Ph.D. Dissertation, 2008."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000095",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "10.1016/j.scico.2010.06.004_br000100",
+            "rawText": "HTL Home Page, http://htl.cs.uni-salzburg.at/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000100",
+              "unstructured": "HTL Home Page, http://htl.cs.uni-salzburg.at/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000100",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "10.1016/j.scico.2010.06.004_br000105",
+            "rawText": "Auerbach. Low-latency time-portable real-time programming with exotasks. 2009. ACM Transactions on Embedded Computing Systems. https://doi.org/10.1145/1457255.1457262",
+            "doi": "10.1145/1457255.1457262",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000105",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1145/1457255.1457262",
+              "article-title": "Low-latency time-portable real-time programming with exotasks",
+              "volume": "8",
+              "author": "Auerbach",
+              "year": "2009",
+              "journal-title": "ACM Transactions on Embedded Computing Systems"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1457255.1457262",
+                "doi": "10.1145/1457255.1457262",
+                "title": "Low-latency time-portable real-time programming with exotasks",
+                "authors": [
+                  "Auerbach"
+                ],
+                "year": 2009,
+                "venue": "ACM Transactions on Embedded Computing Systems",
+                "type": "",
+                "url": "https://doi.org/10.1145/1457255.1457262"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "10.1016/j.scico.2010.06.004_br000110",
+            "rawText": "Craciunas. The JAviator: a high-payload quadrotor UAV with high-level programming capabilities. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000110",
+              "series-title": "Proceedings of AIAA Guidance, Navigation and Control Conference and Exhibit, GNC",
+              "article-title": "The JAviator: a high-payload quadrotor UAV with high-level programming capabilities",
+              "author": "Craciunas",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000110",
+                "doi": "",
+                "title": "The JAviator: a high-payload quadrotor UAV with high-level programming capabilities",
+                "authors": [
+                  "Craciunas"
+                ],
+                "year": 2008,
+                "venue": "Proceedings of AIAA Guidance, Navigation and Control Conference and Exhibit, GNC",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "10.1016/j.scico.2010.06.004_br000115",
+            "rawText": "Iercan. Porting hierarchical timing language on a microcontroller based platform. 2009",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000115",
+              "series-title": "Proceedings of the 5th International Symposium on Applied Computational Intelligence and Informatics",
+              "first-page": "283",
+              "article-title": "Porting hierarchical timing language on a microcontroller based platform",
+              "author": "Iercan",
+              "year": "2009"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000115",
+                "doi": "",
+                "title": "Porting hierarchical timing language on a microcontroller based platform",
+                "authors": [
+                  "Iercan"
+                ],
+                "year": 2009,
+                "venue": "Proceedings of the 5th International Symposium on Applied Computational Intelligence and Informatics",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "10.1016/j.scico.2010.06.004_br000120",
+            "rawText": "Chatterjee. Logical reliability of interacting real-time tasks. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.scico.2010.06.004_br000120",
+              "series-title": "Proceedings of International Conference on Design, Automation and Test in Europe",
+              "first-page": "909",
+              "article-title": "Logical reliability of interacting real-time tasks",
+              "author": "Chatterjee",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.scico.2010.06.004_br000120",
+                "doi": "",
+                "title": "Logical reliability of interacting real-time tasks",
+                "authors": [
+                  "Chatterjee"
+                ],
+                "year": 2008,
+                "venue": "Proceedings of International Conference on Design, Automation and Test in Europe",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1016/j.scico.2010.06.004",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 7,
+          "extractedReferenceCount": 24,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1016/j.scico.2010.06.004",
+          "crossrefReferenceCount": 24
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1016/j.scico.2010.06.004->doi:10.1109/jproc.2002.805825@papers-LET-Ghosal2012.pdf",
+      "source": "doi:10.1016/j.scico.2010.06.004",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2012.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.scico.2010.06.004->doi:10.1109/5.97300@papers-LET-Ghosal2012.pdf",
+      "source": "doi:10.1016/j.scico.2010.06.004",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2012.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.scico.2010.06.004->doi:10.1145/1176887.1176907@papers-LET-Ghosal2012.pdf",
+      "source": "doi:10.1016/j.scico.2010.06.004",
+      "target": "doi:10.1145/1176887.1176907",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2012.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.scico.2010.06.004->doi:10.1145/1286821.1286824@papers-LET-Ghosal2012.pdf",
+      "source": "doi:10.1016/j.scico.2010.06.004",
+      "target": "doi:10.1145/1286821.1286824",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2012.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.scico.2010.06.004->doi:10.1145/1064979.1064986@papers-LET-Ghosal2012.pdf",
+      "source": "doi:10.1016/j.scico.2010.06.004",
+      "target": "doi:10.1145/1064979.1064986",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2012.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.scico.2010.06.004->doi:10.1109/mcs.2003.1172830@papers-LET-Ghosal2012.pdf",
+      "source": "doi:10.1016/j.scico.2010.06.004",
+      "target": "doi:10.1109/mcs.2003.1172830",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2012.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.scico.2010.06.004->doi:10.1145/1457255.1457262@papers-LET-Ghosal2012.pdf",
+      "source": "doi:10.1016/j.scico.2010.06.004",
+      "target": "doi:10.1145/1457255.1457262",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ghosal2012.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Ghosal2012",
+      "paperId": "doi:10.1016/j.scico.2010.06.004",
+      "metadata": {
+        "fileName": "Ghosal2012.pdf",
+        "sourcePath": "papers/LET/Ghosal2012.pdf"
+      }
+    }
+  ]
+}

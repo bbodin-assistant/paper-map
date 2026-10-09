@@ -1,0 +1,421 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.099556+00:00",
+  "papers": [
+    {
+      "key": "Henzinger2002a",
+      "paper": {
+        "id": "doi:10.1145/512529.512567",
+        "citationKey": "Henzinger2002a",
+        "title": "The embedded machine: predictable, portable real-time code",
+        "authors": [
+          "Thomas A. Henzinger",
+          "Christoph M. Kirsch"
+        ],
+        "year": 2002,
+        "venue": "Proceedings of the ACM SIGPLAN 2002 conference on Programming language design and implementation",
+        "type": "inproceedings",
+        "doi": "10.1145/512529.512567",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/512529.512567",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "Distinct publication version: PLDI 2002 conference paper; the same-title TOPLAS 2007 journal article is retained as Henzinger2007",
+        "bibtexFields": {
+          "author": "Henzinger, Thomas A. and Kirsch, Christoph M.",
+          "title": "{The embedded machine: predictable, portable real-time code}",
+          "year": "2002",
+          "booktitle": "Proceedings of the ACM SIGPLAN 2002 conference on Programming language design and implementation",
+          "publisher": "ACM",
+          "pages": "315--326",
+          "doi": "10.1145/512529.512567",
+          "url": "https://doi.org/10.1145/512529.512567",
+          "note": "Distinct publication version: PLDI 2002 conference paper; the same-title TOPLAS 2007 journal article is retained as Henzinger2007"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.070460+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_1_1_1",
+            "rawText": "https://doi.org/10.1145/258948.258967",
+            "doi": "10.1145/258948.258967",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_1_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/258948.258967"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/258948.258967",
+                "doi": "10.1145/258948.258967",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/258948.258967"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_1_2_1",
+            "rawText": "G. Berry . The foundations of Esterel . In G. Plotkin and M. Tofte, eds., Proof, Language , and Interaction: Essays in Honour of Robin Milner. MIT Press , 2000 G. Berry. The foundations of Esterel. In G. Plotkin and M. Tofte, eds., Proof, Language, and Interaction: Essays in Honour of Robin Milner. MIT Press, 2000",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_2_1",
+              "volume-title": "The foundations of Esterel",
+              "author": "Berry G.",
+              "year": "2000",
+              "unstructured": "G. Berry . The foundations of Esterel . In G. Plotkin and M. Tofte, eds., Proof, Language , and Interaction: Essays in Honour of Robin Milner. MIT Press , 2000 G. Berry. The foundations of Esterel. In G. Plotkin and M. Tofte, eds., Proof, Language, and Interaction: Essays in Honour of Robin Milner. MIT Press, 2000"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Berry G."
+                ],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_1_3_1",
+            "rawText": "A. Burns and A. Wellings . Real-Time Systems and Programming Languages . Addison-Wesley , 1997 A. Burns and A. Wellings. Real-Time Systems and Programming Languages. Addison-Wesley, 1997",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_3_1",
+              "volume-title": "Real-Time Systems and Programming Languages",
+              "author": "Burns A.",
+              "year": "1997",
+              "unstructured": "A. Burns and A. Wellings . Real-Time Systems and Programming Languages . Addison-Wesley , 1997 A. Burns and A. Wellings. Real-Time Systems and Programming Languages. Addison-Wesley, 1997"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_3_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Burns A."
+                ],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_1_4_1",
+            "rawText": "G. Buttazzo . Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications . Kluwer , 1997 G. Buttazzo. Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications. Kluwer, 1997",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_4_1",
+              "volume-title": "Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications",
+              "author": "Buttazzo G.",
+              "year": "1997",
+              "unstructured": "G. Buttazzo . Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications . Kluwer , 1997 G. Buttazzo. Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications. Kluwer, 1997"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_4_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Buttazzo G."
+                ],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_1_5_1",
+            "rawText": "https://doi.org/10.5555/646787.703893",
+            "doi": "10.5555/646787.703893",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/646787.703893"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/646787.703893",
+                "doi": "10.5555/646787.703893",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/646787.703893"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_1_6_1",
+            "rawText": "https://doi.org/10.5555/530328",
+            "doi": "10.5555/530328",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/530328"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/530328",
+                "doi": "10.5555/530328",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/530328"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_1_7_1",
+            "rawText": "https://doi.org/10.1109/5.97300",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_7_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/5.97300"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_1_8_1",
+            "rawText": "https://doi.org/10.5555/646787.703890",
+            "doi": "10.5555/646787.703890",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/646787.703890"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/646787.703890",
+                "doi": "10.5555/646787.703890",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/646787.703890"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_1_11_1",
+            "rawText": "https://doi.org/10.1145/354880.354882",
+            "doi": "10.1145/354880.354882",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_11_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/354880.354882"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/354880.354882",
+                "doi": "10.1145/354880.354882",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/354880.354882"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_1_12_1",
+            "rawText": "https://doi.org/10.1145/359763.359798",
+            "doi": "10.1145/359763.359798",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_12_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/359763.359798"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/359763.359798",
+                "doi": "10.1145/359763.359798",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/359763.359798"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_1_13_1",
+            "rawText": "N. Wirth . Tasks versus threads: An alternative multiprocessing paradigm , Software : Concepts and Tools, vol. 17 , pp. 6 -- 12 . Springer , 1996 N. Wirth. Tasks versus threads: An alternative multiprocessing paradigm, Software: Concepts and Tools, vol. 17, pp. 6--12. Springer, 1996",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_13_1",
+              "first-page": "6",
+              "volume-title": "Tasks versus threads: An alternative multiprocessing paradigm",
+              "author": "Wirth N.",
+              "year": "1996",
+              "unstructured": "N. Wirth . Tasks versus threads: An alternative multiprocessing paradigm , Software : Concepts and Tools, vol. 17 , pp. 6 -- 12 . Springer , 1996 N. Wirth. Tasks versus threads: An alternative multiprocessing paradigm, Software: Concepts and Tools, vol. 17, pp. 6--12. Springer, 1996"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_13_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Wirth N."
+                ],
+                "year": 1996,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/512529.512567",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 1,
+          "extractedReferenceCount": 11,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/512529.512567",
+          "crossrefReferenceCount": 11
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/512529.512567->doi:10.1109/5.97300@papers-LET-Henzinger2002a.pdf",
+      "source": "doi:10.1145/512529.512567",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2002a.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Henzinger2002a",
+      "paperId": "doi:10.1145/512529.512567",
+      "metadata": {
+        "fileName": "Henzinger2002a.pdf",
+        "sourcePath": "papers/LET/Henzinger2002a.pdf"
+      }
+    }
+  ]
+}

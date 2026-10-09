@@ -1,0 +1,725 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.286257+00:00",
+  "papers": [
+    {
+      "key": "Kirsch2005",
+      "paper": {
+        "id": "doi:10.1145/1064979.1064986",
+        "citationKey": "Kirsch2005",
+        "title": "A Programmable Microkernel for Real-Time Systems",
+        "authors": [
+          "Christoph M. Kirsch",
+          "Marco A. A. Sanvido",
+          "Thomas A. Henzinger"
+        ],
+        "year": 2005,
+        "venue": "Proceedings of the 1st ACM/USENIX International Conference on Virtual Execution Environments (VEE)",
+        "type": "inproceedings",
+        "doi": "10.1145/1064979.1064986",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/1064979.1064986",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Kirsch, Christoph M. and Sanvido, Marco A. A. and Henzinger, Thomas A.",
+          "title": "{A Programmable Microkernel for Real-Time Systems}",
+          "year": "2005",
+          "booktitle": "Proceedings of the 1st ACM/USENIX International Conference on Virtual Execution Environments (VEE)",
+          "publisher": "ACM",
+          "pages": "35--45",
+          "doi": "10.1145/1064979.1064986",
+          "url": "https://doi.org/10.1145/1064979.1064986"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.074673+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_1_1_1",
+            "rawText": "M. Accetta , R. Baron , W. Bolosky , D. Golub , R. Rashid , A. Tevanian , and M. Young . Mach: A new kernel foundation for UNIX development . In Proc. USENIX Summer Conference , pages 93 -- 113 , 1986 . M. Accetta, R. Baron, W. Bolosky, D. Golub, R. Rashid, A. Tevanian, and M. Young. Mach: A new kernel foundation for UNIX development. In Proc. USENIX Summer Conference, pages 93--113, 1986.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1986,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_1_1",
+              "first-page": "93",
+              "volume-title": "Proc. USENIX Summer Conference",
+              "author": "Accetta M.",
+              "year": "1986",
+              "unstructured": "M. Accetta , R. Baron , W. Bolosky , D. Golub , R. Rashid , A. Tevanian , and M. Young . Mach: A new kernel foundation for UNIX development . In Proc. USENIX Summer Conference , pages 93 -- 113 , 1986 . M. Accetta, R. Baron, W. Bolosky, D. Golub, R. Rashid, A. Tevanian, and M. Young. Mach: A new kernel foundation for UNIX development. In Proc. USENIX Summer Conference, pages 93--113, 1986."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_1_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Accetta M."
+                ],
+                "year": 1986,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_1_2_1",
+            "rawText": "https://doi.org/10.1145/224056.224077",
+            "doi": "10.1145/224056.224077",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_2_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/224056.224077"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/224056.224077",
+                "doi": "10.1145/224056.224077",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/224056.224077"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_1_3_1",
+            "rawText": "https://doi.org/10.1007/bf01940882",
+            "doi": "10.1007/bf01940882",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/BF01940882"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf01940882",
+                "doi": "10.1007/bf01940882",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf01940882"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_1_4_1",
+            "rawText": "https://doi.org/10.1145/952532.952668",
+            "doi": "10.1145/952532.952668",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_4_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/952532.952668"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/952532.952668",
+                "doi": "10.1145/952532.952668",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/952532.952668"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_1_5_1",
+            "rawText": "C. Ferdinand , R. Heckmann , M. Langenbach , F. Martin , M. Schmidt , H. Theiling , S. Thesing , and R. Wilhelm . Reliable and precise WCET determination for a real-life processor. In Proc. EMSOFT, LNCS 2211 , pages 469 -- 485 . Springer, 2001 . C. Ferdinand, R. Heckmann, M. Langenbach, F. Martin, M. Schmidt, H. Theiling, S. Thesing, and R. Wilhelm. Reliable and precise WCET determination for a real-life processor. In Proc. EMSOFT, LNCS 2211, pages 469--485. Springer, 2001.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_5_1",
+              "first-page": "469",
+              "volume": "2211",
+              "author": "Ferdinand C.",
+              "year": "2001",
+              "unstructured": "C. Ferdinand , R. Heckmann , M. Langenbach , F. Martin , M. Schmidt , H. Theiling , S. Thesing , and R. Wilhelm . Reliable and precise WCET determination for a real-life processor. In Proc. EMSOFT, LNCS 2211 , pages 469 -- 485 . Springer, 2001 . C. Ferdinand, R. Heckmann, M. Langenbach, F. Martin, M. Schmidt, H. Theiling, S. Thesing, and R. Wilhelm. Reliable and precise WCET determination for a real-life processor. In Proc. EMSOFT, LNCS 2211, pages 469--485. Springer, 2001.",
+              "journal-title": "In Proc. EMSOFT, LNCS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_5_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Ferdinand C."
+                ],
+                "year": 2001,
+                "venue": "In Proc. EMSOFT, LNCS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_1_6_1",
+            "rawText": "https://doi.org/10.5555/530328",
+            "doi": "10.5555/530328",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/530328"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/530328",
+                "doi": "10.5555/530328",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/530328"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_1_7_1",
+            "rawText": "https://doi.org/10.1145/268998.266660",
+            "doi": "10.1145/268998.266660",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_7_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/268998.266660"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/268998.266660",
+                "doi": "10.1145/268998.266660",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/268998.266660"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_1_8_1",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805825",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805825"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_1_9_1",
+            "rawText": "T. A. Henzinger and C. M. Kirsch . The Embedded Machine: Predictable, portable real-time code . In Proc. PLDI , pages 315 -- 326 . ACM Press , 2002 . 10.1145/512529.512567 T. A. Henzinger and C. M. Kirsch. The Embedded Machine: Predictable, portable real-time code. In Proc. PLDI, pages 315--326. ACM Press, 2002. 10.1145/512529.512567",
+            "doi": "10.1145/512529.512567",
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_9_1",
+              "doi-asserted-by": "crossref",
+              "first-page": "315",
+              "DOI": "10.1145/512529.512567",
+              "volume-title": "Proc. PLDI",
+              "author": "Henzinger T. A.",
+              "year": "2002",
+              "unstructured": "T. A. Henzinger and C. M. Kirsch . The Embedded Machine: Predictable, portable real-time code . In Proc. PLDI , pages 315 -- 326 . ACM Press , 2002 . 10.1145/512529.512567 T. A. Henzinger and C. M. Kirsch. The Embedded Machine: Predictable, portable real-time code. In Proc. PLDI, pages 315--326. ACM Press, 2002. 10.1145/512529.512567"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/512529.512567",
+                "doi": "10.1145/512529.512567",
+                "title": "",
+                "authors": [
+                  "Henzinger T. A."
+                ],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/512529.512567"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_1_10_1",
+            "rawText": "T. A. Henzinger , C. M. Kirsch , R. Majumdar , and S. Matic . Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS 2491 , pages 76 -- 92 . Springer, 2002 . T. A. Henzinger, C. M. Kirsch, R. Majumdar, and S. Matic. Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS 2491, pages 76--92. Springer, 2002.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_10_1",
+              "first-page": "76",
+              "volume": "2491",
+              "author": "Henzinger T. A.",
+              "year": "2002",
+              "unstructured": "T. A. Henzinger , C. M. Kirsch , R. Majumdar , and S. Matic . Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS 2491 , pages 76 -- 92 . Springer, 2002 . T. A. Henzinger, C. M. Kirsch, R. Majumdar, and S. Matic. Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS 2491, pages 76--92. Springer, 2002.",
+              "journal-title": "Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_10_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Henzinger T. A."
+                ],
+                "year": 2002,
+                "venue": "Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_1_11_1",
+            "rawText": "T. A. Henzinger , C. M. Kirsch , and S. Matic . Schedule-carrying code. In Proc. EMSOFT, LNCS 2855 , pages 241 -- 256 . Springer, 2003 . T. A. Henzinger, C. M. Kirsch, and S. Matic. Schedule-carrying code. In Proc. EMSOFT, LNCS 2855, pages 241--256. Springer, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_11_1",
+              "first-page": "241",
+              "volume": "2855",
+              "author": "Henzinger T. A.",
+              "year": "2003",
+              "unstructured": "T. A. Henzinger , C. M. Kirsch , and S. Matic . Schedule-carrying code. In Proc. EMSOFT, LNCS 2855 , pages 241 -- 256 . Springer, 2003 . T. A. Henzinger, C. M. Kirsch, and S. Matic. Schedule-carrying code. In Proc. EMSOFT, LNCS 2855, pages 241--256. Springer, 2003.",
+              "journal-title": "Schedule-carrying code. In Proc. EMSOFT, LNCS"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_11_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Henzinger T. A."
+                ],
+                "year": 2003,
+                "venue": "Schedule-carrying code. In Proc. EMSOFT, LNCS",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_3_2_1_12_1",
+            "rawText": "K. Jeffay , D.F. Stanat , and C.U. Martel . On non-preemptive scheduling of periodic and sporadic tasks . In Proc. RTSS , pages 129 -- 139 . IEEE Computer Society Press , 1991 . K. Jeffay, D.F. Stanat, and C.U. Martel. On non-preemptive scheduling of periodic and sporadic tasks. In Proc. RTSS, pages 129--139. IEEE Computer Society Press, 1991.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_12_1",
+              "first-page": "129",
+              "volume-title": "Proc. RTSS",
+              "author": "Jeffay K.",
+              "year": "1991",
+              "unstructured": "K. Jeffay , D.F. Stanat , and C.U. Martel . On non-preemptive scheduling of periodic and sporadic tasks . In Proc. RTSS , pages 129 -- 139 . IEEE Computer Society Press , 1991 . K. Jeffay, D.F. Stanat, and C.U. Martel. On non-preemptive scheduling of periodic and sporadic tasks. In Proc. RTSS, pages 129--139. IEEE Computer Society Press, 1991."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_12_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Jeffay K."
+                ],
+                "year": 1991,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_3_2_1_13_1",
+            "rawText": "https://doi.org/10.1109/12.931893",
+            "doi": "10.1109/12.931893",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/12.931893"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/12.931893",
+                "doi": "10.1109/12.931893",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/12.931893"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_3_2_1_14_1",
+            "rawText": "H. Kopetz . Real-Time Systems: Design Principles for Distributed Embedded Applications . Kluwer , 1997 . H. Kopetz. Real-Time Systems: Design Principles for Distributed Embedded Applications. Kluwer, 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_14_1",
+              "volume-title": "Real-Time Systems: Design Principles for Distributed Embedded Applications",
+              "author": "Kopetz H.",
+              "year": "1997",
+              "unstructured": "H. Kopetz . Real-Time Systems: Design Principles for Distributed Embedded Applications . Kluwer , 1997 . H. Kopetz. Real-Time Systems: Design Principles for Distributed Embedded Applications. Kluwer, 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_14_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kopetz H."
+                ],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_3_2_1_15_1",
+            "rawText": "https://doi.org/10.1145/605397.605407",
+            "doi": "10.1145/605397.605407",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_15_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/605397.605407"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/605397.605407",
+                "doi": "10.1145/605397.605407",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/605397.605407"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_3_2_1_16_1",
+            "rawText": "https://doi.org/10.1145/234215.234473",
+            "doi": "10.1145/234215.234473",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_16_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/234215.234473"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/234215.234473",
+                "doi": "10.1145/234215.234473",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/234215.234473"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_3_2_1_17_1",
+            "rawText": "R. Rajkumar , K. Juvva , A. Molano , and S. Oikawa . Resource kernels: A resource-centric approach to real-time systems . In Proc. MMCN , 1998 . R. Rajkumar, K. Juvva, A. Molano, and S. Oikawa. Resource kernels: A resource-centric approach to real-time systems. In Proc. MMCN, 1998.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_17_1",
+              "volume-title": "Proc. MMCN",
+              "author": "Rajkumar R.",
+              "year": "1998",
+              "unstructured": "R. Rajkumar , K. Juvva , A. Molano , and S. Oikawa . Resource kernels: A resource-centric approach to real-time systems . In Proc. MMCN , 1998 . R. Rajkumar, K. Juvva, A. Molano, and S. Oikawa. Resource kernels: A resource-centric approach to real-time systems. In Proc. MMCN, 1998."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_17_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Rajkumar R."
+                ],
+                "year": 1998,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_3_2_1_19_1",
+            "rawText": "H. Tokuda , T. Nakajima , and P. Rao . Real-time Mach: Towards a predictable real-time system . In Proc. USENIX Mach Workshop , pages 73 -- 82 , 1990 . H. Tokuda, T. Nakajima, and P. Rao. Real-time Mach: Towards a predictable real-time system. In Proc. USENIX Mach Workshop, pages 73--82, 1990.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_19_1",
+              "first-page": "73",
+              "volume-title": "Proc. USENIX Mach Workshop",
+              "author": "Tokuda H.",
+              "year": "1990",
+              "unstructured": "H. Tokuda , T. Nakajima , and P. Rao . Real-time Mach: Towards a predictable real-time system . In Proc. USENIX Mach Workshop , pages 73 -- 82 , 1990 . H. Tokuda, T. Nakajima, and P. Rao. Real-time Mach: Towards a predictable real-time system. In Proc. USENIX Mach Workshop, pages 73--82, 1990."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_19_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Tokuda H."
+                ],
+                "year": 1990,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_3_2_1_20_1",
+            "rawText": "N. Wirth and J. Gutknecht . Project Oberon - The Design of an Operating System and Compiler . ACM Press , 1992 . N. Wirth and J. Gutknecht. Project Oberon - The Design of an Operating System and Compiler. ACM Press, 1992.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_20_1",
+              "volume-title": "Project Oberon - The Design of an Operating System and Compiler",
+              "author": "Wirth N.",
+              "year": "1992",
+              "unstructured": "N. Wirth and J. Gutknecht . Project Oberon - The Design of an Operating System and Compiler . ACM Press , 1992 . N. Wirth and J. Gutknecht. Project Oberon - The Design of an Operating System and Compiler. ACM Press, 1992."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_20_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Wirth N."
+                ],
+                "year": 1992,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_3_2_1_21_1",
+            "rawText": "https://doi.org/10.1145/319151.319170",
+            "doi": "10.1145/319151.319170",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_21_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/319151.319170"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/319151.319170",
+                "doi": "10.1145/319151.319170",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/319151.319170"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/1064979.1064986",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 20,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/1064979.1064986",
+          "crossrefReferenceCount": 20
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/1064979.1064986->doi:10.1109/jproc.2002.805825@papers-LET-Kirsch2005.pdf",
+      "source": "doi:10.1145/1064979.1064986",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Kirsch2005.pdf"
+    },
+    {
+      "id": "doi:10.1145/1064979.1064986->doi:10.1145/512529.512567@papers-LET-Kirsch2005.pdf",
+      "source": "doi:10.1145/1064979.1064986",
+      "target": "doi:10.1145/512529.512567",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Kirsch2005.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Kirsch2005",
+      "paperId": "doi:10.1145/1064979.1064986",
+      "metadata": {
+        "fileName": "Kirsch2005.pdf",
+        "sourcePath": "papers/LET/Kirsch2005.pdf"
+      }
+    }
+  ]
+}

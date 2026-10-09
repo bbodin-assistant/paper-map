@@ -1,0 +1,979 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.844995+00:00",
+  "papers": [
+    {
+      "key": "Lin2018",
+      "paper": {
+        "id": "doi:10.1145/3157669",
+        "citationKey": "Lin2018",
+        "title": "Memory-Constrained Vectorization and Scheduling for Dataflow Graphs on Hybrid CPU-GPU Platforms",
+        "authors": [
+          "Shuoxin Lin",
+          "Jiahao Wu",
+          "Shuvra S. Bhattacharyya"
+        ],
+        "year": 2018,
+        "venue": "ACM Transactions on Embedded Computing Systems",
+        "type": "article",
+        "doi": "10.1145/3157669",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/3157669",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Lin, Shuoxin and Wu, Jiahao and Bhattacharyya, Shuvra S.",
+          "title": "Memory-Constrained Vectorization and Scheduling for Dataflow Graphs on Hybrid CPU-GPU Platforms",
+          "journal": "ACM Transactions on Embedded Computing Systems",
+          "volume": "17",
+          "number": "2",
+          "articleno": "50",
+          "year": "2018",
+          "doi": "10.1145/3157669",
+          "url": "https://doi.org/10.1145/3157669"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.113978+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_2_1_1_1",
+            "rawText": "https://doi.org/10.1002/cpe.1631",
+            "doi": "10.1002/cpe.1631",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_1_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1002/cpe.1631"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1002/cpe.1631",
+                "doi": "10.1002/cpe.1631",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1002/cpe.1631"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_2_1_2_1",
+            "rawText": "S. S. Bhattacharyya E. Deprettere R. Leupers and J. Takala (Eds.). 2013. Handbook of Signal Processing Systems (second ed.). Springer.   S. S. Bhattacharyya E. Deprettere R. Leupers and J. Takala (Eds.). 2013. Handbook of Signal Processing Systems (second ed.). Springer.",
+            "doi": "10.1007/978-1-4614-6859-2",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_2_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "S. S. Bhattacharyya E. Deprettere R. Leupers and J. Takala (Eds.). 2013. Handbook of Signal Processing Systems (second ed.). Springer.   S. S. Bhattacharyya E. Deprettere R. Leupers and J. Takala (Eds.). 2013. Handbook of Signal Processing Systems (second ed.). Springer.",
+              "DOI": "10.1007/978-1-4614-6859-2"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-1-4614-6859-2",
+                "doi": "10.1007/978-1-4614-6859-2",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-4614-6859-2"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_2_1_3_1",
+            "rawText": "S. S. Bhattacharyya P. K. Murthy and E. A. Lee. 1996. Software Synthesis from Dataflow Graphs. Kluwer Academic.   S. S. Bhattacharyya P. K. Murthy and E. A. Lee. 1996. Software Synthesis from Dataflow Graphs. Kluwer Academic.",
+            "doi": "10.1007/978-1-4613-1389-2",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_3_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "S. S. Bhattacharyya P. K. Murthy and E. A. Lee. 1996. Software Synthesis from Dataflow Graphs. Kluwer Academic.   S. S. Bhattacharyya P. K. Murthy and E. A. Lee. 1996. Software Synthesis from Dataflow Graphs. Kluwer Academic.",
+              "DOI": "10.1007/978-1-4613-1389-2"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/978-1-4613-1389-2",
+                "doi": "10.1007/978-1-4613-1389-2",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-4613-1389-2"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_2_1_4_1",
+            "rawText": "Y. Chen and H. Zhou . 2012. Buffer minimization in pipelined SDF scheduling on multi-core platforms . In Proceedings of the Asia South Pacific Design Automation Conference. 127--132 . Y. Chen and H. Zhou. 2012. Buffer minimization in pipelined SDF scheduling on multi-core platforms. In Proceedings of the Asia South Pacific Design Automation Conference. 127--132.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_4_1",
+              "volume-title": "Proceedings of the Asia South Pacific Design Automation Conference. 127--132",
+              "author": "Chen Y.",
+              "unstructured": "Y. Chen and H. Zhou . 2012. Buffer minimization in pipelined SDF scheduling on multi-core platforms . In Proceedings of the Asia South Pacific Design Automation Conference. 127--132 . Y. Chen and H. Zhou. 2012. Buffer minimization in pipelined SDF scheduling on multi-core platforms. In Proceedings of the Asia South Pacific Design Automation Conference. 127--132."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_4_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Chen Y."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_2_1_5_1",
+            "rawText": "F. Ciccozzi . 2013 . Automatic synthesis of heterogeneous CPU-GPU embedded applications from a UML profile . In Proceedings of the International Workshop on Model Based Architecting and Construction of Embedded Systems. F. Ciccozzi. 2013. Automatic synthesis of heterogeneous CPU-GPU embedded applications from a UML profile. In Proceedings of the International Workshop on Model Based Architecting and Construction of Embedded Systems.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_5_1",
+              "volume-title": "Proceedings of the International Workshop on Model Based Architecting and Construction of Embedded Systems.",
+              "author": "Ciccozzi F.",
+              "year": "2013",
+              "unstructured": "F. Ciccozzi . 2013 . Automatic synthesis of heterogeneous CPU-GPU embedded applications from a UML profile . In Proceedings of the International Workshop on Model Based Architecting and Construction of Embedded Systems. F. Ciccozzi. 2013. Automatic synthesis of heterogeneous CPU-GPU embedded applications from a UML profile. In Proceedings of the International Workshop on Model Based Architecting and Construction of Embedded Systems."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_5_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Ciccozzi F."
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_2_1_6_1",
+            "rawText": "https://doi.org/10.1109/icassp.2015.7178142",
+            "doi": "10.1109/icassp.2015.7178142",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.2015.7178142"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.2015.7178142",
+                "doi": "10.1109/icassp.2015.7178142",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.2015.7178142"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_2_1_7_1",
+            "rawText": "R. P. Dick , D. L. Rhodes , and W. Wolf . 1998. TGFF: Task graphs for free . In Proceedings of the International Workshop on Hardware/Software Codesign. 97--101 . R. P. Dick, D. L. Rhodes, and W. Wolf. 1998. TGFF: Task graphs for free. In Proceedings of the International Workshop on Hardware/Software Codesign. 97--101.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_7_1",
+              "volume-title": "Proceedings of the International Workshop on Hardware/Software Codesign. 97--101",
+              "author": "Dick R. P.",
+              "unstructured": "R. P. Dick , D. L. Rhodes , and W. Wolf . 1998. TGFF: Task graphs for free . In Proceedings of the International Workshop on Hardware/Software Codesign. 97--101 . R. P. Dick, D. L. Rhodes, and W. Wolf. 1998. TGFF: Task graphs for free. In Proceedings of the International Workshop on Hardware/Software Codesign. 97--101."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_7_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Dick R. P."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_2_1_8_1",
+            "rawText": "https://doi.org/10.1142/s0129626411000151",
+            "doi": "10.1142/s0129626411000151",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1142/S0129626411000151"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1142/s0129626411000151",
+                "doi": "10.1142/s0129626411000151",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1142/s0129626411000151"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_2_1_9_1",
+            "rawText": "https://doi.org/10.1109/acsd.2006.33",
+            "doi": "10.1109/acsd.2006.33",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_9_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ACSD.2006.33"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/acsd.2006.33",
+                "doi": "10.1109/acsd.2006.33",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ACSD.2006.33"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_2_1_10_1",
+            "rawText": "https://doi.org/10.1109/hpcc.2012.67",
+            "doi": "10.1109/hpcc.2012.67",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_10_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/HPCC.2012.67"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/hpcc.2012.67",
+                "doi": "10.1109/hpcc.2012.67",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/hpcc.2012.67"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_2_1_11_1",
+            "rawText": "https://doi.org/10.5555/2015039.2015535",
+            "doi": "10.5555/2015039.2015535",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_11_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/2015039.2015535"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/2015039.2015535",
+                "doi": "10.5555/2015039.2015535",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/2015039.2015535"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_2_1_12_1",
+            "rawText": "https://doi.org/10.1109/ipdps.2011.52",
+            "doi": "10.1109/ipdps.2011.52",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_12_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/IPDPS.2011.52"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ipdps.2011.52",
+                "doi": "10.1109/ipdps.2011.52",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ipdps.2011.52"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_2_1_13_1",
+            "rawText": "https://doi.org/10.1145/1970353.1970358",
+            "doi": "10.1145/1970353.1970358",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1970353.1970358"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1970353.1970358",
+                "doi": "10.1145/1970353.1970358",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1970353.1970358"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_2_1_14_1",
+            "rawText": "https://doi.org/10.1007/s 11265-007-0114-1",
+            "doi": "10.1007/s 11265-007-0114-1",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_14_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s 11265-007-0114-1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s 11265-007-0114-1",
+                "doi": "10.1007/s 11265-007-0114-1",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s 11265-007-0114-1"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_2_1_15_1",
+            "rawText": "https://doi.org/10.1109/proc.1987.13876",
+            "doi": "10.1109/proc.1987.13876",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_15_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PROC.1987.13876"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/proc.1987.13876",
+                "doi": "10.1109/proc.1987.13876",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/PROC.1987.13876"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_2_1_16_1",
+            "rawText": "https://doi.org/10.1145/2906363.2906374",
+            "doi": "10.1145/2906363.2906374",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_16_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2906363.2906374"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2906363.2906374",
+                "doi": "10.1145/2906363.2906374",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2906363.2906374"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_2_1_17_1",
+            "rawText": "https://doi.org/10.1109/pdp.2015.29",
+            "doi": "10.1109/pdp.2015.29",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_17_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PDP.2015.29"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/pdp.2015.29",
+                "doi": "10.1109/pdp.2015.29",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/pdp.2015.29"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_2_1_18_1",
+            "rawText": "J. W. Massey , J. Starr , S. Lee , D. Lee , A. Gerstlauer , and R. W. Heath . 2012. Implementation of a real-time wireless interference alignment network . In Proceedings of the IEEE Asilomar Conference on Signals, Systems, and Computers. 104--108 . J. W. Massey, J. Starr, S. Lee, D. Lee, A. Gerstlauer, and R. W. Heath. 2012. Implementation of a real-time wireless interference alignment network. In Proceedings of the IEEE Asilomar Conference on Signals, Systems, and Computers. 104--108.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_18_1",
+              "volume-title": "Proceedings of the IEEE Asilomar Conference on Signals, Systems, and Computers. 104--108",
+              "author": "Massey J. W.",
+              "unstructured": "J. W. Massey , J. Starr , S. Lee , D. Lee , A. Gerstlauer , and R. W. Heath . 2012. Implementation of a real-time wireless interference alignment network . In Proceedings of the IEEE Asilomar Conference on Signals, Systems, and Computers. 104--108 . J. W. Massey, J. Starr, S. Lee, D. Lee, A. Gerstlauer, and R. W. Heath. 2012. Implementation of a real-time wireless interference alignment network. In Proceedings of the IEEE Asilomar Conference on Signals, Systems, and Computers. 104--108."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_18_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Massey J. W."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_2_1_19_1",
+            "rawText": "https://doi.org/10.1145/1810479.1810481",
+            "doi": "10.1145/1810479.1810481",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_19_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1810479.1810481"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1810479.1810481",
+                "doi": "10.1145/1810479.1810481",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1810479.1810481"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_2_1_20_1",
+            "rawText": "S. Ritz , M. Pankert , and H. Meyr . 1993. Optimum vectorization of scalable synchronous dataflow graphs . In Proceedings of the International Conference on Application Specific Array Processors. S. Ritz, M. Pankert, and H. Meyr. 1993. Optimum vectorization of scalable synchronous dataflow graphs. In Proceedings of the International Conference on Application Specific Array Processors.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_20_1",
+              "volume-title": "Proceedings of the International Conference on Application Specific Array Processors.",
+              "author": "Ritz S.",
+              "unstructured": "S. Ritz , M. Pankert , and H. Meyr . 1993. Optimum vectorization of scalable synchronous dataflow graphs . In Proceedings of the International Conference on Application Specific Array Processors. S. Ritz, M. Pankert, and H. Meyr. 1993. Optimum vectorization of scalable synchronous dataflow graphs. In Proceedings of the International Conference on Application Specific Array Processors."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_20_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Ritz S."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_2_1_21_1",
+            "rawText": "L. Schor , A. Tretter , T. Scherer , and L. Thiele . 2013. Exploiting the parallelism of heterogeneous systems using dataflow graphs on top of OpenCL . In Proceedings of the IEEE Workshop on Embedded Systems for Real-Time Multimedia. 41--50 . L. Schor, A. Tretter, T. Scherer, and L. Thiele. 2013. Exploiting the parallelism of heterogeneous systems using dataflow graphs on top of OpenCL. In Proceedings of the IEEE Workshop on Embedded Systems for Real-Time Multimedia. 41--50.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_21_1",
+              "volume-title": "Proceedings of the IEEE Workshop on Embedded Systems for Real-Time Multimedia. 41--50",
+              "author": "Schor L.",
+              "unstructured": "L. Schor , A. Tretter , T. Scherer , and L. Thiele . 2013. Exploiting the parallelism of heterogeneous systems using dataflow graphs on top of OpenCL . In Proceedings of the IEEE Workshop on Embedded Systems for Real-Time Multimedia. 41--50 . L. Schor, A. Tretter, T. Scherer, and L. Thiele. 2013. Exploiting the parallelism of heterogeneous systems using dataflow graphs on top of OpenCL. In Proceedings of the IEEE Workshop on Embedded Systems for Real-Time Multimedia. 41--50."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_21_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Schor L."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_2_1_22_1",
+            "rawText": "C. Shen , W. Plishker , H. Wu , and S. S. Bhattacharyya . 2010. A lightweight dataflow approach for design and implementation of SDR systems . In Proceedings of the Wireless Innovation Conference and Product Exposition. 640--645 . C. Shen, W. Plishker, H. Wu, and S. S. Bhattacharyya. 2010. A lightweight dataflow approach for design and implementation of SDR systems. In Proceedings of the Wireless Innovation Conference and Product Exposition. 640--645.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_22_1",
+              "volume-title": "Proceedings of the Wireless Innovation Conference and Product Exposition. 640--645",
+              "author": "Shen C.",
+              "unstructured": "C. Shen , W. Plishker , H. Wu , and S. S. Bhattacharyya . 2010. A lightweight dataflow approach for design and implementation of SDR systems . In Proceedings of the Wireless Innovation Conference and Product Exposition. 640--645 . C. Shen, W. Plishker, H. Wu, and S. S. Bhattacharyya. 2010. A lightweight dataflow approach for design and implementation of SDR systems. In Proceedings of the Wireless Innovation Conference and Product Exposition. 640--645."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_22_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Shen C."
+                ],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_2_1_23_1",
+            "rawText": "C. Shen , L. Wang , I. Cho , S. Kim , S. Won , W. Plishker , and S. S. Bhattacharyya . 2011 . The DSPCAD Lightweight Dataflow Environment: Introduction to LIDE Version 0.1. Technical Report UMIACS-TR-2011-17. Institute for Advanced Computer Studies , University of Maryland at College Park. C. Shen, L. Wang, I. Cho, S. Kim, S. Won, W. Plishker, and S. S. Bhattacharyya. 2011. The DSPCAD Lightweight Dataflow Environment: Introduction to LIDE Version 0.1. Technical Report UMIACS-TR-2011-17. Institute for Advanced Computer Studies, University of Maryland at College Park.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_23_1",
+              "volume-title": "Technical Report UMIACS-TR-2011-17. Institute for Advanced Computer Studies",
+              "author": "Shen C.",
+              "year": "2011",
+              "unstructured": "C. Shen , L. Wang , I. Cho , S. Kim , S. Won , W. Plishker , and S. S. Bhattacharyya . 2011 . The DSPCAD Lightweight Dataflow Environment: Introduction to LIDE Version 0.1. Technical Report UMIACS-TR-2011-17. Institute for Advanced Computer Studies , University of Maryland at College Park. C. Shen, L. Wang, I. Cho, S. Kim, S. Won, W. Plishker, and S. S. Bhattacharyya. 2011. The DSPCAD Lightweight Dataflow Environment: Introduction to LIDE Version 0.1. Technical Report UMIACS-TR-2011-17. Institute for Advanced Computer Studies, University of Maryland at College Park."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_23_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Shen C."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_2_1_24_1",
+            "rawText": "https://doi.org/10.5555/1550904",
+            "doi": "10.5555/1550904",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_24_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/1550904"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/1550904",
+                "doi": "10.5555/1550904",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/1550904"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_2_1_25_1",
+            "rawText": "https://doi.org/10.1145/1146909.1147138",
+            "doi": "10.1145/1146909.1147138",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_25_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1146909.1147138"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1146909.1147138",
+                "doi": "10.1145/1146909.1147138",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1146909.1147138"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_2_1_26_1",
+            "rawText": "https://doi.org/10.1109/71.993206",
+            "doi": "10.1109/71.993206",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_26_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/71.993206"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/71.993206",
+                "doi": "10.1109/71.993206",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/71.993206"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_2_1_27_1",
+            "rawText": "https://doi.org/10.1145/2442116.2442133",
+            "doi": "10.1145/2442116.2442133",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_27_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2442116.2442133"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2442116.2442133",
+                "doi": "10.1145/2442116.2442133",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2442116.2442133"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_2_1_28_1",
+            "rawText": "https://doi.org/10.1109/cgo.2009.20",
+            "doi": "10.1109/cgo.2009.20",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_28_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CGO.2009.20"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/cgo.2009.20",
+                "doi": "10.1109/cgo.2009.20",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/CGO.2009.20"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_2_1_29_1",
+            "rawText": "https://doi.org/10.1007/s11265-012-0696-0",
+            "doi": "10.1007/s11265-012-0696-0",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_29_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11265-012-0696-0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s11265-012-0696-0",
+                "doi": "10.1007/s11265-012-0696-0",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11265-012-0696-0"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/3157669",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 4,
+          "extractedReferenceCount": 29,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/3157669",
+          "crossrefReferenceCount": 29
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/3157669->doi:10.1007/978-1-4613-1389-2@papers-dataflow-Lin2018.pdf",
+      "source": "doi:10.1145/3157669",
+      "target": "doi:10.1007/978-1-4613-1389-2",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lin2018.pdf"
+    },
+    {
+      "id": "doi:10.1145/3157669->doi:10.1109/acsd.2006.33@papers-dataflow-Lin2018.pdf",
+      "source": "doi:10.1145/3157669",
+      "target": "doi:10.1109/acsd.2006.33",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lin2018.pdf"
+    },
+    {
+      "id": "doi:10.1145/3157669->doi:10.1109/proc.1987.13876@papers-dataflow-Lin2018.pdf",
+      "source": "doi:10.1145/3157669",
+      "target": "doi:10.1109/proc.1987.13876",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lin2018.pdf"
+    },
+    {
+      "id": "doi:10.1145/3157669->doi:10.1109/cgo.2009.20@papers-dataflow-Lin2018.pdf",
+      "source": "doi:10.1145/3157669",
+      "target": "doi:10.1109/cgo.2009.20",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lin2018.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Lin2018",
+      "paperId": "doi:10.1145/3157669",
+      "metadata": {
+        "fileName": "Lin2018.pdf",
+        "sourcePath": "papers/dataflow/Lin2018.pdf"
+      }
+    }
+  ]
+}

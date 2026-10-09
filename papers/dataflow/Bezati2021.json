@@ -1,0 +1,1242 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.906469+00:00",
+  "papers": [
+    {
+      "key": "Bezati2021",
+      "paper": {
+        "id": "title:streamblocks a compiler for heterogeneous dataflow computing:2021",
+        "citationKey": "Bezati2021",
+        "title": "StreamBlocks: A Compiler for Heterogeneous Dataflow Computing",
+        "authors": [
+          "Endri Bezati",
+          "Mahyar Emami",
+          "J\\\"orn Janneck",
+          "James Larus"
+        ],
+        "year": 2021,
+        "venue": "",
+        "type": "misc",
+        "doi": "",
+        "arxivId": "2107.09333",
+        "url": "https://arxiv.org/abs/2107.09333",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Bezati, Endri and Emami, Mahyar and Janneck, J{\\\"o}rn and Larus, James",
+          "title": "StreamBlocks: A Compiler for Heterogeneous Dataflow Computing",
+          "year": "2021",
+          "eprint": "2107.09333",
+          "archiveprefix": "arXiv",
+          "url": "https://arxiv.org/abs/2107.09333"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.118228+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "1",
+            "rawText": "Andrew Putnam, Adrian M. Caulﬁeld, Eric S. Chung, Derek Chiou, Kypros Constantinides, John Demme, Hadi Esmaeilzadeh, Jeremy Fowers, Gopi Prashanth Gopal, Jan Gray, and et al., “A reconﬁgurable fabric for accelerating large-scale datacenter services,” SIGARCH Comput. Archit. News, vol. 42, no. 3, pp. 13–24, June 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Andrew Putnam, Adrian M. Caulﬁeld, Eric S. Chung, Derek Chiou, Kypros Constantinides, John Demme, Hadi Esmaeilzadeh, Jeremy Fowers, Gopi Prashanth Gopal, Jan Gray, and et al., “A reconﬁgurable fabric for accelerating large-scale datacenter services,” SIGARCH Comput. Archit. News, vol. 42, no. 3, pp. 13–24, June 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "2",
+            "rawText": "A. M. Caulﬁeld, E. S. Chung, A. Putnam, H. Angepat, J. Fowers, M. Haselman, S. Heil, M. Humphrey, P. Kaur, J. Kim, D. Lo, T. Massengill, K. Ovtcharov, M. Papamichael, L. Woods, S. Lanka, D. Chiou, and D. Burger, “A cloud-scale acceleration architecture,” in 2016 49th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO), Oct 2016, pp. 1–13.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "A. M. Caulﬁeld, E. S. Chung, A. Putnam, H. Angepat, J. Fowers, M. Haselman, S. Heil, M. Humphrey, P. Kaur, J. Kim, D. Lo, T. Massengill, K. Ovtcharov, M. Papamichael, L. Woods, S. Lanka, D. Chiou, and D. Burger, “A cloud-scale acceleration architecture,” in 2016 49th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO), Oct 2016, pp. 1–13."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "3",
+            "rawText": "S. Byma, J. G. Steffan, H. Bannazadeh, A. L. Garcia, and P. Chow, “Fpgas in the cloud: Booting virtualized hardware accelerators with openstack,” in 2014 IEEE 22nd Annual International Symposium on Field-Programmable Custom Computing Machines, May 2014, pp. 109– 116.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Byma, J. G. Steffan, H. Bannazadeh, A. L. Garcia, and P. Chow, “Fpgas in the cloud: Booting virtualized hardware accelerators with openstack,” in 2014 IEEE 22nd Annual International Symposium on Field-Programmable Custom Computing Machines, May 2014, pp. 109– 116."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "4",
+            "rawText": "J. Weerasinghe, F. Abel, C. Hagleitner, and A. Herkersdorf, “Enabling fpgas in hyperscale data centers,” in 2015 IEEE 12th Intl Conf on Ubiquitous Intelligence and Computing and 2015 IEEE 12th Intl Conf on Autonomic and Trusted Computing and 2015 IEEE 15th Intl Conf on Scalable Computing and Communications and Its Associated Workshops (UIC-ATC-ScalCom), Aug 2015, pp. 1078–1086.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Weerasinghe, F. Abel, C. Hagleitner, and A. Herkersdorf, “Enabling fpgas in hyperscale data centers,” in 2015 IEEE 12th Intl Conf on Ubiquitous Intelligence and Computing and 2015 IEEE 12th Intl Conf on Autonomic and Trusted Computing and 2015 IEEE 15th Intl Conf on Scalable Computing and Communications and Its Associated Workshops (UIC-ATC-ScalCom), Aug 2015, pp. 1078–1086."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "5",
+            "rawText": "J. Weerasinghe, R. Polig, F. Abel, and C. Hagleitner, “Network-attached fpgas for data center applications,” in 2016 International Conference on Field-Programmable Technology (FPT), Dec 2016, pp. 36–43.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Weerasinghe, R. Polig, F. Abel, and C. Hagleitner, “Network-attached fpgas for data center applications,” in 2016 International Conference on Field-Programmable Technology (FPT), Dec 2016, pp. 36–43."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "6",
+            "rawText": "Mentor Graphics Inc., “Google develops webm video decompression hardware ip using technology independent sources and high-level synthesis,” White paper, 2015.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Mentor Graphics Inc., “Google develops webm video decompression hardware ip using technology independent sources and high-level synthesis,” White paper, 2015."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "7",
+            "rawText": "Yongfeng Gu Kiran Kintali and Eric Cigan, “Model-based design using simulink, hdl coder, and dsp builder for intel fpgas,” White paper, Matlab Inc., 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Yongfeng Gu Kiran Kintali and Eric Cigan, “Model-based design using simulink, hdl coder, and dsp builder for intel fpgas,” White paper, Matlab Inc., 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "8",
+            "rawText": "Sassan Ahmadi, “Toward 5g xilinx solutions and enablers for nextgeneration wireless systems,” White paper, Xilinx Inc., 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Sassan Ahmadi, “Toward 5g xilinx solutions and enablers for nextgeneration wireless systems,” White paper, Xilinx Inc., 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:8",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "9",
+            "rawText": "Xilinx, Vivado Design Suite User Guide - High-Level Synthesis, Xilinx Inc.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Xilinx, Vivado Design Suite User Guide - High-Level Synthesis, Xilinx Inc."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10",
+            "rawText": "J. Choi, Ruo Long Lian, S. Brown, and J. Anderson, “A uniﬁed software approach to specify pipeline and spatial parallelism in fpga hardware,” in 2016 IEEE 27th International Conference on Application-speciﬁc Systems, Architectures and Processors (ASAP), July 2016, pp. 75–82.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Choi, Ruo Long Lian, S. Brown, and J. Anderson, “A uniﬁed software approach to specify pipeline and spatial parallelism in fpga hardware,” in 2016 IEEE 27th International Conference on Application-speciﬁc Systems, Architectures and Processors (ASAP), July 2016, pp. 75–82."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "11",
+            "rawText": "J. Eker and J. Janneck, “CAL Language Report,” Tech. Rep. ERL Technical Memo UCB/ERL M03/48, University of California at Berkeley, Dec. 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Eker and J. Janneck, “CAL Language Report,” Tech. Rep. ERL Technical Memo UCB/ERL M03/48, University of California at Berkeley, Dec. 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "12",
+            "rawText": "Jack B. Dennis, “First version of a data ﬂow procedure language,” in Symposium on Programming, 1974, pp. 362–376.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1974,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Jack B. Dennis, “First version of a data ﬂow procedure language,” in Symposium on Programming, 1974, pp. 362–376."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1974,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "13",
+            "rawText": "Gilles Kahn, “The Semantics of Simple Language for Parallel Programming,” in IFIP Congress, 1974, pp. 471–475.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1974,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Gilles Kahn, “The Semantics of Simple Language for Parallel Programming,” in IFIP Congress, 1974, pp. 471–475."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1974,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "14",
+            "rawText": "E.A. Lee and T.M. Parks, “Dataﬂow process networks,” Proceedings of the IEEE, vol. 83, no. 5, pp. 773 –801, May 1995.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E.A. Lee and T.M. Parks, “Dataﬂow process networks,” Proceedings of the IEEE, vol. 83, no. 5, pp. 773 –801, May 1995."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "15",
+            "rawText": "G. Bilsen, M. Engels, R. Lauwereins, and J.A. Peperstraete, “Cyclostatic data ﬂow,” in Acoustics, Speech, and Signal Processing, 1995. ICASSP-95., 1995 International Conference on, May 1995, vol. 5, pp. 3255 –3258 vol.5.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "G. Bilsen, M. Engels, R. Lauwereins, and J.A. Peperstraete, “Cyclostatic data ﬂow,” in Acoustics, Speech, and Signal Processing, 1995. ICASSP-95., 1995 International Conference on, May 1995, vol. 5, pp. 3255 –3258 vol.5."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1995,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "16",
+            "rawText": "Gustav Cedersj¨o and J¨orn W. Janneck, “T¨ycho: A framework for compiling stream programs,” ACM Trans. Embed. Comput. Syst., vol. 18, no. 6, Dec. 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Gustav Cedersj¨o and J¨orn W. Janneck, “T¨ycho: A framework for compiling stream programs,” ACM Trans. Embed. Comput. Syst., vol. 18, no. 6, Dec. 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "17",
+            "rawText": "E.A. Lee and D.G. Messerschmitt, “Synchronous data ﬂow,” Proceedings of the IEEE, vol. 75, no. 9, pp. 1235–1245, Sept 1987.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E.A. Lee and D.G. Messerschmitt, “Synchronous data ﬂow,” Proceedings of the IEEE, vol. 75, no. 9, pp. 1235–1245, Sept 1987."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1987,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "18",
+            "rawText": "J. T. Buck and E. A. Lee, “Scheduling dynamic dataﬂow graphs with bounded memory using the token ﬂow model,” in 1993 IEEE International Conference on Acoustics, Speech, and Signal Processing, April 1993, vol. 1, pp. 429–432 vol.1.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. T. Buck and E. A. Lee, “Scheduling dynamic dataﬂow graphs with bounded memory using the token ﬂow model,” in 1993 IEEE International Conference on Acoustics, Speech, and Signal Processing, April 1993, vol. 1, pp. 429–432 vol.1."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:scheduling dynamic dataflow graphs with bounded memory using the token flow model:1993",
+                "doi": "",
+                "arxivId": "",
+                "title": "Scheduling Dynamic Dataflow Graphs with Bounded Memory Using the Token Flow Model",
+                "authors": [
+                  "Joseph T. Buck",
+                  "Edward A. Lee"
+                ],
+                "year": 1993,
+                "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+                "type": "inproceedings",
+                "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1993/2429.html"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "19",
+            "rawText": "ISO/IEC 23001-4:2011, “Information technology - MPEG systems technologies - Part 4: Codec conﬁguration representation,” 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "ISO/IEC 23001-4:2011, “Information technology - MPEG systems technologies - Part 4: Codec conﬁguration representation,” 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "20",
+            "rawText": "J.W. Janneck, “A machine model for dataﬂow actors and its applications,” in Signals, Systems and Computers (ASILOMAR), 2011 Conference Record of the Forty Fifth Asilomar Conference on, Nov 2011, pp. 756– 760.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J.W. Janneck, “A machine model for dataﬂow actors and its applications,” in Signals, Systems and Computers (ASILOMAR), 2011 Conference Record of the Forty Fifth Asilomar Conference on, Nov 2011, pp. 756– 760."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "21",
+            "rawText": "G. Cedersj¨o and J. W. Janneck, “Toward efﬁcient execution of dataﬂow actors,” in 2012 Conference Record of the Forty Sixth Asilomar Conference on Signals, Systems and Computers (ASILOMAR), Nov 2012, pp. 1465–1469.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "G. Cedersj¨o and J. W. Janneck, “Toward efﬁcient execution of dataﬂow actors,” in 2012 Conference Record of the Forty Sixth Asilomar Conference on Signals, Systems and Computers (ASILOMAR), Nov 2012, pp. 1465–1469."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:21",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "22",
+            "rawText": "J. Eker, J. W. Janneck, E. A. Lee, Jie Liu, Xiaojun Liu, J. Ludvig, S. Neuendorffer, S. Sachs, and Yuhong Xiong, “Taming heterogeneity - the ptolemy approach,” Proceedings of the IEEE, vol. 91, no. 1, pp. 127–144, 2003.",
+            "doi": "10.1109/JPROC.2002.805829",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Eker, J. W. Janneck, E. A. Lee, Jie Liu, Xiaojun Liu, J. Ludvig, S. Neuendorffer, S. Sachs, and Yuhong Xiong, “Taming heterogeneity - the ptolemy approach,” Proceedings of the IEEE, vol. 91, no. 1, pp. 127–144, 2003."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805829",
+                "doi": "10.1109/JPROC.2002.805829",
+                "arxivId": "",
+                "title": "Taming Heterogeneity–-The Ptolemy Approach",
+                "authors": [
+                  "Johan Eker",
+                  "J\\\"orn W. Janneck",
+                  "Edward A. Lee",
+                  "Jie Liu",
+                  "Xiaojun Liu",
+                  "Jozsef Ludvig",
+                  "Stephen Neuendorffer",
+                  "Sonia Sachs",
+                  "Yuhong Xiong"
+                ],
+                "year": 2003,
+                "venue": "Proceedings of the IEEE",
+                "type": "article",
+                "url": "https://doi.org/10.1109/JPROC.2002.805829"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "23",
+            "rawText": "J. E. Stone, D. Gohara, and G. Shi, “Opencl: A parallel programming standard for heterogeneous computing systems,” Computing in Science Engineering, vol. 12, no. 3, pp. 66–73, 2010.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. E. Stone, D. Gohara, and G. Shi, “Opencl: A parallel programming standard for heterogeneous computing systems,” Computing in Science Engineering, vol. 12, no. 3, pp. 66–73, 2010."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "24",
+            "rawText": "Xilinx, Vitis Uniﬁed Software Platform User Documentation: Application Acceleration Development, Xilinx Inc., 2019.2 edition, 2019 2019.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Xilinx, Vitis Uniﬁed Software Platform User Documentation: Application Acceleration Development, Xilinx Inc., 2019.2 edition, 2019 2019."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "25",
+            "rawText": "J¨orn Janneck, Ian Miller, David Parlour, Ghislain Roquier, Matthieu Wipliez, and Micka¨el Raulet, “Synthesizing Hardware from Dataﬂow Programs: An MPEG-4 Simple Proﬁle Decoder Case Study,” Journal of Signal Processing Systems, vol. 63, no. 2, pp. 241–249, 2009, 10.1007/s11265-009-0397-5.",
+            "doi": "10.1007/s11265-009-0397-5",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J¨orn Janneck, Ian Miller, David Parlour, Ghislain Roquier, Matthieu Wipliez, and Micka¨el Raulet, “Synthesizing Hardware from Dataﬂow Programs: An MPEG-4 Simple Proﬁle Decoder Case Study,” Journal of Signal Processing Systems, vol. 63, no. 2, pp. 241–249, 2009, 10.1007/s11265-009-0397-5."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "doi:10.1007/s11265-009-0397-5",
+                "doi": "10.1007/s11265-009-0397-5",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s11265-009-0397-5"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "26",
+            "rawText": "Herve Yviquel, Antoine Lorence, Khaled Jerbi, Gildas Cocherel, Alexandre Sanchez, and Mickael Raulet, “Orcc: Multimedia development made easy,” in Proceedings of the 21st ACM International Conference on Multimedia. 2013, MM ’13, pp. 863–866, ACM.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Herve Yviquel, Antoine Lorence, Khaled Jerbi, Gildas Cocherel, Alexandre Sanchez, and Mickael Raulet, “Orcc: Multimedia development made easy,” in Proceedings of the 21st ACM International Conference on Multimedia. 2013, MM ’13, pp. 863–866, ACM."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "27",
+            "rawText": "E. Bezati, M. Mattavelli, and J.W. Janneck, “High-level synthesis of dataﬂow programs for signal processing systems,” in Image and Signal Processing and Analysis (ISPA), 2013 8th International Symposium on, Sept 2013, pp. 750–754.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. Bezati, M. Mattavelli, and J.W. Janneck, “High-level synthesis of dataﬂow programs for signal processing systems,” in Image and Signal Processing and Analysis (ISPA), 2013 8th International Symposium on, Sept 2013, pp. 750–754."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "28",
+            "rawText": "E. Bezati, S. Casale-Brunet, R. Mosqueron, and M. Mattavelli, “An heterogeneous compiler of dataﬂow programs for zynq platforms,” in ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), May 2019, pp. 1537–1541.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "E. Bezati, S. Casale-Brunet, R. Mosqueron, and M. Mattavelli, “An heterogeneous compiler of dataﬂow programs for zynq platforms,” in ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), May 2019, pp. 1537–1541."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "29",
+            "rawText": "K. Jerbi, M. Raulet, O. Deforges, and M. Abid, “Automatic generation of synthesizable hardware implementation from high level RVC-CAL description,” in Acoustics, Speech and Signal Processing (ICASSP), 2012 IEEE International Conference on, March 2012, pp. 1597–1600.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "K. Jerbi, M. Raulet, O. Deforges, and M. Abid, “Automatic generation of synthesizable hardware implementation from high level RVC-CAL description,” in Acoustics, Speech and Signal Processing (ICASSP), 2012 IEEE International Conference on, March 2012, pp. 1597–1600."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "30",
+            "rawText": "N. Siret, M. Wipliez, J.-F. Nezan, and A. Rhatay, “Hardware code generation from dataﬂow programs,” in Design and Architectures for Signal and Image Processing (DASIP), 2010 Conference on, Oct 2010, pp. 113–120.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "N. Siret, M. Wipliez, J.-F. Nezan, and A. Rhatay, “Hardware code generation from dataﬂow programs,” in Design and Architectures for Signal and Image Processing (DASIP), 2010 Conference on, Oct 2010, pp. 113–120."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "31",
+            "rawText": "Joachim Falk, Christian Haubelt, J¨urgen Teich, and Christian Zebelein, “SysteMoC: A Data-Flow Programming Language for Codesign,” in Handbook of Hardware/Software Codesign, Teich J Ha S, Ed., vol. 1, pp. 59 – 97. Springer, Dordrecht, The Netherlands, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Joachim Falk, Christian Haubelt, J¨urgen Teich, and Christian Zebelein, “SysteMoC: A Data-Flow Programming Language for Codesign,” in Handbook of Hardware/Software Codesign, Teich J Ha S, Ed., vol. 1, pp. 59 – 97. Springer, Dordrecht, The Netherlands, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "32",
+            "rawText": "Joachim Keinert, Martin Streub¯uhr, Thomas Schlichter, Joachim Falk, Jens Gladigau, Christian Haubelt, J¯urgen Teich, and Michael Meredith, “SystemCoDesigner—an automatic esl synthesis approach by design space exploration and behavioral synthesis for streaming applications,” ACM Trans. Des. Autom. Electron. Syst., vol. 14, no. 1, Jan. 2009.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Joachim Keinert, Martin Streub¯uhr, Thomas Schlichter, Joachim Falk, Jens Gladigau, Christian Haubelt, J¯urgen Teich, and Michael Meredith, “SystemCoDesigner—an automatic esl synthesis approach by design space exploration and behavioral synthesis for streaming applications,” ACM Trans. Des. Autom. Electron. Syst., vol. 14, no. 1, Jan. 2009."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "33",
+            "rawText": "Juan Fumero, Michail Papadimitriou, Foivos S. Zakkak, Maria Xekalaki, James Clarkson, and Christos Kotselidis, “Dynamic application reconﬁguration on heterogeneous hardware,” in Proceedings of the 15th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments, New York, NY, USA, 2019, VEE 2019, p. 165–178, Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2019,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Juan Fumero, Michail Papadimitriou, Foivos S. Zakkak, Maria Xekalaki, James Clarkson, and Christos Kotselidis, “Dynamic application reconﬁguration on heterogeneous hardware,” in Proceedings of the 15th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments, New York, NY, USA, 2019, VEE 2019, p. 165–178, Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2019,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "34",
+            "rawText": "Eric S. Chung, John D. Davis, and Jaewon Lee, “Linqits: Big data on little clients,” in Proceedings of the 40th Annual International Symposium on Computer Architecture, New York, NY, USA, 2013, ISCA ’13, p. 261–272, Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Eric S. Chung, John D. Davis, and Jaewon Lee, “Linqits: Big data on little clients,” in Proceedings of the 40th Annual International Symposium on Computer Architecture, New York, NY, USA, 2013, ISCA ’13, p. 261–272, Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "35",
+            "rawText": "Eylon Caspi, Michael Chu, Randy Huang, Joseph Yeh, John Wawrzynek, and Andr´e DeHon, “Stream computations organized for reconﬁgurable execution (SCORE),” in Proceedings of the The Roadmap to Reconﬁgurable Computing, 10th International Workshop on Field-Programmable Logic and Applications, Berlin, Heidelberg, 2000, FPL ’00, p. 605–614, Springer-Verlag.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Eylon Caspi, Michael Chu, Randy Huang, Joseph Yeh, John Wawrzynek, and Andr´e DeHon, “Stream computations organized for reconﬁgurable execution (SCORE),” in Proceedings of the The Roadmap to Reconﬁgurable Computing, 10th International Workshop on Field-Programmable Logic and Applications, Berlin, Heidelberg, 2000, FPL ’00, p. 605–614, Springer-Verlag."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "36",
+            "rawText": "Simone Casale-Brunet, Abdallah Elguindy, Endri Bezati, Richard Thavot, Ghislain Roquier, Marco Mattavelli, and Jorn W Janneck, “Methods to explore design space for mpeg rmc codec speciﬁcations,” Signal Processing: Image Communication, vol. 28, no. 10, pp. 1278–1294, 2013.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Simone Casale-Brunet, Abdallah Elguindy, Endri Bezati, Richard Thavot, Ghislain Roquier, Marco Mattavelli, and Jorn W Janneck, “Methods to explore design space for mpeg rmc codec speciﬁcations,” Signal Processing: Image Communication, vol. 28, no. 10, pp. 1278–1294, 2013."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "37",
+            "rawText": "Jason Cong, Peng Li, Bingjun Xiao, and Peng Zhang, “An optimal microarchitecture for stencil computation acceleration based on nonuniform partitioning of data reuse buffers,” in Proceedings of the 51st Annual Design Automation Conference, New York, NY, USA, 2014, DAC ’14, p. 1–6, Association for Computing Machinery.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Jason Cong, Peng Li, Bingjun Xiao, and Peng Zhang, “An optimal microarchitecture for stencil computation acceleration based on nonuniform partitioning of data reuse buffers,” in Proceedings of the 51st Annual Design Automation Conference, New York, NY, USA, 2014, DAC ’14, p. 1–6, Association for Computing Machinery."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "38",
+            "rawText": "S. Casale-Brunet, E. Bezati, and M. Mattavelli, “Design space exploration of dataﬂow-based smith-waterman fpga implementations,” in 2017 IEEE International Workshop on Signal Processing Systems (SiPS), Oct 2017, pp. 1–6.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "S. Casale-Brunet, E. Bezati, and M. Mattavelli, “Design space exploration of dataﬂow-based smith-waterman fpga implementations,” in 2017 IEEE International Workshop on Signal Processing Systems (SiPS), Oct 2017, pp. 1–6."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:title:streamblocks a compiler for heterogeneous dataflow computing:2021:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 38,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "title:streamblocks a compiler for heterogeneous dataflow computing:2021->title:scheduling dynamic dataflow graphs with bounded memory using the token flow model:1993@papers-dataflow-Bezati2021.pdf",
+      "source": "title:streamblocks a compiler for heterogeneous dataflow computing:2021",
+      "target": "title:scheduling dynamic dataflow graphs with bounded memory using the token flow model:1993",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/dataflow/Bezati2021.pdf"
+    },
+    {
+      "id": "title:streamblocks a compiler for heterogeneous dataflow computing:2021->doi:10.1109/jproc.2002.805829@papers-dataflow-Bezati2021.pdf",
+      "source": "title:streamblocks a compiler for heterogeneous dataflow computing:2021",
+      "target": "doi:10.1109/jproc.2002.805829",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/dataflow/Bezati2021.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Bezati2021",
+      "paperId": "title:streamblocks a compiler for heterogeneous dataflow computing:2021",
+      "metadata": {
+        "fileName": "Bezati2021.pdf",
+        "sourcePath": "papers/dataflow/Bezati2021.pdf"
+      }
+    }
+  ]
+}

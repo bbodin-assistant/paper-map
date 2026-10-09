@@ -1,0 +1,351 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:43.147168+00:00",
+  "papers": [
+    {
+      "key": "Henzinger2004",
+      "paper": {
+        "id": "doi:10.1145/1017753.1017774",
+        "citationKey": "Henzinger2004",
+        "title": "A typed assembly language for real-time programs",
+        "authors": [
+          "Thomas A. Henzinger",
+          "Christoph M. Kirsch"
+        ],
+        "year": 2004,
+        "venue": "Proceedings of the 4th ACM international conference on Embedded software",
+        "type": "inproceedings",
+        "doi": "10.1145/1017753.1017774",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/1017753.1017774",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Henzinger, Thomas A. and Kirsch, Christoph M.",
+          "title": "{A typed assembly language for real-time programs}",
+          "year": "2004",
+          "booktitle": "Proceedings of the 4th ACM international conference on Embedded software",
+          "publisher": "ACM",
+          "pages": "104--113",
+          "doi": "10.1145/1017753.1017774",
+          "url": "https://doi.org/10.1145/1017753.1017774"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.072006+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_1_1_1",
+            "rawText": "C. Ferdinand , R. Heckmann , M. Langenbach , F. Martin , M. Schmidt , H. Theiling , S. Thesing , R. Wilhelm . Reliable and precise WCET determination for a real-life processor . In Proc. EMSOFT, LNCS 2211 , pp. 469 -- 485 . Springer , 2001 . C. Ferdinand, R. Heckmann, M. Langenbach, F. Martin, M. Schmidt, H. Theiling, S. Thesing, R. Wilhelm. Reliable and precise WCET determination for a real-life processor. In Proc. EMSOFT, LNCS 2211, pp. 469--485. Springer, 2001.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_1_1",
+              "first-page": "469",
+              "volume-title": "Proc. EMSOFT, LNCS 2211",
+              "author": "Ferdinand C.",
+              "year": "2001",
+              "unstructured": "C. Ferdinand , R. Heckmann , M. Langenbach , F. Martin , M. Schmidt , H. Theiling , S. Thesing , R. Wilhelm . Reliable and precise WCET determination for a real-life processor . In Proc. EMSOFT, LNCS 2211 , pp. 469 -- 485 . Springer , 2001 . C. Ferdinand, R. Heckmann, M. Langenbach, F. Martin, M. Schmidt, H. Theiling, S. Thesing, R. Wilhelm. Reliable and precise WCET determination for a real-life processor. In Proc. EMSOFT, LNCS 2211, pp. 469--485. Springer, 2001."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_1_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Ferdinand C."
+                ],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_1_2_1",
+            "rawText": "https://doi.org/10.1109/jproc.2002.805825",
+            "doi": "10.1109/jproc.2002.805825",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_2_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/JPROC.2002.805825"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805825",
+                "doi": "10.1109/jproc.2002.805825",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805825"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_1_3_1",
+            "rawText": "https://doi.org/10.1145/512529.512567",
+            "doi": "10.1145/512529.512567",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/512529.512567"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/512529.512567",
+                "doi": "10.1145/512529.512567",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/512529.512567"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_1_4_1",
+            "rawText": "T.A. Henzinger , C.M. Kirsch , R. Majumdar , S. Matic . Time-safety checking for embedded programs . In Proc. EMSOFT, LNCS 2491 , pp. 76 -- 92 . Springer , 2002 . T.A. Henzinger, C.M. Kirsch, R. Majumdar, S. Matic. Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS 2491, pp. 76--92. Springer, 2002.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_4_1",
+              "first-page": "76",
+              "volume-title": "Proc. EMSOFT, LNCS 2491",
+              "author": "Henzinger T.A.",
+              "year": "2002",
+              "unstructured": "T.A. Henzinger , C.M. Kirsch , R. Majumdar , S. Matic . Time-safety checking for embedded programs . In Proc. EMSOFT, LNCS 2491 , pp. 76 -- 92 . Springer , 2002 . T.A. Henzinger, C.M. Kirsch, R. Majumdar, S. Matic. Time-safety checking for embedded programs. In Proc. EMSOFT, LNCS 2491, pp. 76--92. Springer, 2002."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_4_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Henzinger T.A."
+                ],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_1_5_1",
+            "rawText": "T.A. Henzinger , C.M. Kirsch , S. Matic . Schedule-carrying code . In Proc. EMSOFT, LNCS 2855 , pp. 241 -- 256 . Springer , 2003 . T.A. Henzinger, C.M. Kirsch, S. Matic. Schedule-carrying code. In Proc. EMSOFT, LNCS 2855, pp. 241--256. Springer, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_5_1",
+              "first-page": "241",
+              "volume-title": "Proc. EMSOFT, LNCS 2855",
+              "author": "Henzinger T.A.",
+              "year": "2003",
+              "unstructured": "T.A. Henzinger , C.M. Kirsch , S. Matic . Schedule-carrying code . In Proc. EMSOFT, LNCS 2855 , pp. 241 -- 256 . Springer , 2003 . T.A. Henzinger, C.M. Kirsch, S. Matic. Schedule-carrying code. In Proc. EMSOFT, LNCS 2855, pp. 241--256. Springer, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_5_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Henzinger T.A."
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_1_6_1",
+            "rawText": "https://doi.org/10.1145/321738.321743",
+            "doi": "10.1145/321738.321743",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/321738.321743"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/321738.321743",
+                "doi": "10.1145/321738.321743",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/321738.321743"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_1_7_1",
+            "rawText": "S. Mork , K. Larsen , H.R. Andersen , P. Sestoft . PMC : A programming language for embedded systems . In Proc. Int. Workshop Formal Methods for Industrial Critical Systems , July 1999 . S. Mork, K. Larsen, H.R. Andersen, P. Sestoft. PMC: A programming language for embedded systems. In Proc. Int. Workshop Formal Methods for Industrial Critical Systems, July 1999.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1999,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_7_1",
+              "volume-title": "Proc. Int. Workshop Formal Methods for Industrial Critical Systems",
+              "author": "Mork S.",
+              "year": "1999",
+              "unstructured": "S. Mork , K. Larsen , H.R. Andersen , P. Sestoft . PMC : A programming language for embedded systems . In Proc. Int. Workshop Formal Methods for Industrial Critical Systems , July 1999 . S. Mork, K. Larsen, H.R. Andersen, P. Sestoft. PMC: A programming language for embedded systems. In Proc. Int. Workshop Formal Methods for Industrial Critical Systems, July 1999."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_1_7_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Mork S."
+                ],
+                "year": 1999,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_1_8_1",
+            "rawText": "https://doi.org/10.1145/319301.319345",
+            "doi": "10.1145/319301.319345",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/319301.319345"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/319301.319345",
+                "doi": "10.1145/319301.319345",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/319301.319345"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/1017753.1017774",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 3,
+          "extractedReferenceCount": 8,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/1017753.1017774",
+          "crossrefReferenceCount": 8
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/1017753.1017774->doi:10.1109/jproc.2002.805825@papers-LET-Henzinger2004.pdf",
+      "source": "doi:10.1145/1017753.1017774",
+      "target": "doi:10.1109/jproc.2002.805825",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2004.pdf"
+    },
+    {
+      "id": "doi:10.1145/1017753.1017774->doi:10.1145/512529.512567@papers-LET-Henzinger2004.pdf",
+      "source": "doi:10.1145/1017753.1017774",
+      "target": "doi:10.1145/512529.512567",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2004.pdf"
+    },
+    {
+      "id": "doi:10.1145/1017753.1017774->doi:10.1145/321738.321743@papers-LET-Henzinger2004.pdf",
+      "source": "doi:10.1145/1017753.1017774",
+      "target": "doi:10.1145/321738.321743",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Henzinger2004.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Henzinger2004",
+      "paperId": "doi:10.1145/1017753.1017774",
+      "metadata": {
+        "fileName": "Henzinger2004.pdf",
+        "sourcePath": "papers/LET/Henzinger2004.pdf"
+      }
+    }
+  ]
+}

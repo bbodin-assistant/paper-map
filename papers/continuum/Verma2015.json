@@ -1,0 +1,2576 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.725601+00:00",
+  "papers": [
+    {
+      "key": "Verma2015",
+      "paper": {
+        "id": "title:large scale cluster management at google with borg:2015",
+        "citationKey": "Verma2015",
+        "title": "Large-scale cluster management at Google with Borg",
+        "authors": [
+          "Abhishek Verma",
+          "Luis Pedrosa",
+          "Madhukar Korupolu",
+          "David Oppenheimer",
+          "Eric Tune",
+          "John Wilkes"
+        ],
+        "year": 2015,
+        "venue": "Proceedings of EuroSys",
+        "type": "inproceedings",
+        "doi": "",
+        "arxivId": "",
+        "url": "https://research.google/pubs/large-scale-cluster-management-at-google-with-borg/",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:embedded-edge-cloud-orchestration"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Abhishek Verma and Luis Pedrosa and Madhukar Korupolu and David Oppenheimer and Eric Tune and John Wilkes",
+          "title": "{Large-scale cluster management at Google with Borg}",
+          "year": "2015",
+          "booktitle": "Proceedings of EuroSys",
+          "url": "https://research.google/pubs/large-scale-cluster-management-at-google-with-borg/"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.192623+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_3_2_2_1_1",
+            "rawText": "https://doi.org/10.1109/cloudcom.2014.75",
+            "doi": "10.1109/cloudcom.2014.75",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_1_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CloudCom.2014.75"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cloudcom.2014.75",
+                "doi": "10.1109/cloudcom.2014.75",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cloudcom.2014.75"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_3_2_2_2_1",
+            "rawText": "Adaptive Computing Enterprises Inc.. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_2_1",
+              "volume-title": "Maui Scheduler Administrator's Guide, 3.2 edition",
+              "author": "Adaptive Computing Enterprises Inc.",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_2_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Adaptive Computing Enterprises Inc."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_3_2_2_3_1",
+            "rawText": "https://doi.org/10.14778/2536222.2536229",
+            "doi": "10.14778/2536222.2536229",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_3_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/2536222.2536229"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.14778/2536222.2536229",
+                "doi": "10.14778/2536222.2536229",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.14778/2536222.2536229"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_3_2_2_4_1",
+            "rawText": "https://doi.org/10.1109/71.877834",
+            "doi": "10.1109/71.877834",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_4_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/71.877834"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/71.877834",
+                "doi": "10.1109/71.877834",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/71.877834"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_3_2_2_5_1",
+            "rawText": "Aurora Apache. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_5_1",
+              "volume-title": "http://aurora.incubator.apache.org/",
+              "author": "Aurora Apache",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_5_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Aurora Apache"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_3_2_2_6_1",
+            "rawText": "Tutorial Aurora Configuration. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_6_1",
+              "volume-title": "https://aurora.incubator.apache.org/documentation/latest/configuration-tutorial/",
+              "author": "Tutorial Aurora Configuration",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_6_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Tutorial Aurora Configuration"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_3_2_2_7_1",
+            "rawText": "Amazon Web AWS.. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_7_1",
+              "volume-title": "http://aws.amazon.com/ec2/instance-types/",
+              "author": "Amazon Web AWS.",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_7_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Amazon Web AWS."
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_3_2_2_8_1",
+            "rawText": "Baker J.. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_8_1",
+              "first-page": "223",
+              "volume-title": "Proc. Conference on Innovative Data Systems Research (CIDR)",
+              "author": "Baker J.",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_8_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Baker J."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_3_2_2_9_1",
+            "rawText": "https://doi.org/10.1145/122120.122131",
+            "doi": "10.1145/122120.122131",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_9_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/122120.122131"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/122120.122131",
+                "doi": "10.1145/122120.122131",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/122120.122131"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_3_2_2_10_1",
+            "rawText": "Barroso L. A.. 2013. https://doi.org/10.1007/978-3-031-01741-4",
+            "doi": "10.1007/978-3-031-01741-4",
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_10_1",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1007/978-3-031-01741-4",
+              "volume-title": "The datacenter as a computer: an introduction to the design of warehouse-scale machines",
+              "author": "Barroso L. A.",
+              "year": "2013",
+              "edition": "2"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-3-031-01741-4",
+                "doi": "10.1007/978-3-031-01741-4",
+                "title": "",
+                "authors": [
+                  "Barroso L. A."
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-031-01741-4"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_3_2_2_11_1",
+            "rawText": "https://doi.org/10.1109/mm.2003.1196112",
+            "doi": "10.1109/mm.2003.1196112",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_11_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MM.2003.1196112"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mm.2003.1196112",
+                "doi": "10.1109/mm.2003.1196112",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mm.2003.1196112"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_3_2_2_12_1",
+            "rawText": "Bokharouss I.. 2008",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_12_1",
+              "volume-title": "Eindhoven Univ. of Technology",
+              "author": "Bokharouss I.",
+              "year": "2008"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_12_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Bokharouss I."
+                ],
+                "year": 2008,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_3_2_2_13_1",
+            "rawText": "Boutin E.. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_13_1",
+              "volume-title": "Proc. USENIX Symp. on Operating Systems Design and Implementation (OSDI)",
+              "author": "Boutin E.",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_13_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Boutin E."
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_3_2_2_14_1",
+            "rawText": "Burrows M.. 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_14_1",
+              "first-page": "335",
+              "volume-title": "Proc. USENIX Symp. on Operating Systems Design and Implementation (OSDI)",
+              "author": "Burrows M.",
+              "year": "2006"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_14_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Burrows M."
+                ],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_3_2_2_15_1",
+            "rawText": "2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_15_1",
+              "volume-title": "https://github.com/google/cadvisor",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_15_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_3_2_2_16_1",
+            "rawText": "CFS. 2013",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_16_1",
+              "volume-title": "http://lwn.net/Articles/531853",
+              "author": "CFS",
+              "year": "2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_16_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "CFS"
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_3_2_2_17_1",
+            "rawText": "2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_17_1",
+              "volume-title": "http://en.wikipedia.org/wiki/Cgroups",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_17_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_3_2_2_18_1",
+            "rawText": "https://doi.org/10.1145/1806596.1806638",
+            "doi": "10.1145/1806596.1806638",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_18_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1806596.1806638"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1806596.1806638",
+                "doi": "10.1145/1806596.1806638",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1806596.1806638"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_3_2_2_19_1",
+            "rawText": "https://doi.org/10.1145/1365815.1365816",
+            "doi": "10.1145/1365815.1365816",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_19_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1365815.1365816"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1365815.1365816",
+                "doi": "10.1145/1365815.1365816",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1365815.1365816"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_3_2_2_21_1",
+            "rawText": "https://doi.org/10.1145/2670979.2670981",
+            "doi": "10.1145/2670979.2670981",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_21_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2670979.2670981"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2670979.2670981",
+                "doi": "10.1145/2670979.2670981",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2670979.2670981"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_3_2_2_22_1",
+            "rawText": "https://doi.org/10.1145/2408776.2408794",
+            "doi": "10.1145/2408776.2408794",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_22_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2408776.2408794"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2408776.2408794",
+                "doi": "10.1145/2408776.2408794",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2408776.2408794"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "e_1_3_2_2_23_1",
+            "rawText": "https://doi.org/10.1145/1327452.1327492",
+            "doi": "10.1145/1327452.1327492",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_23_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1327452.1327492"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1327452.1327492",
+                "doi": "10.1145/1327452.1327492",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1327452.1327492"
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "e_1_3_2_2_24_1",
+            "rawText": "https://doi.org/10.1145/2451116.2451125",
+            "doi": "10.1145/2451116.2451125",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_24_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2451116.2451125"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2451116.2451125",
+                "doi": "10.1145/2451116.2451125",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2451116.2451125"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "e_1_3_2_2_25_1",
+            "rawText": "https://doi.org/10.1145/2541940.2541941",
+            "doi": "10.1145/2541940.2541941",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_25_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2541940.2541941"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2541940.2541941",
+                "doi": "10.1145/2541940.2541941",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2541940.2541941"
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "e_1_3_2_2_26_1",
+            "rawText": "https://doi.org/10.1109/cluster.2012.35",
+            "doi": "10.1109/cluster.2012.35",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_26_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CLUSTER.2012.35"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cluster.2012.35",
+                "doi": "10.1109/cluster.2012.35",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cluster.2012.35"
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "e_1_3_2_2_27_1",
+            "rawText": "https://doi.org/10.1109/icpp.2013.56",
+            "doi": "10.1109/icpp.2013.56",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_27_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICPP.2013.56"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icpp.2013.56",
+                "doi": "10.1109/icpp.2013.56",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icpp.2013.56"
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "e_1_3_2_2_28_1",
+            "rawText": "Project Docker. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_28_1",
+              "volume-title": "https://www.docker.io/",
+              "author": "Project Docker",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_28_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Project Docker"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "e_1_3_2_2_29_1",
+            "rawText": "https://doi.org/10.1145/2090236.2090243",
+            "doi": "10.1145/2090236.2090243",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_29_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2090236.2090243"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2090236.2090243",
+                "doi": "10.1145/2090236.2090243",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2090236.2090243"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "e_1_3_2_2_30_1",
+            "rawText": "2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_30_1",
+              "volume-title": "http://www.elasticsearch.org",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_30_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "e_1_3_2_2_31_1",
+            "rawText": "Feitelson D. G.. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_31_1",
+              "volume-title": "Workload Modeling for Computer Systems Performance Evaluation",
+              "author": "Feitelson D. G.",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_31_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Feitelson D. G."
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "e_1_3_2_2_32_1",
+            "rawText": "2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_32_1",
+              "volume-title": "http://www.fluentd.org/",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_32_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "e_1_3_2_2_33_1",
+            "rawText": "Google Compute Engine GCE.. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_33_1",
+              "volume-title": "http://cloud.google.com/products/compute-engine/",
+              "author": "Google Compute Engine GCE.",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_33_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Google Compute Engine GCE."
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "e_1_3_2_2_34_1",
+            "rawText": "https://doi.org/10.1145/945445.945450",
+            "doi": "10.1145/945445.945450",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_34_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/945445.945450"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/945445.945450",
+                "doi": "10.1145/945445.945450",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/945445.945450"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "e_1_3_2_2_35_1",
+            "rawText": "Ghodsi A.. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_35_1",
+              "first-page": "323",
+              "volume-title": "Proc. USENIX Symp. on Networked Systems Design and Implementation (NSDI)",
+              "author": "Ghodsi A.",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_35_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Ghodsi A."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "e_1_3_2_2_36_1",
+            "rawText": "https://doi.org/10.1145/2465351.2465387",
+            "doi": "10.1145/2465351.2465387",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_36_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2465351.2465387"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2465351.2465387",
+                "doi": "10.1145/2465351.2465387",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2465351.2465387"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "e_1_3_2_2_37_1",
+            "rawText": "https://doi.org/10.1109/ccgrid.2012.68",
+            "doi": "10.1109/ccgrid.2012.68",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_37_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CCGrid.2012.68"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ccgrid.2012.68",
+                "doi": "10.1109/ccgrid.2012.68",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ccgrid.2012.68"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "e_1_3_2_2_38_1",
+            "rawText": "Engine Google App. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_38_1",
+              "volume-title": "http://cloud.google.com/AppEngine",
+              "author": "Engine Google App",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_38_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Engine Google App"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "e_1_3_2_2_39_1",
+            "rawText": "Google Container. 2015",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_39_1",
+              "volume-title": "https://cloud.google.com/container-engine/",
+              "author": "Google Container",
+              "year": "2015"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_39_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Google Container"
+                ],
+                "year": 2015,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "e_1_3_2_2_40_1",
+            "rawText": "https://doi.org/10.1145/2619239.2626334",
+            "doi": "10.1145/2619239.2626334",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_40_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2619239.2626334"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2619239.2626334",
+                "doi": "10.1145/2619239.2626334",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2619239.2626334"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "e_1_3_2_2_41_1",
+            "rawText": "Project Apache Hadoop. 2009",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_41_1",
+              "volume-title": "http://hadoop.apache.org/",
+              "author": "Project Apache Hadoop",
+              "year": "2009"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_41_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Project Apache Hadoop"
+                ],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "e_1_3_2_2_42_1",
+            "rawText": "MapReduce Next Hadoop. 2013",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_42_1",
+              "volume-title": "http://hadoop.apache.org/docs/r2.2.0/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html",
+              "author": "MapReduce Next Hadoop",
+              "year": "2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_42_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "MapReduce Next Hadoop"
+                ],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "e_1_3_2_2_43_1",
+            "rawText": "Hamilton J.. 2007",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_43_1",
+              "first-page": "231",
+              "volume-title": "Proc. Large Installation System Administration Conf. (LISA)",
+              "author": "Hamilton J.",
+              "year": "2007"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_43_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Hamilton J."
+                ],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "e_1_3_2_2_44_1",
+            "rawText": "P. Helland. Cosmos: big data and big challenges. http://research.microsoft.com/en-us/events/fs2011/helland\\_cosmos\\_big\\_data\\_and\\_big\\_challenges.pdf 2011.  P. Helland. Cosmos: big data and big challenges. http://research.microsoft.com/en-us/events/fs2011/helland\\_cosmos\\_big\\_data\\_and\\_big\\_challenges.pdf 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_44_1",
+              "unstructured": "P. Helland. Cosmos: big data and big challenges. http://research.microsoft.com/en-us/events/fs2011/helland\\_cosmos\\_big\\_data\\_and\\_big\\_challenges.pdf 2011.  P. Helland. Cosmos: big data and big challenges. http://research.microsoft.com/en-us/events/fs2011/helland\\_cosmos\\_big\\_data\\_and\\_big\\_challenges.pdf 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_44_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "e_1_3_2_2_45_1",
+            "rawText": "Hindman B.. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_45_1",
+              "volume-title": "Proc. USENIX Symp. on Networked Systems Design and Implementation (NSDI)",
+              "author": "Hindman B.",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_45_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Hindman B."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "e_1_3_2_2_46_1",
+            "rawText": "IBM Platform Computing. http://www-03.ibm.com/systems/technicalcomputing/platformcomputing/products/clustermanager/index.html.  IBM Platform Computing. http://www-03.ibm.com/systems/technicalcomputing/platformcomputing/products/clustermanager/index.html.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_46_1",
+              "unstructured": "IBM Platform Computing. http://www-03.ibm.com/systems/technicalcomputing/platformcomputing/products/clustermanager/index.html.  IBM Platform Computing. http://www-03.ibm.com/systems/technicalcomputing/platformcomputing/products/clustermanager/index.html."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_46_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "e_1_3_2_2_47_1",
+            "rawText": "Iqbal S.. 2005",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_47_1",
+              "volume-title": "Dell Power Solutions",
+              "author": "Iqbal S.",
+              "year": "2005"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_47_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Iqbal S."
+                ],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "e_1_3_2_2_48_1",
+            "rawText": "https://doi.org/10.1145/1243418.1243426",
+            "doi": "10.1145/1243418.1243426",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_48_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1243418.1243426"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1243418.1243426",
+                "doi": "10.1145/1243418.1243426",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1243418.1243426"
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "e_1_3_2_2_49_1",
+            "rawText": "https://doi.org/10.1145/1629575.1629601",
+            "doi": "10.1145/1629575.1629601",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_49_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1629575.1629601"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1629575.1629601",
+                "doi": "10.1145/1629575.1629601",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1629575.1629601"
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "e_1_3_2_2_50_1",
+            "rawText": "https://doi.org/10.5555/646382.689682",
+            "doi": "10.5555/646382.689682",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_50_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/646382.689682"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/646382.689682",
+                "doi": "10.5555/646382.689682",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/646382.689682"
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "e_1_3_2_2_51_1",
+            "rawText": "https://doi.org/10.5555/2388996.2389066",
+            "doi": "10.5555/2388996.2389066",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_51_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/2388996.2389066"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/2388996.2389066",
+                "doi": "10.5555/2388996.2389066",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/2388996.2389066"
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "e_1_3_2_2_52_1",
+            "rawText": "https://doi.org/10.1109/ccgrid.2010.112",
+            "doi": "10.1109/ccgrid.2010.112",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_52_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CCGRID.2010.112"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/ccgrid.2010.112",
+                "doi": "10.1109/ccgrid.2010.112",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/ccgrid.2010.112"
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "e_1_3_2_2_53_1",
+            "rawText": "2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_53_1",
+              "volume-title": "Aug.",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_53_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "e_1_3_2_2_54_1",
+            "rawText": "Kernel Based Virtual Machine. http://www.linux-kvm.org.  Kernel Based Virtual Machine. http://www.linux-kvm.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_54_1",
+              "unstructured": "Kernel Based Virtual Machine. http://www.linux-kvm.org.  Kernel Based Virtual Machine. http://www.linux-kvm.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_54_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "e_1_3_2_2_55_1",
+            "rawText": "https://doi.org/10.1145/279227.279229",
+            "doi": "10.1145/279227.279229",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_55_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/279227.279229"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/279227.279229",
+                "doi": "10.1145/279227.279229",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/279227.279229"
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "e_1_3_2_2_56_1",
+            "rawText": "https://doi.org/10.1145/2592798.2592821",
+            "doi": "10.1145/2592798.2592821",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_56_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2592798.2592821"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2592798.2592821",
+                "doi": "10.1145/2592798.2592821",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2592798.2592821"
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "e_1_3_2_2_57_1",
+            "rawText": "https://doi.org/10.1109/icppw.2012.57",
+            "doi": "10.1109/icppw.2012.57",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_57_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICPPW.2012.57"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icppw.2012.57",
+                "doi": "10.1109/icppw.2012.57",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icppw.2012.57"
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "e_1_3_2_2_58_1",
+            "rawText": "Google LMCTFY. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_58_1",
+              "volume-title": "http://github.com/google/lmctfy",
+              "author": "Google LMCTFY",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_58_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Google LMCTFY"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "e_1_3_2_2_59_1",
+            "rawText": "https://doi.org/10.1145/1807167.1807184",
+            "doi": "10.1145/1807167.1807184",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_59_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1807167.1807184"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1807167.1807184",
+                "doi": "10.1145/1807167.1807184",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1807167.1807184"
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "e_1_3_2_2_60_1",
+            "rawText": "https://doi.org/10.1145/2155620.2155650",
+            "doi": "10.1145/2155620.2155650",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_60_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2155620.2155650"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2155620.2155650",
+                "doi": "10.1145/2155620.2155650",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2155620.2155650"
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "e_1_3_2_2_61_1",
+            "rawText": "https://doi.org/10.14778/1920841.1920886",
+            "doi": "10.14778/1920841.1920886",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_61_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/1920841.1920886"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.14778/1920841.1920886",
+                "doi": "10.14778/1920841.1920886",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.14778/1920841.1920886"
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "e_1_3_2_2_62_1",
+            "rawText": "P. Menage. Linux control groups. http://www.kernel.org/doc/Documentation/cgroups/cgroups.txt 2007--2014.  P. Menage. Linux control groups. http://www.kernel.org/doc/Documentation/cgroups/cgroups.txt 2007--2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_62_1",
+              "unstructured": "P. Menage. Linux control groups. http://www.kernel.org/doc/Documentation/cgroups/cgroups.txt 2007--2014.  P. Menage. Linux control groups. http://www.kernel.org/doc/Documentation/cgroups/cgroups.txt 2007--2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_62_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "e_1_3_2_2_63_1",
+            "rawText": "https://doi.org/10.1145/1773394.1773400",
+            "doi": "10.1145/1773394.1773400",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_63_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1773394.1773400"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1773394.1773400",
+                "doi": "10.1145/1773394.1773400",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1773394.1773400"
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "e_1_3_2_2_64_1",
+            "rawText": "A. Narayanan. Tupperware: containerized deployment at Facebook. http://www.slideshare.net/dotCloud/tupperware-containerized-deployment-at-facebook June 2014.  A. Narayanan. Tupperware: containerized deployment at Facebook. http://www.slideshare.net/dotCloud/tupperware-containerized-deployment-at-facebook June 2014.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_64_1",
+              "unstructured": "A. Narayanan. Tupperware: containerized deployment at Facebook. http://www.slideshare.net/dotCloud/tupperware-containerized-deployment-at-facebook June 2014.  A. Narayanan. Tupperware: containerized deployment at Facebook. http://www.slideshare.net/dotCloud/tupperware-containerized-deployment-at-facebook June 2014."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_64_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": "e_1_3_2_2_65_1",
+            "rawText": "https://doi.org/10.1145/2517349.2522716",
+            "doi": "10.1145/2517349.2522716",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_65_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2517349.2522716"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2517349.2522716",
+                "doi": "10.1145/2517349.2522716",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2517349.2522716"
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": "e_1_3_2_2_66_1",
+            "rawText": "https://doi.org/10.1145/2229012.2229075",
+            "doi": "10.1145/2229012.2229075",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_66_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2229012.2229075"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2229012.2229075",
+                "doi": "10.1145/2229012.2229075",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2229012.2229075"
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": "e_1_3_2_2_67_1",
+            "rawText": "Protocol. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_67_1",
+              "volume-title": "https://developers.google.com/protocol-buffers/, and https://github.com/google/protobuf/",
+              "author": "Protocol",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_67_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Protocol"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": "e_1_3_2_2_68_1",
+            "rawText": "https://doi.org/10.1145/2391229.2391236",
+            "doi": "10.1145/2391229.2391236",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_68_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2391229.2391236"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2391229.2391236",
+                "doi": "10.1145/2391229.2391236",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2391229.2391236"
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": "e_1_3_2_2_69_1",
+            "rawText": "https://doi.org/10.1145/2465351.2465386",
+            "doi": "10.1145/2465351.2465386",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_69_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2465351.2465386"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2465351.2465386",
+                "doi": "10.1145/2465351.2465386",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2465351.2465386"
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": "e_1_3_2_2_70_1",
+            "rawText": "https://doi.org/10.1145/2038916.2038919",
+            "doi": "10.1145/2038916.2038919",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_70_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2038916.2038919"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2038916.2038919",
+                "doi": "10.1145/2038916.2038919",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2038916.2038919"
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": "e_1_3_2_2_71_1",
+            "rawText": "https://doi.org/10.1109/tpds.2008.152",
+            "doi": "10.1109/tpds.2008.152",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_71_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TPDS.2008.152"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tpds.2008.152",
+                "doi": "10.1109/tpds.2008.152",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tpds.2008.152"
+              }
+            }
+          },
+          {
+            "index": 71,
+            "label": "e_1_3_2_2_72_1",
+            "rawText": "https://doi.org/10.5555/1413370.1413424",
+            "doi": "10.5555/1413370.1413424",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_72_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/1413370.1413424"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/1413370.1413424",
+                "doi": "10.5555/1413370.1413424",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/1413370.1413424"
+              }
+            }
+          },
+          {
+            "index": 72,
+            "label": "e_1_3_2_2_73_1",
+            "rawText": "Project Apache Spark. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_73_1",
+              "volume-title": "http://spark.apache.org/",
+              "author": "Project Apache Spark",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_73_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Project Apache Spark"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 73,
+            "label": "e_1_3_2_2_74_1",
+            "rawText": "https://doi.org/10.1145/2391229.2391254",
+            "doi": "10.1145/2391229.2391254",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_74_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2391229.2391254"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2391229.2391254",
+                "doi": "10.1145/2391229.2391254",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2391229.2391254"
+              }
+            }
+          },
+          {
+            "index": 74,
+            "label": "e_1_3_2_2_75_1",
+            "rawText": "Turner P.. 2010",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_75_1",
+              "first-page": "245",
+              "volume-title": "Proc. Linux Symposium",
+              "author": "Turner P.",
+              "year": "2010"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_75_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Turner P."
+                ],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 75,
+            "label": "e_1_3_2_2_76_1",
+            "rawText": "https://doi.org/10.1145/2523616.2523633",
+            "doi": "10.1145/2523616.2523633",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_76_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2523616.2523633"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2523616.2523633",
+                "doi": "10.1145/2523616.2523633",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2523616.2523633"
+              }
+            }
+          },
+          {
+            "index": 76,
+            "label": "e_1_3_2_2_77_1",
+            "rawText": "VMware VCloud Suite. http://www.vmware.com/products/vcloud-suite/.  VMware VCloud Suite. http://www.vmware.com/products/vcloud-suite/.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_77_1",
+              "unstructured": "VMware VCloud Suite. http://www.vmware.com/products/vcloud-suite/.  VMware VCloud Suite. http://www.vmware.com/products/vcloud-suite/."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_77_1",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 77,
+            "label": "e_1_3_2_2_78_1",
+            "rawText": "https://doi.org/10.1109/cluster.2014.6968735",
+            "doi": "10.1109/cluster.2014.6968735",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_78_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CLUSTER.2014.6968735"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/cluster.2014.6968735",
+                "doi": "10.1109/cluster.2014.6968735",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/cluster.2014.6968735"
+              }
+            }
+          },
+          {
+            "index": 78,
+            "label": "e_1_3_2_2_79_1",
+            "rawText": "Whitt W.. Open and closed models for networks of queues. 1984. AT&T Bell Labs Technical Journal",
+            "doi": null,
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "9",
+              "key": "e_1_3_2_2_79_1",
+              "article-title": "Open and closed models for networks of queues",
+              "volume": "63",
+              "author": "Whitt W.",
+              "year": "1984",
+              "journal-title": "AT&T Bell Labs Technical Journal"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_79_1",
+                "doi": "",
+                "title": "Open and closed models for networks of queues",
+                "authors": [
+                  "Whitt W."
+                ],
+                "year": 1984,
+                "venue": "AT&T Bell Labs Technical Journal",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 79,
+            "label": "e_1_3_2_2_80_1",
+            "rawText": "Wilkes J.. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_80_1",
+              "volume-title": "Nov.",
+              "author": "Wilkes J.",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_80_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Wilkes J."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 80,
+            "label": "e_1_3_2_2_81_1",
+            "rawText": "Zhai Y.. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_81_1",
+              "first-page": "211",
+              "volume-title": "Proc. USENIX Annual Technical Conf. (USENIX ATC)",
+              "author": "Zhai Y.",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_81_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zhai Y."
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 81,
+            "label": "e_1_3_2_2_82_1",
+            "rawText": "Zhang Q.. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_82_1",
+              "volume-title": "Proc. Int'l Workshop on Large-Scale Distributed Systems and Middleware (LADIS)",
+              "author": "Zhang Q.",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_3_2_2_82_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Zhang Q."
+                ],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 82,
+            "label": "e_1_3_2_2_83_1",
+            "rawText": "https://doi.org/10.1145/2465351.2465388",
+            "doi": "10.1145/2465351.2465388",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_83_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/2465351.2465388"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/2465351.2465388",
+                "doi": "10.1145/2465351.2465388",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/2465351.2465388"
+              }
+            }
+          },
+          {
+            "index": 83,
+            "label": "e_1_3_2_2_84_1",
+            "rawText": "https://doi.org/10.14778/2733004.2733012",
+            "doi": "10.14778/2733004.2733012",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_3_2_2_84_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.14778/2733004.2733012"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.14778/2733004.2733012",
+                "doi": "10.14778/2733004.2733012",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.14778/2733004.2733012"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/2741948.2741964",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 83,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/2741948.2741964",
+          "crossrefReferenceCount": 83
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Verma2015",
+      "paperId": "title:large scale cluster management at google with borg:2015",
+      "metadata": {
+        "fileName": "Verma2015.pdf",
+        "sourcePath": "papers/continuum/Verma2015.pdf"
+      }
+    }
+  ]
+}

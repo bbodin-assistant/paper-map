@@ -1,0 +1,3184 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.274304+00:00",
+  "papers": [
+    {
+      "key": "Lee1995",
+      "paper": {
+        "id": "doi:10.1109/5.381846",
+        "citationKey": "Lee1995",
+        "title": "Dataflow Process Networks",
+        "authors": [
+          "Edward A. Lee",
+          "Thomas M. Parks"
+        ],
+        "year": 1995,
+        "venue": "Proceedings of the IEEE",
+        "type": "article",
+        "doi": "10.1109/5.381846",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/5.381846",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Lee, Edward A. and Parks, Thomas M.",
+          "title": "Dataflow Process Networks",
+          "journal": "Proceedings of the IEEE",
+          "volume": "83",
+          "number": "5",
+          "pages": "773--801",
+          "month": "may",
+          "year": "1995",
+          "doi": "10.1109/5.381846",
+          "url": "https://doi.org/10.1109/5.381846"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.094987+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref39",
+            "rawText": "https://doi.org/10.1109/mc.1980.1653418",
+            "doi": "10.1109/mc.1980.1653418",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref39",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MC.1980.1653418"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mc.1980.1653418",
+                "doi": "10.1109/mc.1980.1653418",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mc.1980.1653418"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref38",
+            "rawText": "dennis. 1975. First version data flow procedure language",
+            "doi": null,
+            "arxivId": null,
+            "year": 1975,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref38",
+              "author": "dennis",
+              "year": "1975",
+              "journal-title": "First version data flow procedure language"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref38",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "dennis"
+                ],
+                "year": 1975,
+                "venue": "First version data flow procedure language",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref33",
+            "rawText": "https://doi.org/10.1016/s0022-0000(71)80013-2",
+            "doi": "10.1016/s0022-0000(71)80013-2",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref33",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/S0022-0000(71)80013-2"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/s0022-0000(71)80013-2",
+                "doi": "10.1016/s0022-0000(71)80013-2",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/S0022-0000(71)80013-2"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref32",
+            "rawText": "church. 1941. The Calculi of Lambda Conversion",
+            "doi": null,
+            "arxivId": null,
+            "year": 1941,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref32",
+              "author": "church",
+              "year": "1941",
+              "journal-title": "The Calculi of Lambda Conversion"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref32",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "church"
+                ],
+                "year": 1941,
+                "venue": "The Calculi of Lambda Conversion",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref31",
+            "rawText": "chen. 1994. Developing a multidimensional synchronous dataflow domain in Ptolemy",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref31",
+              "author": "chen",
+              "year": "1994",
+              "journal-title": "Developing a multidimensional synchronous dataflow domain in Ptolemy"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref31",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "chen"
+                ],
+                "year": 1994,
+                "venue": "Developing a multidimensional synchronous dataflow domain in Ptolemy",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref30",
+            "rawText": "https://doi.org/10.1002/9780470611012.ch7",
+            "doi": "10.1002/9780470611012.ch7",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref30",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1002/9780470611012.ch7"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1002/9780470611012.ch7",
+                "doi": "10.1002/9780470611012.ch7",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1002/9780470611012.ch7"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref37",
+            "rawText": "https://doi.org/10.1109/5.52215",
+            "doi": "10.1109/5.52215",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref37",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/5.52215"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/5.52215",
+                "doi": "10.1109/5.52215",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.52215"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref36",
+            "rawText": "https://doi.org/10.1109/mc.1982.1653939",
+            "doi": "10.1109/mc.1982.1653939",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref36",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MC.1982.1653939"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mc.1982.1653939",
+                "doi": "10.1109/mc.1982.1653939",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mc.1982.1653939"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref35",
+            "rawText": "davis. 1978. Data driven nets A maximally concurrent procedural parallel process representation for distributed control systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref35",
+              "author": "davis",
+              "year": "1978",
+              "journal-title": "Data driven nets A maximally concurrent procedural parallel process representation for distributed control systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref35",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "davis"
+                ],
+                "year": 1978,
+                "venue": "Data driven nets A maximally concurrent procedural parallel process representation for distributed control systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref34",
+            "rawText": "https://doi.org/10.1145/158511.158707",
+            "doi": "10.1145/158511.158707",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref34",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/158511.158707"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/158511.158707",
+                "doi": "10.1145/158511.158707",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/158511.158707"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref28",
+            "rawText": "https://doi.org/10.1145/63334.63337",
+            "doi": "10.1145/63334.63337",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref28",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/63334.63337"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/63334.63337",
+                "doi": "10.1145/63334.63337",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/63334.63337"
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref27",
+            "rawText": "https://doi.org/10.1145/321992.321996",
+            "doi": "10.1145/321992.321996",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref27",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/321992.321996"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/321992.321996",
+                "doi": "10.1145/321992.321996",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/321992.321996"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref29",
+            "rawText": "https://doi.org/10.1016/0304-3975(92)90326-b",
+            "doi": "10.1016/0304-3975(92)90326-b",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref29",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0304-3975(92)90326-B"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0304-3975(92)90326-b",
+                "doi": "10.1016/0304-3975(92)90326-b",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0304-3975(92)90326-b"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref20",
+            "rawText": "boussinot. 1991. Reseaux de processus reactifs",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "author": "boussinot",
+              "year": "1991",
+              "journal-title": "Reseaux de processus reactifs"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref20",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "boussinot"
+                ],
+                "year": 1991,
+                "venue": "Reseaux de processus reactifs",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref22",
+            "rawText": "https://doi.org/10.1109/icassp.1993.319147",
+            "doi": "10.1109/icassp.1993.319147",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1993.319147"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1993.319147",
+                "doi": "10.1109/icassp.1993.319147",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1993.319147"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref21",
+            "rawText": "brock. Scenarios, a model of nondeterminate computation. 1981. Proc Conf on Formal Definition of Programming Concepts. https://doi.org/10.1007/3-540-10699-5_102",
+            "doi": "10.1007/3-540-10699-5_102",
+            "arxivId": null,
+            "year": 1981,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "doi-asserted-by": "crossref",
+              "first-page": "252",
+              "DOI": "10.1007/3-540-10699-5_102",
+              "article-title": "Scenarios, a model of nondeterminate computation",
+              "volume": "107",
+              "author": "brock",
+              "year": "1981",
+              "journal-title": "Proc Conf on Formal Definition of Programming Concepts"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-10699-5_102",
+                "doi": "10.1007/3-540-10699-5_102",
+                "title": "Scenarios, a model of nondeterminate computation",
+                "authors": [
+                  "brock"
+                ],
+                "year": 1981,
+                "venue": "Proc Conf on Formal Definition of Programming Concepts",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-10699-5_102"
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref24",
+            "rawText": "https://doi.org/10.1109/icassp.1991.150620",
+            "doi": "10.1109/icassp.1991.150620",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref24",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1991.150620"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1991.150620",
+                "doi": "10.1109/icassp.1991.150620",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1991.150620"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref26",
+            "rawText": "https://doi.org/10.1147/rd.191.0012",
+            "doi": "10.1147/rd.191.0012",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref26",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1147/rd.191.0012"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1147/rd.191.0012",
+                "doi": "10.1147/rd.191.0012",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1147/rd.191.0012"
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref25",
+            "rawText": "buck. Ptolemy: A framework for simulating and prototyping heterogeneous systems. 1994. Int J Computer Simulation",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref25",
+              "article-title": "Ptolemy: A framework for simulating and prototyping heterogeneous systems",
+              "author": "buck",
+              "year": "1994",
+              "journal-title": "Int J Computer Simulation"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:ptolemy a framework for simulating and prototyping heterogeneous systems:1994",
+                "doi": "",
+                "title": "Ptolemy: A framework for simulating and prototyping heterogeneous systems",
+                "authors": [
+                  "buck"
+                ],
+                "year": 1994,
+                "venue": "Int J Computer Simulation",
+                "type": "",
+                "url": "https://ptolemy.berkeley.edu/publications/papers/94/JEurSim/"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref50",
+            "rawText": "hilfinger. A high-level language and silicon compiler for digital signal processing. 1985. Proc Custom Integ Circuits Conf",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref50",
+              "first-page": "213",
+              "article-title": "A high-level language and silicon compiler for digital signal processing",
+              "author": "hilfinger",
+              "year": "1985",
+              "journal-title": "Proc Custom Integ Circuits Conf"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref50",
+                "doi": "",
+                "title": "A high-level language and silicon compiler for digital signal processing",
+                "authors": [
+                  "hilfinger"
+                ],
+                "year": 1985,
+                "venue": "Proc Custom Integ Circuits Conf",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref51",
+            "rawText": "https://doi.org/10.1016/1045-926x(92)90034-j",
+            "doi": "10.1016/1045-926x(92)90034-j",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref51",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/1045-926X(92)90034-J"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/1045-926x(92)90034-j",
+                "doi": "10.1016/1045-926x(92)90034-j",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/1045-926x(92)90034-j"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref59",
+            "rawText": "kahn. Coroutines and networks of parallel processes. 1977. Information Processing 77",
+            "doi": null,
+            "arxivId": null,
+            "year": 1977,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref59",
+              "article-title": "Coroutines and networks of parallel processes",
+              "author": "kahn",
+              "year": "1977",
+              "journal-title": "Information Processing 77"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref59",
+                "doi": "",
+                "title": "Coroutines and networks of parallel processes",
+                "authors": [
+                  "kahn"
+                ],
+                "year": 1977,
+                "venue": "Information Processing 77",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref58",
+            "rawText": "kahn. The semantics of a simple language for parallel programming. 1974. Proc IFIP Congress 74",
+            "doi": null,
+            "arxivId": null,
+            "year": 1974,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref58",
+              "article-title": "The semantics of a simple language for parallel programming",
+              "author": "kahn",
+              "year": "1974",
+              "journal-title": "Proc IFIP Congress 74"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "title:the semantics of a simple language for parallel programming:1974",
+                "doi": "",
+                "title": "The semantics of a simple language for parallel programming",
+                "authors": [
+                  "kahn"
+                ],
+                "year": 1974,
+                "venue": "Proc IFIP Congress 74",
+                "type": "",
+                "url": "https://inria.hal.science/hal-04716357"
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "ref57",
+            "rawText": "jagannathan. Eazyflow: A hybrid model for parallel processing. 1984. Proc Int Conf on Parallel Process",
+            "doi": null,
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref57",
+              "first-page": "514",
+              "article-title": "Eazyflow: A hybrid model for parallel processing",
+              "author": "jagannathan",
+              "year": "1984",
+              "journal-title": "Proc Int Conf on Parallel Process"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref57",
+                "doi": "",
+                "title": "Eazyflow: A hybrid model for parallel processing",
+                "authors": [
+                  "jagannathan"
+                ],
+                "year": 1984,
+                "venue": "Proc Int Conf on Parallel Process",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "ref56",
+            "rawText": "jagannathan. Parallel execution of GLU programs. 1992. 2nd Int Workshop on Dataflow Computing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref56",
+              "article-title": "Parallel execution of GLU programs",
+              "author": "jagannathan",
+              "year": "1992",
+              "journal-title": "2nd Int Workshop on Dataflow Computing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref56",
+                "doi": "",
+                "title": "Parallel execution of GLU programs",
+                "authors": [
+                  "jagannathan"
+                ],
+                "year": 1992,
+                "venue": "2nd Int Workshop on Dataflow Computing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "ref55",
+            "rawText": "ida. 1993. Information Processing '83",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref55",
+              "author": "ida",
+              "year": "1993",
+              "journal-title": "Information Processing '83"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref55",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "ida"
+                ],
+                "year": 1993,
+                "venue": "Information Processing '83",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "ref54",
+            "rawText": "hughes. 1990. Research Topics in Functional Programming",
+            "doi": null,
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref54",
+              "author": "hughes",
+              "year": "1990",
+              "journal-title": "Research Topics in Functional Programming"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref54",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "hughes"
+                ],
+                "year": 1990,
+                "venue": "Research Topics in Functional Programming",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "ref53",
+            "rawText": "hudak. Introduction to Haskell and functional programming. 1989. ACM Compu Surveys",
+            "doi": null,
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref53",
+              "article-title": "Introduction to Haskell and functional programming",
+              "author": "hudak",
+              "year": "1989",
+              "journal-title": "ACM Compu Surveys"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref53",
+                "doi": "",
+                "title": "Introduction to Haskell and functional programming",
+                "authors": [
+                  "hudak"
+                ],
+                "year": 1989,
+                "venue": "ACM Compu Surveys",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "ref52",
+            "rawText": "https://doi.org/10.1145/359576.359585",
+            "doi": "10.1145/359576.359585",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref52",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/359576.359585"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/359576.359585",
+                "doi": "10.1145/359576.359585",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/359576.359585"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "ref40",
+            "rawText": "dennis. 1992. Stream data types for signal processing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref40",
+              "author": "dennis",
+              "year": "1992",
+              "journal-title": "Stream data types for signal processing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref40",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "dennis"
+                ],
+                "year": 1992,
+                "venue": "Stream data types for signal processing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "ref4",
+            "rawText": "https://doi.org/10.1145/6490.6494",
+            "doi": "10.1145/6490.6494",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/6490.6494"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/6490.6494",
+                "doi": "10.1145/6490.6494",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/6490.6494"
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "ref3",
+            "rawText": "https://doi.org/10.1109/mc.1982.1653938",
+            "doi": "10.1109/mc.1982.1653938",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MC.1982.1653938"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/mc.1982.1653938",
+                "doi": "10.1109/mc.1982.1653938",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/MC.1982.1653938"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "ref6",
+            "rawText": "https://doi.org/10.1016/0743-7315(84)90008-x",
+            "doi": "10.1016/0743-7315(84)90008-x",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0743-7315(84)90008-X"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0743-7315(84)90008-x",
+                "doi": "10.1016/0743-7315(84)90008-x",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0743-7315(84)90008-x"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "ref5",
+            "rawText": "arvind. 1991. Advanced Topics in Data-Flow Computing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "author": "arvind",
+              "year": "1991",
+              "journal-title": "Advanced Topics in Data-Flow Computing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref5",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "arvind"
+                ],
+                "year": 1991,
+                "venue": "Advanced Topics in Data-Flow Computing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1109/mc.1982.1653940",
+            "doi": "10.1109/mc.1982.1653940",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MC.1982.1653940"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mc.1982.1653940",
+                "doi": "10.1109/mc.1982.1653940",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mc.1982.1653940"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "ref7",
+            "rawText": "arvind. Some relationships between asynchronous interpreters of a dataflow language. 1977. Formal Description of Programming Languages",
+            "doi": null,
+            "arxivId": null,
+            "year": 1977,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "article-title": "Some relationships between asynchronous interpreters of a dataflow language",
+              "author": "arvind",
+              "year": "1977",
+              "journal-title": "Formal Description of Programming Languages"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref7",
+                "doi": "",
+                "title": "Some relationships between asynchronous interpreters of a dataflow language",
+                "authors": [
+                  "arvind"
+                ],
+                "year": 1977,
+                "venue": "Formal Description of Programming Languages",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "ref49",
+            "rawText": "https://doi.org/10.1006/jpdc.1993.1065",
+            "doi": "10.1006/jpdc.1993.1065",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref49",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1006/jpdc.1993.1065"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1006/jpdc.1993.1065",
+                "doi": "10.1006/jpdc.1993.1065",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1006/jpdc.1993.1065"
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1145/69558.69562",
+            "doi": "10.1145/69558.69562",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/69558.69562"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/69558.69562",
+                "doi": "10.1145/69558.69562",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/69558.69562"
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "ref46",
+            "rawText": "https://doi.org/10.1109/5.97300",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref46",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/5.97300"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "ref45",
+            "rawText": "ha. 1992. \"Compile-Time Scheduling of Dataflow Program Graphs with Dynamic Constructs \"",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref45",
+              "author": "ha",
+              "year": "1992",
+              "journal-title": "\"Compile-Time Scheduling of Dataflow Program Graphs with Dynamic Constructs \""
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref45",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "ha"
+                ],
+                "year": 1992,
+                "venue": "\"Compile-Time Scheduling of Dataflow Program Graphs with Dynamic Constructs \"",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "ref48",
+            "rawText": "https://doi.org/10.1093/comjnl/35.6.555",
+            "doi": "10.1093/comjnl/35.6.555",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref48",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1093/comjnl/35.6.555"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1093/comjnl/35.6.555",
+                "doi": "10.1093/comjnl/35.6.555",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1093/comjnl/35.6.555"
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "ref47",
+            "rawText": "https://doi.org/10.1007/978-1-4757-2231-4",
+            "doi": "10.1007/978-1-4757-2231-4",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref47",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-1-4757-2231-4"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/978-1-4757-2231-4",
+                "doi": "10.1007/978-1-4757-2231-4",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-1-4757-2231-4"
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "ref42",
+            "rawText": "dijkstra. 1976. A Discipline of Programming",
+            "doi": null,
+            "arxivId": null,
+            "year": 1976,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref42",
+              "author": "dijkstra",
+              "year": "1976",
+              "journal-title": "A Discipline of Programming"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref42",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "dijkstra"
+                ],
+                "year": 1976,
+                "venue": "A Discipline of Programming",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "ref41",
+            "rawText": "desmet. ASSYNT: Efficient assembly code generation for DSP's starting from a data flowgraph. 1993. Trans ICASSP '93. https://doi.org/10.1109/icassp.1993.319431",
+            "doi": "10.1109/icassp.1993.319431",
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref41",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1109/ICASSP.1993.319431",
+              "article-title": "ASSYNT: Efficient assembly code generation for DSP's starting from a data flowgraph",
+              "author": "desmet",
+              "year": "1993",
+              "journal-title": "Trans ICASSP '93"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1993.319431",
+                "doi": "10.1109/icassp.1993.319431",
+                "title": "ASSYNT: Efficient assembly code generation for DSP's starting from a data flowgraph",
+                "authors": [
+                  "desmet"
+                ],
+                "year": 1993,
+                "venue": "Trans ICASSP '93",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1993.319431"
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "ref44",
+            "rawText": "https://doi.org/10.1145/319838.319848",
+            "doi": "10.1145/319838.319848",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref44",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/319838.319848"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/319838.319848",
+                "doi": "10.1145/319838.319848",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/319838.319848"
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "ref43",
+            "rawText": "https://doi.org/10.1016/0096-0551(90)90014-g",
+            "doi": "10.1016/0096-0551(90)90014-g",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref43",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0096-0551(90)90014-G"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0096-0551(90)90014-g",
+                "doi": "10.1016/0096-0551(90)90014-g",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0096-0551(90)90014-g"
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "ref73",
+            "rawText": "SISAL Streams and iteration in a single assignment language",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref73",
+              "year": "0",
+              "journal-title": "SISAL Streams and iteration in a single assignment language"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref73",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "SISAL Streams and iteration in a single assignment language",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "ref72",
+            "rawText": "mccarthy. 1978. Computer Programming and Formal Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref72",
+              "first-page": "33",
+              "author": "mccarthy",
+              "year": "1978",
+              "journal-title": "Computer Programming and Formal Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref72",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "mccarthy"
+                ],
+                "year": 1978,
+                "venue": "Computer Programming and Formal Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "ref71",
+            "rawText": "mccarthy. Recursive functions of symbolic expressions and the computation by machine, Part I. 1960. Comm ACM. https://doi.org/10.1145/367177.367199",
+            "doi": "10.1145/367177.367199",
+            "arxivId": null,
+            "year": 1960,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref71",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1145/367177.367199",
+              "article-title": "Recursive functions of symbolic expressions and the computation by machine, Part I",
+              "volume": "3",
+              "author": "mccarthy",
+              "year": "1960",
+              "journal-title": "Comm ACM"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/367177.367199",
+                "doi": "10.1145/367177.367199",
+                "title": "Recursive functions of symbolic expressions and the computation by machine, Part I",
+                "authors": [
+                  "mccarthy"
+                ],
+                "year": 1960,
+                "venue": "Comm ACM",
+                "type": "",
+                "url": "https://doi.org/10.1145/367177.367199"
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "ref70",
+            "rawText": "https://doi.org/10.1016/0022-0000(93)90034-t",
+            "doi": "10.1016/0022-0000(93)90034-t",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref70",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0022-0000(93)90034-T"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0022-0000(93)90034-t",
+                "doi": "10.1016/0022-0000(93)90034-t",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0022-0000(93)90034-t"
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "ref76",
+            "rawText": "https://doi.org/10.1109/wvl.1992.275768",
+            "doi": "10.1109/wvl.1992.275768",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref76",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/WVL.1992.275768"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/wvl.1992.275768",
+                "doi": "10.1109/wvl.1992.275768",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/wvl.1992.275768"
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "ref77",
+            "rawText": "onanian. 1989. A signal processing language for coarse grain dataflow multiprocessors. https://doi.org/10.21236/ada213863",
+            "doi": "10.21236/ada213863",
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref77",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.21236/ADA213863",
+              "author": "onanian",
+              "year": "1989",
+              "journal-title": "A signal processing language for coarse grain dataflow multiprocessors"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.21236/ada213863",
+                "doi": "10.21236/ada213863",
+                "title": "",
+                "authors": [
+                  "onanian"
+                ],
+                "year": 1989,
+                "venue": "A signal processing language for coarse grain dataflow multiprocessors",
+                "type": "",
+                "url": "https://doi.org/10.21236/ada213863"
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "ref74",
+            "rawText": "milner. 1989. Communication and Concurrency",
+            "doi": null,
+            "arxivId": null,
+            "year": 1989,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref74",
+              "author": "milner",
+              "year": "1989",
+              "journal-title": "Communication and Concurrency"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref74",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "milner"
+                ],
+                "year": 1989,
+                "venue": "Communication and Concurrency",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "ref75",
+            "rawText": "https://doi.org/10.1109/wvl.1990.128409",
+            "doi": "10.1109/wvl.1990.128409",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref75",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/WVL.1990.128409"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/wvl.1990.128409",
+                "doi": "10.1109/wvl.1990.128409",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/wvl.1990.128409"
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "ref78",
+            "rawText": "panagaden. The expressive power of indeterminate dataflow primitives. 1992. Inf Comput",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref78",
+              "article-title": "The expressive power of indeterminate dataflow primitives",
+              "volume": "98",
+              "author": "panagaden",
+              "year": "1992",
+              "journal-title": "Inf Comput"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref78",
+                "doi": "",
+                "title": "The expressive power of indeterminate dataflow primitives",
+                "authors": [
+                  "panagaden"
+                ],
+                "year": 1992,
+                "venue": "Inf Comput",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "ref79",
+            "rawText": "https://doi.org/10.1109/acssc.1994.471622",
+            "doi": "10.1109/acssc.1994.471622",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref79",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ACSSC.1994.471622"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/acssc.1994.471622",
+                "doi": "10.1109/acssc.1994.471622",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/acssc.1994.471622"
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "ref60",
+            "rawText": "kaplan. 1987. Processing graph method specification version 1 0",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref60",
+              "author": "kaplan",
+              "year": "1987",
+              "journal-title": "Processing graph method specification version 1 0"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref60",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "kaplan"
+                ],
+                "year": 1987,
+                "venue": "Processing graph method specification version 1 0",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "ref62",
+            "rawText": "https://doi.org/10.1145/363744.363749",
+            "doi": "10.1145/363744.363749",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref62",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/363744.363749"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/363744.363749",
+                "doi": "10.1145/363744.363749",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/363744.363749"
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "ref61",
+            "rawText": "https://doi.org/10.1137/0114108",
+            "doi": "10.1137/0114108",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref61",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1137/0114108"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1137/0114108",
+                "doi": "10.1137/0114108",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1137/0114108"
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "ref63",
+            "rawText": "https://doi.org/10.1109/iwrsp.1994.315905",
+            "doi": "10.1109/iwrsp.1994.315905",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref63",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/IWRSP.1994.315905"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iwrsp.1994.315905",
+                "doi": "10.1109/iwrsp.1994.315905",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iwrsp.1994.315905"
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "ref64",
+            "rawText": "https://doi.org/10.1109/71.89067",
+            "doi": "10.1109/71.89067",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref64",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/71.89067"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/71.89067",
+                "doi": "10.1109/71.89067",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/71.89067"
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "ref65",
+            "rawText": "https://doi.org/10.1109/icassp.1993.319153",
+            "doi": "10.1109/icassp.1993.319153",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref65",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1993.319153"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1993.319153",
+                "doi": "10.1109/icassp.1993.319153",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1993.319153"
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "ref66",
+            "rawText": "https://doi.org/10.1109/tc.1987.5009446",
+            "doi": "10.1109/tc.1987.5009446",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref66",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.1987.5009446"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tc.1987.5009446",
+                "doi": "10.1109/tc.1987.5009446",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/TC.1987.5009446"
+              }
+            }
+          },
+          {
+            "index": 64,
+            "label": "ref67",
+            "rawText": "https://doi.org/10.1109/proc.1987.13876",
+            "doi": "10.1109/proc.1987.13876",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref67",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/PROC.1987.13876"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/proc.1987.13876",
+                "doi": "10.1109/proc.1987.13876",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/PROC.1987.13876"
+              }
+            }
+          },
+          {
+            "index": 65,
+            "label": "ref68",
+            "rawText": "le guemic. Programming real-time applications with SIGNAL. 1991. Proc IEEE",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref68",
+              "article-title": "Programming real-time applications with SIGNAL",
+              "volume": "79",
+              "author": "le guemic",
+              "year": "1991",
+              "journal-title": "Proc IEEE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref68",
+                "doi": "",
+                "title": "Programming real-time applications with SIGNAL",
+                "authors": [
+                  "le guemic"
+                ],
+                "year": 1991,
+                "venue": "Proc IEEE",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 66,
+            "label": "ref2",
+            "rawText": "abramsky. 1984. Distributed Computing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1984,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "author": "abramsky",
+              "year": "1984",
+              "journal-title": "Distributed Computing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "abramsky"
+                ],
+                "year": 1984,
+                "venue": "Distributed Computing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 67,
+            "label": "ref69",
+            "rawText": "maffe�s. From signal to fine-grain parallel implementations. 1994. Proc Int Conf Parallel Architectures and Compilation Techniques",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref69",
+              "first-page": "237",
+              "article-title": "From signal to fine-grain parallel implementations",
+              "author": "maffe�s",
+              "year": "1994",
+              "journal-title": "Proc Int Conf Parallel Architectures and Compilation Techniques"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref69",
+                "doi": "",
+                "title": "From signal to fine-grain parallel implementations",
+                "authors": [
+                  "maffe�s"
+                ],
+                "year": 1994,
+                "venue": "Proc Int Conf Parallel Architectures and Compilation Techniques",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 68,
+            "label": "ref1",
+            "rawText": "abelson. 1985. Structure and Interpretation of Computer Programs",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "author": "abelson",
+              "year": "1985",
+              "journal-title": "Structure and Interpretation of Computer Programs"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "abelson"
+                ],
+                "year": 1985,
+                "venue": "Structure and Interpretation of Computer Programs",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 69,
+            "label": "ref95",
+            "rawText": "vuillemin. 1973. Proof Techniques for Recursive Programs",
+            "doi": null,
+            "arxivId": null,
+            "year": 1973,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref95",
+              "author": "vuillemin",
+              "year": "1973",
+              "journal-title": "Proof Techniques for Recursive Programs"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref95",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "vuillemin"
+                ],
+                "year": 1973,
+                "venue": "Proof Techniques for Recursive Programs",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 70,
+            "label": "ref94",
+            "rawText": "suhler. TDFL: A task-level dataflow language. 1990. J Parallel and Distributed Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 1990,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref94",
+              "article-title": "TDFL: A task-level dataflow language",
+              "volume": "9",
+              "author": "suhler",
+              "year": "1990",
+              "journal-title": "J Parallel and Distributed Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref94",
+                "doi": "",
+                "title": "TDFL: A task-level dataflow language",
+                "authors": [
+                  "suhler"
+                ],
+                "year": 1990,
+                "venue": "J Parallel and Distributed Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 71,
+            "label": "ref93",
+            "rawText": "https://doi.org/10.1109/mc.1986.1663181",
+            "doi": "10.1109/mc.1986.1663181",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref93",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MC.1986.1663181"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/mc.1986.1663181",
+                "doi": "10.1109/mc.1986.1663181",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/mc.1986.1663181"
+              }
+            }
+          },
+          {
+            "index": 72,
+            "label": "ref92",
+            "rawText": "skillcorn. 1991. Advanced Topics in Data-Flow Computing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref92",
+              "author": "skillcorn",
+              "year": "1991",
+              "journal-title": "Advanced Topics in Data-Flow Computing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref92",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "skillcorn"
+                ],
+                "year": 1991,
+                "venue": "Advanced Topics in Data-Flow Computing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 73,
+            "label": "ref91",
+            "rawText": "https://doi.org/10.1109/71.242160",
+            "doi": "10.1109/71.242160",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref91",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/71.242160"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/71.242160",
+                "doi": "10.1109/71.242160",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/71.242160"
+              }
+            }
+          },
+          {
+            "index": 74,
+            "label": "ref23b",
+            "rawText": "1994. Advanced Topics in Dataflow Computing and Multithreading",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23b",
+              "year": "1994",
+              "journal-title": "Advanced Topics in Dataflow Computing and Multithreading"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref23b",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 1994,
+                "venue": "Advanced Topics in Dataflow Computing and Multithreading",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 75,
+            "label": "ref90",
+            "rawText": "https://doi.org/10.1109/71.207593",
+            "doi": "10.1109/71.207593",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref90",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/71.207593"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/71.207593",
+                "doi": "10.1109/71.207593",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/71.207593"
+              }
+            }
+          },
+          {
+            "index": 76,
+            "label": "ref23a",
+            "rawText": "https://doi.org/10.1109/icassp.1993.319147",
+            "doi": "10.1109/icassp.1993.319147",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23a",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1993.319147"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1993.319147",
+                "doi": "10.1109/icassp.1993.319147",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1993.319147"
+              }
+            }
+          },
+          {
+            "index": 77,
+            "label": "ref96",
+            "rawText": "wadge. 1985. Lucid the Dataflow Programming Language",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref96",
+              "author": "wadge",
+              "year": "1985",
+              "journal-title": "Lucid the Dataflow Programming Language"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref96",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "wadge"
+                ],
+                "year": 1985,
+                "venue": "Lucid the Dataflow Programming Language",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 78,
+            "label": "ref97",
+            "rawText": "wendelborn. 1994. Advanced Topics in Dataflow Computing and Multithreading",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref97",
+              "author": "wendelborn",
+              "year": "1994",
+              "journal-title": "Advanced Topics in Dataflow Computing and Multithreading"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref97",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "wendelborn"
+                ],
+                "year": 1994,
+                "venue": "Advanced Topics in Dataflow Computing and Multithreading",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 79,
+            "label": "ref10",
+            "rawText": "ashcroft. Operator nets. 1985. Proc IFIP TC-10 Working Conf on Fifth-Generation Computer Architectures",
+            "doi": null,
+            "arxivId": null,
+            "year": 1985,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "article-title": "Operator nets",
+              "author": "ashcroft",
+              "year": "1985",
+              "journal-title": "Proc IFIP TC-10 Working Conf on Fifth-Generation Computer Architectures"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "Operator nets",
+                "authors": [
+                  "ashcroft"
+                ],
+                "year": 1985,
+                "venue": "Proc IFIP TC-10 Working Conf on Fifth-Generation Computer Architectures",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 80,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1109/5.97297",
+            "doi": "10.1109/5.97297",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/5.97297"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/5.97297",
+                "doi": "10.1109/5.97297",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97297"
+              }
+            }
+          },
+          {
+            "index": 81,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1109/9.53519",
+            "doi": "10.1109/9.53519",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/9.53519"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/9.53519",
+                "doi": "10.1109/9.53519",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/9.53519"
+              }
+            }
+          },
+          {
+            "index": 82,
+            "label": "ref13",
+            "rawText": "benveniste. 1994. A Decade of Concurrency?Reflections and Perspectives",
+            "doi": null,
+            "arxivId": null,
+            "year": 1994,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "author": "benveniste",
+              "year": "1994",
+              "journal-title": "A Decade of Concurrency?Reflections and Perspectives"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref13",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "benveniste"
+                ],
+                "year": 1994,
+                "venue": "A Decade of Concurrency?Reflections and Perspectives",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 83,
+            "label": "ref14",
+            "rawText": "berry. Bottom-up computation of recursive programs. 1976. Revue Frangaise d'Automatique Informatique et Recherche Opirationnelle. https://doi.org/10.1051/ita/197610r100471",
+            "doi": "10.1051/ita/197610r100471",
+            "arxivId": null,
+            "year": 1976,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "crossref",
+              "first-page": "47",
+              "DOI": "10.1051/ita/197610R100471",
+              "article-title": "Bottom-up computation of recursive programs",
+              "volume": "10",
+              "author": "berry",
+              "year": "1976",
+              "journal-title": "Revue Frangaise d'Automatique Informatique et Recherche Opirationnelle"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1051/ita/197610r100471",
+                "doi": "10.1051/ita/197610r100471",
+                "title": "Bottom-up computation of recursive programs",
+                "authors": [
+                  "berry"
+                ],
+                "year": 1976,
+                "venue": "Revue Frangaise d'Automatique Informatique et Recherche Opirationnelle",
+                "type": "",
+                "url": "https://doi.org/10.1051/ita/197610r100471"
+              }
+            }
+          },
+          {
+            "index": 84,
+            "label": "ref15",
+            "rawText": "bhattacharyya. Memory management for synchronous dataflow programs. 1995. IEEE Trans Signal Process",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "article-title": "Memory management for synchronous dataflow programs",
+              "author": "bhattacharyya",
+              "year": "1995",
+              "journal-title": "IEEE Trans Signal Process"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref15",
+                "doi": "",
+                "title": "Memory management for synchronous dataflow programs",
+                "authors": [
+                  "bhattacharyya"
+                ],
+                "year": 1995,
+                "venue": "IEEE Trans Signal Process",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 85,
+            "label": "ref16",
+            "rawText": "bhattacharyya. 1993. Looped schedules for dataflow descriptions of multirate signal processing algorithms",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "author": "bhattacharyya",
+              "year": "1993",
+              "journal-title": "Looped schedules for dataflow descriptions of multirate signal processing algorithms"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref16",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "bhattacharyya"
+                ],
+                "year": 1993,
+                "venue": "Looped schedules for dataflow descriptions of multirate signal processing algorithms",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 86,
+            "label": "ref82",
+            "rawText": "printz. 1991. Automatic mapping of large signal processing systems to a parallel machine",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref82",
+              "author": "printz",
+              "year": "1991",
+              "journal-title": "Automatic mapping of large signal processing systems to a parallel machine"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref82",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "printz"
+                ],
+                "year": 1991,
+                "venue": "Automatic mapping of large signal processing systems to a parallel machine",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 87,
+            "label": "ref17",
+            "rawText": "https://doi.org/10.1109/vlsisp.1994.574738",
+            "doi": "10.1109/vlsisp.1994.574738",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/VLSISP.1994.574738"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/vlsisp.1994.574738",
+                "doi": "10.1109/vlsisp.1994.574738",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/vlsisp.1994.574738"
+              }
+            }
+          },
+          {
+            "index": 88,
+            "label": "ref81",
+            "rawText": "https://doi.org/10.1109/icassp.1992.226560",
+            "doi": "10.1109/icassp.1992.226560",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref81",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1992.226560"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1992.226560",
+                "doi": "10.1109/icassp.1992.226560",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1992.226560"
+              }
+            }
+          },
+          {
+            "index": 89,
+            "label": "ref18",
+            "rawText": "https://doi.org/10.1007/3-540-19020-1_26",
+            "doi": "10.1007/3-540-19020-1_26",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/3-540-19020-1_26"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/3-540-19020-1_26",
+                "doi": "10.1007/3-540-19020-1_26",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-19020-1_26"
+              }
+            }
+          },
+          {
+            "index": 90,
+            "label": "ref84",
+            "rawText": "https://doi.org/10.1016/s1045-926x(06)80007-8",
+            "doi": "10.1016/s1045-926x(06)80007-8",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref84",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/S1045-926X(06)80007-8"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/s1045-926x(06)80007-8",
+                "doi": "10.1016/s1045-926x(06)80007-8",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/s1045-926x(06)80007-8"
+              }
+            }
+          },
+          {
+            "index": 91,
+            "label": "ref19",
+            "rawText": "boussinot. 1981. Reseaux de processus avec melange equitable Une approche du temps reel",
+            "doi": null,
+            "arxivId": null,
+            "year": 1981,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "author": "boussinot",
+              "year": "1981",
+              "journal-title": "Reseaux de processus avec melange equitable Une approche du temps reel"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref19",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "boussinot"
+                ],
+                "year": 1981,
+                "venue": "Reseaux de processus avec melange equitable Une approche du temps reel",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 92,
+            "label": "ref83",
+            "rawText": "https://doi.org/10.1109/54.82037",
+            "doi": "10.1109/54.82037",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref83",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/54.82037"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/54.82037",
+                "doi": "10.1109/54.82037",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/54.82037"
+              }
+            }
+          },
+          {
+            "index": 93,
+            "label": "ref80",
+            "rawText": "pino. Software synthesis for DSP using Ptolemy. 1995. J VLSI Signal Process. https://doi.org/10.1007/bf02406468",
+            "doi": "10.1007/bf02406468",
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref80",
+              "doi-asserted-by": "crossref",
+              "first-page": "7",
+              "DOI": "10.1007/BF02406468",
+              "article-title": "Software synthesis for DSP using Ptolemy",
+              "volume": "9",
+              "author": "pino",
+              "year": "1995",
+              "journal-title": "J VLSI Signal Process"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf02406468",
+                "doi": "10.1007/bf02406468",
+                "title": "Software synthesis for DSP using Ptolemy",
+                "authors": [
+                  "pino"
+                ],
+                "year": 1995,
+                "venue": "J VLSI Signal Process",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf02406468"
+              }
+            }
+          },
+          {
+            "index": 94,
+            "label": "ref89",
+            "rawText": "shanmugan. Block-oriented system simulator (BOSS). 1987. Telecom Lab J",
+            "doi": null,
+            "arxivId": null,
+            "year": 1987,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref89",
+              "article-title": "Block-oriented system simulator (BOSS)",
+              "author": "shanmugan",
+              "year": "1987",
+              "journal-title": "Telecom Lab J"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref89",
+                "doi": "",
+                "title": "Block-oriented system simulator (BOSS)",
+                "authors": [
+                  "shanmugan"
+                ],
+                "year": 1987,
+                "venue": "Telecom Lab J",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 95,
+            "label": "ref85",
+            "rawText": "reekie. 1992. Toward Effective Programming for Parallel Digital Signal Processing",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref85",
+              "author": "reekie",
+              "year": "1992",
+              "journal-title": "Toward Effective Programming for Parallel Digital Signal Processing"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref85",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "reekie"
+                ],
+                "year": 1992,
+                "venue": "Toward Effective Programming for Parallel Digital Signal Processing",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 96,
+            "label": "ref86",
+            "rawText": "reekie. Integrating block-diagram and textual programming for parallel DSP. 1992. Proc Int Symp Signal Process Its Applicat",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref86",
+              "article-title": "Integrating block-diagram and textual programming for parallel DSP",
+              "author": "reekie",
+              "year": "1992",
+              "journal-title": "Proc Int Symp Signal Process Its Applicat"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref86",
+                "doi": "",
+                "title": "Integrating block-diagram and textual programming for parallel DSP",
+                "authors": [
+                  "reekie"
+                ],
+                "year": 1992,
+                "venue": "Proc Int Symp Signal Process Its Applicat",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 97,
+            "label": "ref87",
+            "rawText": "reekie. Transforming process networks. 1992. Massey Functional Programming Workshop",
+            "doi": null,
+            "arxivId": null,
+            "year": 1992,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref87",
+              "article-title": "Transforming process networks",
+              "author": "reekie",
+              "year": "1992",
+              "journal-title": "Massey Functional Programming Workshop"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref87",
+                "doi": "",
+                "title": "Transforming process networks",
+                "authors": [
+                  "reekie"
+                ],
+                "year": 1992,
+                "venue": "Massey Functional Programming Workshop",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 98,
+            "label": "ref88",
+            "rawText": "https://doi.org/10.1109/icassp.1994.389623",
+            "doi": "10.1109/icassp.1994.389623",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref88",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICASSP.1994.389623"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/icassp.1994.389623",
+                "doi": "10.1109/icassp.1994.389623",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/icassp.1994.389623"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/5.381846",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 9,
+          "extractedReferenceCount": 98,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/5.381846",
+          "crossrefReferenceCount": 98
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/5.381846->doi:10.1016/s0022-0000(71)80013-2@papers-dataflow-Lee1995.pdf",
+      "source": "doi:10.1109/5.381846",
+      "target": "doi:10.1016/s0022-0000(71)80013-2",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lee1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/5.381846->title:ptolemy a framework for simulating and prototyping heterogeneous systems:1994@papers-dataflow-Lee1995.pdf",
+      "source": "doi:10.1109/5.381846",
+      "target": "title:ptolemy a framework for simulating and prototyping heterogeneous systems:1994",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lee1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/5.381846->title:the semantics of a simple language for parallel programming:1974@papers-dataflow-Lee1995.pdf",
+      "source": "doi:10.1109/5.381846",
+      "target": "title:the semantics of a simple language for parallel programming:1974",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lee1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/5.381846->doi:10.1109/mc.1982.1653938@papers-dataflow-Lee1995.pdf",
+      "source": "doi:10.1109/5.381846",
+      "target": "doi:10.1109/mc.1982.1653938",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lee1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/5.381846->doi:10.1109/5.97300@papers-dataflow-Lee1995.pdf",
+      "source": "doi:10.1109/5.381846",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lee1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/5.381846->doi:10.1137/0114108@papers-dataflow-Lee1995.pdf",
+      "source": "doi:10.1109/5.381846",
+      "target": "doi:10.1137/0114108",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lee1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/5.381846->doi:10.1109/tc.1987.5009446@papers-dataflow-Lee1995.pdf",
+      "source": "doi:10.1109/5.381846",
+      "target": "doi:10.1109/tc.1987.5009446",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lee1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/5.381846->doi:10.1109/proc.1987.13876@papers-dataflow-Lee1995.pdf",
+      "source": "doi:10.1109/5.381846",
+      "target": "doi:10.1109/proc.1987.13876",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lee1995.pdf"
+    },
+    {
+      "id": "doi:10.1109/5.381846->doi:10.1109/71.207593@papers-dataflow-Lee1995.pdf",
+      "source": "doi:10.1109/5.381846",
+      "target": "doi:10.1109/71.207593",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Lee1995.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Lee1995",
+      "paperId": "doi:10.1109/5.381846",
+      "metadata": {
+        "fileName": "Lee1995.pdf",
+        "sourcePath": "papers/dataflow/Lee1995.pdf"
+      }
+    }
+  ]
+}

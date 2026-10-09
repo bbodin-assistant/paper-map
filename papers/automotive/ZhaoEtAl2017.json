@@ -1,0 +1,2038 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:45.707730+00:00",
+  "papers": [
+    {
+      "key": "ZhaoEtAl2017",
+      "paper": {
+        "id": "doi:10.1109/tits.2016.2582208",
+        "citationKey": "ZhaoEtAl2017",
+        "title": "Accelerated Evaluation of Automated Vehicles Safety in Lane-Change Scenarios Based on Importance Sampling Techniques",
+        "authors": [
+          "Ding Zhao",
+          "Henry Lam",
+          "Huei Peng",
+          "Shan Bao",
+          "David J. LeBlanc",
+          "Kazutoshi Nobukawa",
+          "Christopher S. Pan"
+        ],
+        "year": 2017,
+        "venue": "IEEE Transactions on Intelligent Transportation Systems",
+        "type": "article",
+        "doi": "10.1109/TITS.2016.2582208",
+        "arxivId": "",
+        "url": "https://stacks.cdc.gov/view/cdc/203436",
+        "abstract": "",
+        "keywords": [
+          "primary-research",
+          "automated-driving",
+          "importance-sampling",
+          "validation"
+        ],
+        "topics": [],
+        "tags": [
+          "report:Automotive_Programming_and_Modeling_Scientific_Report"
+        ],
+        "notes": "Method flow, Table II and conclusion checked 2026-09-20; acceleration is scoped to the modeled lane-change setting.",
+        "bibtexFields": {
+          "author": "Zhao, Ding and Lam, Henry and Peng, Huei and Bao, Shan and LeBlanc, David J. and\n    Nobukawa, Kazutoshi and Pan, Christopher S.",
+          "title": "Accelerated Evaluation of Automated Vehicles Safety in Lane-Change Scenarios Based on\n    Importance Sampling Techniques",
+          "journal": "IEEE Transactions on Intelligent Transportation Systems",
+          "volume": "18",
+          "number": "3",
+          "pages": "595--607",
+          "year": "2017",
+          "doi": "10.1109/TITS.2016.2582208",
+          "url": "https://stacks.cdc.gov/view/cdc/203436",
+          "note": "Method flow, Table II and conclusion checked 2026-09-20; acceleration is scoped to the\n    modeled lane-change setting.",
+          "keywords": "primary-research, automated-driving, importance-sampling, validation"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.190908+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref39",
+            "rawText": "https://doi.org/10.1115/dscc2015-9718",
+            "doi": "10.1115/dscc2015-9718",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref39",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1115/DSCC2015-9718"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1115/dscc2015-9718",
+                "doi": "10.1115/dscc2015-9718",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1115/dscc2015-9718"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref38",
+            "rawText": "https://doi.org/10.1201/b21185-33",
+            "doi": "10.1201/b21185-33",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref38",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1201/b21185-33"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1201/b21185-33",
+                "doi": "10.1201/b21185-33",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1201/b21185-33"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref33",
+            "rawText": "https://doi.org/10.4271/2014-01-0158",
+            "doi": "10.4271/2014-01-0158",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref33",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.4271/2014-01-0158"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.4271/2014-01-0158",
+                "doi": "10.4271/2014-01-0158",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.4271/2014-01-0158"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref32",
+            "rawText": "2014. Event Data Recorder (EDR)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref32",
+              "year": "2014",
+              "journal-title": "Event Data Recorder (EDR)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref32",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "Event Data Recorder (EDR)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref31",
+            "rawText": "2014. NCSA Publications & Data Requests",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref31",
+              "year": "2014",
+              "journal-title": "NCSA Publications & Data Requests"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref31",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "NCSA Publications & Data Requests",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref30",
+            "rawText": "2014. NASS General Estimates System",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref30",
+              "year": "2014",
+              "journal-title": "NASS General Estimates System"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref30",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2014,
+                "venue": "NASS General Estimates System",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref37",
+            "rawText": "kou. 2010. Development and Evaluation of Integrated Chassis Control Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref37",
+              "author": "kou",
+              "year": "2010",
+              "journal-title": "Development and Evaluation of Integrated Chassis Control Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref37",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "kou"
+                ],
+                "year": 2010,
+                "venue": "Development and Evaluation of Integrated Chassis Control Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref36",
+            "rawText": "https://doi.org/10.1080/00423110412331290419",
+            "doi": "10.1080/00423110412331290419",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref36",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/00423110412331290419"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1080/00423110412331290419",
+                "doi": "10.1080/00423110412331290419",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1080/00423110412331290419"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref35",
+            "rawText": "https://doi.org/10.1115/1.2802454",
+            "doi": "10.1115/1.2802454",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref35",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1115/1.2802454"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1115/1.2802454",
+                "doi": "10.1115/1.2802454",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1115/1.2802454"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref34",
+            "rawText": "peng. Evaluation of the performance and safety of automated vehicles. 2012. Cyber-Phys Syst (CPS) Nat Sci Found Arlington VA USA",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref34",
+              "article-title": "Evaluation of the performance and safety of automated vehicles",
+              "author": "peng",
+              "year": "2012",
+              "journal-title": "Cyber-Phys Syst (CPS) Nat Sci Found Arlington VA USA"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref34",
+                "doi": "",
+                "title": "Evaluation of the performance and safety of automated vehicles",
+                "authors": [
+                  "peng"
+                ],
+                "year": 2012,
+                "venue": "Cyber-Phys Syst (CPS) Nat Sci Found Arlington VA USA",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref60",
+            "rawText": "2011. Comparative Test of Advanced Emergency Braking Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref60",
+              "year": "2011",
+              "journal-title": "Comparative Test of Advanced Emergency Braking Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref60",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "Comparative Test of Advanced Emergency Braking Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref62",
+            "rawText": "Mechanical Simulation Corporation",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref62",
+              "year": "0",
+              "journal-title": "Mechanical Simulation Corporation"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref62",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 0,
+                "venue": "Mechanical Simulation Corporation",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref61",
+            "rawText": "gorman. 2013. Prospects for the collision-free car The effectiveness of five competing forward collision avoidance systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref61",
+              "author": "gorman",
+              "year": "2013",
+              "journal-title": "Prospects for the collision-free car The effectiveness of five competing forward collision avoidance systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref61",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "gorman"
+                ],
+                "year": 2013,
+                "venue": "Prospects for the collision-free car The effectiveness of five competing forward collision avoidance systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref63",
+            "rawText": "https://doi.org/10.1109/tits.2012.2191542",
+            "doi": "10.1109/tits.2012.2191542",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref63",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TITS.2012.2191542"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tits.2012.2191542",
+                "doi": "10.1109/tits.2012.2191542",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tits.2012.2191542"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref28",
+            "rawText": "bühne. 2012. Assessment of integrated vehicle safety systems for improved vehicle",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref28",
+              "author": "bühne",
+              "year": "2012",
+              "journal-title": "Assessment of integrated vehicle safety systems for improved vehicle"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref28",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "bühne"
+                ],
+                "year": 2012,
+                "venue": "Assessment of integrated vehicle safety systems for improved vehicle",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref27",
+            "rawText": "wohllebe. 2004. Integrated project on advanced protection systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref27",
+              "author": "wohllebe",
+              "year": "2004",
+              "journal-title": "Integrated project on advanced protection systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref27",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "wohllebe"
+                ],
+                "year": 2004,
+                "venue": "Integrated project on advanced protection systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "ref29",
+            "rawText": "najm. 2007. Development of crash imminent test scenarios for integrated vehicle-based safety systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref29",
+              "author": "najm",
+              "year": "2007",
+              "journal-title": "Development of crash imminent test scenarios for integrated vehicle-based safety systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref29",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "najm"
+                ],
+                "year": 2007,
+                "venue": "Development of crash imminent test scenarios for integrated vehicle-based safety systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "ref2",
+            "rawText": "laslau. 2014. Set autopilot for profits Capitalizing on the $87 billion self-driving car opportunity",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "author": "laslau",
+              "year": "2014",
+              "journal-title": "Set autopilot for profits Capitalizing on the $87 billion self-driving car opportunity"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref2",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "laslau"
+                ],
+                "year": 2014,
+                "venue": "Set autopilot for profits Capitalizing on the $87 billion self-driving car opportunity",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "ref1",
+            "rawText": "lewis. 2014. The Economic Benefits of Driverless Cars",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "author": "lewis",
+              "year": "2014",
+              "journal-title": "The Economic Benefits of Driverless Cars"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "lewis"
+                ],
+                "year": 2014,
+                "venue": "The Economic Benefits of Driverless Cars",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "ref20",
+            "rawText": "lee. 2004. Longitudinal Driver Model and Collision Warning and Avoidance Algorithms based on Human Driving Databases",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref20",
+              "author": "lee",
+              "year": "2004",
+              "journal-title": "Longitudinal Driver Model and Collision Warning and Avoidance Algorithms based on Human Driving Databases"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref20",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "lee"
+                ],
+                "year": 2004,
+                "venue": "Longitudinal Driver Model and Collision Warning and Avoidance Algorithms based on Human Driving Databases",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "ref22",
+            "rawText": "2013. Euro NCAP test protocol&#x2014;AEB systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref22",
+              "year": "2013",
+              "journal-title": "Euro NCAP test protocol&#x2014;AEB systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref22",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "Euro NCAP test protocol&#x2014;AEB systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": "ref21",
+            "rawText": "woodrooffe. 2014. Performance characterization and safety effectiveness estimates of forward collision avoidance and mitigation systems for medium/heavy commercial vehicles",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref21",
+              "author": "woodrooffe",
+              "year": "2014",
+              "journal-title": "Performance characterization and safety effectiveness estimates of forward collision avoidance and mitigation systems for medium/heavy commercial vehicles"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref21",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "woodrooffe"
+                ],
+                "year": 2014,
+                "venue": "Performance characterization and safety effectiveness estimates of forward collision avoidance and mitigation systems for medium/heavy commercial vehicles",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": "ref24",
+            "rawText": "carsten. 2005. Human machine interaction and the safety of traffic in Europe final report",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref24",
+              "author": "carsten",
+              "year": "2005",
+              "journal-title": "Human machine interaction and the safety of traffic in Europe final report"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref24",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "carsten"
+                ],
+                "year": 2005,
+                "venue": "Human machine interaction and the safety of traffic in Europe final report",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": "ref23",
+            "rawText": "deering. 2002. Crash avoidance metrics partnership annual report April 2001&#x2013;March 2002",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref23",
+              "author": "deering",
+              "year": "2002",
+              "journal-title": "Crash avoidance metrics partnership annual report April 2001&#x2013;March 2002"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref23",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "deering"
+                ],
+                "year": 2002,
+                "venue": "Crash avoidance metrics partnership annual report April 2001&#x2013;March 2002",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": "ref26",
+            "rawText": "karabatsou. 2007. A-priori evaluation of safety functions effectiveness&#x2014;Methodologies Table of Contents",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref26",
+              "author": "karabatsou",
+              "year": "2007",
+              "journal-title": "A-priori evaluation of safety functions effectiveness&#x2014;Methodologies Table of Contents"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref26",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "karabatsou"
+                ],
+                "year": 2007,
+                "venue": "A-priori evaluation of safety functions effectiveness&#x2014;Methodologies Table of Contents",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": "ref25",
+            "rawText": "kussmann. 2004. Requirements for AIDE HMI and safety functions",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref25",
+              "author": "kussmann",
+              "year": "2004",
+              "journal-title": "Requirements for AIDE HMI and safety functions"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref25",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "kussmann"
+                ],
+                "year": 2004,
+                "venue": "Requirements for AIDE HMI and safety functions",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": "ref50",
+            "rawText": "https://doi.org/10.1145/203091.203094",
+            "doi": "10.1145/203091.203094",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref50",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/203091.203094"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/203091.203094",
+                "doi": "10.1145/203091.203094",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/203091.203094"
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": "ref51",
+            "rawText": "https://doi.org/10.1287/mnsc.1050.0415",
+            "doi": "10.1287/mnsc.1050.0415",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref51",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1287/mnsc.1050.0415"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1287/mnsc.1050.0415",
+                "doi": "10.1287/mnsc.1050.0415",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1287/mnsc.1050.0415"
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": "ref59",
+            "rawText": "https://doi.org/10.1017/cbo9780511844577",
+            "doi": "10.1017/cbo9780511844577",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref59",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1017/CBO9780511844577"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1017/cbo9780511844577",
+                "doi": "10.1017/cbo9780511844577",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1017/cbo9780511844577"
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": "ref58",
+            "rawText": "https://doi.org/10.1023/a:1010091220143",
+            "doi": "10.1023/a:1010091220143",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref58",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1010091220143"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/a:1010091220143",
+                "doi": "10.1023/a:1010091220143",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/a:1010091220143"
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": "ref57",
+            "rawText": "royden. 1948. Real Analysis",
+            "doi": null,
+            "arxivId": null,
+            "year": 1948,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref57",
+              "author": "royden",
+              "year": "1948",
+              "journal-title": "Real Analysis"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref57",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "royden"
+                ],
+                "year": 1948,
+                "venue": "Real Analysis",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": "ref56",
+            "rawText": "juneja. Chapter 11 Rare-Event Simulation Techniques: An Introduction and Recent Advances. 2006. Handbooks Oper Res Manage Sci. https://doi.org/10.1016/s0927-0507(06)13011-x",
+            "doi": "10.1016/s0927-0507(06)13011-x",
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref56",
+              "doi-asserted-by": "crossref",
+              "first-page": "291",
+              "DOI": "10.1016/S0927-0507(06)13011-X",
+              "article-title": "Chapter 11 Rare-Event Simulation Techniques: An Introduction and Recent Advances",
+              "volume": "13",
+              "author": "juneja",
+              "year": "2006",
+              "journal-title": "Handbooks Oper Res Manage Sci"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/s0927-0507(06)13011-x",
+                "doi": "10.1016/s0927-0507(06)13011-x",
+                "title": "Chapter 11 Rare-Event Simulation Techniques: An Introduction and Recent Advances",
+                "authors": [
+                  "juneja"
+                ],
+                "year": 2006,
+                "venue": "Handbooks Oper Res Manage Sci",
+                "type": "",
+                "url": "https://doi.org/10.1016/s0927-0507(06)13011-x"
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": "ref55",
+            "rawText": "https://doi.org/10.1016/j.sorms.2011.09.002",
+            "doi": "10.1016/j.sorms.2011.09.002",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref55",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.sorms.2011.09.002"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/j.sorms.2011.09.002",
+                "doi": "10.1016/j.sorms.2011.09.002",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/j.sorms.2011.09.002"
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": "ref54",
+            "rawText": "bucklew. 2010. Introduction to Rare Event Simulation",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref54",
+              "author": "bucklew",
+              "year": "2010",
+              "journal-title": "Introduction to Rare Event Simulation"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref54",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "bucklew"
+                ],
+                "year": 2010,
+                "venue": "Introduction to Rare Event Simulation",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": "ref53",
+            "rawText": "https://doi.org/10.1016/0166-5316(94)90005-1",
+            "doi": "10.1016/0166-5316(94)90005-1",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref53",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0166-5316(94)90005-1"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/0166-5316(94)90005-1",
+                "doi": "10.1016/0166-5316(94)90005-1",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0166-5316(94)90005-1"
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": "ref52",
+            "rawText": "asmussen. 2010. Ruin Probabilities. https://doi.org/10.1142/7431",
+            "doi": "10.1142/7431",
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref52",
+              "doi-asserted-by": "crossref",
+              "DOI": "10.1142/7431",
+              "author": "asmussen",
+              "year": "2010",
+              "journal-title": "Ruin Probabilities"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1142/7431",
+                "doi": "10.1142/7431",
+                "title": "",
+                "authors": [
+                  "asmussen"
+                ],
+                "year": 2010,
+                "venue": "Ruin Probabilities",
+                "type": "",
+                "url": "https://doi.org/10.1142/7431"
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": "ref10",
+            "rawText": "perez. 2011. Advanced Crash Avoidance Technologies (ACAT) program&#x2014;Final report of the GM-VTTI backing crash countermeasures project",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "author": "perez",
+              "year": "2011",
+              "journal-title": "Advanced Crash Avoidance Technologies (ACAT) program&#x2014;Final report of the GM-VTTI backing crash countermeasures project"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "perez"
+                ],
+                "year": 2011,
+                "venue": "Advanced Crash Avoidance Technologies (ACAT) program&#x2014;Final report of the GM-VTTI backing crash countermeasures project",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "ref11",
+            "rawText": "victor. 2010. Sweden-Michigan Naturalistic Field Operational Test (SeMiFOT) phase 1 Final report",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "author": "victor",
+              "year": "2010",
+              "journal-title": "Sweden-Michigan Naturalistic Field Operational Test (SeMiFOT) phase 1 Final report"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref11",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "victor"
+                ],
+                "year": 2010,
+                "venue": "Sweden-Michigan Naturalistic Field Operational Test (SeMiFOT) phase 1 Final report",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "ref40",
+            "rawText": "fitch. Analysis of lane-change crashes and near-crashes. 2009",
+            "doi": null,
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref40",
+              "article-title": "Analysis of lane-change crashes and near-crashes",
+              "author": "fitch",
+              "year": "2009"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref40",
+                "doi": "",
+                "title": "Analysis of lane-change crashes and near-crashes",
+                "authors": [
+                  "fitch"
+                ],
+                "year": 2009,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": "ref12",
+            "rawText": "sayer. 2011. Integrated Vehicle-Based Safety Systems Field Operational Test Final Program Report",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "author": "sayer",
+              "year": "2011",
+              "journal-title": "Integrated Vehicle-Based Safety Systems Field Operational Test Final Program Report"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref12",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "sayer"
+                ],
+                "year": 2011,
+                "venue": "Integrated Vehicle-Based Safety Systems Field Operational Test Final Program Report",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": "ref13",
+            "rawText": "gordon. Advanced Crash Avoidance Technologies (ACAT) program&#x2014;Final report of the Volvo-Ford-UMTRI project: Safety impact methodology for lane departure warning&#x2014;Method development and estimation of benefits. 2010",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "article-title": "Advanced Crash Avoidance Technologies (ACAT) program&#x2014;Final report of the Volvo-Ford-UMTRI project: Safety impact methodology for lane departure warning&#x2014;Method development and estimation of benefits",
+              "author": "gordon",
+              "year": "2010"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref13",
+                "doi": "",
+                "title": "Advanced Crash Avoidance Technologies (ACAT) program&#x2014;Final report of the Volvo-Ford-UMTRI project: Safety impact methodology for lane departure warning&#x2014;Method development and estimation of benefits",
+                "authors": [
+                  "gordon"
+                ],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": "ref14",
+            "rawText": "kessler. Deliverable D11 3 Final Report",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "author": "kessler",
+              "year": "0",
+              "journal-title": "Deliverable D11 3 Final Report"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref14",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "kessler"
+                ],
+                "year": 0,
+                "venue": "Deliverable D11 3 Final Report",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1080/15389588.2012.683841",
+            "doi": "10.1080/15389588.2012.683841",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/15389588.2012.683841"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1080/15389588.2012.683841",
+                "doi": "10.1080/15389588.2012.683841",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1080/15389588.2012.683841"
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": "ref16",
+            "rawText": "dingus. 2006. The 100-car naturalistic driving study phase II&#x2014;Results of the 100-car field experiment",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "author": "dingus",
+              "year": "2006",
+              "journal-title": "The 100-car naturalistic driving study phase II&#x2014;Results of the 100-car field experiment"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref16",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "dingus"
+                ],
+                "year": 2006,
+                "venue": "The 100-car naturalistic driving study phase II&#x2014;Results of the 100-car field experiment",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": "ref17",
+            "rawText": "2013. Traffic Safety Facts 2013",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref17",
+              "year": "2013",
+              "journal-title": "Traffic Safety Facts 2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref17",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "Traffic Safety Facts 2013",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": "ref18",
+            "rawText": "https://doi.org/10.1155/2013/526180",
+            "doi": "10.1155/2013/526180",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1155/2013/526180"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1155/2013/526180",
+                "doi": "10.1155/2013/526180",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1155/2013/526180"
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": "ref19",
+            "rawText": "https://doi.org/10.1080/00423114.2010.515745",
+            "doi": "10.1080/00423114.2010.515745",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref19",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/00423114.2010.515745"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1080/00423114.2010.515745",
+                "doi": "10.1080/00423114.2010.515745",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1080/00423114.2010.515745"
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": "ref4",
+            "rawText": "litman. Autonomous vehicle implementation predictions implications for transport planning. 2014",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "article-title": "Autonomous vehicle implementation predictions implications for transport planning",
+              "author": "litman",
+              "year": "2014"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref4",
+                "doi": "",
+                "title": "Autonomous vehicle implementation predictions implications for transport planning",
+                "authors": [
+                  "litman"
+                ],
+                "year": 2014,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "ref3",
+            "rawText": "Preliminary statement of policy concerning automated vehicles. 2013",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "article-title": "Preliminary statement of policy concerning automated vehicles",
+              "year": "2013"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref3",
+                "doi": "",
+                "title": "Preliminary statement of policy concerning automated vehicles",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 50,
+            "label": "ref6",
+            "rawText": "blincoe. 2015. The economic and societal impact of motor vehicle crashes 2010 (Revised)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "author": "blincoe",
+              "year": "2015",
+              "journal-title": "The economic and societal impact of motor vehicle crashes 2010 (Revised)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref6",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "blincoe"
+                ],
+                "year": 2015,
+                "venue": "The economic and societal impact of motor vehicle crashes 2010 (Revised)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 51,
+            "label": "ref5",
+            "rawText": "treat. Tri-level study of the causes of traffic accidents: Final report. 1979",
+            "doi": null,
+            "arxivId": null,
+            "year": 1979,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "article-title": "Tri-level study of the causes of traffic accidents: Final report",
+              "author": "treat",
+              "year": "1979"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref5",
+                "doi": "",
+                "title": "Tri-level study of the causes of traffic accidents: Final report",
+                "authors": [
+                  "treat"
+                ],
+                "year": 1979,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 52,
+            "label": "ref8",
+            "rawText": "aust. 2012. Evaluation Process for Active Safety Functions Addressing Key Challenges in Functional Formative Evaluation of Advanced Driver Assistance Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "author": "aust",
+              "year": "2012",
+              "journal-title": "Evaluation Process for Active Safety Functions Addressing Key Challenges in Functional Formative Evaluation of Advanced Driver Assistance Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref8",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "aust"
+                ],
+                "year": 2012,
+                "venue": "Evaluation Process for Active Safety Functions Addressing Key Challenges in Functional Formative Evaluation of Advanced Driver Assistance Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 53,
+            "label": "ref7",
+            "rawText": "2008. FESTA Handbook Version 2 Deliverable T6 4 of the Field opErational teSt supporT Action",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "year": "2008",
+              "journal-title": "FESTA Handbook Version 2 Deliverable T6 4 of the Field opErational teSt supporT Action"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref7",
+                "doi": "",
+                "title": "",
+                "authors": [],
+                "year": 2008,
+                "venue": "FESTA Handbook Version 2 Deliverable T6 4 of the Field opErational teSt supporT Action",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 54,
+            "label": "ref49",
+            "rawText": "https://doi.org/10.1016/b978-0-12-374388-6.50002-7",
+            "doi": "10.1016/b978-0-12-374388-6.50002-7",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref49",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/B978-0-12-374388-6.50002-7"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/b978-0-12-374388-6.50002-7",
+                "doi": "10.1016/b978-0-12-374388-6.50002-7",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/b978-0-12-374388-6.50002-7"
+              }
+            }
+          },
+          {
+            "index": 55,
+            "label": "ref9",
+            "rawText": "leblanc. 2006. Road Departure Crash Warning System Field Operational Test Methodology and Results",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "author": "leblanc",
+              "year": "2006",
+              "journal-title": "Road Departure Crash Warning System Field Operational Test Methodology and Results"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref9",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "leblanc"
+                ],
+                "year": 2006,
+                "venue": "Road Departure Crash Warning System Field Operational Test Methodology and Results",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 56,
+            "label": "ref46",
+            "rawText": "stein. Vision-based ACC with a single camera: Bounds on range and range rate accuracy. Proc IEEE Intell Veh Symp",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref46",
+              "first-page": "120",
+              "article-title": "Vision-based ACC with a single camera: Bounds on range and range rate accuracy",
+              "author": "stein",
+              "year": "0",
+              "journal-title": "Proc IEEE Intell Veh Symp"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref46",
+                "doi": "",
+                "title": "Vision-based ACC with a single camera: Bounds on range and range rate accuracy",
+                "authors": [
+                  "stein"
+                ],
+                "year": 0,
+                "venue": "Proc IEEE Intell Veh Symp",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 57,
+            "label": "ref45",
+            "rawText": "harding. 2014. Vehicle-to-vehicle communications Readiness of V2V technology for application",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref45",
+              "author": "harding",
+              "year": "2014",
+              "journal-title": "Vehicle-to-vehicle communications Readiness of V2V technology for application"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref45",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "harding"
+                ],
+                "year": 2014,
+                "venue": "Vehicle-to-vehicle communications Readiness of V2V technology for application",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 58,
+            "label": "ref48",
+            "rawText": "https://doi.org/10.1142/3573",
+            "doi": "10.1142/3573",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref48",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1142/3573"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1142/3573",
+                "doi": "10.1142/3573",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1142/3573"
+              }
+            }
+          },
+          {
+            "index": 59,
+            "label": "ref47",
+            "rawText": "sheppard. 2016. Fit all valid parametric probability distributions to data",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref47",
+              "author": "sheppard",
+              "year": "2016",
+              "journal-title": "Fit all valid parametric probability distributions to data"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref47",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "sheppard"
+                ],
+                "year": 2016,
+                "venue": "Fit all valid parametric probability distributions to data",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 60,
+            "label": "ref42",
+            "rawText": "lee. 2004. A Comprehensive Examination of Naturalistic Lane-Changes",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref42",
+              "author": "lee",
+              "year": "2004",
+              "journal-title": "A Comprehensive Examination of Naturalistic Lane-Changes"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref42",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "lee"
+                ],
+                "year": 2004,
+                "venue": "A Comprehensive Examination of Naturalistic Lane-Changes",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 61,
+            "label": "ref41",
+            "rawText": "shinar. 1978. Psychology on the Road The Human Factor in Traffic Safety",
+            "doi": null,
+            "arxivId": null,
+            "year": 1978,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref41",
+              "author": "shinar",
+              "year": "1978",
+              "journal-title": "Psychology on the Road The Human Factor in Traffic Safety"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref41",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "shinar"
+                ],
+                "year": 1978,
+                "venue": "Psychology on the Road The Human Factor in Traffic Safety",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 62,
+            "label": "ref44",
+            "rawText": "bezzina. 2014. Safety Pilot Model Deployment Test Conductor Team Report",
+            "doi": null,
+            "arxivId": null,
+            "year": 2014,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref44",
+              "author": "bezzina",
+              "year": "2014",
+              "journal-title": "Safety Pilot Model Deployment Test Conductor Team Report"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref44",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "bezzina"
+                ],
+                "year": 2014,
+                "venue": "Safety Pilot Model Deployment Test Conductor Team Report",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 63,
+            "label": "ref43",
+            "rawText": "zhao. Analysis of mandatory and discretionary lane change behaviors for heavy trucks. Proc Int Symp Adv Veh Control",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref43",
+              "first-page": "1",
+              "article-title": "Analysis of mandatory and discretionary lane change behaviors for heavy trucks",
+              "author": "zhao",
+              "year": "0",
+              "journal-title": "Proc Int Symp Adv Veh Control"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref43",
+                "doi": "",
+                "title": "Analysis of mandatory and discretionary lane change behaviors for heavy trucks",
+                "authors": [
+                  "zhao"
+                ],
+                "year": 0,
+                "venue": "Proc Int Symp Adv Veh Control",
+                "type": "",
+                "url": ""
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/tits.2016.2582208",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 0,
+          "extractedReferenceCount": 63,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/tits.2016.2582208",
+          "crossrefReferenceCount": 63
+        }
+      }
+    }
+  ],
+  "edges": [],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "ZhaoEtAl2017",
+      "paperId": "doi:10.1109/tits.2016.2582208",
+      "metadata": {
+        "fileName": "ZhaoEtAl2017.pdf",
+        "sourcePath": "papers/automotive/ZhaoEtAl2017.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,702 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:47.545173+00:00",
+  "papers": [
+    {
+      "key": "Puschner2020",
+      "paper": {
+        "id": "doi:10.1016/j.sysarc.2019.101690",
+        "citationKey": "Puschner2020",
+        "title": "Asynchronous vs. Synchronous Interfacing to Time-Triggered Communication Systems",
+        "authors": [
+          "Peter Puschner",
+          "Raimund Kirner"
+        ],
+        "year": 2020,
+        "venue": "Journal of Systems Architecture",
+        "type": "article",
+        "doi": "10.1016/j.sysarc.2019.101690",
+        "arxivId": "",
+        "url": "",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:Engineering_Transportation_Software_outline",
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Puschner, Peter and Kirner, Raimund",
+          "title": "Asynchronous vs. Synchronous Interfacing to Time-Triggered Communication Systems",
+          "journal": "Journal of Systems Architecture",
+          "volume": "107",
+          "pages": "101690",
+          "year": "2020",
+          "doi": "10.1016/j.sysarc.2019.101690",
+          "url": "https://doi.org/10.1016/j.sysarc.2019.101690",
+          "howpublished": "Journal of Systems Architecture"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.249849+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "10.1016/j.sysarc.2019.101690_bib0001",
+            "rawText": "J. R. Engdahl, D. Chung, Lock-free data structure for multi-core processors, Proceedings of the International Conference on Control, Automation and Systems (ICCAS 2010) (2010) 984–989.",
+            "doi": "10.1109/iccas.2010.5669659",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0001",
+              "doi-asserted-by": "crossref",
+              "unstructured": "J. R. Engdahl, D. Chung, Lock-free data structure for multi-core processors, Proceedings of the International Conference on Control, Automation and Systems (ICCAS 2010) (2010) 984–989.",
+              "DOI": "10.1109/ICCAS.2010.5669659"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iccas.2010.5669659",
+                "doi": "10.1109/iccas.2010.5669659",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iccas.2010.5669659"
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "10.1016/j.sysarc.2019.101690_sbref0001",
+            "rawText": "Kopetz. Event-triggered versus time-triggered real-time systems. 1991",
+            "doi": null,
+            "arxivId": null,
+            "year": 1991,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_sbref0001",
+              "series-title": "Proceedings of the International Workshop on Operating Systems of the 90s and Beyond, Lecture Notes in Computer Science, Volume 563",
+              "article-title": "Event-triggered versus time-triggered real-time systems",
+              "author": "Kopetz",
+              "year": "1991"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1007/bfb0024530",
+                "doi": "",
+                "title": "Event-triggered versus time-triggered real-time systems",
+                "authors": [
+                  "Kopetz"
+                ],
+                "year": 1991,
+                "venue": "Proceedings of the International Workshop on Operating Systems of the 90s and Beyond, Lecture Notes in Computer Science, Volume 563",
+                "type": "",
+                "url": "https://link.springer.com/chapter/10.1007/BFb0024530"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "10.1016/j.sysarc.2019.101690_bib0003",
+            "rawText": "Kopetz. The time-triggered model of computation. 1998",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0003",
+              "series-title": "Proceedings of the IEEE Real-Time Systems Symposium",
+              "first-page": "168",
+              "article-title": "The time-triggered model of computation",
+              "author": "Kopetz",
+              "year": "1998"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2019.101690_bib0003",
+                "doi": "",
+                "title": "The time-triggered model of computation",
+                "authors": [
+                  "Kopetz"
+                ],
+                "year": 1998,
+                "venue": "Proceedings of the IEEE Real-Time Systems Symposium",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "10.1016/j.sysarc.2019.101690_bib0004",
+            "rawText": "Kopetz. Real-Time Systems. 2011",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0004",
+              "series-title": "Real-Time Systems",
+              "author": "Kopetz",
+              "year": "2011"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2019.101690_bib0004",
+                "doi": "",
+                "title": "Real-Time Systems",
+                "authors": [
+                  "Kopetz"
+                ],
+                "year": 2011,
+                "venue": "Real-Time Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "10.1016/j.sysarc.2019.101690_bib0005",
+            "rawText": "Kopetz. The time-triggered architecture. 2003. Proc. IEEE. https://doi.org/10.1109/jproc.2002.805821",
+            "doi": "10.1109/jproc.2002.805821",
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "1",
+              "key": "10.1016/j.sysarc.2019.101690_bib0005",
+              "doi-asserted-by": "crossref",
+              "first-page": "112",
+              "DOI": "10.1109/JPROC.2002.805821",
+              "article-title": "The time-triggered architecture",
+              "volume": "91",
+              "author": "Kopetz",
+              "year": "2003",
+              "journal-title": "Proc. IEEE"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/jproc.2002.805821",
+                "doi": "10.1109/jproc.2002.805821",
+                "title": "The time-triggered architecture",
+                "authors": [
+                  "Kopetz"
+                ],
+                "year": 2003,
+                "venue": "Proc. IEEE",
+                "type": "",
+                "url": "https://doi.org/10.1109/jproc.2002.805821"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "10.1016/j.sysarc.2019.101690_bib0006",
+            "rawText": "Kopetz. Temporal firewalls in large distributed real-time systems. 1997",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0006",
+              "series-title": "Proceedings of the 6th IEEE Computer Society Workshop on Future Trends of Distributed Computing Systems",
+              "first-page": "310",
+              "article-title": "Temporal firewalls in large distributed real-time systems",
+              "author": "Kopetz",
+              "year": "1997"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2019.101690_bib0006",
+                "doi": "",
+                "title": "Temporal firewalls in large distributed real-time systems",
+                "authors": [
+                  "Kopetz"
+                ],
+                "year": 1997,
+                "venue": "Proceedings of the 6th IEEE Computer Society Workshop on Future Trends of Distributed Computing Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "10.1016/j.sysarc.2019.101690_bib0007",
+            "rawText": "Kopetz. Temporal composability. 2002. Comput. Control Eng. J.. https://doi.org/10.1049/cce:20020401",
+            "doi": "10.1049/cce:20020401",
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "4",
+              "key": "10.1016/j.sysarc.2019.101690_bib0007",
+              "doi-asserted-by": "crossref",
+              "first-page": "156",
+              "DOI": "10.1049/cce:20020401",
+              "article-title": "Temporal composability",
+              "volume": "13",
+              "author": "Kopetz",
+              "year": "2002",
+              "journal-title": "Comput. Control Eng. J."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1049/cce:20020401",
+                "doi": "10.1049/cce:20020401",
+                "title": "Temporal composability",
+                "authors": [
+                  "Kopetz"
+                ],
+                "year": 2002,
+                "venue": "Comput. Control Eng. J.",
+                "type": "",
+                "url": "https://doi.org/10.1049/cce:20020401"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "10.1016/j.sysarc.2019.101690_bib0008",
+            "rawText": "H. Kopetz, J. Reisinger, The non-blocking write protocol NBW: a solution to a real-time synchronization problem, Proceedings of the IEEE Real-Time Systems Symposium(1993) 131–137.",
+            "doi": "10.1109/real.1993.393507",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0008",
+              "doi-asserted-by": "crossref",
+              "unstructured": "H. Kopetz, J. Reisinger, The non-blocking write protocol NBW: a solution to a real-time synchronization problem, Proceedings of the IEEE Real-Time Systems Symposium(1993) 131–137.",
+              "DOI": "10.1109/REAL.1993.393507"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/real.1993.393507",
+                "doi": "10.1109/real.1993.393507",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/real.1993.393507"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "10.1016/j.sysarc.2019.101690_bib0009",
+            "rawText": "H. Ma, Y. Li, Effective data exchange in parallel computing, Proceedings of the International Conference on Information Science and Cloud Computing (2013) 106–112.",
+            "doi": "10.1109/iscc.2013.27",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0009",
+              "doi-asserted-by": "crossref",
+              "unstructured": "H. Ma, Y. Li, Effective data exchange in parallel computing, Proceedings of the International Conference on Information Science and Cloud Computing (2013) 106–112.",
+              "DOI": "10.1109/ISCC.2013.27"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/iscc.2013.27",
+                "doi": "10.1109/iscc.2013.27",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/iscc.2013.27"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "10.1016/j.sysarc.2019.101690_bib0010",
+            "rawText": "Maurer. Cross-criticality interfaces for cyber-physical systems. 2015",
+            "doi": null,
+            "arxivId": null,
+            "year": 2015,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0010",
+              "series-title": "Proceedings of the 1st IEEE International Conference on Event-based Control, Communication, and Signal Processing, Krakow, Poland",
+              "article-title": "Cross-criticality interfaces for cyber-physical systems",
+              "author": "Maurer",
+              "year": "2015"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2019.101690_bib0010",
+                "doi": "",
+                "title": "Cross-criticality interfaces for cyber-physical systems",
+                "authors": [
+                  "Maurer"
+                ],
+                "year": 2015,
+                "venue": "Proceedings of the 1st IEEE International Conference on Event-based Control, Communication, and Signal Processing, Krakow, Poland",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "10.1016/j.sysarc.2019.101690_bib0011",
+            "rawText": "McVeigh. Double-buffering technique for binocular imaging in a window. 1995",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0011",
+              "series-title": "Proceedings of the SPIE 2409, Stereoscopic Displays and Virtual Reality Systems II",
+              "article-title": "Double-buffering technique for binocular imaging in a window",
+              "author": "McVeigh",
+              "year": "1995"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2019.101690_bib0011",
+                "doi": "",
+                "title": "Double-buffering technique for binocular imaging in a window",
+                "authors": [
+                  "McVeigh"
+                ],
+                "year": 1995,
+                "venue": "Proceedings of the SPIE 2409, Stereoscopic Displays and Virtual Reality Systems II",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "10.1016/j.sysarc.2019.101690_bib0012",
+            "rawText": "Poledna. Fault-Tolerant Real-Time Systems: The Problem of Replica Determinism. 1995",
+            "doi": null,
+            "arxivId": null,
+            "year": 1995,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0012",
+              "series-title": "Fault-Tolerant Real-Time Systems: The Problem of Replica Determinism",
+              "author": "Poledna",
+              "year": "1995"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2019.101690_bib0012",
+                "doi": "",
+                "title": "Fault-Tolerant Real-Time Systems: The Problem of Replica Determinism",
+                "authors": [
+                  "Poledna"
+                ],
+                "year": 1995,
+                "venue": "Fault-Tolerant Real-Time Systems: The Problem of Replica Determinism",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "10.1016/j.sysarc.2019.101690_bib0013",
+            "rawText": "Poledna. Replica determinism and flexible scheduling in hard real-time dependable systems. 2000. IEEE Trans. Comput.. https://doi.org/10.1109/12.833107",
+            "doi": "10.1109/12.833107",
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "2",
+              "key": "10.1016/j.sysarc.2019.101690_bib0013",
+              "doi-asserted-by": "crossref",
+              "first-page": "100",
+              "DOI": "10.1109/12.833107",
+              "article-title": "Replica determinism and flexible scheduling in hard real-time dependable systems",
+              "volume": "49",
+              "author": "Poledna",
+              "year": "2000",
+              "journal-title": "IEEE Trans. Comput."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/12.833107",
+                "doi": "10.1109/12.833107",
+                "title": "Replica determinism and flexible scheduling in hard real-time dependable systems",
+                "authors": [
+                  "Poledna"
+                ],
+                "year": 2000,
+                "venue": "IEEE Trans. Comput.",
+                "type": "",
+                "url": "https://doi.org/10.1109/12.833107"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "10.1016/j.sysarc.2019.101690_sbref0011",
+            "rawText": "Puschner. From time-triggered to time-deterministic real-time systems. 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_sbref0011",
+              "series-title": "Proceedings of the 5th IFIP Working Conference on Distributed and Parallel Embedded Systems",
+              "first-page": "115",
+              "article-title": "From time-triggered to time-deterministic real-time systems",
+              "author": "Puschner",
+              "year": "2006"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2019.101690_sbref0011",
+                "doi": "",
+                "title": "From time-triggered to time-deterministic real-time systems",
+                "authors": [
+                  "Puschner"
+                ],
+                "year": 2006,
+                "venue": "Proceedings of the 5th IFIP Working Conference on Distributed and Parallel Embedded Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "10.1016/j.sysarc.2019.101690_bib0015",
+            "rawText": "Sheeparamatti. Simulink model for double buffering. 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0015",
+              "series-title": "Proceedings of the 32nd Annual Conference on IEEE Industrial Electronics (IECON’06)",
+              "first-page": "4593",
+              "article-title": "Simulink model for double buffering",
+              "author": "Sheeparamatti",
+              "year": "2006"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2019.101690_bib0015",
+                "doi": "",
+                "title": "Simulink model for double buffering",
+                "authors": [
+                  "Sheeparamatti"
+                ],
+                "year": 2006,
+                "venue": "Proceedings of the 32nd Annual Conference on IEEE Industrial Electronics (IECON’06)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "10.1016/j.sysarc.2019.101690_bib0016",
+            "rawText": "Simon. The Sciences of the Artificial. 1996",
+            "doi": null,
+            "arxivId": null,
+            "year": 1996,
+            "reviewed": false,
+            "referenceData": {
+              "key": "10.1016/j.sysarc.2019.101690_bib0016",
+              "series-title": "The Sciences of the Artificial",
+              "author": "Simon",
+              "year": "1996"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:10.1016/j.sysarc.2019.101690_bib0016",
+                "doi": "",
+                "title": "The Sciences of the Artificial",
+                "authors": [
+                  "Simon"
+                ],
+                "year": 1996,
+                "venue": "The Sciences of the Artificial",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "10.1016/j.sysarc.2019.101690_bib0017",
+            "rawText": "Stankovic. Misconceptions about real-time computing: a serious problem for next-generation systems. 1988. IEEE Comput.. https://doi.org/10.1109/2.7053",
+            "doi": "10.1109/2.7053",
+            "arxivId": null,
+            "year": 1988,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "10",
+              "key": "10.1016/j.sysarc.2019.101690_bib0017",
+              "doi-asserted-by": "crossref",
+              "first-page": "10",
+              "DOI": "10.1109/2.7053",
+              "article-title": "Misconceptions about real-time computing: a serious problem for next-generation systems",
+              "volume": "21",
+              "author": "Stankovic",
+              "year": "1988",
+              "journal-title": "IEEE Comput."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/2.7053",
+                "doi": "10.1109/2.7053",
+                "title": "Misconceptions about real-time computing: a serious problem for next-generation systems",
+                "authors": [
+                  "Stankovic"
+                ],
+                "year": 1988,
+                "venue": "IEEE Comput.",
+                "type": "",
+                "url": "https://doi.org/10.1109/2.7053"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "10.1016/j.sysarc.2019.101690_bib0018",
+            "rawText": "Wilhelm. The worst-case execution time problem - overview of methods and survey of tools. 2008. ACM Trans. Embedded Comput. Syst. (TECS)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2008,
+            "reviewed": false,
+            "referenceData": {
+              "issue": "3",
+              "key": "10.1016/j.sysarc.2019.101690_bib0018",
+              "article-title": "The worst-case execution time problem - overview of methods and survey of tools",
+              "volume": "7",
+              "author": "Wilhelm",
+              "year": "2008",
+              "journal-title": "ACM Trans. Embedded Comput. Syst. (TECS)"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1145/1347375.1347389",
+                "doi": "",
+                "title": "The worst-case execution time problem - overview of methods and survey of tools",
+                "authors": [
+                  "Wilhelm"
+                ],
+                "year": 2008,
+                "venue": "ACM Trans. Embedded Comput. Syst. (TECS)",
+                "type": "",
+                "url": "https://doi.org/10.1145/1347375.1347389"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1016/j.sysarc.2019.101690",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 2,
+          "extractedReferenceCount": 18,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1016/j.sysarc.2019.101690",
+          "crossrefReferenceCount": 18
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1016/j.sysarc.2019.101690->doi:10.1007/bfb0024530@papers-transportation-software-Puschner2020.pdf",
+      "source": "doi:10.1016/j.sysarc.2019.101690",
+      "target": "doi:10.1007/bfb0024530",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/transportation-software/Puschner2020.pdf"
+    },
+    {
+      "id": "doi:10.1016/j.sysarc.2019.101690->doi:10.1145/1347375.1347389@papers-transportation-software-Puschner2020.pdf",
+      "source": "doi:10.1016/j.sysarc.2019.101690",
+      "target": "doi:10.1145/1347375.1347389",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/transportation-software/Puschner2020.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Puschner2020",
+      "paperId": "doi:10.1016/j.sysarc.2019.101690",
+      "metadata": {
+        "fileName": "Puschner2020.pdf",
+        "sourcePath": "papers/transportation-software/Puschner2020.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1592 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:48.096043+00:00",
+  "papers": [
+    {
+      "key": "Casini2019",
+      "paper": {
+        "id": "doi:10.4230/lipics.ecrts.2019.6",
+        "citationKey": "Casini2019",
+        "title": "Response-Time Analysis of ROS 2 Processing Chains Under Reservation-Based Scheduling",
+        "authors": [
+          "Daniel Casini",
+          "Tobias Bla",
+          "Ingo L\\\"utkebohle",
+          "Bj\\\"orn B. Brandenburg"
+        ],
+        "year": 2019,
+        "venue": "31st Euromicro Conference on Real-Time Systems",
+        "type": "inproceedings",
+        "doi": "10.4230/LIPIcs.ECRTS.2019.6",
+        "arxivId": "",
+        "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2019.6",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:mixed-event-time-triggered"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Daniel Casini and Tobias Bla{\\ss} and Ingo L{\\\"u}tkebohle and Bj{\\\"o}rn B. Brandenburg",
+          "title": "{Response-Time Analysis of ROS 2 Processing Chains Under Reservation-Based Scheduling}",
+          "booktitle": "31st Euromicro Conference on Real-Time Systems",
+          "series": "LIPIcs",
+          "volume": "133",
+          "pages": "6:1--6:23",
+          "year": "2019",
+          "doi": "10.4230/LIPIcs.ECRTS.2019.6",
+          "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2019.6"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.323229+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": null,
+            "rawText": "1 Action Lib. URL: http://wiki.ros.org/actionlib. 2 eProsima FastRTPS. URL: https://www.eprosima.com/index.php/products-all/ eprosima-fast-rtps.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "1 Action Lib. URL: http://wiki.ros.org/actionlib. 2 eProsima FastRTPS. URL: https://www.eprosima.com/index.php/products-all/ eprosima-fast-rtps."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:1",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": null,
+            "rawText": "D. Casini, T. Blaß, I. Lütkebohle, and B. B. Brandenburg 6:21",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Casini, T. Blaß, I. Lütkebohle, and B. B. Brandenburg 6:21"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:2",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": null,
+            "rawText": "3 The move_base package. URL: http://wiki.ros.org/move_base.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "3 The move_base package. URL: http://wiki.ros.org/move_base."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:3",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": null,
+            "rawText": "4 Robots using ROS. URL: http://robots.ros.org.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "4 Robots using ROS. URL: http://robots.ros.org."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:4",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": null,
+            "rawText": "5 ROS 2 “Crystal Clemmys”. URL: http://www.ros.org/news/2018/12/ros-2-crystalclemmys-released.html.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "5 ROS 2 “Crystal Clemmys”. URL: http://www.ros.org/news/2018/12/ros-2-crystalclemmys-released.html."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:5",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": null,
+            "rawText": "6 RTI Connext DDS. URL: https://www.rti.com/products/connext-dds-professional.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6 RTI Connext DDS. URL: https://www.rti.com/products/connext-dds-professional."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:6",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": null,
+            "rawText": "7 Vortex OpenSplice. URL: http://www.prismtech.com/vortex/vortex-opensplice.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "7 Vortex OpenSplice. URL: http://www.prismtech.com/vortex/vortex-opensplice."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:7",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": null,
+            "rawText": "8 L. Abeni and G. Buttazzo. Integrating multimedia applications in hard real-time systems. In Proceedings of the 19th IEEE Real-Time Systems Symposium (RTSS 1998), Madrid, Spain,",
+            "doi": null,
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "8 L. Abeni and G. Buttazzo. Integrating multimedia applications in hard real-time systems. In Proceedings of the 19th IEEE Real-Time Systems Symposium (RTSS 1998), Madrid, Spain,"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "title:integrating multimedia applications in hard real time systems:1998",
+                "doi": "",
+                "arxivId": "",
+                "title": "Integrating Multimedia Applications in Hard Real-Time Systems",
+                "authors": [
+                  "Luca Abeni",
+                  "Giorgio Buttazzo"
+                ],
+                "year": 1998,
+                "venue": "Proceedings of the 19th IEEE Real-Time Systems Symposium",
+                "type": "inproceedings",
+                "url": "https://retis.sssup.it/ giorgio/paps/1998/rtss98-cbs.pdf"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": null,
+            "rawText": "9 A. Biondi, G. C. Buttazzo, and M. Bertogna. Schedulability Analysis of Hierarchical Real-Time",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "9 A. Biondi, G. C. Buttazzo, and M. Bertogna. Schedulability Analysis of Hierarchical Real-Time"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:9",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": null,
+            "rawText": "Systems under Shared Resources. IEEE Transactions on Computers, 65, May 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Systems under Shared Resources. IEEE Transactions on Computers, 65, May 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:10",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": null,
+            "rawText": "10 A. Block and J. H. Anderson. Accuracy versus migration overhead in real-time multiprocessor reweighting algorithms. In 12th International Conference on Parallel and Distributed Systems - (ICPADS’06), Minneapolis, USA, july, 12-15, 2006.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2006,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "10 A. Block and J. H. Anderson. Accuracy versus migration overhead in real-time multiprocessor reweighting algorithms. In 12th International Conference on Parallel and Distributed Systems - (ICPADS’06), Minneapolis, USA, july, 12-15, 2006."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:11",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2006,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": null,
+            "rawText": "11 A. Block, J. H. Anderson, and G. Bishop. Fine-grained task reweighting on multiprocessors. In 11th IEEE International Conference on Embedded and Real-Time Computing Systems and",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "11 A. Block, J. H. Anderson, and G. Bishop. Fine-grained task reweighting on multiprocessors. In 11th IEEE International Conference on Embedded and Real-Time Computing Systems and"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:12",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": null,
+            "rawText": "Applications (RTCSA’05), Hong Kong, China, july, 17-19, 2005.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Applications (RTCSA’05), Hong Kong, China, july, 17-19, 2005."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:13",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": null,
+            "rawText": "12 G. C. Buttazzo. Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "12 G. C. Buttazzo. Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:14",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": null,
+            "rawText": "Applications, Third Edition. Springer, 2011.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2011,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Applications, Third Edition. Springer, 2011."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:15",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2011,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": null,
+            "rawText": "13 D. Casini, A. Biondi, and G. C. Buttazzo. Handling Transients of Dynamic Real-Time",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "13 D. Casini, A. Biondi, and G. C. Buttazzo. Handling Transients of Dynamic Real-Time"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:16",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": null,
+            "rawText": "Workload Under EDF Scheduling. IEEE Transactions on Computers, 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Workload Under EDF Scheduling. IEEE Transactions on Computers, 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:17",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": null,
+            "rawText": "14 D. Casini, A. Biondi, G. Nelissen, and G. Buttazzo. Partitioned Fixed-Priority Scheduling of Parallel Tasks Without Preemptions. In 2018 IEEE Real-Time Systems Symposium (RTSS),",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "14 D. Casini, A. Biondi, G. Nelissen, and G. Buttazzo. Partitioned Fixed-Priority Scheduling of Parallel Tasks Without Preemptions. In 2018 IEEE Real-Time Systems Symposium (RTSS),"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:18",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": null,
+            "rawText": "15 Daniel Casini, Luca Abeni, Alessandro Biondi, Tommaso Cucinotta, and Giorgio Buttazzo. Constant Bandwidth Servers with Constrained Deadlines. In Proceedings of the 25th International Conference on Real-Time Networks and Systems, RTNS ’17, 2017.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "15 Daniel Casini, Luca Abeni, Alessandro Biondi, Tommaso Cucinotta, and Giorgio Buttazzo. Constant Bandwidth Servers with Constrained Deadlines. In Proceedings of the 25th International Conference on Real-Time Networks and Systems, RTNS ’17, 2017."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:19",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2017,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": null,
+            "rawText": "16 Jian-Jia Chen, Geoﬀrey Nelissen, Wen-Hung Huang, Maolin Yang, Björn Brandenburg, Konstantinos Bletsas, Cong Liu, Pascal Richard, Frédéric Ridouard, Neil Audsley, Raj Rajkumar, Dionisio de Niz, and Georg von der Brüggen. Many suspensions, many problems: a review of self-suspending tasks in real-time systems. Real-Time Systems, September 2018.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "16 Jian-Jia Chen, Geoﬀrey Nelissen, Wen-Hung Huang, Maolin Yang, Björn Brandenburg, Konstantinos Bletsas, Cong Liu, Pascal Richard, Frédéric Ridouard, Neil Audsley, Raj Rajkumar, Dionisio de Niz, and Georg von der Brüggen. Many suspensions, many problems: a review of self-suspending tasks in real-time systems. Real-Time Systems, September 2018."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:20",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": null,
+            "rawText": "17 Robert I. Davis, Alan Burns, Reinder J. Bril, and Johan J. Lukkien. Controller Area Network (CAN) schedulability analysis: Refuted, revisited and revised. Real-Time Systems, 35(3):239–",
+            "doi": "10.1007/s11241-007-9012-7",
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "17 Robert I. Davis, Alan Burns, Reinder J. Bril, and Johan J. Lukkien. Controller Area Network (CAN) schedulability analysis: Refuted, revisited and revised. Real-Time Systems, 35(3):239–"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1007/s11241-007-9012-7",
+                "doi": "10.1007/s11241-007-9012-7",
+                "arxivId": "",
+                "title": "Controller Area Network (CAN) Schedulability Analysis: Refuted, Revisited and Revised",
+                "authors": [
+                  "Robert I. Davis",
+                  "Alan Burns",
+                  "Reinder J. Bril",
+                  "Johan J. Lukkien"
+                ],
+                "year": 2007,
+                "venue": "Real-Time Systems",
+                "type": "article",
+                "url": "https://doi.org/10.1007/s11241-007-9012-7"
+              }
+            }
+          },
+          {
+            "index": 22,
+            "label": null,
+            "rawText": "18 Jonas Diemer, Philip Axer, and Rolf Ernst. Compositional performance analysis in python with pyCPA. In In Proceedings of WATERS’12, 2012.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "18 Jonas Diemer, Philip Axer, and Rolf Ernst. Compositional performance analysis in python with pyCPA. In In Proceedings of WATERS’12, 2012."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:22",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 23,
+            "label": null,
+            "rawText": "19 Jonas Diemer, Jonas Rox, and Rolf Ernst. Modeling of Ethernet AVB Networks for Worst-Case",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "19 Jonas Diemer, Jonas Rox, and Rolf Ernst. Modeling of Ethernet AVB Networks for Worst-Case"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:23",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 24,
+            "label": null,
+            "rawText": "Timing Analysis. IFAC Proceedings Volumes, 2012. 7th Vienna International Conference on Mathematical Modelling.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2012,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Timing Analysis. IFAC Proceedings Volumes, 2012. 7th Vienna International Conference on Mathematical Modelling."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:24",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2012,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 25,
+            "label": null,
+            "rawText": "20 G. Fohler and K. Ramamritham. Static scheduling of pipelined periodic tasks in distributed real-time systems. In Proceedings 9th Euromicro Workshop on Real Time Systems, June 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "20 G. Fohler and K. Ramamritham. Static scheduling of pipelined periodic tasks in distributed real-time systems. In Proceedings 9th Euromicro Workshop on Real Time Systems, June 1997."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:25",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 1997,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 26,
+            "label": null,
+            "rawText": "21 J. Fonseca, G. Nelissen, V. Nelis, and L. M. Pinho. Response time analysis of sporadic DAG tasks under partitioned scheduling. In 2016 11th IEEE Symposium on Industrial Embedded",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "21 J. Fonseca, G. Nelissen, V. Nelis, and L. M. Pinho. Response time analysis of sporadic DAG tasks under partitioned scheduling. In 2016 11th IEEE Symposium on Industrial Embedded"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:26",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 27,
+            "label": null,
+            "rawText": "Systems (SIES), May 2016.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Systems (SIES), May 2016."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:27",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 28,
+            "label": null,
+            "rawText": "22 T. Foote. ROS community metrics report. URL: http://download.ros.org/downloads/ metrics/metrics-report-2018-07.pdf.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "22 T. Foote. ROS community metrics report. URL: http://download.ros.org/downloads/ metrics/metrics-report-2018-07.pdf."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:28",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 29,
+            "label": null,
+            "rawText": "23 J. J. G. Garcia, J. C. P. Gutierrez, and M. G. Harbour. Schedulability analysis of distributed hard real-time systems with multiple-event synchronization. In Proceedings 12th Euromicro",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "23 J. J. G. Garcia, J. C. P. Gutierrez, and M. G. Harbour. Schedulability analysis of distributed hard real-time systems with multiple-event synchronization. In Proceedings 12th Euromicro"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:29",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 30,
+            "label": null,
+            "rawText": "Conference on Real-Time Systems. Euromicro RTS 2000, 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Conference on Real-Time Systems. Euromicro RTS 2000, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:30",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 31,
+            "label": null,
+            "rawText": "24 B. Gerkey. Why ROS 2.0? URL: http://design.ros2.org/articles/why_ros2.html.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "24 B. Gerkey. Why ROS 2.0? URL: http://design.ros2.org/articles/why_ros2.html."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:31",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 32,
+            "label": null,
+            "rawText": "6:22 Response-Time Analysis of ROS 2 Processing Chains",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "6:22 Response-Time Analysis of ROS 2 Processing Chains"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:32",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 33,
+            "label": null,
+            "rawText": "25 C. Gutierrez, L. Juan, I. Uguarte, and V. Vilches. Towards a distributed and real-time framework for robotsç Evaluation of ROS 2.0 communications for real-time robotics applications.",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "25 C. Gutierrez, L. Juan, I. Uguarte, and V. Vilches. Towards a distributed and real-time framework for robotsç Evaluation of ROS 2.0 communications for real-time robotics applications."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:33",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 34,
+            "label": null,
+            "rawText": "Techical report, Erle Robotics S.L., 2018. 26 R. Henia and R. Ernst. Context-aware scheduling analysis of distributed systems with tree-shaped task-dependencies. In Design, Automation and Test in Europe, March 2005. 27 R. Henia, A. Hamann, M. Jersak, R. Racu, K. Richter, and R. Ernst. System level performance analysis - the SymTA/S approach. IEEE Proceedings - Computers and Digital Techniques,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Techical report, Erle Robotics S.L., 2018. 26 R. Henia and R. Ernst. Context-aware scheduling analysis of distributed systems with tree-shaped task-dependencies. In Design, Automation and Test in Europe, March 2005. 27 R. Henia, A. Hamann, M. Jersak, R. Racu, K. Richter, and R. Ernst. System level performance analysis - the SymTA/S approach. IEEE Proceedings - Computers and Digital Techniques,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:34",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2018,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 35,
+            "label": null,
+            "rawText": "March 2005. 28 K. Huang, L. Thiele, T. Stefanov, and E. Deprettere. Performance Analysis of Multimedia Applications using Correlated Streams. In 2007 Design, Automation Test in Europe Conference",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "March 2005. 28 K. Huang, L. Thiele, T. Stefanov, and E. Deprettere. Performance Analysis of Multimedia Applications using Correlated Streams. In 2007 Design, Automation Test in Europe Conference"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:35",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 36,
+            "label": null,
+            "rawText": "Exhibition, 2007. 29 M. Jersak. Compositional Performance Analysis for Complex Embedded Applications. 30 Jean-Yves Le Boudec and Patrick Thiran. Network Calculus: A Theory of Deterministic",
+            "doi": null,
+            "arxivId": null,
+            "year": 2007,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Exhibition, 2007. 29 M. Jersak. Compositional Performance Analysis for Complex Embedded Applications. 30 Jean-Yves Le Boudec and Patrick Thiran. Network Calculus: A Theory of Deterministic"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:36",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2007,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 37,
+            "label": null,
+            "rawText": "Queuing Systems for the Internet. Springer-Verlag, Berlin, Heidelberg, 2001. 31 J. Lehoczky, L. Sha, and Y. Ding. The rate monotonic scheduling algorithm: exact characterization and average case behavior. In [1989] Proceedings. Real-Time Systems Symposium,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2001,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Queuing Systems for the Internet. Springer-Verlag, Berlin, Heidelberg, 2001. 31 J. Lehoczky, L. Sha, and Y. Ding. The rate monotonic scheduling algorithm: exact characterization and average case behavior. In [1989] Proceedings. Real-Time Systems Symposium,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:37",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2001,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 38,
+            "label": "1989",
+            "rawText": "32 J. Lelli, C. Scordino, L. Abeni, and D. Faggioli. Deadline scheduling in the Linux kernel. Software: Practice and Experience, 46(6):821–839, 2016. 33 G. Lipari and E. Bini. Resource partitioning among real-time applications. In 15th Euromicro Conference on Real-Time Systems, 2003. Proceedings., pages 151–158, July 2003. 34 A. Lotz, A. Hamann, R. Lange, C. Heinzemann, J. Staschulat, V. Kesel, D. Stampfer, M. Lutz, and C. Schlegel. Combining robotics component-based model-driven development with a model-based performance analysis. In 2016 IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR), December 2016. 35 Alex Lotz, Arne Hamann, Ingo Lütkebohle, Dennis Stampfer, Matthias Lutz, and Christian Schlegel. Modeling Non-Functional Application Domain Constraints for Component-Based Robotics Software Systems. In 6th International Workshop on Domain-Speciﬁc Languages and Models for Robotic Systems (DSLRob’15), 2015. 36 Yuya Maruyama, Shinpei Kato, and Takuya Azumi. Exploring the performance of ROS2. In Proceedings of the 13th International Conference on Embedded Software, page 5. ACM, 2016. 37 L. Marzario, G. Lipari, P. Balbastre, and A. Crespo. IRIS: a new reclaiming algorithm for server-based real-time systems. In Proceedings. RTAS 2004. 10th IEEE Real-Time and Embedded Technology and Applications Symposium, 2004., May 2004. 38 M. Negrean, M. Neukirchner, S. Stein, S. Schliecker, and R. Ernst. Bounding mode change transition latencies for multi-mode real-time distributed applications. In ETFA2011, 2011. 39 Object Management Group. Data Distribution Service (DDS), 1.4 edition, 2015. 40 OpenMP. OpenMP Application Program Interface, Version 4.0., 2013. 41 J. C. Palencia and M. G. Harbour. Exploiting precedence relations in the schedulability analysis of distributed real-time systems. In Proceedings 20th IEEE Real-Time Systems Symposium,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "32 J. Lelli, C. Scordino, L. Abeni, and D. Faggioli. Deadline scheduling in the Linux kernel. Software: Practice and Experience, 46(6):821–839, 2016. 33 G. Lipari and E. Bini. Resource partitioning among real-time applications. In 15th Euromicro Conference on Real-Time Systems, 2003. Proceedings., pages 151–158, July 2003. 34 A. Lotz, A. Hamann, R. Lange, C. Heinzemann, J. Staschulat, V. Kesel, D. Stampfer, M. Lutz, and C. Schlegel. Combining robotics component-based model-driven development with a model-based performance analysis. In 2016 IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR), December 2016. 35 Alex Lotz, Arne Hamann, Ingo Lütkebohle, Dennis Stampfer, Matthias Lutz, and Christian Schlegel. Modeling Non-Functional Application Domain Constraints for Component-Based Robotics Software Systems. In 6th International Workshop on Domain-Speciﬁc Languages and Models for Robotic Systems (DSLRob’15), 2015. 36 Yuya Maruyama, Shinpei Kato, and Takuya Azumi. Exploring the performance of ROS2. In Proceedings of the 13th International Conference on Embedded Software, page 5. ACM, 2016. 37 L. Marzario, G. Lipari, P. Balbastre, and A. Crespo. IRIS: a new reclaiming algorithm for server-based real-time systems. In Proceedings. RTAS 2004. 10th IEEE Real-Time and Embedded Technology and Applications Symposium, 2004., May 2004. 38 M. Negrean, M. Neukirchner, S. Stein, S. Schliecker, and R. Ernst. Bounding mode change transition latencies for multi-mode real-time distributed applications. In ETFA2011, 2011. 39 Object Management Group. Data Distribution Service (DDS), 1.4 edition, 2015. 40 OpenMP. OpenMP Application Program Interface, Version 4.0., 2013. 41 J. C. Palencia and M. G. Harbour. Exploiting precedence relations in the schedulability analysis of distributed real-time systems. In Proceedings 20th IEEE Real-Time Systems Symposium,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:38",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 39,
+            "label": "1999",
+            "rawText": "42 J. C. Palencia and M. Gonzalez Harbour. Schedulability analysis for tasks with static and dynamic oﬀsets. In Proceedings 19th IEEE Real-Time Systems Symposium, 1998. 43 Morgan Quigley, Ken Conley, Brian Gerkey, Josh Faust, Tully Foote, Jeremy Leibs, Rob Wheeler, and Andrew Y Ng. ROS: an open-source Robot Operating System. In ICRA workshop on open source software, volume 3, page 5. Kobe, Japan, 2009. 44 Ahmed Rahni, Emmanuel Grolleau, Michaël Richard, and Pascal Richard. Feasibility Analysis of Real-time Transactions. Real-Time Syst., 48(3), 2012. 45 J. Real and A. Crespo. Mode Change Protocols for Real-Time Systems: A Survey and a New Proposal. Real-Time Systems, 26(2):161–197, March 2004. 46 K. Richter. Compositional Scheduling Analysis Using Standard Event Models: The SymTA/S Approach.",
+            "doi": "10.1109/REAL.1998.739728",
+            "arxivId": null,
+            "year": 1998,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "42 J. C. Palencia and M. Gonzalez Harbour. Schedulability analysis for tasks with static and dynamic oﬀsets. In Proceedings 19th IEEE Real-Time Systems Symposium, 1998. 43 Morgan Quigley, Ken Conley, Brian Gerkey, Josh Faust, Tully Foote, Jeremy Leibs, Rob Wheeler, and Andrew Y Ng. ROS: an open-source Robot Operating System. In ICRA workshop on open source software, volume 3, page 5. Kobe, Japan, 2009. 44 Ahmed Rahni, Emmanuel Grolleau, Michaël Richard, and Pascal Richard. Feasibility Analysis of Real-time Transactions. Real-Time Syst., 48(3), 2012. 45 J. Real and A. Crespo. Mode Change Protocols for Real-Time Systems: A Survey and a New Proposal. Real-Time Systems, 26(2):161–197, March 2004. 46 K. Richter. Compositional Scheduling Analysis Using Standard Event Models: The SymTA/S Approach."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/real.1998.739728",
+                "doi": "10.1109/REAL.1998.739728",
+                "arxivId": "",
+                "title": "Schedulability analysis for tasks with static and dynamic offsets",
+                "authors": [
+                  "J. C. Palencia",
+                  "M. Gonz\\'alez Harbour"
+                ],
+                "year": 1998,
+                "venue": "Proceedings 19th IEEE Real-Time Systems Symposium (Cat. No.98CB36279)",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/REAL.1998.739728"
+              }
+            }
+          },
+          {
+            "index": 40,
+            "label": null,
+            "rawText": "D. Casini, T. Blaß, I. Lütkebohle, and B. B. Brandenburg 6:23",
+            "doi": null,
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "D. Casini, T. Blaß, I. Lütkebohle, and B. B. Brandenburg 6:23"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:40",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 41,
+            "label": null,
+            "rawText": "47 K. Richter and R. Ernst. Event model interfaces for heterogeneous system analysis. In Proceedings 2002 Design, Automation and Test in Europe Conference and Exhibition, pages",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "47 K. Richter and R. Ernst. Event model interfaces for heterogeneous system analysis. In Proceedings 2002 Design, Automation and Test in Europe Conference and Exhibition, pages"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:41",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 42,
+            "label": null,
+            "rawText": "506–513, 2002. 48 K. Richter, M. Jersak, and R. Ernst. A Formal Approach to MpSoC Performance Veriﬁcation.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2002,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "506–513, 2002. 48 K. Richter, M. Jersak, and R. Ernst. A Formal Approach to MpSoC Performance Veriﬁcation."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:42",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2002,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 43,
+            "label": null,
+            "rawText": "Computer, 36(4), 2003. 49 K. Richter, R. Racu, and R. Ernst. Scheduling Analysis Integration for Heterogeneous Multiprocessor SoC. In Proceedings of the 24th IEEE International Real-Time Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Computer, 36(4), 2003. 49 K. Richter, R. Racu, and R. Ernst. Scheduling Analysis Integration for Heterogeneous Multiprocessor SoC. In Proceedings of the 24th IEEE International Real-Time Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:43",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 44,
+            "label": null,
+            "rawText": "Symposium (RTSS), 2003. 50 K. Richter, D. Ziegenbein, M. Jersak, and R. Ernst. Model composition for scheduling analysis in platform design. In Proceedings 2002 Design Automation Conference, June 2002. 51 Jonas Rox and Rolf Ernst. Formal Timing Analysis of Full Duplex Switched Based Ethernet",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Symposium (RTSS), 2003. 50 K. Richter, D. Ziegenbein, M. Jersak, and R. Ernst. Model composition for scheduling analysis in platform design. In Proceedings 2002 Design Automation Conference, June 2002. 51 Jonas Rox and Rolf Ernst. Formal Timing Analysis of Full Duplex Switched Based Ethernet"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:44",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 45,
+            "label": null,
+            "rawText": "Network Architectures. In SAE Technical Paper, 2010. 52 Jonas Rox and Rolf Ernst. Compositional Performance Analysis with Improved Analysis Techniques for Obtaining Viable End-to-end Latencies in Distributed Embedded Systems. Int.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2010,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Network Architectures. In SAE Technical Paper, 2010. 52 Jonas Rox and Rolf Ernst. Compositional Performance Analysis with Improved Analysis Techniques for Obtaining Viable End-to-end Latencies in Distributed Embedded Systems. Int."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:45",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2010,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 46,
+            "label": null,
+            "rawText": "J. Softw. Tools Technol. Transf., 15(3), 2013. 53 Yukihiro Saito, Takuya Azumi, Shinpei Kato, and Nobuhiko Nishio. Priority and synchronization support for ROS. In 2016 IEEE 4th International Conference on Cyber-Physical Systems,",
+            "doi": null,
+            "arxivId": null,
+            "year": 2013,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "J. Softw. Tools Technol. Transf., 15(3), 2013. 53 Yukihiro Saito, Takuya Azumi, Shinpei Kato, and Nobuhiko Nishio. Priority and synchronization support for ROS. In 2016 IEEE 4th International Conference on Cyber-Physical Systems,"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:46",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2013,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 47,
+            "label": null,
+            "rawText": "Networks, and Applications (CPSNA), pages 77–82. IEEE, 2016. 54 J. Schlatow and R. Ernst. Response-Time Analysis for Task Chains in Communicating Threads. In 2016 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS),",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "Networks, and Applications (CPSNA), pages 77–82. IEEE, 2016. 54 J. Schlatow and R. Ernst. Response-Time Analysis for Task Chains in Communicating Threads. In 2016 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS),"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:47",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 48,
+            "label": null,
+            "rawText": "April 2016. 55 Johannes Schlatow and Rolf Ernst. Response-Time Analysis for Task Chains with Complex Precedence and Blocking Relations. ACM Trans. Embed. Comput. Syst., 16(5s), September",
+            "doi": null,
+            "arxivId": null,
+            "year": 2016,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "April 2016. 55 Johannes Schlatow and Rolf Ernst. Response-Time Analysis for Task Chains with Complex Precedence and Blocking Relations. ACM Trans. Embed. Comput. Syst., 16(5s), September"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "local-library",
+              "matchedBy": null,
+              "confidence": 0,
+              "canonical": {
+                "id": "reference:doi:10.4230/lipics.ecrts.2019.6:48",
+                "doi": "",
+                "arxivId": "",
+                "title": "",
+                "authors": [],
+                "year": 2016,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 49,
+            "label": "2017",
+            "rawText": "56 Simon Schliecker and Rolf Ernst. A Recursive Approach to End-to-end Path Latency Computation in Heterogeneous Multiprocessor Systems. In Proceedings of the 7th IEEE/ACM International Conference on Hardware/Software Codesign and System Synthesis, CODES+ISSS ’09, 2009. 57 M. A. Serrano, A. Melani, R. Vargas, A. Marongiu, M. Bertogna, and E. Quiñones. Timing characterization of OpenMP4 tasking model. In 2015 International Conference on Compilers, Architecture and Synthesis for Embedded Systems (CASES), 2015. 58 Insik Shin and Insup Lee. Periodic resource model for compositional real-time guarantees. In 24th IEEE Real-Time Systems Symposium, 2003. 59 Marco Spuri. Analysis of Deadline Scheduled Real-Time Systems. Technical report, RR-2772, INRIA, 1996. 60 J. Sun, N. Guan, Y. Wang, Q. He, and W. Yi. Real-Time Scheduling and Analysis of OpenMP Task Systems with Tied Tasks. In 2017 IEEE Real-Time Systems Symposium (RTSS), December 2017. 61 Yuhei Suzuki, Takuya Azumi, Shinpei Kato, and Nobuhiko Nishio. Real-Time ROS extension on transparent CPU/GPU coordination mechanism. In 2018 IEEE 21st International Symposium on Real-Time Distributed Computing (ISORC), pages 184–192. IEEE, 2018. 62 L. Thiele, S. Chakraborty, and M. Naedele. Real-time calculus for scheduling hard realtime systems. In 2000 IEEE International Symposium on Circuits and Systems. Emerging Technologies for the 21st Century. Proceedings, May 2000. 63 Ken Tindell and John Clark. Holistic Schedulability Analysis for Distributed Hard Real-time Systems. Microprocess. Microprogram., 40(2-3):117–134, 2012. 64 Ernesto Wandeler and Lothar Thiele. Workload Correlations in Multi-processor Hard Real-time Systems. J. Comput. Syst. Sci., 73(2), 2007. 65 D. Ziegenbein, M. Jersak, K. Richter, and R. Ernst. Breaking Down Complexity for Reliable System-Level Timing Validation. In Ninth IEEE/DATC Electronic Design Processes Workshop (EDP’02), 2002.",
+            "doi": "10.1109/REAL.2003.1253249",
+            "arxivId": null,
+            "year": 2009,
+            "reviewed": false,
+            "referenceData": {
+              "source": "local-pdf-text",
+              "citation": "56 Simon Schliecker and Rolf Ernst. A Recursive Approach to End-to-end Path Latency Computation in Heterogeneous Multiprocessor Systems. In Proceedings of the 7th IEEE/ACM International Conference on Hardware/Software Codesign and System Synthesis, CODES+ISSS ’09, 2009. 57 M. A. Serrano, A. Melani, R. Vargas, A. Marongiu, M. Bertogna, and E. Quiñones. Timing characterization of OpenMP4 tasking model. In 2015 International Conference on Compilers, Architecture and Synthesis for Embedded Systems (CASES), 2015. 58 Insik Shin and Insup Lee. Periodic resource model for compositional real-time guarantees. In 24th IEEE Real-Time Systems Symposium, 2003. 59 Marco Spuri. Analysis of Deadline Scheduled Real-Time Systems. Technical report, RR-2772, INRIA, 1996. 60 J. Sun, N. Guan, Y. Wang, Q. He, and W. Yi. Real-Time Scheduling and Analysis of OpenMP Task Systems with Tied Tasks. In 2017 IEEE Real-Time Systems Symposium (RTSS), December 2017. 61 Yuhei Suzuki, Takuya Azumi, Shinpei Kato, and Nobuhiko Nishio. Real-Time ROS extension on transparent CPU/GPU coordination mechanism. In 2018 IEEE 21st International Symposium on Real-Time Distributed Computing (ISORC), pages 184–192. IEEE, 2018. 62 L. Thiele, S. Chakraborty, and M. Naedele. Real-time calculus for scheduling hard realtime systems. In 2000 IEEE International Symposium on Circuits and Systems. Emerging Technologies for the 21st Century. Proceedings, May 2000. 63 Ken Tindell and John Clark. Holistic Schedulability Analysis for Distributed Hard Real-time Systems. Microprocess. Microprogram., 40(2-3):117–134, 2012. 64 Ernesto Wandeler and Lothar Thiele. Workload Correlations in Multi-processor Hard Real-time Systems. J. Comput. Syst. Sci., 73(2), 2007. 65 D. Ziegenbein, M. Jersak, K. Richter, and R. Ernst. Breaking Down Complexity for Reliable System-Level Timing Validation. In Ninth IEEE/DATC Electronic Design Processes Workshop (EDP’02), 2002."
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "local-library",
+              "matchedBy": "title-author-year",
+              "confidence": 0.92,
+              "canonical": {
+                "id": "doi:10.1109/real.2003.1253249",
+                "doi": "10.1109/REAL.2003.1253249",
+                "arxivId": "",
+                "title": "Periodic Resource Model for Compositional Real-Time Guarantees",
+                "authors": [
+                  "Insik Shin",
+                  "Insup Lee"
+                ],
+                "year": 2009,
+                "venue": "24th IEEE Real-Time Systems Symposium",
+                "type": "inproceedings",
+                "url": "https://doi.org/10.1109/REAL.2003.1253249"
+              }
+            }
+          }
+        ],
+        "citationExtraction": {
+          "status": "partial",
+          "method": "pymupdf-reference-blocks",
+          "matchedReferenceCount": 4,
+          "extractedReferenceCount": 49,
+          "extractionWarnings": []
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.4230/lipics.ecrts.2019.6->title:integrating multimedia applications in hard real time systems:1998@papers-mixed-event-time-triggered-Casini2019.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2019.6",
+      "target": "title:integrating multimedia applications in hard real time systems:1998",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Casini2019.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2019.6->doi:10.1007/s11241-007-9012-7@papers-mixed-event-time-triggered-Casini2019.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2019.6",
+      "target": "doi:10.1007/s11241-007-9012-7",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Casini2019.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2019.6->doi:10.1109/real.1998.739728@papers-mixed-event-time-triggered-Casini2019.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2019.6",
+      "target": "doi:10.1109/real.1998.739728",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Casini2019.pdf"
+    },
+    {
+      "id": "doi:10.4230/lipics.ecrts.2019.6->doi:10.1109/real.2003.1253249@papers-mixed-event-time-triggered-Casini2019.pdf",
+      "source": "doi:10.4230/lipics.ecrts.2019.6",
+      "target": "doi:10.1109/real.2003.1253249",
+      "kind": "citation",
+      "provenance": "pymupdf-reference-blocks",
+      "sourcePdf": "papers/mixed-event-time-triggered/Casini2019.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Casini2019",
+      "paperId": "doi:10.4230/lipics.ecrts.2019.6",
+      "metadata": {
+        "fileName": "Casini2019.pdf",
+        "sourcePath": "papers/mixed-event-time-triggered/Casini2019.pdf"
+      }
+    }
+  ]
+}

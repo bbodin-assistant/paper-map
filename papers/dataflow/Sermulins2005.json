@@ -1,0 +1,747 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:44.651772+00:00",
+  "papers": [
+    {
+      "key": "Sermulins2005",
+      "paper": {
+        "id": "doi:10.1145/1070891.1065927",
+        "citationKey": "Sermulins2005",
+        "title": "Cache Aware Optimization of Stream Programs",
+        "authors": [
+          "Janis Sermulins",
+          "William Thies",
+          "Rodric Rabbah",
+          "Saman Amarasinghe"
+        ],
+        "year": 2005,
+        "venue": "LCTES",
+        "type": "inproceedings",
+        "doi": "10.1145/1070891.1065927",
+        "arxivId": "",
+        "url": "https://doi.org/10.1145/1070891.1065927",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:dataflow-models-of-computation"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Sermulins, Janis and Thies, William and Rabbah, Rodric and Amarasinghe, Saman",
+          "title": "Cache Aware Optimization of Stream Programs",
+          "booktitle": "LCTES",
+          "year": "2005",
+          "doi": "10.1145/1070891.1065927",
+          "url": "https://doi.org/10.1145/1070891.1065927"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.106077+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "e_1_2_1_1_1",
+            "rawText": "A. Benveniste , P. Caspi , P. L. Guernic , and N. Halbwachs . Data-Flow Synchronous Languages . In REX School/Symposium , pages 1 -- 45 , 1993 . A. Benveniste, P. Caspi, P. L. Guernic, and N. Halbwachs. Data-Flow Synchronous Languages. In REX School/Symposium, pages 1--45, 1993.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1993,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_1_1",
+              "first-page": "1",
+              "volume-title": "REX School/Symposium",
+              "author": "Benveniste A.",
+              "year": "1993",
+              "unstructured": "A. Benveniste , P. Caspi , P. L. Guernic , and N. Halbwachs . Data-Flow Synchronous Languages . In REX School/Symposium , pages 1 -- 45 , 1993 . A. Benveniste, P. Caspi, P. L. Guernic, and N. Halbwachs. Data-Flow Synchronous Languages. In REX School/Symposium, pages 1--45, 1993."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_1_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Benveniste A."
+                ],
+                "year": 1993,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "e_1_2_1_2_1",
+            "rawText": "https://doi.org/10.1016/0167-6423(92)90005-v",
+            "doi": "10.1016/0167-6423(92)90005-v",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_2_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/0167-6423(92)90005-V"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1016/0167-6423(92)90005-v",
+                "doi": "10.1016/0167-6423(92)90005-v",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/0167-6423(92)90005-v"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "e_1_2_1_3_1",
+            "rawText": "C. S. Bhattacharyya , P. K. Murthy , and E. A. Lee . APGAN and RPMC: Complementary Heuristics for Translating DSP Block Diagrams into Efficient Software Implementations. Journal of Design Automation for Embedded Systems., pages 33--60 , January 1997 . C. S. Bhattacharyya, P. K. Murthy, and E. A. Lee. APGAN and RPMC: Complementary Heuristics for Translating DSP Block Diagrams into Efficient Software Implementations. Journal of Design Automation for Embedded Systems., pages 33--60, January 1997.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1997,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_3_1",
+              "author": "Bhattacharyya C. S.",
+              "year": "1997",
+              "unstructured": "C. S. Bhattacharyya , P. K. Murthy , and E. A. Lee . APGAN and RPMC: Complementary Heuristics for Translating DSP Block Diagrams into Efficient Software Implementations. Journal of Design Automation for Embedded Systems., pages 33--60 , January 1997 . C. S. Bhattacharyya, P. K. Murthy, and E. A. Lee. APGAN and RPMC: Complementary Heuristics for Translating DSP Block Diagrams into Efficient Software Implementations. Journal of Design Automation for Embedded Systems., pages 33--60, January 1997.",
+              "journal-title": "Journal of Design Automation for Embedded Systems., pages 33--60"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_3_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Bhattacharyya C. S."
+                ],
+                "year": 1997,
+                "venue": "Journal of Design Automation for Embedded Systems., pages 33--60",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "e_1_2_1_4_1",
+            "rawText": "https://doi.org/10.1023/a:1008052406396",
+            "doi": "10.1023/a:1008052406396",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_4_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1023/A:1008052406396"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1023/a:1008052406396",
+                "doi": "10.1023/a:1008052406396",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1023/a:1008052406396"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "e_1_2_1_5_1",
+            "rawText": "https://doi.org/10.5555/547038",
+            "doi": "10.5555/547038",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_5_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/547038"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/547038",
+                "doi": "10.5555/547038",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/547038"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "e_1_2_1_6_1",
+            "rawText": "https://doi.org/10.1145/1186562.1015800",
+            "doi": "10.1145/1186562.1015800",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_6_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1186562.1015800"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/1186562.1015800",
+                "doi": "10.1145/1186562.1015800",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1186562.1015800"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "e_1_2_1_7_1",
+            "rawText": "https://doi.org/10.1109/asap.1994.331814",
+            "doi": "10.1109/asap.1994.331814",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_7_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ASAP.1994.331814"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/asap.1994.331814",
+                "doi": "10.1109/asap.1994.331814",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/asap.1994.331814"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "e_1_2_1_8_1",
+            "rawText": "https://doi.org/10.1109/5.97300",
+            "doi": "10.1109/5.97300",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_8_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/5.97300"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/5.97300",
+                "doi": "10.1109/5.97300",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/5.97300"
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "e_1_2_1_9_1",
+            "rawText": "https://doi.org/10.5555/523978.826095",
+            "doi": "10.5555/523978.826095",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_9_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/523978.826095"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/523978.826095",
+                "doi": "10.5555/523978.826095",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/523978.826095"
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "e_1_2_1_10_1",
+            "rawText": "https://doi.org/10.1145/780732.780747",
+            "doi": "10.1145/780732.780747",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_10_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/780732.780747"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/780732.780747",
+                "doi": "10.1145/780732.780747",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/780732.780747"
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "e_1_2_1_11_1",
+            "rawText": "S. Kohli . Cache aware scheduling of synchronous dataflow programs. Master's Report Technical Memorandum UCB/URL M04/03 , UC Berkeley , 2004 . S. Kohli. Cache aware scheduling of synchronous dataflow programs. Master's Report Technical Memorandum UCB/URL M04/03, UC Berkeley, 2004.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2004,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_11_1",
+              "volume-title": "UC Berkeley",
+              "author": "Kohli S.",
+              "year": "2004",
+              "unstructured": "S. Kohli . Cache aware scheduling of synchronous dataflow programs. Master's Report Technical Memorandum UCB/URL M04/03 , UC Berkeley , 2004 . S. Kohli. Cache aware scheduling of synchronous dataflow programs. Master's Report Technical Memorandum UCB/URL M04/03, UC Berkeley, 2004."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_11_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Kohli S."
+                ],
+                "year": 2004,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "e_1_2_1_12_1",
+            "rawText": "E. A. Lee . Overview of the Ptolemy Project. Technical report , Tech Memo UCB/ERL M03/25 , UC Berkeley , 2003 . E. A. Lee. Overview of the Ptolemy Project. Technical report, Tech Memo UCB/ERL M03/25, UC Berkeley, 2003.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2003,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_12_1",
+              "volume-title": "Tech Memo UCB/ERL M03/25",
+              "author": "Lee E. A.",
+              "year": "2003",
+              "unstructured": "E. A. Lee . Overview of the Ptolemy Project. Technical report , Tech Memo UCB/ERL M03/25 , UC Berkeley , 2003 . E. A. Lee. Overview of the Ptolemy Project. Technical report, Tech Memo UCB/ERL M03/25, UC Berkeley, 2003."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_12_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Lee E. A."
+                ],
+                "year": 2003,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "e_1_2_1_13_1",
+            "rawText": "https://doi.org/10.1109/tc.1987.5009446",
+            "doi": "10.1109/tc.1987.5009446",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_13_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.1987.5009446"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/tc.1987.5009446",
+                "doi": "10.1109/tc.1987.5009446",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/TC.1987.5009446"
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "e_1_2_1_14_1",
+            "rawText": "R. L. Mattson , J. Gecsei , D. R. Slutz , and I. L. Traiger . Evaluation techniques for storage hierarchies. IBM Systems Journal , 1970 . R. L. Mattson, J. Gecsei, D. R. Slutz, and I. L. Traiger. Evaluation techniques for storage hierarchies. IBM Systems Journal, 1970.",
+            "doi": null,
+            "arxivId": null,
+            "year": 1970,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_14_1",
+              "author": "Mattson R. L.",
+              "year": "1970",
+              "unstructured": "R. L. Mattson , J. Gecsei , D. R. Slutz , and I. L. Traiger . Evaluation techniques for storage hierarchies. IBM Systems Journal , 1970 . R. L. Mattson, J. Gecsei, D. R. Slutz, and I. L. Traiger. Evaluation techniques for storage hierarchies. IBM Systems Journal, 1970.",
+              "journal-title": "Evaluation techniques for storage hierarchies. IBM Systems Journal"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_14_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Mattson R. L."
+                ],
+                "year": 1970,
+                "venue": "Evaluation techniques for storage hierarchies. IBM Systems Journal",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "e_1_2_1_15_1",
+            "rawText": "https://doi.org/10.5555/857198.857951",
+            "doi": "10.5555/857198.857951",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_15_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/857198.857951"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/857198.857951",
+                "doi": "10.5555/857198.857951",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/857198.857951"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "e_1_2_1_16_1",
+            "rawText": "P. K. Murthy and S. S. Bhattacharyya . Buffer Merging --- A Powerful Technique for Reducing Memory Requirements of Synchronous Dataflow Specifications. Technical report , Inst. for Adv. Computer Studies , UMD College Park , 2000 . P. K. Murthy and S. S. Bhattacharyya. Buffer Merging --- A Powerful Technique for Reducing Memory Requirements of Synchronous Dataflow Specifications. Technical report, Inst. for Adv. Computer Studies, UMD College Park, 2000.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2000,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_16_1",
+              "volume-title": "Inst. for Adv. Computer Studies",
+              "author": "Murthy P. K.",
+              "year": "2000",
+              "unstructured": "P. K. Murthy and S. S. Bhattacharyya . Buffer Merging --- A Powerful Technique for Reducing Memory Requirements of Synchronous Dataflow Specifications. Technical report , Inst. for Adv. Computer Studies , UMD College Park , 2000 . P. K. Murthy and S. S. Bhattacharyya. Buffer Merging --- A Powerful Technique for Reducing Memory Requirements of Synchronous Dataflow Specifications. Technical report, Inst. for Adv. Computer Studies, UMD College Park, 2000."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_16_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Murthy P. K."
+                ],
+                "year": 2000,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 17,
+            "label": "e_1_2_1_17_1",
+            "rawText": "https://doi.org/10.1145/237721.237760",
+            "doi": "10.1145/237721.237760",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_17_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/237721.237760"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/237721.237760",
+                "doi": "10.1145/237721.237760",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/237721.237760"
+              }
+            }
+          },
+          {
+            "index": 18,
+            "label": "e_1_2_1_18_1",
+            "rawText": "J. Sermulins . In preparation. Master's thesis , MIT CSAIL , 2005 . J. Sermulins. In preparation. Master's thesis, MIT CSAIL, 2005.",
+            "doi": null,
+            "arxivId": null,
+            "year": 2005,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_18_1",
+              "volume-title": "preparation. Master's thesis",
+              "author": "Sermulins J.",
+              "year": "2005",
+              "unstructured": "J. Sermulins . In preparation. Master's thesis , MIT CSAIL , 2005 . J. Sermulins. In preparation. Master's thesis, MIT CSAIL, 2005."
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:e_1_2_1_18_1",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "Sermulins J."
+                ],
+                "year": 2005,
+                "venue": "",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 19,
+            "label": "e_1_2_1_19_1",
+            "rawText": "R. Stephens. A Survey of Stream Processing. Acta Informatica 1997 34 7",
+            "doi": "10.1007/s002360050095",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_19_1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "R. Stephens. A Survey of Stream Processing. Acta Informatica 1997 34 7",
+              "DOI": "10.1007/s002360050095"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/s002360050095",
+                "doi": "10.1007/s002360050095",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/s002360050095"
+              }
+            }
+          },
+          {
+            "index": 20,
+            "label": "e_1_2_1_20_1",
+            "rawText": "https://doi.org/10.1007/bf01201458",
+            "doi": "10.1007/bf01201458",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_20_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/BF01201458"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1007/bf01201458",
+                "doi": "10.1007/bf01201458",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/bf01201458"
+              }
+            }
+          },
+          {
+            "index": 21,
+            "label": "e_1_2_1_21_1",
+            "rawText": "https://doi.org/10.5555/647478.727935",
+            "doi": "10.5555/647478.727935",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "e_1_2_1_21_1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.5555/647478.727935"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.5555/647478.727935",
+                "doi": "10.5555/647478.727935",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.5555/647478.727935"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1145/1070891.1065927",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 4,
+          "extractedReferenceCount": 21,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1145/1070891.1065927",
+          "crossrefReferenceCount": 21
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1145/1070891.1065927->doi:10.1016/0167-6423(92)90005-v@papers-dataflow-Sermulins2005.pdf",
+      "source": "doi:10.1145/1070891.1065927",
+      "target": "doi:10.1016/0167-6423(92)90005-v",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Sermulins2005.pdf"
+    },
+    {
+      "id": "doi:10.1145/1070891.1065927->doi:10.1109/5.97300@papers-dataflow-Sermulins2005.pdf",
+      "source": "doi:10.1145/1070891.1065927",
+      "target": "doi:10.1109/5.97300",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Sermulins2005.pdf"
+    },
+    {
+      "id": "doi:10.1145/1070891.1065927->doi:10.1145/780732.780747@papers-dataflow-Sermulins2005.pdf",
+      "source": "doi:10.1145/1070891.1065927",
+      "target": "doi:10.1145/780732.780747",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Sermulins2005.pdf"
+    },
+    {
+      "id": "doi:10.1145/1070891.1065927->doi:10.1109/tc.1987.5009446@papers-dataflow-Sermulins2005.pdf",
+      "source": "doi:10.1145/1070891.1065927",
+      "target": "doi:10.1109/tc.1987.5009446",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/dataflow/Sermulins2005.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Sermulins2005",
+      "paperId": "doi:10.1145/1070891.1065927",
+      "metadata": {
+        "fileName": "Sermulins2005.pdf",
+        "sourcePath": "papers/dataflow/Sermulins2005.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,616 @@
+{
+  "archiveVersion": 1,
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-28T07:52:42.757300+00:00",
+  "papers": [
+    {
+      "key": "Ernst2018a",
+      "paper": {
+        "id": "doi:10.1109/iecon.2018.8591550",
+        "citationKey": "Ernst2018a",
+        "title": "System Level LET: Mastering Cause-Effect Chains in Distributed Systems",
+        "authors": [
+          "Rolf Ernst",
+          "Leonie Ahrendts",
+          "Kai-Bjorn Gemlau"
+        ],
+        "year": 2018,
+        "venue": "IECON 2018 - 44th Annual Conference of the IEEE Industrial Electronics Society",
+        "type": "inproceedings",
+        "doi": "10.1109/iecon.2018.8591550",
+        "arxivId": "",
+        "url": "https://doi.org/10.1109/iecon.2018.8591550",
+        "abstract": "",
+        "keywords": [],
+        "topics": [],
+        "tags": [
+          "report:logical-execution-time-models"
+        ],
+        "notes": "",
+        "bibtexFields": {
+          "author": "Ernst, Rolf and Ahrendts, Leonie and Gemlau, Kai-Bjorn",
+          "title": "{System Level LET: Mastering Cause-Effect Chains in Distributed Systems}",
+          "year": "2018",
+          "booktitle": "IECON 2018 - 44th Annual Conference of the IEEE Industrial Electronics Society",
+          "publisher": "IEEE",
+          "doi": "10.1109/iecon.2018.8591550",
+          "url": "https://doi.org/10.1109/iecon.2018.8591550"
+        },
+        "status": "unread",
+        "relevance": 3,
+        "starred": false,
+        "citationCount": null,
+        "source": "bibtex",
+        "importedAt": "2026-09-28T07:50:43.062768+00:00",
+        "extractedReferences": [
+          {
+            "index": 1,
+            "label": "ref10",
+            "rawText": "kuntz. Multicore and Logical Execution Time, Industry's Perspective. 2018. Dagstuhl Seminar 18092 - The Logical Execution Time Paradigm New Perspectives for Multicore Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref10",
+              "article-title": "Multicore and Logical Execution Time, Industry's Perspective",
+              "author": "kuntz",
+              "year": "2018",
+              "journal-title": "Dagstuhl Seminar 18092 - The Logical Execution Time Paradigm New Perspectives for Multicore Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref10",
+                "doi": "",
+                "title": "Multicore and Logical Execution Time, Industry's Perspective",
+                "authors": [
+                  "kuntz"
+                ],
+                "year": 2018,
+                "venue": "Dagstuhl Seminar 18092 - The Logical Execution Time Paradigm New Perspectives for Multicore Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 2,
+            "label": "ref11",
+            "rawText": "https://doi.org/10.1007/978-3-319-30695-7_13",
+            "doi": "10.1007/978-3-319-30695-7_13",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-319-30695-7_13"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/978-3-319-30695-7_13",
+                "doi": "10.1007/978-3-319-30695-7_13",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-319-30695-7_13"
+              }
+            }
+          },
+          {
+            "index": 3,
+            "label": "ref12",
+            "rawText": "https://doi.org/10.1145/1286821.1286824",
+            "doi": "10.1145/1286821.1286824",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/1286821.1286824"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1145/1286821.1286824",
+                "doi": "10.1145/1286821.1286824",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/1286821.1286824"
+              }
+            }
+          },
+          {
+            "index": 4,
+            "label": "ref13",
+            "rawText": "pree. Modeling with the timing definition language (TDL). Model-Driven Development of Reliable Automotive Services Second Automotive Software Workshop ASWSD 2006",
+            "doi": null,
+            "arxivId": null,
+            "year": 0,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref13",
+              "first-page": "133",
+              "article-title": "Modeling with the timing definition language (TDL)",
+              "author": "pree",
+              "year": "0",
+              "journal-title": "Model-Driven Development of Reliable Automotive Services Second Automotive Software Workshop ASWSD 2006"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "title-author-year",
+              "canonical": {
+                "id": "doi:10.1007/978-3-540-70930-5_9",
+                "doi": "",
+                "title": "Modeling with the timing definition language (TDL)",
+                "authors": [
+                  "pree"
+                ],
+                "year": 0,
+                "venue": "Model-Driven Development of Reliable Automotive Services Second Automotive Software Workshop ASWSD 2006",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-540-70930-5_9"
+              }
+            }
+          },
+          {
+            "index": 5,
+            "label": "ref14",
+            "rawText": "https://doi.org/10.1109/rtss.2009.9",
+            "doi": "10.1109/rtss.2009.9",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTSS.2009.9"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1109/rtss.2009.9",
+                "doi": "10.1109/rtss.2009.9",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtss.2009.9"
+              }
+            }
+          },
+          {
+            "index": 6,
+            "label": "ref15",
+            "rawText": "https://doi.org/10.1016/s1367-5788(03)00002-6",
+            "doi": "10.1016/s1367-5788(03)00002-6",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/S1367-5788(03)00002-6"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1016/s1367-5788(03)00002-6",
+                "doi": "10.1016/s1367-5788(03)00002-6",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1016/s1367-5788(03)00002-6"
+              }
+            }
+          },
+          {
+            "index": 7,
+            "label": "ref16",
+            "rawText": "https://doi.org/10.1109/tc.2008.81",
+            "doi": "10.1109/tc.2008.81",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TC.2008.81"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/tc.2008.81",
+                "doi": "10.1109/tc.2008.81",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/tc.2008.81"
+              }
+            }
+          },
+          {
+            "index": 8,
+            "label": "ref4",
+            "rawText": "beckert. The IDA LET machine - an efficient and streamlined open source implementation of the logical execution time paradigm. 2018. International Workshop on New Platforms for Future Cars (NPCar at DATE 2018)",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref4",
+              "article-title": "The IDA LET machine - an efficient and streamlined open source implementation of the logical execution time paradigm",
+              "author": "beckert",
+              "year": "2018",
+              "journal-title": "International Workshop on New Platforms for Future Cars (NPCar at DATE 2018)"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref4",
+                "doi": "",
+                "title": "The IDA LET machine - an efficient and streamlined open source implementation of the logical execution time paradigm",
+                "authors": [
+                  "beckert"
+                ],
+                "year": 2018,
+                "venue": "International Workshop on New Platforms for Future Cars (NPCar at DATE 2018)",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 9,
+            "label": "ref3",
+            "rawText": "biondi. Logical execution time implementation and memory optimization issues in AUTOSAR applications for multicores. 2017. Watershed",
+            "doi": null,
+            "arxivId": null,
+            "year": 2017,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref3",
+              "article-title": "Logical execution time implementation and memory optimization issues in AUTOSAR applications for multicores",
+              "author": "biondi",
+              "year": "2017",
+              "journal-title": "Watershed"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref3",
+                "doi": "",
+                "title": "Logical execution time implementation and memory optimization issues in AUTOSAR applications for multicores",
+                "authors": [
+                  "biondi"
+                ],
+                "year": 2017,
+                "venue": "Watershed",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 10,
+            "label": "ref6",
+            "rawText": "mader. Implementation of Logical Execution Time - in an AU-TOSAR based embedded automotive multi-core application. 2018. Dagstuhl Seminar 18092 - The Logical Execution Time Paradigm New Perspectives for Multicore Systems",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref6",
+              "article-title": "Implementation of Logical Execution Time - in an AU-TOSAR based embedded automotive multi-core application",
+              "author": "mader",
+              "year": "2018",
+              "journal-title": "Dagstuhl Seminar 18092 - The Logical Execution Time Paradigm New Perspectives for Multicore Systems"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref6",
+                "doi": "",
+                "title": "Implementation of Logical Execution Time - in an AU-TOSAR based embedded automotive multi-core application",
+                "authors": [
+                  "mader"
+                ],
+                "year": 2018,
+                "venue": "Dagstuhl Seminar 18092 - The Logical Execution Time Paradigm New Perspectives for Multicore Systems",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 11,
+            "label": "ref5",
+            "rawText": "consortium. 2018. AUTOSAR timing extension",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref5",
+              "author": "consortium",
+              "year": "2018",
+              "journal-title": "AUTOSAR timing extension"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref5",
+                "doi": "",
+                "title": "",
+                "authors": [
+                  "consortium"
+                ],
+                "year": 2018,
+                "venue": "AUTOSAR timing extension",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 12,
+            "label": "ref8",
+            "rawText": "https://doi.org/10.1145/3177803.3177805",
+            "doi": "10.1145/3177803.3177805",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1145/3177803.3177805"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1145/3177803.3177805",
+                "doi": "10.1145/3177803.3177805",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1145/3177803.3177805"
+              }
+            }
+          },
+          {
+            "index": 13,
+            "label": "ref7",
+            "rawText": "ernst. System level LET with application to automotive design. 2018. Technical report TU Braunschweig",
+            "doi": null,
+            "arxivId": null,
+            "year": 2018,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref7",
+              "article-title": "System level LET with application to automotive design",
+              "author": "ernst",
+              "year": "2018",
+              "journal-title": "Technical report TU Braunschweig"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "crossref-reference:ref7",
+                "doi": "",
+                "title": "System level LET with application to automotive design",
+                "authors": [
+                  "ernst"
+                ],
+                "year": 2018,
+                "venue": "Technical report TU Braunschweig",
+                "type": "",
+                "url": ""
+              }
+            }
+          },
+          {
+            "index": 14,
+            "label": "ref2",
+            "rawText": "https://doi.org/10.1109/rtas.2016.7461355",
+            "doi": "10.1109/rtas.2016.7461355",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/RTAS.2016.7461355"
+            },
+            "resolution": {
+              "status": "unmatched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": null,
+              "canonical": {
+                "id": "doi:10.1109/rtas.2016.7461355",
+                "doi": "10.1109/rtas.2016.7461355",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1109/rtas.2016.7461355"
+              }
+            }
+          },
+          {
+            "index": 15,
+            "label": "ref1",
+            "rawText": "https://doi.org/10.1007/978-3-642-24349-3_5",
+            "doi": "10.1007/978-3-642-24349-3_5",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/978-3-642-24349-3_5"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/978-3-642-24349-3_5",
+                "doi": "10.1007/978-3-642-24349-3_5",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/978-3-642-24349-3_5"
+              }
+            }
+          },
+          {
+            "index": 16,
+            "label": "ref9",
+            "rawText": "https://doi.org/10.1007/3-540-45828-x_6",
+            "doi": "10.1007/3-540-45828-x_6",
+            "arxivId": null,
+            "year": null,
+            "reviewed": false,
+            "referenceData": {
+              "key": "ref9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/3-540-45828-X_6"
+            },
+            "resolution": {
+              "status": "matched",
+              "provider": "crossref-deposited-reference",
+              "matchedBy": "doi-exact",
+              "canonical": {
+                "id": "doi:10.1007/3-540-45828-x_6",
+                "doi": "10.1007/3-540-45828-x_6",
+                "title": "",
+                "authors": [],
+                "year": null,
+                "venue": "",
+                "type": "",
+                "url": "https://doi.org/10.1007/3-540-45828-x_6"
+              }
+            }
+          }
+        ],
+        "crossrefDoi": "10.1109/iecon.2018.8591550",
+        "citationExtraction": {
+          "status": "completed",
+          "method": "Crossref deposited references",
+          "matchedReferenceCount": 6,
+          "extractedReferenceCount": 16,
+          "extractionWarnings": [],
+          "crossrefDoi": "10.1109/iecon.2018.8591550",
+          "crossrefReferenceCount": 16
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "doi:10.1109/iecon.2018.8591550->doi:10.1007/978-3-319-30695-7_13@papers-LET-Ernst2018a.pdf",
+      "source": "doi:10.1109/iecon.2018.8591550",
+      "target": "doi:10.1007/978-3-319-30695-7_13",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ernst2018a.pdf"
+    },
+    {
+      "id": "doi:10.1109/iecon.2018.8591550->doi:10.1145/1286821.1286824@papers-LET-Ernst2018a.pdf",
+      "source": "doi:10.1109/iecon.2018.8591550",
+      "target": "doi:10.1145/1286821.1286824",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ernst2018a.pdf"
+    },
+    {
+      "id": "doi:10.1109/iecon.2018.8591550->doi:10.1007/978-3-540-70930-5_9@papers-LET-Ernst2018a.pdf",
+      "source": "doi:10.1109/iecon.2018.8591550",
+      "target": "doi:10.1007/978-3-540-70930-5_9",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ernst2018a.pdf"
+    },
+    {
+      "id": "doi:10.1109/iecon.2018.8591550->doi:10.1109/rtss.2009.9@papers-LET-Ernst2018a.pdf",
+      "source": "doi:10.1109/iecon.2018.8591550",
+      "target": "doi:10.1109/rtss.2009.9",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ernst2018a.pdf"
+    },
+    {
+      "id": "doi:10.1109/iecon.2018.8591550->doi:10.1007/978-3-642-24349-3_5@papers-LET-Ernst2018a.pdf",
+      "source": "doi:10.1109/iecon.2018.8591550",
+      "target": "doi:10.1007/978-3-642-24349-3_5",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ernst2018a.pdf"
+    },
+    {
+      "id": "doi:10.1109/iecon.2018.8591550->doi:10.1007/3-540-45828-x_6@papers-LET-Ernst2018a.pdf",
+      "source": "doi:10.1109/iecon.2018.8591550",
+      "target": "doi:10.1007/3-540-45828-x_6",
+      "kind": "citation",
+      "provenance": "Crossref deposited references",
+      "sourcePdf": "papers/LET/Ernst2018a.pdf"
+    }
+  ],
+  "topics": [],
+  "meta": {
+    "exportSource": "StateOfTheArt report bibliographies, Crossref deposits, and local PDF references"
+  },
+  "attachments": [
+    {
+      "key": "Ernst2018a",
+      "paperId": "doi:10.1109/iecon.2018.8591550",
+      "metadata": {
+        "fileName": "Ernst2018a.pdf",
+        "sourcePath": "papers/LET/Ernst2018a.pdf"
+      }
+    }
+  ]
+}
