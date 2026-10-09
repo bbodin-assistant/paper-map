@@ -18,6 +18,8 @@ struct PaperMapArchive {
     #[serde(default)]
     #[allow(unused)]
     topics: Vec<serde_json::Value>,
+    #[serde(default)]
+    meta: Option<serde_json::Value>,
 }
 
 fn default_archive_version() -> u32 {
@@ -83,9 +85,15 @@ fn validate_paper_map_json(json_content: &str, path: &str) -> bool {
     match result {
         Ok(archive) => {
             // Validate archive version
-            if archive.archive_version > 2 {
+            if archive.archive_version > 3 {
                 eprintln!("  ERROR: Unsupported archive version {} in {}", archive.archive_version, path);
                 return false;
+            }
+            
+            // Check for required meta field
+            if archive.meta.is_none() {
+                eprintln!("  WARNING: Missing 'meta' field in {}", path);
+                // For now, this is a warning as older versions might not have it
             }
             
             // Validate schema version
@@ -99,15 +107,19 @@ fn validate_paper_map_json(json_content: &str, path: &str) -> bool {
             // Validate each paper entry
             for (i, entry) in archive.papers.iter().enumerate() {
                 match entry {
-                    PaperEntry::Wrapped { key: _, paper } => {
+                    PaperEntry::Wrapped { key, paper } => {
+                        // Validate that the key is present and non-empty
+                        if key.is_empty() {
+                            eprintln!("  ERROR: Paper entry {} in {} has empty key", i, path);
+                            return false;
+                        }
                         if !validate_paper_object(paper, path, i) {
                             return false;
                         }
                     }
-                    PaperEntry::Direct(paper) => {
-                        if !validate_paper_object(paper, path, i) {
-                            return false;
-                        }
+                    PaperEntry::Direct(_paper) => {
+                        eprintln!("  ERROR: Paper entry {} in {} is missing key wrapper", i, path);
+                        return false;
                     }
                 }
             }
