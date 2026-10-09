@@ -262,6 +262,39 @@ export function parsePaperMapJson(text) {
   return value;
 }
 
+export function parsePaperRecordJson(text) {
+  let value;
+  try {
+    value = JSON.parse(text);
+  } catch (error) {
+    throw new Error("Paper JSON is invalid: " + (error?.message || error));
+  }
+
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    throw new Error("Paper JSON must contain a paper object.");
+  }
+  if (Array.isArray(value.papers) || Array.isArray(value.edges) || Array.isArray(value.topics)) {
+    throw new Error("This JSON contains library collections, not one individual paper record.");
+  }
+
+  const wrappedPaper = value.paper && typeof value.paper === "object" && !Array.isArray(value.paper);
+  if (wrappedPaper && Number(value.schemaVersion) !== PAPER_MAP_SCHEMA_VERSION) {
+    throw new Error("Individual paper JSON wrapper must use schemaVersion 1.");
+  }
+  if (!wrappedPaper && value.schemaVersion !== undefined
+    && Number(value.schemaVersion) !== PAPER_MAP_SCHEMA_VERSION) {
+    throw new Error("Unsupported individual paper JSON schema version: " + value.schemaVersion + ".");
+  }
+  const paper = wrappedPaper ? value.paper : value;
+  if (typeof paper.title !== "string" || !paper.title.trim()) {
+    throw new Error("Individual paper JSON must include a non-empty title.");
+  }
+  if (!Array.isArray(paper.authors || [])) {
+    throw new Error("Individual paper JSON authors must be an array.");
+  }
+  return paper;
+}
+
 export function downloadBlob(filename, blob) {
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement("a");

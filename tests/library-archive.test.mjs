@@ -63,7 +63,7 @@ test("archive keys are filename-safe and unique", () => {
   assert.deepEqual(keys, ["Doe-2024-Alpha", "Doe-2024-Alpha-2"]);
 });
 
-test("version 2 keeps BibTeX clean and stores lossless metadata as JSON", () => {
+test("version 3 stores lossless metadata and paper records as JSON", () => {
   const library = sampleLibrary();
   const { bibtex, metadataJson } = libraryToArchiveBibTeX(library, []);
 
@@ -72,14 +72,14 @@ test("version 2 keeps BibTeX clean and stores lossless metadata as JSON", () => 
   assert.match(bibtex, /@article\{Doe-2024-Alpha-2,/);
 
   const metadata = JSON.parse(metadataJson);
-  assert.equal(metadata.archiveVersion, 2);
+  assert.equal(metadata.archiveVersion, 3);
   assert.equal(metadata.papers.length, 2);
   assert.deepEqual(metadata.edges, library.edges);
   assert.deepEqual(metadata.topics, library.topics);
   assert.deepEqual(metadata.meta, library.meta);
 });
 
-test("full database ZIP round-trips metadata.json, keyed BibTeX, and PDFs", async () => {
+test("full database ZIP round-trips JSON metadata, individual paper files, and PDFs without BibTeX", async () => {
   const library = sampleLibrary();
   const pdfEntries = [
     {
@@ -104,8 +104,10 @@ test("full database ZIP round-trips metadata.json, keyed BibTeX, and PDFs", asyn
 
   const zipBytes = new Uint8Array(await zip.arrayBuffer());
   const zipText = new TextDecoder("latin1").decode(zipBytes);
-  assert.match(zipText, /library\.bib/);
+  assert.doesNotMatch(zipText, /library\.bib/);
   assert.match(zipText, /metadata\.json/);
+  assert.match(zipText, /papers\/Doe-2024-Alpha\.json/);
+  assert.match(zipText, /papers\/Doe-2024-Alpha-2\.json/);
   assert.match(zipText, /Doe-2024-Alpha\.pdf/);
 
   const restored = await parseLibraryArchive(zipBytes.buffer);
