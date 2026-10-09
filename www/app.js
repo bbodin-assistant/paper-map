@@ -103,6 +103,7 @@ const els = {
   loadDemo: $("#load-demo"),
   importButton: $("#import-button"),
   importFile: $("#import-file"),
+  uploadFullDb: $("#upload-full-db"),
   exportJson: $("#export-json"),
   exportBibtex: $("#export-bibtex"),
   clearLibrary: $("#clear-library"),
@@ -1456,7 +1457,14 @@ els.loadDemo.addEventListener("click", async () => {
   }
 });
 
-els.importButton.addEventListener("click", () => els.importFile.click());
+els.importButton.addEventListener("click", () => {
+  els.importFile.accept = ".zip,.json,.bib,application/zip,application/json,text/plain";
+  els.importFile.click();
+});
+els.uploadFullDb.addEventListener("click", () => {
+  els.importFile.accept = ".zip,application/zip";
+  els.importFile.click();
+});
 els.importFile.addEventListener("change", async () => {
   const file = els.importFile.files?.[0];
   els.importFile.value = "";

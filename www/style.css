@@ -246,6 +246,8 @@ main { height: calc(100vh - var(--header-height)); padding: 0 14px 14px; }
 .add-paper-candidate-meta { color: #7a848c; font-size: 9px; line-height: 1.35; white-space: normal; overflow-wrap: anywhere; }
 .add-paper-search-match { color: inherit; font-weight: 850; }
 .library-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-top: 14px; }
+.full-db-actions { display: grid; grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.full-db-actions button { min-width: 0; }
 
 
 .bibtex-import-review-dialog {

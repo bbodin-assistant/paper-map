@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light" />
     <title>Paper Map</title>
-    <link rel="stylesheet" href="./style.css?v=0.4.16" />
+    <link rel="stylesheet" href="./style.css?v=0.4.17" />
     <link rel="stylesheet" href="./citation-map-legend.css?v=0.4.5" />
     <link rel="stylesheet" href="./pdf-ai-import.css?v=0.4.5" />
     <link rel="stylesheet" href="./pdf-local.css?v=0.4.5" />
@@ -117,7 +117,10 @@
                     <button type="button" id="load-demo">Load demo</button>
                     <button type="button" id="import-button">Import .zip / .json / .bib</button>
                     <input id="import-file" type="file" accept=".zip,.json,.bib,application/zip,application/json,text/plain" hidden />
-                    <button type="button" id="export-json">Download full DB (.zip)</button>
+                    <div class="full-db-actions">
+                      <button type="button" id="export-json">Download Full DB.zip</button>
+                      <button type="button" id="upload-full-db">Upload Full DB.zip</button>
+                    </div>
                     <button type="button" id="export-bibtex">Export visible BibTeX</button>
                     <button type="button" id="clear-library" class="danger-button">Clear local library</button>
                   </div>
@@ -252,7 +255,7 @@
       </div>
     </aside>
 
-    <script type="module" src="./app.js?v=0.4.22"></script>
+    <script type="module" src="./app.js?v=0.4.23"></script>
     <script type="module" src="./pdf-ai-import.js?v=0.4.15"></script>
     <script type="module" src="./publication-ui.js?v=0.4.5"></script>
     <script type="module" src="./reference-resolution-ui.js?v=0.4.5"></script>
