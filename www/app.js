@@ -28,6 +28,7 @@ import {
   paperToBibTeX,
   parseBibTeX,
   parsePaperMapJson,
+  parsePaperRecordJson,
 } from "./import-export.js";
 import {
   enrichPaper,
@@ -57,7 +58,7 @@ import {
 import {
   createLibraryArchive,
   parseLibraryArchive,
-} from "./library-archive.js?v=0.4.22";
+} from "./library-archive.js?v=0.4.23";
 import {
   importStoredPdfAttachments,
   storedPdfAttachmentForPaper,
