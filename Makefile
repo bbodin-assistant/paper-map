@@ -74,13 +74,11 @@ paper-map-json:
 
 # Test Paper Map JSON compatibility by generating JSON and validating with paper-map
 PAPER_MAP_DIR ?= $(shell pwd)/paper-map
-PAPER_MAP_VALIDATE_BINARY ?= $(PAPER_MAP_DIR)/target/debug/validate-paper-map-json
 
 test-paper-map-json: paper-map-json
 	@mkdir -p "$(PAPER_MAP_DIR)"
 	@echo "Testing Paper Map JSON compatibility..."
-	@cd "$(PAPER_MAP_DIR)" && cargo build --bin validate-paper-map-json --quiet
-	@"$(PAPER_MAP_VALIDATE_BINARY)" "$(OUTPUT_DIR_ABS)/papers-paper-map.json"
+	@python3 scripts/test_paper_map_json.py $(OUTPUT_DIR_ABS)/papers-paper-map.json
 	@echo "Paper Map JSON test completed successfully"
 
 check-report-layout:

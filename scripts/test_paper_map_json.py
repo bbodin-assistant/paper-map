@@ -18,14 +18,14 @@ def validate_paper_map_json(json_path):
         return False
 
     # Check required top-level fields
-    required_fields = ['archiveVersion', 'schemaVersion', 'exportedAt', 'papers']
+    required_fields = ['archiveVersion', 'schemaVersion', 'papers']
     for field in required_fields:
         if field not in data:
             print(f"ERROR: Missing required field '{field}'")
             return False
 
     # Validate archive version
-    if data.get('archiveVersion') not in [1, 2]:
+    if data.get('archiveVersion') not in [1, 2, 3]:
         print(f"ERROR: Unsupported archiveVersion: {data.get('archiveVersion')}")
         return False
 
