@@ -6,7 +6,7 @@ import {
   TIMELINE_CLUSTER_FIELD_OPTIONS,
 } from "./graph-config.js?v=0.4.11";
 import { isCitationEdge } from "./research-relations.js";
-import { storedPdfAttachmentForPaper } from "./paper-attachments.js?v=0.4.21";
+import { storedPdfAttachmentForPaper } from "./paper-attachments.js?v=0.4.22";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const TIMELINE_STORAGE_KEY = "paper-map-timeline-mode-v1";
