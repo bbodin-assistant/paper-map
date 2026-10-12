@@ -75,10 +75,12 @@ async function refreshTimelinePdfIcons(root) {
     if (!paper || !node.isConnected) return;
     const fingerprint = [paperId, paper.doi || "", paper.arxivId || "", paper.title || "", paper.year || ""].join(":");
     if (checkedNodes.get(node) === fingerprint) return;
-    checkedNodes.set(node, fingerprint);
     try {
       const attachment = await storedPdfAttachmentForPaper(paper);
-      if (attachment && node.isConnected) placeIcon(node);
+      if (attachment && node.isConnected) {
+        checkedNodes.set(node, fingerprint);
+        placeIcon(node);
+      }
     } catch {
       // An unavailable local PDF store should not affect timeline rendering.
     }
