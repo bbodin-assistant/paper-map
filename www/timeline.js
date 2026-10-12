@@ -751,7 +751,7 @@ export function initTimelineMap(root = document) {
       const meta = svgElement("text", { x: 10, y: 46, class: "timeline-paper-meta" });
       const citationMeta = Number.isFinite(Number(paper.citationCount)) ? `${paper.citationCount} cites` : "";
       meta.textContent = shortText([(paper.authors || [])[0], citationMeta].filter(Boolean).join(" · "), 31);
-      const star = paper.starred ? svgElement("text", { x: CARD_WIDTH - 8, y: 15, class: "timeline-paper-star" }) : null;
+      const star = paper.starred ? svgElement("text", { x: CARD_WIDTH - (pdfAvailability.get(paper.id) ? 39 : 8), y: 15, class: "timeline-paper-star" }) : null;
       if (star) star.textContent = "★";
       let pdfButton = null;
       if (pdfAvailability.get(paper.id)) {
