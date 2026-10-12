@@ -6,6 +6,7 @@ import {
   TIMELINE_CLUSTER_FIELD_OPTIONS,
 } from "./graph-config.js?v=0.4.11";
 import { isCitationEdge } from "./research-relations.js";
+import { storedPdfAttachmentForPaper } from "./paper-attachments.js?v=0.4.21";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const TIMELINE_STORAGE_KEY = "paper-map-timeline-mode-v1";
@@ -359,6 +360,10 @@ function installStyles(root = document) {
     .timeline-paper-title { fill: #202b35; font-size: 10px; font-weight: 800; }
     .timeline-paper-meta { fill: #79838b; font-size: 8px; font-weight: 650; }
     .timeline-paper-star { fill: #a56f08; font-size: 12px; font-weight: 900; text-anchor: end; }
+    .timeline-paper-pdf { cursor: pointer; outline: none; }
+    .timeline-paper-pdf rect { fill: #fff; stroke: #6b7780; stroke-width: 1; }
+    .timeline-paper-pdf text { fill: #394650; font-size: 7px; font-weight: 900; text-anchor: middle; pointer-events: none; }
+    .timeline-paper-pdf:hover rect, .timeline-paper-pdf:focus rect { fill: #e8f2ff; stroke: #245d9b; stroke-width: 1.4; }
     .timeline-empty { fill: #7d878e; font-size: 13px; font-weight: 650; }
     .timeline-sticky-overlay { pointer-events: none; }
     .timeline-sticky-year-strip { fill: #fffef9; stroke: #e0e3df; stroke-width: 0 0 1 0; }
@@ -619,6 +624,10 @@ export function initTimelineMap(root = document) {
     if (!active || version !== renderVersion) return;
     const ids = visiblePaperIds(root);
     const papers = library.papers.filter((paper) => ids.has(paper.id));
+    const pdfAvailability = new Map(await Promise.all(papers.map(async (paper) => [
+      paper.id,
+      Boolean((await storedPdfAttachmentForPaper(paper))?.blob),
+    ])));
     const paperIds = new Set(papers.map((paper) => paper.id));
     const citations = library.edges.filter((edge) => isCitationEdge(edge) && paperIds.has(edge.source) && paperIds.has(edge.target));
     const selectedId = selectedPaperId(root);
@@ -744,10 +753,26 @@ export function initTimelineMap(root = document) {
       meta.textContent = shortText([(paper.authors || [])[0], citationMeta].filter(Boolean).join(" · "), 31);
       const star = paper.starred ? svgElement("text", { x: CARD_WIDTH - 8, y: 15, class: "timeline-paper-star" }) : null;
       if (star) star.textContent = "★";
+      let pdfButton = null;
+      if (pdfAvailability.get(paper.id)) {
+        pdfButton = svgElement("g", {
+          class: "timeline-paper-pdf",
+          transform: `translate(${CARD_WIDTH - 34} 5)`,
+          tabindex: "0",
+          role: "button",
+          "aria-label": `Open stored PDF for ${paper.title || "this paper"}`,
+          "data-paper-id": paper.id,
+        });
+        const pdfBackground = svgElement("rect", { width: 25, height: 15, rx: 3 });
+        const pdfLabel = svgElement("text", { x: 12.5, y: 10.5 });
+        pdfLabel.textContent = "PDF";
+        pdfButton.append(pdfBackground, pdfLabel);
+      }
       const tooltip = svgElement("title");
       tooltip.textContent = `${paper.title || "Untitled"}\n${(paper.authors || []).join(", ")}\n${paper.year || "Year unknown"}${paper.venue ? `\n${paper.venue}` : ""}`;
       group.append(rect, year, title, meta);
       if (star) group.append(star);
+      if (pdfButton) group.append(pdfButton);
       group.append(tooltip);
       group.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
