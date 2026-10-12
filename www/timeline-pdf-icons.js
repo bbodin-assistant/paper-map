@@ -6,6 +6,12 @@ const ICON_CLASS = "timeline-pdf-indicator";
 const checkedNodes = new WeakMap();
 let refreshQueued = false;
 
+export function timelinePdfIconPosition(bounds) {
+  if (!bounds || !Number.isFinite(bounds.x) || !Number.isFinite(bounds.y)
+    || !Number.isFinite(bounds.width) || bounds.width <= 0 || !Number.isFinite(bounds.height)) return null;
+  return { x: bounds.x + bounds.width - 17, y: bounds.y - 2 };
+}
+
 function svgElement(name, attributes = {}) {
   const element = document.createElementNS(SVG_NS, name);
   for (const [key, value] of Object.entries(attributes)) element.setAttribute(key, String(value));
@@ -48,10 +54,10 @@ function createPdfIcon() {
 function placeIcon(node) {
   if (!node.isConnected || node.querySelector("." + ICON_CLASS)) return;
   try {
-    const bounds = node.getBBox();
-    if (!Number.isFinite(bounds.width) || bounds.width <= 0 || !Number.isFinite(bounds.height)) return;
+    const position = timelinePdfIconPosition(node.getBBox());
+    if (!position) return;
     const icon = createPdfIcon();
-    icon.setAttribute("transform", "translate(" + (bounds.x + bounds.width - 17) + " " + (bounds.y - 2) + ")");
+    icon.setAttribute("transform", "translate(" + position.x + " " + position.y + ")");
     node.append(icon);
   } catch {
     // The node may not have layout bounds until its SVG has been attached.
