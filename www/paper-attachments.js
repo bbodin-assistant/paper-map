@@ -326,7 +326,33 @@ function selectPaperFromTimeline(root, paperId) {
 }
 
 function installTimelineDrawerBridge(root = document) {
+  const openTimelinePdf = async (paperId, popup) => {
+    try {
+      const library = await loadLibrary();
+      const paper = library.papers.find((candidate) => candidate.id === paperId);
+      const attachment = paper ? await attachmentForPaper(paper) : null;
+      if (!attachment?.blob) {
+        popup?.close();
+        return;
+      }
+      const url = URL.createObjectURL(attachment.blob);
+      if (popup) popup.location.href = url;
+      else window.open(url, "_blank", "noopener,noreferrer");
+      window.setTimeout(() => URL.revokeObjectURL(url), 60000);
+    } catch {
+      popup?.close();
+    }
+  };
+
   root.addEventListener("click", (event) => {
+    const pdf = event.target?.closest?.(".timeline-paper-pdf[data-paper-id]");
+    if (pdf) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      const popup = window.open("about:blank", "_blank");
+      openTimelinePdf(pdf.dataset.paperId, popup);
+      return;
+    }
     const paper = event.target?.closest?.(".timeline-paper[data-paper-id]");
     if (!paper) return;
     event.preventDefault();
@@ -336,6 +362,14 @@ function installTimelineDrawerBridge(root = document) {
 
   root.addEventListener("keydown", (event) => {
     if (event.key !== "Enter" && event.key !== " ") return;
+    const pdf = event.target?.closest?.(".timeline-paper-pdf[data-paper-id]");
+    if (pdf) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      const popup = window.open("about:blank", "_blank");
+      openTimelinePdf(pdf.dataset.paperId, popup);
+      return;
+    }
     const paper = event.target?.closest?.(".timeline-paper[data-paper-id]");
     if (!paper) return;
     event.preventDefault();
